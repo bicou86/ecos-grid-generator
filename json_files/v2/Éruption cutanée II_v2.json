@@ -1,0 +1,276 @@
+{
+  "title": "Éruption cutanée II",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Timmy, 6 ans, est amené par sa mère en raison d'une éruption cutanée"
+  },
+  "sections": {
+    "anamnese": {
+      "title": "Anamnèse",
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Se présente avec nom, fonction et but de la consultation",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Exploration du symptôme principal : éruption cutanée",
+          "binaryOnly": true
+        },
+        {
+          "id": "a3",
+          "text": "Évolution temporelle de l'éruption",
+          "patientComment": "Depuis hier après-midi"
+        },
+        {
+          "id": "a4",
+          "text": "Localisation de l'éruption",
+          "patientComment": "Tête, cou et tronc"
+        },
+        {
+          "id": "a5",
+          "text": "Caractéristiques de l'éruption",
+          "details": [
+            "Prurit [Pas de démangeaisons]",
+            "Texture au toucher [Se sent comme du papier de verre]"
+          ]
+        },
+        {
+          "id": "a6",
+          "text": "Symptômes associés",
+          "details": [
+            "Fièvre et frissons [Depuis 3 jours, pense que c'est une grippe]",
+            "Mal de gorge [Oui, surtout douleur à la déglutition]",
+            "Changements linguaux [Langue rouge soudainement]"
+          ]
+        },
+        {
+          "id": "a7",
+          "text": "État général et symptômes systémiques",
+          "details": [
+            "Comportement général [Enfant plaintif]",
+            "Céphalées [Mal de tête]",
+            "Problèmes respiratoires [Respiration normale]",
+            "Autres symptômes systémiques [Pas d'autres problèmes]"
+          ]
+        },
+        {
+          "id": "a8",
+          "text": "Allergies connues",
+          "patientComment": "Abeille"
+        },
+        {
+          "id": "a9",
+          "text": "Antécédents médicaux et traitements",
+          "details": [
+            "Médicaments actuels [Non]",
+            "Maladies antérieures [Non]",
+            "Interventions chirurgicales [Non]"
+          ]
+        },
+        {
+          "id": "a10",
+          "text": "Statut vaccinal",
+          "patientComment": "Tous les vaccins sauf rougeole"
+        },
+        {
+          "id": "a11",
+          "text": "Examens préventifs récents",
+          "patientComment": "Oui, normal il y a 6 mois"
+        },
+        {
+          "id": "a12",
+          "text": "Antécédents familiaux",
+          "patientComment": "Personne dans la famille n'a eu cela"
+        },
+        {
+          "id": "a13",
+          "text": "Anamnèse sociale et exposition",
+          "details": [
+            "Fréquentation collective [Va à la crèche]",
+            "Contacts malades [Pas certain si quelqu'un à la crèche a eu cela]"
+          ]
+        },
+        {
+          "id": "a14",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "binaryOnly": false,
+          "details": [
+            "Anamnèse pédiatrique ciblée et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "examen": {
+      "title": "Examen clinique",
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Évaluation des signes de déshydratation",
+          "details": [
+            "Diurèse [Normale]",
+            "Fontanelle [Non déprimée]",
+            "Yeux enfoncés [Non]",
+            "Muqueuses sèches [Non]",
+            "Pli cutané [Normal]"
+          ]
+        },
+        {
+          "id": "e2",
+          "text": "Examen cutané détaillé",
+          "patientComment": "Voir image en annexe"
+        },
+        {
+          "id": "e3",
+          "text": "Examen ORL",
+          "details": [
+            "Aspect de la langue [Langue framboise]",
+            "État des amygdales [Amygdales inflammées]"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Auscultation pulmonaire",
+          "patientComment": "Normale"
+        },
+        {
+          "id": "e5",
+          "text": "Recherche de signes de gravité",
+          "details": [
+            "État de conscience",
+            "Signes méningés",
+            "Signes de choc"
+          ],
+          "patientComment": "Tous absents"
+        },
+        {
+          "id": "e6",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "binaryOnly": false,
+          "details": [
+            "Examen pédiatrique ciblé et bien conduit"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "management": {
+      "title": "Prise en charge",
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic de suspicion principal",
+          "patientComment": "Scarlatine"
+        },
+        {
+          "id": "m2",
+          "text": "Diagnostics différentiels évoqués",
+          "ddSection": {
+            "categories": [
+              {
+                "name": "Maladies éruptives virales",
+                "items": [
+                  "Rougeole : Prodrome moins sévère, éruption différente (macules puis papules descendantes), signe de Koplik",
+                  "Varicelle : Éruption prurigineuse vésiculeuse, lésions d'âges différents, début au tronc",
+                  "Rubéole : Prodrome plus doux, éruption discrète rose pâle, adénopathies rétro-auriculaires"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m3",
+          "text": "Examens complémentaires proposés",
+          "details": [
+            "Test rapide streptocoque [Pour confirmer streptocoque groupe A]",
+            "Culture bactériologique [Si test rapide négatif mais forte suspicion clinique]"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Traitement proposé",
+          "therapySection": {
+            "introduction": "Antibiothérapie adaptée à la scarlatine :",
+            "categories": [
+              {
+                "name": "Traitement antibiotique",
+                "items": [
+                  {
+                    "treatment": "Pénicilline V ou amoxicilline",
+                    "details": "Traitement de première ligne",
+                    "duration": "10 jours",
+                    "benefits": "Raccourcissement des symptômes, réduction de la contagiosité, prévention des complications"
+                  }
+                ]
+              },
+              {
+                "name": "Traitement symptomatique",
+                "items": [
+                  {
+                    "treatment": "Antipyrétiques",
+                    "details": "Paracétamol ou ibuprofène pour fièvre et douleur"
+                  },
+                  {
+                    "treatment": "Hydratation",
+                    "details": "Encourager les boissons fraîches"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m5",
+          "text": "Mesures préventives et prophylaxie",
+          "details": [
+            "Prophylaxie de l'entourage [Pas de prophylaxie de l'entourage nécessaire]",
+            "Éviction scolaire [24-48h après début de l'antibiothérapie]",
+            "Mesures d'hygiène [Lavage des mains, éviter partage d'ustensiles]"
+          ]
+        },
+        {
+          "id": "m6",
+          "text": "Information aux parents et surveillance",
+          "details": [
+            "Explication de la maladie",
+            "Importance de l'observance du traitement",
+            "Signes d'alerte (complications)",
+            "Quand reconsulter"
+          ]
+        },
+        {
+          "id": "m7",
+          "text": "Planification du suivi",
+          "details": [
+            "Surveillance de l'efficacité du traitement",
+            "Vérification de la disparition des symptômes",
+            "Dépistage des complications tardives (glomérulonéphrite, RAA)"
+          ]
+        },
+        {
+          "id": "m8",
+          "text": "Évaluation globale de la qualité de la prise en charge",
+          "binaryOnly": false,
+          "details": [
+            "Prise en charge pédiatrique cohérente et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "images": [
+      {
+        "title": "Image clinique - Éruption scarlatiniforme",
+        "description": "Photographie montrant l'éruption cutanée érythémateuse généralisée avec aspect 'papier de verre' typique de la scarlatine chez un enfant",
+        "filename": "eruption-cutanee-II-img.jpg"
+      }
+    ]
+  }
+}

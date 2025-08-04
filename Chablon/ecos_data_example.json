@@ -1,0 +1,260 @@
+{
+  "title": "Douleurs épigastriques",
+  "context": {
+    "setting": "Service d'urgence d'un hôpital régional",
+    "patient": "Femme de 57 ans avec douleurs épigastriques",
+    "vitals": {
+      "ta": "Non mesurée",
+      "fc": "Non mesurée",
+      "fr": "Non mesurée",
+      "temperature": "Non mesurée"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction, tâche",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Localisation (directement sous l'appendice xiphoïde)"
+        },
+        {
+          "id": "a3",
+          "text": "Caractère (brûlure)"
+        },
+        {
+          "id": "a4",
+          "text": "Fréquence (presque quotidienne, aussi la nuit, même à jeun)"
+        },
+        {
+          "id": "a5",
+          "text": "Durée (depuis 2 ans)",
+          "binaryOnly": true
+        },
+        {
+          "id": "a6",
+          "text": "Durée des épisodes (minutes à heures)"
+        },
+        {
+          "id": "a7",
+          "text": "Évolution (directement en lien avec stress psychique et professionnel)"
+        },
+        {
+          "id": "a8",
+          "text": "La semaine dernière en courant pour attraper le train : régurgitations acides"
+        },
+        {
+          "id": "a9",
+          "text": "Facteurs influençants, dépendance alimentaire",
+          "details": [
+            "Consommation de lait et prise d'antiacides soulagent",
+            "Déclenchée par oignons frits, consommation de chocolat, vin rouge",
+            "Mais pas directement après la prise alimentaire",
+            "Réveil matinal avec goût acide dans la bouche"
+          ]
+        },
+        {
+          "id": "a10",
+          "text": "Dysphagie/Odynophagie",
+          "patientComment": "aucune"
+        },
+        {
+          "id": "a11",
+          "text": "Appétit",
+          "patientComment": "pas de changements"
+        },
+        {
+          "id": "a12",
+          "text": "Modifications pondérales (incluant symptômes B)",
+          "patientComment": "aucune"
+        },
+        {
+          "id": "a13",
+          "text": "Nausées",
+          "patientComment": "aucune"
+        },
+        {
+          "id": "a14",
+          "text": "Vomissements",
+          "patientComment": "aucun"
+        },
+        {
+          "id": "a15",
+          "text": "Transit intestinal",
+          "patientComment": "rarement diarrhées, variant selon habitudes alimentaires"
+        },
+        {
+          "id": "a16",
+          "text": "Ictère",
+          "patientComment": "jamais remarqué"
+        },
+        {
+          "id": "a17",
+          "text": "Alimentation",
+          "patientComment": "5 tasses café/j, déjeuner sauté, dîner copieux"
+        },
+        {
+          "id": "a18",
+          "text": "Médicaments",
+          "patientComment": "antiacides, fonctionnent à peine ces derniers temps"
+        },
+        {
+          "id": "a19",
+          "text": "Alcool",
+          "patientComment": "connaisseur de whisky"
+        },
+        {
+          "id": "a20",
+          "text": "Autres substances",
+          "patientComment": "rarement pipe"
+        },
+        {
+          "id": "a21",
+          "text": "Allergies",
+          "patientComment": "aucune"
+        },
+        {
+          "id": "a22",
+          "text": "Activités sportives, loisirs",
+          "patientComment": "jogging 2x par semaine"
+        },
+        {
+          "id": "a23",
+          "text": "Revue des systèmes : de la tête aux pieds incluant fièvre et éventuellement symptômes B",
+          "patientComment": "aucune anomalie"
+        },
+        {
+          "id": "a24",
+          "text": "Antécédents familiaux : Cancers, cardiovasculaire etc.",
+          "patientComment": "néant"
+        },
+        {
+          "id": "a25",
+          "text": "Anamnèse sociale",
+          "patientComment": "a un chien, sacristain divorcé"
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Inspection",
+          "binaryOnly": true
+        },
+        {
+          "id": "e2",
+          "text": "Auscultation",
+          "binaryOnly": true
+        },
+        {
+          "id": "e3",
+          "text": "Percussion"
+        },
+        {
+          "id": "e4",
+          "text": "Palpation"
+        },
+        {
+          "id": "e5",
+          "text": "Palpation du foie"
+        },
+        {
+          "id": "e6",
+          "text": "Palpation de la rate"
+        },
+        {
+          "id": "e7",
+          "text": "Palpation des reins"
+        },
+        {
+          "id": "e8",
+          "text": "Inspection endobuccale"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "L'étudiant évoque un diagnostic principal : RGO (Reflux gastro-œsophagien)"
+        },
+        {
+          "id": "m2",
+          "text": "L'étudiant évoque au moins deux autres diagnostics différentiels",
+          "details": ["Au moins deux = oui, un = ±, aucun = non"]
+        },
+        {
+          "id": "m3",
+          "text": "Évoque comme étapes diagnostiques par ex. : Gastroscopie, pH-métrie (selon DD évoqués)"
+        },
+        {
+          "id": "m4",
+          "text": "L'étudiant évoque les possibilités thérapeutiques du diagnostic principal"
+        }
+      ],
+      "additionalInfo": [
+        {
+          "title": "DIAGNOSTICS DIFFÉRENTIELS",
+          "content": {
+            "Œsophage": [
+              "Dyspepsie fonctionnelle",
+              "Hernie hiatale → Rx, Gastroscopie, TDM si suspicion hernie para-œsophagienne",
+              "Œsophagite de reflux → Gastroscopie",
+              "Cancer de l'œsophage → Gastroscopie",
+              "Œsophage de Barrett → Gastroscopie (Chromoendoscopie)"
+            ],
+            "Estomac": [
+              "Gastrite chronique → Gastroscopie, test rapide à l'uréase avec biopsie",
+              "(Gastrite de Crohn, M. Ménétrier) → Laboratoire (Gastrine, Vit B12, Auto-anticorps)",
+              "Ulcère gastrique/Ulcère duodénal → Gastroscopie",
+              "Cancer gastrique → Gastroscopie",
+              "Sténose du pylore → Gastroscopie",
+              "Spasme du pylore → Gastroscopie",
+              "Dyspepsie"
+            ]
+          }
+        },
+        {
+          "title": "POSSIBILITÉS THÉRAPEUTIQUES",
+          "content": {
+            "Mesures générales": [
+              "Lit : surélévation de la tête de lit",
+              "Habitudes alimentaires : réduction de la consommation de café, alcool, éviter aliments acides, renoncer aux repas tardifs, réduction pondérale, renoncer aux médicaments diminuant la pression sphinctérienne (anticholinergiques/spasmolytiques/dérivés nitrés/antagonistes calciques)"
+            ],
+            "Traitement médicamenteux": [
+              "IPP éventuellement anti-H2"
+            ],
+            "Traitement chirurgical": [
+              "En cas de résistance thérapeutique : fundoplicature",
+              "En cas d'œsophage de Barrett : contrôle endoscopique régulier"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "images": [
+      {
+        "title": "Exemple d'image annexe",
+        "description": "Description optionnelle de l'image",
+        "data": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg=="
+      }
+    ],
+    "documents": [
+      {
+        "title": "Document complémentaire",
+        "description": "Résultats de laboratoire",
+        "content": "Contenu textuel du document"
+      }
+    ]
+  }
+}

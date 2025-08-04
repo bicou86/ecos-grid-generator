@@ -1,0 +1,269 @@
+{
+  "title": "Perte auditive II",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Femme de 75 ans en consultation de routine - remarque constamment \"hein?\" et \"qu'avez-vous dit?\""
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction et objectif",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Problème actuel",
+          "binaryOnly": false,
+          "details": [
+            "[Check-up - Mais elle remarque qu'elle n'entend pas si bien]"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Apparition temporelle et aggravation",
+          "binaryOnly": false,
+          "details": [
+            "[Hein? Insidieusement]"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Hypoacousie",
+          "binaryOnly": false,
+          "details": [
+            "[Oui]"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Sécrétions auriculaires",
+          "binaryOnly": false,
+          "details": [
+            "Cérumen [non]",
+            "Sang [non]",
+            "Pus [non]"
+          ]
+        },
+        {
+          "id": "a6",
+          "text": "Douleurs",
+          "binaryOnly": false,
+          "details": [
+            "[Non]"
+          ]
+        },
+        {
+          "id": "a7",
+          "text": "Acouphènes",
+          "binaryOnly": false,
+          "details": [
+            "[Hein? Non]"
+          ]
+        },
+        {
+          "id": "a8",
+          "text": "Vertiges",
+          "binaryOnly": false,
+          "details": [
+            "[Non]"
+          ]
+        },
+        {
+          "id": "a9",
+          "text": "Symptômes associés",
+          "binaryOnly": false,
+          "details": [
+            "Fièvre [non]",
+            "Toux [non]",
+            "Rhinorrhée [non]",
+            "Vomissements [non]"
+          ]
+        },
+        {
+          "id": "a10",
+          "text": "Antécédents ORL",
+          "binaryOnly": false,
+          "details": [
+            "[Enfant: otite moyenne, 1x méningite à 20 ans, cardiopathie ischémique]"
+          ]
+        },
+        {
+          "id": "a11",
+          "text": "Anamnèse médicamenteuse",
+          "binaryOnly": false,
+          "details": [
+            "Médicaments ototoxiques [non, seulement gouttes de valériane]"
+          ]
+        },
+        {
+          "id": "a12",
+          "text": "Capacité téléphonique et volume TV/radio",
+          "binaryOnly": false,
+          "details": [
+            "[Hein? Les voisins se plaignent de devoir écouter aussi le Musikantenstadl]"
+          ]
+        },
+        {
+          "id": "a13",
+          "text": "Anamnèse par systèmes",
+          "binaryOnly": false,
+          "details": [
+            "Tension artérielle [hypertendue]",
+            "Neurologie [à préciser]",
+            "Psychosocial [vit seule, a 1 chien, physiquement en forme]"
+          ]
+        },
+        {
+          "id": "a14",
+          "text": "Activités sociales",
+          "binaryOnly": false,
+          "details": [
+            "[Plus si souvent. Était dans un chœur - mais on dit qu'elle chante toujours faux. Sinon ne fait plus grand-chose]"
+          ]
+        },
+        {
+          "id": "a15",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "binaryOnly": false,
+          "details": [
+            "Anamnèse générale ciblée et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Palpation auriculaire",
+          "binaryOnly": false,
+          "details": [
+            "Douleur à la pression du tragus et traction du pavillon [normal]"
+          ]
+        },
+        {
+          "id": "e2",
+          "text": "Inspection de l'oreille",
+          "binaryOnly": false,
+          "details": [
+            "[Normal]"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Otoscopie bilatérale",
+          "binaryOnly": false,
+          "details": [
+            "[Normal]"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Tests auditifs (Weber et Rinne)",
+          "binaryOnly": false,
+          "details": [
+            "[Weber latéralisé à droite, Rinne positif bilatéralement]"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Test de chuchotement",
+          "binaryOnly": false,
+          "details": [
+            "[1 sur 4 correct]"
+          ]
+        },
+        {
+          "id": "e6",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "binaryOnly": false,
+          "details": [
+            "Status général ciblé et bien conduit"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic principal",
+          "binaryOnly": false,
+          "details": [
+            "Presbyacousie"
+          ]
+        },
+        {
+          "id": "m2",
+          "text": "Caractéristiques diagnostiques",
+          "binaryOnly": false,
+          "details": [
+            "Surdité de perception symétrique",
+            "Surtout perte des aigus",
+            "Éventuellement acouphènes",
+            "Typique: limitation de la compréhension de la parole"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Diagnostics différentiels",
+          "binaryOnly": false,
+          "details": [
+            "Presbyacousie",
+            "Surdité de bruit",
+            "Manque de concentration dans la conversation"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Examens complémentaires",
+          "binaryOnly": false,
+          "details": [
+            "Audiométrie tonale"
+          ]
+        },
+        {
+          "id": "m5",
+          "text": "Thérapie",
+          "binaryOnly": false,
+          "details": [
+            "Prothèse auditive",
+            "Encourager la patiente à porter l'appareil auditif"
+          ]
+        },
+        {
+          "id": "m6",
+          "text": "Évaluation globale de la qualité de la prise en charge",
+          "binaryOnly": false,
+          "details": [
+            "Prise en charge générale cohérente et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "images": [
+      {
+        "id": "annexe1",
+        "data": "grilles_generees/images/perte-auditive-ii-img1.png",
+        "title": "Audiogramme - Représentation schématique",
+        "description": "Échelle audiométrique avec zones de conversation et niveaux de perte auditive"
+      },
+      {
+        "id": "annexe2",
+        "data": "grilles_generees/images/perte-auditive-ii-img2.png",
+        "title": "Audiogramme - Classification",
+        "description": "Classification des pertes auditives par fréquence et intensité"
+      }
+    ]
+  }
+}

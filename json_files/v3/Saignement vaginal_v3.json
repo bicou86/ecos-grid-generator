@@ -1,0 +1,515 @@
+{
+  "title": "Saignement vaginal",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Une patiente consulte pour des saignements vaginaux (cas possible : jeune femme, femme enceinte ou femme ménopausée selon le scénario)."
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction et tâche",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Caractéristiques des saignements",
+          "binaryOnly": false,
+          "details": [
+            "Début des saignements [Il y a 3 jours]",
+            "Durée des saignements [Persistants depuis le début]",
+            "Quantité de sang [Importante, 3-4 serviettes par jour]",
+            "Présence de caillots [Oui, quelques caillots]",
+            "Couleur du sang [Rouge vif]",
+            "Évolution [Stable]"
+          ],
+          "scoringRule": "≥5 caractéristiques des saignements = 2 points, 3-4 caractéristiques = 1 point"
+        },
+        {
+          "id": "a3",
+          "text": "Cycle menstruel",
+          "binaryOnly": false,
+          "details": [
+            "Ménarche [13 ans]",
+            "Date des dernières règles [Il y a 6 semaines]",
+            "Régularité du cycle [Habituellement régulier, 28 jours]",
+            "Durée habituelle des règles [5 jours]",
+            "Ménopause [Non applicable / Il y a 2 ans selon le cas]",
+            "Aménorrhée antérieure [Non]"
+          ],
+          "scoringRule": "≥4 aspects du cycle menstruel = 2 points, 3 aspects = 1 point"
+        },
+        {
+          "id": "a4",
+          "text": "Activité sexuelle et contraception",
+          "binaryOnly": false,
+          "details": [
+            "Rapports sexuels récents [Oui, il y a 1 semaine]",
+            "Protection utilisée [Pas toujours]",
+            "Contraception actuelle [Pilule / DIU / Aucune selon le cas]",
+            "Oubli de pilule [Non applicable]",
+            "Position du DIU [À vérifier si applicable]"
+          ],
+          "scoringRule": "≥3 aspects sexuels/contraceptifs = 2 points, 2 aspects = 1 point"
+        },
+        {
+          "id": "a5",
+          "text": "Possibilité de grossesse",
+          "binaryOnly": false,
+          "details": [
+            "Test de grossesse fait [Non]",
+            "Symptômes de grossesse [Nausées matinales légères]",
+            "Désir de grossesse [Oui/Non selon le cas]"
+          ],
+          "scoringRule": "≥2 aspects de grossesse explorés = 2 points"
+        },
+        {
+          "id": "a6",
+          "text": "Symptômes associés - Douleur",
+          "binaryOnly": false,
+          "details": [
+            "Présence de douleurs [Oui]",
+            "Localisation [Bas-ventre, bilatérale]",
+            "Intensité (1-10) [6/10]",
+            "Type de douleur [Crampes]",
+            "Durée [Intermittente]",
+            "Irradiation [Non]",
+            "Signes de péritonisme [Non]"
+          ],
+          "scoringRule": "≥5 aspects douloureux = 2 points, 3-4 aspects = 1 point"
+        },
+        {
+          "id": "a7",
+          "text": "Symptômes associés - Sécrétions",
+          "binaryOnly": false,
+          "details": [
+            "Leucorrhées anormales [Non]",
+            "Odeur désagréable [Non]",
+            "Brûlures vaginales [Non]",
+            "Démangeaisons [Non]",
+            "Dyspareunie [Légère]"
+          ],
+          "scoringRule": "≥4 aspects des sécrétions = 2 points, 3 aspects = 1 point"
+        },
+        {
+          "id": "a8",
+          "text": "Symptômes généraux",
+          "binaryOnly": false,
+          "details": [
+            "Fièvre [Non]",
+            "Fatigue [Oui, modérée]",
+            "Vertiges [Légers en se levant]",
+            "Palpitations [Non]",
+            "Signes d'abdomen aigu [Non]"
+          ],
+          "scoringRule": "≥4 symptômes généraux = 2 points, 3 symptômes = 1 point"
+        },
+        {
+          "id": "a9",
+          "text": "Antécédents gynécologiques",
+          "binaryOnly": false,
+          "details": [
+            "Nombre de grossesses [G2P1 ou autre selon le cas]",
+            "Accouchements [1 par voie basse sans complication]",
+            "Fausses couches [1 il y a 2 ans]",
+            "IVG [Non]",
+            "Grossesse extra-utérine [Non]"
+          ],
+          "scoringRule": "≥4 antécédents gynécologiques = 2 points, 3 antécédents = 1 point"
+        },
+        {
+          "id": "a10",
+          "text": "Antécédents médicaux pertinents",
+          "binaryOnly": false,
+          "details": [
+            "Troubles de la coagulation [Non]",
+            "Thromboses antérieures [Non]",
+            "Syndrome des antiphospholipides [Non]",
+            "Endométriose [Non diagnostiquée]",
+            "Fibromes connus [Non]",
+            "SOPK [Non]"
+          ],
+          "scoringRule": "≥5 antécédents médicaux = 2 points, 3-4 antécédents = 1 point"
+        },
+        {
+          "id": "a11",
+          "text": "Interventions gynécologiques antérieures",
+          "binaryOnly": false,
+          "details": [
+            "Chirurgies abdominales [Aucune]",
+            "Curetages [Un après la fausse couche]",
+            "Conisation [Non]",
+            "Stérilisation tubaire [Non]",
+            "Infections pelviennes [Non]"
+          ],
+          "scoringRule": "≥4 interventions explorées = 2 points, 3 interventions = 1 point"
+        },
+        {
+          "id": "a12",
+          "text": "Traumatisme récent",
+          "binaryOnly": false,
+          "details": [
+            "Traumatisme abdominal [Non]",
+            "Traumatisme vaginal [Non]",
+            "Violence sexuelle [Non]"
+          ],
+          "scoringRule": "≥2 types de traumatismes recherchés = 2 points"
+        },
+        {
+          "id": "a13",
+          "text": "Médicaments et substances",
+          "binaryOnly": false,
+          "details": [
+            "Anticoagulants [Non]",
+            "Aspirine [Non]",
+            "Préparations hormonales [Pilule contraceptive]",
+            "Autres médicaments [Aucun]",
+            "Cocaïne [Non]",
+            "Tabac [Non]",
+            "Allergies médicamenteuses [Aucune]"
+          ],
+          "scoringRule": "≥5 médicaments/substances = 2 points, 3-4 médicaments = 1 point"
+        },
+        {
+          "id": "a14",
+          "text": "Dernier frottis cervical",
+          "binaryOnly": false,
+          "details": [
+            "[Il y a 1 an, normal]"
+          ],
+          "scoringRule": "Frottis cervical exploré = 2 points"
+        },
+        {
+          "id": "a15",
+          "text": "Antécédents familiaux",
+          "binaryOnly": false,
+          "details": [
+            "Fausses couches répétées [Non]",
+            "Cancers gynécologiques [Mère : cancer du sein à 55 ans]",
+            "Troubles de la coagulation [Non]"
+          ],
+          "scoringRule": "≥2 antécédents familiaux = 2 points"
+        },
+        {
+          "id": "a16",
+          "text": "Anamnèse sociale",
+          "binaryOnly": false,
+          "details": [
+            "Profession [Employée de bureau]",
+            "Stress récent [Modéré au travail]",
+            "Support social [Bon, mariée]"
+          ],
+          "scoringRule": "≥2 aspects sociaux = 2 points"
+        },
+        {
+          "id": "a17",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "binaryOnly": false,
+          "details": [
+            "Anamnèse ciblée et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Signes vitaux",
+          "binaryOnly": false,
+          "details": [
+            "Tension artérielle [120/70 mmHg]",
+            "Pouls [88/min]",
+            "Température [36,8°C]",
+            "État général [Bon, légèrement pâle]"
+          ],
+          "scoringRule": "≥3 signes vitaux = 2 points, 2 signes = 1 point"
+        },
+        {
+          "id": "e2",
+          "text": "Examen abdominal",
+          "binaryOnly": false,
+          "details": [
+            "Inspection [Normale]",
+            "Palpation superficielle [Souple]",
+            "Palpation profonde [Sensibilité sus-pubienne]",
+            "Défense [Non]",
+            "Rebond [Non]",
+            "Masses palpables [Non]",
+            "Bruits intestinaux [Normaux]"
+          ],
+          "scoringRule": "≥5 aspects abdominaux = 2 points, 3-4 aspects = 1 point"
+        },
+        {
+          "id": "e3",
+          "text": "Examen gynécologique - Inspection",
+          "binaryOnly": false,
+          "details": [
+            "Vulve [Normale]",
+            "Saignement actif visible [Oui, modéré]",
+            "Lésions externes [Non]"
+          ],
+          "scoringRule": "≥2 aspects de l'inspection = 2 points"
+        },
+        {
+          "id": "e4",
+          "text": "Examen au spéculum (théorique)",
+          "binaryOnly": false,
+          "details": [
+            "Col de l'utérus [Fermé, saignement provenant de l'orifice cervical]",
+            "Lésions cervicales [Non]",
+            "Polypes [Non]",
+            "Ectropion [Non]"
+          ],
+          "scoringRule": "≥3 aspects du spéculum = 2 points, 2 aspects = 1 point"
+        },
+        {
+          "id": "e5",
+          "text": "Toucher vaginal bimanuel (théorique)",
+          "binaryOnly": false,
+          "details": [
+            "Taille utérine [Normale / Augmentée selon le cas]",
+            "Position utérine [Antéversée]",
+            "Mobilité utérine [Mobile, non douloureuse]",
+            "Douleur à la mobilisation du col [Non]",
+            "Masses annexielles [Non palpables]",
+            "Culs-de-sac [Libres]"
+          ],
+          "scoringRule": "≥4 aspects du toucher = 2 points, 3 aspects = 1 point"
+        },
+        {
+          "id": "e6",
+          "text": "Attention : Placenta praevia",
+          "binaryOnly": false,
+          "details": [
+            "CAVE : Pas d'examen vaginal si suspicion de placenta praevia"
+          ],
+          "scoringRule": "Précaution placenta praevia = 2 points"
+        },
+        {
+          "id": "e7",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "binaryOnly": false,
+          "details": [
+            "Examen clinique ciblé et bien conduit"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostics évoqués selon l'âge",
+          "binaryOnly": false,
+          "ddSection": {
+            "title": "Diagnostics différentiels des saignements vaginaux",
+            "categories": [
+              {
+                "name": "Femme jeune en âge de procréer",
+                "items": [
+                  {
+                    "text": "Grossesse extra-utérine (urgence !)"
+                  },
+                  {
+                    "text": "Fausse couche (précoce, tardive, incomplète)"
+                  },
+                  {
+                    "text": "Saignement de nidation"
+                  },
+                  {
+                    "text": "Métrorragie fonctionnelle"
+                  },
+                  {
+                    "text": "Cervicite/infection génitale"
+                  },
+                  {
+                    "text": "Polype cervical"
+                  },
+                  {
+                    "text": "Traumatisme vaginal"
+                  }
+                ]
+              },
+              {
+                "name": "Femme enceinte",
+                "items": [
+                  {
+                    "text": "Placenta praevia"
+                  },
+                  {
+                    "text": "Décollement placentaire"
+                  },
+                  {
+                    "text": "Hématome rétroplacentaire"
+                  },
+                  {
+                    "text": "Rupture utérine"
+                  },
+                  {
+                    "text": "Menace d'accouchement prématuré"
+                  },
+                  {
+                    "text": "Fausse couche tardive"
+                  }
+                ]
+              },
+              {
+                "name": "Femme ménopausée",
+                "items": [
+                  {
+                    "text": "Carcinome de l'endomètre"
+                  },
+                  {
+                    "text": "Atrophie vaginale"
+                  },
+                  {
+                    "text": "Polype endométrial"
+                  },
+                  {
+                    "text": "Hyperplasie endométriale"
+                  },
+                  {
+                    "text": "Cancer du col utérin"
+                  },
+                  {
+                    "text": "Cancer de l'ovaire"
+                  }
+                ]
+              },
+              {
+                "name": "Causes générales (tous âges)",
+                "items": [
+                  {
+                    "text": "Troubles de la coagulation"
+                  },
+                  {
+                    "text": "Fibromes utérins"
+                  },
+                  {
+                    "text": "Endométriose"
+                  },
+                  {
+                    "text": "Syndrome des ovaires polykystiques"
+                  },
+                  {
+                    "text": "Effets médicamenteux (anticoagulants)"
+                  }
+                ]
+              }
+            ]
+          },
+          "scoringRule": "≥3 catégories diagnostiques = 2 points, 2 catégories = 1 point"
+        },
+        {
+          "id": "m2",
+          "text": "Examens complémentaires urgents",
+          "binaryOnly": false,
+          "details": [
+            "β-HCG quantitatif (urgent !)",
+            "Hémogramme complet",
+            "Groupe sanguin et Rhésus",
+            "Tests de coagulation (TP, TCA)",
+            "CRP"
+          ],
+          "scoringRule": "≥4 examens urgents = 2 points, 3 examens = 1 point"
+        },
+        {
+          "id": "m3",
+          "text": "Imagerie",
+          "binaryOnly": false,
+          "details": [
+            "Échographie pelvienne transabdominale",
+            "Échographie transvaginale (si pas de suspicion de placenta praevia)",
+            "CTG si grossesse avancée"
+          ],
+          "scoringRule": "≥2 modalités d'imagerie = 2 points"
+        },
+        {
+          "id": "m4",
+          "text": "Prise en charge immédiate",
+          "binaryOnly": false,
+          "details": [
+            "Voie veineuse si saignement important",
+            "Surveillance des signes vitaux",
+            "Évaluation de la quantité de sang perdu",
+            "Repos"
+          ],
+          "scoringRule": "≥3 mesures immédiates = 2 points, 2 mesures = 1 point"
+        },
+        {
+          "id": "m5",
+          "text": "Traitement médicamenteux",
+          "binaryOnly": false,
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Traitement hémostatique",
+                "content": "• Acide tranexamique 1g IV/PO x3/jour\n• Étamsylate 500mg IV/PO x3/jour\n• Surveillance hémodynamique\n• Transfusion si anémie sévère\n• Correction des troubles de coagulation"
+              },
+              {
+                "title": "Traitement hormonal",
+                "content": "• Progestérone si menace de fausse couche\n• Œstrogènes conjugués si saignement anovulatoire\n• Contraceptifs oraux pour régulariser le cycle\n• Progestatifs cycliques si anovulation\n• Surveillance clinique et biologique"
+              },
+              {
+                "title": "Traitement spécifique",
+                "content": "• Méthotrexate si GEU non rompue\n• Antibiotiques si infection génitale\n• Antifibrinolytiques si hyperménorrhée\n• Fer per os si anémie ferriprive\n• Adaptation selon étiologie"
+              }
+            ]
+          },
+          "scoringRule": "≥2 catégories thérapeutiques = 2 points"
+        },
+        {
+          "id": "m6",
+          "text": "Interventions chirurgicales",
+          "binaryOnly": false,
+          "details": [
+            "Curetage si fausse couche incomplète",
+            "Laparoscopie si GEU (préserve fertilité)",
+            "Césarienne d'urgence si indication obstétricale",
+            "Hystéroscopie diagnostique et thérapeutique"
+          ],
+          "scoringRule": "≥3 interventions possibles = 2 points, 2 interventions = 1 point"
+        },
+        {
+          "id": "m7",
+          "text": "Orientation et suivi",
+          "binaryOnly": false,
+          "details": [
+            "Hospitalisation si saignement important",
+            "Consultation gynécologique urgente",
+            "Surveillance ambulatoire si stable"
+          ],
+          "scoringRule": "≥2 modalités d'orientation = 2 points"
+        },
+        {
+          "id": "m8",
+          "text": "Information et conseil à la patiente",
+          "binaryOnly": false,
+          "details": [
+            "Explication de la démarche diagnostique",
+            "Signes d'alarme à surveiller",
+            "Consignes de repos",
+            "Contraception future si indiquée"
+          ],
+          "scoringRule": "≥3 aspects informatifs = 2 points, 2 aspects = 1 point"
+        },
+        {
+          "id": "m9",
+          "text": "Évaluation globale de la qualité de la prise en charge",
+          "binaryOnly": false,
+          "details": [
+            "Prise en charge cohérente et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    }
+  }
+}

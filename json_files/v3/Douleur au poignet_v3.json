@@ -1,0 +1,381 @@
+{
+  "title": "Douleur au poignet",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Mme Timoni, 66 ans, se présente chez son médecin de famille pour des problèmes au poignet",
+    "patientComment": "Femme diabétique de 66 ans avec tableau clinique typique de syndrome du canal carpien: paresthésies des 3 premiers doigts et demi, accentuées la nuit/matin, tests de provocation positifs, début d'atrophie thénarienne."
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction et tâche",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Caractérisation des symptômes principaux",
+          "details": [
+            "[Douleurs étranges au poignet et fourmillements]",
+            "[Depuis quelques années, maintenant plus intense]",
+            "[Plus prononcé le matin]",
+            "[Électrisante]",
+            "[Environ 5/10]"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥4 caractéristiques = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "a3",
+          "text": "Distribution anatomique des symptômes",
+          "details": [
+            "[Poignet]",
+            "[Pouce, index et majeur]",
+            "[Face radiale de l'annulaire aussi]",
+            "[En principe non, parfois dans l'avant-bras]",
+            "Territoire du nerf médian exploré"
+          ],
+          "binaryOnly": false,
+          "patientComment": "Distribution classique du nerf médian (3,5 premiers doigts)",
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "a4",
+          "text": "Impact fonctionnel et activités",
+          "details": [
+            "[C'est gênant]",
+            "[Plus autant de force qu'avant]",
+            "[Surtout au niveau du pouce]",
+            "[Lecture, cuisine, tricot, piano...]",
+            "Gêne dans les activités fines"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥4 impacts = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "a5",
+          "text": "Recherche de RED FLAGS neurologiques",
+          "redflagsSection": [
+            {
+              "text": "Déficit moteur sévère/paralysie [non, juste faiblesse du pouce]",
+              "isRedFlag": false
+            },
+            {
+              "text": "Atrophie musculaire importante [légère atrophie thénarienne]",
+              "isRedFlag": true
+            },
+            {
+              "text": "Symptômes bilatéraux symétriques [non précisé]",
+              "isRedFlag": false
+            },
+            {
+              "text": "Signes de radiculopathie cervicale [non]",
+              "isRedFlag": false
+            },
+            {
+              "text": "Progression rapide récente [oui, plus intense]",
+              "isRedFlag": true
+            }
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥4 red flags recherchés = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "a6",
+          "text": "Facteurs de risque et comorbidités",
+          "details": [
+            "[Diabète de type 2]",
+            "[Secrétaire retraitée]",
+            "Mouvements répétitifs professionnels",
+            "Âge > 50 ans",
+            "Sexe féminin"
+          ],
+          "binaryOnly": false,
+          "patientComment": "Plusieurs facteurs de risque: diabète, travail de bureau, âge, sexe féminin",
+          "scoringRule": "≥4 facteurs = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "a7",
+          "text": "Antécédents et traitements actuels",
+          "details": [
+            "[Fracture de côte il y a 10 ans, sinon rien]",
+            "[Metformine]",
+            "[Valériane pour dormir]",
+            "[AF: père coronarien, mère diabétique]",
+            "[Non!] aux toxiques"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "a8",
+          "text": "Exploration des facteurs modulateurs",
+          "details": [
+            "[Non] aux facteurs améliorant/aggravant",
+            "Position nocturne du poignet",
+            "Effet du repos",
+            "Activités manuelles répétitives",
+            "Soulagement par le secouement de la main"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥3 facteurs explorés = 2 pts, 2 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "a9",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "binaryOnly": false,
+          "details": [
+            "Anamnèse orientée syndrome canalaire",
+            "RED FLAGS systématiquement recherchés",
+            "Facteurs de risque identifiés"
+          ],
+          "scoringRule": "Excellente = 2 pts, suffisante = 1 pt, insuffisante = 0 pt"
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Préparation et inspection initiale",
+          "details": [
+            "Désinfection des mains",
+            "Recherche de rougeur/gonflement",
+            "État de la peau",
+            "Position antalgique",
+            "[Légère atrophie thénarienne]"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "e2",
+          "text": "Tests de provocation spécifiques",
+          "details": [
+            "Test de Tinel [positif]",
+            "Test de Phalen [positif]",
+            "Test de Durkan (compression directe)",
+            "Test de Phalen inversé",
+            "Test d'élévation des bras"
+          ],
+          "binaryOnly": false,
+          "patientComment": "Tests de provocation positifs confirmant le syndrome du canal carpien",
+          "scoringRule": "≥3 tests = 2 pts, 2 tests = 1 pt, <2 tests = 0 pt"
+        },
+        {
+          "id": "e3",
+          "text": "Évaluation neurologique sensitive",
+          "details": [
+            "Discrimination à deux points",
+            "Sensibilité au toucher léger",
+            "Test au monofilament",
+            "Distribution nerf médian testée",
+            "Comparaison avec nerf ulnaire/radial"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥4 tests = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "e4",
+          "text": "Évaluation motrice et fonctionnelle",
+          "details": [
+            "Opposition du pouce",
+            "Abduction du pouce contre résistance",
+            "Force de préhension globale",
+            "Signe de la bouteille de Lüthy",
+            "Test du tournevis"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥4 tests = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "e5",
+          "text": "Mobilité articulaire et palpation",
+          "details": [
+            "[Pas de douleur au toucher normal]",
+            "Flexion/extension du poignet",
+            "Déviation radiale/ulnaire",
+            "Pronation/supination",
+            "Palpation du canal carpien"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "e6",
+          "text": "Examens complémentaires et différentiels",
+          "details": [
+            "Examen cervical (C6-C7)",
+            "Test du défilé thoracique",
+            "Examen vasculaire (pouls, Allen)",
+            "Recherche de signes inflammatoires",
+            "Examen bilatéral comparatif"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥3 examens = 2 pts, 2 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "e7",
+          "text": "Évaluation globale de la qualité de l'examen",
+          "binaryOnly": false,
+          "details": [
+            "Examen neurologique complet",
+            "Tests spécifiques correctement réalisés",
+            "Diagnostics différentiels exclus"
+          ],
+          "scoringRule": "Excellent = 2 pts, suffisant = 1 pt, insuffisant = 0 pt"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic principal et justification",
+          "patientComment": "Syndrome du canal carpien modéré à sévère (atrophie thénarienne débutante)",
+          "details": [
+            "Distribution médiane classique",
+            "Tests de provocation positifs",
+            "Atrophie thénarienne débutante",
+            "Facteurs de risque présents",
+            "Évolution progressive"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "Diagnostic correct avec ≥4 arguments = 2 pts, avec 2-3 arguments = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "m2",
+          "text": "Diagnostics différentiels pertinents",
+          "ddSection": {
+            "categories": [
+              {
+                "name": "Pathologies nerveuses",
+                "items": [
+                  "Radiculopathie cervicale C6-C7",
+                  "Syndrome du rond pronateur",
+                  "Neuropathie diabétique"
+                ]
+              },
+              {
+                "name": "Pathologies articulaires",
+                "items": [
+                  "Arthrose du poignet",
+                  "Ténosynovite de De Quervain",
+                  "Arthrite inflammatoire"
+                ]
+              },
+              {
+                "name": "Autres causes",
+                "items": [
+                  "Syndrome du défilé thoracique",
+                  "Neuropathie ulnaire",
+                  "Syndrome vibratoire"
+                ]
+              }
+            ]
+          },
+          "binaryOnly": false,
+          "scoringRule": "≥6 DD pertinents = 2 pts, 3-5 DD = 1 pt, <3 DD = 0 pt"
+        },
+        {
+          "id": "m3",
+          "text": "Examens complémentaires appropriés",
+          "binaryOnly": false,
+          "scoringRule": "≥3 examens justifiés = 2 pts, 2 examens = 1 pt, <2 = 0 pt",
+          "details": [
+            "EMG/VCN → Gold standard - confirme compression, évalue sévérité",
+            "Échographie du canal carpien → Mesure aire nerf médian, épaississement rétinaculum",
+            "Bilan métabolique → HbA1c, TSH, vitamine B12, créatinine",
+            "Radiographie poignet → Si suspicion arthrose/anomalie osseuse"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Traitement conservateur initial",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Immobilisation",
+                "content": "• Attelle nocturne position neutre 6-8 semaines\n• Port diurne si activités répétitives\n• Position 0-5° extension"
+              },
+              {
+                "title": "Traitement médicamenteux",
+                "content": "• AINS oral 7-14 jours (diclofénac 50mg 2x/j)\n• Vitamine B6 100-200mg/j (controversé)\n• Optimisation contrôle diabétique"
+              },
+              {
+                "title": "Infiltration corticoïdes",
+                "content": "• Méthylprednisolone 20-40mg\n• Technique échoguidée préférable\n• Maximum 2-3 infiltrations/an"
+              }
+            ]
+          },
+          "binaryOnly": false,
+          "scoringRule": "≥3 modalités = 2 pts, 2 modalités = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "m5",
+          "text": "Rééducation et ergonomie",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Physiothérapie",
+                "content": "• Exercices de glissement nerveux\n• Mobilisation du canal carpien\n• Renforcement thénariens\n• Techniques de désensibilisation"
+              },
+              {
+                "title": "Adaptations ergonomiques",
+                "content": "• Clavier/souris ergonomiques\n• Pauses régulières (5min/heure)\n• Éviter hyperflexion/extension\n• Outils adaptés (gros manches)"
+              },
+              {
+                "title": "Éducation thérapeutique",
+                "content": "• Positions à éviter la nuit\n• Exercices d'auto-rééducation\n• Signes d'aggravation\n• Importance observance traitement"
+              }
+            ]
+          },
+          "binaryOnly": false,
+          "scoringRule": "≥3 aspects couverts = 2 pts, 2 aspects = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "m6",
+          "text": "Indications chirurgicales",
+          "details": [
+            "Échec traitement conservateur 3-6 mois",
+            "Déficit moteur objectif (atrophie)",
+            "EMG sévère (absence potentiels sensitifs)",
+            "Symptômes invalidants persistants",
+            "Préférence patient informé"
+          ],
+          "binaryOnly": false,
+          "patientComment": "Atrophie thénarienne = indication relative de chirurgie",
+          "scoringRule": "≥4 indications = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "m7",
+          "text": "Plan de suivi structuré",
+          "details": [
+            "Contrôle à 4-6 semaines",
+            "EMG si pas d'amélioration à 3 mois",
+            "Référence chirurgie main si échec",
+            "Surveillance fonction thénarienne",
+            "Ajustement traitement diabète"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "m8",
+          "text": "Évaluation globale de la prise en charge",
+          "binaryOnly": false,
+          "details": [
+            "Approche evidence-based",
+            "Traitement conservateur prioritaire",
+            "Surveillance atrophie thénarienne"
+          ],
+          "scoringRule": "Excellente = 2 pts, adéquate = 1 pt, insuffisante = 0 pt"
+        }
+      ]
+    }
+  }
+}

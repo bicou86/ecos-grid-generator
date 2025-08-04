@@ -1,0 +1,182 @@
+{
+  "title": "Gonflement du visage",
+  "context": {
+    "setting": "Consultation ambulatoire de permanence",
+    "patient": "Femme africaine de 45 ans, obèse, consultant pour gonflement facial récent surtout au niveau des paupières",
+    "vitals": {
+      "ta": "Normale",
+      "fc": "Normale",
+      "temperature": "Normale"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "title": "Anamnèse",
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction et objectif",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Symptomatologie",
+          "details": [
+            "Œdèmes palpébraux",
+            "Fatigue",
+            "Œdèmes des jambes"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Début de la symptomatologie",
+          "patientComment": "(Œdèmes palpébraux depuis avant-hier, fatigue depuis plus longtemps)"
+        },
+        {
+          "id": "a4",
+          "text": "Premier épisode",
+          "patientComment": "(Oui)"
+        },
+        {
+          "id": "a5",
+          "text": "Symptômes associés",
+          "details": [
+            "Douleurs",
+            "Problèmes mictionnels",
+            "Fièvre"
+          ],
+          "patientComment": "(Non / Non / Non)"
+        },
+        {
+          "id": "a6",
+          "text": "Antécédents médicaux",
+          "details": [
+            "Thrombose veineuse profonde récente",
+            "Cancer",
+            "Hépatite",
+            "VIH",
+            "Maladie auto-immune"
+          ],
+          "patientComment": "(TVP il y a 4 semaines / / / / LED 2006, actuellement pas de médicaments)"
+        },
+        {
+          "id": "a7",
+          "text": "Médication actuelle",
+          "patientComment": "(Marcoumar)"
+        },
+        {
+          "id": "a8",
+          "text": "Habitudes de vie",
+          "patientComment": "(Aucune)"
+        },
+        {
+          "id": "a9",
+          "text": "Antécédents familiaux",
+          "patientComment": "(Frère avec maladie rénale)"
+        },
+        {
+          "id": "a10",
+          "text": "Anamnèse sociale",
+          "patientComment": "(Vit avec 3 enfants et son mari dans un appartement, vendeuse dans une épicerie)"
+        },
+        {
+          "id": "a11",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "binaryOnly": false,
+          "details": [
+            "Anamnèse générale ciblée et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "examen": {
+      "title": "Examen clinique",
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Inspection et palpation du visage"
+        },
+        {
+          "id": "e2",
+          "text": "Examen abdominal"
+        },
+        {
+          "id": "e3",
+          "text": "Palpation rénale"
+        },
+        {
+          "id": "e4",
+          "text": "Auscultation pulmonaire et cardiaque"
+        },
+        {
+          "id": "e5",
+          "text": "Inspection des veines jugulaires"
+        },
+        {
+          "id": "e6",
+          "text": "Examen des jambes pour œdèmes",
+          "patientComment": "(Œdèmes légers)"
+        },
+        {
+          "id": "e7",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "binaryOnly": false,
+          "details": [
+            "Status général ciblé et bien conduit"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "management": {
+      "title": "Prise en charge",
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic de suspicion",
+          "patientComment": "(Syndrome néphrotique, ex: glomérulosclérose segmentaire et focale ou néphrite lupique)"
+        },
+        {
+          "id": "m2",
+          "text": "Diagnostics différentiels (au moins 2-3)"
+        },
+        {
+          "id": "m3",
+          "text": "Examens diagnostiques proposés",
+          "details": [
+            "Biologie",
+            "Bandelette urinaire"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Reconnaissance du syndrome néphrotique",
+          "patientComment": "(Macro-albuminurie ou syndrome néphrotique)"
+        },
+        {
+          "id": "m5",
+          "text": "Traitement initial",
+          "patientComment": "(Évaluer les inhibiteurs de l'ECA)"
+        },
+        {
+          "id": "m6",
+          "text": "Orientation spécialisée",
+          "patientComment": "(Référer au néphrologue pour biopsie rénale)"
+        },
+        {
+          "id": "m7",
+          "text": "Évaluation globale de la qualité de la prise en charge",
+          "binaryOnly": false,
+          "details": [
+            "Prise en charge générale cohérente et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    }
+  }
+}

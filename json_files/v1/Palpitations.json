@@ -1,0 +1,243 @@
+{
+  "title": "Palpitations",
+  "context": {
+    "setting": "Cabinet médical",
+    "patient": "Étudiante de 26 ans avec palpitations, paraît stressée, raconte peu spontanément",
+    "vitals": {
+      "fc": "150 bpm"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Nom et âge",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Motif de consultation",
+          "binaryOnly": true
+        },
+        {
+          "id": "a3",
+          "text": "Caractérisation des palpitations",
+          "details": [
+            "Début (depuis 4 semaines)",
+            "Moment d'apparition (plutôt le matin)",
+            "Durée (quelques minutes)",
+            "Irradiation (aucune)"
+          ],
+          "patientComment": "Depuis 4 semaines/Plutôt le matin/Quelques minutes/Aucune"
+        },
+        {
+          "id": "a4",
+          "text": "Rythme cardiaque",
+          "details": [
+            "Rythme tapé par la patiente (relativement rapide environ 150/min, régulier)"
+          ],
+          "patientComment": "Relativement rapide environ 150/min, régulier"
+        },
+        {
+          "id": "a5",
+          "text": "Symptômes associés",
+          "details": [
+            "Vertiges (parfois un peu étourdie mais pas très)",
+            "Syncope (jamais tombée/évanouie)",
+            "Dyspnée (non)",
+            "Douleurs thoraciques (un peu serré dans la poitrine)",
+            "Transpiration, sensation de chaleur (parfois un peu)"
+          ],
+          "patientComment": "Parfois un peu étourdie mais pas très/Jamais tombée/évanouie/Non/Un peu serré dans la poitrine/Parfois un peu"
+        },
+        {
+          "id": "a6",
+          "text": "Antécédents médicaux",
+          "details": [
+            "Maladies antérieures (aucune)",
+            "Maladies neurologiques (AIT ! troubles sensitifs, langage)",
+            "Maladies psychiatriques",
+            "Maladies cardiaques",
+            "Thyroïde"
+          ]
+        },
+        {
+          "id": "a7",
+          "text": "Anamnèse systémique",
+          "details": [
+            "Digestion (parfois constipée)",
+            "Uro-génital (règles régulières, faibles)",
+            "Troubles de la mémoire/concentration"
+          ],
+          "patientComment": "Parfois constipée/Règles régulières, faibles"
+        },
+        {
+          "id": "a8",
+          "text": "Habitudes alimentaires",
+          "details": [
+            "Boissons (plutôt peu, environ 1l par jour)",
+            "Café (5 tasses par jour)",
+            "Appétit (normal, mange peu - midi salade, soir muesli)",
+            "Évolution pondérale (pas changé, 1,72m, 51kg)"
+          ],
+          "patientComment": "Plutôt peu, environ 1l par jour/5 tasses par jour/Normal, mange peu - midi salade, soir muesli/Pas changé, 1,72m, 51kg"
+        },
+        {
+          "id": "a9",
+          "text": "Substances et médicaments",
+          "details": [
+            "Cigarettes (1/2 paquet/jour depuis 2 ans)",
+            "Alcool (rarement le weekend)",
+            "Drogues (cocaïne le weekend sur demande)",
+            "Médicaments (pilule contraceptive)"
+          ],
+          "patientComment": "1/2 paquet/jour depuis 2 ans/Rarement le weekend/Cocaïne le weekend sur demande/Pilule"
+        },
+        {
+          "id": "a10",
+          "text": "Activités et état psychologique",
+          "details": [
+            "Activités sportives (aucune, mais très active socialement)",
+            "État émotionnel (se sent très stressée mais gère tout, fait beaucoup en plus de l'université)",
+            "Sentiment de surcharge (se sent parfois dépassée et un peu seule)"
+          ],
+          "patientComment": "Aucune, mais très active socialement/Se sent très stressée mais gère tout, fait beaucoup en plus de l'université/Se sent parfois dépassée et un peu seule"
+        },
+        {
+          "id": "a11",
+          "text": "Antécédents familiaux",
+          "details": [
+            "Antécédents familiaux (aucun, en particulier maladies cardiaques)",
+            "Parents (parents divorcés, pas de contact avec le père)",
+            "Mère (femme d'affaires, n'a jamais le temps)",
+            "Fratrie (pas de frères et sœurs)"
+          ],
+          "patientComment": "Aucun, en particulier maladies cardiaques/Parents divorcés, pas de contact avec le père/Femme d'affaires, n'a jamais le temps/Pas de frères et sœurs"
+        },
+        {
+          "id": "a12",
+          "text": "Situation sociale",
+          "details": [
+            "Logement (vit seule)",
+            "Études (étudie le droit, beaucoup de stress)"
+          ],
+          "patientComment": "Vit seule/Étudie le droit, beaucoup de stress"
+        },
+        {
+          "id": "a13",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "binaryOnly": false,
+          "details": [
+            "Anamnèse générale ciblée et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Examen cardiovasculaire",
+          "details": [
+            "Palpation précordiale (normal)",
+            "Auscultation cardiaque (au moins 3 positions correctes, pouls régulier, aucune anomalie)",
+            "Examen du pouls"
+          ]
+        },
+        {
+          "id": "e2",
+          "text": "Examen pulmonaire",
+          "details": [
+            "Auscultation systématique antérieure et postérieure (normal)"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Examen thyroïdien",
+          "details": [
+            "Palpation de la thyroïde (normal)"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Examen général",
+          "details": [
+            "Inspection de la peau (pâle)"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "binaryOnly": false,
+          "details": [
+            "Status général ciblé et bien conduit"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic principal",
+          "details": [
+            "Palpitations liées au stress"
+          ]
+        },
+        {
+          "id": "m2",
+          "text": "Diagnostics différentiels",
+          "details": [
+            "Tachycardie supraventriculaire",
+            "Hyperthyroïdie"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Examens complémentaires",
+          "details": [
+            "Bilan biologique (NFS avec Hb, TSH, électrolytes)",
+            "ECG (éventuellement Holter 24h)",
+            "Éventuellement échocardiographie"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Traitement",
+          "details": [
+            "Modification du mode de vie",
+            "Réduction du stress",
+            "Exercices de relaxation (training autogène par exemple)",
+            "Hydratation suffisante",
+            "Faire du sport",
+            "Traitement spécifique selon bilan biologique/ECG"
+          ]
+        },
+        {
+          "id": "m5",
+          "text": "Conseil sur les habitudes",
+          "details": [
+            "Conseil concernant les habitudes alimentaires",
+            "Conseil concernant la cocaïne",
+            "Conseil concernant le tabagisme"
+          ]
+        },
+        {
+          "id": "m6",
+          "text": "Évaluation globale de la qualité de la prise en charge",
+          "binaryOnly": false,
+          "details": [
+            "Prise en charge générale cohérente et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    }
+  }
+}

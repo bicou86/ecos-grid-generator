@@ -1,0 +1,390 @@
+{
+  "title": "Douleur aux jambes",
+  "context": {
+    "setting": "Service d'urgences",
+    "patient": "M. Schneider, 72 ans, se présente aux urgences pour douleurs soudaines à la jambe avec impossibilité de marcher",
+    "vitals": {
+      "ta": "142/89 mmHg",
+      "fc": "84 bpm",
+      "fr": "14/min"
+    },
+    "patientComment": "Urgence vasculaire absolue: homme de 72 ans avec occlusion artérielle aiguë du membre inférieur droit. Multiples facteurs de risque cardiovasculaire. Fenêtre thérapeutique critique de 6 heures."
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction et tâche",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Caractérisation de la douleur - PQRSTU",
+          "details": [
+            "P - Provocation: [aucun facteur déclenchant]",
+            "Q - Qualité: [tranchante, lancinante]",
+            "R - Région: [mollet droit, irradiation jusqu'au pied]",
+            "S - Sévérité: [8/10]",
+            "T - Temps: [il y a 2 heures, début soudain]",
+            "U - Understanding: [premier épisode]"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥5 caractéristiques = 2 pts, 3-4 = 1 pt, <3 = 0 pt"
+        },
+        {
+          "id": "a3",
+          "text": "Impact fonctionnel et évolution",
+          "details": [
+            "[Ne peut plus marcher du tout]",
+            "Douleur au repos",
+            "Pas de claudication intermittente préalable",
+            "[Non] à l'angor d'effort",
+            "Limitation brutale des activités"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "a4",
+          "text": "Recherche de RED FLAGS vasculaires",
+          "redflagsSection": [
+            {
+              "text": "Douleur soudaine intense [oui, 8/10 il y a 2h]",
+              "isRedFlag": true
+            },
+            {
+              "text": "Membre pâle et froid [oui, coloration blanche]",
+              "isRedFlag": true
+            },
+            {
+              "text": "Pouls absents distalement [à vérifier]",
+              "isRedFlag": true
+            },
+            {
+              "text": "Paresthésies/paralysie [à évaluer]",
+              "isRedFlag": true
+            },
+            {
+              "text": "Fièvre ou signes infectieux [non]",
+              "isRedFlag": false
+            }
+          ],
+          "binaryOnly": false,
+          "patientComment": "Signes majeurs d'ischémie aiguë - urgence absolue",
+          "scoringRule": "≥4 red flags recherchés = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "a5",
+          "text": "Facteurs de risque cardiovasculaire",
+          "details": [
+            "[Hypertension artérielle]",
+            "[Diabète type 2]",
+            "[Dyslipidémie]",
+            "[Tabagisme 40 paquets-années]",
+            "[Père: infarctus à 63 ans]"
+          ],
+          "binaryOnly": false,
+          "patientComment": "Score de risque cardiovasculaire très élevé",
+          "scoringRule": "≥4 facteurs = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "a6",
+          "text": "Recherche de facteurs de risque thrombotiques",
+          "details": [
+            "[Non] immobilisation prolongée",
+            "[Non] chirurgie récente",
+            "[Non] antécédent TVP/EP",
+            "[Non] cancer actif",
+            "[Non] thrombophilie familiale"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥4 facteurs explorés = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "a7",
+          "text": "Médicaments et compliance thérapeutique",
+          "details": [
+            "[Bêtabloquant]",
+            "[IEC]",
+            "[Statine]",
+            "[Metformine]",
+            "Pas d'anticoagulant/antiagrégant"
+          ],
+          "binaryOnly": false,
+          "patientComment": "Absence d'antithrombotique malgré haut risque CV",
+          "scoringRule": "≥4 médicaments explorés = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "a8",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "binaryOnly": false,
+          "details": [
+            "Anamnèse orientée urgence vasculaire",
+            "RED FLAGS systématiquement recherchés",
+            "Facteurs de risque exhaustivement explorés"
+          ],
+          "scoringRule": "Excellente = 2 pts, suffisante = 1 pt, insuffisante = 0 pt"
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Inspection vasculaire comparative",
+          "details": [
+            "[Jambe non gonflée]",
+            "[Coloration blanche du genou au pied]",
+            "Comparaison avec membre controlatéral",
+            "Recherche de marbrures",
+            "Évaluation du remplissage veineux"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "e2",
+          "text": "Évaluation complète des 6 P",
+          "details": [
+            "Pain [présente, 8/10]",
+            "Pallor [présente, membre blanc]",
+            "Pulselessness [pouls distaux absents]",
+            "Paresthésies [à évaluer]",
+            "Paralysis [à tester]",
+            "Poikilothermia [membre froid]"
+          ],
+          "binaryOnly": false,
+          "patientComment": "Au moins 4/6 P présents = ischémie aiguë sévère",
+          "scoringRule": "≥5 P évalués = 2 pts, 3-4 = 1 pt, <3 = 0 pt"
+        },
+        {
+          "id": "e3",
+          "text": "Palpation systématique des pouls",
+          "details": [
+            "Pouls fémoral D [présent]",
+            "Pouls poplité D [absent]",
+            "Pouls tibial postérieur D [absent]",
+            "Pouls pédieux D [absent]",
+            "Comparaison côté gauche [normaux]"
+          ],
+          "binaryOnly": false,
+          "patientComment": "Occlusion probable niveau poplité",
+          "scoringRule": "≥4 pouls palpés = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "e4",
+          "text": "Examen neurologique d'urgence",
+          "details": [
+            "Sensibilité tactile [intacte (?)]",
+            "Sensibilité profonde",
+            "Force musculaire distale",
+            "Réflexes ostéo-tendineux",
+            "Test de mobilité active"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥4 tests = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "e5",
+          "text": "Exclusion des diagnostics différentiels",
+          "details": [
+            "[Pas de douleur compression mollet] - TVP",
+            "[Pas de percussion axiale douloureuse]",
+            "[Pas de signe de Homans]",
+            "Pas de cordon induré",
+            "Pas de signes inflammatoires locaux"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥4 signes négatifs = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "e6",
+          "text": "Examen cardiovasculaire complet",
+          "details": [
+            "[Normal] auscultatoire",
+            "Recherche arythmie",
+            "Souffle vasculaire",
+            "Signes d'insuffisance cardiaque",
+            "TA aux deux bras"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥3 éléments = 2 pts, 2 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "e7",
+          "text": "Évaluation globale de la qualité de l'examen",
+          "binaryOnly": false,
+          "details": [
+            "Examen vasculaire exhaustif",
+            "Signes d'ischémie systématiquement recherchés",
+            "Urgence correctement évaluée"
+          ],
+          "scoringRule": "Excellent = 2 pts, suffisant = 1 pt, insuffisant = 0 pt"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic principal et classification",
+          "patientComment": "Occlusion artérielle aiguë membre inférieur droit - Rutherford IIb (menace immédiate du membre)",
+          "details": [
+            "Début brutal < 2 heures",
+            "Absence pouls distaux",
+            "Membre pâle et froid",
+            "Sensibilité préservée (IIa) ou altérée (IIb)",
+            "Urgence de revascularisation"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "Diagnostic correct avec classification = 2 pts, diagnostic seul = 1 pt, incorrect = 0 pt"
+        },
+        {
+          "id": "m2",
+          "text": "Diagnostics différentiels hiérarchisés",
+          "ddSection": {
+            "categories": [
+              {
+                "name": "Vasculaires",
+                "items": [
+                  "Thrombose in situ sur athérome",
+                  "Embolie artérielle (FA)",
+                  "Dissection artérielle",
+                  "Syndrome de l'artère poplitée piégée"
+                ]
+              },
+              {
+                "name": "Veineuses",
+                "items": [
+                  "TVP avec phlegmatia",
+                  "Syndrome post-thrombotique"
+                ]
+              },
+              {
+                "name": "Non vasculaires",
+                "items": [
+                  "Syndrome compartimental",
+                  "Rupture kyste de Baker",
+                  "Neuropathie aiguë"
+                ]
+              }
+            ]
+          },
+          "binaryOnly": false,
+          "scoringRule": "≥6 DD pertinents = 2 pts, 3-5 DD = 1 pt, <3 DD = 0 pt"
+        },
+        {
+          "id": "m3",
+          "text": "Examens complémentaires urgents",
+          "binaryOnly": false,
+          "scoringRule": "≥3 examens appropriés = 2 pts, 2 = 1 pt, <2 = 0 pt",
+          "details": [
+            "ECG immédiat → Recherche FA, IDM silencieux",
+            "Écho-Doppler artériel → Localisation occlusion, flux résiduel",
+            "Angio-CT membres inférieurs → Si disponible <30min, planification thérapeutique",
+            "Biologie urgente → Créat, CPK, lactates, troponine, D-dimères, gaz du sang"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Prise en charge immédiate protocolisée",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Mesures générales urgentes",
+                "content": "• 2 VVP de bon calibre\n• O2 si SaO2 <95%\n• Monitoring continu (scope)\n• Position déclive membre\n• Protection thermique"
+              },
+              {
+                "title": "Anticoagulation immédiate",
+                "content": "• HNF IV bolus 80 UI/kg\n• Puis 18 UI/kg/h IVSE\n• Objectif TCA 2-3x témoin\n• Pas attendre examens"
+              },
+              {
+                "title": "Analgésie et support",
+                "content": "• Morphine IV titration\n• Antiémétiques si besoin\n• Hydratation IV prudente\n• Sonde urinaire si besoin"
+              }
+            ]
+          },
+          "binaryOnly": false,
+          "scoringRule": "≥3 catégories complètes = 2 pts, 2 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "m5",
+          "text": "Stratégie de revascularisation urgente",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Embolectomie chirurgicale",
+                "content": "• Technique Fogarty\n• Si échec endovasculaire\n• Si contre-indication thrombolyse\n• Délai <6h idéalement"
+              },
+              {
+                "title": "Thrombolyse dirigée",
+                "content": "• Cathéter intra-artériel\n• rt-PA 0.5-1 mg/h\n• Si occlusion <14 jours\n• Surveillance USI"
+              },
+              {
+                "title": "Thrombectomie percutanée",
+                "content": "• Aspiration mécanique\n• ± angioplastie/stent\n• Centre expert requis\n• Alternative à chirurgie"
+              }
+            ]
+          },
+          "binaryOnly": false,
+          "patientComment": "Choix selon expertise locale et délai",
+          "scoringRule": "≥3 options détaillées = 2 pts, 2 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "m6",
+          "text": "Surveillance péri-procédurale",
+          "details": [
+            "Pouls horaires post-revascularisation",
+            "Syndrome de reperfusion (œdème, douleur)",
+            "CPK/créatinine/diurèse (rhabdomyolyse)",
+            "Syndrome compartimental (pression++)",
+            "Hémorragie site ponction"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "m7",
+          "text": "Prévention secondaire systématique",
+          "details": [
+            "Bilan étiologique complet (ETT/ETO, Holter)",
+            "Double antiagrégation si stent",
+            "Anticoagulation si FA/thrombus",
+            "Statine haute intensité",
+            "Sevrage tabagique accompagné"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥4 mesures = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "m8",
+          "text": "Information patient et consentement",
+          "details": [
+            "Urgence vitale du membre expliquée",
+            "Options thérapeutiques et risques",
+            "Risque amputation si retard",
+            "Consentement éclairé urgent",
+            "Information famille/personne de confiance"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥4 points = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "m9",
+          "text": "Évaluation globale de la prise en charge",
+          "binaryOnly": false,
+          "details": [
+            "Urgence absolue reconnue",
+            "Protocole de revascularisation urgent",
+            "Prévention complications anticipée"
+          ],
+          "scoringRule": "Excellente = 2 pts, adéquate = 1 pt, insuffisante = 0 pt"
+        }
+      ]
+    }
+  }
+}

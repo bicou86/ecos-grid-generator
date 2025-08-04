@@ -1,0 +1,482 @@
+{
+  "title": "Lombalgie I",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Mme Huber, 61 ans, se présente en consultation pour des douleurs dorsales"
+  },
+  "sections": {
+    "anamnese": {
+      "title": "Anamnèse",
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction et objectif",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Motif de consultation principal",
+          "patientComment": "Douleurs dorsales depuis 3 jours"
+        },
+        {
+          "id": "a3",
+          "text": "Caractéristiques temporelles précises",
+          "details": [
+            "Début exact [brutal il y a 3 jours]",
+            "Heure de survenue [pas précisée]",
+            "Activité lors du début [aucune, spontané]",
+            "Évolution [stable depuis]",
+            "Première fois [à clarifier]",
+            "Épisodes antérieurs [à rechercher]"
+          ],
+          "patientComment": "Début brutal sans facteur déclenchant",
+          "scoringRule": "≥4 éléments temporels = 2 pts, 2-3 = 1 pt"
+        },
+        {
+          "id": "a4",
+          "text": "Localisation et irradiation",
+          "details": [
+            "Localisation précise [région lombaire]",
+            "Niveau vertébral [L3 probable]",
+            "Médiane ou latéralisée [médiane]",
+            "Irradiation membres inférieurs [non]",
+            "Irradiation en ceinture [non]",
+            "Territoire radiculaire [aucun]"
+          ],
+          "patientComment": "Douleur lombaire médiane sans irradiation",
+          "scoringRule": "≥4 éléments = 2 pts"
+        },
+        {
+          "id": "a5",
+          "text": "Caractéristiques de la douleur",
+          "details": [
+            "Type [pression constante]",
+            "Intensité EVA [6/10]",
+            "Rythme [mécanique]",
+            "Horaire [diurne principalement]",
+            "Durée des crises [continue]",
+            "Qualité [sourde, profonde]"
+          ],
+          "patientComment": "Douleur mécanique modérée à sévère",
+          "scoringRule": "≥4 caractéristiques = 2 pts"
+        },
+        {
+          "id": "a6",
+          "text": "Facteurs modulants",
+          "details": [
+            "Amélioration au repos [oui, position assise ou couchée]",
+            "Aggravation à l'effort [oui, en se levant]",
+            "Position antalgique [assise ou allongée]",
+            "Effet de la toux/éternuement [à rechercher]",
+            "Effet Valsalva [à rechercher]",
+            "Douleur nocturne [non mentionnée]"
+          ],
+          "patientComment": "Profil mécanique typique",
+          "scoringRule": "≥4 facteurs = 2 pts"
+        },
+        {
+          "id": "a7",
+          "text": "Red flags neurologiques recherchés",
+          "details": [
+            "Faiblesse membres inférieurs [non]",
+            "Troubles sensitifs MI [non]",
+            "Incontinence urinaire [non]",
+            "Incontinence fécale [non]",
+            "Rétention urinaire [non]",
+            "Anesthésie périnéale [non]",
+            "Troubles de la marche [non]",
+            "Dysfonction érectile [NA]"
+          ],
+          "patientComment": "Pas de signe de compression neurologique",
+          "scoringRule": "≥6 red flags explorés = 2 pts, 4-5 = 1 pt"
+        },
+        {
+          "id": "a8",
+          "text": "Red flags systémiques",
+          "details": [
+            "Fièvre [non]",
+            "Frissons [non]",
+            "Sueurs nocturnes [non]",
+            "Perte de poids [non]",
+            "Asthénie inexpliquée [non]",
+            "Anorexie [non]",
+            "Altération état général [non]"
+          ],
+          "patientComment": "Pas de syndrome inflammatoire ou néoplasique",
+          "scoringRule": "≥5 symptômes B = 2 pts"
+        },
+        {
+          "id": "a9",
+          "text": "Antécédents oncologiques détaillés",
+          "details": [
+            "Cancer du sein [il y a 5 ans]",
+            "Type histologique [à préciser]",
+            "Stade initial [à préciser]",
+            "Traitement reçu [mastectomie + ?]",
+            "Chimiothérapie [à préciser]",
+            "Radiothérapie [à préciser]",
+            "Hormonothérapie [à préciser]",
+            "Statut actuel [rémission complète présumée]",
+            "Suivi oncologique [à préciser]"
+          ],
+          "patientComment": "ATCD cancer sein, détails thérapeutiques à compléter",
+          "scoringRule": "≥6 éléments oncologiques = 2 pts"
+        },
+        {
+          "id": "a10",
+          "text": "Facteurs de risque d'ostéoporose",
+          "details": [
+            "Âge [61 ans]",
+            "Ménopause précoce [45 ans]",
+            "Tabagisme [80 paquets-années]",
+            "Faible poids [à évaluer]",
+            "Sédentarité [à évaluer]",
+            "Carence vitamine D [probable]",
+            "Corticothérapie [non]",
+            "ATCD fractures [non]",
+            "ATCD familiaux ostéoporose [à rechercher]",
+            "Consommation calcium [à évaluer]"
+          ],
+          "patientComment": "Multiples facteurs de risque majeurs",
+          "scoringRule": "≥7 facteurs = 2 pts, 5-6 = 1 pt"
+        },
+        {
+          "id": "a11",
+          "text": "Autres antécédents médicaux",
+          "details": [
+            "Pathologies rhumatismales [non]",
+            "Maladies endocriniennes [non]",
+            "Insuffisance rénale [non]",
+            "Hyperparathyroïdie [non]",
+            "Malabsorption [non]",
+            "Chirurgies rachidiennes [non]"
+          ],
+          "patientComment": "Pas d'autre pathologie significative"
+        },
+        {
+          "id": "a12",
+          "text": "Traitements et allergies",
+          "details": [
+            "Médicaments actuels [aucun]",
+            "Automédication récente [à rechercher]",
+            "Supplémentation Ca/VitD [non]",
+            "Allergies médicamenteuses [guêpes seulement]",
+            "Intolérances [à rechercher]"
+          ],
+          "patientComment": "Pas de traitement régulier"
+        },
+        {
+          "id": "a13",
+          "text": "Mode de vie et activités",
+          "details": [
+            "Profession [à préciser]",
+            "Port de charges [à évaluer]",
+            "Postures prolongées [à évaluer]",
+            "Activité physique [à préciser]",
+            "Sports pratiqués [à préciser]",
+            "Chutes récentes [non mentionnées]",
+            "Autonomie [présumée complète]"
+          ],
+          "patientComment": "Contexte socio-professionnel à approfondir",
+          "scoringRule": "≥5 éléments = 2 pts"
+        },
+        {
+          "id": "a14",
+          "text": "Habitudes toxiques détaillées",
+          "details": [
+            "Tabac actif [40 cigarettes/jour]",
+            "Durée tabagisme [40 ans]",
+            "Paquets-années [80 PA]",
+            "Tentatives sevrage [à rechercher]",
+            "Alcool [non]",
+            "Autres substances [non]"
+          ],
+          "patientComment": "Tabagisme majeur, facteur de risque ostéoporose"
+        },
+        {
+          "id": "a15",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "binaryOnly": false,
+          "details": [
+            "Anamnèse complète avec recherche systématique des red flags"
+          ],
+          "scoringRule": "Anamnèse excellente = 2 pts, correcte = 1 pt, insuffisante = 0 pt"
+        }
+      ]
+    },
+    "examen": {
+      "title": "Examen clinique",
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Inspection du rachis",
+          "details": [
+            "Attitude antalgique [à rechercher]",
+            "Déformation sagittale [normale]",
+            "Scoliose [absente]",
+            "Cyphose [normale pour l'âge]",
+            "Cicatrices [mastectomie]",
+            "Éruptions cutanées [non]"
+          ],
+          "patientComment": "Rachis d'aspect normal",
+          "scoringRule": "≥4 éléments = 2 pts"
+        },
+        {
+          "id": "e2",
+          "text": "Palpation rachidienne méthodique",
+          "details": [
+            "Palpation épineuses [L1 à S1]",
+            "Douleur élective [L3]",
+            "Percussion vertébrale [positive L3]",
+            "Palpation paravertébrale [contracture bilatérale]",
+            "Points gâchettes [non]",
+            "Palpation sacro-iliaque [normale]"
+          ],
+          "patientComment": "Douleur élective L3 avec percussion positive",
+          "scoringRule": "≥5 éléments = 2 pts"
+        },
+        {
+          "id": "e3",
+          "text": "Mobilité rachidienne complète",
+          "details": [
+            "Distance doigts-sol [à mesurer]",
+            "Flexion antérieure [limitée, douloureuse]",
+            "Extension [limitée, douloureuse]",
+            "Inclinaisons latérales [conservées]",
+            "Rotations [conservées]",
+            "Test de Schober [à réaliser]"
+          ],
+          "patientComment": "Limitation douloureuse flexion/extension",
+          "scoringRule": "≥5 mobilités testées = 2 pts"
+        },
+        {
+          "id": "e4",
+          "text": "Tests spécifiques rachis",
+          "details": [
+            "Compression axiale [positive, reproduit douleur]",
+            "Test de Lasègue [négatif]",
+            "Lasègue controlatéral [négatif]",
+            "Test de Bragard [négatif]",
+            "Signe de la sonnette [négatif]",
+            "Test de Léri [négatif]"
+          ],
+          "patientComment": "Compression axiale positive, pas de signe radiculaire",
+          "scoringRule": "≥4 tests = 2 pts"
+        },
+        {
+          "id": "e5",
+          "text": "Examen neurologique systématique",
+          "details": [
+            "Force musculaire L2-S1 [5/5 partout]",
+            "Testing segmentaire précis [normal]",
+            "Sensibilité superficielle [normale]",
+            "Sensibilité profonde [normale]",
+            "ROT rotuliens [normaux, symétriques]",
+            "ROT achilléens [normaux, symétriques]",
+            "Babinski [négatif bilatéral]",
+            "Clonus [absent]"
+          ],
+          "patientComment": "Examen neurologique strictement normal",
+          "scoringRule": "≥6 éléments = 2 pts"
+        },
+        {
+          "id": "e6",
+          "text": "Examen des hanches",
+          "details": [
+            "Flexion passive [normale, indolore]",
+            "Rotation interne [normale]",
+            "Rotation externe [normale]",
+            "Abduction [normale]",
+            "Test de FABER [négatif]",
+            "Douleur projetée [absente]"
+          ],
+          "patientComment": "Hanches normales, élimine origine coxo-fémorale",
+          "scoringRule": "≥4 tests = 2 pts"
+        },
+        {
+          "id": "e7",
+          "text": "Examen vasculaire",
+          "details": [
+            "Pouls fémoraux [présents, symétriques]",
+            "Pouls poplités [présents]",
+            "Pouls pédieux [présents]",
+            "Pouls tibiaux post [présents]",
+            "Temps recoloration [< 2 sec]",
+            "Œdèmes MI [absents]"
+          ],
+          "patientComment": "Circulation périphérique normale"
+        },
+        {
+          "id": "e8",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "binaryOnly": false,
+          "details": [
+            "Examen rachidien complet avec tests spécifiques"
+          ],
+          "scoringRule": "Examen excellent = 2 pts, correct = 1 pt, insuffisant = 0 pt"
+        }
+      ]
+    },
+    "management": {
+      "title": "Prise en charge",
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic principal",
+          "patientComment": "Fracture vertébrale ostéoporotique L3 (tassement) sur terrain à risque",
+          "scoringRule": "Diagnostic précis avec localisation = 2 pts"
+        },
+        {
+          "id": "m2",
+          "text": "Diagnostics différentiels complets",
+          "ddSection": {
+            "categories": [
+              {
+                "name": "Fractures pathologiques",
+                "items": [
+                  "Fracture ostéoporotique (plus probable)",
+                  "Métastase vertébrale (ATCD cancer sein)",
+                  "Myélome multiple",
+                  "Fracture sur hyperparathyroïdie"
+                ]
+              },
+              {
+                "name": "Causes infectieuses",
+                "items": [
+                  "Spondylodiscite bactérienne",
+                  "Tuberculose vertébrale (mal de Pott)",
+                  "Ostéomyélite vertébrale"
+                ]
+              },
+              {
+                "name": "Causes mécaniques",
+                "items": [
+                  "Lombalgie commune aiguë",
+                  "Hernie discale",
+                  "Arthrose facettaire",
+                  "Instabilité vertébrale"
+                ]
+              }
+            ]
+          },
+          "scoringRule": "≥8 diagnostics organisés = 2 pts, 5-7 = 1 pt"
+        },
+        {
+          "id": "m3",
+          "text": "Examens biologiques ciblés",
+          "details": [
+            "NFS, VS, CRP (inflammation/infection)",
+            "Calcémie, phosphatémie, PAL",
+            "25-OH vitamine D (carence probable)",
+            "PTH (hyperparathyroïdie)",
+            "TSH (hyperthyroïdie)",
+            "Créatinine, urée (fonction rénale)",
+            "Électrophorèse protéines (myélome)",
+            "Marqueurs tumoraux si suspicion métastases"
+          ],
+          "patientComment": "Bilan phosphocalcique et exclusion causes secondaires",
+          "scoringRule": "≥6 examens = 2 pts, 4-5 = 1 pt"
+        },
+        {
+          "id": "m4",
+          "text": "Imagerie appropriée",
+          "details": [
+            "Radiographies rachis lombaire F+P en urgence",
+            "Recherche tassement vertébral",
+            "IRM si doute diagnostic",
+            "Scanner si fracture complexe",
+            "Densitométrie osseuse (DMO) à programmer",
+            "Scintigraphie si suspicion métastases multiples"
+          ],
+          "patientComment": "Radio urgente, DMO différée pour confirmer ostéoporose",
+          "scoringRule": "≥4 examens planifiés = 2 pts"
+        },
+        {
+          "id": "m5",
+          "text": "Traitement de la phase aiguë",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Analgésie multimodale",
+                "content": "• Paracétamol 1g × 4/jour systématique\n• AINS (ibuprofène 400mg × 3/j) si besoin\n• Tramadol 50-100mg × 2-3/j si insuffisant\n• Éviter morphiniques (risque chute)\n• Application locale chaleur/froid\n• TENS si disponible"
+              },
+              {
+                "title": "Mobilisation précoce",
+                "content": "• Éviter alitement prolongé (max 48h)\n• Lever progressif avec aide\n• Maintien activités quotidiennes adaptées\n• Kinésithérapie douce précoce\n• Corset rigide temporaire si douleur ++\n• Éducation posturale"
+              },
+              {
+                "title": "Mesures associées",
+                "content": "• Prévention constipation (laxatifs)\n• Prévention thrombose si alitée\n• Supplémentation calcium/vit D immédiate\n• Arrêt tabac impératif\n• Adaptation environnement"
+              }
+            ]
+          },
+          "scoringRule": "Traitement complet phase aiguë = 2 pts"
+        },
+        {
+          "id": "m6",
+          "text": "Traitement de l'ostéoporose",
+          "details": [
+            "Calcium 1000-1200 mg/jour",
+            "Vitamine D3 800-2000 UI/jour (selon taux)",
+            "Bisphosphonates 1ère ligne (alendronate 70mg/sem)",
+            "Alternative: denosumab 60mg SC/6 mois",
+            "Tériparatide si fractures multiples",
+            "Surveillance adhérence et tolérance"
+          ],
+          "patientComment": "Traitement anti-ostéoporotique indispensable",
+          "scoringRule": "≥4 éléments = 2 pts"
+        },
+        {
+          "id": "m7",
+          "text": "Prévention et suivi",
+          "details": [
+            "Prévention chutes (domicile, vue, médicaments)",
+            "Programme exercices adaptés",
+            "Nutrition (protéines, calcium)",
+            "Sevrage tabagique accompagné",
+            "DMO contrôle à 2 ans",
+            "Radiographies si nouvelles douleurs",
+            "Marqueurs remodelage osseux"
+          ],
+          "patientComment": "Programme préventif global",
+          "scoringRule": "≥5 mesures = 2 pts"
+        },
+        {
+          "id": "m8",
+          "text": "Coordination des soins",
+          "details": [
+            "Suivi clinique à 2-4 semaines",
+            "Rhumatologue si échec traitement",
+            "Oncologue (surveillance cancer sein)",
+            "Kinésithérapeute spécialisé",
+            "Ergothérapeute si besoin",
+            "Algologue si douleur réfractaire"
+          ],
+          "patientComment": "Approche multidisciplinaire"
+        },
+        {
+          "id": "m9",
+          "text": "Évaluation globale de la prise en charge",
+          "binaryOnly": false,
+          "details": [
+            "PEC complète fracture vertébrale avec prévention secondaire"
+          ],
+          "scoringRule": "PEC excellente = 2 pts, correcte = 1 pt, insuffisante = 0 pt"
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "images": [
+      {
+        "id": "annexe1",
+        "data": "grilles_generees/images/lombalgie-i-img.jpg",
+        "title": "Radiographie lombaire",
+        "description": "Radiographie de la colonne lombaire en incidence latérale"
+      }
+    ]
+  }
+}

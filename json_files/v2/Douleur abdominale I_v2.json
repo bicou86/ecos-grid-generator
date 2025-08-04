@@ -1,0 +1,438 @@
+{
+  "title": "Douleur abdominale I",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Mme Hebel, 73 ans, se présente chez le médecin généraliste pour douleurs abdominales"
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction et tâche",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Identification du symptôme principal",
+          "binaryOnly": true,
+          "patientComment": "Mal au ventre"
+        },
+        {
+          "id": "a3",
+          "text": "Caractérisation de la douleur (OPQRST)",
+          "details": [
+            "Localisation précise [bas ventre à gauche - fosse iliaque gauche]",
+            "Type/caractère [piquant/en coup de poignard]",
+            "Intensité [6/10 sur l'échelle]",
+            "Irradiation [non]"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Évolution temporelle",
+          "details": [
+            "Début [depuis 2 jours]",
+            "Mode d'apparition [relativement soudain]",
+            "Évolution [s'aggravant progressivement]",
+            "Périodicité [constante]"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Facteurs modulateurs",
+          "details": [
+            "Facteurs aggravants [aucun identifié]",
+            "Facteurs améliorants [aucune amélioration]",
+            "Position antalgique [non mentionnée]",
+            "Relation avec l'alimentation [pas de changement alimentaire]"
+          ]
+        },
+        {
+          "id": "a6",
+          "text": "Symptômes digestifs associés",
+          "details": [
+            "Nausées [oui]",
+            "Vomissements [non mentionnés]",
+            "Transit intestinal - diarrhée [oui]",
+            "Flatulences [oui]",
+            "Constipation [non]"
+          ]
+        },
+        {
+          "id": "a7",
+          "text": "Recherche de signes d'alarme",
+          "details": [
+            "Fièvre [non mentionnée]",
+            "Perte de poids inexpliquée [non]",
+            "Symptômes B (sueurs nocturnes) [non]",
+            "Sang dans les selles [non mentionné]",
+            "Masse palpable [à rechercher]"
+          ]
+        },
+        {
+          "id": "a8",
+          "text": "Anamnèse urogynécologique",
+          "details": [
+            "Modifications mictionnelles [non]",
+            "Dysurie, pollakiurie [non]",
+            "Hématurie [non]",
+            "Pertes vaginales anormales [non applicables - ménopausée]",
+            "Métrorragies post-ménopausiques [non]"
+          ]
+        },
+        {
+          "id": "a9",
+          "text": "Antécédents obstétricaux et gynécologiques",
+          "details": [
+            "Parité [2 enfants nés normalement]",
+            "Ménopause [oui - âge 73 ans]",
+            "Antécédents gynécologiques [non mentionnés]",
+            "Hystérectomie [non mentionnée]"
+          ]
+        },
+        {
+          "id": "a10",
+          "text": "Antécédents médicaux personnels",
+          "details": [
+            "Pathologies chroniques [hypertension artérielle]",
+            "Chirurgies abdominales antérieures [non]",
+            "Coloscopie de dépistage [il y a 5 ans - normale]",
+            "Antécédents de diverticulose [non mentionnés]"
+          ]
+        },
+        {
+          "id": "a11",
+          "text": "Traitement actuel et allergies",
+          "details": [
+            "Médicaments actuels [Valsartan pour hypertension]",
+            "Allergies médicamenteuses [aucune]",
+            "Automédication récente [non mentionnée]"
+          ]
+        },
+        {
+          "id": "a12",
+          "text": "Habitudes de vie et facteurs de risque",
+          "details": [
+            "Tabagisme [non]",
+            "Consommation d'alcool [1 verre de vin par jour]",
+            "Toxicomanie [non]",
+            "Activité physique [non mentionnée]",
+            "Régime alimentaire (fibres) [non exploré]"
+          ]
+        },
+        {
+          "id": "a13",
+          "text": "Anamnèse familiale",
+          "patientComment": "Négative pour pathologies digestives",
+          "details": [
+            "Cancer colorectal familial",
+            "Maladies inflammatoires intestinales",
+            "Diverticulose familiale"
+          ]
+        },
+        {
+          "id": "a14",
+          "text": "Contexte psychosocial",
+          "details": [
+            "Situation familiale [vit avec son époux]",
+            "Autonomie [autonome]",
+            "Stress récent [non mentionné]",
+            "Support social [présent]"
+          ]
+        },
+        {
+          "id": "a15",
+          "text": "Anamnèse par systèmes",
+          "details": [
+            "Symptômes cardiovasculaires [non]",
+            "Symptômes respiratoires [non]",
+            "Symptômes neurologiques [non]",
+            "Symptômes articulaires [non]"
+          ]
+        },
+        {
+          "id": "a16",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "binaryOnly": false,
+          "details": [
+            "Anamnèse complète et ciblée sur la pathologie digestive"
+          ],
+          "scoringRule": "Bien = 2 pts, suffisant = 1 pt, insuffisant = 0 pt"
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Inspection générale et signes vitaux",
+          "details": [
+            "État général [conservé]",
+            "Position antalgique [non]",
+            "Faciès douloureux [probable]",
+            "Signes vitaux [température à mesurer]"
+          ]
+        },
+        {
+          "id": "e2",
+          "text": "Inspection abdominale",
+          "details": [
+            "Distension abdominale [non]",
+            "Asymétrie [non]",
+            "Cicatrices [absentes]",
+            "Péristaltisme visible [non]",
+            "Circulation collatérale [non]"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Auscultation abdominale",
+          "details": [
+            "Bruits hydroaériques [normaux]",
+            "Qualité (gargouillis, cliquetis) [normaux]",
+            "Quantité (5-34/min) [normale]",
+            "Souffles vasculaires [non]"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Percussion abdominale",
+          "details": [
+            "Tympanisme généralisé [non]",
+            "Matité déclive [non]",
+            "Douleur à la percussion [fosse iliaque gauche]",
+            "Signe du flot [négatif]"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Palpation superficielle et profonde",
+          "details": [
+            "Douleur à la pression [fosse iliaque gauche]",
+            "Résistance/masse palpable [résistance dans le quadrant inférieur gauche]",
+            "Défense musculaire [non]",
+            "Contracture abdominale [non]"
+          ]
+        },
+        {
+          "id": "e6",
+          "text": "Recherche de signes péritonéaux",
+          "details": [
+            "Douleur à la décompression (Blumberg) [non]",
+            "Signe de Murphy [non applicable]",
+            "Signe du psoas [négatif]",
+            "Signe de l'obturateur [négatif]",
+            "Signe de Rovsing [négatif]"
+          ]
+        },
+        {
+          "id": "e7",
+          "text": "Palpation des organes",
+          "details": [
+            "Foie [non palpable]",
+            "Rate [non palpable]",
+            "Reins [non palpables]",
+            "Vessie [non distendue]"
+          ]
+        },
+        {
+          "id": "e8",
+          "text": "Examen des orifices herniaires",
+          "details": [
+            "Hernies inguinales [absentes]",
+            "Hernie crurale [absente]",
+            "Hernie ombilicale [absente]"
+          ]
+        },
+        {
+          "id": "e9",
+          "text": "Toucher rectal",
+          "details": [
+            "Tonus sphinctérien [normal]",
+            "Masses rectales [absentes]",
+            "Sang au doigtier [absent]",
+            "Douglas douloureux [non]"
+          ]
+        },
+        {
+          "id": "e10",
+          "text": "Examen gynécologique si indiqué",
+          "details": [
+            "Toucher vaginal",
+            "Mobilité utérine douloureuse",
+            "Masses annexielles"
+          ]
+        },
+        {
+          "id": "e11",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "binaryOnly": false,
+          "details": [
+            "Examen abdominal complet et systématique bien conduit"
+          ],
+          "scoringRule": "Bien = 2 pts, suffisant = 1 pt, insuffisant = 0 pt"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic principal",
+          "patientComment": "Diverticulite sigmoïdienne non compliquée"
+        },
+        {
+          "id": "m2",
+          "text": "Diagnostics différentiels",
+          "scoringRule": "Au moins 5 diagnostics pertinents = 2 pts, 3-4 = 1 pt, moins de 3 = 0 pt",
+          "ddSection": {
+            "categories": [
+              {
+                "name": "Diagnostics différentiels à considérer",
+                "items": [
+                  "Pathologie gynécologique (annexite, kyste ovarien compliqué)",
+                  "Cystite/pyélonéphrite",
+                  "Colite (maladie inflammatoire chronique intestinale - MICI)",
+                  "Cancer colorectal",
+                  "Colite ischémique",
+                  "Appendicite (localisation atypique)",
+                  "Hernie étranglée",
+                  "Constipation sévère/fécalome",
+                  "Syndrome de l'intestin irritable",
+                  "Pathologie vasculaire (anévrisme aortique)"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m3",
+          "text": "Examens biologiques",
+          "details": [
+            "NFS avec formule [leucocytose attendue]",
+            "CRP [élevée dans la diverticulite]",
+            "VS si disponible",
+            "Ionogramme, urée, créatinine",
+            "Analyse d'urine (ECBU) [pour exclure infection urinaire]",
+            "Test de grossesse si approprié"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Examens d'imagerie",
+          "details": [
+            "Échographie abdominale [visualisation des diverticules enflammés, épaississement pariétal]",
+            "CT abdominal avec contraste (gold standard)",
+            "Radiographie abdominale si suspicion de perforation",
+            "IRM si contre-indication au CT"
+          ]
+        },
+        {
+          "id": "m5",
+          "text": "Classification de la diverticulite",
+          "details": [
+            "Classification de Hinchey",
+            "Diverticulite non compliquée",
+            "Diverticulite compliquée (abcès, perforation, péritonite)"
+          ]
+        },
+        {
+          "id": "m6",
+          "text": "Prise en charge thérapeutique",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Diverticulite légère (ambulatoire)",
+                "content": "• Antibiothérapie orale 7-10 jours (amoxicilline-clavulanate ou ciprofloxacine + métronidazole)\n• Analgésie (paracétamol, éviter AINS)\n• Régime liquide puis pauvre en résidus\n• Repos digestif relatif\n• Application de froid sur la zone douloureuse"
+              },
+              {
+                "title": "Diverticulite modérée à sévère (hospitalisation)",
+                "content": "• Mise à jeun stricte\n• Hydratation IV\n• Antibiothérapie IV (ceftriaxone + métronidazole)\n• Analgésie IV\n• Surveillance clinique et biologique"
+              },
+              {
+                "title": "Indications chirurgicales",
+                "content": "• Échec du traitement conservateur\n• Complications (perforation, abcès non drainable)\n• Récidives fréquentes\n• Chirurgie élective après résolution (résection sigmoïdienne)"
+              },
+              {
+                "title": "Mesures préventives",
+                "content": "• Régime riche en fibres après phase aiguë\n• Hydratation adéquate\n• Activité physique régulière\n• Éviter constipation\n• Arrêt tabac si applicable"
+              }
+            ]
+          }
+        },
+        {
+          "id": "m7",
+          "text": "Suivi et surveillance",
+          "details": [
+            "Contrôle clinique à 48-72h si ambulatoire",
+            "Contrôle biologique si pas d'amélioration",
+            "Coloscopie 6-8 semaines après l'épisode [exclusion de sténoses, tumeurs]",
+            "Éducation sur les signes d'alarme"
+          ]
+        },
+        {
+          "id": "m8",
+          "text": "Critères d'hospitalisation",
+          "redflagsSection": [
+            {
+              "text": "Signes de péritonite ou sepsis"
+            },
+            {
+              "text": "Échec du traitement ambulatoire à 72h"
+            },
+            {
+              "text": "Impossibilité de s'alimenter ou de s'hydrater"
+            },
+            {
+              "text": "Comorbidités importantes (immunosuppression)"
+            },
+            {
+              "text": "Doute diagnostique"
+            },
+            {
+              "text": "Âge > 85 ans avec facteurs de risque"
+            },
+            {
+              "text": "Complications à l'imagerie"
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "text": "Complications potentielles",
+          "details": [
+            "Abcès péricolique",
+            "Perforation avec péritonite",
+            "Fistules (colovésicale, colovaginale)",
+            "Sténose colique",
+            "Hémorragie diverticulaire"
+          ]
+        },
+        {
+          "id": "m10",
+          "text": "Éducation du patient",
+          "details": [
+            "Explication de la pathologie diverticulaire",
+            "Importance de l'observance thérapeutique",
+            "Modifications du mode de vie",
+            "Signes nécessitant une reconsultation urgente",
+            "Prévention des récidives"
+          ]
+        },
+        {
+          "id": "m11",
+          "text": "Évaluation globale de la qualité de la prise en charge",
+          "binaryOnly": false,
+          "details": [
+            "Prise en charge complète et adaptée à la sévérité"
+          ],
+          "scoringRule": "Bien = 2 pts, suffisant = 1 pt, insuffisant = 0 pt"
+        }
+      ]
+    }
+  }
+}

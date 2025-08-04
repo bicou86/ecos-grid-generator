@@ -1,0 +1,530 @@
+{
+  "title": "Essoufflement II",
+  "context": {
+    "setting": "Cabinet de médecine générale en zone rurale (remplacement)",
+    "patient": "Homme de 56 ans se présente pour dyspnée progressive",
+    "vitals": {
+      "ta": "142/88 mmHg",
+      "fc": "88 bpm",
+      "fr": "22/min",
+      "temperature": "36.9°C"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction et objectif de la consultation",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Question ouverte d'introduction → Motif de consultation",
+          "patientComment": "Je suis essoufflé, ça devient de plus en plus difficile",
+          "binaryOnly": true
+        },
+        {
+          "id": "a3",
+          "text": "RED FLAGS - Urgences respiratoires",
+          "redflagsSection": [
+            {
+              "text": "Détresse respiratoire aiguë [non actuellement]"
+            },
+            {
+              "text": "Cyanose centrale [à vérifier]"
+            },
+            {
+              "text": "Confusion/troubles conscience [non]"
+            },
+            {
+              "text": "Utilisation muscles accessoires [à examiner]"
+            },
+            {
+              "text": "Impossibilité parler phrases [non]"
+            },
+            {
+              "text": "Hémoptysie [non mentionnée]"
+            },
+            {
+              "text": "Douleur thoracique aiguë [non]"
+            },
+            {
+              "text": "Œdèmes MI massifs [à vérifier]"
+            }
+          ],
+          "scoringRule": "≥6 red flags explorés = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a4",
+          "text": "Classification dyspnée selon MRC (Medical Research Council)",
+          "details": [
+            "Grade 0: pas de dyspnée [non]",
+            "Grade 1: dyspnée effort intense [dépassé]",
+            "Grade 2: dyspnée marche rapide/montée [OUI probable]",
+            "Grade 3: marche lente/arrêts fréquents [1 étage!]",
+            "Grade 4: habillage impossible [non encore]",
+            "Évolution progressive [2 ans]",
+            "Impact activités quotidiennes [significatif]"
+          ],
+          "scoringRule": "MRC correctement évalué = 2 pts, partiel = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a5",
+          "text": "Évaluation exposition tabagique détaillée",
+          "details": [
+            "Âge début [probable 16-18 ans]",
+            "Consommation actuelle [1 paquet/jour]",
+            "Durée totale [30 ans]",
+            "Paquets-années calculés [30 PA]",
+            "Type tabac [cigarettes industrielles]",
+            "Tentatives arrêt [à explorer]",
+            "Motivation sevrage [évaluée?]",
+            "Cannabis associé [avec toxicos?]"
+          ],
+          "scoringRule": "≥6 éléments = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a6",
+          "text": "Symptômes respiratoires chroniques (définition BPCO)",
+          "details": [
+            "Toux chronique [par crises matinales]",
+            "Expectoration chronique [crachats jaunâtres]",
+            "Durée ≥3 mois/an × 2 ans consécutives [OUI]",
+            "Caractère purulent [jaunâtre suggère]",
+            "Volume expectoration [à quantifier]",
+            "Hémoptysie [non - rassurer]",
+            "Saisonnalité [hiver pire]",
+            "Évolution progressive [aggravation]"
+          ],
+          "scoringRule": "≥6 critères BPCO = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a7",
+          "text": "Exacerbations et facteurs déclenchants",
+          "details": [
+            "Épisodes bronchite fréquents [hivernaux]",
+            "Hospitalisations BPCO [aucune encore]",
+            "Antibiotiques récents [jamais pris]",
+            "Déclencheurs froid [oui]",
+            "Infections virales [refroidissements]",
+            "Pollution/poussières [rural - moins]",
+            "Stress/effort [aggrave]",
+            "Fréquence exacerbations/an [à estimer]"
+          ],
+          "scoringRule": "≥6 facteurs = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a8",
+          "text": "Signes d'insuffisance cardiaque droite (cœur pulmonaire)",
+          "details": [
+            "Œdèmes membres inférieurs [à vérifier]",
+            "Orthopnée progressive [3 oreillers!]",
+            "DPN (dyspnée paroxystique nocturne) [fenêtre]",
+            "Prise poids récente [non mentionnée]",
+            "Nycturie [non évoquée]",
+            "Fatigue excessive [performance ↓]",
+            "Douleurs hypocondre droit [hépatomégalie?]",
+            "Ascite [stade avancé]"
+          ],
+          "scoringRule": "≥6 signes = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a9",
+          "text": "Comorbidités fréquentes BPCO",
+          "details": [
+            "Maladies cardiovasculaires [FDR multiples]",
+            "Cancer bronchique [père décédé 60 ans!]",
+            "Ostéoporose [corticoïdes? sédentarité]",
+            "Dépression/anxiété [isolement social]",
+            "Diabète [méthadone? sédentarité]",
+            "Apnées sommeil [ronflements?]",
+            "Cachexie/dénutrition [poids stable?]",
+            "Infections récurrentes [immunité ↓]"
+          ],
+          "scoringRule": "≥6 comorbidités = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a10",
+          "text": "Contexte psychosocial complexe",
+          "details": [
+            "Toxicomanie antérieure [héroïne IV]",
+            "Traitement substitutif [méthadone actuelle]",
+            "Antécédents judiciaires [prison 5 mois]",
+            "Isolement social [célibataire]",
+            "Précarité probable [rural, sans emploi?]",
+            "Observance thérapeutique [risque ↓]",
+            "Support familial [absent?]",
+            "Addictions multiples [tabac + opiacés]"
+          ],
+          "scoringRule": "≥6 facteurs psychosociaux = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a11",
+          "text": "Évaluation capacité fonctionnelle et autonomie",
+          "details": [
+            "Activités vie quotidienne [limitées?]",
+            "Distance marche [<1 étage]",
+            "Port charges [impossible?]",
+            "Escaliers [après 1 étage dyspnée]",
+            "Abandon activités [échecs→sédentaire]",
+            "Emploi/travail [capacité réduite]",
+            "Conduite automobile [possible?]",
+            "Vie sociale [échecs=isolement]"
+          ],
+          "scoringRule": "≥6 limitations = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a12",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "details": [
+            "Anamnèse BPCO complète",
+            "Red flags exclus",
+            "Exposition tabagique quantifiée",
+            "Comorbidités explorées",
+            "Contexte psychosocial intégré"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Évaluation état général et signes vitaux",
+          "details": [
+            "Aspect général [dénutrition? cachexie?]",
+            "SpO2 air ambiant [<95% = hypoxémie]",
+            "FR et travail respiratoire [22/min élevée]",
+            "Position spontanée [tripode?]",
+            "Coloration téguments [cyanose centrale?]",
+            "État hydratation [bon? ICD?]"
+          ],
+          "scoringRule": "≥5 évaluations = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e2",
+          "text": "Inspection thoracique spécialisée BPCO",
+          "details": [
+            "Thorax en tonneau [distension]",
+            "Ampliation thoracique [symétrique? réduite?]",
+            "Circulation collatérale [non]",
+            "Dépression fosses sus/sous-claviculaires",
+            "Utilisation muscles accessoires",
+            "Respiration à lèvres pincées [auto-PEP]"
+          ],
+          "scoringRule": "≥5 signes = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e3",
+          "text": "Palpation thoracique",
+          "details": [
+            "Vibrations vocales [diminuées?]",
+            "Choc de pointe [déplacé? faible?]",
+            "Frémissement cataire [non]",
+            "Points douloureux [fractures côtes?]",
+            "Emphysème sous-cutané [non]"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e4",
+          "text": "Percussion thoracique",
+          "details": [
+            "Hypersonorité diffuse [emphysème]",
+            "Abaissement diaphragme [distension]",
+            "Diminution excursion diaphragmatique",
+            "Matité cardiaque [diminuée si emphysème]"
+          ],
+          "scoringRule": "≥3 anomalies = 2 pts, 2 = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e5",
+          "text": "Auscultation pulmonaire systématique",
+          "details": [
+            "Diminution MV globale [probable]",
+            "Sibilants expiratoires [présents]",
+            "Ronchi/râles bronchiques [crachats]",
+            "Râles crépitants [IC? infection?]",
+            "Expiration prolongée [obstruction]",
+            "Zones silencieuses [bullae?]",
+            "Auscultation comparative 6 points"
+          ],
+          "scoringRule": "≥6 éléments = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e6",
+          "text": "Signes d'insuffisance cardiaque droite",
+          "details": [
+            "Turgescence jugulaire [ICD]",
+            "Reflux hépato-jugulaire [positif?]",
+            "Œdèmes MI [godets?]",
+            "Hépatomégalie [bord inférieur palpable?]",
+            "B3 droit audible [rare]",
+            "Ascite [stades avancés]"
+          ],
+          "scoringRule": "≥4 signes recherchés = 2 pts, 2-3 = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e7",
+          "text": "Examen cardiovasculaire et HTAP",
+          "details": [
+            "B2 pulmonaire accentué [HTAP]",
+            "Souffle d'insuffisance tricuspide [systolique]",
+            "Galop droit [B3/B4]",
+            "Pouls paradoxal [>10 mmHg]",
+            "TA et pouls périphériques",
+            "Temps recoloration capillaire [>3s]"
+          ],
+          "scoringRule": "≥5 examens = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e8",
+          "text": "Recherche complications et comorbidités",
+          "details": [
+            "Hippocratisme digital [rare BPCO]",
+            "Cyanose centrale/périphérique",
+            "Adénopathies [cancer? infections?]",
+            "Cicatrices injection [antécédents IV]",
+            "Dénutrition/amyotrophie [cachexie?]"
+          ],
+          "scoringRule": "≥4 examens = 2 pts, 2-3 = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e9",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "details": [
+            "Examen respiratoire complet",
+            "Signes BPCO identifiés",
+            "Recherche cœur pulmonaire",
+            "Évaluation comorbidités",
+            "Documentation précise"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic BPCO avec classification GOLD 2024",
+          "details": [
+            "BPCO GOLD stade spirométrique (1-4)",
+            "Classification ABCD selon symptômes",
+            "Phénotype emphysémateux vs bronchitique",
+            "Évaluation exacerbateur vs non-exacerbateur",
+            "Cœur pulmonaire associé probable"
+          ],
+          "scoringRule": "Classification complète = 2 pts, partielle = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m2",
+          "text": "Diagnostics différentiels pertinents",
+          "ddSection": {
+            "categories": [
+              {
+                "name": "Obstructions bronchiques",
+                "items": [
+                  "BPCO (emphysème + bronchite chronique) Spirométrie post-BD",
+                  "Asthme du sujet âgé Réversibilité, FeNO",
+                  "Syndrome overlap asthme-BPCO Éosinophiles, réversibilité",
+                  "Bronchectasies HRCT thoracique"
+                ]
+              },
+              {
+                "name": "Causes cardiovasculaires",
+                "items": [
+                  "Insuffisance cardiaque gauche Echo cœur, BNP",
+                  "HTAP primitive/secondaire Echo + cathétérisme",
+                  "Embolie pulmonaire chronique Angio-CT, scintigraphie V/Q"
+                ]
+              },
+              {
+                "name": "Autres causes",
+                "items": [
+                  "Pneumoconiose (amiante) HRCT, exposition prof",
+                  "Cancer bronchique CT thorax + biopsies",
+                  "Fibrose pulmonaire HRCT, LBA"
+                ]
+              }
+            ]
+          },
+          "scoringRule": "≥6 DD avec examens = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m3",
+          "text": "Examens complémentaires urgents",
+          "details": [
+            "Spirométrie post-bronchodilatateur (diagnostic)",
+            "Gaz du sang artériel (hypoxémie? hypercapnie?)",
+            "Rx thorax face/profil (emphysème, IC)",
+            "ECG (cœur pulmonaire, FA)",
+            "NFS (polyglobulie? éosinophiles)",
+            "BNP/NT-proBNP (insuffisance cardiaque)"
+          ],
+          "scoringRule": "≥5 examens appropriés = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m4",
+          "text": "Bilan complémentaire selon GOLD",
+          "details": [
+            "α1-antitrypsine (déficit héréditaire)",
+            "CT thoracique haute résolution",
+            "Échographie cardiaque (HTAP, VD)",
+            "Test marche 6 minutes (capacité effort)",
+            "Dosage vitamines (D, B12 - dénutrition)",
+            "Dépistage ostéoporose (DEXA)"
+          ],
+          "scoringRule": "≥4 examens = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m5",
+          "text": "Traitement bronchodilatateur selon GOLD 2024",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Bronchodilatateurs première ligne",
+                "content": "• LAMA: Tiotropium 18 μg 1×/j (Spiriva)\n• LABA: Formotérol 12 μg 2×/j ou Salmétérol 50 μg 2×/j\n• Association LAMA/LABA si symptômes persistants\n• SABA de secours: Salbutamol PRN\n• Triple thérapie si exacerbations fréquentes"
+              },
+              {
+                "title": "Ajustements selon phénotype",
+                "content": "• Emphysémateux: LAMA prioritaire\n• Bronchitique: ICS/LABA si éosinophiles >300\n• Exacerbateur: ICS/LAMA/LABA\n• Overlap asthme: ICS obligatoires\n• Cœur pulmonaire: diurétiques prudents"
+              },
+              {
+                "title": "Techniques inhalation",
+                "content": "• Formation technique obligatoire\n• Chambre inhalation recommandée\n• Contrôle technique à chaque consultation\n• Préférer devices faciles (comorbidités)\n• Rinçage bouche si ICS"
+              }
+            ]
+          },
+          "scoringRule": "Traitement GOLD approprié = 2 pts, partiel = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m6",
+          "text": "Sevrage tabagique priorité absolue",
+          "details": [
+            "Conseil ferme personnalisé (père cancer)",
+            "Évaluation motivation/stade changement",
+            "Substituts nicotiniques proposés",
+            "Soutien psychologique renforcé",
+            "Varénicline/bupropion selon contexte",
+            "Consultation tabacologie spécialisée",
+            "Suivi rapproché sevrage"
+          ],
+          "scoringRule": "≥5 interventions = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m7",
+          "text": "Réhabilitation respiratoire et activité physique",
+          "details": [
+            "Programme réhabilitation multidisciplinaire",
+            "Kinésithérapie respiratoire",
+            "Réentraînement effort progressif",
+            "Éducation thérapeutique BPCO",
+            "Techniques respiratoires",
+            "Activité physique quotidienne",
+            "Support nutritionnel si dénutrition"
+          ],
+          "scoringRule": "≥5 mesures = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m8",
+          "text": "Prévention et vaccinations",
+          "details": [
+            "Vaccination antigrippale annuelle",
+            "Vaccination pneumococcique (13V + 23V)",
+            "Éviction expositions professionnelles",
+            "Oxygénothérapie si hypoxémie sévère",
+            "Plan action exacerbations personnalisé",
+            "Antibiotiques/corticoïdes secours"
+          ],
+          "scoringRule": "≥4 préventions = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m9",
+          "text": "Gestion contexte psychosocial complexe",
+          "details": [
+            "Coordination avec centre méthadone",
+            "Suivi psychiatrique/addictologique",
+            "Assistant social (précarité)",
+            "Observance thérapeutique renforcée",
+            "Support réseau famille/amis",
+            "Éviter interactions médicamenteuses",
+            "Planification hospitalisations"
+          ],
+          "scoringRule": "≥5 mesures = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m10",
+          "text": "Suivi et réévaluation BPCO",
+          "details": [
+            "Consultation 1 mois (adaptation traitement)",
+            "Spirométrie annuelle",
+            "Gazométrie si aggravation",
+            "Pneumologue si GOLD C/D",
+            "Cardiologie si cœur pulmonaire",
+            "Évaluation qualité vie (CAT, CCQ)",
+            "Discussions fin de vie si stade 4"
+          ],
+          "scoringRule": "≥5 suivis = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m11",
+          "text": "Évaluation globale de la qualité de la prise en charge",
+          "details": [
+            "Diagnostic BPCO approprié",
+            "Classification GOLD correcte",
+            "Traitement selon guidelines",
+            "Sevrage tabagique prioritaire",
+            "Contexte psychosocial intégré"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "images": [
+      {
+        "id": "annexe1",
+        "data": "grilles_generees/images/essoufflement-img.jpg",
+        "title": "Spirométrie",
+        "description": "Résultats spirométriques avec courbes débit-volume et valeurs numériques"
+      }
+    ]
+  }
+}

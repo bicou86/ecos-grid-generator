@@ -1,0 +1,304 @@
+{
+  "mappingAnnexes": {
+    "principes": [
+      "Regroupement intelligent des sections similaires",
+      "Conservation de toute l'information existante",
+      "Standardisation autour de 3 sections principales",
+      "Élimination des redondances tout en préservant la flexibilité"
+    ],
+    "mapping": {
+      "versInformationsExpert": {
+        "informationsExpert": {
+          "source": "informationsExpert",
+          "description": "Conservation directe avec expansion des sous-sections",
+          "champs": {
+            "titre": "informationsExpert.titre",
+            "dossierMedical": "informationsExpert.dossierMedical",
+            "rolesInterventions": "informationsExpert.rolesInterventions",
+            "questionsExpert": "informationsExpert.questionsExpert",
+            "pointsCles": "informationsExpert.pointsCles",
+            "pieges": "informationsExpert.pieges",
+            "defisSpecifiques": "informationsExpert.defisSpecifiques",
+            "objectifsPedagogiques": "informationsExpert.objectifsPedagogiques",
+            "objectifsApprentissage": "informationsExpert.objetifsApprentissage",
+            "objectifsCommunication": "informationsExpert.objectifsCommunication",
+            "diagnosticDifferentiel": "informationsExpert.diagnosticDifferentiel",
+            "urgencesMedicales": "informationsExpert.urgencesMedicales",
+            "urgencesObstetricales": "informationsExpert.urgencesObstetricales",
+            "signesAlarme": "informationsExpert.signesAlarme + informationsExpert.signesAlarmes",
+            "symptomesAlarme": "informationsExpert.symptomesAlarme",
+            "facteursRisques": "informationsExpert.factrisques",
+            "techniquesGestion": "informationsExpert.techniquesGestion",
+            "techniquesEvaluation": "informationsExpert.techniquesEvaluation",
+            "priseEnCharge": "informationsExpert.prisEnCharge",
+            "bonnesPratiques": "informationsExpert.bonnesPratiques",
+            "agentCaustique": "informationsExpert.agentCaustique",
+            "resultatsLaboratoire": "informationsExpert.resultatsLaboratoire"
+          }
+        },
+        "ddSection": {
+          "destination": "theoriePratique.diagnosticDifferentiel",
+          "description": "Section DD déplacée vers theoriePratique"
+        },
+        "therapySection": {
+          "destination": "theoriePratique.priseEnCharge",
+          "description": "Section thérapie intégrée dans prise en charge"
+        },
+        "signesAlerte": {
+          "destination": "informationsExpert.signesAlarme",
+          "description": "Consolidation avec signes alarme existants"
+        },
+        "tableauClinique": {
+          "destination": "theoriePratique.sections",
+          "description": "Intégré comme section théorique"
+        },
+        "protocoleMedical": {
+          "destination": "theoriePratique.protocolesSpecifiques.medical",
+          "description": "Protocoles médicaux regroupés"
+        },
+        "protocoleUrgence": {
+          "destination": "theoriePratique.protocolesSpecifiques.urgence",
+          "description": "Protocoles d'urgence regroupés"
+        }
+      },
+      "versScenarioPatienteStandardisee": {
+        "scenarioPatienteStandardisee": {
+          "identiteBase": {
+            "nom": "scenarioPatienteStandardisee.nom",
+            "age": "scenarioPatienteStandardisee.age",
+            "enfant": "scenarioPatienteStandardisee.enfant",
+            "profession": "informationsPersonnelles.profession",
+            "etatCivil": "informationsPersonnelles.etatCivil",
+            "origine": "informationsPersonnelles.origine"
+          },
+          "motifConsultation": {
+            "source": "scenarioPatienteStandardisee.motifConsultation",
+            "description": "Conservation avec tous les champs existants"
+          },
+          "anamnèseActuelle": {
+            "histoireMaladie": {
+              "sources": [
+                "scenarioPatienteStandardisee.histoireActuelle.evenementPrincipal",
+                "scenarioPatienteStandardisee.histoireActuelle.debut",
+                "scenarioPatienteStandardisee.histoireActuelle.debutSymptomes",
+                "scenarioPatienteStandardisee.histoireActuelle.evolution",
+                "scenarioPatienteStandardisee.histoireActuelle.contexte",
+                "scenarioPatienteStandardisee.histoireActuelle.facteursDeclenchants",
+                "scenarioPatienteStandardisee.histoireActuelle.evenementDeclenchant"
+              ]
+            },
+            "caracteristiquesSymptomePrincipal": {
+              "sources": [
+                "scenarioPatienteStandardisee.histoireActuelle.localisation",
+                "scenarioPatienteStandardisee.histoireActuelle.irradiation",
+                "scenarioPatienteStandardisee.histoireActuelle.caracteristiques",
+                "scenarioPatienteStandardisee.histoireActuelle.intensite",
+                "scenarioPatienteStandardisee.histoireActuelle.frequence",
+                "scenarioPatienteStandardisee.histoireActuelle.duree",
+                "scenarioPatienteStandardisee.histoireActuelle.douleur",
+                "scenarioPatienteStandardisee.histoireActuelle.douleurCaracteristiques",
+                "scenarioPatienteStandardisee.caracteristiquesDouleur"
+              ]
+            }
+          },
+          "symptomesAssocies": {
+            "consolidation": [
+              "scenarioPatienteStandardisee.symptomesAssocies",
+              "symptomesAssocies",
+              "scenarioPatienteStandardisee.histoireActuelle.signesAssocies",
+              "scenarioPatienteStandardisee.histoireActuelle.symptomesAssocies",
+              "scenarioPatienteStandardisee.histoireActuelle.symptomes",
+              "scenarioPatienteStandardisee.histoireActuelle.autresSymptomes"
+            ],
+            "organisation": "Par système anatomique/fonctionnel"
+          },
+          "antecedentsMedicaux": {
+            "sources": [
+              "scenarioPatienteStandardisee.antecedentsMedicaux",
+              "antecedentsMedicaux",
+              "antecedents.medicaux",
+              "scenarioPatienteStandardisee.histoireMedicale",
+              "scenarioPatienteStandardisee.antecedentsPersonnels"
+            ]
+          },
+          "medicamentsActuels": {
+            "sources": [
+              "scenarioPatienteStandardisee.medicaments",
+              "medicaments",
+              "traitements.actuels",
+              "medicamentsSupplements"
+            ]
+          },
+          "antecedentsGynecologiques": {
+            "sources": [
+              "scenarioPatienteStandardisee.antecedentsGynecologiques",
+              "scenarioPatienteStandardisee.histoireGynecologique",
+              "scenarioPatienteStandardisee.historieSexuelle"
+            ]
+          },
+          "antecedentsFamiliaux": {
+            "sources": [
+              "scenarioPatienteStandardisee.antecedentsFamiliaux",
+              "antecedents.familiaux",
+              "scenarioPatienteStandardisee.histoireFamiliale"
+            ]
+          },
+          "habitudesVie": {
+            "sources": [
+              "scenarioPatienteStandardisee.habitudes",
+              "habitudesVie",
+              "scenarioPatienteStandardisee.habitudesVie",
+              "scenarioPatienteStandardisee.habituesVie"
+            ]
+          },
+          "contextePsychoSocial": {
+            "sources": [
+              "contexteSocial",
+              "contexteFamilial",
+              "scenarioPatienteStandardisee.contextePsychosocial",
+              "scenarioPatienteStandardisee.situationFamiliale",
+              "scenarioPatienteStandardisee.environnementSocial",
+              "scenarioPatienteStandardisee.contexteFamilial"
+            ]
+          },
+          "simulationJeuRole": {
+            "sources": [
+              "scenarioPatienteStandardisee.simulation",
+              "scenarioPatienteStandardisee.caracteristiquesComportementales",
+              "scenarioPatienteStandardisee.personnalite",
+              "scenarioPatienteStandardisee.roleEpouse",
+              "scenarioPatienteStandardisee.interpreteRole"
+            ]
+          }
+        },
+        "elementsDeplacesDepuisRacine": {
+          "images": {
+            "destination": "Non conservé - géré séparément",
+            "raison": "Les images sont des ressources externes"
+          },
+          "contexteSocial": {
+            "destination": "scenarioPatienteStandardisee.contextePsychoSocial",
+            "description": "Intégré dans le contexte psychosocial"
+          },
+          "antecedents": {
+            "destination": "scenarioPatienteStandardisee.antecedentsMedicaux",
+            "description": "Dispersé selon le type d'antécédent"
+          },
+          "contexteFamilial": {
+            "destination": "scenarioPatienteStandardisee.contextePsychoSocial.famille",
+            "description": "Intégré dans contexte psychosocial"
+          },
+          "traitements": {
+            "destination": "scenarioPatienteStandardisee.medicamentsActuels",
+            "description": "Consolidé avec médicaments"
+          },
+          "habitudesVie": {
+            "destination": "scenarioPatienteStandardisee.habitudesVie",
+            "description": "Mapping direct"
+          },
+          "medicaments": {
+            "destination": "scenarioPatienteStandardisee.medicamentsActuels",
+            "description": "Consolidé"
+          },
+          "symptomesAssocies": {
+            "destination": "scenarioPatienteStandardisee.symptomesAssocies",
+            "description": "Consolidé par système"
+          },
+          "symptomesGynecologiques": {
+            "destination": "scenarioPatienteStandardisee.symptomesAssocies.gynecologiques",
+            "description": "Intégré dans symptômes associés"
+          },
+          "inquietudes": {
+            "destination": "scenarioPatienteStandardisee.motifConsultation.inquietudes",
+            "description": "Consolidé avec motif de consultation"
+          },
+          "preoccupationsLogistiques": {
+            "destination": "scenarioPatienteStandardisee.informationsComplementaires",
+            "description": "Informations additionnelles"
+          },
+          "challenges": {
+            "destination": "scenarioPatienteStandardisee.informationsComplementaires.challenges",
+            "description": "Regroupé dans informations complémentaires"
+          },
+          "defi": {
+            "destination": "scenarioPatienteStandardisee.informationsComplementaires.defi",
+            "description": "Regroupé dans informations complémentaires"
+          },
+          "questionsEtReponses": {
+            "destination": "scenarioPatienteStandardisee.informationsComplementaires.questionsEtReponses",
+            "description": "Regroupé dans informations complémentaires"
+          },
+          "habitudesAlimentaires": {
+            "destination": "scenarioPatienteStandardisee.habitudesVie.alimentation",
+            "description": "Intégré dans habitudes de vie"
+          },
+          "medicamentsSupplements": {
+            "destination": "scenarioPatienteStandardisee.medicamentsActuels.supplements",
+            "description": "Intégré dans médicaments actuels"
+          },
+          "environnement": {
+            "destination": "scenarioPatienteStandardisee.contextePsychoSocial",
+            "description": "Dispersé selon le type d'environnement"
+          },
+          "situationFamiliale": {
+            "destination": "scenarioPatienteStandardisee.contextePsychoSocial.famille",
+            "description": "Intégré dans contexte familial"
+          }
+        }
+      },
+      "versTheoriePratique": {
+        "theoriePratique": {
+          "source": "theoriePratique",
+          "description": "Conservation avec expansion"
+        },
+        "elementsIntegres": {
+          "ddSection": {
+            "source": "ddSection",
+            "destination": "theoriePratique.diagnosticDifferentiel",
+            "transformation": "Categories restructurées"
+          },
+          "therapySection": {
+            "source": "therapySection",
+            "destination": "theoriePratique.priseEnCharge",
+            "transformation": "Intégré dans prise en charge"
+          },
+          "notePatient": {
+            "source": "notePatient",
+            "destination": "scenarioPatienteStandardisee.informationsComplementaires.notePatient",
+            "raison": "Plus pertinent dans le scénario"
+          },
+          "techniquesSpeciales": {
+            "source": "techniquesSpeciales",
+            "destination": "theoriePratique.guidePratique.techniques",
+            "transformation": "Intégré dans guide pratique"
+          },
+          "guideCommunication": {
+            "source": "guideCommunication",
+            "destination": "theoriePratique.protocolesSpecifiques.communication",
+            "transformation": "Protocole de communication"
+          },
+          "protocoleMedical": {
+            "source": "protocoleMedical",
+            "destination": "theoriePratique.protocolesSpecifiques.medical"
+          },
+          "protocoleUrgence": {
+            "source": "protocoleUrgence",
+            "destination": "theoriePratique.protocolesSpecifiques.urgence"
+          },
+          "tableauClinique": {
+            "source": "tableauClinique",
+            "destination": "theoriePratique.sections",
+            "transformation": "Ajouté comme section théorique"
+          }
+        }
+      }
+    },
+    "reglesGenerales": {
+      "arrays": "Les arrays vides [] sont conservés pour permettre l'ajout de multiples valeurs",
+      "strings": "Les strings vides '' sont conservés pour les champs uniques",
+      "consolidation": "Les champs similaires sont regroupés (ex: tous les types de symptômes dans symptomesAssocies)",
+      "hierarchie": "Structure hiérarchique claire pour faciliter la navigation",
+      "flexibilite": "La structure permet l'ajout de nouveaux champs sans modification majeure"
+    }
+  }
+}

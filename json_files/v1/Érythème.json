@@ -1,0 +1,232 @@
+{
+  "title": "Érythème",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Mme Kählin, 27 ans, consultation pour fatigue et érythème cutané",
+    "vitals": {
+      "ta": "127/82 mmHg",
+      "fc": "73 bpm",
+      "temperature": "37.8°C"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "title": "Anamnèse",
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Désinfection des mains, présentation avec nom, fonction et objectif",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Exploration du symptôme principal",
+          "binaryOnly": true
+        },
+        {
+          "id": "a3",
+          "text": "Caractéristiques de l'érythème",
+          "details": [
+            "Douleur",
+            "Brûlure",
+            "Prurit"
+          ],
+          "patientComment": "(Non douloureux / Pas de brûlure / Pas de démangeaisons)"
+        },
+        {
+          "id": "a4",
+          "text": "Évolution temporelle et facteurs déclenchants",
+          "details": [
+            "Durée",
+            "Facteur déclenchant"
+          ],
+          "patientComment": "(Depuis environ 3 semaines / Aucun déclencheur identifié)"
+        },
+        {
+          "id": "a5",
+          "text": "Antécédents d'épisodes similaires",
+          "patientComment": "(Non, premier épisode)"
+        },
+        {
+          "id": "a6",
+          "text": "Symptômes associés",
+          "details": [
+            "Fatigue/asthénie",
+            "Arthralgies",
+            "Céphalées",
+            "Perte de poids"
+          ],
+          "patientComment": "(Un peu fatiguée / Légères douleurs articulaires / Céphalées fréquentes / Possible)"
+        },
+        {
+          "id": "a7",
+          "text": "Revue des systèmes",
+          "patientComment": "(Rien de particulier)"
+        },
+        {
+          "id": "a8",
+          "text": "Habitudes de vie",
+          "details": [
+            "Tabac",
+            "Alcool",
+            "Drogues"
+          ],
+          "patientComment": "(5 paquets-années / Occasionnel / Cannabis rarement)"
+        },
+        {
+          "id": "a9",
+          "text": "Médicaments actuels",
+          "patientComment": "(Contraception orale combinée)"
+        },
+        {
+          "id": "a10",
+          "text": "Antécédents médicaux et chirurgicaux",
+          "patientComment": "(Amygdalectomie dans l'enfance, sinon rien)"
+        },
+        {
+          "id": "a11",
+          "text": "Antécédents familiaux",
+          "patientComment": "(Grands-parents hypertendus >65 ans, grand-père avec goutte)"
+        },
+        {
+          "id": "a12",
+          "text": "Anamnèse sociale",
+          "patientComment": "(Vit avec son compagnon, travaille au bureau)"
+        },
+        {
+          "id": "a13",
+          "text": "Anamnèse de voyage",
+          "details": [
+            "Voyage récent",
+            "Évolution pendant le voyage",
+            "Fièvre au retour"
+          ],
+          "patientComment": "(Retour d'Italie il y a 2 semaines / Érythème plus marqué en vacances / Pas de fièvre remarquée)"
+        },
+        {
+          "id": "a14",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "binaryOnly": false,
+          "details": [
+            "Anamnèse générale ciblée et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "examen": {
+      "title": "Examen clinique",
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Inspection générale",
+          "details": [
+            "État des yeux",
+            "Muqueuses"
+          ],
+          "patientComment": "(Yeux légèrement secs et rouges / Muqueuses rosées)"
+        },
+        {
+          "id": "e2",
+          "text": "Examen cutané",
+          "patientComment": "(Érythème rouge légèrement squameux au niveau du dos - voir annexe)"
+        },
+        {
+          "id": "e3",
+          "text": "Examen articulaire",
+          "details": [
+            "Douleur à la palpation",
+            "Épanchement articulaire"
+          ],
+          "patientComment": "(Articulations légèrement douloureuses à la pression / Pas d'épanchement)"
+        },
+        {
+          "id": "e4",
+          "text": "Examen cardio-pulmonaire",
+          "patientComment": "(Sans particularité)"
+        },
+        {
+          "id": "e5",
+          "text": "Examen neurologique",
+          "patientComment": "(Pas d'anomalie)"
+        },
+        {
+          "id": "e6",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "binaryOnly": false,
+          "details": [
+            "Status général ciblé et bien conduit"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "management": {
+      "title": "Prise en charge",
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic de suspicion principal",
+          "patientComment": "(Lupus érythémateux cutané - CLE)"
+        },
+        {
+          "id": "m2",
+          "text": "Diagnostics différentiels",
+          "details": [
+            "Psoriasis",
+            "Photodermatose"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Examens complémentaires",
+          "details": [
+            "Biologie sanguine",
+            "Analyse d'urine"
+          ],
+          "patientComment": "(VS, CRP, anticorps anti-nucléaires, hémoglobine / Bandelette urinaire - transition vers LES possible, fonction rénale)"
+        },
+        {
+          "id": "m4",
+          "text": "Traitement proposé",
+          "details": [
+            "Mesures générales",
+            "Traitement médicamenteux"
+          ],
+          "patientComment": "(Éviter le soleil / Glucocorticoïdes ou inhibiteurs de la calcineurine)"
+        },
+        {
+          "id": "m5",
+          "text": "Information sur l'évolution possible",
+          "patientComment": "(ATTENTION : peut évoluer vers un lupus érythémateux systémique)"
+        },
+        {
+          "id": "m6",
+          "text": "Surveillance recommandée",
+          "patientComment": "(Toujours examiner brièvement les autres systèmes)"
+        },
+        {
+          "id": "m7",
+          "text": "Évaluation globale de la qualité de la prise en charge",
+          "binaryOnly": false,
+          "details": [
+            "Prise en charge générale cohérente et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "images": [
+      {
+        "title": "Image clinique - Érythème cutané",
+        "description": "Photographie montrant un érythème rouge légèrement squameux typique du lupus érythémateux cutané au niveau du dos",
+        "data": "grilles_generees/images/erytheme-img.jpg"
+      }
+    ]
+  }
+}

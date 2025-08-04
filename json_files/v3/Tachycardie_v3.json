@@ -1,0 +1,654 @@
+{
+  "title": "Tachycardie",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Mme Meier, 56 ans, se présente au cabinet pour palpitations aiguës",
+    "vitals": {
+      "ta": "135/90 mmHg",
+      "fc": "127 bpm (tachycardie irrégulière)",
+      "fr": "18/min",
+      "temperature": "36.7°C",
+      "satO2": "98% air ambiant"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction et objectif de la consultation",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Question ouverte d'introduction → Motif de consultation",
+          "patientComment": "J'ai des palpitations, mon cœur bat très fort et de façon irrégulière",
+          "binaryOnly": true
+        },
+        {
+          "id": "a3",
+          "text": "RED FLAGS - Urgences cardiovasculaires",
+          "redflagsSection": [
+            {
+              "text": "Douleur thoracique [non]"
+            },
+            {
+              "text": "Syncope/présyncope [vertiges légers]"
+            },
+            {
+              "text": "Dyspnée sévère [non]"
+            },
+            {
+              "text": "Choc cardiogénique [non]"
+            },
+            {
+              "text": "FC >150 bpm [127 bpm]"
+            },
+            {
+              "text": "Instabilité hémodynamique [stable]"
+            },
+            {
+              "text": "Signes insuffisance cardiaque [non]"
+            },
+            {
+              "text": "ATCD coronaropathie [non]"
+            }
+          ],
+          "scoringRule": "≥6 red flags explorés = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a4",
+          "text": "Caractérisation SOCRATES des palpitations",
+          "details": [
+            "Site/Siège [région cardiaque, cou]",
+            "Onset [début soudain il y a 30 min]",
+            "Caractère [battements irréguliers, rapides]",
+            "Radiations [sensation dans le cou]",
+            "Associations [vertiges légers]",
+            "Timing [paroxystique, va et vient]",
+            "Exacerbations [stress, café]",
+            "Severity [gênante mais supportable]"
+          ],
+          "scoringRule": "≥6 critères SOCRATES = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a5",
+          "text": "Récurrence et pattern temporel",
+          "details": [
+            "Épisodes antérieurs [déjà 5 fois]",
+            "Fréquence augmentée [plus fréquent]",
+            "Durée habituelle [30 min - 2h]",
+            "Premier épisode [il y a 6 mois]",
+            "Fin spontanée [oui toujours]",
+            "Facteurs terminaison [repos, manœuvres]",
+            "Pattern évolutif [fréquence ↑]",
+            "Circonstances similaires [stress, café]"
+          ],
+          "scoringRule": "≥6 éléments pattern = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a6",
+          "text": "Caractéristiques du rythme selon CHA2DS2-VASc",
+          "details": [
+            "Fréquence estimée [155 bpm pendant crise]",
+            "Régularité [totalement irrégulier]",
+            "Sensation pauses [oui entre crises]",
+            "Polyurie post-critique [oui, 30 min après]",
+            "Fatigue post-épisode [oui modérée]",
+            "Palpitations neck [sensation cou]",
+            "Battements manqués [pendant crise]",
+            "Auto-palpation pouls [irrégulier confirmé]"
+          ],
+          "scoringRule": "≥6 caractéristiques = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a7",
+          "text": "Facteurs déclenchants et modulateurs",
+          "details": [
+            "Stress psychologique [oui important]",
+            "Caféine excessive [5 tasses/jour]",
+            "Alcool [oui weekend]",
+            "Effort physique [jogging parfois]",
+            "Changement position [non]",
+            "Repas copieux [possible]",
+            "Manque sommeil [oui récent]",
+            "Émotions fortes [oui divorce récent]"
+          ],
+          "scoringRule": "≥6 facteurs identifiés = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a8",
+          "text": "Symptômes cardiovasculaires associés",
+          "details": [
+            "Douleur thoracique [non]",
+            "Oppression thoracique [légère parfois]",
+            "Dyspnée effort [non]",
+            "Dyspnée repos [non pendant crise]",
+            "Syncope/présyncope [vertiges légers]",
+            "Fatigue inhabituelle [oui récente]",
+            "Œdèmes MI [non]",
+            "Diminution tolérance effort [légère]"
+          ],
+          "scoringRule": "≥6 symptômes évalués = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a9",
+          "text": "Score CHA2DS2-VASc (prédiction AVC)",
+          "details": [
+            "Insuffisance cardiaque [0 - non]",
+            "HTA [1 - oui traitée]",
+            "Âge ≥75 ans [0 - 56 ans]",
+            "Diabète [0 - non]",
+            "AVC/AIT antérieurs [0 - non]",
+            "Maladie vasculaire [0 - non]",
+            "Âge 65-74 ans [0 - 56 ans]",
+            "Sexe féminin [1 - femme]"
+          ],
+          "scoringRule": "Score CHA2DS2-VASc calculé = 2 pts, partiel = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a10",
+          "text": "Facteurs de risque cardiovasculaire",
+          "details": [
+            "HTA [oui sous traitement]",
+            "Dyslipidémie [oui sous traitement]",
+            "Diabète [non]",
+            "Tabagisme [1 paquet/jour, 20 PA]",
+            "Obésité [IMC à calculer]",
+            "Sédentarité [jogging 2×/semaine]",
+            "Stress chronique [divorce récent]",
+            "Ménopause [post-ménopausée]"
+          ],
+          "scoringRule": "≥6 FDR évalués = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a11",
+          "text": "Recherche hyperthyroïdie (cause FA)",
+          "details": [
+            "Perte poids inexpliquée [non]",
+            "Intolérance chaleur [non]",
+            "Hypersudation [non]",
+            "Tremblements [non]",
+            "Diarrhée [non]",
+            "Nervosité/irritabilité [stress divorce]",
+            "Insomnie [oui récente]",
+            "Goitre/nodules thyroïdiens [à palper]"
+          ],
+          "scoringRule": "≥6 signes recherchés = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a12",
+          "text": "Antécédents cardiovasculaires personnels",
+          "details": [
+            "Cardiopathie ischémique [non]",
+            "Infarctus myocarde [non]",
+            "Troubles rythme antérieurs [non connus]",
+            "Valvulopathies [non]",
+            "Cardiomyopathie [non]",
+            "Insuffisance cardiaque [non]",
+            "Interventions cardiaques [non]",
+            "Cathétérisme antérieur [non]"
+          ],
+          "scoringRule": "≥6 antécédents évalués = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a13",
+          "text": "Score HAS-BLED (risque hémorragique)",
+          "details": [
+            "HTA [1 - oui]",
+            "Fonction rénale/hépatique anormale [0]",
+            "AVC antérieur [0 - non]",
+            "Antécédent hémorragique [0 - non]",
+            "INR labile [0 - pas d'AVK]",
+            "Âge >65 ans [0 - 56 ans]",
+            "Médicaments/alcool [1 - alcool weekend]",
+            "Score total [2/9 = risque modéré]"
+          ],
+          "scoringRule": "Score HAS-BLED calculé = 2 pts, partiel = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a14",
+          "text": "Antécédents thromboemboliques",
+          "details": [
+            "TVP antérieure [oui TVP gauche 2006]",
+            "Embolie pulmonaire [non]",
+            "AVC ischémique [non]",
+            "AIT [non]",
+            "Embolie artérielle [non]",
+            "Facteurs thrombophiliques [non explorés]",
+            "Immobilisation récente [non]",
+            "Voyage long récent [non]"
+          ],
+          "scoringRule": "≥6 antécédents explorés = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a15",
+          "text": "Médicaments actuels et interactions",
+          "details": [
+            "Antihypertenseurs [lesquels? posologie]",
+            "Hypolipémiants [statines? posologie]",
+            "Anti-arythmiques [non]",
+            "Anticoagulants [non actuellement]",
+            "Antiagrégants [non]",
+            "Digitaliques [non]",
+            "Bêtabloquants [non]",
+            "Observance traitement [à vérifier]"
+          ],
+          "scoringRule": "≥6 médicaments évalués = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a16",
+          "text": "Antécédents familiaux cardiovasculaires",
+          "details": [
+            "IDM familial précoce [père 60 ans]",
+            "Mort subite familiale [non]",
+            "FA familiale [non connue]",
+            "Troubles rythme familiaux [non]",
+            "AVC familiaux [non]",
+            "Cardiomyopathie familiale [non]",
+            "HTA familiale [mère]",
+            "Diabète familial [non]"
+          ],
+          "scoringRule": "≥6 antécédents familiaux = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a17",
+          "text": "Facteurs socio-environnementaux",
+          "details": [
+            "Stress professionnel [modéré]",
+            "Contexte familial [divorce récent]",
+            "Qualité sommeil [perturbée]",
+            "Consommation café [5 tasses/jour!]",
+            "Consommation alcool [weekend]",
+            "Activité physique [jogging 2×/sem]",
+            "Support social [diminué]",
+            "Gestion stress [difficile actuellement]"
+          ],
+          "scoringRule": "≥6 facteurs évalués = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a18",
+          "text": "Impact fonctionnel et qualité de vie",
+          "details": [
+            "Limitation activités [légère]",
+            "Anxiété vis-à-vis symptômes [oui]",
+            "Qualité sommeil [perturbée]",
+            "Performance professionnelle [impact léger]",
+            "Relations sociales [difficiles divorce]",
+            "Conduite automobile [prudente]",
+            "Activité physique [maintenue]",
+            "Qualité vie globale [diminuée]"
+          ],
+          "scoringRule": "≥6 impacts évalués = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a19",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "details": [
+            "Anamnèse FA paroxystique complète",
+            "Red flags cardiovasculaires identifiés",
+            "Scores pronostiques calculés",
+            "Facteurs déclenchants explorés",
+            "Impact fonctionnel évalué"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Évaluation hémodynamique immédiate",
+          "details": [
+            "État conscience [normal]",
+            "Stabilité hémodynamique [stable]",
+            "Signes choc [non]",
+            "Détresse respiratoire [non]",
+            "Coloration cutanée [normale]",
+            "Temps recoloration [normal]"
+          ],
+          "scoringRule": "≥5 paramètres vitaux = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e2",
+          "text": "Examen cardiovasculaire spécialisé",
+          "details": [
+            "FC et régularité [127 bpm irrégulière]",
+            "TA aux 2 bras [135/90 symétrique]",
+            "Auscultation 4 foyers [bruits irréguliers]",
+            "Choc de pointe [position normale]",
+            "Déficit de pouls [présent]",
+            "Pouls périphériques [irréguliers]",
+            "Veines jugulaires [légèrement turgescentes]"
+          ],
+          "scoringRule": "≥6 examens CV = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e3",
+          "text": "Recherche signes insuffisance cardiaque",
+          "details": [
+            "Œdèmes MI [non]",
+            "Turgescence jugulaire [légère]",
+            "Reflux hépato-jugulaire [positif]",
+            "Hépatomégalie [non]",
+            "Râles pulmonaires [non]",
+            "B3 galop [non]",
+            "Ascite [non]"
+          ],
+          "scoringRule": "≥6 signes recherchés = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e4",
+          "text": "Examen thyroïdien complet",
+          "details": [
+            "Volume thyroïdien [normal]",
+            "Nodules palpables [non]",
+            "Consistance glande [normale]",
+            "Mobilité déglutition [normale]",
+            "Auscultation thyroïdienne [pas souffle]",
+            "Adénopathies cervicales [non]"
+          ],
+          "scoringRule": "≥5 examens thyroïdiens = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e5",
+          "text": "Examen pulmonaire détaillé",
+          "details": [
+            "Inspection thoracique [normale]",
+            "Ampliation thoracique [symétrique]",
+            "Percussion pulmonaire [normale]",
+            "Auscultation bilatérale [normale]",
+            "Recherche râles [non]",
+            "Épanchement pleural [non]"
+          ],
+          "scoringRule": "≥5 examens pulmonaires = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e6",
+          "text": "Examen neurologique ciblé",
+          "details": [
+            "État vigilance [normal]",
+            "Déficit focal [non]",
+            "Réflexes [normaux]",
+            "Coordination [normale]",
+            "Marche [stable]",
+            "Signes cérébelleux [non]"
+          ],
+          "scoringRule": "≥5 examens neuro = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e7",
+          "text": "Recherche signes hyperthyroïdie",
+          "details": [
+            "Tremblements fins [non]",
+            "Hyperréflexie [non]",
+            "Hypersudation [non]",
+            "Exophtalmie [non]",
+            "Rétraction paupières [non]",
+            "Peau chaude moite [non]"
+          ],
+          "scoringRule": "≥5 signes recherchés = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e8",
+          "text": "Manœuvres vagales diagnostiques",
+          "details": [
+            "Massage sinus carotidien [si indiqué]",
+            "Manœuvre Valsalva [si approprié]",
+            "Compression globes oculaires [éviter]",
+            "Immersion eau froide [si disponible]",
+            "Surveillance pendant manœuvre [ECG]"
+          ],
+          "scoringRule": "Manœuvres appropriées et sécurisées = 2 pts, partielles = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e9",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "details": [
+            "Examen cardiovasculaire FA complet",
+            "Recherche étiologies systématique",
+            "Évaluation retentissement hémodynamique",
+            "Recherche comorbidités",
+            "Examen sécurisé et adapté"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic principal avec classification ESC",
+          "details": [
+            "Fibrillation auriculaire paroxystique",
+            "Classification temporelle (paroxystique)",
+            "Première détection vs récurrente",
+            "FA symptomatique",
+            "Critères ESC 2020 appliqués"
+          ],
+          "scoringRule": "Diagnostic précis avec classification = 2 pts, partiel = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m2",
+          "text": "Diagnostics différentiels cardiaques",
+          "ddSection": {
+            "categories": [
+              {
+                "name": "Tachycardies régulières",
+                "items": [
+                  "Tachycardie par réentrée intranodale ECG, manœuvres vagales",
+                  "Tachycardie par réentrée AV ECG, épreuve effort",
+                  "Flutter auriculaire 2:1 ECG, manœuvres vagales",
+                  "Tachycardie atriale focale Holter ECG, échocardiographie"
+                ]
+              },
+              {
+                "name": "Tachycardies irrégulières",
+                "items": [
+                  "Flutter auriculaire variable ECG 12 dérivations",
+                  "Tachycardie atriale multifocale ECG, gazométrie",
+                  "Extrasystolie auriculaire fréquente Holter ECG 24h"
+                ]
+              },
+              {
+                "name": "Causes secondaires",
+                "items": [
+                  "Hyperthyroïdie TSH, T3, T4",
+                  "Embolie pulmonaire D-dimères, angio-CT",
+                  "Anémie sévère NFS, ferritine"
+                ]
+              }
+            ]
+          },
+          "scoringRule": "≥6 DD avec examens = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m3",
+          "text": "ECG 12 dérivations et interprétation",
+          "details": [
+            "ECG immédiat pendant crise",
+            "Rythme irrégulier irrégulier",
+            "Absence onde P visible",
+            "Complexes QRS fins (<120ms)",
+            "Ondulations atriales (ondes f)",
+            "Fréquence ventriculaire 127 bpm",
+            "Recherche signes ischémie"
+          ],
+          "scoringRule": "≥6 éléments ECG FA = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m4",
+          "text": "Stratification risque thromboembolique",
+          "details": [
+            "Score CHA2DS2-VASc [2 points]",
+            "Risque AVC annuel [1.3%]",
+            "Indication anticoagulation [oui]",
+            "Score HAS-BLED [2 points]",
+            "Ratio bénéfice/risque [favorable]",
+            "Choix anticoagulant [AOD vs AVK]"
+          ],
+          "scoringRule": "Stratification complète = 2 pts, partielle = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m5",
+          "text": "Examens biologiques urgents",
+          "details": [
+            "NFS (anémie, plaquettes)",
+            "Ionogramme (K+, Mg2+)",
+            "Fonction rénale (créatinine, DFG)",
+            "Troponines hs (SCA)",
+            "BNP/NT-proBNP (insuffisance cardiaque)",
+            "D-dimères (embolie pulmonaire)",
+            "TSH (hyperthyroïdie)"
+          ],
+          "scoringRule": "≥6 examens appropriés = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m6",
+          "text": "Imagerie et examens complémentaires",
+          "details": [
+            "Échocardiographie transthoracique",
+            "Radiographie thoracique",
+            "Holter ECG 24-48h si diagnostic incertain",
+            "Angio-CT thoracique si suspicion EP",
+            "Épreuve effort si coronaropathie",
+            "IRM cardiaque si cardiomyopathie"
+          ],
+          "scoringRule": "≥4 examens appropriés = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m7",
+          "text": "Stratégie thérapeutique contrôle rythme vs fréquence",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Contrôle fréquence (first line)",
+                "content": "• Bêtabloquants : métoprolol 25-100mg 2×/j\\n• Inhibiteurs calciques non-DHP : vérapamil 120-360mg/j\\n• Digitaliques si insuffisance cardiaque\\n• Objectif FC repos 60-100 bpm\\n• Éviter surdosage (bradycardie)"
+              },
+              {
+                "title": "Contrôle rythme (si indiqué)",
+                "content": "• Cardioversion électrique si instable\\n• Flécaïnide 100-150mg 2×/j (si cœur sain)\\n• Propafénone 150-300mg 3×/j\\n• Amiodarone si cardiopathie structurelle\\n• Ablation FA si échec médical"
+              },
+              {
+                "title": "Anticoagulation obligatoire",
+                "content": "• AOD préférés : rivaroxaban 20mg/j, apixaban 5mg 2×/j\\n• AVK si valve mécanique ou RM sévère\\n• Débuter avant cardioversion si >48h\\n• Maintenir à vie si CHA2DS2-VASc ≥2\\n• Surveillance INR si AVK"
+              }
+            ]
+          },
+          "scoringRule": "Stratégie thérapeutique complète = 2 pts, partielle = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m8",
+          "text": "Prise en charge immédiate et surveillance",
+          "details": [
+            "Monitoring cardiaque continu",
+            "Voie veineuse périphérique",
+            "Surveillance TA et FC",
+            "Contrôle fréquence si >150 bpm",
+            "Cardioversion si instabilité",
+            "Préparation amiodarone IV",
+            "Évaluation hospitalisation"
+          ],
+          "scoringRule": "≥5 mesures immédiates = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m9",
+          "text": "Gestion facteurs déclenchants",
+          "details": [
+            "Réduction consommation café [<2 tasses/j]",
+            "Modération alcool [<1 verre/j]",
+            "Arrêt tabac [consultation tabacologie]",
+            "Gestion stress [relaxation, psycho]",
+            "Correction troubles sommeil",
+            "Optimisation équilibre électrolytique",
+            "Traitement optimal HTA/dyslipidémie"
+          ],
+          "scoringRule": "≥5 facteurs gérés = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m10",
+          "text": "Information patient et éducation thérapeutique",
+          "details": [
+            "Explication FA et mécanisme",
+            "Risque thromboembolique expliqué",
+            "Importance anticoagulation à vie",
+            "Signes d'alarme (AVC, hémorragie)",
+            "Interactions médicamenteuses",
+            "Surveillance INR si AVK",
+            "Carnet de surveillance"
+          ],
+          "scoringRule": "≥5 informations données = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m11",
+          "text": "Organisation du suivi et parcours soins",
+          "details": [
+            "Consultation cardiologie dans 1 mois",
+            "Contrôle biologiques 15 jours",
+            "Holter ECG 3 mois",
+            "Échocardiographie annuelle",
+            "Suivi médecin traitant mensuel",
+            "Éducation thérapeutique structurée",
+            "Coordination pharmacien"
+          ],
+          "scoringRule": "≥5 étapes suivi = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m12",
+          "text": "Évaluation globale de la qualité de la prise en charge",
+          "details": [
+            "Diagnostic FA paroxystique approprié",
+            "Stratification risque complète",
+            "Anticoagulation instaurée correctement",
+            "Contrôle fréquence adapté",
+            "Éducation patient réalisée"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        }
+      ]
+    }
+  }
+}

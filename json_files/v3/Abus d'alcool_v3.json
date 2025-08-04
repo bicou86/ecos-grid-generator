@@ -1,0 +1,780 @@
+{
+  "title": "Abus d'alcool",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Monsieur Jägermeister, 53 ans, se présente au cabinet pour un problème d'alcool évoluant depuis plusieurs années"
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction et objectif de la consultation",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Question ouverte d'introduction → Motif de consultation",
+          "patientComment": "Problème avec l'alcool",
+          "binaryOnly": true
+        },
+        {
+          "id": "a3",
+          "text": "RED FLAGS - Urgences liées à l'alcool",
+          "scoringRule": "≥6 red flags explorés = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false,
+          "redflagsSection": [
+            {
+              "text": "Syndrome de sevrage aigu [tremblements légers]"
+            },
+            {
+              "text": "Delirium tremens (confusion, hallucinations) [non]"
+            },
+            {
+              "text": "Convulsions [non rapportées]"
+            },
+            {
+              "text": "Hyperthermie/sueurs profuses [à évaluer]"
+            },
+            {
+              "text": "Déshydratation sévère [à évaluer]"
+            },
+            {
+              "text": "Troubles de conscience [non]"
+            },
+            {
+              "text": "Hémorragie digestive [non]"
+            },
+            {
+              "text": "Ictère aigu/encéphalopathie hépatique [non visible]"
+            }
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Quantification précise de la consommation",
+          "details": [
+            "Quantité quotidienne [4L bière + 1 bouteille vin = ~12-15 unités/jour]",
+            "Type de boissons [bière, vin]",
+            "Concentration alcoolique [à préciser]",
+            "Horaires de consommation [dès le matin]",
+            "Consommation week-end vs semaine [tous les jours]",
+            "Calcul en unités d'alcool standard [~100 unités/semaine]"
+          ],
+          "scoringRule": "≥5 éléments précis = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a5",
+          "text": "Évolution temporelle détaillée",
+          "details": [
+            "Âge de début consommation [à préciser]",
+            "Durée du problème actuel [8 ans]",
+            "Évolution : progressive/stable/aggravation [aggravation]",
+            "Épisodes d'abstinence [tentatives échouées]",
+            "Facteurs déclenchants [stress, perte emploi]",
+            "Pattern de consommation [continu maintenant]"
+          ],
+          "scoringRule": "≥5 éléments = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a6",
+          "text": "Critères DSM-5 - Trouble de l'usage de l'alcool",
+          "details": [
+            "1. Consommation ≥ quantité/temps prévu [oui, perte contrôle]",
+            "2. Désir persistant/tentatives infructueuses [oui, essais ratés]",
+            "3. Temps considérable pour obtenir/consommer [oui, priorité]",
+            "4. Craving/désir intense [oui, de plus en plus fort]",
+            "5. Échec obligations (travail/famille) [oui, perte emploi/famille]",
+            "6. Problèmes sociaux malgré poursuite [oui, violence conjugale]",
+            "7. Abandon activités importantes [oui, plus de loisirs]",
+            "8. Usage situations dangereuses [à explorer]",
+            "9. Problèmes physiques/psychologiques [crampes, honte]",
+            "10. Tolérance [oui, supporte plus que autres]",
+            "11. Sevrage [oui, tremblements sans alcool]"
+          ],
+          "scoringRule": "≥8 critères = sévère, 4-5 = modéré, 2-3 = léger; Tous explorés = 2 pts, ≥6 = 1 pt, <6 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a7",
+          "text": "Questionnaire CAGE détaillé",
+          "details": [
+            "Cut down : tentatives réduction [oui, sans succès]",
+            "Annoyed : agacement critiques [oui, violence conjugale]",
+            "Guilty : culpabilité [oui, honte situation]",
+            "Eye opener : alcool matinal [oui, 1-2 bières pour démarrer]"
+          ],
+          "scoringRule": "Score CAGE : 4/4 = très positif; Score complet = 2 pts, partiel = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a8",
+          "text": "Questionnaire AUDIT (si indiqué)",
+          "details": [
+            "Fréquence consommation [quotidienne]",
+            "Quantité type [>10 unités]",
+            "Binge drinking [fréquent]",
+            "Perte de contrôle dernière année [fréquente]",
+            "Échec attentes dernière année [fréquent]",
+            "Besoin alcool matinal [oui]",
+            "Culpabilité/remords [fréquents]",
+            "Trous de mémoire [fréquents]",
+            "Blessures liées à l'alcool [chutes]",
+            "Inquiétude entourage [famille partie]"
+          ],
+          "scoringRule": "Score AUDIT calculé si utilisé = 2 pts, partiel = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a9",
+          "text": "Antécédents de sevrage et traitements",
+          "details": [
+            "Tentatives sevrage antérieures [aucune formelle]",
+            "Hospitalisation pour sevrage [non]",
+            "Médicaments anti-craving essayés [non]",
+            "Psychothérapie/TCC [non]",
+            "Groupes entraide (AA, Croix-Bleue) [essayé 1x, abandonné]",
+            "Rechutes et circonstances [multiples]",
+            "Période d'abstinence maximale [à préciser]"
+          ],
+          "scoringRule": "≥6 éléments = 2 pts, 3-5 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a10",
+          "text": "Complications hépatiques",
+          "details": [
+            "Ictère/subictère [non visible]",
+            "Douleurs hypochondre droit [crampes abdominales]",
+            "Hépatomégalie palpée [à examiner]",
+            "Ascite [non visible]",
+            "Circulation collatérale [à rechercher]",
+            "Angiomes stellaires [à rechercher]",
+            "Érythème palmaire [à examiner]",
+            "Encéphalopathie (confusion, astérixis) [non]"
+          ],
+          "scoringRule": "≥6 signes recherchés = 2 pts, 3-5 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a11",
+          "text": "Complications gastro-intestinales",
+          "details": [
+            "Reflux gastro-œsophagien [non]",
+            "Épigastralgies/gastrite [lourdeur estomac]",
+            "Nausées/vomissements [à explorer]",
+            "Diarrhée chronique [à explorer]",
+            "Saignements digestifs [non]",
+            "Méléna/hématémèse [non]",
+            "Douleurs pancréatiques [à explorer]",
+            "Malabsorption [possible vu alimentation]"
+          ],
+          "scoringRule": "≥6 symptômes explorés = 2 pts, 3-5 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a12",
+          "text": "Complications neurologiques",
+          "details": [
+            "Polyneuropathie (douleurs pieds, hypoesthésie) [non]",
+            "Troubles mémoire [oublie beaucoup]",
+            "Troubles coordination [renverse café, moins adroit]",
+            "Tremblements [légers sans alcool]",
+            "Convulsions sevrage [non]",
+            "Syndrome Wernicke-Korsakoff [à dépister]",
+            "Ataxie/instabilité [à examiner]",
+            "Diplopie/troubles visuels [non]"
+          ],
+          "scoringRule": "≥6 complications = 2 pts, 3-5 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a13",
+          "text": "Complications cardiovasculaires",
+          "details": [
+            "Hypertension artérielle [à mesurer]",
+            "Cardiomyopathie alcoolique [à explorer]",
+            "Troubles du rythme [à dépister]",
+            "Insuffisance cardiaque [à rechercher]",
+            "AVC [non rapporté]",
+            "Syndrome de QT long [si sevrage]"
+          ],
+          "scoringRule": "≥5 complications = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a14",
+          "text": "État nutritionnel et carences",
+          "details": [
+            "Alimentation [ne mange que peu, parfois pain]",
+            "Perte de poids [non mentionné]",
+            "Carences vitaminiques (B1, B12, folates) [probable]",
+            "Dénutrition protéino-énergétique [à évaluer]",
+            "Hypomagnésémie [fréquente]",
+            "Hypophosphorémie [à dépister]",
+            "Troubles déglutition [à évaluer]"
+          ],
+          "scoringRule": "≥6 éléments = 2 pts, 3-5 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a15",
+          "text": "Autres toxiques et addictions",
+          "details": [
+            "Tabac [50 paquets-années - addiction majeure]",
+            "Cannabis [non]",
+            "Cocaïne/stimulants [non]",
+            "Opiacés [non]",
+            "Benzodiazépines [non]",
+            "Médicaments détournés [à explorer]",
+            "Poly-addictions [tabac + alcool]"
+          ],
+          "scoringRule": "≥6 substances explorées = 2 pts, 3-5 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a16",
+          "text": "Comorbidités psychiatriques",
+          "details": [
+            "Dépression [honte, culpabilité - probable]",
+            "Anxiété [usage pour décompresser]",
+            "Troubles bipolaires [à explorer]",
+            "PTSD/traumatismes [à rechercher]",
+            "Troubles personnalité [violence conjugale]",
+            "Idées suicidaires [à dépister absolument]",
+            "Tentatives suicide antérieures [à rechercher]"
+          ],
+          "scoringRule": "≥6 troubles explorés = 2 pts, 3-5 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a17",
+          "text": "Antécédents personnels médicaux",
+          "details": [
+            "Pathologies hépatiques connues [ne sait pas]",
+            "Pancréatite [à rechercher]",
+            "Traumatismes/accidents [chutes fréquentes]",
+            "Chirurgies [non mentionné]",
+            "Hospitalisations [à préciser]",
+            "Médicaments actuels [aucun]",
+            "Allergies [aucune]"
+          ],
+          "scoringRule": "≥6 antécédents = 2 pts, 3-5 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a18",
+          "text": "Anamnèse familiale",
+          "details": [
+            "Alcoolisme familial [ne connaît pas famille]",
+            "Troubles psychiatriques [ne connaît pas]",
+            "Pathologies hépatiques [ne connaît pas]",
+            "Addictions autres [ne connaît pas]",
+            "Suicide familial [à explorer si possible]"
+          ],
+          "scoringRule": "Exploration tentée = 2 pts, partielle = 1 pt, non = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a19",
+          "text": "Retentissement socio-professionnel",
+          "details": [
+            "Formation/parcours [électricien]",
+            "Perte emploi [oui, il y a 2 mois]",
+            "Difficultés professionnelles [liées alcool]",
+            "Absentéisme [probable]",
+            "Accidents travail [à explorer]",
+            "Situation financière [grosses dettes]",
+            "Logement [petit appartement]",
+            "Permis de conduire [à vérifier - sécurité]"
+          ],
+          "scoringRule": "≥6 domaines = 2 pts, 3-5 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a20",
+          "text": "Retentissement familial et social",
+          "details": [
+            "Situation familiale [femme partie]",
+            "Enfants et relations [ne viennent plus]",
+            "Violence domestique [a frappé sa femme]",
+            "Réseau social [plus personne]",
+            "Isolement social [seul]",
+            "Support familial [aucun]",
+            "Amis/entourage [dettes, relations détériorées]"
+          ],
+          "scoringRule": "≥6 aspects = 2 pts, 3-5 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a21",
+          "text": "Motivation au changement - Stades de Prochaska",
+          "details": [
+            "Pré-contemplation (déni) [non, consulte]",
+            "Contemplation (ambivalence) [probable - honte mais continue]",
+            "Préparation (décision) [à évaluer]",
+            "Action (changement) [pas encore]",
+            "Maintien (prévention rechute)",
+            "Rechute (retour consommation)"
+          ],
+          "scoringRule": "Stade identifié = 2 pts, partiellement = 1 pt, non = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a22",
+          "text": "Facteurs de protection et ressources",
+          "details": [
+            "Motivation personnelle [honte = début prise conscience]",
+            "Insight/conscience problème [oui, consulte]",
+            "Capacités cognitives préservées [à évaluer]",
+            "Support potentiel [à identifier]",
+            "Stabilité logement [a appartement]",
+            "Ressources financières [limites - dettes]"
+          ],
+          "scoringRule": "≥5 facteurs = 2 pts, 2-4 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a23",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "binaryOnly": false,
+          "details": [
+            "Anamnèse addictologique complète et structurée",
+            "Évaluation des critères diagnostiques DSM-5",
+            "Recherche systématique des complications",
+            "Approche bio-psycho-sociale globale",
+            "Évaluation motivation et stade de changement"
+          ],
+          "scoringRule": "Excellent = 2 pts, satisfaisant = 1 pt, insuffisant = 0 pt"
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Signes vitaux et état général",
+          "details": [
+            "TA [hypertension possible]",
+            "FC [tachycardie si sevrage]",
+            "Température [fièvre si infection]",
+            "FR [tachypnée si sevrage]",
+            "Poids/IMC [dénutrition probable]",
+            "État général/faciès [détérioration]",
+            "Hydratation [déshydratation possible]"
+          ],
+          "scoringRule": "≥6 paramètres = 2 pts, 3-5 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e2",
+          "text": "Signes d'intoxication chronique",
+          "details": [
+            "Érythrose faciale [rechercher]",
+            "Télangiectasies [rechercher]",
+            "Rhinophyma [rechercher]",
+            "Haleine alcoolisée [rechercher]",
+            "Voix rauque [tabac + alcool]",
+            "Hypertrophie parotidienne [rechercher]",
+            "Tremblements fins [légers rapportés]"
+          ],
+          "scoringRule": "≥6 signes recherchés = 2 pts, 3-5 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e3",
+          "text": "Examen abdominal systématique",
+          "details": [
+            "Inspection (distension, circulation collatérale) [rechercher signes HTP]",
+            "Palpation hépatomégalie [bord hépatique]",
+            "Palpation splénomégalie [rate]",
+            "Percussion matité hépatique [augmentée?]",
+            "Recherche ascite [signe du flot]",
+            "Douleur abdominale [crampes rapportées]",
+            "Masses abdominales [rechercher]"
+          ],
+          "scoringRule": "≥6 éléments = 2 pts, 3-5 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e4",
+          "text": "Signes cutanés hépatiques",
+          "details": [
+            "Angiomes stellaires [thorax, visage]",
+            "Érythème palmaire [paumes]",
+            "Ictère/subictère [conjonctives, peau]",
+            "Pétéchies/ecchymoses [thrombopénie]",
+            "Œdèmes déclives [hypoprotidémie]",
+            "Ongles blancs [hypoalbuminémie]"
+          ],
+          "scoringRule": "≥5 signes recherchés = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e5",
+          "text": "Examen neurologique ciblé",
+          "details": [
+            "Orientation temporo-spatiale [mémoire]",
+            "Troubles mnésiques [oublie beaucoup]",
+            "Motricité oculaire [diplopie?]",
+            "Force musculaire [4 membres]",
+            "Coordination doigt-nez [renverse café]",
+            "Marche/équilibre [chutes]",
+            "Sensibilité vibratoire [polyneuropathie]",
+            "ROT [hyporéflexie polyneuropathie]"
+          ],
+          "scoringRule": "≥6 éléments = 2 pts, 3-5 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e6",
+          "text": "Recherche syndrome de sevrage",
+          "details": [
+            "Tremblements [légers présents]",
+            "Sueurs [à rechercher]",
+            "Agitation/anxiété [à évaluer]",
+            "Troubles du sommeil [à explorer]",
+            "Nausées/vomissements [à rechercher]",
+            "Hallucinations [à dépister]",
+            "Convulsions [à rechercher dans ATCD]"
+          ],
+          "scoringRule": "≥6 signes évalués = 2 pts, 3-5 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e7",
+          "text": "Examen cavité buccale et ORL",
+          "details": [
+            "État dentaire [hygiène, caries]",
+            "Leucoplasie [taches blanches]",
+            "Érythroplasie [taches rouges]",
+            "Candidose buccale [plaques]",
+            "Ulcérations [bouche]",
+            "Hypertrophie parotidienne [palpation]",
+            "Adénopathies cervicales [cancer ORL]"
+          ],
+          "scoringRule": "≥6 éléments = 2 pts, 3-5 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e8",
+          "text": "Examen cardiovasculaire",
+          "details": [
+            "Auscultation cardiaque [souffle, rythme]",
+            "Auscultation pulmonaire [râles, épanchement]",
+            "Œdèmes membres inférieurs [ICC]",
+            "Pouls périphériques [athérosclérose]",
+            "Turgescence jugulaires [ICC droite]",
+            "Reflux hépato-jugulaire [ICC]"
+          ],
+          "scoringRule": "≥5 éléments = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e9",
+          "text": "Évaluation état nutritionnel",
+          "details": [
+            "Poids/taille/IMC [dénutrition]",
+            "Pli cutané [déshydratation]",
+            "Masse musculaire [sarcopénie]",
+            "Pâleur [anémie]",
+            "Chéilite [carences vitaminiques]",
+            "Glossite [carence B12/folates]",
+            "Hygiène corporelle [négligence]"
+          ],
+          "scoringRule": "≥6 éléments = 2 pts, 3-5 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e10",
+          "text": "Recherche complications spécifiques",
+          "details": [
+            "Gynécomastie [homme - insuffisance hépatique]",
+            "Atrophie testiculaire [hypogonadisme]",
+            "Contracture Dupuytren [alcool]",
+            "Purpura [thrombopénie]",
+            "Signes d'encéphalopathie [astérixis]"
+          ],
+          "scoringRule": "≥4 signes = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e11",
+          "text": "Tests fonctionnels si appropriés",
+          "details": [
+            "Test de l'horloge [fonctions exécutives]",
+            "MMSE rapide [troubles cognitifs]",
+            "Test marche en ligne [ataxie]",
+            "Épreuve Romberg [équilibre]"
+          ],
+          "scoringRule": "Tests adaptés = 2 pts, partiels = 1 pt, non = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e12",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "binaryOnly": false,
+          "details": [
+            "Examen systématique et complet",
+            "Recherche active des complications",
+            "Évaluation sevrage et sécurité",
+            "Techniques d'examen appropriées"
+          ],
+          "scoringRule": "Excellent = 2 pts, satisfaisant = 1 pt, insuffisant = 0 pt"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic principal avec classification",
+          "patientComment": "Trouble de l'usage de l'alcool sévère (≥6 critères DSM-5) avec dépendance physique",
+          "binaryOnly": true
+        },
+        {
+          "id": "m2",
+          "text": "Diagnostics différentiels et comorbidités",
+          "scoringRule": "≥7 DD = 2 pts, 4-6 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false,
+          "ddSection": {
+            "categories": [
+              {
+                "name": "Diagnostics différentiels à considérer",
+                "items": [
+                  "Usage nocif sans dépendance [≤3 critères DSM-5]",
+                  "Intoxication alcoolique aiguë",
+                  "Syndrome de sevrage alcoolique",
+                  "Polytoxicomanie [tabac associé]",
+                  "Trouble dépressif induit [secondaire vs primaire]",
+                  "Trouble anxieux induit [vs primaire]",
+                  "Trouble bipolaire [avec alcoolisation secondaire]",
+                  "Pathologie hépatique alcoolique",
+                  "Encéphalopathie de Wernicke-Korsakoff"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m3",
+          "text": "Bilan biologique initial complet",
+          "details": [
+            "NFS [anémie macrocytaire, thrombopénie]",
+            "Ionogramme complet [hyponatrémie, hypomagnésémie]",
+            "Fonction rénale [urée, créatinine]",
+            "Glycémie [hypoglycémie possible]",
+            "Bilan hépatique [ASAT, ALAT, GGT, PAL, bilirubine]",
+            "Albumine, préalbumine [nutrition]",
+            "TP/INR [insuffisance hépato-cellulaire]",
+            "Amylase, lipase [pancréatite]"
+          ],
+          "scoringRule": "≥7 examens = 2 pts, 4-6 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m4",
+          "text": "Bilan nutritionnel et vitaminique",
+          "details": [
+            "Vitamine B1 (thiamine) [carence fréquente]",
+            "Vitamine B12 [anémie macrocytaire]",
+            "Folates [anémie, polyneuropathie]",
+            "Vitamine D [ostéoporose]",
+            "Fer, transferrine [anémie]",
+            "Magnésium [hypomagnésémie]",
+            "Phosphore [hypophosphorémie]",
+            "Zinc [immunité, cicatrisation]"
+          ],
+          "scoringRule": "≥6 vitamines = 2 pts, 3-5 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m5",
+          "text": "Examens complémentaires spécialisés",
+          "details": [
+            "TSH [diagnostic différentiel]",
+            "Sérologies hépatites B, C [co-infections]",
+            "Sérologie VIH [si facteurs de risque]",
+            "α-fœtoprotéine [hépatocarcinome si cirrhose]",
+            "CDT (transferrine déficiente) [marqueur consommation]",
+            "Triglycérides [pancréatite]",
+            "Acide urique [goutte]"
+          ],
+          "scoringRule": "≥5 examens adaptés = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m6",
+          "text": "Imagerie selon complications",
+          "details": [
+            "Échographie abdominale [stéatose, cirrhose]",
+            "CT abdominal [pancréatite, complications]",
+            "Endoscopie digestive haute [varices œsophagiennes]",
+            "IRM cérébrale [si troubles cognitifs]",
+            "Radiographie thorax [pneumonie, cardiomyopathie]",
+            "Échographie cardiaque [si ICC suspectée]"
+          ],
+          "scoringRule": "≥3 examens adaptés = 2 pts, 2 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m7",
+          "text": "Évaluation risque de sevrage - Score Cushman",
+          "details": [
+            "Tremblements [légers = 1 point]",
+            "Sueurs [à évaluer]",
+            "Agitation [à évaluer]",
+            "Orientation [à tester]",
+            "Nausées/vomissements [à rechercher]",
+            "Hallucinations auditives [à dépister]",
+            "Convulsions antérieures [à rechercher]",
+            "Score total et risque [<4 = faible, 4-6 = modéré, >6 = élevé]"
+          ],
+          "scoringRule": "Score complet = 2 pts, partiel = 1 pt, non fait = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m8",
+          "text": "Sevrage et prévention complications",
+          "details": [
+            "Vitamine B1 (thiamine) 300mg IV/IM [prévention Wernicke]",
+            "Folates 5mg/j [correction carence]",
+            "Vitamine B12 si carence [1000μg IM]",
+            "Magnésium 4-6g/j [correction hypomagnésémie]",
+            "Thiazidiques si HTA [éviter β-bloquants]",
+            "Benzodiazépines si sevrage [diazépam, oxazépam]",
+            "Hydratation prudente [risque surcharge]"
+          ],
+          "scoringRule": "≥6 mesures = 2 pts, 3-5 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m9",
+          "text": "Traitements pharmacologiques anti-craving",
+          "details": [
+            "Acamprosate (Aotal®) 2g/j [réduction craving]",
+            "Naltrexone (Revia®) 50mg/j [antagoniste opioïde]",
+            "Disulfirame (Antabuse®) [effet antabuse si motivation]",
+            "Baclofène 30-300mg/j [hors AMM, efficace]",
+            "Nalméfène (Selincro®) [réduction consommation]",
+            "Topiramate [hors AMM, réduction craving]",
+            "Adaptation selon fonction hépatique"
+          ],
+          "scoringRule": "≥5 options = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m10",
+          "text": "Prise en charge psychosociale",
+          "details": [
+            "Entretien motivationnel [stade Prochaska]",
+            "TCC (thérapie cognitivo-comportementale)",
+            "Thérapie familiale [réconciliation si possible]",
+            "Groupes d'entraide (AA, Croix-Bleue, Vie Libre)",
+            "Accompagnement social [dettes, logement]",
+            "Réinsertion professionnelle [pôle emploi]",
+            "Médiation familiale [enfants]",
+            "Psychothérapie individuelle [traumatismes]"
+          ],
+          "scoringRule": "≥6 modalités = 2 pts, 3-5 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m11",
+          "text": "Critères hospitalisation",
+          "redflagsSection": [
+            {
+              "text": "Risque de sevrage sévère (score Cushman >6)"
+            },
+            {
+              "text": "Antécédent de delirium tremens ou convulsions"
+            },
+            {
+              "text": "Comorbidités somatiques graves (cirrhose, pancréatite)"
+            },
+            {
+              "text": "Troubles psychiatriques sévères (suicide, psychose)"
+            },
+            {
+              "text": "Échec sevrage ambulatoire répété"
+            },
+            {
+              "text": "Absence totale de support social"
+            },
+            {
+              "text": "Poly-intoxication (benzodiazépines, opiacés)"
+            },
+            {
+              "text": "Dénutrition sévère nécessitant réalimentation"
+            }
+          ],
+          "scoringRule": "≥6 critères = 2 pts, 3-5 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m12",
+          "text": "Suivi et prévention rechutes",
+          "details": [
+            "Consultations addictologie rapprochées [hebdomadaires puis mensuelles]",
+            "Surveillance biologique [GGT, CDT, fonction hépatique]",
+            "Dépistage cancers [ORL, digestif, poumon]",
+            "Vaccination hépatite B [si non immunisé]",
+            "Contraception si femme [tératogénicité]",
+            "Plan de crise en cas de rechute",
+            "Éducation thérapeutique [alcool et santé]",
+            "Carnet de suivi [consommation, humeur]"
+          ],
+          "scoringRule": "≥6 éléments = 2 pts, 3-5 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m13",
+          "text": "Aspects médico-légaux et sécurité",
+          "details": [
+            "Permis de conduire [signalement préfecture si danger]",
+            "Capacité consentement [troubles cognitifs]",
+            "Protection juridique [curatelle si nécessaire]",
+            "Déclaration accident travail [si lien alcool]",
+            "Violence domestique [signalement si récidive]",
+            "Enfants en danger [signalement services sociaux]"
+          ],
+          "scoringRule": "≥4 aspects = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m14",
+          "text": "Objectifs thérapeutiques négociés",
+          "details": [
+            "Abstinence complète [objectif idéal]",
+            "Réduction de consommation [si abstinence impossible]",
+            "Amélioration qualité de vie",
+            "Réconciliation familiale [enfants, ex-épouse]",
+            "Réinsertion professionnelle",
+            "Stabilisation financière [gestion dettes]",
+            "Suivi médical régulier [complications]"
+          ],
+          "scoringRule": "≥5 objectifs = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m15",
+          "text": "Évaluation globale de la qualité de la prise en charge",
+          "binaryOnly": false,
+          "details": [
+            "Approche bio-psycho-sociale complète",
+            "Prise en charge personnalisée et graduée",
+            "Prévention complications et rechutes",
+            "Coordination multidisciplinaire",
+            "Respect de la motivation du patient"
+          ],
+          "scoringRule": "Excellent = 2 pts, satisfaisant = 1 pt, insuffisant = 0 pt"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,479 @@
+{
+  "title": "Voyage au Brésil",
+  "context": {
+    "setting": "Cabinet de médecine générale - Consultation de médecine des voyages",
+    "patient": "Mme Fischer, 22 ans, se présente pour préparer son voyage au Brésil"
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction et objectif de la consultation",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Identification du projet de voyage",
+          "binaryOnly": false,
+          "details": [
+            "Destination et durée [voyage au Brésil prévu pour 3 mois]",
+            "Délai avant le départ [dans 6 mois]",
+            "Nombre de voyageurs"
+          ],
+          "scoringRule": "≥2 détails du voyage = 2 points"
+        },
+        {
+          "id": "a3",
+          "text": "Questions et préoccupations de la patiente",
+          "binaryOnly": false,
+          "details": [
+            "Vaccinations nécessaires [Quelles vaccinations faut-il ?]",
+            "Pharmacie de voyage [Que mettre dans ma trousse ?]",
+            "Autres précautions [Et quoi d'autre ?]",
+            "Risques spécifiques au Brésil"
+          ],
+          "scoringRule": "≥3 préoccupations explorées = 2 points, 2 préoccupations = 1 point"
+        },
+        {
+          "id": "a4",
+          "text": "Évaluation détaillée du statut vaccinal",
+          "binaryOnly": false,
+          "details": [
+            "Vaccinations de base [vaccins recommandés faits, mais il y a longtemps]",
+            "Hépatite A [jamais vaccinée]",
+            "Hépatite B [jamais vaccinée]",
+            "Tétanos [vaccination expirée]",
+            "Fièvre jaune [non faite]",
+            "Vérification du carnet de vaccination"
+          ],
+          "scoringRule": "≥5 vaccinations évaluées = 2 points, 3-4 vaccinations = 1 point"
+        },
+        {
+          "id": "a5",
+          "text": "Antécédents médicaux et état de santé",
+          "binaryOnly": false,
+          "details": [
+            "Maladies chroniques [aucune]",
+            "Allergies médicamenteuses [aucune]",
+            "Médicaments actuels [aucun]",
+            "Contraception",
+            "Antécédents chirurgicaux"
+          ],
+          "scoringRule": "≥4 antécédents explorés = 2 points, 3 antécédents = 1 point"
+        },
+        {
+          "id": "a6",
+          "text": "Expérience de voyages internationaux",
+          "binaryOnly": false,
+          "details": [
+            "Voyages précédents [jamais été à l'étranger]",
+            "Premier grand voyage [oui]",
+            "Appréhensions particulières",
+            "Expérience avec antipaludiques"
+          ],
+          "scoringRule": "≥3 aspects d'expérience = 2 points, 2 aspects = 1 point"
+        },
+        {
+          "id": "a7",
+          "text": "Type de voyage et activités prévues",
+          "binaryOnly": false,
+          "details": [
+            "École de langue à Rio de Janeiro",
+            "Déplacements prévus [avion ou bus vers le nord]",
+            "Excursion en jungle [navigation fluviale prévue]",
+            "Activités sociales [sorties, fêtes]",
+            "Type d'hébergement",
+            "Contact avec animaux",
+            "Baignades prévues"
+          ],
+          "scoringRule": "≥5 activités explorées = 2 points, 3-4 activités = 1 point"
+        },
+        {
+          "id": "a8",
+          "text": "Évaluation des comportements à risque potentiels",
+          "binaryOnly": false,
+          "details": [
+            "Alimentation de rue",
+            "Consommation d'alcool",
+            "Activité sexuelle possible",
+            "Sports à risque",
+            "Tatouages/piercings envisagés"
+          ],
+          "scoringRule": "≥4 comportements à risque = 2 points, 3 comportements = 1 point"
+        },
+        {
+          "id": "a9",
+          "text": "Situation personnelle et accompagnement",
+          "binaryOnly": false,
+          "details": [
+            "Voyage seule ou accompagnée",
+            "Contacts sur place",
+            "Niveau de portugais",
+            "Budget santé/assurance"
+          ],
+          "scoringRule": "≥3 aspects personnels = 2 points, 2 aspects = 1 point"
+        },
+        {
+          "id": "a10",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "binaryOnly": false,
+          "details": [
+            "Anamnèse ciblée et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Vaccinations essentielles pour le Brésil",
+          "binaryOnly": false,
+          "details": [
+            "Mise à jour vaccinations de base [nécessaire vu l'ancienneté]",
+            "Hépatite A (fortement recommandée) [à faire]",
+            "Hépatite B (recommandée, risque IST) [à faire]",
+            "Fièvre jaune (obligatoire pour certaines régions) [à faire]",
+            "Rappel DTPa [tétanos expiré, à faire]",
+            "Fièvre typhoïde (recommandée)",
+            "Rage (selon activités en jungle)",
+            "Grippe saisonnière [éventuellement]"
+          ],
+          "scoringRule": "≥6 vaccinations évaluées = 2 points, 4-5 vaccinations = 1 point"
+        },
+        {
+          "id": "e2",
+          "text": "Prévention du paludisme",
+          "binaryOnly": false,
+          "details": [
+            "Zones de transmission [nord du Brésil, Amazonie]",
+            "Traitement de réserve partout [antipaludique d'urgence]",
+            "Prophylaxie recommandée pour le nord",
+            "Options: Méfloquine, Malarone ou Doxycycline",
+            "Choix selon tolérance et coût",
+            "Schéma de prise et durée",
+            "Effets secondaires possibles"
+          ],
+          "scoringRule": "≥5 aspects antipaludiques = 2 points, 3-4 aspects = 1 point"
+        },
+        {
+          "id": "e3",
+          "text": "Protection anti-vectorielle complète",
+          "binaryOnly": false,
+          "details": [
+            "Importance cruciale de la protection",
+            "Moustiquaire imprégnée indispensable",
+            "Répulsifs efficaces (DEET 30-50%)",
+            "Vêtements couvrants clairs",
+            "Insecticides pour la chambre",
+            "Protection renforcée au crépuscule",
+            "Prévention dengue, Zika, chikungunya"
+          ],
+          "scoringRule": "≥5 mesures anti-vectorielles = 2 points, 3-4 mesures = 1 point"
+        },
+        {
+          "id": "e4",
+          "text": "Prévention des risques alimentaires",
+          "binaryOnly": false,
+          "details": [
+            "Règle: \"Cook it, boil it, peel it or forget it\"",
+            "Eau embouteillée uniquement",
+            "Éviter glaçons et glaces de rue",
+            "Attention fruits de mer",
+            "Hygiène des mains systématique",
+            "Restaurants recommandés vs street food"
+          ],
+          "scoringRule": "≥5 conseils alimentaires = 2 points, 3-4 conseils = 1 point"
+        },
+        {
+          "id": "e5",
+          "text": "Risques spécifiques et prévention",
+          "binaryOnly": false,
+          "details": [
+            "Accidents de circulation [première cause de rapatriement !]",
+            "Protection solaire intensive [indice 50+]",
+            "Risques liés aux baignades (courants, méduses)",
+            "Criminalité dans certaines zones urbaines",
+            "Précautions sorties nocturnes",
+            "Éviter signes extérieurs de richesse"
+          ],
+          "scoringRule": "≥5 risques spécifiques = 2 points, 3-4 risques = 1 point"
+        },
+        {
+          "id": "e6",
+          "text": "Prévention IST et comportement sexuel",
+          "binaryOnly": false,
+          "details": [
+            "Information sur prévalence VIH/IST au Brésil",
+            "Importance des préservatifs",
+            "Où se procurer des préservatifs de qualité",
+            "Éviter partenaires à risque",
+            "Prophylaxie post-exposition si nécessaire",
+            "Contraception d'urgence"
+          ],
+          "scoringRule": "≥4 aspects de prévention IST = 2 points, 3 aspects = 1 point"
+        },
+        {
+          "id": "e7",
+          "text": "Trousse de pharmacie complète",
+          "binaryOnly": false,
+          "details": [
+            "Protection solaire haute protection",
+            "Antalgiques/antipyrétiques (paracétamol, ibuprofène)",
+            "Antidiarrhéiques (lopéramide)",
+            "Antibiotique large spectre (ciprofloxacine ou azithromycine)",
+            "Antiémétiques",
+            "Solutions de réhydratation orale",
+            "Antiseptique et matériel de pansement",
+            "Spray nasal décongestionnant",
+            "Antihistaminiques (cétirizine)",
+            "Comprimés purification d'eau",
+            "Thermomètre",
+            "Préservatifs"
+          ],
+          "scoringRule": "≥9 éléments de trousse = 2 points, 6-8 éléments = 1 point"
+        },
+        {
+          "id": "e8",
+          "text": "État de santé actuel et aptitude au voyage",
+          "binaryOnly": false,
+          "details": [
+            "Examen clinique général",
+            "Vérification absence de contre-indications",
+            "État dentaire (conseiller bilan)",
+            "Test VIH proposé (baseline)"
+          ],
+          "scoringRule": "≥3 aspects de l'examen = 2 points, 2 aspects = 1 point"
+        },
+        {
+          "id": "e9",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "binaryOnly": false,
+          "details": [
+            "Examen clinique ciblé et bien conduit"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Plan de vaccination personnalisé",
+          "binaryOnly": false,
+          "details": [
+            "Calendrier vaccinal avec délais",
+            "Ordonnances pour tous les vaccins",
+            "Coûts et prise en charge",
+            "Carnet de vaccination international",
+            "Certificat fièvre jaune officiel"
+          ],
+          "scoringRule": "≥4 aspects du plan vaccinal = 2 points, 3 aspects = 1 point"
+        },
+        {
+          "id": "m2",
+          "text": "Prescription antipaludiques et médicaments",
+          "binaryOnly": false,
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Chimioprophylaxie antipaludique",
+                "content": "• Méfloquine (Lariam®) pour séjour prolongé\n• Malarone® (atovaquone/proguanil) alternative\n• Doxycycline si contre-indication\n• Traitement de réserve (ASAQ)\n• Surveillance effets secondaires"
+              },
+              {
+                "title": "Vaccinations spécifiques Brésil",
+                "content": "• Fièvre jaune obligatoire (certificat international)\n• Hépatite A : 2 injections (0, 6-12 mois)\n• Hépatite B : 3 injections (0, 1, 6 mois)\n• Fièvre typhoïde selon zones visitées\n• Rage pré-exposition si jungle/animaux"
+              },
+              {
+                "title": "Trousse médicale adaptée",
+                "content": "• Paracétamol/ibuprofène\n• Antibiotique large spectre\n• Antidiarrhéiques et SRO\n• Protection solaire IP 50+\n• Répulsifs DEET 30-50%\n• Préservatifs de qualité\n• Matériel premiers secours"
+              }
+            ]
+          },
+          "scoringRule": "≥2 catégories thérapeutiques = 2 points"
+        },
+        {
+          "id": "m3",
+          "text": "Conseils pratiques jeune voyageuse",
+          "binaryOnly": false,
+          "details": [
+            "Précautions spécifiques femme seule",
+            "Applications mobiles sécurité",
+            "Contacts d'urgence locaux",
+            "Comportement en soirée",
+            "Transport sécurisé (Uber vs taxi)"
+          ],
+          "scoringRule": "≥4 conseils sécurité = 2 points, 3 conseils = 1 point"
+        },
+        {
+          "id": "m4",
+          "text": "Documentation et assurances",
+          "binaryOnly": false,
+          "details": [
+            "Assurance voyage complète obligatoire",
+            "Assistance rapatriement incluse",
+            "Couverture activités à risque",
+            "Copie documents importants",
+            "Contacts ambassade/consulat"
+          ],
+          "scoringRule": "≥4 aspects documentaires = 2 points, 3 aspects = 1 point"
+        },
+        {
+          "id": "m5",
+          "text": "Conduite à tenir en cas de problème",
+          "binaryOnly": false,
+          "ddSection": {
+            "title": "Risques sanitaires spécifiques au Brésil",
+            "categories": [
+              {
+                "name": "Maladies vectorielles",
+                "items": [
+                  {
+                    "text": "Paludisme (Plasmodium falciparum et vivax)"
+                  },
+                  {
+                    "text": "Dengue (endémique, 4 sérotypes)"
+                  },
+                  {
+                    "text": "Zika (risque tératogène)"
+                  },
+                  {
+                    "text": "Chikungunya"
+                  },
+                  {
+                    "text": "Fièvre jaune (Amazonie, Cerrado)"
+                  },
+                  {
+                    "text": "Leishmaniose cutanée et viscérale"
+                  }
+                ]
+              },
+              {
+                "name": "Maladies digestives",
+                "items": [
+                  {
+                    "text": "Diarrhée du voyageur"
+                  },
+                  {
+                    "text": "Fièvre typhoïde"
+                  },
+                  {
+                    "text": "Hépatites A et E"
+                  },
+                  {
+                    "text": "Amibiase et giardiase"
+                  },
+                  {
+                    "text": "Choléra (zones rurales)"
+                  }
+                ]
+              },
+              {
+                "name": "Infections sexuellement transmissibles",
+                "items": [
+                  {
+                    "text": "VIH/SIDA (prévalence élevée)"
+                  },
+                  {
+                    "text": "Syphilis"
+                  },
+                  {
+                    "text": "Gonorrhée et chlamydia"
+                  },
+                  {
+                    "text": "Hépatite B"
+                  },
+                  {
+                    "text": "HPV"
+                  }
+                ]
+              },
+              {
+                "name": "Zoonoses",
+                "items": [
+                  {
+                    "text": "Rage (chauves-souris, chiens errants)"
+                  },
+                  {
+                    "text": "Hantavirus"
+                  },
+                  {
+                    "text": "Fièvre pourprée brésilienne"
+                  },
+                  {
+                    "text": "Leptospirose"
+                  },
+                  {
+                    "text": "Histoplasmose"
+                  }
+                ]
+              },
+              {
+                "name": "Risques non infectieux",
+                "items": [
+                  {
+                    "text": "Accidents de la route"
+                  },
+                  {
+                    "text": "Criminalité urbaine"
+                  },
+                  {
+                    "text": "Noyades (courants marins)"
+                  },
+                  {
+                    "text": "Exposition UV intense"
+                  },
+                  {
+                    "text": "Intoxications (cactus, plantes)"
+                  }
+                ]
+              }
+            ]
+          },
+          "scoringRule": "≥3 catégories de risques = 2 points, 2 catégories = 1 point"
+        },
+        {
+          "id": "m6",
+          "text": "Ressources et formation",
+          "binaryOnly": false,
+          "details": [
+            "Sites web fiables (SafeTravel, CDC)",
+            "Applications santé voyage",
+            "Cours de portugais médical basique",
+            "Forums voyageurs expérimentés",
+            "Groupes Facebook Brésil"
+          ],
+          "scoringRule": "≥4 ressources fournies = 2 points, 3 ressources = 1 point"
+        },
+        {
+          "id": "m7",
+          "text": "Planification du suivi médical",
+          "binaryOnly": false,
+          "details": [
+            "Prochains RDV vaccinations",
+            "Check-up avant départ",
+            "Bilan au retour si symptômes",
+            "Test VIH 3 mois après retour",
+            "Disponibilité questions par email"
+          ],
+          "scoringRule": "≥4 modalités de suivi = 2 points, 3 modalités = 1 point"
+        },
+        {
+          "id": "m8",
+          "text": "Évaluation globale de la qualité de la prise en charge",
+          "binaryOnly": false,
+          "details": [
+            "Prise en charge cohérente et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,369 @@
+{
+  "title": "Éruption cutanée II",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Timmy, 6 ans, est amené par sa mère en raison d'une éruption cutanée",
+    "patientComment": "Enfant de 6 ans avec tableau clinique typique de scarlatine : fièvre depuis 3 jours, mal de gorge, éruption scarlatiniforme depuis hier, langue framboise. Non vacciné contre la rougeole."
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Se présente avec nom, fonction et but de la consultation",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Caractérisation complète de l'éruption cutanée",
+          "details": [
+            "Début: [depuis hier après-midi]",
+            "Localisation: [tête, cou et tronc]",
+            "Texture: [se sent comme du papier de verre]",
+            "Prurit: [pas de démangeaisons]",
+            "Progression/extension"
+          ],
+          "binaryOnly": false,
+          "patientComment": "Éruption scarlatiniforme typique",
+          "scoringRule": "≥4 caractéristiques = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "a3",
+          "text": "Symptômes associés infectieux",
+          "details": [
+            "Fièvre: [depuis 3 jours, pense grippe]",
+            "Mal de gorge: [oui, douleur à déglutition]",
+            "Langue: [rouge soudainement]",
+            "Céphalées: [mal de tête]",
+            "État général: [enfant plaintif]"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥4 symptômes = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "a4",
+          "text": "Recherche de RED FLAGS pédiatriques",
+          "redflagsSection": [
+            {
+              "text": "Signes méningés (raideur nuque, photophobie) [non mentionnés]",
+              "isRedFlag": false
+            },
+            {
+              "text": "Purpura/pétéchies [non, papier de verre]",
+              "isRedFlag": false
+            },
+            {
+              "text": "Détresse respiratoire [respiration normale]",
+              "isRedFlag": false
+            },
+            {
+              "text": "Signes de déshydratation sévère [non évalués]",
+              "isRedFlag": false
+            },
+            {
+              "text": "Altération de conscience [non, juste plaintif]",
+              "isRedFlag": false
+            }
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥4 red flags recherchés = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "a5",
+          "text": "Statut vaccinal et expositions",
+          "details": [
+            "Vaccinations: [tous sauf rougeole]",
+            "Fréquentation: [va à la crèche]",
+            "Contacts malades: [pas certain à la crèche]",
+            "Épidémie locale connue",
+            "Voyages récents"
+          ],
+          "binaryOnly": false,
+          "patientComment": "Non vacciné rougeole = facteur de risque important",
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "a6",
+          "text": "Antécédents et terrain",
+          "details": [
+            "Allergies: [abeille]",
+            "Médicaments actuels: [non]",
+            "Maladies antérieures: [non]",
+            "Antécédents familiaux: [personne n'a eu cela]",
+            "Examen préventif: [normal il y a 6 mois]"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "a7",
+          "text": "Évaluation de l'hydratation et alimentation",
+          "details": [
+            "Apports hydriques actuels",
+            "Capacité à s'alimenter",
+            "Vomissements associés",
+            "Nombre de mictions",
+            "Signes de déshydratation"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥3 éléments = 2 pts, 2 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "a8",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "binaryOnly": false,
+          "details": [
+            "Anamnèse pédiatrique structurée",
+            "RED FLAGS systématiquement recherchés",
+            "Contexte épidémiologique exploré"
+          ],
+          "scoringRule": "Excellente = 2 pts, suffisante = 1 pt, insuffisante = 0 pt"
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Évaluation des paramètres vitaux pédiatriques",
+          "details": [
+            "Température actuelle",
+            "Fréquence cardiaque adaptée à l'âge",
+            "Fréquence respiratoire",
+            "Tension artérielle si indiquée",
+            "SaO2 si détresse"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥3 paramètres = 2 pts, 2 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "e2",
+          "text": "Examen cutané détaillé et spécifique",
+          "details": [
+            "Description précise de l'éruption",
+            "Palpation texture (papier de verre)",
+            "Recherche signe de Pastia (plis)",
+            "Pâleur péri-orale",
+            "Évolution centrifuge"
+          ],
+          "binaryOnly": false,
+          "patientComment": "Éruption scarlatiniforme caractéristique",
+          "scoringRule": "≥4 caractéristiques = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "e3",
+          "text": "Examen ORL complet",
+          "details": [
+            "Langue: [framboise]",
+            "Amygdales: [inflammées]",
+            "Pharynx érythémateux",
+            "Exsudat amygdalien",
+            "Adénopathies cervicales"
+          ],
+          "binaryOnly": false,
+          "patientComment": "Angine streptococcique typique",
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "e4",
+          "text": "Évaluation de l'hydratation",
+          "details": [
+            "Diurèse: [normale]",
+            "Fontanelle: [non déprimée]",
+            "Yeux: [non enfoncés]",
+            "Muqueuses: [non sèches]",
+            "Pli cutané: [normal]"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥4 signes évalués = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "e5",
+          "text": "Recherche de complications et gravité",
+          "details": [
+            "État conscience: [normal, plaintif]",
+            "Signes méningés: [absents]",
+            "Auscultation pulmonaire: [normale]",
+            "Auscultation cardiaque",
+            "Signes de choc: [absents]"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥4 systèmes = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "e6",
+          "text": "Documentation et score clinique",
+          "details": [
+            "Score de Centor modifié",
+            "Photographie si consentement",
+            "Schéma de distribution",
+            "Évolution à documenter",
+            "Signes pathognomoniques notés"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥3 éléments = 2 pts, 2 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "e7",
+          "text": "Évaluation globale de la qualité de l'examen",
+          "binaryOnly": false,
+          "details": [
+            "Examen pédiatrique systématique",
+            "Signes spécifiques recherchés",
+            "Complications exclues"
+          ],
+          "scoringRule": "Excellent = 2 pts, suffisant = 1 pt, insuffisant = 0 pt"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic principal et justification",
+          "patientComment": "Scarlatine (streptococcie groupe A)",
+          "details": [
+            "Fièvre + angine érythémateuse",
+            "Éruption scarlatiniforme typique",
+            "Langue framboise pathognomonique",
+            "Texture papier de verre",
+            "Âge compatible (5-15 ans)"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "Diagnostic correct avec ≥4 arguments = 2 pts, avec 2-3 arguments = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "m2",
+          "text": "Diagnostics différentiels structurés",
+          "ddSection": {
+            "categories": [
+              {
+                "name": "Maladies éruptives virales",
+                "items": [
+                  "Rougeole (non vacciné!)",
+                  "Rubéole",
+                  "Roséole (6e maladie)",
+                  "Mononucléose infectieuse"
+                ]
+              },
+              {
+                "name": "Autres éruptions fébriles",
+                "items": [
+                  "Syndrome de Kawasaki",
+                  "Syndrome du choc toxique",
+                  "Érythème infectieux (5e maladie)"
+                ]
+              },
+              {
+                "name": "Réactions médicamenteuses",
+                "items": [
+                  "DRESS syndrome",
+                  "Érythème polymorphe",
+                  "Urticaire fébrile"
+                ]
+              }
+            ]
+          },
+          "binaryOnly": false,
+          "scoringRule": "≥6 DD pertinents = 2 pts, 3-5 DD = 1 pt, <3 DD = 0 pt"
+        },
+        {
+          "id": "m3",
+          "text": "Examens complémentaires ciblés",
+          "details": [
+            "Test rapide streptocoque A → Confirmation immédiate (spécificité >95%)",
+            "Culture pharyngée → Si TDR négatif mais forte suspicion",
+            "ASLO → Si diagnostic rétrospectif nécessaire",
+            "NFS si doute → Hyperleucocytose à PNN dans scarlatine"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥3 examens appropriés = 2 pts, 2 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "m4",
+          "text": "Antibiothérapie protocolisée",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Première ligne",
+                "content": "• Amoxicilline 50mg/kg/j en 2 prises x 10j\n• Ou Pénicilline V 50000 UI/kg/j en 3 prises x 10j\n• Début dans les 9 jours réduit RAA"
+              },
+              {
+                "title": "Si allergie pénicilline",
+                "content": "• Azithromycine 12mg/kg/j x 5j\n• Ou Clarithromycine 15mg/kg/j en 2 prises x 10j\n• Ou Céfuroxime si allergie non IgE"
+              },
+              {
+                "title": "Traitement symptomatique",
+                "content": "• Paracétamol 15mg/kg/dose max 4x/j\n• Ibuprofène 10mg/kg/dose max 3x/j\n• Pastilles/spray gorge si >6 ans"
+              }
+            ]
+          },
+          "binaryOnly": false,
+          "scoringRule": "≥3 aspects thérapeutiques = 2 pts, 2 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "m5",
+          "text": "Mesures associées et prévention",
+          "details": [
+            "Éviction scolaire 24-48h après ATB",
+            "Pas de prophylaxie systématique contacts",
+            "Sauf si facteurs de risque RAA",
+            "Hygiène: lavage mains, ustensiles séparés",
+            "Changement brosse à dents après 48h ATB"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥4 mesures = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "m6",
+          "text": "Information parents et surveillance",
+          "details": [
+            "Nature bactérienne = ATB obligatoire",
+            "Importance compliance 10 jours complets",
+            "Amélioration attendue en 48-72h",
+            "Signes d'alerte: dyspnée, œdèmes, urines foncées",
+            "Complications possibles: RAA, GNA"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥4 points abordés = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "m7",
+          "text": "Plan de suivi structuré",
+          "details": [
+            "Contrôle si pas d'amélioration à 72h",
+            "Bandelette urinaire à 3 semaines (GNA)",
+            "Éducation signes RAA (cardite, chorée)",
+            "Rattrapage vaccinal rougeole à prévoir",
+            "Certificat retour collectivité"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "m8",
+          "text": "Évaluation globale de la qualité de la prise en charge",
+          "binaryOnly": false,
+          "details": [
+            "Diagnostic clinique correct",
+            "Antibiothérapie appropriée",
+            "Prévention complications intégrée"
+          ],
+          "scoringRule": "Excellente = 2 pts, adéquate = 1 pt, insuffisante = 0 pt"
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "images": [
+      {
+        "title": "Image clinique - Éruption scarlatiniforme",
+        "description": "Photographie montrant l'éruption cutanée érythémateuse généralisée typique de la scarlatine chez un enfant",
+        "data": "grilles_generees/images/eruption-cutanee-ii-img.jpg"
+      }
+    ]
+  }
+}

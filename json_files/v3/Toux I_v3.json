@@ -1,0 +1,638 @@
+{
+  "title": "Toux I",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Andrea Hollenstein, 34 ans, infirmière, se présente pour une toux persistante depuis 6 semaines",
+    "vitals": {
+      "ta": "134/80 mmHg",
+      "fc": "70 bpm",
+      "fr": "18/min",
+      "temperature": "38.0°C",
+      "satO2": "96% air ambiant",
+      "poids": "Perte 6 kg en 2 mois"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction et objectif de la consultation",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Question ouverte d'introduction → Motif de consultation",
+          "patientComment": "J'ai une toux qui ne part pas depuis 6 semaines, avec de la fièvre le soir",
+          "binaryOnly": true
+        },
+        {
+          "id": "a3",
+          "text": "RED FLAGS - Urgences respiratoires et tuberculose",
+          "redflagsSection": [
+            {
+              "text": "Perte poids >5% [6 kg en 2 mois!]"
+            },
+            {
+              "text": "Fièvre prolongée [fébrile 38°C]"
+            },
+            {
+              "text": "Sueurs nocturnes [oui remarquées]"
+            },
+            {
+              "text": "Hémoptysie [non]"
+            },
+            {
+              "text": "Dyspnée sévère [non]"
+            },
+            {
+              "text": "Exposition tuberculose [patient TB au service!]"
+            },
+            {
+              "text": "Immunosuppression [non]"
+            },
+            {
+              "text": "Contact TB récent [collègues exposés]"
+            }
+          ],
+          "scoringRule": "≥6 red flags explorés = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a4",
+          "text": "Caractérisation SOCRATES de la toux",
+          "details": [
+            "Site/Siège [thoracique diffus]",
+            "Onset [début progressif il y a 6 semaines]",
+            "Caractère [toux productive, expectorations blanchâtres]",
+            "Radiations [aucune]",
+            "Associations [fièvre vespérale, sueurs nocturnes]",
+            "Timing [persistante, s'aggrave progressivement]",
+            "Exacerbations [facteurs aggravants?]",
+            "Severity [altère performance travail]"
+          ],
+          "scoringRule": "≥6 critères SOCRATES = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a5",
+          "text": "Exposition professionnelle détaillée (crucial TB)",
+          "details": [
+            "Contact patient tuberculeux [patient TB au service]",
+            "Délai depuis exposition [quelques mois]",
+            "Protection utilisée [masques? FFP2?]",
+            "Autres cas TB collègues [déjà d'autres cas!]",
+            "Dépistages antérieurs [tests TB antérieurs?]",
+            "Vaccination BCG [statut vaccinal?]",
+            "Formation TB milieu soins [protocoles?]",
+            "Durée exposition [temps de contact?]"
+          ],
+          "scoringRule": "≥6 éléments exposition = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a6",
+          "text": "Syndrome tuberculeux complet",
+          "details": [
+            "Toux persistante >3 semaines [6 semaines]",
+            "Fièvre vespérale [oui 38°C]",
+            "Sueurs nocturnes profuses [remarquées]",
+            "Perte poids significative [6 kg/2 mois]",
+            "Anorexie [à préciser]",
+            "Asthénie/fatigue [baisse performance]",
+            "Hémoptysie [non]",
+            "Douleurs thoraciques [non]"
+          ],
+          "scoringRule": "≥6 signes syndrome TB = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a7",
+          "text": "Caractéristiques expectorations et hémoptysie",
+          "details": [
+            "Volume expectorations [quantité quotidienne]",
+            "Aspect [blanchâtres actuellement]",
+            "Évolution couleur [purulentes? sanglantes?]",
+            "Hémoptysie franche [non confirmé]",
+            "Striation sanguine [à rechercher]",
+            "Odeur particulière [fétide? inodore?]",
+            "Moment production [matin? continu?]",
+            "Facilité expectoration [effort nécessaire?]"
+          ],
+          "scoringRule": "≥6 caractéristiques = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a8",
+          "text": "Facteurs de risque tuberculose",
+          "details": [
+            "Professionnel santé [infirmière à risque]",
+            "Contact TB connu [patient service]",
+            "Immunosuppression [VIH? corticoïdes?]",
+            "Diabète [non mentionné]",
+            "Malnutrition [perte poids]",
+            "Alcoolisme [non]",
+            "SDF/précarité [non - professionnelle]",
+            "Origine pays haute prévalence [à préciser]"
+          ],
+          "scoringRule": "≥6 FDR évalués = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a9",
+          "text": "Symptômes respiratoires associés",
+          "details": [
+            "Dyspnée effort [non actuellement]",
+            "Dyspnée repos [non]",
+            "Douleur thoracique [non]",
+            "Sifflements [non]",
+            "Sensation oppression [à préciser]",
+            "Orthopnée [non]",
+            "Toux position [décubitus?]",
+            "Intolérance effort [baisse performance]"
+          ],
+          "scoringRule": "≥6 symptômes évalués = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a10",
+          "text": "Diagnostics différentiels à explorer",
+          "scoringRule": "≥6 DD explorés = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false,
+          "ddSection": {
+            "categories": [
+              {
+                "name": "Diagnostics différentiels à considérer",
+                "items": [
+                  "Reflux gastro-œsophagien [oui après repas]",
+                  "Asthme allergique [allergie graminées]",
+                  "Bronchite chronique [tabagisme 15 PA]",
+                  "Cancer bronchique [grand-père décédé]",
+                  "Toux médicamenteuse [IEC? aucun traitement]",
+                  "Pneumonie atypique [évolution chronique]",
+                  "Sarcoïdose [DD tuberculose]",
+                  "Coqueluche [épidémie? adulte]"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "a11",
+          "text": "Antécédents pulmonaires et allergiques",
+          "details": [
+            "Bronchites récurrentes [de temps en temps]",
+            "Pneumonies antérieures [non]",
+            "Asthme connu [non mais allergie]",
+            "BPCO [non mais tabagisme]",
+            "Allergies respiratoires [graminées, pollens]",
+            "Tests allergologiques [faits?]",
+            "Traitements antérieurs [aucun actuel]",
+            "Hospitalisation respiratoire [non]"
+          ],
+          "scoringRule": "≥6 antécédents évalués = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a12",
+          "text": "Tabagisme et expositions toxiques",
+          "details": [
+            "Tabagisme actuel [statut actuel?]",
+            "Paquets-années [15 PA total]",
+            "Âge début tabagisme [calculer]",
+            "Tentatives arrêt [motivations?]",
+            "Tabagisme passif [domicile, travail]",
+            "Expositions professionnelles [hôpital]",
+            "Poussières inorganiques [non]",
+            "Produits chimiques [désinfectants hôpital]"
+          ],
+          "scoringRule": "≥6 expositions évaluées = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a13",
+          "text": "Contexte socio-professionnel et contagiosité",
+          "details": [
+            "Vie seule [isolement social?]",
+            "Contacts familiaux proches [à protéger]",
+            "Collègues exposés [enquête entourage]",
+            "Patients soignés [transmission nosocomiale]",
+            "Conditions logement [aération, surpeuplement]",
+            "Voyages récents [pays haute prévalence]",
+            "Statut professionnel [arrêt travail nécessaire]",
+            "Support social [famille, amis]"
+          ],
+          "scoringRule": "≥6 éléments contexte = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a14",
+          "text": "Impact fonctionnel et qualité de vie",
+          "details": [
+            "Performance travail [baisse confirmée]",
+            "Capacité concentration [fatigue]",
+            "Activités quotidiennes [limitées?]",
+            "Sommeil [sueurs nocturnes perturbent]",
+            "Appétit [anorexie?]",
+            "Relations sociales [isolement?]",
+            "Anxiété maladie [peur contagiosité]",
+            "Arrêt travail déjà pris [durée?]"
+          ],
+          "scoringRule": "≥6 impacts évalués = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a15",
+          "text": "Recherche immunodépression et comorbidités",
+          "details": [
+            "Statut VIH [dépistage indispensable]",
+            "Diabète [facteur risque TB]",
+            "Corticothérapie [immunosuppression]",
+            "Chimiothérapie [antécédents cancer]",
+            "Maladies auto-immunes [traitements]",
+            "Transplantation [immunosuppresseurs]",
+            "Malnutrition [perte poids importante]",
+            "Insuffisance rénale chronique [dialyse]"
+          ],
+          "scoringRule": "≥6 facteurs immunité = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a16",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "details": [
+            "Anamnèse tuberculose complète",
+            "Exposition professionnelle documentée",
+            "Syndrome tuberculeux identifié",
+            "Facteurs risque évalués",
+            "Diagnostics différentiels explorés"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Évaluation état général et signes vitaux",
+          "details": [
+            "État général [altéré? amaigri?]",
+            "Poids actuel [perte 6 kg documentée]",
+            "TA/FC/FR [134/80, 70, 18]",
+            "Température [38°C fébrile]",
+            "Saturation O2 [96% air ambiant]",
+            "Performance status [impact quotidien]"
+          ],
+          "scoringRule": "≥5 paramètres évalués = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e2",
+          "text": "Examen pulmonaire inspection systématique",
+          "details": [
+            "Symétrie thoracique [recherche déformations]",
+            "Ampliation respiratoire [symétrique?]",
+            "Tirage/muscles accessoires [dyspnée?]",
+            "Cicatrices chirurgicales [antécédents]",
+            "Circulation collatérale [syndrome cave]",
+            "Déformations rachis [cyphoscoliose]"
+          ],
+          "scoringRule": "≥5 éléments inspection = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e3",
+          "text": "Palpation thoracique spécialisée",
+          "details": [
+            "Vibrations vocales [frémitus vocal]",
+            "Comparaison bilatérale [asymétrie?]",
+            "Points douloureux [pleurésie?]",
+            "Masses palpables [tumeurs?]",
+            "Adénopathies sus-claviculaires [métastases?]",
+            "Ampliation thoracique [mesure]"
+          ],
+          "scoringRule": "≥5 éléments palpation = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e4",
+          "text": "Percussion pulmonaire systématique",
+          "details": [
+            "Percussion antérieure [matité? tympanisme?]",
+            "Percussion postérieure [systématique]",
+            "Comparaison bilatérale [asymétries]",
+            "Limites hépatique/cardiaque [normal?]",
+            "Épanchement pleural [matité base]",
+            "Pneumothorax [tympanisme]"
+          ],
+          "scoringRule": "≥5 zones percussion = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e5",
+          "text": "Auscultation pulmonaire détaillée",
+          "details": [
+            "Auscultation antérieure systématique [6 points]",
+            "Auscultation postérieure [8 points]",
+            "Murmure vésiculaire [diminué? aboli?]",
+            "Râles crépitants [fins, grossiers]",
+            "Râles sibilants [sifflements]",
+            "Frottement pleural [pleurésie]"
+          ],
+          "scoringRule": "≥5 éléments auscultation = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e6",
+          "text": "Recherche adénopathies systématique",
+          "details": [
+            "Ganglions cervicaux [chaînes sup/inf]",
+            "Ganglions sus-claviculaires [Troisier]",
+            "Ganglions sous-claviculaires [hilaires]",
+            "Ganglions axillaires [bilatéraux]",
+            "Ganglions épitrochléens [bras]",
+            "Ganglions inguinaux [si indiqué]"
+          ],
+          "scoringRule": "≥5 territoires ganglionnaires = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e7",
+          "text": "Recherche signes extrapulmonaires tuberculose",
+          "details": [
+            "Hippocratisme digital [TB chronique]",
+            "Érythème noueux [TB miliaire]",
+            "Adénopathies superficielles [TB ganglionnaire]",
+            "Hépatomégalie [TB hépatique]",
+            "Splénomégalie [TB miliaire]",
+            "Signes méningés [TB méningée]"
+          ],
+          "scoringRule": "≥5 signes recherchés = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e8",
+          "text": "Examen cardiovasculaire ciblé",
+          "details": [
+            "Auscultation cardiaque [4 foyers]",
+            "Recherche souffle [endocardite?]",
+            "Choc de pointe [cardiomégalie]",
+            "Pouls périphériques [symétrie]",
+            "Pression veineuse jugulaire [IC droite]",
+            "Œdèmes MI [cœur pulmonaire]"
+          ],
+          "scoringRule": "≥5 éléments cardio = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e9",
+          "text": "Examen abdominal et général",
+          "details": [
+            "Hépatomégalie [TB hépatique/miliaire]",
+            "Splénomégalie [TB miliaire]",
+            "Ascite [TB péritonéale]",
+            "Masses abdominales [TB ganglionnaire]",
+            "Examen peau [érythème noueux]",
+            "Fond œil [tubercules choroïdiens]"
+          ],
+          "scoringRule": "≥5 examens systémiques = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e10",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "details": [
+            "Examen pulmonaire tuberculose complet",
+            "Recherche adénopathies systématique",
+            "Signes extrapulmonaires recherchés",
+            "État général évalué",
+            "Examen sécurisé (protection TB)"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic principal avec classification OMS",
+          "details": [
+            "Tuberculose pulmonaire présumée",
+            "Classification OMS (nouveau cas)",
+            "Contagiosité probable (expectorations)",
+            "Tuberculose professionnelle (exposition)",
+            "Urgence santé publique"
+          ],
+          "scoringRule": "Diagnostic précis avec classification = 2 pts, partiel = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m2",
+          "text": "Diagnostics différentiels pneumopathies chroniques",
+          "ddSection": {
+            "categories": [
+              {
+                "name": "Infectieuses",
+                "items": [
+                  "Tuberculose atypique IGRA, culture prolongée",
+                  "Mycobactéries atypiques Culture spécialisée",
+                  "Pneumonie à Pneumocystis LBA, statut VIH",
+                  "Aspergillose pulmonaire Galactomannane, scanner"
+                ]
+              },
+              {
+                "name": "Néoplasiques",
+                "items": [
+                  "Cancer bronchique primitif CT thorax, fibroscopie",
+                  "Lymphome thoracique PET scan, biopsie",
+                  "Métastases pulmonaires CT TAP, marqueurs"
+                ]
+              },
+              {
+                "name": "Inflammatoires",
+                "items": [
+                  "Sarcoïdose ECA, biopsie transbronchique",
+                  "Pneumopathie d'hypersensibilité EFR, LBA, antigènes",
+                  "Granulomatose de Wegener ANCA, biopsie"
+                ]
+              }
+            ]
+          },
+          "scoringRule": "≥6 DD avec examens = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m3",
+          "text": "Examens microbiologiques tuberculose",
+          "details": [
+            "Expectoration 3 échantillons [matin]",
+            "Recherche BAAR (Ziehl-Neelsen)",
+            "Culture Löwenstein-Jensen",
+            "PCR tuberculose (GeneXpert)",
+            "Test sensibilité antibiotiques",
+            "Tubage gastrique si nécessaire",
+            "LBA si expectorations impossibles"
+          ],
+          "scoringRule": "≥6 examens microbiologiques = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m4",
+          "text": "Imagerie thoracique spécialisée",
+          "details": [
+            "Radiographie thorax face/profil",
+            "CT thorax haute résolution",
+            "Recherche cavernes apicales",
+            "Adénopathies hilaires/médiastinales",
+            "Épanchement pleural",
+            "Tuberculose miliaire",
+            "Comparaison radiographies antérieures"
+          ],
+          "scoringRule": "≥5 éléments imagerie = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m5",
+          "text": "Tests immunologiques tuberculose",
+          "details": [
+            "Test tuberculinique (Mantoux)",
+            "IGRA (QuantiFERON Gold)",
+            "Interprétation selon statut BCG",
+            "Recherche anergie (immunodépression)",
+            "Test contrôle Candida",
+            "Délai lecture 48-72h Mantoux"
+          ],
+          "scoringRule": "≥4 tests immunologiques = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m6",
+          "text": "Bilan pré-thérapeutique complet",
+          "details": [
+            "NFS (thrombopénie éthambutol)",
+            "Bilan hépatique complet (ASAT, ALAT, bilirubine)",
+            "Créatinine (éthambutol)",
+            "Acide urique (pyrazinamide)",
+            "Examen ophtalmologique (éthambutol)",
+            "Audiométrie (streptomycine)",
+            "Sérologie VIH obligatoire"
+          ],
+          "scoringRule": "≥6 examens pré-thérapeutiques = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m7",
+          "text": "Isolement et mesures de protection",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Isolement respiratoire immédiat",
+                "content": "• Hospitalisation chambre pression négative\\n• Port masque FFP2 soignants\\n• Masque chirurgical patient\\n• Limitation visiteurs\\n• Durée: 2-3 semaines traitement efficace\\n• Levée si 3 expectorations négatives"
+              },
+              {
+                "title": "Protection professionnelle",
+                "content": "• Arrêt travail immédiat (contagieuse)\\n• Éviction service soins jusqu'à guérison\\n• Masque FFP2 obligatoire déplacements\\n• Éducation gestes barrières\\n• Éviter transports commun\\n• Ventilation domicile"
+              },
+              {
+                "title": "Déclaration et enquête",
+                "content": "• Déclaration obligatoire ARS\\n• Enquête entourage familial\\n• Dépistage collègues service\\n• Dépistage patients exposés\\n• Suivi contacts 2 ans\\n• Chimioprophylaxie si indiquée"
+              }
+            ]
+          },
+          "scoringRule": "Mesures protection complètes = 2 pts, partielles = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m8",
+          "text": "Traitement antituberculeux standard",
+          "details": [
+            "Phase initiale 2 mois RHZE",
+            "Rifampicine 10 mg/kg (max 600mg)",
+            "Isoniazide 5 mg/kg (max 300mg)",
+            "Pyrazinamide 25 mg/kg (max 2g)",
+            "Éthambutol 20 mg/kg (max 1.2g)",
+            "Phase continuation 4 mois RH",
+            "DOT (Directly Observed Treatment)"
+          ],
+          "scoringRule": "≥6 éléments traitement = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m9",
+          "text": "Surveillance traitement et effets secondaires",
+          "details": [
+            "Surveillance hépatique mensuelle",
+            "Surveillance visuelle (éthambutol)",
+            "Surveillance auditive (streptomycine)",
+            "Monitoring observance",
+            "Contrôle poids mensuel",
+            "Évolution expectoration",
+            "Radiographie contrôle 2 mois"
+          ],
+          "scoringRule": "≥5 surveillances programmées = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m10",
+          "text": "Éducation patient et entourage",
+          "details": [
+            "Explication tuberculose transmission",
+            "Importance observance absolue",
+            "Durée traitement minimum 6 mois",
+            "Signes effets secondaires",
+            "Mesures protection entourage",
+            "Gestes hygiène (mouchoirs, crachats)",
+            "Suivi médical régulier obligatoire"
+          ],
+          "scoringRule": "≥5 éléments éducation = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m11",
+          "text": "Organisation parcours soins et suivi",
+          "details": [
+            "Référent tuberculose ARS",
+            "Pneumologue spécialisé TB",
+            "Centre lutte antituberculeuse",
+            "Médecine du travail",
+            "Suivi social si précaire",
+            "Coordination médecin traitant",
+            "Planning contrôles 6 mois"
+          ],
+          "scoringRule": "≥5 acteurs parcours = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m12",
+          "text": "Évaluation globale de la qualité de la prise en charge",
+          "details": [
+            "Diagnostic tuberculose approprié",
+            "Isolement et protection institués",
+            "Traitement standard initié",
+            "Déclaration et enquête organisées",
+            "Surveillance programmée"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "images": [
+      {
+        "id": "annexe1",
+        "data": "grilles_generees/images/toux-i-rx.jpg",
+        "title": "Radiographie thoracique - Tuberculose",
+        "description": "Radiographie de face montrant des infiltrats apicaux et cavernes typiques de tuberculose pulmonaire active"
+      }
+    ]
+  }
+}

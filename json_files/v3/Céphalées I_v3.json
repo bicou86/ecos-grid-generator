@@ -1,0 +1,450 @@
+{
+  "title": "Céphalées I",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Homme de 70 ans se présente pour un contrôle de tension artérielle"
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction et tâche",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Question ouverte d'introduction → Symptôme principal",
+          "patientComment": "Céphalées",
+          "binaryOnly": true
+        },
+        {
+          "id": "a3",
+          "text": "RED FLAGS - Signaux d'alarme",
+          "scoringRule": "≥6 items explorés = 2 pts, 4-5 items = 1 pt, <4 items = 0 pt",
+          "binaryOnly": false,
+          "redflagsSection": [
+            {
+              "text": "Céphalée en coup de tonnerre [non]"
+            },
+            {
+              "text": "Premier épisode sévère après 50 ans [oui, 70 ans]"
+            },
+            {
+              "text": "Céphalée différente des habituelles [oui, peu habituel]"
+            },
+            {
+              "text": "Céphalée progressive d'intensité croissante [non]"
+            },
+            {
+              "text": "Fièvre associée [possible avant-hier]"
+            },
+            {
+              "text": "Signes neurologiques focaux [non]"
+            },
+            {
+              "text": "Troubles de conscience [non]"
+            },
+            {
+              "text": "Raideur de nuque [non]"
+            }
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Anamnèse SOCRATES - Site",
+          "details": [
+            "Localisation précise [plus à gauche qu'à droite]",
+            "Unilatérale/bilatérale [plutôt unilatérale gauche]",
+            "Temporal/frontal/occipital/vertex",
+            "Irradiation visage/nuque [non]"
+          ],
+          "scoringRule": "≥3 éléments = 2 pts, 2 éléments = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a5",
+          "text": "Anamnèse SOCRATES - Onset (début)",
+          "details": [
+            "Début brutal vs progressif [progressif ce matin]",
+            "Heure précise du début [ce matin au réveil]",
+            "Circonstances déclenchantes [après soirée restaurant]",
+            "Durée depuis le début [quelques heures]"
+          ],
+          "scoringRule": "≥3 éléments = 2 pts, 2 éléments = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a6",
+          "text": "Anamnèse SOCRATES - Character (caractère)",
+          "details": [
+            "Type de douleur [sourde]",
+            "Pulsatile/serrement/piquant/électrique [sourde]",
+            "Constante vs intermittente [plutôt constante]",
+            "Variation dans la journée [pire le matin]"
+          ],
+          "scoringRule": "≥3 éléments = 2 pts, 2 éléments = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a7",
+          "text": "Anamnèse SOCRATES - Radiation",
+          "patientComment": "Difficile à dire, pas vraiment d'irradiation",
+          "binaryOnly": true
+        },
+        {
+          "id": "a8",
+          "text": "Anamnèse SOCRATES - Associated symptoms",
+          "details": [
+            "Nausées/vomissements [non]",
+            "Photo/phonophobie [non]",
+            "Larmoiement/rhinorrhée [non]",
+            "Aura visuelle [non]",
+            "Troubles visuels [non]",
+            "Vertiges [non]",
+            "Troubles neurologiques [non]"
+          ],
+          "scoringRule": "≥5 symptômes explorés = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a9",
+          "text": "Anamnèse SOCRATES - Time course",
+          "details": [
+            "Fréquence des épisodes [peu habituel]",
+            "Durée habituelle des crises",
+            "Pattern temporel (cluster, cyclique)",
+            "Évolution depuis le début [stable]"
+          ],
+          "scoringRule": "≥3 éléments = 2 pts, 2 éléments = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a10",
+          "text": "Anamnèse SOCRATES - Exacerbating/Relieving factors",
+          "details": [
+            "Facteurs aggravants [aucun identifié]",
+            "Facteurs de soulagement [dormir]",
+            "Position (debout/couché)",
+            "Activité physique",
+            "Valsalva/toux"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a11",
+          "text": "Anamnèse SOCRATES - Severity",
+          "patientComment": "5/10 sur l'échelle de douleur",
+          "binaryOnly": true
+        },
+        {
+          "id": "a12",
+          "text": "Symptômes de l'artérite temporale (Horton)",
+          "details": [
+            "Claudication de la mâchoire [non]",
+            "Sensibilité du cuir chevelu [non]",
+            "Douleurs aux épaules/hanches (PPR) [oui, épaules depuis 1 semaine]",
+            "Troubles visuels [non]",
+            "Fièvre/AEG [possible]"
+          ],
+          "scoringRule": "≥4 symptômes explorés = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a13",
+          "text": "Facteurs déclenchants spécifiques",
+          "details": [
+            "Stress récent [non]",
+            "Privation de sommeil",
+            "Alcool [oui, hier soir au restaurant]",
+            "Aliments (MSG, tyramine) [restaurant chinois hier]",
+            "Sevrage caféine [4-5 cafés/jour, pas encore aujourd'hui]",
+            "Déshydratation [possible après soirée]"
+          ],
+          "scoringRule": "≥4 facteurs explorés = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a14",
+          "text": "Antécédents médicaux pertinents",
+          "details": [
+            "Hypertension [oui, sous traitement]",
+            "Diabète [à explorer]",
+            "Cardiopathie [à explorer]",
+            "AVC/AIT [père décédé d'AVC]",
+            "Néoplasie [non]",
+            "Immunosuppression [non]",
+            "Traumatisme crânien récent [non]"
+          ],
+          "scoringRule": "≥5 éléments = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a15",
+          "text": "Médicaments et substances",
+          "details": [
+            "Antihypertenseurs actuels [Coversum-Combi]",
+            "Antalgiques récents [aucun]",
+            "Anticoagulants [à explorer]",
+            "Autres médicaments réguliers",
+            "Consommation tabac [à explorer]",
+            "Consommation alcool [rarement, hier exception]"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a16",
+          "text": "Allergies et intolérances",
+          "patientComment": "Pénicilline",
+          "binaryOnly": true
+        },
+        {
+          "id": "a17",
+          "text": "Anamnèse familiale ciblée",
+          "details": [
+            "Migraine familiale [non]",
+            "AVC/maladies vasculaires [père AVC]",
+            "Anévrysmes",
+            "Autres céphalées familiales"
+          ],
+          "scoringRule": "≥3 éléments = 2 pts, 2 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a18",
+          "text": "Anamnèse sociale et professionnelle",
+          "patientComment": "Conducteur CFF retraité, marié",
+          "binaryOnly": true
+        },
+        {
+          "id": "a19",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "binaryOnly": false,
+          "details": [
+            "Anamnèse complète avec exploration systématique des red flags",
+            "Structure SOCRATES respectée",
+            "Recherche active des diagnostics graves"
+          ],
+          "scoringRule": "Excellent = 2 pts, satisfaisant = 1 pt, insuffisant = 0 pt"
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Signes vitaux complets",
+          "details": [
+            "TA [160/100 mmHg - HTA]",
+            "FC [à mesurer]",
+            "FR [à mesurer]",
+            "Température [à mesurer]",
+            "Saturation O2 [à mesurer]"
+          ],
+          "scoringRule": "≥4 paramètres = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e2",
+          "text": "Examen méningé complet",
+          "details": [
+            "Raideur de nuque [négatif]",
+            "Signe de Kernig [à tester]",
+            "Signe de Brudzinski [à tester]",
+            "Photophobie clinique [non]"
+          ],
+          "scoringRule": "≥3 signes testés = 2 pts, 2 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e3",
+          "text": "Examen des nerfs crâniens",
+          "details": [
+            "II - Acuité visuelle/champs visuels",
+            "II - Fond d'œil (œdème papillaire)",
+            "III, IV, VI - Motilité oculaire",
+            "III - Pupilles (taille, réactivité)",
+            "V - Sensibilité faciale",
+            "VII - Motricité faciale"
+          ],
+          "scoringRule": "≥4 nerfs testés = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e4",
+          "text": "Examen vasculaire céphalique",
+          "details": [
+            "Palpation artères temporales (pouls, sensibilité)",
+            "Recherche souffle carotidien",
+            "Palpation sinus (sinusite)",
+            "Examen cuir chevelu (sensibilité)"
+          ],
+          "scoringRule": "≥3 éléments = 2 pts, 2 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e5",
+          "text": "Examen neurologique focal",
+          "details": [
+            "Force musculaire 4 membres",
+            "ROT principaux",
+            "Sensibilité (toucher/piqûre)",
+            "Coordination (doigt-nez)",
+            "Démarche et équilibre",
+            "Romberg"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e6",
+          "text": "Examen cardiovasculaire",
+          "details": [
+            "Auscultation cardiaque [à faire]",
+            "Recherche souffle vasculaire",
+            "Pouls périphériques",
+            "Signes d'insuffisance cardiaque"
+          ],
+          "scoringRule": "≥3 éléments = 2 pts, 2 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e7",
+          "text": "Tests provocateurs spécifiques",
+          "details": [
+            "Percussion vertex (sinusite)",
+            "Flexion/extension cervicale",
+            "Manœuvre de Valsalva",
+            "Position debout (hypotension orthostatique)"
+          ],
+          "scoringRule": "≥2 tests = 2 pts, 1 test = 1 pt, 0 test = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e8",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "binaryOnly": false,
+          "details": [
+            "Examen neurologique systématique et complet",
+            "Recherche active des signes de gravité",
+            "Techniques d'examen correctes"
+          ],
+          "scoringRule": "Excellent = 2 pts, satisfaisant = 1 pt, insuffisant = 0 pt"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic principal retenu",
+          "patientComment": "Céphalée du restaurant chinois (MSG) avec composante gueule de bois et sevrage caféine",
+          "binaryOnly": true
+        },
+        {
+          "id": "m2",
+          "text": "Diagnostics différentiels complets",
+          "scoringRule": "≥4 catégories = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false,
+          "ddSection": {
+            "categories": [
+              {
+                "name": "Diagnostics différentiels à considérer",
+                "items": [
+                  "Céphalée primaire : Migraine, céphalée de tension, algie vasculaire",
+                  "Céphalée secondaire bénigne : Gueule de bois, sevrage caféine, MSG, sinusite",
+                  "Céphalée secondaire grave : Artérite temporale (Horton), HTA maligne, AVC/AIT",
+                  "Autres causes graves : Hémorragie sous-arachnoïdienne, méningite, tumeur cérébrale",
+                  "Causes vasculaires : Dissection carotidienne, thrombose veineuse cérébrale"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m3",
+          "text": "Examens complémentaires urgents selon red flags",
+          "details": [
+            "Si suspicion Horton : VS, CRP en urgence [indiqué vu l'âge]",
+            "Si céphalée brutale : CT cérébral sans contraste",
+            "Si fièvre + céphalée : PL après CT",
+            "Si déficit neurologique : IRM cérébrale",
+            "Si HTA sévère : bilan rénal, ECG"
+          ],
+          "scoringRule": "Choix approprié selon contexte = 2 pts, partiel = 1 pt, inadapté = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m4",
+          "text": "Examens de base",
+          "details": [
+            "NFS (anémie, infection)",
+            "VS, CRP (inflammation)",
+            "Créatinine, électrolytes",
+            "Glycémie",
+            "TSH si récurrent"
+          ],
+          "scoringRule": "≥3 examens = 2 pts, 2 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m5",
+          "text": "Prise en charge thérapeutique immédiate",
+          "details": [
+            "Si Horton suspecté : Prednisolone 60-80mg/j AVANT biopsie",
+            "Antalgiques simples : Paracétamol 1g",
+            "Hydratation orale",
+            "Caféine si sevrage suspecté",
+            "Repos dans environnement calme",
+            "Traitement de l'HTA si nécessaire"
+          ],
+          "scoringRule": "≥4 mesures appropriées = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m6",
+          "text": "Plan de suivi et éducation",
+          "details": [
+            "Consultation de contrôle si persistance >24h",
+            "Consignes retour immédiat si aggravation",
+            "Journal des céphalées si récurrent",
+            "Conseils hygiéno-diététiques",
+            "Éviter déclencheurs identifiés"
+          ],
+          "scoringRule": "≥3 éléments = 2 pts, 2 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m7",
+          "text": "Critères d'hospitalisation",
+          "details": [
+            "Suspicion HSA ou méningite",
+            "Déficit neurologique nouveau",
+            "Céphalée brutale en coup de tonnerre",
+            "Altération de conscience",
+            "Céphalée + fièvre inexpliquée"
+          ],
+          "scoringRule": "Reconnaissance des critères = 2 pts, partielle = 1 pt, non = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m8",
+          "text": "Évaluation globale de la qualité de la prise en charge",
+          "binaryOnly": false,
+          "details": [
+            "Stratification du risque appropriée",
+            "Examens adaptés au contexte",
+            "Traitement proportionné",
+            "Suivi organisé"
+          ],
+          "scoringRule": "Excellent = 2 pts, satisfaisant = 1 pt, insuffisant = 0 pt"
+        }
+      ]
+    }
+  }
+}

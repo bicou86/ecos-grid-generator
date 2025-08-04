@@ -1,0 +1,376 @@
+{
+  "title": "Douleur au genou",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Mme Martin, 25 ans, se présente chez son médecin de famille pour des douleurs au genou droit",
+    "patientComment": "Jeune sportive avec douleur aiguë du genou après mouvement de rotation au tennis. Antécédent de rupture LCM traitée conservativement il y a 3 ans. Forte suspicion de lésion méniscale médiale."
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction et tâche",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Symptômes actuels et évolution temporelle",
+          "details": [
+            "[Douleurs au genou droit]",
+            "[Depuis 3 jours]",
+            "[Mouvement de rotation au tennis]",
+            "[A continué à jouer au tennis]",
+            "[Douleur persistante, pas d'amélioration]"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥4 éléments explorés = 2 pts, 2-3 éléments = 1 pt, <2 éléments = 0 pt"
+        },
+        {
+          "id": "a3",
+          "text": "Caractéristiques de la douleur - PQRST",
+          "details": [
+            "P - Provocateurs: [rotation, appui]",
+            "Q - Qualité: [lancinante]",
+            "R - Région: [dans le genou, pas d'irradiation]",
+            "S - Sévérité: [3-4/10]",
+            "T - Timing: [pas de douleur au repos]"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥4 caractéristiques = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "a4",
+          "text": "Signes accompagnateurs et limitation fonctionnelle",
+          "details": [
+            "[Au maximum un peu de gonflement]",
+            "[Doit boiter légèrement]",
+            "[Douleur à l'appui]",
+            "[Ne peut plus marcher normalement]",
+            "[Légèrement bandé, pas de pommade ni d'antalgiques]"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "a5",
+          "text": "Antécédents traumatiques du genou",
+          "details": [
+            "[Rupture du ligament collatéral médial il y a 3 ans]",
+            "[Traitement conservateur]",
+            "Évolution depuis",
+            "Autres traumatismes articulaires",
+            "Niveau d'activité sportive habituel"
+          ],
+          "binaryOnly": false,
+          "patientComment": "Antécédent important de rupture LCM, facteur de risque pour nouvelle lésion",
+          "scoringRule": "≥3 éléments = 2 pts, 2 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "a6",
+          "text": "Recherche de RED FLAGS - pathologies graves",
+          "redflagsSection": [
+            {
+              "text": "Fièvre ou signes d'infection articulaire [non]",
+              "isRedFlag": false
+            },
+            {
+              "text": "Trauma majeur avec déformation [non]",
+              "isRedFlag": false
+            },
+            {
+              "text": "Blocage articulaire complet [non]",
+              "isRedFlag": false
+            },
+            {
+              "text": "Signes neurovasculaires distaux [non, intact]",
+              "isRedFlag": false
+            },
+            {
+              "text": "Douleurs dans plusieurs articulations [non]",
+              "isRedFlag": false
+            }
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥4 red flags recherchés = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "a7",
+          "text": "Facteurs de risque et comorbidités",
+          "details": [
+            "[Morsure de tique - non]",
+            "Maladies rhumatologiques",
+            "[Médicaments: pilule contraceptive]",
+            "[Habitudes: aucune substance nocive]",
+            "[AF: mère avec gonarthrose]"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "a8",
+          "text": "Contexte socio-professionnel et sportif",
+          "details": [
+            "[Étudiante]",
+            "Pratique sportive régulière [tennis]",
+            "Niveau de pratique",
+            "Impact sur les activités quotidiennes",
+            "Attentes thérapeutiques"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥3 éléments = 2 pts, 2 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "a9",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "binaryOnly": false,
+          "details": [
+            "Anamnèse structurée et orientée",
+            "RED FLAGS systématiquement recherchés",
+            "Antécédents pertinents explorés"
+          ],
+          "scoringRule": "Excellente = 2 pts, suffisante = 1 pt, insuffisante = 0 pt"
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Inspection et analyse fonctionnelle",
+          "details": [
+            "Axes des membres inférieurs [légère position en varus]",
+            "Longueur des jambes et position du bassin [symétrique]",
+            "Analyse de la marche [légère boiterie d'esquive à droite]",
+            "Recherche de gonflement et rotule dansante [minimal]",
+            "Comparaison avec le côté controlatéral"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "e2",
+          "text": "Palpation systématique des structures",
+          "details": [
+            "Tubérosité tibiale antérieure, rotule, condyles fémoraux",
+            "Interligne articulaire [sensibilité médiale]",
+            "Ligaments collatéraux",
+            "Tendon rotulien",
+            "Signe du glaçon pour épanchement"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥4 structures = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "e3",
+          "text": "Tests méniscaux spécifiques",
+          "details": [
+            "Test de Steinmann I [douleurs médiales en rotation externe]",
+            "Test de McMurray [douleurs médiales en rotation externe]",
+            "Test d'Apley [douleurs médiales en rotation externe]",
+            "Test de Thessaly (si approprié)",
+            "Joint line tenderness médial"
+          ],
+          "binaryOnly": false,
+          "patientComment": "Tests méniscaux positifs suggérant fortement une lésion méniscale médiale",
+          "scoringRule": "≥3 tests = 2 pts, 2 tests = 1 pt, <2 tests = 0 pt"
+        },
+        {
+          "id": "e4",
+          "text": "Tests ligamentaires complets",
+          "details": [
+            "LCA - Test de Lachman [normal]",
+            "LCP - Tiroir postérieur, Gravity-Sign [normal]",
+            "LCM/LCL - Stress varus-valgus 0° [pas d'ouverture]",
+            "LCM/LCL - Stress varus-valgus 30° [pas d'ouverture]",
+            "Test de pivot shift (si approprié)"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥4 tests = 2 pts, 2-3 tests = 1 pt, <2 tests = 0 pt"
+        },
+        {
+          "id": "e5",
+          "text": "Évaluation de l'appareil extenseur et mobilité",
+          "details": [
+            "Flexion-extension active/passive [160-0-5 = normal]",
+            "Palpation tubercule des adducteurs [non douloureux]",
+            "Test d'appréhension patellaire 30° [normal]",
+            "Mobilité rotulienne",
+            "Force quadriceps/ischio-jambiers [normal]"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "e6",
+          "text": "Examen vasculo-nerveux et systémique",
+          "details": [
+            "Pouls pédieux et tibial postérieur [présents]",
+            "Sensibilité distale [intacte]",
+            "Motricité distale [intacte]",
+            "Réflexes ostéo-tendineux",
+            "Signes d'inflammation systémique"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥3 éléments = 2 pts, 2 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "e7",
+          "text": "Évaluation globale de la qualité de l'examen",
+          "binaryOnly": false,
+          "details": [
+            "Examen systématique et complet",
+            "Tests spécifiques bien réalisés",
+            "Comparaison bilatérale effectuée"
+          ],
+          "scoringRule": "Excellent = 2 pts, suffisant = 1 pt, insuffisant = 0 pt"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic principal et raisonnement clinique",
+          "patientComment": "Lésion méniscale médiale du genou droit post-traumatique",
+          "details": [
+            "Mécanisme lésionnel typique (rotation)",
+            "Tests méniscaux positifs",
+            "Douleur interligne médiale",
+            "Antécédent de lésion LCM (facteur de risque)"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "Diagnostic correct avec ≥3 arguments = 2 pts, diagnostic correct avec 1-2 arguments = 1 pt, incorrect = 0 pt"
+        },
+        {
+          "id": "m2",
+          "text": "Diagnostics différentiels pertinents",
+          "ddSection": {
+            "categories": [
+              {
+                "name": "Lésions ligamentaires",
+                "items": [
+                  "Lésion du ligament collatéral médial",
+                  "Lésion combinée LCM-ménisque"
+                ]
+              },
+              {
+                "name": "Pathologies cartilagineuses",
+                "items": [
+                  "Chondropathie rotulienne",
+                  "Lésion ostéochondrale"
+                ]
+              },
+              {
+                "name": "Autres pathologies",
+                "items": [
+                  "Contusion osseuse",
+                  "Plica médiale symptomatique",
+                  "Syndrome de surcharge"
+                ]
+              }
+            ]
+          },
+          "binaryOnly": false,
+          "scoringRule": "≥5 DD pertinents = 2 pts, 3-4 DD = 1 pt, <3 DD = 0 pt"
+        },
+        {
+          "id": "m3",
+          "text": "Examens complémentaires appropriés",
+          "binaryOnly": false,
+          "scoringRule": "≥3 examens justifiés = 2 pts, 2 examens = 1 pt, <2 examens = 0 pt",
+          "details": [
+            "Radiographie genou F/P → Exclure fracture/lésion osseuse",
+            "IRM du genou → Gold standard pour lésion méniscale/ligamentaire",
+            "Échographie (alternative) → Si IRM non disponible rapidement",
+            "Arthroscopie → Diagnostique et thérapeutique si indiquée"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Traitement aigu selon protocole PRICE",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Protection et repos",
+                "content": "• Arrêt immédiat du sport\n• Décharge partielle avec cannes anglaises\n• Attelle articulée si instabilité (0-90°)"
+              },
+              {
+                "title": "Réduction inflammation",
+                "content": "• Glace 20 min 4-6x/jour\n• Compression élastique\n• Élévation du membre\n• AINS: ibuprofène 600mg 3x/j x 5-7j"
+              },
+              {
+                "title": "Antalgie",
+                "content": "• Paracétamol 1g 4x/j si nécessaire\n• Éviter les opioïdes en première intention"
+              }
+            ]
+          },
+          "binaryOnly": false,
+          "scoringRule": "≥4 mesures PRICE = 2 pts, 2-3 mesures = 1 pt, <2 mesures = 0 pt"
+        },
+        {
+          "id": "m5",
+          "text": "Prise en charge à moyen terme structurée",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Référence spécialisée",
+                "content": "• Orthopédiste dans les 2-4 semaines\n• Décision thérapeutique selon IRM\n• Discussion conservateur vs chirurgical"
+              },
+              {
+                "title": "Rééducation fonctionnelle",
+                "content": "• Physiothérapie précoce\n• Renforcement quadriceps/ischio-jambiers\n• Travail proprioceptif\n• Mobilisation progressive"
+              },
+              {
+                "title": "Options chirurgicales",
+                "content": "• Suture méniscale (si possible)\n• Méniscectomie partielle\n• Selon localisation et type de lésion"
+              }
+            ]
+          },
+          "binaryOnly": false,
+          "scoringRule": "≥3 aspects couverts = 2 pts, 2 aspects = 1 pt, <2 aspects = 0 pt"
+        },
+        {
+          "id": "m6",
+          "text": "Information et éducation du patient",
+          "details": [
+            "Explication du diagnostic probable",
+            "Évolution naturelle (6-12 semaines si conservateur)",
+            "Importance du repos sportif (4-6 semaines minimum)",
+            "Signes d'alarme à surveiller",
+            "Plan de traitement et alternatives"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥4 points abordés = 2 pts, 2-3 points = 1 pt, <2 points = 0 pt"
+        },
+        {
+          "id": "m7",
+          "text": "Planification du suivi et prévention",
+          "details": [
+            "Contrôle clinique dans 7-10 jours",
+            "Certificat médical pour arrêt sportif",
+            "Réévaluation après IRM",
+            "Plan de retour au sport progressif",
+            "Prévention secondaire (renforcement, technique)"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "m8",
+          "text": "Évaluation globale de la prise en charge",
+          "binaryOnly": false,
+          "details": [
+            "Prise en charge evidence-based",
+            "Approche multidisciplinaire",
+            "Patient au centre des décisions"
+          ],
+          "scoringRule": "Excellente = 2 pts, adéquate = 1 pt, insuffisante = 0 pt"
+        }
+      ]
+    }
+  }
+}

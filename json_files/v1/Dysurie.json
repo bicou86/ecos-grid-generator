@@ -1,0 +1,257 @@
+{
+  "title": "Dysurie",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Homme de 52 ans consultant pour troubles urinaires"
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction et tâche",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Question d'entrée ouverte - Symptôme principal",
+          "patientComment": "brûlures en urinant et écoulement",
+          "binaryOnly": true
+        },
+        {
+          "id": "a3",
+          "text": "Début et évolution des symptômes",
+          "patientComment": "depuis 5 jours, début progressif"
+        },
+        {
+          "id": "a4",
+          "text": "Caractéristiques de la dysurie",
+          "details": [
+            "Brûlures mictionnelles",
+            "Douleur au début ou en fin de miction",
+            "Intensité de la douleur",
+            "Amélioration ou aggravation"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Écoulement urétral",
+          "details": [
+            "Aspect (purulent, muqueux)",
+            "Couleur (jaunâtre, verdâtre)",
+            "Quantité",
+            "Moment d'apparition (matin, permanent)"
+          ]
+        },
+        {
+          "id": "a6",
+          "text": "Symptômes urinaires associés",
+          "details": [
+            "Pollakiurie",
+            "Urgences mictionnelles",
+            "Hématurie",
+            "Rétention urinaire"
+          ]
+        },
+        {
+          "id": "a7",
+          "text": "Symptômes systémiques",
+          "details": [
+            "Fièvre",
+            "Frissons",
+            "Malaise général",
+            "Douleurs lombaires"
+          ]
+        },
+        {
+          "id": "a8",
+          "text": "Anamnèse sexuelle",
+          "details": [
+            "Rapports sexuels récents",
+            "Nouveaux partenaires",
+            "Protection lors des rapports",
+            "Antécédents d'IST"
+          ]
+        },
+        {
+          "id": "a9",
+          "text": "Antécédents urologiques",
+          "details": [
+            "Infections urinaires antérieures",
+            "Lithiase urinaire",
+            "Chirurgie urologique",
+            "Troubles prostatiques"
+          ]
+        },
+        {
+          "id": "a10",
+          "text": "Facteurs de risque",
+          "details": [
+            "Immunosuppression",
+            "Diabète",
+            "Sondage vésical",
+            "Voyages récents"
+          ]
+        },
+        {
+          "id": "a11",
+          "text": "Traitements récents",
+          "patientComment": "aucun antibiotique récent"
+        },
+        {
+          "id": "a12",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "binaryOnly": false,
+          "details": [
+            "Anamnèse générale ciblée et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Examen général",
+          "details": [
+            "État général",
+            "Température",
+            "Tension artérielle",
+            "Signes de sepsis"
+          ]
+        },
+        {
+          "id": "e2",
+          "text": "Examen de l'appareil génital masculin",
+          "details": [
+            "Inspection du méat urétral",
+            "Recherche d'écoulement",
+            "Palpation de l'urètre",
+            "Examen du gland et prépuce"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Examen des organes génitaux externes",
+          "details": [
+            "Palpation testiculaire",
+            "Examen de l'épididyme",
+            "Cordon spermatique",
+            "Recherche d'adénopathies inguinales"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Examen abdominal",
+          "details": [
+            "Palpation hypogastrique",
+            "Globe vésical",
+            "Douleur sus-pubienne",
+            "Masses abdominales"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Examen des fosses lombaires",
+          "details": [
+            "Palpation bilatérale",
+            "Douleur à la pression",
+            "Signe de Giordano",
+            "Masses lombaires"
+          ]
+        },
+        {
+          "id": "e6",
+          "text": "Toucher rectal",
+          "details": [
+            "Volume prostatique",
+            "Consistance",
+            "Douleur prostatique",
+            "Nodules"
+          ]
+        },
+        {
+          "id": "e7",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "binaryOnly": false,
+          "details": [
+            "Status général ciblé et bien conduit"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic principal",
+          "patientComment": "Urétrite gonococcique probable"
+        },
+        {
+          "id": "m2",
+          "text": "Diagnostics différentiels",
+          "details": [
+            "Urétrite à Chlamydia",
+            "Urétrite non spécifique",
+            "Infection urinaire basse",
+            "Prostatite aiguë"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Examens complémentaires",
+          "details": [
+            "Prélèvement urétral pour culture et antibiogramme",
+            "PCR Chlamydia et Gonocoque",
+            "Examen cytobactériologique des urines",
+            "Sérologies VIH, syphilis, hépatites"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Traitement antibiotique",
+          "details": [
+            "Ceftriaxone 500mg IM en dose unique",
+            "Azithromycine 1g PO en dose unique",
+            "Alternative selon antibiogramme",
+            "Traitement du/des partenaire(s)"
+          ]
+        },
+        {
+          "id": "m5",
+          "text": "Mesures associées",
+          "details": [
+            "Déclaration obligatoire",
+            "Enquête partenaires",
+            "Abstinence sexuelle jusqu'à guérison",
+            "Prévention (préservatifs)"
+          ]
+        },
+        {
+          "id": "m6",
+          "text": "Suivi et contrôle",
+          "details": [
+            "Contrôle à 7 jours",
+            "Test de guérison à 3 semaines",
+            "Dépistage autres IST",
+            "Conseils de prévention"
+          ]
+        },
+        {
+          "id": "m7",
+          "text": "Évaluation globale de la qualité de la prise en charge",
+          "binaryOnly": false,
+          "details": [
+            "Prise en charge générale cohérente et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    }
+  }
+}

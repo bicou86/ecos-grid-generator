@@ -1,0 +1,249 @@
+{
+  "title": "Vaccinations",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Consultation de conseil sur les vaccinations avec une mère (jumeaux de 3 semaines, fille et garçon)"
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction et objectif",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Questions de la mère",
+          "binaryOnly": true
+        },
+        {
+          "id": "a3",
+          "text": "Expériences antérieures",
+          "binaryOnly": false,
+          "details": [
+            "Elle-même vaccinée [à évaluer]",
+            "Profession des parents [à évaluer]",
+            "Connaissances [à évaluer]"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Angoisses et environnement",
+          "binaryOnly": true
+        },
+        {
+          "id": "a5",
+          "text": "Gestion des questions sur les effets secondaires",
+          "binaryOnly": false,
+          "details": [
+            "Douleurs, rougeur, fièvre",
+            "Effets secondaires graves très rares",
+            "Comparaison bénéfice/risque"
+          ]
+        },
+        {
+          "id": "a6",
+          "text": "Question sur l'autisme",
+          "binaryOnly": false,
+          "details": [
+            "Aucun lien avec les vaccinations",
+            "Coïncidence temporelle seulement"
+          ]
+        },
+        {
+          "id": "a7",
+          "text": "Question sur l'âge de vaccination",
+          "binaryOnly": false,
+          "details": [
+            "Vaccination précoce à 8 semaines",
+            "Car système immunitaire pas encore mature"
+          ]
+        },
+        {
+          "id": "a8",
+          "text": "Gestion de l'opposition sociale",
+          "binaryOnly": false,
+          "details": [
+            "Explication de l'immunité collective",
+            "Comportement égoïste à révéler avec tact"
+          ]
+        },
+        {
+          "id": "a9",
+          "text": "Sensibilisation aux maladies évitables",
+          "binaryOnly": false,
+          "details": [
+            "Nous sommes gâtés grâce aux vaccinations",
+            "Maladies et leurs conséquences peu connues"
+          ]
+        },
+        {
+          "id": "a10",
+          "text": "Question sur l'obligation vaccinale",
+          "binaryOnly": false,
+          "details": [
+            "Pas d'obligation en Suisse",
+            "Parents doivent assumer les conséquences"
+          ]
+        },
+        {
+          "id": "a11",
+          "text": "Question sur les échecs vaccinaux",
+          "binaryOnly": false,
+          "details": [
+            "Nécessité de 2 vaccinations",
+            "Échecs vaccinaux possibles"
+          ]
+        },
+        {
+          "id": "a12",
+          "text": "Question sur la prise en charge",
+          "binaryOnly": false,
+          "details": [
+            "Assurance maladie paie les vaccinations recommandées"
+          ]
+        },
+        {
+          "id": "a13",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "binaryOnly": false,
+          "details": [
+            "Anamnèse générale ciblée et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Explication du plan vaccinal dTP",
+          "binaryOnly": false,
+          "details": [
+            "2, 4, 6, 15-24 mois, 4-7 ans, 11-15 ans, 25-29 ans",
+            "Diphtérie (croup, obstruction voies aériennes, myocardite, polyneuropathie)",
+            "Tétanos (tétanos)",
+            "Coqueluche (attention nourrissons - apnée)"
+          ]
+        },
+        {
+          "id": "e2",
+          "text": "Explication vaccination polio",
+          "binaryOnly": false,
+          "details": [
+            "2, 4, 6 mois",
+            "Poliomyélite, malheureusement pas encore éradiquée mondialement",
+            "En Suisse possible à cause des voyages et immigration"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Explication vaccination Haemophilus influenzae",
+          "binaryOnly": false,
+          "details": [
+            "2, 4, 6 mois",
+            "Surtout bébés et personnes âgées en danger (pneumonie)"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Explication vaccination ROR",
+          "binaryOnly": false,
+          "details": [
+            "12 mois et 15-24 mois",
+            "Rougeole (>1 million d'enfants meurent/an mondialement, otite, pneumonie, encéphalite 1/1000 - létalité 30%)",
+            "Oreillons (stérilité, méningite, surdité)",
+            "Rubéole (attention grossesse, encéphalite rubéolique)"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Explication autres vaccinations",
+          "binaryOnly": false,
+          "details": [
+            "HPV (11-14 ans, nouveau 2x)",
+            "Varicelle (si pas eue, avec 11-14 ans ou atopiques/immunodéprimés)",
+            "Hépatite B (généralement 11-15 ans, si voyages fréquents: 2, 4, 6, 15-24 mois)",
+            "Supplémentaires: FSME, Hépatite A, Fièvre jaune"
+          ]
+        },
+        {
+          "id": "e6",
+          "text": "Vaccinations complémentaires recommandées",
+          "binaryOnly": false,
+          "details": [
+            "Pneumocoques (2, 4 et 12 mois)",
+            "Méningocoques (12-15 mois et 11-15 ans) - méningite létalité 10%"
+          ]
+        },
+        {
+          "id": "e7",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "binaryOnly": false,
+          "details": [
+            "Status général ciblé et bien conduit"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Remise de documentation",
+          "binaryOnly": false,
+          "details": [
+            "Guide vaccinal de l'OFSP ou autres informations à lire"
+          ]
+        },
+        {
+          "id": "m2",
+          "text": "Planification du suivi",
+          "binaryOnly": false,
+          "details": [
+            "Convenir que la mère se manifeste pour éventuel rendez-vous vaccinal"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Offre de consultation supplémentaire",
+          "binaryOnly": false,
+          "details": [
+            "Propose autre entretien si souhaité et plus de questions"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Conseil sur les sources d'information",
+          "binaryOnly": false,
+          "details": [
+            "Dire à la mère de ne pas tout croire sur Internet"
+          ]
+        },
+        {
+          "id": "m5",
+          "text": "Encouragement à la vaccination",
+          "binaryOnly": false,
+          "details": [
+            "Encourage une nouvelle fois la mère à se décider pour la vaccination"
+          ]
+        },
+        {
+          "id": "m6",
+          "text": "Évaluation globale de la qualité de la prise en charge",
+          "binaryOnly": false,
+          "details": [
+            "Prise en charge générale cohérente et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    }
+  }
+}

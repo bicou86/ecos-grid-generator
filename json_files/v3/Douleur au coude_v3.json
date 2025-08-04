@@ -1,0 +1,439 @@
+{
+  "title": "Douleur au coude",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Madame Wieser, 25 ans, se présente pour des douleurs au coude."
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction et tâche",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Identification du symptôme principal",
+          "binaryOnly": true,
+          "patientComment": "Douleurs au coude"
+        },
+        {
+          "id": "a3",
+          "text": "RED FLAGS - Signaux d'alarme coude",
+          "redflagsSection": [
+            {
+              "text": "Traumatisme récent significatif [non]"
+            },
+            {
+              "text": "Déformation visible ou blocage articulaire"
+            },
+            {
+              "text": "Fièvre ou signes infectieux locaux"
+            },
+            {
+              "text": "Gonflement important et brutal"
+            },
+            {
+              "text": "Déficit neurologique (paresthésies, faiblesse) [irradiation avant-bras !]"
+            },
+            {
+              "text": "Douleur nocturne ou de repos [non]"
+            },
+            {
+              "text": "Antécédent de cancer ou immunosuppression"
+            },
+            {
+              "text": "Perte de poids inexpliquée"
+            }
+          ],
+          "scoringRule": "≥2 red flags = 2 pts, 1 = 1 pt, 0 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a4",
+          "text": "Caractérisation complète de la douleur (OPQRST)",
+          "details": [
+            "Onset : début et contexte [week-end, tournoi badminton 6 matchs!]",
+            "Provocation : facteurs déclenchants [mouvements]",
+            "Quality : type de douleur [sourde, pas électrique]",
+            "Région : localisation précise [coude côté radial = latéral]",
+            "Radiation : irradiation [parfois avant-bras]",
+            "Severity : intensité EVA [4-5/10]",
+            "Time : évolution temporelle [depuis week-end dernier]"
+          ],
+          "scoringRule": "≥6 éléments OPQRST = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a5",
+          "text": "Mécanisme lésionnel et facteurs de risque",
+          "details": [
+            "Sport de raquette intensif [badminton tournoi!]",
+            "Gestes répétitifs professionnels [infirmière]",
+            "Changement récent d'équipement sportif",
+            "Technique sportive inadéquate",
+            "Surcharge brutale d'activité [6 matchs/2j!]",
+            "Échauffement insuffisant",
+            "Activités manuelles répétitives"
+          ],
+          "scoringRule": "≥5 facteurs évalués = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a6",
+          "text": "Retentissement fonctionnel et professionnel",
+          "details": [
+            "Limitation au travail [limitée au travail!]",
+            "Gêne pour activités quotidiennes",
+            "Difficulté préhension/serrage",
+            "Port de charges difficile",
+            "Limitation sportive actuelle",
+            "Utilisation souris/clavier",
+            "Gestes fins affectés"
+          ],
+          "scoringRule": "≥5 impacts évalués = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a7",
+          "text": "Symptômes associés locomoteurs",
+          "details": [
+            "Raideur articulaire [non mentionnée]",
+            "Gonflement visible [non remarqué]",
+            "Chaleur locale",
+            "Craquements articulaires",
+            "Faiblesse musculaire",
+            "Instabilité subjective [non]",
+            "Blocages ou ressauts"
+          ],
+          "scoringRule": "≥5 symptômes explorés = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a8",
+          "text": "Antécédents musculo-squelettiques",
+          "details": [
+            "Épisodes similaires antérieurs [jamais]",
+            "Traumatismes anciens coude [non]",
+            "Tendinopathies autres sites",
+            "Pathologies rhumatismales [rien]",
+            "Chirurgies orthopédiques",
+            "Infiltrations antérieures"
+          ],
+          "scoringRule": "≥5 antécédents explorés = 2 pts, 3-4 = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a9",
+          "text": "Profil sportif et activités",
+          "details": [
+            "Sports pratiqués régulièrement [badminton, tennis, jogging]",
+            "Fréquence hebdomadaire habituelle",
+            "Niveau de pratique (loisir/compétition)",
+            "Préparation physique associée",
+            "Étirements réguliers",
+            "Matériel utilisé (raquette, grip)"
+          ],
+          "scoringRule": "≥5 éléments sportifs = 2 pts, 3-4 = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a10",
+          "text": "Traitements essayés et automédication",
+          "details": [
+            "AINS oraux ou topiques [encore rien]",
+            "Application froid/chaud",
+            "Bandages ou attelles",
+            "Kinésithérapie antérieure",
+            "Médecines alternatives",
+            "Repos sportif spontané"
+          ],
+          "scoringRule": "≥4 traitements évalués = 2 pts, 2-3 = 1 pt",
+          "binaryOnly": false
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Inspection comparative bilatérale",
+          "details": [
+            "Déformation osseuse [normale]",
+            "Œdème localisé [normal]",
+            "Ecchymose ou hématome [normal]",
+            "Amyotrophie [normale]",
+            "Position spontanée [normale]",
+            "Comparaison côté sain"
+          ],
+          "scoringRule": "≥5 éléments inspectés = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e2",
+          "text": "Palpation systématique des points douloureux",
+          "details": [
+            "Épicondyle latéral [très douloureux!!!]",
+            "Tendon extenseur commun",
+            "Épicondyle médial [non douloureux]",
+            "Olécrâne et bourse olécrânienne",
+            "Tête radiale",
+            "Gouttière épitrochléo-olécrânienne"
+          ],
+          "scoringRule": "≥5 points palpés = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e3",
+          "text": "Tests spécifiques épicondylite latérale",
+          "details": [
+            "Test de Cozen (extension poignet résistée) [douloureux!!]",
+            "Test de Mill (pronation passive)",
+            "Test de Maudsley (extension majeur résisté)",
+            "Chair test (soulever chaise)",
+            "Test du café (tenir tasse)",
+            "Grip test (force de préhension)"
+          ],
+          "scoringRule": "≥4 tests spécifiques = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e4",
+          "text": "Mobilités articulaires actives et passives",
+          "details": [
+            "Flexion (0-140°) [normale]",
+            "Extension (0-10°) [normale]",
+            "Pronation (0-80°) [normale]",
+            "Supination (0-80°) [normale]",
+            "Recherche douleur en fin d'amplitude",
+            "Comparaison bilatérale"
+          ],
+          "scoringRule": "4 mouvements testés A+P = 2 pts, 2-3 = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e5",
+          "text": "Tests de stabilité ligamentaire",
+          "details": [
+            "Valgus stress test (LCM) [normal]",
+            "Varus stress test (LCL) [normal]",
+            "Test du tiroir antérieur",
+            "Pivot shift test",
+            "Moving valgus stress test"
+          ],
+          "scoringRule": "≥3 tests stabilité = 2 pts, 2 = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e6",
+          "text": "Examen neurologique complet",
+          "details": [
+            "Force C5-T1 segmentaire",
+            "Sensibilité territoires nerveux [normale]",
+            "ROT biceps C5 [normal]",
+            "ROT triceps C7 [normal]",
+            "ROT stylo-radial C6 [normal]",
+            "Test de Tinel (nerf ulnaire, médian, radial)"
+          ],
+          "scoringRule": "≥5 éléments neuro = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e7",
+          "text": "Tests pour diagnostics différentiels",
+          "details": [
+            "Compression nerf radial (syndrome tunnel radial)",
+            "Test pronateur (nerf médian)",
+            "Flexion coude + Tinel (nerf ulnaire)",
+            "Test instabilité postéro-latérale",
+            "Palpation articulation radio-humérale"
+          ],
+          "scoringRule": "≥4 DD explorés = 2 pts, 2-3 = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e8",
+          "text": "Examen régional élargi",
+          "details": [
+            "Épaule homolatérale (douleur référée)",
+            "Rachis cervical (NCB C5-C6)",
+            "Poignet et main",
+            "Recherche points gâchettes",
+            "Évaluation chaîne musculaire"
+          ],
+          "scoringRule": "≥4 régions = 2 pts, 2-3 = 1 pt",
+          "binaryOnly": false
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic principal avec justification",
+          "patientComment": "Épicondylite latérale (tennis elbow) post-surmenage sportif aigu. Contexte typique : jeune sportive, tournoi intensif badminton, douleur épicondyle latéral, test de Cozen positif",
+          "binaryOnly": true
+        },
+        {
+          "id": "m2",
+          "text": "Diagnostics différentiels structurés",
+          "ddSection": {
+            "categories": [
+              {
+                "name": "Tendinopathies du coude",
+                "items": [
+                  "Épicondylite latérale (tennis elbow)",
+                  "Épitrochléite médiale (golfer's elbow)",
+                  "Tendinopathie distale biceps",
+                  "Tendinopathie tricipitale"
+                ]
+              },
+              {
+                "name": "Compressions nerveuses",
+                "items": [
+                  "Syndrome du tunnel radial",
+                  "Syndrome du nerf interosseux postérieur",
+                  "Compression nerf ulnaire (coude)",
+                  "Syndrome pronateur (nerf médian)"
+                ]
+              },
+              {
+                "name": "Pathologies articulaires",
+                "items": [
+                  "Arthrose radio-humérale",
+                  "Ostéochondrite disséquante",
+                  "Arthrite inflammatoire débutante",
+                  "Corps étrangers intra-articulaires"
+                ]
+              },
+              {
+                "name": "Pathologies osseuses/ligamentaires",
+                "items": [
+                  "Fracture de stress tête radiale",
+                  "Instabilité postéro-latérale",
+                  "Plica synoviale",
+                  "Bursite olécrânienne"
+                ]
+              }
+            ]
+          },
+          "scoringRule": "≥3 catégories avec exemples = 2 pts, 2 = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m3",
+          "text": "Stratégie diagnostique raisonnée",
+          "details": [
+            "Diagnostic clinique suffisant si typique",
+            "Radio coude F+P si doute osseux",
+            "Échographie si échec traitement 6 sem",
+            "IRM si suspicion lésion profonde",
+            "EMG si compression nerveuse suspectée",
+            "Bilan inflammatoire si arthrite"
+          ],
+          "scoringRule": "Approche graduée = 2 pts, examens excessifs = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m4",
+          "text": "Traitement conservateur phase aiguë (0-6 semaines)",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Repos relatif et protection",
+                "content": "• Arrêt sports de raquette 4-6 semaines\n• Éviter mouvements répétitifs\n• Maintien activités non douloureuses\n• Bracelet épicondylien si besoin\n• Modification ergonomique poste travail\n• Pas d'immobilisation stricte"
+              },
+              {
+                "title": "Traitement anti-inflammatoire",
+                "content": "• Cryothérapie 15min x3-4/jour phase aiguë\n• AINS topiques : diclofénac gel 3x/j\n• AINS oraux courts si douleur importante\n• Paracétamol 1g x3-4/j si besoin\n• Éviter corticoïdes oraux"
+              },
+              {
+                "title": "Kinésithérapie précoce",
+                "content": "• Massage transverse profond\n• Mobilisations neurales douces\n• Étirements progressifs extenseurs\n• Renforcement excentrique précoce\n• Techniques de thérapie manuelle\n• Ultrasonothérapie controversée"
+              },
+              {
+                "title": "Éducation thérapeutique",
+                "content": "• Explication physiopathologie\n• Pronostic favorable 80% à 1 an\n• Importance observance repos\n• Auto-étirements quotidiens\n• Prévention récidives\n• Correction technique sportive"
+              }
+            ]
+          },
+          "scoringRule": "Plan multimodal complet = 2 pts",
+          "binaryOnly": false
+        },
+        {
+          "id": "m5",
+          "text": "Options thérapeutiques si échec conservateur",
+          "details": [
+            "Infiltration corticoïdes (max 2-3/an)",
+            "PRP (plasma riche plaquettes)",
+            "Ondes de choc focales",
+            "Dry needling/acupuncture",
+            "Toxine botulique (études en cours)",
+            "Chirurgie si échec >12 mois (rare)"
+          ],
+          "scoringRule": "≥4 options graduées = 2 pts, 2-3 = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m6",
+          "text": "Programme de rééducation structuré",
+          "details": [
+            "Phase 1 (0-2 sem) : repos, glace, mobilisation",
+            "Phase 2 (2-6 sem) : étirements, isométrique",
+            "Phase 3 (6-12 sem) : excentrique progressif",
+            "Phase 4 (>12 sem) : renforcement global",
+            "Retour sport progressif après 3 mois",
+            "Programme préventif au long cours"
+          ],
+          "scoringRule": "Programme phasé = 2 pts, générique = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m7",
+          "text": "Critères de suivi et red flags",
+          "redflagsSection": [
+            {
+              "text": "Aggravation malgré repos"
+            },
+            {
+              "text": "Apparition déficit moteur"
+            },
+            {
+              "text": "Paresthésies permanentes"
+            },
+            {
+              "text": "Gonflement articulaire nouveau"
+            },
+            {
+              "text": "Fièvre ou signes infectieux"
+            },
+            {
+              "text": "Blocage articulaire"
+            }
+          ],
+          "scoringRule": "≥4 critères définis = 2 pts, 2-3 = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m8",
+          "text": "Prévention et conseils ergonomiques",
+          "details": [
+            "Correction technique badminton/tennis",
+            "Adaptation matériel (grip, tension cordage)",
+            "Échauffement systématique",
+            "Renforcement préventif extenseurs",
+            "Ergonomie poste infirmière",
+            "Pauses régulières au travail",
+            "Hydratation et récupération"
+          ],
+          "scoringRule": "≥5 conseils préventifs = 2 pts, 3-4 = 1 pt",
+          "binaryOnly": false
+        }
+      ]
+    }
+  }
+}

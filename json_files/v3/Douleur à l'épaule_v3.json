@@ -1,0 +1,413 @@
+{
+  "title": "Douleur à l'épaule",
+  "context": {
+    "setting": "Cabinet de médecine générale (remplacement)",
+    "patient": "Madame Spielmann, 60 ans, se présente pour des douleurs à l'épaule gauche"
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction et objectif de la consultation",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Question ouverte pour identifier le motif de consultation",
+          "details": [
+            "[Douleurs à l'épaule gauche]"
+          ],
+          "binaryOnly": true
+        },
+        {
+          "id": "a3",
+          "text": "RED FLAGS - Signaux d'alarme épaule douloureuse",
+          "redflagsSection": [
+            {
+              "text": "Âge > 50 ans avec douleur nouvelle [60 ans !]"
+            },
+            {
+              "text": "Douleur nocturne réveillant le patient [se réveille la nuit !]"
+            },
+            {
+              "text": "Antécédent de cancer [père leucémie à 60 ans]"
+            },
+            {
+              "text": "Perte de poids inexpliquée [non]"
+            },
+            {
+              "text": "Fièvre ou signes infectieux [non]"
+            },
+            {
+              "text": "Traumatisme récent [non]"
+            },
+            {
+              "text": "Déficit neurologique progressif [fourmillements bras !]"
+            },
+            {
+              "text": "Masse palpable"
+            }
+          ],
+          "scoringRule": "≥3 red flags = 2 pts, 2 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a4",
+          "text": "Caractérisation complète de la douleur (OPQRST)",
+          "details": [
+            "Onset : début et circonstances [depuis 1 mois, progressif]",
+            "Provocation : facteurs déclenchants [mouvements au-dessus tête]",
+            "Quality : type de douleur (mécanique vs inflammatoire)",
+            "Radiation : irradiation [fourmillements dans le bras]",
+            "Severity : intensité EVA 0-10",
+            "Time : évolution temporelle [progressive]"
+          ],
+          "scoringRule": "≥5 éléments OPQRST = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a5",
+          "text": "Retentissement fonctionnel spécifique à l'épaule",
+          "details": [
+            "Douleur nocturne et position de sommeil [dort côté gauche, réveils]",
+            "Difficulté à lever le bras (se coiffer, s'habiller)",
+            "Limitation pour porter des charges",
+            "Gêne au travail (enseignante - tableau) [capable mais gênant]",
+            "Impact sur les AVQ (activités vie quotidienne)",
+            "Score fonctionnel (DASH, Constant)"
+          ],
+          "scoringRule": "≥4 impacts évalués = 2 pts, 3 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a6",
+          "text": "Recherche de symptômes associés orientateurs",
+          "details": [
+            "Raideur matinale >30 min (arthrite) [aucune]",
+            "Craquements ou ressauts articulaires",
+            "Sensation d'instabilité ou déboîtement",
+            "Faiblesse musculaire vraie vs inhibition douloureuse",
+            "Paresthésies territoire nerveux [fourmillements bras]",
+            "Symptômes cervicaux associés"
+          ],
+          "scoringRule": "≥5 symptômes explorés = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a7",
+          "text": "Facteurs de risque de pathologie d'épaule",
+          "details": [
+            "Activités répétitives bras en élévation [enseignante - tableau]",
+            "Sports overhead (tennis, natation, volleyball)",
+            "Travaux de force ou port de charges",
+            "Microtraumatismes répétés",
+            "Diabète (capsulite)",
+            "Hypothyroïdie [thyroïdectomie, sous Euthyrox]"
+          ],
+          "scoringRule": "≥4 facteurs évalués = 2 pts, 3 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a8",
+          "text": "Antécédents médicaux et chirurgicaux pertinents",
+          "details": [
+            "Thyroïdectomie pour nodule froid [il y a 20 ans]",
+            "Pathologies rhumatismales [aucune]",
+            "Diabète ou dyslipidémie",
+            "Traumatismes antérieurs épaule/cou",
+            "Infiltrations ou chirurgies épaule [aucune]",
+            "Cervicalgies chroniques"
+          ],
+          "scoringRule": "≥5 antécédents explorés = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a9",
+          "text": "Traitements essayés et leur efficacité",
+          "details": [
+            "AINS oraux ou topiques [pommade peu efficace]",
+            "Antalgiques (paracétamol, tramadol)",
+            "Physiothérapie déjà tentée",
+            "Infiltrations antérieures",
+            "Médecines alternatives",
+            "Modification des activités"
+          ],
+          "scoringRule": "≥4 traitements évalués = 2 pts, 2-3 = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a10",
+          "text": "Évaluation du contexte psychosocial",
+          "details": [
+            "Stress professionnel (enseignante)",
+            "Situation familiale [divorcée]",
+            "Anxiété/dépression associée",
+            "Attentes de la patiente [redevenir normal?]",
+            "Kinésiophobie (peur du mouvement)",
+            "Arrêts de travail antérieurs"
+          ],
+          "scoringRule": "≥4 aspects psychosociaux = 2 pts, 3 = 1 pt",
+          "binaryOnly": false
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Inspection comparative bilatérale systématique",
+          "details": [
+            "Asymétrie des épaules (surélévation)",
+            "Amyotrophie (deltoïde, fosses supra/infra-épineuses)",
+            "Scapula alata ou dyskinésie scapulaire",
+            "Déformation osseuse (luxation AC)",
+            "Signes inflammatoires locaux",
+            "Attitude antalgique du membre"
+          ],
+          "scoringRule": "≥5 éléments inspectés = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e2",
+          "text": "Palpation méthodique des structures anatomiques",
+          "details": [
+            "Articulation sterno-claviculaire",
+            "Clavicule sur toute sa longueur",
+            "Articulation acromio-claviculaire",
+            "Acromion et bourse sous-acromiale",
+            "Tubercules (grand et petit) et tendons",
+            "Gouttière bicipitale (tendon long biceps)"
+          ],
+          "scoringRule": "≥5 structures palpées = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e3",
+          "text": "Mobilités actives et passives complètes",
+          "details": [
+            "Flexion/élévation antérieure (0-180°)",
+            "Abduction dans plan scapulaire (0-180°)",
+            "Extension/rétropulsion (0-60°)",
+            "Rotation externe coude au corps (0-60°)",
+            "Rotation interne (main-dos niveau atteint)",
+            "Adduction horizontale (cross-body)"
+          ],
+          "scoringRule": "6 mouvements testés actif+passif = 2 pts, 4-5 = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e4",
+          "text": "Tests spécifiques coiffe des rotateurs",
+          "details": [
+            "Jobe/Empty can (supra-épineux) [- force, douloureux G]",
+            "Full can test (alternative moins douloureuse)",
+            "Patte/ER résistée (infra-épineux/petit rond)",
+            "Lift-off/Belly press (subscapulaire) [limité bilatéral]",
+            "Drop arm test (rupture massive)",
+            "Lag signs (ruptures complètes)"
+          ],
+          "scoringRule": "≥4 tests de coiffe = 2 pts, 3 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e5",
+          "text": "Tests de conflit et impingement validés",
+          "details": [
+            "Neer (flexion passive maximale) [pathologique]",
+            "Hawkins-Kennedy (flexion 90° + RI)",
+            "Yocum (main opposée sur épaule + élévation)",
+            "Arc douloureux de Cyriax (60-120°)",
+            "Test d'injection sous-acromiale (diagnostique)"
+          ],
+          "scoringRule": "≥3 tests de conflit = 2 pts, 2 = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e6",
+          "text": "Tests tendon long biceps et stabilité",
+          "details": [
+            "Speed/Palm-up test (biceps)",
+            "Yergason (supination résistée)",
+            "O'Brien test (SLAP/biceps)",
+            "Appréhension antérieure/relocation",
+            "Sulcus sign (instabilité inférieure)",
+            "Load and shift test"
+          ],
+          "scoringRule": "≥4 tests = 2 pts, 2-3 = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e7",
+          "text": "Examen neurologique et vasculaire complet",
+          "details": [
+            "Sensibilité C5-T1 (dermatomes)",
+            "Force segmentaire (C5-C8)",
+            "ROT bicipital, tricipital, stylo-radial",
+            "Test de Spurling (NCB)",
+            "Adson/Wright (défilé thoracique)",
+            "Pouls radial et test de Roos"
+          ],
+          "scoringRule": "≥5 éléments neuro-vasculaires = 2 pts, 3-4 = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e8",
+          "text": "Examen du rachis cervical",
+          "details": [
+            "Mobilités cervicales (flexion, extension, rotations)",
+            "Palpation épineuses et paravertébrales",
+            "Points gâchettes trapèze/élévateur scapula",
+            "Test de compression/distraction"
+          ],
+          "scoringRule": "Examen cervical complet = 2 pts, partiel = 1 pt",
+          "binaryOnly": false
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Synthèse diagnostique avec hypothèse principale",
+          "patientComment": "Syndrome de conflit sous-acromial (impingement) avec possible tendinopathie du supra-épineux chez enseignante de 60 ans. Facteurs favorisants : gestes répétitifs en élévation (tableau), âge. DD : début de capsulite, NCB C5-C6 vu paresthésies",
+          "binaryOnly": true
+        },
+        {
+          "id": "m2",
+          "text": "Diagnostics différentiels structurés par catégorie",
+          "ddSection": {
+            "categories": [
+              {
+                "name": "Pathologies de la coiffe",
+                "items": [
+                  "Tendinopathie simple (dégénérative)",
+                  "Rupture partielle articulaire ou bursale",
+                  "Rupture transfixiante (complète)",
+                  "Tendinopathie calcifiante",
+                  "Bursite sous-acromiale isolée"
+                ]
+              },
+              {
+                "name": "Pathologies capsulo-articulaires",
+                "items": [
+                  "Capsulite rétractile phase 1 (freezing)",
+                  "Arthrose gléno-humérale",
+                  "Arthrite inflammatoire (PR, CCA)",
+                  "Arthropathie AC symptomatique",
+                  "SLAP lésion (labrum supérieur)"
+                ]
+              },
+              {
+                "name": "Causes neurologiques",
+                "items": [
+                  "Névralgie cervico-brachiale C5-C6",
+                  "Syndrome du défilé thoracique",
+                  "Neuropathie supra-scapulaire",
+                  "Syndrome de Parsonage-Turner",
+                  "Radiculoplexopathie post-radique"
+                ]
+              },
+              {
+                "name": "Autres causes (RED FLAGS)",
+                "items": [
+                  "Métastase osseuse (ATCD cancer familial)",
+                  "Tumeur de Pancoast",
+                  "Pathologie viscérale référée",
+                  "Algoneurodystrophie (SDRC)",
+                  "Polymyalgia rheumatica"
+                ]
+              }
+            ]
+          },
+          "scoringRule": "≥3 catégories avec ≥3 DD chacune = 2 pts",
+          "binaryOnly": false
+        },
+        {
+          "id": "m3",
+          "text": "Examens complémentaires selon algorithme décisionnel",
+          "details": [
+            "Radiographie épaule F+P+défilé (1ère intention)",
+            "Échographie si suspicion coiffe (opérateur-dépendant)",
+            "IRM sans injection si échec traitement 6-12 sem",
+            "Arthro-IRM si suspicion rupture ou SLAP",
+            "Radio cervicale + IRM si NCB suspectée",
+            "Bilan bio si arthrite (NFS, CRP, FR, CCP)"
+          ],
+          "scoringRule": "Stratégie adaptée et justifiée = 2 pts",
+          "binaryOnly": false
+        },
+        {
+          "id": "m4",
+          "text": "Prise en charge thérapeutique graduée",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Traitement conservateur initial (6-12 semaines)",
+                "content": "• AINS oral : ibuprofène 400mg x3/j × 10j\n• Paracétamol 1g x3-4/j si besoin\n• AINS topique : diclofénac gel x3/j\n• Cryothérapie 15-20min x3/j phase aiguë\n• Repos relatif : éviter mouvements douloureux\n• Modification ergonomique poste travail"
+              },
+              {
+                "title": "Rééducation précoce et progressive",
+                "content": "• Phase 1 : mobilisation passive douce\n• Exercices pendulaires de Codman\n• Étirements capsule postérieure\n• Phase 2 : renforcement isométrique\n• Phase 3 : renforcement excentrique coiffe\n• Proprioception et contrôle scapulaire"
+              },
+              {
+                "title": "Infiltration si échec à 6 semaines",
+                "content": "• Infiltration sous-acromiale guidée (écho/fluo)\n• Corticoïde retard + anesthésique local\n• Maximum 3 infiltrations/an\n• Test diagnostique si doute\n• Repos 48h post-infiltration\n• Rééducation à poursuivre"
+              },
+              {
+                "title": "Options thérapeutiques avancées",
+                "content": "• Ondes de choc (tendinopathie calcifiante)\n• PRP controversé (études en cours)\n• Ténotomie percutanée (calcifications)\n• Chirurgie si échec >6 mois :\n  - Acromioplastie arthroscopique\n  - Réparation coiffe si rupture"
+              }
+            ]
+          },
+          "scoringRule": "Plan complet et progressif = 2 pts",
+          "binaryOnly": false
+        },
+        {
+          "id": "m5",
+          "text": "Information patient et critères de réévaluation",
+          "redflagsSection": [
+            {
+              "text": "Aggravation déficit moteur"
+            },
+            {
+              "text": "Apparition signes neurologiques"
+            },
+            {
+              "text": "Douleur résistante au traitement"
+            },
+            {
+              "text": "Fièvre ou signes infectieux"
+            },
+            {
+              "text": "Perte fonction brutale (rupture)"
+            },
+            {
+              "text": "Signes systémiques nouveaux"
+            }
+          ],
+          "scoringRule": "≥4 critères d'alerte = 2 pts, 2-3 = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m6",
+          "text": "Plan de suivi et réponse aux attentes",
+          "details": [
+            "Réévaluation clinique à 4-6 semaines",
+            "Imagerie si échec traitement conservateur",
+            "Avis spécialisé (rhumato/ortho) si nécessaire",
+            "Pronostic : 80% amélioration en 3-6 mois",
+            "Prévention récidive : exercices maintenance",
+            "Réassurance : \"oui, retour normal possible\"",
+            "Certificat arrêt travail si nécessaire"
+          ],
+          "scoringRule": "≥5 éléments de suivi = 2 pts, 3-4 = 1 pt",
+          "binaryOnly": false
+        }
+      ]
+    }
+  }
+}

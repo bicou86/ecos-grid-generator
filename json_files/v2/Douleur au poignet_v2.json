@@ -1,0 +1,380 @@
+{
+  "title": "Douleur au poignet",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Mme Timoni, 66 ans, se présente chez son médecin de famille pour des problèmes au poignet"
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction et tâche",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Symptômes principaux",
+          "details": [
+            "[Douleurs étranges au poignet et fourmillements]"
+          ],
+          "binaryOnly": true
+        },
+        {
+          "id": "a3",
+          "text": "Localisation précise",
+          "details": [
+            "[Poignet]"
+          ],
+          "binaryOnly": false
+        },
+        {
+          "id": "a4",
+          "text": "Intensité de la douleur (échelle 0-10)",
+          "details": [
+            "[Difficile à dire, environ 5]"
+          ],
+          "binaryOnly": false
+        },
+        {
+          "id": "a5",
+          "text": "Caractère de la douleur",
+          "details": [
+            "[Électrisante]"
+          ],
+          "binaryOnly": false
+        },
+        {
+          "id": "a6",
+          "text": "Irradiation",
+          "details": [
+            "[En principe non, parfois dans l'avant-bras]"
+          ],
+          "binaryOnly": false
+        },
+        {
+          "id": "a7",
+          "text": "Facteurs améliorant/aggravant",
+          "details": [
+            "[Non]"
+          ],
+          "binaryOnly": false
+        },
+        {
+          "id": "a8",
+          "text": "Évolution temporelle et début",
+          "details": [
+            "[Depuis longtemps déjà]",
+            "[Plus prononcé le matin]"
+          ],
+          "binaryOnly": false
+        },
+        {
+          "id": "a9",
+          "text": "Troubles sensitifs",
+          "details": [
+            "[Pouce, index et majeur]",
+            "[Face radiale de l'annulaire aussi]"
+          ],
+          "binaryOnly": false
+        },
+        {
+          "id": "a10",
+          "text": "Traumatisme actuel ou ancien",
+          "details": [
+            "[Fracture de côte il y a 10 ans, sinon rien]"
+          ],
+          "binaryOnly": false
+        },
+        {
+          "id": "a11",
+          "text": "Durée des symptômes",
+          "details": [
+            "[Depuis quelques années, maintenant plus intense]"
+          ],
+          "binaryOnly": false
+        },
+        {
+          "id": "a12",
+          "text": "Déficit fonctionnel",
+          "details": [
+            "[C'est gênant]",
+            "[Plus autant de force qu'avant]",
+            "[Surtout au niveau du pouce]"
+          ],
+          "binaryOnly": false
+        },
+        {
+          "id": "a13",
+          "text": "Activités et habitudes",
+          "details": [
+            "[Lecture, cuisine, tricot, piano...]"
+          ],
+          "binaryOnly": false
+        },
+        {
+          "id": "a14",
+          "text": "Maladies systémiques",
+          "details": [
+            "[Diabète de type 2]"
+          ],
+          "binaryOnly": false
+        },
+        {
+          "id": "a15",
+          "text": "Médicaments actuels",
+          "details": [
+            "[Metformine]",
+            "[Valériane pour dormir]"
+          ],
+          "binaryOnly": true
+        },
+        {
+          "id": "a16",
+          "text": "Habitudes et toxiques",
+          "details": [
+            "[Non!]"
+          ],
+          "binaryOnly": true
+        },
+        {
+          "id": "a17",
+          "text": "Anamnèse familiale",
+          "details": [
+            "[Père: maladie coronarienne]",
+            "[Mère: diabète]"
+          ],
+          "binaryOnly": true
+        },
+        {
+          "id": "a18",
+          "text": "Anamnèse sociale et professionnelle",
+          "details": [
+            "[Secrétaire retraitée]",
+            "[Grand-mère de 9 petits-enfants]",
+            "[Mariée]"
+          ],
+          "binaryOnly": true
+        },
+        {
+          "id": "a19",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "binaryOnly": false,
+          "details": [
+            "Anamnèse ciblée et complète"
+          ],
+          "scoringRule": "Bien conduite = 2 pts (oui), suffisante = 1 pt (±), insuffisante = 0 pt (non)"
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Désinfection des mains",
+          "binaryOnly": true
+        },
+        {
+          "id": "e2",
+          "text": "Inspection",
+          "details": [
+            "Recherche de rougeur",
+            "Recherche de gonflement",
+            "État de la peau",
+            "Position antalgique",
+            "Évaluation de la musculature [légère atrophie thénarienne]"
+          ],
+          "binaryOnly": false
+        },
+        {
+          "id": "e3",
+          "text": "Palpation",
+          "details": [
+            "[Pas de douleur au toucher normal]"
+          ],
+          "binaryOnly": false
+        },
+        {
+          "id": "e4",
+          "text": "Test de Tinel",
+          "details": [
+            "Percussion du canal carpien",
+            "[Positif]"
+          ],
+          "binaryOnly": false
+        },
+        {
+          "id": "e5",
+          "text": "Test de Phalen",
+          "details": [
+            "Flexion du poignet maintenue 1 minute",
+            "[Douleur et/ou engourdissement → positif]"
+          ],
+          "binaryOnly": false
+        },
+        {
+          "id": "e6",
+          "text": "Évaluation de la sensibilité",
+          "details": [
+            "Discrimination à deux points",
+            "Sensibilité au toucher léger",
+            "Distribution du nerf médian (pouce, index, majeur, face radiale de l'annulaire)"
+          ],
+          "binaryOnly": false
+        },
+        {
+          "id": "e7",
+          "text": "Évaluation de la force",
+          "details": [
+            "Opposition du pouce",
+            "Abduction du pouce contre résistance",
+            "Force de préhension globale"
+          ],
+          "binaryOnly": false
+        },
+        {
+          "id": "e8",
+          "text": "Amplitude des mouvements",
+          "details": [
+            "Flexion/extension du poignet",
+            "Déviation radiale/ulnaire",
+            "Pronation/supination"
+          ],
+          "binaryOnly": false
+        },
+        {
+          "id": "e9",
+          "text": "Tests complémentaires",
+          "details": [
+            "Test de compression directe du canal carpien (test de Durkan)",
+            "Test de l'élévation des bras (test de Roos)",
+            "Recherche du signe de la bouteille de Lüthy"
+          ],
+          "binaryOnly": false
+        },
+        {
+          "id": "e10",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "binaryOnly": false,
+          "details": [
+            "Examen clinique ciblé et systématique"
+          ],
+          "scoringRule": "Complet et bien structuré = 2 pts (oui), suffisant = 1 pt (±), insuffisant = 0 pt (non)"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic principal",
+          "patientComment": "Syndrome du canal carpien (syndrome de compression du nerf médian)",
+          "binaryOnly": false
+        },
+        {
+          "id": "m2",
+          "text": "Diagnostics différentiels",
+          "binaryOnly": false,
+          "ddSection": {
+            "categories": [
+              {
+                "name": "Diagnostics différentiels à considérer",
+                "items": [
+                  "Radiculopathie cervicale C6-C7 (hernie discale cervicale)",
+                  "Syndrome du muscle rond pronateur",
+                  "Syndrome de compression du nerf ulnaire (rare)",
+                  "Polyneuropathie diabétique",
+                  "Ténosynovite des fléchisseurs",
+                  "Arthrose du poignet"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m3",
+          "text": "Facteurs de risque du syndrome du canal carpien",
+          "details": [
+            "Travail manuel répétitif",
+            "Grossesse",
+            "Insuffisance rénale",
+            "Diabète",
+            "Hypothyroïdie",
+            "Polyarthrite rhumatoïde",
+            "Abus d'alcool",
+            "Amyloïdose"
+          ],
+          "binaryOnly": false
+        },
+        {
+          "id": "m4",
+          "text": "Examens complémentaires",
+          "details": [
+            "Radiographie du poignet (pour exclure arthrose ou anomalie osseuse)",
+            "Électromyographie (EMG) et étude de conduction nerveuse",
+            "Bilan biologique: glycémie, TSH",
+            "Échographie du canal carpien (optionnel)"
+          ],
+          "binaryOnly": false
+        },
+        {
+          "id": "m5",
+          "text": "Traitement conservateur",
+          "details": [
+            "AINS (ibuprofène, diclofénac)",
+            "Application de froid",
+            "Immobilisation temporaire avec attelle de poignet",
+            "Port d'attelle nocturne en position neutre",
+            "Adaptation ergonomique du poste de travail",
+            "Infiltration de corticoïdes dans le canal carpien"
+          ],
+          "binaryOnly": false
+        },
+        {
+          "id": "m6",
+          "text": "Traitement chirurgical",
+          "details": [
+            "Section du rétinaculum des fléchisseurs",
+            "Technique ouverte ou endoscopique",
+            "Indication si échec du traitement conservateur après 3-6 mois",
+            "Indication en cas de déficit moteur ou sensitif sévère"
+          ],
+          "binaryOnly": false
+        },
+        {
+          "id": "m7",
+          "text": "Information et conseils au patient",
+          "details": [
+            "Explication du diagnostic",
+            "Évolution généralement favorable avec traitement",
+            "Importance du repos et de l'ergonomie",
+            "Exercices d'étirement et de mobilisation"
+          ],
+          "binaryOnly": false
+        },
+        {
+          "id": "m8",
+          "text": "Suivi",
+          "details": [
+            "Contrôle clinique dans 4-6 semaines",
+            "Évaluation de l'efficacité du traitement conservateur",
+            "Orientation vers spécialiste si nécessaire"
+          ],
+          "binaryOnly": false
+        },
+        {
+          "id": "m9",
+          "text": "Évaluation globale de la prise en charge",
+          "binaryOnly": false,
+          "details": [
+            "Prise en charge complète et adaptée"
+          ],
+          "scoringRule": "Complète et structurée = 2 pts (oui), suffisante = 1 pt (±), insuffisante = 0 pt (non)"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,162 @@
+{
+  "title": "Déshydratation - Pédiatrie",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Petit enfant avec vomissements et diarrhée, ou femme âgée d'EMS avec confusion"
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction, objectif",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Question ouverte d'introduction → Symptôme principal",
+          "patientComment": "Vomissements et diarrhée chez l'enfant / Confusion chez la personne âgée",
+          "binaryOnly": true
+        },
+        {
+          "id": "a3",
+          "text": "Signes de déshydratation : pli cutané persistant, muqueuses sèches, oligurie"
+        },
+        {
+          "id": "a4",
+          "text": "Vomissements, diarrhée"
+        },
+        {
+          "id": "a5",
+          "text": "Quantité de boissons et élimination",
+          "patientComment": "Couche sèche, absence de larmes"
+        },
+        {
+          "id": "a6",
+          "text": "Confusion, somnolence, sopor"
+        },
+        {
+          "id": "a7",
+          "text": "Signes d'infection urinaire",
+          "patientComment": "Chez l'enfant éventuellement comme cause"
+        },
+        {
+          "id": "a8",
+          "text": "Signes de diabète sucré"
+        },
+        {
+          "id": "a9",
+          "text": "Signes d'insuffisance surrénalienne"
+        },
+        {
+          "id": "a10",
+          "text": "Antécédents personnels",
+          "patientComment": "Maladies rénales"
+        },
+        {
+          "id": "a11",
+          "text": "Habitudes alimentaires"
+        },
+        {
+          "id": "a12",
+          "text": "Toxiques"
+        },
+        {
+          "id": "a13",
+          "text": "Anamnèse de l'entourage"
+        },
+        {
+          "id": "a14",
+          "text": "Antécédents familiaux"
+        },
+        {
+          "id": "a15",
+          "text": "Anamnèse sociale"
+        },
+        {
+          "id": "a16",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "binaryOnly": false,
+          "details": [
+            "Anamnèse générale ciblée et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Signes de déshydratation"
+        },
+        {
+          "id": "e2",
+          "text": "Palpation vésicale"
+        },
+        {
+          "id": "e3",
+          "text": "Examen rénal"
+        },
+        {
+          "id": "e4",
+          "text": "Tension artérielle",
+          "patientComment": "Hypotension ?"
+        },
+        {
+          "id": "e5",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "binaryOnly": false,
+          "details": [
+            "Status général ciblé et bien conduit"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "L'étudiant évoque un diagnostic principal de déshydratation"
+        },
+        {
+          "id": "m2",
+          "text": "L'étudiant évoque au moins 2-3 diagnostics différentiels",
+          "details": [
+            "Déshydratation de perte",
+            "Diabète sucré",
+            "Déficit en minéralocorticoïdes éventuellement dans la maladie d'Addison"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "L'étudiant évoque les étapes diagnostiques appropriées",
+          "details": [
+            "Laboratoire : électrolytes, Hb, Ht, valeurs de rétention rénale, glucose"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "L'étudiant évoque les possibilités thérapeutiques appropriées",
+          "details": [
+            "Perfusion, équilibration électrolytique",
+            "Organise si nécessaire le transfert à l'hôpital"
+          ]
+        },
+        {
+          "id": "m5",
+          "text": "Évaluation globale de la qualité de la prise en charge",
+          "binaryOnly": false,
+          "details": [
+            "Prise en charge générale cohérente et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    }
+  }
+}

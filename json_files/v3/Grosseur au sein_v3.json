@@ -1,0 +1,399 @@
+{
+  "title": "Grosseur au sein",
+  "context": {
+    "setting": "Cabinet de gynécologie",
+    "patient": "Mme Fischer, 51 ans, enseignante, se présente pour son contrôle gynécologique annuel et signale avoir découvert un nodule mammaire",
+    "vitals": {
+      "ta": "125/75 mmHg",
+      "fc": "72 bpm",
+      "temperature": "36.8°C"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "title": "Anamnèse",
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction et objectif",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Motif de consultation principal",
+          "patientComment": "Nodule découvert dans le sein gauche lors du contrôle annuel"
+        },
+        {
+          "id": "a3",
+          "text": "Caractéristiques du nodule",
+          "details": [
+            "Date de découverte [il y a 1 semaine]",
+            "Localisation précise [quadrant supéro-externe du sein gauche]",
+            "Taille [environ 2 cm, taille d'une noisette]",
+            "Consistance [ferme et irrégulière]",
+            "Mobilité [fixé aux tissus profonds]",
+            "Évolution depuis la découverte [stable]"
+          ],
+          "patientComment": "Caractéristiques détaillées évoquant une lésion suspecte",
+          "scoringRule": "≥4 éléments explorés = 2 pts, 2-3 éléments = 1 pt"
+        },
+        {
+          "id": "a4",
+          "text": "Symptômes associés",
+          "details": [
+            "Douleurs mammaires [non, indolore]",
+            "Écoulement mamelonnaire [non]",
+            "Rougeur/chaleur locale [non]",
+            "Rétraction cutanée [non remarquée]",
+            "Modification de la peau [non]",
+            "Symptômes B (fièvre, sueurs nocturnes, perte de poids) [aucun]"
+          ],
+          "patientComment": "Absence de symptômes inflammatoires ou systémiques",
+          "scoringRule": "≥4 symptômes explorés = 2 pts, 2-3 = 1 pt"
+        },
+        {
+          "id": "a5",
+          "text": "Anamnèse gynécologique",
+          "details": [
+            "Ménarche [à 12 ans]",
+            "Statut ménopausique [périménopause depuis 1 an]",
+            "Cycles menstruels [très irréguliers]",
+            "Bouffées de chaleur [non]",
+            "Troubles du sommeil [parfois]",
+            "Évolution pondérale [stable à 80 kg pour 1,65 m, IMC 29.4]",
+            "Dernier frottis [il y a 1 an, normal]"
+          ],
+          "patientComment": "Périménopause avec cycles irréguliers",
+          "scoringRule": "≥5 éléments = 2 pts, 3-4 = 1 pt"
+        },
+        {
+          "id": "a6",
+          "text": "Anamnèse obstétricale complète",
+          "details": [
+            "Gestité/Parité [G3P2]",
+            "Âge première grossesse [28 ans]",
+            "Mode d'accouchement [2 accouchements vaginaux]",
+            "Allaitement [oui, 6 mois chaque enfant]",
+            "Fausses couches [1 fausse couche précoce à 8 SA]",
+            "IVG [aucune]"
+          ],
+          "patientComment": "2 enfants en bonne santé, allaitement maternel",
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt"
+        },
+        {
+          "id": "a7",
+          "text": "Activité sexuelle et contraception",
+          "details": [
+            "Activité sexuelle actuelle [oui, avec compagnon depuis 2 ans]",
+            "Contraception antérieure [pilule de 20 à 30 ans]",
+            "Contraception actuelle [DIU au cuivre depuis 15 ans]",
+            "IST antérieures [aucune]",
+            "Dépistages IST [réguliers, tous négatifs]"
+          ],
+          "patientComment": "Vie sexuelle active, contraception par DIU"
+        },
+        {
+          "id": "a8",
+          "text": "Antécédents médicaux personnels",
+          "details": [
+            "Pathologies mammaires antérieures [mastopathie fibrokystique il y a 10 ans]",
+            "Biopsies mammaires [une biopsie bénigne il y a 10 ans]",
+            "Maladies gynécologiques [aucune]",
+            "Interventions chirurgicales [appendicectomie à 15 ans]",
+            "Maladies chroniques [HTA limite, non traitée]",
+            "Hospitalisations [uniquement pour accouchements]"
+          ],
+          "patientComment": "Antécédent de mastopathie bénigne",
+          "scoringRule": "≥4 antécédents explorés = 2 pts"
+        },
+        {
+          "id": "a9",
+          "text": "Médication et traitements actuels",
+          "details": [
+            "Médicaments réguliers [aucun]",
+            "Hormones [aucune]",
+            "Suppléments [vitamine D en hiver]",
+            "Contraception [DIU au cuivre]",
+            "Automédication [paracétamol occasionnel]"
+          ],
+          "patientComment": "Pas de traitement hormonal"
+        },
+        {
+          "id": "a10",
+          "text": "Habitudes de vie et facteurs de risque",
+          "details": [
+            "Tabac [jamais fumé]",
+            "Alcool [occasionnel, 1-2 verres/semaine]",
+            "Activité physique [marche 30 min/jour]",
+            "Alimentation [beaucoup de plats préparés, peu de fruits/légumes]",
+            "Stress professionnel [important, enseignante surchargée]",
+            "Exposition aux radiations [aucune connue]"
+          ],
+          "patientComment": "Mode de vie avec facteurs de risque modifiables",
+          "scoringRule": "≥4 habitudes explorées = 2 pts"
+        },
+        {
+          "id": "a11",
+          "text": "Antécédents familiaux oncologiques",
+          "details": [
+            "Cancer du sein familial [sœur à 55 ans, traitée et guérie]",
+            "Cancer de l'ovaire [aucun]",
+            "Autres cancers gynécologiques [aucun]",
+            "Cancer colorectal [grand-père paternel à 70 ans]",
+            "Mutation génétique (BRCA) [non testée]",
+            "Autres cancers [père AVC à 65 ans, mère diabète type 2]"
+          ],
+          "patientComment": "Antécédent familial significatif au 1er degré",
+          "scoringRule": "≥4 éléments familiaux = 2 pts"
+        },
+        {
+          "id": "a12",
+          "text": "Anamnèse psychosociale",
+          "details": [
+            "Situation familiale [divorcée depuis 5 ans]",
+            "Enfants [2 adolescents à charge]",
+            "Profession [enseignante primaire temps plein]",
+            "Stress et charge mentale [très élevés, jamais de vacances]",
+            "Support social [famille éloignée, peu d'amis]",
+            "Anxiété face au diagnostic [très inquiète]"
+          ],
+          "patientComment": "Contexte psychosocial difficile avec stress important"
+        },
+        {
+          "id": "a13",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "binaryOnly": false,
+          "details": [
+            "Anamnèse oncologique complète et systématique"
+          ],
+          "scoringRule": "Anamnèse excellente = 2 pts, correcte = 1 pt, insuffisante = 0 pt"
+        }
+      ]
+    },
+    "examen": {
+      "title": "Examen clinique",
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Signes vitaux et état général",
+          "details": [
+            "TA, FC, température [normaux]",
+            "Poids, taille, IMC [80 kg, 165 cm, IMC 29.4]",
+            "État général [bon, pas d'altération]"
+          ],
+          "patientComment": "Surpoids, signes vitaux normaux"
+        },
+        {
+          "id": "e2",
+          "text": "Inspection mammaire systématique",
+          "details": [
+            "Position assise, bras le long du corps",
+            "Bras levés au-dessus de la tête",
+            "Mains sur les hanches, contraction pectoraux",
+            "Penchée en avant",
+            "Recherche asymétrie, rétraction, modification cutanée"
+          ],
+          "patientComment": "Inspection dans les 4 positions recommandées",
+          "scoringRule": "≥4 positions = 2 pts, 2-3 = 1 pt"
+        },
+        {
+          "id": "e3",
+          "text": "Palpation mammaire bilatérale",
+          "details": [
+            "Patiente en décubitus dorsal",
+            "Palpation systématique en spirale ou radiale",
+            "Palpation des 4 quadrants + région rétro-aréolaire",
+            "Comparaison avec le sein controlatéral",
+            "Expression douce des mamelons",
+            "Description précise du nodule palpé"
+          ],
+          "patientComment": "Nodule de 2 cm QSE gauche, dur, irrégulier, peu mobile",
+          "scoringRule": "≥5 éléments = 2 pts, 3-4 = 1 pt"
+        },
+        {
+          "id": "e4",
+          "text": "Palpation ganglionnaire complète",
+          "details": [
+            "Ganglions axillaires (5 groupes)",
+            "Ganglions sus-claviculaires",
+            "Ganglions sous-claviculaires",
+            "Ganglions cervicaux",
+            "Description taille/consistance si palpables"
+          ],
+          "patientComment": "Ganglion axillaire gauche palpable, mobile, 1 cm",
+          "scoringRule": "≥4 sites = 2 pts, 2-3 = 1 pt"
+        },
+        {
+          "id": "e5",
+          "text": "Examen gynécologique mentionné",
+          "binaryOnly": true,
+          "patientComment": "Proposé pour bilan complet"
+        },
+        {
+          "id": "e6",
+          "text": "Recherche de signes de dissémination",
+          "details": [
+            "Palpation hépatique",
+            "Percussion/palpation rachidienne",
+            "Auscultation pulmonaire",
+            "Examen neurologique sommaire"
+          ],
+          "patientComment": "Pas de signe de métastases"
+        },
+        {
+          "id": "e7",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "binaryOnly": false,
+          "details": [
+            "Examen sénologique complet et méthodique"
+          ],
+          "scoringRule": "Examen excellent = 2 pts, correct = 1 pt, insuffisant = 0 pt"
+        }
+      ]
+    },
+    "management": {
+      "title": "Prise en charge",
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic principal évoqué",
+          "patientComment": "Suspicion forte de carcinome mammaire (nodule dur, irrégulier, peu mobile + facteurs de risque)",
+          "scoringRule": "Diagnostic précis avec justification = 2 pts"
+        },
+        {
+          "id": "m2",
+          "text": "Diagnostics différentiels",
+          "ddSection": {
+            "categories": [
+              {
+                "name": "Lésions bénignes",
+                "items": [
+                  "Fibroadénome (mais rare après 40 ans)",
+                  "Kyste mammaire compliqué",
+                  "Mastopathie fibrokystique nodulaire",
+                  "Lipome ou hamartome"
+                ]
+              },
+              {
+                "name": "Lésions inflammatoires",
+                "items": [
+                  "Abcès mammaire chronique",
+                  "Mastite granulomateuse",
+                  "Ganglion lymphatique intramammaire"
+                ]
+              },
+              {
+                "name": "Lésions malignes",
+                "items": [
+                  "Carcinome canalaire infiltrant (le plus fréquent)",
+                  "Carcinome lobulaire infiltrant",
+                  "Carcinome inflammatoire",
+                  "Lymphome mammaire (rare)"
+                ]
+              }
+            ]
+          },
+          "scoringRule": "≥6 DD dans différentes catégories = 2 pts, 3-5 = 1 pt"
+        },
+        {
+          "id": "m3",
+          "text": "Examens complémentaires en urgence",
+          "details": [
+            "Mammographie bilatérale (gold standard)",
+            "Échographie mammaire et axillaire",
+            "IRM mammaire si doute diagnostique",
+            "Biopsie percutanée écho-guidée (14G)",
+            "Clip de repérage si lésion peu visible"
+          ],
+          "patientComment": "Triple assessment: clinique + imagerie + histologie",
+          "scoringRule": "≥4 examens pertinents = 2 pts"
+        },
+        {
+          "id": "m4",
+          "text": "Stratégie thérapeutique si cancer confirmé",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Traitement chirurgical",
+                "content": "• Tumorectomie + ganglion sentinelle si T1-T2\n• Mastectomie si tumeur volumineuse ou multifocale\n• Curage axillaire si N+\n• Reconstruction immédiate ou différée\n• Marges d'exérèse ≥ 2mm"
+              },
+              {
+                "title": "Traitement adjuvant",
+                "content": "• Radiothérapie systématique post-conservateur\n• Chimiothérapie selon score Oncotype DX\n• Hormonothérapie si RH+ (tamoxifène ou IA)\n• Thérapie ciblée si HER2+ (trastuzumab)\n• Bisphosphonates si ménopausée"
+              },
+              {
+                "title": "Surveillance",
+                "content": "• Mammographie annuelle à vie\n• Examen clinique tous les 6 mois × 5 ans\n• Pas d'imagerie systémique sans symptômes\n• Dosage marqueurs tumoraux non recommandé\n• Dépistage controlatéral renforcé"
+              }
+            ]
+          },
+          "scoringRule": "Plan thérapeutique complet = 2 pts"
+        },
+        {
+          "id": "m5",
+          "text": "Explications détaillées à la patiente",
+          "details": [
+            "Nature des examens et leur chronologie",
+            "Technique du ganglion sentinelle",
+            "Options chirurgicales conservatrices vs radicales",
+            "Effets secondaires des traitements",
+            "Impact sur la vie quotidienne et professionnelle",
+            "Possibilités de reconstruction mammaire"
+          ],
+          "patientComment": "Information complète et adaptée",
+          "scoringRule": "≥4 explications = 2 pts"
+        },
+        {
+          "id": "m6",
+          "text": "Orientation et coordination des soins",
+          "details": [
+            "Référence urgente au centre du sein",
+            "RDV imagerie dans les 48h",
+            "Consultation oncologie après histologie",
+            "Réunion de concertation pluridisciplinaire (RCP)",
+            "Infirmière coordinatrice en oncologie"
+          ],
+          "patientComment": "Prise en charge multidisciplinaire organisée"
+        },
+        {
+          "id": "m7",
+          "text": "Support psychologique et social",
+          "details": [
+            "Reconnaître et valider l'anxiété",
+            "Proposer psycho-oncologue dès le diagnostic",
+            "Information sur les associations de patients",
+            "Évaluation du support familial",
+            "Aide pour l'organisation familiale/professionnelle",
+            "Groupes de parole si souhaité"
+          ],
+          "patientComment": "Soutien global adapté au contexte psychosocial",
+          "scoringRule": "≥4 mesures de support = 2 pts"
+        },
+        {
+          "id": "m8",
+          "text": "Prévention et conseil génétique",
+          "details": [
+            "Indication de consultation oncogénétique (sœur atteinte)",
+            "Test BRCA1/2 à discuter",
+            "Surveillance des apparentées",
+            "Modification des facteurs de risque (poids, alcool)",
+            "Contraception non hormonale confirmée"
+          ],
+          "patientComment": "Approche préventive familiale"
+        },
+        {
+          "id": "m9",
+          "text": "Évaluation globale de la prise en charge",
+          "binaryOnly": false,
+          "details": [
+            "PEC oncologique complète et humaniste"
+          ],
+          "scoringRule": "PEC excellente = 2 pts, correcte = 1 pt, insuffisante = 0 pt"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,217 @@
+{
+  "title": "Douleur abdominale I",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Madame Hebel, 73 ans, consultant pour douleurs abdominales"
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction et tâche",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Identification du symptôme principal",
+          "patientComment": "mal au ventre en bas à gauche",
+          "binaryOnly": true
+        },
+        {
+          "id": "a3",
+          "text": "Début des symptômes",
+          "patientComment": "depuis 2 jours, relativement soudain, s'aggravant"
+        },
+        {
+          "id": "a4",
+          "text": "Intensité de la douleur",
+          "patientComment": "VAS 6"
+        },
+        {
+          "id": "a5",
+          "text": "Caractère de la douleur",
+          "patientComment": "piquant"
+        },
+        {
+          "id": "a6",
+          "text": "Facteurs d'amélioration/aggravation",
+          "patientComment": "aucune amélioration/aggravation"
+        },
+        {
+          "id": "a7",
+          "text": "Irradiation",
+          "patientComment": "non"
+        },
+        {
+          "id": "a8",
+          "text": "Symptômes associés",
+          "patientComment": "nausées"
+        },
+        {
+          "id": "a9",
+          "text": "Symptômes d'accompagnement digestifs",
+          "patientComment": "diarrhée, flatulences"
+        },
+        {
+          "id": "a10",
+          "text": "Changement d'alimentation",
+          "patientComment": "non"
+        },
+        {
+          "id": "a11",
+          "text": "Anamnèse gynécologique"
+        },
+        {
+          "id": "a12",
+          "text": "Troubles de la miction",
+          "patientComment": "non"
+        },
+        {
+          "id": "a13",
+          "text": "Consommation d'alcool",
+          "patientComment": "1 verre de vin par jour"
+        },
+        {
+          "id": "a14",
+          "text": "Tabagisme et drogues"
+        },
+        {
+          "id": "a15",
+          "text": "Symptômes B (fièvre, sueurs nocturnes, perte de poids)"
+        },
+        {
+          "id": "a16",
+          "text": "Allergies"
+        },
+        {
+          "id": "a17",
+          "text": "Médicaments actuels",
+          "patientComment": "Valsartan contre l'hypertension"
+        },
+        {
+          "id": "a18",
+          "text": "Antécédents médicaux",
+          "patientComment": "hypertension"
+        },
+        {
+          "id": "a19",
+          "text": "Antécédents chirurgicaux",
+          "patientComment": "non"
+        },
+        {
+          "id": "a20",
+          "text": "Antécédents obstétricaux",
+          "patientComment": "2 enfants nés normalement"
+        },
+        {
+          "id": "a21",
+          "text": "Dépistage coloscopique",
+          "patientComment": "coloscopie il y a 5 ans"
+        },
+        {
+          "id": "a22",
+          "text": "Anamnèse familiale",
+          "patientComment": "négative"
+        },
+        {
+          "id": "a23",
+          "text": "Anamnèse sociale",
+          "patientComment": "vit avec son mari"
+        },
+        {
+          "id": "a24",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "binaryOnly": false,
+          "details": [
+            "Anamnèse générale ciblée et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Auscultation abdominale",
+          "patientComment": "bruits intestinaux normaux"
+        },
+        {
+          "id": "e2",
+          "text": "Palpation abdominale",
+          "patientComment": "abdomen douloureux à la pression avec résistance dans le quadrant inférieur gauche"
+        },
+        {
+          "id": "e3",
+          "text": "Signes péritonéaux",
+          "patientComment": "pas de douleur au relâchement ou de défense"
+        },
+        {
+          "id": "e4",
+          "text": "Toucher rectal"
+        },
+        {
+          "id": "e5",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "binaryOnly": false,
+          "details": [
+            "Status général ciblé et bien conduit"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Énonce le diagnostic de suspicion",
+          "patientComment": "diverticulite"
+        },
+        {
+          "id": "m2",
+          "text": "Nomme les diagnostics différentiels",
+          "details": [
+            "Pathologie gynécologique",
+            "Cystite",
+            "Maladie inflammatoire chronique de l'intestin",
+            "Cancer"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Examens complémentaires",
+          "details": [
+            "Laboratoire : CRP, leucocytes élevés",
+            "Analyse d'urine pour exclure les diagnostics différentiels",
+            "Échographie : mise en évidence de diverticules enflammés",
+            "Coloscopie après régression de l'inflammation (exclusion de sténoses, tumeurs malignes)"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Thérapie",
+          "details": [
+            "Refroidissement du bas-ventre, analgésie",
+            "Éventuellement mise à jeun",
+            "En cas de diverticulite légère : antibiothérapie ambulatoire",
+            "En cas de forme sévère : hospitalisation, chirurgie élective précoce en cas d'échec du traitement conservateur"
+          ]
+        },
+        {
+          "id": "m5",
+          "text": "Évaluation globale de la qualité de la prise en charge",
+          "binaryOnly": false,
+          "details": [
+            "Prise en charge générale cohérente et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,626 @@
+{
+  "title": "ECC Vasculaire 2022",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Homme de 65 ans, ancien gérant de restaurant, consultant pour douleur au mollet droit évocatrice d'une claudication intermittente avec multiples facteurs de risque cardiovasculaire"
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Caractérisation de la douleur du mollet",
+          "details": [
+            "Localisation [mollet droit]",
+            "Irradiation [remonte vers cuisse et fesse]",
+            "Intensité [6-7/10]",
+            "Type de douleur [sensation de crampe]",
+            "Facteur déclenchant [marche après 150m]",
+            "Facteur aggravant [marche rapide, montée]",
+            "Facteur soulageant [arrêt de la marche]",
+            "Décours temporel [disparition en 1-2 minutes]"
+          ],
+          "scoringRule": "Au moins six = oui, cinq = ±, aucun à quatre = non"
+        },
+        {
+          "id": "a2",
+          "text": "Évolution et périmètre de marche",
+          "details": [
+            "Début des symptômes [il y a quelques mois]",
+            "Évolution [aggravation progressive]",
+            "Périmètre de marche [150m]",
+            "Caractère répétitif [systématique à l'effort]",
+            "Symptômes bilatéraux [absent, jambe gauche normale]",
+            "Impact fonctionnel [arrêt obligatoire de la marche]"
+          ],
+          "scoringRule": "Au moins cinq = oui, quatre = ±, aucun à trois = non"
+        },
+        {
+          "id": "a3",
+          "text": "Symptômes associés et sévérité",
+          "details": [
+            "Douleurs de repos [absentes]",
+            "Douleurs nocturnes [absentes]",
+            "Position couchée/membre surélevé [pas de douleur]",
+            "Sensation de froid [pied droit plus froid]",
+            "Troubles trophiques [à rechercher]",
+            "Pâleur des extrémités [à rechercher]"
+          ],
+          "scoringRule": "Au moins quatre = oui, trois = ±, aucun à deux = non"
+        },
+        {
+          "id": "a4",
+          "text": "Facteurs de risque cardiovasculaire",
+          "details": [
+            "Tabagisme [1 paquet/jour depuis 40 ans = 40 UPA]",
+            "HTA [connue, traitée par 2 médicaments]",
+            "Dyslipidémie [cholestérol augmenté, régime]",
+            "Diabète [non mentionné]",
+            "Surpoids/obésité [à évaluer]",
+            "Sédentarité [pas de sport, peu de marche]"
+          ],
+          "scoringRule": "Au moins quatre = oui, trois = ±, aucun à deux = non"
+        },
+        {
+          "id": "a5",
+          "text": "Antécédents personnels cardiovasculaires",
+          "details": [
+            "Infarctus du myocarde",
+            "AVC/AIT",
+            "Angor",
+            "Interventions vasculaires",
+            "Thromboses veineuses",
+            "Autres pathologies cardiovasculaires"
+          ],
+          "scoringRule": "Au moins deux = oui, un = ±, aucun = non"
+        },
+        {
+          "id": "a6",
+          "text": "Antécédents familiaux cardiovasculaires",
+          "details": [
+            "Père [décédé accident voiture 50 ans]",
+            "Mère [80 ans, insuffisance cardiaque]",
+            "Fratrie [maladies cardiovasculaires]",
+            "Mort subite familiale",
+            "AVC familiaux",
+            "Artériopathie familiale"
+          ],
+          "scoringRule": "Au moins trois = oui, deux = ±, aucun à un = non"
+        },
+        {
+          "id": "a7",
+          "text": "Médicaments et allergies",
+          "details": [
+            "Antihypertenseurs [2 médicaments, noms non retenus]",
+            "Antiagrégants plaquettaires",
+            "Statines",
+            "Antidiabétiques",
+            "Allergies médicamenteuses",
+            "Observance thérapeutique"
+          ],
+          "scoringRule": "Au moins trois = oui, deux = ±, aucun à un = non"
+        },
+        {
+          "id": "a8",
+          "text": "Habitudes de vie",
+          "details": [
+            "Alcool [1-2 verres vin rouge/jour]",
+            "Alimentation [régime prescrit pour cholestérol]",
+            "Activité physique [peu de marche, pas de sport]",
+            "Stress professionnel [retraité]",
+            "Sommeil"
+          ],
+          "scoringRule": "Au moins quatre = oui, trois = ±, aucun à deux = non"
+        },
+        {
+          "id": "a9",
+          "text": "Anamnèse en général - approche vasculaire systématique",
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Inspection générale et des membres",
+          "details": [
+            "État général du patient",
+            "Téguments [diminution pilosité, lésions trophiques]",
+            "Ongles [épaississement]",
+            "Plante des pieds/talons [atrophie]",
+            "Xanthélasma [signe hypercholestérolémie]",
+            "Coloration jaune des doigts [tabagisme]"
+          ],
+          "scoringRule": "Au moins cinq = oui, quatre = ±, aucun à trois = non"
+        },
+        {
+          "id": "e2",
+          "text": "Palpation des pouls périphériques - membres supérieurs",
+          "details": [
+            "Température des extrémités [comparative]",
+            "Pouls carotidien [bilatéral]",
+            "Pouls brachial [bilatéral]",
+            "Pouls radial [bilatéral]",
+            "Pouls ulnaire [bilatéral]",
+            "Test d'Allen [perméabilité arcade palmaire]"
+          ],
+          "scoringRule": "Au moins cinq = oui, quatre = ±, aucun à trois = non"
+        },
+        {
+          "id": "e3",
+          "text": "Palpation des pouls périphériques - membres inférieurs",
+          "details": [
+            "Aorte abdominale [pulsations, anévrisme]",
+            "Pouls fémoral [bilatéral]",
+            "Pouls poplité [bilatéral]",
+            "Pouls pédieux [bilatéral]",
+            "Pouls tibial postérieur [bilatéral]",
+            "Comparaison droite/gauche systématique"
+          ],
+          "scoringRule": "Au moins cinq = oui, quatre = ±, aucun à trois = non"
+        },
+        {
+          "id": "e4",
+          "text": "Auscultation vasculaire",
+          "details": [
+            "Artères fémorales [souffles]",
+            "Aorte abdominale [ligne médiane]",
+            "Artères rénales [2cm au-dessus ombilic, latéralement]",
+            "Artères carotides [souffles]",
+            "Artères sous-clavières [souffles]",
+            "Comparaison bilatérale"
+          ],
+          "scoringRule": "Au moins cinq = oui, quatre = ±, aucun à trois = non"
+        },
+        {
+          "id": "e5",
+          "text": "Prise de tension artérielle selon recommandations OMS",
+          "details": [
+            "Position assise, bras horizontal [5 min repos]",
+            "Palpation pouls brachial [repère stéthoscope]",
+            "Placement brassard [2cm au-dessus pli coude]",
+            "Gonflage suprasystolique [+20-30 mmHg]",
+            "Dégonflage lent [2 mmHg/sec]",
+            "Mesure systolique/diastolique [Korotkoff]",
+            "Mesure aux deux bras"
+          ],
+          "scoringRule": "Au moins six = oui, cinq = ±, aucun à quatre = non"
+        },
+        {
+          "id": "e6",
+          "text": "Évaluation de la sévérité - Classification Leriche-Fontaine",
+          "details": [
+            "Stade 1 [asymptomatique]",
+            "Stade 2 [claudication intermittente]",
+            "Stade 3 [douleur de repos]",
+            "Stade 4 [troubles trophiques]",
+            "Classification correcte du patient [stade 2]"
+          ],
+          "scoringRule": "Classification correcte = oui, partielle = ±, incorrecte = non"
+        },
+        {
+          "id": "e7",
+          "text": "Recherche des 5P de l'insuffisance artérielle aiguë",
+          "details": [
+            "Pain [douleur]",
+            "Pulselessness [absence de pouls]",
+            "Pallor [pâleur]",
+            "Paresthesia [paresthésies]",
+            "Paresis [parésie]"
+          ],
+          "scoringRule": "Au moins quatre recherchés = oui, trois = ±, moins de trois = non"
+        },
+        {
+          "id": "e8",
+          "text": "Technique d'examen en général - examen vasculaire complet",
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.5,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic principal et stadification",
+          "details": [
+            "Artériopathie oblitérante des membres inférieurs (AOMI)",
+            "Claudication intermittente du mollet droit",
+            "Classification Leriche-Fontaine stade 2",
+            "Périmètre de marche 150m",
+            "Absence de signes d'ischémie critique"
+          ],
+          "scoringRule": "Au moins quatre = oui, trois = ±, aucun à deux = non"
+        },
+        {
+          "id": "m2",
+          "text": "Diagnostic différentiel de la claudication",
+          "ddSection": {
+            "title": "Diagnostics différentiels à considérer",
+            "categories": [
+              {
+                "name": "Causes vasculaires",
+                "items": [
+                  {
+                    "text": "Artériopathie oblitérante athéroscléreuse",
+                    "cause": "Arguments POUR:\n\t□ Claudication typique à l'effort\n\t□ Disparition rapide au repos\n\t□ Facteurs de risque multiples\n\t□ Âge 65 ans\n\t□ Tabagisme important",
+                    "test": "→ Index cheville-bras, écho-Doppler artériel, angio-CT/IRM"
+                  },
+                  {
+                    "text": "Syndrome de loge chronique",
+                    "cause": "Arguments CONTRE:\n\t□ Âge avancé\n\t□ Facteurs de risque cardiovasculaires\n\t□ Pas de contexte sportif",
+                    "test": "→ Mesure pression compartiments à l'effort"
+                  }
+                ]
+              },
+              {
+                "name": "Causes neurologiques",
+                "items": [
+                  {
+                    "text": "Canal lombaire étroit",
+                    "cause": "Arguments CONTRE:\n\t□ Pas de lombalgies\n\t□ Pas d'amélioration en flexion\n\t□ Symptômes unilatéraux\n\t□ Soulagement rapide à l'arrêt",
+                    "test": "→ IRM lombaire si doute"
+                  },
+                  {
+                    "text": "Neuropathie périphérique",
+                    "cause": "Arguments CONTRE:\n\t□ Symptômes à l'effort uniquement\n\t□ Pas de paresthésies permanentes\n\t□ Distribution non neurologique",
+                    "test": "→ EMG si suspicion"
+                  }
+                ]
+              },
+              {
+                "name": "Causes ostéo-articulaires",
+                "items": [
+                  {
+                    "text": "Arthrose hanche/genou",
+                    "cause": "Arguments CONTRE:\n\t□ Douleur musculaire type crampe\n\t□ Soulagement rapide complet\n\t□ Pas de douleur articulaire",
+                    "test": "→ Radiographies si doute"
+                  }
+                ]
+              }
+            ]
+          },
+          "scoringRule": "Au moins trois diagnostics évoqués = oui, deux = ±, un ou aucun = non"
+        },
+        {
+          "id": "m3",
+          "text": "Examens complémentaires de première intention",
+          "details": [
+            "Index de pression systolique cheville-bras (IPS)",
+            "Écho-Doppler artériel membres inférieurs",
+            "Bilan lipidique complet",
+            "Glycémie à jeun, HbA1c",
+            "Créatinine, DFG",
+            "NFS, plaquettes"
+          ],
+          "scoringRule": "Au moins cinq = oui, quatre = ±, aucun à trois = non"
+        },
+        {
+          "id": "m4",
+          "text": "Examens d'imagerie vasculaire",
+          "details": [
+            "Test de marche sur tapis roulant",
+            "Angio-CT membres inférieurs si indication",
+            "Angio-IRM si contre-indication produit contraste",
+            "Artériographie si geste endovasculaire envisagé",
+            "Recherche autres localisations athéromateuses"
+          ],
+          "scoringRule": "Au moins trois = oui, deux = ±, aucun à un = non"
+        },
+        {
+          "id": "m5",
+          "text": "Traitement médical de l'AOMI",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Antiagrégants plaquettaires",
+                "items": [
+                  {
+                    "treatment": "Aspirine",
+                    "details": "75-100mg/jour ou clopidogrel 75mg/j si intolérance",
+                    "duration": "Traitement au long cours"
+                  }
+                ]
+              },
+              {
+                "title": "Contrôle des facteurs de risque",
+                "items": [
+                  {
+                    "treatment": "Statines",
+                    "details": "Atorvastatine 40-80mg/j, objectif LDL <0.7g/L",
+                    "duration": "Traitement permanent"
+                  },
+                  {
+                    "treatment": "IEC/ARA2",
+                    "details": "Si HTA, protection cardiovasculaire",
+                    "duration": "Adaptation selon TA"
+                  }
+                ]
+              },
+              {
+                "title": "Traitement symptomatique",
+                "items": [
+                  {
+                    "treatment": "Programme de marche supervisée",
+                    "details": "3x/semaine, 30-60 min, marche jusqu'à douleur modérée",
+                    "duration": "Au moins 3 mois"
+                  },
+                  {
+                    "treatment": "Cilostazol",
+                    "details": "100mg x2/j si échec réhabilitation seule",
+                    "duration": "Évaluation à 3 mois"
+                  }
+                ]
+              }
+            ]
+          },
+          "scoringRule": "Traitement complet et adapté = oui, partiel = ±, insuffisant = non"
+        },
+        {
+          "id": "m6",
+          "text": "Mesures hygiéno-diététiques",
+          "details": [
+            "Sevrage tabagique impératif [aide au sevrage]",
+            "Régime méditerranéen [hypocholestérolémiant]",
+            "Activité physique régulière [marche quotidienne]",
+            "Réduction pondérale si surpoids",
+            "Limitation alcool [consommation modérée actuelle]",
+            "Soins des pieds [prévention lésions]"
+          ],
+          "scoringRule": "Au moins cinq = oui, quatre = ±, aucun à trois = non"
+        },
+        {
+          "id": "m7",
+          "text": "Indications de revascularisation",
+          "details": [
+            "Échec traitement médical optimal 3-6 mois",
+            "Claudication invalidante malgré réhabilitation",
+            "Ischémie critique (stade 3-4)",
+            "Lésions accessibles à revascularisation",
+            "Rapport bénéfice/risque favorable",
+            "Choix endovasculaire vs chirurgie selon lésions"
+          ],
+          "scoringRule": "Au moins quatre = oui, trois = ±, aucun à deux = non"
+        },
+        {
+          "id": "m8",
+          "text": "Surveillance et prévention secondaire",
+          "details": [
+            "Suivi clinique régulier [périmètre marche, pouls]",
+            "IPS annuel",
+            "Contrôle facteurs de risque [TA, lipides, HbA1c]",
+            "Dépistage autres localisations [coronaires, TSA]",
+            "Observance thérapeutique",
+            "Éducation patient [signes alarme]"
+          ],
+          "scoringRule": "Au moins cinq = oui, quatre = ±, aucun à trois = non"
+        },
+        {
+          "id": "m9",
+          "text": "Management en général - prise en charge AOMI globale",
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "scenarioPatienteStandardisee": {
+      "titre": "Scénario pour le patient standardisé - Claudication intermittente",
+      "nom": "Patient homme",
+      "age": "65 ans",
+      "contexte": "Homme retraité, ancien gérant de restaurant, consultant pour douleur au mollet droit à la marche",
+      "motifConsultation": {
+        "plaintePrincipale": "Je viens vous voir parce que j'ai mal au mollet droit",
+        "autreChose": "Ça m'empêche de marcher normalement depuis quelques mois"
+      },
+      "histoireActuelle": {
+        "symptomePrincipal": [
+          "Gêne douloureuse jambe droite depuis quelques mois",
+          "Douleur après environ 150m de marche",
+          "Localisation mollet droit",
+          "Remonte parfois progressivement vers cuisse et fesse",
+          "Sensation de crampe obligeant à arrêter",
+          "Intensité 6-7/10"
+        ],
+        "evolution": [
+          "Disparition rapide en 1-2 minutes à l'arrêt",
+          "Survient plus rapidement si marche rapide",
+          "Aggravée par les montées",
+          "Pas de douleur nocturne",
+          "Pas de douleur au repos",
+          "Impression pied droit plus froid"
+        ],
+        "symptomesAssocies": [
+          "Pas de douleur jambe gauche",
+          "Pas d'œdème",
+          "Pas de troubles cutanés",
+          "Pas de plaies aux pieds",
+          "Sommeil non perturbé"
+        ]
+      },
+      "antecedentsPersonnels": [
+        "HTA connue, traitée par 2 médicaments",
+        "Hypercholestérolémie, régime prescrit",
+        "Pas de diabète connu",
+        "Pas d'antécédent cardiaque personnel"
+      ],
+      "antecedentsFamiliaux": [
+        "Père décédé accident voiture à 50 ans",
+        "Mère 80 ans, insuffisance cardiaque",
+        "Pas d'autres antécédents familiaux connus"
+      ],
+      "habitudes": {
+        "tabac": "1 paquet/jour depuis 40 ans",
+        "alcool": "1-2 verres vin rouge/jour avec repas",
+        "activite": "Peu de marche, pas de sport",
+        "alimentation": "Régime pour cholestérol pas toujours suivi",
+        "profession": "Retraité, ancien gérant restaurant"
+      },
+      "medicaments": {
+        "actuels": "2 médicaments pour tension (noms oubliés)",
+        "observance": "Prise régulière",
+        "allergies": "Aucune connue"
+      },
+      "simulation": {
+        "attitude": [
+          "Patient inquiet mais coopératif",
+          "Minimise parfois la gêne fonctionnelle",
+          "Peut être réticent à l'idée d'arrêter de fumer",
+          "Expression d'une certaine frustration"
+        ],
+        "durantExamen": [
+          "Position confortable au repos",
+          "Pas de dyspnée",
+          "Coloration jaune des doigts (tabac)",
+          "Possible diminution pouls distaux côté droit",
+          "Pas de lésions cutanées visibles"
+        ],
+        "questionsAPoser": [
+          "C'est grave docteur ?",
+          "Est-ce que je vais perdre ma jambe ?",
+          "Faut-il opérer ?",
+          "Puis-je continuer à marcher ?"
+        ]
+      }
+    },
+    "informationsExpert": {
+      "titre": "Informations pour l'expert",
+      "dossierMedical": "Homme 65 ans, tabagique 40 UPA, HTA, dyslipidémie. Claudication intermittente mollet droit à 150m évoluant depuis quelques mois. Pas d'ischémie critique. Classification Leriche-Fontaine stade 2. Multiples facteurs de risque cardiovasculaire.",
+      "rolesInterventions": [
+        "Observer l'anamnèse complète de la claudication",
+        "Évaluer la recherche des facteurs de risque cardiovasculaire",
+        "Vérifier la palpation systématique de tous les pouls",
+        "Contrôler la technique de prise de tension artérielle",
+        "Apprécier la classification en stades de Leriche-Fontaine"
+      ],
+      "pointsCles": [
+        "Caractérisation typique claudication intermittente",
+        "Périmètre de marche quantifié (150m)",
+        "Disparition rapide à l'arrêt (1-2 min)",
+        "Facteurs de risque multiples (tabac+++, HTA, dyslipidémie)",
+        "Absence signes ischémie critique (stade 2)",
+        "Palpation bilatérale comparative tous les pouls",
+        "Auscultation vasculaire systématique",
+        "Technique OMS prise TA",
+        "Diagnostic différentiel approprié",
+        "Prise en charge globale facteurs de risque"
+      ],
+      "pieges": [
+        "Ne pas quantifier le périmètre de marche",
+        "Omettre la palpation de certains pouls",
+        "Ne pas comparer côté droit et gauche",
+        "Oublier l'auscultation vasculaire",
+        "Mauvaise technique prise de TA",
+        "Ne pas classifier selon Leriche-Fontaine",
+        "Sous-estimer l'importance du sevrage tabagique",
+        "Ne pas rechercher autres localisations athérome",
+        "Omettre le bilan des autres facteurs de risque",
+        "Ne pas proposer réhabilitation par la marche"
+      ]
+    },
+    "theoriePratique": {
+      "titre": "Théorie pratique en pathologie vasculaire",
+      "sections": [
+        {
+          "titre": "Classification de Leriche et Fontaine",
+          "contenu": "Stadification de l'artériopathie oblitérante des membres inférieurs.",
+          "points": [
+            "Stade 1 : Asymptomatique (abolition pouls, souffle)",
+            "Stade 2a : Claudication non invalidante (>200m)",
+            "Stade 2b : Claudication invalidante (<200m)",
+            "Stade 3 : Douleurs de décubitus/repos",
+            "Stade 4a : Troubles trophiques limités",
+            "Stade 4b : Gangrène étendue",
+            "Pronostic et traitement selon stade"
+          ]
+        },
+        {
+          "titre": "Physiopathologie de la claudication",
+          "contenu": "Mécanismes de l'ischémie d'effort musculaire.",
+          "points": [
+            "Sténose artérielle > 75% significative",
+            "Inadéquation apport/demande O2 à l'effort",
+            "Métabolisme anaérobie → lactates",
+            "Douleur musculaire ischémique",
+            "Récupération rapide au repos",
+            "Circulation collatérale compensatrice",
+            "Aggravation progressive avec athérosclérose"
+          ]
+        },
+        {
+          "titre": "Examen vasculaire systématique",
+          "contenu": "Méthodologie de l'examen artériel périphérique.",
+          "points": [
+            "Inspection : trophicité, pâleur, cyanose",
+            "Palpation température comparative",
+            "Palpation tous pouls (carotides → pieds)",
+            "Technique palpatoire : 2-3 doigts, pression modérée",
+            "Auscultation 5 sites principaux",
+            "Test Allen : perméabilité arcade palmaire",
+            "Manœuvre élévation-déclivité membres"
+          ]
+        },
+        {
+          "titre": "Index de pression systolique",
+          "contenu": "Mesure diagnostique de référence AOMI.",
+          "points": [
+            "IPS = PAS cheville / PAS bras",
+            "Normal : 0.90-1.30",
+            "AOMI : < 0.90 (Se 95%, Sp 100%)",
+            "< 0.40 : ischémie critique",
+            "> 1.30 : médiacalcose (diabète)",
+            "Test post-effort si IPS normal + suspicion",
+            "Mesure 4 sites : TP et pédieux bilatéral"
+          ]
+        },
+        {
+          "titre": "Prise en charge thérapeutique AOMI",
+          "contenu": "Stratégie globale de traitement.",
+          "points": [
+            "Contrôle facteurs risque (tabac+++)",
+            "Antiagrégation systématique",
+            "Statines haute intensité",
+            "IEC si HTA ou diabète",
+            "Réhabilitation par marche supervisée",
+            "Cilostazol si échec conservateur",
+            "Revascularisation si invalidant/critique"
+          ]
+        },
+        {
+          "titre": "Complications et urgences vasculaires",
+          "contenu": "Reconnaissance des situations critiques.",
+          "points": [
+            "Ischémie aiguë : 5P (Pain, Pulseless, Pallor, Paresthesia, Paralysis)",
+            "Ischémie critique chronique : repos + trophiques",
+            "Anévrisme compliqué : rupture, embolies",
+            "Dissection aortique : douleur migratrice",
+            "Thrombose veineuse profonde associée",
+            "Syndrome des orteils bleus : embolies cholestérol",
+            "Gangrène : urgence chirurgicale"
+          ]
+        }
+      ],
+      "rappelsTherapeutiques": [
+        "Aspirine 75-100mg/j ou clopidogrel 75mg/j (AOMI)",
+        "Statines forte dose : atorvastatine 40-80mg/j, rosuvastatine 20-40mg/j",
+        "IEC/ARA2 : périndopril 5-10mg/j, ramipril 5-10mg/j",
+        "Bêtabloquants prudents si AOMI (privilégier nébivolol)",
+        "Cilostazol 100mg x2/j (vasodilatateur, antiagrégant)",
+        "Pentoxifylline 400mg x3/j (alternative cilostazol)",
+        "Aide sevrage tabagique : substituts, varénicline, bupropion"
+      ],
+      "examensComplementaires": [
+        "Index cheville-bras : dépistage et suivi AOMI",
+        "Écho-Doppler artériel : localisation lésions, hémodynamique",
+        "Angio-CT : bilan pré-thérapeutique, planning intervention",
+        "Angio-IRM : alternative si IRC ou allergie",
+        "Test marche 6 min ou tapis : objectiver handicap",
+        "Bilan athérome : ECG, ETT, Doppler TSA",
+        "Bilan métabolique : glycémie, HbA1c, bilan lipidique, créatinine"
+      ]
+    }
+  }
+}

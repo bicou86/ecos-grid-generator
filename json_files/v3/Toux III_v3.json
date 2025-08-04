@@ -1,0 +1,560 @@
+{
+  "title": "Toux III",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "M. Maurer, 48 ans, plombier, vous consulte pour une toux et de la fièvre depuis 2 jours",
+    "vitals": {
+      "ta": "120/80 mmHg",
+      "fc": "72 bpm",
+      "fr": "24/min",
+      "temperature": "39.1°C",
+      "poids": "Stable"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction et objectif de la consultation",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Question ouverte d'introduction → Motif de consultation",
+          "patientComment": "J'ai une forte toux avec de la fièvre depuis 2 jours, ça a commencé au travail",
+          "binaryOnly": true
+        },
+        {
+          "id": "a3",
+          "text": "RED FLAGS - Urgences respiratoires",
+          "redflagsSection": [
+            {
+              "text": "Détresse respiratoire [non]"
+            },
+            {
+              "text": "Cyanose [à rechercher]"
+            },
+            {
+              "text": "FR >30/min [24/min = normal]"
+            },
+            {
+              "text": "Hypotension <90/60 [120/80 = stable]"
+            },
+            {
+              "text": "Confusion [non]"
+            },
+            {
+              "text": "Fièvre >39°C [39.1°C!]"
+            },
+            {
+              "text": "Saturation <90% [à mesurer]"
+            },
+            {
+              "text": "Douleur thoracique sévère [pleurale]"
+            }
+          ],
+          "scoringRule": "≥6 red flags explorés = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a4",
+          "text": "Syndrome pneumonique classique",
+          "details": [
+            "Toux productive [expectorations jaunâtres]",
+            "Fièvre élevée [39.1°C avec frissons]",
+            "Douleur thoracique [respiration et toux]",
+            "Dyspnée effort [escaliers]",
+            "Début brutal [au travail]",
+            "Frissons [oui avec fièvre]",
+            "Sueurs nocturnes [2 jours]",
+            "Altération état général [baisse performance]"
+          ],
+          "scoringRule": "≥6 signes pneumonie = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a5",
+          "text": "Caractérisation des expectorations",
+          "details": [
+            "Volume [quantité par jour]",
+            "Couleur [jaunâtres actuellement]",
+            "Consistance [visqueuses]",
+            "Évolution [couleur changeante?]",
+            "Hémoptysie [non confirmé]",
+            "Odeur [fétide? normale?]",
+            "Facilité expectoration [effort nécessaire]",
+            "Moment production [matin? continu?]"
+          ],
+          "scoringRule": "≥6 caractéristiques = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a6",
+          "text": "Score CURB-65 évaluation sévérité",
+          "details": [
+            "Confusion [0 - non confus]",
+            "Urée >7 mmol/L [? - à doser]",
+            "Fréquence respiratoire ≥30/min [0 - 24/min]",
+            "Pression artérielle <90/60 mmHg [0 - 120/80]",
+            "Âge ≥65 ans [0 - 48 ans]",
+            "Score total [0-1 = ambulatoire]",
+            "Risque mortalité [faible <3%]",
+            "Indication hospitalisation [non si 0-1]"
+          ],
+          "scoringRule": "Score CURB-65 calculé = 2 pts, partiel = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a7",
+          "text": "Facteurs de risque pneumonie",
+          "details": [
+            "Tabagisme [25 PA facteur majeur]",
+            "Alcoolisme [2-3 verres/jour]",
+            "BPCO [toux matinale 4 ans]",
+            "Immunodépression [non]",
+            "Diabète [non connu]",
+            "Cardiopathie [non]",
+            "Âge [48 ans = moyen]",
+            "Vaccination [pneumocoque? grippe?]"
+          ],
+          "scoringRule": "≥6 FDR évalués = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a8",
+          "text": "Recherche infection ORL précédente",
+          "details": [
+            "Rhinite antérieure [nez coulé 1 semaine]",
+            "Pharyngite [mal gorge parfois]",
+            "Sinusite [non mentionnée]",
+            "Otite [non]",
+            "Évolution descendante [ORL → poumon]",
+            "Traitement antibiotique antérieur [non]",
+            "Contage familial [aucun]",
+            "Épidémie saisonnière [période?]"
+          ],
+          "scoringRule": "≥6 éléments infection = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a9",
+          "text": "Exposition professionnelle plomberie",
+          "details": [
+            "Poussières inhalées [chantiers]",
+            "Travail espaces confinés [caves, combles]",
+            "Exposition amiante [anciennes canalisations]",
+            "Moisissures [environnements humides]",
+            "Légionelles [réseaux eau chaude]",
+            "Protection respiratoire [masques utilisés?]",
+            "Stress professionnel [mentionné]",
+            "Collègues malades [contamination?]"
+          ],
+          "scoringRule": "≥6 expositions évaluées = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a10",
+          "text": "Évaluation bronchite chronique sous-jacente",
+          "details": [
+            "Toux matinale [4 ans déjà]",
+            "Expectoration chronique [habituelle?]",
+            "Exacerbations antérieures [fréquence]",
+            "Dyspnée effort chronique [baseline]",
+            "EFR antérieure [VEMS connu?]",
+            "Bronchodilatateurs [utilisés?]",
+            "Infections respiratoires répétées [hiver]",
+            "Limitation activités [progression]"
+          ],
+          "scoringRule": "≥6 éléments BPCO = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a11",
+          "text": "Comorbidités et terrain",
+          "details": [
+            "HTA [oui sous traitement]",
+            "Diabète [non connu]",
+            "Cardiopathie [non]",
+            "Insuffisance rénale [non]",
+            "Immunodépression [corticoïdes? VIH?]",
+            "Cancer antérieur [non]",
+            "Pathologie hépatique [alcool modéré]",
+            "Traitement immunosuppresseur [non]"
+          ],
+          "scoringRule": "≥6 comorbidités évaluées = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a12",
+          "text": "Médicaments et allergies",
+          "details": [
+            "Antihypertenseur [lequel? posologie?]",
+            "Antibiotiques récents [résistances?]",
+            "Anti-inflammatoires [AINS éviter]",
+            "Bronchodilatateurs [antécédents]",
+            "Allergies antibiotiques [pénicilline?]",
+            "Intolérances médicamenteuses [noter]",
+            "Automédication [toux, fièvre]",
+            "Observance traitements [vérifier]"
+          ],
+          "scoringRule": "≥6 médicaments évalués = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a13",
+          "text": "Impact fonctionnel et socio-professionnel",
+          "details": [
+            "Arrêt travail nécessaire [oui probable]",
+            "Activités limitées [toute activité]",
+            "Repos efficace [sommeil améliore]",
+            "Autonomie [préservée?]",
+            "Isolement [contage familial?]",
+            "Stress professionnel [facteur aggravant]",
+            "Support familial [épouse, 3 enfants]",
+            "Capacité soins domicile [surveillance]"
+          ],
+          "scoringRule": "≥6 impacts évalués = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a14",
+          "text": "Recherche complications pneumonie",
+          "details": [
+            "Pleurésie [douleur thoracique]",
+            "Épanchement pleural [dyspnée?]",
+            "Abcès pulmonaire [fièvre persistante]",
+            "Sepsis [état général]",
+            "Insuffisance respiratoire [saturation]",
+            "Troubles rythme [tachycardie]",
+            "Confusion [non présente]",
+            "Choc septique [TA stable]"
+          ],
+          "scoringRule": "≥6 complications recherchées = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a15",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "details": [
+            "Anamnèse pneumonie communautaire complète",
+            "Score CURB-65 calculé",
+            "Facteurs risque identifiés",
+            "Comorbidités évaluées",
+            "Impact socio-professionnel documenté"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Évaluation initiale et signes vitaux",
+          "details": [
+            "État général [altéré? fatigué?]",
+            "TA [120/80 mmHg stable]",
+            "FC [72 bpm normale]",
+            "FR [24/min tachypnée légère]",
+            "Température [39.1°C hyperthermie]",
+            "Saturation O2 [mesure obligatoire]"
+          ],
+          "scoringRule": "≥5 paramètres évalués = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e2",
+          "text": "Examen pulmonaire inspection",
+          "details": [
+            "Position antalgique [évite côté douloureux]",
+            "Tirage intercostal [détresse?]",
+            "Cyanose périphérique [ongles, lèvres]",
+            "Cyanose centrale [langue]",
+            "Ampliation thoracique [symétrique?]",
+            "Déformations thorax [emphysème?]"
+          ],
+          "scoringRule": "≥5 éléments inspection = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e3",
+          "text": "Palpation thoracique systématique",
+          "details": [
+            "Vibrations vocales [augmentées zone condensation]",
+            "Comparaison bilatérale [asymétrie]",
+            "Points douloureux [pleurésie]",
+            "Ganglions sus-claviculaires [adénopathies]",
+            "Ampliation thoracique [limitation]",
+            "Frémissement pleural [frottement]"
+          ],
+          "scoringRule": "≥5 éléments palpation = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e4",
+          "text": "Percussion pulmonaire détaillée",
+          "details": [
+            "Percussion antérieure [matité foyer]",
+            "Percussion postérieure [systématique]",
+            "Comparaison bilatérale [asymétrie]",
+            "Matité franche [condensation]",
+            "Tympanisme [pneumothorax?]",
+            "Limites hépatique [normales]"
+          ],
+          "scoringRule": "≥5 zones percussion = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e5",
+          "text": "Auscultation pulmonaire spécialisée",
+          "details": [
+            "Auscultation antérieure [6 points]",
+            "Auscultation postérieure [8 points]",
+            "Râles crépitants [foyer pneumonique]",
+            "Souffle tubaire [condensation]",
+            "Frottement pleural [pleurésie]",
+            "Diminution murmure vésiculaire [épanchement?]"
+          ],
+          "scoringRule": "≥5 éléments auscultation = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e6",
+          "text": "Examen cardiovasculaire pneumonie",
+          "details": [
+            "Auscultation cardiaque [4 foyers]",
+            "Fréquence cardiaque [tachycardie?]",
+            "Souffle fonctionnel [fièvre]",
+            "Galop [insuffisance cardiaque]",
+            "Pression veineuse jugulaire [normale]",
+            "Pouls périphériques [qualité]"
+          ],
+          "scoringRule": "≥5 éléments cardio = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e7",
+          "text": "Recherche signes extrapulmonaires",
+          "details": [
+            "Hippocratisme digital [chronique]",
+            "Œdèmes MI [cœur pulmonaire]",
+            "Hépatomégalie [cœur droit]",
+            "Confusion [encéphalopathie]",
+            "Éruption cutanée [mycoplasme]",
+            "Adénopathies [infection systémique]"
+          ],
+          "scoringRule": "≥5 signes recherchés = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e8",
+          "text": "Examen ORL et recherche foyer",
+          "details": [
+            "Pharynx [érythème, exsudat]",
+            "Tympans [otite associée]",
+            "Fosses nasales [rhinite, sinusite]",
+            "Adénopathies cervicales [réactionnelles]",
+            "Palpation sinusienne [douleur]",
+            "Écoulement purulent [foyer ORL]"
+          ],
+          "scoringRule": "≥5 examens ORL = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e9",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "details": [
+            "Examen pneumonie communautaire complet",
+            "Foyer pneumonique recherché systématiquement",
+            "Signes gravité évalués",
+            "Complications recherchées",
+            "Examen sécurisé (isolement si nécessaire)"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic principal avec classification",
+          "details": [
+            "Pneumonie communautaire",
+            "Classification topographique [lobaire? broncho?]",
+            "Gravité selon CURB-65 [faible]",
+            "Pneumonie typique [pneumocoque probable]",
+            "Traitement ambulatoire indiqué"
+          ],
+          "scoringRule": "Diagnostic précis avec classification = 2 pts, partiel = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m2",
+          "text": "Diagnostics différentiels infections respiratoires",
+          "ddSection": {
+            "categories": [
+              {
+                "name": "Infections pulmonaires",
+                "items": [
+                  "Pneumonie atypique (Mycoplasma) Sérologies, PCR",
+                  "Exacerbation BPCO infectée EFR, expectoration",
+                  "Abcès pulmonaire CT thorax",
+                  "Tuberculose pulmonaire BAAR, cultures"
+                ]
+              },
+              {
+                "name": "Autres pneumopathies",
+                "items": [
+                  "Embolie pulmonaire D-dimères, angio-CT",
+                  "Pneumonie d'inhalation Anamnèse, imagerie",
+                  "Pneumopathie médicamenteuse Chronologie, arrêt"
+                ]
+              },
+              {
+                "name": "Néoplasiques",
+                "items": [
+                  "Cancer bronchique CT thorax, fibroscopie",
+                  "Lymphome pulmonaire PET scan, biopsie"
+                ]
+              }
+            ]
+          },
+          "scoringRule": "≥6 DD avec examens = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m3",
+          "text": "Examens complémentaires pneumonie communautaire",
+          "details": [
+            "Radiographie thorax [consolidation]",
+            "NFS [hyperleucocytose, neutrophilie]",
+            "CRP [>100 mg/L pneumonie bactérienne]",
+            "Procalcitonine [>0.5 bactérienne]",
+            "Fonction rénale [créatinine, urée]",
+            "Ionogramme [déshydratation]",
+            "Hémocultures [si fièvre >38.5°C]"
+          ],
+          "scoringRule": "≥6 examens appropriés = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m4",
+          "text": "Antibiothérapie probabiliste adaptée",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Première intention (ambulatoire)",
+                "content": "• Amoxicilline 1g 3×/j per os 7-10j\\n• Alternative: Amoxicilline-acide clavulanique 1g 2×/j\\n• Si allergie pénicilline: Azithromycine 500mg/j 3j\\n• Ou clarithromycine 500mg 2×/j 7j\\n• Éviter quinolones en première intention"
+              },
+              {
+                "title": "Facteurs de risque (BPCO, âge)",
+                "content": "• Amoxicilline-acide clavulanique 1g 2×/j\\n• Ceftriaxone 1g/j IV si hospitalisation\\n• Couvrir Haemophilus (BPCO)\\n• Adaptation selon antibiogramme\\n• Durée 7-10 jours selon évolution"
+              },
+              {
+                "title": "Surveillance traitement",
+                "content": "• Réévaluation 48-72h\\n• Amélioration clinique attendue\\n• Défervescence progressive\\n• Contrôle radiologique si aggravation\\n• Changement si échec à 72h"
+              }
+            ]
+          },
+          "scoringRule": "Antibiothérapie adaptée au terrain = 2 pts, partielle = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m5",
+          "text": "Traitement symptomatique et mesures générales",
+          "details": [
+            "Antipyrétique [paracétamol 1g 4×/j]",
+            "Hydratation [2-3L/jour]",
+            "Repos [arrêt travail]",
+            "Antitussif [si toux très gênante]",
+            "Mucolytiques [si expectorations épaisses]",
+            "Éviter AINS [risque complications]",
+            "Kinésithérapie respiratoire [si besoin]"
+          ],
+          "scoringRule": "≥5 mesures symptomatiques = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m6",
+          "text": "Critères hospitalisation et surveillance",
+          "details": [
+            "CURB-65 ≥2 [hospitalisation]",
+            "Comorbidités sévères [évaluer]",
+            "Échec traitement ambulatoire [72h]",
+            "Complications [pleurésie, abcès]",
+            "Contexte social [isolement]",
+            "Surveillance domicile [famille]",
+            "Signes d'alarme [dyspnée, confusion]"
+          ],
+          "scoringRule": "≥5 critères évalués = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m7",
+          "text": "Organisation suivi et prévention",
+          "details": [
+            "Contrôle 48-72h [efficacité antibiotique]",
+            "Contrôle 7-10 jours [guérison]",
+            "Radiographie contrôle [si complications]",
+            "Arrêt travail [7-10 jours]",
+            "Vaccination pneumocoque [prévention]",
+            "Vaccination grippale [annuelle]",
+            "Sevrage tabagique [consultation]"
+          ],
+          "scoringRule": "≥5 éléments suivi = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m8",
+          "text": "Éducation patient et entourage",
+          "details": [
+            "Explication pneumonie et évolution",
+            "Importance observance antibiotique",
+            "Signaux d'alarme [dyspnée, aggravation]",
+            "Mesures hygiène [mouchoirs, lavage mains]",
+            "Repos et hydratation",
+            "Éviction tabac temporaire",
+            "Quand reconsulter [urgence]"
+          ],
+          "scoringRule": "≥5 éléments éducation = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m9",
+          "text": "Gestion comorbidités et facteurs de risque",
+          "details": [
+            "BPCO sous-jacente [bronchodilatateurs?]",
+            "Contrôle HTA [poursuite traitement]",
+            "Sevrage tabagique [motivation]",
+            "Réduction alcool [immunité]",
+            "Stress professionnel [gestion]",
+            "Nutrition [récupération]",
+            "Activité physique [reprise progressive]"
+          ],
+          "scoringRule": "≥5 comorbidités gérées = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m10",
+          "text": "Évaluation globale de la qualité de la prise en charge",
+          "details": [
+            "Diagnostic pneumonie communautaire approprié",
+            "Gravité évaluée (CURB-65)",
+            "Antibiothérapie adaptée au terrain",
+            "Traitement ambulatoire justifié",
+            "Suivi organisé et prévention planifiée"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        }
+      ]
+    }
+  }
+}

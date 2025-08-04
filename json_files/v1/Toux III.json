@@ -1,0 +1,223 @@
+{
+  "title": "Toux III",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "M. Maurer, 48 ans, plombier, vous consulte en cabinet pour une toux et de la fièvre depuis deux jours.",
+    "vitals": {
+      "ta": "120/80 mmHg",
+      "fc": "72 bpm",
+      "temperature": "39.1°C",
+      "fr": "24/min"
+    }
+  },
+  "tasks": [
+    "Effectuez une anamnèse ciblée",
+    "Réalisez un examen clinique ciblé",
+    "Expliquez votre diagnostic suspecté et les diagnostics différentiels",
+    "Proposez la suite de la prise en charge"
+  ],
+  "sections": {
+    "anamnese": {
+      "title": "Anamnèse",
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction, tâche"
+        },
+        {
+          "id": "a2",
+          "text": "Plaintes principales [toux et fièvre]"
+        },
+        {
+          "id": "a3",
+          "text": "Épisodes antérieurs [non, pas de cette nature]"
+        },
+        {
+          "id": "a4",
+          "text": "Début [il y a 2 jours, début brutal au travail avec forte fièvre et toux]"
+        },
+        {
+          "id": "a5",
+          "text": "Productive/non productive, couleur des expectorations [expectorations jaunâtres visqueuses]"
+        },
+        {
+          "id": "a6",
+          "text": "Hémoptysie [non]"
+        },
+        {
+          "id": "a7",
+          "text": "Dyspnée [oui, en montant les escaliers]"
+        },
+        {
+          "id": "a8",
+          "text": "Facteurs aggravants [toute activité]"
+        },
+        {
+          "id": "a9",
+          "text": "Facteurs améliorants [dormir]"
+        },
+        {
+          "id": "a10",
+          "text": "Anamnèse de l'entourage [aucune]"
+        },
+        {
+          "id": "a11",
+          "text": "Symptômes associés"
+        },
+        {
+          "id": "a12",
+          "text": "Infection ORL [nez a un peu coulé il y a une semaine, parfois mal de gorge]"
+        },
+        {
+          "id": "a13",
+          "text": "Baisse de performance [oui]"
+        },
+        {
+          "id": "a14",
+          "text": "Écoulement postnasal [non]"
+        },
+        {
+          "id": "a15",
+          "text": "Douleurs thoraciques [oui, surtout lors de la respiration et de la toux]"
+        },
+        {
+          "id": "a16",
+          "text": "Troubles cardiaques [non]"
+        },
+        {
+          "id": "a17",
+          "text": "Sibilances [non]"
+        },
+        {
+          "id": "a18",
+          "text": "Brûlures d'estomac [non]"
+        },
+        {
+          "id": "a19",
+          "text": "Jambes gonflées [non]"
+        },
+        {
+          "id": "a20",
+          "text": "Symptômes B [pas de perte de poids, mais fièvre jusqu'à 39°C avec frissons, sueurs nocturnes oui depuis 2 jours]"
+        },
+        {
+          "id": "a21",
+          "text": "Exposition [aucune]"
+        },
+        {
+          "id": "a22",
+          "text": "Antécédents [tension un peu élevée, toux matinale depuis longtemps, environ 4 ans]"
+        },
+        {
+          "id": "a23",
+          "text": "Médicaments [quelque chose pour la tension]"
+        },
+        {
+          "id": "a24",
+          "text": "Habitudes [25 PA, 2-3 verres de vin par jour, pas de drogues]"
+        },
+        {
+          "id": "a25",
+          "text": "Allergies [aucune]"
+        },
+        {
+          "id": "a26",
+          "text": "Anamnèse familiale [sans particularité]"
+        },
+        {
+          "id": "a27",
+          "text": "Anamnèse sociale [marié, 3 enfants, stress au travail actuellement]"
+        }
+      ]
+    },
+    "examen": {
+      "title": "Examen clinique",
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Signes vitaux (voir ci-dessus)"
+        },
+        {
+          "id": "e2",
+          "text": "Précordium palpé"
+        },
+        {
+          "id": "e3",
+          "text": "Cœur",
+          "details": [
+            "Palpation",
+            "Auscultation"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Poumons",
+          "details": [
+            "Palpation (frémissement vocal)",
+            "Percussion",
+            "Auscultation systématique antérieure et postérieure"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Mains, ongles examinés!! Hippocratisme digital, cyanose"
+        },
+        {
+          "id": "e6",
+          "text": "Veines jugulaires inspectées"
+        },
+        {
+          "id": "e7",
+          "text": "Jambes contrôlées pour œdèmes"
+        },
+        {
+          "id": "e8",
+          "text": "État ORL (gorge, oreilles, nez)"
+        },
+        {
+          "id": "e9",
+          "text": "Ganglions lymphatiques"
+        },
+        {
+          "id": "e10",
+          "text": "Examen abdominal"
+        }
+      ]
+    },
+    "management": {
+      "title": "Suite de la prise en charge",
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "L'étudiant nomme le diagnostic suspecté [pneumonie typique]"
+        },
+        {
+          "id": "m2",
+          "text": "Nomme au moins 2-3 diagnostics différentiels [exacerbation d'une bronchite chronique, abcès pulmonaire, carcinome pulmonaire, tuberculose]"
+        },
+        {
+          "id": "m3",
+          "text": "Nomme les examens diagnostiques [radiographie thoracique, laboratoire (marqueurs inflammatoires, FSC), hémocultures]"
+        },
+        {
+          "id": "m4",
+          "text": "Nomme le traitement [antibiotique (ex: amoxicilline ou Augmentin ou macrolide)]"
+        },
+        {
+          "id": "m5",
+          "text": "Évalue le score CURB-65",
+          "details": [
+            "C - Confusion [non confus]",
+            "U - Urée > 7 mmol/L",
+            "R - FR > 30 [est 24/min]",
+            "B - TA < 90/60 mmHg",
+            "65 - Âge ≥ 65 ans"
+          ]
+        }
+      ]
+    }
+  }
+}

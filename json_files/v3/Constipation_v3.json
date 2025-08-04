@@ -1,0 +1,416 @@
+{
+  "title": "Constipation",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Madame Meier, 56 ans, se présente au cabinet pour constipation depuis 3 semaines"
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction et tâche",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Question d'entrée ouverte → Symptôme principal",
+          "patientComment": "Constipation",
+          "binaryOnly": true
+        },
+        {
+          "id": "a3",
+          "text": "Question de clarification : \"Qu'entendez-vous par constipation ?\"",
+          "binaryOnly": true
+        },
+        {
+          "id": "a4",
+          "text": "RED FLAGS - Signaux d'alarme en constipation",
+          "redflagsSection": [
+            {
+              "text": "Âge > 50 ans avec début récent [56 ans, depuis 3 semaines !]"
+            },
+            {
+              "text": "Changement brutal du transit intestinal [oui, progressif sur 3 semaines]"
+            },
+            {
+              "text": "Perte de poids inexpliquée [5 kg en 6 mois !]"
+            },
+            {
+              "text": "Sueurs nocturnes ou fièvre [sueurs nocturnes !]"
+            },
+            {
+              "text": "Sang dans/sur les selles [parfois sang rouge sur papier !]"
+            },
+            {
+              "text": "Antécédents familiaux de cancer colorectal [non directement]"
+            },
+            {
+              "text": "Masse abdominale palpable"
+            },
+            {
+              "text": "Anémie ferriprive non expliquée"
+            }
+          ],
+          "scoringRule": "≥4 red flags = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a5",
+          "text": "Critères diagnostiques Rome IV de constipation fonctionnelle",
+          "details": [
+            "Fréquence des selles < 3/semaine [environ 2x/semaine]",
+            "Effort de poussée important (>25% défécations) [oui]",
+            "Selles dures/fragmentées (>25% défécations) [fragments durs]",
+            "Sensation d'évacuation incomplète (>25%) [souvent]",
+            "Sensation de blocage anorectal (>25%) [non]",
+            "Manœuvres manuelles nécessaires (>25%) [non]"
+          ],
+          "scoringRule": "≥4 critères = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a6",
+          "text": "Caractérisation temporelle systématique",
+          "details": [
+            "Durée exacte [depuis 3 semaines]",
+            "Évolution (stable/progressive/fluctuante) [progressive]",
+            "Transit antérieur normal [oui, pas de problème avant]",
+            "Facteurs déclenchants identifiés [non identifiés]",
+            "Périodicité ou pattern particulier"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 3 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a7",
+          "text": "Analyse approfondie des selles (Bristol Stool Scale)",
+          "details": [
+            "Type 1-2 Bristol (selles dures) [fragments durs = Type 1]",
+            "Calibre des selles (normal/fin) [non précisé]",
+            "Couleur anormale (méléna/acholique) [normale - brun foncé]",
+            "Présence de sang visible [parfois sang rouge sur papier]",
+            "Mucus ou pus [non]",
+            "Odeur particulière [normale]"
+          ],
+          "scoringRule": "≥5 caractéristiques = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a8",
+          "text": "Symptômes digestifs associés",
+          "details": [
+            "Douleurs abdominales (localisation/type) [fortes douleurs défécation]",
+            "Ballonnements/distension [ballonnements augmentés]",
+            "Nausées/vomissements [nausées après gros repas]",
+            "Diarrhée paradoxale [épisodes brefs par moments]",
+            "Ténesme ou urgence défécatoire [non]",
+            "Incontinence fécale [non]"
+          ],
+          "scoringRule": "≥4 symptômes évalués = 2 pts, 3 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a9",
+          "text": "Facteurs favorisants et habitudes de vie",
+          "details": [
+            "Apports hydriques quotidiens [environ 1L/jour - insuffisant]",
+            "Apports en fibres alimentaires [peu de légumes]",
+            "Activité physique régulière [peu, 1x promenade/semaine]",
+            "Habitudes défécatoires (suppression besoin)",
+            "Stress ou anxiété récents",
+            "Changements récents mode de vie"
+          ],
+          "scoringRule": "≥5 facteurs = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a10",
+          "text": "Médicaments favorisant la constipation",
+          "details": [
+            "Suppléments calciques [Vitamine D + Ca2+!]",
+            "Anticholinergiques [non]",
+            "Opioïdes/antalgiques [non]",
+            "Antidépresseurs [non]",
+            "Suppléments de fer [non]",
+            "Antiacides à base d'aluminium [non]"
+          ],
+          "scoringRule": "Identification systématique = 2 pts, partielle = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a11",
+          "text": "Recherche de causes secondaires",
+          "details": [
+            "Symptômes d'hypothyroïdie [radiothérapie iode, sous Euthyrox]",
+            "Symptômes neurologiques (Parkinson, SEP)",
+            "Diabète avec neuropathie [non]",
+            "Symptômes de maladie systémique",
+            "Grossesse (si applicable) [non, 56 ans]"
+          ],
+          "scoringRule": "≥4 causes recherchées = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a12",
+          "text": "Antécédents chirurgicaux abdominaux",
+          "details": [
+            "Appendicectomie [oui]",
+            "Césariennes [2 césariennes]",
+            "Autres chirurgies abdominales",
+            "Complications post-opératoires",
+            "Adhérences connues"
+          ],
+          "scoringRule": "Exploration complète = 2 pts, partielle = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a13",
+          "text": "Histoire familiale oncologique détaillée",
+          "details": [
+            "Cancer colorectal (âge, parenté) [non direct]",
+            "Cancer du sein [mère]",
+            "Cancer hépatique [père]",
+            "Syndromes héréditaires (Lynch, PAF)",
+            "Maladies inflammatoires intestinales"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Inspection générale et signes vitaux",
+          "details": [
+            "État général (AEG, cachexie)",
+            "Pâleur conjonctivale (anémie)",
+            "Signes de déshydratation",
+            "IMC et état nutritionnel",
+            "Signes cutanés (thyroïde, systémique)"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 3 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e2",
+          "text": "Examen abdominal complet et systématique",
+          "details": [
+            "Inspection (distension, cicatrices) [cicatrices chirurgicales]",
+            "Auscultation (bruits hydroaériques)",
+            "Percussion (tympanisme, matité)",
+            "Palpation superficielle et profonde",
+            "Recherche masses/organomégalie",
+            "Points douloureux spécifiques"
+          ],
+          "scoringRule": "≥5 techniques = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e3",
+          "text": "Toucher rectal - examen capital",
+          "details": [
+            "Tonus sphinctérien",
+            "Fécalome ou selles dures",
+            "Masses rectales palpables",
+            "Sang sur le doigtier",
+            "Fissures anales ou hémorroïdes",
+            "Douleur à l'examen"
+          ],
+          "scoringRule": "TR réalisé avec ≥4 éléments = 2 pts, TR mentionné = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e4",
+          "text": "Examen thyroïdien ciblé",
+          "details": [
+            "Palpation thyroïde (taille, nodules)",
+            "Signes cliniques hypothyroïdie",
+            "Réflexes ostéotendineux (ralentis)",
+            "Peau sèche, cheveux cassants",
+            "Œdème prétibial"
+          ],
+          "scoringRule": "≥3 éléments = 2 pts, 2 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e5",
+          "text": "Examen neurologique si indiqué",
+          "details": [
+            "Réflexes sacrés (si neuropathie)",
+            "Sensibilité périnéale",
+            "Force musculaire membres inférieurs",
+            "Signes pyramidaux",
+            "Troubles de la marche"
+          ],
+          "scoringRule": "Si pertinent et réalisé = 2 pts, mentionné = 1 pt",
+          "binaryOnly": false
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Synthèse diagnostique avec red flags",
+          "patientComment": "Constipation de novo chez femme 56 ans avec multiples red flags : âge >50 ans, début récent, perte de poids 5kg/6mois, sueurs nocturnes, rectorragies intermittentes. Forte suspicion de néoplasie colorectale",
+          "binaryOnly": true
+        },
+        {
+          "id": "m2",
+          "text": "Diagnostics différentiels structurés",
+          "ddSection": {
+            "categories": [
+              {
+                "name": "Causes organiques majeures",
+                "items": [
+                  "Cancer colorectal (red flags++)",
+                  "Sténose colique bénigne",
+                  "Maladie diverticulaire compliquée",
+                  "Endométriose rectale (si applicable)"
+                ]
+              },
+              {
+                "name": "Causes fonctionnelles",
+                "items": [
+                  "Constipation fonctionnelle chronique",
+                  "Syndrome intestin irritable-C",
+                  "Dyssynergie anorectale",
+                  "Inertie colique"
+                ]
+              },
+              {
+                "name": "Causes médicamenteuses",
+                "items": [
+                  "Suppléments calciques",
+                  "Hypothyroïdie sous-traitée",
+                  "Médicaments anticholinergiques"
+                ]
+              },
+              {
+                "name": "Causes métaboliques",
+                "items": [
+                  "Hypercalcémie",
+                  "Hypothyroïdie",
+                  "Diabète avec neuropathie",
+                  "Hypokaliémie chronique"
+                ]
+              }
+            ]
+          },
+          "scoringRule": "≥3 catégories avec exemples = 2 pts, 2 = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m3",
+          "text": "Examens complémentaires urgents et ciblés",
+          "details": [
+            "NFS (anémie), ferritine",
+            "CRP, VS (inflammation)",
+            "Ionogramme complet (K, Ca++)",
+            "TSH (déjà sous traitement)",
+            "Créatinine, urée",
+            "Test FIT (sang occulte) - prioritaire",
+            "CEA, CA 19-9 si forte suspicion"
+          ],
+          "scoringRule": "≥6 examens pertinents = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m4",
+          "text": "Imagerie et endoscopie - investigations prioritaires",
+          "details": [
+            "Coloscopie URGENTE (délai <2 semaines)",
+            "CT abdomen-pelvis si coloscopie incomplète",
+            "CT thorax si suspicion métastases",
+            "IRM pelvis si suspicion extension locale",
+            "Transit baryté si sténose suspectée"
+          ],
+          "scoringRule": "Coloscopie urgente mentionnée = 2 pts, autre imagerie = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m5",
+          "text": "Prise en charge symptomatique immédiate",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Mesures hygiéno-diététiques",
+                "content": "• Hydratation : objectif 2-2.5L/jour\n• Fibres progressives : 25-30g/jour\n• Activité physique quotidienne 30min\n• Horaire défécation régulier\n• Position accroupie (marchepied)"
+              },
+              {
+                "title": "Traitement laxatif séquentiel",
+                "content": "• 1ère ligne : Osmotiques (Macrogol 1-2 sachets/j)\n• 2ème ligne : Stimulants (Bisacodyl si échec)\n• Éviter laxatifs irritants long terme\n• Suppositoires glycérine si fécalome\n• Lavement si impaction fécale"
+              },
+              {
+                "title": "Gestion des symptômes associés",
+                "content": "• Antispasmodiques si crampes\n• Siméticone si ballonnements\n• Analgésiques non constipants\n• Crème hémorroïdaire si fissures"
+              }
+            ]
+          },
+          "scoringRule": "Plan thérapeutique complet = 2 pts, partiel = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m6",
+          "text": "Critères d'hospitalisation et référence spécialisée",
+          "redflagsSection": [
+            {
+              "text": "Occlusion intestinale suspectée"
+            },
+            {
+              "text": "Hémorragie digestive active"
+            },
+            {
+              "text": "Douleur abdominale sévère"
+            },
+            {
+              "text": "Masse abdominale palpable"
+            },
+            {
+              "text": "Altération état général marquée"
+            },
+            {
+              "text": "Impossibilité investigations ambulatoires"
+            }
+          ],
+          "scoringRule": "≥4 critères définis = 2 pts, 2-3 = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m7",
+          "text": "Plan de suivi et coordination des soins",
+          "details": [
+            "Coloscopie dans 7-14 jours maximum",
+            "Consultation gastro-entérologue urgente",
+            "Résultats biologiques dans 48h",
+            "Réévaluation clinique si aggravation",
+            "Contact oncologue si cancer confirmé",
+            "Support psychologique proposé"
+          ],
+          "scoringRule": "≥5 éléments = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m8",
+          "text": "Information et éducation du patient",
+          "details": [
+            "Explication des red flags sans alarmer",
+            "Importance investigations rapides",
+            "Symptômes nécessitant consultation urgente",
+            "Mesures hygiéno-diététiques écrites",
+            "Coordonnées urgences digestives",
+            "Prochain RDV fixé avant départ"
+          ],
+          "scoringRule": "≥5 points abordés = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,230 @@
+{
+  "title": "Acouphènes",
+  "context": {
+    "setting": "Consultation ORL",
+    "patient": "Homme de 50 ans consultant pour un nouveau problème à l'oreille"
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction et tâche",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Problème actuel",
+          "patientComment": "Tinnitus - ça siffle toujours comme ça",
+          "binaryOnly": true
+        },
+        {
+          "id": "a3",
+          "text": "Apparition temporelle et évolution",
+          "patientComment": "constant, parfois plus fort, parfois plus faible... Plus lors d'effort et de stress"
+        },
+        {
+          "id": "a4",
+          "text": "Troubles auditifs associés",
+          "patientComment": "possible, doit souvent faire répéter"
+        },
+        {
+          "id": "a5",
+          "text": "Sécrétions auriculaires",
+          "patientComment": "cérumen ? sang ? pus ? (Non)"
+        },
+        {
+          "id": "a6",
+          "text": "Douleur auriculaire",
+          "patientComment": "Non"
+        },
+        {
+          "id": "a7",
+          "text": "Bourdonnements",
+          "patientComment": "Oui justement - toujours ce sifflement"
+        },
+        {
+          "id": "a8",
+          "text": "Vertiges",
+          "patientComment": "Parfois - ce son vous rend tout bizarre !"
+        },
+        {
+          "id": "a9",
+          "text": "Symptômes d'accompagnement",
+          "details": [
+            "Fièvre (non)",
+            "Toux (non)",
+            "Rhinite (non)",
+            "Vomissements (non)"
+          ]
+        },
+        {
+          "id": "a10",
+          "text": "Antécédents médicaux",
+          "patientComment": "surtout si maladies de l'oreille antérieures (rien)"
+        },
+        {
+          "id": "a11",
+          "text": "Traumatismes",
+          "patientComment": "quelques chutes à vélo, sinon rien - tête pas gravement blessée"
+        },
+        {
+          "id": "a12",
+          "text": "Anamnèse médicamenteuse",
+          "patientComment": "médicaments ototoxiques (ne connaît pas ses médicaments)"
+        },
+        {
+          "id": "a13",
+          "text": "Facteurs déclenchants",
+          "patientComment": "Vous croyez que j'invente ça ? Je ne sais pas d'où ça vient ce sifflement ? Mais ça siffle !!!"
+        },
+        {
+          "id": "a14",
+          "text": "Anamnèse systémique",
+          "details": [
+            "Tension artérielle (légèrement élevée)",
+            "Neurologie",
+            "Psychosocial (était en psychiatrie pour burnout - mais ça va bien maintenant)"
+          ]
+        },
+        {
+          "id": "a15",
+          "text": "Anamnèse sociale",
+          "patientComment": "marié - malheureux avec sa femme, 3 enfants adultes"
+        },
+        {
+          "id": "a16",
+          "text": "Profession et exposition au bruit",
+          "patientComment": "facteur"
+        },
+        {
+          "id": "a17",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "binaryOnly": false,
+          "details": [
+            "Anamnèse générale ciblée et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Inspection de l'oreille",
+          "patientComment": "normale"
+        },
+        {
+          "id": "e2",
+          "text": "Palpation",
+          "details": [
+            "Pression du tragus",
+            "Traction du pavillon"
+          ],
+          "patientComment": "normale"
+        },
+        {
+          "id": "e3",
+          "text": "Otoscopie bilatérale",
+          "patientComment": "normale"
+        },
+        {
+          "id": "e4",
+          "text": "Tests auditifs",
+          "details": [
+            "Test de Weber",
+            "Test de Rinne"
+          ],
+          "patientComment": "normaux"
+        },
+        {
+          "id": "e5",
+          "text": "Examen de l'équilibre",
+          "patientComment": "test de Romberg (légèrement instable)"
+        },
+        {
+          "id": "e6",
+          "text": "Examen neurologique et général",
+          "patientComment": "normal"
+        },
+        {
+          "id": "e7",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "binaryOnly": false,
+          "details": [
+            "Status général ciblé et bien conduit"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic de suspicion",
+          "patientComment": "Tinnitus"
+        },
+        {
+          "id": "m2",
+          "text": "Diagnostics différentiels",
+          "details": [
+            "Surdité brusque (diagnostic d'exclusion)",
+            "Hypertension artérielle",
+            "Neurinome de l'acoustique",
+            "Maladie de Ménière",
+            "Infections (borréliose)",
+            "Substances ototoxiques"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Examens diagnostiques",
+          "details": [
+            "Audiogramme tonal",
+            "Examens audiologiques et vestibulaires",
+            "Imagerie du rocher",
+            "Éventuellement examens biologiques, consultations neurologique, interniste ou psychosomatique"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Traitement aigu",
+          "details": [
+            "Thérapie comme pour la surdité brusque",
+            "Stéroïdes",
+            "Hydroxyéthylamidon"
+          ]
+        },
+        {
+          "id": "m5",
+          "text": "Traitement chronique",
+          "details": [
+            "Si patient très gêné",
+            "Traitement de la maladie de base (hypertension, etc.)",
+            "Thérapie cognitivo-comportementale",
+            "Aide auditive avec masquage sonore"
+          ]
+        },
+        {
+          "id": "m6",
+          "text": "Information patient",
+          "patientComment": "explique que le traitement des acouphènes n'est pas simple"
+        },
+        {
+          "id": "m7",
+          "text": "Évaluation globale de la qualité de la prise en charge",
+          "binaryOnly": false,
+          "details": [
+            "Prise en charge générale cohérente et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    }
+  }
+}

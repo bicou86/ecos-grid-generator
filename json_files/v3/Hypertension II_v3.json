@@ -1,0 +1,456 @@
+{
+  "title": "Hypertension II",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Mme Keller, 67 ans, retraitée, se présente pour un contrôle de suivi de son hypertension artérielle connue",
+    "vitals": {
+      "ta": "175/105 mmHg",
+      "fc": "88 bpm",
+      "temperature": "36.8°C"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "title": "Anamnèse",
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction et objectif",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Motif de consultation",
+          "patientComment": "Contrôle de l'HTA, valeurs élevées en automesure"
+        },
+        {
+          "id": "a3",
+          "text": "Histoire de l'hypertension",
+          "details": [
+            "Ancienneté [10 ans]",
+            "Valeurs habituelles [souvent 160/95 mmHg]",
+            "Fréquence des contrôles [tous les 3 mois]",
+            "Hospitalisations pour HTA [jamais]",
+            "Complications connues [aucune jusqu'à présent]",
+            "Changements thérapeutiques [plusieurs adaptations]",
+            "Périodes de bon contrôle [rarement < 140/90]"
+          ],
+          "patientComment": "HTA ancienne mal contrôlée chroniquement",
+          "scoringRule": "≥5 éléments explorés = 2 pts, 3-4 = 1 pt"
+        },
+        {
+          "id": "a4",
+          "text": "Symptômes cardiovasculaires actuels",
+          "details": [
+            "Céphalées [oui, matinales occipitales]",
+            "Vertiges [parfois orthostatiques]",
+            "Acouphènes [non]",
+            "Épistaxis [non]",
+            "Dyspnée d'effort [oui, escaliers difficiles, NYHA II]",
+            "Orthopnée [non, dort avec 1 oreiller]",
+            "DPN [non]",
+            "Douleur thoracique [non]",
+            "Palpitations [rarement]",
+            "Œdèmes MI [chevilles gonflées le soir]",
+            "Nycturie [2-3 fois/nuit]"
+          ],
+          "patientComment": "Signes d'insuffisance cardiaque débutante",
+          "scoringRule": "≥8 symptômes explorés = 2 pts, 5-7 = 1 pt"
+        },
+        {
+          "id": "a5",
+          "text": "Traitement actuel et observance",
+          "details": [
+            "Ramipril [10 mg matin]",
+            "Hydrochlorothiazide [25 mg matin]",
+            "Autres antihypertenseurs [aucun]",
+            "Horaires de prise [matin au petit-déjeuner]",
+            "Oublis fréquence [2-3 fois/semaine]",
+            "Raisons des oublis [routine perturbée, voyages]",
+            "Effets secondaires [toux sèche, pollakiurie]",
+            "Auto-adaptation doses [non]"
+          ],
+          "patientComment": "Bithérapie insuffisante, observance médiocre",
+          "scoringRule": "≥6 éléments = 2 pts, 4-5 = 1 pt"
+        },
+        {
+          "id": "a6",
+          "text": "Facteurs de décompensation récents",
+          "details": [
+            "Stress psychosocial [mari hospitalisé récemment]",
+            "Modifications alimentaires [cuisine seule, plus de sel]",
+            "Prise de poids [2-3 kg en quelques mois]",
+            "Consommation sodée [aime bien saler, plats préparés]",
+            "Médicaments ajoutés [ibuprofène pour arthralgies]",
+            "Arrêt d'activité physique [moins de sorties]",
+            "Troubles du sommeil [inquiétude pour son mari]",
+            "Consommation alcool [inchangée, 1 verre/repas]"
+          ],
+          "patientComment": "Multiples facteurs aggravants identifiés",
+          "scoringRule": "≥6 facteurs = 2 pts, 4-5 = 1 pt"
+        },
+        {
+          "id": "a7",
+          "text": "Complications cardiovasculaires recherchées",
+          "details": [
+            "AVC/AIT [jamais]",
+            "Infarctus du myocarde [non]",
+            "Angor [non]",
+            "Insuffisance cardiaque [début probable]",
+            "Claudication intermittente [non]",
+            "Insuffisance rénale [créatinine normale l'an dernier]",
+            "Rétinopathie [FO il y a 2 ans normal]",
+            "Neuropathie [non]"
+          ],
+          "patientComment": "Pas de complication majeure documentée",
+          "scoringRule": "≥6 complications = 2 pts"
+        },
+        {
+          "id": "a8",
+          "text": "Comorbidités et facteurs de risque",
+          "details": [
+            "Diabète [non]",
+            "Dyslipidémie [cholestérol un peu élevé, non traité]",
+            "IMC [28 kg/m²]",
+            "Tour de taille [95 cm]",
+            "Tabagisme [jamais]",
+            "SAOS [ronfle selon mari]",
+            "Sédentarité [peu d'activité physique]",
+            "Ménopause [depuis 15 ans, pas de THS]"
+          ],
+          "patientComment": "Syndrome métabolique probable",
+          "scoringRule": "≥6 éléments = 2 pts"
+        },
+        {
+          "id": "a9",
+          "text": "Mode de vie détaillé",
+          "details": [
+            "Activité physique [marche occasionnelle, pas de sport]",
+            "Alimentation [cuisine traditionnelle, salée]",
+            "Sel ajouté [systématiquement à table]",
+            "Plats préparés [plus fréquents récemment]",
+            "Fruits/légumes [3-4 portions/jour]",
+            "Alcool [1 verre vin/repas, soit 14 verres/semaine]",
+            "Café [2-3 tasses/jour]",
+            "Gestion stress [aucune technique]"
+          ],
+          "patientComment": "Mode de vie défavorable au contrôle tensionnel",
+          "scoringRule": "≥6 habitudes = 2 pts"
+        },
+        {
+          "id": "a10",
+          "text": "Antécédents familiaux cardiovasculaires",
+          "details": [
+            "HTA parentale [mère et père hypertendus]",
+            "IDM familiaux [parents décédés d'IDM]",
+            "AVC familiaux [sœur AVC à 70 ans]",
+            "Diabète familial [frère DT2]",
+            "Mort subite [non]",
+            "Démence vasculaire [mère en fin de vie]"
+          ],
+          "patientComment": "Très lourds ATCD familiaux cardiovasculaires",
+          "scoringRule": "≥5 ATCD = 2 pts"
+        },
+        {
+          "id": "a11",
+          "text": "Contexte psychosocial",
+          "details": [
+            "Situation familiale [mariée, mari malade]",
+            "Enfants [pas d'enfants]",
+            "Support social [peu d'amis proches]",
+            "Autonomie [complète mais fatiguée]",
+            "Anxiété/dépression [anxieuse pour son mari]",
+            "Capacité gestion traitement [parfois dépassée]"
+          ],
+          "patientComment": "Contexte psychosocial difficile, isolement relatif"
+        },
+        {
+          "id": "a12",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "binaryOnly": false,
+          "details": [
+            "Anamnèse complète d'HTA compliquée"
+          ],
+          "scoringRule": "Anamnèse excellente = 2 pts, correcte = 1 pt, insuffisante = 0 pt"
+        }
+      ]
+    },
+    "examen": {
+      "title": "Examen clinique",
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Mesure standardisée de la TA",
+          "details": [
+            "Repos 5 min avant mesure",
+            "Position assise correcte",
+            "Bras au niveau du cœur",
+            "Brassard taille adaptée",
+            "3 mesures à 1-2 min intervalle",
+            "Mesure aux 2 bras",
+            "Moyenne des 2 dernières mesures",
+            "Recherche hypotension orthostatique"
+          ],
+          "patientComment": "TA confirmée 175/105 mmHg, pas d'asymétrie",
+          "scoringRule": "≥6 éléments = 2 pts, 4-5 = 1 pt"
+        },
+        {
+          "id": "e2",
+          "text": "Évaluation générale et anthropométrie",
+          "details": [
+            "État général [fatigué mais autonome]",
+            "Poids actuel [82 kg]",
+            "Taille [160 cm]",
+            "IMC calculé [32 kg/m², obésité grade 1]",
+            "Tour de taille [95 cm]",
+            "Évolution pondérale [+3 kg en 6 mois]"
+          ],
+          "patientComment": "Obésité abdominale avec prise de poids récente",
+          "scoringRule": "≥5 mesures = 2 pts"
+        },
+        {
+          "id": "e3",
+          "text": "Examen cardiovasculaire approfondi",
+          "details": [
+            "FC [88 bpm régulier]",
+            "Auscultation B1-B2 [normaux]",
+            "B3 galop [présent, IC débutante]",
+            "B4 [absent]",
+            "Souffle systolique [absent]",
+            "Souffle diastolique [absent]",
+            "Choc de pointe [dévié en bas et dehors]",
+            "Frémissement [absent]"
+          ],
+          "patientComment": "B3 audible suggérant dysfonction VG",
+          "scoringRule": "≥6 éléments = 2 pts"
+        },
+        {
+          "id": "e4",
+          "text": "Examen pulmonaire",
+          "details": [
+            "FR [18/min]",
+            "Ampliation thoracique [symétrique]",
+            "Percussion [normale]",
+            "Auscultation apex [MV présent]",
+            "Râles crépitants [présents aux 2 bases]",
+            "Sibilants [absents]",
+            "Épanchement pleural [non]"
+          ],
+          "patientComment": "Râles de stase basilaires bilatéraux",
+          "scoringRule": "≥5 éléments = 2 pts"
+        },
+        {
+          "id": "e5",
+          "text": "Recherche de signes congestifs",
+          "details": [
+            "Œdèmes MI [bilatéraux, prenant le godet]",
+            "Niveau œdèmes [chevilles jusqu'à mi-mollet]",
+            "Turgescence jugulaire [légèrement augmentée]",
+            "Reflux hépato-jugulaire [positif]",
+            "Hépatomégalie [foie déborde 2 cm]",
+            "Ascite [absente]"
+          ],
+          "patientComment": "Signes francs d'insuffisance cardiaque droite",
+          "scoringRule": "≥5 signes = 2 pts"
+        },
+        {
+          "id": "e6",
+          "text": "Examen vasculaire périphérique",
+          "details": [
+            "Pouls carotidiens [perçus, symétriques]",
+            "Souffle carotidien [absent]",
+            "Souffle abdominal [absent]",
+            "Pouls fémoraux [présents]",
+            "Pouls poplités [difficiles à palper]",
+            "Pouls pédieux [présents]",
+            "Pouls tibiaux post [faibles]"
+          ],
+          "patientComment": "Pouls périphériques présents, pas de souffle",
+          "scoringRule": "≥5 sites = 2 pts"
+        },
+        {
+          "id": "e7",
+          "text": "Examen des organes cibles",
+          "details": [
+            "Fond d'œil [à programmer en urgence]",
+            "Acuité visuelle [porte lunettes, voit bien]",
+            "Examen neurologique [pas de déficit focal]",
+            "ROT [symétriques, normaux]",
+            "Sensibilité [normale]",
+            "Palpation thyroïde [normale]"
+          ],
+          "patientComment": "Pas de signe neurologique focal"
+        },
+        {
+          "id": "e8",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "binaryOnly": false,
+          "details": [
+            "Examen complet orienté complications HTA"
+          ],
+          "scoringRule": "Examen excellent = 2 pts, correct = 1 pt, insuffisant = 0 pt"
+        }
+      ]
+    },
+    "management": {
+      "title": "Prise en charge",
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic principal",
+          "patientComment": "HTA grade 3 non contrôlée avec insuffisance cardiaque congestive NYHA II débutante",
+          "scoringRule": "Diagnostic complet et précis = 2 pts"
+        },
+        {
+          "id": "m2",
+          "text": "Facteurs de décompensation identifiés",
+          "details": [
+            "Observance thérapeutique insuffisante (50%)",
+            "Prise d'AINS (interaction médicamenteuse)",
+            "Augmentation consommation sel",
+            "Stress psychosocial majeur (mari hospitalisé)",
+            "Prise de poids récente",
+            "Réduction activité physique",
+            "Bithérapie insuffisante"
+          ],
+          "patientComment": "Multiples facteurs modifiables identifiés",
+          "scoringRule": "≥5 facteurs = 2 pts, 3-4 = 1 pt"
+        },
+        {
+          "id": "m3",
+          "text": "Examens complémentaires urgents",
+          "details": [
+            "ECG 12 dérivations (HVG, troubles rythme)",
+            "Biologie : iono, urée, créat, DFG",
+            "BNP ou NT-proBNP",
+            "NFS, bilan hépatique",
+            "TSH, glycémie à jeun",
+            "Bilan lipidique complet",
+            "Bandelette urinaire + ratio albumine/créat",
+            "Rx thorax (cardiomégalie, OAP)"
+          ],
+          "patientComment": "Bilan complet HTA compliquée + IC",
+          "scoringRule": "≥7 examens = 2 pts, 5-6 = 1 pt"
+        },
+        {
+          "id": "m4",
+          "text": "Examens d'imagerie et explorations",
+          "details": [
+            "Échocardiographie dans la semaine",
+            "MAPA si doute sur HTA blouse blanche",
+            "Fond d'œil en urgence relative",
+            "Écho-Doppler rénal si suspicion",
+            "Polysomnographie si SAOS suspecté"
+          ],
+          "patientComment": "Échocardiographie prioritaire pour évaluer FE"
+        },
+        {
+          "id": "m5",
+          "text": "Adaptation thérapeutique immédiate",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Optimisation antihypertensive",
+                "content": "• Ramipril : augmenter à 10 mg × 2/j (matin et soir)\n• Ajouter Amlodipine 5 mg le soir (IC calcique)\n• Remplacer HCT par Furosémide 40 mg matin (œdèmes)\n• Si K+ < 4 : ajouter Spironolactone 25 mg\n• Arrêt immédiat et définitif des AINS\n• Alternative antalgique : Paracétamol"
+              },
+              {
+                "title": "Mesures associées urgentes",
+                "content": "• Restriction sodée stricte < 3g/jour\n• Restriction hydrique à 1,5L/jour\n• Pesée quotidienne le matin\n• Surélévation jambes le soir\n• Bas de contention si tolérés\n• Position semi-assise pour dormir"
+              },
+              {
+                "title": "Si échec à 48-72h",
+                "content": "• Hospitalisation pour équilibration\n• Perfusion diurétiques IV\n• Monitoring tensionnel continu\n• Bilan étiologique complet\n• Ajustement sous surveillance"
+              }
+            ]
+          },
+          "scoringRule": "Plan thérapeutique complet et adapté = 2 pts"
+        },
+        {
+          "id": "m6",
+          "text": "Éducation thérapeutique renforcée",
+          "details": [
+            "Utilisation pilulier hebdomadaire",
+            "Alarmes téléphone pour médicaments",
+            "Carnet automesure TA (matin/soir)",
+            "Technique correcte automesure",
+            "Signes d'alarme IC (prise poids > 2kg/3j)",
+            "Importance observance 100%",
+            "Effets secondaires à surveiller",
+            "Ne jamais arrêter brutalement"
+          ],
+          "patientComment": "Programme éducation structuré indispensable",
+          "scoringRule": "≥6 mesures éducatives = 2 pts"
+        },
+        {
+          "id": "m7",
+          "text": "Modifications du mode de vie",
+          "details": [
+            "Consultation diététicienne (régime sans sel)",
+            "Liste aliments interdits/autorisés",
+            "Suppression salière à table",
+            "Éviter plats préparés industriels",
+            "Perte de poids progressive (-5kg)",
+            "Marche 20 min/jour minimum",
+            "Réduction alcool à 1 verre/jour max",
+            "Techniques relaxation (cohérence cardiaque)"
+          ],
+          "patientComment": "Plan personnalisé avec objectifs réalistes",
+          "scoringRule": "≥6 modifications = 2 pts"
+        },
+        {
+          "id": "m8",
+          "text": "Critères d'hospitalisation",
+          "details": [
+            "TA > 180/110 persistante malgré traitement",
+            "Signes IC aiguë (orthopnée, OMI majeurs)",
+            "Créatinine augmentée > 30%",
+            "Hyperkaliémie > 5.5 mmol/L",
+            "Suspicion urgence hypertensive",
+            "Compliance impossible en ambulatoire"
+          ],
+          "patientComment": "Surveillance étroite, hospitalisation si aggravation"
+        },
+        {
+          "id": "m9",
+          "text": "Plan de suivi rapproché",
+          "details": [
+            "Contrôle à 48-72h (TA, poids, iono)",
+            "Puis 1×/semaine × 1 mois",
+            "Ajustement doses selon TA et tolérance",
+            "Cardiologue dans les 15 jours",
+            "Néphrologue si DFG < 60",
+            "IDE à domicile pour éducation",
+            "Pharmacien pour conciliation"
+          ],
+          "patientComment": "Suivi multidisciplinaire coordonné",
+          "scoringRule": "≥5 éléments de suivi = 2 pts"
+        },
+        {
+          "id": "m10",
+          "text": "Support psychosocial",
+          "details": [
+            "Évaluer charge aidant (mari malade)",
+            "Aide-ménagère si besoin",
+            "Portage repas sans sel",
+            "Groupe de soutien HTA",
+            "Assistante sociale si difficultés",
+            "Implication médecin traitant"
+          ],
+          "patientComment": "Approche globale indispensable"
+        },
+        {
+          "id": "m11",
+          "text": "Évaluation globale de la prise en charge",
+          "binaryOnly": false,
+          "details": [
+            "PEC complète HTA sévère avec complications"
+          ],
+          "scoringRule": "PEC excellente = 2 pts, correcte = 1 pt, insuffisante = 0 pt"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,299 @@
+{
+  "title": "Céphalées II",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Monsieur Immrich, 67 ans, consultant pour céphalées sévères depuis hier"
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction et tâche",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Question d'entrée ouverte - Symptôme principal",
+          "patientComment": "céphalées sévères depuis hier",
+          "binaryOnly": true
+        },
+        {
+          "id": "a3",
+          "text": "Caractéristiques des céphalées",
+          "details": [
+            "Début brutal ou progressif",
+            "Localisation (diffuse, frontale, occipitale)",
+            "Intensité (échelle 1-10)",
+            "Qualité (pulsatile, constante, en étau)"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Facteurs aggravants et améliorants",
+          "details": [
+            "Mouvement de la tête",
+            "Lumière (photophobie)",
+            "Bruit (phonophobie)",
+            "Position allongée"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Symptômes associés neurologiques",
+          "details": [
+            "Nausées et vomissements",
+            "Troubles visuels",
+            "Troubles de la parole",
+            "Faiblesse motrice"
+          ]
+        },
+        {
+          "id": "a6",
+          "text": "Signes méningés",
+          "details": [
+            "Raideur nucale",
+            "Photophobie",
+            "Phonophobie",
+            "Position en chien de fusil"
+          ]
+        },
+        {
+          "id": "a7",
+          "text": "Symptômes infectieux",
+          "details": [
+            "Fièvre",
+            "Frissons",
+            "Malaise général",
+            "Éruption cutanée"
+          ]
+        },
+        {
+          "id": "a8",
+          "text": "Antécédents de céphalées",
+          "details": [
+            "Migraines antérieures",
+            "Céphalées de tension",
+            "Traitement habituel",
+            "Fréquence habituelle"
+          ]
+        },
+        {
+          "id": "a9",
+          "text": "Facteurs de risque",
+          "details": [
+            "Traumatisme crânien récent",
+            "Chirurgie neurochirurgicale",
+            "Infection ORL récente",
+            "Immunosuppression"
+          ]
+        },
+        {
+          "id": "a10",
+          "text": "Antécédents médicaux",
+          "details": [
+            "Hypertension artérielle",
+            "Diabète",
+            "Maladies cardiovasculaires",
+            "Cancers"
+          ]
+        },
+        {
+          "id": "a11",
+          "text": "Médicaments actuels",
+          "details": [
+            "Anticoagulants",
+            "Antiagrégants",
+            "Antihypertenseurs",
+            "Analgésiques pris"
+          ]
+        },
+        {
+          "id": "a12",
+          "text": "Anamnèse familiale",
+          "details": [
+            "Migraines familiales",
+            "AVC familiaux",
+            "Anévrismes",
+            "Maladies héréditaires"
+          ]
+        },
+        {
+          "id": "a13",
+          "text": "Anamnèse sociale",
+          "details": [
+            "Profession",
+            "Stress récent",
+            "Voyages récents",
+            "Contact avec personnes malades"
+          ]
+        },
+        {
+          "id": "a14",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "binaryOnly": false,
+          "details": [
+            "Anamnèse générale ciblée et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Examen général",
+          "details": [
+            "État général",
+            "Température",
+            "Pression artérielle",
+            "Fréquence cardiaque"
+          ]
+        },
+        {
+          "id": "e2",
+          "text": "Signes méningés",
+          "details": [
+            "Signe de Brudzinski (positif)",
+            "Signe de Kernig",
+            "Raideur nucale",
+            "Signe de Lasègue"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Examen neurologique",
+          "details": [
+            "État de conscience (Glasgow)",
+            "Fonctions supérieures",
+            "Nerfs crâniens",
+            "Déficits moteurs/sensitifs"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Examen ophtalmologique",
+          "details": [
+            "Fond d'œil",
+            "Œdème papillaire",
+            "Photophobie",
+            "Mouvements oculaires"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Recherche d'infection",
+          "details": [
+            "Examen ORL",
+            "Auscultation pulmonaire",
+            "Recherche de purpura",
+            "Adénopathies"
+          ]
+        },
+        {
+          "id": "e6",
+          "text": "Examen cutané",
+          "details": [
+            "Éruption pétéchiale",
+            "Purpura",
+            "Lésions d'herpès",
+            "Morsures de tiques"
+          ]
+        },
+        {
+          "id": "e7",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "binaryOnly": false,
+          "details": [
+            "Status général ciblé et bien conduit"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic de suspicion",
+          "patientComment": "Méningite virale suspectée"
+        },
+        {
+          "id": "m2",
+          "text": "Diagnostics différentiels",
+          "details": [
+            "Méningite bactérienne",
+            "Hémorragie méningée",
+            "Hypertension intracrânienne",
+            "Encéphalite",
+            "Migraine sévère avec aura"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Examens complémentaires urgents",
+          "details": [
+            "TDM cérébrale sans injection",
+            "Ponction lombaire",
+            "Laboratoire (NFS, CRP, hémocultures)",
+            "Ionogramme, glycémie"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Analyse du LCR",
+          "details": [
+            "Aspect (clair, trouble, hémorragique)",
+            "Cytologie (lymphocytes, polynucléaires)",
+            "Protéinorachie",
+            "Glycorachie",
+            "Culture et PCR"
+          ]
+        },
+        {
+          "id": "m5",
+          "text": "Traitement d'urgence",
+          "details": [
+            "Hospitalisation immédiate",
+            "Antibiothérapie empirique (si doute bactérien)",
+            "Antiviral (Aciclovir si suspicion herpétique)",
+            "Traitement symptomatique"
+          ]
+        },
+        {
+          "id": "m6",
+          "text": "Surveillance et suivi",
+          "details": [
+            "Surveillance neurologique",
+            "Contrôle des signes vitaux",
+            "Réévaluation clinique",
+            "Adaptation thérapeutique selon résultats"
+          ]
+        },
+        {
+          "id": "m7",
+          "text": "Prévention et déclaration",
+          "details": [
+            "Isolement si nécessaire",
+            "Antibioprophylaxie des contacts",
+            "Déclaration obligatoire",
+            "Information des proches"
+          ]
+        },
+        {
+          "id": "m8",
+          "text": "Évaluation globale de la qualité de la prise en charge",
+          "binaryOnly": false,
+          "details": [
+            "Prise en charge générale cohérente et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    }
+  }
+}

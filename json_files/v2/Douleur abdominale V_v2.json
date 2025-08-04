@@ -1,0 +1,282 @@
+{
+  "title": "Douleur abdominale V",
+  "context": {
+    "setting": "Service médical",
+    "patient": "Homme de 21 ans se présente avec des douleurs abdominales et de la diarrhée.",
+    "vitals": {
+      "ta": "116/75 mmHg",
+      "fc": "75 bpm",
+      "fr": "15/min",
+      "temperature": "37.5°C"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction et tâche",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Identification des symptômes principaux",
+          "binaryOnly": true,
+          "patientComment": "Douleurs abdominales et diarrhée"
+        },
+        {
+          "id": "a3",
+          "text": "Début des symptômes",
+          "patientComment": "Maintenant depuis plus d'une semaine !"
+        },
+        {
+          "id": "a4",
+          "text": "Localisation",
+          "patientComment": "Dans la région abdominale inférieure"
+        },
+        {
+          "id": "a5",
+          "text": "Migration de la douleur",
+          "patientComment": "Toujours au même endroit"
+        },
+        {
+          "id": "a6",
+          "text": "Irradiation",
+          "patientComment": "Non"
+        },
+        {
+          "id": "a7",
+          "text": "Mode de début",
+          "patientComment": "Depuis quelques jours malaise, puis douleurs et diarrhée"
+        },
+        {
+          "id": "a8",
+          "text": "Fréquence et périodicité",
+          "patientComment": "Légèrement ondulant"
+        },
+        {
+          "id": "a9",
+          "text": "Intensité",
+          "patientComment": "4-5/10"
+        },
+        {
+          "id": "a10",
+          "text": "Caractère de la douleur",
+          "patientComment": "Sourde, parfois aussi crampoïde"
+        },
+        {
+          "id": "a11",
+          "text": "Facteurs aggravants ou soulageants",
+          "patientComment": "Crampes généralement meilleures après défécation"
+        },
+        {
+          "id": "a12",
+          "text": "Douleurs liées à l'alimentation",
+          "patientComment": "Non"
+        },
+        {
+          "id": "a13",
+          "text": "Symptômes extra-intestinaux",
+          "details": [
+            "Aphtes [Non]",
+            "Inflammation oculaire [Non]",
+            "Troubles articulaires [Non]"
+          ]
+        },
+        {
+          "id": "a14",
+          "text": "Symptômes généraux",
+          "details": [
+            "Fièvre [Légère sensation grippale]",
+            "Perte de poids [-2 kg ces dernières semaines]",
+            "Sueurs nocturnes [Non]"
+          ]
+        },
+        {
+          "id": "a15",
+          "text": "Symptômes digestifs",
+          "details": [
+            "Transit intestinal et gaz [Présents]",
+            "Nausées/Vomissements [Non]",
+            "Sang dans les vomissements [Non]",
+            "Diarrhée [Oui]",
+            "Aspect des selles [Muqueuses et sanglantes]",
+            "Constipation [Non]"
+          ]
+        },
+        {
+          "id": "a16",
+          "text": "Antécédent de chirurgie abdominale",
+          "patientComment": "Non"
+        },
+        {
+          "id": "a17",
+          "text": "Anamnèse de voyage",
+          "patientComment": "Il y a 2 semaines en Égypte"
+        },
+        {
+          "id": "a18",
+          "text": "Anamnèse de l'entourage",
+          "patientComment": "Sans particularité"
+        },
+        {
+          "id": "a19",
+          "text": "Anamnèse personnelle",
+          "patientComment": "Sans particularité"
+        },
+        {
+          "id": "a20",
+          "text": "Consommation de substances",
+          "patientComment": "3 cigarettes par jour, alcool le week-end, pas de drogues"
+        },
+        {
+          "id": "a21",
+          "text": "Médication actuelle",
+          "patientComment": "Aucune"
+        },
+        {
+          "id": "a22",
+          "text": "Allergies",
+          "patientComment": "Non"
+        },
+        {
+          "id": "a23",
+          "text": "Anamnèse sociale",
+          "patientComment": "Vendeur"
+        },
+        {
+          "id": "a24",
+          "text": "Anamnèse familiale",
+          "patientComment": "Sans particularité"
+        },
+        {
+          "id": "a25",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "binaryOnly": false,
+          "details": [
+            "Anamnèse complète et ciblée sur la pathologie digestive inflammatoire"
+          ],
+          "scoringRule": "Bien = 2 pts, suffisant = 1 pt, insuffisant = 0 pt"
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Inspection",
+          "details": [
+            "Teint [Normal]",
+            "Cavité buccale [Normale]",
+            "Peau [Normale]"
+          ]
+        },
+        {
+          "id": "e2",
+          "text": "Auscultation abdominale",
+          "patientComment": "Bruits intestinaux actifs"
+        },
+        {
+          "id": "e3",
+          "text": "Palpation abdominale",
+          "patientComment": "Sensibilité diffuse dans le bas-ventre, prédominance à gauche, pas de douleur au relâchement"
+        },
+        {
+          "id": "e4",
+          "text": "Signes péritonéaux",
+          "patientComment": "Normaux"
+        },
+        {
+          "id": "e5",
+          "text": "Toucher rectal avec inspection de l'anus",
+          "patientComment": "Douloureux"
+        },
+        {
+          "id": "e6",
+          "text": "Palpation des ganglions lymphatiques",
+          "patientComment": "Normal"
+        },
+        {
+          "id": "e7",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "binaryOnly": false,
+          "details": [
+            "Examen abdominal complet avec toucher rectal approprié"
+          ],
+          "scoringRule": "Bien = 2 pts, suffisant = 1 pt, insuffisant = 0 pt"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic suspecté",
+          "details": [
+            "Colite ulcéreuse (diagnostic primaire)"
+          ]
+        },
+        {
+          "id": "m2",
+          "text": "Diagnostics différentiels",
+          "scoringRule": "Au moins 2-3 diagnostics différentiels",
+          "ddSection": {
+            "categories": [
+              {
+                "name": "Diagnostics différentiels à considérer",
+                "items": [
+                  "Gastro-entérite",
+                  "Colite infectieuse",
+                  "Appendicite",
+                  "Maladie de Crohn"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m3",
+          "text": "Examens diagnostiques",
+          "details": [
+            "Analyses sanguines [FSC, CRP, VS, Gamma-GT/phosphatases alcalines pour exclure CSP]",
+            "Examen bactériologique des selles",
+            "Échographie abdominale",
+            "Iléo-coloscopie avec biopsies"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Prise en charge thérapeutique",
+          "details": [
+            "Conseils nutritionnels pour prévenir les carences",
+            "Induction de rémission [5-aminosalicylates, corticostéroïdes]",
+            "Maintien de rémission [5-ASA au long cours, éventuellement azathioprine]",
+            "Coloscopies de contrôle régulières [Intervalle selon l'étendue de la maladie]"
+          ]
+        },
+        {
+          "id": "m5",
+          "text": "Information sur les complications",
+          "details": [
+            "Mégacôlon toxique",
+            "Perforation",
+            "Hémorragie sévère",
+            "Cancer du côlon"
+          ]
+        },
+        {
+          "id": "m6",
+          "text": "Évaluation globale de la qualité de la prise en charge",
+          "binaryOnly": false,
+          "details": [
+            "Prise en charge complète avec stratégie thérapeutique adaptée et suivi au long cours"
+          ],
+          "scoringRule": "Bien = 2 pts, suffisant = 1 pt, insuffisant = 0 pt"
+        }
+      ]
+    }
+  }
+}

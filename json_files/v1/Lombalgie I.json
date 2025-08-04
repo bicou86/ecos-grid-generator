@@ -1,0 +1,271 @@
+{
+  "title": "Lombalgie I",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Mme Huber, 61 ans, consulte pour des douleurs dorsales"
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction et objectif",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Symptôme principal",
+          "binaryOnly": false,
+          "details": [
+            "Douleurs dorsales"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Début et durée",
+          "binaryOnly": false,
+          "details": [
+            "[Soudainement depuis 3 jours]",
+            "[Sans facteur déclenchant]"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Caractéristiques de la douleur",
+          "binaryOnly": false,
+          "details": [
+            "[Douleur pressante]",
+            "[EVA 6]",
+            "[Pas d'irradiation]"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Facteurs d'amélioration/aggravation",
+          "binaryOnly": false,
+          "details": [
+            "[Mieux en position assise tranquille ou couchée]",
+            "[Pire quand on se met debout]"
+          ]
+        },
+        {
+          "id": "a6",
+          "text": "Recherche de red flags",
+          "binaryOnly": false,
+          "details": [
+            "Infection [non]",
+            "Syndrome de la queue de cheval [non]",
+            "Symptômes neurologiques [non]",
+            "Symptômes B [non]"
+          ]
+        },
+        {
+          "id": "a7",
+          "text": "Autres symptômes",
+          "binaryOnly": false,
+          "details": [
+            "[Sinon aucun symptôme]"
+          ]
+        },
+        {
+          "id": "a8",
+          "text": "Substances toxiques",
+          "binaryOnly": false,
+          "details": [
+            "Alcool [à préciser]",
+            "[Tabac: 2 paquets par jour depuis 40 ans]",
+            "Drogues [non]"
+          ]
+        },
+        {
+          "id": "a9",
+          "text": "Symptômes B",
+          "binaryOnly": false,
+          "details": [
+            "[Aucun]"
+          ]
+        },
+        {
+          "id": "a10",
+          "text": "Allergies",
+          "binaryOnly": false,
+          "details": [
+            "[Guêpe]"
+          ]
+        },
+        {
+          "id": "a11",
+          "text": "Médicaments",
+          "binaryOnly": false
+        },
+        {
+          "id": "a12",
+          "text": "Antécédents médicaux",
+          "binaryOnly": false,
+          "details": [
+            "[Cancer du sein il y a 5 ans, traité de façon curative]"
+          ]
+        },
+        {
+          "id": "a13",
+          "text": "Interventions chirurgicales",
+          "binaryOnly": false,
+          "details": [
+            "[Mastectomie pour cancer du sein]"
+          ]
+        },
+        {
+          "id": "a14",
+          "text": "Ménopause",
+          "binaryOnly": false,
+          "details": [
+            "[À 45 ans]"
+          ]
+        },
+        {
+          "id": "a15",
+          "text": "Antécédents familiaux et anamnèse sociale",
+          "binaryOnly": false,
+          "details": [
+            "[Sans particularité]"
+          ]
+        },
+        {
+          "id": "a16",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "binaryOnly": false,
+          "details": [
+            "Anamnèse générale ciblée et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Inspection",
+          "binaryOnly": false,
+          "details": [
+            "[Normal]"
+          ]
+        },
+        {
+          "id": "e2",
+          "text": "Examen du dos",
+          "binaryOnly": false,
+          "details": [
+            "[Douleur à la percussion au niveau de L3]"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Mobilité",
+          "binaryOnly": false,
+          "details": [
+            "[Conservée (douleurs lors des mouvements)]"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Douleur de compression axiale",
+          "binaryOnly": true
+        },
+        {
+          "id": "e5",
+          "text": "Examen neurologique",
+          "binaryOnly": false,
+          "details": [
+            "Sensibilité [normale]",
+            "Motricité [normale]",
+            "Réflexes [normaux]"
+          ]
+        },
+        {
+          "id": "e6",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "binaryOnly": false,
+          "details": [
+            "Status général ciblé et bien conduit"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic principal",
+          "binaryOnly": false,
+          "details": [
+            "Fracture vertébrale pathologique dans le cadre d'une ostéoporose"
+          ]
+        },
+        {
+          "id": "m2",
+          "text": "Diagnostics différentiels",
+          "binaryOnly": false,
+          "details": [
+            "Fracture en général",
+            "Métastase du cancer du sein"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Examens de laboratoire",
+          "binaryOnly": false,
+          "details": [
+            "CRP, VS, FSC (exclusion processus inflammatoire)",
+            "Phosphatases alcalines, Gamma-GT (exclure cause hépatique)",
+            "Calcium et phosphate, vitamine D, TSH",
+            "Créatinine (fonction rénale/ostéopathie rénale)"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Imagerie",
+          "binaryOnly": false,
+          "details": [
+            "Radiographie",
+            "Densitométrie osseuse [pathologique]"
+          ]
+        },
+        {
+          "id": "m5",
+          "text": "Thérapie",
+          "binaryOnly": false,
+          "details": [
+            "Calcium",
+            "Vitamine D3",
+            "Réduction du risque de chute",
+            "Bisphosphonates (indiqués en cas de fracture pathologique)"
+          ]
+        },
+        {
+          "id": "m6",
+          "text": "Évaluation globale de la qualité de la prise en charge",
+          "binaryOnly": false,
+          "details": [
+            "Prise en charge générale cohérente et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "images": [
+      {
+        "id": "annexe1",
+        "data": "grilles_generees/images/lombalgie-i-img.jpg",
+        "title": "Radiographie lombaire",
+        "description": "Radiographie de la colonne lombaire en incidence latérale"
+      }
+    ]
+  }
+}

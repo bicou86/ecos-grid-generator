@@ -1,0 +1,2480 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perte de vision - Grille ECOS</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background-color: #f5f5f5; }
+        .container { max-width: 1200px; margin: 0 auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); }
+        .header { background: #2c5aa0; color: white; padding: 15px; margin: -20px -20px 20px -20px; border-radius: 8px 8px 0 0; }
+        .section { margin-bottom: 30px; border: 2px solid #ddd; border-radius: 8px; overflow: hidden; background-color: #ffffff; }
+        .section-header { background: #f8f9fa; padding: 15px; font-weight: bold; font-size: 18px; border-bottom: 1px solid #ddd; display: flex; justify-content: space-between; align-items: center; }
+        .section-content { padding: 15px; background-color: #ffffff; }
+        .header-row { display: grid; grid-template-columns: 2fr 80px 80px 80px 80px; gap: 10px; padding: 10px 0; border-bottom: 2px solid #ddd; font-weight: bold; text-align: center; color: #333333; }
+        .header-row div:first-child { text-align: left; }
+        .criteria-row { display: grid; grid-template-columns: 2fr 80px 80px 80px 80px; gap: 10px; align-items: start; padding: 15px 0; border-bottom: 1px solid #eeeeee; }
+        .criteria-row:last-child { border-bottom: none; }
+        .criteria-text { font-weight: 500; }
+        .sub-criteria { font-size: 0.9em; color: #666; margin-top: 5px; padding-left: 18px; line-height: 1.2; }
+        .patient-response { font-size: 0.9em; color: rgba(44, 90, 160, 0.65); }
+        .checkbox-group { text-align: center; }
+        .points-display { text-align: center; font-weight: bold; color: #2c5aa0; font-size: 18px; }
+        .scoring-rule { font-size: 0.85em; color: #888; font-style: italic; margin-top: 8px; padding-left: 20px; }
+        input[type="radio"] { cursor: pointer; transform: scale(1.2); }
+        input[type="radio"]:disabled { opacity: 0.3; cursor: not-allowed; }
+        
+        /* Styles pour les commentaires discrets */
+        .comment-button { 
+            background: none; 
+            border: none; 
+            color: #2c5aa0; 
+            cursor: pointer; 
+            font-size: 14px; 
+            padding: 2px 6px; 
+            margin-left: 8px; 
+            border-radius: 3px; 
+            opacity: 0.6;
+            transition: all 0.2s;
+        }
+        .comment-button:hover { opacity: 1; background: rgba(44, 90, 160, 0.1); }
+        .comment-button.has-content { opacity: 1; color: #d9534f; }
+        
+        .communication-desc-detail { font-size: 0.8em; color: #666; margin-left: 20px; font-style: normal; }
+        
+        .section-comment-button {
+            background: rgba(44, 90, 160, 0.1);
+            border: 1px solid #2c5aa0;
+            color: #2c5aa0;
+            cursor: pointer;
+            font-size: 12px;
+            padding: 4px 8px;
+            margin-left: 10px;
+            border-radius: 15px;
+            opacity: 0.8;
+            transition: all 0.2s;
+            font-weight: 500;
+        }
+        .section-comment-button:hover { 
+            opacity: 1; 
+            background: rgba(44, 90, 160, 0.2); 
+            transform: scale(1.05);
+        }
+        .section-comment-button.has-content { 
+            background: rgba(220, 53, 69, 0.1);
+            border-color: #d9534f;
+            color: #d9534f; 
+        }
+        
+        .criterion-comment-section { 
+            display: none; 
+            margin: 8px 0 12px 20px; 
+            padding: 10px; 
+            background: #fafafa; 
+            border-left: 3px solid #2c5aa0; 
+            border-radius: 0 4px 4px 0;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        .criterion-comment-section.show { display: block; }
+        
+        .section-comment-section { 
+            display: none;
+            margin: 20px 0; 
+            padding: 12px; 
+            background: #f8f9fa; 
+            border: 1px solid #e9ecef;
+            border-radius: 6px;
+        }
+        .section-comment-section.show { display: block; }
+        .section-comment-section.global { 
+            display: block; 
+            background: #f0f8ff; 
+            border-color: #2c5aa0;
+        }
+        /* La section commentaire global reste toujours visible sauf à l'impression */
+        
+        .comment-textarea { 
+            width: calc(100% - 0px); 
+            min-height: 26px; 
+            padding: 5px; 
+            margin-right: 0px;
+            border: 1px solid #ddd; 
+            border-radius: 3px; 
+            font-family: Arial, sans-serif; 
+            font-size: 12px; 
+            resize: vertical; 
+            font-style: normal;
+            color: #7b3f00;
+            height: 26px;
+        }
+        .section-comment-section .comment-textarea {
+            min-height: 28px;
+            font-size: 14px;
+            height: 28px;
+        }
+        .section-comment-section.global .comment-textarea {
+            min-height: 30px;
+            font-size: 16px;
+            height: 30px;
+        }
+        .comment-textarea:focus { 
+            outline: none; 
+            border-color: #2c5aa0; 
+            box-shadow: 0 0 3px rgba(44, 90, 160, 0.3); 
+        }
+        .comment-textarea::placeholder { 
+            font-style: italic; 
+            color: #999; 
+        }
+        
+        /* Styles pour les lacunes */
+        .lacune-rouge {
+            background-color: #ffebee !important;
+        }
+        .lacune-orange {
+            background-color: #fff3e0 !important;
+        }
+        .lacune-verte {
+            background-color: #e8f5e8 !important;
+        }
+        
+        .score { font-weight: bold; color: hsl(216, 57%, 40%); font-size: 18px; }
+        .total-sections { display: grid; grid-template-columns: 1fr 2fr 1fr; gap: 20px; margin-bottom: 30px; }
+        .total-section { display: flex; flex-direction: column; justify-content: space-between; text-align: center; background: #f0f8ff; border: 1px solid #ddd; border-radius: 8px; transition: all 0.3s; }
+        .total-label { background: #f8f9fa; padding: 5px; font-weight: bold; font-size: 20px; border-bottom: 1px solid #ddd; border-radius: 8px 8px 0 0; }
+        .total-body { flex: 1; display: flex; align-items: center; justify-content: center; padding: 5px; border-radius: 0 0 8px 8px; }
+        .total-pourcent-body { flex: 1; padding: 10px; border-radius: 0 0 8px 8px; }
+        .total-score, .total-note-globale { font-size: 56px; font-weight: bold; line-height: 1; }
+        .total-pourcent-sections { display: flex; flex-wrap: nowrap; gap: 10px; height: 100%; align-items: stretch; }
+        .total-pourcent-section { flex: 1 1 auto; min-width: 0; display: flex; flex-direction: column; text-align: center; background: #416caa; padding: 10px; border-radius: 5px; transition: all 0.3s; border: none; }
+        .total-pourcent-section:last-child { border-right: none; }
+        .total-section-label { color: #eeeeee; font-size: 14px; font-weight: normal; margin-bottom: 5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+        .pourcent-body { flex: 1; display: flex; align-items: center; justify-content: center; }
+        .total-pourcent-value { font-weight: bold; font-size: 28px; line-height: 1; color: white; transition: all 0.3s; }
+        .note-a { background-color: #e6f4ea; color: #2c974b; }
+        .note-a.total-pourcent-section { background-color: #2c974b; }
+        .note-b { background-color: #e9f3fd; color: #4e9cf0; }
+        .note-b.total-pourcent-section { background-color: #4e9cf0; }
+        .note-c { background-color: #fdf5e6; color: #f0ad4e; }
+        .note-c.total-pourcent-section { background-color: #f0ad4e; }
+        .note-d { background-color: #fceee3; color: #e67e22; }
+        .note-d.total-pourcent-section { background-color: #e67e22; }
+        .note-e { background-color: #fbeaea; color: #d9534f; }
+        .note-e.total-pourcent-section { background-color: #d9534f; }
+        .note-neutral { background-color: #f0f8ff; color: #2c5aa0; }
+        .note-neutral.total-pourcent-section { background-color: #6B8BC3; }
+        .note-a.total-pourcent-body { background-color: #e6f4ea; }
+        .note-b.total-pourcent-body { background-color: #e9f3fd; }
+        .note-c.total-pourcent-body { background-color: #fdf5e6; }
+        .note-d.total-pourcent-body { background-color: #fceee3; }
+        .note-e.total-pourcent-body { background-color: #fbeaea; }
+        .note-neutral.total-pourcent-body { background-color: #f0f8ff; }
+        /* Styles pour les sections avec coloration selon le score */
+        .section.note-a { border-color: #2c974b; }
+        .section.note-a .section-header { background-color: #e6f4ea; color: #2c974b; }
+        .section.note-b { border-color: #4e9cf0; }
+        .section.note-b .section-header { background-color: #e9f3fd; color: #4e9cf0; }
+        .section.note-c { border-color: #f0ad4e; }
+        .section.note-c .section-header { background-color: #fdf5e6; color: #f0ad4e; }
+        .section.note-d { border-color: #e67e22; }
+        .section.note-d .section-header { background-color: #fceee3; color: #e67e22; }
+        .section.note-e { border-color: #d9534f; }
+        .section.note-e .section-header { background-color: #fbeaea; color: #d9534f; }
+        .section.note-neutral { border-color: #ddd; }
+        .section.note-neutral .section-header { background-color: #f8f9fa; color: #333333; }
+        /* Styles pour les critères individuels */
+        .criteria-row.score-2 { background-color: rgba(44, 151, 75, 0.1); }
+        .criteria-row.score-2 .criteria-text { color: #2c974b; }
+        .criteria-row.score-1 { background-color: rgba(240, 173, 78, 0.1); }
+        .criteria-row.score-1 .criteria-text { color: #f0ad4e; }
+        .criteria-row.score-0 { background-color: rgba(217, 83, 79, 0.1); }
+        .criteria-row.score-0 .criteria-text { color: #d9534f; }
+        .criteria-row:not(.score-0):not(.score-1):not(.score-2) .criteria-text { color: #000; }
+        .communication-section.score-a { background-color: rgba(44, 151, 75, 0.1); }
+        .communication-section.score-a .communication-text { color: #2c974b; }
+        .communication-section.score-b { background-color: rgba(78, 156, 240, 0.1); }
+        .communication-section.score-b .communication-text { color: #4e9cf0; }
+        .communication-section.score-c { background-color: rgba(240, 173, 78, 0.1); }
+        .communication-section.score-c .communication-text { color: #f0ad4e; }
+        .communication-section.score-d { background-color: rgba(230, 126, 34, 0.1); }
+        .communication-section.score-d .communication-text { color: #e67e22; }
+        .communication-section.score-e { background-color: rgba(217, 83, 79, 0.1); }
+        .communication-section.score-e .communication-text { color: #d9534f; }
+        .grade-scale { margin-top: 20px; padding: 15px; background: #f8f9fa; border-radius: 8px; }
+        .grade-scale h3 { margin-top: 0; }
+        .grade-row { display: flex; justify-content: space-between; padding: 5px 0; }
+        .missing-items { background: #fff3cd; border: 1px solid #ffeeba; color: #856404; padding: 15px; border-radius: 8px; margin-top: 20px; }
+        .missing-items h3 { margin-top: 0; }
+        .missing-item { color: #dc3545; font-weight: bold; }
+        .annexes { margin-top: 30px; padding: 20px; background: #f8f9fa; border-radius: 8px; border: 1px solid #ddd; }
+        .annexes h3 { margin-top: 0; color: #2c5aa0; border-bottom: 2px solid #ddd; padding-bottom: 10px; }
+        .annexes-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 20px; margin-top: 20px; }
+        .annexes-grid .annexe-item:only-child { max-width: 50%; margin: 0 auto; }
+        .annexe-item { padding: 15px; background: white; border-radius: 5px; border: 1px solid #e0e0e0; }
+        .annexe-title { font-weight: bold; color: #2c5aa0; margin-bottom: 8px; font-size: 16px; }
+        .annexe-description { color: #666; font-style: italic; margin-bottom: 10px; font-size: 14px; }
+        
+        /* Masquer les titres et descriptions des annexes en mode examen */
+        .exam-mode .annexe-title,
+        .exam-mode .annexe-description {
+            display: none !important;
+        }
+        .annexe-image { text-align: center; margin: 10px 0; }
+        .annexe-image img { max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .annexe-document { background: #f0f8ff; padding: 10px; border-radius: 4px; border-left: 4px solid #2c5aa0; white-space: pre-wrap; font-family: "Courier New", monospace; font-size: 13px; }
+        .communication-section { display: grid; grid-template-columns: 2fr 80px 80px 80px 80px 80px; gap: 10px; align-items: start; padding: 15px 0 15px 5px; border-bottom: 1px solid #eee; }
+        .communication-text { font-weight: 500; }
+        .communication-desc { font-size: 0.85em; color: #666; margin-top: 5px; font-style: italic; }
+        .scale-header { display: grid; grid-template-columns: 2fr 80px 80px 80px 80px 80px; gap: 10px; font-weight: bold; text-align: center; margin-bottom: 10px; padding-bottom: 10px; border-bottom: 2px solid #ddd; }
+        .scale-header div:first-child { text-align: left; }
+        .vital-signs { margin-top: 10px; margin-bottom: 0px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px; font-size: 0.9em; }
+        .vital-sign { text-align: center; background: #416caa; padding: 10px; border-radius: 5px; }
+        .vital-sign-label { color: #eeeeee; }
+        .vital-sign-value { color: rgb(255, 255, 255); margin-top: 2px; }
+        .dd-section { background: #f0f8ff; padding: 15px; margin: 0 0 10px 0; border-radius: 5px; }
+        .dd-title { font-weight: bold; margin-bottom: 10px; color: #2c5aa0; }
+        .dd-category { margin: 10px 0; font-weight: bold; color: #2c5aa0; }
+        .dd-item { margin-left: 20px; margin-bottom: 5px; font-weight: normal; color: #000; }
+        .dd-test { color: #666; font-style: italic; margin-left: 10px; }
+        .therapy-section { background: #f8f9fa; padding: 10px; margin: 5px 0; border-radius: 5px; }
+        .therapy-title { font-weight: bold; margin-bottom: 5px; }
+        .redflags-section { background: #fff5f5; padding: 12px; margin: 8px 0; border-radius: 5px; border-left: 4px solid #dc3545; }
+        .redflags-title { font-weight: bold; margin-bottom: 8px; color: #dc3545; font-size: 1.1em; }
+        .redflags-item { margin: 6px 0; padding-left: 22px; }
+        .redflags-text { font-weight: 600; color: #dc3545; margin-bottom: 3px; }
+        .redflags-description { color: #666; font-size: 0.9em; margin-left: 20px; font-style: italic; }
+        
+        /* MINUTEUR */
+        .timer-container {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background: rgba(255, 255, 255, 0.75);
+            border: 3px solid #2c5aa0;
+            border-radius: 15px;
+            padding: 8px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+            z-index: 1000;
+            text-align: center;
+            min-width: 200px;
+            backdrop-filter: blur(1px);
+        }
+        .timer-display {
+            font-size: 40px;
+            font-weight: bold;
+            color: #2c5aa0;
+            margin-bottom: 15px;
+            font-family: 'Courier New', monospace;
+        }
+        .timer-controls {
+            display: flex;
+            gap: 8px;
+            justify-content: center;
+        }
+        .timer-btn {
+            padding: 6px 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s;
+            font-size: 12px;
+        }
+        .start-btn {
+            background: #28a745;
+            color: white;
+        }
+        .start-btn:hover {
+            background: #218838;
+        }
+        .stop-btn {
+            background: #dc3545;
+            color: white;
+        }
+        .stop-btn:hover {
+            background: #c82333;
+        }
+        .reset-btn {
+            background: #6c757d;
+            color: white;
+        }
+        .reset-btn:hover {
+            background: #5a6268;
+        }
+        .timer-btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+        .timer-btn:disabled:hover {
+            background: #6c757d;
+        }
+        .timer-status {
+            margin-top: 10px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .status-waiting { color: #6c757d; }
+        .status-running { color: #28a745; }
+        .status-warning { color: #ffc107; }
+        .status-finished { color: #dc3545; }
+        
+        /* ANIMATIONS MINUTEUR */
+        .timer-warning {
+            animation: pulse-warning 1s infinite;
+        }
+        .timer-critical {
+            animation: pulse-critical 0.5s infinite;
+        }
+        .timer-finished {
+            border-color: #dc3545;
+            background: rgba(220, 53, 69, 0.1);
+        }
+        @keyframes pulse-warning {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        @keyframes pulse-critical {
+            0%, 100% { transform: scale(1); border-color: #dc3545; }
+            50% { transform: scale(1.1); border-color: #ff0000; }
+        }
+        
+        /* COLORATION POST-MINUTEUR */
+        .criteria-zero-points {
+            background-color: rgba(251, 234, 234, 0.6) !important;
+        }
+        .criteria-one-point {
+            background-color: rgba(253, 245, 230, 0.6) !important;
+        }
+        .criteria-full-points {
+            background-color: rgba(230, 244, 234, 0.6) !important;
+        }
+        .criteria-not-answered {
+            background-color: rgba(240, 248, 255, 0.6) !important;
+        }
+        
+        /* COLORATION COMMUNICATION */
+        .communication-note-a {
+            background-color: rgba(230, 244, 234, 0.6) !important;
+        }
+        .communication-note-b {
+            background-color: rgba(233, 243, 253, 0.6) !important;
+        }
+        .communication-note-c {
+            background-color: rgba(253, 245, 230, 0.6) !important;
+        }
+        .communication-note-d {
+            background-color: rgba(252, 238, 227, 0.6) !important;
+        }
+        .communication-note-e {
+            background-color: rgba(251, 234, 234, 0.6) !important;
+        }
+        .communication-not-answered {
+            background-color: rgba(240, 248, 255, 0.6) !important;
+        }
+        
+        .print-button { position: fixed; bottom: 20px; right: 20px; background: #2c5aa0; color: white; border: none; padding: 15px 20px; border-radius: 50px; cursor: pointer; font-size: 16px; box-shadow: 0 4px 12px rgba(44, 90, 160, 0.3); z-index: 1000; }
+        .print-button:hover { background: #1e3f70; }
+        
+        /* MODE SELECTOR */
+        .mode-selector {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: white;
+            border: 2px solid #2c5aa0;
+            border-radius: 30px;
+            padding: 5px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            z-index: 1001;
+            display: flex;
+            gap: 5px;
+        }
+        .mode-button {
+            padding: 8px 16px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: 500;
+            transition: all 0.3s;
+            background: transparent;
+            color: #2c5aa0;
+        }
+        .mode-button.active {
+            background: #2c5aa0;
+            color: white;
+        }
+        .mode-button:hover:not(.active) {
+            background: #e8f0fe;
+        }
+        
+        /* Mode-specific hiding */
+        .revision-mode .timer-container {
+            display: none !important;
+        }
+        .exam-mode .revision-controls {
+            display: none !important;
+        }
+        
+        /* Revision controls */
+        .revision-controls {
+            position: fixed;
+            top: 70px;
+            right: 20px;
+            background: white;
+            border: 2px solid #4CAF50;
+            border-radius: 30px;
+            padding: 5px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            display: flex;
+            gap: 5px;
+            z-index: 1000;
+        }
+        .lacune-button {
+            background: transparent;
+            color: #4CAF50;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+        .lacune-button:hover {
+            background: #4CAF50;
+            color: white;
+        }
+        .reset-revision-button {
+            background: transparent;
+            color: #6c757d;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+        .reset-revision-button:hover {
+            background: #6c757d;
+            color: white;
+        }
+
+        @media print {
+            .mode-selector {
+                display: none !important;
+            }
+            .revision-controls {
+                display: none !important;
+            }
+            .print-button {
+                display: none;
+            }
+            .timer-container {
+                display: none !important;
+            }
+            /* Supprimer les bordures gauches à l'impression */
+            .criteria-row { border-left: none !important; }
+            .communication-section { border-left: none !important; }
+            .lacune-rouge { border-left: none !important; }
+            .lacune-orange { border-left: none !important; }
+            .lacune-verte { border-left: none !important; }
+            /* Optimiser les marges et la mise en page */
+            @page {
+                size: A4;
+                margin: 10mm 9mm 10mm 10mm;
+            }
+            body {
+                margin: 0;
+                background: white;
+                font-size: 10pt;
+            }
+            .container {
+                max-width: 100%;
+                margin: 0;
+                box-shadow: none;
+                padding: 0;
+                border-radius: 8px;
+            }
+            .header {
+                margin: 0;
+                padding: 6px;
+                border-radius: 8px;
+                page-break-inside: avoid;
+                margin-bottom: 8px;
+            }
+            .header h1 {
+                margin: 5px 0;
+                font-size: 20px;
+            }
+            .header p {
+                margin: 3px 0;
+            }
+            .section {
+                page-break-inside: avoid;
+                margin-bottom: 8px;
+            }
+            .section-header {
+                font-size: 15px;
+                padding: 6px;
+            }
+            .section-content {
+                padding: 6px;
+            }
+            /* Ajuster la grille pour mieux utiliser l'espace */
+            .header-row,
+            .criteria-row {
+                grid-template-columns: 1fr 40px 40px 40px 65px;
+                gap: 3px;
+            }
+            .communication-section,
+            .scale-header {
+                grid-template-columns: 1fr 50px 50px 50px 50px 50px;
+                gap: 3px;
+            }
+            /* Réduire la taille des polices pour certains éléments */
+            .criteria-text,
+            .communication-text {
+                font-size: 9.5pt;
+            }
+            .sub-criteria,
+            .patient-response {
+                font-size: 8.5pt;
+            }
+            .communication-desc {
+                font-size: 8.5pt;
+                margin-top: 2px;
+            }
+            .scoring-rule {
+                font-size: 8pt;
+                margin-top: 4px;
+                padding-left: 18px;
+            }
+            .points-display {
+                font-size: 14px;
+            }
+            /* Optimiser les sections de totaux */
+            .total-sections {
+                gap: 6px;
+                margin-bottom: 6px;
+            }
+            .total-label {
+                padding: 4px;
+                font-size: 16px;
+                border-radius: 8px 8px 0 0;
+            }
+            .total-body {
+                padding: 3px;
+                border-radius: 0 0 8px 8px;
+            }
+            .total-score,
+            .total-note-globale {
+                font-size: 32px;
+            }
+            /* ADAPTATION DES BLOCS DE POURCENTAGES */
+            .total-pourcent-body {
+                padding: 6px;
+                border-radius: 0 0 8px 8px;
+            }
+            .total-pourcent-sections {
+                display: flex;
+                flex-wrap: nowrap;
+                gap: 4px;
+                align-items: stretch;
+            }
+            .total-pourcent-section {
+                flex: 0 0 auto;
+                min-width: 60px;
+                padding: 6px 8px;
+                white-space: nowrap;
+            }
+            .total-section-label {
+                font-size: 11px;
+                margin-bottom: 3px;
+                white-space: nowrap;
+            }
+            .total-pourcent-value {
+                font-size: 20px;
+            }
+            .pourcent-body {
+                padding: 2px 0;
+            }
+            /* S'assurer que les sections importantes ne sont pas coupées */
+            .total-sections,
+            .grade-scale,
+            .missing-items {
+                page-break-inside: avoid;
+            }
+            /* Réduire l'espacement général */
+            .criteria-row,
+            .communication-section {
+                padding: 4px 0;
+            }
+            .header-row,
+            .scale-header {
+                padding: 4px 0;
+                margin-bottom: 6px;
+            }
+            /* Réduire l'espacement des signes vitaux */
+            .vital-signs {
+                gap: 8px;
+                margin-top: 6px;
+            }
+            .vital-sign {
+                padding: 6px;
+                font-size: 0.85em;
+            }
+            /* Optimiser les DD sections */
+            .dd-section {
+                padding: 10px;
+                margin: 0 0 6px 0;
+            }
+            .dd-title {
+                margin-bottom: 6px;
+                font-size: 11pt;
+            }
+            .dd-category {
+                margin: 6px 0;
+                font-size: 10pt;
+            }
+            .dd-item {
+                margin-bottom: 3px;
+                margin-left: 18px;
+                font-size: 9pt;
+                line-height: 1.2;
+            }
+            .dd-test {
+                font-size: 8.5pt;
+                margin-left: 8px;
+            }
+            /* Optimiser les therapy sections */
+            .therapy-section {
+                padding: 6px;
+                margin: 3px 0;
+            }
+            .therapy-title {
+                margin-bottom: 3px;
+                font-size: 9.5pt;
+            }
+            /* Optimiser les redflags sections */
+            .redflags-section {
+                padding: 8px;
+                margin: 4px 0;
+            }
+            .redflags-title {
+                margin-bottom: 4px;
+                font-size: 10pt;
+            }
+            .redflags-text {
+                font-size: 9pt;
+            }
+            .redflags-description {
+                font-size: 8.5pt;
+                margin-left: 15px;
+            }
+            /* Réduire les marges de l'échelle de notation */
+            .grade-scale {
+                margin-top: 10px;
+                padding: 10px;
+            }
+            .grade-scale h3 {
+                margin: 0 0 5px 0;
+                font-size: 14px;
+            }
+            .grade-row {
+                padding: 3px 0;
+            }
+            /* Forcer le fond blanc partout */
+            * {
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+            }
+            
+            /* SOLUTION : Forcer l'anamnèse à commencer sur la page 1 */
+            
+            /* 1. Le header ne doit jamais être seul */
+            .header {
+                page-break-after: avoid;
+            }
+            
+            /* 2. Permettre au container de se diviser */
+            .container {
+                page-break-inside: auto;
+            }
+            
+            /* 3. Configuration spéciale pour l'anamnèse */
+            .section:first-of-type {
+                page-break-before: avoid !important; /* Jamais de saut avant */
+                page-break-inside: auto !important; /* Peut se diviser */
+            }
+            
+            /* 4. L'en-tête de l'anamnèse doit rester avec ses premiers critères */
+            .section:first-of-type .section-header {
+                page-break-after: avoid !important;
+            }
+            
+            /* 5. Le contenu de l'anamnèse peut se diviser librement */
+            .section:first-of-type .section-content {
+                page-break-inside: auto !important;
+            }
+            
+            /* 6. Mais chaque critère individuel reste intact */
+            .criteria-row {
+                page-break-inside: avoid;
+            }
+            
+            /* 7. Les autres sections restent intactes */
+            .section:not(:first-of-type) {
+                page-break-inside: avoid;
+                page-break-before: auto;
+            }
+            
+            /* 8. IMPORTANT : Forcer le premier critère à commencer immédiatement */
+            .section:first-of-type .header-row {
+                page-break-after: avoid !important;
+            }
+            
+            /* 9. Assurer une hauteur minimale pour le début de section */
+            .section:first-of-type .section-content > :first-child,
+            .section:first-of-type .section-content > :nth-child(2) {
+                page-break-before: avoid !important;
+            }
+            
+            /* Styles d'impression pour les commentaires */
+            .comment-button,
+            .section-comment-button { 
+                display: none !important; 
+            }
+            
+            .criterion-comment-section {
+                page-break-inside: avoid;
+                margin: 6px 0 8px 15px;
+                padding: 6px 8px;
+                background: #f9f9f9 !important;
+                border-left: 2px solid #666 !important;
+                border-radius: 0 3px 3px 0;
+                box-shadow: none;
+            }
+            .criterion-comment-section:not(.show) {
+                display: none !important;
+            }
+            /* Cacher les sections de commentaires qui n'ont pas de contenu */
+            .criterion-comment-section.show:not(.has-content) {
+                display: none !important;
+            }
+            
+            .section-comment-section {
+                page-break-inside: avoid;
+                margin: 5px 0 10px 0 !important;
+                padding: 6px 8px !important;
+                background: #f5f5f5 !important;
+                border: 1px solid #ccc !important;
+                border-radius: 4px !important;
+            }
+            /* Cacher toutes les sections de commentaires vides à l'impression */
+            .section-comment-section {
+                display: none !important;
+            }
+            /* Montrer seulement les sections avec contenu */
+            .section-comment-section.has-content {
+                display: block !important;
+            }
+            
+            .comment-textarea {
+                width: calc(100% - 0px);
+                min-height: 30px;
+                padding: 4px;
+                margin-right: 0px;
+                border: 1px solid #ccc;
+                border-radius: 2px;
+                font-size: 8pt;
+                font-family: Arial, sans-serif;
+                background: white;
+                font-style: normal;
+                color: #7b3f00;
+                /* Force le textarea à afficher son contenu à l'impression */
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+            
+        }
+    </style>
+</head>
+<body class="revision-mode">
+    <!-- MODE SELECTOR -->
+    <div class="mode-selector">
+        <button class="mode-button active" onclick="switchMode('revision')">🔍 Révision</button>
+        <button class="mode-button" onclick="switchMode('exam')">📝 Examen</button>
+    </div>
+    
+    <!-- BOUTONS RÉVISION (Mode Révision uniquement) -->
+    <div class="revision-controls">
+        <button class="lacune-button" onclick="identifyLacunes()">🎯 Identifier les lacunes</button>
+        <button class="reset-revision-button" onclick="resetTimer()">↻ Reset</button>
+    </div>
+    
+    <!-- MINUTEUR -->
+    <div class="timer-container" id="timerContainer">
+        <div class="timer-display" id="timerDisplay">13:00</div>
+        <div class="timer-controls">
+            <button class="timer-btn start-btn" id="startBtn" onclick="startTimer()">▶ Démarrer</button>
+            <button class="timer-btn stop-btn" id="stopBtn" onclick="stopTimer()" style="display: none;">⏸ Arrêter</button>
+            <button class="timer-btn reset-btn" id="resetBtn" onclick="resetTimer()">🔄 Reset</button>
+        </div>
+        <div class="timer-status status-waiting" id="timerStatus">En attente</div>
+    </div>
+
+    <div class="container">
+        <div class="header">
+            <h1>Grille d'évaluation ECOS - Perte de vision</h1>
+            <p style="margin: 5px 0;">Contexte : Cabinet de médecine générale</p>
+            <p style="margin: 5px 0;">Patient : M. Müller, 78 ans, se présente pour des problèmes de vision qu'il a remarqués depuis quelques mois.</p>
+            
+        </div>
+
+        <!-- ANAMNÈSE -->
+        <div class="section">
+            <div class="section-header">
+                <span>Anamnèse (25%)</span>
+                <span class="score">Score : <span id="anamneseScore">0</span>/28</span>
+            </div>
+            <div class="section-content">
+                <div class="header-row">
+                    <div>Critères</div>
+                    <div>Oui</div>
+                    <div>±</div>
+                    <div>Non</div>
+                    <div>Points</div>
+                </div>
+                <div class="criteria-row" id="criteria-a1">
+    <div>
+        <div class="criteria-text">1. Présentation avec nom, fonction et tâche<button class="comment-button" onclick="toggleComment('a1')" title="Ajouter un commentaire">💬</button></div>
+    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="a1" value="2" data-criteria="Présentation avec nom, fonction et tâche" onchange="updateScore('a', this)" />
+    </div>
+    <div class="checkbox-group" style="visibility: hidden;">
+        <input type="radio" disabled />
+    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="a1" value="0" onchange="updateScore('a', this)" />
+    </div>
+    <div class="points-display" id="points-a1">0</div>
+</div>
+<div class="criterion-comment-section" id="comment-section-a1">
+    <textarea class="comment-textarea" id="comment-a1" placeholder="Commentaire sur ce critère..." oninput="updateCommentButton('a1')"></textarea>
+</div>
+<div class="criteria-row" id="criteria-a2">
+    <div>
+        <div class="criteria-text">2. Question d'entrée ouverte<button class="comment-button" onclick="toggleComment('a2')" title="Ajouter un commentaire">💬</button></div>
+<div class="sub-criteria">Qu'est-ce qui vous amène aujourd'hui ? [J'ai remarqué que je vois de plus en plus mal]</div>    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="a2" value="2" data-criteria="Question d'entrée ouverte" onchange="updateScore('a', this)" />
+    </div>
+    <div class="checkbox-group" style="visibility: hidden;">
+        <input type="radio" disabled />
+    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="a2" value="0" onchange="updateScore('a', this)" />
+    </div>
+    <div class="points-display" id="points-a2">0</div>
+</div>
+<div class="criterion-comment-section" id="comment-section-a2">
+    <textarea class="comment-textarea" id="comment-a2" placeholder="Commentaire sur ce critère..." oninput="updateCommentButton('a2')"></textarea>
+</div>
+<div class="criteria-row" id="criteria-a3">
+    <div>
+        <div class="criteria-text">3. Caractérisation de la baisse de vision<button class="comment-button" onclick="toggleComment('a3')" title="Ajouter un commentaire">💬</button></div>
+<div class="sub-criteria">Apparition [progressive sur quelques mois]</div><div class="sub-criteria">Évolution [aggravation progressive]</div><div class="sub-criteria">Unilatérale ou bilatérale [bilatérale]</div><div class="sub-criteria">Prédominance vision de loin ou de près [surtout de loin]</div><div class="scoring-rule">≥3 caractéristiques = 2 points, 2 caractéristiques = 1 point</div>    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="a3" value="2" data-criteria="Caractérisation de la baisse de vision" onchange="updateScore('a', this)" />
+    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="a3" value="1" onchange="updateScore('a', this)" />
+    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="a3" value="0" onchange="updateScore('a', this)" />
+    </div>
+    <div class="points-display" id="points-a3">0</div>
+</div>
+<div class="criterion-comment-section" id="comment-section-a3">
+    <textarea class="comment-textarea" id="comment-a3" placeholder="Commentaire sur ce critère..." oninput="updateCommentButton('a3')"></textarea>
+</div>
+<div class="criteria-row" id="criteria-a4">
+    <div>
+        <div class="criteria-text">4. Symptômes visuels associés<button class="comment-button" onclick="toggleComment('a4')" title="Ajouter un commentaire">💬</button></div>
+<div class="sub-criteria">Photosensibilité [oui, doit porter des lunettes de soleil plus souvent car ébloui]</div><div class="sub-criteria">Amélioration paradoxale vision de près [oui, impression soudaine de mieux voir de près]</div><div class="sub-criteria">Vision des couleurs [rien de particulier remarqué]</div><div class="sub-criteria">Halos lumineux [parfois autour des lumières]</div><div class="sub-criteria">Vision double [non]</div><div class="sub-criteria">Vision trouble/voilée [oui, comme à travers un brouillard]</div><div class="scoring-rule">≥4 symptômes recherchés = 2 points, 2-3 symptômes = 1 point</div>    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="a4" value="2" data-criteria="Symptômes visuels associés" onchange="updateScore('a', this)" />
+    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="a4" value="1" onchange="updateScore('a', this)" />
+    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="a4" value="0" onchange="updateScore('a', this)" />
+    </div>
+    <div class="points-display" id="points-a4">0</div>
+</div>
+<div class="criterion-comment-section" id="comment-section-a4">
+    <textarea class="comment-textarea" id="comment-a4" placeholder="Commentaire sur ce critère..." oninput="updateCommentButton('a4')"></textarea>
+</div>
+<div class="criteria-row" id="criteria-a5">
+    <div>
+        <div class="criteria-text">5. Symptômes oculaires associés<button class="comment-button" onclick="toggleComment('a5')" title="Ajouter un commentaire">💬</button></div>
+<div class="sub-criteria">Douleurs oculaires [non]</div><div class="sub-criteria">Rougeur oculaire [non]</div><div class="sub-criteria">Larmoiement [parfois]</div><div class="sub-criteria">Sécrétions [non]</div><div class="sub-criteria">Sensation de corps étranger [non]</div><div class="scoring-rule">≥4 symptômes recherchés = 2 points, 2-3 symptômes = 1 point</div>    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="a5" value="2" data-criteria="Symptômes oculaires associés" onchange="updateScore('a', this)" />
+    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="a5" value="1" onchange="updateScore('a', this)" />
+    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="a5" value="0" onchange="updateScore('a', this)" />
+    </div>
+    <div class="points-display" id="points-a5">0</div>
+</div>
+<div class="criterion-comment-section" id="comment-section-a5">
+    <textarea class="comment-textarea" id="comment-a5" placeholder="Commentaire sur ce critère..." oninput="updateCommentButton('a5')"></textarea>
+</div>
+<div class="criteria-row" id="criteria-a6">
+    <div>
+        <div class="criteria-text">6. Symptômes généraux et drapeaux rouges<button class="comment-button" onclick="toggleComment('a6')" title="Ajouter un commentaire">💬</button></div>
+<div class="sub-criteria">Céphalées [non]</div><div class="sub-criteria">Claudication de la mâchoire [non]</div><div class="sub-criteria">Douleurs temporales [non]</div><div class="sub-criteria">Symptômes B (fièvre, sueurs nocturnes, perte de poids) [non]</div><div class="scoring-rule">≥3 symptômes RED FLAGS recherchés = 2 points</div>    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="a6" value="2" data-criteria="Symptômes généraux et drapeaux rouges" onchange="updateScore('a', this)" />
+    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="a6" value="1" onchange="updateScore('a', this)" />
+    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="a6" value="0" onchange="updateScore('a', this)" />
+    </div>
+    <div class="points-display" id="points-a6">0</div>
+</div>
+<div class="criterion-comment-section" id="comment-section-a6">
+    <textarea class="comment-textarea" id="comment-a6" placeholder="Commentaire sur ce critère..." oninput="updateCommentButton('a6')"></textarea>
+</div>
+<div class="criteria-row" id="criteria-a7">
+    <div>
+        <div class="criteria-text">7. Facteurs de risque cardiovasculaire<button class="comment-button" onclick="toggleComment('a7')" title="Ajouter un commentaire">💬</button></div>
+<div class="sub-criteria">Hypertension artérielle [oui, traitée]</div><div class="sub-criteria">Diabète [non]</div><div class="sub-criteria">Dyslipidémie [oui]</div><div class="sub-criteria">Tabagisme [ancien fumeur, arrêt il y a 10 ans]</div><div class="sub-criteria">Consommation d'alcool [occasionnelle]</div><div class="scoring-rule">≥4 facteurs explorés = 2 points, 2-3 facteurs = 1 point</div>    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="a7" value="2" data-criteria="Facteurs de risque cardiovasculaire" onchange="updateScore('a', this)" />
+    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="a7" value="1" onchange="updateScore('a', this)" />
+    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="a7" value="0" onchange="updateScore('a', this)" />
+    </div>
+    <div class="points-display" id="points-a7">0</div>
+</div>
+<div class="criterion-comment-section" id="comment-section-a7">
+    <textarea class="comment-textarea" id="comment-a7" placeholder="Commentaire sur ce critère..." oninput="updateCommentButton('a7')"></textarea>
+</div>
+<div class="criteria-row" id="criteria-a8">
+    <div>
+        <div class="criteria-text">8. Anamnèse médicamenteuse<button class="comment-button" onclick="toggleComment('a8')" title="Ajouter un commentaire">💬</button></div>
+<div class="sub-criteria">Corticothérapie systémique [non]</div><div class="sub-criteria">Collyre myotique [non]</div><div class="sub-criteria">Autres médicaments [traitement pour l'hypertension et le cholestérol]</div><div class="scoring-rule">≥2 catégories médicamenteuses explorées = 2 points</div>    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="a8" value="2" data-criteria="Anamnèse médicamenteuse" onchange="updateScore('a', this)" />
+    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="a8" value="1" onchange="updateScore('a', this)" />
+    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="a8" value="0" onchange="updateScore('a', this)" />
+    </div>
+    <div class="points-display" id="points-a8">0</div>
+</div>
+<div class="criterion-comment-section" id="comment-section-a8">
+    <textarea class="comment-textarea" id="comment-a8" placeholder="Commentaire sur ce critère..." oninput="updateCommentButton('a8')"></textarea>
+</div>
+<div class="criteria-row" id="criteria-a9">
+    <div>
+        <div class="criteria-text">9. Antécédents ophtalmologiques<button class="comment-button" onclick="toggleComment('a9')" title="Ajouter un commentaire">💬</button></div>
+<div class="sub-criteria">Chirurgie oculaire antérieure [non]</div><div class="sub-criteria">Traumatisme oculaire [non]</div><div class="sub-criteria">Glaucome [non]</div><div class="sub-criteria">Myopie/hypermétropie [presbytie, porte des lunettes pour lire]</div><div class="scoring-rule">≥3 antécédents explorés = 2 points, 2 antécédents = 1 point</div>    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="a9" value="2" data-criteria="Antécédents ophtalmologiques" onchange="updateScore('a', this)" />
+    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="a9" value="1" onchange="updateScore('a', this)" />
+    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="a9" value="0" onchange="updateScore('a', this)" />
+    </div>
+    <div class="points-display" id="points-a9">0</div>
+</div>
+<div class="criterion-comment-section" id="comment-section-a9">
+    <textarea class="comment-textarea" id="comment-a9" placeholder="Commentaire sur ce critère..." oninput="updateCommentButton('a9')"></textarea>
+</div>
+<div class="criteria-row" id="criteria-a10">
+    <div>
+        <div class="criteria-text">10. Antécédents médicaux personnels<button class="comment-button" onclick="toggleComment('a10')" title="Ajouter un commentaire">💬</button></div>
+<div class="sub-criteria">Diabète [non]</div><div class="sub-criteria">Pathologies systémiques [hypertension, dyslipidémie]</div><div class="sub-criteria">Chirurgies antérieures [appendicectomie dans l'enfance]</div>    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="a10" value="2" data-criteria="Antécédents médicaux personnels" onchange="updateScore('a', this)" />
+    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="a10" value="1" onchange="updateScore('a', this)" />
+    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="a10" value="0" onchange="updateScore('a', this)" />
+    </div>
+    <div class="points-display" id="points-a10">0</div>
+</div>
+<div class="criterion-comment-section" id="comment-section-a10">
+    <textarea class="comment-textarea" id="comment-a10" placeholder="Commentaire sur ce critère..." oninput="updateCommentButton('a10')"></textarea>
+</div>
+<div class="criteria-row" id="criteria-a11">
+    <div>
+        <div class="criteria-text">11. Antécédents familiaux<button class="comment-button" onclick="toggleComment('a11')" title="Ajouter un commentaire">💬</button></div>
+<div class="sub-criteria">Pathologies oculaires familiales [père avait une dégénérescence maculaire]</div><div class="sub-criteria">Inquiétude du patient [a peur d'avoir la même chose que son père]</div><div class="sub-criteria">Cataracte familiale [mère opérée de cataracte à 75 ans]</div><div class="scoring-rule">≥2 antécédents familiaux explorés = 2 points</div>    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="a11" value="2" data-criteria="Antécédents familiaux" onchange="updateScore('a', this)" />
+    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="a11" value="1" onchange="updateScore('a', this)" />
+    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="a11" value="0" onchange="updateScore('a', this)" />
+    </div>
+    <div class="points-display" id="points-a11">0</div>
+</div>
+<div class="criterion-comment-section" id="comment-section-a11">
+    <textarea class="comment-textarea" id="comment-a11" placeholder="Commentaire sur ce critère..." oninput="updateCommentButton('a11')"></textarea>
+</div>
+<div class="criteria-row" id="criteria-a12">
+    <div>
+        <div class="criteria-text">12. Allergies<button class="comment-button" onclick="toggleComment('a12')" title="Ajouter un commentaire">💬</button></div>
+<div class="sub-criteria">Allergies médicamenteuses [non]</div><div class="sub-criteria">Autres allergies [non]</div>    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="a12" value="2" data-criteria="Allergies" onchange="updateScore('a', this)" />
+    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="a12" value="1" onchange="updateScore('a', this)" />
+    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="a12" value="0" onchange="updateScore('a', this)" />
+    </div>
+    <div class="points-display" id="points-a12">0</div>
+</div>
+<div class="criterion-comment-section" id="comment-section-a12">
+    <textarea class="comment-textarea" id="comment-a12" placeholder="Commentaire sur ce critère..." oninput="updateCommentButton('a12')"></textarea>
+</div>
+<div class="criteria-row" id="criteria-a13">
+    <div>
+        <div class="criteria-text">13. Anamnèse sociale et impact fonctionnel<button class="comment-button" onclick="toggleComment('a13')" title="Ajouter un commentaire">💬</button></div>
+<div class="sub-criteria">Situation de vie [vit seul]</div><div class="sub-criteria">Autonomie [autonome mais difficultés croissantes]</div><div class="sub-criteria">Activités quotidiennes [difficultés pour lire, regarder la télévision]</div><div class="sub-criteria">Conduite automobile [évite de conduire la nuit]</div><div class="scoring-rule">≥3 aspects fonctionnels explorés = 2 points, 2 aspects = 1 point</div>    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="a13" value="2" data-criteria="Anamnèse sociale et impact fonctionnel" onchange="updateScore('a', this)" />
+    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="a13" value="1" onchange="updateScore('a', this)" />
+    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="a13" value="0" onchange="updateScore('a', this)" />
+    </div>
+    <div class="points-display" id="points-a13">0</div>
+</div>
+<div class="criterion-comment-section" id="comment-section-a13">
+    <textarea class="comment-textarea" id="comment-a13" placeholder="Commentaire sur ce critère..." oninput="updateCommentButton('a13')"></textarea>
+</div>
+<div class="criteria-row" id="criteria-a14">
+    <div>
+        <div class="criteria-text">14. Évaluation globale de la qualité de l'anamnèse<button class="comment-button" onclick="toggleComment('a14')" title="Ajouter un commentaire">💬</button></div>
+<div class="sub-criteria">Anamnèse ciblée et bien conduite</div><div class="scoring-rule">Bien = oui, suffisant = ±, insuffisant = non</div>    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="a14" value="2" data-criteria="Évaluation globale de la qualité de l'anamnèse" onchange="updateScore('a', this)" />
+    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="a14" value="1" onchange="updateScore('a', this)" />
+    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="a14" value="0" onchange="updateScore('a', this)" />
+    </div>
+    <div class="points-display" id="points-a14">0</div>
+</div>
+<div class="criterion-comment-section" id="comment-section-a14">
+    <textarea class="comment-textarea" id="comment-a14" placeholder="Commentaire sur ce critère..." oninput="updateCommentButton('a14')"></textarea>
+</div>
+
+                
+                <!-- Section commentaire Anamnèse -->
+                <div style="text-align: center; margin: 15px 0;">
+                    <button class="section-comment-button" onclick="toggleSectionComment('anamnese')" title="Commentaire sur cette section">📝 Commentaire sur l'Anamnèse</button>
+                </div>
+                <div class="section-comment-section" id="section-comment-anamnese">
+                    <h4 style="margin: 0 0 10px 0; color: #2c5aa0; font-size: 16px;">Commentaires sur l'anamnèse</h4>
+                    <textarea class="comment-textarea" id="comment-section-anamnese" placeholder="Commentaire sur l'anamnèse..." oninput="updateSectionComment('anamnese')"></textarea>
+                </div>
+            </div>
+        </div>
+
+        <!-- EXAMEN CLINIQUE -->
+        <div class="section">
+            <div class="section-header">
+                <span>Examen clinique (25%)</span>
+                <span class="score">Score : <span id="statusScore">0</span>/18</span>
+            </div>
+            <div class="section-content">
+                <div class="header-row">
+                    <div>Critères</div>
+                    <div>Oui</div>
+                    <div>±</div>
+                    <div>Non</div>
+                    <div>Points</div>
+                </div>
+                <div class="criteria-row" id="criteria-e1">
+    <div>
+        <div class="criteria-text">1. Acuité visuelle<button class="comment-button" onclick="toggleComment('e1')" title="Ajouter un commentaire">💬</button></div>
+<div class="sub-criteria">Vision de loin avec correction [diminuée bilatéralement, 0.4 OD, 0.5 OG]</div><div class="sub-criteria">Vision de près avec correction [relativement préservée]</div><div class="sub-criteria">Test du trou sténopéique [amélioration partielle]</div><div class="scoring-rule">≥2 tests d'acuité = 2 points</div>    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="e1" value="2" data-criteria="Acuité visuelle" onchange="updateScore('e', this)" />
+    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="e1" value="1" onchange="updateScore('e', this)" />
+    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="e1" value="0" onchange="updateScore('e', this)" />
+    </div>
+    <div class="points-display" id="points-e1">0</div>
+</div>
+<div class="criterion-comment-section" id="comment-section-e1">
+    <textarea class="comment-textarea" id="comment-e1" placeholder="Commentaire sur ce critère..." oninput="updateCommentButton('e1')"></textarea>
+</div>
+<div class="criteria-row" id="criteria-e2">
+    <div>
+        <div class="criteria-text">2. Examen des annexes et segment antérieur<button class="comment-button" onclick="toggleComment('e2')" title="Ajouter un commentaire">💬</button></div>
+<div class="sub-criteria">Paupières [normales]</div><div class="sub-criteria">Conjonctive [calme]</div><div class="sub-criteria">Cornée [transparente]</div><div class="sub-criteria">Chambre antérieure [profondeur normale]</div><div class="scoring-rule">≥3 structures examinées = 2 points, 2 structures = 1 point</div>    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="e2" value="2" data-criteria="Examen des annexes et segment antérieur" onchange="updateScore('e', this)" />
+    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="e2" value="1" onchange="updateScore('e', this)" />
+    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="e2" value="0" onchange="updateScore('e', this)" />
+    </div>
+    <div class="points-display" id="points-e2">0</div>
+</div>
+<div class="criterion-comment-section" id="comment-section-e2">
+    <textarea class="comment-textarea" id="comment-e2" placeholder="Commentaire sur ce critère..." oninput="updateCommentButton('e2')"></textarea>
+</div>
+<div class="criteria-row" id="criteria-e3">
+    <div>
+        <div class="criteria-text">3. Examen à la lampe à fente<button class="comment-button" onclick="toggleComment('e3')" title="Ajouter un commentaire">💬</button></div>
+<div class="sub-criteria">Cristallin [opacification jaunâtre diffuse visible]</div><div class="sub-criteria">Type d'opacité [nucléaire prédominante]</div><div class="sub-criteria">Densité [modérée à sévère]</div><div class="scoring-rule">≥2 caractéristiques de l'opacité = 2 points</div>    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="e3" value="2" data-criteria="Examen à la lampe à fente" onchange="updateScore('e', this)" />
+    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="e3" value="1" onchange="updateScore('e', this)" />
+    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="e3" value="0" onchange="updateScore('e', this)" />
+    </div>
+    <div class="points-display" id="points-e3">0</div>
+</div>
+<div class="criterion-comment-section" id="comment-section-e3">
+    <textarea class="comment-textarea" id="comment-e3" placeholder="Commentaire sur ce critère..." oninput="updateCommentButton('e3')"></textarea>
+</div>
+<div class="criteria-row" id="criteria-e4">
+    <div>
+        <div class="criteria-text">4. Test du reflet rouge rétinien<button class="comment-button" onclick="toggleComment('e4')" title="Ajouter un commentaire">💬</button></div>
+<div class="sub-criteria">Reflet rouge [diminué, opacification apparaît plus foncée]</div><div class="sub-criteria">Symétrie [atteinte bilatérale]</div><div class="scoring-rule">Test réalisé et interprété = 2 points</div>    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="e4" value="2" data-criteria="Test du reflet rouge rétinien" onchange="updateScore('e', this)" />
+    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="e4" value="1" onchange="updateScore('e', this)" />
+    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="e4" value="0" onchange="updateScore('e', this)" />
+    </div>
+    <div class="points-display" id="points-e4">0</div>
+</div>
+<div class="criterion-comment-section" id="comment-section-e4">
+    <textarea class="comment-textarea" id="comment-e4" placeholder="Commentaire sur ce critère..." oninput="updateCommentButton('e4')"></textarea>
+</div>
+<div class="criteria-row" id="criteria-e5">
+    <div>
+        <div class="criteria-text">5. Pupilles et réflexes pupillaires<button class="comment-button" onclick="toggleComment('e5')" title="Ajouter un commentaire">💬</button></div>
+<div class="sub-criteria">Taille et symétrie [isocorie]</div><div class="sub-criteria">Réflexe photomoteur direct [présent bilatéralement]</div><div class="sub-criteria">Réflexe consensuel [présent]</div><div class="sub-criteria">Défaut pupillaire afférent relatif [absent]</div><div class="scoring-rule">≥3 réflexes testés = 2 points, 2 réflexes = 1 point</div>    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="e5" value="2" data-criteria="Pupilles et réflexes pupillaires" onchange="updateScore('e', this)" />
+    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="e5" value="1" onchange="updateScore('e', this)" />
+    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="e5" value="0" onchange="updateScore('e', this)" />
+    </div>
+    <div class="points-display" id="points-e5">0</div>
+</div>
+<div class="criterion-comment-section" id="comment-section-e5">
+    <textarea class="comment-textarea" id="comment-e5" placeholder="Commentaire sur ce critère..." oninput="updateCommentButton('e5')"></textarea>
+</div>
+<div class="criteria-row" id="criteria-e6">
+    <div>
+        <div class="criteria-text">6. Tonus oculaire<button class="comment-button" onclick="toggleComment('e6')" title="Ajouter un commentaire">💬</button></div>
+<div class="sub-criteria">Palpation bidigitale [normal]</div><div class="sub-criteria">Mesure si disponible [non réalisée en cabinet]</div>    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="e6" value="2" data-criteria="Tonus oculaire" onchange="updateScore('e', this)" />
+    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="e6" value="1" onchange="updateScore('e', this)" />
+    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="e6" value="0" onchange="updateScore('e', this)" />
+    </div>
+    <div class="points-display" id="points-e6">0</div>
+</div>
+<div class="criterion-comment-section" id="comment-section-e6">
+    <textarea class="comment-textarea" id="comment-e6" placeholder="Commentaire sur ce critère..." oninput="updateCommentButton('e6')"></textarea>
+</div>
+<div class="criteria-row" id="criteria-e7">
+    <div>
+        <div class="criteria-text">7. Fond d'œil<button class="comment-button" onclick="toggleComment('e7')" title="Ajouter un commentaire">💬</button></div>
+<div class="sub-criteria">Visualisation [difficile en raison de l'opacité cristallinienne]</div><div class="sub-criteria">Ce qui est visible [papille et vaisseaux partiellement visibles]</div><div class="sub-criteria">Exclusion de pathologie rétinienne évidente [dans la mesure du possible]</div><div class="scoring-rule">Tentative d'examen avec interprétation = 2 points</div>    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="e7" value="2" data-criteria="Fond d'œil" onchange="updateScore('e', this)" />
+    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="e7" value="1" onchange="updateScore('e', this)" />
+    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="e7" value="0" onchange="updateScore('e', this)" />
+    </div>
+    <div class="points-display" id="points-e7">0</div>
+</div>
+<div class="criterion-comment-section" id="comment-section-e7">
+    <textarea class="comment-textarea" id="comment-e7" placeholder="Commentaire sur ce critère..." oninput="updateCommentButton('e7')"></textarea>
+</div>
+<div class="criteria-row" id="criteria-e8">
+    <div>
+        <div class="criteria-text">8. Examen neurologique de base<button class="comment-button" onclick="toggleComment('e8')" title="Ajouter un commentaire">💬</button></div>
+<div class="sub-criteria">Champs visuels par confrontation [normaux dans les limites de l'examen]</div><div class="sub-criteria">Oculomotricité [normale]</div><div class="sub-criteria">Nerfs crâniens [normaux]</div><div class="scoring-rule">≥2 tests neurologiques = 2 points</div>    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="e8" value="2" data-criteria="Examen neurologique de base" onchange="updateScore('e', this)" />
+    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="e8" value="1" onchange="updateScore('e', this)" />
+    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="e8" value="0" onchange="updateScore('e', this)" />
+    </div>
+    <div class="points-display" id="points-e8">0</div>
+</div>
+<div class="criterion-comment-section" id="comment-section-e8">
+    <textarea class="comment-textarea" id="comment-e8" placeholder="Commentaire sur ce critère..." oninput="updateCommentButton('e8')"></textarea>
+</div>
+<div class="criteria-row" id="criteria-e9">
+    <div>
+        <div class="criteria-text">9. Évaluation globale de la qualité de l'examen clinique<button class="comment-button" onclick="toggleComment('e9')" title="Ajouter un commentaire">💬</button></div>
+<div class="sub-criteria">Examen clinique ciblé et bien conduit</div><div class="scoring-rule">Bien = oui, suffisant = ±, insuffisant = non</div>    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="e9" value="2" data-criteria="Évaluation globale de la qualité de l'examen clinique" onchange="updateScore('e', this)" />
+    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="e9" value="1" onchange="updateScore('e', this)" />
+    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="e9" value="0" onchange="updateScore('e', this)" />
+    </div>
+    <div class="points-display" id="points-e9">0</div>
+</div>
+<div class="criterion-comment-section" id="comment-section-e9">
+    <textarea class="comment-textarea" id="comment-e9" placeholder="Commentaire sur ce critère..." oninput="updateCommentButton('e9')"></textarea>
+</div>
+
+                
+                <!-- Section commentaire Examen clinique -->
+                <div style="text-align: center; margin: 15px 0;">
+                    <button class="section-comment-button" onclick="toggleSectionComment('examen')" title="Commentaire sur cette section">📝 Commentaire sur l'Examen clinique</button>
+                </div>
+                <div class="section-comment-section" id="section-comment-examen">
+                    <h4 style="margin: 0 0 10px 0; color: #2c5aa0; font-size: 16px;">Commentaires sur l'examen clinique</h4>
+                    <textarea class="comment-textarea" id="comment-section-examen" placeholder="Commentaire sur l'examen clinique..." oninput="updateSectionComment('examen')"></textarea>
+                </div>
+            </div>
+        </div>
+
+        <!-- MANAGEMENT -->
+        <div class="section">
+            <div class="section-header">
+                <span>Management (25%)</span>
+                <span class="score">Score : <span id="managementScore">0</span>/14</span>
+            </div>
+            <div class="section-content">
+                <div class="header-row">
+                    <div>Critères</div>
+                    <div>Oui</div>
+                    <div>±</div>
+                    <div>Non</div>
+                    <div>Points</div>
+                </div>
+                <div class="criteria-row" id="criteria-m1">
+    <div>
+        <div class="criteria-text">1. Diagnostic principal<button class="comment-button" onclick="toggleComment('m1')" title="Ajouter un commentaire">💬</button></div>
+<div class="sub-criteria">Cataracte sénile bilatérale</div><div class="sub-criteria">Type nucléaire prédominant</div>    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="m1" value="2" data-criteria="Diagnostic principal" onchange="updateScore('m', this)" />
+    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="m1" value="1" onchange="updateScore('m', this)" />
+    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="m1" value="0" onchange="updateScore('m', this)" />
+    </div>
+    <div class="points-display" id="points-m1">0</div>
+</div>
+<div class="criterion-comment-section" id="comment-section-m1">
+    <textarea class="comment-textarea" id="comment-m1" placeholder="Commentaire sur ce critère..." oninput="updateCommentButton('m1')"></textarea>
+</div>
+<div class="criteria-row" id="criteria-m2">
+    <div>
+        <div class="criteria-text">2. Diagnostics différentiels<button class="comment-button" onclick="toggleComment('m2')" title="Ajouter un commentaire">💬</button></div>
+<div class="scoring-rule">≥3 catégories avec diagnostics = 2 points, 2 catégories = 1 point</div>    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="m2" value="2" data-criteria="Diagnostics différentiels" onchange="updateScore('m', this)" />
+    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="m2" value="1" onchange="updateScore('m', this)" />
+    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="m2" value="0" onchange="updateScore('m', this)" />
+    </div>
+    <div class="points-display" id="points-m2">0</div>
+</div>
+<div class="dd-section">
+    <div class="dd-category">Autres causes d'opacité des milieux</div>
+    <div class="dd-item">• Cataracte (sénile, diabétique, traumatique, cortisonique)</div>
+    <div class="dd-item">• Opacités cornéennes</div>
+    <div class="dd-item">• Hémorragie du vitré</div>
+    <div class="dd-category">Pathologies rétiniennes</div>
+    <div class="dd-item">• Dégénérescence maculaire liée à l'âge (DMLA)</div>
+    <div class="dd-item">• Rétinopathie diabétique</div>
+    <div class="dd-item">• Décollement de rétine</div>
+    <div class="dd-category">Neuropathies optiques</div>
+    <div class="dd-item">• Glaucome chronique</div>
+    <div class="dd-item">• Neuropathie optique ischémique</div>
+    <div class="dd-item">• Névrite optique</div>
+    <div class="dd-category">Urgences à exclure</div>
+    <div class="dd-item">• Glaucome aigu par fermeture de l'angle</div>
+    <div class="dd-item">• Artérite temporale (Horton)</div>
+    <div class="dd-item">• Occlusion vasculaire rétinienne</div>
+</div>
+<div class="criterion-comment-section" id="comment-section-m2">
+    <textarea class="comment-textarea" id="comment-m2" placeholder="Commentaire sur ce critère..." oninput="updateCommentButton('m2')"></textarea>
+</div>
+<div class="criteria-row" id="criteria-m3">
+    <div>
+        <div class="criteria-text">3. Examens complémentaires<button class="comment-button" onclick="toggleComment('m3')" title="Ajouter un commentaire">💬</button></div>
+<div class="sub-criteria">Biométrie oculaire (si chirurgie envisagée)</div><div class="sub-criteria">Échographie oculaire mode B (si fond d'œil non visible)</div><div class="sub-criteria">OCT maculaire (pour exclure pathologie maculaire associée)</div><div class="sub-criteria">Glycémie (dépistage diabète)</div><div class="sub-criteria">Bilan préopératoire si chirurgie planifiée</div><div class="scoring-rule">≥4 examens pertinents = 2 points, 2-3 examens = 1 point</div>    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="m3" value="2" data-criteria="Examens complémentaires" onchange="updateScore('m', this)" />
+    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="m3" value="1" onchange="updateScore('m', this)" />
+    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="m3" value="0" onchange="updateScore('m', this)" />
+    </div>
+    <div class="points-display" id="points-m3">0</div>
+</div>
+<div class="criterion-comment-section" id="comment-section-m3">
+    <textarea class="comment-textarea" id="comment-m3" placeholder="Commentaire sur ce critère..." oninput="updateCommentButton('m3')"></textarea>
+</div>
+<div class="criteria-row" id="criteria-m4">
+    <div>
+        <div class="criteria-text">4. Traitement<button class="comment-button" onclick="toggleComment('m4')" title="Ajouter un commentaire">💬</button></div>
+<div class="scoring-rule">≥2 modalités thérapeutiques = 2 points</div>        <div class="therapy-section">
+            <div class="therapy-title">Traitement conservateur</div>
+            • Aucun traitement médical efficace pour la cataracte<br />
+            • Adaptation de la correction optique temporaire<br />
+            • Amélioration de l'éclairage<br />
+            • Lunettes de soleil pour la photophobie
+        </div>
+        <div class="therapy-section">
+            <div class="therapy-title">Traitement chirurgical</div>
+            • Indication opératoire posée (gêne fonctionnelle significative)<br />
+            • Phacoémulsification avec implant intraoculaire<br />
+            • Information sur les risques et bénéfices<br />
+            • Planification de la chirurgie (œil le plus atteint d'abord)
+        </div>
+    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="m4" value="2" data-criteria="Traitement" onchange="updateScore('m', this)" />
+    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="m4" value="1" onchange="updateScore('m', this)" />
+    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="m4" value="0" onchange="updateScore('m', this)" />
+    </div>
+    <div class="points-display" id="points-m4">0</div>
+</div>
+<div class="criterion-comment-section" id="comment-section-m4">
+    <textarea class="comment-textarea" id="comment-m4" placeholder="Commentaire sur ce critère..." oninput="updateCommentButton('m4')"></textarea>
+</div>
+<div class="criteria-row" id="criteria-m5">
+    <div>
+        <div class="criteria-text">5. Information du patient<button class="comment-button" onclick="toggleComment('m5')" title="Ajouter un commentaire">💬</button></div>
+<div class="sub-criteria">Explication de la nature de la cataracte</div><div class="sub-criteria">Rassurer : pas la même pathologie que son père (DMLA)</div><div class="sub-criteria">Excellent pronostic avec la chirurgie (>95% de succès)</div><div class="sub-criteria">Risques chirurgicaux faibles mais existants</div><div class="sub-criteria">Récupération visuelle habituelle en quelques semaines</div><div class="scoring-rule">≥4 éléments informatifs = 2 points, 2-3 éléments = 1 point</div>    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="m5" value="2" data-criteria="Information du patient" onchange="updateScore('m', this)" />
+    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="m5" value="1" onchange="updateScore('m', this)" />
+    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="m5" value="0" onchange="updateScore('m', this)" />
+    </div>
+    <div class="points-display" id="points-m5">0</div>
+</div>
+<div class="criterion-comment-section" id="comment-section-m5">
+    <textarea class="comment-textarea" id="comment-m5" placeholder="Commentaire sur ce critère..." oninput="updateCommentButton('m5')"></textarea>
+</div>
+<div class="criteria-row" id="criteria-m6">
+    <div>
+        <div class="criteria-text">6. Suivi et orientation<button class="comment-button" onclick="toggleComment('m6')" title="Ajouter un commentaire">💬</button></div>
+<div class="sub-criteria">Référence en ophtalmologie pour évaluation chirurgicale</div><div class="sub-criteria">Suivi régulier en attendant la chirurgie</div><div class="sub-criteria">Surveillance de la progression</div><div class="sub-criteria">Contrôle postopératoire après chirurgie</div><div class="scoring-rule">≥3 éléments de suivi = 2 points, 2 éléments = 1 point</div>    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="m6" value="2" data-criteria="Suivi et orientation" onchange="updateScore('m', this)" />
+    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="m6" value="1" onchange="updateScore('m', this)" />
+    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="m6" value="0" onchange="updateScore('m', this)" />
+    </div>
+    <div class="points-display" id="points-m6">0</div>
+</div>
+<div class="criterion-comment-section" id="comment-section-m6">
+    <textarea class="comment-textarea" id="comment-m6" placeholder="Commentaire sur ce critère..." oninput="updateCommentButton('m6')"></textarea>
+</div>
+<div class="criteria-row" id="criteria-m7">
+    <div>
+        <div class="criteria-text">7. Évaluation globale de la qualité de la prise en charge<button class="comment-button" onclick="toggleComment('m7')" title="Ajouter un commentaire">💬</button></div>
+<div class="sub-criteria">Prise en charge cohérente et bien conduite</div><div class="scoring-rule">Bien = oui, suffisant = ±, insuffisant = non</div>    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="m7" value="2" data-criteria="Évaluation globale de la qualité de la prise en charge" onchange="updateScore('m', this)" />
+    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="m7" value="1" onchange="updateScore('m', this)" />
+    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="m7" value="0" onchange="updateScore('m', this)" />
+    </div>
+    <div class="points-display" id="points-m7">0</div>
+</div>
+<div class="criterion-comment-section" id="comment-section-m7">
+    <textarea class="comment-textarea" id="comment-m7" placeholder="Commentaire sur ce critère..." oninput="updateCommentButton('m7')"></textarea>
+</div>
+
+                
+                <!-- Section commentaire Management -->
+                <div style="text-align: center; margin: 15px 0;">
+                    <button class="section-comment-button" onclick="toggleSectionComment('management')" title="Commentaire sur cette section">📝 Commentaire sur le Management</button>
+                </div>
+                <div class="section-comment-section" id="section-comment-management">
+                    <h4 style="margin: 0 0 10px 0; color: #2c5aa0; font-size: 16px;">Commentaires sur le management</h4>
+                    <textarea class="comment-textarea" id="comment-section-management" placeholder="Commentaire sur le management..." oninput="updateSectionComment('management')"></textarea>
+                </div>
+            </div>
+        </div>
+
+        <!-- COMMUNICATION -->
+        <div class="section">
+            <div class="section-header">
+                <span>Communication (25%)</span>
+                <span class="score">Score : <span id="communicationScore">0</span>/20</span>
+            </div>
+            <div class="section-content">
+                <div class="scale-header">
+                    <div>Critères</div>
+                    <div>A</div>
+                    <div>B</div>
+                    <div>C</div>
+                    <div>D</div>
+                    <div>E</div>
+                </div>
+                <div class="communication-section" id="criteria-c1">
+                    <div>
+                        <div class="communication-text">1. Réponse aux sentiments et besoins du patient<button class="comment-button" onclick="toggleComment('c1')" title="Ajouter un commentaire">💬</button></div>
+                        <div class="communication-desc">Empathie, écoute active, validation des émotions</div>
+                        <div class="communication-desc-detail">Explique le déroulement de la consultation et vérifie les préoccupations du patient, commence l'anamnèse par une question ouverte ; reconnaît, verbalise et légitime les émotions, fournit du soutient</div>
+                    </div>
+                    <div class="checkbox-group">
+                        <input data-criteria="Réponse émotionnelle" name="c1" onchange="updateScore('communication', this)" type="radio" value="A" />
+                    </div>
+                    <div class="checkbox-group">
+                        <input name="c1" onchange="updateScore('communication', this)" type="radio" value="B" />
+                    </div>
+                    <div class="checkbox-group">
+                        <input name="c1" onchange="updateScore('communication', this)" type="radio" value="C" />
+                    </div>
+                    <div class="checkbox-group">
+                        <input name="c1" onchange="updateScore('communication', this)" type="radio" value="D" />
+                    </div>
+                    <div class="checkbox-group">
+                        <input name="c1" onchange="updateScore('communication', this)" type="radio" value="E" />
+                    </div>
+                </div>
+                <div class="criterion-comment-section" id="comment-section-c1">
+                    <textarea class="comment-textarea" id="comment-c1" placeholder="Commentaire sur ce critère..." oninput="updateCommentButton('c1')"></textarea>
+                </div>
+                <div class="communication-section" id="criteria-c2">
+                    <div>
+                        <div class="communication-text">2. Structure de l'entretien<button class="comment-button" onclick="toggleComment('c2')" title="Ajouter un commentaire">💬</button></div>
+                        <div class="communication-desc">Organisation logique, transitions fluides, gestion du temps</div>
+                        <div class="communication-desc-detail">Se présente par son nom et sa fonction, les étapes de l'entretien sont identifiables et s'enchaînent de manière logique, gestion du temps, adaptation à la situation</div>
+                    </div>
+                    <div class="checkbox-group">
+                        <input data-criteria="Structure" name="c2" onchange="updateScore('communication', this)" type="radio" value="A" />
+                    </div>
+                    <div class="checkbox-group">
+                        <input name="c2" onchange="updateScore('communication', this)" type="radio" value="B" />
+                    </div>
+                    <div class="checkbox-group">
+                        <input name="c2" onchange="updateScore('communication', this)" type="radio" value="C" />
+                    </div>
+                    <div class="checkbox-group">
+                        <input name="c2" onchange="updateScore('communication', this)" type="radio" value="D" />
+                    </div>
+                    <div class="checkbox-group">
+                        <input name="c2" onchange="updateScore('communication', this)" type="radio" value="E" />
+                    </div>
+                </div>
+                <div class="criterion-comment-section" id="comment-section-c2">
+                    <textarea class="comment-textarea" id="comment-c2" placeholder="Commentaire sur ce critère..." oninput="updateCommentButton('c2')"></textarea>
+                </div>
+                <div class="communication-section" id="criteria-c3">
+                    <div>
+                        <div class="communication-text">3. Expression verbale<button class="comment-button" onclick="toggleComment('c3')" title="Ajouter un commentaire">💬</button></div>
+                        <div class="communication-desc">Clarté, vocabulaire adapté, vérification de la compréhension</div>
+                        <div class="communication-desc-detail">Langage adapté au niveau du patient, pas de jargon, explications compréhensibles, reformulations quand nécessaire, répétitions des points clés, fait une synthèse de la consultation, bonne articulation, ton et volume adéquats</div>
+                    </div>
+                    <div class="checkbox-group">
+                        <input data-criteria="Expression verbale" name="c3" onchange="updateScore('communication', this)" type="radio" value="A" />
+                    </div>
+                    <div class="checkbox-group">
+                        <input name="c3" onchange="updateScore('communication', this)" type="radio" value="B" />
+                    </div>
+                    <div class="checkbox-group">
+                        <input name="c3" onchange="updateScore('communication', this)" type="radio" value="C" />
+                    </div>
+                    <div class="checkbox-group">
+                        <input name="c3" onchange="updateScore('communication', this)" type="radio" value="D" />
+                    </div>
+                    <div class="checkbox-group">
+                        <input name="c3" onchange="updateScore('communication', this)" type="radio" value="E" />
+                    </div>
+                </div>
+                <div class="criterion-comment-section" id="comment-section-c3">
+                    <textarea class="comment-textarea" id="comment-c3" placeholder="Commentaire sur ce critère..." oninput="updateCommentButton('c3')"></textarea>
+                </div>
+                <div class="communication-section" id="criteria-c4">
+                    <div>
+                        <div class="communication-text">4. Expression non verbale<button class="comment-button" onclick="toggleComment('c4')" title="Ajouter un commentaire">💬</button></div>
+                        <div class="communication-desc">Contact visuel, posture, gestuelle appropriée</div>
+                        <div class="communication-desc-detail">Distance interpersonnelle adéquate, posture adéquate, gestes adéquats, contact visuel et expression faciale adéquats, pauses quand nécessaire</div>
+                    </div>
+                    <div class="checkbox-group">
+                        <input data-criteria="Expression non verbale" name="c4" onchange="updateScore('communication', this)" type="radio" value="A" />
+                    </div>
+                    <div class="checkbox-group">
+                        <input name="c4" onchange="updateScore('communication', this)" type="radio" value="B" />
+                    </div>
+                    <div class="checkbox-group">
+                        <input name="c4" onchange="updateScore('communication', this)" type="radio" value="C" />
+                    </div>
+                    <div class="checkbox-group">
+                        <input name="c4" onchange="updateScore('communication', this)" type="radio" value="D" />
+                    </div>
+                    <div class="checkbox-group">
+                        <input name="c4" onchange="updateScore('communication', this)" type="radio" value="E" />
+                    </div>
+                </div>
+                <div class="criterion-comment-section" id="comment-section-c4">
+                    <textarea class="comment-textarea" id="comment-c4" placeholder="Commentaire sur ce critère..." oninput="updateCommentButton('c4')"></textarea>
+                </div>
+                <div class="communication-section" id="criteria-c5">
+                    <div>
+                        <div class="communication-text">5. Évaluation générale de la communication<button class="comment-button" onclick="toggleComment('c5')" title="Ajouter un commentaire">💬</button></div>
+                        <div class="communication-desc">Qualité globale de l'interaction médecin-patient</div>
+                    </div>
+                    <div class="checkbox-group">
+                        <input data-criteria="Évaluation générale" name="c5" onchange="updateScore('communication', this)" type="radio" value="A" />
+                    </div>
+                    <div class="checkbox-group">
+                        <input name="c5" onchange="updateScore('communication', this)" type="radio" value="B" />
+                    </div>
+                    <div class="checkbox-group">
+                        <input name="c5" onchange="updateScore('communication', this)" type="radio" value="C" />
+                    </div>
+                    <div class="checkbox-group">
+                        <input name="c5" onchange="updateScore('communication', this)" type="radio" value="D" />
+                    </div>
+                    <div class="checkbox-group">
+                        <input name="c5" onchange="updateScore('communication', this)" type="radio" value="E" />
+                    </div>
+                </div>
+                <div class="criterion-comment-section" id="comment-section-c5">
+                    <textarea class="comment-textarea" id="comment-c5" placeholder="Commentaire sur ce critère..." oninput="updateCommentButton('c5')"></textarea>
+                </div>
+                
+                <!-- Section commentaire Communication -->
+                <div style="text-align: center; margin: 15px 0;">
+                    <button class="section-comment-button" onclick="toggleSectionComment('communication')" title="Commentaire sur cette section">📝 Commentaire sur la Communication</button>
+                </div>
+                <div class="section-comment-section" id="section-comment-communication">
+                    <h4 style="margin: 0 0 10px 0; color: #2c5aa0; font-size: 16px;">Commentaires sur la communication</h4>
+                    <textarea class="comment-textarea" id="comment-section-communication" placeholder="Commentaire sur la communication..." oninput="updateSectionComment('communication')"></textarea>
+                </div>
+            </div>
+        </div>
+
+        <!-- TOTAUX -->
+        <div class="total-sections">
+            <div class="total-section">
+                <div class="total-label">Score Global</div>
+                <div class="total-body">
+                    <div class="total-score" id="totalScore">0%</div>
+                </div>
+            </div>
+            <div class="total-section">
+                <div class="total-label">% par Section</div>
+                <div class="total-pourcent-body">
+                    <div class="total-pourcent-sections">
+                        <div class="total-pourcent-section">
+                            <div class="total-section-label">Anamnèse</div>
+                            <div class="pourcent-body">
+                                <div class="total-pourcent-value"><span id="anamnese-percentage">0</span>%</div>
+                            </div>
+                        </div>
+                        <div class="total-pourcent-section">
+                            <div class="total-section-label">Examen clinique</div>
+                            <div class="pourcent-body">
+                                <div class="total-pourcent-value"><span id="examen-percentage">0</span>%</div>
+                            </div>
+                        </div>
+                        <div class="total-pourcent-section">
+                            <div class="total-section-label">Management</div>
+                            <div class="pourcent-body">
+                                <div class="total-pourcent-value"><span id="management-percentage">0</span>%</div>
+                            </div>
+                        </div>
+                        <div class="total-pourcent-section">
+                            <div class="total-section-label">Communication</div>
+                            <div class="pourcent-body">
+                                <div class="total-pourcent-value"><span id="communication-percentage">0</span>%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="total-section">
+                <div class="total-label">Note Globale</div>
+                <div class="total-body">
+                    <div class="total-note-globale" id="globalGrade">E</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ÉCHELLE DE NOTATION -->
+        <div class="grade-scale" style="padding: 10px 15px; background: #f8f9fa; border-radius: 8px;">
+            <h3 style="margin: 0 0 10px 0; font-size: 16px;">Échelle de notation</h3>
+            <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; text-align: center;">
+                <div>
+                    <div style="font-weight: bold; font-size: 24px; color: #2c974b;">A</div>
+                    <div style="font-size: 12px; color: #666;">≥90%</div>
+                </div>
+                <div>
+                    <div style="font-weight: bold; font-size: 24px; color: #4e9cf0;">B</div>
+                    <div style="font-size: 12px; color: #666;">80-89%</div>
+                </div>
+                <div>
+                    <div style="font-weight: bold; font-size: 24px; color: #f0ad4e;">C</div>
+                    <div style="font-size: 12px; color: #666;">70-79%</div>
+                </div>
+                <div>
+                    <div style="font-weight: bold; font-size: 24px; color: #e67e22;">D</div>
+                    <div style="font-size: 12px; color: #666;">60-69%</div>
+                </div>
+                <div>
+                    <div style="font-weight: bold; font-size: 24px; color: #d9534f;">E</div>
+                    <div style="font-size: 12px; color: #666;">&lt;60%</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ÉLÉMENTS MANQUANTS -->
+        <div class="missing-items" id="missingItems" style="display: none;">
+            <h3>Éléments non évalués</h3>
+            <div id="missingList"></div>
+        </div>
+
+        <!-- COMMENTAIRE GÉNÉRAL -->
+        <div class="section-comment-section global" id="section-comment-general" style="margin-top: 30px;">
+            <h4 style="margin: 0 0 10px 0; color: #2c5aa0; font-size: 18px;">Commentaire général</h4>
+            <textarea class="comment-textarea" id="comment-general" placeholder="Commentaire général sur l'évaluation..." style="min-height: 80px;" oninput="updateGeneralComment()"></textarea>
+        </div>
+
+        
+    </div>
+
+    <!-- BOUTON IMPRIMER EN PDF -->
+    <button class="print-button" onclick="window.print()">🖨️ Imprimer en PDF</button>
+
+    <script>
+        // Variables globales pour le minuteur
+        let timerInterval;
+        let totalSeconds = 13 * 60; // 13 minutes
+        let currentSeconds = totalSeconds;
+        let isRunning = false;
+        let hasStarted = false;
+        let hasFinished = false;
+        let hasStoppedManually = false;
+        
+        // Variables globales pour les modes
+        let currentMode = 'revision'; // 'revision' ou 'exam'
+
+        // Fonction pour gérer les modes d'affichage
+        function updateDisplayMode() {
+            const body = document.body;
+            if (currentMode === 'exam') {
+                body.classList.add('exam-mode');
+            } else {
+                body.classList.remove('exam-mode');
+            }
+        }
+
+        // Fonction pour créer les sons avec synthèse vocale
+        function playBeep() {
+            const audioContext = new (window.AudioContext || window.webkitAudioContext)();
+            const oscillator = audioContext.createOscillator();
+            const gainNode = audioContext.createGain();
+            
+            oscillator.connect(gainNode);
+            gainNode.connect(audioContext.destination);
+            
+            oscillator.frequency.value = 800;
+            oscillator.type = 'sine';
+            gainNode.gain.setValueAtTime(0.3, audioContext.currentTime);
+            gainNode.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + 0.5);
+            
+            oscillator.start(audioContext.currentTime);
+            oscillator.stop(audioContext.currentTime + 0.5);
+        }
+
+        function speak(text) {
+            if ('speechSynthesis' in window) {
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'fr-FR';
+                utterance.rate = 0.9;
+                utterance.volume = 0.8;
+                speechSynthesis.speak(utterance);
+            }
+        }
+
+        function playSound(message) {
+            playBeep();
+            setTimeout(() => speak(message), 500);
+        }
+
+        // Fonction pour formater le temps
+        function formatTime(seconds) {
+            const minutes = Math.floor(seconds / 60);
+            const secs = seconds % 60;
+            return minutes + ':' + secs.toString().padStart(2, '0');
+        }
+
+        // Fonction pour activer/désactiver les checkboxes
+        function toggleCheckboxes(disabled) {
+            const checkboxes = document.querySelectorAll('input[type="radio"]');
+            checkboxes.forEach(checkbox => {
+                checkbox.disabled = disabled;
+            });
+        }
+
+        // Fonction pour colorer les critères après la fin du minuteur ou arrêt manuel
+        function colorCriteriaByScore() {
+            if (!hasFinished && !hasStoppedManually) return;
+
+            // Pour les critères normaux (anamnèse, examen, management)
+            const normalCriteriaRows = document.querySelectorAll('.criteria-row');
+            normalCriteriaRows.forEach(row => {
+                const id = row.id;
+                if (!id) return;
+                
+                const criteriaName = id.replace('criteria-', '');
+                const checkedRadio = document.querySelector('input[name="' + criteriaName + '"]:checked');
+                
+                // Supprimer les classes de couleur existantes
+                row.classList.remove('criteria-zero-points', 'criteria-one-point', 'criteria-full-points', 'criteria-not-answered');
+                
+                if (checkedRadio) {
+                    const score = Number(checkedRadio.value) || 0;
+                    
+                    // Appliquer la couleur selon le score
+                    if (score === 0) {
+                        row.classList.add('criteria-zero-points');
+                    } else if (score === 1) {
+                        row.classList.add('criteria-one-point');
+                    } else if (score >= 2) {
+                        row.classList.add('criteria-full-points');
+                    }
+                } else {
+                    // Pas de réponse
+                    row.classList.add('criteria-not-answered');
+                }
+            });
+
+            // Pour les critères de communication
+            const communicationRows = document.querySelectorAll('.communication-section');
+            communicationRows.forEach(row => {
+                const id = row.id;
+                if (!id) return;
+                
+                const criteriaName = id.replace('criteria-', '');
+                const checkedRadio = document.querySelector('input[name="' + criteriaName + '"]:checked');
+                
+                // Supprimer les classes de couleur existantes
+                row.classList.remove('communication-note-a', 'communication-note-b', 'communication-note-c', 'communication-note-d', 'communication-note-e', 'communication-not-answered');
+                
+                if (checkedRadio) {
+                    const grade = checkedRadio.value.toLowerCase();
+                    row.classList.add('communication-note-' + grade);
+                } else {
+                    // Pas de réponse
+                    row.classList.add('communication-not-answered');
+                }
+            });
+        }
+
+        // Fonctions du minuteur
+        function startTimer() {
+            if (isRunning) return;
+            
+            // Basculer en mode examen et mettre à jour l'affichage
+            currentMode = 'exam';
+            updateDisplayMode();
+            
+            isRunning = true;
+            hasStarted = true;
+            hasStoppedManually = false;
+            
+            // Activer les checkboxes pendant le minuteur
+            toggleCheckboxes(false);
+            
+            // Jouer le son de début (uniquement en mode examen)
+            playSound("Début de la station");
+            
+            // Mise à jour de l'interface
+            document.getElementById('startBtn').style.display = 'none';
+            document.getElementById('stopBtn').style.display = 'inline-block';
+            document.getElementById('resetBtn').disabled = true;
+            document.getElementById('timerStatus').textContent = 'En cours';
+            document.getElementById('timerStatus').className = 'timer-status status-running';
+            
+            timerInterval = setInterval(() => {
+                currentSeconds--;
+                document.getElementById('timerDisplay').textContent = formatTime(currentSeconds);
+                
+                const container = document.getElementById('timerContainer');
+                
+                // Vérifier les moments clés (uniquement en mode examen)
+                if (currentSeconds === 2 * 60) { // 11 minutes écoulées, 2 minutes restantes
+                    if (currentMode === 'exam') {
+                        playSound("Il vous reste 2 minutes");
+                    }
+                    container.classList.add('timer-warning');
+                    document.getElementById('timerStatus').textContent = '2 min restantes';
+                    document.getElementById('timerStatus').className = 'timer-status status-warning';
+                }
+                
+                if (currentSeconds <= 30) {
+                    container.classList.add('timer-critical');
+                }
+                
+                if (currentSeconds <= 0) {
+                    endTimer();
+                }
+            }, 1000);
+        }
+
+        function stopTimer() {
+            if (!isRunning) return;
+            
+            clearInterval(timerInterval);
+            isRunning = false;
+            hasStoppedManually = true;
+            
+            // Repasser en mode révision et mettre à jour l'affichage
+            currentMode = 'revision';
+            updateDisplayMode();
+            
+            // Désactiver les checkboxes après arrêt manuel
+            toggleCheckboxes(true);
+            
+            // Appliquer la coloration des critères
+            colorCriteriaByScore();
+            
+            document.getElementById('startBtn').style.display = 'inline-block';
+            document.getElementById('stopBtn').style.display = 'none';
+            document.getElementById('resetBtn').disabled = false;
+            document.getElementById('timerStatus').textContent = 'Arrêté';
+            document.getElementById('timerStatus').className = 'timer-status status-waiting';
+            
+            const container = document.getElementById('timerContainer');
+            container.classList.remove('timer-warning', 'timer-critical');
+        }
+
+        function endTimer() {
+            clearInterval(timerInterval);
+            isRunning = false;
+            hasFinished = true;
+            currentSeconds = 0;
+            
+            // Jouer le son de fin (uniquement en mode examen)
+            if (currentMode === 'exam') {
+                playSound("Fin de la station. Veuillez sortir");
+            }
+            
+            // Repasser en mode révision et mettre à jour l'affichage
+            currentMode = 'revision';
+            updateDisplayMode();
+            
+            // Garder les checkboxes désactivées
+            toggleCheckboxes(true);
+            
+            // Appliquer la coloration des critères
+            colorCriteriaByScore();
+            
+            document.getElementById('timerDisplay').textContent = formatTime(0);
+            document.getElementById('startBtn').style.display = 'none';
+            document.getElementById('stopBtn').style.display = 'none';
+            document.getElementById('resetBtn').disabled = false;
+            document.getElementById('timerStatus').textContent = 'Terminé';
+            document.getElementById('timerStatus').className = 'timer-status status-finished';
+            
+            const container = document.getElementById('timerContainer');
+            container.classList.add('timer-critical');
+            
+            // Arrêter l'animation après 5 secondes pour éviter les rebonds infinis
+            setTimeout(() => {
+                container.classList.remove('timer-critical');
+                container.classList.add('timer-finished');
+            }, 5000);
+        }
+
+        function resetTimer() {
+            clearInterval(timerInterval);
+            isRunning = false;
+            // Supprimer la coloration des critères
+            const criteriaAndCommRows = document.querySelectorAll('.criteria-row, .communication-section');
+            criteriaAndCommRows.forEach(row => {
+                row.classList.remove('score-0', 'score-1', 'score-2', 'score-a', 'score-b', 'score-c', 'score-d', 'score-e');
+            });
+            // Supprimer la coloration des sections
+            const allSections = document.querySelectorAll('.section');
+            allSections.forEach(section => {
+                section.classList.remove('note-a', 'note-b', 'note-c', 'note-d', 'note-e');
+                section.classList.add('note-neutral');
+            });
+            hasStarted = false;
+            hasFinished = false;
+            hasStoppedManually = false;
+            currentSeconds = totalSeconds;
+            
+            // Remettre en mode révision et mettre à jour l'affichage
+            currentMode = 'revision';
+            updateDisplayMode();
+            
+            // En mode révision, ne pas désactiver les checkboxes
+            if (currentMode === 'exam') {
+                toggleCheckboxes(true);
+            }
+            
+            // Supprimer toutes les sélections de checkboxes
+            const allRadios = document.querySelectorAll('input[type="radio"]');
+            allRadios.forEach(radio => {
+                radio.checked = false;
+            });
+            
+            // Supprimer tous les commentaires et cacher les textareas
+            const allTextareas = document.querySelectorAll('.comment-textarea');
+            allTextareas.forEach(textarea => {
+                textarea.value = '';
+                textarea.style.height = textarea.classList.contains('comment-textarea') && textarea.closest('.section-comment-section.global') ? '30px' : (textarea.closest('.section-comment-section') ? '28px' : '26px');
+            });
+            
+            // Cacher toutes les sections de commentaires ouvertes
+            const allCommentSections = document.querySelectorAll('.criterion-comment-section.show, .section-comment-section.show');
+            allCommentSections.forEach(section => {
+                section.classList.remove('show');
+            });
+            
+            // Mettre à jour les boutons de commentaires
+            const allCommentButtons = document.querySelectorAll('.comment-button, .section-comment-button');
+            allCommentButtons.forEach(button => {
+                button.classList.remove('has-content');
+            });
+            
+            // Remettre tous les points à zéro
+            const allPointsDisplays = document.querySelectorAll('.points-display');
+            allPointsDisplays.forEach(display => {
+                display.textContent = '0';
+            });
+            
+            // Supprimer la coloration des critères
+            const allCriteriaRows = document.querySelectorAll('.criteria-row, .communication-section');
+            allCriteriaRows.forEach(row => {
+                row.classList.remove('criteria-zero-points', 'criteria-one-point', 'criteria-full-points', 'criteria-not-answered');
+                row.classList.remove('communication-note-a', 'communication-note-b', 'communication-note-c', 'communication-note-d', 'communication-note-e', 'communication-not-answered');
+            });
+            
+            // Recalculer les scores pour remettre à zéro
+            calculateScores();
+            
+            document.getElementById('timerDisplay').textContent = formatTime(totalSeconds);
+            document.getElementById('startBtn').style.display = 'inline-block';
+            document.getElementById('stopBtn').style.display = 'none';
+            document.getElementById('timerStatus').textContent = 'En attente';
+            document.getElementById('timerStatus').className = 'timer-status status-waiting';
+            
+            const container = document.getElementById('timerContainer');
+            container.classList.remove('timer-warning', 'timer-critical', 'timer-finished');
+        }
+
+        // Fonctions de gestion des modes
+        function switchMode(mode) {
+            currentMode = mode;
+            const body = document.body;
+            const buttons = document.querySelectorAll('.mode-button');
+            
+            // Mise à jour des classes CSS
+            body.className = mode + '-mode';
+            
+            // Mise à jour des boutons actifs
+            buttons.forEach(btn => btn.classList.remove('active'));
+            document.querySelector('[onclick="switchMode(\'' + mode + '\')"]').classList.add('active');
+            
+            if (mode === 'revision') {
+                // Mode révision : checkboxes toujours activées
+                toggleCheckboxes(false);
+            } else {
+                // Mode examen : workflow classique
+                if (!hasStarted) {
+                    toggleCheckboxes(true);
+                }
+            }
+        }
+        
+        function identifyLacunes() {
+            if (currentMode !== 'revision') return;
+            
+            // Appliquer la coloration intelligente (même logique que colorCriteriaByScore)
+            const normalCriteriaRows = document.querySelectorAll('.criteria-row');
+            normalCriteriaRows.forEach(row => {
+                const id = row.id;
+                if (!id) return;
+                
+                const criteriaName = id.replace('criteria-', '');
+                const checkedRadio = document.querySelector('input[name="' + criteriaName + '"]:checked');
+                
+                // Supprimer les classes de couleur existantes
+                row.classList.remove('criteria-zero-points', 'criteria-one-point', 'criteria-full-points', 'criteria-not-answered');
+                
+                if (checkedRadio) {
+                    const score = Number(checkedRadio.value) || 0;
+                    
+                    // Appliquer la couleur selon le score
+                    if (score === 0) {
+                        row.classList.add('criteria-zero-points');
+                    } else if (score === 1) {
+                        row.classList.add('criteria-one-point');
+                    } else if (score >= 2) {
+                        row.classList.add('criteria-full-points');
+                    }
+                } else {
+                    // Pas de réponse
+                    row.classList.add('criteria-not-answered');
+                }
+            });
+
+            // Pour les critères de communication
+            const communicationRows = document.querySelectorAll('.communication-section');
+            communicationRows.forEach(row => {
+                const id = row.id;
+                if (!id) return;
+                
+                const criteriaName = id.replace('criteria-', '');
+                const checkedRadio = document.querySelector('input[name="' + criteriaName + '"]:checked');
+                
+                // Supprimer les classes de couleur existantes
+                row.classList.remove('communication-note-a', 'communication-note-b', 'communication-note-c', 'communication-note-d', 'communication-note-e', 'communication-not-answered');
+                
+                if (checkedRadio) {
+                    const grade = checkedRadio.value.toLowerCase();
+                    row.classList.add('communication-note-' + grade);
+                } else {
+                    // Pas de réponse
+                    row.classList.add('communication-not-answered');
+                }
+            });
+        }
+
+        // Fonction pour colorer le contenu entre crochets []
+        function colorPatientResponses() {
+            // Sélectionner tous les éléments qui peuvent contenir des réponses patients
+            const elements = document.querySelectorAll('.criteria-text, .sub-criteria, .redflags-text, .dd-item, .therapy-section');
+            
+            elements.forEach(element => {
+                const text = element.innerHTML;
+                // Remplacer tout contenu entre crochets [] par une version colorée
+                const coloredText = text.replace(/\[([^\]]+)\]/g, '<span style="color: rgb(44, 90, 160); font-weight: 500;">[$1]</span>');
+                element.innerHTML = coloredText;
+            });
+        }
+
+        // Initialisation: configurer le mode par défaut et colorer les réponses patients
+        document.addEventListener('DOMContentLoaded', function() {
+            switchMode('revision'); // Mode révision par défaut
+            colorPatientResponses(); // Colorer les réponses patients entre crochets
+            initializeComments(); // Initialiser l'état des commentaires
+        });
+        
+        // Initialiser l'état des commentaires au chargement
+        function initializeComments() {
+            // Vérifier tous les textareas de commentaires de critères
+            document.querySelectorAll('.comment-textarea').forEach(textarea => {
+                if (textarea.id.startsWith('comment-') && !textarea.id.includes('section')) {
+                    const criteriaId = textarea.id.replace('comment-', '');
+                    updateCommentButton(criteriaId);
+                }
+            });
+            
+            // Vérifier tous les textareas de commentaires de sections
+            document.querySelectorAll('[id^="comment-section-"]').forEach(textarea => {
+                const sectionName = textarea.id.replace('comment-section-', '');
+                updateSectionComment(sectionName);
+            });
+        }
+
+        // Fonctions de scoring originales (modifiées pour inclure la coloration)
+        function updateScore(section, element) {
+            const value = element.value;
+            const name = element.name;
+            let pointValue;
+
+            if (section === "communication") {
+                const map = { A: 4, B: 3, C: 2, D: 1, E: 0 };
+                pointValue = map[value] || 0;
+                // Mettre à jour la classe de couleur pour communication
+                const criteriaRow = document.getElementById("criteria-" + name);
+                if (criteriaRow) {
+                    criteriaRow.classList.remove("score-a", "score-b", "score-c", "score-d", "score-e");
+                    criteriaRow.classList.add("score-" + value.toLowerCase());
+                }
+            } else {
+                pointValue = Number(value) || 0;
+                // Mettre à jour la classe de couleur pour autres critères
+                const criteriaRow = document.getElementById("criteria-" + name);
+                if (criteriaRow) {
+                    criteriaRow.classList.remove("score-0", "score-1", "score-2");
+                    criteriaRow.classList.add("score-" + value);
+                }
+            }
+
+            const pointsElement = document.getElementById("points-" + name);
+            if (pointsElement) {
+                pointsElement.textContent = pointValue;
+            }
+
+            calculateScores();
+            
+            // Appliquer la coloration si le minuteur est terminé ou arrêté manuellement
+            if (hasFinished || hasStoppedManually) {
+                colorCriteriaByScore();
+            }
+        }
+
+        function calculateScores() {
+            let anamneseScore = 0, statusScore = 0, managementScore = 0, communicationScore = 0;
+            
+            // Maximum scores pour chaque section
+            const maxAnamnese = 14 * 2;
+            const maxStatus = 9 * 2;
+            const maxManagement = 7 * 2;
+            const maxCommunication = 5 * 4; // 20
+            const missingItems = [];
+
+            const coef = {
+                anamnese: 0.25,
+                status: 0.25,
+                management: 0.25,
+                communication: 0.25
+            };
+
+            // Calcul du score pour Anamnèse
+            for (let i = 1; i <= 14; i++) {
+                const radio = document.querySelector('input[name="a' + i + '"]:checked');
+                if (radio) {
+                    anamneseScore += Number(radio.value) || 0;
+                } else {
+                    const criteria = document.querySelector('input[name="a' + i + '"][data-criteria]');
+                    if (criteria) missingItems.push('Anamnèse : ' + criteria.dataset.criteria);
+                }
+            }
+            document.getElementById("anamneseScore").textContent = anamneseScore;
+
+            // Calcul du score pour Examen clinique
+            for (let i = 1; i <= 9; i++) {
+                const radio = document.querySelector('input[name="e' + i + '"]:checked');
+                if (radio) {
+                    statusScore += Number(radio.value) || 0;
+                } else {
+                    const criteria = document.querySelector('input[name="e' + i + '"][data-criteria]');
+                    if (criteria) missingItems.push('Examen clinique : ' + criteria.dataset.criteria);
+                }
+            }
+            document.getElementById("statusScore").textContent = statusScore;
+
+            // Calcul du score pour Management
+            for (let i = 1; i <= 7; i++) {
+                const radio = document.querySelector('input[name="m' + i + '"]:checked');
+                if (radio) {
+                    managementScore += Number(radio.value) || 0;
+                } else {
+                    const criteria = document.querySelector('input[name="m' + i + '"][data-criteria]');
+                    if (criteria) missingItems.push('Management : ' + criteria.dataset.criteria);
+                }
+            }
+            document.getElementById("managementScore").textContent = managementScore;
+
+            // Calcul du score pour Communication
+            for (let i = 1; i <= 5; i++) {
+                const radio = document.querySelector('input[name="c' + i + '"]:checked');
+                if (radio) {
+                    const val = radio.value;
+                    const map = { A: 4, B: 3, C: 2, D: 1, E: 0 };
+                    communicationScore += map[val] || 0;
+                } else {
+                    const criteria = document.querySelector('input[name="c' + i + '"][data-criteria]');
+                    if (criteria) missingItems.push('Communication : ' + criteria.dataset.criteria);
+                }
+            }
+            document.getElementById("communicationScore").textContent = communicationScore;
+
+            // Calcul des pourcentages
+            const anamneseP = (anamneseScore / maxAnamnese) * 100;
+            const statusP = (statusScore / maxStatus) * 100;
+            const managementP = (managementScore / maxManagement) * 100;
+            const communicationP = (communicationScore / maxCommunication) * 100;
+
+            const globalPercentage = anamneseP * coef.anamnese + statusP * coef.status + managementP * coef.management + communicationP * coef.communication;
+
+            const isStarted = anamneseScore + statusScore + managementScore + communicationScore > 0;
+
+            // Calcul du score total maximum
+            const totalScoreText = isStarted ? Math.round(globalPercentage) : 0;
+            document.getElementById("totalScore").textContent = totalScoreText + "%";
+
+            // Mise à jour des pourcentages par section
+            document.getElementById("anamnese-percentage").textContent = Math.round(anamneseP);
+            document.getElementById("examen-percentage").textContent = Math.round(statusP);
+            document.getElementById("management-percentage").textContent = Math.round(managementP);
+            document.getElementById("communication-percentage").textContent = Math.round(communicationP);
+
+            // Mise à jour de la note globale
+            const gradeElement = document.getElementById("globalGrade");
+            const scoreBody = document.getElementById("totalScore").closest(".total-body");
+            const gradeBody = gradeElement.closest(".total-body");
+            const pourcentBody = document.querySelector(".total-pourcent-body");
+            const sections = ["anamnese", "examen", "management", "communication"];
+
+            const allClasses = ["note-a", "note-b", "note-c", "note-d", "note-e", "note-neutral"];
+
+            function getClass(p) {
+                if (p === 0) return "note-neutral";
+                if (p >= 90) return "note-a";
+                if (p >= 80) return "note-b";
+                if (p >= 70) return "note-c";
+                if (p >= 60) return "note-d";
+                return "note-e";
+            }
+
+            const gradeClass = getClass(globalPercentage);
+            const gradeLabel = isStarted ? gradeClass.split("-")[1].toUpperCase() : "A-E";
+            gradeElement.textContent = gradeLabel;
+
+            [gradeElement, scoreBody, gradeBody, pourcentBody].forEach(el => {
+                el.classList.remove(...allClasses);
+                el.classList.add(gradeClass);
+            });
+
+            sections.forEach(id => {
+                const value = parseInt(document.getElementById(id + "-percentage").textContent);
+                const section = document.getElementById(id + "-percentage").closest(".total-pourcent-section");
+                const sectionClass = getClass(value);
+                section.classList.remove(...allClasses);
+                section.classList.add(sectionClass);
+            });
+
+            // Appliquer les couleurs aux sections principales
+            const sectionMapping = {
+                "anamnese": anamneseP,
+                "examen": statusP,
+                "management": managementP,
+                "communication": communicationP
+            };
+
+            Object.entries(sectionMapping).forEach(([sectionName, percentage]) => {
+                const allSections = document.querySelectorAll(".section");
+                allSections.forEach(section => {
+                    const headerText = section.querySelector(".section-header")?.textContent || "";
+                    if ((sectionName === "anamnese" && headerText.includes("Anamnèse")) ||
+                        (sectionName === "examen" && headerText.includes("Examen clinique")) ||
+                        (sectionName === "management" && headerText.includes("Management")) ||
+                        (sectionName === "communication" && headerText.includes("Communication"))) {
+                        const sectionClass = getClass(percentage);
+                        section.classList.remove(...allClasses);
+                        section.classList.add(sectionClass);
+                    }
+                });
+            });
+
+            // Gestion des éléments manquants
+            if (missingItems.length > 0) {
+                document.getElementById("missingItems").style.display = "block";
+                document.getElementById("missingList").innerHTML = missingItems.map(item =>
+                    "<div class=\"missing-item\">• " + item + "</div>"
+                ).join("");
+            } else {
+                document.getElementById("missingItems").style.display = "none";
+            }
+        }
+        
+        // Fonctions de gestion des commentaires
+        function toggleComment(criteriaId) {
+            const commentSection = document.getElementById('comment-section-' + criteriaId);
+            const isShowing = commentSection.classList.contains('show');
+            
+            if (isShowing) {
+                commentSection.classList.remove('show');
+            } else {
+                commentSection.classList.add('show');
+                // Focus sur le textarea
+                setTimeout(() => {
+                    document.getElementById('comment-' + criteriaId).focus();
+                }, 100);
+            }
+        }
+        
+        function updateCommentButton(criteriaId) {
+            const textarea = document.getElementById('comment-' + criteriaId);
+            const button = document.querySelector('[onclick="toggleComment(\'' + criteriaId + '\')"]');
+            const commentSection = document.getElementById('comment-section-' + criteriaId);
+            
+            if (textarea.value.trim() !== '') {
+                button.classList.add('has-content');
+                button.title = 'Commentaire ajouté - Cliquer pour modifier';
+                commentSection.classList.add('has-content');
+            } else {
+                button.classList.remove('has-content');
+                button.title = 'Ajouter un commentaire';
+                commentSection.classList.remove('has-content');
+            }
+        }
+        
+        function toggleSectionComment(sectionName) {
+            const section = document.getElementById('section-comment-' + sectionName);
+            const button = document.querySelector('[onclick="toggleSectionComment(\'' + sectionName + '\')"]');
+            const isShowing = section.classList.contains('show');
+            
+            if (isShowing) {
+                section.classList.remove('show');
+            } else {
+                section.classList.add('show');
+                // Focus sur le textarea
+                setTimeout(() => {
+                    document.getElementById('comment-section-' + sectionName).focus();
+                }, 100);
+            }
+        }
+        
+        function updateSectionComment(sectionName) {
+            const textarea = document.getElementById('comment-section-' + sectionName);
+            const section = document.getElementById('section-comment-' + sectionName);
+            const button = document.querySelector('[onclick="toggleSectionComment(\'' + sectionName + '\')"]');
+            
+            if (textarea.value.trim() === '') {
+                section.classList.remove('has-content');
+                if (section.classList.contains('global')) {
+                    section.classList.add('empty');
+                }
+                if (button) {
+                    button.classList.remove('has-content');
+                    button.title = 'Commentaire sur cette section';
+                }
+            } else {
+                section.classList.add('has-content');
+                section.classList.remove('empty');
+                if (button) {
+                    button.classList.add('has-content');
+                    button.title = 'Commentaire ajouté - Cliquer pour modifier';
+                }
+            }
+        }
+        
+        // Fonction spécifique pour le commentaire général
+        function updateGeneralComment() {
+            const textarea = document.getElementById('comment-general');
+            const section = document.getElementById('section-comment-general');
+            
+            if (textarea.value.trim() === '') {
+                section.classList.remove('has-content');
+            } else {
+                section.classList.add('has-content');
+            }
+        }
+        
+        // Préparer l'impression en masquant les sections vides
+        function prepareForPrint() {
+            // Marquer les sections de critères sans contenu comme show=false pour l'impression
+            document.querySelectorAll('.criterion-comment-section').forEach(section => {
+                const textarea = section.querySelector('.comment-textarea');
+                if (!textarea || textarea.value.trim() === '') {
+                    section.classList.remove('show');
+                }
+            });
+            
+            // Marquer les sections vides
+            ['anamnese', 'examen', 'management', 'communication', 'general'].forEach(sectionName => {
+                const textarea = document.getElementById('comment-section-' + sectionName);
+                const section = document.getElementById('section-comment-' + sectionName);
+                if (textarea && textarea.value.trim() === '') {
+                    section.classList.add('empty');
+                } else if (section) {
+                    section.classList.remove('empty');
+                }
+            });
+        }
+        
+        // Écouter l'événement d'impression
+        window.addEventListener('beforeprint', prepareForPrint);
+
+        // Initialisation
+        calculateScores();
+        
+        // Initialiser la section globale comme vide
+        const globalSection = document.getElementById('section-comment-general');
+        if (globalSection) {
+            globalSection.classList.add('empty');
+        }
+    </script>
+</body>
+</html>

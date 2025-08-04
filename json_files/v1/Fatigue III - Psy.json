@@ -1,0 +1,267 @@
+{
+  "title": "Fatigue III - Psy",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Homme de 22 ans consultant son médecin généraliste pour fatigue"
+  },
+  "sections": {
+    "anamnese": {
+      "title": "Anamnèse",
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction et objectif",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Évolution temporelle",
+          "details": [
+            "Début"
+          ],
+          "patientComment": "(Depuis 4 semaines)"
+        },
+        {
+          "id": "a3",
+          "text": "Symptômes principaux",
+          "details": [
+            "Fatigue",
+            "Faiblesse",
+            "Troubles de concentration"
+          ],
+          "patientComment": "(Oui / Oui / Oui)"
+        },
+        {
+          "id": "a4",
+          "text": "Variation des symptômes",
+          "details": [
+            "Quand amélioration/aggravation",
+            "Baisse matinale"
+          ],
+          "patientComment": "(Le matin c'est le pire)"
+        },
+        {
+          "id": "a5",
+          "text": "Facteurs déclenchants",
+          "patientComment": "(Était souvent malade en hiver, sa copine l'a quitté, pas de travail)"
+        },
+        {
+          "id": "a6",
+          "text": "Impact sur la vie quotidienne",
+          "patientComment": "(Pas de travail donc ça va... Pas de force pour chercher)"
+        },
+        {
+          "id": "a7",
+          "text": "Qualité du sommeil",
+          "patientComment": "(Mauvais)"
+        },
+        {
+          "id": "a8",
+          "text": "Appétit",
+          "patientComment": "(Peu - végétarien)"
+        },
+        {
+          "id": "a9",
+          "text": "Autres symptômes ou maladie récente",
+          "patientComment": "(Non)"
+        },
+        {
+          "id": "a10",
+          "text": "Dépistage dépression",
+          "details": [
+            "Humeur",
+            "Épisodes dépressifs antérieurs",
+            "Sommeil"
+          ]
+        },
+        {
+          "id": "a11",
+          "text": "Dépistage thyroïde",
+          "details": [
+            "Peau",
+            "Cheveux",
+            "Troubles gastro-intestinaux",
+            "Transpiration/intolérance au froid"
+          ]
+        },
+        {
+          "id": "a12",
+          "text": "Dépistage anémie",
+          "details": [
+            "Dyspnée",
+            "Palpitations",
+            "Végétarisme"
+          ]
+        },
+        {
+          "id": "a13",
+          "text": "Dépistage cancer",
+          "details": [
+            "Sueurs",
+            "Fièvre",
+            "Perte de poids",
+            "Adénopathies"
+          ]
+        },
+        {
+          "id": "a14",
+          "text": "Dépistage diabète",
+          "details": [
+            "Polydipsie",
+            "Polyurie",
+            "Infections"
+          ]
+        },
+        {
+          "id": "a15",
+          "text": "Médication actuelle",
+          "patientComment": "(Non)"
+        },
+        {
+          "id": "a16",
+          "text": "Antécédents médicaux",
+          "patientComment": "(Aucun)"
+        },
+        {
+          "id": "a17",
+          "text": "Allergies",
+          "patientComment": "(Abeilles)"
+        },
+        {
+          "id": "a18",
+          "text": "Habitudes de vie",
+          "patientComment": "(Fume 1 paquet/jour, alcool rarement)"
+        },
+        {
+          "id": "a19",
+          "text": "Évaluation du risque suicidaire",
+          "details": [
+            "Pensées de ne plus vouloir vivre ainsi",
+            "Désir de changement",
+            "Pensées de mort",
+            "Idées suicidaires",
+            "Plans concrets",
+            "Méthode envisagée",
+            "Tentatives antérieures",
+            "Antécédents familiaux de suicide"
+          ],
+          "patientComment": "(Oui / Oui / Oui / Oui / Non, pas concrètement / Train ou arme / Une fois bu 2 bouteilles de tequila / Père s'est suicidé il y a 4 ans)"
+        },
+        {
+          "id": "a20",
+          "text": "Symptômes psychiatriques associés",
+          "details": [
+            "Anxiété",
+            "Troubles obsessionnels",
+            "Troubles de la pensée",
+            "Idées délirantes",
+            "Hallucinations",
+            "Troubles du moi"
+          ],
+          "patientComment": "(Anxiété oui, peu claire / Non / Non / Non / Non / Non)"
+        },
+        {
+          "id": "a21",
+          "text": "Antécédents familiaux psychiatriques",
+          "patientComment": "(Père décédé, mère actuellement en clinique pour burnout)"
+        },
+        {
+          "id": "a22",
+          "text": "Anamnèse sociale et soutien",
+          "details": [
+            "Soutien social",
+            "Situation de logement",
+            "Situation professionnelle"
+          ],
+          "patientComment": "(Pas d'amis / Seul, 2 chats, mère absente actuellement / Sans emploi)"
+        },
+        {
+          "id": "a23",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "binaryOnly": false,
+          "details": [
+            "Anamnèse générale ciblée et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "examen": {
+      "title": "Examen clinique",
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Examen clinique psychiatrique de base effectué"
+        },
+        {
+          "id": "e2",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "binaryOnly": false,
+          "details": [
+            "Status général ciblé et bien conduit"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "management": {
+      "title": "Prise en charge",
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic de suspicion",
+          "patientComment": "(Dépression)"
+        },
+        {
+          "id": "m2",
+          "text": "Diagnostics différentiels",
+          "patientComment": "(Manque de sommeil, hypothyroïdie, anémie)"
+        },
+        {
+          "id": "m3",
+          "text": "Examens diagnostiques proposés",
+          "details": [
+            "Biologie",
+            "TSH"
+          ],
+          "patientComment": "(FSC / TSH)"
+        },
+        {
+          "id": "m4",
+          "text": "Traitement proposé",
+          "details": [
+            "Psychothérapie",
+            "Antidépresseurs",
+            "Anxiolytiques si nécessaire (Benzodiazépines - ex: alprazolam)"
+          ]
+        },
+        {
+          "id": "m5",
+          "text": "Proposition de contact et suivi",
+          "details": [
+            "Offre de contact",
+            "Prochain rendez-vous fixé",
+            "Promesse de suivi"
+          ]
+        },
+        {
+          "id": "m6",
+          "text": "Mesures en cas de danger imminent",
+          "patientComment": "(Hospitalisation d'office si danger aigu)"
+        },
+        {
+          "id": "m7",
+          "text": "Évaluation globale de la qualité de la prise en charge",
+          "binaryOnly": false,
+          "details": [
+            "Prise en charge générale cohérente et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,243 @@
+{
+  "title": "Dysphagie",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Homme de 68 ans consultant pour difficultés de déglutition"
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction et tâche",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Question d'entrée ouverte - Symptôme principal",
+          "patientComment": "difficultés à avaler depuis quelques semaines",
+          "binaryOnly": true
+        },
+        {
+          "id": "a3",
+          "text": "Début et évolution des symptômes",
+          "patientComment": "début progressif il y a 6 semaines, s'aggrave"
+        },
+        {
+          "id": "a4",
+          "text": "Type de dysphagie",
+          "details": [
+            "Dysphagie aux solides (d'abord)",
+            "Dysphagie aux liquides (maintenant aussi)",
+            "Localisation (sensation de blocage)",
+            "Progression descendante"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Symptômes associés",
+          "details": [
+            "Perte de poids (5 kg en 6 semaines)",
+            "Fatigue",
+            "Perte d'appétit",
+            "Douleur à la déglutition (odynophagie)"
+          ]
+        },
+        {
+          "id": "a6",
+          "text": "Facteurs de risque",
+          "details": [
+            "Tabagisme (40 paquets-années)",
+            "Consommation d'alcool",
+            "Reflux gastro-œsophagien",
+            "Âge avancé"
+          ]
+        },
+        {
+          "id": "a7",
+          "text": "Antécédents médicaux",
+          "details": [
+            "Chirurgies antérieures",
+            "Maladies chroniques",
+            "Cancers familiaux",
+            "Traitements actuels"
+          ]
+        },
+        {
+          "id": "a8",
+          "text": "Symptômes d'alarme",
+          "details": [
+            "Dysphonie",
+            "Adénopathies cervicales",
+            "Hémoptysie",
+            "Douleur cervicale"
+          ]
+        },
+        {
+          "id": "a9",
+          "text": "Impact fonctionnel",
+          "patientComment": "évite certains aliments, mange très lentement"
+        },
+        {
+          "id": "a10",
+          "text": "Régurgitations et vomissements",
+          "patientComment": "parfois régurgitation d'aliments non digérés"
+        },
+        {
+          "id": "a11",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "binaryOnly": false,
+          "details": [
+            "Anamnèse générale ciblée et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Examen général",
+          "details": [
+            "État général",
+            "Poids et taille (IMC)",
+            "Signes de dénutrition",
+            "Pâleur"
+          ]
+        },
+        {
+          "id": "e2",
+          "text": "Examen ORL et cervical",
+          "details": [
+            "Inspection de la cavité buccale",
+            "Examen du pharynx",
+            "Palpation cervicale (adénopathies)",
+            "Mobilité du larynx"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Examen de la déglutition",
+          "details": [
+            "Test à l'eau",
+            "Observation de la déglutition",
+            "Réflexe pharyngé",
+            "Coordination déglutition"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Examen neurologique",
+          "details": [
+            "Nerfs crâniens (IX, X, XI, XII)",
+            "Réflexes",
+            "Force musculaire",
+            "Coordination"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Examen abdominal",
+          "details": [
+            "Palpation épigastrique",
+            "Hépatomégalie",
+            "Masses abdominales",
+            "Ascite"
+          ]
+        },
+        {
+          "id": "e6",
+          "text": "Examen ganglionnaire",
+          "details": [
+            "Aires ganglionnaires cervicales",
+            "Ganglions sus-claviculaires",
+            "Aires axillaires",
+            "Aires inguinales"
+          ]
+        },
+        {
+          "id": "e7",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "binaryOnly": false,
+          "details": [
+            "Status général ciblé et bien conduit"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic de suspicion",
+          "patientComment": "Cancer de l'œsophage (carcinome épidermoïde probable)"
+        },
+        {
+          "id": "m2",
+          "text": "Diagnostics différentiels",
+          "details": [
+            "Sténose œsophagienne bénigne",
+            "Achalasie",
+            "Œsophagite sévère",
+            "Compression extrinsèque",
+            "Troubles neurologiques"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Examens complémentaires urgents",
+          "details": [
+            "Endoscopie digestive haute avec biopsies",
+            "TDM thoraco-abdomino-pelvienne",
+            "Bilan nutritionnel",
+            "NFS, ionogramme, fonction hépatique"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Examens de stadification",
+          "details": [
+            "TEP-TDM",
+            "Écho-endoscopie",
+            "Fibroscopie bronchique si indiquée",
+            "Consultation oncologique"
+          ]
+        },
+        {
+          "id": "m5",
+          "text": "Prise en charge immédiate",
+          "details": [
+            "Référence urgente en gastro-entérologie",
+            "Conseils nutritionnels",
+            "Alimentation mixée/liquide",
+            "Arrêt tabac et alcool"
+          ]
+        },
+        {
+          "id": "m6",
+          "text": "Pronostic et annonce",
+          "details": [
+            "Annonce progressive",
+            "Information sur les examens",
+            "Soutien psychologique",
+            "Implication de la famille"
+          ]
+        },
+        {
+          "id": "m7",
+          "text": "Évaluation globale de la qualité de la prise en charge",
+          "binaryOnly": false,
+          "details": [
+            "Prise en charge générale cohérente et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    }
+  }
+}

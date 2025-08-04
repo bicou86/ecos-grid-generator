@@ -1,0 +1,206 @@
+{
+  "title": "Douleur thoracique I",
+  "context": {
+    "setting": "Service d'urgence",
+    "patient": "Garçon de 16 ans, chute en vélo, contrôle aux urgences, douleurs thoraciques"
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction et tâche",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Localisation de la douleur",
+          "patientComment": "thorax latéral gauche, à hauteur du mamelon",
+          "binaryOnly": true
+        },
+        {
+          "id": "a3",
+          "text": "Qualité de la douleur",
+          "patientComment": "piquante"
+        },
+        {
+          "id": "a4",
+          "text": "Début de la douleur",
+          "patientComment": "directement après la chute"
+        },
+        {
+          "id": "a5",
+          "text": "Irradiation",
+          "patientComment": "partout, très horrible"
+        },
+        {
+          "id": "a6",
+          "text": "Intensité sur échelle de 1-10",
+          "patientComment": "7/10"
+        },
+        {
+          "id": "a7",
+          "text": "Aggravation des douleurs",
+          "patientComment": "lors de la respiration et du mouvement"
+        },
+        {
+          "id": "a8",
+          "text": "Amélioration des douleurs",
+          "patientComment": "au repos, en retenant la respiration"
+        },
+        {
+          "id": "a9",
+          "text": "Autres douleurs ? Jambes, bras, tête...",
+          "patientComment": "non, sauf genou écorché"
+        },
+        {
+          "id": "a10",
+          "text": "Mécanisme de la chute",
+          "patientComment": "a glissé dans un virage"
+        },
+        {
+          "id": "a11",
+          "text": "Perte de connaissance ? Vertiges ? Céphalées ?",
+          "patientComment": "non, portait un casque"
+        },
+        {
+          "id": "a12",
+          "text": "Dyspnée ?",
+          "patientComment": "non, mais douleur lors de la respiration"
+        },
+        {
+          "id": "a13",
+          "text": "Antécédents médicaux"
+        },
+        {
+          "id": "a14",
+          "text": "Anamnèse médicamenteuse"
+        },
+        {
+          "id": "a15",
+          "text": "Allergies"
+        },
+        {
+          "id": "a16",
+          "text": "Toxiques",
+          "patientComment": "fume parfois du cannabis, boit le week-end, fume rarement"
+        },
+        {
+          "id": "a17",
+          "text": "Activités sportives, loisirs",
+          "patientComment": "vélo, football, copains, traîner"
+        },
+        {
+          "id": "a18",
+          "text": "Anamnèse familiale",
+          "patientComment": "mère diabétique"
+        },
+        {
+          "id": "a19",
+          "text": "Anamnèse sociale",
+          "patientComment": "apprenti jardinier, copine depuis 6 mois"
+        },
+        {
+          "id": "a20",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "binaryOnly": false,
+          "details": [
+            "Anamnèse générale ciblée et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Inspection du thorax",
+          "patientComment": "hématome thorax gauche, écorchures, position crispée"
+        },
+        {
+          "id": "e2",
+          "text": "Palpation",
+          "patientComment": "très douloureux au niveau de la côte"
+        },
+        {
+          "id": "e3",
+          "text": "Poumon",
+          "patientComment": "ne respire pas bien profondément - indique des douleurs"
+        },
+        {
+          "id": "e4",
+          "text": "Cœur"
+        },
+        {
+          "id": "e5",
+          "text": "Examen grossier rachis, extrémités"
+        },
+        {
+          "id": "e6",
+          "text": "Bref examen neurologique"
+        },
+        {
+          "id": "e7",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "binaryOnly": false,
+          "details": [
+            "Status général ciblé et bien conduit"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Énonce le diagnostic de suspicion",
+          "patientComment": "fracture de côte"
+        },
+        {
+          "id": "m2",
+          "text": "Diagnostics différentiels",
+          "details": [
+            "Contusion costale",
+            "Fracture de côte",
+            "Pneumothorax"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Nomme les examens diagnostiques",
+          "patientComment": "radiographie thoracique"
+        },
+        {
+          "id": "m4",
+          "text": "Thérapie",
+          "details": [
+            "Analgésie !!!",
+            "Immobilisation"
+          ]
+        },
+        {
+          "id": "m5",
+          "text": "Explique qu'aucune autre thérapie, guérit, pronostic très bon"
+        },
+        {
+          "id": "m6",
+          "text": "Rédige certificat d'incapacité de travail pour 1 semaine - contrôle puis réévaluation"
+        },
+        {
+          "id": "m7",
+          "text": "Évaluation globale de la qualité de la prise en charge",
+          "binaryOnly": false,
+          "details": [
+            "Prise en charge générale cohérente et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    }
+  }
+}

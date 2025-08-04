@@ -1,0 +1,225 @@
+{
+  "title": "Éruption cutanée II",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Enfant de 6 ans (Timmy) présenté par sa mère pour une éruption cutanée"
+  },
+  "sections": {
+    "anamnese": {
+      "title": "Anamnèse",
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction et objectif",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Exploration du symptôme principal : éruption cutanée",
+          "binaryOnly": true
+        },
+        {
+          "id": "a3",
+          "text": "Évolution temporelle",
+          "patientComment": "(Depuis hier après-midi)"
+        },
+        {
+          "id": "a4",
+          "text": "Localisation de l'éruption",
+          "patientComment": "(Tête/cou et tronc)"
+        },
+        {
+          "id": "a5",
+          "text": "Caractéristiques de l'éruption",
+          "details": [
+            "Prurit",
+            "Aspect tactile"
+          ],
+          "patientComment": "(Pas de démangeaisons / Se sent comme du papier de verre)"
+        },
+        {
+          "id": "a6",
+          "text": "Symptômes associés",
+          "details": [
+            "Fièvre et frissons",
+            "Mal de gorge",
+            "Changements linguaux"
+          ],
+          "patientComment": "(Depuis 3 jours / Surtout douleur à la déglutition / Langue rouge soudainement)"
+        },
+        {
+          "id": "a7",
+          "text": "État général et symptômes systémiques",
+          "details": [
+            "Plaintes générales",
+            "Céphalées",
+            "Problèmes respiratoires"
+          ],
+          "patientComment": "(Enfant plaintif / Mal de tête / Respiration normale, pas d'autres problèmes systémiques)"
+        },
+        {
+          "id": "a8",
+          "text": "Allergies connues",
+          "patientComment": "(Abeille)"
+        },
+        {
+          "id": "a9",
+          "text": "Antécédents médicaux et médicaments",
+          "details": [
+            "Médicaments actuels",
+            "Maladies antérieures",
+            "Interventions chirurgicales"
+          ],
+          "patientComment": "(Non)"
+        },
+        {
+          "id": "a10",
+          "text": "Statut vaccinal",
+          "patientComment": "(Tous les vaccins sauf rougeole)"
+        },
+        {
+          "id": "a11",
+          "text": "Examens préventifs récents",
+          "patientComment": "(Oui, normal il y a 6 mois)"
+        },
+        {
+          "id": "a12",
+          "text": "Antécédents familiaux",
+          "patientComment": "(Personne dans la famille n'a eu cela)"
+        },
+        {
+          "id": "a13",
+          "text": "Anamnèse sociale et exposition",
+          "patientComment": "(Va à la crèche, pas certain si quelqu'un là-bas a eu cela)"
+        },
+        {
+          "id": "a14",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "binaryOnly": false,
+          "details": [
+            "Anamnèse générale ciblée et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "examen": {
+      "title": "Examen clinique",
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Évaluation des signes de déshydratation",
+          "details": [
+            "Diurèse",
+            "Fontanelle",
+            "Yeux enfoncés",
+            "Muqueuses sèches",
+            "Pli cutané"
+          ],
+          "patientComment": "(Tous absents)"
+        },
+        {
+          "id": "e2",
+          "text": "Examen cutané détaillé",
+          "patientComment": "(Voir image en annexe)"
+        },
+        {
+          "id": "e3",
+          "text": "Examen ORL",
+          "details": [
+            "Aspect de la langue",
+            "État des amygdales"
+          ],
+          "patientComment": "(Langue framboise / Amygdales inflammées)"
+        },
+        {
+          "id": "e4",
+          "text": "Auscultation pulmonaire",
+          "patientComment": "(Normale)"
+        },
+        {
+          "id": "e5",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "binaryOnly": false,
+          "details": [
+            "Status général ciblé et bien conduit"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "management": {
+      "title": "Prise en charge",
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic de suspicion principal",
+          "patientComment": "(Scarlatine)"
+        },
+        {
+          "id": "m2",
+          "text": "Diagnostics différentiels",
+          "details": [
+            "Rougeole",
+            "Varicelle",
+            "Rubéole"
+          ],
+          "patientComment": "(Prodrome moins sévère, éruption différente / Éruption prurigineuse / Prodrome plus doux, éruption différente)"
+        },
+        {
+          "id": "m3",
+          "text": "Examens complémentaires proposés",
+          "details": [
+            "Test rapide streptocoque",
+            "Culture bactériologique"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Traitement proposé",
+          "details": [
+            "Antibiothérapie",
+            "Durée du traitement",
+            "Bénéfices attendus"
+          ],
+          "patientComment": "(Pénicilline / 7 jours / Raccourcissement des symptômes, réduction de la contagiosité)"
+        },
+        {
+          "id": "m5",
+          "text": "Mesures préventives et prophylaxie",
+          "patientComment": "(Pas de prophylaxie de l'entourage nécessaire)"
+        },
+        {
+          "id": "m6",
+          "text": "Planification du suivi",
+          "details": [
+            "Surveillance de l'efficacité",
+            "Consignes de retour",
+            "Éviction scolaire"
+          ]
+        },
+        {
+          "id": "m7",
+          "text": "Évaluation globale de la qualité de la prise en charge",
+          "binaryOnly": false,
+          "details": [
+            "Prise en charge générale cohérente et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "images": [
+      {
+        "title": "Image clinique - Éruption scarlatiniforme",
+        "description": "Photographie montrant l'éruption cutanée érythémateuse généralisée typique de la scarlatine chez un enfant",
+        "data": "grilles_generees/images/eruption-cutanee-II-img39.jpg"
+      }
+    ]
+  }
+}

@@ -1,0 +1,249 @@
+{
+  "title": "Otorrhée",
+  "context": {
+    "setting": "Service d'urgences pédiatriques",
+    "patient": "Fillette de 3 ans amenée par sa mère pour écoulement d'oreille, nouvelle assistante - lit qu'une otite moyenne aiguë a été diagnostiquée",
+    "vitals": {
+      "temperature": "Fièvre présente"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Nom et âge",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Motif de consultation",
+          "binaryOnly": true
+        },
+        {
+          "id": "a3",
+          "text": "Problème actuel",
+          "details": [
+            "Écoulement de l'oreille",
+            "Apparition temporelle (soudaine - non)",
+            "Aggravation des symptômes"
+          ],
+          "patientComment": "Liquide qui sort de l'oreille/Soudaine - non"
+        },
+        {
+          "id": "a4",
+          "text": "Caractérisation de l'écoulement",
+          "details": [
+            "Type de sécrétion (cérumen ? sang ? pus ?)",
+            "Aspect (liquide, blanc-jaunâtre)",
+            "Perte auditive (pas clair ?)"
+          ],
+          "patientComment": "Liquide, blanc-jaunâtre/Pas clair ?"
+        },
+        {
+          "id": "a5",
+          "text": "Symptômes associés auriculaires",
+          "details": [
+            "Douleur (pleure moins)",
+            "Bourdonnements d'oreille/tinnitus (pas clair)",
+            "Vertiges (pas clair)"
+          ],
+          "patientComment": "Pleure moins/Pas clair/Pas clair"
+        },
+        {
+          "id": "a6",
+          "text": "Symptômes généraux",
+          "details": [
+            "Fièvre (oui)",
+            "Toux (non)",
+            "Rhume (oui)",
+            "Vomissements (non)"
+          ],
+          "patientComment": "Oui/Non/Oui/Non"
+        },
+        {
+          "id": "a7",
+          "text": "Antécédents médicaux",
+          "details": [
+            "Maladies antérieures (aucune)",
+            "Épisodes antérieurs de douleurs d'oreille (1 fois)",
+            "Statut vaccinal (selon le schéma)"
+          ],
+          "patientComment": "Aucune/1 fois/Selon le schéma"
+        },
+        {
+          "id": "a8",
+          "text": "Traitements en cours",
+          "details": [
+            "Médicaments déjà donnés",
+            "Antibiotiques (depuis aujourd'hui)",
+            "Paracétamol",
+            "Lavage nasal (NaCl)"
+          ],
+          "patientComment": "Depuis aujourd'hui/Antibiotiques, paracétamol, lavage nasal"
+        },
+        {
+          "id": "a9",
+          "text": "Environnement et contexte",
+          "details": [
+            "Entourage familial (famille en bonne santé)",
+            "Crèche (oui)",
+            "Fratrie (aucune)"
+          ],
+          "patientComment": "Famille en bonne santé/Oui/Aucune"
+        },
+        {
+          "id": "a10",
+          "text": "Anamnèse systémique",
+          "details": [
+            "Poumons",
+            "Abdomen",
+            "Cœur",
+            "Autres systèmes pertinents"
+          ]
+        },
+        {
+          "id": "a11",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "binaryOnly": false,
+          "details": [
+            "Anamnèse générale ciblée et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Inspection de l'oreille",
+          "details": [
+            "Aspect externe (normal)"
+          ]
+        },
+        {
+          "id": "e2",
+          "text": "Palpation",
+          "details": [
+            "Test de pression du tragus (pleure)",
+            "Traction du pavillon (douleur)"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Otoscopie bilatérale",
+          "details": [
+            "Rougeur (bilatérale)",
+            "Tympan (perforation du tympan gauche, liquide)",
+            "Comparaison bilatérale"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Examen endobuccal",
+          "details": [
+            "Gorge (anneau pharyngé rouge, sinon normal)"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Palpation ganglionnaire",
+          "details": [
+            "Ganglions (légèrement augmentés)"
+          ]
+        },
+        {
+          "id": "e6",
+          "text": "Auscultation",
+          "details": [
+            "Poumons (normal)",
+            "Cœur (normal)"
+          ]
+        },
+        {
+          "id": "e7",
+          "text": "Examen abdominal",
+          "details": [
+            "Abdomen (normal)"
+          ]
+        },
+        {
+          "id": "e8",
+          "text": "Recherche de complications",
+          "details": [
+            "Mastoïdite ?",
+            "Méningite ?"
+          ]
+        },
+        {
+          "id": "e9",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "binaryOnly": false,
+          "details": [
+            "Status général ciblé et bien conduit"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic principal",
+          "details": [
+            "Otite moyenne purulente"
+          ]
+        },
+        {
+          "id": "m2",
+          "text": "Diagnostics différentiels de l'écoulement auriculaire",
+          "details": [
+            "Otite moyenne purulente",
+            "Traumatisme avec fracture du rocher (sang, liquide céphalorachidien ?)",
+            "Otite externe",
+            "Otite moyenne avec cholestéatome (perforation marginale du tympan avec écoulement fétide)"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Traitement",
+          "details": [
+            "Poursuite des antibiotiques",
+            "Rassurer la mère"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Information sur les complications si antibiotiques non pris",
+          "details": [
+            "Mastoïdite",
+            "Paralysie faciale (due à l'œdème)",
+            "Thrombose sinusale",
+            "Complications intracrâniennes (méningite, abcès)"
+          ]
+        },
+        {
+          "id": "m5",
+          "text": "Suivi",
+          "details": [
+            "Planifier un rendez-vous de contrôle"
+          ]
+        },
+        {
+          "id": "m6",
+          "text": "Évaluation globale de la qualité de la prise en charge",
+          "binaryOnly": false,
+          "details": [
+            "Prise en charge générale cohérente et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    }
+  }
+}

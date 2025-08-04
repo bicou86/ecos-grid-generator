@@ -1,0 +1,475 @@
+{
+  "title": "Peur",
+  "context": {
+    "setting": "Cabinet de psychiatrie (remplacement)",
+    "patient": "Mme Winkelried, 24 ans, se présente en consultation psychiatrique pour anxiété."
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction et tâche",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Question d'entrée ouverte",
+          "binaryOnly": true,
+          "details": [
+            "Qu'est-ce qui vous amène aujourd'hui ? [Anxiété]"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Exploration des symptômes anxieux",
+          "binaryOnly": false,
+          "details": [
+            "Nature de l'anxiété [peur intense dans certaines situations]",
+            "Situations déclenchantes [dans les foules, les grands espaces]",
+            "Contenu spécifique des peurs [peur de ne pas pouvoir s'échapper si panique]",
+            "Peur de situation embarrassante [oui, peur de perdre le contrôle en public]"
+          ],
+          "scoringRule": "≥3 aspects explorés = 2 points, 2 aspects = 1 point"
+        },
+        {
+          "id": "a4",
+          "text": "Retentissement fonctionnel",
+          "binaryOnly": false,
+          "details": [
+            "Impact sur la vie quotidienne [ne sort presque plus de chez elle]",
+            "Impact professionnel [ne peut plus travailler comme éducatrice]",
+            "Ressenti personnel [cela la tracasse beaucoup, veut être normale]",
+            "Stratégies d'évitement [évite les transports, les magasins, les espaces publics]"
+          ],
+          "scoringRule": "≥3 impacts explorés = 2 points, 2 impacts = 1 point"
+        },
+        {
+          "id": "a5",
+          "text": "Anamnèse temporelle",
+          "binaryOnly": false,
+          "details": [
+            "Début des symptômes [depuis environ 6 mois]",
+            "Évolution [aggravation progressive]",
+            "Antécédents similaires [toujours eu tendance à ne pas aimer les grands espaces]",
+            "Facteur précipitant temporel [aggravation nette depuis 6 mois]"
+          ],
+          "scoringRule": "≥3 éléments temporels = 2 points, 2 éléments = 1 point"
+        },
+        {
+          "id": "a6",
+          "text": "Exploration des attaques de panique",
+          "binaryOnly": false,
+          "details": [
+            "Présence d'attaques de panique [oui]",
+            "Symptômes physiques [transpiration intense]",
+            "Symptômes psychiques [anxiété intense, peur de mourir]",
+            "Palpitations [oui]",
+            "Sensation d'étouffement [parfois]",
+            "Perte de connaissance [non]"
+          ],
+          "scoringRule": "≥4 symptômes explorés = 2 points, 2-3 symptômes = 1 point"
+        },
+        {
+          "id": "a7",
+          "text": "Comportement dans les espaces confinés",
+          "binaryOnly": false,
+          "details": [
+            "Réaction aux espaces clos [pas de problème]",
+            "Ascenseurs [tolérés]",
+            "Petites pièces [pas de difficultés]"
+          ],
+          "scoringRule": "≥2 situations explorées = 2 points"
+        },
+        {
+          "id": "a8",
+          "text": "Événements de vie et facteurs de stress",
+          "binaryOnly": false,
+          "details": [
+            "Décès de la sœur [accident de voiture il y a un an]",
+            "Perte d'emploi [il y a 3 mois, licenciée car régulièrement en retard]",
+            "Raison des retards [évitait la voiture, allait à pied]",
+            "Autres stress récents [difficultés financières suite à la perte d'emploi]"
+          ],
+          "scoringRule": "≥3 facteurs stressants explorés = 2 points, 2 facteurs = 1 point"
+        },
+        {
+          "id": "a9",
+          "text": "Processus de deuil et adaptation",
+          "binaryOnly": false,
+          "details": [
+            "Réaction au décès de la sœur [a simplement continué, n'en parle pas beaucoup]",
+            "Soutien psychologique [aucun]",
+            "Rituels de deuil [participation minimale]",
+            "Sentiments de culpabilité [présents pour le décès de la sœur]"
+          ],
+          "scoringRule": "≥3 aspects du deuil explorés = 2 points, 2 aspects = 1 point"
+        },
+        {
+          "id": "a10",
+          "text": "Initiative de consultation",
+          "binaryOnly": false,
+          "details": [
+            "Qui a suggéré la consultation [le partenaire l'a envoyée]",
+            "Motivation personnelle [ambivalente mais reconnaît le besoin d'aide]"
+          ]
+        },
+        {
+          "id": "a11",
+          "text": "Évaluation du risque suicidaire",
+          "binaryOnly": false,
+          "details": [
+            "Idées suicidaires actuelles [non]",
+            "Antécédents d'idées suicidaires [brièvement à 14 ans]",
+            "Plans ou gestes suicidaires [jamais]",
+            "Facteurs protecteurs [partenaire soutenant]"
+          ],
+          "scoringRule": "≥3 éléments de risque évalués = 2 points, 2 éléments = 1 point"
+        },
+        {
+          "id": "a12",
+          "text": "Stratégies d'adaptation et automédication",
+          "binaryOnly": false,
+          "details": [
+            "Automédication [aucune jusqu'à présent]",
+            "Consommation d'alcool [non]",
+            "Consommation de drogues [non]",
+            "Stratégies personnelles [évitement, reste chez elle]"
+          ],
+          "scoringRule": "≥3 stratégies explorées = 2 points, 2 stratégies = 1 point"
+        },
+        {
+          "id": "a13",
+          "text": "Représentation de la maladie",
+          "binaryOnly": false,
+          "details": [
+            "Compréhension du problème [ne sait pas ce qui lui arrive]",
+            "Attentes vis-à-vis du traitement [veut retrouver une vie normale]",
+            "Croyances sur l'origine [aucune idée]"
+          ],
+          "scoringRule": "≥2 aspects explorés = 2 points"
+        },
+        {
+          "id": "a14",
+          "text": "Antécédents médicaux et psychiatriques",
+          "binaryOnly": false,
+          "details": [
+            "Antécédents médicaux [aucun]",
+            "Antécédents psychiatriques personnels [aucun]",
+            "Hospitalisations [jamais]",
+            "Suivis psychologiques antérieurs [jamais]"
+          ],
+          "scoringRule": "≥3 antécédents explorés = 2 points, 2 antécédents = 1 point"
+        },
+        {
+          "id": "a15",
+          "text": "Consommation de substances",
+          "binaryOnly": false,
+          "details": [
+            "Tabac [non]",
+            "Alcool [occasionnel, social]",
+            "Drogues [jamais]",
+            "Médicaments psychotropes [aucun]"
+          ],
+          "scoringRule": "≥3 substances explorées = 2 points, 2 substances = 1 point"
+        },
+        {
+          "id": "a16",
+          "text": "Médicaments actuels",
+          "binaryOnly": false,
+          "details": [
+            "Traitements en cours [aucun]",
+            "Contraception [pilule]",
+            "Allergies médicamenteuses [aucune connue]"
+          ]
+        },
+        {
+          "id": "a17",
+          "text": "Antécédents familiaux psychiatriques",
+          "binaryOnly": false,
+          "details": [
+            "Maladies psychiatriques familiales [aucune maladie connue dans la famille]",
+            "Dépression maternelle [oui, après le décès de sa fille]",
+            "Antécédents de suicide familiaux [non]"
+          ],
+          "scoringRule": "≥2 antécédents familiaux explorés = 2 points"
+        },
+        {
+          "id": "a18",
+          "text": "Anamnèse sociale",
+          "binaryOnly": false,
+          "patientComment": "Vit seule, en couple avec son partenaire depuis trois ans",
+          "details": [
+            "Situation de logement [vit seule dans son appartement]",
+            "Relation de couple [partenaire depuis 3 ans, soutenant]",
+            "Réseau social [isolement progressif]",
+            "Situation professionnelle [au chômage depuis 3 mois]"
+          ],
+          "scoringRule": "≥3 aspects sociaux explorés = 2 points, 2 aspects = 1 point"
+        },
+        {
+          "id": "a19",
+          "text": "Résumé et questions de la patiente",
+          "binaryOnly": true
+        },
+        {
+          "id": "a20",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "binaryOnly": false,
+          "details": [
+            "Anamnèse psychiatrique ciblée et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Examen de l'état mental - Conscience et orientation",
+          "binaryOnly": false,
+          "details": [
+            "Troubles de la conscience [non]",
+            "Orientation temporo-spatiale [normale]",
+            "Orientation personnelle [normale]"
+          ],
+          "scoringRule": "≥2 domaines évalués = 2 points"
+        },
+        {
+          "id": "e2",
+          "text": "Fonctions cognitives",
+          "binaryOnly": false,
+          "details": [
+            "Attention [normale]",
+            "Concentration [normale]",
+            "Mémoire [normale]",
+            "Troubles du jugement [non]"
+          ],
+          "scoringRule": "≥3 fonctions évaluées = 2 points, 2 fonctions = 1 point"
+        },
+        {
+          "id": "e3",
+          "text": "Troubles formels de la pensée",
+          "binaryOnly": false,
+          "details": [
+            "Ralentissement psychomoteur [non]",
+            "Fuite des idées [non]",
+            "Incohérence [non]",
+            "Ruminations [parfois, sur ses peurs]"
+          ],
+          "scoringRule": "≥3 aspects évalués = 2 points, 2 aspects = 1 point"
+        },
+        {
+          "id": "e4",
+          "text": "Contenu de la pensée",
+          "binaryOnly": false,
+          "details": [
+            "Idées obsessionnelles [non]",
+            "Compulsions [non]",
+            "Idées délirantes [non]",
+            "Sentiments de culpabilité [oui, concernant la mort de sa sœur]"
+          ],
+          "scoringRule": "≥3 aspects évalués = 2 points, 2 aspects = 1 point"
+        },
+        {
+          "id": "e5",
+          "text": "Perceptions",
+          "binaryOnly": false,
+          "details": [
+            "Hallucinations auditives [jamais]",
+            "Hallucinations visuelles [jamais]",
+            "Autres troubles perceptifs [non]"
+          ],
+          "scoringRule": "≥2 types d'hallucinations évalués = 2 points"
+        },
+        {
+          "id": "e6",
+          "text": "Troubles du moi",
+          "binaryOnly": false,
+          "details": [
+            "Déréalisation [non]",
+            "Dépersonnalisation [non]",
+            "Vol de la pensée [jamais]"
+          ],
+          "scoringRule": "≥2 troubles du moi évalués = 2 points"
+        },
+        {
+          "id": "e7",
+          "text": "Affectivité",
+          "binaryOnly": false,
+          "details": [
+            "Humeur de base [plutôt déprimée mais fondamentalement positive]",
+            "Labilité émotionnelle [non]",
+            "Anxiété [présente, situationnelle]",
+            "Anhédonie [partielle]"
+          ],
+          "scoringRule": "≥3 aspects affectifs évalués = 2 points, 2 aspects = 1 point"
+        },
+        {
+          "id": "e8",
+          "text": "Émoussement affectif et particularités",
+          "binaryOnly": false,
+          "details": [
+            "Pauvreté des affects [parfois le matin]",
+            "Inadéquation affective [non]",
+            "Particularités circadiennes [non]"
+          ]
+        },
+        {
+          "id": "e9",
+          "text": "Comportement et présentation",
+          "binaryOnly": false,
+          "details": [
+            "Tenue vestimentaire [correcte]",
+            "Hygiène [bonne]",
+            "Contact visuel [maintenu]",
+            "Attitude [collaborative]"
+          ],
+          "scoringRule": "≥3 aspects comportementaux évalués = 2 points, 2 aspects = 1 point"
+        },
+        {
+          "id": "e10",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "binaryOnly": false,
+          "details": [
+            "Examen psychiatrique ciblé et bien conduit"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic principal",
+          "binaryOnly": false,
+          "details": [
+            "Agoraphobie avec attaques de panique",
+            "Trouble anxieux spécifique aux espaces ouverts et aux foules"
+          ]
+        },
+        {
+          "id": "m2",
+          "text": "Diagnostics différentiels",
+          "binaryOnly": false,
+          "ddSection": {
+            "categories": [
+              {
+                "name": "Troubles anxieux",
+                "items": [
+                  "Trouble panique isolé",
+                  "Phobie sociale",
+                  "Trouble anxieux généralisé",
+                  "Trouble de stress post-traumatique",
+                  "Trouble de l'adaptation avec anxiété"
+                ]
+              },
+              {
+                "name": "Troubles de l'humeur",
+                "items": [
+                  "Épisode dépressif majeur avec symptômes anxieux",
+                  "Trouble bipolaire (phase dépressive)",
+                  "Trouble dépressif persistant"
+                ]
+              },
+              {
+                "name": "Autres diagnostics",
+                "items": [
+                  "Trouble lié à l'usage de substances",
+                  "Hyperthyroïdie",
+                  "Troubles neurologiques (épilepsie temporale)"
+                ]
+              }
+            ]
+          },
+          "scoringRule": "≥2 catégories avec diagnostics = 2 points"
+        },
+        {
+          "id": "m3",
+          "text": "Options thérapeutiques",
+          "binaryOnly": false,
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Psychothérapie",
+                "content": "• Thérapie cognitivo-comportementale (TCC) - traitement de première ligne\n• Thérapie d'exposition graduée\n• Thérapie de groupe pour l'agoraphobie\n• Psychoéducation sur l'anxiété et les attaques de panique"
+              },
+              {
+                "title": "Traitement médicamenteux",
+                "content": "• ISRS (inhibiteurs sélectifs de la recapture de la sérotonine)\n• IRSN si échec des ISRS\n• Benzodiazépines en aigu uniquement (risque de dépendance)\n• Bêta-bloquants pour symptômes physiques si nécessaire"
+              },
+              {
+                "title": "Techniques complémentaires",
+                "content": "• Exercices de relaxation (respiration, relaxation musculaire)\n• Méditation de pleine conscience\n• Activité physique régulière\n• Hygiène de sommeil"
+              }
+            ]
+          },
+          "scoringRule": "≥2 modalités thérapeutiques = 2 points"
+        },
+        {
+          "id": "m4",
+          "text": "Techniques thérapeutiques spécifiques",
+          "binaryOnly": false,
+          "details": [
+            "Exposition progressive in vivo (hiérarchie des situations anxiogènes)",
+            "Exposition en imagination d'abord si trop anxiogène",
+            "Flooding (immersion) seulement si patient motivé et préparé",
+            "Restructuration cognitive des pensées catastrophiques",
+            "Apprentissage de techniques de gestion de l'anxiété"
+          ],
+          "scoringRule": "≥3 techniques spécifiques = 2 points, 2 techniques = 1 point"
+        },
+        {
+          "id": "m5",
+          "text": "Plan de traitement immédiat",
+          "binaryOnly": false,
+          "details": [
+            "Établir une alliance thérapeutique",
+            "Psychoéducation sur l'agoraphobie",
+            "Débuter une TCC avec exposition progressive",
+            "Évaluer le besoin d'un traitement médicamenteux",
+            "Planifier un suivi régulier hebdomadaire"
+          ],
+          "scoringRule": "≥4 éléments du plan = 2 points, 2-3 éléments = 1 point"
+        },
+        {
+          "id": "m6",
+          "text": "Prise en charge du deuil",
+          "binaryOnly": false,
+          "details": [
+            "Explorer le deuil non résolu de la sœur",
+            "Proposer un travail thérapeutique sur le deuil",
+            "Évaluer l'impact du deuil sur l'agoraphobie"
+          ],
+          "scoringRule": "≥2 aspects du deuil abordés = 2 points"
+        },
+        {
+          "id": "m7",
+          "text": "Aspects sociaux et réinsertion",
+          "binaryOnly": false,
+          "details": [
+            "Soutien pour la recherche d'emploi adaptée",
+            "Impliquer le partenaire dans le traitement",
+            "Groupes de soutien pour l'agoraphobie",
+            "Réactivation sociale progressive"
+          ],
+          "scoringRule": "≥3 aspects sociaux = 2 points, 2 aspects = 1 point"
+        },
+        {
+          "id": "m8",
+          "text": "Évaluation globale de la qualité de la prise en charge",
+          "binaryOnly": false,
+          "details": [
+            "Prise en charge psychiatrique cohérente et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    }
+  }
+}

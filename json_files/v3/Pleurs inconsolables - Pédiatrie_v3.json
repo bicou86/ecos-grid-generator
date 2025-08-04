@@ -1,0 +1,383 @@
+{
+  "title": "Pleurs inconsolables",
+  "context": {
+    "setting": "Cabinet de médecine de famille - Garde de weekend",
+    "patient": "Mme Hollenstein, 24 ans, mère d'un nourrisson, consulte car son enfant est très pleurnichard",
+    "vitals": {
+      "temperature": "38,1°C rectal"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation du médecin et identification du patient",
+          "binaryOnly": false,
+          "details": [
+            "Se présenter avec nom, fonction et tâche",
+            "Âge de l'enfant [7 mois]",
+            "Sexe [fille]",
+            "Prénom [Maria]",
+            "Fratrie [aucune, premier enfant]"
+          ],
+          "scoringRule": "≥4 éléments d'identification = 2 points, 2-3 éléments = 1 point"
+        },
+        {
+          "id": "a2",
+          "text": "Début et caractéristiques des pleurs",
+          "binaryOnly": false,
+          "details": [
+            "Début des symptômes [depuis quelques jours]",
+            "Caractère des pleurs [pleurnichard, mécontent]",
+            "Moment de survenue [plutôt le soir]",
+            "Pleurs inconsolables [non]"
+          ],
+          "scoringRule": "≥3 caractéristiques explorées = 2 points, 2 caractéristiques = 1 point"
+        },
+        {
+          "id": "a3",
+          "text": "Sommeil et alimentation",
+          "binaryOnly": false,
+          "details": [
+            "Qualité du sommeil [plutôt plus court que d'habitude, agité]",
+            "Alimentation [lait maternel, se passe bien, pas de problème]",
+            "Diversification alimentaire [pas encore introduite]"
+          ],
+          "scoringRule": "≥2 aspects explorés = 2 points"
+        },
+        {
+          "id": "a4",
+          "text": "Troubles digestifs et salivation",
+          "binaryOnly": false,
+          "details": [
+            "Selles [un peu de diarrhée]",
+            "Vomissements [aucun]",
+            "Salivation [bave beaucoup]"
+          ],
+          "scoringRule": "≥2 symptômes digestifs explorés = 2 points"
+        },
+        {
+          "id": "a5",
+          "text": "Signes cutanés et comportement oral",
+          "binaryOnly": false,
+          "details": [
+            "État de la peau [joues très rouges]",
+            "Comportement [se frotte beaucoup autour de la bouche]",
+            "Mâchouillements [mâchouille beaucoup d'objets actuellement]"
+          ],
+          "scoringRule": "≥2 signes de poussée dentaire = 2 points"
+        },
+        {
+          "id": "a6",
+          "text": "Dentition et larmes",
+          "binaryOnly": false,
+          "details": [
+            "Dents visibles [pas encore]",
+            "Présence de larmes [oui]"
+          ],
+          "scoringRule": "≥1 élément exploré = 2 points"
+        },
+        {
+          "id": "a7",
+          "text": "Signes respiratoires et traumatisme",
+          "binaryOnly": false,
+          "details": [
+            "Dyspnée/toux/tirage [non]",
+            "Traumatisme récent [non]"
+          ],
+          "scoringRule": "≥1 RED FLAG éliminé = 2 points"
+        },
+        {
+          "id": "a8",
+          "text": "Fièvre",
+          "binaryOnly": false,
+          "details": [
+            "Température [un peu, 38,1°C rectal]",
+            "Fréquence de mesure [mesurée une fois]"
+          ],
+          "scoringRule": "Fièvre correctement caractérisée = 2 points"
+        },
+        {
+          "id": "a9",
+          "text": "Antécédents périnataux et développement",
+          "binaryOnly": false,
+          "details": [
+            "Grossesse [normale, un peu d'œdèmes des jambes]",
+            "Enfant désiré [oui]",
+            "Développement psychomoteur [normal, toujours dans les percentiles]",
+            "Suivi pédiatrique [régulier chez le pédiatre]",
+            "Santé générale [enfant éveillé, content, jusqu'à présent en bonne santé]"
+          ],
+          "scoringRule": "≥3 aspects du développement explorés = 2 points, 2 aspects = 1 point"
+        },
+        {
+          "id": "a10",
+          "text": "Vaccinations et antécédents",
+          "binaryOnly": false,
+          "details": [
+            "Vaccinations [selon le plan vaccinal]",
+            "Substances nocives mère/père [aucune]",
+            "Médicaments actuels [aucun]",
+            "Antécédents familiaux [aucune maladie connue]"
+          ],
+          "scoringRule": "≥3 antécédents explorés = 2 points, 2 antécédents = 1 point"
+        },
+        {
+          "id": "a11",
+          "text": "Contexte social et soutien",
+          "binaryOnly": false,
+          "details": [
+            "Situation familiale [vit avec le père]",
+            "Soutien [mère souvent seule à la maison]",
+            "Aide des grands-parents [aucune, vivent loin]",
+            "Réseau social [pas d'amies avec enfants]",
+            "Profession de la mère [coiffeuse diplômée]"
+          ],
+          "scoringRule": "≥3 aspects sociaux explorés = 2 points, 2 aspects = 1 point"
+        },
+        {
+          "id": "a12",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "binaryOnly": false,
+          "details": [
+            "Anamnèse ciblée et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Observation générale de l'enfant",
+          "binaryOnly": false,
+          "details": [
+            "État général",
+            "Vigilance et réactivité",
+            "Coloration cutanée"
+          ],
+          "scoringRule": "≥2 aspects observés = 2 points"
+        },
+        {
+          "id": "e2",
+          "text": "Examen de la cavité buccale",
+          "binaryOnly": false,
+          "details": [
+            "Inspection des gencives",
+            "Recherche de signes de poussée dentaire",
+            "État de la muqueuse buccale"
+          ],
+          "scoringRule": "≥2 éléments examinés = 2 points"
+        },
+        {
+          "id": "e3",
+          "text": "Examen cutané ciblé",
+          "binaryOnly": false,
+          "details": [
+            "Inspection des joues",
+            "Zone péribuccale",
+            "Recherche d'éruption ou d'irritation"
+          ],
+          "scoringRule": "≥2 zones examinées = 2 points"
+        },
+        {
+          "id": "e4",
+          "text": "Conseils prodigués à la mère pendant l'examen",
+          "binaryOnly": false,
+          "details": [
+            "Explication des gestes d'examen",
+            "Réassurance de la mère",
+            "Communication adaptée"
+          ],
+          "patientComment": "L'examen n'est pas obligatoire selon le scénario, mais des conseils peuvent être donnés",
+          "scoringRule": "≥2 aspects de communication = 2 points"
+        },
+        {
+          "id": "e5",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "binaryOnly": false,
+          "details": [
+            "Examen clinique ciblé et bien conduit"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic principal et différentiel",
+          "binaryOnly": false,
+          "details": [
+            "Diagnostic principal : poussée dentaire",
+            "Diagnostic différentiel : coliques du nourrisson"
+          ],
+          "ddSection": {
+            "title": "Diagnostics différentiels des pleurs chez le nourrisson",
+            "categories": [
+              {
+                "name": "Causes physiologiques",
+                "items": [
+                  {
+                    "text": "Poussée dentaire"
+                  },
+                  {
+                    "text": "Coliques du nourrisson"
+                  },
+                  {
+                    "text": "Faim ou soif"
+                  },
+                  {
+                    "text": "Fatigue"
+                  }
+                ]
+              },
+              {
+                "name": "Causes infectieuses",
+                "items": [
+                  {
+                    "text": "Infection ORL (otite, rhinopharyngite)"
+                  },
+                  {
+                    "text": "Infection urinaire"
+                  },
+                  {
+                    "text": "Gastro-entérite"
+                  },
+                  {
+                    "text": "Méningite"
+                  }
+                ]
+              },
+              {
+                "name": "Causes digestives",
+                "items": [
+                  {
+                    "text": "Reflux gastro-œsophagien"
+                  },
+                  {
+                    "text": "Intolérance alimentaire"
+                  },
+                  {
+                    "text": "Invagination intestinale"
+                  },
+                  {
+                    "text": "Constipation"
+                  }
+                ]
+              },
+              {
+                "name": "Autres causes",
+                "items": [
+                  {
+                    "text": "Traumatisme (fracture, contusion)"
+                  },
+                  {
+                    "text": "Corps étranger"
+                  },
+                  {
+                    "text": "Maltraitance"
+                  },
+                  {
+                    "text": "Troubles du sommeil"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Conseils d'hydratation",
+          "binaryOnly": false,
+          "details": [
+            "Veiller à une hydratation suffisante",
+            "Proposer des tisanes de camomille et de sauge"
+          ],
+          "scoringRule": "≥1 conseil d'hydratation = 2 points"
+        },
+        {
+          "id": "m3",
+          "text": "Mesures locales pour soulager la poussée dentaire",
+          "binaryOnly": false,
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Mesures mécaniques",
+                "content": "• Anneau de dentition rempli d'eau en pharmacie (effet rafraîchissant)\n• Masser doucement les gencives avec un doigt propre\n• Objets froids à mâchouiller (sous surveillance)\n• Éventuellement collier d'ambre (effet controversé)"
+              },
+              {
+                "title": "Traitements topiques",
+                "content": "• Gel de dentition de la pharmacie (avec parcimonie)\n• Éviter les gels sucrés\n• Pas de miel (risque botulisme)\n• Éviter tout produit sucré sur les gencives"
+              },
+              {
+                "title": "Mesures générales",
+                "content": "• Maintenir une bonne hygiène buccale\n• Surveiller l'hydratation\n• Tisanes de camomille et sauge\n• Réconfort et câlins"
+              }
+            ]
+          },
+          "scoringRule": "≥2 catégories de mesures = 2 points"
+        },
+        {
+          "id": "m4",
+          "text": "Conseils importants et contre-indications",
+          "binaryOnly": false,
+          "details": [
+            "Pas de gels sucrés",
+            "Pas de miel",
+            "Éviter tout produit sucré sur les gencives"
+          ],
+          "scoringRule": "≥2 contre-indications mentionnées = 2 points"
+        },
+        {
+          "id": "m5",
+          "text": "Signes d'alerte nécessitant une consultation",
+          "binaryOnly": false,
+          "details": [
+            "Fièvre croissante >39°C",
+            "Détérioration de l'état général",
+            "Consulter impérativement le pédiatre dans ces cas"
+          ],
+          "scoringRule": "≥2 signes d'alerte = 2 points"
+        },
+        {
+          "id": "m6",
+          "text": "Soutien psychosocial",
+          "binaryOnly": false,
+          "details": [
+            "Reconnaissance de la situation difficile de la mère",
+            "Encouragements et validation de ses efforts",
+            "Suggestion de chercher du soutien (groupes de parents, etc.)"
+          ],
+          "scoringRule": "≥2 aspects de soutien = 2 points"
+        },
+        {
+          "id": "m7",
+          "text": "Résumé et questions",
+          "binaryOnly": false,
+          "details": [
+            "Résumé des points importants",
+            "Vérification de la compréhension",
+            "Réponse aux questions de la mère"
+          ],
+          "scoringRule": "≥2 éléments de communication = 2 points"
+        },
+        {
+          "id": "m8",
+          "text": "Évaluation globale de la qualité de la prise en charge",
+          "binaryOnly": false,
+          "details": [
+            "Prise en charge cohérente et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    }
+  }
+}

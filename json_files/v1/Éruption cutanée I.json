@@ -1,0 +1,229 @@
+{
+  "title": "Éruption cutanée I",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Homme de 32 ans consultant pour une éruption cutanée"
+  },
+  "sections": {
+    "anamnese": {
+      "title": "Anamnèse",
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction et objectif",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Exploration du symptôme principal : éruption cutanée",
+          "binaryOnly": true
+        },
+        {
+          "id": "a3",
+          "text": "Évolution temporelle",
+          "patientComment": "(Depuis 2 semaines)"
+        },
+        {
+          "id": "a4",
+          "text": "Évolution des lésions",
+          "patientComment": "(Les lésions ont grandi, plusieurs foyers ont fusionné)"
+        },
+        {
+          "id": "a5",
+          "text": "Localisation",
+          "patientComment": "(Au poignet)"
+        },
+        {
+          "id": "a6",
+          "text": "Évolution clinique (amélioration/aggravation)",
+          "patientComment": "(Pas d'amélioration ni d'aggravation)"
+        },
+        {
+          "id": "a7",
+          "text": "Caractéristiques des lésions",
+          "details": [
+            "Aspect squameux",
+            "Prurit"
+          ],
+          "patientComment": "(Desquamation / Démangeaisons intenses)"
+        },
+        {
+          "id": "a8",
+          "text": "Facteurs d'exposition ou déclenchants",
+          "patientComment": "(Piscine il y a 3 semaines)"
+        },
+        {
+          "id": "a9",
+          "text": "Symptômes B",
+          "details": [
+            "Fièvre",
+            "Sueurs nocturnes",
+            "Perte de poids"
+          ],
+          "patientComment": "(Non)"
+        },
+        {
+          "id": "a10",
+          "text": "Allergies connues",
+          "patientComment": "(Arachide, latex)"
+        },
+        {
+          "id": "a11",
+          "text": "Médicaments actuels",
+          "patientComment": "(Aucun)"
+        },
+        {
+          "id": "a12",
+          "text": "Antécédents médicaux et chirurgicaux",
+          "details": [
+            "Maladies antérieures",
+            "Interventions chirurgicales"
+          ],
+          "patientComment": "(Aucun)"
+        },
+        {
+          "id": "a13",
+          "text": "Habitudes de vie",
+          "details": [
+            "Alcool",
+            "Tabac",
+            "Drogues"
+          ],
+          "patientComment": "(Occasionnel / 1 paquet/jour depuis 10 ans / Non)"
+        },
+        {
+          "id": "a14",
+          "text": "Antécédents familiaux",
+          "patientComment": "(Négatifs)"
+        },
+        {
+          "id": "a15",
+          "text": "Anamnèse sociale",
+          "patientComment": "(Non abordée)"
+        },
+        {
+          "id": "a16",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "binaryOnly": false,
+          "details": [
+            "Anamnèse générale ciblée et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "examen": {
+      "title": "Examen clinique",
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Inspection cutanée détaillée",
+          "patientComment": "(Voir image en annexe)"
+        },
+        {
+          "id": "e2",
+          "text": "Test du dermographisme"
+        },
+        {
+          "id": "e3",
+          "text": "Évaluation de l'état cutané général"
+        },
+        {
+          "id": "e4",
+          "text": "Description précise des lésions",
+          "details": [
+            "Forme annulaire",
+            "Bordures érythémateuses actives",
+            "Centre plus clair",
+            "Aspect squameux"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "binaryOnly": false,
+          "details": [
+            "Status général ciblé et bien conduit"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "management": {
+      "title": "Prise en charge",
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic de suspicion principal",
+          "patientComment": "(Tinea corporis - Dermatophytose)"
+        },
+        {
+          "id": "m2",
+          "text": "Diagnostics différentiels",
+          "details": [
+            "Psoriasis",
+            "Dermatite atopique",
+            "Eczéma nummulaire"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Examens complémentaires proposés",
+          "details": [
+            "Prélèvement mycologique",
+            "Examen microscopique direct",
+            "Culture fongique pour identification de l'agent pathogène"
+          ],
+          "patientComment": "(Champignons visibles au microscope)"
+        },
+        {
+          "id": "m4",
+          "text": "Traitement proposé",
+          "details": [
+            "Traitement systémique par antifongiques",
+            "Éventuellement traitement local pour réduire la contagiosité"
+          ]
+        },
+        {
+          "id": "m5",
+          "text": "Conseils de prévention",
+          "details": [
+            "Hygiène personnelle",
+            "Éviter le partage de serviettes",
+            "Traitement de l'environnement si nécessaire"
+          ]
+        },
+        {
+          "id": "m6",
+          "text": "Planification du suivi",
+          "details": [
+            "Contrôle après début du traitement",
+            "Durée du traitement antifongique",
+            "Surveillance de la guérison"
+          ]
+        },
+        {
+          "id": "m7",
+          "text": "Évaluation globale de la qualité de la prise en charge",
+          "binaryOnly": false,
+          "details": [
+            "Prise en charge générale cohérente et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "images": [
+      {
+        "title": "Image clinique - Lésions cutanées",
+        "description": "Photographie montrant des lésions annulaires typiques de tinea corporis au niveau du poignet",
+        "data": "grilles_generees/images/eruption-cutanee-I-img31.jpg"
+      }
+    ]
+  }
+}

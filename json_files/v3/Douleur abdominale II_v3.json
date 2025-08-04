@@ -1,0 +1,400 @@
+{
+  "title": "Douleur abdominale II",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Jeune fille de 16 ans se présente chez le médecin de famille pour des douleurs abdominales. Vous connaissez la patiente et sa famille depuis des années."
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction et objectif de la consultation",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Question ouverte d'introduction → Motif de consultation apparent",
+          "patientComment": "Douleurs au ventre",
+          "binaryOnly": true
+        },
+        {
+          "id": "a3",
+          "text": "Exploration systématique des douleurs abdominales (SOCRATES)",
+          "details": [
+            "Site/localisation [au ventre, diffuse]",
+            "Onset/début [depuis des semaines]",
+            "Character/qualité [je ne sais pas]",
+            "Radiation/irradiation [non]",
+            "Associated symptoms [pas de fièvre, vomissements, diarrhée]",
+            "Timing/évolution [de temps en temps, parfois]",
+            "Exacerbating/aggravating factors [s'allonger aide]",
+            "Severity/sévérité [parfois comme ci, parfois comme ça]"
+          ],
+          "scoringRule": "≥6 éléments SOCRATES = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a4",
+          "text": "Détection de l'agenda caché - Exploration empathique",
+          "details": [
+            "Reconnaissance des signes d'hésitation",
+            "Questions ouvertes sur les vraies préoccupations",
+            "Exploration des besoins non exprimés",
+            "Identification du motif réel [contraception]",
+            "Mise en confiance et climat de confidentialité"
+          ],
+          "scoringRule": "Agenda caché identifié = 2 pts, partiellement = 1 pt, non = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a5",
+          "text": "Anamnèse gynécologique et reproductive complète",
+          "details": [
+            "Ménarche [depuis 3 ans]",
+            "Cycle menstruel [régulier, sans problèmes]",
+            "Durée et intensité des règles [à préciser]",
+            "Dysménorrhée [à explorer]",
+            "Leucorrhées pathologiques [à explorer]",
+            "Activité sexuelle [petit ami depuis 4 mois, 18 ans]",
+            "Contraception actuelle [aucune]",
+            "Antécédents gynécologiques [aucun]"
+          ],
+          "scoringRule": "≥6 éléments = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a6",
+          "text": "Contre-indications absolues contraception œstroprogestative",
+          "details": [
+            "Antécédents thromboemboliques personnels/familiaux [non]",
+            "Hypertension artérielle [à mesurer]",
+            "Migraines avec aura [non]",
+            "Diabète avec complications [non]",
+            "Pathologies hépatiques [non]",
+            "Cancers hormonodépendants [non]",
+            "Saignements génitaux inexpliqués [non]",
+            "Obésité sévère [à évaluer IMC]"
+          ],
+          "scoringRule": "≥6 contre-indications explorées = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a7",
+          "text": "Facteurs de risque cardiovasculaire",
+          "details": [
+            "Tabagisme [non]",
+            "Dyslipidémie [non connue]",
+            "Diabète [non]",
+            "Obésité [à évaluer]",
+            "Hypertension familiale [rien de connu]",
+            "Antécédents familiaux cardiovasculaires [rien de connu]",
+            "Âge [16 ans - faible risque]"
+          ],
+          "scoringRule": "≥5 facteurs évalués = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a8",
+          "text": "Anamnèse médicamenteuse et allergies",
+          "details": [
+            "Médicaments actuels [aucun]",
+            "Allergies médicamenteuses [à explorer]",
+            "Interactions médicamenteuses potentielles [aucune]",
+            "Compléments alimentaires [à explorer]",
+            "Produits de phytothérapie [à explorer]"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a9",
+          "text": "Consommation de substances et mode de vie",
+          "details": [
+            "Tabagisme [non]",
+            "Alcool [parfois une bière le week-end]",
+            "Drogues [non]",
+            "Activité physique [handball]",
+            "Alimentation [à évaluer]",
+            "Sommeil [à évaluer]",
+            "Stress/anxiété [à évaluer]"
+          ],
+          "scoringRule": "≥5 éléments = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a10",
+          "text": "Contexte psychosocial et familial",
+          "details": [
+            "Relation avec petit ami [4 mois, 18 ans]",
+            "Connaissance parentale [parents ne savent pas]",
+            "Soutien familial [à évaluer]",
+            "Activités sociales [piano, scouts, beaucoup d'amis]",
+            "Scolarité [à évaluer]",
+            "Autonomie décisionnelle [à évaluer]",
+            "Pression sociale/relationnelle [à explorer]"
+          ],
+          "scoringRule": "≥5 éléments = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a11",
+          "text": "Évaluation de la capacité de discernement (selon art. 16 CC)",
+          "details": [
+            "Compréhension des enjeux [à évaluer]",
+            "Capacité de réflexion [à évaluer]",
+            "Libre arbitre [à évaluer]",
+            "Cohérence des décisions [à évaluer]",
+            "Maturité émotionnelle [16 ans - à évaluer]",
+            "Absence de contrainte [à vérifier]"
+          ],
+          "scoringRule": "≥5 éléments évalués = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a12",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "details": [
+            "Anamnèse complète et empathique",
+            "Identification du motif réel de consultation",
+            "Évaluation appropriée des contre-indications",
+            "Respect de la confidentialité",
+            "Approche adaptée à l'adolescente"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Désinfection des mains et présentation",
+          "binaryOnly": true
+        },
+        {
+          "id": "e2",
+          "text": "Mesures anthropométriques essentielles",
+          "details": [
+            "Poids [à mesurer]",
+            "Taille [à mesurer]",
+            "Calcul IMC [indispensable avant COC]",
+            "Interprétation selon courbes adolescentes"
+          ],
+          "scoringRule": "≥3 éléments = 2 pts, 2 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e3",
+          "text": "Prise de tension artérielle",
+          "details": [
+            "Position assise",
+            "Brassard adapté",
+            "Valeurs normales (<120/80 mmHg)",
+            "Répétition si nécessaire"
+          ],
+          "patientComment": "110/70 mmHg",
+          "binaryOnly": true
+        },
+        {
+          "id": "e4",
+          "text": "Inspection générale ciblée",
+          "details": [
+            "État général [jeune fille en bon état]",
+            "Développement pubertaire [normal]",
+            "Signes d'hyperandrogénie [acné légère]",
+            "Signes de troubles alimentaires [non]",
+            "Varicosités/phlébites [non]"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e5",
+          "text": "Examen cardiovasculaire de base",
+          "details": [
+            "Auscultation cardiaque [sans particularité]",
+            "Palpation pouls périphériques [normaux]",
+            "Recherche de souffles [absents]",
+            "Signes d'insuffisance cardiaque [non]"
+          ],
+          "scoringRule": "≥3 éléments = 2 pts, 2 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e6",
+          "text": "Examen abdominal adapté",
+          "details": [
+            "Inspection [normale]",
+            "Palpation superficielle [sans particularité]",
+            "Palpation profonde [sans douleur]",
+            "Exclusion organicité [pas de masse palpable]"
+          ],
+          "scoringRule": "≥3 éléments = 2 pts, 2 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e7",
+          "text": "Examen gynécologique (si indiqué)",
+          "details": [
+            "Évaluation de la nécessité [non nécessaire ici]",
+            "Respect pudeur et consentement [toujours]",
+            "Report si pas d'activité sexuelle [non applicable]",
+            "Référence gynécologique recommandée [oui]"
+          ],
+          "scoringRule": "Évaluation appropriée = 2 pts, partielle = 1 pt, non = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e8",
+          "text": "Évaluation formelle de la capacité de discernement",
+          "details": [
+            "Test de compréhension [comprend les enjeux]",
+            "Évaluation de la réflexion [réfléchie]",
+            "Vérification libre arbitre [confirmé]",
+            "Absence de contrainte [confirmée]",
+            "Conclusion : [capable de discernement]"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e9",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "details": [
+            "Examen adapté à l'âge et au motif",
+            "Respect de la pudeur",
+            "Évaluation correcte capacité discernement",
+            "Exclusion pathologie organique",
+            "Bilan pré-contraceptif complet"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic principal énoncé",
+          "details": [
+            "Consultation contraception chez adolescente",
+            "Agenda caché identifié",
+            "Douleurs abdominales fonctionnelles"
+          ],
+          "scoringRule": "≥2 éléments = 2 pts, 1 = 1 pt, 0 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m2",
+          "text": "Choix contraceptif adapté",
+          "details": [
+            "Contraception œstroprogestative (COC)",
+            "Justification du choix [efficacité, tolérance]",
+            "Alternatives évoquées [préservatifs, autres]",
+            "Pas de contre-indications identifiées"
+          ],
+          "scoringRule": "≥3 éléments = 2 pts, 2 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m3",
+          "text": "Prescription et modalités de prise",
+          "details": [
+            "Pilule œstroprogestative prescrite",
+            "Modalités de prise [1er jour des règles]",
+            "Schéma 21 jours + 7 jours pause",
+            "Précautions particulières [même heure]",
+            "Durée de prescription [3-6 mois]"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m4",
+          "text": "Information sur les effets secondaires",
+          "details": [
+            "Effets bénins [nausées, tensions mammaires]",
+            "Effets adaptatifs [3 premiers mois]",
+            "Signes d'alerte [thrombose, embolie]",
+            "Conduite à tenir [consultation urgente]",
+            "Effets positifs [régulation cycle, acné]"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m5",
+          "text": "Conseil en prévention des IST",
+          "details": [
+            "Pilule ne protège pas des IST",
+            "Nécessité du préservatif [chlamydia, VIH]",
+            "Double protection recommandée",
+            "Dépistage IST si nécessaire",
+            "Éducation sur les risques"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m6",
+          "text": "Gestion des oublis et situations particulières",
+          "details": [
+            "Oubli <12h [rattrapage immédiat]",
+            "Oubli >12h [contraception additionnelle 7 jours]",
+            "Vomissements/diarrhée [efficacité réduite]",
+            "Interactions médicamenteuses [antibiotiques]",
+            "Contraception d'urgence [si rapport à risque]"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m7",
+          "text": "Suivi et surveillance",
+          "details": [
+            "Contrôle à 3 mois [tolérance, observance]",
+            "Surveillance annuelle [TA, poids, frottis]",
+            "Référence gynécologique [dans l'année]",
+            "Éducation à l'auto-surveillance",
+            "Renouvellement sur ordonnance"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m8",
+          "text": "Aspects légaux et éthiques",
+          "details": [
+            "Secret médical garanti",
+            "Capacité de discernement confirmée",
+            "Remboursement sécurité sociale",
+            "Encouragement dialogue familial",
+            "Respect autonomie adolescente",
+            "Confidentialité vis-à-vis des parents"
+          ],
+          "scoringRule": "≥5 éléments = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m9",
+          "text": "Évaluation globale de la qualité de la prise en charge",
+          "details": [
+            "Approche globale et empathique",
+            "Information complète et adaptée",
+            "Respect des aspects légaux",
+            "Prévention et éducation",
+            "Suivi approprié organisé"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        }
+      ]
+    }
+  }
+}

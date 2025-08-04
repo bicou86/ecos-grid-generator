@@ -1,0 +1,412 @@
+{
+  "title": "Douleur thoracique 1",
+  "context": {
+    "setting": "Urgences du CHUV",
+    "patient": "M. Tom Jedusor, 28 ans, étudiant en informatique, consulte pour douleurs thoraciques aiguës",
+    "vitals": {
+      "ta": "110/87 mmHg",
+      "fc": "145 bpm",
+      "temperature": "37.2°C"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Raison de la visite",
+          "details": [
+            "Douleur à la poitrine [précordiale]"
+          ],
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Caractérisation de la douleur thoracique",
+          "details": [
+            "Localisation [précordiale]",
+            "Qualité [aiguë, lancinante]",
+            "Intensité [8/10]",
+            "Irradiation [non]",
+            "Chronologie [depuis 1h30, constante]",
+            "Développement [brusque]"
+          ],
+          "scoringRule": "Au moins cinq = oui, quatre = ±, aucun à trois = non"
+        },
+        {
+          "id": "a3",
+          "text": "Circonstances de survenue",
+          "details": [
+            "Circonstances [ce matin en cours]"
+          ],
+          "binaryOnly": true
+        },
+        {
+          "id": "a4",
+          "text": "Facteurs modulateurs",
+          "details": [
+            "Facteur atténuant [se pencher en avant]",
+            "Facteur aggravant [se coucher]"
+          ],
+          "scoringRule": "Les deux = oui, un = ±, aucun = non"
+        },
+        {
+          "id": "a5",
+          "text": "Symptômes associés",
+          "details": [
+            "Palpitations [impression que le cœur bat vite]"
+          ],
+          "binaryOnly": true
+        },
+        {
+          "id": "a6",
+          "text": "Antécédents médicaux récents",
+          "details": [
+            "État grippal [il y a 1 semaine]",
+            "Pneumonie [il y a 1 an]"
+          ],
+          "scoringRule": "Les deux = oui, un = ±, aucun = non"
+        },
+        {
+          "id": "a7",
+          "text": "Habitudes de vie",
+          "details": [
+            "Médicaments [non]",
+            "Tabac [1 paquet/jour depuis 17 ans]",
+            "Cannabis [de temps en temps]",
+            "Alcool [occasionnel, surtout jeudis soirs]"
+          ],
+          "scoringRule": "Au moins trois = oui, deux = ±, aucun à un = non"
+        },
+        {
+          "id": "a8",
+          "text": "Voyages récents",
+          "details": [
+            "Voyages récents [non - important pour évaluer risque tuberculose]"
+          ],
+          "binaryOnly": true
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Désinfection des mains",
+          "binaryOnly": true
+        },
+        {
+          "id": "e2",
+          "text": "Examen cardiovasculaire",
+          "details": [
+            "Observation des extrémités",
+            "Auscultation des foyers cardiaques",
+            "Palpation du choc de pointe",
+            "Prise des pouls aux 4 extrémités",
+            "Prise de la fréquence cardiaque",
+            "Mesure du temps de recoloration",
+            "Observation d'une turgescence jugulaire",
+            "Recherche d'œdème",
+            "Recherche d'un reflux hépato-jugulaire"
+          ],
+          "scoringRule": "Au moins sept = oui, cinq-six = ±, aucun à quatre = non"
+        },
+        {
+          "id": "e3",
+          "text": "Examen pulmonaire",
+          "details": [
+            "Auscultation plages antérieures, postérieures et latérales",
+            "Percussion"
+          ],
+          "scoringRule": "Les deux = oui, un = ±, aucun = non"
+        },
+        {
+          "id": "e4",
+          "text": "Position du patient pendant l'examen",
+          "details": [
+            "A fait coucher le patient à un moment du status"
+          ],
+          "binaryOnly": true
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Examens complémentaires demandés",
+          "details": [
+            "Laboratoires [FSC, VS, urée, CRP, troponine T, D-dimères]",
+            "ECG",
+            "Radiographie du thorax"
+          ],
+          "scoringRule": "Les trois = oui, deux = ±, aucun à un = non"
+        },
+        {
+          "id": "m2",
+          "text": "Hypothèse diagnostique",
+          "details": [
+            "Péricardite aiguë"
+          ],
+          "binaryOnly": true
+        },
+        {
+          "id": "m3",
+          "text": "Réponse à la demande d'hospitalisation",
+          "details": [
+            "A répondu positivement à la demande du patient concernant l'hospitalisation"
+          ],
+          "binaryOnly": true
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "images": [
+      {
+        "id": "ecg",
+        "title": "ECG - Péricardite aiguë",
+        "description": "Tachycardie sinusale (145 bpm), élévation ST diffuse avec dépression PR (I, II, III, aVF, V4-6), dépression réciproque de ST en aVR, microvoltages",
+        "filename": "douleur-thoracique-1-img1.jpg"
+      },
+      {
+        "id": "rx-thorax",
+        "title": "Radiographie du thorax",
+        "description": "Effusion péricardique visible",
+        "filename": "douleur-thoracique-1-img2.jpg"
+      }
+    ],
+    "scenarioPatienteStandardisee": {
+      "titre": "Scénario pour le/la patient(e) standardisé(e)",
+      "nom": "Tom Jedusor",
+      "age": "28 ans",
+      "contexte": "Étudiant en informatique en bonne santé habituelle, présente une douleur thoracique brutale pendant un cours",
+      "motifConsultation": {
+        "plaintePrincipale": "Je viens vous voir car j'ai mal à la poitrine",
+        "autreChose": "J'ai l'impression que mon cœur bat vite"
+      },
+      "histoireActuelle": {
+        "symptomePrincipal": [
+          "Douleur précordiale brutale et intense (8/10)",
+          "Douleur aiguë, lancinante",
+          "Apparue ce matin en cours",
+          "Constante depuis environ 1h30",
+          "Sans irradiation"
+        ],
+        "symptomesAssocies": [
+          "Impression que le cœur bat vite",
+          "Impression d'avoir un peu de mal à respirer"
+        ],
+        "circonstances": [
+          "Était en cours quand la douleur a pris",
+          "Un ami l'a conduit aux urgences"
+        ],
+        "facteursDeclenchants": [
+          "Position couchée renforce la douleur",
+          "Douleur dépend de la respiration"
+        ],
+        "facteursAmeliorants": [
+          "Se pencher en avant diminue l'intensité",
+          "Position assise penchée vers l'avant"
+        ],
+        "inquietudes": [
+          "Angoisse d'infarctus",
+          "Peur d'être en train de faire un infarctus"
+        ]
+      },
+      "anamneseSystemes": {
+        "generale": [
+          "Légère grippe la semaine passée",
+          "Bonne santé habituelle sinon"
+        ],
+        "cardiovasculaire": [
+          "Douleur à la poitrine comme décrite",
+          "Palpitations"
+        ],
+        "respiratoire": [
+          "Impression d'avoir un peu de mal à respirer"
+        ]
+      },
+      "habitudes": {
+        "alimentation": "Normale",
+        "activitePhysique": "Fitness",
+        "sommeil": "Bon",
+        "tabac": "Oui, 1 paquet/jour depuis l'âge de 17 ans",
+        "alcool": "Surtout les jeudis soirs, sinon pas vraiment",
+        "drogues": "Je fume du cannabis de temps en temps",
+        "medicaments": "Non",
+        "sexualite": "Rapports protégés, pas de copine"
+      },
+      "histoireMedicale": [
+        "Pneumonie il y a 1 année, pas de séquelles",
+        "Hospitalisé l'année passée pour la pneumonie",
+        "Varicelle dans l'enfance",
+        "Vaccins à jour",
+        "Pas d'opérations, blessures ou traumatismes",
+        "Pas de transfusions",
+        "Pas d'allergies",
+        "Pas vu de médecin depuis l'adolescence"
+      ],
+      "antecedentsFamiliaux": [
+        "Mère en bonne santé habituelle",
+        "Père décédé d'un accident de voiture",
+        "Pas de sœur ni frère",
+        "Grand-père décédé d'un cancer il y a 2 ans (côté paternel)",
+        "Grand-mère avec un problème de cœur (côté paternel)",
+        "Autres grands-parents en bonne santé"
+      ],
+      "informationsPersonnelles": {
+        "profession": "Étudiant en informatique",
+        "hobbies": "Jeux vidéos",
+        "poids": "Normal",
+        "taille": "Normal",
+        "orientationSexuelle": "Hétérosexuel",
+        "etatCivil": "Célibataire",
+        "enfants": "0",
+        "situationSocioEconomique": "Moyenne",
+        "origine": "Suisse",
+        "etatEsprit": "Inquiet"
+      },
+      "simulation": {
+        "durantEntretien": [
+          "Assis sur une chaise, penché en avant",
+          "Bien habillé, bonne hygiène",
+          "Agitation due à la douleur et la peur",
+          "Simuler douleur précordiale intense (8/10)",
+          "Ne pas se coucher - position aggrave la douleur"
+        ],
+        "questionsAPoser": [
+          "J'ai un infarctus docteur ??? (après l'anamnèse, avant le status)",
+          "Est-ce qu'on va m'hospitaliser ? (après la sonnerie des 2 minutes restantes)"
+        ]
+      },
+      "informationADonner": "Mentionner l'état grippal de la semaine passée si pas spontanément évoqué."
+    },
+    "informationsExpert": {
+      "titre": "Informations pour l'expert",
+      "dossierMedical": "Tom Jedusor, 28 ans, étudiant en informatique, BSH. Douleur thoracique précordiale brutale (8/10), position-dépendante (soulagée penché en avant, aggravée couché), respiro-dépendante. Tachycardie 145 bpm. Antécédent d'état grippal récent. Tableau évocateur de péricardite aiguë.",
+      "rolesInterventions": [
+        "Remplir la grille d'évaluation",
+        "Donner les résultats des examens demandés (laboratoires, ECG, radiographie)",
+        "Pour le laboratoire : donner la carte dès que le médecin évoque le besoin",
+        "Pour l'ECG et Rx thorax : le médecin doit les demander pour les recevoir",
+        "Seuls les status cardiovasculaire et pulmonaire doivent être effectués",
+        "Toute autre tentative de status : répondre 'le status est normal, passez'"
+      ],
+      "pointsCles": [
+        "Péricardite aiguë chez jeune adulte",
+        "Douleur thoracique typique : position et respiro-dépendante",
+        "Facteur déclenchant probable : infection virale récente",
+        "Tachycardie à 145 bpm nécessite surveillance",
+        "Risque de complications (tamponnade) à surveiller",
+        "Diagnostic basé sur ≥2 des 4 critères diagnostiques",
+        "ECG typique avec cycle de Holzmann",
+        "Troponines négatives excluent myopéricardite"
+      ],
+      "pieges": [
+        "Confondre avec infarctus du myocarde",
+        "Ne pas rechercher facteurs déclenchants (infection récente)",
+        "Omettre l'examen cardiovasculaire complet",
+        "Ne pas faire coucher le patient pendant l'examen",
+        "Oublier de rassurer sur les craintes d'infarctus",
+        "Ne pas répondre à la demande d'hospitalisation",
+        "Sous-estimer la tachycardie (nécessite écho-cœur)"
+      ]
+    },
+    "theoriePratique": {
+      "titre": "Théorie pratique sur la péricardite aiguë",
+      "sections": [
+        {
+          "titre": "Définition et épidémiologie",
+          "contenu": "Inflammation du péricarde s'accompagnant ou non d'un épanchement.",
+          "points": [
+            "Étiologies virales et idiopathiques : 85% des cas",
+            "Âge typique : jeunes adultes",
+            "Souvent précédée d'infection virale",
+            "Évolution généralement bénigne si pas de complications"
+          ]
+        },
+        {
+          "titre": "Présentation clinique typique",
+          "contenu": "Douleur thoracique caractéristique avec particularités positionnelles.",
+          "points": [
+            "Douleur précordiale aiguë, intense, constante",
+            "Position-dépendante : aggravée couché, soulagée penché en avant",
+            "Respiro-dépendante : augmentée à l'inspiration",
+            "Frottement péricardique (absent dans ce cas)",
+            "Tachycardie souvent présente",
+            "Fièvre possible"
+          ]
+        },
+        {
+          "titre": "Critères diagnostiques",
+          "contenu": "Diagnostic nécessite ≥2 des 4 critères suivants.",
+          "points": [
+            "1. Douleur thoracique typique",
+            "2. Frottement péricardique",
+            "3. ECG compatible (cycle de Holzmann)",
+            "4. Épanchement péricardique nouveau/aggravé",
+            "L'absence d'épanchement n'exclut pas le diagnostic"
+          ]
+        },  
+        {
+          "titre": "ECG et cycle de Holzmann",
+          "contenu": "Évolution électrocardiographique en 4 stades.",
+          "points": [
+            "Stade 1 : Sus-décalage ST diffus, sous-décalage PR",
+            "Stade 2 : Retour ST et PR à la normale",
+            "Stade 3 : Inversion des ondes T",
+            "Stade 4 : Retour à la normale",
+            "Cycle complet chez 60% des patients",
+            "Stade 1 présent chez 80% des patients"
+          ]
+        },
+        {
+          "titre": "Diagnostic différentiel",
+          "contenu": "Distinguer de l'ischémie myocardique principalement.",
+          "points": [
+            "Péricardite : douleur précordiale, position-dépendante",
+            "Infarctus : douleur rétrosternale, oppressante",
+            "ECG péricardite : sus-décalage ST diffus",
+            "ECG infarctus : sus-décalage ST localisé avec miroir",
+            "Troponines négatives dans péricardite simple"
+          ]
+        },
+        {
+          "titre": "Complications à surveiller",
+          "contenu": "Signes de tamponnade cardiaque = urgence absolue.",
+          "points": [
+            "Tachycardie >100/min (présente dans ce cas)",
+            "Turgescence jugulaire",
+            "Pouls paradoxal",
+            "Chute tensionnelle",
+            "Intolérance au décubitus",
+            "Nécessité d'écho-cœur en urgence si signes"
+          ]
+        }
+      ],
+      "rappelsTherapeutiques": [
+        "AINS en première intention (ibuprofène 600mg x3/j)",
+        "Colchicine 0.5mg x2/j (prévention récidives)",
+        "Éviter corticoïdes en première intention",
+        "Repos relatif pendant phase aiguë",
+        "Traitement ambulatoire si pas de complications",
+        "Contrôle clinique à 24-48h",
+        "ECG de contrôle après 4 semaines"
+      ],
+      "examensComplementaires": [
+        "FSC : recherche leucocytose",
+        "VS et CRP : marqueurs inflammatoires",
+        "Troponines : exclure myopéricardite",
+        "Urée : exclure syndrome urémique",
+        "Hémocultures si fièvre >38°C",
+        "ECG : cycle de Holzmann",
+        "Radiographie thorax : épanchement si >250mL",
+        "Écho-cœur si signes de complications"
+      ]
+    }
+  }
+}

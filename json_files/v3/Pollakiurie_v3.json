@@ -1,0 +1,376 @@
+{
+  "title": "Pollakiurie",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Homme de 55 ans, obèse, qui doit fréquemment aller aux toilettes et consulte son médecin de famille pour obtenir des conseils",
+    "vitals": {
+      "ta": "143/92 mmHg"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation du médecin",
+          "binaryOnly": true,
+          "details": [
+            "Se présenter avec nom, fonction et tâche"
+          ]
+        },
+        {
+          "id": "a2",
+          "text": "Problème actuel",
+          "binaryOnly": false,
+          "details": [
+            "Identifier le motif de consultation",
+            "[Polyurie, doit constamment aller aux toilettes, même la nuit]"
+          ],
+          "scoringRule": "≥1 motif identifié = 2 points"
+        },
+        {
+          "id": "a3",
+          "text": "Caractérisation des symptômes urinaires",
+          "binaryOnly": false,
+          "details": [
+            "Urgence mictionnelle [non mentionnée spécifiquement]",
+            "Dysurie [non]",
+            "Couleur de l'urine [normale]",
+            "Début précis des symptômes"
+          ],
+          "scoringRule": "≥3 symptômes explorés = 2 points, 2 symptômes = 1 point"
+        },
+        {
+          "id": "a4",
+          "text": "Polydipsie et appétit",
+          "binaryOnly": false,
+          "details": [
+            "Habitudes de boisson [oui, beaucoup ! Jusqu'à 5 litres par jour]",
+            "Appétit [extrême]"
+          ],
+          "scoringRule": "≥2 éléments de la triade diabétique = 2 points"
+        },
+        {
+          "id": "a5",
+          "text": "Évolution du poids",
+          "binaryOnly": false,
+          "details": [
+            "[Réjouissant - a perdu 5 kg au cours des 2-3 derniers mois]"
+          ],
+          "scoringRule": "Perte de poids explorée = 2 points"
+        },
+        {
+          "id": "a6",
+          "text": "Autres symptômes urogénitaux",
+          "binaryOnly": false,
+          "details": [
+            "Incontinence [non]",
+            "Troubles de l'érection [peut-être oui]"
+          ],
+          "scoringRule": "≥1 complication explorée = 2 points"
+        },
+        {
+          "id": "a7",
+          "text": "Symptômes généraux",
+          "binaryOnly": false,
+          "details": [
+            "Vertiges [non]",
+            "Douleurs [non]",
+            "Douleur thoracique/angine de poitrine [non]"
+          ],
+          "scoringRule": "≥2 symptômes généraux explorés = 2 points"
+        },
+        {
+          "id": "a8",
+          "text": "Symptômes neurologiques",
+          "binaryOnly": false,
+          "details": [
+            "Troubles sensitifs",
+            "Engourdissement des mains ou des pieds [pas remarqué]"
+          ],
+          "scoringRule": "≥1 symptôme neurologique exploré = 2 points"
+        },
+        {
+          "id": "a9",
+          "text": "Antécédents médicaux personnels",
+          "binaryOnly": false,
+          "details": [
+            "Maladies antérieures [non]",
+            "Hospitalisations [non]",
+            "Chirurgies [non]"
+          ],
+          "scoringRule": "≥2 antécédents explorés = 2 points"
+        },
+        {
+          "id": "a10",
+          "text": "Mode de vie et habitudes",
+          "binaryOnly": false,
+          "details": [
+            "Habitudes alimentaires",
+            "Activités sportives [non]",
+            "Loisirs [non]"
+          ],
+          "scoringRule": "≥2 aspects du mode de vie = 2 points"
+        },
+        {
+          "id": "a11",
+          "text": "Substances et médicaments",
+          "binaryOnly": false,
+          "details": [
+            "Tabac [oui]",
+            "Alcool [1 bière par jour]",
+            "Drogues [rarement]",
+            "Médicaments actuels [aucun]"
+          ],
+          "scoringRule": "≥3 substances explorées = 2 points, 2 substances = 1 point"
+        },
+        {
+          "id": "a12",
+          "text": "Anamnèse familiale",
+          "binaryOnly": false,
+          "details": [
+            "Diabète sucré [mère et père]",
+            "Maladies cardiovasculaires [mère et père coronariens]",
+            "Autres maladies héréditaires"
+          ],
+          "scoringRule": "≥2 antécédents familiaux explorés = 2 points"
+        },
+        {
+          "id": "a13",
+          "text": "Anamnèse sociale",
+          "binaryOnly": false,
+          "details": [
+            "Situation professionnelle",
+            "Situation familiale",
+            "[Non particulier]"
+          ]
+        },
+        {
+          "id": "a14",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "binaryOnly": false,
+          "details": [
+            "Anamnèse ciblée et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Examen cardiovasculaire",
+          "binaryOnly": false,
+          "details": [
+            "Auscultation cardiaque",
+            "Recherche de souffles",
+            "Rythme et fréquence"
+          ],
+          "scoringRule": "≥2 aspects cardiaques examinés = 2 points"
+        },
+        {
+          "id": "e2",
+          "text": "Examen pulmonaire",
+          "binaryOnly": false,
+          "details": [
+            "Auscultation pulmonaire",
+            "Recherche de râles",
+            "Symétrie auscultatoire"
+          ],
+          "scoringRule": "≥2 aspects pulmonaires examinés = 2 points"
+        },
+        {
+          "id": "e3",
+          "text": "Examen ophtalmologique",
+          "binaryOnly": false,
+          "details": [
+            "Fond d'œil",
+            "Recherche de rétinopathie diabétique"
+          ],
+          "scoringRule": "Fond d'œil réalisé = 2 points"
+        },
+        {
+          "id": "e4",
+          "text": "Examen vasculaire périphérique",
+          "binaryOnly": false,
+          "details": [
+            "Palpation des pouls périphériques",
+            "Recherche de signes d'artériopathie"
+          ],
+          "scoringRule": "≥1 aspect vasculaire examiné = 2 points"
+        },
+        {
+          "id": "e5",
+          "text": "Examen neurologique",
+          "binaryOnly": false,
+          "details": [
+            "Test de la sensibilité",
+            "Sens vibratoire au diapason",
+            "Test au monofilament",
+            "Réflexes ostéo-tendineux"
+          ],
+          "scoringRule": "≥3 tests neurologiques = 2 points, 2 tests = 1 point"
+        },
+        {
+          "id": "e6",
+          "text": "Mesure de la tension artérielle",
+          "binaryOnly": false,
+          "details": [
+            "Prise de tension",
+            "[143/92 mmHg]"
+          ],
+          "scoringRule": "Tension artérielle mesurée = 2 points"
+        },
+        {
+          "id": "e7",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "binaryOnly": false,
+          "details": [
+            "Examen clinique ciblé et bien conduit"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic principal suspecté",
+          "binaryOnly": false,
+          "details": [
+            "Diabète sucré de type 2"
+          ]
+        },
+        {
+          "id": "m2",
+          "text": "Diagnostics différentiels",
+          "binaryOnly": false,
+          "ddSection": {
+            "categories": [
+              {
+                "name": "Causes endocriniennes",
+                "items": [
+                  "Diabète sucré de type 2",
+                  "Diabète sucré de type 1",
+                  "Diabète insipide",
+                  "Hyperthyroïdie"
+                ]
+              },
+              {
+                "name": "Causes urologiques",
+                "items": [
+                  "Infection urinaire",
+                  "Vessie hyperactive",
+                  "Hypertrophie bénigne de la prostate",
+                  "Cancer de la vessie"
+                ]
+              },
+              {
+                "name": "Causes médicamenteuses",
+                "items": [
+                  "Diurétiques",
+                  "Inhibiteurs de l'ECA",
+                  "Lithium",
+                  "Caféine"
+                ]
+              },
+              {
+                "name": "Autres causes",
+                "items": [
+                  "Polydipsie psychogène",
+                  "Insuffisance cardiaque",
+                  "Maladie rénale",
+                  "Hypercalcémie"
+                ]
+              }
+            ]
+          },
+          "scoringRule": "≥2 catégories avec diagnostics = 2 points"
+        },
+        {
+          "id": "m3",
+          "text": "Examens complémentaires - Biologie",
+          "binaryOnly": false,
+          "details": [
+            "Formule sanguine complète (FSC)",
+            "Glycémie à jeun",
+            "CRP",
+            "Nouvelle glycémie à jeun le lendemain"
+          ],
+          "scoringRule": "≥3 examens biologiques = 2 points, 2 examens = 1 point"
+        },
+        {
+          "id": "m4",
+          "text": "Examens complémentaires - Analyses urinaires",
+          "binaryOnly": false,
+          "details": [
+            "Recherche de corps cétoniques",
+            "Recherche de glucose",
+            "Recherche de signes d'infection",
+            "Bandelette urinaire complète"
+          ],
+          "scoringRule": "≥3 analyses urinaires = 2 points, 2 analyses = 1 point"
+        },
+        {
+          "id": "m5",
+          "text": "Prise en charge thérapeutique",
+          "binaryOnly": false,
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Mesures hygiéno-diététiques",
+                "content": "• Changement de régime alimentaire (régime diabétique)\n• Contrôle du poids et réduction pondérale\n• Activité physique régulière adaptée\n• Arrêt du tabac\n• Limitation de l'alcool"
+              },
+              {
+                "title": "Traitement médicamenteux",
+                "content": "• Si échec des mesures hygiéno-diététiques : antidiabétiques oraux (metformine en première intention)\n• Contrôle de la tension artérielle si HTA confirmée\n• Traitement des comorbidités (dyslipidémie)\n• Surveillance glycémique régulière"
+              },
+              {
+                "title": "Suivi et éducation",
+                "content": "• Éducation thérapeutique du patient\n• Apprentissage de l'autosurveillance glycémique\n• Planification de consultations régulières\n• Dépistage des complications diabétiques"
+              }
+            ]
+          },
+          "scoringRule": "≥2 modalités thérapeutiques = 2 points"
+        },
+        {
+          "id": "m6",
+          "text": "Gestion des complications potentielles",
+          "binaryOnly": false,
+          "details": [
+            "Évaluer la nécessité d'un transfert hospitalier",
+            "Suspicion de coma diabétique",
+            "Organiser le transfert si nécessaire"
+          ],
+          "scoringRule": "≥2 aspects de gestion des complications = 2 points"
+        },
+        {
+          "id": "m7",
+          "text": "Suivi et accompagnement",
+          "binaryOnly": false,
+          "details": [
+            "Rassurer le patient",
+            "Planifier des consultations régulières",
+            "Proposer un soutien continu",
+            "Éducation thérapeutique"
+          ],
+          "scoringRule": "≥3 aspects de suivi = 2 points, 2 aspects = 1 point"
+        },
+        {
+          "id": "m8",
+          "text": "Évaluation globale de la qualité de la prise en charge",
+          "binaryOnly": false,
+          "details": [
+            "Prise en charge cohérente et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    }
+  }
+}

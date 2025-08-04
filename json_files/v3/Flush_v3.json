@@ -1,0 +1,446 @@
+{
+  "title": "Flush",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Anna Hibelig, 47 ans, consulte pour des bouffées de chaleur",
+    "vitals": {
+      "ta": "164/95 mmHg",
+      "fc": "70 bpm"
+    },
+    "patientComment": "Femme de 47 ans avec flush récurrent et HTA stade 2. Présentation atypique pour ménopause : hypertension marquée, perte de poids, anxiété majeure, AF cancer rénal. Suspicion de phéochromocytome nécessitant exploration urgente des métanéphrines."
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction et tâche",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Caractérisation complète des épisodes de flush",
+          "details": [
+            "Durée totale: [6 semaines]",
+            "Fréquence: [quotidienne]",
+            "Durée épisodes: [30 minutes]",
+            "Horaire préférentiel",
+            "Nombre par jour",
+            "Évolution dans le temps"
+          ],
+          "binaryOnly": false,
+          "patientComment": "Episodes prolongés de 30 min = atypique",
+          "scoringRule": "≥5 caractéristiques = 2 pts, 3-4 = 1 pt, <3 = 0 pt"
+        },
+        {
+          "id": "a3",
+          "text": "Description phénoménologique du flush",
+          "details": [
+            "Coloration faciale: [tête rouge]",
+            "Extension corporelle: [reste du corps pâle]",
+            "Extrémités: [mains froides]",
+            "Prurit associé: [oui, démangeaisons]",
+            "Transpiration: [forte transpiration]",
+            "Sensation thermique subjective"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥5 éléments = 2 pts, 3-4 = 1 pt, <3 = 0 pt"
+        },
+        {
+          "id": "a4",
+          "text": "Recherche de RED FLAGS endocriniens",
+          "redflagsSection": [
+            {
+              "text": "HTA paroxystique [164/95 mmHg]",
+              "isRedFlag": true
+            },
+            {
+              "text": "Triade phéo: céphalées [oui légères]",
+              "isRedFlag": true
+            },
+            {
+              "text": "Triade phéo: palpitations [oui, tachycardie]",
+              "isRedFlag": true
+            },
+            {
+              "text": "Triade phéo: sueurs profuses [forte transpiration]",
+              "isRedFlag": true
+            },
+            {
+              "text": "Anxiété/tremblements [forte anxiété + tremblements]",
+              "isRedFlag": true
+            },
+            {
+              "text": "Perte de poids inexpliquée [5 kg en 6 mois]",
+              "isRedFlag": true
+            }
+          ],
+          "binaryOnly": false,
+          "patientComment": "Triade complète du phéochromocytome!",
+          "scoringRule": "≥5 red flags = 2 pts, 3-4 = 1 pt, <3 = 0 pt"
+        },
+        {
+          "id": "a5",
+          "text": "Facteurs déclenchants et modulateurs",
+          "details": [
+            "Stress/émotions: [non]",
+            "Alcool: [non, 1-2 verres weekend]",
+            "Aliments épicés: [non interrogé]",
+            "Chaleur ambiante: [non interrogé]",
+            "Effort physique",
+            "Position/mouvements"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥5 facteurs explorés = 2 pts, 3-4 = 1 pt, <3 = 0 pt"
+        },
+        {
+          "id": "a6",
+          "text": "Symptômes digestifs associés",
+          "details": [
+            "Diarrhée: [non]",
+            "Constipation: [oui]",
+            "Nausées: [oui]",
+            "Vomissements: [non interrogé]",
+            "Douleurs abdominales: [non]",
+            "Ballonnements"
+          ],
+          "binaryOnly": false,
+          "patientComment": "Constipation + nausées = dysautonomie?",
+          "scoringRule": "≥5 symptômes = 2 pts, 3-4 = 1 pt, <3 = 0 pt"
+        },
+        {
+          "id": "a7",
+          "text": "Statut gynécologique et hormonal",
+          "details": [
+            "Âge: [47 ans - périménopause]",
+            "Cycles menstruels: [irréguliers mais présents]",
+            "Bouffées chaleur nocturnes",
+            "Sécheresse vaginale",
+            "Troubles humeur",
+            "Contraception actuelle"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥5 aspects = 2 pts, 3-4 = 1 pt, <3 = 0 pt"
+        },
+        {
+          "id": "a8",
+          "text": "Recherche syndrome carcinoïde",
+          "details": [
+            "Flush + diarrhée: [non, constipation]",
+            "Wheezing/bronchospasme: [non interrogé]",
+            "Télangiectasies faciales",
+            "Douleurs abdominales coliques",
+            "Valvulopathie cardiaque connue"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "a9",
+          "text": "Antécédents et facteurs de risque",
+          "details": [
+            "AF cancer: [frère décédé carcinome rénal]",
+            "MEN 2 dans famille",
+            "Neurofibromatose",
+            "Paragangliomes familiaux",
+            "HTA familiale",
+            "Médications actuelles: [aucune]"
+          ],
+          "binaryOnly": false,
+          "patientComment": "AF cancer rénal = angoisse ++",
+          "scoringRule": "≥5 éléments = 2 pts, 3-4 = 1 pt, <3 = 0 pt"
+        },
+        {
+          "id": "a10",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "binaryOnly": false,
+          "details": [
+            "Anamnèse orientée causes endocriniennes",
+            "RED FLAGS systématiquement recherchés",
+            "Diagnostics différentiels explorés"
+          ],
+          "scoringRule": "Excellente = 2 pts, suffisante = 1 pt, insuffisante = 0 pt"
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Évaluation hémodynamique complète",
+          "details": [
+            "TA: [164/95 mmHg - HTA stade 2]",
+            "TA debout (hypotension orthostatique)",
+            "FC: [70 bpm - normale]",
+            "Pouls périphériques symétriques",
+            "Température corporelle"
+          ],
+          "binaryOnly": false,
+          "patientComment": "HTA isolée sans tachycardie",
+          "scoringRule": "≥4 paramètres = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "e2",
+          "text": "Examen cutané durant et hors flush",
+          "details": [
+            "Érythème facial actuel: [absent]",
+            "Télangiectasies: [non recherchées]",
+            "Flush provoqué (manœuvres)",
+            "Dermographisme",
+            "Neurofibromes cutanés"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "e3",
+          "text": "Examen thyroïdien spécifique",
+          "details": [
+            "Palpation thyroïde: [non effectuée]",
+            "Nodules thyroïdiens",
+            "Tremblements fins des mains",
+            "Exophtalmie",
+            "Dermopathie thyroïdienne"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥3 éléments = 2 pts, 2 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "e4",
+          "text": "Examen cardiovasculaire approfondi",
+          "details": [
+            "Auscultation cardiaque: [normale]",
+            "Souffle diastolique (carcinoïde)",
+            "Signes IC droite",
+            "Œdèmes périphériques",
+            "Reflux hépato-jugulaire"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "e5",
+          "text": "Examen abdominal orienté",
+          "details": [
+            "Hépatomégalie: [absente]",
+            "Splénomégalie: [absente]",
+            "Masses abdominales: [non palpées]",
+            "Masse surrénalienne palpable",
+            "Douleur flancs (rein)"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "e6",
+          "text": "Examen neurologique ciblé",
+          "details": [
+            "État de conscience: [normal]",
+            "Tremblements observables",
+            "Hyperréflexie",
+            "Signes pyramidaux",
+            "Neuropathie périphérique"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥3 éléments = 2 pts, 2 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "e7",
+          "text": "Recherche complications HTA",
+          "details": [
+            "Fond d'œil si possible",
+            "Souffle carotidien/rénal",
+            "Pouls périphériques",
+            "Index cheville-bras",
+            "Signes AVC/AIT"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥3 éléments = 2 pts, 2 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "e8",
+          "text": "Évaluation globale de la qualité de l'examen",
+          "binaryOnly": false,
+          "details": [
+            "Examen orienté causes endocriniennes",
+            "HTA documentée et évaluée",
+            "Signes spécifiques recherchés"
+          ],
+          "scoringRule": "Excellent = 2 pts, suffisant = 1 pt, insuffisant = 0 pt"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic principal et argumentation",
+          "patientComment": "Phéochromocytome jusqu'à preuve du contraire",
+          "details": [
+            "Triade classique complète présente",
+            "HTA paroxystique significative",
+            "Anxiété et tremblements marqués",
+            "Perte de poids inexpliquée",
+            "Flush atypique pour ménopause"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "Diagnostic correct avec ≥4 arguments = 2 pts, avec 2-3 arguments = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "m2",
+          "text": "Diagnostics différentiels structurés",
+          "ddSection": {
+            "categories": [
+              {
+                "name": "Causes endocriniennes",
+                "items": [
+                  "Phéochromocytome",
+                  "Syndrome carcinoïde",
+                  "Hyperthyroïdie",
+                  "Ménopause/périménopause",
+                  "Insulinome (flush post-prandial)"
+                ]
+              },
+              {
+                "name": "Causes métaboliques/toxiques",
+                "items": [
+                  "Syndrome de sevrage alcool",
+                  "Réaction disulfiram-like",
+                  "Intoxication histamine",
+                  "Allergie alimentaire"
+                ]
+              },
+              {
+                "name": "Causes vasculaires/autres",
+                "items": [
+                  "Mastocytose systémique",
+                  "Rosacée",
+                  "Fièvre familiale méditerranéenne",
+                  "Syndrome d'activation mastocytaire"
+                ]
+              }
+            ]
+          },
+          "binaryOnly": false,
+          "scoringRule": "≥10 DD pertinents = 2 pts, 6-9 DD = 1 pt, <6 DD = 0 pt"
+        },
+        {
+          "id": "m3",
+          "text": "Examens biologiques urgents",
+          "binaryOnly": false,
+          "scoringRule": "≥4 examens appropriés = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "details": [
+            "Métanéphrines plasmatiques libres → Gold standard phéochromocytome - À JEUN",
+            "Métanéphrines urinaires 24h → Alternative si plasma non disponible",
+            "Chromogranine A → Marqueur tumeurs neuroendocrines",
+            "TSH, T4 libre → Exclure hyperthyroïdie",
+            "FSH, LH, œstradiol → Statut ménopausique"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Examens complémentaires systématiques",
+          "details": [
+            "NFS, ionogramme, fonction rénale",
+            "Glycémie à jeun (exclusion diabète)",
+            "5-HIAA urinaire si suspicion carcinoïde",
+            "Calcitonine si suspicion CMT",
+            "ECG (HVG, troubles rythme)"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥4 examens = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "m5",
+          "text": "Prise en charge de l'HTA immédiate",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Traitement antihypertenseur",
+                "content": "• Alpha-bloquant (doxazosine) si phéo suspecté\n• JAMAIS bêta-bloquant seul initialement\n• IEC ou ARA II si ménopause probable\n• Surveillance TA rapprochée"
+              },
+              {
+                "title": "Mesures associées",
+                "content": "• Régime hyposodé\n• Activité physique modérée\n• Arrêt tabac si applicable\n• Réduction stress"
+              },
+              {
+                "title": "Surveillance",
+                "content": "• Carnet TA domicile\n• Noter horaire des flush\n• Corrélation TA/symptômes\n• MAPA si disponible"
+              }
+            ]
+          },
+          "binaryOnly": false,
+          "scoringRule": "≥3 catégories = 2 pts, 2 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "m6",
+          "text": "Gestion de l'anxiété et information",
+          "details": [
+            "Écoute empathique peur cancer rénal",
+            "Explication démarche diagnostique",
+            "Rassurer: phéo souvent bénin si traité",
+            "Soutien psychologique proposé",
+            "Information écrite remise"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥4 aspects = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "m7",
+          "text": "Critères d'hospitalisation urgente",
+          "redflagsSection": [
+            {
+              "text": "TA >180/110 avec signes neurologiques",
+              "isRedFlag": true
+            },
+            {
+              "text": "Crise hypertensive paroxystique",
+              "isRedFlag": true
+            },
+            {
+              "text": "Flush + détresse respiratoire",
+              "isRedFlag": true
+            },
+            {
+              "text": "Troubles du rythme associés",
+              "isRedFlag": true
+            },
+            {
+              "text": "Anxiété incontrôlable",
+              "isRedFlag": true
+            }
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥4 critères connus = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "m8",
+          "text": "Plan de suivi structuré",
+          "details": [
+            "Consultation urgente avec résultats (<1 sem)",
+            "Si métanéphrines positives: IRM surrénales",
+            "Orientation endocrino rapide",
+            "Gynéco si diagnostic ménopause",
+            "N° urgence si crise HTA"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "m9",
+          "text": "Évaluation globale de la qualité de la prise en charge",
+          "binaryOnly": false,
+          "details": [
+            "Suspicion phéochromocytome appropriée",
+            "Examens urgents justifiés",
+            "HTA et anxiété bien gérées"
+          ],
+          "scoringRule": "Excellente = 2 pts, adéquate = 1 pt, insuffisante = 0 pt"
+        }
+      ]
+    }
+  }
+}

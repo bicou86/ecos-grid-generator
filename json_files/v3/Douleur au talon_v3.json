@@ -1,0 +1,398 @@
+{
+  "title": "Douleur au talon",
+  "context": {
+    "setting": "Service d'urgence d'un hôpital régional",
+    "patient": "M. Müller, 30 ans, se présente aux urgences pour de fortes douleurs au talon",
+    "vitals": {
+      "ta": "120/80 mmHg",
+      "fc": "50 bpm",
+      "temperature": "36.5°C"
+    },
+    "patientComment": "Sportif de 30 ans avec douleur progressive du talon depuis 4 semaines, aggravation brutale hier. Contexte de surcharge sportive (ancien volleyeur, squash actuel). Suspicion forte de tendinopathie d'Achille d'insertion."
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction et tâche",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Caractérisation complète de la douleur",
+          "details": [
+            "[En haut du talon]",
+            "[Depuis 4 semaines]",
+            "[Augmentation progressive]",
+            "[Aiguë]",
+            "[Nulle part] (pas d'irradiation)"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥4 caractéristiques = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "a3",
+          "text": "Facteurs modulateurs et évolution",
+          "details": [
+            "[Améliorée par le repos]",
+            "[Sous charge/à l'effort]",
+            "[Hier, soudainement douloureuse même en position assise]",
+            "[N'est plus allé au travail]",
+            "Douleur matinale au premier pas"
+          ],
+          "binaryOnly": false,
+          "patientComment": "Aggravation brutale hier suggérant possible rupture partielle",
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "a4",
+          "text": "Histoire sportive et facteurs de risque",
+          "details": [
+            "[Joue beaucoup au squash]",
+            "[Ski en hiver]",
+            "[Ancien volleyeur presque professionnel]",
+            "[Week-end d'entraînement il y a 3 semaines]",
+            "[Symptômes aggravés après]"
+          ],
+          "binaryOnly": false,
+          "patientComment": "Surcharge sportive importante, facteur de risque majeur",
+          "scoringRule": "≥4 éléments explorés = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "a5",
+          "text": "Recherche de RED FLAGS - pathologies graves",
+          "redflagsSection": [
+            {
+              "text": "Traumatisme direct récent [aucun traumatisme connu]",
+              "isRedFlag": false
+            },
+            {
+              "text": "Fièvre ou signes infectieux [température 36.5°C]",
+              "isRedFlag": false
+            },
+            {
+              "text": "Douleur nocturne inflammatoire [non, aggravée hier en position assise]",
+              "isRedFlag": false
+            },
+            {
+              "text": "Autres articulations douloureuses [première apparition, pas d'autres plaintes]",
+              "isRedFlag": false
+            },
+            {
+              "text": "Impossibilité totale d'appui [non précisé, mais n'est plus allé au travail]",
+              "isRedFlag": true
+            }
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥4 red flags recherchés = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "a6",
+          "text": "Facteurs biomécaniques et équipement",
+          "details": [
+            "[Au travail: toujours des talons hauts]",
+            "[En loisir: toujours les mêmes baskets]",
+            "[Vendeur dans un magasin]",
+            "Station debout prolongée",
+            "Analyse de l'usure des chaussures"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥4 facteurs = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "a7",
+          "text": "Antécédents et facteurs constitutionnels",
+          "details": [
+            "[Aucun] antécédent médical",
+            "[Aucun] toxique",
+            "[Marié, 2 enfants]",
+            "[Rien de particulier] en anamnèse familiale orthopédique",
+            "Poids/IMC"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "a8",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "binaryOnly": false,
+          "details": [
+            "Anamnèse orientée pathologie tendineuse",
+            "RED FLAGS systématiquement recherchés",
+            "Facteurs de risque identifiés"
+          ],
+          "scoringRule": "Excellente = 2 pts, suffisante = 1 pt, insuffisante = 0 pt"
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Analyse fonctionnelle de la marche",
+          "details": [
+            "Marche normale",
+            "Marche sur les orteils",
+            "Marche sur les talons",
+            "Axes du bassin/jambes/arrière-pied",
+            "Évaluation musculature mollet"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "e2",
+          "text": "Inspection statique complète du pied",
+          "details": [
+            "Pied plat/creux/valgus évalué",
+            "Signe 'too-many-toes'",
+            "Forme des orteils",
+            "Hyperkératose plantaire",
+            "Comparaison bilatérale"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "e3",
+          "text": "Palpation ciblée du tendon d'Achille",
+          "details": [
+            "Insertion calcanéenne douloureuse",
+            "Corps du tendon (nodules, épaississement)",
+            "Jonction musculo-tendineuse",
+            "Test de compression du mollet",
+            "Recherche de crépitations"
+          ],
+          "binaryOnly": false,
+          "patientComment": "Palpation systématique pour localiser précisément la zone pathologique",
+          "scoringRule": "≥4 zones palpées = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "e4",
+          "text": "Tests spécifiques tendineux",
+          "details": [
+            "Test de Thompson [intégrité tendon]",
+            "Test du Royal London Hospital",
+            "Arc de douleur (arc sign)",
+            "Test de montée sur pointe (heel rise)",
+            "Test de Matles (flexion plantaire)"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥3 tests = 2 pts, 2 tests = 1 pt, <2 tests = 0 pt"
+        },
+        {
+          "id": "e5",
+          "text": "Évaluation des structures adjacentes",
+          "details": [
+            "Fascia plantaire (Windlass test)",
+            "Bourse rétrocalcanéenne",
+            "Tendon tibial postérieur",
+            "Test de Gänslen",
+            "Articulation sous-talienne"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥4 structures = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "e6",
+          "text": "Examen biomécanique et fonctionnel",
+          "details": [
+            "Amplitude cheville (dorsiflexion/plantaire)",
+            "Force musculaire triceps/tibial antérieur",
+            "Stabilité ligamentaire latérale",
+            "Proprioception monopodale",
+            "Longueur chaîne postérieure"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥4 tests = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "e7",
+          "text": "Examen vasculo-nerveux",
+          "details": [
+            "Pouls tibial postérieur/pédieux",
+            "Réflexe achilléen",
+            "Sensibilité plantaire",
+            "Signe de Tinel nerf tibial",
+            "Remplissage capillaire"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥3 éléments = 2 pts, 2 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "e8",
+          "text": "Évaluation globale de la qualité de l'examen",
+          "binaryOnly": false,
+          "details": [
+            "Examen biomécanique complet",
+            "Tests spécifiques correctement réalisés",
+            "Structures adjacentes évaluées"
+          ],
+          "scoringRule": "Excellent = 2 pts, suffisant = 1 pt, insuffisant = 0 pt"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic principal et raisonnement",
+          "patientComment": "Tendinopathie d'insertion du tendon d'Achille avec suspicion de rupture partielle récente",
+          "details": [
+            "Localisation insertion calcanéenne",
+            "Évolution progressive sur 4 semaines",
+            "Aggravation brutale hier",
+            "Contexte de surcharge sportive",
+            "Facteurs biomécaniques (chaussures)"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "Diagnostic correct avec ≥4 arguments = 2 pts, avec 2-3 arguments = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "m2",
+          "text": "Diagnostics différentiels structurés",
+          "ddSection": {
+            "categories": [
+              {
+                "name": "Pathologies tendineuses",
+                "items": [
+                  "Rupture partielle tendon d'Achille",
+                  "Tendinopathie corporéale",
+                  "Péritendinite"
+                ]
+              },
+              {
+                "name": "Pathologies osseuses",
+                "items": [
+                  "Fracture de fatigue calcanéum",
+                  "Syndrome de Haglund",
+                  "Enthésopathie calcifiante"
+                ]
+              },
+              {
+                "name": "Autres structures",
+                "items": [
+                  "Bursite rétrocalcanéenne",
+                  "Fasciite plantaire",
+                  "Syndrome du canal tarsien"
+                ]
+              }
+            ]
+          },
+          "binaryOnly": false,
+          "scoringRule": "≥6 DD pertinents = 2 pts, 3-5 DD = 1 pt, <3 DD = 0 pt"
+        },
+        {
+          "id": "m3",
+          "text": "Examens complémentaires hiérarchisés",
+          "binaryOnly": false,
+          "scoringRule": "≥3 examens justifiés = 2 pts, 2 examens = 1 pt, <2 = 0 pt",
+          "details": [
+            "Échographie tendineuse → 1er choix - évaluer épaississement, rupture partielle, néovascularisation",
+            "Radiographie talon F/P → Exclure fracture, calcifications, Haglund",
+            "IRM → Si échec traitement ou suspicion rupture importante",
+            "Bilan inflammatoire → Si suspicion spondylarthropathie (HLA-B27, CRP)"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Traitement aigu protocolisé",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Protocole PRICE",
+                "content": "• Protection: béquilles si douleur sévère\n• Repos: arrêt sport immédiat\n• Ice: 20min 4x/jour\n• Compression légère\n• Élévation du membre"
+              },
+              {
+                "title": "Antalgie médicamenteuse",
+                "content": "• AINS: diclofénac 75mg 2x/j x 7-10j\n• Paracétamol 1g 4x/j si nécessaire\n• Gel AINS local 3x/jour"
+              },
+              {
+                "title": "Décharge mécanique",
+                "content": "• Talonnette silicone 1-2cm bilatérale\n• Strapping si rupture partielle\n• Éviter chaussures plates"
+              }
+            ]
+          },
+          "binaryOnly": false,
+          "scoringRule": "≥3 modalités complètes = 2 pts, 2 modalités = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "m5",
+          "text": "Rééducation structurée par phases",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Phase 1 (0-2 sem): Contrôle douleur",
+                "content": "• Repos relatif, pas de sport\n• Étirements doux mollet\n• Mobilisation cheville sans charge\n• Massage transverse profond"
+              },
+              {
+                "title": "Phase 2 (2-6 sem): Renforcement",
+                "content": "• Exercices excentriques progressifs\n• Proprioception monopodale\n• Étirements chaîne postérieure\n• Ondes de choc si indiqué"
+              },
+              {
+                "title": "Phase 3 (6-12 sem): Retour sport",
+                "content": "• Pliométrie progressive\n• Course progressive\n• Sport-specific training\n• Correction geste technique"
+              }
+            ]
+          },
+          "binaryOnly": false,
+          "scoringRule": "≥3 phases détaillées = 2 pts, 2 phases = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "m6",
+          "text": "Mesures préventives et adaptations",
+          "details": [
+            "Arrêt travail 1-2 semaines",
+            "Interdiction sport 4-6 semaines minimum",
+            "Changement chaussures travail (pas de talons)",
+            "Nouvelles chaussures sport (amorti++)",
+            "Programme étirements quotidiens"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥4 mesures = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "m7",
+          "text": "Information patient et pronostic",
+          "details": [
+            "Évolution favorable 6-12 semaines si compliance",
+            "Risque récidive si reprise trop rapide",
+            "Importance du renforcement excentrique",
+            "Signes d'alarme (rupture complète)",
+            "Plan de retour progressif au sport"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥4 points abordés = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "m8",
+          "text": "Planification du suivi",
+          "details": [
+            "Contrôle à 2 semaines avec échographie",
+            "Début physiothérapie à 1 semaine",
+            "Réévaluation mensuelle x3 mois",
+            "Référence orthopédie si échec à 3 mois",
+            "Test retour sport à 3 mois"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "m9",
+          "text": "Évaluation globale de la prise en charge",
+          "binaryOnly": false,
+          "details": [
+            "Prise en charge evidence-based",
+            "Approche progressive structurée",
+            "Prévention récidive intégrée"
+          ],
+          "scoringRule": "Excellente = 2 pts, adéquate = 1 pt, insuffisante = 0 pt"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,240 @@
+{
+  "title": "Problèmes de sommeil",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Madame Huber, 42 ans, consulte pour des problèmes de sommeil"
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Symptôme principal",
+          "binaryOnly": false,
+          "details": [
+            "[Dort mal, agitée la nuit]",
+            "Durée : [6 semaines]",
+            "Évolution : [toujours à peu près identique]"
+          ]
+        },
+        {
+          "id": "a2",
+          "text": "Symptômes cardiocirculatoires",
+          "binaryOnly": false,
+          "details": [
+            "[Palpitations]",
+            "[Transpiration]",
+            "[A vite chaud]"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Symptômes digestifs",
+          "binaryOnly": false,
+          "details": [
+            "Transit : [pas de grand changement, peut-être un peu plus fréquent]"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Symptômes pondéraux et alimentaires",
+          "binaryOnly": false,
+          "details": [
+            "[Faim augmentée]",
+            "[Perte de poids malgré tout]"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Symptômes oculaires",
+          "binaryOnly": false,
+          "details": [
+            "[Sensation que les sourcils sont gonflés]"
+          ]
+        },
+        {
+          "id": "a6",
+          "text": "Consommation de substances",
+          "binaryOnly": false,
+          "details": [
+            "Alcool [de temps en temps]",
+            "Tabac",
+            "Drogues"
+          ]
+        },
+        {
+          "id": "a7",
+          "text": "Symptômes B",
+          "binaryOnly": false,
+          "details": [
+            "[Sueurs nocturnes]"
+          ]
+        },
+        {
+          "id": "a8",
+          "text": "Allergies",
+          "binaryOnly": false,
+          "details": [
+            "[Pollen]"
+          ]
+        },
+        {
+          "id": "a9",
+          "text": "Médicaments",
+          "binaryOnly": false
+        },
+        {
+          "id": "a10",
+          "text": "Antécédents personnels",
+          "binaryOnly": false
+        },
+        {
+          "id": "a11",
+          "text": "Antécédents chirurgicaux",
+          "binaryOnly": false,
+          "details": [
+            "[Appendicectomie]"
+          ]
+        },
+        {
+          "id": "a12",
+          "text": "Antécédents familiaux",
+          "binaryOnly": false,
+          "details": [
+            "[Mère a eu quelque chose de similaire, mais c'est parti avec les médicaments]"
+          ]
+        },
+        {
+          "id": "a13",
+          "text": "Anamnèse sociale",
+          "binaryOnly": false,
+          "details": [
+            "[Femme de ménage]",
+            "[2 enfants, vit en famille]"
+          ]
+        },
+        {
+          "id": "a14",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "binaryOnly": false,
+          "details": [
+            "Anamnèse générale ciblée et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Inspection générale",
+          "binaryOnly": false,
+          "details": [
+            "État général",
+            "Morphologie"
+          ]
+        },
+        {
+          "id": "e2",
+          "text": "Examen ophtalmologique",
+          "binaryOnly": false,
+          "details": [
+            "Exophtalmie"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Palpation thyroïdienne",
+          "binaryOnly": false,
+          "details": [
+            "Légère augmentation de volume"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Examen cardiovasculaire",
+          "binaryOnly": false,
+          "details": [
+            "Fréquence cardiaque",
+            "Tension artérielle",
+            "Auscultation cardiaque"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "binaryOnly": false,
+          "details": [
+            "Status général ciblé et bien conduit"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic principal",
+          "binaryOnly": false,
+          "details": [
+            "Maladie de Basedow"
+          ]
+        },
+        {
+          "id": "m2",
+          "text": "Diagnostics différentiels",
+          "binaryOnly": false,
+          "details": [
+            "Adénome thyroïdien",
+            "Abus de drogues",
+            "Psychose"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Examens biologiques",
+          "binaryOnly": false,
+          "details": [
+            "TSH",
+            "fT3/fT4",
+            "Anticorps anti-TRAK",
+            "TPO [négatif]"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Examens d'imagerie",
+          "binaryOnly": false,
+          "details": [
+            "Échographie thyroïdienne : [thyroïde augmentée, vascularisation accrue]",
+            "Scintigraphie : [fixation homogène]"
+          ]
+        },
+        {
+          "id": "m5",
+          "text": "Traitement",
+          "binaryOnly": false,
+          "details": [
+            "Traitement thyréostatique [12-18 mois]",
+            "Puis éventuellement arrêt d'essai",
+            "En cas de maladie persistante ou récidive"
+          ]
+        },
+        {
+          "id": "m6",
+          "text": "Évaluation globale de la qualité de la prise en charge",
+          "binaryOnly": false,
+          "details": [
+            "Prise en charge générale cohérente et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    }
+  }
+}

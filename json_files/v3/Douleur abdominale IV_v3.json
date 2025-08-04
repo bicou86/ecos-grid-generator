@@ -1,0 +1,478 @@
+{
+  "title": "Douleur abdominale IV",
+  "context": {
+    "setting": "Service d'urgence",
+    "patient": "Femme de 28 ans se présente avec des douleurs abdominales aiguës aux urgences.",
+    "vitals": {
+      "ta": "118/79 mmHg",
+      "fc": "80 bpm",
+      "fr": "16/min",
+      "temperature": "38.9°C"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction et objectif de la consultation",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Question ouverte d'introduction → Motif de consultation",
+          "patientComment": "Soudainement des douleurs abdominales si fortes",
+          "binaryOnly": true
+        },
+        {
+          "id": "a3",
+          "text": "RED FLAGS - Urgences gynécologiques et abdominales",
+          "redflagsSection": [
+            {
+              "text": "Grossesse extra-utérine [test grossesse à faire]"
+            },
+            {
+              "text": "Torsion d'annexe [douleur brutale unilatérale]"
+            },
+            {
+              "text": "Rupture kyste ovarien [début brutal]"
+            },
+            {
+              "text": "Appendicite [migration douleur]"
+            },
+            {
+              "text": "Abcès tubo-ovarien [masse palpable]"
+            },
+            {
+              "text": "Choc septique [TA normale, FC normale]"
+            },
+            {
+              "text": "Péritonite [pas de défense]"
+            }
+          ],
+          "scoringRule": "≥5 red flags explorés = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a4",
+          "text": "Caractérisation de la douleur abdominale (SOCRATES)",
+          "details": [
+            "Site/localisation [en bas à droite]",
+            "Onset/début [depuis quelques heures, soudain]",
+            "Character/qualité [piquante]",
+            "Radiation/irradiation [non]",
+            "Associated symptoms [sueurs, fièvre 38.9°C]",
+            "Timing/évolution [continue]",
+            "Exacerbating factors [debout/mouvement]",
+            "Severity/sévérité [7/10]"
+          ],
+          "scoringRule": "≥6 éléments SOCRATES = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a5",
+          "text": "Facteurs de risque de MIP",
+          "details": [
+            "Âge <25 ans [non, 28 ans]",
+            "Nouveau partenaire sexuel [oui, depuis quelques semaines]",
+            "Partenaires multiples [à explorer]",
+            "Antécédent IST [à explorer]",
+            "DIU récemment posé [non mentionné]",
+            "Procédure gynécologique récente [à explorer]",
+            "Absence contraception barrière [pilule seule]",
+            "Partenaire à risque IST [à évaluer]"
+          ],
+          "scoringRule": "≥5 facteurs évalués = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a6",
+          "text": "Symptômes gynécologiques associés",
+          "details": [
+            "Leucorrhées pathologiques [pertes jaunâtres]",
+            "Métrorragies [à explorer]",
+            "Dyspareunie récente [à explorer]",
+            "Dysurie [à explorer]",
+            "Ténesme/urgences mictionnelles [à explorer]",
+            "Douleurs pelviennes chroniques [non]"
+          ],
+          "scoringRule": "≥4 symptômes explorés = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a7",
+          "text": "Anamnèse gynécologique complète",
+          "details": [
+            "Date dernières règles [à préciser]",
+            "Cycle menstruel régulier [à explorer]",
+            "Test grossesse récent [non]",
+            "Contraception actuelle [pilule]",
+            "Observance contraceptive [à vérifier]",
+            "Grossesses antérieures [à explorer]",
+            "Antécédents gynécologiques [à explorer]"
+          ],
+          "scoringRule": "≥5 éléments = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a8",
+          "text": "Symptômes digestifs et urinaires",
+          "details": [
+            "Transit intestinal [normal]",
+            "Nausées/vomissements [non]",
+            "Diarrhée [non]",
+            "Constipation [non]",
+            "Sang dans les selles [non]",
+            "Brûlures mictionnelles [à explorer]",
+            "Pollakiurie [à explorer]"
+          ],
+          "scoringRule": "≥5 symptômes explorés = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a9",
+          "text": "Antécédents médicaux pertinents",
+          "details": [
+            "Antécédents IST [à explorer]",
+            "MIP antérieure [à explorer]",
+            "Chirurgies abdominales [non]",
+            "Pathologies chroniques [sans particularité]",
+            "Immunosuppression [non]",
+            "Allergies médicamenteuses [non]"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a10",
+          "text": "Anamnèse sexuelle détaillée",
+          "details": [
+            "Nombre de partenaires récents [nouveau depuis semaines]",
+            "Protection utilisée [pilule seulement]",
+            "Symptômes chez partenaire [à explorer]",
+            "Orientation sexuelle [à respecter]",
+            "Pratiques à risque [à évaluer délicatement]",
+            "Dépistage IST récent [à explorer]"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a11",
+          "text": "Contexte social et professionnel",
+          "details": [
+            "Profession [éducatrice en maternelle]",
+            "Exposition professionnelle [enfants]",
+            "Situation relationnelle [nouveau copain]",
+            "Support social [à évaluer]",
+            "Confidentialité souhaitée [à respecter]"
+          ],
+          "scoringRule": "≥3 éléments = 2 pts, 2 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a12",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "details": [
+            "Anamnèse complète et systématique",
+            "Identification des facteurs de risque MIP",
+            "Exploration des red flags",
+            "Approche empathique et non-jugeante",
+            "Respect de la confidentialité"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "État général et signes vitaux",
+          "details": [
+            "Aspect général [un peu pâle]",
+            "État de conscience [normale]",
+            "Signes de déshydratation [non]",
+            "Fréquence respiratoire [16/min]",
+            "Saturation O2 [à mesurer]"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e2",
+          "text": "Examen abdominal - Inspection et auscultation",
+          "details": [
+            "Inspection abdomen [normal]",
+            "Cicatrices chirurgicales [absentes]",
+            "Distension [non]",
+            "Auscultation [bruits intestinaux rares]",
+            "Souffle vasculaire [absent]"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e3",
+          "text": "Palpation abdominale systématique",
+          "details": [
+            "Palpation superficielle 4 quadrants",
+            "Palpation profonde prudente",
+            "Douleur maximale [quadrant inférieur droit]",
+            "Défense musculaire [absente]",
+            "Rebond/Blumberg [négatif]",
+            "Murphy/McBurney [à tester]"
+          ],
+          "scoringRule": "≥5 éléments = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e4",
+          "text": "Signes spécifiques MIP",
+          "details": [
+            "Douleur à la mobilisation utérine (CMT)",
+            "Douleur annexielle bilatérale",
+            "Masse annexielle palpable",
+            "Empâtement du cul-de-sac de Douglas",
+            "Chandelier sign positif"
+          ],
+          "scoringRule": "≥3 signes recherchés = 2 pts, 2 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e5",
+          "text": "Examen gynécologique (si indiqué aux urgences)",
+          "details": [
+            "Consentement et explication",
+            "Examen vulvaire [normal]",
+            "Spéculum : col et leucorrhées [à évaluer]",
+            "Prélèvements si possible",
+            "Toucher vaginal bimanuel"
+          ],
+          "scoringRule": "Examen approprié = 2 pts, partiel = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e6",
+          "text": "Autres examens pertinents",
+          "details": [
+            "Toucher rectal [normal]",
+            "Palpation fosses lombaires",
+            "Recherche adénopathies inguinales",
+            "Examen cutané (éruption)",
+            "État veineux membres inférieurs"
+          ],
+          "scoringRule": "≥3 examens = 2 pts, 2 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e7",
+          "text": "Critères diagnostiques cliniques CDC pour MIP",
+          "redflagsSection": [
+            {
+              "text": "Douleur à la mobilisation utérine"
+            },
+            {
+              "text": "Douleur annexielle"
+            },
+            {
+              "text": "Sensibilité à la palpation utérine"
+            },
+            {
+              "text": "Température >38.3°C [oui, 38.9°C]"
+            },
+            {
+              "text": "Leucorrhées cervicales mucopurulentes"
+            },
+            {
+              "text": "Leucocytes nombreux au frottis"
+            },
+            {
+              "text": "VS ou CRP élevées"
+            },
+            {
+              "text": "Documentation Chlamydia/Gonocoque"
+            }
+          ],
+          "scoringRule": "≥1 critère minimum + ≥2 additionnels = 2 pts",
+          "binaryOnly": false
+        },
+        {
+          "id": "e8",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "details": [
+            "Examen complet et méthodique",
+            "Recherche spécifique signes MIP",
+            "Respect et confort patiente",
+            "Documentation précise findings"
+          ],
+          "scoringRule": "≥3 éléments = 2 pts, 2 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic principal énoncé",
+          "details": [
+            "Maladie inflammatoire pelvienne (MIP/PID)",
+            "Salpingite aiguë probable",
+            "Origine infectieuse à documenter"
+          ],
+          "scoringRule": "Diagnostic clair = 2 pts, partiel = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m2",
+          "text": "Diagnostics différentiels urgents",
+          "scoringRule": "≥5 DD = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false,
+          "ddSection": {
+            "categories": [
+              {
+                "name": "Diagnostics différentiels à considérer",
+                "items": [
+                  "Grossesse extra-utérine",
+                  "Appendicite aiguë",
+                  "Torsion d'annexe",
+                  "Rupture/hémorragie kyste ovarien",
+                  "Pyélonéphrite",
+                  "Endométriose",
+                  "Infection urinaire compliquée"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m3",
+          "text": "Examens complémentaires urgents",
+          "details": [
+            "β-hCG (exclusion GEU)",
+            "NFS, CRP, VS",
+            "Hémocultures si fièvre >38.5°C",
+            "ECBU + bandelette urinaire",
+            "Prélèvements cervicaux (PCR Chlamydia/Gonocoque)",
+            "Échographie pelvienne transvaginale"
+          ],
+          "scoringRule": "≥5 examens = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m4",
+          "text": "Critères d'hospitalisation",
+          "details": [
+            "Diagnostic incertain (appendicite?)",
+            "Abcès tubo-ovarien suspecté",
+            "Grossesse associée",
+            "Échec traitement ambulatoire",
+            "Intolérance PO/vomissements",
+            "Non-compliance prévisible",
+            "Immunosuppression"
+          ],
+          "scoringRule": "≥4 critères évalués = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m5",
+          "text": "Antibiothérapie empirique ambulatoire",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Schéma première ligne CDC 2021",
+                "content": "• Ceftriaxone 500mg IM dose unique\n  + Doxycycline 100mg PO 2x/j × 14 jours\n  + Métronidazole 500mg PO 2x/j × 14 jours"
+              },
+              {
+                "title": "Alternative si allergie",
+                "content": "• Céfoxitine 2g IM + Probénécide 1g PO\n  OU Autre céphalosporine 3e génération\n  + Doxycycline (ou Azithromycine si allergie)\n  + Métronidazole"
+              },
+              {
+                "title": "Schéma IV si hospitalisation",
+                "content": "• Céfoxitine 2g IV/6h + Doxycycline 100mg IV/12h\n  OU Ceftriaxone 1g IV/24h + Métronidazole 500mg IV/8h\n• Relais PO après 24-48h amélioration"
+              }
+            ]
+          },
+          "scoringRule": "Schéma complet = 2 pts, partiel = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m6",
+          "text": "Traitement du/des partenaire(s)",
+          "details": [
+            "OBLIGATOIRE - même si asymptomatique",
+            "Tous partenaires des 60 derniers jours",
+            "Même schéma antibiotique",
+            "Abstinence sexuelle pendant traitement",
+            "Notification anonyme si nécessaire",
+            "Éducation sur prévention IST"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m7",
+          "text": "Mesures associées et surveillance",
+          "details": [
+            "Analgésie adaptée (AINS)",
+            "Repos relatif",
+            "Retrait DIU si présent + fièvre",
+            "Réévaluation clinique à 48-72h",
+            "Amélioration attendue en 3 jours",
+            "Échographie si pas d'amélioration"
+          ],
+          "scoringRule": "≥4 mesures = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m8",
+          "text": "Information et prévention des complications",
+          "details": [
+            "Infertilité tubaire (10-20% après 1 épisode)",
+            "Grossesse extra-utérine (×6-10 risque)",
+            "Douleurs pelviennes chroniques (20%)",
+            "Récidive MIP (20-25%)",
+            "Importance compliance traitement",
+            "Dépistage IST complet à prévoir",
+            "Contraception barrière future"
+          ],
+          "scoringRule": "≥5 éléments = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m9",
+          "text": "Suivi et prévention",
+          "details": [
+            "Contrôle à 48-72h (amélioration?)",
+            "Fin de traitement (14 jours)",
+            "Test de guérison 3-4 semaines",
+            "Dépistage IST complet (VIH, syphilis, etc)",
+            "Vaccination HPV si éligible",
+            "Éducation santé sexuelle",
+            "Consultation gynécologique annuelle"
+          ],
+          "scoringRule": "≥5 éléments = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m10",
+          "text": "Évaluation globale de la qualité de la prise en charge",
+          "details": [
+            "Diagnostic rapide et traitement empirique",
+            "Traitement du/des partenaire(s)",
+            "Information claire sur complications",
+            "Suivi organisé",
+            "Approche préventive"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        }
+      ]
+    }
+  }
+}

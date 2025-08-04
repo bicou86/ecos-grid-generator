@@ -1,0 +1,482 @@
+{
+  "title": "Gonflement abdominal",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "M. Hugentobler, 53 ans, administrateur en surpoids, consulte pour un gonflement abdominal",
+    "patientComment": "Homme de 53 ans avec hernie inguinale droite non compliquée évoluant depuis 3 mois. Facteurs de risque multiples : surpoids, constipation occasionnelle, efforts de poussée (jardinage). Anxiété importante (peur d'une tumeur) nécessitant réassurance."
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom et fonction",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Localisation précise du gonflement",
+          "details": [
+            "Zone anatomique: [montre région inguinale]",
+            "Côté: [seulement à droite]",
+            "Extension: [pas vraiment abdominal mais aine]",
+            "Irradiation vers scrotum",
+            "Taille approximative",
+            "Forme: [arrondie]"
+          ],
+          "binaryOnly": false,
+          "patientComment": "Localisation inguinale = orientation herniaire",
+          "scoringRule": "≥5 caractéristiques = 2 pts, 3-4 = 1 pt, <3 = 0 pt"
+        },
+        {
+          "id": "a3",
+          "text": "Évolution temporelle détaillée",
+          "details": [
+            "Début: [première fois il y a 3 mois]",
+            "Mode d'apparition: [progressif]",
+            "Évolution taille: [a augmenté]",
+            "Variations journalières: [non]",
+            "Circonstances découverte",
+            "Vitesse progression"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥5 aspects = 2 pts, 3-4 = 1 pt, <3 = 0 pt"
+        },
+        {
+          "id": "a4",
+          "text": "Recherche de RED FLAGS herniaires",
+          "redflagsSection": [
+            {
+              "text": "Douleur intense soudaine [non douloureux]",
+              "isRedFlag": false
+            },
+            {
+              "text": "Irréductibilité douloureuse [non réductible mais indolore]",
+              "isRedFlag": false
+            },
+            {
+              "text": "Nausées/vomissements [non]",
+              "isRedFlag": false
+            },
+            {
+              "text": "Arrêt matières et gaz [non]",
+              "isRedFlag": false
+            },
+            {
+              "text": "Signes inflammatoires locaux [non, couleur normale]",
+              "isRedFlag": false
+            },
+            {
+              "text": "Fièvre [non]",
+              "isRedFlag": false
+            }
+          ],
+          "binaryOnly": false,
+          "patientComment": "Absence de complication = rassurant",
+          "scoringRule": "≥5 red flags recherchés = 2 pts, 3-4 = 1 pt, <3 = 0 pt"
+        },
+        {
+          "id": "a5",
+          "text": "Caractéristiques physiques du gonflement",
+          "details": [
+            "Consistance: [molle]",
+            "Réductibilité: [non réductible]",
+            "Mobilité: [peu mobile]",
+            "Fluctuation: [non]",
+            "Transillumination possible",
+            "Limites nettes/floues"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥5 caractéristiques = 2 pts, 3-4 = 1 pt, <3 = 0 pt"
+        },
+        {
+          "id": "a6",
+          "text": "Facteurs modulateurs",
+          "details": [
+            "Position debout: [augmente]",
+            "Position couchée: [pas de changement]",
+            "Efforts/poussée: [devient plus gros]",
+            "Toux/éternuement: [augmente de volume]",
+            "Port de charges",
+            "Fin de journée"
+          ],
+          "binaryOnly": false,
+          "patientComment": "Augmentation à l'effort = typique hernie",
+          "scoringRule": "≥5 facteurs = 2 pts, 3-4 = 1 pt, <3 = 0 pt"
+        },
+        {
+          "id": "a7",
+          "text": "Transit et facteurs de risque digestifs",
+          "details": [
+            "Constipation: [parfois constipé]",
+            "Efforts de défécation",
+            "Consistance selles: [plutôt molles]",
+            "Sang dans selles: [non]",
+            "Ballonnements: [parfois]",
+            "Plénitude post-prandiale: [oui]"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥5 éléments = 2 pts, 3-4 = 1 pt, <3 = 0 pt"
+        },
+        {
+          "id": "a8",
+          "text": "Retentissement fonctionnel",
+          "details": [
+            "Gêne jardinage: [oui lors flexion]",
+            "Impact professionnel: [non, travail bureau]",
+            "Gêne vestimentaire",
+            "Impact esthétique: [dérange]",
+            "Limitation activités",
+            "Qualité de vie"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥4 aspects = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "a9",
+          "text": "Facteurs de risque de hernie",
+          "details": [
+            "Surpoids: [oui, IMC élevé]",
+            "Toux chronique: [non]",
+            "Efforts répétés: [jardinage]",
+            "Constipation: [occasionnelle]",
+            "Prostatisme: [jet moins fort]",
+            "Antécédent chirurgie: [cholécystectomie]"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥5 facteurs = 2 pts, 3-4 = 1 pt, <3 = 0 pt"
+        },
+        {
+          "id": "a10",
+          "text": "Antécédents et comorbidités",
+          "details": [
+            "Hypercholestérolémie: [sous statine]",
+            "Goutte: [crises, sous allopurinol]",
+            "Diabète: [non]",
+            "HTA: [non]",
+            "Tabac: [non]",
+            "Alcool: [2 bières/jour]"
+          ],
+          "binaryOnly": false,
+          "patientComment": "Syndrome métabolique partiel",
+          "scoringRule": "≥5 éléments = 2 pts, 3-4 = 1 pt, <3 = 0 pt"
+        },
+        {
+          "id": "a11",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "binaryOnly": false,
+          "details": [
+            "Anamnèse orientée hernie",
+            "RED FLAGS systématiquement recherchés",
+            "Facteurs de risque identifiés"
+          ],
+          "scoringRule": "Excellente = 2 pts, suffisante = 1 pt, insuffisante = 0 pt"
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Examen en position debout",
+          "details": [
+            "Inspection abdomen global",
+            "Asymétrie visible: [gonflement inguinal droit]",
+            "Cicatrices chirurgicales",
+            "Circulation collatérale",
+            "Masse évidente"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "e2",
+          "text": "Manœuvres dynamiques debout",
+          "details": [
+            "Faire tousser: [augmentation volume]",
+            "Valsalva: [augmentation]",
+            "Transmission impulsion toux",
+            "Modification forme/taille",
+            "Apparition controlatérale"
+          ],
+          "binaryOnly": false,
+          "patientComment": "Impulsion à la toux = signe pathognomonique",
+          "scoringRule": "≥4 manœuvres = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "e3",
+          "text": "Palpation inguinale spécifique",
+          "details": [
+            "Palpation bilatérale comparative",
+            "Consistance: [molle]",
+            "Réductibilité: [non réductible]",
+            "Orifice inguinal externe",
+            "Orifice inguinal interne",
+            "Canal inguinal"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥5 éléments = 2 pts, 3-4 = 1 pt, <3 = 0 pt"
+        },
+        {
+          "id": "e4",
+          "text": "Différenciation type de hernie",
+          "details": [
+            "Test d'occlusion interne",
+            "Trajet par rapport aux vaisseaux",
+            "Hernie directe vs indirecte",
+            "Extension scrotale",
+            "Taille du collet"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥3 tests = 2 pts, 2 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "e5",
+          "text": "Auscultation sur la hernie",
+          "details": [
+            "Bruits intestinaux dans sac",
+            "Silence auscultatoire",
+            "Souffle vasculaire",
+            "Comparaison côté sain"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥3 éléments = 2 pts, 2 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "e6",
+          "text": "Examen abdominal complet couché",
+          "details": [
+            "Palpation 9 quadrants",
+            "Hépatomégalie: [non]",
+            "Splénomégalie: [non]",
+            "Masses: [non]",
+            "Ascite: [non]"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "e7",
+          "text": "Examen des autres orifices herniaires",
+          "details": [
+            "Ombilic",
+            "Ligne blanche",
+            "Région crurale",
+            "Cicatrices chirurgicales",
+            "Fosse lombaire"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥4 sites = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "e8",
+          "text": "Examen génital si indiqué",
+          "details": [
+            "Inspection scrotum",
+            "Palpation testiculaire",
+            "Épididyme",
+            "Cordon spermatique",
+            "Transillumination"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥3 éléments = 2 pts, 2 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "e9",
+          "text": "Évaluation globale de la qualité de l'examen",
+          "binaryOnly": false,
+          "details": [
+            "Examen systématique des hernies",
+            "Manœuvres dynamiques réalisées",
+            "Complications exclues"
+          ],
+          "scoringRule": "Excellent = 2 pts, suffisant = 1 pt, insuffisant = 0 pt"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic principal et explication",
+          "patientComment": "Hernie inguinale droite non compliquée",
+          "details": [
+            "Localisation inguinale typique",
+            "Augmentation effort/toux pathognomonique",
+            "Consistance molle compatible",
+            "Non douloureuse = non compliquée",
+            "Évolution progressive sur 3 mois"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "Diagnostic correct avec ≥4 arguments = 2 pts, avec 2-3 arguments = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "m2",
+          "text": "Diagnostics différentiels structurés",
+          "ddSection": {
+            "categories": [
+              {
+                "name": "Pathologies pariétales",
+                "items": [
+                  "Hernie inguinale directe/indirecte",
+                  "Hernie crurale",
+                  "Éventration sur cicatrice",
+                  "Hernie de Spiegel"
+                ]
+              },
+              {
+                "name": "Adénopathies",
+                "items": [
+                  "Infectieuses",
+                  "Lymphome",
+                  "Métastases",
+                  "Réactionnelles"
+                ]
+              },
+              {
+                "name": "Masses tissus mous",
+                "items": [
+                  "Lipome",
+                  "Kyste sébacé",
+                  "Sarcome tissus mous",
+                  "Hématome enkysté"
+                ]
+              },
+              {
+                "name": "Pathologies génito-urinaires",
+                "items": [
+                  "Hydrocèle",
+                  "Varicocèle",
+                  "Kyste du cordon",
+                  "Testicule ectopique"
+                ]
+              }
+            ]
+          },
+          "binaryOnly": false,
+          "scoringRule": "≥10 DD pertinents = 2 pts, 6-9 DD = 1 pt, <6 DD = 0 pt"
+        },
+        {
+          "id": "m3",
+          "text": "Examens complémentaires ciblés",
+          "binaryOnly": false,
+          "scoringRule": "≥3 examens appropriés = 2 pts, 2 = 1 pt, <2 = 0 pt",
+          "details": [
+            "Échographie inguinale → Confirmation diagnostique, contenu herniaire, taille collet",
+            "Échographie scrotale → Si doute hydrocèle/varicocèle associée",
+            "Scanner abdomino-pelvien → Si doute diagnostic ou recherche autre hernie",
+            "Bilan préopératoire → NFS, coag, iono, créat, glycémie, ECG >40 ans"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Réassurance sur nature bénigne",
+          "details": [
+            "Ce n'est PAS une tumeur",
+            "Pathologie très fréquente",
+            "Excellent pronostic après chirurgie",
+            "Complications rares si traité",
+            "Qualité de vie restaurée"
+          ],
+          "binaryOnly": false,
+          "patientComment": "Patient très anxieux (peur cancer)",
+          "scoringRule": "≥4 éléments rassurants = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "m5",
+          "text": "Options thérapeutiques détaillées",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Chirurgie élective recommandée",
+                "content": "• Cure herniaire programmée\n• Technique laparoscopique (TEP/TAPP)\n• Ou technique ouverte (Lichtenstein)\n• Mise en place prothèse\n• Ambulatoire possible"
+              },
+              {
+                "title": "Avantages laparoscopie",
+                "content": "• Récupération plus rapide\n• Moins de douleurs post-op\n• Exploration bilatérale\n• Retour activités 2-3 sem\n• Cicatrices minimes"
+              },
+              {
+                "title": "Surveillance si refus",
+                "content": "• Option possible si asymptomatique\n• Risque complications 1-3%/an\n• Surveillance signes d'alerte\n• Réévaluation régulière"
+              }
+            ]
+          },
+          "binaryOnly": false,
+          "scoringRule": "≥3 options expliquées = 2 pts, 2 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "m6",
+          "text": "Signes d'alerte urgents à expliquer",
+          "redflagsSection": [
+            {
+              "text": "Douleur brutale intense hernie",
+              "isRedFlag": true
+            },
+            {
+              "text": "Hernie dure et irréductible",
+              "isRedFlag": true
+            },
+            {
+              "text": "Nausées/vomissements répétés",
+              "isRedFlag": true
+            },
+            {
+              "text": "Arrêt matières et gaz",
+              "isRedFlag": true
+            },
+            {
+              "text": "Rougeur/chaleur locale",
+              "isRedFlag": true
+            },
+            {
+              "text": "Fièvre associée",
+              "isRedFlag": true
+            }
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥5 signes d'alerte = 2 pts, 3-4 = 1 pt, <3 = 0 pt"
+        },
+        {
+          "id": "m7",
+          "text": "Modification facteurs de risque",
+          "details": [
+            "Perte poids recommandée (IMC élevé)",
+            "Traiter constipation (fibres, hydratation)",
+            "Éviter efforts soulèvement",
+            "Réduire alcool (2 bières/jour)",
+            "Activité physique adaptée"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥4 mesures = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "m8",
+          "text": "Organisation prise en charge",
+          "details": [
+            "Référence chirurgie viscérale",
+            "Lettre avec infos pertinentes",
+            "Délai consultation <1 mois",
+            "Préparation dossier préop",
+            "Suivi post-opératoire prévu"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "m9",
+          "text": "Évaluation globale de la qualité de la prise en charge",
+          "binaryOnly": false,
+          "details": [
+            "Diagnostic clinique correct",
+            "Patient rassuré efficacement",
+            "Prise en charge appropriée"
+          ],
+          "scoringRule": "Excellente = 2 pts, adéquate = 1 pt, insuffisante = 0 pt"
+        }
+      ]
+    }
+  }
+}

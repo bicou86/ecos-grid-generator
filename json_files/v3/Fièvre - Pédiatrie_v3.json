@@ -1,0 +1,439 @@
+{
+  "title": "Fièvre",
+  "context": {
+    "setting": "Cabinet de pédiatrie",
+    "patient": "Mme Huber consulte avec son fils Max, 2 ans, pour maladie fébrile depuis plusieurs jours",
+    "vitals": {
+      "fc": "120 bpm",
+      "fr": "16/min",
+      "temperature": "39.0°C"
+    },
+    "patientComment": "Enfant de 2 ans avec fièvre élevée depuis 3 jours mais bon état général conservé. Tableau typique d'exanthème subit (roséole infantile) : fièvre isolée précédant l'éruption, âge caractéristique, bon état général malgré fièvre élevée."
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Désinfection des mains et présentation avec nom et fonction",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Caractérisation complète de la fièvre",
+          "details": [
+            "Durée: [depuis 3 jours]",
+            "Début: [apparition soudaine]",
+            "Hauteur maximale: [39°C actuellement]",
+            "Réponse aux antipyrétiques",
+            "Symptômes associés: [fièvre élevée avec toux]",
+            "État général: [plutôt bon malgré la fièvre]"
+          ],
+          "binaryOnly": false,
+          "patientComment": "Fièvre isolée avec bon état général = rassurant",
+          "scoringRule": "≥5 caractéristiques = 2 pts, 3-4 = 1 pt, <3 = 0 pt"
+        },
+        {
+          "id": "a3",
+          "text": "Recherche de RED FLAGS pédiatriques",
+          "redflagsSection": [
+            {
+              "text": "Altération de l'état de conscience [non, juste somnolent si fièvre]",
+              "isRedFlag": false
+            },
+            {
+              "text": "Convulsions fébriles [jamais eu]",
+              "isRedFlag": false
+            },
+            {
+              "text": "Signes méningés [à examiner]",
+              "isRedFlag": false
+            },
+            {
+              "text": "Purpura/pétéchies [absentes]",
+              "isRedFlag": false
+            },
+            {
+              "text": "Détresse respiratoire [respiration normale]",
+              "isRedFlag": false
+            },
+            {
+              "text": "Déshydratation sévère [boit suffisamment]",
+              "isRedFlag": false
+            }
+          ],
+          "binaryOnly": false,
+          "patientComment": "Absence de signes de gravité",
+          "scoringRule": "≥5 red flags recherchés = 2 pts, 3-4 = 1 pt, <3 = 0 pt"
+        },
+        {
+          "id": "a4",
+          "text": "Revue des systèmes complète - Respiratoire",
+          "details": [
+            "Toux: [légère toux présente]",
+            "Type de toux: [sèche/grasse]",
+            "Respiration: [normale]",
+            "Tirages: [non]",
+            "Dyspnée: [non]",
+            "Wheezing: [non]"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥5 symptômes explorés = 2 pts, 3-4 = 1 pt, <3 = 0 pt"
+        },
+        {
+          "id": "a5",
+          "text": "Revue des systèmes - Digestif et hydratation",
+          "details": [
+            "Appétit: [mange normalement]",
+            "Hydratation: [boit suffisamment]",
+            "Vomissements: [non]",
+            "Diarrhée: [non]",
+            "Douleurs abdominales: [non]",
+            "Transit: [normal, comme d'habitude]"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥5 aspects = 2 pts, 3-4 = 1 pt, <3 = 0 pt"
+        },
+        {
+          "id": "a6",
+          "text": "Revue des systèmes - Neurologique et comportement",
+          "details": [
+            "Sommeil: [endormissement et sommeil non perturbés]",
+            "Vigilance: [un peu plus somnolent si fièvre]",
+            "Irritabilité: [non]",
+            "Pleurs inconsolables: [non]",
+            "Comportement global: [un peu plus fatigué]",
+            "Jeu et intérêt: [maintenu entre pics fébriles]"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥5 éléments = 2 pts, 3-4 = 1 pt, <3 = 0 pt"
+        },
+        {
+          "id": "a7",
+          "text": "Antécédents et terrain",
+          "details": [
+            "Premier épisode: [oui, première fois]",
+            "Développement: [marche déjà, phrases courtes]",
+            "Vaccinations: [toutes faites selon calendrier]",
+            "Maladies antérieures: [aucune]",
+            "Hospitalisations: [aucune]",
+            "Allergies: [aucune connue]"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥5 éléments = 2 pts, 3-4 = 1 pt, <3 = 0 pt"
+        },
+        {
+          "id": "a8",
+          "text": "Contexte épidémiologique",
+          "details": [
+            "Famille: [tous en bonne santé, sœur 5 ans]",
+            "Crèche: [quelques enfants malades, saisonnier]",
+            "Voyages: [Italie chez grand-mère récemment]",
+            "Contacts malades: [oui, à la crèche]",
+            "Saison actuelle",
+            "Zone endémique particulière: [non]"
+          ],
+          "binaryOnly": false,
+          "patientComment": "Contexte de virose saisonnière en collectivité",
+          "scoringRule": "≥5 éléments = 2 pts, 3-4 = 1 pt, <3 = 0 pt"
+        },
+        {
+          "id": "a9",
+          "text": "Évaluation de la douleur pédiatrique",
+          "details": [
+            "Localisation douleur: [rien remarqué]",
+            "Expression faciale douloureuse: [non]",
+            "Position antalgique: [non]",
+            "Consolabilité: [se laisse consoler]",
+            "Plaintes spontanées: [pas de plaintes particulières]"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥4 aspects = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "a10",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "binaryOnly": false,
+          "details": [
+            "Anamnèse pédiatrique structurée",
+            "RED FLAGS systématiquement recherchés",
+            "Contexte épidémiologique exploré"
+          ],
+          "scoringRule": "Excellente = 2 pts, suffisante = 1 pt, insuffisante = 0 pt"
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Évaluation de l'état général et signes vitaux",
+          "details": [
+            "État général: [bon malgré la fièvre]",
+            "Conscience: [normale, réactif]",
+            "Coloration: [normale, pas de cyanose]",
+            "Perfusion périphérique: [TRC <2 sec]",
+            "Hydratation: [muqueuses humides]"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥4 paramètres = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "e2",
+          "text": "Examen cutané minutieux",
+          "details": [
+            "Exanthème: [absent actuellement]",
+            "Pétéchies/purpura: [absentes]",
+            "Marbrures: [absentes]",
+            "Test du verre: [si lésions]",
+            "Énanthème buccal: [à vérifier]",
+            "Plis et zones cachées"
+          ],
+          "binaryOnly": false,
+          "patientComment": "Absence d'éruption = phase pré-éruptive",
+          "scoringRule": "≥5 éléments = 2 pts, 3-4 = 1 pt, <3 = 0 pt"
+        },
+        {
+          "id": "e3",
+          "text": "Examen ORL complet",
+          "details": [
+            "Oropharynx: [paroi postérieure légèrement rouge]",
+            "Amygdales: [non hypertrophiées]",
+            "Tympans: [normaux bilatéralement]",
+            "Narines: [libres]",
+            "Sinus (pression): [non douloureux]"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥4 structures = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "e4",
+          "text": "Examen ganglionnaire systématique",
+          "details": [
+            "Cervicaux: [réactifs, augmentés de volume]",
+            "Occipitaux: [non palpables]",
+            "Axillaires: [non palpables]",
+            "Inguinaux: [non palpables]",
+            "Caractéristiques: [mobiles, non douloureux]"
+          ],
+          "binaryOnly": false,
+          "patientComment": "Adénopathies cervicales réactionnelles",
+          "scoringRule": "≥4 aires = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "e5",
+          "text": "Recherche de signes méningés",
+          "details": [
+            "Raideur nuque: [absente]",
+            "Kernig: [négatif]",
+            "Brudzinski: [négatif]",
+            "Photophobie: [non]",
+            "Fontanelle si <18 mois: [non applicable]"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥4 signes = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "e6",
+          "text": "Examen cardio-pulmonaire",
+          "details": [
+            "Auscultation pulmonaire: [MV présent partout]",
+            "Bruits surajoutés: [aucun]",
+            "Fréquence respiratoire: [16/min - normale]",
+            "Bruits cardiaques: [réguliers, pas de souffle]",
+            "FC: [120 bpm - adaptée à la fièvre]"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "e7",
+          "text": "Examen abdominal pédiatrique",
+          "details": [
+            "Inspection: [abdomen souple]",
+            "Palpation: [non douloureux]",
+            "Hépatomégalie: [absente]",
+            "Splénomégalie: [absente]",
+            "Défense/détente: [absente]"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "e8",
+          "text": "Évaluation globale de la qualité de l'examen",
+          "binaryOnly": false,
+          "details": [
+            "Examen pédiatrique systématique",
+            "Signes de gravité exclus",
+            "Adapté à l'âge de l'enfant"
+          ],
+          "scoringRule": "Excellent = 2 pts, suffisant = 1 pt, insuffisant = 0 pt"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic principal et argumentation",
+          "patientComment": "Exanthème subit (roséole infantile, HHV-6)",
+          "details": [
+            "Âge typique (6 mois - 2 ans)",
+            "Fièvre élevée isolée 3-5 jours",
+            "Bon état général conservé",
+            "Absence de foyer infectieux",
+            "Éruption apparaîtra à défervescence"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "Diagnostic correct avec ≥4 arguments = 2 pts, avec 2-3 arguments = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "m2",
+          "text": "Diagnostics différentiels structurés",
+          "ddSection": {
+            "categories": [
+              {
+                "name": "Viroses éruptives fébriles",
+                "items": [
+                  "Rougeole (mais vacciné, pas Koplik)",
+                  "Rubéole (mais vacciné, fièvre modérée)",
+                  "Érythème infectieux (fièvre plus faible)",
+                  "Mononucléose infectieuse (plus âgé)"
+                ]
+              },
+              {
+                "name": "Infections bactériennes",
+                "items": [
+                  "Infection urinaire haute",
+                  "Bactériémie occulte",
+                  "Pneumonie débutante",
+                  "Méningite (mais signes absents)"
+                ]
+              },
+              {
+                "name": "Autres causes",
+                "items": [
+                  "Kawasaki (mais critères insuffisants)",
+                  "Fièvre médicamenteuse",
+                  "Néoplasie (mais aigu)",
+                  "Maladie auto-immune"
+                ]
+              }
+            ]
+          },
+          "binaryOnly": false,
+          "scoringRule": "≥8 DD pertinents = 2 pts, 4-7 DD = 1 pt, <4 DD = 0 pt"
+        },
+        {
+          "id": "m3",
+          "text": "Examens complémentaires et justification",
+          "details": [
+            "Aucun examen si clinique typique",
+            "Bandelette urinaire si doute",
+            "NFS/CRP si altération état général",
+            "Hémocultures si aspect toxique",
+            "PL si signes méningés"
+          ],
+          "binaryOnly": false,
+          "patientComment": "Pas d'examens si roséole typique",
+          "scoringRule": "≥4 options discutées = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "m4",
+          "text": "Traitement symptomatique adapté",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Antipyrétiques",
+                "content": "• Paracétamol 15mg/kg/dose max 4x/j\n• Ou ibuprofène 10mg/kg/dose max 3x/j\n• Alterner si fièvre réfractaire\n• Éviter aspirine (Reye)"
+              },
+              {
+                "title": "Mesures physiques",
+                "content": "• Déshabiller l'enfant\n• Température ambiante 19-20°C\n• Bains tièdes déconseillés\n• Pas de vessies de glace"
+              },
+              {
+                "title": "Hydratation",
+                "content": "• Proposer à boire régulièrement\n• Petites quantités fréquentes\n• Liquides sucrés si anorexie\n• SRO si diarrhée associée"
+              }
+            ]
+          },
+          "binaryOnly": false,
+          "scoringRule": "≥3 catégories complètes = 2 pts, 2 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "m5",
+          "text": "Signes d'alarme à expliquer aux parents",
+          "redflagsSection": [
+            {
+              "text": "Somnolence excessive/difficile à réveiller",
+              "isRedFlag": true
+            },
+            {
+              "text": "Convulsions même brèves",
+              "isRedFlag": true
+            },
+            {
+              "text": "Éruption purpurique ne blanchissant pas",
+              "isRedFlag": true
+            },
+            {
+              "text": "Détresse respiratoire",
+              "isRedFlag": true
+            },
+            {
+              "text": "Refus total de boire >8h",
+              "isRedFlag": true
+            },
+            {
+              "text": "Pleurs inconsolables",
+              "isRedFlag": true
+            }
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥5 signes d'alarme = 2 pts, 3-4 = 1 pt, <3 = 0 pt"
+        },
+        {
+          "id": "m6",
+          "text": "Information et réassurance parentale",
+          "details": [
+            "Nature bénigne de la roséole",
+            "Évolution spontanément favorable",
+            "Éruption attendue jour 3-5",
+            "Contagiosité avant éruption",
+            "Immunité définitive acquise"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥4 points abordés = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "m7",
+          "text": "Plan de suivi structuré",
+          "details": [
+            "Pas de contrôle si évolution typique",
+            "Reconsulter si fièvre >5 jours",
+            "Urgence si signes d'alarme",
+            "Éviction crèche jusqu'à J1 post-fièvre",
+            "Carnet de santé: noter épisode"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "m8",
+          "text": "Évaluation globale de la qualité de la prise en charge",
+          "binaryOnly": false,
+          "details": [
+            "Diagnostic clinique approprié",
+            "Éviter examens inutiles",
+            "Parents bien informés et rassurés"
+          ],
+          "scoringRule": "Excellente = 2 pts, adéquate = 1 pt, insuffisante = 0 pt"
+        }
+      ]
+    }
+  }
+}

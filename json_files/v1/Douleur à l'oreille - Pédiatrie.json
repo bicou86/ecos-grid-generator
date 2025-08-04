@@ -1,0 +1,239 @@
+{
+  "title": "Douleur à l'oreille - Pédiatrie",
+  "context": {
+    "setting": "Service d'urgences pédiatriques",
+    "patient": "Une mère se présente avec sa fille de 3 ans au service d'urgences. L'enfant pleure beaucoup, ne joue pas comme d'habitude, a de la fièvre et se touche souvent l'oreille gauche."
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction et tâche",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Demande le problème actuel (enfant qui pleure, fièvre)",
+          "binaryOnly": true
+        },
+        {
+          "id": "a3",
+          "text": "Demande l'apparition temporelle (depuis 2 jours)",
+          "binaryOnly": false,
+          "patientComment": "Depuis 2 jours"
+        },
+        {
+          "id": "a4",
+          "text": "Demande l'évolution/aggravation des symptômes (toujours pareil)",
+          "binaryOnly": false,
+          "patientComment": "Toujours pareil"
+        },
+        {
+          "id": "a5",
+          "text": "Recherche une surdité (rien remarqué)",
+          "binaryOnly": false,
+          "patientComment": "Rien remarqué"
+        },
+        {
+          "id": "a6",
+          "text": "Demande s'il y a une sécrétion (cérumen, sang, pus) (non)",
+          "binaryOnly": false,
+          "patientComment": "Non"
+        },
+        {
+          "id": "a7",
+          "text": "Évalue la douleur (probablement, se touche l'oreille)",
+          "binaryOnly": false,
+          "patientComment": "Probablement, elle se touche l'oreille"
+        },
+        {
+          "id": "a8",
+          "text": "Recherche acouphènes ou vertiges (ne sait pas)",
+          "binaryOnly": false,
+          "patientComment": "Je ne sais pas"
+        },
+        {
+          "id": "a9",
+          "text": "Recherche symptômes accompagnateurs : fièvre (oui), toux (non), rhume (oui), vomissements (non)",
+          "binaryOnly": false,
+          "patientComment": "Fièvre oui, toux non, rhume oui, vomissements non"
+        },
+        {
+          "id": "a10",
+          "text": "Demande les antécédents, notamment otites antérieures (1 fois)",
+          "binaryOnly": false,
+          "patientComment": "Une fois déjà"
+        },
+        {
+          "id": "a11",
+          "text": "Vérifie le statut vaccinal (selon schéma)",
+          "binaryOnly": false,
+          "patientComment": "Selon le schéma vaccinal"
+        },
+        {
+          "id": "a12",
+          "text": "Demande les médicaments déjà administrés et leur efficacité (paracétamol, lavage nasal NaCl - pas d'amélioration durable)",
+          "binaryOnly": false,
+          "patientComment": "Oui, paracétamol et lavage nasal au NaCl - pas d'amélioration durable"
+        },
+        {
+          "id": "a13",
+          "text": "S'informe sur l'environnement : famille, crèche (oui), fratrie (non)",
+          "binaryOnly": false,
+          "patientComment": "Famille en bonne santé, va à la crèche, pas de frères et sœurs"
+        },
+        {
+          "id": "a14",
+          "text": "Effectue une anamnèse par systèmes (poumons, abdomen, cœur)",
+          "binaryOnly": false
+        },
+        {
+          "id": "a15",
+          "text": "Évalue l'hydratation et l'alimentation",
+          "binaryOnly": false
+        },
+        {
+          "id": "a16",
+          "text": "Demande le déroulement de la grossesse et de l'accouchement",
+          "binaryOnly": false
+        },
+        {
+          "id": "a17",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "binaryOnly": false,
+          "details": [
+            "Anamnèse générale ciblée et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Inspection de l'oreille (normal)",
+          "binaryOnly": false,
+          "patientComment": "Normal"
+        },
+        {
+          "id": "e2",
+          "text": "Palpation (douleur à la pression du tragus et traction du pavillon)",
+          "binaryOnly": false,
+          "patientComment": "L'enfant pleure"
+        },
+        {
+          "id": "e3",
+          "text": "Otoscopie bilatérale (rougeur bilatérale)",
+          "binaryOnly": false,
+          "patientComment": "Rougeur des deux côtés"
+        },
+        {
+          "id": "e4",
+          "text": "Examen endobuccal (pharynx rouge)",
+          "binaryOnly": false,
+          "patientComment": "Pharynx rouge, sinon sans particularité"
+        },
+        {
+          "id": "e5",
+          "text": "Palpation des ganglions lymphatiques (légèrement augmentés)",
+          "binaryOnly": false,
+          "patientComment": "Légèrement augmentés"
+        },
+        {
+          "id": "e6",
+          "text": "Auscultation pulmonaire et cardiaque (normal)",
+          "binaryOnly": false,
+          "patientComment": "Normal"
+        },
+        {
+          "id": "e7",
+          "text": "Examen abdominal (normal)",
+          "binaryOnly": false,
+          "patientComment": "Normal"
+        },
+        {
+          "id": "e8",
+          "text": "Recherche douleur à la percussion mastoïdienne",
+          "binaryOnly": false
+        },
+        {
+          "id": "e9",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "binaryOnly": false,
+          "details": [
+            "Status général ciblé et bien conduit"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Énonce le diagnostic suspecté (otite moyenne aiguë)",
+          "binaryOnly": false
+        },
+        {
+          "id": "m2",
+          "text": "Énonce au moins 2-3 diagnostics différentiels : otite virale/bactérienne, tympan rouge car pleurs, douleur irradiée gorge/dent, otite externe",
+          "binaryOnly": false
+        },
+        {
+          "id": "m3",
+          "text": "Propose des examens diagnostiques si nécessaire (laboratoire, test rapide streptocoque si suspicion d'angine)",
+          "binaryOnly": false
+        },
+        {
+          "id": "m4",
+          "text": "Propose le traitement approprié : otite unilatérale = surveillance avec analgésie/antipyrexie et contrôle à 2 jours",
+          "binaryOnly": false
+        },
+        {
+          "id": "m5",
+          "text": "Propose le traitement approprié : otite bilatérale = antibiothérapie (ex: amoxicilline)",
+          "binaryOnly": false
+        },
+        {
+          "id": "m6",
+          "text": "Informe la mère des complications possibles sans antibiotiques : mastoïdite",
+          "binaryOnly": false
+        },
+        {
+          "id": "m7",
+          "text": "Informe la mère des complications possibles : paralysie faciale (par œdème)",
+          "binaryOnly": false
+        },
+        {
+          "id": "m8",
+          "text": "Informe la mère des complications possibles : thrombose du sinus",
+          "binaryOnly": false
+        },
+        {
+          "id": "m9",
+          "text": "Informe la mère des complications possibles : complications intracrâniennes (méningite, abcès)",
+          "binaryOnly": false
+        },
+        {
+          "id": "m10",
+          "text": "Propose un contrôle dans 1 semaine",
+          "binaryOnly": false
+        },
+        {
+          "id": "m11",
+          "text": "Évaluation globale de la qualité de la prise en charge",
+          "binaryOnly": false,
+          "details": [
+            "Prise en charge générale cohérente et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    }
+  }
+}

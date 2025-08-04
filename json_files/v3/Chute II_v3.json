@@ -1,0 +1,590 @@
+{
+  "title": "Chute II",
+  "context": {
+    "setting": "Service d'urgences",
+    "patient": "Monsieur Faller, 89 ans, amené par l'ambulance aux urgences car il a chuté à domicile. Une voisine l'a trouvé et a appelé l'ambulance. Il est orienté et éveillé et peut vous renseigner lui-même sur ce qui s'est passé.",
+    "vitals": {
+      "ta": "102/80 mmHg",
+      "fc": "80 bpm",
+      "temperature": "37.8°C",
+      "saturation": "Bonne"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction et tâche",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "RED FLAGS - Chute chez personne âgée",
+          "scoringRule": "≥6 red flags explorés = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false,
+          "redflagsSection": [
+            {
+              "text": "Traumatisme crânien [bosse à la tête - à explorer]"
+            },
+            {
+              "text": "Perte de connaissance [non rapportée]"
+            },
+            {
+              "text": "Confusion post-chute [orienté maintenant]"
+            },
+            {
+              "text": "Déficit neurologique nouveau [à évaluer]"
+            },
+            {
+              "text": "Douleur cervicale/rachidienne [à explorer]"
+            },
+            {
+              "text": "Fracture suspectée (col fémur, poignet) [douleur main]"
+            },
+            {
+              "text": "Incapacité de se lever/marcher [à tester]"
+            },
+            {
+              "text": "Chute récurrente [2-3 fois déjà]"
+            }
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Circonstances précises de la chute",
+          "details": [
+            "Lieu exact [domicile, cuisine]",
+            "Heure précise [il y a 2 heures]",
+            "Activité en cours [à préciser]",
+            "Présence de témoins [voisine trouvée]",
+            "Comment découvert [voisine]",
+            "Aide reçue immédiatement [ambulance appelée]"
+          ],
+          "scoringRule": "≥5 éléments = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a4",
+          "text": "Mécanisme et prodrome de la chute",
+          "details": [
+            "Chute en avant/arrière/côté [à préciser]",
+            "Trébuchement [oui, sans obstacle]",
+            "Obstacle visible [non]",
+            "Premonition/malaise avant chute [non]",
+            "Vertiges précédant la chute [à explorer]",
+            "Palpitations avant chute [non]"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a5",
+          "text": "Antécédents de chutes",
+          "details": [
+            "Nombre de chutes derniers 12 mois [2-3 fois]",
+            "Circonstances chutes précédentes [à explorer]",
+            "Traumatismes antérieurs [à rechercher]",
+            "Hospitalisation pour chute [à vérifier]",
+            "Évolution : chutes plus fréquentes [à explorer]"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a6",
+          "text": "Évaluation des blessures actuelles",
+          "details": [
+            "Douleur crânienne [bosse à la tête]",
+            "Douleur cervicale [à explorer]",
+            "Douleur thoracique [à explorer]",
+            "Douleur main/poignet [ecchymose + douleur]",
+            "Douleur hanche/col fémur [à explorer]",
+            "Capacité mobilisation immédiate [à évaluer]"
+          ],
+          "scoringRule": "≥5 régions = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a7",
+          "text": "Symptômes avant/pendant la chute",
+          "details": [
+            "Malaise général [non]",
+            "Vertiges/étourdissements [à explorer]",
+            "Palpitations [non]",
+            "Dyspnée [non]",
+            "Nausées [à explorer]",
+            "Troubles visuels aigus [vision diminuée chronique]",
+            "Faiblesse subite [non]",
+            "Céphalées [non]"
+          ],
+          "scoringRule": "≥6 symptômes explorés = 2 pts, 3-5 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a8",
+          "text": "Facteurs de risque intrinsèques",
+          "details": [
+            "Âge >80 ans [89 ans]",
+            "Troubles visuels [baisse vision]",
+            "Neuropathie périphérique [diabète depuis 15 ans]",
+            "Arthrose/douleurs articulaires [gonarthrose bilatérale]",
+            "Faiblesse musculaire [à évaluer]",
+            "Troubles cognitifs [à explorer]",
+            "Troubles de l'équilibre [à tester]"
+          ],
+          "scoringRule": "≥6 facteurs = 2 pts, 3-5 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a9",
+          "text": "Médicaments favorisant les chutes",
+          "details": [
+            "Benzodiazépines/hypnotiques [somnifère nuit]",
+            "Opiacés [tramadol]",
+            "Antihypertenseurs [à vérifier]",
+            "Diurétiques [à explorer]",
+            "Antidépresseurs [à vérifier]",
+            "Antipsychotiques [à vérifier]",
+            "Antiépileptiques [à vérifier]",
+            "Polymédication >4 médicaments [probable]"
+          ],
+          "scoringRule": "≥6 classes explorées = 2 pts, 3-5 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a10",
+          "text": "Comorbidités pertinentes",
+          "details": [
+            "Diabète et contrôle glycémique [15 ans, HbA1c 6.7%]",
+            "Hypertension et contrôle TA [oui]",
+            "Cardiopathie [problème cardiaque à préciser]",
+            "Troubles du rythme [à explorer]",
+            "Hypotension orthostatique [à tester]",
+            "Anémie [à rechercher]",
+            "Troubles thyroïdiens [à explorer]"
+          ],
+          "scoringRule": "≥6 pathologies = 2 pts, 3-5 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a11",
+          "text": "Facteurs environnementaux",
+          "details": [
+            "Éclairage insuffisant [à explorer]",
+            "Sols glissants/tapis [à explorer]",
+            "Escaliers sans rampe [monte escaliers]",
+            "Chaussures inadaptées [à vérifier]",
+            "Aides techniques (canne, déambulateur) [à évaluer besoin]",
+            "Aménagement domicile [dernier étage]"
+          ],
+          "scoringRule": "≥5 facteurs = 2 pts, 2-4 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a12",
+          "text": "État nutritionnel et général",
+          "details": [
+            "Perte de poids récente [à évaluer]",
+            "Appétit [à explorer]",
+            "Déshydratation [à rechercher]",
+            "Alimentation équilibrée [repas portage midi]",
+            "Supplémentation vitaminique [à vérifier]"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a13",
+          "text": "Autonomie et activités de la vie quotidienne",
+          "details": [
+            "Habillage [peut seul]",
+            "Toilette [aide nécessaire]",
+            "Alimentation [aide préparation repas]",
+            "Déplacements domicile [monte escaliers]",
+            "Courses [aide nécessaire]",
+            "Ménage [aide nécessaire]",
+            "Score ADL/IADL [à calculer]"
+          ],
+          "scoringRule": "≥6 domaines = 2 pts, 3-5 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a14",
+          "text": "Support social et conditions de vie",
+          "details": [
+            "Vit seul [oui, veuf]",
+            "Aide à domicile [2x/jour]",
+            "Famille proche [sans enfants]",
+            "Voisinage [voisine a trouvé]",
+            "Téléalarme/sécurité [à explorer]",
+            "Isolement social [à évaluer]"
+          ],
+          "scoringRule": "≥5 éléments = 2 pts, 2-4 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a15",
+          "text": "Toxiques et habitudes",
+          "patientComment": "Non-fumeur, pas d'alcool, pas de drogues",
+          "binaryOnly": true
+        },
+        {
+          "id": "a16",
+          "text": "Allergies et intolérances",
+          "patientComment": "Aucune allergie connue",
+          "binaryOnly": true
+        },
+        {
+          "id": "a17",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "binaryOnly": false,
+          "details": [
+            "Anamnèse gériatrique complète",
+            "Évaluation multifactorielle des causes de chute",
+            "Recherche facteurs de risque modifiables"
+          ],
+          "scoringRule": "Excellent = 2 pts, satisfaisant = 1 pt, insuffisant = 0 pt"
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Signes vitaux complets et orthostatisme",
+          "details": [
+            "TA couchée [102/80 mmHg]",
+            "TA debout après 3 min [test orthostatisme]",
+            "FC couchée et debout [80 bpm]",
+            "Température [37.8°C - fièvre?]",
+            "FR et SaO2 [saturation bonne]",
+            "Glycémie capillaire [diabétique]"
+          ],
+          "scoringRule": "≥5 paramètres = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e2",
+          "text": "Examen traumatologique systématique",
+          "details": [
+            "Inspection tête/cuir chevelu [bosse]",
+            "Palpation crâne/fontanelle si dépression",
+            "Examen cervical (douleur, mobilité)",
+            "Examen thoracique (côtes, sternum)",
+            "Examen main/poignet [ecchymose + douleur]",
+            "Examen bassin/hanches [mobilisation prudente]",
+            "Examen membres inférieurs"
+          ],
+          "scoringRule": "≥6 régions = 2 pts, 3-5 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e3",
+          "text": "Examen neurologique focal",
+          "details": [
+            "État de conscience [orienté maintenant]",
+            "Force musculaire 4 membres",
+            "Sensibilité superficielle/profonde",
+            "Réflexes ostéo-tendineux",
+            "Coordination (doigt-nez, talon-genou)",
+            "Nerfs crâniens (si trauma crânien)",
+            "Recherche déficit focal"
+          ],
+          "scoringRule": "≥6 éléments = 2 pts, 3-5 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e4",
+          "text": "Tests d'équilibre et de marche",
+          "details": [
+            "Station debout yeux ouverts/fermés",
+            "Test de Romberg [si possible]",
+            "Marche spontanée [évaluation]",
+            "Demi-tour en marchant",
+            "Test Get Up and Go [si applicable]",
+            "Peur de chuter (échelle FES)"
+          ],
+          "scoringRule": "≥4 tests réalisables = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e5",
+          "text": "Examen visuel et auditif",
+          "details": [
+            "Acuité visuelle [baisse rapportée]",
+            "Champs visuels par confrontation",
+            "Réflexe pupillaire (si trauma crânien)",
+            "Port de lunettes/adaptation",
+            "Audition (Weber, Rinne) [normale]",
+            "Port d'aide auditive"
+          ],
+          "scoringRule": "≥5 éléments = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e6",
+          "text": "Examen cardiovasculaire",
+          "details": [
+            "Auscultation cardiaque [rythme, souffles]",
+            "Recherche troubles du rythme [FA?]",
+            "Pouls périphériques [pouls pédieux]",
+            "Recherche souffle carotidien",
+            "Signes d'insuffisance cardiaque",
+            "Test orthostatisme [crucial]"
+          ],
+          "scoringRule": "≥5 éléments = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e7",
+          "text": "Examen des pieds et polyneuropathie",
+          "details": [
+            "Inspection pieds (plaies, déformations)",
+            "Sensibilité vibratoire (diapason)",
+            "Sensibilité tactile (monofilament)",
+            "Réflexe achilléen",
+            "Pouls pédieux et tibial postérieur",
+            "Chaussures adaptées"
+          ],
+          "scoringRule": "≥5 éléments = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e8",
+          "text": "Évaluation cognitive rapide",
+          "details": [
+            "Orientation temporo-spatiale",
+            "Mémoire immédiate/différée",
+            "Test de l'horloge [si possible]",
+            "Attention/concentration",
+            "Mini-Mental State [si indiqué]"
+          ],
+          "scoringRule": "≥4 domaines = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e9",
+          "text": "Évaluation nutritionnelle",
+          "details": [
+            "Poids actuel (si balance disponible)",
+            "Perte de poids récente",
+            "État d'hydratation (pli cutané)",
+            "Pâleur (anémie)",
+            "Œdèmes déclives"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e10",
+          "text": "Examen général et recherche infection",
+          "details": [
+            "Température [37.8°C - fièvre modérée]",
+            "Auscultation pulmonaire",
+            "Palpation abdominale",
+            "Recherche foyer infectieux [urinaire, cutané]",
+            "État général/dénutrition"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e11",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "binaryOnly": false,
+          "details": [
+            "Examen gériatrique multidimensionnel",
+            "Recherche systématique traumatismes",
+            "Évaluation équilibre et facteurs de risque",
+            "Approche holistique de la personne âgée"
+          ],
+          "scoringRule": "Excellent = 2 pts, satisfaisant = 1 pt, insuffisant = 0 pt"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Évaluation urgente des traumatismes",
+          "details": [
+            "Radiographie crâne si trauma [bosse tête]",
+            "CT cérébral si trouble conscience/neurologique",
+            "Radiographie cervicale si douleur",
+            "Radiographie main/poignet [ecchymose+douleur]",
+            "Radiographie bassin/col fémur [systématique >80 ans]",
+            "Autres selon examen clinique"
+          ],
+          "scoringRule": "≥4 examens adaptés = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m2",
+          "text": "Bilan étiologique des chutes",
+          "details": [
+            "NFS (anémie) [contexte fièvre]",
+            "Ionogramme complet (Na, K, Ca)",
+            "Créatinine, urée [fonction rénale]",
+            "Glycémie, HbA1c [diabète]",
+            "TSH [hypothyroïdie]",
+            "Vitamine B12, folates [neuropathie]",
+            "CRP [fièvre à 37.8°C]",
+            "Vitamine D [ostéomalacie]"
+          ],
+          "scoringRule": "≥6 examens = 2 pts, 3-5 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m3",
+          "text": "Examens cardiovasculaires",
+          "details": [
+            "ECG 12 dérivations [troubles rythme]",
+            "Échocardiographie [si souffle/ICF]",
+            "Holter ECG [si syncope suspectée]",
+            "Test orthostatisme formel",
+            "Échographie-Doppler carotidien [si indiqué]"
+          ],
+          "scoringRule": "≥3 examens adaptés = 2 pts, 2 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m4",
+          "text": "Recherche de foyer infectieux",
+          "details": [
+            "ECBU [infection urinaire fréquente]",
+            "Radiographie thoracique [pneumonie]",
+            "Hémocultures si fièvre [37.8°C]",
+            "Examen cutané (escarres, plaies)",
+            "PCT si sepsis suspecté"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m5",
+          "text": "Diagnostics différentiels multifactoriels",
+          "scoringRule": "≥7 causes = 2 pts, 4-6 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false,
+          "ddSection": {
+            "categories": [
+              {
+                "name": "Diagnostics différentiels à considérer",
+                "items": [
+                  "Cause mécanique (trébuchement, obstacle)",
+                  "Hypotension orthostatique [médicaments]",
+                  "Trouble du rythme [âge, cardiopathie]",
+                  "Hypoglycémie [diabète sous sulfonylurée]",
+                  "Neuropathie diabétique [15 ans évolution]",
+                  "Troubles visuels [baisse vision rapportée]",
+                  "Iatrogénie médicamenteuse [somnifères, tramadol]",
+                  "Infection/fièvre [37.8°C]",
+                  "Déconditionnement/sarcopénie [âge]"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m6",
+          "text": "Traitement des traumatismes",
+          "details": [
+            "Immobilisation si fracture suspectée",
+            "Analgésie adaptée [éviter morphiniques]",
+            "Surveillance neurologique si trauma crânien",
+            "Soins plaies/contusions",
+            "Prévention tétanos si plaie"
+          ],
+          "scoringRule": "≥3 mesures = 2 pts, 2 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m7",
+          "text": "Révision médicamenteuse",
+          "details": [
+            "Arrêt/réduction hypnotiques [somnifère]",
+            "Révision opiacés [tramadol - chute]",
+            "Optimisation antihypertenseurs [hypotension]",
+            "Adaptation antidiabétiques [hypoglycémie]",
+            "Règle : stop START/STOPP",
+            "Simplification schéma thérapeutique"
+          ],
+          "scoringRule": "≥4 mesures = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m8",
+          "text": "Mesures de prévention des chutes",
+          "details": [
+            "Aménagement environnement domicile",
+            "Aides techniques (canne, déambulateur)",
+            "Amélioration éclairage",
+            "Suppression tapis/obstacles",
+            "Chaussures adaptées antidérapantes",
+            "Téléalarme/bracelet d'urgence",
+            "Exercices équilibre/renforcement"
+          ],
+          "scoringRule": "≥5 mesures = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m9",
+          "text": "Supplémentation et correction carences",
+          "details": [
+            "Vitamine D 800-1000 UI/j [prévention ostéoporose]",
+            "Calcium si carence [1200mg/j]",
+            "Vitamine B12 si carence [neuropathie]",
+            "Correction anémie si présente",
+            "Optimisation nutrition/hydratation"
+          ],
+          "scoringRule": "≥3 mesures = 2 pts, 2 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m10",
+          "text": "Organisation sortie et suivi",
+          "details": [
+            "Évaluation capacité retour domicile",
+            "Renforcement aide domicile [déjà 2x/j]",
+            "Kinésithérapie domicile/équilibre",
+            "Consultation gériatrique spécialisée",
+            "Suivi médecin traitant rapproché",
+            "Réévaluation à 3 mois [nouvelles chutes]",
+            "Information entourage/voisinage"
+          ],
+          "scoringRule": "≥5 mesures = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m11",
+          "text": "Critères hospitalisation vs retour domicile",
+          "details": [
+            "Traumatisme grave nécessitant surveillance",
+            "Incapacité mobilisation/autonomie",
+            "Pas de support social suffisant",
+            "Cause médicale aiguë (infection, décompensation)",
+            "Chutes répétées non contrôlées",
+            "Évaluation gériatrique complexe nécessaire"
+          ],
+          "scoringRule": "Évaluation appropriée = 2 pts, partielle = 1 pt, inadéquate = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m12",
+          "text": "Évaluation globale de la qualité de la prise en charge",
+          "binaryOnly": false,
+          "details": [
+            "Approche gériatrique multidisciplinaire",
+            "Prévention primaire et secondaire des chutes",
+            "Prise en compte facteurs psychosociaux",
+            "Plan de soins personnalisé et réaliste"
+          ],
+          "scoringRule": "Excellent = 2 pts, satisfaisant = 1 pt, insuffisant = 0 pt"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,2656 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMBOSS-40 - Vertiges - Homme 25 ans - Grille ECOS</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background-color: #f5f5f5; }
+        .container { max-width: 1200px; margin: 0 auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); }
+        .header { background: #2c5aa0; color: white; padding: 15px; margin: -20px -20px 20px -20px; border-radius: 8px 8px 0 0; }
+        .section { margin-bottom: 30px; border: 2px solid #ddd; border-radius: 8px; overflow: hidden; background-color: #ffffff; }
+        .section-header { background: #f8f9fa; padding: 15px; font-weight: bold; font-size: 18px; border-bottom: 1px solid #ddd; display: flex; justify-content: space-between; align-items: center; }
+        .section-content { padding: 15px; background-color: #ffffff; }
+        .header-row { display: grid; grid-template-columns: 2fr 80px 80px 80px 80px; gap: 10px; padding: 10px 0; border-bottom: 2px solid #ddd; font-weight: bold; text-align: center; color: #333333; }
+        .header-row.communication-header { grid-template-columns: 2fr 80px 80px 80px 80px 80px; }
+        .header-row div:first-child { text-align: left; }
+        .criteria-row { display: grid; grid-template-columns: 2fr 80px 80px 80px 80px; gap: 10px; align-items: start; padding: 15px 0 15px 5px; border-bottom: 1px solid #eeeeee; }
+        .criteria-row:last-child { border-bottom: none; }
+        .criteria-text { font-weight: 500; }
+        .sub-criteria { font-size: 0.9em; color: #333; margin-top: 5px; padding-left: 18px; line-height: 1.2; }
+        .details-with-checkboxes { margin-top: 8px; }
+        .detail-row { display: grid; grid-template-columns: 1fr 100px; align-items: center; padding: 2px 0 2px 18px; gap: 10px; line-height: 1.1; }
+        .detail-text { font-size: 0.9em; color: #333; }
+        .patient-response-highlight { color: rgb(44, 90, 160) !important; }
+        .detail-text .patient-response-highlight { color: rgb(44, 90, 160) !important; }
+        .criteria-detail .patient-response-highlight { color: rgb(44, 90, 160) !important; }
+        .detail-checkboxes { text-align: center; }
+        .detail-checkbox input[type="checkbox"] { cursor: pointer; transform: scale(1.1); }
+        .patient-response { font-size: 0.9em; color: rgb(44, 90, 160); font-weight: 500; }
+        .checkbox-group { text-align: center; }
+        .points-display { text-align: center; font-weight: bold; color: #2c5aa0; font-size: 18px; }
+        .scoring-rule { font-size: 0.85em; color: #888; font-style: italic; margin-top: 8px; padding-left: 20px; }
+        .criteria-subheader { background: #fffbe6; padding: 10px 15px; margin: 10px 0 5px 0; border-left: 4px solid #faad14; font-weight: bold; color: #8b6914; }
+        input[type="radio"] { cursor: pointer; transform: scale(1.2); }
+        input[type="radio"]:disabled { opacity: 0.3; cursor: not-allowed; }
+        .score { font-weight: bold; color: hsl(216, 57%, 40%); font-size: 18px; }
+        .total-sections { display: grid; grid-template-columns: 1fr 2fr 1fr; gap: 20px; margin-bottom: 30px; }
+        .total-section { display: flex; flex-direction: column; justify-content: space-between; text-align: center; background: #f0f8ff; border: 1px solid #ddd; border-radius: 8px; transition: all 0.3s; }
+        .total-label { background: #f8f9fa; padding: 5px; font-weight: bold; font-size: 20px; border-bottom: 1px solid #ddd; }
+        .total-body { flex: 1; display: flex; align-items: center; justify-content: center; padding: 5px; }
+        .total-pourcent-body { flex: 1; padding: 10px; }
+        .total-score, .total-note-globale { font-size: 56px; font-weight: bold; line-height: 1; }
+        .total-pourcent-sections { display: flex; flex-wrap: nowrap; gap: 10px; height: 100%; align-items: stretch; }
+        .total-pourcent-section { flex: 1 1 auto; min-width: 0; display: flex; flex-direction: column; text-align: center; background: #416caa; padding: 10px; border-radius: 5px; transition: all 0.3s; border: none; }
+        .total-pourcent-section:last-child { border-right: none; }
+        .total-section-label { color: #eeeeee; font-size: 14px; font-weight: normal; margin-bottom: 5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+        .pourcent-body { flex: 1; display: flex; align-items: center; justify-content: center; }
+        .total-pourcent-value { font-weight: bold; font-size: 28px; line-height: 1; color: white; transition: all 0.3s; }
+        .note-a { background-color: #e6f4ea; color: #2c974b; }
+        .note-a.total-pourcent-section { background-color: #2c974b; }
+        .note-b { background-color: #e9f3fd; color: #4e9cf0; }
+        .note-b.total-pourcent-section { background-color: #4e9cf0; }
+        .note-c { background-color: #fdf5e6; color: #f0ad4e; }
+        .note-c.total-pourcent-section { background-color: #f0ad4e; }
+        .note-d { background-color: #fceee3; color: #e67e22; }
+        .note-d.total-pourcent-section { background-color: #e67e22; }
+        .note-e { background-color: #fbeaea; color: #d9534f; }
+        .note-e.total-pourcent-section { background-color: #d9534f; }
+        .note-neutral { background-color: #f0f8ff; color: #2c5aa0; }
+        .note-neutral.total-pourcent-section { background-color: #6B8BC3; }
+        .note-a.total-pourcent-body { background-color: #e6f4ea; }
+        .note-b.total-pourcent-body { background-color: #e9f3fd; }
+        .note-c.total-pourcent-body { background-color: #fdf5e6; }
+        .note-d.total-pourcent-body { background-color: #fceee3; }
+        .note-e.total-pourcent-body { background-color: #fbeaea; }
+        .note-neutral.total-pourcent-body { background-color: #f0f8ff; }
+        /* Styles pour les sections avec coloration selon le score */
+        .section.note-a { border-color: #2c974b; }
+        .section.note-a .section-header { background-color: #e6f4ea; color: #2c974b; }
+        .section.note-b { border-color: #4e9cf0; }
+        .section.note-b .section-header { background-color: #e9f3fd; color: #4e9cf0; }
+        .section.note-c { border-color: #f0ad4e; }
+        .section.note-c .section-header { background-color: #fdf5e6; color: #f0ad4e; }
+        .section.note-d { border-color: #e67e22; }
+        .section.note-d .section-header { background-color: #fceee3; color: #e67e22; }
+        .section.note-e { border-color: #d9534f; }
+        .section.note-e .section-header { background-color: #fbeaea; color: #d9534f; }
+        .section.note-neutral { border-color: #ddd; }
+        .section.note-neutral .section-header { background-color: #f8f9fa; color: #333333; }
+        /* Styles pour les critères individuels */
+        .criteria-row.score-2 { background-color: rgba(44, 151, 75, 0.1); }
+        .criteria-row.score-2 .criteria-text { color: #2c974b; }
+        .criteria-row.score-max { background-color: rgba(44, 151, 75, 0.1); }
+        .criteria-row.score-max .criteria-text { color: #2c974b; }
+        .criteria-row.score-1 { background-color: rgba(240, 173, 78, 0.1); }
+        .criteria-row.score-1 .criteria-text { color: #f0ad4e; }
+        .criteria-row.score-0 { background-color: rgba(217, 83, 79, 0.1); }
+        .criteria-row.score-0 .criteria-text { color: #d9534f; }
+        .criteria-row:not(.score-0):not(.score-1):not(.score-2):not(.score-max) .criteria-text { color: #000; }
+        /* Styles supplémentaires pour les scores plus élevés */
+        .criteria-row.score-3 { background-color: rgba(44, 151, 75, 0.1); }
+        .criteria-row.score-3 .criteria-text { color: #2c974b; }
+        .criteria-row.score-4 { background-color: rgba(44, 151, 75, 0.1); }
+        .criteria-row.score-4 .criteria-text { color: #2c974b; }
+        .criteria-row.score-5 { background-color: rgba(44, 151, 75, 0.1); }
+        .criteria-row.score-5 .criteria-text { color: #2c974b; }
+        .communication-section.score-a { background-color: rgba(44, 151, 75, 0.1); }
+        .communication-section.score-a .communication-text { color: #2c974b; }
+        .communication-section.score-b { background-color: rgba(78, 156, 240, 0.1); }
+        .communication-section.score-b .communication-text { color: #4e9cf0; }
+        .communication-section.score-c { background-color: rgba(240, 173, 78, 0.1); }
+        .communication-section.score-c .communication-text { color: #f0ad4e; }
+        .communication-section.score-d { background-color: rgba(230, 126, 34, 0.1); }
+        .communication-section.score-d .communication-text { color: #e67e22; }
+        .communication-section.score-e { background-color: rgba(217, 83, 79, 0.1); }
+        .communication-section.score-e .communication-text { color: #d9534f; }
+        .grade-scale { margin-top: 20px; padding: 15px; background: #f8f9fa; border-radius: 8px; }
+        .grade-scale h3 { margin-top: 0; }
+        .grade-row { display: flex; justify-content: space-between; padding: 5px 0; }
+        .missing-items { display: none !important; }
+        .missing-items h3 { margin-top: 0; }
+        .missing-item { color: #dc3545; font-weight: bold; }
+        .redflags-main-section { margin-top: 30px; padding: 20px; background: #fff5f5; border-radius: 8px; border: 1px solid #f5c6cb; }
+        .redflags-main-section h3 { margin-top: 0; border-bottom: 2px solid #f5c6cb; padding-bottom: 10px; }
+        .redflags-category-section { margin: 15px 0; padding: 10px; background: white; border-radius: 5px; border-left: 4px solid #dc3545; }
+        .annexes { margin-top: 30px; padding: 20px; background: #f8f9fa; border-radius: 8px; border: 1px solid #ddd; }
+        .annexes h3 { margin-top: 0; color: #2c5aa0; border-bottom: 2px solid #ddd; padding-bottom: 10px; }
+        .annexes-grid { display: grid; grid-template-columns: 1fr; gap: 20px; margin-top: 20px; }
+        .annexe-item { padding: 15px; background: white; border-radius: 5px; border: 1px solid #e0e0e0; }
+        .annexe-title { font-weight: bold; color: #2c5aa0; margin-bottom: 8px; font-size: 16px; }
+        .annexe-description { color: #666; font-style: italic; margin-bottom: 10px; font-size: 14px; }
+        .annexe-image { text-align: center; margin: 10px 0; }
+        .annexe-image img { max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .annexe-document { background: #f0f8ff; padding: 10px; border-radius: 4px; border-left: 4px solid #2c5aa0; white-space: pre-wrap; font-family: "Courier New", monospace; font-size: 13px; }
+        
+        /* Styles pour le scénario de la patiente standardisée */
+        .annexe-scenario { grid-column: 1 / -1; max-width: none; }
+        .annexe-scenario-content { padding: 15px; background: #fafafa; border-radius: 4px; }
+        .scenario-info { background: #e8f4f8; padding: 10px 15px; border-radius: 4px; margin-bottom: 15px; font-size: 15px; }
+        .scenario-section { margin-bottom: 20px; }
+        .scenario-subsection { margin-bottom: 15px; }
+        .scenario-subsection strong { color: #2c5aa0; }
+        .scenario-section h4 { color: #2c5aa0; margin: 15px 0 10px 0; font-size: 16px; border-bottom: 1px solid #ddd; padding-bottom: 5px; }
+        .scenario-section ul { margin: 10px 0; padding-left: 25px; }
+        .scenario-section li { margin: 5px 0; line-height: 1.5; }
+        .scenario-subsection { margin: 10px 0 15px 0; }
+        .scenario-subsection strong { color: #555; }
+        .scenario-subsection ul { margin-top: 5px; }
+        
+        /* Styles pour les interventions de l'expert */
+        .annexe-interventions { grid-column: 1 / -1; max-width: none; }
+        .annexe-interventions-content { padding: 15px; }
+        .intervention-item { background: #fff3cd; border: 1px solid #ffeaa7; border-radius: 4px; padding: 12px; margin-bottom: 12px; }
+        .intervention-header { font-size: 15px; margin-bottom: 8px; color: #856404; }
+        .intervention-moment { font-weight: normal; font-style: italic; color: #666; }
+        .intervention-instruction { margin: 8px 0; color: #333; }
+        .intervention-message { background: #fff; padding: 8px 12px; border-left: 3px solid #ffc107; font-style: italic; color: #721c24; margin-top: 8px; }
+        
+        /* Styles pour les informations de l'expert */
+        .annexe-informations-expert { grid-column: 1 / -1; max-width: none; }
+        .annexe-informations-content { padding: 15px; background: #f5f5f5; border-radius: 4px; }
+        .info-section { margin-bottom: 20px; }
+        .info-section:last-child { margin-bottom: 0; }
+        .info-section h4 { color: #2c5aa0; margin: 0 0 10px 0; font-size: 16px; border-bottom: 1px solid #ddd; padding-bottom: 5px; }
+        .info-section p { margin: 10px 0; line-height: 1.6; }
+        .info-section ul { margin: 10px 0; padding-left: 25px; }
+        .info-section li { margin: 5px 0; line-height: 1.5; }
+        
+        /* Styles pour la théorie pratique */
+        .annexe-theorie-pratique { grid-column: 1 / -1; max-width: none; }
+        .annexe-theorie-content { padding: 15px; background: #f0f5ff; border-radius: 4px; }
+        .theorie-text { line-height: 1.6; color: #333; }
+        .theorie-section { margin-bottom: 20px; }
+        .theorie-section:last-child { margin-bottom: 0; }
+        .theorie-section h4 { color: #1a4b84; margin: 0 0 10px 0; font-size: 16px; }
+        .theorie-section p { margin: 10px 0; line-height: 1.6; }
+        .theorie-section ul { margin: 10px 0; padding-left: 25px; }
+        .theorie-section li { margin: 5px 0; line-height: 1.5; }
+        /* Styles pour rappels thérapeutiques et examens complémentaires */
+        .annexe-rappels-therapeutiques, .annexe-examens-complementaires { grid-column: 1 / -1; max-width: none; }
+        .rappels-list, .examens-list { margin: 0; padding-left: 25px; }
+        .rappels-list li, .examens-list li { margin: 8px 0; line-height: 1.6; color: #333; }
+        .annexe-rappels-therapeutiques .annexe-title { color: #998800; }
+        .annexe-examens-complementaires .annexe-title { color: #346929; }
+        .communication-section { display: grid; grid-template-columns: 2fr 80px 80px 80px 80px 80px; gap: 10px; align-items: start; padding: 15px 0 15px 5px; border-bottom: 1px solid #eee; }
+        .communication-text { font-weight: 500; }
+        .communication-desc { font-size: 0.85em; color: #666; margin-top: 5px; font-style: italic; }
+        /* Section Clôture */
+        .cloture-section { margin-bottom: 20px; }
+        .cloture-section .section-header { background-color: #f0f4f8; }
+        .cloture-item { margin-bottom: 20px; padding: 15px; background-color: #f8f9fa; border-radius: 5px; }
+        .cloture-title { color: #2c5aa0; margin: 0 0 10px 0; font-size: 16px; font-weight: bold; }
+        .cloture-content { color: #333; line-height: 1.6; font-style: italic; }
+        .cloture-content-green { color: rgb(112, 188, 123); font-weight: 500; }
+        .communication-desc-detail { font-size: 0.8em; color: #666; margin-left: 20px; font-style: normal; }
+        .vital-signs { margin-top: 10px; margin-bottom: 0px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px; font-size: 0.9em; }
+        .vital-sign { text-align: center; background: #416caa; padding: 10px; border-radius: 5px; }
+        .vital-sign-label { color: #eeeeee; }
+        .vital-sign-value { color: rgb(255, 255, 255); margin-top: 2px; }
+        .dd-section { background: #f0f8ff; padding: 15px; margin: 0 0 10px 0; border-radius: 5px; }
+        .dd-title { font-weight: bold; margin-bottom: 10px; color: #2c5aa0; }
+        .dd-category { margin: 10px 0; font-weight: bold; color: #2c5aa0; }
+        .dd-item { margin-left: 20px; margin-top: 5px; font-weight: bold; color: rgb(169, 34, 23); }
+        .dd-test { color: #666; font-style: italic; margin-left: 10px; }
+        .therapy-section { background: rgba(255, 250, 230, 0.4); padding: 10px 10px 0 20px; margin: 0; border-radius: 5px; color: #000; }
+        .therapy-title { font-weight: bold; margin-bottom: 5px; color: #998800; }
+        .redflags-section { background: #fff5f5; padding: 10px; margin: 5px 0; border-radius: 5px; }
+        .redflags-title { font-weight: bold; margin-bottom: 8px; color: #dc3545; }
+        .redflags-item { margin-bottom: 6px; padding-left: 22px; }
+        .redflags-text { color: #dc3545; font-weight: 500; }
+        .redflags-description { color: #666; font-size: 0.9em; margin-top: 2px; margin-left: 20px; }
+        .annexes { margin-top: 30px; padding: 20px; background: #f8f9fa; border-radius: 8px; border: 1px solid #ddd; }
+        .annexes h3 { margin-top: 0; color: #2c5aa0; border-bottom: 2px solid #ddd; padding-bottom: 10px; }
+        .annexes-grid { display: grid; grid-template-columns: 1fr; gap: 20px; margin-top: 20px; }
+        .annexe-item { padding: 15px; background: white; border-radius: 5px; border: 1px solid #e0e0e0; }
+        .annexe-title { font-weight: bold; color: #2c5aa0; margin-bottom: 8px; font-size: 16px; }
+        .annexe-description { color: #666; font-style: italic; margin-bottom: 10px; font-size: 14px; }
+        .annexe-image { text-align: center; margin: 10px 0; }
+        .annexe-image img { max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .annexe-document { background: #f0f8ff; padding: 10px; border-radius: 4px; border-left: 4px solid #2c5aa0; white-space: pre-wrap; font-family: "Courier New", monospace; font-size: 13px; }
+        
+        /* MINUTEUR */
+        .timer-container {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background: rgba(255, 255, 255, 0.75);
+            border: 3px solid #2c5aa0;
+            border-radius: 15px;
+            padding: 8px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+            z-index: 1000;
+            text-align: center;
+            min-width: 200px;
+        }
+        .timer-display {
+            font-size: 40px;
+            font-weight: bold;
+            color: #2c5aa0;
+            margin-bottom: 15px;
+            font-family: 'Courier New', monospace;
+        }
+        .timer-controls {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        .timer-btn {
+            padding: 8px 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.2s;
+            font-size: 14px;
+        }
+        .start-btn {
+            background: #28a745;
+            color: white;
+        }
+        .start-btn:hover {
+            background: #218838;
+        }
+        .stop-btn {
+            background: #dc3545;
+            color: white;
+        }
+        .stop-btn:hover {
+            background: #c82333;
+        }
+        .reset-btn {
+            background: #6c757d;
+            color: white;
+        }
+        .reset-btn:hover {
+            background: #5a6268;
+        }
+        .timer-btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+        .timer-btn:disabled:hover {
+            background: #6c757d;
+        }
+        .timer-status {
+            font-size: 14px;
+            font-weight: bold;
+            margin-top: 10px;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        .status-running {
+            background: #e3f2fd;
+            color: #1976d2;
+        }
+        .status-warning {
+            background: #fff3cd;
+            color: #ff6f00;
+        }
+        .status-finished {
+            background: #f8d7da;
+            color: #721c24;
+        }
+        .timer-warning {
+            animation: pulse-warning 2s infinite;
+        }
+        .timer-critical {
+            animation: pulse-critical 1s infinite;
+        }
+        @keyframes pulse-warning {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        @keyframes pulse-critical {
+            0%, 100% { transform: scale(1); border-color: #dc3545; }
+            50% { transform: scale(1.1); border-color: #ff0000; }
+        }
+        
+        /* COLORATION POST-MINUTEUR */
+        .criteria-zero-points {
+            background-color: rgba(251, 234, 234, 0.6) !important;
+        }
+        .criteria-one-point {
+            background-color: rgba(253, 245, 230, 0.6) !important;
+        }
+        .criteria-full-points {
+            background-color: rgba(230, 244, 234, 0.6) !important;
+        }
+        .criteria-not-answered {
+            background-color: rgba(240, 248, 255, 0.6) !important;
+        }
+        
+        /* COLORATION COMMUNICATION */
+        .communication-note-a {
+            background-color: rgba(230, 244, 234, 0.6) !important;
+        }
+        .communication-note-b {
+            background-color: rgba(233, 243, 253, 0.6) !important;
+        }
+        .communication-note-c {
+            background-color: rgba(253, 245, 230, 0.6) !important;
+        }
+        .communication-note-d {
+            background-color: rgba(252, 238, 227, 0.6) !important;
+        }
+        .communication-note-e {
+            background-color: rgba(251, 234, 234, 0.6) !important;
+        }
+        .communication-not-answered {
+            background-color: rgba(240, 248, 255, 0.6) !important;
+        }
+        
+        /* MODE SELECTOR */
+        .mode-selector {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: white;
+            border: 2px solid #2c5aa0;
+            border-radius: 30px;
+            padding: 5px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            z-index: 1001;
+            display: flex;
+            gap: 5px;
+        }
+        .mode-button {
+            padding: 8px 16px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: 500;
+            transition: all 0.3s;
+            background: transparent;
+            color: #2c5aa0;
+        }
+        .mode-button.active {
+            background: #2c5aa0;
+            color: white;
+        }
+        .mode-button:hover:not(.active) {
+            background: #e8f0fe;
+        }
+        
+        /* Mode-specific hiding and showing - CORRIGÉ */
+        .revision-mode .timer-container {
+            display: none !important;
+        }
+        .exam-mode .timer-container {
+            display: block !important;
+        }
+        .exam-mode .revision-controls {
+            display: none !important;
+        }
+        /* Masquer les descriptions et titres d'annexes en mode examen quand le timer est actif */
+        .exam-mode.timer-running .annexe-item .annexe-title,
+        .exam-mode.timer-running .annexe-item .annexe-description {
+            display: none !important;
+        }
+        
+        /* Revision controls */
+        .revision-controls {
+            position: fixed;
+            top: 70px;
+            right: 20px;
+            background: white;
+            border: 2px solid #4CAF50;
+            border-radius: 30px;
+            padding: 5px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            display: flex;
+            gap: 5px;
+            z-index: 1000;
+        }
+        .lacune-button {
+            background: transparent;
+            color: #4CAF50;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+        .lacune-button:hover {
+            background: #4CAF50;
+            color: white;
+        }
+        .reset-revision-button {
+            background: transparent;
+            color: #6c757d;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+        .reset-revision-button:hover {
+            background: #6c757d;
+            color: white;
+        }
+        
+        /* Styles pour les commentaires discrets */
+        .comment-button { 
+            background: none; 
+            border: none; 
+            color: #2c5aa0; 
+            cursor: pointer; 
+            font-size: 14px; 
+            padding: 2px 6px; 
+            margin-left: 8px; 
+            border-radius: 3px; 
+            opacity: 0.6;
+            transition: all 0.2s;
+        }
+        .comment-button:hover { opacity: 1; background: rgba(44, 90, 160, 0.1); }
+        .comment-button.has-content { opacity: 1; color: #d9534f; }
+        .criterion-comment-section { 
+            display: none; 
+            margin: 8px 0 12px 20px; 
+            padding: 10px; 
+            background: #fafafa; 
+            border-radius: 4px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        .criterion-comment-section.show { display: block; }
+        .section-comment-button {
+            background: rgba(44, 90, 160, 0.1);
+            border: 1px solid #2c5aa0;
+            color: #2c5aa0;
+            cursor: pointer;
+            font-size: 12px;
+            padding: 4px 8px;
+            margin-left: 10px;
+            border-radius: 15px;
+            opacity: 0.8;
+            transition: all 0.2s;
+            font-weight: 500;
+        }
+        .section-comment-button:hover { 
+            opacity: 1; 
+            background: rgba(44, 90, 160, 0.2); 
+            transform: scale(1.05);
+        }
+        .section-comment-button.has-content { 
+            background: rgba(220, 53, 69, 0.1);
+            border-color: #d9534f;
+            color: #d9534f; 
+        }
+        .section-comment-section { 
+            display: none;
+            margin: 20px 0; 
+            padding: 12px; 
+            background: #f8f9fa; 
+            border-radius: 6px;
+        }
+        .section-comment-section.show { display: block; }
+        .section-comment-section.global { 
+            display: block; 
+            background: #f0f8ff; 
+        }
+        /* La section commentaire global reste toujours visible sauf à l'impression */
+        .comment-textarea { 
+            width: calc(100% - 0px); 
+            min-height: 26px; 
+            padding: 5px; 
+            margin-right: 0px;
+            border: 1px solid #ddd; 
+            border-radius: 3px; 
+            font-family: Arial, sans-serif;
+            font-size: 12px; 
+            resize: vertical;
+            box-sizing: border-box;
+            overflow-y: hidden;
+            color: #7b3f00;
+            height: 26px;
+        }
+        .section-comment-section .comment-textarea {
+            min-height: 28px;
+            font-size: 14px;
+            height: 28px;
+        }
+        .section-comment-section.global .comment-textarea {
+            min-height: 30px;
+            font-size: 16px;
+            height: 30px;
+        }
+        .comment-textarea:focus {
+            outline: none;
+            border-color: #2c5aa0;
+            box-shadow: 0 0 0 2px rgba(44, 90, 160, 0.1);
+        }
+        
+        /* Masquer les boutons à l'impression */
+        @media print {
+            .comment-button,
+            .section-comment-button {
+                display: none !important;
+            }
+            .criterion-comment-section:not(.has-content),
+            .section-comment-section:not(.has-content) {
+                display: none !important;
+            }
+            .criterion-comment-section.has-content,
+            .section-comment-section.has-content {
+                display: block !important;
+                page-break-inside: avoid;
+            }
+        }
+        
+        /* Styles pour les lacunes */
+        .lacune-rouge {
+            background-color: #ffebee !important;
+        }
+        .lacune-orange {
+            background-color: #fff3e0 !important;
+        }
+        .lacune-verte {
+            background-color: #e8f5e8 !important;
+        }
+        
+        /* Bouton d'impression */
+        .print-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #2c5aa0;
+            color: white;
+            border: none;
+            padding: 15px 20px;
+            border-radius: 50px;
+            cursor: pointer;
+            font-size: 16px;
+            box-shadow: 0 4px 12px rgba(44, 90, 160, 0.3);
+            z-index: 1000;
+        }
+        .print-button:hover {
+            background: #1e3f70;
+        }
+        @media print {
+            /* Masquer les éléments interactifs */
+            .print-button, .mode-selector, .revision-controls, .missing-items { display: none !important; }
+            .comment-button, .section-comment-button { display: none !important; }
+            /* IMPORTANT: MASQUER LE MINUTEUR à L'IMPRESSION! */
+            .timer-container {
+                display: none !important;
+                visibility: hidden !important;
+                position: absolute !important;
+                left: -9999px !important;
+            }
+            /* Supprimer les bordures gauches à l'impression */
+            .criteria-row { border-left: none !important; }
+            .communication-section { border-left: none !important; }
+            .lacune-rouge { border-left: none !important; }
+            .lacune-orange { border-left: none !important; }
+            .lacune-verte { border-left: none !important; }
+            
+            /* Gestion des commentaires à l'impression */
+            .criterion-comment-section:not(.has-content),
+            .section-comment-section:not(.has-content) { display: none !important; }
+            .section-comment-section.global:not(.has-content) { display: none !important; }
+            .criterion-comment-section.has-content,
+            .section-comment-section.has-content { display: block !important; }
+            
+            /* Les textareas conservent leur hauteur actuelle à l'impression */
+            .comment-textarea {
+                border: 1px solid #ccc !important;
+                background: white !important;
+                padding: 4px !important;
+                margin-right: 15px !important;
+                resize: none !important;
+                font-size: 8pt !important;
+                font-family: Arial, sans-serif !important;
+                font-style: italic !important;
+                color: #333 !important;
+                border-radius: 2px !important;
+                /* Conserver la hauteur actuelle */
+                overflow: hidden !important;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+            
+            /* Sections commentaires */
+            .criterion-comment-section {
+                page-break-inside: avoid;
+                margin: 6px 0 8px 15px !important;
+                padding: 6px 8px !important;
+                background: #f9f9f9 !important;
+                border-left: 2px solid #666 !important;
+                border-radius: 0 3px 3px 0 !important;
+                box-shadow: none !important;
+            }
+            
+            /* Cacher les sections de commentaires vides */
+            .criterion-comment-section:not(.show) {
+                display: none !important;
+            }
+            .criterion-comment-section.show:not(.has-content) {
+                display: none !important;
+            }
+            
+            .section-comment-section {
+                page-break-inside: avoid;
+                margin: 5px 0 10px 0 !important;
+                padding: 6px 8px !important;
+                background: #f5f5f5 !important;
+                border: 1px solid #ccc !important;
+                border-radius: 4px !important;
+            }
+            
+            /* Cacher toutes les sections de commentaires vides à l'impression */
+            .section-comment-section {
+                display: none !important;
+            }
+            /* Montrer seulement les sections avec contenu */
+            .section-comment-section.has-content {
+                display: block !important;
+            }
+            
+            /* Configuration de la page */
+            @page { size: A4; margin: 10mm 9mm 10mm 10mm; }
+            body { margin: 0; background: white !important; font-size: 9pt; }
+            
+            /* Optimisation du container et des marges */
+            .container { 
+                max-width: 100%; 
+                margin: 0; 
+                box-shadow: none; 
+                padding: 0; 
+                background: white !important;
+            }
+            
+            /* Gestion du header pour qu'il ne soit jamais seul */
+            .header { 
+                page-break-after: avoid; 
+                margin: 0;
+                margin-bottom: 10px;
+                padding: 10px;
+                font-size: 8pt;
+            }
+            .header h1 { font-size: 14pt; margin: 0 0 5px 0; }
+            
+            /* Optimisation des signes vitaux */
+            .vital-signs { gap: 10px; margin: 5px 0; }
+            .vital-sign { padding: 5px; font-size: 8pt; }
+            
+            /* Forcer l'anamnèse à commencer sur la page 1 */
+            .section:first-of-type { page-break-before: avoid !important; }
+            .section:first-of-type .section-header { 
+                page-break-after: avoid; 
+                min-height: 20px;
+            }
+            .section:first-of-type .criteria-row:first-child { 
+                page-break-before: avoid !important; 
+            }
+            
+            /* Les autres sections peuvent se diviser si nécessaire */
+            .section { 
+                page-break-inside: auto; 
+                margin-bottom: 15px;
+            }
+            .section-header { 
+                page-break-after: avoid;
+                font-size: 12pt;
+                padding: 8px;
+            }
+            .section-content { padding: 8px; }
+            
+            /* Optimisation de la grille */
+            .header-row { 
+                grid-template-columns: 2.5fr 60px 60px 60px 60px; 
+                font-size: 8pt;
+            }
+            .header-row.communication-header { 
+                grid-template-columns: 2.5fr 60px 60px 60px 60px 60px; 
+                padding: 5px 0;
+            }
+            .criteria-row { 
+                grid-template-columns: 2.5fr 60px 60px 60px 60px; 
+                page-break-inside: avoid;
+                padding: 8px 0 8px 5px;
+            }
+            .criteria-text { font-size: 8.5pt; line-height: 1.1 !important; }
+            .sub-criteria { font-size: 7.5pt; padding-left: 15px; line-height: 1.1 !important; }
+            .detail-row { font-size: 7.5pt; padding: 1px 0 1px 15px; line-height: 1.0; }
+            .detail-text { font-size: 7.5pt; line-height: 1.1 !important; }
+            .patient-response { font-size: 7.5pt; }
+            .points-display { font-size: 14px; }
+            
+            /* Communication section */
+            .communication-section-container {
+                page-break-inside: avoid !important;
+            }
+            
+            /* Cloture section */
+            .cloture-section {
+                page-break-inside: avoid !important;
+            }
+            .cloture-item {
+                page-break-inside: avoid !important;
+                margin-bottom: 10px;
+                padding: 10px;
+            }
+            .cloture-title { font-size: 10pt; }
+            .cloture-content { font-size: 8.5pt; line-height: 1.2 !important; }
+            .communication-section { 
+                grid-template-columns: 2.5fr 60px 60px 60px 60px 60px;
+                padding: 8px 0;
+            }
+            .communication-text { font-size: 8.5pt; }
+            .communication-desc { font-size: 7pt; }
+            
+            /* Optimisation des sections spéciales */
+            .dd-section { padding: 8px; margin: 0 0 5px 0; font-size: 8pt; }
+            .dd-title { font-size: 9pt; }
+            .dd-item { font-size: 8pt; margin-left: 15px; }
+            
+            .therapy-section { 
+                padding: 8px; 
+                margin: 0; 
+                font-size: 8pt;
+                background: rgba(255, 250, 230, 0.3) !important;
+                color: #000 !important;
+            }
+            .therapy-title { font-size: 9pt; }
+            
+            .redflags-section { padding: 8px; margin: 5px 0; }
+            .redflags-title { font-size: 9pt; }
+            .redflags-text { font-size: 8.5pt; }
+            .redflags-description { font-size: 7.5pt; }
+            
+            /* Optimisation des totaux */
+            .total-sections { 
+                gap: 6px;
+                margin-bottom: 6px;
+            }
+            .total-label { 
+                padding: 4px;
+                font-size: 16px;
+                border-radius: 8px 8px 0 0;
+            }
+            .total-body {
+                padding: 3px;
+                border-radius: 0 0 8px 8px;
+            }
+            .total-score,
+            .total-note-globale {
+                font-size: 32px;
+            }
+            .total-pourcent-body {
+                padding: 6px;
+                border-radius: 0 0 8px 8px;
+            }
+            .total-pourcent-sections {
+                display: flex;
+                flex-wrap: nowrap;
+                gap: 4px;
+                align-items: stretch;
+            }
+            .total-pourcent-section {
+                flex: 0 0 auto;
+                min-width: 60px;
+                padding: 6px 8px;
+                white-space: nowrap;
+            }
+            .total-section-label {
+                font-size: 11px;
+                margin-bottom: 3px;
+                white-space: nowrap;
+            }
+            .total-pourcent-value {
+                font-size: 20px;
+            }
+            .pourcent-body {
+                padding: 2px 0;
+            }
+            
+            /* Échelle de notation */
+            .grade-scale { 
+                padding: 10px; 
+                margin-top: 15px;
+                page-break-inside: avoid;
+            }
+            .grade-scale h3 { font-size: 11pt; margin: 0 0 5px 0; }
+            .grade-row { padding: 3px 0; font-size: 8pt; }
+            
+            /* Optimisations pour les annexes à l'impression */
+            .annexes { 
+                page-break-before: always !important;
+                margin-top: 0 !important;
+                padding-top: 15px !important;
+            }
+            
+            .annexes-grid { 
+                display: grid !important; 
+                grid-template-columns: repeat(2, 1fr) !important; 
+                gap: 15px !important; 
+                margin-top: 15px !important; 
+            }
+            
+            .annexe-item { 
+                page-break-inside: avoid !important;
+                padding: 15px !important;
+                border: 1px solid #ddd !important;
+            }
+            
+            .annexe-title { 
+                font-size: 10pt !important;
+                margin-bottom: 5px !important;
+            }
+            
+            .annexe-description { 
+                font-size: 8pt !important;
+                line-height: 1.3 !important;
+                margin-bottom: 8px !important;
+            }
+            
+            /* Réduire l'interligne des detail-row */
+            .detail-row { 
+                line-height: 1.1 !important; 
+                padding: 2px 0 2px 15px !important;
+            }
+            
+            /* Réduire et ajuster les checkboxes des détails */
+            .detail-checkboxes { 
+                text-align: right !important;
+                padding-right: 5px !important;
+            }
+            .detail-checkbox input[type="checkbox"] { 
+                transform: scale(0.8) !important;
+                margin: 0 !important;
+            }
+            
+            /* Page-break pour théorie pratique */
+            .annexe-theorie-pratique { 
+                page-break-before: always !important; 
+            }
+            
+            /* Pas de page-break dans les scenario-section */
+            .scenario-section, 
+            .scenario-subsection { 
+                page-break-inside: avoid !important; 
+            }
+            
+            /* Réduire l'interligne dans toutes les annexes */
+            .annexe-scenario-content,
+            .annexe-interventions-content,
+            .annexe-informations-content,
+            .annexe-theorie-content { 
+                line-height: 1.15 !important; 
+            }
+            
+            /* Styles spécifiques pour les sections du scénario */
+            .scenario-section {
+                margin-bottom: 8px !important;
+                padding: 4px !important;
+            }
+            
+            .scenario-section h4 {
+                font-size: 9.5pt !important;
+                margin: 0 0 4px 0 !important;
+                line-height: 1.1 !important;
+                color: #2c5aa0 !important;
+            }
+            
+            .scenario-subsection {
+                margin-bottom: 4px !important;
+                line-height: 1.1 !important;
+            }
+            
+            .scenario-subsection strong {
+                font-size: 8pt !important;
+                color: #333 !important;
+            }
+            
+            /* Listes dans les annexes */
+            .annexe-scenario-content ul,
+            .annexe-interventions-content ul,
+            .annexe-informations-content ul,
+            .annexe-theorie-content ul,
+            .scenario-section ul,
+            .scenario-subsection ul {
+                margin: 2px 0 !important;
+                padding-left: 16px !important;
+            }
+            
+            .annexe-scenario-content li,
+            .annexe-interventions-content li,
+            .annexe-informations-content li,
+            .annexe-theorie-content li,
+            .scenario-section li,
+            .scenario-subsection li {
+                margin-bottom: 1px !important;
+                line-height: 1.1 !important;
+                font-size: 7.5pt !important;
+            }
+            
+            /* Texte dans les sections */
+            .scenario-section p,
+            .scenario-subsection p {
+                margin: 2px 0 !important;
+                line-height: 1.1 !important;
+                font-size: 7.5pt !important;
+            }
+            
+            /* Info de base du patient */
+            .scenario-info {
+                font-size: 8pt !important;
+                padding: 6px !important;
+                margin-bottom: 8px !important;
+                line-height: 1.2 !important;
+            }
+            
+            /* Forcer les couleurs */
+            * { 
+                -webkit-print-color-adjust: exact !important; 
+                print-color-adjust: exact !important; 
+            }
+            
+            /* Fond blanc partout */
+            body, .container, .section, .section-content { background: white !important; }
+            
+        }
+    </style>
+</head>
+<body class="revision-mode">
+    <!-- MODE SELECTOR -->
+    <div class="mode-selector">
+        <button class="mode-button active" onclick="switchMode('revision')">🔍 Révision</button>
+        <button class="mode-button" onclick="switchMode('exam')">📝 Examen</button>
+    </div>
+    
+    <!-- BOUTONS RÉVISION (Mode Révision uniquement) -->
+    <div class="revision-controls">
+        <button class="lacune-button" onclick="identifyLacunes()">🎯 Identifier les lacunes</button>
+        <button class="reset-revision-button" onclick="resetTimer()">↻ Reset</button>
+    </div>
+    
+    <!-- MINUTEUR ECOS -->
+    <div class="timer-container" id="timerContainer">
+        <div class="timer-display" id="timerDisplay">13:00</div>
+        <div class="timer-controls">
+            <button id="startBtn" class="timer-btn start-btn" onclick="startTimer()">▶ Démarrer</button>
+            <button id="stopBtn" class="timer-btn stop-btn" onclick="stopTimer()" style="display: none;">⏸ Arrêter</button>
+            <button id="resetBtn" class="timer-btn reset-btn" onclick="resetTimer()">↻ Reset</button>
+        </div>
+        <div class="timer-status" id="timerStatus" style="display: none;"></div>
+    </div>
+
+    <div class="container">
+        <div class="header">
+            <h1>Grille d'évaluation ECOS - AMBOSS-40 - Vertiges - Homme 25 ans</h1>
+            <p style="margin: 5px 0;">📍 Cabinet médical</p>
+            <p style="margin: 5px 0;">👤 Fred Potter, homme de 25 ans, consultant pour vertiges</p>
+            <div class="vital-signs">
+                <div class="vital-sign">
+                    <div class="vital-sign-label">T°</div>
+                    <div class="vital-sign-value">37.5°C</div>
+                </div>
+                <div class="vital-sign">
+                    <div class="vital-sign-label">TA</div>
+                    <div class="vital-sign-value">120/70 mmHg</div>
+                </div>
+                <div class="vital-sign">
+                    <div class="vital-sign-label">FC</div>
+                    <div class="vital-sign-value">65 bpm</div>
+                </div>
+                <div class="vital-sign">
+                    <div class="vital-sign-label">FR</div>
+                    <div class="vital-sign-value">18/min</div>
+                </div>
+            </div>
+        </div>
+        <!-- ANAMNÈSE -->
+        <div class="section">
+            <div class="section-header">
+                <span>Anamnèse (25%)</span>
+                <span class="score">Score : <span id="anamneseScore">0</span>/38</span>
+            </div>
+            <div class="section-content">
+                <div class="header-row">
+                    <div>Critères</div>
+                    <div>Oui</div>
+                    <div>±</div>
+                    <div>Non</div>
+                    <div>Points</div>
+                </div>
+<div class="criteria-row" id="criteria-a1">
+    <div>
+        <div class="criteria-text">1. Motif principal <span class="patient-response">[Je me sens vraiment étourdi]</span> <button class="comment-button" onclick="toggleComment('a1')" title="Ajouter un commentaire">📝</button></div>
+        <div class="criterion-comment-section" id="comment-section-a1">
+            <textarea class="comment-textarea" id="comment-a1" placeholder="Commentaire sur ce critère..." oninput="updateCommentButton('a1'); autoResizeTextarea(this);"></textarea>
+        </div>
+    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="a1" value="2" data-criteria="Motif principal" onchange="updateScore('a', this)" />
+    </div>
+    <div class="checkbox-group" style="visibility: hidden;">
+        <input type="radio" disabled />
+    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="a1" value="0" onchange="updateScore('a', this)" />
+    </div>
+    <div class="points-display" id="points-a1">0</div>
+</div>
+<div class="criteria-row" id="criteria-a2">
+    <div>
+        <div class="criteria-text">2. Caractérisation des vertiges <button class="comment-button" onclick="toggleComment('a2')" title="Ajouter un commentaire">📝</button></div>
+<div class="details-with-checkboxes"><div class="detail-row">    <div class="detail-text criteria-detail">Description des vertiges <span class="patient-response">[J'ai l'impression que la pièce tourne autour de moi]</span></div>    <div class="detail-checkboxes">        <label class="detail-checkbox"><input type="checkbox" id="a2-detail-0" value="1" onchange="updateDetailScore('a2', 'a')" /></label>    </div></div><div class="detail-row">    <div class="detail-text criteria-detail">Début <span class="patient-response">[Ça a commencé vraiment soudainement hier soir]</span></div>    <div class="detail-checkboxes">        <label class="detail-checkbox"><input type="checkbox" id="a2-detail-1" value="1" onchange="updateDetailScore('a2', 'a')" /></label>    </div></div><div class="detail-row">    <div class="detail-text criteria-detail">Constant/intermittent <span class="patient-response">[C'est là tout le temps]</span></div>    <div class="detail-checkboxes">        <label class="detail-checkbox"><input type="checkbox" id="a2-detail-2" value="1" onchange="updateDetailScore('a2', 'a')" /></label>    </div></div><div class="detail-row">    <div class="detail-text criteria-detail">Événements précipitants <span class="patient-response">[Je ne me souviens de rien de particulier]</span></div>    <div class="detail-checkboxes">        <label class="detail-checkbox"><input type="checkbox" id="a2-detail-3" value="1" onchange="updateDetailScore('a2', 'a')" /></label>    </div></div><div class="detail-row">    <div class="detail-text criteria-detail">Progression <span class="patient-response">[Je pense que ça reste à peu près pareil]</span></div>    <div class="detail-checkboxes">        <label class="detail-checkbox"><input type="checkbox" id="a2-detail-4" value="1" onchange="updateDetailScore('a2', 'a')" /></label>    </div></div><div class="detail-row">    <div class="detail-text criteria-detail">Épisodes antérieurs <span class="patient-response">[Non]</span></div>    <div class="detail-checkboxes">        <label class="detail-checkbox"><input type="checkbox" id="a2-detail-5" value="1" onchange="updateDetailScore('a2', 'a')" /></label>    </div></div><div class="detail-row">    <div class="detail-text criteria-detail">Facteurs améliorants <span class="patient-response">[Rien. C'est horrible]</span></div>    <div class="detail-checkboxes">        <label class="detail-checkbox"><input type="checkbox" id="a2-detail-6" value="1" onchange="updateDetailScore('a2', 'a')" /></label>    </div></div><div class="detail-row">    <div class="detail-text criteria-detail">Facteurs aggravants <span class="patient-response">[Non]</span></div>    <div class="detail-checkboxes">        <label class="detail-checkbox"><input type="checkbox" id="a2-detail-7" value="1" onchange="updateDetailScore('a2', 'a')" /></label>    </div></div><div class="detail-row">    <div class="detail-text criteria-detail">Symptômes associés <span class="patient-response">[J'ai la nausée à cause des vertiges. Je n'ai pas eu à vomir cependant]</span></div>    <div class="detail-checkboxes">        <label class="detail-checkbox"><input type="checkbox" id="a2-detail-8" value="1" onchange="updateDetailScore('a2', 'a')" /></label>    </div></div></div>        <div class="criterion-comment-section" id="comment-section-a2">
+            <textarea class="comment-textarea" id="comment-a2" placeholder="Commentaire sur ce critère..." oninput="updateCommentButton('a2'); autoResizeTextarea(this);"></textarea>
+        </div>
+    </div>
+    <div class="checkbox-group"></div>
+    <div class="checkbox-group"></div>
+    <div class="checkbox-group"></div>
+    <div class="points-display" id="points-a2">0</div>
+</div>
+<div class="criteria-row" id="criteria-a3">
+    <div>
+        <div class="criteria-text">3. Recherche de symptômes spécifiques pour vertiges <button class="comment-button" onclick="toggleComment('a3')" title="Ajouter un commentaire">📝</button></div>
+<div class="details-with-checkboxes"><div class="detail-row">    <div class="detail-text criteria-detail">Traumatisme <span class="patient-response">[Non]</span></div>    <div class="detail-checkboxes">        <label class="detail-checkbox"><input type="checkbox" id="a3-detail-0" value="1" onchange="updateDetailScore('a3', 'a')" /></label>    </div></div><div class="detail-row">    <div class="detail-text criteria-detail">Céphalée <span class="patient-response">[Non]</span></div>    <div class="detail-checkboxes">        <label class="detail-checkbox"><input type="checkbox" id="a3-detail-1" value="1" onchange="updateDetailScore('a3', 'a')" /></label>    </div></div><div class="detail-row">    <div class="detail-text criteria-detail">Fièvre/frissons <span class="patient-response">[Je n'ai pas pris ma température, mais j'ai l'impression d'avoir peut-être un peu de fièvre]</span></div>    <div class="detail-checkboxes">        <label class="detail-checkbox"><input type="checkbox" id="a3-detail-2" value="1" onchange="updateDetailScore('a3', 'a')" /></label>    </div></div><div class="detail-row">    <div class="detail-text criteria-detail">Éruption cutanée/changements cutanés <span class="patient-response">[Je n'ai rien vu]</span></div>    <div class="detail-checkboxes">        <label class="detail-checkbox"><input type="checkbox" id="a3-detail-3" value="1" onchange="updateDetailScore('a3', 'a')" /></label>    </div></div><div class="detail-row">    <div class="detail-text criteria-detail">Toux <span class="patient-response">[J'avais un petit rhume la semaine dernière et j'avais une toux alors, mais je pense que c'est parti maintenant]</span></div>    <div class="detail-checkboxes">        <label class="detail-checkbox"><input type="checkbox" id="a3-detail-4" value="1" onchange="updateDetailScore('a3', 'a')" /></label>    </div></div><div class="detail-row">    <div class="detail-text criteria-detail">Infections récentes <span class="patient-response">[Seulement le rhume la semaine dernière]</span></div>    <div class="detail-checkboxes">        <label class="detail-checkbox"><input type="checkbox" id="a3-detail-5" value="1" onchange="updateDetailScore('a3', 'a')" /></label>    </div></div><div class="detail-row">    <div class="detail-text criteria-detail">Acouphènes <span class="patient-response">[Oui, dans mon oreille droite]</span></div>    <div class="detail-checkboxes">        <label class="detail-checkbox"><input type="checkbox" id="a3-detail-6" value="1" onchange="updateDetailScore('a3', 'a')" /></label>    </div></div><div class="detail-row">    <div class="detail-text criteria-detail">Plénitude auriculaire <span class="patient-response">[Oui, aussi dans mon oreille droite]</span></div>    <div class="detail-checkboxes">        <label class="detail-checkbox"><input type="checkbox" id="a3-detail-7" value="1" onchange="updateDetailScore('a3', 'a')" /></label>    </div></div><div class="detail-row">    <div class="detail-text criteria-detail">Perte auditive <span class="patient-response">[Oui. Je pense que c'est surtout mon oreille droite aussi]</span></div>    <div class="detail-checkboxes">        <label class="detail-checkbox"><input type="checkbox" id="a3-detail-8" value="1" onchange="updateDetailScore('a3', 'a')" /></label>    </div></div><div class="detail-row">    <div class="detail-text criteria-detail">Changements de vision <span class="patient-response">[Non]</span></div>    <div class="detail-checkboxes">        <label class="detail-checkbox"><input type="checkbox" id="a3-detail-9" value="1" onchange="updateDetailScore('a3', 'a')" /></label>    </div></div><div class="detail-row">    <div class="detail-text criteria-detail">Engourdissement/faiblesse/picotements <span class="patient-response">[Non]</span></div>    <div class="detail-checkboxes">        <label class="detail-checkbox"><input type="checkbox" id="a3-detail-10" value="1" onchange="updateDetailScore('a3', 'a')" /></label>    </div></div><div class="detail-row">    <div class="detail-text criteria-detail">Prurit <span class="patient-response">[Oui, mon oreille droite me démange depuis quelques jours. Je pensais que c'était juste de la cire alors je l'ai nettoyée, mais ça n'a pas aidé]</span></div>    <div class="detail-checkboxes">        <label class="detail-checkbox"><input type="checkbox" id="a3-detail-11" value="1" onchange="updateDetailScore('a3', 'a')" /></label>    </div></div></div>        <div class="criterion-comment-section" id="comment-section-a3">
+            <textarea class="comment-textarea" id="comment-a3" placeholder="Commentaire sur ce critère..." oninput="updateCommentButton('a3'); autoResizeTextarea(this);"></textarea>
+        </div>
+    </div>
+    <div class="checkbox-group"></div>
+    <div class="checkbox-group"></div>
+    <div class="checkbox-group"></div>
+    <div class="points-display" id="points-a3">0</div>
+</div>
+<div class="criteria-row" id="criteria-a4">
+    <div>
+        <div class="criteria-text">4. Antécédents médicaux <button class="comment-button" onclick="toggleComment('a4')" title="Ajouter un commentaire">📝</button></div>
+<div class="details-with-checkboxes"><div class="detail-row">    <div class="detail-text criteria-detail">Antécédents médicaux <span class="patient-response">[Je me suis blessé au genou en jouant au football l'année dernière. Rupture du LCA]</span></div>    <div class="detail-checkboxes">        <label class="detail-checkbox"><input type="checkbox" id="a4-detail-0" value="1" onchange="updateDetailScore('a4', 'a')" /></label>    </div></div><div class="detail-row">    <div class="detail-text criteria-detail">Varicelle dans le passé <span class="patient-response">[Oui, je suis presque sûr d'avoir eu la varicelle quand j'étais enfant]</span></div>    <div class="detail-checkboxes">        <label class="detail-checkbox"><input type="checkbox" id="a4-detail-1" value="1" onchange="updateDetailScore('a4', 'a')" /></label>    </div></div></div>        <div class="criterion-comment-section" id="comment-section-a4">
+            <textarea class="comment-textarea" id="comment-a4" placeholder="Commentaire sur ce critère..." oninput="updateCommentButton('a4'); autoResizeTextarea(this);"></textarea>
+        </div>
+    </div>
+    <div class="checkbox-group"></div>
+    <div class="checkbox-group"></div>
+    <div class="checkbox-group"></div>
+    <div class="points-display" id="points-a4">0</div>
+</div>
+<div class="criteria-row" id="criteria-a5">
+    <div>
+        <div class="criteria-text">5. Allergies <span class="patient-response">[Aucune]</span> <button class="comment-button" onclick="toggleComment('a5')" title="Ajouter un commentaire">📝</button></div>
+        <div class="criterion-comment-section" id="comment-section-a5">
+            <textarea class="comment-textarea" id="comment-a5" placeholder="Commentaire sur ce critère..." oninput="updateCommentButton('a5'); autoResizeTextarea(this);"></textarea>
+        </div>
+    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="a5" value="2" data-criteria="Allergies" onchange="updateScore('a', this)" />
+    </div>
+    <div class="checkbox-group" style="visibility: hidden;">
+        <input type="radio" disabled />
+    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="a5" value="0" onchange="updateScore('a', this)" />
+    </div>
+    <div class="points-display" id="points-a5">0</div>
+</div>
+<div class="criteria-row" id="criteria-a6">
+    <div>
+        <div class="criteria-text">6. Médicaments <span class="patient-response">[Je prends de l'aspirine pour mon genou parfois, ça fait encore mal quand je cours ou joue au football]</span> <button class="comment-button" onclick="toggleComment('a6')" title="Ajouter un commentaire">📝</button></div>
+        <div class="criterion-comment-section" id="comment-section-a6">
+            <textarea class="comment-textarea" id="comment-a6" placeholder="Commentaire sur ce critère..." oninput="updateCommentButton('a6'); autoResizeTextarea(this);"></textarea>
+        </div>
+    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="a6" value="2" data-criteria="Médicaments" onchange="updateScore('a', this)" />
+    </div>
+    <div class="checkbox-group" style="visibility: hidden;">
+        <input type="radio" disabled />
+    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="a6" value="0" onchange="updateScore('a', this)" />
+    </div>
+    <div class="points-display" id="points-a6">0</div>
+</div>
+<div class="criteria-row" id="criteria-a7">
+    <div>
+        <div class="criteria-text">7. Hospitalisations et antécédents chirurgicaux <button class="comment-button" onclick="toggleComment('a7')" title="Ajouter un commentaire">📝</button></div>
+<div class="details-with-checkboxes"><div class="detail-row">    <div class="detail-text criteria-detail">Hospitalisations <span class="patient-response">[J'ai eu une chirurgie pour mon genou l'année dernière]</span></div>    <div class="detail-checkboxes">        <label class="detail-checkbox"><input type="checkbox" id="a7-detail-0" value="1" onchange="updateDetailScore('a7', 'a')" /></label>    </div></div><div class="detail-row">    <div class="detail-text criteria-detail">Antécédents chirurgicaux <span class="patient-response">[Seulement le genou]</span></div>    <div class="detail-checkboxes">        <label class="detail-checkbox"><input type="checkbox" id="a7-detail-1" value="1" onchange="updateDetailScore('a7', 'a')" /></label>    </div></div></div>        <div class="criterion-comment-section" id="comment-section-a7">
+            <textarea class="comment-textarea" id="comment-a7" placeholder="Commentaire sur ce critère..." oninput="updateCommentButton('a7'); autoResizeTextarea(this);"></textarea>
+        </div>
+    </div>
+    <div class="checkbox-group"></div>
+    <div class="checkbox-group"></div>
+    <div class="checkbox-group"></div>
+    <div class="points-display" id="points-a7">0</div>
+</div>
+<div class="criteria-row" id="criteria-a8">
+    <div>
+        <div class="criteria-text">8. Contacts malades et antécédents familiaux <button class="comment-button" onclick="toggleComment('a8')" title="Ajouter un commentaire">📝</button></div>
+<div class="details-with-checkboxes"><div class="detail-row">    <div class="detail-text criteria-detail">Contacts malades <span class="patient-response">[Aucun]</span></div>    <div class="detail-checkboxes">        <label class="detail-checkbox"><input type="checkbox" id="a8-detail-0" value="1" onchange="updateDetailScore('a8', 'a')" /></label>    </div></div><div class="detail-row">    <div class="detail-text criteria-detail">Antécédents familiaux <span class="patient-response">[Mon frère aîné a une neurofibromatose]</span></div>    <div class="detail-checkboxes">        <label class="detail-checkbox"><input type="checkbox" id="a8-detail-1" value="1" onchange="updateDetailScore('a8', 'a')" /></label>    </div></div></div>        <div class="criterion-comment-section" id="comment-section-a8">
+            <textarea class="comment-textarea" id="comment-a8" placeholder="Commentaire sur ce critère..." oninput="updateCommentButton('a8'); autoResizeTextarea(this);"></textarea>
+        </div>
+    </div>
+    <div class="checkbox-group"></div>
+    <div class="checkbox-group"></div>
+    <div class="checkbox-group"></div>
+    <div class="points-display" id="points-a8">0</div>
+</div>
+<div class="criteria-row" id="criteria-a9">
+    <div>
+        <div class="criteria-text">9. Habitudes et mode de vie <button class="comment-button" onclick="toggleComment('a9')" title="Ajouter un commentaire">📝</button></div>
+<div class="details-with-checkboxes"><div class="detail-row">    <div class="detail-text criteria-detail">Travail <span class="patient-response">[Je gère un lave-auto]</span></div>    <div class="detail-checkboxes">        <label class="detail-checkbox"><input type="checkbox" id="a9-detail-0" value="1" onchange="updateDetailScore('a9', 'a')" /></label>    </div></div><div class="detail-row">    <div class="detail-text criteria-detail">Domicile <span class="patient-response">[Je vis seul]</span></div>    <div class="detail-checkboxes">        <label class="detail-checkbox"><input type="checkbox" id="a9-detail-1" value="1" onchange="updateDetailScore('a9', 'a')" /></label>    </div></div><div class="detail-row">    <div class="detail-text criteria-detail">Alcool <span class="patient-response">[Seulement les week-ends]</span></div>    <div class="detail-checkboxes">        <label class="detail-checkbox"><input type="checkbox" id="a9-detail-2" value="1" onchange="updateDetailScore('a9', 'a')" /></label>    </div></div><div class="detail-row">    <div class="detail-text criteria-detail">Drogues récréatives <span class="patient-response">[Je fume généralement un joint quand je rentre du travail pour me détendre un peu, je le fais seulement le soir, jamais pendant la journée]</span></div>    <div class="detail-checkboxes">        <label class="detail-checkbox"><input type="checkbox" id="a9-detail-3" value="1" onchange="updateDetailScore('a9', 'a')" /></label>    </div></div><div class="detail-row">    <div class="detail-text criteria-detail">Tabac <span class="patient-response">[Oui. Je fume environ un demi-paquet par jour. Je pense que j'avais 14 ans quand j'ai commencé]</span></div>    <div class="detail-checkboxes">        <label class="detail-checkbox"><input type="checkbox" id="a9-detail-4" value="1" onchange="updateDetailScore('a9', 'a')" /></label>    </div></div></div>        <div class="criterion-comment-section" id="comment-section-a9">
+            <textarea class="comment-textarea" id="comment-a9" placeholder="Commentaire sur ce critère..." oninput="updateCommentButton('a9'); autoResizeTextarea(this);"></textarea>
+        </div>
+    </div>
+    <div class="checkbox-group"></div>
+    <div class="checkbox-group"></div>
+    <div class="checkbox-group"></div>
+    <div class="points-display" id="points-a9">0</div>
+</div>
+                <div style="text-align: center; margin: 15px 0;">
+                    <button class="section-comment-button" onclick="toggleSectionComment('anamnese')" title="Commentaire sur cette section">📝 Commentaire sur la section Anamnèse</button>
+                </div>
+                <div class="section-comment-section" id="section-comment-anamnese">
+                    <h4 style="margin: 0 0 10px 0; color: #2c5aa0; font-size: 16px;">Commentaires sur l'anamnèse</h4>
+                    <textarea class="comment-textarea" id="comment-section-anamnese" placeholder="Commentaire sur la section anamnèse..." oninput="updateSectionComment('anamnese'); autoResizeTextarea(this);"></textarea>
+                </div>
+            </div>
+        </div>
+        <!-- EXAMEN CLINIQUE -->
+        <div class="section">
+            <div class="section-header">
+                <span>Examen clinique (25%)</span>
+                <span class="score">Score : <span id="statusScore">0</span>/18</span>
+            </div>
+            <div class="section-content">
+                <div class="header-row">
+                    <div>Critères</div>
+                    <div>Oui</div>
+                    <div>±</div>
+                    <div>Non</div>
+                    <div>Points</div>
+                </div>
+<div class="criteria-row" id="criteria-e1">
+    <div>
+        <div class="criteria-text">1. Mesures d'hygiène <button class="comment-button" onclick="toggleComment('e1')" title="Ajouter un commentaire">📝</button></div>
+<div class="details-with-checkboxes"><div class="detail-row">    <div class="detail-text criteria-detail">Lavage des mains</div>    <div class="detail-checkboxes">        <label class="detail-checkbox"><input type="checkbox" id="e1-detail-0" value="1" onchange="updateDetailScore('e1', 'e')" /></label>    </div></div><div class="detail-row">    <div class="detail-text criteria-detail">Respect de la pudeur avec drap</div>    <div class="detail-checkboxes">        <label class="detail-checkbox"><input type="checkbox" id="e1-detail-1" value="1" onchange="updateDetailScore('e1', 'e')" /></label>    </div></div></div>        <div class="criterion-comment-section" id="comment-section-e1">
+            <textarea class="comment-textarea" id="comment-e1" placeholder="Commentaire sur ce critère..." oninput="updateCommentButton('e1'); autoResizeTextarea(this);"></textarea>
+        </div>
+    </div>
+    <div class="checkbox-group"></div>
+    <div class="checkbox-group"></div>
+    <div class="checkbox-group"></div>
+    <div class="points-display" id="points-e1">0</div>
+</div>
+<div class="criteria-row" id="criteria-e2">
+    <div>
+        <div class="criteria-text">2. Examen de la tête, yeux, oreilles, nez et gorge <button class="comment-button" onclick="toggleComment('e2')" title="Ajouter un commentaire">📝</button></div>
+<div class="details-with-checkboxes"><div class="detail-row">    <div class="detail-text criteria-detail">Inspection de la tête</div>    <div class="detail-checkboxes">        <label class="detail-checkbox"><input type="checkbox" id="e2-detail-0" value="1" onchange="updateDetailScore('e2', 'e')" /></label>    </div></div><div class="detail-row">    <div class="detail-text criteria-detail">Palpation de la tête</div>    <div class="detail-checkboxes">        <label class="detail-checkbox"><input type="checkbox" id="e2-detail-1" value="1" onchange="updateDetailScore('e2', 'e')" /></label>    </div></div><div class="detail-row">    <div class="detail-text criteria-detail">Inspection des oreilles <span class="patient-response">[Montrer l'image de l'herpès zoster oticus]</span></div>    <div class="detail-checkboxes">        <label class="detail-checkbox"><input type="checkbox" id="e2-detail-2" value="1" onchange="updateDetailScore('e2', 'e')" /></label>    </div></div><div class="detail-row">    <div class="detail-text criteria-detail">Palpation des oreilles <span class="patient-response">[Oreille droite sensible à la palpation]</span></div>    <div class="detail-checkboxes">        <label class="detail-checkbox"><input type="checkbox" id="e2-detail-3" value="1" onchange="updateDetailScore('e2', 'e')" /></label>    </div></div><div class="detail-row">    <div class="detail-text criteria-detail">Otoscopie</div>    <div class="detail-checkboxes">        <label class="detail-checkbox"><input type="checkbox" id="e2-detail-4" value="1" onchange="updateDetailScore('e2', 'e')" /></label>    </div></div></div>        <div class="criterion-comment-section" id="comment-section-e2">
+            <textarea class="comment-textarea" id="comment-e2" placeholder="Commentaire sur ce critère..." oninput="updateCommentButton('e2'); autoResizeTextarea(this);"></textarea>
+        </div>
+    </div>
+    <div class="checkbox-group"></div>
+    <div class="checkbox-group"></div>
+    <div class="checkbox-group"></div>
+    <div class="points-display" id="points-e2">0</div>
+</div>
+<div class="criteria-row" id="criteria-e3">
+    <div>
+        <div class="criteria-text">3. Tests auditifs <button class="comment-button" onclick="toggleComment('e3')" title="Ajouter un commentaire">📝</button></div>
+<div class="details-with-checkboxes"><div class="detail-row">    <div class="detail-text criteria-detail">Test de Rinne et test de Weber <span class="patient-response">[Rinne : positif bilatéralement, Weber : latéralisation à l'oreille gauche]</span></div>    <div class="detail-checkboxes">        <label class="detail-checkbox"><input type="checkbox" id="e3-detail-0" value="1" onchange="updateDetailScore('e3', 'e')" /></label>    </div></div><div class="detail-row">    <div class="detail-text criteria-detail">Test de Dix-Hallpike</div>    <div class="detail-checkboxes">        <label class="detail-checkbox"><input type="checkbox" id="e3-detail-1" value="1" onchange="updateDetailScore('e3', 'e')" /></label>    </div></div></div>        <div class="criterion-comment-section" id="comment-section-e3">
+            <textarea class="comment-textarea" id="comment-e3" placeholder="Commentaire sur ce critère..." oninput="updateCommentButton('e3'); autoResizeTextarea(this);"></textarea>
+        </div>
+    </div>
+    <div class="checkbox-group"></div>
+    <div class="checkbox-group"></div>
+    <div class="checkbox-group"></div>
+    <div class="points-display" id="points-e3">0</div>
+</div>
+<div class="criteria-row" id="criteria-e4">
+    <div>
+        <div class="criteria-text">4. Examen neurologique <button class="comment-button" onclick="toggleComment('e4')" title="Ajouter un commentaire">📝</button></div>
+<div class="details-with-checkboxes"><div class="detail-row">    <div class="detail-text criteria-detail">Examen ciblé des nerfs crâniens</div>    <div class="detail-checkboxes">        <label class="detail-checkbox"><input type="checkbox" id="e4-detail-0" value="1" onchange="updateDetailScore('e4', 'e')" /></label>    </div></div><div class="detail-row">    <div class="detail-text criteria-detail">Examen ciblé de l'audition <span class="patient-response">[Audition diminuée à droite]</span></div>    <div class="detail-checkboxes">        <label class="detail-checkbox"><input type="checkbox" id="e4-detail-1" value="1" onchange="updateDetailScore('e4', 'e')" /></label>    </div></div><div class="detail-row">    <div class="detail-text criteria-detail">Examen ciblé des mouvements passifs et actifs</div>    <div class="detail-checkboxes">        <label class="detail-checkbox"><input type="checkbox" id="e4-detail-2" value="1" onchange="updateDetailScore('e4', 'e')" /></label>    </div></div><div class="detail-row">    <div class="detail-text criteria-detail">Examen ciblé de la sensibilité</div>    <div class="detail-checkboxes">        <label class="detail-checkbox"><input type="checkbox" id="e4-detail-3" value="1" onchange="updateDetailScore('e4', 'e')" /></label>    </div></div><div class="detail-row">    <div class="detail-text criteria-detail">Examen ciblé des réflexes ostéotendineux</div>    <div class="detail-checkboxes">        <label class="detail-checkbox"><input type="checkbox" id="e4-detail-4" value="1" onchange="updateDetailScore('e4', 'e')" /></label>    </div></div><div class="detail-row">    <div class="detail-text criteria-detail">Examen ciblé de la marche</div>    <div class="detail-checkboxes">        <label class="detail-checkbox"><input type="checkbox" id="e4-detail-5" value="1" onchange="updateDetailScore('e4', 'e')" /></label>    </div></div><div class="detail-row">    <div class="detail-text criteria-detail">Test d'alternance rapide des mouvements</div>    <div class="detail-checkboxes">        <label class="detail-checkbox"><input type="checkbox" id="e4-detail-6" value="1" onchange="updateDetailScore('e4', 'e')" /></label>    </div></div><div class="detail-row">    <div class="detail-text criteria-detail">Test doigt-nez</div>    <div class="detail-checkboxes">        <label class="detail-checkbox"><input type="checkbox" id="e4-detail-7" value="1" onchange="updateDetailScore('e4', 'e')" /></label>    </div></div><div class="detail-row">    <div class="detail-text criteria-detail">Test de Romberg <span class="patient-response">[Positif]</span></div>    <div class="detail-checkboxes">        <label class="detail-checkbox"><input type="checkbox" id="e4-detail-8" value="1" onchange="updateDetailScore('e4', 'e')" /></label>    </div></div></div>        <div class="criterion-comment-section" id="comment-section-e4">
+            <textarea class="comment-textarea" id="comment-e4" placeholder="Commentaire sur ce critère..." oninput="updateCommentButton('e4'); autoResizeTextarea(this);"></textarea>
+        </div>
+    </div>
+    <div class="checkbox-group"></div>
+    <div class="checkbox-group"></div>
+    <div class="checkbox-group"></div>
+    <div class="points-display" id="points-e4">0</div>
+</div>
+                <div style="text-align: center; margin: 15px 0;">
+                    <button class="section-comment-button" onclick="toggleSectionComment('examen')" title="Commentaire sur cette section">📝 Commentaire sur la section Examen</button>
+                </div>
+                <div class="section-comment-section" id="section-comment-examen">
+                    <h4 style="margin: 0 0 10px 0; color: #2c5aa0; font-size: 16px;">Commentaires sur l'examen clinique</h4>
+                    <textarea class="comment-textarea" id="comment-section-examen" placeholder="Commentaire sur la section examen clinique..." oninput="updateSectionComment('examen'); autoResizeTextarea(this);"></textarea>
+                </div>
+            </div>
+        </div>
+        <!-- MANAGEMENT -->
+        <div class="section">
+            <div class="section-header">
+                <span>Management (25%)</span>
+                <span class="score">Score : <span id="managementScore">0</span>/12</span>
+            </div>
+            <div class="section-content">
+                <div class="header-row">
+                    <div>Critères</div>
+                    <div>Oui</div>
+                    <div>±</div>
+                    <div>Non</div>
+                    <div>Points</div>
+                </div>
+<div class="criteria-row" id="criteria-m1">
+    <div>
+        <div class="criteria-text">1. Hypothèses diagnostiques <button class="comment-button" onclick="toggleComment('m1')" title="Ajouter un commentaire">📝</button></div>
+<div class="scoring-rule">2 points si au moins 2 diagnostics pertinents mentionnés, 1 point si 1 diagnostic</div>        <div class="criterion-comment-section" id="comment-section-m1">
+            <textarea class="comment-textarea" id="comment-m1" placeholder="Commentaire sur ce critère..." oninput="updateCommentButton('m1'); autoResizeTextarea(this);"></textarea>
+        </div>
+    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="m1" value="2" data-criteria="Hypothèses diagnostiques" onchange="updateScore('m', this)" />
+    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="m1" value="1" onchange="updateScore('m', this)" />
+    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="m1" value="0" onchange="updateScore('m', this)" />
+    </div>
+    <div class="points-display" id="points-m1">0</div>
+</div>
+<div class="dd-section">
+    <div class="dd-title">Diagnostics différentiels à considérer</div>
+    <div class="dd-category">Causes otologiques prioritaires</div>
+    <div class="dd-item">• Zona auriculaire (syndrome de Ramsay Hunt) <span class="dd-test">→ Audiométrie tonale (confirme surdité neurosensorielle)</span></div>
+    <div class="dd-causes" style="margin-left: 40px; color: rgb(80, 90, 110); font-size: 0.9em;"><strong>Arguments POUR:</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;□ IVRS la semaine précédente → immunosuppression → réactivation VZV<br>&nbsp;&nbsp;&nbsp;&nbsp;□ Vertiges, perte auditive, sensibilité et prurit du pavillon<br>&nbsp;&nbsp;&nbsp;&nbsp;□ Fébricule présent<br>&nbsp;&nbsp;&nbsp;&nbsp;□ Lésions herpétiques caractéristiques (vésicules groupées sur base érythémateuse)<br>&nbsp;&nbsp;&nbsp;&nbsp;□ Atteinte du nerf vestibulo-cochléaire (VIII)<br>&nbsp;&nbsp;&nbsp;&nbsp;□ Test de Weber latéralisé à gauche = surdité neurosensorielle droite</div>
+    <div class="dd-item">• Maladie de Ménière <span class="dd-test">→ Audiométrie (perte auditive basses fréquences dans Ménière)</span></div>
+    <div class="dd-causes" style="margin-left: 40px; color: rgb(80, 90, 110); font-size: 0.9em;"><strong>Arguments POUR:</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;□ Triade : vertiges, acouphènes, perte auditive<br>&nbsp;&nbsp;&nbsp;&nbsp;□ Symptômes cochléaires présents<br>&nbsp;&nbsp;&nbsp;&nbsp;□ Test de Romberg positif<br>Contre : Âge jeune (typiquement 40-60 ans) ; épisodes paroxystiques attendus ; lésions herpétiques du pavillon rendent zona plus probable</div>
+    <div class="dd-category">Causes vestibulaires</div>
+    <div class="dd-item">• Névrite vestibulaire <span class="dd-test">→ Test calorique vestibulaire</span></div>
+    <div class="dd-causes" style="margin-left: 40px; color: rgb(80, 90, 110); font-size: 0.9em;"><strong>Arguments POUR:</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;□ Vertiges sévères et nausées<br>&nbsp;&nbsp;&nbsp;&nbsp;□ Association possible avec IVRS<br>Contre : Instabilité de la marche attendue ; absence de symptômes cochléaires (perte auditive, acouphènes) qui sont présents ici</div>
+    <div class="dd-category">Autres causes à considérer</div>
+    <div class="dd-item">• Vertige positionnel paroxystique bénin <span class="dd-test">→ Dix-Hallpike positif avec nystagmus</span></div>
+    <div class="dd-causes" style="margin-left: 40px; color: rgb(80, 90, 110); font-size: 0.9em;">Vertiges brefs déclenchés par mouvements tête</div>
+    <div class="dd-item">• Migraine vestibulaire <span class="dd-test">→ Diagnostic d'exclusion</span></div>
+    <div class="dd-causes" style="margin-left: 40px; color: rgb(80, 90, 110); font-size: 0.9em;">ATCD migraines, vertiges récurrents</div>
+    <div class="dd-item">• Neurinome acoustique <span class="dd-test">→ IRM avec gadolinium</span></div>
+    <div class="dd-causes" style="margin-left: 40px; color: rgb(80, 90, 110); font-size: 0.9em;">ATCD familial neurofibromatose (risque NF2)</div>
+</div>
+<div class="criteria-row" id="criteria-m2">
+    <div>
+        <div class="criteria-text">2. Examens complémentaires <button class="comment-button" onclick="toggleComment('m2')" title="Ajouter un commentaire">📝</button></div>
+<div class="details-with-checkboxes"><div class="detail-row">    <div class="detail-text criteria-detail">Audiométrie tonale <span class="patient-response">[pour exclure une surdité neurosensorielle dans le zona auriculaire. Une perte auditive des basses fréquences serait observée dans la maladie de Ménière]</span></div>    <div class="detail-checkboxes">        <label class="detail-checkbox"><input type="checkbox" id="m2-detail-0" value="1" onchange="updateDetailScore('m2', 'm')" /></label>    </div></div><div class="detail-row">    <div class="detail-text criteria-detail">Potentiels évoqués auditifs du tronc cérébral <span class="patient-response">[pour exclure une lésion du système nerveux central]</span></div>    <div class="detail-checkboxes">        <label class="detail-checkbox"><input type="checkbox" id="m2-detail-1" value="1" onchange="updateDetailScore('m2', 'm')" /></label>    </div></div></div>        <div class="criterion-comment-section" id="comment-section-m2">
+            <textarea class="comment-textarea" id="comment-m2" placeholder="Commentaire sur ce critère..." oninput="updateCommentButton('m2'); autoResizeTextarea(this);"></textarea>
+        </div>
+    </div>
+    <div class="checkbox-group"></div>
+    <div class="checkbox-group"></div>
+    <div class="checkbox-group"></div>
+    <div class="points-display" id="points-m2">0</div>
+</div>
+<div class="criteria-row" id="criteria-m3">
+    <div>
+        <div class="criteria-text">3. Communication avec le patient <button class="comment-button" onclick="toggleComment('m3')" title="Ajouter un commentaire">📝</button></div>
+<div class="details-with-checkboxes"><div class="detail-row">    <div class="detail-text criteria-detail">Explications au patient des impressions diagnostiques préliminaires</div>    <div class="detail-checkboxes">        <label class="detail-checkbox"><input type="checkbox" id="m3-detail-0" value="1" onchange="updateDetailScore('m3', 'm')" /></label>    </div></div><div class="detail-row">    <div class="detail-text criteria-detail">Explication du plan de prise en charge</div>    <div class="detail-checkboxes">        <label class="detail-checkbox"><input type="checkbox" id="m3-detail-1" value="1" onchange="updateDetailScore('m3', 'm')" /></label>    </div></div><div class="detail-row">    <div class="detail-text criteria-detail">Utilisation d'un langage non médical et clarification des termes médicaux</div>    <div class="detail-checkboxes">        <label class="detail-checkbox"><input type="checkbox" id="m3-detail-2" value="1" onchange="updateDetailScore('m3', 'm')" /></label>    </div></div><div class="detail-row">    <div class="detail-text criteria-detail">Évaluation de l'accord du patient avec le plan diagnostique</div>    <div class="detail-checkboxes">        <label class="detail-checkbox"><input type="checkbox" id="m3-detail-3" value="1" onchange="updateDetailScore('m3', 'm')" /></label>    </div></div><div class="detail-row">    <div class="detail-text criteria-detail">Recherche des préoccupations et questions du patient</div>    <div class="detail-checkboxes">        <label class="detail-checkbox"><input type="checkbox" id="m3-detail-4" value="1" onchange="updateDetailScore('m3', 'm')" /></label>    </div></div></div>        <div class="criterion-comment-section" id="comment-section-m3">
+            <textarea class="comment-textarea" id="comment-m3" placeholder="Commentaire sur ce critère..." oninput="updateCommentButton('m3'); autoResizeTextarea(this);"></textarea>
+        </div>
+    </div>
+    <div class="checkbox-group"></div>
+    <div class="checkbox-group"></div>
+    <div class="checkbox-group"></div>
+    <div class="points-display" id="points-m3">0</div>
+</div>
+<div class="criteria-row" id="criteria-m4">
+    <div>
+        <div class="criteria-text">4. Conseil et soutien <button class="comment-button" onclick="toggleComment('m4')" title="Ajouter un commentaire">📝</button></div>
+<div class="details-with-checkboxes"><div class="detail-row">    <div class="detail-text criteria-detail">Conseil sur les drogues récréatives</div>    <div class="detail-checkboxes">        <label class="detail-checkbox"><input type="checkbox" id="m4-detail-0" value="1" onchange="updateDetailScore('m4', 'm')" /></label>    </div></div><div class="detail-row">    <div class="detail-text criteria-detail">Conseil sur l'arrêt du tabac</div>    <div class="detail-checkboxes">        <label class="detail-checkbox"><input type="checkbox" id="m4-detail-1" value="1" onchange="updateDetailScore('m4', 'm')" /></label>    </div></div><div class="detail-row">    <div class="detail-text criteria-detail">Réaction appropriée au défi concernant le départ</div>    <div class="detail-checkboxes">        <label class="detail-checkbox"><input type="checkbox" id="m4-detail-2" value="1" onchange="updateDetailScore('m4', 'm')" /></label>    </div></div></div>        <div class="therapy-section">
+            <div class="therapy-title">Prise en charge selon diagnostic</div>
+            <div><span style="margin-left: 10px;">•</span> Si zona auriculaire (Ramsay Hunt) confirmé :<br />
+            <span style="margin-left: 10px;">•</span> Traitement antiviral urgent (< 72h) :<br />
+              - Valacyclovir 1000 mg × 3/j × 7-10j PO<br />
+              - Ou acyclovir 800 mg × 5/j × 7-10j PO<br />
+              - IV si sévère : acyclovir 10 mg/kg × 3/j<br />
+            <span style="margin-left: 10px;">•</span> Corticothérapie associée :<br />
+              - Prednisone 60-80 mg/j × 5j<br />
+              - Puis décroissance sur 5-7j<br />
+              - Améliore pronostic paralysie faciale<br />
+            <span style="margin-left: 10px;">•</span> Traitement symptomatique :<br />
+              - Antivertigineux : méclizine 25-50 mg × 3/j<br />
+              - Antiémétiques : ondansétron 4-8 mg si besoin<br />
+              - Analgésiques : paracétamol ± tramadol<br />
+              - Protection oculaire si paralysie faciale<br />
+            <span style="margin-left: 10px;">•</span> Soins locaux :<br />
+              - Pas de manipulation oreille<br />
+              - Éviter eau dans oreille<br />
+              - Surveillance surinfection<br />
+            <span style="margin-left: 10px;">•</span> Si maladie de Ménière :<br />
+            <span style="margin-left: 10px;">•</span> Crise aiguë :<br />
+              - Repos au calme, position confortable<br />
+              - Diazépam 5-10 mg IV/IM<br />
+              - Antiémétiques : prométhazine 25 mg<br />
+              - Réhydratation si vomissements<br />
+            <span style="margin-left: 10px;">•</span> Traitement de fond :<br />
+              - Régime hyposodé < 2g/j<br />
+              - Diurétiques : hydrochlorothiazide 25 mg/j<br />
+              - Bétahistine 16-24 mg × 2/j<br />
+              - Éviter caféine, alcool, stress<br />
+            <span style="margin-left: 10px;">•</span> Si échec médical :<br />
+              - Injection intratympanique corticoïdes<br />
+              - Gentamicine intratympanique (chimique)<br />
+              - Chirurgie : décompression sac endolymphatique<br />
+            <span style="margin-left: 10px;">•</span> Si névrite vestibulaire :<br />
+            <span style="margin-left: 10px;">•</span> Phase aiguë :<br />
+              - Repos strict 24-48h<br />
+              - Antivertigineux courte durée (3-5j max)<br />
+              - Corticoïdes : méthylprednisolone 100 mg/j × 3j<br />
+            <span style="margin-left: 10px;">•</span> Rééducation vestibulaire précoce :<br />
+              - Débuter dès amélioration (J3-5)<br />
+              - Exercices de stabilisation regard<br />
+              - Habituation aux mouvements<br />
+              - Compensation centrale<br />
+            <span style="margin-left: 10px;">•</span> Conseils généraux vertiges :<br />
+              - Éviter mouvements brusques tête<br />
+              - Se lever lentement<br />
+              - Éclairage suffisant la nuit<br />
+              - Rampes et barres d'appui<br />
+              - Pas de conduite si vertiges actifs<br />
+              - Arrêt travail si métier à risque</div>
+        </div>
+        <div class="redflags-section">
+            <div class="redflags-title">⚠️ Signes d'alarme et complications</div>
+            <div class="redflags-item">
+                <div class="redflags-text">1. Paralysie faciale</div>
+                <div class="redflags-description">Zona = risque 60% → corticoïdes urgents</div>
+            </div>
+            <div class="redflags-item">
+                <div class="redflags-text">2. Surdité définitive</div>
+                <div class="redflags-description">Retard traitement > 72h → séquelles auditives</div>
+            </div>
+            <div class="redflags-item">
+                <div class="redflags-text">3. Névralgie post-zostérienne</div>
+                <div class="redflags-description">Douleur chronique → gabapentine, amitriptyline</div>
+            </div>
+            <div class="redflags-item">
+                <div class="redflags-text">4. Extension méningée</div>
+                <div class="redflags-description">Céphalées, raideur nuque → PL urgente</div>
+            </div>
+            <div class="redflags-item">
+                <div class="redflags-text">5. Schwannome vestibulaire</div>
+                <div class="redflags-description">ATCD familial NF → IRM systématique</div>
+            </div>
+        </div>
+        <div class="criterion-comment-section" id="comment-section-m4">
+            <textarea class="comment-textarea" id="comment-m4" placeholder="Commentaire sur ce critère..." oninput="updateCommentButton('m4'); autoResizeTextarea(this);"></textarea>
+        </div>
+    </div>
+    <div class="checkbox-group"></div>
+    <div class="checkbox-group"></div>
+    <div class="checkbox-group"></div>
+    <div class="points-display" id="points-m4">0</div>
+</div>
+                <div style="text-align: center; margin: 15px 0;">
+                    <button class="section-comment-button" onclick="toggleSectionComment('management')" title="Commentaire sur cette section">📝 Commentaire sur la section Management</button>
+                </div>
+                <div class="section-comment-section" id="section-comment-management">
+                    <h4 style="margin: 0 0 10px 0; color: #2c5aa0; font-size: 16px;">Commentaires sur le management</h4>
+                    <textarea class="comment-textarea" id="comment-section-management" placeholder="Commentaire sur la section management..." oninput="updateSectionComment('management'); autoResizeTextarea(this);"></textarea>
+                </div>
+            </div>
+        </div>
+        <!-- CLÔTURE -->
+        <div class="section cloture-section">
+            <div class="section-header">
+                <span>Clôture de consultation</span>
+            </div>
+            <div class="section-content">
+                <div class="cloture-item">
+                    <h4 class="cloture-title">Défi : Interruption et volonté de partir</h4>
+                    <div class="cloture-content">[Pourquoi avez-vous besoin de savoir tout ça ? Je pense que venir ici était une erreur. Je devrais partir. Je dois rentrer chez moi pour mes chats - quelqu'un doit les nourrir.]</div>
+                </div>
+                <div class="cloture-item">
+                    <h4 class="cloture-title">Réponse type du candidat</h4>
+                    <div class="cloture-content cloture-content-green">M. Potter, je comprends que vous êtes inquiet pour vos chats, mais vous avez pris la bonne décision aujourd'hui en venant me voir. Il est important que je pose toutes ces questions afin de mieux comprendre ce qui cause vos symptômes pour que nous puissions vous traiter correctement. J'aimerais vous poser juste quelques questions de plus et vous examiner avant que vous partiez. Je serais heureux d'appeler quelqu'un pour vous qui pourrait s'occuper de vos chats, comme un ami ou un parent. Cependant, en tant que votre médecin, c'est mon travail de vous maintenir dans la meilleure santé possible, et pour cela je dois exclure toute condition qui pourrait affecter votre audition de façon permanente avant de vous renvoyer chez vous. Comment vous sentez-vous par rapport à cela ?</div>
+                </div>
+            </div>
+        </div>
+        <!-- COMMUNICATION -->
+        <div class="section communication-section-container">
+            <div class="section-header">
+                <span>Communication (25%)</span>
+                <span class="score">Score : <span id="communicationScore">0</span>/20</span>
+            </div>
+            <div class="section-content">
+                <div class="header-row communication-header">
+                    <div>Critères</div>
+                    <div>A</div>
+                    <div>B</div>
+                    <div>C</div>
+                    <div>D</div>
+                    <div>E</div>
+                </div>
+                <div class="communication-section" id="criteria-c1">
+                    <div>
+                        <div class="communication-text">1. Réponse aux sentiments et besoins du patient <button class="comment-button" onclick="toggleComment('c1')" title="Ajouter un commentaire">📝</button></div>
+                        <div class="communication-desc">Empathie, écoute active, validation des émotions<br />
+Explique le déroulement de la consultation et vérifie les préoccupations du patient, commence l'anamnèse par une question ouverte ; reconnaît, verbalise et légitime les émotions, fournit du soutient</div>
+                        <div class="criterion-comment-section" id="comment-section-c1">
+                            <textarea class="comment-textarea" id="comment-c1" placeholder="Commentaire sur ce critère..." oninput="updateCommentButton('c1'); autoResizeTextarea(this);"></textarea>
+                        </div>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="radio" name="c1" value="A" data-criteria="Réponse aux sentiments du patient" onchange="updateScore('communication', this)" />
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="radio" name="c1" value="B" data-criteria="Réponse aux sentiments du patient" onchange="updateScore('communication', this)" />
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="radio" name="c1" value="C" data-criteria="Réponse aux sentiments du patient" onchange="updateScore('communication', this)" />
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="radio" name="c1" value="D" data-criteria="Réponse aux sentiments du patient" onchange="updateScore('communication', this)" />
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="radio" name="c1" value="E" data-criteria="Réponse aux sentiments du patient" onchange="updateScore('communication', this)" />
+                    </div>
+                </div>
+                <div class="communication-section" id="criteria-c2">
+                    <div>
+                        <div class="communication-text">2. Structure de l'entretien <button class="comment-button" onclick="toggleComment('c2')" title="Ajouter un commentaire">📝</button></div>
+                        <div class="communication-desc">Organisation logique, transitions fluides, gestion du temps<br />
+Se présente par son nom et sa fonction, les étapes de l'entretien sont identifiables et s'enchaînent de manière logique, gestion du temps, adaptation à la situation</div>
+                        <div class="criterion-comment-section" id="comment-section-c2">
+                            <textarea class="comment-textarea" id="comment-c2" placeholder="Commentaire sur ce critère..." oninput="updateCommentButton('c2'); autoResizeTextarea(this);"></textarea>
+                        </div>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="radio" name="c2" value="A" data-criteria="Structure de l'entretien" onchange="updateScore('communication', this)" />
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="radio" name="c2" value="B" data-criteria="Structure de l'entretien" onchange="updateScore('communication', this)" />
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="radio" name="c2" value="C" data-criteria="Structure de l'entretien" onchange="updateScore('communication', this)" />
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="radio" name="c2" value="D" data-criteria="Structure de l'entretien" onchange="updateScore('communication', this)" />
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="radio" name="c2" value="E" data-criteria="Structure de l'entretien" onchange="updateScore('communication', this)" />
+                    </div>
+                </div>
+                <div class="communication-section" id="criteria-c3">
+                    <div>
+                        <div class="communication-text">3. Expression verbale <button class="comment-button" onclick="toggleComment('c3')" title="Ajouter un commentaire">📝</button></div>
+                        <div class="communication-desc">Clarté, vocabulaire adapté, vérification de la compréhension<br />
+Langage adapté au niveau du patient, pas de jargon, explications compréhensibles, reformulations quand nécessaire, répétitions des points clés, fait une synthèse de la consultation, bonne articulation, ton et volume adéquats</div>
+                        <div class="criterion-comment-section" id="comment-section-c3">
+                            <textarea class="comment-textarea" id="comment-c3" placeholder="Commentaire sur ce critère..." oninput="updateCommentButton('c3'); autoResizeTextarea(this);"></textarea>
+                        </div>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="radio" name="c3" value="A" data-criteria="Expression verbale" onchange="updateScore('communication', this)" />
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="radio" name="c3" value="B" data-criteria="Expression verbale" onchange="updateScore('communication', this)" />
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="radio" name="c3" value="C" data-criteria="Expression verbale" onchange="updateScore('communication', this)" />
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="radio" name="c3" value="D" data-criteria="Expression verbale" onchange="updateScore('communication', this)" />
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="radio" name="c3" value="E" data-criteria="Expression verbale" onchange="updateScore('communication', this)" />
+                    </div>
+                </div>
+                <div class="communication-section" id="criteria-c4">
+                    <div>
+                        <div class="communication-text">4. Expression non verbale <button class="comment-button" onclick="toggleComment('c4')" title="Ajouter un commentaire">📝</button></div>
+                        <div class="communication-desc">Contact visuel, posture, gestuelle appropriée<br />
+Distance interpersonnelle adéquate, posture adéquate, gestes adéquats, contact visuel et expression faciale adéquats, pauses quand nécessaire</div>
+                        <div class="criterion-comment-section" id="comment-section-c4">
+                            <textarea class="comment-textarea" id="comment-c4" placeholder="Commentaire sur ce critère..." oninput="updateCommentButton('c4'); autoResizeTextarea(this);"></textarea>
+                        </div>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="radio" name="c4" value="A" data-criteria="Expression non verbale" onchange="updateScore('communication', this)" />
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="radio" name="c4" value="B" data-criteria="Expression non verbale" onchange="updateScore('communication', this)" />
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="radio" name="c4" value="C" data-criteria="Expression non verbale" onchange="updateScore('communication', this)" />
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="radio" name="c4" value="D" data-criteria="Expression non verbale" onchange="updateScore('communication', this)" />
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="radio" name="c4" value="E" data-criteria="Expression non verbale" onchange="updateScore('communication', this)" />
+                    </div>
+                </div>
+                <div class="communication-section" id="criteria-c5">
+                    <div>
+                        <div class="communication-text">5. Évaluation générale de la communication <button class="comment-button" onclick="toggleComment('c5')" title="Ajouter un commentaire">📝</button></div>
+                        <div class="communication-desc">Qualité globale de l'interaction médecin-patient</div>
+                        <div class="criterion-comment-section" id="comment-section-c5">
+                            <textarea class="comment-textarea" id="comment-c5" placeholder="Commentaire sur ce critère..." oninput="updateCommentButton('c5'); autoResizeTextarea(this);"></textarea>
+                        </div>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="radio" name="c5" value="A" data-criteria="Évaluation générale" onchange="updateScore('communication', this)" />
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="radio" name="c5" value="B" data-criteria="Évaluation générale" onchange="updateScore('communication', this)" />
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="radio" name="c5" value="C" data-criteria="Évaluation générale" onchange="updateScore('communication', this)" />
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="radio" name="c5" value="D" data-criteria="Évaluation générale" onchange="updateScore('communication', this)" />
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="radio" name="c5" value="E" data-criteria="Évaluation générale" onchange="updateScore('communication', this)" />
+                    </div>
+                </div>
+                <div style="text-align: center; margin: 15px 0;">
+                    <button class="section-comment-button" onclick="toggleSectionComment('communication')" title="Commentaire sur cette section">📝 Commentaire sur la section Communication</button>
+                </div>
+                <div class="section-comment-section" id="section-comment-communication">
+                    <h4 style="margin: 0 0 10px 0; color: #2c5aa0; font-size: 16px;">Commentaires sur la communication</h4>
+                    <textarea class="comment-textarea" id="comment-section-communication" placeholder="Commentaire sur la section communication..." oninput="updateSectionComment('communication'); autoResizeTextarea(this);"></textarea>
+                </div>
+            </div>
+        </div>
+        <!-- TOTAUX -->
+        <div class="total-sections">
+            <div class="total-section">
+                <div class="total-label">Score Global</div>
+                <div class="total-body">
+                    <div class="total-score" id="totalScore">0/88</div>
+                </div>
+            </div>
+            <div class="total-section">
+                <div class="total-label">% par Section</div>
+                <div class="total-pourcent-body">
+                    <div class="total-pourcent-sections">
+                        <div class="total-pourcent-section">
+                            <div class="total-section-label">Anamnèse</div>
+                            <div class="pourcent-body">
+                                <div class="total-pourcent-value"><span id="anamnese-percentage">0</span>%</div>
+                            </div>
+                        </div>
+                        <div class="total-pourcent-section">
+                            <div class="total-section-label">Examen clinique</div>
+                            <div class="pourcent-body">
+                                <div class="total-pourcent-value"><span id="examen-percentage">0</span>%</div>
+                            </div>
+                        </div>
+                        <div class="total-pourcent-section">
+                            <div class="total-section-label">Management</div>
+                            <div class="pourcent-body">
+                                <div class="total-pourcent-value"><span id="management-percentage">0</span>%</div>
+                            </div>
+                        </div>
+                        <div class="total-pourcent-section">
+                            <div class="total-section-label">Communication</div>
+                            <div class="pourcent-body">
+                                <div class="total-pourcent-value"><span id="communication-percentage">0</span>%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="total-section">
+                <div class="total-label">Note Globale</div>
+                <div class="total-body">
+                    <div class="total-note-globale" id="globalGrade">E</div>
+                </div>
+            </div>
+        </div>
+        <!-- ÉCHELLE DE NOTATION -->
+        <div class="grade-scale" style="padding: 10px 15px; background: #f8f9fa; border-radius: 8px;">
+            <h3 style="margin: 0 0 10px 0; font-size: 16px;">Échelle de notation</h3>
+            <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; text-align: center;">
+                <div>
+                    <div style="font-weight: bold; font-size: 24px; color: #2c974b;">A</div>
+                    <div style="font-size: 12px; color: #666;">≥90%</div>
+                </div>
+                <div>
+                    <div style="font-weight: bold; font-size: 24px; color: #4e9cf0;">B</div>
+                    <div style="font-size: 12px; color: #666;">80-89%</div>
+                </div>
+                <div>
+                    <div style="font-weight: bold; font-size: 24px; color: #f0ad4e;">C</div>
+                    <div style="font-size: 12px; color: #666;">70-79%</div>
+                </div>
+                <div>
+                    <div style="font-weight: bold; font-size: 24px; color: #e67e22;">D</div>
+                    <div style="font-size: 12px; color: #666;">60-69%</div>
+                </div>
+                <div>
+                    <div style="font-weight: bold; font-size: 24px; color: #d9534f;">E</div>
+                    <div style="font-size: 12px; color: #666;">&lt;60%</div>
+                </div>
+            </div>
+        </div>
+        <!-- ÉLÉMENTS MANQUANTS (MASQUÉS) -->
+        <!-- <div class="missing-items" id="missingItems" style="display: none;">
+            <h3>Éléments non évalués</h3>
+            <div id="missingList"></div>
+        </div> -->
+<div class="annexes">
+<h3>Annexes</h3>
+<div class="annexes-grid">
+<div class="annexe-item">
+    <div class="annexe-title">Tests de Rinne et Weber au diapason</div>
+    <div class="annexe-description">(1) Test de Weber : Un diapason vibrant est placé au centre du crâne.<br>On demande ensuite au patient de quelle oreille le son est entendu le plus fort.<br>Si le son est plus fort dans une oreille, le test de Rinne doit être effectué sur les oreilles droite et gauche.<br>(2) Le diapason vibrant est placé sur le processus mastoïde de l'oreille, qui peut être localisé en palpant derrière le conduit auditif.<br>(3) Si le ton diminue au point que le patient ne peut plus l'entendre, le diapason est positionné devant la même oreille sans le faire vibrer à nouveau.<br>Dans une audition normale, le patient est capable d'entendre le diapason, car la conduction aérienne est supérieure à la conduction osseuse (le test de Rinne est positif).<br>Les tests de Rinne et Weber peuvent être utilisés pour différencier entre la perte auditive de conduction et neurosensorielle.</div>
+    <div class="annexe-image">
+        <img src="/Users/damienfulliquet/Documents/-Medecine/-EXAMEN_FEDERAL/-ECOS_2025/-SSP/Cas cliniques traduits/Traduits/HTML/grilles_generees/html/images/AMBOSS-40-img1-Rinne and Weber tuning fork tests.jpg" alt="Tests de Rinne et Weber au diapason" />
+    </div>
+</div>
+<div class="annexe-item">
+    <div class="annexe-title">Zona auriculaire (Herpes zoster oticus)</div>
+    <div class="annexe-description">Plusieurs vésicules groupées remplies de liquide clair sont visibles sur l'oreille.<br>L'aspect antérieur de l'hélix est partiellement croûteux.<br>C'est l'apparence typique du zona auriculaire (herpes zoster oticus).<br>La constatation supplémentaire d'une paralysie unilatérale du nerf facial est diagnostique du syndrome de Ramsay Hunt.</div>
+    <div class="annexe-image">
+        <img src="/Users/damienfulliquet/Documents/-Medecine/-EXAMEN_FEDERAL/-ECOS_2025/-SSP/Cas cliniques traduits/Traduits/HTML/grilles_generees/html/images/AMBOSS-40-img2-Herpes zoster oticus.jpg" alt="Zona auriculaire (Herpes zoster oticus)" />
+    </div>
+</div>
+<div class="annexe-item">
+    <div class="annexe-title">Examen et anatomie de surface de la membrane tympanique</div>
+    <div class="annexe-description">Schéma illustrant l'examen otoscopique et l'anatomie de surface de la membrane tympanique, montrant les différents quadrants et repères anatomiques visibles à l'examen.</div>
+    <div class="annexe-image">
+        <img src="/Users/damienfulliquet/Documents/-Medecine/-EXAMEN_FEDERAL/-ECOS_2025/-SSP/Cas cliniques traduits/Traduits/HTML/grilles_generees/html/images/AMBOSS-40-img3-Examination and surface anatomy of the tympanic membrane.jpg" alt="Examen et anatomie de surface de la membrane tympanique" />
+    </div>
+</div>
+<div class="annexe-item">
+    <div class="annexe-title">Membrane tympanique saine</div>
+    <div class="annexe-description">Photographie otoscopique de la membrane tympanique gauche.<br>La membrane tympanique est vue comme un disque ovoïde translucide gris perlé à l'extrémité du conduit auditif externe.<br>Elle peut être grossièrement divisée en deux parties : la petite et flasque pars flaccida (PF) et la plus grande et plus tendue pars tensa (PT) en dessous.<br>Au centre, une protubérance appelée 'strie malléolaire' est visible (superposition verte).<br>Elle est soulevée par le processus du marteau et le manche du marteau.<br>La pointe du marteau forme l'umbo (superposition jaune).<br>Le quadrant antéro-inférieur montre la réflexion physiologique de la lumière otoscopique, appelée 'cône de lumière' (superposition bleue).</div>
+    <div class="annexe-image">
+        <img src="/Users/damienfulliquet/Documents/-Medecine/-EXAMEN_FEDERAL/-ECOS_2025/-SSP/Cas cliniques traduits/Traduits/HTML/grilles_generees/html/images/AMBOSS-40-img4-Healthy tympanic membrane.jpg" alt="Membrane tympanique saine" />
+    </div>
+</div>
+<div class="annexe-item">
+    <div class="annexe-title">Signes d'examen dans la paralysie du nerf facial</div>
+    <div class="annexe-description">Les symptômes dans la paralysie faciale centrale sont causés par une lésion du motoneurone supérieur (UMN) contralatéral.<br>Parce que les muscles responsables des mouvements des paupières et du front sont innervés par des fibres du motoneurone supérieur des deux hémisphères, leur fonction est préservée dans la paralysie faciale centrale.<br>Dans la paralysie faciale périphérique, les dommages aux fibres du motoneurone inférieur (LMN) entraînent une paralysie ipsilatérale de tous les muscles faciaux.<br>Parce que les fibres sensorielles et autonomes rejoignent les fibres du motoneurone inférieur du nerf facial dans son trajet périphérique, les paralysies faciales périphériques peuvent également se manifester avec des symptômes non moteurs.</div>
+    <div class="annexe-image">
+        <img src="/Users/damienfulliquet/Documents/-Medecine/-EXAMEN_FEDERAL/-ECOS_2025/-SSP/Cas cliniques traduits/Traduits/HTML/grilles_generees/html/images/AMBOSS-40-img5-Examination findings in facial nerve palsy.jpg" alt="Signes d'examen dans la paralysie du nerf facial" />
+    </div>
+</div>
+<div class="annexe-item annexe-scenario">
+    <div class="annexe-title">Scénario pour le patient standardisé</div>
+    <div class="annexe-scenario-content">
+        <div class="scenario-info">
+            <strong>Nom :</strong> Fred Potter |             <strong>Âge :</strong> 25 ans<br>
+            <strong>Contexte :</strong> Homme jeune avec vertiges aigus et signes otologiques
+        </div>
+        <div class="scenario-section">
+            <h4>Motif de consultation</h4>
+            <p><strong>Plainte principale :</strong> «Je me sens vraiment étourdi.»</p>
+            <p><strong>Si on demande s'il y a autre chose :</strong> «La pièce tourne autour de moi depuis hier soir.»</p>
+        </div>
+        <div class="scenario-section">
+            <h4>Consignes</h4>
+            <ul>
+                <li>Agissez comme si vous ne pouviez pas entendre du côté droit. Si l'examinateur ne parle pas assez fort, demandez des clarifications ou faites semblant de ne pas entendre sa question.</li>
+                <li>Quand l'examinateur regarde votre oreille droite, montrez-lui l'image fournie et faites semblant que votre oreille droite fait mal quand l'examinateur la touche.</li>
+                <li>Quand l'examinateur place le diapason sur le sommet de votre tête, dites que vous pouvez entendre le son plus fort du côté gauche.</li>
+                <li>Quand l'examinateur place le diapason sur l'os derrière votre oreille jusqu'à ce que vous ne puissiez plus l'entendre puis le place à côté de votre oreille, dites que vous pouvez entendre le son à nouveau.</li>
+                <li>Quand l'examinateur vous demande de vous tenir debout avec les deux pieds joints, lever les bras et fermer les yeux, agissez comme si vous basculiez sur le côté.</li>
+                <li>Vous n'êtes pas au courant de la signification des termes médicaux (par ex., audiogramme) et demandez des clarifications si l'examinateur les utilise.</li>
+                <li>Défi : Interrompez l'examinateur pendant qu'il vous interroge sur votre santé et dites : 'Pourquoi avez-vous besoin de savoir tout ça ? Je pense que venir ici était une erreur. Je devrais partir. Je dois rentrer chez moi pour mes chats - quelqu'un doit les nourrir.'</li>
+            </ul>
+        </div>
+        <div class="scenario-section">
+            <h4>Histoire actuelle</h4>
+            <div class="scenario-subsection">
+                <strong>Symptôme principal :</strong>
+                <ul>
+                    <li>Vertiges rotatoires depuis hier soir</li>
+                    <li>Début brutal</li>
+                    <li>Sensation que la pièce tourne</li>
+                    <li>Constant, sans rémission</li>
+                    <li>Nausées associées sans vomissements</li>
+                    <li>Pas de facteur déclenchant identifié</li>
+                </ul>
+            </div>
+            <div class="scenario-subsection">
+                <strong>Symptômes associés :</strong>
+                <ul>
+                    <li>Perte auditive oreille droite</li>
+                    <li>Acouphènes oreille droite</li>
+                    <li>Sensation plénitude oreille droite</li>
+                    <li>Prurit auriculaire droit depuis quelques jours</li>
+                    <li>Fébricule ressenti</li>
+                    <li>IVRS la semaine précédente</li>
+                    <li>Douleur oreille droite</li>
+                </ul>
+            </div>
+        </div>
+        <div class="scenario-section">
+            <h4>Simulation</h4>
+            <div class="scenario-subsection">
+                <strong>Durant l'entretien :</strong>
+                <ul>
+                    <li>Difficulté audition côté droit</li>
+                    <li>Demander répétition questions</li>
+                    <li>Anxiété visible (vertiges)</li>
+                    <li>Mentionner inquiétude pour chats</li>
+                    <li>Interruption consultation (défi)</li>
+                    <li>Demander clarification termes médicaux</li>
+                </ul>
+            </div>
+            <div class="scenario-subsection">
+                <strong>Durant le status :</strong>
+                <ul>
+                    <li>Montrer image zona auriculaire</li>
+                    <li>Douleur palpation oreille droite</li>
+                    <li>Weber latéralisé à gauche</li>
+                    <li>Rinne positif bilatéralement</li>
+                    <li>Romberg positif (déséquilibre)</li>
+                    <li>Audition diminuée à droite</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="annexe-item annexe-informations-expert">
+    <div class="annexe-title">Informations de l'expert</div>
+    <div class="annexe-informations-content">
+        <div class="info-section">
+            <h4>Dossier médical de l'entretien</h4>
+            <p>Homme 25 ans avec vertiges aigus + signes cochléo-vestibulaires + lésions vésiculeuses oreille = zona auriculaire (Ramsay Hunt) jusqu'à preuve contraire. IVRS récente = facteur déclenchant réactivation VZV. Weber latéralisé gauche = surdité neurosensorielle droite. Romberg positif = atteinte vestibulaire. URGENCE thérapeutique : antiviraux < 72h pour éviter séquelles. Risque paralysie faciale 60%. ATCD familial NF = surveiller neurinome VIII bilatéral (NF2). Cannabis quotidien + tabac = counseling obligatoire.</p>
+        </div>
+        <div class="info-section">
+            <h4>Rôles et interventions de l'expert·e</h4>
+            <div class="roles-interventions">
+                <p style="margin: 5px 0; padding-left: 0;">L'expert-e intervient si l'étudiant-e demande :</p>
+                <p style="margin: 5px 0; padding-left: 0;">• Otoscopie : tympan normal, CAE avec vésicules</p>
+                <p style="margin: 5px 0; padding-left: 0;">• Paralysie faciale : absente pour l'instant</p>
+                <p style="margin: 5px 0; padding-left: 0;">• Nystagmus : horizontal, battant côté sain</p>
+                <p style="margin: 5px 0; padding-left: 0;">• Head thrust test : positif côté droit</p>
+                <p style="margin: 5px 0; padding-left: 0;">• Examen neurologique : normal sauf VIII</p>
+                <p style="margin: 5px 0; padding-left: 0;">• Température : 37.5°C confirmé</p>
+            </div>
+        </div>
+        <div class="info-section">
+            <h4>Points clés</h4>
+            <ul>
+                <li>Zona auriculaire = urgence ORL (< 72h)</li>
+                <li>VZV réactivation ganglion géniculé</li>
+                <li>Risque surdité définitive si retard traitement</li>
+                <li>Paralysie faciale dans 60% cas</li>
+                <li>Névralgie post-zostérienne possible</li>
+                <li>ATCD NF familial = risque schwannome VIII</li>
+            </ul>
+        </div>
+        <div class="info-section">
+            <h4>Pièges</h4>
+            <ul>
+                <li>Confondre avec simple névrite vestibulaire</li>
+                <li>Manquer les vésicules (zone de Ramsay Hunt)</li>
+                <li>Retarder antiviraux (fenêtre 72h)</li>
+                <li>Oublier protection oculaire si PF</li>
+                <li>Négliger ATCD familial NF (IRM indiquée)</li>
+                <li>Omettre conseils cannabis/tabac</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="annexe-item annexe-theorie-pratique">
+    <div class="annexe-title">Théorie pratique concernant la vignette</div>
+    <div class="annexe-theorie-content">
+        <div class="theorie-section">
+            <h4>Diagnostic le plus probable</h4>
+            <p>Zona auriculaire (syndrome de Ramsay Hunt)</p>
+        </div>
+        <div class="theorie-section">
+            <h4>Zona auriculaire - Syndrome de Ramsay Hunt</h4>
+            <p>Réactivation du VZV dans le ganglion géniculé (VII) :</p>
+            <ul>
+                <li>Incidence : 5/100 000/an</li>
+                <li>Pathogénie : réactivation VZV ganglion géniculé</li>
+                <li>Extension possible : VIII (60%), V, IX, X</li>
+                <li>Triade : vésicules auriculaires + paralysie faciale + otalgie</li>
+                <li>Forme complète : + vertiges + surdité (atteinte VIII)</li>
+                <li>Pronostic PF : moins bon que Bell (30% récupération complète)</li>
+            </ul>
+        </div>
+        <div class="theorie-section">
+            <h4>Zones de Ramsay Hunt</h4>
+            <p>Territoires cutanés innervés par le VII (sensibilité) :</p>
+            <ul>
+                <li>Zone I : membrane tympanique</li>
+                <li>Zone II : conque et anthélix</li>
+                <li>Zone III : paroi postérieure CAE</li>
+                <li>Zone IV : lobule auriculaire</li>
+                <li>Vésicules : 1-2 jours après douleur</li>
+                <li>Distribution : souvent zones II et III</li>
+            </ul>
+        </div>
+        <div class="theorie-section">
+            <h4>Tests de Weber et Rinne</h4>
+            <p>Différenciation surdité de transmission vs perception :</p>
+            <ul>
+                <li>Weber : diapason vertex/front</li>
+                <li>- Normal : pas de latéralisation</li>
+                <li>- Transmission : latéralise côté sourd</li>
+                <li>- Perception : latéralise côté sain</li>
+                <li>Rinne : compare CA vs CO</li>
+                <li>- Normal/perception : CA > CO (Rinne +)</li>
+                <li>- Transmission : CO > CA (Rinne -)</li>
+            </ul>
+        </div>
+        <div class="theorie-section">
+            <h4>Maladie de Ménière</h4>
+            <p>Hydrops endolymphatique idiopathique :</p>
+            <ul>
+                <li>Triade : vertiges + surdité + acouphènes</li>
+                <li>Crises : 20 min à 24h (moyenne 2-4h)</li>
+                <li>Plénitude auriculaire : signe prémonitoire</li>
+                <li>Surdité : fluctuante, basses fréquences</li>
+                <li>Évolution : bilatéralisation 30-50%</li>
+                <li>Stades : I (fluctuant) → IV (fixé)</li>
+            </ul>
+        </div>
+        <div class="theorie-section">
+            <h4>Névrite vestibulaire</h4>
+            <p>Inflammation virale du nerf vestibulaire :</p>
+            <ul>
+                <li>Étiologie : post-virale (HSV-1, VZV)</li>
+                <li>Présentation : vertige aigu intense</li>
+                <li>Durée : jours à semaines</li>
+                <li>Absence symptômes cochléaires (clé)</li>
+                <li>Nystagmus : horizontal, unidirectionnel</li>
+                <li>Récupération : compensation centrale 6-12 semaines</li>
+            </ul>
+        </div>
+        <div class="theorie-section">
+            <h4>Neurofibromatose et schwannome vestibulaire</h4>
+            <p>Association NF2 et tumeurs nerfs crâniens :</p>
+            <ul>
+                <li>NF2 : schwannomes VIII bilatéraux pathognomoniques</li>
+                <li>Transmission : autosomique dominante</li>
+                <li>Dépistage : IRM annuelle si NF familiale</li>
+                <li>Présentation : surdité progressive unilatérale</li>
+                <li>Vertiges : rares (compensation lente)</li>
+                <li>Traitement : surveillance vs chirurgie vs radiothérapie</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="annexe-item annexe-rappels-therapeutiques">
+    <div class="annexe-title">Rappels thérapeutiques</div>
+    <div class="annexe-theorie-content">
+        <ul class="rappels-list">
+            <li>Zona auriculaire : valacyclovir 1g × 3/j × 7-10j</li>
+            <li>Alternative : acyclovir 800 mg × 5/j PO</li>
+            <li>Corticoïdes : prednisone 1 mg/kg × 5j puis décroissance</li>
+            <li>Antivertigineux : méclizine 25 mg × 3/j PRN</li>
+            <li>Protection oculaire si PF : larmes, pommade, occlusion</li>
+            <li>Ménière aigu : diazépam 5-10 mg IV + antiémétique</li>
+            <li>Ménière fond : régime hyposodé + bétahistine 24 mg × 2/j</li>
+            <li>Névralgie résiduelle : gabapentine 300 mg progressive</li>
+        </ul>
+    </div>
+</div>
+<div class="annexe-item annexe-examens-complementaires">
+    <div class="annexe-title">Examens complémentaires</div>
+    <div class="annexe-theorie-content">
+        <ul class="examens-list">
+            <li>Audiométrie tonale : type et degré surdité</li>
+            <li>Audiométrie vocale : discrimination</li>
+            <li>Impédancemétrie : réflexe stapédien (VII)</li>
+            <li>PEA : potentiels évoqués auditifs (atteinte rétrocochléaire)</li>
+            <li>Vidéonystagmographie : caractérisation nystagmus</li>
+            <li>Test calorique : fonction vestibulaire par côté</li>
+            <li>IRM IAC : si suspicion schwannome ou atypique</li>
+            <li>Électroneuronographie : pronostic PF si > 90% dégénérescence</li>
+        </ul>
+    </div>
+</div>
+</div>
+</div>
+        <!-- COMMENTAIRE GÉNÉRAL -->
+        <div class="section-comment-section global">
+            <h4 style="margin: 0 0 10px 0; color: #2c5aa0; font-size: 18px;">Commentaire général</h4>
+            <textarea class="comment-textarea" id="comment-general" placeholder="Commentaire général sur l'évaluation..." oninput="updateGeneralComment(); autoResizeTextarea(this);"></textarea>
+        </div>
+    </div>
+    <script>
+        // Déclaration des variables globales
+        window.audioContext = null;
+        
+        function updateScore(section, element) {
+            const value = element.value;
+            const name = element.name;
+            let pointValue;
+
+            if (section === "communication") {
+                const map = { A: 4, B: 3, C: 2, D: 1, E: 0 };
+                pointValue = map[value] || 0;
+                // Mettre à jour la classe de couleur pour communication
+                const criteriaRow = document.getElementById("criteria-" + name);
+                if (criteriaRow) {
+                    criteriaRow.classList.remove("score-a", "score-b", "score-c", "score-d", "score-e", "lacune-rouge", "lacune-orange", "lacune-verte");
+                    criteriaRow.classList.add("score-" + value.toLowerCase());
+                    // Ajouter les classes lacune pour communication
+                    if (value === "E" || value === "D") {
+                        criteriaRow.classList.add("lacune-rouge");
+                    } else if (value === "C") {
+                        criteriaRow.classList.add("lacune-orange");
+                    } else if (value === "A" || value === "B") {
+                        criteriaRow.classList.add("lacune-verte");
+                    }
+                }
+            } else {
+                pointValue = Number(value) || 0;
+                // Mettre à jour la classe de couleur pour autres critères
+                const criteriaRow = document.getElementById("criteria-" + name);
+                if (criteriaRow) {
+                    criteriaRow.classList.remove("score-0", "score-1", "score-2", "lacune-rouge", "lacune-orange", "lacune-verte");
+                    criteriaRow.classList.add("score-" + value);
+                    // Ajouter les classes lacune pour critères normaux
+                    if (pointValue === 0) {
+                        criteriaRow.classList.add("lacune-rouge");
+                    } else if (pointValue === 1) {
+                        criteriaRow.classList.add("lacune-orange");
+                    } else if (pointValue >= 2) {
+                        criteriaRow.classList.add("lacune-verte");
+                    }
+                }
+            }
+
+            const pointsElement = document.getElementById("points-" + name);
+            if (pointsElement) {
+                pointsElement.textContent = pointValue;
+            }
+
+            calculateScores();
+        }
+
+        function updateDetailScore(criterionId, prefix) {
+            let totalScore = 0;
+            const detailCheckboxes = document.querySelectorAll('input[id^="' + criterionId + '-detail-"]');
+            const maxDetailsScore = detailCheckboxes.length;
+            
+            detailCheckboxes.forEach(checkbox => {
+                if (checkbox.checked) {
+                    totalScore += Number(checkbox.value) || 0;
+                }
+            });
+            
+            const pointsElement = document.getElementById("points-" + criterionId);
+            if (pointsElement) {
+                pointsElement.textContent = totalScore;
+            }
+            
+            // Mettre à jour la classe de couleur en fonction du score et du max
+            const criteriaRow = document.getElementById("criteria-" + criterionId);
+            if (criteriaRow) {
+                criteriaRow.classList.remove("score-0", "score-1", "score-2", "score-3", "score-4", "score-5", "score-max", "lacune-rouge", "lacune-orange", "lacune-verte");
+                
+                // Déterminer la classe appropriée avec les seuils 1/3 et 2/3
+                const oneThird = maxDetailsScore / 3;
+                const twoThirds = (maxDetailsScore * 2) / 3;
+                
+                if (totalScore < oneThird) {
+                    criteriaRow.classList.add("score-0");
+                    criteriaRow.classList.add("lacune-rouge");
+                } else if (totalScore > twoThirds) {
+                    criteriaRow.classList.add("score-max");
+                    criteriaRow.classList.add("lacune-verte");
+                } else {
+                    // Score entre 1/3 et 2/3
+                    criteriaRow.classList.add("score-1");
+                    criteriaRow.classList.add("lacune-orange");
+                }
+            }
+            
+            calculateScores();
+        }
+
+        function calculateScores() {
+            const isNewFormat = false;
+            const missingItems = [];
+            let scores = {};
+            let maxScores = {};
+            let coef = {};
+            let sectionInfo = [];
+
+            // Configuration pour le format traditionnel
+            scores = {anamnese: 0, examen: 0, management: 0, communication: 0};
+            maxScores = {anamnese: 38, examen: 18, management: 12, communication: 20};
+            coef = {anamnese: 0.25, examen: 0.25, management: 0.25, communication: 0.25};
+            sectionInfo = [
+                {key: "anamnese", prefix: "a", count: 9, label: "Anamnèse"},
+                {key: "examen", prefix: "e", count: 4, label: "Examen clinique", scoreId: "statusScore"},
+                {key: "management", prefix: "m", count: 4, label: "Management"},
+                {key: "communication", prefix: "c", count: 5, label: "Communication", isComm: true}
+            ];
+
+            // Calcul des scores pour chaque section
+            sectionInfo.forEach(section => {
+                let sectionScore = 0;
+                
+                if (section.isComm) {
+                    // Section communication spéciale
+                    for (let i = 1; i <= section.count; i++) {
+                        const radio = document.querySelector("input[name=\"" + section.prefix + i + "\"]:checked");
+                        if (radio) {
+                            const val = radio.value;
+                            const map = { A: 4, B: 3, C: 2, D: 1, E: 0 };
+                            sectionScore += map[val] || 0;
+                        } else {
+                            const criteria = document.querySelector("input[name=\"" + section.prefix + i + "\"][data-criteria]");
+                            if (criteria) missingItems.push(section.label + " : " + criteria.dataset.criteria);
+                        }
+                    }
+                } else {
+                    // Sections normales
+                    for (let i = 1; i <= section.count; i++) {
+                        const criterionId = section.prefix + i;
+                        // Vérifier si ce critère a des détails avec checkboxes
+                        const detailCheckboxes = document.querySelectorAll('input[id^="' + criterionId + '-detail-"]');
+                        
+                        if (detailCheckboxes.length > 0) {
+                            // Ce critère a des détails, on calcule le score basé sur les détails
+                            let detailScore = 0;
+                            let hasCheckedDetail = false;
+                            detailCheckboxes.forEach(checkbox => {
+                                if (checkbox.checked) {
+                                    detailScore += Number(checkbox.value) || 0;
+                                    hasCheckedDetail = true;
+                                }
+                            });
+                            sectionScore += detailScore;
+                            
+                            if (!hasCheckedDetail) {
+                                const criteria = document.querySelector("input[name=\"" + criterionId + "\"][data-criteria]");
+                                if (criteria) {
+                                    missingItems.push(section.label + " : " + criteria.dataset.criteria);
+                                } else {
+                                    // Rechercher le texte du critère directement
+                                    const criteriaText = document.querySelector("#criteria-" + criterionId + " .criteria-text");
+                                    if (criteriaText) {
+                                        missingItems.push(section.label + " : " + criteriaText.textContent.split(". ")[1].split(" [")[0]);
+                                    }
+                                }
+                            }
+                        } else {
+                            // Critère normal sans détails
+                            const radio = document.querySelector("input[name=\"" + criterionId + "\"]:checked");
+                            if (radio) {
+                                sectionScore += Number(radio.value) || 0;
+                            } else {
+                                const criteria = document.querySelector("input[name=\"" + criterionId + "\"][data-criteria]");
+                                if (criteria) missingItems.push(section.label + " : " + criteria.dataset.criteria);
+                            }
+                        }
+                    }
+                }
+                
+                scores[section.key] = sectionScore;
+                const scoreId = section.scoreId || section.key + "Score";
+                const scoreElement = document.getElementById(scoreId);
+                if (scoreElement) scoreElement.textContent = sectionScore;
+            });
+
+            // Calcul des pourcentages par section
+            let percentages = {};
+            let globalPercentage = 0;
+            let isStarted = false;
+            
+            sectionInfo.forEach(section => {
+                const score = scores[section.key];
+                const max = maxScores[section.key];
+                const percentage = max > 0 ? (score / max) * 100 : 0;
+                percentages[section.key] = percentage;
+                globalPercentage += percentage * coef[section.key];
+                if (score > 0) isStarted = true;
+            });
+
+            const totalScoreText = isStarted ? Math.round(globalPercentage) : 0;
+            document.getElementById("totalScore").textContent = totalScoreText + "%";
+
+            // Mise à jour des pourcentages affichés
+            sectionInfo.forEach(section => {
+                const percentageElement = document.getElementById(section.key + "-percentage");
+                if (percentageElement) {
+                    percentageElement.textContent = Math.round(percentages[section.key]);
+                }
+            });
+
+            const gradeElement = document.getElementById("globalGrade");
+            const totalScoreElement = document.getElementById("totalScore");
+            const scoreBody = totalScoreElement ? totalScoreElement.closest(".total-body") : null;
+            const gradeBody = gradeElement ? gradeElement.closest(".total-body") : null;
+            const sections = sectionInfo.map(s => s.key);
+
+            const allClasses = ["note-a", "note-b", "note-c", "note-d", "note-e", "note-neutral"];
+
+            function getClass(p) {
+                if (p === 0) return "note-neutral";
+                if (p >= 90) return "note-a";
+                if (p >= 80) return "note-b";
+                if (p >= 70) return "note-c";
+                if (p >= 60) return "note-d";
+                return "note-e";
+            }
+
+            const gradeClass = getClass(globalPercentage);
+            const gradeLabel = isStarted ? gradeClass.split("-")[1].toUpperCase() : "A-E";
+            if (gradeElement) gradeElement.textContent = gradeLabel;
+
+            const pourcentBody = document.querySelector(".total-pourcent-body");
+
+            [gradeElement, scoreBody, gradeBody, pourcentBody].forEach(el => {
+                if (el) {
+                    el.classList.remove(...allClasses);
+                    el.classList.add(gradeClass);
+                }
+            });
+
+            sections.forEach(id => {
+                const percentageElement = document.getElementById(id + "-percentage");
+                if (percentageElement) {
+                    const value = parseInt(percentageElement.textContent);
+                    const section = percentageElement.closest(".total-pourcent-section");
+                    const sectionClass = getClass(value);
+                    if (section) {
+                        section.classList.remove(...allClasses);
+                        section.classList.add(sectionClass);
+                    }
+                }
+            });
+
+            // Appliquer les couleurs aux sections principales
+            sectionInfo.forEach(section => {
+                const percentage = percentages[section.key];
+                const allSections = document.querySelectorAll(".section");
+                allSections.forEach(sectionEl => {
+                    const headerText = sectionEl.querySelector(".section-header")?.textContent || "";
+                    if (headerText.includes(section.label)) {
+                        const sectionClass = getClass(percentage);
+                        sectionEl.classList.remove(...allClasses);
+                        sectionEl.classList.add(sectionClass);
+                    }
+                });
+            });
+
+            if (missingItems.length > 0) {
+                document.getElementById("missingItems").style.display = "block";
+                document.getElementById("missingList").innerHTML = missingItems.map(item =>
+                    "<div class=\"missing-item\">• " + item + "</div>"
+                ).join("");
+            } else {
+                document.getElementById("missingItems").style.display = "none";
+            }
+        }
+        // MINUTEUR ECOS 13 MINUTES
+        window.timerInterval = null;
+        window.currentSeconds = 13 * 60;
+        window.isRunning = false;
+        window.hasStarted = false;
+        window.hasFinished = false;
+        window.hasStoppedManually = false;
+
+        window.currentMode = 'revision';
+
+        function colorPatientResponses() {
+            // Version simplifiée inspirée du générateur v1
+            const elements = document.querySelectorAll('.criteria-text, .sub-criteria, .redflags-text, .dd-item, .therapy-section, .detail-text, .cloture-content');
+            elements.forEach(element => {
+                const text = element.innerHTML;
+                // Colorer uniquement les réponses patient en bleu (pas les examens complémentaires)
+                let coloredText = text.replace(/\[([^\]]+)\]/g, '<span style="color: rgb(44, 90, 160); font-weight: 500;">[$1]</span>');
+                element.innerHTML = coloredText;
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            switchMode('revision');
+            calculateScores();
+            colorPatientResponses();
+            // Appeler une deuxième fois après un court délai pour s'assurer que tout est chargé
+            setTimeout(function() {
+                colorPatientResponses();
+            }, 100);
+            // Appel supplémentaire après un délai plus long pour garantir que tout est chargé
+            setTimeout(function() {
+                colorPatientResponses();
+            }, 500);
+            // Auto-resize tous les textareas au chargement
+            const allTextareas = document.querySelectorAll('.comment-textarea');
+            allTextareas.forEach(textarea => {
+                if (textarea.value) {
+                    autoResizeTextarea(textarea);
+                }
+            });
+        });
+        
+        // S'assurer que la hauteur est bien définie avant l'impression
+        window.addEventListener('beforeprint', function() {
+            const allTextareas = document.querySelectorAll('.comment-textarea');
+            allTextareas.forEach(textarea => {
+                if (textarea.value && textarea.value.trim()) {
+                    // S'assurer que le textarea a une hauteur définie
+                    if (!textarea.style.height || textarea.style.height === 'auto') {
+                        autoResizeTextarea(textarea);
+                    }
+                }
+            });
+        });
+
+
+        function initAudio() {
+            if (!window.audioContext) {
+                window.audioContext = new (window.AudioContext || window.webkitAudioContext)();
+            }
+        }
+
+        function playBeep() {
+            initAudio();
+            const oscillator = window.audioContext.createOscillator();
+            const gainNode = window.audioContext.createGain();
+            oscillator.connect(gainNode);
+            gainNode.connect(window.audioContext.destination);
+            oscillator.frequency.value = 800;
+            oscillator.type = 'sine';
+            gainNode.gain.setValueAtTime(0.3, window.audioContext.currentTime);
+            gainNode.gain.exponentialRampToValueAtTime(0.01, window.audioContext.currentTime + 0.5);
+            oscillator.start(window.audioContext.currentTime);
+            oscillator.stop(window.audioContext.currentTime + 0.5);
+        }
+
+        function speak(text) {
+            if ('speechSynthesis' in window) {
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'fr-FR';
+                utterance.rate = 0.9;
+                utterance.volume = 0.8;
+                speechSynthesis.speak(utterance);
+            }
+        }
+
+        function playSound(message) {
+            playBeep();
+            setTimeout(() => speak(message), 500);
+        }
+
+        function formatTime(seconds) {
+            const minutes = Math.floor(seconds / 60);
+            const secs = seconds % 60;
+            return minutes + ":" + secs.toString().padStart(2, "0");
+        }
+
+        function toggleCheckboxes(disabled) {
+            const radios = document.querySelectorAll('input[type="radio"]');
+            radios.forEach(radio => {
+                radio.disabled = disabled;
+            });
+            const detailCheckboxes = document.querySelectorAll('.detail-checkbox input[type="checkbox"]');
+            detailCheckboxes.forEach(checkbox => {
+                checkbox.disabled = disabled;
+            });
+        }
+
+        function colorCriteriaByScore() {
+            if (!window.hasFinished && !window.hasStoppedManually) return;
+
+            const normalCriteriaRows = document.querySelectorAll('.criteria-row');
+            normalCriteriaRows.forEach(row => {
+                const id = row.id;
+                if (!id) return;
+                const criteriaName = id.replace('criteria-', '');
+                const checkedRadio = document.querySelector('input[name="' + criteriaName + '"]:checked');
+                row.classList.remove('criteria-zero-points', 'criteria-one-point', 'criteria-full-points', 'criteria-not-answered', 'lacune-rouge', 'lacune-orange', 'lacune-verte');
+                if (checkedRadio) {
+                    const score = Number(checkedRadio.value) || 0;
+                    if (score === 0) {
+                        row.classList.add('criteria-zero-points');
+                        row.classList.add('lacune-rouge');
+                    } else if (score === 1) {
+                        row.classList.add('criteria-one-point');
+                        row.classList.add('lacune-orange');
+                    } else if (score >= 2) {
+                        row.classList.add('criteria-full-points');
+                        row.classList.add('lacune-verte');
+                    }
+                } else {
+                    row.classList.add('criteria-not-answered');
+                    row.classList.add('lacune-rouge');
+                }
+            });
+
+            const communicationRows = document.querySelectorAll('.communication-section');
+            communicationRows.forEach(row => {
+                const id = row.id;
+                if (!id) return;
+                const criteriaName = id.replace('criteria-', '');
+                const checkedRadio = document.querySelector('input[name="' + criteriaName + '"]:checked');
+                row.classList.remove('communication-note-a', 'communication-note-b', 'communication-note-c', 'communication-note-d', 'communication-note-e', 'communication-not-answered', 'lacune-rouge', 'lacune-orange', 'lacune-verte');
+                if (checkedRadio) {
+                    const grade = checkedRadio.value.toLowerCase();
+                    row.classList.add("communication-note-" + grade);
+                    if (grade === 'e' || grade === 'd') {
+                        row.classList.add('lacune-rouge');
+                    } else if (grade === 'c') {
+                        row.classList.add('lacune-orange');
+                    } else if (grade === 'a' || grade === 'b') {
+                        row.classList.add('lacune-verte');
+                    }
+                } else {
+                    row.classList.add('communication-not-answered');
+                    row.classList.add('lacune-rouge');
+                }
+            });
+        }
+
+        function startTimer() {
+            if (window.isRunning || window.currentMode !== 'exam') return;
+            window.isRunning = true;
+            window.hasStarted = true;
+            window.hasStoppedManually = false;
+            document.body.classList.add('timer-running');
+            toggleCheckboxes(false);
+            playSound("Début de la station");
+            document.getElementById('startBtn').style.display = 'none';
+            document.getElementById('stopBtn').style.display = 'inline-block';
+            document.getElementById('resetBtn').disabled = true;
+            document.getElementById('timerStatus').textContent = 'En cours';
+            document.getElementById('timerStatus').className = 'timer-status status-running';
+            
+            window.timerInterval = setInterval(() => {
+                window.currentSeconds--;
+                document.getElementById('timerDisplay').textContent = formatTime(window.currentSeconds);
+                const container = document.getElementById('timerContainer');
+                if (window.currentSeconds === 2 * 60) {
+                    if (window.currentMode === 'exam') {
+                        playSound("Il vous reste 2 minutes");
+                    }
+                    container.classList.add('timer-warning');
+                    document.getElementById('timerStatus').textContent = '2 min restantes';
+                    document.getElementById('timerStatus').className = 'timer-status status-warning';
+                }
+                if (window.currentSeconds <= 30) {
+                    container.classList.add('timer-critical');
+                }
+                if (window.currentSeconds <= 0) {
+                    endTimer();
+                }
+            }, 1000);
+        }
+
+        function stopTimer() {
+            if (!window.isRunning) return;
+            clearInterval(window.timerInterval);
+            window.isRunning = false;
+            window.hasStoppedManually = true;
+            document.body.classList.remove('timer-running');
+            // Ne pas désactiver les checkboxes pour permettre de continuer à cocher après arrêt
+            // toggleCheckboxes(true);
+            document.getElementById('startBtn').style.display = 'inline-block';
+            document.getElementById('stopBtn').style.display = 'none';
+            document.getElementById('resetBtn').disabled = false;
+            document.getElementById('timerStatus').textContent = 'Arrêté';
+            document.getElementById('timerStatus').className = 'timer-status';
+            colorCriteriaByScore();
+        }
+
+        function endTimer() {
+            clearInterval(window.timerInterval);
+            window.isRunning = false;
+            window.hasFinished = true;
+            window.currentSeconds = 0;
+            document.body.classList.remove('timer-running');
+            if (window.currentMode === 'exam') {
+                playSound("Fin de la station. Veuillez sortir");
+                // Repasser automatiquement en mode révision après la fin du timer
+                switchMode('revision');
+            }
+            document.getElementById('timerDisplay').textContent = '0:00';
+            document.getElementById('startBtn').style.display = 'inline-block';
+            document.getElementById('stopBtn').style.display = 'none';
+            document.getElementById('resetBtn').disabled = false;
+            document.getElementById('timerStatus').textContent = 'Terminé';
+            document.getElementById('timerStatus').className = 'timer-status status-finished';
+            document.getElementById('timerStatus').style.display = 'block';
+            document.getElementById('timerContainer').className = 'timer-container';
+            // Ne pas désactiver les checkboxes après la fin pour permettre de continuer
+            // toggleCheckboxes(true);
+            colorCriteriaByScore();
+        }
+
+        function resetTimer() {
+            clearInterval(window.timerInterval);
+            window.timerInterval = null;
+            window.currentSeconds = 13 * 60;
+            window.isRunning = false;
+            window.hasStarted = false;
+            window.hasFinished = false;
+            window.hasStoppedManually = false;
+            document.getElementById('timerDisplay').textContent = '13:00';
+            document.getElementById('startBtn').style.display = 'inline-block';
+            document.getElementById('stopBtn').style.display = 'none';
+            // Supprimer la coloration des critères
+            const criteriaAndCommRows = document.querySelectorAll('.criteria-row, .communication-section');
+            criteriaAndCommRows.forEach(row => {
+                row.classList.remove('score-0', 'score-1', 'score-2', 'score-a', 'score-b', 'score-c', 'score-d', 'score-e');
+            });
+            // Supprimer la coloration des sections
+            const allSections = document.querySelectorAll('.section');
+            allSections.forEach(section => {
+                section.classList.remove('note-a', 'note-b', 'note-c', 'note-d', 'note-e');
+                section.classList.add('note-neutral');
+            });
+            document.getElementById('timerStatus').style.display = 'none';
+            document.getElementById('timerContainer').className = 'timer-container';
+            // En mode révision, ne pas désactiver les checkboxes
+            if (window.currentMode === 'exam') {
+                toggleCheckboxes(true);
+            }
+            const allRadios = document.querySelectorAll('input[type="radio"]');
+            allRadios.forEach(radio => {
+                radio.checked = false;
+            });
+            // Réinitialiser les detail-checkboxes
+            const allDetailCheckboxes = document.querySelectorAll('.detail-checkbox input[type="checkbox"]');
+            allDetailCheckboxes.forEach(checkbox => {
+                checkbox.checked = false;
+            });
+            const allPointsDisplays = document.querySelectorAll('.points-display');
+            allPointsDisplays.forEach(display => {
+                display.textContent = '0';
+            });
+            const allCriteriaRows = document.querySelectorAll('.criteria-row');
+            allCriteriaRows.forEach(row => {
+                row.classList.remove('criteria-zero-points', 'criteria-one-point', 'criteria-full-points', 'criteria-not-answered', 'lacune-rouge', 'lacune-orange', 'lacune-verte');
+            });
+            const allCommunicationRows = document.querySelectorAll('.communication-section');
+            allCommunicationRows.forEach(row => {
+                row.classList.remove('communication-note-a', 'communication-note-b', 'communication-note-c', 'communication-note-d', 'communication-note-e', 'communication-not-answered', 'lacune-rouge', 'lacune-orange', 'lacune-verte');
+            });
+            calculateScores();
+            // Supprimer tous les commentaires et cacher les textareas
+            const allTextareas = document.querySelectorAll('.comment-textarea');
+            allTextareas.forEach(textarea => {
+                textarea.value = '';
+                textarea.style.height = textarea.classList.contains('comment-textarea') && textarea.closest('.section-comment-section.global') ? '30px' : (textarea.closest('.section-comment-section') ? '28px' : '26px');
+            });
+            // Cacher toutes les sections de commentaires ouvertes
+            const allCommentSections = document.querySelectorAll('.criterion-comment-section.show, .section-comment-section.show');
+            allCommentSections.forEach(section => {
+                section.classList.remove('show');
+            });
+            // Mettre à jour les boutons de commentaires
+            const allCommentButtons = document.querySelectorAll('.comment-button, .section-comment-button');
+            allCommentButtons.forEach(button => {
+                button.classList.remove('has-content');
+            });
+        }
+        
+        function switchMode(mode) {
+            window.currentMode = mode;
+            const body = document.body;
+            body.className = mode + '-mode';
+            const buttons = document.querySelectorAll('.mode-button');
+            buttons.forEach(btn => btn.classList.remove('active'));
+            buttons.forEach(btn => {
+                if (btn.textContent.includes(mode === "revision" ? "Révision" : "Examen")) {
+                    btn.classList.add("active");
+                }
+            });
+            if (mode === 'revision') {
+                toggleCheckboxes(false);
+                showLacunesButton();
+            } else {
+                if (!window.hasStarted) {
+                    toggleCheckboxes(true);
+                }
+                hideLacunesButton();
+            }
+        }
+        
+        function showLacunesButton() {
+            const btn = document.querySelector('.lacune-button');
+            if (btn) btn.style.display = 'block';
+        }
+        
+        function hideLacunesButton() {
+            const btn = document.querySelector('.lacune-button');
+            if (btn) btn.style.display = 'none';
+        }
+        
+        function identifyLacunes() {
+            // Critères standards (anamnèse, examen, management)
+            const criteria = document.querySelectorAll(".criteria-row");
+            criteria.forEach(criterion => {
+                const id = criterion.id.replace("criteria-", "");
+                const pointsElement = document.getElementById("points-" + id);
+                const points = pointsElement ? parseInt(pointsElement.textContent) : 0;
+                
+                criterion.classList.remove("lacune-rouge", "lacune-orange", "lacune-verte");
+                
+                if (points === 0) {
+                    criterion.classList.add("lacune-rouge");
+                } else if (points === 1) {
+                    criterion.classList.add("lacune-orange");
+                } else if (points >= 2) {
+                    criterion.classList.add("lacune-verte");
+                }
+            });
+            
+            // Critères communication (échelle A-E)
+            const commCriteria = document.querySelectorAll(".communication-section");
+            commCriteria.forEach(criterion => {
+                const id = criterion.id.replace("criteria-", "");
+                const radio = document.querySelector("input[name=\"" + id + "\"]:checked");
+                
+                criterion.classList.remove("lacune-rouge", "lacune-orange", "lacune-verte");
+                
+                if (!radio) {
+                    criterion.classList.add("lacune-rouge");
+                } else {
+                    const grade = radio.value;
+                    if (grade === "E" || grade === "D") {
+                        criterion.classList.add("lacune-rouge");
+                    } else if (grade === "C") {
+                        criterion.classList.add("lacune-orange");
+                    } else if (grade === "A" || grade === "B") {
+                        criterion.classList.add("lacune-verte");
+                    }
+                }
+            });
+        }
+        function toggleComment(id) {
+            const section = document.getElementById("comment-section-" + id);
+            const textarea = document.getElementById("comment-" + id);
+            if (section) {
+                section.classList.toggle("show");
+                // Focus automatiquement sur le textarea quand on ouvre la section
+                if (section.classList.contains("show") && textarea) {
+                    textarea.focus();
+                }
+            }
+        }
+
+        function updateCommentButton(id) {
+            const textarea = document.getElementById("comment-" + id);
+            const criterionRow = document.getElementById("criteria-" + id);
+            const commentSection = document.getElementById("comment-section-" + id);
+            if (textarea && criterionRow) {
+                const button = criterionRow.querySelector(".comment-button");
+                if (button) {
+                    if (textarea.value.trim()) {
+                        button.classList.add("has-content");
+                        if (commentSection) commentSection.classList.add("has-content");
+                    } else {
+                        button.classList.remove("has-content");
+                        if (commentSection) commentSection.classList.remove("has-content");
+                    }
+                }
+            }
+        }
+
+        function toggleSectionComment(section) {
+            const commentSection = document.getElementById("section-comment-" + section);
+            const textarea = document.getElementById("comment-section-" + section);
+            if (commentSection) {
+                commentSection.classList.toggle("show");
+                // Focus automatiquement sur le textarea quand on ouvre la section
+                if (commentSection.classList.contains("show") && textarea) {
+                    textarea.focus();
+                }
+            }
+        }
+
+        function updateSectionComment(section) {
+            const textarea = document.getElementById("comment-section-" + section);
+            const commentSection = document.getElementById("section-comment-" + section);
+            const buttons = document.querySelectorAll(".section-comment-button");
+            buttons.forEach(button => {
+                if (button.getAttribute("onclick") && button.getAttribute("onclick").includes(section)) {
+                    if (textarea && textarea.value.trim()) {
+                        button.classList.add("has-content");
+                        if (commentSection) commentSection.classList.add("has-content");
+                    } else {
+                        button.classList.remove("has-content");
+                        if (commentSection) commentSection.classList.remove("has-content");
+                    }
+                }
+            });
+        }
+
+        function updateGeneralComment() {
+            const textarea = document.getElementById("comment-general");
+            if (textarea) {
+                const section = textarea.closest(".section-comment-section");
+                if (section) {
+                    if (textarea.value.trim()) {
+                        section.classList.add("has-content");
+                    } else {
+                        section.classList.remove("has-content");
+                    }
+                }
+            }
+        }
+
+        function autoResizeTextarea(textarea) {
+            // Reset height to auto to get correct scrollHeight
+            textarea.style.height = "auto";
+            // Set new height based on content
+            const newHeight = textarea.scrollHeight + 2;
+            textarea.style.height = newHeight + "px";
+        }
+
+    </script>
+    <!-- BOUTON IMPRIMER EN PDF -->
+    <button class="print-button" onclick="window.print()">🖨️ Imprimer en PDF</button>
+    <script>
+        // Appel final pour s'assurer que tout est coloré
+        // Forcer la coloration finale
+        if (window.colorPatientResponses) {
+            window.colorPatientResponses();
+        }
+    </script>
+</body>
+</html>

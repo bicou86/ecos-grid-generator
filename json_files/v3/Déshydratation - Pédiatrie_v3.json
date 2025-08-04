@@ -1,0 +1,427 @@
+{
+  "title": "Déshydratation",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Petit enfant de 2 ans se présentant avec vomissements et diarrhée, ou femme âgée de 85 ans résidant en EMS se présentant avec confusion"
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction et objectif de la consultation",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Question ouverte pour identifier le motif de consultation",
+          "details": [
+            "[Vomissements et diarrhée chez l'enfant]",
+            "[Confusion chez la personne âgée]"
+          ],
+          "binaryOnly": true
+        },
+        {
+          "id": "a3",
+          "text": "RED FLAGS - Signes de déshydratation sévère",
+          "redflagsSection": [
+            {
+              "text": "Léthargie ou altération de l'état de conscience [confusion chez personne âgée]"
+            },
+            {
+              "text": "Absence de larmes lors des pleurs [enfant]"
+            },
+            {
+              "text": "Absence d'urine > 6-8h / couche sèche [enfant]"
+            },
+            {
+              "text": "Yeux très enfoncés"
+            },
+            {
+              "text": "Pli cutané > 2 secondes"
+            },
+            {
+              "text": "Extrémités froides ou marbrées"
+            },
+            {
+              "text": "TRC > 3 secondes"
+            },
+            {
+              "text": "Hypotension ou choc"
+            }
+          ],
+          "scoringRule": "≥3 red flags = 2 pts, 2 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a4",
+          "text": "Quantification précise des pertes hydriques",
+          "details": [
+            "Nombre de vomissements/24h et volume estimé",
+            "Nombre de selles diarrhéiques/24h et consistance",
+            "Durée des symptômes en heures/jours",
+            "Perte de poids si connue (% du poids corporel)",
+            "Fièvre associée (pertes insensibles augmentées)"
+          ],
+          "scoringRule": "≥4 éléments quantifiés = 2 pts, 3 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a5",
+          "text": "Bilan détaillé des apports hydriques",
+          "details": [
+            "Volume de liquides ingérés/24h",
+            "Type de liquides (eau, SRO, lait)",
+            "Tolérance orale (vomit immédiatement?)",
+            "Dernière prise alimentaire/hydrique",
+            "Refus de boire ou appétit conservé",
+            "Allaitement maintenu (si applicable)"
+          ],
+          "scoringRule": "≥5 éléments = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a6",
+          "text": "Évaluation de la diurèse - critère majeur",
+          "details": [
+            "Heure de la dernière miction",
+            "Nombre de couches mouillées/24h [normal: 6-8]",
+            "Couleur des urines (concentrées/foncées)",
+            "Volume estimé des urines",
+            "Douleur à la miction (infection?)"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 3 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a7",
+          "text": "État neurologique et comportemental",
+          "details": [
+            "Niveau de conscience (alerte/somnolent/léthargique)",
+            "Irritabilité ou apathie [enfant]",
+            "Confusion ou désorientation [personne âgée]",
+            "Activité et jeu normaux [enfant]",
+            "Pleurs consolables ou inconsolables",
+            "Convulsions fébriles ou hyponatrémie"
+          ],
+          "scoringRule": "≥4 aspects évalués = 2 pts, 3 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a8",
+          "text": "Recherche étiologique systématique - infections",
+          "details": [
+            "Contacts malades (crèche, famille)",
+            "Épidémie en cours (rotavirus, norovirus)",
+            "Voyage récent (turista)",
+            "Aliments suspects consommés",
+            "Symptômes ORL associés",
+            "Symptômes urinaires (brûlures, odeur)"
+          ],
+          "scoringRule": "≥4 causes explorées = 2 pts, 3 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a9",
+          "text": "Recherche de causes métaboliques/endocriniennes",
+          "details": [
+            "Polyurie-polydipsie préalable (diabète)",
+            "Perte de poids récente inexpliquée",
+            "Asthénie chronique (Addison)",
+            "Sel-wasting (hyperplasie surrénales)",
+            "Vomissements cycliques"
+          ],
+          "scoringRule": "≥3 causes = 2 pts, 2 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a10",
+          "text": "Antécédents médicaux pertinents",
+          "details": [
+            "Prématurité ou petit poids naissance",
+            "Malformations digestives/rénales",
+            "Épisodes similaires antérieurs",
+            "Hospitalisations pour déshydratation",
+            "Maladies chroniques (mucoviscidose, Crohn)",
+            "Immunodéficience"
+          ],
+          "scoringRule": "≥4 antécédents = 2 pts, 3 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a11",
+          "text": "Médicaments et facteurs iatrogènes",
+          "details": [
+            "Diurétiques [personne âgée]",
+            "Laxatifs ou lavements",
+            "Antibiotiques récents (diarrhée)",
+            "Chimiothérapie",
+            "Compléments alimentaires"
+          ],
+          "scoringRule": "≥3 médicaments vérifiés = 2 pts, 2 = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a12",
+          "text": "Contexte nutritionnel et social",
+          "details": [
+            "Allaitement maternel vs artificiel [enfant]",
+            "Introduction récente nouveaux aliments",
+            "Autonomie alimentaire [personne âgée]",
+            "Accès à l'eau potable",
+            "Conditions d'hygiène",
+            "Négligence ou maltraitance?"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 3 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Évaluation clinique du degré de déshydratation (Score CDS)",
+          "details": [
+            "Aspect général (normal/malade/léthargique)",
+            "Yeux (normaux/enfoncés/très enfoncés)",
+            "Muqueuses (humides/sèches/très sèches)",
+            "Larmes (présentes/diminuées/absentes)",
+            "Pli cutané (<2s/2-3s/>3s)",
+            "TRC (<2s/2-3s/>3s)"
+          ],
+          "scoringRule": "Score complet avec interprétation = 2 pts, partiel = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e2",
+          "text": "Paramètres vitaux complets",
+          "details": [
+            "FC (tachycardie compensatrice)",
+            "TA (hypotension = signe tardif)",
+            "FR (tachypnée si acidose)",
+            "Température (fièvre?)",
+            "SpO2 si dyspnée",
+            "Poids actuel vs poids habituel"
+          ],
+          "scoringRule": "≥5 paramètres = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e3",
+          "text": "Examen abdominal pédiatrique",
+          "details": [
+            "Distension abdominale",
+            "Bruits hydroaériques (augmentés/diminués)",
+            "Douleur à la palpation",
+            "Masse ou organomégalie",
+            "Recherche invagination (enfant)",
+            "Globe vésical"
+          ],
+          "scoringRule": "≥5 éléments = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e4",
+          "text": "Recherche d'hypotension orthostatique",
+          "details": [
+            "TA couché après 5 min repos",
+            "TA debout après 3 min",
+            "Chute >20 mmHg systolique ou >10 diastolique",
+            "FC couché vs debout (augmentation >20 bpm)",
+            "Symptômes associés (vertiges)"
+          ],
+          "scoringRule": "Test complet avec interprétation = 2 pts, partiel = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e5",
+          "text": "Examen ORL et recherche foyer infectieux",
+          "details": [
+            "Otoscopie bilatérale (otite?)",
+            "Pharynx (pharyngite?)",
+            "Adénopathies cervicales",
+            "Auscultation pulmonaire",
+            "Recherche méningisme si fièvre"
+          ],
+          "scoringRule": "≥4 sites examinés = 2 pts, 2-3 = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e6",
+          "text": "Calcul du pourcentage de déshydratation",
+          "details": [
+            "Légère: <5% (enfant) ou <3% (adulte)",
+            "Modérée: 5-10% (enfant) ou 3-6% (adulte)",
+            "Sévère: >10% (enfant) ou >6% (adulte)",
+            "Corrélation clinique/perte pondérale"
+          ],
+          "scoringRule": "Classification correcte = 2 pts, estimation = 1 pt",
+          "binaryOnly": false
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic principal avec degré de sévérité",
+          "patientComment": "Déshydratation aiguë [légère/modérée/sévère] secondaire à [gastro-entérite/autre cause]",
+          "binaryOnly": true
+        },
+        {
+          "id": "m2",
+          "text": "Diagnostics différentiels étiologiques structurés",
+          "ddSection": {
+            "categories": [
+              {
+                "name": "Pertes digestives",
+                "items": [
+                  "Gastro-entérite virale (rotavirus, norovirus)",
+                  "Gastro-entérite bactérienne (Salmonella, Shigella)",
+                  "Intoxication alimentaire",
+                  "Invagination intestinale (enfant <2 ans)",
+                  "Sténose du pylore (nourrisson)"
+                ]
+              },
+              {
+                "name": "Causes métaboliques/endocriniennes",
+                "items": [
+                  "Diabète inaugural (acidocétose)",
+                  "Diabète insipide",
+                  "Insuffisance surrénalienne aiguë",
+                  "Hyperplasie congénitale surrénales",
+                  "Hyperthyroïdie"
+                ]
+              },
+              {
+                "name": "Causes rénales",
+                "items": [
+                  "Insuffisance rénale aiguë",
+                  "Syndrome néphrotique",
+                  "Tubulopathies (perte de sel)",
+                  "Infection urinaire haute"
+                ]
+              },
+              {
+                "name": "Causes iatrogènes/toxiques",
+                "items": [
+                  "Diurétiques",
+                  "Intoxication médicamenteuse",
+                  "Erreurs de dilution lait (nourrisson)"
+                ]
+              }
+            ]
+          },
+          "scoringRule": "≥3 catégories avec exemples = 2 pts, 2 = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m3",
+          "text": "Examens complémentaires adaptés à la sévérité",
+          "details": [
+            "Ionogramme sanguin (Na, K, Cl, CO2)",
+            "Urée, créatinine (fonction rénale)",
+            "Glycémie (urgence si altération conscience)",
+            "Gaz du sang si déshydratation sévère",
+            "NFS (hémoconcentration)",
+            "CRP si suspicion bactérienne",
+            "Bandelette urinaire ± ECBU"
+          ],
+          "scoringRule": "≥5 examens pertinents = 2 pts, 3-4 = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m4",
+          "text": "Plan de réhydratation protocolisé",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Déshydratation légère (<5%)",
+                "content": "• Réhydratation orale exclusive\n• SRO: 50 ml/kg sur 4h\n• Puis 10 ml/kg après chaque selle\n• Reprise alimentation précoce\n• Maintien allaitement maternel"
+              },
+              {
+                "title": "Déshydratation modérée (5-10%)",
+                "content": "• Essai réhydratation orale d'abord\n• SRO: 100 ml/kg sur 4h\n• Si échec: IV NaCl 0.9% ou Ringer\n• 20 ml/kg en 1h, puis réévaluation\n• Relais oral dès que possible"
+              },
+              {
+                "title": "Déshydratation sévère (>10%)",
+                "content": "• Voie IV immédiate obligatoire\n• Bolus NaCl 0.9%: 20 ml/kg en 20 min\n• Répéter si besoin (max 60 ml/kg)\n• Puis 100 ml/kg sur 6h\n• Monitoring continu, iono/4-6h"
+              },
+              {
+                "title": "Corrections électrolytiques",
+                "content": "• Hyponatrémie: correction lente <12 mEq/24h\n• Hypokaliémie: KCl 20-40 mEq/L après diurèse\n• Acidose: se corrige avec réhydratation\n• Hypoglycémie: G10% 2-5 ml/kg IV"
+              }
+            ]
+          },
+          "scoringRule": "Protocole adapté au degré = 2 pts",
+          "binaryOnly": false
+        },
+        {
+          "id": "m5",
+          "text": "Critères d'hospitalisation pédiatriques",
+          "redflagsSection": [
+            {
+              "text": "Déshydratation sévère >10%"
+            },
+            {
+              "text": "Échec réhydratation orale après 4h"
+            },
+            {
+              "text": "Vomissements incoercibles"
+            },
+            {
+              "text": "Troubles ioniques sévères"
+            },
+            {
+              "text": "Altération état conscience"
+            },
+            {
+              "text": "Âge <6 mois avec déshydratation"
+            },
+            {
+              "text": "Contexte social défavorable"
+            },
+            {
+              "text": "Suspicion maltraitance/négligence"
+            }
+          ],
+          "scoringRule": "≥4 critères définis = 2 pts, 2-3 = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m6",
+          "text": "Surveillance et prévention des complications",
+          "details": [
+            "Poids toutes les 4-6h si hospitalisé",
+            "Bilan entrées/sorties strict",
+            "Ionogramme de contrôle selon sévérité",
+            "Surveillance neurologique (œdème cérébral)",
+            "Prévention syndrome de renutrition",
+            "Éducation parents sur signes d'alarme"
+          ],
+          "scoringRule": "≥5 éléments = 2 pts, 3-4 = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m7",
+          "text": "Conseils de sortie et prévention",
+          "details": [
+            "Technique préparation SRO démontrée",
+            "Quantités à donner écrites",
+            "Reprise alimentation normale précoce",
+            "Éviter boissons sucrées/sodas",
+            "Consultation si aggravation",
+            "Mesures d'hygiène (lavage mains)",
+            "Carnet de surveillance remis"
+          ],
+          "scoringRule": "≥5 conseils = 2 pts, 3-4 = 1 pt",
+          "binaryOnly": false
+        }
+      ]
+    }
+  }
+}

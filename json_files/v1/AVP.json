@@ -1,0 +1,306 @@
+{
+  "title": "AVP",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Femme de 56 ans consultant pour un coup du lapin"
+  },
+  "sections": {
+    "anamnese": {
+      "title": "Anamnèse",
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Question ouverte d'entrée",
+          "patientComment": "(Docteur, j'ai un coup du lapin)",
+          "binaryOnly": true
+        },
+        {
+          "id": "a3",
+          "text": "Clarification : \"Que comprenez-vous par coup du lapin ?\"",
+          "patientComment": "(Une voiture m'est rentrée dedans par derrière et je me suis cogné la tête. Depuis j'ai des maux de tête)"
+        },
+        {
+          "id": "a4",
+          "text": "Moment de l'accident",
+          "patientComment": "(Il y a 1 semaine)"
+        },
+        {
+          "id": "a5",
+          "text": "Déroulement détaillé de l'accident",
+          "details": [
+            "Vitesse estimée",
+            "Port de la ceinture",
+            "Mécanisme du traumatisme",
+            "Prise en charge immédiate"
+          ],
+          "patientComment": "(Arrêtée au feu rouge / Il m'a percutée à ~30 km/h par derrière / Ceinturée, tête contre l'appui-tête / Pas d'hospitalisation, tout allait bien après)"
+        },
+        {
+          "id": "a6",
+          "text": "Caractéristiques des céphalées",
+          "details": [
+            "Localisation",
+            "Évolution dans la journée",
+            "Irradiation cervicale",
+            "Intensité sur échelle 0-10",
+            "Caractère"
+          ],
+          "patientComment": "(Occipitales / Plus faibles le matin, plus fortes le soir / Oui vers la nuque / Matin 2, soir 7 / Sourdes)"
+        },
+        {
+          "id": "a7",
+          "text": "Facteurs d'amélioration et d'aggravation",
+          "details": [
+            "Facteurs d'amélioration",
+            "Facteurs d'aggravation"
+          ],
+          "patientComment": "(Position allongée, chaleur sur la nuque / Station debout prolongée et stress)"
+        },
+        {
+          "id": "a8",
+          "text": "Symptômes d'accompagnement neurologiques",
+          "details": [
+            "Vertiges",
+            "Nausées/vomissements",
+            "Troubles sensitifs des bras",
+            "Déficit moteur des bras",
+            "Troubles olfactifs",
+            "Acouphènes",
+            "Diplopie"
+          ],
+          "patientComment": "(Non / Non / Non / Non / Non / Non / Non)"
+        },
+        {
+          "id": "a9",
+          "text": "Antécédents de céphalées",
+          "patientComment": "(Oui, parfois des céphalées de tension, déjà des investigations pour migraine mais négatives)"
+        },
+        {
+          "id": "a10",
+          "text": "Symptômes généraux",
+          "details": [
+            "Fièvre",
+            "Symptômes grippaux"
+          ],
+          "patientComment": "(Non / Non)"
+        },
+        {
+          "id": "a11",
+          "text": "Antécédents chirurgicaux cervicaux ou céphaliques",
+          "patientComment": "(Non)"
+        },
+        {
+          "id": "a12",
+          "text": "Antécédents médicaux",
+          "patientComment": "(Aucun)"
+        },
+        {
+          "id": "a13",
+          "text": "Médicaments actuels",
+          "patientComment": "(Parfois graines de lin pour régulation du transit, réticente aux médicaments)"
+        },
+        {
+          "id": "a14",
+          "text": "Allergies connues",
+          "patientComment": "(Aucune connue)"
+        },
+        {
+          "id": "a15",
+          "text": "Consommation de toxiques",
+          "details": [
+            "Tabac",
+            "Alcool",
+            "Drogues"
+          ],
+          "patientComment": "(Non / Non / Non)"
+        },
+        {
+          "id": "a16",
+          "text": "Antécédents familiaux",
+          "patientComment": "(Mère migraineuse, père en bonne santé)"
+        },
+        {
+          "id": "a17",
+          "text": "Anamnèse sociale",
+          "details": [
+            "Profession",
+            "Situation familiale",
+            "Activité physique",
+            "Médecines alternatives"
+          ],
+          "patientComment": "(Vendeuse de chaussures / Mère célibataire, enfants adolescents / Sportive / Adepte de médecine complémentaire)"
+        },
+        {
+          "id": "a18",
+          "text": "Synthèse et questions du patient",
+          "patientComment": "(Pensez-vous que je doive me faire opérer de la colonne vertébrale ?)"
+        },
+        {
+          "id": "a19",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "binaryOnly": false,
+          "details": [
+            "Anamnèse générale ciblée et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "examen": {
+      "title": "Examen clinique",
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Examen bref des nerfs crâniens"
+        },
+        {
+          "id": "e2",
+          "text": "Évaluation de la marche",
+          "patientComment": "(Marche assurée)"
+        },
+        {
+          "id": "e3",
+          "text": "Inspection cervicale",
+          "details": [
+            "Hématomes",
+            "Rougeur",
+            "Points de pression",
+            "Symétrie musculaire"
+          ],
+          "patientComment": "(Aucune anomalie)"
+        },
+        {
+          "id": "e4",
+          "text": "Mobilité cervicale active",
+          "details": [
+            "Rotation",
+            "Flexion",
+            "Extension",
+            "Flexion latérale",
+            "Rotation en flexion (rachis cervical supérieur)",
+            "Rotation en extension (rachis cervical inférieur)"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Mobilité cervicale passive",
+          "patientComment": "(Rotation droite limitée)"
+        },
+        {
+          "id": "e6",
+          "text": "Mesure distance menton-sternum en flexion/extension"
+        },
+        {
+          "id": "e7",
+          "text": "Palpation musculaire",
+          "details": [
+            "Sterno-cléido-mastoïdien",
+            "Muscles occipitaux",
+            "Élévateur de la scapula"
+          ]
+        },
+        {
+          "id": "e8",
+          "text": "Test de compression axiale",
+          "details": [
+            "En position neutre",
+            "En flexion latérale"
+          ]
+        },
+        {
+          "id": "e9",
+          "text": "Examen neurologique des membres supérieurs",
+          "details": [
+            "Force",
+            "Sensibilité",
+            "Réflexes"
+          ]
+        },
+        {
+          "id": "e10",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "binaryOnly": false,
+          "details": [
+            "Status général ciblé et bien conduit"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "management": {
+      "title": "Prise en charge",
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Énonce le diagnostic de suspicion",
+          "patientComment": "(Distorsion cervicale post-coup du lapin, contracture musculaire, possible blocage articulaire postérieur)"
+        },
+        {
+          "id": "m2",
+          "text": "Propose 2 diagnostics différentiels",
+          "details": [
+            "Hernie discale",
+            "Fracture vertébrale"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Justifie l'absence d'imagerie immédiate",
+          "details": [
+            "Pas de chute",
+            "Pas de céphalée 'pire de sa vie'",
+            "Pas de nouveau type de céphalée",
+            "Pas de déficit neurologique"
+          ],
+          "patientComment": "(RX et IRM non indiqués)"
+        },
+        {
+          "id": "m4",
+          "text": "Prescrit un traitement médicamenteux adapté",
+          "details": [
+            "AINS (après exclusion troubles gastriques)",
+            "Traitement fixe 3-5 jours",
+            "Myorelaxants si pas d'amélioration"
+          ]
+        },
+        {
+          "id": "m5",
+          "text": "Recommande des mesures non-médicamenteuses",
+          "details": [
+            "Mobilisation",
+            "Application de chaleur",
+            "Chiropractie si besoin",
+            "Physiothérapie (mouvements passifs et actifs)"
+          ]
+        },
+        {
+          "id": "m6",
+          "text": "Planifie le suivi",
+          "details": [
+            "Contrôle dans 5 jours",
+            "Évaluation après physiothérapie/chiropractie",
+            "IRM si pas d'amélioration",
+            "Arrêt de travail si nécessaire"
+          ]
+        },
+        {
+          "id": "m7",
+          "text": "Évaluation globale de la qualité de la prise en charge",
+          "binaryOnly": false,
+          "details": [
+            "Prise en charge générale cohérente et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    }
+  }
+}

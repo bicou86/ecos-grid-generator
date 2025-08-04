@@ -1,0 +1,392 @@
+{
+  "title": "Épilepsie",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "M. Eispelipe, 77 ans, consulte pour une première crise convulsive.",
+    "patientComment": "Homme âgé avec première crise tonico-clonique généralisée. Contexte inquiétant : antécédent de cancer prostatique, perte de poids 5kg/6mois, céphalées gauches récurrentes, changement de personnalité. Forte suspicion de métastases cérébrales."
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction et tâche",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Description détaillée de la crise épileptique",
+          "details": [
+            "Type: [tout le corps, tremblements = tonico-clonique]",
+            "Début: [soudain, il y a 1h, peu après repas]",
+            "Durée: [2-3 minutes, m'a semblé une éternité]",
+            "Nombre: [une seule fois]",
+            "Témoin présent et description"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥4 caractéristiques = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "a3",
+          "text": "Phases de la crise et signes accompagnateurs",
+          "details": [
+            "Aura: [sensation bizarre au ventre en mangeant]",
+            "Cri initial: [non]",
+            "Morsure langue: [oui, salive légèrement sanglante]",
+            "Perte urinaire: [oui, a uriné]",
+            "Chute/trauma: [non]"
+          ],
+          "binaryOnly": false,
+          "patientComment": "Crise typique avec aura épigastrique, morsure et incontinence",
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "a4",
+          "text": "Phase post-critique caractérisée",
+          "details": [
+            "Confusion: [oui, désorienté]",
+            "Somnolence: [oui, confus et somnolent]",
+            "Agitation: [non]",
+            "Céphalées post-critiques",
+            "Déficit focal (paralysie de Todd)"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥4 signes recherchés = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "a5",
+          "text": "Recherche de RED FLAGS neurologiques",
+          "redflagsSection": [
+            {
+              "text": "Céphalées progressives récentes [oui, souvent côté gauche]",
+              "isRedFlag": true
+            },
+            {
+              "text": "Perte de poids inexpliquée [5kg en 6 mois]",
+              "isRedFlag": true
+            },
+            {
+              "text": "Changement personnalité [irritable, dépressif]",
+              "isRedFlag": true
+            },
+            {
+              "text": "Déficit neurologique focal [faiblesse hémicorps gauche]",
+              "isRedFlag": true
+            },
+            {
+              "text": "Antécédent néoplasique [cancer prostate il y a 3 ans]",
+              "isRedFlag": true
+            }
+          ],
+          "binaryOnly": false,
+          "patientComment": "Multiples red flags suggérant processus expansif intracrânien",
+          "scoringRule": "≥4 red flags recherchés = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "a6",
+          "text": "Facteurs précipitants et provocateurs",
+          "details": [
+            "Privation sommeil: [peu dormi]",
+            "Stress émotionnel: [dispute avec voisin]",
+            "Alcool/sevrage: [1 verre vin/jour]",
+            "Médicaments épileptogènes: [citalopram 10mg]",
+            "Photostimulation: [non]"
+          ],
+          "binaryOnly": false,
+          "patientComment": "Multiples facteurs déclenchants + antidépresseur abaissant seuil",
+          "scoringRule": "≥4 facteurs = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "a7",
+          "text": "Symptômes associés systémiques",
+          "details": [
+            "Fièvre: [non]",
+            "Nausées matinales: [oui, sans appétit]",
+            "Vomissements en jet",
+            "Troubles visuels",
+            "Troubles de l'équilibre"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥3 symptômes recherchés = 2 pts, 2 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "a8",
+          "text": "Antécédents et facteurs de risque",
+          "details": [
+            "Cancer actif: [prostate résection il y a 3 ans]",
+            "AF cancer: [père prostate, mère sein]",
+            "Épilepsie personnelle/familiale: [non]",
+            "Traumatisme crânien: [ne sait pas]",
+            "AVC/AIT antérieur: [non]"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "a9",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "binaryOnly": false,
+          "details": [
+            "Anamnèse orientée première crise avec red flags",
+            "Recherche systématique étiologie secondaire",
+            "Contexte oncologique exploré"
+          ],
+          "scoringRule": "Excellente = 2 pts, suffisante = 1 pt, insuffisante = 0 pt"
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "État de conscience et orientation",
+          "details": [
+            "Glasgow Coma Scale",
+            "Orientation tempo-spatiale: [confus]",
+            "Langage et compréhension",
+            "Attention et concentration",
+            "État post-critique évalué"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "e2",
+          "text": "Examen neurologique focal complet",
+          "details": [
+            "Force motrice: [faiblesse hémicorps gauche]",
+            "Tonus musculaire: [normal]",
+            "ROT: [symétriques]",
+            "Sensibilité superficielle/profonde",
+            "Coordination et cérébelleux"
+          ],
+          "binaryOnly": false,
+          "patientComment": "Déficit moteur gauche = signe de localisation",
+          "scoringRule": "≥4 tests = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "e3",
+          "text": "Nerfs crâniens et signes d'HTIC",
+          "details": [
+            "Fond d'œil (œdème papillaire)",
+            "Pupilles (taille, réactivité)",
+            "Mouvements oculaires",
+            "Réflexe cornéen",
+            "Asymétrie faciale"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥4 nerfs testés = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "e4",
+          "text": "Signes méningés et réflexes pathologiques",
+          "details": [
+            "Raideur de nuque",
+            "Kernig et Brudzinski",
+            "Babinski bilatéral",
+            "Réflexes de préhension",
+            "Clonus"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥3 signes = 2 pts, 2 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "e5",
+          "text": "Examen cardiovasculaire ciblé",
+          "details": [
+            "Auscultation cardiaque: [sans particularité]",
+            "Recherche arythmie",
+            "Souffle carotidien: [absent]",
+            "Pouls périphériques",
+            "TA et FC"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "e6",
+          "text": "Recherche de stigmates et complications",
+          "details": [
+            "Morsure langue latérale",
+            "Ecchymoses/trauma",
+            "Luxation épaule",
+            "Fractures (côtes)",
+            "Signes de lutte"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥3 signes = 2 pts, 2 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "e7",
+          "text": "Évaluation globale de la qualité de l'examen",
+          "binaryOnly": false,
+          "details": [
+            "Examen neurologique systématique",
+            "Recherche signes de localisation",
+            "Évaluation complications post-crise"
+          ],
+          "scoringRule": "Excellent = 2 pts, suffisant = 1 pt, insuffisant = 0 pt"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic principal et urgence",
+          "patientComment": "Première crise épileptique probablement secondaire à métastases cérébrales",
+          "details": [
+            "Crise tonico-clonique généralisée",
+            "Contexte néoplasique (cancer prostate)",
+            "Multiples red flags présents",
+            "Déficit neurologique focal",
+            "Urgence neuro-oncologique"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "Diagnostic complet avec contexte = 2 pts, partiel = 1 pt, incorrect = 0 pt"
+        },
+        {
+          "id": "m2",
+          "text": "Diagnostics différentiels structurés",
+          "ddSection": {
+            "categories": [
+              {
+                "name": "Causes tumorales",
+                "items": [
+                  "Métastases cérébrales",
+                  "Tumeur cérébrale primitive",
+                  "Méningiome",
+                  "Lymphome cérébral"
+                ]
+              },
+              {
+                "name": "Causes vasculaires",
+                "items": [
+                  "AVC hémorragique",
+                  "Thrombose veineuse cérébrale",
+                  "Hémorragie sous-arachnoïdienne"
+                ]
+              },
+              {
+                "name": "Causes infectieuses/inflammatoires",
+                "items": [
+                  "Méningite/encéphalite",
+                  "Abcès cérébral",
+                  "Neurosyphilis"
+                ]
+              },
+              {
+                "name": "Causes métaboliques",
+                "items": [
+                  "Hypoglycémie",
+                  "Hyponatrémie",
+                  "Hypocalcémie",
+                  "Urémie"
+                ]
+              }
+            ]
+          },
+          "binaryOnly": false,
+          "scoringRule": "≥8 DD pertinents = 2 pts, 4-7 DD = 1 pt, <4 DD = 0 pt"
+        },
+        {
+          "id": "m3",
+          "text": "Examens complémentaires urgents",
+          "binaryOnly": false,
+          "scoringRule": "≥4 examens justifiés = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "details": [
+            "IRM cérébrale avec gadolinium → Gold standard pour métastases, urgence <24h",
+            "CT cérébral si IRM non disponible → Exclure hémorragie, effet de masse, hydrocéphalie",
+            "Biologie complète → Iono, Ca, glycémie, fonction rénale/hépatique, NFS, CRP",
+            "EEG en différé → Si doute diagnostique ou récidive",
+            "Marqueurs tumoraux → PSA, bilan extension si métastases confirmées"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Prise en charge immédiate",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Stabilisation et surveillance",
+                "content": "• Position latérale de sécurité\n• Monitoring vital continu\n• Voie veineuse périphérique\n• O2 si SaO2 <94%\n• Glycémie capillaire immédiate"
+              },
+              {
+                "title": "Si crise active/récidive",
+                "content": "• Lorazépam 0.1mg/kg IV (max 4mg)\n• ou Midazolam 10mg IM/intranasal\n• Si échec: Phénytoïne 20mg/kg IV\n• Intubation si status epilepticus"
+              },
+              {
+                "title": "Neuroprotection",
+                "content": "• Éviter hyperthermie\n• Normoglycémie stricte\n• TA cible >90mmHg systolique\n• Éviter hyponatrémie"
+              }
+            ]
+          },
+          "binaryOnly": false,
+          "scoringRule": "≥3 catégories complètes = 2 pts, 2 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "m5",
+          "text": "Traitement antiépileptique adapté",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Première ligne si tumeur/métastases",
+                "content": "• Lévétiracétam (Keppra®) 500mg 2x/j\n• Augmentation progressive jusqu'à 1500mg 2x/j\n• Peu d'interactions, bien toléré\n• Alternative: Lamotrigine"
+              },
+              {
+                "title": "Éviter si possible",
+                "content": "• Phénytoïne (interactions++)\n• Carbamazépine (inducteur enzymatique)\n• Phénobarbital (sédation)"
+              },
+              {
+                "title": "Traitement symptomatique",
+                "content": "• Dexaméthasone 4mg 4x/j si œdème\n• Antiémétiques si nausées\n• Analgésie adaptée\n• Arrêt citalopram (épileptogène)"
+              }
+            ]
+          },
+          "binaryOnly": false,
+          "scoringRule": "≥3 aspects traités = 2 pts, 2 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "m6",
+          "text": "Orientation et coordination des soins",
+          "details": [
+            "Hospitalisation urgente en neurologie",
+            "Consultation neuro-oncologie rapide",
+            "Évaluation neurochirurgicale si lésion unique",
+            "Radiothérapie stéréotaxique à discuter",
+            "Soins de support précoces"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "m7",
+          "text": "Information patient et mesures pratiques",
+          "details": [
+            "Interdiction de conduire (min 1 an)",
+            "Éviter activités à risque",
+            "Surveillance entourage 48h",
+            "Carte épilepsie + consignes",
+            "Pronostic honnête mais empathique"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥4 conseils = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "m8",
+          "text": "Évaluation globale de la prise en charge",
+          "binaryOnly": false,
+          "details": [
+            "Urgence oncologique reconnue",
+            "Investigations et traitement appropriés",
+            "Approche multidisciplinaire"
+          ],
+          "scoringRule": "Excellente = 2 pts, adéquate = 1 pt, insuffisante = 0 pt"
+        }
+      ]
+    }
+  }
+}

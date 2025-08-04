@@ -1,0 +1,477 @@
+{
+  "title": "AVP",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Madame Bachmann, 56 ans, se présente au cabinet suite à un accident de la voie publique",
+    "vitals": {
+      "ta": "128/82 mmHg",
+      "fc": "72 bpm",
+      "fr": "14/min",
+      "temperature": "36.6°C"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction et objectif de la consultation",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Question ouverte d'introduction → Motif de consultation",
+          "patientComment": "Docteur, j'ai eu un coup du lapin",
+          "binaryOnly": true
+        },
+        {
+          "id": "a3",
+          "text": "RED FLAGS - Urgences post-traumatiques",
+          "redflagsSection": [
+            {
+              "text": "Âge ≥65 ans [non - 56 ans]"
+            },
+            {
+              "text": "Mécanisme dangereux [impact arrière 30km/h - limite]"
+            },
+            {
+              "text": "Paresthésies extrémités [non]"
+            },
+            {
+              "text": "Perte de connaissance [non]"
+            },
+            {
+              "text": "Déficit neurologique focal [non]"
+            },
+            {
+              "text": "Céphalée intense inhabituelle [non]"
+            },
+            {
+              "text": "Vomissements répétés [non]"
+            },
+            {
+              "text": "Confusion/désorientation [non]"
+            }
+          ],
+          "scoringRule": "≥6 red flags explorés = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a4",
+          "text": "Mécanisme détaillé de l'accident (ABCDE du trauma)",
+          "details": [
+            "Airways/Breathing [OK, pas de détresse]",
+            "Circulation [stable, pas de choc]",
+            "Disability [mobilité conservée]",
+            "Exposure [impact arrière 30km/h]",
+            "Environnement [arrêtée au feu rouge]",
+            "Protection [ceinture de sécurité portée]",
+            "Airbag déclenché [à vérifier]",
+            "Délai consultation [1 semaine - tardif]"
+          ],
+          "scoringRule": "≥6 éléments = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a5",
+          "text": "Classification WAD (Whiplash Associated Disorders)",
+          "details": [
+            "WAD 0: Aucun symptôme [non]",
+            "WAD I: Douleur/raideur seules [non]",
+            "WAD II: + signes musculosquelettiques [oui probable]",
+            "WAD III: + signes neurologiques [non]",
+            "WAD IV: Fracture/luxation [non suspecté]",
+            "Limitation mobilité passive [rotation droite limitée]",
+            "Points trigger [à vérifier examen]"
+          ],
+          "scoringRule": "Classification correcte = 2 pts, partielle = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a6",
+          "text": "Caractérisation complète des céphalées (CFINLO)",
+          "details": [
+            "Caractère [sourde]",
+            "Fréquence [quotidienne depuis AVP]",
+            "Intensité [2/10 matin → 7/10 soir]",
+            "Nombre [continue avec fluctuations]",
+            "Localisation [occipitale → nuque]",
+            "Autres symptômes [non - pas nausées/photo]"
+          ],
+          "scoringRule": "CFINLO complet = 2 pts, 4-5 éléments = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a7",
+          "text": "Facteurs modulateurs et autotraitement",
+          "details": [
+            "Amélioration repos/décubitus [oui]",
+            "Amélioration chaleur locale [oui]",
+            "Aggravation station debout [oui]",
+            "Aggravation stress [oui - enfants pubères]",
+            "Réticence médicaments [oui - préférence naturelle]",
+            "Automédication [graines de lin seulement]",
+            "Thérapies essayées [aucune encore]"
+          ],
+          "scoringRule": "≥5 facteurs = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a8",
+          "text": "Recherche systématique de complications",
+          "details": [
+            "Syndrome de Claude Bernard-Horner [non]",
+            "Vertiges/troubles équilibre [non]",
+            "Acouphènes post-trauma [non]",
+            "Troubles visuels/diplopie [non]",
+            "Dysphagie/dysphonie [non]",
+            "Troubles cognitifs/concentration [à explorer]",
+            "Troubles sommeil [probable avec douleur]",
+            "Syndrome post-commotionnel [non]"
+          ],
+          "scoringRule": "≥6 complications = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a9",
+          "text": "Antécédents de pathologie cervicale",
+          "details": [
+            "Céphalées tension préexistantes [oui]",
+            "Investigations migraine négatives [fait]",
+            "Arthrose cervicale connue [non]",
+            "Hernie discale [non]",
+            "Chirurgie rachis [non]",
+            "Traumatisme cervical antérieur [non]",
+            "Fibromyalgie [non mentionnée]"
+          ],
+          "scoringRule": "≥5 ATCD = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a10",
+          "text": "Facteurs de risque de chronicisation",
+          "details": [
+            "Anxiété post-accident [à évaluer]",
+            "Catastrophisme douleur [non apparent]",
+            "Litige/assurance en cours [probable]",
+            "Stress psychosocial [mère célibataire]",
+            "Kinésiophobie [non - reste active]",
+            "Attentes irréalistes [chirurgie? - à corriger]",
+            "Dépression associée [non apparente]"
+          ],
+          "scoringRule": "≥5 facteurs évalués = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a11",
+          "text": "Contexte biopsychosocial complet",
+          "details": [
+            "Travail physique [vendeuse chaussures - debout]",
+            "Situation familiale [mère célibataire stressée]",
+            "Activité physique [sportive - bon pronostic]",
+            "Médecine complémentaire [favorable - respecter]",
+            "Support social [à évaluer]",
+            "Impact fonctionnel travail [arrêt nécessaire?]",
+            "Qualité de vie altérée [oui - douleur vespérale]"
+          ],
+          "scoringRule": "≥5 éléments = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a12",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "details": [
+            "Anamnèse complète et systématique",
+            "Red flags exclus",
+            "Classification WAD établie",
+            "Facteurs chronicisation évalués",
+            "Contexte biopsychosocial exploré"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Examen neurologique de dépistage",
+          "details": [
+            "Nerfs crâniens sommaires [normaux]",
+            "Force MS (C5-C8) [normale]",
+            "ROT biceps/triceps/styloradial [symétriques]",
+            "Sensibilité MS dermatomale [normale]",
+            "Signe de Hoffman [négatif]",
+            "Marche et équilibre [assurée]"
+          ],
+          "scoringRule": "≥5 éléments = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e2",
+          "text": "Inspection du rachis cervical",
+          "details": [
+            "Alignement sagittal [normal]",
+            "Hématomes/ecchymoses [aucun]",
+            "Œdème/tuméfaction [non]",
+            "Contracture visible [possible]",
+            "Asymétrie musculaire [symétrique]",
+            "Position antalgique [non]"
+          ],
+          "scoringRule": "≥5 signes = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e3",
+          "text": "Mobilité cervicale active complète",
+          "details": [
+            "Flexion (45-60°) [normale ou limitée]",
+            "Extension (45-75°) [limitée douloureuse?]",
+            "Rotation D (60-80°) [limitée]",
+            "Rotation G (60-80°) [normale?]",
+            "Inclinaison latérale D/G (45°)",
+            "Distance menton-sternum [mesurée]"
+          ],
+          "scoringRule": "Toutes amplitudes testées = 2 pts, 3-5 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e4",
+          "text": "Tests de mobilité segmentaire",
+          "details": [
+            "Rotation en flexion (C0-C2) [teste atlas-axis]",
+            "Rotation en extension (C3-C7) [rachis inférieur]",
+            "Test de Klein (vertébro-basilaire)",
+            "Mobilité passive segmentaire",
+            "End-feel articulaire [dur/élastique/vide]"
+          ],
+          "scoringRule": "≥4 tests = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e5",
+          "text": "Palpation musculaire systématique",
+          "details": [
+            "SCM bilatéral [contracture?]",
+            "Trapèzes supérieurs [points trigger?]",
+            "Élévateurs scapula [tension?]",
+            "Sous-occipitaux [douloureux?]",
+            "Scalènes [syndrome défilé?]",
+            "Processus épineux C2-C7 [sensibles?]"
+          ],
+          "scoringRule": "≥5 muscles = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e6",
+          "text": "Tests de provocation spécifiques",
+          "details": [
+            "Spurling test (compression foraminale)",
+            "Test de distraction cervicale",
+            "Test compression axiale [douleur?]",
+            "Test de Jackson (hyperextension)",
+            "Upper Limb Tension Test"
+          ],
+          "scoringRule": "≥4 tests = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e7",
+          "text": "Évaluation posturale globale",
+          "details": [
+            "Tête antérieure [fréquent post-whiplash]",
+            "Épaules enroulées [compensation?]",
+            "Cyphose dorsale augmentée [non]",
+            "Lordose cervicale [rectitude?]"
+          ],
+          "scoringRule": "≥3 éléments = 2 pts, 2 = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e8",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "details": [
+            "Examen neurologique de sécurité",
+            "Mobilité active et passive testées",
+            "Palpation musculaire complète",
+            "Tests provocateurs réalisés",
+            "Posture évaluée"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic principal énoncé",
+          "details": [
+            "Syndrome du coup du lapin WAD grade II",
+            "Entorse cervicale post-traumatique",
+            "Contractures musculaires secondaires",
+            "Céphalées cervicogéniques associées"
+          ],
+          "scoringRule": "Diagnostic complet = 2 pts, partiel = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m2",
+          "text": "Diagnostics différentiels pertinents",
+          "ddSection": {
+            "categories": [
+              {
+                "name": "Urgences à exclure",
+                "items": [
+                  "Fracture vertébrale occulte Rx si critères canadiens+",
+                  "Dissection carotide/vertébrale Angio-IRM si signes",
+                  "Hématome épidural IRM urgente si déficit",
+                  "Instabilité ligamentaire Rx dynamiques"
+                ]
+              },
+              {
+                "name": "Complications fréquentes",
+                "items": [
+                  "Hernie discale traumatique IRM si radiculopathie",
+                  "Syndrome facettaire Test infiltration diagnostique",
+                  "Syndrome myofascial Points trigger, test thérapeutique",
+                  "Commotion cérébrale associée Évaluation neuropsychologique"
+                ]
+              }
+            ]
+          },
+          "scoringRule": "≥6 DD = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m3",
+          "text": "Justification imagerie selon guidelines",
+          "details": [
+            "Critères canadiens C-spine négatifs",
+            "Pas d'indication Rx immédiate",
+            "IRM si persistance >6 semaines",
+            "IRM si déficit neurologique apparaît",
+            "Pas de CT sauf trauma haute énergie",
+            "Rx si aggravation inexpliquée"
+          ],
+          "scoringRule": "Guidelines respectées = 2 pts, partielles = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m4",
+          "text": "Traitement multimodal phase aiguë",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Pharmacologique adapté",
+                "content": "• AINS: Ibuprofène 400mg 3×/j avec repas × 5j\n• Alternative naturelle: Arnica montana 9CH\n• Paracétamol 1g si besoin (max 4g/j)\n• Myorelaxant soir: Tizanidine 2mg\n• Éviter opioïdes et collier cervical\n• Gel anti-inflammatoire local possible"
+              },
+              {
+                "title": "Thérapies manuelles précoces",
+                "content": "• Mobilisation douce dès J2-3\n• Chiropractie selon préférence patiente\n• Physiothérapie: techniques douces\n• Massage décontracturant\n• Éviter manipulations haute vélocité phase aiguë\n• Exercices pendulaires cervicaux"
+              },
+              {
+                "title": "Approches complémentaires",
+                "content": "• Thermothérapie: chaleur humide 20min 3×/j\n• Acupuncture pour douleur\n• TENS si disponible\n• Relaxation/sophrologie\n• Yoga doux adapté\n• Respiration diaphragmatique"
+              }
+            ]
+          },
+          "scoringRule": "Approche complète = 2 pts, partielle = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m5",
+          "text": "Activation et réhabilitation précoce",
+          "details": [
+            "Maintien activités quotidiennes adaptées",
+            "Éviter repos au lit prolongé",
+            "Reprise travail progressive",
+            "Exercices isométriques doux",
+            "Étirements progressifs",
+            "Renforcement profond cervical",
+            "Programme auto-exercices maison"
+          ],
+          "scoringRule": "≥5 mesures = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m6",
+          "text": "Prévention chronicisation WAD",
+          "details": [
+            "Éducation sur évolution favorable",
+            "Éviter catastrophisme",
+            "Adresser peurs et croyances",
+            "Journal de douleur si utile",
+            "Techniques coping actives",
+            "Support psychologique si besoin",
+            "Éviter surinvestigation"
+          ],
+          "scoringRule": "≥5 stratégies = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m7",
+          "text": "Plan de suivi structuré",
+          "details": [
+            "Contrôle à J5-7 (évaluation réponse)",
+            "Kiné/chiro 2×/semaine × 3 semaines",
+            "Réévaluation à 3 semaines",
+            "IRM si pas amélioration 6 semaines",
+            "Référence spécialiste si chronicisation",
+            "Certificat arrêt travail 1 semaine",
+            "Adaptation poste travail temporaire"
+          ],
+          "scoringRule": "≥5 éléments = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m8",
+          "text": "Information et réassurance adaptée",
+          "details": [
+            "Pas d'indication chirurgicale",
+            "Pronostic excellent si activation",
+            "90% guérison en 3 mois",
+            "Importance mobilisation précoce",
+            "Signes alarme à surveiller",
+            "Ressources éducatives fournies",
+            "Questions/inquiétudes adressées"
+          ],
+          "scoringRule": "≥5 points = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m9",
+          "text": "Aspects médico-légaux et administratifs",
+          "details": [
+            "Documentation précise lésions",
+            "Certificat médical initial détaillé",
+            "Contact assurance si nécessaire",
+            "ITT évaluée objectivement",
+            "Éviter sur-médicalisation",
+            "Suivi indépendant du litige"
+          ],
+          "scoringRule": "≥4 aspects = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m10",
+          "text": "Évaluation globale de la qualité de la prise en charge",
+          "details": [
+            "Diagnostic WAD approprié",
+            "Approche biopsychosociale",
+            "Respect préférences patiente",
+            "Activation précoce promue",
+            "Suivi structuré planifié"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        }
+      ]
+    }
+  }
+}

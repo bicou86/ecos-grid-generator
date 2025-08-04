@@ -1,0 +1,277 @@
+{
+  "title": "Perte auditive I",
+  "context": {
+    "setting": "Consultation ORL d'urgence",
+    "patient": "Homme de 40 ans venant en urgence car il n'entend plus rien, complètement désespéré"
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction et tâche",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Question d'entrée ouverte - Problème actuel [Hein ? Je ne vous entends pas]",
+          "binaryOnly": true
+        },
+        {
+          "id": "a3",
+          "text": "Caractérisation de la perte auditive",
+          "details": [
+            "Apparition temporelle [soudaine]",
+            "Evolution temporelle (Aggravation des symptômes ?) [non]",
+            "Intensité de la perte auditive, latéralisation [gauche > droite]"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Symptômes associés ORL",
+          "details": [
+            "Sécrétions (cérumen ? sang ? pus ?) [non]",
+            "Douleurs auriculaires [non]",
+            "Acouphènes [temporaire, pas en ce moment]",
+            "Vertiges [absents]"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Symptômes généraux",
+          "details": [
+            "Fièvre [non]",
+            "Toux [non]",
+            "Rhume [non]",
+            "Vomissements [non]",
+            "Anamnèse systémique (tension artérielle, neurologie, psychosocial) [sans particularité]"
+          ]
+        },
+        {
+          "id": "a6",
+          "text": "Facteurs déclenchants",
+          "details": [
+            "Facteur déclenchant identifiable [aucune idée, aucune cause identifiée]",
+            "Traumatisme récent [non]"
+          ]
+        },
+        {
+          "id": "a7",
+          "text": "Antécédents ORL et exposition professionnelle",
+          "details": [
+            "Antécédents de maladies auriculaires [pas d'antécédents ORL]",
+            "Exposition professionnelle au bruit [exposition aux clients qui crient, sans plus]",
+            "Traumatismes auditifs antérieurs [non]"
+          ]
+        },
+        {
+          "id": "a8",
+          "text": "Anamnèse médicamenteuse et toxiques [Pas de médicaments ototoxiques]",
+          "details": [
+            "Médicaments ototoxiques",
+            "Exposition à des toxiques",
+            "Automédication récente"
+          ],
+          "patientComment": "Pas de médicaments ototoxiques"
+        },
+        {
+          "id": "a9",
+          "text": "Anamnèse systémique et sociale",
+          "details": [
+           "Facteurs de risque cardiovasculaire",
+           "Facteurs psychosociaux [stress professionnel]",
+           "Allergies [non]"
+          ],
+          "patientComment": "Célibataire, avocat avec beaucoup de stress professionnel"
+        },
+        {
+          "id": "a10",
+          "text": "Antécédents familiaux (de surdité) [nihil]"
+        },
+        {
+          "id": "a11",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "binaryOnly": false,
+          "details": [
+            "Anamnèse générale ciblée et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Inspection de l'oreille",
+          "details": [
+            "Inspection du pavillon et du conduit auditif externe [sans particularité]"
+          ]
+        },
+        {
+          "id": "e2",
+          "text": "Palpation de l'oreille",
+          "details": [
+            "Palpation du tragus et traction du pavillon [pas de douleur]",
+            "Recherche d'adénopathies cervicales [nihil]"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Otoscopie bilatérale",
+          "details": [
+            "Tympans et conduits auditifs externes [normaux bilatéralement]"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Tests auditifs au diapason",
+          "details": [
+            "Test de Weber [latéralisation vers la droite]",
+            "Test de Rinne [Rinne gauche positif]"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Examen de l'équilibre",
+          "details": [
+            "Équilibre [pas de troubles]",
+            "Marche [normale]"
+          ]
+        },
+        {
+          "id": "e6",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "binaryOnly": false,
+          "details": [
+            "Status général ciblé et bien conduit"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic principal",
+          "details": [
+            "Surdité brusque (surdité de perception unilatérale gauche)"
+          ]
+        },
+        {
+          "id": "m2",
+          "text": "Diagnostics différentiels (au moins 3 diagnostics différentiels appropriés)",
+          "details": [
+            "Distinction oreille externe/moyenne vs interne",
+            "Causes centrales vs périphériques"
+          ],
+          "scoringRule": "Au moins trois = oui, un à deux = ±, aucun = non",
+          "ddSection": {
+           "title": "Diagnostics différentiels de la perte auditive aiguë",
+           "categories": [
+             {
+               "name": "Oreille externe et moyenne :",
+               "items": [
+                 {
+                   "text": "Bouchon de cérumen ou corps étranger",
+                   "test": "→ Otoscopie, lavage d'oreille"
+                 },
+                 {
+                   "text": "Perforation tympanique traumatique",
+                   "test": "→ Otoscopie, anamnèse traumatique"
+                 },
+                 {
+                   "text": "Otite moyenne aiguë",
+                   "test": "→ Otoscopie, signes inflammatoires"
+                 },
+                 {
+                   "text": "Catarrhe tubaire (séro-muco-tympan)",
+                   "test": "→ Otoscopie, tympanométrie"
+                 }
+               ]
+             },
+             {
+               "name": "Oreille interne et voies auditives :",
+               "items": [
+                 {
+                   "text": "Surdité brusque idiopathique (hypoperfusion cochléaire aiguë)",
+                   "test": "→ Audiogramme tonal - Diagnostic vestibulaire (Examen du nystagmus, épreuve calorique), Exclusion d'infections, hypertension artérielle, hyperlipidémie, diabète, hémogramme, paramètres de coagulation, IRM"
+                 },
+                 {
+                   "text": "Labyrinthite virale",
+                   "test": "→ Recherche de vertiges associés - Diagnostic vestibulaire (Examen du nystagmus, épreuve calorique)"
+                 },
+                 {
+                   "text": "SEP, Schwannome vestibulaire",
+                   "test": "→ IRM avec gadolinium, Audiogramme tonal"
+                 },
+                 {
+                   "text": "Traumatisme sonore",
+                   "test": "→ Audiogramme tonal, anamnèse d'exposition au bruit"
+                 },
+                 {
+                   "text": "Ototoxicité médicamenteuse",
+                   "test": "→ Audiogramme tonal, anamnèse médicamenteuse détaillée"
+                 }
+               ]
+             }
+           ]
+         }
+        },
+        {
+          "id": "m3",
+          "text": "Examens complémentaires",
+          "details": [
+            "Audiogramme tonal en urgence",
+            "Bilan biologique (glycémie, coagulation)",
+            "IRM cérébrale si pas d'amélioration à 48h"
+          ]
+        },
+       {
+         "id": "m4",
+         "text": "Traitement",
+         "binaryOnly": false,
+         "therapySection": {
+           "categories": [
+             {
+               "title": "Traitement médical urgent :",
+               "content": "• Corticothérapie systémique (Prednisolone 1 mg/kg/j pendant 7-10 jours)\n• Vasodilatateurs (Hydroxyéthylamidon si indication)\n• Oxygénothérapie hyperbare (dans les premières 48h si disponible)"
+             },
+             {
+               "title": "Mesures générales :",
+               "content": "• Repos auditif\n• Éviction du bruit\n• Réduction du stress"
+             },
+             {
+               "title": "Surveillance et suivi :",
+               "content": "• Contrôle audiométrique à 48h-72h\n• Réévaluation de l'efficacité du traitement\n• Adaptation d'une prothèse auditive si récupération incomplète"
+             }
+           ]
+         }
+       },
+       {
+         "id": "m5",
+         "text": "Information du patient et explication du pronostic",
+         "binaryOnly": false,
+          "details": [
+            "60% de récupération complète",
+            "20% de récupération partielle",
+            "Des récidives sont possibles"
+          ]
+       },
+       {
+         "id": "m6",
+         "text": "Évaluation globale de la qualité de la prise en charge",
+         "binaryOnly": false,
+         "details": [
+           "Prise en charge générale cohérente et bien conduite"
+         ],
+         "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+       }
+     ]
+   }
+ }
+}

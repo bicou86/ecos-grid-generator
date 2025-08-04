@@ -1,0 +1,321 @@
+{
+  "title": "Tremor",
+  "context": {
+    "setting": "Service de permanence",
+    "patient": "M. Fuchs, 66 ans, consulte pour des tremblements",
+    "vitals": {
+      "ta": "130/85 mmHg",
+      "fc": "80 bpm",
+      "fr": "16/min",
+      "temperature": "37.2°C"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction et objectif",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Symptôme principal",
+          "binaryOnly": false,
+          "details": [
+            "[Tremblements]"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Localisation",
+          "binaryOnly": false,
+          "details": [
+            "[Main droite surtout]"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Durée",
+          "binaryOnly": false,
+          "details": [
+            "[Remarqué depuis environ six mois]"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Contexte de survenue",
+          "binaryOnly": false,
+          "details": [
+            "[Surtout au repos, en position assise]",
+            "Au repos/à l'effort/agitation [au repos]"
+          ]
+        },
+        {
+          "id": "a6",
+          "text": "Facteurs d'amélioration",
+          "binaryOnly": false,
+          "details": [
+            "[Aucun]"
+          ]
+        },
+        {
+          "id": "a7",
+          "text": "Facteurs d'aggravation",
+          "binaryOnly": false,
+          "details": [
+            "[Lors de fatigue]"
+          ]
+        },
+        {
+          "id": "a8",
+          "text": "Autres symptômes neurologiques",
+          "binaryOnly": false,
+          "details": [
+            "Chutes [non]",
+            "Céphalées [non]",
+            "AIT [non]",
+            "Modification de l'écriture [à préciser]",
+            "AVQ [à préciser]",
+            "Dépression [plutôt difficultés d'endormissement]",
+            "Constipation [épouse dit qu'il est devenu plus lent]"
+          ]
+        },
+        {
+          "id": "a9",
+          "text": "Première occurrence",
+          "binaryOnly": false,
+          "details": [
+            "[Oui, premier tremblement de ce type]"
+          ]
+        },
+        {
+          "id": "a10",
+          "text": "Consommation de caféine",
+          "binaryOnly": false,
+          "details": [
+            "[1 tasse le matin]"
+          ]
+        },
+        {
+          "id": "a11",
+          "text": "Consommation d'alcool",
+          "binaryOnly": false,
+          "details": [
+            "[De temps en temps un verre de vin]",
+            "[N'améliore pas le tremblement]"
+          ]
+        },
+        {
+          "id": "a12",
+          "text": "Chute sur la tête",
+          "binaryOnly": false,
+          "details": [
+            "[Non]"
+          ]
+        },
+        {
+          "id": "a13",
+          "text": "Intolérance à la chaleur",
+          "binaryOnly": false,
+          "details": [
+            "[Non]"
+          ]
+        },
+        {
+          "id": "a14",
+          "text": "Perte de poids, appétit",
+          "binaryOnly": false,
+          "details": [
+            "[Aucune]"
+          ]
+        },
+        {
+          "id": "a15",
+          "text": "Modifications cutanées et capillaires",
+          "binaryOnly": false,
+          "details": [
+            "[Non]"
+          ]
+        },
+        {
+          "id": "a16",
+          "text": "Fatigue",
+          "binaryOnly": false,
+          "details": [
+            "[Non]"
+          ]
+        },
+        {
+          "id": "a17",
+          "text": "Antécédents médicaux",
+          "binaryOnly": false,
+          "details": [
+            "Neurologiques [aucun]",
+            "Thyroïde [aucun]"
+          ]
+        },
+        {
+          "id": "a18",
+          "text": "Médicaments",
+          "binaryOnly": false,
+          "details": [
+            "[Aucun]"
+          ]
+        },
+        {
+          "id": "a19",
+          "text": "Substances toxiques",
+          "binaryOnly": false,
+          "details": [
+            "[Non-fumeur, pas de drogues, alcool voir ci-dessus]"
+          ]
+        },
+        {
+          "id": "a20",
+          "text": "Allergies",
+          "binaryOnly": false,
+          "details": [
+            "[Aucune]"
+          ]
+        },
+        {
+          "id": "a21",
+          "text": "Antécédents familiaux neurologiques",
+          "binaryOnly": false,
+          "details": [
+            "Parkinson, tremblements, maladies neurologiques [parents décédés tôt dans un accident, frères et sœurs plus jeunes en bonne santé]"
+          ]
+        },
+        {
+          "id": "a22",
+          "text": "Anamnèse sociale",
+          "binaryOnly": false,
+          "details": [
+            "[Marié, pas d'enfants, vit avec son épouse, retraité]",
+            "[Professeur de chimie]"
+          ]
+        },
+        {
+          "id": "a23",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "binaryOnly": false,
+          "details": [
+            "Anamnèse générale ciblée et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Orientation",
+          "binaryOnly": false,
+          "details": [
+            "Temporelle, spatiale"
+          ]
+        },
+        {
+          "id": "e2",
+          "text": "Examen des nerfs crâniens",
+          "binaryOnly": false,
+          "details": [
+            "Pupilles, oculomotricité, facial, trijumeau"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Réflexes et signes pyramidaux",
+          "binaryOnly": false,
+          "details": [
+            "ROT bicipital, stylo-radial, Babinski"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Coordination",
+          "binaryOnly": false,
+          "details": [
+            "Test talon-genou, diadococinésie"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Marche",
+          "binaryOnly": true
+        },
+        {
+          "id": "e6",
+          "text": "Auscultation carotidienne",
+          "binaryOnly": true
+        },
+        {
+          "id": "e7",
+          "text": "Inspection oculaire",
+          "binaryOnly": true
+        },
+        {
+          "id": "e8",
+          "text": "Auscultation cardiaque et pulmonaire",
+          "binaryOnly": true
+        },
+        {
+          "id": "e9",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "binaryOnly": false,
+          "details": [
+            "Status général ciblé et bien conduit"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic principal",
+          "binaryOnly": false,
+          "details": [
+            "Syndrome parkinsonien"
+          ]
+        },
+        {
+          "id": "m2",
+          "text": "Diagnostics différentiels",
+          "binaryOnly": false,
+          "details": [
+            "Tremblement essentiel",
+            "Hyperthyroïdie",
+            "Traumatisme",
+            "Ischémie",
+            "Tremblement médicamenteux",
+            "Lésion intracrânienne (tumeur)"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Référence spécialisée",
+          "binaryOnly": false,
+          "details": [
+            "Orientation vers neurologue"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Évaluation globale de la qualité de la prise en charge",
+          "binaryOnly": false,
+          "details": [
+            "Prise en charge générale cohérente et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,135 @@
+{
+  "title": "Voyage au Brésil",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Mme Fischer, 22 ans, se présente chez le médecin généraliste pour une consultation de médecine des voyages concernant son voyage au Brésil"
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction et rôle",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Motif de consultation actuel",
+          "binaryOnly": true,
+          "patientComment": "[Voyage au Brésil prévu pour 3 mois dans 1/2 an]"
+        },
+        {
+          "id": "a3",
+          "text": "Questions spécifiques de la patiente",
+          "binaryOnly": false,
+          "patientComment": "[Vaccinations ? Pharmacie de voyage ? Et ainsi de suite ?]"
+        },
+        {
+          "id": "a4",
+          "text": "Statut vaccinal actuel",
+          "binaryOnly": false,
+          "patientComment": "[Vaccins habituels recommandés, depuis longtemps, jamais été à l'étranger]",
+          "details": [
+            "Hépatite A et B : jamais vaccinée",
+            "Tétanos : vaccination expirée"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Pathologies particulières et allergies",
+          "binaryOnly": true,
+          "patientComment": "[Non]"
+        },
+        {
+          "id": "a6",
+          "text": "Expérience de voyage antérieure",
+          "binaryOnly": true,
+          "patientComment": "[Aucune, premier grand voyage]"
+        },
+        {
+          "id": "a7",
+          "text": "Type de voyage prévu",
+          "binaryOnly": false,
+          "patientComment": "[École de langue à Rio, puis avion ou bus vers le nord, excursion en jungle sur fleuve, fêtes, etc.]",
+          "details": [
+            "Plage",
+            "Jungle",
+            "Transports publics",
+            "Trekking"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Évaluation de l'état général",
+          "binaryOnly": false
+        },
+        {
+          "id": "e2",
+          "text": "Vérification du carnet de vaccination",
+          "binaryOnly": true
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Conseil sur les vaccinations",
+          "binaryOnly": false,
+          "details": [
+            "Vaccinations standard à jour",
+            "Hépatite A et B recommandées",
+            "Rappel tétanos nécessaire",
+            "Éventuellement influenza"
+          ]
+        },
+        {
+          "id": "m2",
+          "text": "Conseil sur les comportements à risque",
+          "binaryOnly": false,
+          "details": [
+            "Hygiène alimentaire : \"cook it, boil it, peal it or forget it\"",
+            "Accidents de la route !!",
+            "Exposition solaire",
+            "Comportement sexuel"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Pharmacie de voyage",
+          "binaryOnly": false,
+          "details": [
+            "Protection solaire",
+            "Antalgique",
+            "Imodium en cas de diarrhée",
+            "Antibiotique (Ciprofloxacine)",
+            "Spray nasal en cas de rhume",
+            "Désinfectant et pommade",
+            "Pansements",
+            "Éventuellement comprimés de purification d'eau",
+            "Fenistil"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Prévention du paludisme",
+          "binaryOnly": false,
+          "details": [
+            "Médicaments d'urgence partout",
+            "Prophylaxie recommandée dans le nord du Brésil avec Méfloquine, Malarone ou Doxycycline",
+            "Protection anti-moustiques adéquate importante",
+            "Moustiquaire",
+            "Antibrumm"
+          ]
+        }
+      ]
+    }
+  }
+}

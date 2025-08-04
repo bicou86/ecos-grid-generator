@@ -1,0 +1,537 @@
+{
+  "title": "Syncope",
+  "context": {
+    "setting": "Service d'urgences",
+    "patient": "M. Münster, 65 ans, se présente aux urgences car il a fait un malaise avec perte de connaissance",
+    "vitals": {
+      "fc": "40 bpm (bradycardie sévère)",
+      "fr": "18/min",
+      "temperature": "36.8°C",
+      "satO2": "97% air ambiant"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction et objectif de la consultation",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Question ouverte d'introduction → Motif de consultation",
+          "patientComment": "J'ai perdu connaissance, c'est arrivé soudainement",
+          "binaryOnly": true
+        },
+        {
+          "id": "a3",
+          "text": "RED FLAGS - Urgences cardiovasculaires",
+          "redflagsSection": [
+            {
+              "text": "Syncope d'effort [non - au repos]"
+            },
+            {
+              "text": "Bradycardie <50 bpm [40 bpm!]"
+            },
+            {
+              "text": "Douleur thoracique [non]"
+            },
+            {
+              "text": "Dyspnée sévère [non]"
+            },
+            {
+              "text": "Signes choc cardiogénique [non]"
+            },
+            {
+              "text": "Palpitations sévères [non]"
+            },
+            {
+              "text": "ATCD familiaux mort subite [père IDM 59]"
+            },
+            {
+              "text": "Récidive fréquente [2× en 3 semaines!]"
+            }
+          ],
+          "scoringRule": "≥6 red flags explorés = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a4",
+          "text": "Caractérisation de la syncope (critères ESC)",
+          "details": [
+            "Perte connaissance complète [oui]",
+            "Début soudain [sans prodromes]",
+            "Durée brève [<5 min]",
+            "Récupération spontanée [complète]",
+            "Amnésie épisode [partielle/complète]",
+            "Pas de confusion prolongée [vs épilepsie]",
+            "Position lors syncope [debout? assis?]",
+            "Témoins présents [à interroger]"
+          ],
+          "scoringRule": "≥6 critères syncope = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a5",
+          "text": "Score de risque EGSYS (évaluation initiale)",
+          "details": [
+            "Palpitations avant syncope [non = 0]",
+            "Cardiopathie connue [non = 0]",
+            "ECG anormal [à faire = ?]",
+            "Effort déclencheur [non = 0]",
+            "Syncope couchée [non = 0]",
+            "Facteurs précipitants [non = 0]",
+            "Prodromes autonomiques [non = 0]",
+            "Score total [probable ≥3 = cardiaque]"
+          ],
+          "scoringRule": "Score calculé = 2 pts, partiel = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a6",
+          "text": "Récurrence et évolution temporelle",
+          "details": [
+            "Premier épisode [3 semaines]",
+            "Fréquence augmentée [2× récemment]",
+            "Circonstances similaires [oui]",
+            "Sévérité progressive [fatigue ↑]",
+            "Symptômes inter-critiques [oui fatigue]",
+            "Facteurs déclenchants identiques [aucun]",
+            "Récupération [complète mais fatigue]",
+            "Consultation retardée [pourquoi?]"
+          ],
+          "scoringRule": "≥6 éléments évolution = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a7",
+          "text": "Symptômes suggérant trouble de conduction",
+          "details": [
+            "Bradycardie symptomatique [fatigue]",
+            "Intolérance effort [vélo difficile]",
+            "Vertiges positionnels [oui]",
+            "Sensation pauses cardiaques [à demander]",
+            "Dyspnée effort nouvelle [oui]",
+            "Fatigue disproportionnée [oui]",
+            "Syncopes répétées [oui]",
+            "Aucun prodrome [caractéristique BAV]"
+          ],
+          "scoringRule": "≥6 symptômes BAV = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a8",
+          "text": "Exclusion autres causes de syncope",
+          "details": [
+            "Syncope vasovagale [non - pas prodromes]",
+            "Hypotension orthostatique [non - position?]",
+            "Syncope situationnelle [non déclencheur]",
+            "Causes métaboliques [glycémie? déshydratation?]",
+            "Causes neurologiques [épilepsie? AVC?]",
+            "Médicaments hypotenseurs [Valsartan]",
+            "Facteurs précipitants [non identifiés]"
+          ],
+          "scoringRule": "≥5 causes exclues = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a9",
+          "text": "Facteurs de risque cardiovasculaire",
+          "details": [
+            "Diabète type 2 [oui]",
+            "HTA [oui traitée]",
+            "Tabagisme [30 PA actuel]",
+            "Dyslipidémie [non connue]",
+            "Obésité [IMC?]",
+            "Sédentarité [retraité]",
+            "ATCD familiaux [père IDM 59 ans]",
+            "Âge >65 ans [65 ans]"
+          ],
+          "scoringRule": "≥6 FDR CV = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a10",
+          "text": "Médicaments et iatrogénie",
+          "details": [
+            "Valsartan [bradycardisant? hypotenseur]",
+            "Antidiabétiques [hypoglycémie?]",
+            "Bêta-bloquants [non mentionnés]",
+            "Inhibiteurs calciques [non]",
+            "Digitaliques [non]",
+            "Antiarythmiques [non]",
+            "Psychotropes [non]",
+            "Observance [à vérifier]"
+          ],
+          "scoringRule": "≥6 médicaments évalués = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a11",
+          "text": "Recherche cardiopathie sous-jacente",
+          "details": [
+            "Coronaropathie [non connue]",
+            "Insuffisance cardiaque [dyspnée effort]",
+            "Cardiomyopathie [non explorée]",
+            "Valvulopathie [souffles?]",
+            "Myocardites antérieures [non]",
+            "Péricardites [non]",
+            "Cardiopathie congénitale [non]",
+            "Chirurgie cardiaque [non]"
+          ],
+          "scoringRule": "≥6 pathologies = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a12",
+          "text": "Impact fonctionnel et qualité de vie",
+          "details": [
+            "Activités limitées [vélo difficile]",
+            "Autonomie [conservée?]",
+            "Conduite automobile [dangereuse]",
+            "Profession [retraité - rassurer]",
+            "Anxiété [développée?]",
+            "Évitement activités [probable]",
+            "Support familial [présent?]",
+            "Qualité vie altérée [oui]"
+          ],
+          "scoringRule": "≥6 impacts = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a13",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "details": [
+            "Anamnèse syncope complète",
+            "Red flags cardiaque identifiés",
+            "Causes différentielles explorées",
+            "Facteurs risque évalués",
+            "Impact fonctionnel documenté"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Évaluation urgence vitale immédiate",
+          "details": [
+            "État conscience [Glasgow 15]",
+            "Détresse respiratoire [non]",
+            "Signes choc [TA? pouls?]",
+            "Cyanose [non]",
+            "Douleur thoracique [non]",
+            "Stabilité hémodynamique [à confirmer]"
+          ],
+          "scoringRule": "≥5 paramètres vitaux = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e2",
+          "text": "Examen cardiovasculaire approfondi",
+          "details": [
+            "FC et régularité [40 bpm régulière?]",
+            "TA aux 2 bras [symétrique?]",
+            "Auscultation 4 foyers [B1-B2 normaux]",
+            "Recherche souffles [sténose aortique?]",
+            "B3/B4 galop [insuffisance?]",
+            "Choc de pointe [position, amplitude]",
+            "Frottement péricardique [non]"
+          ],
+          "scoringRule": "≥6 examens = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e3",
+          "text": "Palpation pouls et évaluation périphérique",
+          "details": [
+            "Pouls carotidiens [amplitude, symétrie]",
+            "Pouls radiaux [synchronisme]",
+            "Pouls fémoraux [présents]",
+            "Pouls pédieux [circulation périphérique]",
+            "Temps recoloration capillaire [<3s]",
+            "Température extrémités [chaudes]"
+          ],
+          "scoringRule": "≥5 pouls évalués = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e4",
+          "text": "Recherche signes insuffisance cardiaque",
+          "details": [
+            "Turgescence jugulaire [position 45°]",
+            "Reflux hépato-jugulaire [test positif?]",
+            "Œdèmes MI [chevilles, jambes]",
+            "Hépatomégalie [percussion]",
+            "Râles pulmonaires [bases]",
+            "Ascite [rare, stades avancés]",
+            "Poids récent [prise?]"
+          ],
+          "scoringRule": "≥6 signes recherchés = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e5",
+          "text": "Examen neurologique ciblé",
+          "details": [
+            "État vigilance [normal maintenant]",
+            "Orientation [temps, lieu, personne]",
+            "Déficit focal [moteur, sensitif]",
+            "Réflexes [ROT symétriques]",
+            "Signes méningés [raideur nuque]",
+            "Pupilles [taille, réactivité]"
+          ],
+          "scoringRule": "≥5 examens neuro = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e6",
+          "text": "Recherche signes traumatisme post-chute",
+          "details": [
+            "Traumatisme crânien [hématomes]",
+            "Morsure langue [épilepsie?]",
+            "Ecchymoses [localisation]",
+            "Plaies/abrasions [mains, genoux]",
+            "Douleurs rachis [cervical, dorsal]",
+            "Mobilisation prudente [fractures?]"
+          ],
+          "scoringRule": "≥5 recherches trauma = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e7",
+          "text": "Test orthostatique si indiqué",
+          "details": [
+            "TA/FC couchée 5 min",
+            "TA/FC debout immédiat",
+            "TA/FC debout 3 min",
+            "Symptômes reproduits [vertiges?]",
+            "Sécurité patient [accompagné]"
+          ],
+          "scoringRule": "Test approprié et sécurisé = 2 pts, partiel = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e8",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "details": [
+            "Examen cardiovasculaire complet",
+            "Bradycardie confirmée documentée",
+            "Recherche cardiopathie structurelle",
+            "Exclusion traumatisme grave",
+            "Stabilité hémodynamique vérifiée"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic principal avec classification",
+          "details": [
+            "Bloc auriculo-ventriculaire symptomatique",
+            "Type BAV (1er, 2e degré Mobitz I/II, 3e degré)",
+            "Bradycardie symptomatique",
+            "Urgence cardiologique",
+            "Indication pacemaker probable"
+          ],
+          "scoringRule": "Diagnostic précis avec classification = 2 pts, partiel = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m2",
+          "text": "Diagnostics différentiels pertinents",
+          "ddSection": {
+            "categories": [
+              {
+                "name": "Troubles conduction",
+                "items": [
+                  "BAV 2e degré Mobitz II ECG 12 dérivations",
+                  "BAV 3e degré complet ECG, Holter ECG",
+                  "Bloc sino-auriculaire Holter ECG prolongé",
+                  "Maladie du sinus Holter, test atropine"
+                ]
+              },
+              {
+                "name": "Bradycardies autres",
+                "items": [
+                  "Bradycardie sinusale sévère ECG, TSH",
+                  "Bradycardie iatrogène Révision médicaments",
+                  "Hypothyroïdie sévère TSH, T4 libre"
+                ]
+              },
+              {
+                "name": "Syncopes non cardiaques",
+                "items": [
+                  "Syncope vasovagale Tilt test",
+                  "Hypotension orthostatique Test orthostatique",
+                  "Hypoglycémie Glycémie, Hb1Ac"
+                ]
+              }
+            ]
+          },
+          "scoringRule": "≥6 DD avec examens = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m3",
+          "text": "ECG urgent et interprétation",
+          "details": [
+            "ECG 12 dérivations immédiat",
+            "Rythme et fréquence [documentation]",
+            "Intervalles PR [allongés? variables?]",
+            "Complexes QRS [larges? normaux?]",
+            "Onde P [présentes? relation AV?]",
+            "Classification BAV précise",
+            "Ischémie associée [ST/T?]"
+          ],
+          "scoringRule": "≥6 éléments ECG = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m4",
+          "text": "Prise en charge immédiate urgente",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Monitoring et surveillance",
+                "content": "• Scope cardiaque continu obligatoire\n• Voie veineuse périphérique (18G)\n• Oxygénothérapie si SpO2 <94%\n• TA non invasive répétée\n• Préparation atropine 0.5mg IV\n• Préparation pacing transcutané"
+              },
+              {
+                "title": "Traitement pharmacologique urgent",
+                "content": "• Atropine 0.5mg IV si FC <40 + symptômes\n• Répéter 0.5mg toutes 3-5 min (max 3mg)\n• Isoprenaline 2-10 μg/min si atropine inefficace\n• Éviter si IDM récent (arythmogène)\n• Pas d'adrénaline en première intention"
+              },
+              {
+                "title": "Pacing temporaire si nécessaire",
+                "content": "• Pacing transcutané en urgence\n• Sédation (midazolam 1-2mg IV)\n• Pacing endocavitaire si échec\n• Fréquence 70-80 bpm\n• Seuil minimal efficace"
+              }
+            ]
+          },
+          "scoringRule": "Prise en charge urgente complète = 2 pts, partielle = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m5",
+          "text": "Examens complémentaires urgents",
+          "details": [
+            "Troponines hs (éliminer IDM)",
+            "Ionogramme complet (K+, Mg2+)",
+            "Fonction rénale (créatinine)",
+            "NFS (anémie aggravante)",
+            "TSH (hypothyroïdie)",
+            "BNP/NT-proBNP (insuffisance cardiaque)",
+            "Gaz du sang si détresse"
+          ],
+          "scoringRule": "≥5 examens appropriés = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m6",
+          "text": "Échocardiographie urgente/semi-urgente",
+          "details": [
+            "Fonction VG (FEVG)",
+            "Cinétique segmentaire (IDM?)",
+            "Cardiopathie structurelle",
+            "Valvulopathies",
+            "Hypertrophie VG",
+            "Fonction VD",
+            "Péricarde"
+          ],
+          "scoringRule": "≥5 éléments écho = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m7",
+          "text": "Indication stimulation cardiaque définitive",
+          "details": [
+            "BAV 2e degré Mobitz II → pacemaker",
+            "BAV 3e degré → pacemaker",
+            "BAV 1er degré si très symptomatique",
+            "Type pacemaker (VVI vs DDD)",
+            "Urgence implantation (<24-48h)",
+            "Cardiologie interventionnelle contactée"
+          ],
+          "scoringRule": "Indication correcte = 2 pts, partielle = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m8",
+          "text": "Révision médicamenteuse",
+          "details": [
+            "Arrêt temporaire Valsartan",
+            "Pas d'ajout bêta-bloquants",
+            "Gestion diabète (éviter hypoglycémie)",
+            "Éviter anti-arythmiques dépresseurs",
+            "Surveillance glycémie renforcée",
+            "Adaptation post-pacemaker"
+          ],
+          "scoringRule": "≥4 ajustements = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m9",
+          "text": "Information patient et famille",
+          "details": [
+            "Explication trouble conduction cardiaque",
+            "Nécessité pacemaker probable",
+            "Pronostic excellent après implantation",
+            "Interdiction conduite temporaire",
+            "Activités à éviter (magnétisme)",
+            "Carte porteur pacemaker future",
+            "Rassurance famille"
+          ],
+          "scoringRule": "≥5 informations = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m10",
+          "text": "Organisation parcours soins",
+          "details": [
+            "Hospitalisation USI/USIC",
+            "Cardiologie interventionnelle urgente",
+            "Implantation pacemaker programmée",
+            "Suivi post-implantation",
+            "Réhabilitation cardiaque",
+            "Coordination médecin traitant",
+            "Contrôles pacemaker réguliers"
+          ],
+          "scoringRule": "≥5 étapes parcours = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m11",
+          "text": "Évaluation globale de la qualité de la prise en charge",
+          "details": [
+            "Diagnostic BAV approprié",
+            "Urgence vitale reconnue",
+            "Monitoring cardiaque institué",
+            "Indication pacemaker posée",
+            "Parcours soins organisé"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "images": [
+      {
+        "id": "annexe1",
+        "data": "grilles_generees/images/syncope-img.jpg",
+        "title": "ECG - Bloc AV de type Mobitz",
+        "description": "ECG montrant un bloc AV avec intervalles RR variables caractéristiques"
+      }
+    ]
+  }
+}

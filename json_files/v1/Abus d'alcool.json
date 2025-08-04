@@ -1,0 +1,287 @@
+{
+  "title": "Abus d'alcool",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Monsieur Jägermeister, 53 ans, consultant pour abus d'alcool chronique"
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction et tâche",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Question d'entrée ouverte - Motif de consultation",
+          "patientComment": "problème avec l'alcool depuis des années",
+          "binaryOnly": true
+        },
+        {
+          "id": "a3",
+          "text": "Évaluation de la consommation d'alcool",
+          "details": [
+            "Quantité quotidienne (type de boissons)",
+            "Fréquence de consommation",
+            "Horaires de consommation",
+            "Évolution dans le temps"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Questionnaire CAGE",
+          "details": [
+            "Cut down - Avez-vous déjà ressenti le besoin de diminuer votre consommation ?",
+            "Annoyed - Votre entourage vous a-t-il fait des remarques au sujet de votre consommation ?",
+            "Guilty - Vous êtes-vous déjà senti coupable de boire autant ?",
+            "Eye opener - Vous est-il arrivé de boire dès le matin pour vous sentir en forme ?"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Signes de dépendance physique",
+          "details": [
+            "Tremblements matinaux",
+            "Sueurs",
+            "Syndrome de sevrage",
+            "Tolérance (besoin d'augmenter les doses)"
+          ]
+        },
+        {
+          "id": "a6",
+          "text": "Tentatives d'arrêt antérieures",
+          "details": [
+            "Nombre de tentatives",
+            "Durée des périodes d'abstinence",
+            "Accompagnement médical",
+            "Causes de rechute"
+          ]
+        },
+        {
+          "id": "a7",
+          "text": "Conséquences socio-professionnelles",
+          "details": [
+            "Problèmes au travail",
+            "Difficultés relationnelles",
+            "Problèmes financiers",
+            "Troubles familiaux"
+          ]
+        },
+        {
+          "id": "a8",
+          "text": "Conséquences médicales",
+          "details": [
+            "Problèmes digestifs",
+            "Troubles du sommeil",
+            "Chutes et accidents",
+            "Hospitalisations liées à l'alcool"
+          ]
+        },
+        {
+          "id": "a9",
+          "text": "Motivation au changement",
+          "details": [
+            "Reconnaissance du problème",
+            "Volonté d'arrêter ou diminuer",
+            "Éléments déclencheurs",
+            "Soutien de l'entourage"
+          ]
+        },
+        {
+          "id": "a10",
+          "text": "Antécédents médicaux",
+          "details": [
+            "Maladies chroniques",
+            "Traitements en cours",
+            "Allergies",
+            "Chirurgies antérieures"
+          ]
+        },
+        {
+          "id": "a11",
+          "text": "Comorbidités psychiatriques",
+          "details": [
+            "Dépression",
+            "Anxiété",
+            "Troubles du sommeil",
+            "Idées suicidaires"
+          ]
+        },
+        {
+          "id": "a12",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "binaryOnly": false,
+          "details": [
+            "Anamnèse générale ciblée et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Examen général",
+          "details": [
+            "État général",
+            "Poids et taille (dénutrition)",
+            "Hydratation",
+            "Haleine alcoolisée"
+          ]
+        },
+        {
+          "id": "e2",
+          "text": "Signes de consommation chronique",
+          "details": [
+            "Érythrose faciale",
+            "Télangiectasies",
+            "Hypertrophie parotidienne",
+            "Contracture de Dupuytren"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Examen neurologique",
+          "details": [
+            "Tremblements",
+            "Équilibre et coordination",
+            "Polyneuropathie périphérique",
+            "Fonction cognitive"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Examen cardiovasculaire",
+          "details": [
+            "Tension artérielle",
+            "Fréquence cardiaque",
+            "Auscultation cardiaque",
+            "Signes d'insuffisance cardiaque"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Examen abdominal",
+          "details": [
+            "Hépatomégalie",
+            "Splénomégalie",
+            "Douleur épigastrique",
+            "Ascite"
+          ]
+        },
+        {
+          "id": "e6",
+          "text": "Recherche de complications",
+          "details": [
+            "Ictère",
+            "Angiomes stellaires",
+            "Circulation collatérale",
+            "Œdèmes des membres inférieurs"
+          ]
+        },
+        {
+          "id": "e7",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "binaryOnly": false,
+          "details": [
+            "Status général ciblé et bien conduit"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic principal",
+          "patientComment": "Trouble de l'usage de l'alcool (dépendance alcoolique)"
+        },
+        {
+          "id": "m2",
+          "text": "Évaluation de la sévérité",
+          "details": [
+            "Critères DSM-5",
+            "Score AUDIT",
+            "Degré de dépendance",
+            "Risque de syndrome de sevrage"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Examens complémentaires",
+          "details": [
+            "Bilan hépatique (ASAT, ALAT, GGT, VGM)",
+            "NFS, plaquettes",
+            "Glycémie, ionogramme",
+            "Vitamines B1, B12, folates"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Prise en charge du sevrage",
+          "details": [
+            "Évaluation du risque de sevrage",
+            "Benzodiazépines si nécessaire",
+            "Vitaminothérapie B1",
+            "Surveillance clinique"
+          ]
+        },
+        {
+          "id": "m5",
+          "text": "Thérapies de maintien",
+          "details": [
+            "Naltrexone (Revia)",
+            "Acamprosate (Aotal)",
+            "Disulfirame (Antabuse)",
+            "Baclofène (hors AMM)"
+          ]
+        },
+        {
+          "id": "m6",
+          "text": "Accompagnement psychosocial",
+          "details": [
+            "Consultation d'addictologie",
+            "Groupes d'entraide (AA)",
+            "Psychothérapie",
+            "Soutien familial"
+          ]
+        },
+        {
+          "id": "m7",
+          "text": "Prévention des complications",
+          "details": [
+            "Vaccination hépatite B",
+            "Surveillance hépatique",
+            "Prévention de l'encéphalopathie",
+            "Suivi cardiovasculaire"
+          ]
+        },
+        {
+          "id": "m8",
+          "text": "Suivi et pronostic",
+          "details": [
+            "Consultations régulières",
+            "Surveillance biologique",
+            "Prévention des rechutes",
+            "Réinsertion socio-professionnelle"
+          ]
+        },
+        {
+          "id": "m9",
+          "text": "Évaluation globale de la qualité de la prise en charge",
+          "binaryOnly": false,
+          "details": [
+            "Prise en charge générale cohérente et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    }
+  }
+}

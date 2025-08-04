@@ -1,0 +1,166 @@
+{
+  "title": "Saignement vaginal",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Patiente consulte pour des saignements vaginaux (jeune femme/femme enceinte/femme ménopausée selon le cas)"
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction et objectif",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Caractéristiques des saignements",
+          "binaryOnly": false,
+          "details": [
+            "Début du saignement",
+            "Durée",
+            "Quantité (caillots)"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Cycle menstruel",
+          "binaryOnly": false,
+          "details": [
+            "Ménarche",
+            "Dernières règles",
+            "Régularité",
+            "Ménopause",
+            "Aménorrhée"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Manipulations",
+          "binaryOnly": false,
+          "details": [
+            "Rapports sexuels (non protégés?)",
+            "Contraception (DIU)",
+            "Évaluation de grossesse"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Symptômes additionnels",
+          "binaryOnly": false,
+          "details": [
+            "Douleurs (localisation, durée, péritonisme)",
+            "Leucorrhées",
+            "Brûlures",
+            "Démangeaisons",
+            "Abdomen aigu"
+          ]
+        },
+        {
+          "id": "a6",
+          "text": "Antécédents gynécologiques",
+          "binaryOnly": false,
+          "details": [
+            "Grossesses",
+            "Accouchements",
+            "Avortements"
+          ]
+        },
+        {
+          "id": "a7",
+          "text": "Antécédents médicaux spécifiques",
+          "binaryOnly": false,
+          "details": [
+            "Thromboses (syndrome antiphospholipides)",
+            "Endométriose",
+            "Traumatisme"
+          ]
+        },
+        {
+          "id": "a8",
+          "text": "Interventions antérieures",
+          "binaryOnly": false,
+          "details": [
+            "Chirurgies abdominales",
+            "Infections",
+            "Avortements",
+            "Curetages",
+            "Grossesse extra-utérine",
+            "Stérilisation"
+          ]
+        },
+        {
+          "id": "a9",
+          "text": "Médicaments",
+          "binaryOnly": false,
+          "details": [
+            "Pilule",
+            "DIU",
+            "Anticoagulation",
+            "Préparations œstrogéniques"
+          ]
+        },
+        {
+          "id": "a10",
+          "text": "Substances toxiques et allergies",
+          "binaryOnly": false,
+          "details": [
+            "Cocaïne (pour décollement placentaire)",
+            "Allergies"
+          ]
+        },
+        {
+          "id": "a11",
+          "text": "Antécédents familiaux",
+          "binaryOnly": false,
+          "details": [
+            "Avortements"
+          ]
+        },
+        {
+          "id": "a12",
+          "text": "Anamnèse sociale",
+          "binaryOnly": false
+        },
+        {
+          "id": "a13",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "binaryOnly": false,
+          "details": [
+            "Anamnèse générale ciblée et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "binaryOnly": false,
+          "details": [
+            "Status général ciblé et bien conduit"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Évaluation globale de la qualité de la prise en charge",
+          "binaryOnly": false,
+          "details": [
+            "Prise en charge générale cohérente et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    }
+  }
+}

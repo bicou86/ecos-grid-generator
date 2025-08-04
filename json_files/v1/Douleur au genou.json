@@ -1,0 +1,267 @@
+{
+  "title": "Douleurs du genou",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Femme de 25 ans consultant pour douleurs du genou droit"
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction et tâche",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Identification des symptômes",
+          "patientComment": "douleurs du genou droit",
+          "binaryOnly": true
+        },
+        {
+          "id": "a3",
+          "text": "Délai d'apparition",
+          "patientComment": "depuis 3 jours"
+        },
+        {
+          "id": "a4",
+          "text": "Facteur déclenchant",
+          "patientComment": "mouvement de rotation au tennis"
+        },
+        {
+          "id": "a5",
+          "text": "Évolution jusqu'à présent",
+          "patientComment": "a continué à jouer au tennis, douleur persistante, pas d'amélioration"
+        },
+        {
+          "id": "a6",
+          "text": "Localisation précise",
+          "patientComment": "dans le genou"
+        },
+        {
+          "id": "a7",
+          "text": "Intensité de la douleur",
+          "patientComment": "3-4/10"
+        },
+        {
+          "id": "a8",
+          "text": "Présence de gonflement",
+          "patientComment": "au maximum un peu"
+        },
+        {
+          "id": "a9",
+          "text": "Irradiation de la douleur",
+          "patientComment": "non"
+        },
+        {
+          "id": "a10",
+          "text": "Capacité de marche",
+          "patientComment": "doit boiter légèrement, douleur à l'appui"
+        },
+        {
+          "id": "a11",
+          "text": "Antécédents de pathologie du genou",
+          "patientComment": "rupture du ligament interne il y a 3 ans, traitement conservateur"
+        },
+        {
+          "id": "a12",
+          "text": "Caractère de la douleur",
+          "patientComment": "lancinante"
+        },
+        {
+          "id": "a13",
+          "text": "Douleur au repos",
+          "patientComment": "non"
+        },
+        {
+          "id": "a14",
+          "text": "Limitation du mouvement",
+          "patientComment": "oui, ne peut plus marcher normalement"
+        },
+        {
+          "id": "a15",
+          "text": "Auto-traitement déjà entrepris",
+          "patientComment": "légèrement bandé, pas de pommade ni d'antalgiques"
+        },
+        {
+          "id": "a16",
+          "text": "Fièvre ou infection",
+          "patientComment": "non"
+        },
+        {
+          "id": "a17",
+          "text": "Morsure de tique",
+          "patientComment": "non"
+        },
+        {
+          "id": "a18",
+          "text": "Douleurs d'autres articulations",
+          "patientComment": "non"
+        },
+        {
+          "id": "a19",
+          "text": "Anamnèse personnelle",
+          "patientComment": "rupture du ligament interne genou droit il y a 3 ans, traitement conservateur"
+        },
+        {
+          "id": "a20",
+          "text": "Toxiques et habitudes néfastes",
+          "patientComment": "non"
+        },
+        {
+          "id": "a21",
+          "text": "Médicaments actuels",
+          "patientComment": "pilule contraceptive"
+        },
+        {
+          "id": "a22",
+          "text": "Anamnèse familiale",
+          "patientComment": "mère avec gonarthrose"
+        },
+        {
+          "id": "a23",
+          "text": "Anamnèse sociale",
+          "patientComment": "étudiante"
+        },
+        {
+          "id": "a24",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "binaryOnly": false,
+          "details": [
+            "Anamnèse générale ciblée et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Inspection générale",
+          "details": [
+            "Axes des membres inférieurs (légère position en varus)",
+            "Longueur des jambes et position du bassin (symétrique)",
+            "Marche (légère boiterie d'esquive à droite)",
+            "Gonflement et rotule dansante (minimal, sinon pas de gonflement des tissus mous)"
+          ]
+        },
+        {
+          "id": "e2",
+          "text": "Palpation",
+          "patientComment": "sensibilité à la pression sur l'interligne articulaire médial"
+        },
+        {
+          "id": "e3",
+          "text": "Examen fonctionnel - Mobilité",
+          "details": [
+            "Méthode Neutre-Zéro (160-0-5 = normal)"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Tests des ligaments croisés",
+          "details": [
+            "Ligament croisé antérieur - Test de Lachmann (normal)",
+            "Ligament croisé postérieur - Test du tiroir postérieur, Gravity-Sign (normal)"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Tests des ménisques",
+          "details": [
+            "Steinmann I (douleurs médiales lors de la rotation externe)",
+            "McMurray (douleurs médiales lors de la rotation externe)",
+            "Apley-Grinding (douleurs médiales lors de la rotation externe)"
+          ]
+        },
+        {
+          "id": "e6",
+          "text": "Stress varus-valgus pour arthrose",
+          "patientComment": "normal"
+        },
+        {
+          "id": "e7",
+          "text": "Stabilité varus-valgus pour lésion ligamentaire latérale",
+          "patientComment": "pas d'ouverture ni en flexion 20° ni en extension"
+        },
+        {
+          "id": "e8",
+          "text": "Appareil extenseur",
+          "details": [
+            "Sensibilité à la pression au tubercule des adducteurs (non)",
+            "Test d'appréhension pour luxation patellaire en flexion 30° (normal)"
+          ]
+        },
+        {
+          "id": "e9",
+          "text": "Test de force",
+          "patientComment": "normal"
+        },
+        {
+          "id": "e10",
+          "text": "Évaluation neurovasculaire (pDMS)",
+          "patientComment": "intact"
+        },
+        {
+          "id": "e11",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "binaryOnly": false,
+          "details": [
+            "Status général ciblé et bien conduit"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Énonce le diagnostic de suspicion",
+          "patientComment": "lésion méniscale médiale droite"
+        },
+        {
+          "id": "m2",
+          "text": "Nomme au moins 2 diagnostics différentiels",
+          "details": [
+            "Lésion du ligament latéral médial droit",
+            "Réaction à une surcharge sans lésion décelable"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Propose les examens diagnostiques",
+          "details": [
+            "Radiographie du genou (AP/latéral)",
+            "IRM",
+            "Arthroscopie du genou"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Propose le traitement",
+          "details": [
+            "AINS",
+            "Immobilisation (éventuellement attelle)",
+            "Cannes anglaises",
+            "Référence à l'orthopédiste",
+            "Thérapie conservative / chirurgie (suture, résection, remplacement)"
+          ]
+        },
+        {
+          "id": "m5",
+          "text": "Évaluation globale de la qualité de la prise en charge",
+          "binaryOnly": false,
+          "details": [
+            "Prise en charge générale cohérente et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,245 @@
+{
+  "title": "Douleur abdominale VII",
+  "context": {
+    "setting": "Service d'urgence d'un hôpital régional",
+    "patient": "Femme de 57 ans avec douleurs épigastriques"
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction et tâche",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Localisation",
+          "patientComment": "directement sous l'appendice xiphoïde"
+        },
+        {
+          "id": "a3",
+          "text": "Caractère",
+          "patientComment": "brûlures"
+        },
+        {
+          "id": "a4",
+          "text": "Fréquence",
+          "patientComment": "presque quotidiennement, aussi nocturne, aussi à jeun"
+        },
+        {
+          "id": "a5",
+          "text": "Durée",
+          "patientComment": "depuis 2 ans, durant de minutes à heures"
+        },
+        {
+          "id": "a6",
+          "text": "Évolution",
+          "patientComment": "directement en lien avec stress psychique et professionnel, la semaine dernière en courant pour attraper le train éructations acides"
+        },
+        {
+          "id": "a7",
+          "text": "Facteurs d'influence, dépendance alimentaire",
+          "patientComment": "consommation de lait et prise d'antiacides soulagent, déclenchée par oignons frits, chocolat, vin rouge, mais pas directement après prise alimentaire"
+        },
+        {
+          "id": "a8",
+          "text": "Réveil matinal avec goût acide",
+          "patientComment": "oui"
+        },
+        {
+          "id": "a9",
+          "text": "Dysphagie/odynophagie",
+          "patientComment": "non"
+        },
+        {
+          "id": "a10",
+          "text": "Appétit",
+          "patientComment": "pas de changement"
+        },
+        {
+          "id": "a11",
+          "text": "Changements de poids (incluant symptômes B)",
+          "patientComment": "non"
+        },
+        {
+          "id": "a12",
+          "text": "Nausées",
+          "patientComment": "non"
+        },
+        {
+          "id": "a13",
+          "text": "Vomissements",
+          "patientComment": "non"
+        },
+        {
+          "id": "a14",
+          "text": "Habitudes intestinales",
+          "patientComment": "rarement diarrhées, variant selon habitudes alimentaires"
+        },
+        {
+          "id": "a15",
+          "text": "Ictère",
+          "patientComment": "jamais remarqué"
+        },
+        {
+          "id": "a16",
+          "text": "Alimentation",
+          "patientComment": "5 tasses de café par jour, déjeuner sauté, grand repas du soir"
+        },
+        {
+          "id": "a17",
+          "text": "Médicaments",
+          "patientComment": "antiacides, agissent à peine récemment"
+        },
+        {
+          "id": "a18",
+          "text": "Alcool",
+          "patientComment": "connaisseur de whisky"
+        },
+        {
+          "id": "a19",
+          "text": "Autres toxiques",
+          "patientComment": "fume rarement la pipe"
+        },
+        {
+          "id": "a20",
+          "text": "Allergies",
+          "patientComment": "non"
+        },
+        {
+          "id": "a21",
+          "text": "Activités sportives, loisirs",
+          "patientComment": "jogging 2 fois par semaine"
+        },
+        {
+          "id": "a22",
+          "text": "Anamnèse systémique",
+          "patientComment": "aucun résultat"
+        },
+        {
+          "id": "a23",
+          "text": "Anamnèse familiale",
+          "patientComment": "rien"
+        },
+        {
+          "id": "a24",
+          "text": "Anamnèse sociale",
+          "patientComment": "a un chien, ancien servant de messe divorcé"
+        },
+        {
+          "id": "a25",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "binaryOnly": false,
+          "details": [
+            "Anamnèse générale ciblée et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Inspection"
+        },
+        {
+          "id": "e2",
+          "text": "Auscultation"
+        },
+        {
+          "id": "e3",
+          "text": "Percussion"
+        },
+        {
+          "id": "e4",
+          "text": "Palpation"
+        },
+        {
+          "id": "e5",
+          "text": "Palpation du foie"
+        },
+        {
+          "id": "e6",
+          "text": "Palpation de la rate"
+        },
+        {
+          "id": "e7",
+          "text": "Palpation des reins"
+        },
+        {
+          "id": "e8",
+          "text": "Inspection endobuccale"
+        },
+        {
+          "id": "e9",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "binaryOnly": false,
+          "details": [
+            "Status général ciblé et bien conduit"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Énonce le diagnostic principal",
+          "patientComment": "reflux gastro-œsophagien (GERD)"
+        },
+        {
+          "id": "m2",
+          "text": "Nomme au moins deux diagnostics différentiels",
+          "details": [
+            "Dyspepsie fonctionnelle",
+            "Hernie hiatale",
+            "Œsophagite de reflux",
+            "Cancer de l'œsophage",
+            "Œsophage de Barrett",
+            "Gastrite chronique",
+            "Ulcère gastrique/duodénal",
+            "Cancer gastrique"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Nomme les examens diagnostiques",
+          "details": [
+            "Gastroscopie",
+            "pH-métrie",
+            "Radiographie selon diagnostic différentiel",
+            "Test à l'uréase avec biopsie",
+            "Laboratoire (gastrine, vitamine B12, auto-anticorps)"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Nomme les possibilités thérapeutiques",
+          "details": [
+            "Lit : surélévation de la tête",
+            "Habitudes alimentaires : restriction café, alcool, éviter aliments acides, éviter repas tardifs, perte de poids",
+            "Éviter médicaments diminuant la pression du sphincter (anticholinergiques, spasmolytiques, nitrés, antagonistes calciques)",
+            "IPP éventuellement anti-H2",
+            "En cas de résistance thérapeutique : fundoplicature",
+            "En cas d'œsophage de Barrett : contrôle endoscopique régulier"
+          ]
+        },
+        {
+          "id": "m5",
+          "text": "Évaluation globale de la qualité de la prise en charge",
+          "binaryOnly": false,
+          "details": [
+            "Prise en charge générale cohérente et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    }
+  }
+}

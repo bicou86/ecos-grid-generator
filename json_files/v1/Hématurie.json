@@ -1,0 +1,184 @@
+{
+  "title": "Hématurie macroscopique",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Patient de 52 ans consultant pour sang dans les urines"
+  },
+  "sections": {
+    "anamnese": {
+      "title": "Anamnèse",
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction et objectif",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Caractéristiques de l'hématurie",
+          "details": [
+            "Début",
+            "Quantité",
+            "Aspect et caillots",
+            "Moment dans le jet urinaire"
+          ],
+          "patientComment": "(Depuis 4 semaines de temps en temps / Jusqu'à présent peu de sang, aujourd'hui plus / Non, juste urine colorée / Ne sait pas, plutôt à la fin)"
+        },
+        {
+          "id": "a3",
+          "text": "Symptômes mictionnels",
+          "details": [
+            "Fréquence mictionnelle",
+            "Dysurie",
+            "Rétention urinaire",
+            "Gouttes post-mictionnelles"
+          ],
+          "patientComment": "(Plutôt souvent, environ six fois par jour / Non / Jamais / Oui, presque toujours)"
+        },
+        {
+          "id": "a4",
+          "text": "Symptômes associés",
+          "details": [
+            "Douleurs abdominales",
+            "Traumatisme ou manipulations"
+          ],
+          "patientComment": "(Aucune / Non, oui parfois jeux sexuels avec insertion d'objets)"
+        },
+        {
+          "id": "a5",
+          "text": "Revue des systèmes",
+          "details": [
+            "Symptômes B",
+            "Neurologie",
+            "Maladies psychiatriques",
+            "Maladies cardiaques",
+            "Poumons",
+            "Digestion",
+            "Uro-génital (IU)",
+            "Consommation de liquides",
+            "Appétit",
+            "Évolution pondérale"
+          ],
+          "patientComment": "(Aucun / / / / / / / 2l par jour / Normal / Pas changé, 1.80m, 75kg)"
+        },
+        {
+          "id": "a6",
+          "text": "Habitudes de vie",
+          "details": [
+            "Cigarettes",
+            "Alcool",
+            "Drogues",
+            "Médicaments (anticoagulants)"
+          ],
+          "patientComment": "(1/2 paquet/jour depuis 20 ans / Le weekend demi-bouteille de vin au repas / Non / Aucun)"
+        },
+        {
+          "id": "a7",
+          "text": "Activités et expositions",
+          "details": [
+            "Activités sportives et loisirs",
+            "Voyages (schistosomes)",
+            "État émotionnel/stress"
+          ],
+          "patientComment": "(Course à pied régulière / Sur demande: marathon il y a 4 semaines / Rien de particulier)"
+        },
+        {
+          "id": "a8",
+          "text": "Antécédents familiaux",
+          "patientComment": "(Père infarctus à 68 ans, mère en bonne santé)"
+        },
+        {
+          "id": "a9",
+          "text": "Anamnèse sociale",
+          "patientComment": "(Banquier, marié, 2 fils adolescents)"
+        },
+        {
+          "id": "a10",
+          "text": "Résumé et questions complémentaires"
+        },
+        {
+          "id": "a11",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "binaryOnly": false,
+          "details": [
+            "Anamnèse générale ciblée et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "examen": {
+      "title": "Examen clinique",
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Examen abdominal incluant fosses lombaires"
+        },
+        {
+          "id": "e2",
+          "text": "Palpation vésicale"
+        },
+        {
+          "id": "e3",
+          "text": "Examen génital (mentionné)"
+        },
+        {
+          "id": "e4",
+          "text": "Toucher rectal (mentionné)"
+        },
+        {
+          "id": "e5",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "binaryOnly": false,
+          "details": [
+            "Status général ciblé et bien conduit"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "management": {
+      "title": "Prise en charge",
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic de suspicion à exclure",
+          "patientComment": "(Carcinome vésical)"
+        },
+        {
+          "id": "m2",
+          "text": "Diagnostics différentiels",
+          "patientComment": "(Lésion urétrale, hématurie familiale bénigne avec macro-hématurie post-effort)"
+        },
+        {
+          "id": "m3",
+          "text": "Examens diagnostiques",
+          "details": [
+            "Biologie",
+            "Analyses urinaires",
+            "Imagerie",
+            "Explorations complémentaires"
+          ],
+          "patientComment": "(Marqueurs inflammatoires, Hb, éventuellement PSA / Bandelette urinaire, sédiment urinaire / US (résidu post-mictionnel, prostate) / Cysto-urétrographie, éventuellement biopsie)"
+        },
+        {
+          "id": "m4",
+          "text": "Traitement et conseils hygiéno-diététiques",
+          "patientComment": "(Selon résultats, mode de vie: boire beaucoup)"
+        },
+        {
+          "id": "m5",
+          "text": "Évaluation globale de la qualité de la prise en charge",
+          "binaryOnly": false,
+          "details": [
+            "Prise en charge générale cohérente et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    }
+  }
+}

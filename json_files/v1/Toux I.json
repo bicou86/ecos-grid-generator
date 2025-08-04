@@ -1,0 +1,229 @@
+{
+  "title": "Toux I",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Andrea Hollenstein, 34 ans, infirmière, consulte pour une toux depuis 6 semaines"
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction et objectif",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Symptôme principal",
+          "binaryOnly": false,
+          "details": [
+            "[Toux]"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Épisodes antérieurs",
+          "binaryOnly": false,
+          "details": [
+            "[De temps en temps bronchites]"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Début et évolution",
+          "binaryOnly": false,
+          "details": [
+            "[Depuis 6 semaines, s'aggravant]"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Caractéristiques de la toux",
+          "binaryOnly": false,
+          "details": [
+            "Productive/non productive [expectorations blanchâtres]"
+          ]
+        },
+        {
+          "id": "a6",
+          "text": "Hémoptysie",
+          "binaryOnly": false,
+          "details": [
+            "[Non]"
+          ]
+        },
+        {
+          "id": "a7",
+          "text": "Dyspnée",
+          "binaryOnly": false,
+          "details": [
+            "[Non]"
+          ]
+        },
+        {
+          "id": "a8",
+          "text": "Facteurs d'aggravation",
+          "binaryOnly": false,
+          "details": [
+            "[Rien]"
+          ]
+        },
+        {
+          "id": "a9",
+          "text": "Facteurs d'amélioration",
+          "binaryOnly": false,
+          "details": [
+            "[Rien]"
+          ]
+        },
+        {
+          "id": "a10",
+          "text": "Anamnèse environnementale",
+          "binaryOnly": false,
+          "details": [
+            "[Aucune]"
+          ]
+        },
+        {
+          "id": "a11",
+          "text": "Infections ORL",
+          "binaryOnly": false,
+          "details": [
+            "Rhinite, pharyngite [à préciser]"
+          ]
+        },
+        {
+          "id": "a12",
+          "text": "Baisse de performance",
+          "binaryOnly": false,
+          "details": [
+            "[Oui]"
+          ]
+        },
+        {
+          "id": "a13",
+          "text": "Écoulement post-nasal",
+          "binaryOnly": false,
+          "details": [
+            "[Non]"
+          ]
+        },
+        {
+          "id": "a14",
+          "text": "Douleurs thoraciques",
+          "binaryOnly": false,
+          "details": [
+            "[Non]"
+          ]
+        },
+        {
+          "id": "a15",
+          "text": "Symptômes cardiaques",
+          "binaryOnly": false,
+          "details": [
+            "[Non]"
+          ]
+        },
+        {
+          "id": "a16",
+          "text": "Sibilants",
+          "binaryOnly": false,
+          "details": [
+            "[Non]"
+          ]
+        },
+        {
+          "id": "a17",
+          "text": "Reflux gastro-œsophagien",
+          "binaryOnly": false,
+          "details": [
+            "[Oui, souvent après les repas]"
+          ]
+        },
+        {
+          "id": "a18",
+          "text": "Symptômes B",
+          "binaryOnly": false,
+          "details": [
+            "[Perte de poids 6 kg en 2 mois]",
+            "[Parfois légère fièvre]",
+            "[Transpiration nocturne accrue remarquée]"
+          ]
+        },
+        {
+          "id": "a19",
+          "text": "Exposition professionnelle",
+          "binaryOnly": false,
+          "details": [
+            "[Patient tuberculeux au service il y a quelques mois]",
+            "[Anciennement aussi d'autres]"
+          ]
+        },
+        {
+          "id": "a20",
+          "text": "Antécédents médicaux",
+          "binaryOnly": false,
+          "details": [
+            "[Aucun]"
+          ]
+        },
+        {
+          "id": "a21",
+          "text": "Médicaments",
+          "binaryOnly": false,
+          "details": [
+            "[Aucun]"
+          ]
+        },
+        {
+          "id": "a22",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "binaryOnly": false,
+          "details": [
+            "Anamnèse générale ciblée et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "binaryOnly": false,
+          "details": [
+            "Status général ciblé et bien conduit"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Évaluation globale de la qualité de la prise en charge",
+          "binaryOnly": false,
+          "details": [
+            "Prise en charge générale cohérente et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "images": [
+      {
+        "id": "annexe1",
+        "data": "grilles_generees/images/toux-i-img.png",
+        "title": "Radiographie thoracique",
+        "description": "Radiographie pulmonaire face antéro-postérieure"
+      }
+    ]
+  }
+}

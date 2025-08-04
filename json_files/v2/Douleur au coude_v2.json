@@ -1,0 +1,240 @@
+{
+  "title": "Douleur au coude",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Madame Wieser, 25 ans, se présente pour des douleurs au coude."
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction et tâche",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Identification du symptôme principal",
+          "binaryOnly": true,
+          "patientComment": "Douleurs au coude"
+        },
+        {
+          "id": "a3",
+          "text": "Localisation de la douleur",
+          "patientComment": "Coude, côté radial"
+        },
+        {
+          "id": "a4",
+          "text": "Intensité sur échelle de 1 à 10",
+          "patientComment": "4-5"
+        },
+        {
+          "id": "a5",
+          "text": "Qualité de la douleur",
+          "patientComment": "Pas claire, pas de sensation électrique, plutôt sourde"
+        },
+        {
+          "id": "a6",
+          "text": "Irradiation",
+          "patientComment": "En fait non, de temps en temps dans l'avant-bras"
+        },
+        {
+          "id": "a7",
+          "text": "Facteurs d'amélioration ou d'aggravation",
+          "patientComment": "Mieux au repos, pire avec les mouvements"
+        },
+        {
+          "id": "a8",
+          "text": "Apparition temporelle et contexte",
+          "patientComment": "A commencé le week-end dernier, j'ai eu un tournoi de badminton amical et j'ai dû jouer 6 matchs sur 2 jours, j'ai malheureusement perdu la plupart, maintenant limitée au travail"
+        },
+        {
+          "id": "a9",
+          "text": "Antécédents de traumatisme",
+          "details": [
+            "Traumatisme actuel [Non]",
+            "Traumatisme antérieur [Non, jamais de traumatisme]"
+          ]
+        },
+        {
+          "id": "a10",
+          "text": "Déficit fonctionnel et gonflement",
+          "patientComment": "Douleurs, pas de gonflement remarqué"
+        },
+        {
+          "id": "a11",
+          "text": "Modalités des symptômes",
+          "details": [
+            "À l'effort [Oui]",
+            "La nuit [Non]",
+            "Au repos [Non]"
+          ]
+        },
+        {
+          "id": "a12",
+          "text": "Activités et habitudes",
+          "patientComment": "Badminton, de temps en temps tennis, jogging"
+        },
+        {
+          "id": "a13",
+          "text": "Maladies systémiques",
+          "patientComment": "En fait rien"
+        },
+        {
+          "id": "a14",
+          "text": "Anamnèse médicamenteuse",
+          "details": [
+            "Médicaments actuels [Pilule contraceptive]",
+            "Traitement déjà essayé [Encore rien]"
+          ]
+        },
+        {
+          "id": "a15",
+          "text": "Consommation de substances",
+          "patientComment": "Arrêt du tabac il y a 2 ans, occasionnellement vin/bière, pas de drogues"
+        },
+        {
+          "id": "a16",
+          "text": "Anamnèse familiale",
+          "patientComment": "Sans particularité"
+        },
+        {
+          "id": "a17",
+          "text": "Anamnèse sociale",
+          "patientComment": "Infirmière, jogging, petit ami"
+        },
+        {
+          "id": "a18",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "binaryOnly": false,
+          "details": [
+            "Anamnèse complète et ciblée sur la pathologie du coude"
+          ],
+          "scoringRule": "Bien = 2 pts, suffisant = 1 pt, insuffisant = 0 pt"
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Désinfection des mains",
+          "binaryOnly": true
+        },
+        {
+          "id": "e2",
+          "text": "Inspection",
+          "details": [
+            "Rougeur [Normal]",
+            "Gonflement [Normal]",
+            "État de la peau [Normal]",
+            "Position de repos [Normal]",
+            "Muscles [Normal]"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Palpation",
+          "details": [
+            "Épicondyle latéral de l'humérus [Douloureux !!!]",
+            "Épicondyle latéral avec extension du poignet contre résistance [Douloureux !!]",
+            "Épicondyle médial de l'humérus [Sans particularité]"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Amplitude des mouvements",
+          "details": [
+            "Flexion-Extension (130-30-0) [Sans particularité]",
+            "Pronation-Neutre-Supination [Sans particularité]"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Tests de stabilité ligamentaire",
+          "details": [
+            "Stress en valgus [Sans particularité]",
+            "Stress en varus [Sans particularité]"
+          ]
+        },
+        {
+          "id": "e6",
+          "text": "Examen neurologique",
+          "details": [
+            "Sensibilité [Sans particularité]",
+            "Réflexes : biceps (C5) [Normal]",
+            "Réflexes : triceps (C7) [Normal]",
+            "Réflexes : brachioradial (C6) [Normal]"
+          ]
+        },
+        {
+          "id": "e7",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "binaryOnly": false,
+          "details": [
+            "Examen complet du coude avec tests spécifiques appropriés"
+          ],
+          "scoringRule": "Bien = 2 pts, suffisant = 1 pt, insuffisant = 0 pt"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic suspecté",
+          "details": [
+            "Épicondylite latérale (tennis elbow)"
+          ]
+        },
+        {
+          "id": "m2",
+          "text": "Diagnostics différentiels",
+          "ddSection": {
+            "categories": [
+              {
+                "name": "Diagnostics différentiels à considérer",
+                "items": [
+                  "Syndrome du rond pronateur [Compression du nerf médian, lors de pronation contre résistance]",
+                  "Arthrose",
+                  "Arthrite",
+                  "Fracture de la tête radiale",
+                  "Irritation du nerf ulnaire [Signe de Tinel, douleur électrisante lors de la percussion du sillon ulnaire]"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m3",
+          "text": "Examens diagnostiques",
+          "details": [
+            "Éventuellement radiographie pour exclure d'autres pathologies articulaires [Serait sans particularité]"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Prise en charge thérapeutique conservatrice",
+          "details": [
+            "Application de froid",
+            "Anti-inflammatoires locaux [Par exemple gel de diclofénac]",
+            "Bon pronostic, durée semaines à mois",
+            "Charge sportive uniquement jusqu'à absence de douleur"
+          ]
+        },
+        {
+          "id": "m5",
+          "text": "Évaluation globale de la qualité de la prise en charge",
+          "binaryOnly": false,
+          "details": [
+            "Prise en charge appropriée avec approche conservatrice adaptée"
+          ],
+          "scoringRule": "Bien = 2 pts, suffisant = 1 pt, insuffisant = 0 pt"
+        }
+      ]
+    }
+  }
+}

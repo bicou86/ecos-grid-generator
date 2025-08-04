@@ -1,0 +1,274 @@
+{
+  "title": "Douleur aux jambes",
+  "context": {
+    "setting": "Service d'urgences",
+    "patient": "Homme de 72 ans consultant pour douleur soudaine à la jambe",
+    "vitals": {
+      "ta": "142/89 mmHg",
+      "fc": "84 bpm",
+      "fr": "14/min"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction et tâche",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Question d'entrée ouverte - Symptôme principal",
+          "patientComment": "douleur soudaine et intense à la jambe droite",
+          "binaryOnly": true
+        },
+        {
+          "id": "a3",
+          "text": "Début et caractère de la douleur",
+          "patientComment": "début brutal il y a 2 heures, douleur très intense"
+        },
+        {
+          "id": "a4",
+          "text": "Localisation de la douleur",
+          "patientComment": "jambe droite, du mollet jusqu'aux orteils"
+        },
+        {
+          "id": "a5",
+          "text": "Intensité et qualité",
+          "patientComment": "10/10, douleur déchirante, constante"
+        },
+        {
+          "id": "a6",
+          "text": "Symptômes associés",
+          "details": [
+            "Pâleur de la jambe",
+            "Refroidissement",
+            "Fourmillements",
+            "Faiblesse musculaire"
+          ]
+        },
+        {
+          "id": "a7",
+          "text": "Facteurs déclenchants",
+          "patientComment": "aucun traumatisme, au repos"
+        },
+        {
+          "id": "a8",
+          "text": "Évolution depuis le début",
+          "patientComment": "douleur constante, pas d'amélioration"
+        },
+        {
+          "id": "a9",
+          "text": "Antécédents cardiovasculaires",
+          "details": [
+            "Fibrillation auriculaire",
+            "Infarctus du myocarde antérieur",
+            "Hypertension artérielle",
+            "Diabète type 2"
+          ]
+        },
+        {
+          "id": "a10",
+          "text": "Antécédents vasculaires",
+          "details": [
+            "Claudication intermittente",
+            "Artériopathie périphérique connue",
+            "Embolies antérieures",
+            "Chirurgie vasculaire"
+          ]
+        },
+        {
+          "id": "a11",
+          "text": "Médicaments actuels",
+          "details": [
+            "Anticoagulants (warfarine)",
+            "Antihypertenseurs",
+            "Antidiabétiques",
+            "Observance thérapeutique"
+          ]
+        },
+        {
+          "id": "a12",
+          "text": "Facteurs de risque",
+          "details": [
+            "Tabagisme",
+            "Hypercholestérolémie",
+            "Sédentarité",
+            "Antécédents familiaux"
+          ]
+        },
+        {
+          "id": "a13",
+          "text": "Symptômes systémiques",
+          "patientComment": "pas de fièvre, pas de malaise général"
+        },
+        {
+          "id": "a14",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "binaryOnly": false,
+          "details": [
+            "Anamnèse générale ciblée et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Inspection des membres inférieurs",
+          "details": [
+            "Coloration (pâleur, cyanose)",
+            "Œdème",
+            "Ulcérations",
+            "Comparaison bilatérale"
+          ]
+        },
+        {
+          "id": "e2",
+          "text": "Palpation des pouls",
+          "details": [
+            "Pouls fémoral",
+            "Pouls poplité",
+            "Pouls tibial postérieur",
+            "Pouls pédieux"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Examen sensitif",
+          "details": [
+            "Sensibilité tactile",
+            "Sensibilité thermique",
+            "Sensibilité douloureuse",
+            "Distribution en chaussette"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Examen moteur",
+          "details": [
+            "Force de dorsiflexion",
+            "Force de flexion plantaire",
+            "Mobilité des orteils",
+            "Réflexes tendineux"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Signes d'ischémie aiguë",
+          "details": [
+            "Douleur (Pain)",
+            "Pâleur (Pallor)",
+            "Absence de pouls (Pulselessness)",
+            "Paresthésies",
+            "Paralysie",
+            "Température (Poikilothermie)"
+          ]
+        },
+        {
+          "id": "e6",
+          "text": "Examen cardiovasculaire",
+          "details": [
+            "Auscultation cardiaque",
+            "Rythme cardiaque",
+            "Souffles vasculaires",
+            "Pression artérielle bilatérale"
+          ]
+        },
+        {
+          "id": "e7",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "binaryOnly": false,
+          "details": [
+            "Status général ciblé et bien conduit"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic principal",
+          "patientComment": "Occlusion artérielle aiguë de la jambe droite"
+        },
+        {
+          "id": "m2",
+          "text": "Mécanisme probable",
+          "details": [
+            "Embolie cardiaque (FA)",
+            "Thrombose in situ",
+            "Embolie paradoxale",
+            "Dissection artérielle"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Examens urgents",
+          "details": [
+            "Échographie Doppler artériel",
+            "Angio-TDM des membres inférieurs",
+            "ECG (recherche FA)",
+            "Bilan de coagulation (INR, TP, TCA)"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Prise en charge immédiate",
+          "details": [
+            "Anticoagulation en urgence (héparine IV)",
+            "Analgésie puissante (morphine)",
+            "Position déclive du membre",
+            "Protection contre le froid"
+          ]
+        },
+        {
+          "id": "m5",
+          "text": "Traitement de revascularisation",
+          "details": [
+            "Embolectomie chirurgicale (Fogarty)",
+            "Thrombolyse intra-artérielle",
+            "Angioplastie avec stent",
+            "Pontage vasculaire si nécessaire"
+          ]
+        },
+        {
+          "id": "m6",
+          "text": "Surveillance et complications",
+          "details": [
+            "Viabilité du membre (6h cruciales)",
+            "Syndrome de reperfusion",
+            "Rhabdomyolyse",
+            "Insuffisance rénale aiguë"
+          ]
+        },
+        {
+          "id": "m7",
+          "text": "Prévention secondaire",
+          "details": [
+            "Anticoagulation au long cours",
+            "Contrôle des facteurs de risque",
+            "Suivi cardiologique",
+            "Réhabilitation vasculaire"
+          ]
+        },
+        {
+          "id": "m8",
+          "text": "Évaluation globale de la qualité de la prise en charge",
+          "binaryOnly": false,
+          "details": [
+            "Prise en charge générale cohérente et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    }
+  }
+}

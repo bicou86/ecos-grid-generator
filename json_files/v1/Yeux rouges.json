@@ -1,0 +1,321 @@
+{
+  "title": "Yeux rouges",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Patient de 20 ans consulte pour des yeux rouges avec démangeaisons"
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction et objectif",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Plaintes principales",
+          "binaryOnly": false,
+          "details": [
+            "[Yeux rouges bilatéraux]",
+            "[Démangeaisons]"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Sensation de corps étranger",
+          "binaryOnly": false,
+          "details": [
+            "[Oui]"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Douleurs oculaires",
+          "binaryOnly": false,
+          "details": [
+            "[Non]"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Diminution de l'acuité visuelle",
+          "binaryOnly": false,
+          "details": [
+            "[Non]"
+          ]
+        },
+        {
+          "id": "a6",
+          "text": "Photophobie",
+          "binaryOnly": false,
+          "details": [
+            "[Non]"
+          ]
+        },
+        {
+          "id": "a7",
+          "text": "Symptômes associés",
+          "binaryOnly": false,
+          "details": [
+            "Larmoiement [oui]",
+            "Éternuements [oui]",
+            "[Nez qui coule]"
+          ]
+        },
+        {
+          "id": "a8",
+          "text": "Variation temporelle",
+          "binaryOnly": false,
+          "details": [
+            "Pire le matin [pas nécessairement]"
+          ]
+        },
+        {
+          "id": "a9",
+          "text": "Port de lentilles de contact",
+          "binaryOnly": false,
+          "details": [
+            "[Oui, mais pas aujourd'hui]"
+          ]
+        },
+        {
+          "id": "a10",
+          "text": "Début et évolution des symptômes",
+          "binaryOnly": false,
+          "details": [
+            "Début [depuis quelques semaines]",
+            "Évolution [progressive]"
+          ]
+        },
+        {
+          "id": "a11",
+          "text": "Anamnèse environnementale",
+          "binaryOnly": false,
+          "details": [
+            "[Le père a toujours cela aussi, pas les autres]"
+          ]
+        },
+        {
+          "id": "a12",
+          "text": "État général",
+          "binaryOnly": false,
+          "details": [
+            "[Sinon en bonne santé]"
+          ]
+        },
+        {
+          "id": "a13",
+          "text": "Réfraction",
+          "binaryOnly": false,
+          "details": [
+            "[Légèrement myope -2 D]"
+          ]
+        },
+        {
+          "id": "a14",
+          "text": "Antécédents personnels",
+          "binaryOnly": false,
+          "details": [
+            "[Asthme]"
+          ]
+        },
+        {
+          "id": "a15",
+          "text": "Allergies",
+          "binaryOnly": false,
+          "details": [
+            "[Chats, professeur, pommes]"
+          ]
+        },
+        {
+          "id": "a16",
+          "text": "Consommation de substances",
+          "binaryOnly": false,
+          "details": [
+            "Tabac [4-5 cigarettes par jour]",
+            "Alcool [pas d'alcool]",
+            "[Haschisch occasionnellement]"
+          ]
+        },
+        {
+          "id": "a17",
+          "text": "Médicaments",
+          "binaryOnly": false,
+          "details": [
+            "[Ventolin au besoin]"
+          ]
+        },
+        {
+          "id": "a18",
+          "text": "Antécédents familiaux",
+          "binaryOnly": false,
+          "details": [
+            "[Père asthme et sœur avec peau bizarre]"
+          ]
+        },
+        {
+          "id": "a19",
+          "text": "Anamnèse sociale",
+          "binaryOnly": false,
+          "details": [
+            "[Lycée, bien intégré]"
+          ]
+        },
+        {
+          "id": "a20",
+          "text": "Anamnèse sexuelle",
+          "binaryOnly": false,
+          "details": [
+            "[Nouvelle petite amie depuis 4 semaines, rapports non protégés]"
+          ]
+        },
+        {
+          "id": "a21",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "binaryOnly": false,
+          "details": [
+            "Anamnèse générale ciblée et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Inspection oculaire",
+          "binaryOnly": false,
+          "details": [
+            "Injection conjonctivale",
+            "Sourcil latéral absent"
+          ]
+        },
+        {
+          "id": "e2",
+          "text": "Réaction pupillaire",
+          "binaryOnly": false,
+          "details": [
+            "Test de réactivité pupillaire [normale]"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Acuité visuelle",
+          "binaryOnly": false,
+          "details": [
+            "[Avec correction acuité visuelle 1.0 bilatérale]"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Examen des paupières",
+          "binaryOnly": false,
+          "details": [
+            "Recherche d'ectropion"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Examen à la lampe à fente",
+          "binaryOnly": false,
+          "details": [
+            "Examen détaillé du segment antérieur"
+          ]
+        },
+        {
+          "id": "e6",
+          "text": "Test à la fluorescéine",
+          "binaryOnly": false,
+          "details": [
+            "[Temps de rupture du film lacrymal normal]",
+            "[Pas d'érosion/ulcère]"
+          ]
+        },
+        {
+          "id": "e7",
+          "text": "Auscultation pulmonaire",
+          "binaryOnly": false,
+          "details": [
+            "Systématique antérieure et postérieure"
+          ]
+        },
+        {
+          "id": "e8",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "binaryOnly": false,
+          "details": [
+            "Status général ciblé et bien conduit"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic principal",
+          "binaryOnly": false,
+          "details": [
+            "Conjonctivite allergique"
+          ]
+        },
+        {
+          "id": "m2",
+          "text": "Diagnostics différentiels",
+          "binaryOnly": false,
+          "details": [
+            "Conjonctivite non spécifique",
+            "Conjonctivite virale, bactérienne (Chlamydia)",
+            "Érosion cornéenne par lentilles de contact",
+            "Corps étranger sous-tarsal",
+            "Effet du haschisch"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Examens complémentaires",
+          "binaryOnly": false,
+          "details": [
+            "Prélèvement microbiologique [négatif]",
+            "Test de prick [positif pour pollens de graminées]"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Traitement",
+          "binaryOnly": false,
+          "details": [
+            "Collyres contenant du cromoglycate (antagoniste H1)",
+            "Collyres stéroïdiens à court terme",
+            "Nouvelle consultation en cas de persistance"
+          ]
+        },
+        {
+          "id": "m5",
+          "text": "Conseils et prévention",
+          "binaryOnly": false,
+          "details": [
+            "Évitement des allergènes identifiés",
+            "Hygiène oculaire",
+            "Surveillance des symptômes"
+          ]
+        },
+        {
+          "id": "m6",
+          "text": "Évaluation globale de la qualité de la prise en charge",
+          "binaryOnly": false,
+          "details": [
+            "Prise en charge générale cohérente et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    }
+  }
+}

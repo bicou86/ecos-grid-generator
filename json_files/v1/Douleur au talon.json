@@ -1,0 +1,203 @@
+{
+  "title": "Douleur au talon",
+  "context": {
+    "setting": "Service d'urgence d'un hôpital régional",
+    "patient": "Homme de 30 ans se plaignant de fortes douleurs au niveau du talon",
+    "vitals": {
+      "ta": "120/80 mmHg",
+      "fc": "50 bpm",
+      "temperature": "36.5°C"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction et tâche",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Localisation de la douleur",
+          "patientComment": "en haut du talon",
+          "binaryOnly": true
+        },
+        {
+          "id": "a3",
+          "text": "Début de la douleur",
+          "patientComment": "depuis 4 semaines, augmentant progressivement"
+        },
+        {
+          "id": "a4",
+          "text": "Caractère",
+          "patientComment": "aigu"
+        },
+        {
+          "id": "a5",
+          "text": "Irradiation",
+          "patientComment": "nulle part"
+        },
+        {
+          "id": "a6",
+          "text": "Circonstances aggravantes/atténuantes",
+          "patientComment": "repos"
+        },
+        {
+          "id": "a7",
+          "text": "Apparition des douleurs sous charge/au repos",
+          "patientComment": "sous charge, hier soudainement douloureux même assis"
+        },
+        {
+          "id": "a8",
+          "text": "Retentissement sur le quotidien",
+          "patientComment": "ne va plus au travail"
+        },
+        {
+          "id": "a9",
+          "text": "Chaussures",
+          "patientComment": "au travail toujours talons hauts, en loisir toujours les mêmes baskets"
+        },
+        {
+          "id": "a10",
+          "text": "Traumatisme",
+          "patientComment": "aucun connu"
+        },
+        {
+          "id": "a11",
+          "text": "Autres plaintes",
+          "patientComment": "première apparition, pas d'autres plaintes, pas d'autres arthralgies"
+        },
+        {
+          "id": "a12",
+          "text": "Activités sportives",
+          "patientComment": "joue beaucoup au squash, ski en hiver, ancien volleyeur presque professionnel, week-end d'entraînement il y a 3 semaines, après pire"
+        },
+        {
+          "id": "a13",
+          "text": "Antécédents médicaux",
+          "patientComment": "aucun"
+        },
+        {
+          "id": "a14",
+          "text": "Toxiques",
+          "patientComment": "aucun"
+        },
+        {
+          "id": "a15",
+          "text": "Profession",
+          "patientComment": "vendeur dans un magasin d'articles ménagers"
+        },
+        {
+          "id": "a16",
+          "text": "Anamnèse sociale",
+          "patientComment": "marié, 2 enfants"
+        },
+        {
+          "id": "a17",
+          "text": "Anamnèse familiale",
+          "patientComment": "rien de particulier concernant les problèmes orthopédiques"
+        },
+        {
+          "id": "a18",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "binaryOnly": false,
+          "details": [
+            "Anamnèse générale ciblée et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Marche - normale - orteils - talons / axes du bassin / axes des jambes / axes de l'arrière-pied / musculature"
+        },
+        {
+          "id": "e2",
+          "text": "Inspection globale du pied en position debout (pied étalé, pied plat, pied valgus, pied creux, pied bot, abduction du médio-pied, forme des orteils)"
+        },
+        {
+          "id": "e3",
+          "text": "Plante du pied en position assise (hyperkératose, exanthèmes, mycoses)"
+        },
+        {
+          "id": "e4",
+          "text": "Palpation (articulation tibio-tarsienne, Gänslen, tendon d'Achille, tendon du tibial postérieur, fascia plantaire)"
+        },
+        {
+          "id": "e5",
+          "text": "Examen de la mobilité (extension, flexion, inversion, éversion, pronation, supination)"
+        },
+        {
+          "id": "e6",
+          "text": "Examen fonctionnel (contraction résistive isométrique extenseur de l'hallux, muscles péroniers)"
+        },
+        {
+          "id": "e7",
+          "text": "Stabilité des ligaments collatéraux latéraux"
+        },
+        {
+          "id": "e8",
+          "text": "Signe de Tinel nerf tibial postérieur"
+        },
+        {
+          "id": "e9",
+          "text": "Tendon d'Achille : test de Thompson"
+        },
+        {
+          "id": "e10",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "binaryOnly": false,
+          "details": [
+            "Status général ciblé et bien conduit"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Énonce le diagnostic de suspicion",
+          "patientComment": "tendinopathie d'insertion du tendon d'Achille"
+        },
+        {
+          "id": "m2",
+          "text": "Nomme au moins 2 diagnostics différentiels",
+          "details": [
+            "Tendinopathie du tibial postérieur",
+            "Fasciite plantaire"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Nomme et prescrit le traitement",
+          "details": [
+            "AINS",
+            "Adaptation des chaussures"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Pense à l'arrêt de travail et à l'interdiction de sport pour le patient"
+        },
+        {
+          "id": "m5",
+          "text": "Évaluation globale de la qualité de la prise en charge",
+          "binaryOnly": false,
+          "details": [
+            "Prise en charge générale cohérente et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    }
+  }
+}

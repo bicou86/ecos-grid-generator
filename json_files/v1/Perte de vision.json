@@ -1,0 +1,213 @@
+{
+  "title": "Perte de vision",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Monsieur Müller, 78 ans, consulte pour des problèmes de vision"
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Symptôme principal",
+          "binaryOnly": false,
+          "details": [
+            "A remarqué qu'il voit de plus en plus mal [depuis quelques mois]",
+            "Apparition [progressive]"
+          ]
+        },
+        {
+          "id": "a2",
+          "text": "Caractéristiques de la baisse de vision",
+          "binaryOnly": false,
+          "details": [
+            "Doit porter des lunettes de soleil plus souvent [car ébloui]",
+            "Impression de mieux voir de près [soudainement]",
+            "Vision des couleurs [rien de particulier remarqué]"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Symptômes associés",
+          "binaryOnly": false,
+          "details": [
+            "Absence de douleurs oculaires",
+            "Absence de rougeur oculaire"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Consommation de substances",
+          "binaryOnly": false,
+          "details": [
+            "Alcool",
+            "Tabac", 
+            "Drogues"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Symptômes B",
+          "binaryOnly": false,
+          "details": [
+            "Fièvre",
+            "Sueurs nocturnes",
+            "Perte de poids"
+          ]
+        },
+        {
+          "id": "a6",
+          "text": "Allergies",
+          "binaryOnly": false
+        },
+        {
+          "id": "a7",
+          "text": "Médicaments",
+          "binaryOnly": false,
+          "details": [
+            "Questionnement sur les glucocorticoïdes",
+            "Myotiques [n'en prend pas]"
+          ]
+        },
+        {
+          "id": "a8",
+          "text": "Antécédents personnels",
+          "binaryOnly": false,
+          "details": [
+            "Diabète [question importante]",
+            "Autres pathologies"
+          ]
+        },
+        {
+          "id": "a9",
+          "text": "Antécédents chirurgicaux",
+          "binaryOnly": false,
+          "details": [
+            "Opérations antérieures [non]"
+          ]
+        },
+        {
+          "id": "a10",
+          "text": "Antécédents familiaux",
+          "binaryOnly": false,
+          "details": [
+            "Père avait une dégénérescence maculaire [a peur d'avoir la même chose]"
+          ]
+        },
+        {
+          "id": "a11",
+          "text": "Anamnèse sociale",
+          "binaryOnly": false,
+          "details": [
+            "Vit seul dans son appartement",
+            "Retraité"
+          ]
+        },
+        {
+          "id": "a12",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "binaryOnly": false,
+          "details": [
+            "Anamnèse générale ciblée et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Acuité visuelle",
+          "binaryOnly": false,
+          "details": [
+            "Test de l'acuité visuelle avec correction",
+            "Limitation en vision de loin [avec lunettes]"
+          ]
+        },
+        {
+          "id": "e2",
+          "text": "Examen à la lampe à fente",
+          "binaryOnly": false,
+          "details": [
+            "Opacification jaunâtre visible"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Test du reflet rétinien",
+          "binaryOnly": false,
+          "details": [
+            "Opacification apparaît plus foncée"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Ophtalmoscopie",
+          "binaryOnly": false,
+          "details": [
+            "Exclusion de contusion du globe oculaire"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "binaryOnly": false,
+          "details": [
+            "Status général ciblé et bien conduit"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic de suspicion",
+          "binaryOnly": false,
+          "details": [
+            "Cataracte"
+          ]
+        },
+        {
+          "id": "m2",
+          "text": "Examens complémentaires",
+          "binaryOnly": false,
+          "details": [
+            "Laboratoire si indiqué"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Traitement conservateur",
+          "binaryOnly": false,
+          "details": [
+            "Aucun traitement conservateur possible"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Indication opératoire",
+          "binaryOnly": false,
+          "details": [
+            "Opération indiquée",
+            "Chirurgie de la cataracte"
+          ]
+        },
+        {
+          "id": "m5",
+          "text": "Évaluation globale de la qualité de la prise en charge",
+          "binaryOnly": false,
+          "details": [
+            "Prise en charge générale cohérente et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    }
+  }
+}

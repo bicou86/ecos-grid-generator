@@ -1,0 +1,354 @@
+{
+  "title": "Éruption cutanée I",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "M. Meier, 32 ans, se présente en consultation pour une éruption cutanée",
+    "patientComment": "Homme de 32 ans avec éruption cutanée annulaire squameuse du poignet depuis 2 semaines. Exposition à la piscine il y a 3 semaines. Tableau clinique et examen mycologique compatibles avec tinea corporis."
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Se présente avec nom, fonction et but de la consultation",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Caractérisation complète de l'éruption cutanée",
+          "details": [
+            "Localisation: [au poignet]",
+            "Durée: [depuis 2 semaines]",
+            "Évolution: [lésions ont grandi, foyers ont fusionné]",
+            "Symptômes: [démangeaisons intenses]",
+            "Aspect: [desquamation]"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥4 caractéristiques = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "a3",
+          "text": "Facteurs de risque et exposition",
+          "details": [
+            "[Piscine il y a 3 semaines]",
+            "Contact avec animaux domestiques",
+            "Voyages récents en zones endémiques",
+            "Sports de contact/vestiaires collectifs",
+            "Immunosuppression/diabète"
+          ],
+          "binaryOnly": false,
+          "patientComment": "Exposition piscine = facteur de risque majeur pour mycose",
+          "scoringRule": "≥3 facteurs explorés = 2 pts, 2 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "a4",
+          "text": "Recherche de RED FLAGS dermatologiques",
+          "redflagsSection": [
+            {
+              "text": "Fièvre ou signes systémiques [non]",
+              "isRedFlag": false
+            },
+            {
+              "text": "Extension rapide/nécrose [non, progression lente]",
+              "isRedFlag": false
+            },
+            {
+              "text": "Douleur intense/purpura [non, prurit seulement]",
+              "isRedFlag": false
+            },
+            {
+              "text": "Atteinte muqueuse ou systémique [non]",
+              "isRedFlag": false
+            },
+            {
+              "text": "Immunodépression connue [non mentionnée]",
+              "isRedFlag": false
+            }
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥4 red flags recherchés = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "a5",
+          "text": "Histoire dermatologique et atopie",
+          "details": [
+            "Antécédents d'eczéma/psoriasis",
+            "Allergies: [arachide, latex]",
+            "Asthme/rhinite allergique",
+            "Éruptions cutanées antérieures",
+            "Réactions médicamenteuses"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥3 éléments = 2 pts, 2 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "a6",
+          "text": "Traitements essayés et réponse",
+          "details": [
+            "Auto-médication tentée",
+            "Crèmes/lotions utilisées",
+            "Réponse aux traitements",
+            "Facteurs aggravants/améliorants",
+            "[Pas d'amélioration ni d'aggravation]"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥3 éléments = 2 pts, 2 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "a7",
+          "text": "Contexte médical général",
+          "details": [
+            "Médicaments: [aucun]",
+            "Maladies chroniques: [aucune]",
+            "Chirurgies: [aucune]",
+            "Tabac: [1 paquet/jour depuis 10 ans]",
+            "Symptômes B: [non]"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "a8",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "binaryOnly": false,
+          "details": [
+            "Anamnèse dermatologique structurée",
+            "RED FLAGS systématiquement recherchés",
+            "Facteurs de risque identifiés"
+          ],
+          "scoringRule": "Excellente = 2 pts, suffisante = 1 pt, insuffisante = 0 pt"
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Description morphologique précise des lésions",
+          "details": [
+            "Type: plaques/macules/papules/vésicules",
+            "Bordures: nettes/floues/actives",
+            "Centre: clair/squameux/cicatriciel",
+            "Couleur: érythémateuse/pigmentée",
+            "Configuration: annulaire/serpigineux/groupé"
+          ],
+          "binaryOnly": false,
+          "patientComment": "Aspect annulaire typique de dermatophytose",
+          "scoringRule": "≥4 caractéristiques = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "e2",
+          "text": "Distribution et extension des lésions",
+          "details": [
+            "Localisation précise documentée",
+            "Nombre et taille des lésions",
+            "Pattern de distribution",
+            "Recherche autres localisations",
+            "Photographie/schéma si utile"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "e3",
+          "text": "Examens complémentaires cutanés",
+          "details": [
+            "Dermographisme: [testé]",
+            "Test à la lampe de Wood",
+            "Diascopy (vitropression)",
+            "Signe de Nikolsky négatif",
+            "Test du grattage méthodique"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥3 tests = 2 pts, 2 tests = 1 pt, <2 tests = 0 pt"
+        },
+        {
+          "id": "e4",
+          "text": "Recherche de signes associés",
+          "details": [
+            "Ganglions régionaux: [non augmentés]",
+            "Signes de surinfection: [absents]",
+            "Atteinte des phanères",
+            "Muqueuses normales",
+            "État cutané général"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "e5",
+          "text": "Documentation et prélèvements",
+          "details": [
+            "Photographie des lésions",
+            "Prélèvement pour KOH",
+            "Grattage pour mycologie",
+            "Biopsie si doute diagnostique",
+            "Consentement photo obtenu"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥3 éléments = 2 pts, 2 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "e6",
+          "text": "Évaluation globale de la qualité de l'examen",
+          "binaryOnly": false,
+          "details": [
+            "Examen dermatologique systématique",
+            "Description morphologique précise",
+            "Prélèvements appropriés effectués"
+          ],
+          "scoringRule": "Excellent = 2 pts, suffisant = 1 pt, insuffisant = 0 pt"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic principal et confirmation",
+          "patientComment": "Tinea corporis confirmée par examen mycologique (filaments mycéliens)",
+          "details": [
+            "Aspect clinique typique annulaire",
+            "Exposition piscine (facteur de risque)",
+            "Prurit intense caractéristique",
+            "Confirmation mycologique positive",
+            "Extension centrifuge progressive"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "Diagnostic correct avec ≥3 arguments = 2 pts, avec 2 arguments = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "m2",
+          "text": "Diagnostics différentiels structurés",
+          "ddSection": {
+            "categories": [
+              {
+                "name": "Dermatoses inflammatoires",
+                "items": [
+                  "Psoriasis",
+                  "Eczéma nummulaire",
+                  "Dermatite atopique",
+                  "Granulome annulaire"
+                ]
+              },
+              {
+                "name": "Infections non-mycosiques",
+                "items": [
+                  "Pityriasis rosé",
+                  "Érythème migrant (Lyme)",
+                  "Impétigo circiné"
+                ]
+              },
+              {
+                "name": "Autres causes",
+                "items": [
+                  "Lupus cutané subaigu",
+                  "Dermatite de contact",
+                  "Toxidermie"
+                ]
+              }
+            ]
+          },
+          "binaryOnly": false,
+          "scoringRule": "≥6 DD pertinents = 2 pts, 3-5 DD = 1 pt, <3 DD = 0 pt"
+        },
+        {
+          "id": "m3",
+          "text": "Examens complémentaires et interprétation",
+          "details": [
+            "Examen direct KOH → Visualisation immédiate des filaments - positif",
+            "Culture mycologique → Identification espèce (3-4 semaines)",
+            "Biopsie cutanée → Si doute diagnostique persistant",
+            "Bilan si mycose récidivante → Glycémie, sérologie VIH si facteurs de risque"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥3 examens appropriés = 2 pts, 2 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "m4",
+          "text": "Traitement antimycotique protocolisé",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Traitement systémique",
+                "content": "• Terbinafine 250mg 1x/j PO x 2-4 semaines\n• Alternative: Itraconazole 100mg 1x/j x 15j\n• Si échec: Fluconazole 150mg/sem x 4 sem"
+              },
+              {
+                "title": "Traitement topique adjuvant",
+                "content": "• Crème terbinafine 1% 2x/j\n• Ou éconazole crème 2x/j\n• Application débordant 2cm\n• Durée: 2 sem après guérison clinique"
+              },
+              {
+                "title": "Mesures associées",
+                "content": "• Antihistaminique si prurit sévère\n• Éviter corticoïdes (aggravation)\n• Traitement contacts si nécessaire"
+              }
+            ]
+          },
+          "binaryOnly": false,
+          "scoringRule": "≥3 aspects thérapeutiques = 2 pts, 2 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "m5",
+          "text": "Mesures préventives et hygiène",
+          "details": [
+            "Séchage minutieux après douche",
+            "Vêtements amples en coton",
+            "Éviter partage serviettes/vêtements",
+            "Sandales dans lieux publics humides",
+            "Désinfecter chaussures/chaussettes"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥4 mesures = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "m6",
+          "text": "Information patient et observance",
+          "details": [
+            "Nature contagieuse expliquée",
+            "Importance traitement complet",
+            "Risque récidive si arrêt précoce",
+            "Signes amélioration attendus",
+            "Consultation si aggravation"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥4 points abordés = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "m7",
+          "text": "Plan de suivi structuré",
+          "details": [
+            "Contrôle clinique à 2 semaines",
+            "Vérification observance traitement",
+            "Contrôle mycologique si persistance",
+            "Adaptation si résistance/échec",
+            "Prévention récidives discutée"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "m8",
+          "text": "Évaluation globale de la qualité de la prise en charge",
+          "binaryOnly": false,
+          "details": [
+            "Diagnostic mycologique confirmé",
+            "Traitement evidence-based approprié",
+            "Prévention récidive intégrée"
+          ],
+          "scoringRule": "Excellente = 2 pts, adéquate = 1 pt, insuffisante = 0 pt"
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "images": [
+      {
+        "title": "Image clinique - Lésions cutanées",
+        "description": "Photographie montrant des lésions annulaires typiques de tinea corporis au niveau du poignet",
+        "data": "grilles_generees/images/eruption-cutanee-i-img.jpg"
+      }
+    ]
+  }
+}

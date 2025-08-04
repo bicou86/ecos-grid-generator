@@ -1,0 +1,549 @@
+{
+  "title": "Toux IV",
+  "context": {
+    "setting": "Service d'urgences",
+    "patient": "Mme Bühler, 31 ans, se présente aux urgences pour toux irritative et dyspnée déclenchées lors d'une sortie à vélo"
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction et objectif de la consultation",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Question ouverte d'introduction → Motif de consultation",
+          "patientComment": "J'ai eu une crise de dyspnée avec toux lors d'une sortie à vélo, j'avais peur d'étouffer",
+          "binaryOnly": true
+        },
+        {
+          "id": "a3",
+          "text": "RED FLAGS - Urgences respiratoires",
+          "redflagsSection": [
+            {
+              "text": "Détresse respiratoire [non maintenant]"
+            },
+            {
+              "text": "Cyanose [à rechercher]"
+            },
+            {
+              "text": "Impossibilité parler [non]"
+            },
+            {
+              "text": "Tirage respiratoire [non observé]"
+            },
+            {
+              "text": "Silence auscultatoire [non]"
+            },
+            {
+              "text": "Trouble conscience [non]"
+            },
+            {
+              "text": "Panique/anxiété sévère [oui initiale]"
+            },
+            {
+              "text": "Pouls paradoxal [à rechercher]"
+            }
+          ],
+          "scoringRule": "≥6 red flags explorés = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a4",
+          "text": "Caractérisation de la crise asthmatique",
+          "details": [
+            "Déclencheur effort [sortie vélo]",
+            "Début soudain [pendant activité]",
+            "Dyspnée inspiratoire/expiratoire [expiratoire]",
+            "Toux sèche irritative [oui]",
+            "Sifflements audibles [patient entend?]",
+            "Sensation oppression thoracique [étouffement]",
+            "Durée épisode [combien temps?]",
+            "Récupération [spontanée? avec repos?]"
+          ],
+          "scoringRule": "≥6 caractéristiques crise = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a5",
+          "text": "Antécédents asthme et allergies",
+          "details": [
+            "Premier épisode [jamais eu ça]",
+            "Symptômes respiratoires antérieurs [toux? sifflements?]",
+            "Allergies multiples [bouleaux, pommes, poils cheval]",
+            "Rhinite allergique [symptômes nasaux?]",
+            "Eczéma atopique [peau sèche?]",
+            "Conjonctivite allergique [yeux?]",
+            "Tests allergologiques [faits?]",
+            "Traitement allergies [antihistaminiques?]"
+          ],
+          "scoringRule": "≥6 antécédents atopie = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a6",
+          "text": "Facteurs déclenchants asthme",
+          "details": [
+            "Effort physique [vélo déclencheur]",
+            "Allergènes saisonniers [bouleaux printemps]",
+            "Animaux [poils cheval connus]",
+            "Air froid [saison actuelle?]",
+            "Pollution/irritants [tabagisme actif]",
+            "Stress émotionnel [anxiété facteur?]",
+            "Infections respiratoires [récentes?]",
+            "Médicaments [aspirine? bêtabloquants?]"
+          ],
+          "scoringRule": "≥6 déclencheurs explorés = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a7",
+          "text": "Évaluation terrain atopique familial",
+          "details": [
+            "Asthme familial [non mentionné]",
+            "Allergies mère [graminées confirmé]",
+            "Eczéma familial [à rechercher]",
+            "Rhinite allergique famille [fréquent]",
+            "Hérédité atopique [forte prédisposition]",
+            "Autres allergies famille [alimentaires?]",
+            "Maladies auto-immunes [thyroïde?]",
+            "Coronaropathie père [facteur risque cardiovasculaire]"
+          ],
+          "scoringRule": "≥6 antécédents familiaux = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a8",
+          "text": "Facteurs de risque et comorbidités",
+          "details": [
+            "Tabagisme actif [oui - aggrave asthme]",
+            "Contraception œstroprogestative [thromboembolie?]",
+            "Surpoids/obésité [facteur asthme]",
+            "Reflux gastro-œsophagien [toux nocturne]",
+            "Sinusite chronique [polypose?]",
+            "Apnées sommeil [ronflements?]",
+            "Aspirine/AINS [bronchospasme]",
+            "Bêtabloquants [contre-indiqués]"
+          ],
+          "scoringRule": "≥6 facteurs risque = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a9",
+          "text": "Exposition environnementale et professionnelle",
+          "details": [
+            "Profession assistante sociale [stress? bureaux?]",
+            "Exposition allergènes intérieurs [acariens, moisissures]",
+            "Animaux domestiques [chats, chiens]",
+            "Tabagisme passif [environnement]",
+            "Polluants atmosphériques [ville? trafic?]",
+            "Parfums/produits chimiques [cosmétiques]",
+            "Aérosols/sprays [ménage, déodorants]",
+            "Conditions logement [humidité, aération]"
+          ],
+          "scoringRule": "≥6 expositions = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a10",
+          "text": "Activité physique et style de vie",
+          "details": [
+            "Sédentarité [fait rarement sport]",
+            "Tolérance effort habituelle [baseline]",
+            "Sports préférés [vélo occasionnel]",
+            "Loisirs sédentaires [cinéma, shopping]",
+            "Condition physique [déconditionnement?]",
+            "Échauffement avant sport [fait?]",
+            "Environnement exercice [extérieur, froid?]",
+            "Motivation activité physique [à encourager]"
+          ],
+          "scoringRule": "≥6 éléments activité = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a11",
+          "text": "Recherche diagnostics différentiels",
+          "details": [
+            "Syndrome d'hyperventilation [anxiété]",
+            "Embolie pulmonaire [contraception, immobilisation]",
+            "Pneumothorax spontané [femme jeune]",
+            "Infection respiratoire [fièvre? toux productive?]",
+            "Reflux gastro-œsophagien [toux post-prandiale]",
+            "Dysfonction cordes vocales [stridor?]",
+            "Corps étranger [aspiration récente?]",
+            "Troubles anxieux [panique, agoraphobie]"
+          ],
+          "scoringRule": "≥6 DD explorés = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a12",
+          "text": "Évaluation impact psychologique",
+          "details": [
+            "Anxiété lors crise [peur étouffement]",
+            "Évitement activités [développé après?]",
+            "Qualité vie [impact loisirs]",
+            "Stress professionnel [assistante sociale]",
+            "Sommeil [perturbé par anxiété?]",
+            "Relations sociales [limitations]",
+            "Confiance en soi [diminuée?]",
+            "Projection future [peur récidive]"
+          ],
+          "scoringRule": "≥6 impacts psycho = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a13",
+          "text": "Médicaments et substances",
+          "details": [
+            "Contraception [œstroprogestative - type?]",
+            "Bronchodilatateurs [jamais utilisés]",
+            "Antihistaminiques [pour allergies?]",
+            "Corticoïdes [inhalés? systémiques?]",
+            "Cannabis antérieur [bronchospasme possible]",
+            "Alcool [weekend - interactions?]",
+            "Automédication [toux, rhume]",
+            "Compléments alimentaires [à noter]"
+          ],
+          "scoringRule": "≥6 substances évaluées = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a14",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "details": [
+            "Anamnèse asthme d'effort complète",
+            "Terrain atopique documenté",
+            "Facteurs déclenchants identifiés",
+            "Diagnostics différentiels explorés",
+            "Impact psychosocial évalué"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Approche sécurisée et évaluation urgence",
+          "details": [
+            "Hygiène des mains [obligatoire]",
+            "État général [anxieux? détresse?]",
+            "Position patient [confortable? assise?]",
+            "Capacité parler [phrases complètes?]",
+            "Niveau conscience [normal]",
+            "Coloration cutanée [cyanose?]"
+          ],
+          "scoringRule": "≥5 éléments sécurité = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e2",
+          "text": "Examen respiratoire inspection",
+          "details": [
+            "Fréquence respiratoire [normale? tachypnée?]",
+            "Ampliation thoracique [symétrique]",
+            "Tirage intercostal [absent maintenant]",
+            "Utilisation muscles accessoires [non]",
+            "Battement ailes nez [enfant surtout]",
+            "Déformation thoracique [tonneau? pectus?]"
+          ],
+          "scoringRule": "≥5 éléments inspection = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e3",
+          "text": "Auscultation pulmonaire spécialisée",
+          "details": [
+            "Auscultation systématique [antérieure/postérieure]",
+            "Sifflements expiratoires [bilatéraux confirmés]",
+            "Ronchi/râles [secs, humides]",
+            "Diminution murmure vésiculaire [bases?]",
+            "Silence auscultatoire [absence = bon signe]",
+            "Symétrie auscultatoire [bilatérale]"
+          ],
+          "scoringRule": "≥5 éléments auscultation = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e4",
+          "text": "Examen cardiovasculaire ciblé",
+          "details": [
+            "Fréquence cardiaque [tachycardie effort?]",
+            "Régularité rythme [régulier confirmé]",
+            "Auscultation cardiaque [4 foyers]",
+            "Souffles [fonctionnels si tachycardie]",
+            "Pouls paradoxal [asthme sévère]",
+            "Signes insuffisance cardiaque [non]"
+          ],
+          "scoringRule": "≥5 éléments cardio = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e5",
+          "text": "Recherche signes atopie et complications",
+          "details": [
+            "Eczéma [peau sèche, dermatite]",
+            "Rhinite [congestion, écoulement]",
+            "Conjonctivite [rougeur, larmoiement]",
+            "Polypes nasaux [asthme sévère]",
+            "Hippocratisme digital [asthme chronique]",
+            "Déformation thoracique [asthme ancien]"
+          ],
+          "scoringRule": "≥4 signes atopie = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e6",
+          "text": "Examen général et recherche DD",
+          "details": [
+            "Ganglions lymphatiques [normaux]",
+            "Examen cutané [sans particularité]",
+            "Gorge/pharynx [normal]",
+            "Membres inférieurs [TVP? œdèmes?]",
+            "Abdomen [reflux? hépatomégalie?]",
+            "Signes thyroïdiens [hyperactivité?]"
+          ],
+          "scoringRule": "≥4 examens généraux = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e7",
+          "text": "Tests fonctionnels au lit du patient",
+          "details": [
+            "Peak flow [si disponible - diminué?]",
+            "Saturation O2 [oxymétrie normale?]",
+            "Test marche [reproduit symptômes?]",
+            "Spirométrie simple [si appareil]",
+            "Test bronchodilatateur [amélioration?]",
+            "Épreuve effort modéré [prudent]"
+          ],
+          "scoringRule": "≥3 tests fonctionnels = 2 pts, 1-2 = 1 pt, 0 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e8",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "details": [
+            "Examen asthme complet et sécurisé",
+            "Sifflements expiratoires documentés",
+            "Recherche signes gravité systématique",
+            "Terrain atopique recherché",
+            "Diagnostics différentiels explorés"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic principal avec classification",
+          "details": [
+            "Asthme d'effort (première manifestation)",
+            "Asthme intermittent léger",
+            "Terrain atopique [allergies multiples]",
+            "Bronchospasme induit par exercice",
+            "Phénotype allergique"
+          ],
+          "scoringRule": "Diagnostic précis avec phénotype = 2 pts, partiel = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m2",
+          "text": "Diagnostics différentiels urgences respiratoires",
+          "ddSection": {
+            "categories": [
+              {
+                "name": "Respiratoires",
+                "items": [
+                  "Pneumothorax spontané Radiographie thorax",
+                  "Embolie pulmonaire D-dimères, angio-CT",
+                  "Crise asthmatique Peak flow, EFR",
+                  "Pneumonie atypique Radiographie, CRP"
+                ]
+              },
+              {
+                "name": "Cardiovasculaires",
+                "items": [
+                  "Syndrome coronarien aigu ECG, troponines",
+                  "Péricardite aiguë ECG, échocardiographie",
+                  "Troubles rythme ECG, Holter"
+                ]
+              },
+              {
+                "name": "Autres",
+                "items": [
+                  "Syndrome d'hyperventilation Gazométrie, contexte",
+                  "Attaque panique Anamnèse psychiatrique",
+                  "Dysfonction cordes vocales Laryngoscopie"
+                ]
+              }
+            ]
+          },
+          "scoringRule": "≥6 DD avec examens = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m3",
+          "text": "Examens complémentaires urgences",
+          "details": [
+            "Radiographie thorax [éliminer pneumothorax]",
+            "Gazométrie artérielle [si détresse]",
+            "Peak flow [objectiver obstruction]",
+            "Saturation O2 [oxymétrie continue]",
+            "ECG [éliminer problème cardiaque]",
+            "D-dimères [si suspicion EP]",
+            "NFS, CRP [si suspicion infection]"
+          ],
+          "scoringRule": "≥5 examens urgents = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m4",
+          "text": "Traitement bronchodilatateur aigu",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Bronchodilatateurs urgence",
+                "content": "• Salbutamol inhalé 2-4 bouffées avec chambre\\n• Répéter toutes 20 min si besoin\\n• Ou nébulisation salbutamol 2.5-5mg\\n• Ipratropium bromure si réponse insuffisante\\n• Éviter théophylline (toxique)\\n• Surveillance peak flow et saturation"
+              },
+              {
+                "title": "Corticothérapie si sévère",
+                "content": "• Prédnisolone 40-50mg PO\\n• Ou hydrocortisone 200mg IV si sévère\\n• Réduire inflammation bronchique\\n• Durée courte 5-7 jours\\n• Pas nécessaire si crise légère\\n• Sevrage progressif si traitement prolongé"
+              },
+              {
+                "title": "Mesures adjuvantes",
+                "content": "• Oxygénothérapie si SpO2 <90%\\n• Position assise confortable\\n• Rassurance et anxiolytiques légers\\n• Éviter sédation excessive\\n• Hydratation adaptée\\n• Éviction allergènes"
+              }
+            ]
+          },
+          "scoringRule": "Traitement bronchodilatateur approprié = 2 pts, partiel = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m5",
+          "text": "Épreuves fonctionnelles respiratoires",
+          "details": [
+            "Spirométrie complète [VEMS, CVF]",
+            "Test réversibilité [post-bronchodilatateur]",
+            "Test provocation effort [reproduire]",
+            "Test provocation pharmacologique [métacholine]",
+            "Pléthysmographie [volumes pulmonaires]",
+            "DLCO [diffusion normale asthme]",
+            "Mesure NO exhalé [inflammation]"
+          ],
+          "scoringRule": "≥4 tests appropriés = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m6",
+          "text": "Bilan allergologique complet",
+          "details": [
+            "IgE totales [souvent élevées]",
+            "IgE spécifiques [bouleaux, graminées]",
+            "IgE alimentaires [pommes, autres]",
+            "IgE pneumallergènes [acariens, animaux]",
+            "Prick tests cutanés [confirmation]",
+            "Tests provocation alimentaire [si indiqué]",
+            "Recherche ABPA [Aspergillus]"
+          ],
+          "scoringRule": "≥5 examens allergologiques = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m7",
+          "text": "Traitement de fond asthme débutant",
+          "details": [
+            "Corticoïdes inhalés [béclométasone 200-400μg/j]",
+            "Bronchodilatateur action rapide [salbutamol secours]",
+            "Éducation inhalation [technique cruciale]",
+            "Plan d'action personnalisé [écrit]",
+            "Peak flow domicile [auto-surveillance]",
+            "Contrôle mensuel initial [adaptation doses]",
+            "Éviction allergènes [mesures environnement]"
+          ],
+          "scoringRule": "≥5 éléments traitement fond = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m8",
+          "text": "Éducation thérapeutique et prévention",
+          "details": [
+            "Reconnaissance symptômes [dyspnée, sifflements]",
+            "Utilisation inhalateurs [démonstration]",
+            "Éviction déclencheurs [exercice, allergènes]",
+            "Plan action crise [quand bronchodilater]",
+            "Échauffement avant sport [prévention]",
+            "Arrêt tabac [priorité absolue]",
+            "Gestion stress [relaxation, sport adapté]"
+          ],
+          "scoringRule": "≥5 éléments éducation = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m9",
+          "text": "Adaptation mode de vie",
+          "details": [
+            "Sport adapté [natation, échauffement]",
+            "Éviction allergènes [saison pollens]",
+            "Aménagement logement [acariens]",
+            "Éviction animaux [poils cheval]",
+            "Gestion contraception [risque thromboembolique]",
+            "Éviction irritants [tabac, parfums]",
+            "Grossesse future [adaptation traitement]"
+          ],
+          "scoringRule": "≥5 adaptations = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m10",
+          "text": "Suivi spécialisé et coordination",
+          "details": [
+            "Pneumologue [bilan complet EFR]",
+            "Allergologue [tests, désensibilisation?]",
+            "Médecin traitant [suivi régulier]",
+            "Pharmacien [technique inhalation]",
+            "Kinésithérapeute [rééducation respiratoire]",
+            "Éducateur thérapeutique [programme asthme]",
+            "Contrôles programmés [3, 6, 12 mois]"
+          ],
+          "scoringRule": "≥5 acteurs coordination = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m11",
+          "text": "Évaluation globale de la qualité de la prise en charge",
+          "details": [
+            "Diagnostic asthme d'effort approprié",
+            "Traitement bronchodilatateur immédiat",
+            "Bilan allergologique programmé",
+            "Éducation thérapeutique initiée",
+            "Suivi spécialisé organisé"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "images": [
+      {
+        "id": "annexe1",
+        "data": "grilles_generees/images/toux-iv-img.jpg",
+        "title": "Spirométrie avec test de bronchodilatation",
+        "description": "Test spirométrique montrant une obstruction réversible après bronchodilatateur (amélioration VEMS > 20%)"
+      }
+    ]
+  }
+}

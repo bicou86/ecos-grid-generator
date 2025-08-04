@@ -1,0 +1,591 @@
+{
+  "title": "Toux II",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "M. Keller, 83 ans, peintre retraité, se présente pour une toux progressive avec dyspnée d'effort",
+    "vitals": {
+      "ta": "145/85 mmHg",
+      "fc": "95 bpm",
+      "fr": "22/min",
+      "temperature": "36.8°C",
+      "satO2": "94% air ambiant",
+      "poids": "Perte 5 kg en 2 mois"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction et objectif de la consultation",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Question ouverte d'introduction → Motif de consultation",
+          "patientComment": "J'ai une toux qui me gêne beaucoup, surtout la nuit, et j'ai du mal à respirer",
+          "binaryOnly": true
+        },
+        {
+          "id": "a3",
+          "text": "RED FLAGS - Urgences cardiovasculaires",
+          "redflagsSection": [
+            {
+              "text": "Dyspnée repos [non encore]"
+            },
+            {
+              "text": "Orthopnée sévère [oui 3 oreillers]"
+            },
+            {
+              "text": "DPN fréquente [oui réveils]"
+            },
+            {
+              "text": "Œdèmes MI [oui présents]"
+            },
+            {
+              "text": "Prise poids rapide [non - perte 5kg]"
+            },
+            {
+              "text": "Syncope cardiaque [non]"
+            },
+            {
+              "text": "Douleur thoracique [non]"
+            },
+            {
+              "text": "Palpitations [non]"
+            }
+          ],
+          "scoringRule": "≥6 red flags explorés = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a4",
+          "text": "Classification NYHA et évaluation fonctionnelle",
+          "details": [
+            "NYHA I [non - symptomatique]",
+            "NYHA II [non - dépassé]",
+            "NYHA III [oui - dyspnée lever chaise]",
+            "NYHA IV [non encore - pas repos]",
+            "Évolution récente [aggravation 3 semaines]",
+            "Activités limitées [oui importantes]",
+            "Escaliers [combien d'étages?]",
+            "Marche [distance maximale?]"
+          ],
+          "scoringRule": "Classification NYHA précise = 2 pts, approximative = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a5",
+          "text": "Syndrome d'insuffisance cardiaque gauche",
+          "details": [
+            "Dyspnée effort [oui progressive]",
+            "Orthopnée [oui position assise]",
+            "DPN [oui réveils nocturnes]",
+            "Toux nocturne position [décubitus]",
+            "Expectorations rosées [brunâtres]",
+            "Fatigue disproportionnée [oui]",
+            "Intolérance effort [très limitée]",
+            "Nycturie [mictions nocturnes?]"
+          ],
+          "scoringRule": "≥6 signes IC gauche = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a6",
+          "text": "Syndrome d'insuffisance cardiaque droite",
+          "details": [
+            "Œdèmes MI [oui présents]",
+            "Prise poids récente [non - perte]",
+            "Distension abdominale [gonflé?]",
+            "Hépatalgie [douleur foie?]",
+            "Nausées/anorexie [diminution appétit]",
+            "Oligurie diurne [urines diminuées jour]",
+            "Dyspnée post-prandiale [après repas]",
+            "Sensation pesanteur abdominale [oui]"
+          ],
+          "scoringRule": "≥6 signes IC droite = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a7",
+          "text": "Facteurs déclenchants décompensation cardiaque",
+          "details": [
+            "Infection récente [non ORL]",
+            "Écart de régime [sel? liquides?]",
+            "Non observance médicamenteuse [vérifier]",
+            "Surmenage physique [efforts récents]",
+            "Stress émotionnel [événements]",
+            "Médicaments cardiotoxiques [AINS?]",
+            "Anémie [à rechercher]",
+            "Troubles rythme [palpitations non]"
+          ],
+          "scoringRule": "≥6 facteurs explorés = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a8",
+          "text": "Antécédents cardiovasculaires détaillés",
+          "details": [
+            "Cardiopathie connue [quelque chose au cœur]",
+            "Valvulopathie [valve trop étroite]",
+            "Sténose aortique [probable]",
+            "IDM antérieur [à préciser]",
+            "Troubles rythme [FA? autres?]",
+            "HTA [depuis quand? contrôle?]",
+            "Coronaropathie [angiographie?]",
+            "Chirurgie cardiaque [pontage? valve?]"
+          ],
+          "scoringRule": "≥6 antécédents précisés = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a9",
+          "text": "Traitement cardiologique actuel et observance",
+          "details": [
+            "IEC/ARA2 [Lisinopril - dose?]",
+            "Bêtabloquant [Métoprolol - dose?]",
+            "Diurétiques [non encore prescrits]",
+            "Antialdostérone [spironolactone?]",
+            "Statine [Crestor - dose?]",
+            "Antiagrégant [Aspirine - dose?]",
+            "Observance [prend-il tout?]",
+            "Effets secondaires [toux IEC?]"
+          ],
+          "scoringRule": "≥6 médicaments évalués = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a10",
+          "text": "Étiologie sténose aortique et évolution",
+          "details": [
+            "Âge découverte [récente? ancienne?]",
+            "Gradient initial [connu?]",
+            "Évolution surface valve [suivi écho?]",
+            "Symptômes anciens [syncope, angor, IC]",
+            "Calcifications valvulaires [âge, dégénératif]",
+            "Bicuspidie aortique [congénitale?]",
+            "Rhumatisme articulaire [antécédent]",
+            "Dernière échocardiographie [quand?]"
+          ],
+          "scoringRule": "≥6 éléments étiologie = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a11",
+          "text": "Exposition professionnelle et facteurs de risque",
+          "details": [
+            "Peinture professionnelle [solvants]",
+            "Exposition amiante [bâtiment]",
+            "Poussières inorganiques [chantiers]",
+            "Produits chimiques [décapants]",
+            "Protection respiratoire [masques?]",
+            "Durée exposition [années métier]",
+            "Tabagisme [20 PA - arrêt quand?]",
+            "Alcool [consommation?]"
+          ],
+          "scoringRule": "≥6 expositions évaluées = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a12",
+          "text": "Autres comorbidités et facteurs de risque",
+          "details": [
+            "Diabète [mère diabétique - lui?]",
+            "Insuffisance rénale [créatinine?]",
+            "BPCO [ex-fumeur, dyspnée]",
+            "Anémie [perte poids, fatigue]",
+            "Dysthyroïdie [FA? IC?]",
+            "Apnées sommeil [ronflements?]",
+            "Cancer antérieur [chimiothérapie?]",
+            "Maladies auto-immunes [non]"
+          ],
+          "scoringRule": "≥6 comorbidités évaluées = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a13",
+          "text": "Impact fonctionnel et qualité de vie",
+          "details": [
+            "Autonomie AVQ [préservée?]",
+            "Aide domicile [Spitex 1×/semaine]",
+            "Sorties extérieures [limitées]",
+            "Courses/cuisine [qui fait?]",
+            "Conduite automobile [encore?]",
+            "Loisirs abandonnés [lesquels?]",
+            "Sommeil [qualité avec orthopnée]",
+            "Moral/anxiété [face maladie]"
+          ],
+          "scoringRule": "≥6 impacts évalués = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a14",
+          "text": "Contexte socio-familial et support",
+          "details": [
+            "Épouse présente [état santé?]",
+            "Enfants proches [soutien?]",
+            "Isolement social [non marié]",
+            "Finances [retraite suffisante?]",
+            "Logement adapté [étages? ascenseur?]",
+            "Transport médical [ambulance?]",
+            "Médecin traitant [suivi régulier]",
+            "Soins à domicile [besoin ↗?]"
+          ],
+          "scoringRule": "≥6 éléments contexte = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a15",
+          "text": "Signes d'alarme et critères hospitalisation",
+          "details": [
+            "Détresse respiratoire [non encore]",
+            "Cyanose [à rechercher]",
+            "Troubles conscience [non]",
+            "Hypotension [TA 145/85 stable]",
+            "Oligurie [diurèse?]",
+            "Douleur thoracique [non]",
+            "Choc cardiogénique [non]",
+            "Décompensation rapide [3 semaines]"
+          ],
+          "scoringRule": "≥6 signes évalués = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a16",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "details": [
+            "Anamnèse insuffisance cardiaque complète",
+            "Classification NYHA documentée",
+            "Étiologie valvulaire explorée",
+            "Facteurs déclenchants recherchés",
+            "Impact fonctionnel évalué"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Évaluation hémodynamique et signes vitaux",
+          "details": [
+            "TA [145/85 - HTA contrôlée?]",
+            "FC [95 bpm - régulière?]",
+            "FR [22/min - tachypnée]",
+            "Saturation O2 [94% - hypoxémie légère]",
+            "Température [36.8°C normale]",
+            "État général [altéré? fatigué?]"
+          ],
+          "scoringRule": "≥5 paramètres évalués = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e2",
+          "text": "Examen cardiaque inspection et palpation",
+          "details": [
+            "Choc de pointe [déplacé? élargi?]",
+            "Frémissement systolique [sténose aortique]",
+            "Soulèvement parasternal [HVD]",
+            "Battements carotidiens [retardés SA?]",
+            "Pouls périphériques [amplitude, symétrie]",
+            "Pression veineuse jugulaire [turgescence]"
+          ],
+          "scoringRule": "≥5 éléments palpation = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e3",
+          "text": "Auscultation cardiaque spécialisée",
+          "details": [
+            "B1/B2 [intensité, dédoublement]",
+            "Souffle systolique aortique [grade?]",
+            "Irradiation carotides [sténose aortique]",
+            "B3 galop [insuffisance cardiaque]",
+            "B4 galop [compliance VG diminuée]",
+            "Souffle mitral [insuffisance fonctionnelle]",
+            "Frottement péricardique [non]"
+          ],
+          "scoringRule": "≥6 éléments auscultation = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e4",
+          "text": "Examen pulmonaire systématique",
+          "details": [
+            "Inspection [tirage? cyanose?]",
+            "Palpation [vibrations vocales]",
+            "Percussion [matité bases]",
+            "Auscultation antérieure [râles?]",
+            "Auscultation postérieure [crépitants bases]",
+            "Épanchement pleural [matité, abolition MV]"
+          ],
+          "scoringRule": "≥5 éléments pulmonaires = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e5",
+          "text": "Recherche signes d'insuffisance cardiaque droite",
+          "details": [
+            "Turgescence jugulaire [position 45°]",
+            "Reflux hépato-jugulaire [positif?]",
+            "Hépatomégalie [percussion, palpation]",
+            "Hépatalgie [douleur pression]",
+            "Ascite [percussion, matité déclive]",
+            "Œdème sacré [décubitus]"
+          ],
+          "scoringRule": "≥5 signes IC droite = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e6",
+          "text": "Examen des œdèmes périphériques",
+          "details": [
+            "Œdèmes MI [présents - grade?]",
+            "Signe godet [positif?]",
+            "Bilatéralité [symétrique?]",
+            "Extension [cheville, mollet, cuisse]",
+            "Œdème scrotal [homme âgé]",
+            "Peau [tension, coloration]"
+          ],
+          "scoringRule": "≥5 caractéristiques œdèmes = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e7",
+          "text": "Recherche complications sténose aortique",
+          "details": [
+            "Signes bas débit [hypotension?]",
+            "Syncope d'effort [antécédents]",
+            "Angor d'effort [douleur thoracique]",
+            "Troubles conduction [bradycardie]",
+            "Embolies calcaires [AVC, ischémie]",
+            "Endocardite [fièvre, souffles nouveaux]"
+          ],
+          "scoringRule": "≥4 complications recherchées = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e8",
+          "text": "Examen général et recherche comorbidités",
+          "details": [
+            "État nutritionnel [amaigrissement]",
+            "Hippocratisme digital [cardiopathie chronique]",
+            "Cyanose périphérique/centrale [hypoxémie]",
+            "Anémie [conjonctives pâles]",
+            "Adénopathies [cancer? infection]",
+            "Examen neurologique [AVC emboles]"
+          ],
+          "scoringRule": "≥5 examens généraux = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e9",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "details": [
+            "Examen insuffisance cardiaque complet",
+            "Recherche sténose aortique systématique",
+            "Signes décompensation identifiés",
+            "Complications recherchées",
+            "Examen adapté à l'âge"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic principal avec classification ESC",
+          "details": [
+            "Insuffisance cardiaque décompensée",
+            "NYHA III (limitation marquée)",
+            "IC à FEVG préservée vs réduite",
+            "Étiologie sténose aortique probable",
+            "Décompensation aiguë sur chronique"
+          ],
+          "scoringRule": "Diagnostic précis avec classification = 2 pts, partiel = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m2",
+          "text": "Diagnostics différentiels décompensation cardiaque",
+          "ddSection": {
+            "categories": [
+              {
+                "name": "Cardiaques",
+                "items": [
+                  "Insuffisance cardiaque aiguë BNP, échocardiographie",
+                  "Syndrome coronarien aigu Troponines, ECG",
+                  "Troubles rythme rapides ECG, Holter",
+                  "Embolie pulmonaire D-dimères, angio-CT"
+                ]
+              },
+              {
+                "name": "Pulmonaires",
+                "items": [
+                  "Pneumonie communautaire Radiographie, CRP",
+                  "Exacerbation BPCO Gazométrie, EFR",
+                  "Fibrose pulmonaire CT thorax HR",
+                  "Épanchement pleural Radiographie, ponction"
+                ]
+              },
+              {
+                "name": "Autres",
+                "items": [
+                  "Anémie sévère NFS, ferritine",
+                  "Insuffisance rénale Créatinine, DFG",
+                  "Dysthyroïdie TSH, T3, T4"
+                ]
+              }
+            ]
+          },
+          "scoringRule": "≥6 DD avec examens = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m3",
+          "text": "Examens biologiques urgents insuffisance cardiaque",
+          "details": [
+            "BNP/NT-proBNP [élevé > 400 pg/ml]",
+            "Troponines hs [SCA associé?]",
+            "NFS [anémie facteur décompensation]",
+            "Ionogramme [Na+, K+, dysnatrémie]",
+            "Fonction rénale [créatinine, DFG]",
+            "Bilan hépatique [congestion foie]",
+            "CRP [infection déclenchante]"
+          ],
+          "scoringRule": "≥6 examens biologiques = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m4",
+          "text": "Imagerie cardiaque et pulmonaire",
+          "details": [
+            "Radiographie thorax [cardiomégalie, œdème]",
+            "Signes surcharge [redistribution vasculaire]",
+            "Lignes Kerley B [œdème interstitiel]",
+            "Épanchement pleural [bilatéral]",
+            "ECG [HVG, troubles rythme]",
+            "Échocardiographie urgente [FEVG, valves]"
+          ],
+          "scoringRule": "≥5 examens imagerie = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m5",
+          "text": "Évaluation sténose aortique échocardiographique",
+          "details": [
+            "Surface valvulaire aortique [<1 cm² sévère]",
+            "Gradient moyen [>40 mmHg sévère]",
+            "Vélocité maximale [>4 m/s sévère]",
+            "FEVG [préservée? altérée?]",
+            "Hypertrophie VG [concentrique]",
+            "Pression systolique pulmonaire [HTAP]"
+          ],
+          "scoringRule": "≥5 paramètres écho = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m6",
+          "text": "Traitement diurétique décompensation",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Diurétiques urgents",
+                "content": "• Furosémide 40-80mg IV/PO\\n• Adaptation selon fonction rénale\\n• Surveillance ionogramme quotidien\\n• Objectif diurèse 1-2 L/24h\\n• Perte poids 0.5-1 kg/jour\\n• Éviter déshydratation excessive"
+              },
+              {
+                "title": "Optimisation traitement IC",
+                "content": "• IEC/ARA2 : maintenir si possible\\n• Bêtabloquants : poursuivre si stable\\n• Antialdostérone : spironolactone 25mg\\n• Digoxine si FA + IC sévère\\n• Éviter AINS, CCB négatifs inotropes"
+              },
+              {
+                "title": "Mesures symptomatiques",
+                "content": "• Position semi-assise ou assise\\n• Restriction hydrosodée <2g Na+/j\\n• Oxygénothérapie si SpO2 <90%\\n• Surveillance poids quotidien\\n• Repos relatif\\n• Éducation patient et famille"
+              }
+            ]
+          },
+          "scoringRule": "Traitement décompensation complet = 2 pts, partiel = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m7",
+          "text": "Indication intervention sténose aortique",
+          "details": [
+            "Critères chirurgie [SA sévère symptomatique]",
+            "Évaluation risque opératoire [EuroSCORE]",
+            "TAVI vs chirurgie [âge, comorbidités]",
+            "Consultation cardiochirurgie",
+            "Délai intervention [urgence relative]",
+            "Optimisation préopératoire [IC, nutrition]"
+          ],
+          "scoringRule": "≥4 critères intervention = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m8",
+          "text": "Critères et modalités hospitalisation",
+          "details": [
+            "Hospitalisation indiquée [NYHA III décompensé]",
+            "Service cardiologie [surveillance spécialisée]",
+            "Monitoring cardiaque [si troubles rythme]",
+            "Bilan préopératoire [si TAVI envisagé]",
+            "Optimisation thérapeutique [diurétiques IV]",
+            "Éducation thérapeutique [avant sortie]"
+          ],
+          "scoringRule": "≥4 éléments hospitalisation = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m9",
+          "text": "Surveillance et prévention récidive",
+          "details": [
+            "Pesée quotidienne domicile",
+            "Surveillance symptômes [dyspnée, œdèmes]",
+            "Observance médicamenteuse",
+            "Restriction hydrosodée [éducation]",
+            "Signaux d'alarme [quand consulter]",
+            "Suivi cardiologique régulier",
+            "Vaccinations [grippe, pneumocoque]"
+          ],
+          "scoringRule": "≥5 mesures prévention = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m10",
+          "text": "Organisation parcours soins gériatriques",
+          "details": [
+            "Cardiologue référent [suivi IC]",
+            "Médecin traitant [coordination]",
+            "Soins domicile [Spitex renforcé]",
+            "Kinésithérapie [réhabilitation cardiaque]",
+            "Diététicienne [régime pauvre sel]",
+            "Pharmacien [révision traitements]",
+            "Transport médical [si urgence]"
+          ],
+          "scoringRule": "≥5 acteurs parcours = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m11",
+          "text": "Évaluation globale de la qualité de la prise en charge",
+          "details": [
+            "Diagnostic IC décompensée approprié",
+            "Étiologie sténose aortique identifiée",
+            "Traitement symptomatique institué",
+            "Indication intervention évaluée",
+            "Parcours soins organisé"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        }
+      ]
+    }
+  }
+}

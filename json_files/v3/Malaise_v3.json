@@ -1,0 +1,568 @@
+{
+  "title": "Malaise",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Homme de 79 ans se présente pour insécurité et malaise survenant au lever du lit ou après sa sieste dans le fauteuil à bascule",
+    "vitals": {
+      "fr": "16/min",
+      "temperature": "36.4°C"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction et objectif de la consultation",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Question ouverte d'introduction → Motif de consultation",
+          "patientComment": "J'ai des malaises et une sensation d'insécurité quand je me lève",
+          "binaryOnly": true
+        },
+        {
+          "id": "a3",
+          "text": "RED FLAGS - Urgences cardiovasculaires",
+          "redflagsSection": [
+            {
+              "text": "Syncope pendant effort [non]"
+            },
+            {
+              "text": "Douleur thoracique associée [non]"
+            },
+            {
+              "text": "Palpitations importantes [parfois légères]"
+            },
+            {
+              "text": "Dyspnée sévère [non]"
+            },
+            {
+              "text": "Signes AVC/AIT [non]"
+            },
+            {
+              "text": "Traumatisme grave chute [non]"
+            },
+            {
+              "text": "Méléna/rectorragies [non]"
+            },
+            {
+              "text": "Anémie sévère symptomatique [à vérifier]"
+            }
+          ],
+          "scoringRule": "≥6 red flags explorés = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a4",
+          "text": "Caractérisation hypotension orthostatique (critères ESC)",
+          "details": [
+            "Déclenchement positionnel [lever lit/fauteuil]",
+            "Délai d'apparition [immédiat <3 min]",
+            "Amélioration décubitus [oui rapidement]",
+            "Symptômes neurovégétatifs [vertiges, sueurs]",
+            "Prédominance matinale [pire le matin]",
+            "Aggravation après repas [à explorer]",
+            "Chaleur aggravante [été pire?]",
+            "Exercice préalable [non applicable]"
+          ],
+          "scoringRule": "≥6 critères HO = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a5",
+          "text": "Épisodes syncopaux et chutes",
+          "details": [
+            "Nombre chutes [2 fois récemment]",
+            "Circonstances [lever? marche?]",
+            "Perte connaissance complète [non]",
+            "Prodromes [vertiges, flou visuel?]",
+            "Durée inconscience [NA]",
+            "Récupération [progressive/immédiate?]",
+            "Traumatismes [gravité évaluée]",
+            "Témoins [Heidi présente?]"
+          ],
+          "scoringRule": "≥6 éléments = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a6",
+          "text": "Symptômes neurovégétatifs associés",
+          "details": [
+            "Vertiges rotatoires vs instabilité [instabilité]",
+            "Flou visuel/vision trouble [à explorer]",
+            "Sueurs froides [parfois]",
+            "Nausées [non mentionnées]",
+            "Pâleur [parfois observée]",
+            "Tachycardie compensatrice [parfois]",
+            "Faiblesse membres [jambes molles?]",
+            "Sensation tête vide [probable]"
+          ],
+          "scoringRule": "≥6 symptômes = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a7",
+          "text": "Recherche causes iatrogènes (prioritaire)",
+          "details": [
+            "Médicaments maison [ne sait pas exactement]",
+            "Antihypertenseurs probables [longtemps sans contrôle]",
+            "Diurétiques [possibles]",
+            "Vasodilatateurs [nitrés?]",
+            "Psychotropes [sédatifs? antidépresseurs?]",
+            "Posologie récente changée [non suivi]",
+            "Automédication [possible]",
+            "Observance [irrégulière probable]"
+          ],
+          "scoringRule": "≥6 médicaments = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a8",
+          "text": "Causes cardiovasculaires à rechercher",
+          "details": [
+            "Cardiopathie connue [oui mais non suivie]",
+            "Insuffisance cardiaque [dyspnée? œdèmes?]",
+            "Troubles rythme [palpitations parfois]",
+            "Sténose aortique [souffle?]",
+            "Cardiomyopathie [écho jamais?]",
+            "Post-infarctus [non connu]",
+            "Valve défaillante [souffles à chercher]",
+            "HTAP [signes IC droite?]"
+          ],
+          "scoringRule": "≥6 causes = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a9",
+          "text": "Causes neurologiques et autonomiques",
+          "details": [
+            "Diabète [non mentionné]",
+            "Neuropathie périphérique [pieds?]",
+            "Maladie Parkinson [tremblements?]",
+            "Atrophie multisystémique [rare]",
+            "AVC antérieur [non connu]",
+            "Démence débutante [concentration→normal vieillesse]",
+            "Syndrome Shy-Drager [très rare]",
+            "Polyneuropathie [alcool? diabète?]"
+          ],
+          "scoringRule": "≥6 causes neurologiques = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a10",
+          "text": "Causes endocriniennes et métaboliques",
+          "details": [
+            "Hypothyroïdie [fatigue? froid?]",
+            "Insuffisance surrénalienne [rare]",
+            "Hyponatrémie [diurétiques?]",
+            "Anémie [pâleur parfois]",
+            "Déshydratation [apports 1L faibles]",
+            "Hypoglycémie [timing repas?]",
+            "Insuffisance rénale [créatinine?]",
+            "Hypoalbuminémie [nutrition?]"
+          ],
+          "scoringRule": "≥6 causes = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a11",
+          "text": "Évaluation hydratation et nutrition",
+          "details": [
+            "Apports hydriques [1L/j - insuffisant!]",
+            "Apports sodés [restriction? goût ↓?]",
+            "Alimentation qualité [mange beaucoup dit-il]",
+            "Perte poids récente [non mentionnée]",
+            "Soif conservée [à vérifier]",
+            "Diarrhées [non]",
+            "Vomissements [non]",
+            "Diurétiques cachés [possibles]"
+          ],
+          "scoringRule": "≥6 éléments nutrition = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a12",
+          "text": "Facteurs aggravants environnementaux",
+          "details": [
+            "Chaleur été [aggrave HO]",
+            "Lever brutal [fauteuil à bascule!]",
+            "Station debout prolongée [éviter]",
+            "Bains chauds [vasodilatation]",
+            "Repas copieux [splanchnic pooling]",
+            "Alcool [vasodilatateur]",
+            "Effort physique [réduit retour veineux]",
+            "Immobilisation [déconditionnement]"
+          ],
+          "scoringRule": "≥6 facteurs = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a13",
+          "text": "Impact fonctionnel et qualité de vie",
+          "details": [
+            "Limitations activités [promenades limitées?]",
+            "Peur de tomber [probable]",
+            "Anxiété anticipatoire [développée?]",
+            "Restriction sociale [échecs→isolement?]",
+            "Autonomie [conservée avec aide Heidi]",
+            "Sécurité domicile [adaptations nécessaires]",
+            "Conduite automobile [encore possible?]"
+          ],
+          "scoringRule": "≥5 impacts = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a14",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "details": [
+            "Anamnèse hypotension orthostatique complète",
+            "Red flags cardiovasculaires exclus",
+            "Causes iatrogènes explorées",
+            "Facteurs aggravants identifiés",
+            "Impact fonctionnel évalué"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Test orthostatique standardisé (ESC 2018)",
+          "details": [
+            "Position couchée 5 min minimum",
+            "TA/FC couchée × 3 mesures",
+            "Lever actif patient (non passif)",
+            "TA/FC immédiat debout",
+            "TA/FC à 1 min debout",
+            "TA/FC à 3 min debout",
+            "Documentation symptômes chaque mesure"
+          ],
+          "scoringRule": "Test complet = 2 pts, partiel = 1 pt, absent = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e2",
+          "text": "Interprétation test orthostatique",
+          "details": [
+            "HO: chute ≥20 mmHg systolique",
+            "HO: chute ≥10 mmHg diastolique",
+            "HO retardée: >3 min normal puis chute",
+            "Tachycardie compensatrice [>30 bpm]",
+            "Symptômes reproduits [malaise?]",
+            "Calculs corrects différences"
+          ],
+          "scoringRule": "Interprétation correcte = 2 pts, partielle = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e3",
+          "text": "Évaluation état général et hydratation",
+          "details": [
+            "Aspect général [âge apparent vs réel]",
+            "Pli cutané [test hydratation]",
+            "Muqueuses buccales [sèches?]",
+            "Tension globes oculaires [enfoncés?]",
+            "Fontanelles si disponibles [non à 79 ans]",
+            "Turgor cutané [élasticité ↓ âge]"
+          ],
+          "scoringRule": "≥5 éléments = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e4",
+          "text": "Examen cardiovasculaire approfondi",
+          "details": [
+            "Auscultation 4 foyers [B1-B2 normaux?]",
+            "Recherche souffles [sténose aortique?]",
+            "B3/B4 galop [insuffisance cardiaque?]",
+            "Choc de pointe [déplacé? faible?]",
+            "Bruits cardiaques [assourdis?]",
+            "Frottement péricardique [rare]"
+          ],
+          "scoringRule": "≥5 examens = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e5",
+          "text": "Recherche signes insuffisance cardiaque",
+          "details": [
+            "Œdèmes MI [chevilles, jambes]",
+            "Turgescence jugulaire [en position 45°]",
+            "Reflux hépato-jugulaire [positif?]",
+            "Hépatomégalie [bord inférieur]",
+            "Râles pulmonaires [bases]",
+            "Ascite [percussion, matité flancs]"
+          ],
+          "scoringRule": "≥5 signes recherchés = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e6",
+          "text": "Examen vasculaire périphérique",
+          "details": [
+            "Pouls périphériques [carotides, radiaux, pédieux]",
+            "Souffle carotidien [sténose?]",
+            "Varices MI [retour veineux altéré]",
+            "Œdèmes asymétriques [TVP?]",
+            "Température extrémités [froide si choc]",
+            "Temps recoloration capillaire [<3s normal]"
+          ],
+          "scoringRule": "≥5 examens = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e7",
+          "text": "Examen neurologique de dépistage",
+          "details": [
+            "État conscience [vigilance]",
+            "Orientation temporo-spatiale [conservée]",
+            "Équilibre [station debout, Romberg]",
+            "Marche [démarche, tandem]",
+            "ROT [présence symétrique]",
+            "Force musculaire globale [testing 4 membres]"
+          ],
+          "scoringRule": "≥5 éléments = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e8",
+          "text": "Recherche signes endocriniens",
+          "details": [
+            "Signes hypothyroïdie [bradycardie, peau sèche]",
+            "Pigmentation (Addison) [très rare]",
+            "Amaigrissement [cachexie cardiaque?]",
+            "Œdème palpébral [hypothyroïdie]",
+            "Goitre [palpation thyroïde]"
+          ],
+          "scoringRule": "≥4 recherches = 2 pts, 2-3 = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e9",
+          "text": "Évaluation risque chutes",
+          "details": [
+            "Get up and go test [lever chaise]",
+            "Équilibre unipodal [>5s normal]",
+            "Vision [lunettes? cataracte?]",
+            "Audition [appareil auditif?]",
+            "Chaussures adaptées [antidérapantes]"
+          ],
+          "scoringRule": "≥4 évaluations = 2 pts, 2-3 = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e10",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "details": [
+            "Test orthostatique correctement réalisé",
+            "Examen cardiovasculaire complet",
+            "Recherche causes secondaires",
+            "Évaluation risque chutes",
+            "Documentation précise résultats"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic hypotension orthostatique avec classification",
+          "details": [
+            "HO classique (déficit autonomique)",
+            "HO iatrogène (médicaments)",
+            "HO secondaire (cardiaque, endocrine)",
+            "Sévérité [légère <20, modérée 20-40, sévère >40]",
+            "Impact fonctionnel documenté"
+          ],
+          "scoringRule": "Classification complète = 2 pts, partielle = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m2",
+          "text": "Diagnostics différentiels pertinents",
+          "ddSection": {
+            "categories": [
+              {
+                "name": "Causes cardiovasculaires",
+                "items": [
+                  "Hypotension orthostatique Test orthostatique standardisé",
+                  "Syncope cardiaque (troubles rythme) ECG, Holter 24h",
+                  "Sténose aortique Échocardiographie",
+                  "Insuffisance cardiaque BNP, échocardiographie"
+                ]
+              },
+              {
+                "name": "Causes neurologiques",
+                "items": [
+                  "AIT/AVC CT/IRM cérébrale",
+                  "Épilepsie tard révélée EEG, IRM cérébrale",
+                  "Neuropathie autonomique Tests autonomiques",
+                  "Troubles de l'équilibre Examen ORL, vestibulaire"
+                ]
+              },
+              {
+                "name": "Causes métaboliques",
+                "items": [
+                  "Hypoglycémie Glycémie, test jeûne",
+                  "Hypothyroïdie TSH, T4 libre",
+                  "Déshydratation Ionogramme, osmolarité",
+                  "Anémie NFS complète"
+                ]
+              }
+            ]
+          },
+          "scoringRule": "≥8 DD avec examens = 2 pts, 6-7 = 1 pt, <6 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m3",
+          "text": "Examens complémentaires immédiats",
+          "details": [
+            "ECG 12 dérivations (troubles rythme/conduction)",
+            "Glycémie capillaire (hypoglycémie)",
+            "Test orthostatique confirmé 3 jours",
+            "Récupération médicaments exacts domicile",
+            "Bilan biologique urgent si instabilité"
+          ],
+          "scoringRule": "≥4 examens = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m4",
+          "text": "Bilan étiologique complet",
+          "details": [
+            "NFS (anémie), ionogramme (hyponatrémie)",
+            "Fonction rénale (créatinine, urée)",
+            "TSH, T4 libre (hypothyroïdie)",
+            "Cortisol matinal (insuffisance surrénale)",
+            "Échocardiographie (cardiopathie structurelle)",
+            "Holter ECG 24h (troubles rythme)",
+            "Holter tensionnel (profil circadien)"
+          ],
+          "scoringRule": "≥6 examens = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m5",
+          "text": "Révision médicamenteuse prioritaire",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Médicaments hypotenseurs à identifier",
+                "content": "• Antihypertenseurs: IEC, ARA2, inhibiteurs calciques\n• Diurétiques: thiazidiques, anse\n• Vasodilatateurs: nitrés, α-bloquants\n• Psychotropes: antidépresseurs, neuroleptiques\n• Autres: PDE5 inhibiteurs, dopaminergiques\n• Vérifier dosages et interactions"
+              },
+              {
+                "title": "Stratégies d'optimisation",
+                "content": "• Réduction posologies si possible\n• Changement horaires (éviter matin)\n• Substitution (ex: IEC → ARB)\n• Arrêt temporaire si non essentiel\n• Monothérapie vs associations\n• Surveillance TA ambulatoire"
+              },
+              {
+                "title": "Médicaments à éviter absolument",
+                "content": "• Nitrés sublinguaux\n• α-bloquants (tamsulosine)\n• Antidépresseurs tricycliques\n• Diurétiques surdosés\n• Associations hypotensives\n• Alcool médicamenteux"
+              }
+            ]
+          },
+          "scoringRule": "Révision complète = 2 pts, partielle = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m6",
+          "text": "Mesures non médicamenteuses prioritaires",
+          "details": [
+            "Hydratation ≥1.5-2L/jour (vs 1L actuel)",
+            "Augmentation sel 6-8g/jour",
+            "Lever progressif 3 temps (assis 30s→debout)",
+            "Éviter station debout prolongée",
+            "Bas contention classe 2 (20-30 mmHg)",
+            "Surélévation tête lit 10-20°",
+            "Repas fractionnés (éviter splanchnic pooling)"
+          ],
+          "scoringRule": "≥6 mesures = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m7",
+          "text": "Traitement médicamenteux spécifique",
+          "details": [
+            "Fludrocortisone 0.1mg matin (1ère ligne)",
+            "Augmentation progressive max 0.4mg/j",
+            "Surveillance: TA, poids, K+, œdèmes",
+            "Midodrine 2.5mg × 3/j si échec",
+            "Éviter prise 4h avant coucher",
+            "Contre-indications: IC sévère, coronariens"
+          ],
+          "scoringRule": "≥4 éléments traitement = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m8",
+          "text": "Prévention chutes et aménagement domicile",
+          "details": [
+            "Évaluation ergothérapeute domicile",
+            "Barres d'appui salle bain/toilettes",
+            "Éclairage nocturne automatique",
+            "Chaussures antidérapantes",
+            "Suppression tapis glissants",
+            "Téléphone alarme (médaillon)",
+            "Formation Heidi gestes secours"
+          ],
+          "scoringRule": "≥5 aménagements = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m9",
+          "text": "Éducation patient et entourage",
+          "details": [
+            "Explication physiopathologie simple",
+            "Reconnaissance signes précurseurs",
+            "Technique lever progressif enseignée",
+            "Importance hydratation/sel",
+            "Éviter facteurs déclenchants (chaleur)",
+            "Quand consulter urgence",
+            "Implication active épouse Heidi"
+          ],
+          "scoringRule": "≥5 points éducation = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m10",
+          "text": "Suivi multidisciplinaire organisé",
+          "details": [
+            "Revoir 1 semaine (ajustement initial)",
+            "Cardiologie si cardiopathie",
+            "Gériatrie si polypathologie",
+            "Kinésithérapie (équilibre, renforcement)",
+            "Évaluation conduite automobile",
+            "Coordination médecin famille",
+            "Plan urgence si aggravation"
+          ],
+          "scoringRule": "≥5 suivis = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m11",
+          "text": "Évaluation globale de la qualité de la prise en charge",
+          "details": [
+            "Diagnostic HO correct",
+            "Cause iatrogène recherchée",
+            "Mesures non médicamenteuses prioritaires",
+            "Prévention chutes organisée",
+            "Suivi multidisciplinaire planifié"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        }
+      ]
+    }
+  }
+}

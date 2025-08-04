@@ -1,0 +1,464 @@
+{
+  "title": "Bradycardie",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Madame Hugendubel, 45 ans, se présente au cabinet pour altération de l'état général",
+    "vitals": {
+      "ta": "109/74 mmHg",
+      "fc": "43 bpm",
+      "fr": "13/min",
+      "temperature": "36.5°C"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction et objectif de la consultation",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Question ouverte d'introduction → Motif de consultation",
+          "patientComment": "Pouls lent, me sens faible",
+          "binaryOnly": true
+        },
+        {
+          "id": "a3",
+          "text": "RED FLAGS - Urgences cardiovasculaires",
+          "redflagsSection": [
+            {
+              "text": "Syncopes/chutes répétées [oui, 3 fois !]"
+            },
+            {
+              "text": "Douleur thoracique aiguë [non]"
+            },
+            {
+              "text": "Détresse respiratoire [dyspnée légère]"
+            },
+            {
+              "text": "Confusion/trouble conscience [non]"
+            },
+            {
+              "text": "Hypotension symptomatique [TA 109/74]"
+            },
+            {
+              "text": "Signes de choc [non actuellement]"
+            },
+            {
+              "text": "Œdème pulmonaire aigu [à évaluer]"
+            }
+          ],
+          "scoringRule": "≥5 red flags explorés = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a4",
+          "text": "Caractérisation de la bradycardie",
+          "details": [
+            "Fréquence cardiaque [43/min - confirmé]",
+            "Rythme régulier/irrégulier [régulier]",
+            "Début brutal/progressif [insidieux]",
+            "Durée symptômes [4 jours]",
+            "Évolution continue/paroxystique [permanente]",
+            "Bradycardie connue antérieure [non]",
+            "FC habituelle si connue [à explorer]"
+          ],
+          "scoringRule": "≥6 éléments = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a5",
+          "text": "Symptômes de bas débit cardiaque",
+          "details": [
+            "Vertiges/étourdissements [oui]",
+            "Syncopes/lipothymies [3 chutes]",
+            "Fatigue/asthénie [me sens faible]",
+            "Confusion/troubles cognitifs [à évaluer]",
+            "Intolérance à l'effort [à quantifier]",
+            "Palpitations paradoxales [non]"
+          ],
+          "scoringRule": "≥4 symptômes = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a6",
+          "text": "Signes d'insuffisance cardiaque",
+          "details": [
+            "Dyspnée effort/repos [légère]",
+            "Orthopnée [nombre oreillers?]",
+            "DPN (dyspnée nocturne) [à explorer]",
+            "Œdèmes MI [oui, chevilles, chaussures serrées]",
+            "Prise poids rapide [5 kg en 2 semaines !]",
+            "Hépatalgie d'effort [à explorer]",
+            "Oligurie [presque plus d'urine]"
+          ],
+          "scoringRule": "≥5 signes = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a7",
+          "text": "Médicaments bradycardisants - Analyse critique",
+          "details": [
+            "Bêtabloquant [Métoprolol 20 mg - FAIBLE DOSE]",
+            "Dose et horaire prise [1-0-0]",
+            "Observance traitement [à vérifier]",
+            "Modification récente posologie [non]",
+            "Autres bradycardisants (digoxine, anti-Ca) [non]",
+            "Antiarythmiques classe I/III [non]",
+            "Interactions médicamenteuses [à évaluer]"
+          ],
+          "scoringRule": "≥5 éléments analysés = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a8",
+          "text": "Causes métaboliques de bradycardie",
+          "details": [
+            "Hypothyroïdie [thyroïdectomie il y a 10 ans]",
+            "Compliance Euthyrox [50 μg - dose?]",
+            "Symptômes hypothyroïdie [prise poids, fatigue]",
+            "Hyperkaliémie [à doser]",
+            "Hypothermie [température normale]",
+            "Hypoxie sévère [satO2 à mesurer]"
+          ],
+          "scoringRule": "≥5 causes explorées = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a9",
+          "text": "Facteurs déclenchants insuffisance cardiaque",
+          "details": [
+            "Écart régime sans sel [à explorer]",
+            "Infection récente [non mentionnée]",
+            "Anémie [à dépister]",
+            "Arythmie nouvelle [non]",
+            "Ischémie myocardique [à exclure]",
+            "Non-compliance médicamenteuse [peu probable]",
+            "Stress physique/émotionnel [à évaluer]"
+          ],
+          "scoringRule": "≥5 facteurs = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a10",
+          "text": "Facteurs de risque cardiovasculaire complets",
+          "details": [
+            "HTA [oui - traitée]",
+            "Diabète [non]",
+            "Dyslipidémie [oui - statine 40mg]",
+            "Tabagisme [2 paquets/j × 25 ans = 50 PA !]",
+            "Obésité [poids habituel?]",
+            "Sédentarité [non - sportive]",
+            "Stress [vendeuse]",
+            "ATCD familiaux [père mort subite 82 ans]"
+          ],
+          "scoringRule": "≥6 facteurs = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a11",
+          "text": "Antécédents thyroïdiens détaillés",
+          "details": [
+            "Type pathologie [adénome thyroïdien]",
+            "Date chirurgie [il y a 10 ans]",
+            "Type chirurgie [thyroïdectomie - totale?]",
+            "Dose Euthyrox actuelle [50 μg]",
+            "Dernier contrôle TSH [à demander]",
+            "Ajustements récents [non explorés]"
+          ],
+          "scoringRule": "≥5 éléments = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a12",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "details": [
+            "Anamnèse complète et systématique",
+            "Red flags identifiés",
+            "Causes multifactorielles explorées",
+            "Urgence reconnue",
+            "Approche holistique"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Évaluation hémodynamique immédiate",
+          "details": [
+            "État de conscience [alerte mais fatiguée]",
+            "Perfusion périphérique [temps recoloration]",
+            "Pouls radial [faible, régulier, 43/min]",
+            "TA couché/debout [109/74 - hypotension?]",
+            "Signes de choc [marbrures, extrémités]"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e2",
+          "text": "Examen cardiaque approfondi",
+          "details": [
+            "Inspection [choc de pointe visible?]",
+            "Palpation [choc déplacé? frémissement?]",
+            "B1-B2 [intensité, dédoublement]",
+            "B3 galop [signe IC - CRUCIAL]",
+            "B4 galop [compliance VG]",
+            "Souffle systolique [2/6 Ao - sténose?]",
+            "Souffle diastolique [absent]",
+            "Frottement péricardique [non]"
+          ],
+          "scoringRule": "≥6 éléments = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e3",
+          "text": "Signes congestifs droits",
+          "details": [
+            "Turgescence jugulaire [position 45°]",
+            "Reflux hépato-jugulaire [présent?]",
+            "Hépatomégalie [palpation douce]",
+            "Ascite [matité déclive?]",
+            "Œdèmes MI [bilatéraux, prenant godet]",
+            "Poids actuel vs habituel [+5kg]"
+          ],
+          "scoringRule": "≥5 signes = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e4",
+          "text": "Examen pulmonaire - Signes congestifs gauches",
+          "details": [
+            "FR et travail respiratoire [13/min]",
+            "Percussion [matité bases?]",
+            "Crépitants bases [signe IC gauche]",
+            "Sibilants [asthme cardiaque?]",
+            "Épanchement pleural [matité, abolition MV]"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e5",
+          "text": "Examen thyroïdien spécifique",
+          "details": [
+            "Cicatrice cervicale [thyroïdectomie]",
+            "Palpation loge thyroïdienne [vide?]",
+            "Ganglions cervicaux [non]",
+            "Signes hypothyroïdie [peau, réflexes]"
+          ],
+          "scoringRule": "≥3 éléments = 2 pts, 2 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e6",
+          "text": "Signes cutanés et périphériques",
+          "details": [
+            "Coloration [grisâtre - cyanose?]",
+            "Température cutanée [froide?]",
+            "Myxœdème [hypothyroïdie?]",
+            "Ongles [hippocratisme?]",
+            "Conjonctives [pâleur?]"
+          ],
+          "scoringRule": "≥4 signes = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e7",
+          "text": "Classification NYHA rapide",
+          "details": [
+            "NYHA I : asymptomatique",
+            "NYHA II : dyspnée efforts importants",
+            "NYHA III : dyspnée efforts minimes",
+            "NYHA IV : dyspnée repos",
+            "Évaluation : [probablement NYHA II-III]"
+          ],
+          "scoringRule": "Classification correcte = 2 pts, tentative = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e8",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "details": [
+            "Examen complet et systématique",
+            "Recherche signes IC droite/gauche",
+            "Évaluation hémodynamique",
+            "Urgence évaluée",
+            "Documentation précise"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostics principaux énoncés",
+          "details": [
+            "Insuffisance cardiaque aiguë décompensée",
+            "Bradycardie symptomatique",
+            "Possible surdosage relatif bêtabloquant",
+            "Hypothyroïdie à exclure"
+          ],
+          "scoringRule": "≥3 diagnostics = 2 pts, 2 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m2",
+          "text": "Diagnostics différentiels urgents",
+          "scoringRule": "≥6 DD = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false,
+          "ddSection": {
+            "categories": [
+              {
+                "name": "Diagnostics différentiels à considérer",
+                "items": [
+                  "Bloc AV 2e/3e degré",
+                  "Maladie du sinus",
+                  "Bradycardie sinusale sévère",
+                  "FA lente",
+                  "Hypothyroïdie sévère",
+                  "Hyperkaliémie",
+                  "Intoxication digitalique",
+                  "IDM inférieur (vagal)"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m3",
+          "text": "ECG et interprétation URGENTE",
+          "details": [
+            "ECG 12 dérivations IMMÉDIAT",
+            "Rythme sinusal vs FA",
+            "Ondes P présentes?",
+            "Intervalle PR (bloc AV?)",
+            "QRS larges? (bloc branche)",
+            "ST-T (ischémie?)",
+            "QT long? (risque torsades)"
+          ],
+          "scoringRule": "≥5 éléments = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m4",
+          "text": "Examens biologiques urgents",
+          "details": [
+            "Troponine hs (IDM?)",
+            "BNP/NT-proBNP (IC)",
+            "TSH (hypothyroïdie)",
+            "Iono avec K+ (hyperkaliémie)",
+            "Créatinine, urée (IRC)",
+            "NFS (anémie)",
+            "Gazométrie si dyspnée",
+            "Dosage digoxine si applicable"
+          ],
+          "scoringRule": "≥6 examens = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m5",
+          "text": "Imagerie et examens complémentaires",
+          "details": [
+            "Rx thorax (cardiomégalie, OAP)",
+            "Échocardiographie urgente",
+            "ECG monitoring continu",
+            "Holter ECG si paroxystique",
+            "Test effort si stable"
+          ],
+          "scoringRule": "≥4 examens = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m6",
+          "text": "Prise en charge immédiate",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Mesures générales urgentes",
+                "content": "• Monitoring cardio-tensionnel\n• O2 si satO2 <90%\n• VVP de sécurité\n• Position demi-assise\n• Restriction hydrosodée\n• STOP Métoprolol temporairement"
+              },
+              {
+                "title": "Si bradycardie mal tolérée",
+                "content": "• Atropine 0.5-1mg IV (répétable)\n• Si échec: Isoprénaline IV\n• Pacing transcutané si instable\n• Préparation pacing temporaire"
+              },
+              {
+                "title": "Traitement IC aiguë",
+                "content": "• Furosémide 40-80mg IV\n• Surveillance diurèse horaire\n• Dérivés nitrés si TA >110\n• Inotropes si choc cardiogénique\n• VNI si OAP"
+              }
+            ]
+          },
+          "scoringRule": "Traitement adapté = 2 pts, partiel = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m7",
+          "text": "Indications de stimulation cardiaque",
+          "details": [
+            "URGENTE : BAV 3e degré symptomatique",
+            "URGENTE : BAV 2e Mobitz II",
+            "URGENTE : Bradycardie <40 + syncopes",
+            "Différée : Maladie sinus symptomatique",
+            "Différée : FA lente symptomatique",
+            "Évaluation rythmologue urgente"
+          ],
+          "scoringRule": "≥4 indications = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m8",
+          "text": "Critères d'hospitalisation",
+          "details": [
+            "Syncopes répétées (3!)",
+            "FC <40/min symptomatique",
+            "Signes IC décompensée",
+            "Nécessité monitoring",
+            "Ajustement thérapeutique complexe",
+            "Bilan étiologique urgent"
+          ],
+          "scoringRule": "≥4 critères = hospitalisation = 2 pts",
+          "binaryOnly": false
+        },
+        {
+          "id": "m9",
+          "text": "Organisation transfert et suivi",
+          "details": [
+            "Appel SAMU/cardiologue",
+            "Transport médicalisé",
+            "Transmission dossier complet",
+            "Information famille",
+            "Courrier détaillé",
+            "RDV post-hospitalisation"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m10",
+          "text": "Évaluation globale de la qualité de la prise en charge",
+          "details": [
+            "Urgence reconnue",
+            "Approche systématique",
+            "Décisions thérapeutiques adaptées",
+            "Hospitalisation organisée",
+            "Communication claire"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        }
+      ]
+    }
+  }
+}

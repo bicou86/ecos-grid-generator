@@ -1,0 +1,233 @@
+{
+  "title": "Ménopause",
+  "context": {
+    "setting": "Consultation gynécologique",
+    "patient": "Femme de 55 ans ayant le sentiment d'être entrée en ménopause"
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Nom et âge",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Motif de consultation",
+          "binaryOnly": true
+        },
+        {
+          "id": "a3",
+          "text": "Anamnèse menstruelle",
+          "details": [
+            "Date des dernières règles (il y a 1,5 ans)",
+            "Irrégularités menstruelles préalables",
+            "Autres saignements vaginaux (aucun)"
+          ],
+          "patientComment": "Il y a 1 an et demi/Déjà irrégulières avant/Aucun"
+        },
+        {
+          "id": "a4",
+          "text": "Symptômes vasomoteurs",
+          "details": [
+            "Bouffées de chaleur ascendantes",
+            "Sueurs",
+            "Palpitations (plusieurs fois par semaine le soir pendant quelques minutes)"
+          ],
+          "patientComment": "Chaleur qui monte/Transpiration/Plusieurs fois par semaine le soir pour quelques minutes"
+        },
+        {
+          "id": "a5",
+          "text": "Symptômes uro-génitaux",
+          "details": [
+            "Sécheresse vaginale",
+            "Douleurs lors des rapports sexuels",
+            "Troubles mictionnels (envies fréquentes)"
+          ],
+          "patientComment": "Sensation de sécheresse vaginale/Douleurs pendant les rapports/Souvent envie d'uriner"
+        },
+        {
+          "id": "a6",
+          "text": "Symptômes psychologiques",
+          "details": [
+            "Troubles de l'humeur (abattement, tristesse, pleurs)",
+            "Tension intérieure",
+            "Agressivité",
+            "Anxiété",
+            "Troubles de concentration",
+            "Troubles du sommeil (aucun)"
+          ],
+          "patientComment": "Souvent abattue, triste, pleure facilement/Tension intérieure/Agressivité/Anxiété/Difficultés de concentration/Aucun"
+        },
+        {
+          "id": "a7",
+          "text": "Autres symptômes",
+          "details": [
+            "Diminution de la libido",
+            "Baisse de performance (aucune)",
+            "Troubles de la mémoire",
+            "Antécédents de fractures (aucun)"
+          ],
+          "patientComment": "Perte de libido/Aucune/Problèmes de mémoire/Aucun"
+        },
+        {
+          "id": "a8",
+          "text": "Antécédents gynéco-obstétricaux",
+          "details": [
+            "Parité (3 grossesses, 1 mort in utero, 3 accouchements par voie basse)",
+            "Ménarche à 15 ans",
+            "Cycles réguliers tous les 25 jours pendant 3 jours",
+            "Ligature tubaire"
+          ],
+          "patientComment": "3 grossesses, 1 mort in utero, 3 accouchements normaux/Premières règles à 15 ans/Cycles réguliers de 25 jours pendant 3 jours/Ligature des trompes"
+        },
+        {
+          "id": "a9",
+          "text": "Antécédents médicaux",
+          "details": [
+            "Appendicectomie",
+            "Cholécystectomie",
+            "Douleurs articulaires type rhumatismal"
+          ],
+          "patientComment": "Ablation de l'appendice/Ablation de la vésicule biliaire/Douleurs articulaires comme des rhumatismes"
+        },
+        {
+          "id": "a10",
+          "text": "Habitudes de vie",
+          "details": [
+            "Alimentation (végétarienne)",
+            "Substances toxiques (aucune)",
+            "Activité physique (vélo, jardinage)"
+          ],
+          "patientComment": "Végétarienne/Aucune/Vélo, jardinage"
+        },
+        {
+          "id": "a11",
+          "text": "Antécédents familiaux et sociaux",
+          "details": [
+            "Antécédents familiaux (sans particularité)",
+            "Situation familiale (époux, 2 fils)"
+          ],
+          "patientComment": "Rien de particulier/Mari, 2 fils"
+        },
+        {
+          "id": "a12",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "binaryOnly": false,
+          "details": [
+            "Anamnèse générale ciblée et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Examen de l'appareil locomoteur",
+          "details": [
+            "Examen de la colonne vertébrale",
+            "Recherche de signes d'ostéoporose"
+          ]
+        },
+        {
+          "id": "e2",
+          "text": "Palpation mammaire",
+          "details": [
+            "Palpation des seins",
+            "Palpation axillaire"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Examen gynécologique",
+          "details": [
+            "Palpation bimanuelle",
+            "Examen au spéculum",
+            "Inspection du col"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Prélèvements",
+          "details": [
+            "Frottis cervico-vaginal",
+            "Autres prélèvements si indiqués"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "binaryOnly": false,
+          "details": [
+            "Status général ciblé et bien conduit"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Terminologie appropriée",
+          "details": [
+            "Utilisation correcte des termes ménopause, périménopause, climatère"
+          ]
+        },
+        {
+          "id": "m2",
+          "text": "Examens complémentaires",
+          "details": [
+            "Dosage FSH",
+            "Bilan biologique de dépistage",
+            "Ostéodensitométrie (DEXA)"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Conseil sur le traitement hormonal substitutif",
+          "details": [
+            "Substitution œstrogénique combinée aux progestatifs",
+            "Prise continue ou intermittente",
+            "Facteurs protecteurs (cardiovasculaire, risque fracturaire avec vitamine D et calcium, psychisme, Alzheimer)",
+            "Effets secondaires (cancer de l'endomètre, thromboembolies/AVC)",
+            "Durée de traitement (3-5 ans)"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Conseil concernant l'ostéoporose",
+          "details": [
+            "Prévention de l'ostéoporose",
+            "Supplémentation en calcium et vitamine D",
+            "Activité physique"
+          ]
+        },
+        {
+          "id": "m5",
+          "text": "Conseil concernant les symptômes",
+          "details": [
+            "Gestion des bouffées de chaleur",
+            "Conseils pour la sécheresse vaginale",
+            "Soutien psychologique"
+          ]
+        },
+        {
+          "id": "m6",
+          "text": "Évaluation globale de la qualité de la prise en charge",
+          "binaryOnly": false,
+          "details": [
+            "Prise en charge générale cohérente et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    }
+  }
+}

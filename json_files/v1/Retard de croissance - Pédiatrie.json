@@ -1,0 +1,115 @@
+{
+  "title": "Retard de croissance",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Mère d'un nourrisson de 9 mois consulte car elle a l'impression que son enfant ne grandit plus"
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction et objectif",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Paramètres de naissance",
+          "binaryOnly": false,
+          "details": [
+            "Taille, poids, périmètre crânien à la naissance"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Paramètres actuels",
+          "binaryOnly": false,
+          "details": [
+            "Taille, poids, périmètre crânien actuels"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Données anthropométriques parentales",
+          "binaryOnly": false,
+          "details": [
+            "Taille des parents (mère et père)"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Anamnèse obstétricale",
+          "binaryOnly": false,
+          "details": [
+            "Infections pendant la grossesse",
+            "Substances toxiques",
+            "Accouchement (terme, modalités)"
+          ]
+        },
+        {
+          "id": "a6",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "binaryOnly": false,
+          "details": [
+            "Anamnèse générale ciblée et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "binaryOnly": false,
+          "details": [
+            "Status général ciblé et bien conduit"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Examens et étapes diagnostiques",
+          "binaryOnly": false,
+          "details": [
+            "Courbes de croissance",
+            "Examens complémentaires selon orientation"
+          ]
+        },
+        {
+          "id": "m2",
+          "text": "Diagnostics différentiels",
+          "binaryOnly": false,
+          "details": [
+            "Retard de croissance constitutionnel",
+            "Causes nutritionnelles",
+            "Causes endocriniennes",
+            "Causes génétiques"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Thérapie selon diagnostic",
+          "binaryOnly": false
+        },
+        {
+          "id": "m4",
+          "text": "Évaluation globale de la qualité de la prise en charge",
+          "binaryOnly": false,
+          "details": [
+            "Prise en charge générale cohérente et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    }
+  }
+}

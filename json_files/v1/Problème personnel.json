@@ -1,0 +1,156 @@
+{
+  "title": "Problème personnel",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "M. Häberli, 59 ans, consulte pour un problème personnel qu'il ne voulait pas dire à la secrétaire - patient connu depuis 20 ans"
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction et objectif",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Symptômes principaux",
+          "binaryOnly": false,
+          "details": [
+            "[Ça ne fonctionne plus comme il faut en bas]"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Durée du problème",
+          "binaryOnly": false,
+          "details": [
+            "[Depuis longtemps, certainement 1 an... maintenant ça dérange la femme et il a besoin de conseil]"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Fréquence du problème",
+          "binaryOnly": false,
+          "details": [
+            "[Maintenant toujours]"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Douleurs",
+          "binaryOnly": false,
+          "details": [
+            "[Non]"
+          ]
+        },
+        {
+          "id": "a6",
+          "text": "Érection possible",
+          "binaryOnly": false,
+          "details": [
+            "[Oui, mais ne tient que très brièvement]"
+          ]
+        },
+        {
+          "id": "a7",
+          "text": "Éjaculation possible",
+          "binaryOnly": false,
+          "details": [
+            "[Non, l'érection ne dure pas assez longtemps]"
+          ]
+        },
+        {
+          "id": "a8",
+          "text": "Maladies cardiaques",
+          "binaryOnly": false,
+          "details": [
+            "[Jusqu'à présent rien de connu - se sent bien]"
+          ]
+        },
+        {
+          "id": "a9",
+          "text": "Maladies rénales",
+          "binaryOnly": false,
+          "details": [
+            "[Non, rien de connu non plus]"
+          ]
+        },
+        {
+          "id": "a10",
+          "text": "Diabète",
+          "binaryOnly": false,
+          "details": [
+            "[Non]"
+          ]
+        },
+        {
+          "id": "a11",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "binaryOnly": false,
+          "details": [
+            "Anamnèse générale ciblée et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "binaryOnly": false,
+          "details": [
+            "Status général ciblé et bien conduit"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic principal",
+          "binaryOnly": false,
+          "details": [
+            "Dysfonction érectile"
+          ]
+        },
+        {
+          "id": "m2",
+          "text": "Évaluation des causes",
+          "binaryOnly": false,
+          "details": [
+            "Causes organiques vs psychogènes",
+            "Facteurs de risque cardiovasculaire",
+            "Médicaments"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Options thérapeutiques",
+          "binaryOnly": false,
+          "details": [
+            "Conseil de couple",
+            "Traitement médicamenteux",
+            "Autres options thérapeutiques"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Évaluation globale de la qualité de la prise en charge",
+          "binaryOnly": false,
+          "details": [
+            "Prise en charge générale cohérente et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    }
+  }
+}

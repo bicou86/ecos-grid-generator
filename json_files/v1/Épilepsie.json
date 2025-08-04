@@ -1,0 +1,328 @@
+{
+  "title": "Épilepsie",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Homme de 77 ans consultant pour une première crise convulsive"
+  },
+  "sections": {
+    "anamnese": {
+      "title": "Anamnèse",
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction et objectif",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Question d'entrée ouverte → symptôme principal",
+          "patientComment": "(Crise convulsive)",
+          "binaryOnly": true
+        },
+        {
+          "id": "a3",
+          "text": "Évolution temporelle de la crise",
+          "details": [
+            "Début",
+            "Durée de la crise",
+            "Fréquence"
+          ],
+          "patientComment": "(Soudain, il y a ~1h, peu après le repas / 2-3 minutes, m'a semblé une éternité ! / Une seule fois)"
+        },
+        {
+          "id": "a4",
+          "text": "Caractéristiques de la crise",
+          "details": [
+            "Localisation (généralisée/focale)",
+            "Caractère (tonique-clonique/absence/automatismes)"
+          ],
+          "patientComment": "(Tout le corps, tremblements / Tonique-clonique)"
+        },
+        {
+          "id": "a5",
+          "text": "Phase post-critique",
+          "details": [
+            "Désorientation",
+            "Somnolence",
+            "Agitation",
+            "Myalgies",
+            "Amnésie"
+          ],
+          "patientComment": "(Confus et somnolent après la crise)"
+        },
+        {
+          "id": "a6",
+          "text": "Facteurs déclenchants",
+          "details": [
+            "Privation de sommeil",
+            "Consommation d'alcool/drogues",
+            "Stress émotionnel",
+            "Photostimulation",
+            "Traumatisme crânien"
+          ],
+          "patientComment": "(Peu dormi / Aucune / Dispute avec le voisin / Non / Ne sait pas)"
+        },
+        {
+          "id": "a7",
+          "text": "Prodromes et aura",
+          "details": [
+            "Aura épigastrique",
+            "Aura olfactive",
+            "Aura visuelle",
+            "Aura auditive"
+          ],
+          "patientComment": "(Sensation bizarre au ventre en mangeant)"
+        },
+        {
+          "id": "a8",
+          "text": "Signes accompagnateurs de la crise",
+          "details": [
+            "Cri initial",
+            "Morsure de langue",
+            "Incontinence urinaire/fécale"
+          ],
+          "patientComment": "(Non / Oui, salive légèrement sanglante / Oui, a uriné)"
+        },
+        {
+          "id": "a9",
+          "text": "Antécédents de chutes ou traumatismes",
+          "patientComment": "(Non)"
+        },
+        {
+          "id": "a10",
+          "text": "Symptômes d'accompagnement généraux",
+          "details": [
+            "Fièvre",
+            "Céphalées récentes",
+            "Photophobie/phonophobie",
+            "Nausées/vomissements"
+          ],
+          "patientComment": "(Non / Oui, céphalées gauches fréquentes récemment / Non / Légères nausées matinales, pas d'appétit au petit-déjeuner)"
+        },
+        {
+          "id": "a11",
+          "text": "Symptômes végétatifs",
+          "details": [
+            "Transpiration",
+            "Tremblements",
+            "Tachycardie"
+          ],
+          "patientComment": "(Aucun)"
+        },
+        {
+          "id": "a12",
+          "text": "Symptômes B",
+          "details": [
+            "Fièvre",
+            "Sueurs nocturnes",
+            "Perte de poids"
+          ],
+          "patientComment": "(5 kg en 6 mois, pas de sueurs nocturnes)"
+        },
+        {
+          "id": "a13",
+          "text": "Déficits neurologiques, AIT ou AVC",
+          "patientComment": "(Non)"
+        },
+        {
+          "id": "a14",
+          "text": "Changements de personnalité",
+          "details": [
+            "Tumeur cérébrale",
+            "Encéphalite"
+          ],
+          "patientComment": "(Irritable, dépressif)"
+        },
+        {
+          "id": "a15",
+          "text": "Maladies cardiaques",
+          "details": [
+            "Coronaropathie",
+            "Infarctus du myocarde",
+            "Fibrillation auriculaire"
+          ],
+          "patientComment": "(Aucune connue)"
+        },
+        {
+          "id": "a16",
+          "text": "Antécédents médicaux personnels",
+          "details": [
+            "Diabète",
+            "Addiction",
+            "Cancer actif",
+            "Épilepsie",
+            "Tumeur cérébrale",
+            "Convulsions fébriles"
+          ],
+          "patientComment": "(Non / Non / Antécédent de cancer prostate avec résection 3 ans / Non / Non / Non)"
+        },
+        {
+          "id": "a17",
+          "text": "Allergies",
+          "patientComment": "(Chats, chiens)"
+        },
+        {
+          "id": "a18",
+          "text": "Médicaments actuels",
+          "patientComment": "(Antidépresseur Citalopram 10mg per os)",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Médicaments abaissant le seuil épileptogène",
+                "content": "• Sulfonylurées/glinides/insuline\n• Antidépresseurs/neuroleptiques/tramadol\n→ Attention au risque convulsivant !"
+              }
+            ]
+          }
+        },
+        {
+          "id": "a19",
+          "text": "Consommation de toxiques",
+          "details": [
+            "Alcool",
+            "Tabac",
+            "Drogues"
+          ],
+          "patientComment": "(1 verre de vin par jour / Non / Non)"
+        },
+        {
+          "id": "a20",
+          "text": "Antécédents familiaux",
+          "details": [
+            "Épilepsie",
+            "Tumeur cérébrale",
+            "Cancer"
+          ],
+          "patientComment": "(Père cancer prostate, mère cancer sein, tous deux décédés, fratrie en bonne santé)"
+        },
+        {
+          "id": "a21",
+          "text": "Anamnèse sociale",
+          "details": [
+            "Formation",
+            "Famille/amis",
+            "Profession",
+            "Logement",
+            "Loisirs"
+          ],
+          "patientComment": "(Gymnasium / Marié, 3 enfants / Architecte / Maison à Uster / Course de fond)"
+        },
+        {
+          "id": "a22",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "binaryOnly": false,
+          "details": [
+            "Anamnèse générale ciblée et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "examen": {
+      "title": "Examen clinique",
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Examen neurologique complet avec orientation",
+          "patientComment": "(Somnolent, confus (temporel/spatial), légère faiblesse hémicorps gauche, normotonique, réflexes symétriques)"
+        },
+        {
+          "id": "e2",
+          "text": "Examen cardio-pulmonaire",
+          "details": [
+            "Auscultation cardiaque",
+            "Auscultation pulmonaire"
+          ],
+          "patientComment": "(Normal)"
+        },
+        {
+          "id": "e3",
+          "text": "Auscultation carotidienne",
+          "patientComment": "(Pas de souffle)"
+        },
+        {
+          "id": "e4",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "binaryOnly": false,
+          "details": [
+            "Status général ciblé et bien conduit"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "management": {
+      "title": "Prise en charge",
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic de suspicion",
+          "patientComment": "(Crise convulsive d'étiologie incertaine, possibles métastases cérébrales)"
+        },
+        {
+          "id": "m2",
+          "text": "Diagnostics différentiels (2-3 minimum)",
+          "details": [
+            "Delirium tremens",
+            "Méningite/encéphalite",
+            "Tumeur cérébrale",
+            "Hypoglycémie",
+            "AIT/AVC"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Examens diagnostiques proposés",
+          "details": [
+            "Biologie : ionogramme, Ca, TSH, CK",
+            "Hépatique : transaminases, GGT, PAL, albumine, Quick/aPTT",
+            "Toxicologie : dépistage drogues, alcoolémie, glycémie",
+            "Imagerie : échographie carotides, CT/IRM crâne"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Traitement d'urgence du status epilepticus",
+          "details": [
+            "Lorazépam (Temesta®) 0.1 mg/kg IV",
+            "Si persistance : Propofol/Thiopenthal/Phénytoïne"
+          ]
+        },
+        {
+          "id": "m5",
+          "text": "Traitement anti-épileptique de fond",
+          "details": [
+            "Épilepsie focale : Lamotrigine",
+            "Épilepsie généralisée : Valproate",
+            "Alternatives : Carbamazépine/Oxcarbazépine, Prégabaline, Gabapentine"
+          ]
+        },
+        {
+          "id": "m6",
+          "text": "Traitements spécifiques selon étiologie",
+          "details": [
+            "Chirurgie si tumeur",
+            "Shunt si hydrocéphalie",
+            "Antibiothérapie/antiviraux si méningite"
+          ]
+        },
+        {
+          "id": "m7",
+          "text": "Orientation vers spécialiste ou hospitalisation",
+          "patientComment": "(Transfert en neurologie si nécessaire)"
+        },
+        {
+          "id": "m8",
+          "text": "Évaluation globale de la qualité de la prise en charge",
+          "binaryOnly": false,
+          "details": [
+            "Prise en charge générale cohérente et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    }
+  }
+}

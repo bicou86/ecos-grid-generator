@@ -1,0 +1,272 @@
+{
+  "title": "Entretien motivationnel",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Homme de 42 ans consultant pour arrêt du tabac"
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction et tâche",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Question d'entrée ouverte - Motif de consultation",
+          "patientComment": "souhaite arrêter de fumer",
+          "binaryOnly": true
+        },
+        {
+          "id": "a3",
+          "text": "Évaluation de la consommation tabagique",
+          "details": [
+            "Nombre de cigarettes par jour (1 paquet)",
+            "Durée du tabagisme (depuis 20 ans)",
+            "Calcul paquets-années (20 PA)",
+            "Type de tabac (cigarettes industrielles)"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Motivation à l'arrêt",
+          "details": [
+            "Raisons personnelles (santé, famille)",
+            "Déclencheur de la démarche",
+            "Inquiétudes de santé",
+            "Pression de l'entourage"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Tentatives d'arrêt antérieures",
+          "details": [
+            "Nombre de tentatives",
+            "Durée des arrêts",
+            "Méthodes utilisées",
+            "Causes de rechute"
+          ]
+        },
+        {
+          "id": "a6",
+          "text": "Évaluation de la dépendance",
+          "details": [
+            "Test de Fagerström",
+            "Temps jusqu'à la première cigarette",
+            "Difficulté à s'abstenir",
+            "Cigarette la plus difficile à abandonner"
+          ]
+        },
+        {
+          "id": "a7",
+          "text": "Situations à risque",
+          "details": [
+            "Stress professionnel",
+            "Contexte social",
+            "Consommation d'alcool",
+            "Habitudes quotidiennes"
+          ]
+        },
+        {
+          "id": "a8",
+          "text": "Conséquences actuelles du tabac",
+          "details": [
+            "Symptômes respiratoires",
+            "Capacité physique",
+            "Impact social et financier",
+            "Esthétique (dents, haleine)"
+          ]
+        },
+        {
+          "id": "a9",
+          "text": "Évaluation du stade de changement",
+          "details": [
+            "Précontemplation",
+            "Contemplation",
+            "Préparation",
+            "Action"
+          ]
+        },
+        {
+          "id": "a10",
+          "text": "Antécédents médicaux",
+          "details": [
+            "Maladies cardiovasculaires",
+            "Pathologies respiratoires",
+            "Contre-indications aux substituts",
+            "Traitements actuels"
+          ]
+        },
+        {
+          "id": "a11",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "binaryOnly": false,
+          "details": [
+            "Anamnèse générale ciblée et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Mesure du monoxyde de carbone expiré",
+          "details": [
+            "Test CO-testeur",
+            "Interprétation des valeurs",
+            "Motivation par objectivation",
+            "Suivi de l'évolution"
+          ]
+        },
+        {
+          "id": "e2",
+          "text": "Examen cardiovasculaire",
+          "details": [
+            "Pression artérielle",
+            "Fréquence cardiaque",
+            "Auscultation cardiaque",
+            "Examen des pouls périphériques"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Examen respiratoire",
+          "details": [
+            "Auscultation pulmonaire",
+            "Capacité respiratoire",
+            "Toux chronique",
+            "Expectoration"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Examen ORL",
+          "details": [
+            "Cavité buccale",
+            "Dents et gencives",
+            "Pharynx",
+            "Haleine"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Examen général",
+          "details": [
+            "Poids et taille (IMC)",
+            "État nutritionnel",
+            "Teint et coloration",
+            "Vieillissement cutané"
+          ]
+        },
+        {
+          "id": "e6",
+          "text": "Recherche de complications",
+          "details": [
+            "Signes d'artériopathie",
+            "Symptômes de BPCO",
+            "Recherche de cancers",
+            "Évaluation du risque cardiovasculaire"
+          ]
+        },
+        {
+          "id": "e7",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "binaryOnly": false,
+          "details": [
+            "Status général ciblé et bien conduit"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Techniques d'entretien motivationnel",
+          "details": [
+            "Questions ouvertes",
+            "Écoute réflective",
+            "Résumés",
+            "Valorisation des efforts"
+          ]
+        },
+        {
+          "id": "m2",
+          "text": "Exploration de l'ambivalence",
+          "details": [
+            "Avantages du tabac",
+            "Inconvénients du tabac",
+            "Balance décisionnelle",
+            "Renforcement de la motivation"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Substituts nicotiniques",
+          "details": [
+            "Patch transdermique",
+            "Gommes ou pastilles",
+            "Dosage selon dépendance",
+            "Durée du traitement (8-12 semaines)"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Médicaments d'aide à l'arrêt",
+          "details": [
+            "Varénicline (Champix)",
+            "Bupropion (Zyban)",
+            "Contre-indications",
+            "Effets secondaires"
+          ]
+        },
+        {
+          "id": "m5",
+          "text": "Stratégies comportementales",
+          "details": [
+            "Gestion du stress",
+            "Modification des habitudes",
+            "Activité physique",
+            "Gestion de la prise de poids"
+          ]
+        },
+        {
+          "id": "m6",
+          "text": "Soutien et suivi",
+          "details": [
+            "Tabacologie spécialisée",
+            "Ligne d'aide téléphonique",
+            "Applications mobiles",
+            "Consultation de suivi programmée"
+          ]
+        },
+        {
+          "id": "m7",
+          "text": "Prévention des rechutes",
+          "details": [
+            "Identification des situations à risque",
+            "Stratégies de gestion des envies",
+            "Plan d'urgence en cas de rechute",
+            "Maintien de la motivation long terme"
+          ]
+        },
+        {
+          "id": "m8",
+          "text": "Évaluation globale de la qualité de la prise en charge",
+          "binaryOnly": false,
+          "details": [
+            "Prise en charge générale cohérente et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    }
+  }
+}

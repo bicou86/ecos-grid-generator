@@ -1,0 +1,210 @@
+{
+  "title": "Toux II",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "M. Keller, 83 ans, peintre retraité, consulte le médecin généraliste pour une toux."
+  },
+  "tasks": [
+    "Effectuez une anamnèse ciblée",
+    "Réalisez un examen clinique ciblé",
+    "Expliquez votre diagnostic suspecté et les diagnostics différentiels",
+    "Proposez la suite de la prise en charge"
+  ],
+  "sections": {
+    "anamnese": {
+      "title": "Anamnèse",
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction, tâche"
+        },
+        {
+          "id": "a2",
+          "text": "Plaintes principales [toux]"
+        },
+        {
+          "id": "a3",
+          "text": "Épisodes antérieurs [non, pas de cette nature]"
+        },
+        {
+          "id": "a4",
+          "text": "Début [depuis environ 3 semaines, s'aggravant, très progressif]"
+        },
+        {
+          "id": "a5",
+          "text": "Productive/non productive, couleur des expectorations [expectorations brunâtres]"
+        },
+        {
+          "id": "a6",
+          "text": "Hémoptysie [non]"
+        },
+        {
+          "id": "a7",
+          "text": "Dyspnée [oui, croissante, surtout à l'effort, déjà en se levant de la chaise = NYHA III]"
+        },
+        {
+          "id": "a8",
+          "text": "Facteurs aggravants [position couchée, nuit, effort]"
+        },
+        {
+          "id": "a9",
+          "text": "Facteurs améliorants [position assise tranquille et droite]"
+        },
+        {
+          "id": "a10",
+          "text": "Anamnèse de l'entourage [aucune]"
+        },
+        {
+          "id": "a11",
+          "text": "Symptômes associés"
+        },
+        {
+          "id": "a12",
+          "text": "Infection ORL (rhinite, pharyngite...) [non]"
+        },
+        {
+          "id": "a13",
+          "text": "Baisse de performance [oui]"
+        },
+        {
+          "id": "a14",
+          "text": "Écoulement postnasal [non]"
+        },
+        {
+          "id": "a15",
+          "text": "Douleurs thoraciques [non]"
+        },
+        {
+          "id": "a16",
+          "text": "Troubles cardiaques [non]"
+        },
+        {
+          "id": "a17",
+          "text": "Sibilances [non]"
+        },
+        {
+          "id": "a18",
+          "text": "Brûlures d'estomac [oui souvent après les repas]"
+        },
+        {
+          "id": "a19",
+          "text": "Jambes gonflées [oui]"
+        },
+        {
+          "id": "a20",
+          "text": "Symptômes B [perte de poids 5kg en 2 mois, pas de fièvre, sueurs nocturnes remarquées]"
+        },
+        {
+          "id": "a21",
+          "text": "Exposition [aucune]"
+        },
+        {
+          "id": "a22",
+          "text": "Antécédents [quelque chose au cœur, une valve trop étroite ou quelque chose comme ça]"
+        },
+        {
+          "id": "a23",
+          "text": "Médicaments [lisinopril, métoprolol, aspirine, Crestor]"
+        },
+        {
+          "id": "a24",
+          "text": "Habitudes [20 PA, pas d'alcool, pas de drogues]"
+        },
+        {
+          "id": "a25",
+          "text": "Allergies [aucune]"
+        },
+        {
+          "id": "a26",
+          "text": "Anamnèse familiale [mère diabétique]"
+        },
+        {
+          "id": "a27",
+          "text": "Anamnèse sociale [marié, à la maison avec sa femme, Spitex 1x par semaine]"
+        }
+      ]
+    },
+    "examen": {
+      "title": "Examen clinique",
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Signes vitaux [145/85mmHg, 95/min, température normale], compter la FR!"
+        },
+        {
+          "id": "e2",
+          "text": "Précordium palpé"
+        },
+        {
+          "id": "e3",
+          "text": "Cœur",
+          "details": [
+            "Palpation",
+            "Auscultation"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Poumons",
+          "details": [
+            "Palpation (frémissement vocal)",
+            "Percussion",
+            "Auscultation systématique antérieure et postérieure"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Mains, ongles examinés!! Hippocratisme digital, cyanose"
+        },
+        {
+          "id": "e6",
+          "text": "Veines jugulaires inspectées"
+        },
+        {
+          "id": "e7",
+          "text": "Jambes contrôlées pour œdèmes"
+        },
+        {
+          "id": "e8",
+          "text": "État ORL (gorge, oreilles, nez)"
+        },
+        {
+          "id": "e9",
+          "text": "Ganglions lymphatiques"
+        },
+        {
+          "id": "e10",
+          "text": "Examen abdominal"
+        }
+      ]
+    },
+    "management": {
+      "title": "Suite de la prise en charge",
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "L'étudiant nomme le diagnostic suspecté [insuffisance cardiaque]"
+        },
+        {
+          "id": "m2",
+          "text": "Nomme au moins 2-3 diagnostics différentiels [pneumonie, fibrose pulmonaire, reflux, bronchite chronique due au tabagisme]"
+        },
+        {
+          "id": "m3",
+          "text": "Nomme les examens diagnostiques [radiographie thoracique, laboratoire (marqueurs inflammatoires, BNP, troponine), ECG, échocardiographie]"
+        },
+        {
+          "id": "m4",
+          "text": "Nomme le traitement [médicaments : IEC, dérivés nitrés, diurétiques, éventuellement chirurgie nécessaire]"
+        },
+        {
+          "id": "m5",
+          "text": "Organise éventuellement le transfert à l'hôpital"
+        }
+      ]
+    }
+  }
+}

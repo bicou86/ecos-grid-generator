@@ -1,0 +1,258 @@
+{
+  "title": "Bradycardie",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Madame Hugendubel, 45 ans, consultant pour pouls lent et altération de l'état général",
+    "vitals": {
+      "ta": "109/74 mmHg",
+      "fc": "43 bpm",
+      "fr": "13/min"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction et tâche",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Question d'entrée ouverte - Symptôme principal",
+          "patientComment": "pouls lent",
+          "binaryOnly": true
+        },
+        {
+          "id": "a3",
+          "text": "Apparition temporelle",
+          "details": [
+            "Début soudain - insidieux (insidieux)",
+            "Durée (depuis quatre jours)",
+            "Évolution paroxystique - persistante - permanente (permanente)",
+            "Épisodes antérieurs (non)"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Fréquence cardiaque",
+          "patientComment": "43/min"
+        },
+        {
+          "id": "a5",
+          "text": "Rythme cardiaque",
+          "patientComment": "régulier"
+        },
+        {
+          "id": "a6",
+          "text": "Palpitations ou extrasystoles",
+          "patientComment": "non"
+        },
+        {
+          "id": "a7",
+          "text": "Facteurs influençants",
+          "patientComment": "rien remarqué"
+        },
+        {
+          "id": "a8",
+          "text": "Symptômes d'accompagnement",
+          "details": [
+            "Douleurs thoraciques (non)",
+            "Vertiges/Collapsus (oui, déjà chuté trois fois)",
+            "Fatigue (me sens faible)",
+            "Dyspnée (légère)",
+            "Œdèmes (oui, aux jambes, chaussures serrées)",
+            "Évolution pondérale (prise de 5kg en 2 semaines, ne sait pas pourquoi)",
+            "Diurèse augmentée (non, presque plus d'urine)"
+          ]
+        },
+        {
+          "id": "a9",
+          "text": "Signes d'hypothyroïdie",
+          "patientComment": "intolérance au froid, prise de poids, constipation, peau/cheveux (pas remarqué)"
+        },
+        {
+          "id": "a10",
+          "text": "Facteurs de risque cardiovasculaire",
+          "details": [
+            "Hypertension (oui, Métoprolol 20mg/j 1-0-0)",
+            "Tabagisme (oui, 2 paquets/j, 25 ans)",
+            "Diabète (non)",
+            "Dyslipidémie (oui, Atorvastatine 40mg/j 0-0-1)",
+            "Antécédents familiaux d'infarctus (non)"
+          ]
+        },
+        {
+          "id": "a11",
+          "text": "Antécédents médicaux",
+          "details": [
+            "Maladies cardiaques (coronaropathie, infarctus)/chirurgie cardiaque (non)",
+            "Maladies cérébrovasculaires (AIT, AVC) (non)",
+            "Artériopathie périphérique (non)",
+            "Thyroïde (ablation thyroïdienne il y a 10 ans pour adénome, depuis Euthyrox 50 μg)",
+            "Chirurgies"
+          ]
+        },
+        {
+          "id": "a12",
+          "text": "Allergies",
+          "patientComment": "cacahuètes"
+        },
+        {
+          "id": "a13",
+          "text": "Médicaments",
+          "patientComment": "Métoprolol 20mg, Atorvastatine 40mg, Euthyrox 50 μg"
+        },
+        {
+          "id": "a14",
+          "text": "Toxiques",
+          "patientComment": "alcool/tabac/drogues (2 verres de vin/j / 2 paquets/j, 25 ans / non)"
+        },
+        {
+          "id": "a15",
+          "text": "Anamnèse familiale",
+          "details": [
+            "Maladies cardiovasculaires (coronaropathie, artériopathie, cérébrovasculaire, infarctus)",
+            "Diabète, hypertension",
+            "Maladies thyroïdiennes",
+            "Morts subites (père décédé subitement à 82 ans, mère démence d'Alzheimer)"
+          ]
+        },
+        {
+          "id": "a16",
+          "text": "Anamnèse sociale",
+          "details": [
+            "Famille (mariée, 1 enfant)",
+            "Profession (vendeuse en papeterie)",
+            "Habitudes alimentaires (cuisine équilibrée, beaucoup de légumes/fruits)",
+            "Loisirs (activités sportives) ski de randonnée, randonnée, vélo"
+          ]
+        },
+        {
+          "id": "a17",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "binaryOnly": false,
+          "details": [
+            "Anamnèse générale ciblée et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Examen cardiaque",
+          "details": [
+            "Inspection (normal)",
+            "Palpation (pouls faible, régulier)",
+            "Percussion (normale)",
+            "Auscultation (bruits purs, souffle systolique 2/6 en fuseau sur foyer aortique, sans irradiation)"
+          ]
+        },
+        {
+          "id": "e2",
+          "text": "Examen pulmonaire",
+          "details": [
+            "Inspection",
+            "Palpation (excursions respiratoires symétriques, vibrations vocales symétriques)",
+            "Percussion (normale)",
+            "Auscultation (murmure vésiculaire symétrique, pas de râles)"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Examen thyroïdien",
+          "details": [
+            "Palpation",
+            "Auscultation"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Examen cutané",
+          "patientComment": "coloration légèrement grisâtre, conjonctives/muqueuses normales"
+        },
+        {
+          "id": "e5",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "binaryOnly": false,
+          "details": [
+            "Status général ciblé et bien conduit"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic de suspicion",
+          "patientComment": "Insuffisance cardiaque aiguë avec accumulation de bêta-bloquants"
+        },
+        {
+          "id": "m2",
+          "text": "Diagnostics différentiels",
+          "details": [
+            "Bloc AV II°/III°",
+            "Syndrome du sinus malade",
+            "Fibrillation auriculaire bradycarde",
+            "Hypothyroïdie"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Examens diagnostiques",
+          "details": [
+            "Laboratoire : NFS, CRP, Ferritine, Troponine I, CK-(MB), LDH",
+            "Créatinine, électrolytes (Na, K, Ca), TSH, Glucose",
+            "Transaminases, GGT, PAL, Albumine, Quick/aPTT",
+            "Radiographie thoracique / ECG (24h) / Échocardiographie",
+            "Éventuellement angio-TDM (si suspicion d'embolie pulmonaire)",
+            "Éventuellement dosage médicamenteux (bêta-bloquants)"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Reconnaissance de pathologie",
+          "patientComment": "sur radiographie/ECG"
+        },
+        {
+          "id": "m5",
+          "text": "Traitement médicamenteux",
+          "details": [
+            "Parasympatholytiques : Atropine 0,5-1 mg IV",
+            "Sympathomimétiques : Adrénaline 0,1 mg IV"
+          ]
+        },
+        {
+          "id": "m6",
+          "text": "Traitement par stimulateur cardiaque",
+          "details": [
+            "Indications absolues : Fibrillation auriculaire, Bloc AV II°/III°",
+            "Indications relatives : Bradycardie symptomatique"
+          ]
+        },
+        {
+          "id": "m7",
+          "text": "Hospitalisation si nécessaire",
+          "patientComment": "organise le transfert à l'hôpital si nécessaire"
+        },
+        {
+          "id": "m8",
+          "text": "Évaluation globale de la qualité de la prise en charge",
+          "binaryOnly": false,
+          "details": [
+            "Prise en charge générale cohérente et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    }
+  }
+}

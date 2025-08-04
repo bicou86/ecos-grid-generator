@@ -1,0 +1,305 @@
+{
+  "title": "Toux IV",
+  "context": {
+    "setting": "Service d'urgences",
+    "patient": "Patiente de 31 ans consulte aux urgences pour toux irritative et dyspnée"
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction et objectif",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Symptômes principaux",
+          "binaryOnly": false,
+          "details": [
+            "[Dyspnée]"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "État actuel",
+          "binaryOnly": false,
+          "details": [
+            "[Gratte encore un peu/toux irritative - mais sinon à nouveau sans symptômes]"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Type de dyspnée",
+          "binaryOnly": false,
+          "details": [
+            "[Plus à l'effort, début lors d'une sortie à vélo]"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Caractéristiques de la toux",
+          "binaryOnly": false,
+          "details": [
+            "Quand et fréquence [depuis aujourd'hui]",
+            "Antécédents [jamais eu quelque chose comme ça]"
+          ]
+        },
+        {
+          "id": "a6",
+          "text": "Expectoration",
+          "binaryOnly": false,
+          "details": [
+            "[Non, toux sèche]"
+          ]
+        },
+        {
+          "id": "a7",
+          "text": "Douleurs",
+          "binaryOnly": false,
+          "details": [
+            "Douleurs à la toux [non]",
+            "Autres douleurs [non]"
+          ]
+        },
+        {
+          "id": "a8",
+          "text": "Infection concomitante",
+          "binaryOnly": false,
+          "details": [
+            "[Non]"
+          ]
+        },
+        {
+          "id": "a9",
+          "text": "Symptômes infectieux",
+          "binaryOnly": false,
+          "details": [
+            "Fièvre [non]",
+            "Rhinorrhée [non]"
+          ]
+        },
+        {
+          "id": "a10",
+          "text": "Symptômes associés",
+          "binaryOnly": false,
+          "details": [
+            "Anxiété [avait peur d'étouffer, très nerveuse]",
+            "Sueurs [non]"
+          ]
+        },
+        {
+          "id": "a11",
+          "text": "Allergies",
+          "binaryOnly": false,
+          "details": [
+            "[Bouleaux et pommes, poils de cheval]"
+          ]
+        },
+        {
+          "id": "a12",
+          "text": "Anamnèse médicamenteuse",
+          "binaryOnly": false,
+          "details": [
+            "[Pilule]"
+          ]
+        },
+        {
+          "id": "a13",
+          "text": "Substances toxiques",
+          "binaryOnly": false,
+          "details": [
+            "[Oui, fume et boit occasionnellement le week-end, anciennement fumé du cannabis]"
+          ]
+        },
+        {
+          "id": "a14",
+          "text": "Maladies cardiaques",
+          "binaryOnly": false,
+          "details": [
+            "Particulièrement angine de poitrine [non]"
+          ]
+        },
+        {
+          "id": "a15",
+          "text": "Autres antécédents",
+          "binaryOnly": false,
+          "details": [
+            "[Non]"
+          ]
+        },
+        {
+          "id": "a16",
+          "text": "Activités sportives et loisirs",
+          "binaryOnly": false,
+          "details": [
+            "[Rarement sport, préfère cinéma, shopping]"
+          ]
+        },
+        {
+          "id": "a17",
+          "text": "Antécédents familiaux",
+          "binaryOnly": false,
+          "details": [
+            "[Mère allergie aux graminées, père intolérance au lait et cardiopathie ischémique]"
+          ]
+        },
+        {
+          "id": "a18",
+          "text": "Anamnèse sociale",
+          "binaryOnly": false,
+          "details": [
+            "[Mariée, pas d'enfants, assistante sociale]"
+          ]
+        },
+        {
+          "id": "a19",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "binaryOnly": false,
+          "details": [
+            "Anamnèse générale ciblée et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Désinfection des mains",
+          "binaryOnly": true
+        },
+        {
+          "id": "e2",
+          "text": "Inspection",
+          "binaryOnly": false,
+          "details": [
+            "[Normal, pas de tirages ni muscles respiratoires accessoires]"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Auscultation pulmonaire",
+          "binaryOnly": false,
+          "details": [
+            "[Légers sifflements expiratoires bilatéraux audibles]"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Examen cardiaque et pouls",
+          "binaryOnly": false,
+          "details": [
+            "[Régulier, pas de souffle]"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Examen des extrémités",
+          "binaryOnly": false,
+          "details": [
+            "Recherche d'embolie pulmonaire [normal]"
+          ]
+        },
+        {
+          "id": "e6",
+          "text": "Autres examens",
+          "binaryOnly": false,
+          "details": [
+            "Peau, gorge, ganglions [normaux]"
+          ]
+        },
+        {
+          "id": "e7",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "binaryOnly": false,
+          "details": [
+            "Status général ciblé et bien conduit"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic principal",
+          "binaryOnly": false,
+          "details": [
+            "Asthme"
+          ]
+        },
+        {
+          "id": "m2",
+          "text": "Diagnostics différentiels",
+          "binaryOnly": false,
+          "details": [
+            "Cardiaques: insuffisance cardiaque, infarctus, valvulopathies",
+            "Pulmonaires: asthme (effort, allergique), pneumonie, embolie pulmonaire, œdème pulmonaire, pneumothorax, BPCO, fibrose pulmonaire, tuberculose, cancer bronchique, aspiration corps étranger"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Examens complémentaires",
+          "binaryOnly": false,
+          "details": [
+            "Gazométrie artérielle",
+            "Prélèvements sanguins (FSC, CRP, CK, troponine, D-dimères)",
+            "Spirométrie avec test de provocation aux bêta-2-mimétiques (salbutamol)",
+            "Radiographie thoracique",
+            "ECG",
+            "Tests allergologiques"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Interprétation de la spirométrie",
+          "binaryOnly": false,
+          "details": [
+            "Trouble ventilatoire obstructif",
+            "VEMS, VEMS/CV diminués",
+            "Résistance centrale des voies aériennes et volume résiduel augmentés",
+            "Test de bronchodilatation: obstruction réversible après salbutamol",
+            "Amélioration VEMS > 20%"
+          ]
+        },
+        {
+          "id": "m5",
+          "text": "Thérapie",
+          "binaryOnly": false,
+          "details": [
+            "Éviction allergénique",
+            "Stéroïdes inhalés et bêta-2-mimétiques longue durée d'action (aigu, printemps)",
+            "Bêta-2-mimétiques inhalés courte durée d'action (en crise, sinon selon besoin)",
+            "Éventuellement antagonistes des leucotriènes (Singulair®)",
+            "Éventuellement désensibilisation (apparemment seulement utile si allergie monovalente)"
+          ]
+        },
+        {
+          "id": "m6",
+          "text": "Évaluation globale de la qualité de la prise en charge",
+          "binaryOnly": false,
+          "details": [
+            "Prise en charge générale cohérente et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "images": [
+      {
+        "id": "annexe1",
+        "data": "grilles_generees/images/toux-iv-spirometrie.jpg",
+        "title": "Spirométrie avec test de bronchodilatation",
+        "description": "Test spirométrique montrant une obstruction réversible après bronchodilatateur (amélioration VEMS > 20%)"
+      }
+    ]
+  }
+}

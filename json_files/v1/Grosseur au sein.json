@@ -1,0 +1,220 @@
+{
+  "title": "Grosseur au sein",
+  "context": {
+    "setting": "Cabinet de gynécologie",
+    "patient": "Mme Fischer, 51 ans, enseignante, contrôle annuel gynécologique et nodule mammaire découvert",
+    "vitals": {
+      "ta": "Normale",
+      "fc": "Normale",
+      "temperature": "Normale"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "title": "Anamnèse",
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction et objectif",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Motif de consultation principal",
+          "patientComment": "(Nodule découvert dans le sein)"
+        },
+        {
+          "id": "a3",
+          "text": "Caractéristiques du nodule",
+          "details": [
+            "Découverte",
+            "Localisation",
+            "Taille",
+            "Consistance",
+            "Mobilité"
+          ],
+          "patientComment": "(Il y a 1 semaine / En haut à gauche près de l'aisselle / Taille d'une pulpe de doigt / Plutôt ferme / Ne sait pas)"
+        },
+        {
+          "id": "a4",
+          "text": "Symptômes associés",
+          "details": [
+            "Douleurs",
+            "Sécrétion",
+            "Rougeur/chaleur",
+            "Infection récente",
+            "Symptômes B"
+          ],
+          "patientComment": "(Non / Non / Non / Aucune / Aucun)"
+        },
+        {
+          "id": "a5",
+          "text": "Anamnèse gynécologique",
+          "details": [
+            "Première menstruation",
+            "Ménopause",
+            "Bouffées de chaleur",
+            "Troubles du sommeil",
+            "Poids"
+          ],
+          "patientComment": "(À 12 ans / Depuis environ 1 an saignements très irréguliers, avant réguliers / Non / Parfois / Constant, 80 kg pour 1.65m)"
+        },
+        {
+          "id": "a6",
+          "text": "Anamnèse obstétricale",
+          "details": [
+            "Grossesses",
+            "Enfants",
+            "Fausses couches"
+          ],
+          "patientComment": "(Deux grossesses sans complications avec accouchements normaux / 2 enfants en bonne santé / 1 fausse couche précoce)"
+        },
+        {
+          "id": "a7",
+          "text": "Activité sexuelle et contraception",
+          "details": [
+            "Activité sexuelle",
+            "Contraception antérieure",
+            "Contraception actuelle"
+          ],
+          "patientComment": "(Oui avec compagnon depuis 2 ans / Pilule environ 10 ans jusqu'à 30 ans / Stérilet depuis)"
+        },
+        {
+          "id": "a8",
+          "text": "Antécédents médicaux",
+          "details": [
+            "Maladies du sein",
+            "Maladies gynécologiques",
+            "Interventions chirurgicales"
+          ],
+          "patientComment": "(Aucune / / Aucune)"
+        },
+        {
+          "id": "a9",
+          "text": "Médication actuelle",
+          "patientComment": "(Aucune, y compris pas d'hormones)"
+        },
+        {
+          "id": "a10",
+          "text": "Habitudes de vie et allergies",
+          "details": [
+            "Substances nocives",
+            "Allergies",
+            "Alimentation"
+          ],
+          "patientComment": "(Aucune / Graminées, pollens / Beaucoup de légumes et viande, souvent plats préparés à cause du travail)"
+        },
+        {
+          "id": "a11",
+          "text": "Antécédents familiaux",
+          "details": [
+            "Antécédents parentaux",
+            "Cancer du sein familial",
+            "Mutation connue"
+          ],
+          "patientComment": "(Père AVC, mère diabète / Sœur cancer du sein à 55 ans / Non)"
+        },
+        {
+          "id": "a12",
+          "text": "Anamnèse sociale",
+          "patientComment": "(Divorcée, 2 enfants, enseignante primaire, beaucoup de stress et jamais de vacances)"
+        },
+        {
+          "id": "a13",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "binaryOnly": false,
+          "details": [
+            "Anamnèse générale ciblée et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "examen": {
+      "title": "Examen clinique",
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Examen des seins",
+          "details": [
+            "Inspection en différentes positions",
+            "Palpation",
+            "Pression des mamelons"
+          ]
+        },
+        {
+          "id": "e2",
+          "text": "Examen gynécologique mentionné"
+        },
+        {
+          "id": "e3",
+          "text": "Palpation des ganglions lymphatiques"
+        },
+        {
+          "id": "e4",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "binaryOnly": false,
+          "details": [
+            "Status général ciblé et bien conduit"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "management": {
+      "title": "Prise en charge",
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic de suspicion",
+          "patientComment": "(Carcinome mammaire ou lésion précancéreuse)"
+        },
+        {
+          "id": "m2",
+          "text": "Diagnostics différentiels (au moins 2-3)",
+          "patientComment": "(Fibroadénome, mastopathie, ganglion lymphatique)"
+        },
+        {
+          "id": "m3",
+          "text": "Examens diagnostiques proposés",
+          "details": [
+            "Mammographie",
+            "Biopsie sous contrôle US"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Traitement en cas de cancer",
+          "patientComment": "(Chirurgie avec ou sans curage ganglionnaire + radiothérapie)"
+        },
+        {
+          "id": "m5",
+          "text": "Explications complémentaires sur demande",
+          "details": [
+            "Méthode du ganglion sentinelle",
+            "Complications du curage axillaire",
+            "Justification de la radiothérapie",
+            "Durée du traitement"
+          ]
+        },
+        {
+          "id": "m6",
+          "text": "Orientation spécialisée",
+          "patientComment": "(Référer à un centre du sein pour exploration complémentaire)"
+        },
+        {
+          "id": "m7",
+          "text": "Évaluation globale de la qualité de la prise en charge",
+          "binaryOnly": false,
+          "details": [
+            "Prise en charge générale cohérente et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    }
+  }
+}

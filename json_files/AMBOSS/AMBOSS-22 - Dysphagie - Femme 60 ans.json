@@ -1,0 +1,544 @@
+{
+  "title": "AMBOSS-22 - Dysphagie - Femme 60 ans",
+  "context": {
+    "setting": "Cabinet médical",
+    "patient": "Eva Garcia, femme de 60 ans, consultant pour difficulté à avaler",
+    "vitals": {
+      "temperature": "36.5°C",
+      "ta": "120/80 mmHg",
+      "fc": "62 bpm",
+      "fr": "15/min"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Motif principal",
+          "binaryOnly": true,
+          "patientComment": "J'ai des problèmes pour avaler la nourriture"
+        },
+        {
+          "id": "a2",
+          "text": "Caractérisation de la dysphagie",
+          "binaryOnly": false,
+          "details": [
+            "Début [Il y a environ 6 mois]",
+            "Constant/intermittent [Ce n'est pas là tout le temps, mais la plupart du temps c'est un problème, surtout si j'essaie d'avaler de plus gros morceaux de nourriture]",
+            "Événements précipitants [Aucun]",
+            "Progression [Ça s'aggrave. Au début, j'avais des problèmes seulement avec les aliments solides, mais les liquides sont aussi devenus plus difficiles à avaler depuis un mois]",
+            "Épisodes antérieurs [Eh bien, j'ai du reflux. Donc au début je pensais que c'était mon reflux]",
+            "Fréquence [Pratiquement toujours quand je mange des choses comme la viande et ne mâche pas soigneusement. Et parfois avec d'autres aliments et boissons aussi]",
+            "Facteurs améliorants [Je dois manger lentement et bien mâcher]",
+            "Facteurs aggravants [Si je ne mange pas lentement]",
+            "Symptômes associés [J'ai eu des douleurs thoraciques en mangeant depuis quelques semaines]"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Caractérisation de la douleur thoracique",
+          "binaryOnly": false,
+          "details": [
+            "Localisation [Juste au milieu, derrière mon sternum]",
+            "Intensité (échelle 0-10) [Peut-être 3-4]",
+            "Qualité [C'est comme si quelqu'un était assis sur ma poitrine]",
+            "Douleur à l'effort/sans déclencheur [Ça n'est jamais arrivé quand je monte les escaliers ou fais de l'exercice, non ! Et ça n'arrive que quand je mange quelque chose et jamais dans d'autres situations]"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Recherche de symptômes spécifiques",
+          "binaryOnly": false,
+          "details": [
+            "Voyage récent [Je suis allée au Vietnam il y a 8 mois]",
+            "Nausées/vomissements [Non]",
+            "Régurgitation [De temps en temps, je dois tousser de la nourriture]",
+            "Fièvre/frissons [Non]",
+            "Sueurs nocturnes [Non]",
+            "Fatigue [Oui, je me sens plus fatiguée ces 2 derniers mois]",
+            "Toux [Non]",
+            "Problèmes intestinaux [Non]",
+            "Appétit [Normal]",
+            "Variations pondérales [Oui, j'ai perdu 3,5 kg en 6 mois. Pas mal, non ? Je n'essayais même pas]",
+            "Infections récentes [Non]",
+            "Voix enrouée [Non]",
+            "Masses au cou/gonflement du cou [Non]"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Antécédents médicaux",
+          "binaryOnly": true,
+          "patientComment": "J'ai du reflux depuis 18 ans"
+        },
+        {
+          "id": "a6",
+          "text": "Allergies",
+          "binaryOnly": true,
+          "patientComment": "Aucune"
+        },
+        {
+          "id": "a7",
+          "text": "Médicaments",
+          "binaryOnly": true,
+          "patientComment": "Je prends du Tums"
+        },
+        {
+          "id": "a8",
+          "text": "Hospitalisations et antécédents chirurgicaux",
+          "binaryOnly": true,
+          "details": [
+            "Hospitalisations [Jamais]",
+            "Antécédents chirurgicaux [Aucun]"
+          ]
+        },
+        {
+          "id": "a9",
+          "text": "Antécédents familiaux",
+          "binaryOnly": true,
+          "patientComment": "Ma mère a un problème avec son gros intestin, ça s'appelle quelque chose comme 'diverticule', 'diverticula'. Oui, comme vous dites, ça s'appelle diverticulose"
+        },
+        {
+          "id": "a10",
+          "text": "Habitudes et mode de vie",
+          "binaryOnly": false,
+          "details": [
+            "Travail [Je travaille comme caissière]",
+            "Domicile [Je vis seule. Je suis divorcée]",
+            "Alcool [J'ai peut-être 1-2 bières le week-end]",
+            "Drogues récréatives [Aucune]",
+            "Tabac [Oui, je fume un demi-paquet par jour depuis 32 ans]",
+            "Alimentation [J'adore la charcuterie et le bacon. Les aliments frais comme les fruits et légumes ne sont pas vraiment mon truc]"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Mesures d'hygiène",
+          "binaryOnly": true,
+          "details": [
+            "Lavage des mains",
+            "Respect de la pudeur avec drap"
+          ]
+        },
+        {
+          "id": "e2",
+          "text": "Examen de la tête, yeux, oreilles, nez et gorge",
+          "binaryOnly": true,
+          "details": [
+            "Inspection des conjonctives",
+            "Inspection de l'oropharynx"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Examen du cou",
+          "binaryOnly": true,
+          "details": [
+            "Inspection du cou",
+            "Palpation des ganglions lymphatiques de la tête et du cou"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Examen cardiovasculaire",
+          "binaryOnly": true,
+          "details": [
+            "Palpation du choc apexien",
+            "Auscultation cardiaque"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Examen thoracique",
+          "binaryOnly": true,
+          "details": [
+            "Inspection du thorax",
+            "Palpation du thorax",
+            "Auscultation pulmonaire"
+          ]
+        },
+        {
+          "id": "e6",
+          "text": "Examen abdominal",
+          "binaryOnly": false,
+          "details": [
+            "Inspection de l'abdomen",
+            "Auscultation de l'abdomen",
+            "Percussion de l'abdomen",
+            "Palpation de l'abdomen"
+          ]
+        },
+        {
+          "id": "e7",
+          "text": "Examen cutané",
+          "binaryOnly": true
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Hypothèses diagnostiques",
+          "binaryOnly": false,
+          "scoringRule": "2 points si au moins 2 diagnostics pertinents mentionnés, 1 point si 1 diagnostic",
+          "ddSection": {
+            "title": "Diagnostics différentiels à considérer",
+            "categories": [
+              {
+                "name": "Causes malignes",
+                "items": [
+                  {
+                    "text": "Cancer de l'œsophage",
+                    "cause": "Arguments POUR:\n\t□ Dysphagie progressive solides → liquides (sténose progressive)\n\t□ Perte de poids non intentionnelle (3,5 kg en 6 mois)\n\t□ Fatigue depuis 2 mois\n\t□ Âge typique (pic 60-70 ans)\n\t□ Multiples facteurs de risque :\n\t  • Tabagisme (16 paquets-années)\n\t  • RGO non traité × 18 ans (adénocarcinome)\n\t  • Régime pauvre en fruits/légumes\n\t  • Exposition nitrosamines (charcuterie)\n\t□ Douleur thoracique rétrosternale à la déglutition",
+                    "test": "→ Endoscopie digestive haute avec biopsies"
+                  }
+                ]
+              },
+              {
+                "name": "Troubles de la motilité œsophagienne",
+                "items": [
+                  {
+                    "text": "Achalasie",
+                    "cause": "Arguments POUR:\n\t□ Dysphagie intermittente solides ET liquides\n\t□ Douleur thoracique rétrosternale\n\t□ Régurgitation alimentaire\n\t□ Perte de poids\n\t□ Amélioration en mangeant lentement/mâchant bien\n\t□ Âge compatible (25-60 ans)\nContre : Progression solides → liquides suggère obstruction mécanique",
+                    "test": "→ Transit baryté, manométrie œsophagienne"
+                  },
+                  {
+                    "text": "Spasme œsophagien diffus",
+                    "cause": "Dysphagie intermittente, douleur thoracique importante",
+                    "test": "→ Manométrie : contractions simultanées"
+                  },
+                  {
+                    "text": "Œsophage casse-noisette",
+                    "cause": "Douleur thoracique > dysphagie, contractions haute amplitude",
+                    "test": "→ Manométrie : contractions péristaltiques très amples"
+                  }
+                ]
+              },
+              {
+                "name": "Causes structurelles bénignes",
+                "items": [
+                  {
+                    "text": "Anneau œsophagien (Schatzki)",
+                    "cause": "Arguments POUR:\n\t□ RGO longue durée (18 ans)\n\t□ Dysphagie intermittente\nContre : Progression vers liquides, perte de poids significative",
+                    "test": "→ Transit baryté : rétrécissement jonction œso-gastrique"
+                  },
+                  {
+                    "text": "Sténose peptique",
+                    "cause": "RGO chronique non traité, mais progression rapide atypique",
+                    "test": "→ Endoscopie : sténose régulière bénigne"
+                  },
+                  {
+                    "text": "Diverticule de Zenker",
+                    "cause": "Contre : pas d'halitose, pas de masse cervicale",
+                    "test": "→ Transit baryté : poche pharyngo-œsophagienne"
+                  },
+                  {
+                    "text": "Hernie hiatale",
+                    "cause": "RGO présent mais dysphagie peu fréquente",
+                    "test": "→ Endoscopie, transit baryté"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Examens complémentaires de première intention",
+          "binaryOnly": false,
+          "details": [
+            "ECG [doit être réalisé chez tous les patients avec douleur thoracique pour exclure les causes cardiaques potentiellement mortelles]",
+            "Transit baryté [meilleur test initial pour suspicion d'anneau œsophagien et achalasie. Montre 'aspect en bec d'oiseau' et vidange retardée dans l'achalasie ou rétrécissement de l'œsophage (souvent à la jonction œso-gastrique) dans les anneaux œsophagiens. Le cancer de l'œsophage se manifeste par des bords asymétriques et irréguliers de l'œsophage avec sténose et dilatation proximale (lésion en trognon de pomme)]",
+            "Œsophago-gastro-duodénoscopie (FOGD) avec biopsies [meilleur test initial et de confirmation dans le cancer de l'œsophage, car il permet la visualisation directe de la tumeur et la biopsie des lésions suspectes]"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Examens complémentaires spécialisés",
+          "binaryOnly": false,
+          "details": [
+            "Manométrie œsophagienne [test de confirmation dans l'achalasie ; montre absence de péristaltisme dans les deux tiers inférieurs de l'œsophage, relaxation incomplète ou absente du sphincter œsophagien inférieur, et pression de repos augmentée]",
+            "Scanner thoraco-abdominal [si cancer confirmé, pour bilan d'extension]",
+            "Échoendoscopie [staging locorégional du cancer œsophagien]"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Communication avec la patiente",
+          "binaryOnly": false,
+          "details": [
+            "Explications à la patiente des impressions diagnostiques préliminaires",
+            "Explication du plan de prise en charge",
+            "Utilisation d'un langage non médical et clarification des termes médicaux",
+            "Évaluation de l'accord de la patiente avec le plan diagnostique",
+            "Recherche des préoccupations et questions de la patiente"
+          ]
+        },
+        {
+          "id": "m5",
+          "text": "Conseil et soutien",
+          "binaryOnly": false,
+          "details": [
+            "Conseil sur l'arrêt du tabac",
+            "Conseil sur les options de soutien pour les changements de poids et de régime alimentaire",
+            "Réaction appropriée au défi concernant le cancer",
+            "Soutien émotionnel face à l'inquiétude",
+            "Éducation sur l'importance du traitement du RGO"
+          ],
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Prise en charge selon diagnostic",
+                "content": "• Si cancer œsophage confirmé :\n  - Stadification complète (CT, EUS, PET)\n  - Discussion multidisciplinaire\n  - Chirurgie si résécable (œsophagectomie)\n  - Radio-chimiothérapie néoadjuvante ou palliative\n  - Support nutritionnel (gastrostomie si besoin)\n• Si achalasie :\n  - Dilatation pneumatique (1ère ligne)\n  - Myotomie de Heller laparoscopique + fundoplicature\n  - Injection toxine botulique si haut risque chirurgical\n  - Inhibiteurs calciques ou nitrates (temporaire)\n• Si sténose peptique :\n  - IPP double dose 8-12 semaines\n  - Dilatation endoscopique progressive\n  - Surveillance endoscopique (risque cancer)\n• Mesures générales :\n  - Alimentation fractionnée, texture adaptée\n  - Position assise après repas\n  - Arrêt tabac impératif\n  - Perte poids si obésité"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "cl1",
+          "text": "Défi : Inquiétude sur le cancer",
+          "content": "[Soyez honnête avec moi - pensez-vous que j'ai un cancer ?]"
+        },
+        {
+          "id": "cl2",
+          "text": "Réponse type du candidat",
+          "content": "Mme Garcia, je comprends votre inquiétude que vos symptômes puissent être dus à une condition sous-jacente grave. Beaucoup de choses peuvent causer des difficultés à avaler, y compris le cancer, mais cela peut aussi être causé par des conditions moins graves comme un dysfonctionnement musculaire dans votre œsophage ou une longue histoire de reflux. J'aimerais faire quelques tests pour déterminer exactement ce qui cause vos symptômes. Je peux vous assurer que nous sommes une équipe très expérimentée ici et que nous ferons de notre mieux pour vous traiter. Je serai avec vous à chaque étape et je suis toujours disponible pour toute question ou préoccupation que vous pourriez avoir. Est-ce que cela vous convient ?"
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "images": [
+      {
+        "title": "Sclérodactylie chez un patient avec sclérodermie",
+        "description": "Doigts avec flexion en griffe, ongles déformés, induration au niveau du deuxième doigt de la main droite au niveau de l'articulation interphalangienne proximale.",
+        "data": "grilles_generees/html/images/AMBOSS-22-img1-Sclerodactyly in a patient with scleroderma.jpg"
+      },
+      {
+        "title": "Prise en charge du RGO",
+        "description": "Algorithme thérapeutique du reflux gastro-œsophagien, facteur de risque majeur de complications œsophagiennes.",
+        "data": "grilles_generees/html/images/AMBOSS-22-img2-Management of GERD.jpg"
+      },
+      {
+        "title": "Achalasie",
+        "description": "Transit baryté. Un rétrécissement lisse en forme d'entonnoir (superposition verte) dans la région du sphincter œsophagien inférieur est accompagné d'un élargissement (flèche à double tête) de l'œsophage distal présténotique (superposition rouge). L'apparence de l'œsophage dans l'achalasie est appelée 'signe du bec d'oiseau' (illustration). Si le contour de la région rétrécie est irrégulier et/ou implique plus que l'œsophage distal, le diagnostic alternatif de carcinome œsophagien doit être envisagé.",
+        "data": "grilles_generees/html/images/AMBOSS-22-img3-Achalasia.jpg"
+      },
+      {
+        "title": "Achalasie",
+        "description": "Transit baryté œsophagien. Sténose en forme d'entonnoir de l'œsophage terminal ; dilatation présténotique massive de l'œsophage (flèches ; signe du bec d'oiseau).",
+        "data": "grilles_generees/html/images/AMBOSS-22-img4-Achalasia.jpg"
+      },
+      {
+        "title": "Anneau œsophagien B (anneau de Schatzki)",
+        "description": "Transit baryté (vue latérale) : rétrécissement circulaire de l'œsophage directement à la jonction œso-gastrique (anneau de Schatzki ou anneau B). Contrairement aux anneaux A (qui sont situés juste en proximal de la jonction œso-gastrique), les anneaux B ne peuvent souvent être vus que s'il y a une hernie hiatale concomitante, avec laquelle ils sont fréquemment associés (comme c'est le cas ici).",
+        "data": "grilles_generees/html/images/AMBOSS-22-img5-Esophageal B-ring (Schatzki ring).jpg"
+      },
+      {
+        "title": "Sténose œsophagienne distale par carcinome",
+        "description": "Œsophagogramme baryté (vue frontale) d'un patient avec antécédents de reflux gastro-œsophagien chronique et œsophage de Barrett. Un rétrécissement de long segment de l'œsophage distal est visible avec irrégularité de la muqueuse et une configuration en trognon de pomme (contour vert). L'œsophage (E) est dilaté en proximal de la sténose. Cette apparence suggère un carcinome œsophagien. S : estomac.",
+        "data": "grilles_generees/html/images/AMBOSS-22-img6-Distal esophageal stricture from carcinoma.jpg"
+      },
+      {
+        "title": "Sténose œsophagienne maligne",
+        "description": "Œsophagogramme baryté (vue latérale) d'un patient avec carcinome œsophagien. Une sténose irrégulière de long segment est visible dans le tiers moyen de l'œsophage thoracique (superposition verte). L'aspect supérieur de la sténose a une apparence en trognon de pomme (indiquée par la ligne pointillée).",
+        "data": "grilles_generees/html/images/AMBOSS-22-img7-Malignant esophageal stricture.jpg"
+      },
+      {
+        "title": "Carcinome œsophagien",
+        "description": "Vue endoscopique de l'œsophage. Une masse exophytique, irrégulièrement délimitée avec des bords surélevés (ligne verte) et une ulcération centrale (ligne pointillée) obstrue partiellement la lumière œsophagienne.",
+        "data": "grilles_generees/html/images/AMBOSS-22-img8-Esophageal carcinoma.jpg"
+      }
+    ],
+    "scenarioPatienteStandardisee": {
+      "titre": "Scénario pour la patiente standardisée",
+      "nom": "Eva Garcia",
+      "age": "60 ans",
+      "contexte": "Caissière avec dysphagie progressive et antécédents de RGO non traité",
+      "motifConsultation": {
+        "plaintePrincipale": "J'ai des problèmes pour avaler la nourriture.",
+        "autreChose": "C'est pire avec les gros morceaux."
+      },
+      "consignes": [
+        "Vous n'êtes pas au courant de la signification des termes médicaux (ex: transit baryté) et demandez des clarifications si l'examinateur les utilise.",
+        "Défi : Demander 'Soyez honnête avec moi - pensez-vous que j'ai un cancer ?'"
+      ],
+      "histoireActuelle": {
+        "symptomePrincipal": [
+          "Dysphagie depuis 6 mois",
+          "Progression solides → liquides (depuis 1 mois)",
+          "Intermittente mais fréquente",
+          "Pire avec viande mal mâchée",
+          "Amélioration en mangeant lentement"
+        ],
+        "symptomesAssocies": [
+          "Douleur thoracique rétrosternale à la déglutition",
+          "Intensité 3-4/10, oppression",
+          "Régurgitation alimentaire occasionnelle",
+          "Fatigue depuis 2 mois",
+          "Perte de poids 3,5 kg en 6 mois"
+        ]
+      },
+      "simulation": {
+        "durantEntretien": [
+          "Minimiser la perte de poids ('pas mal, non ?')",
+          "Insister sur longue histoire de reflux",
+          "Mentionner voyage Vietnam (écarter causes infectieuses)",
+          "Exprimer inquiétude sur cancer",
+          "Demander clarifications termes médicaux"
+        ],
+        "durantStatus": [
+          "Examen physique normal",
+          "Pas d'adénopathies palpables",
+          "Pas de masse abdominale",
+          "Pas de signes de sclérodermie",
+          "Coopération totale"
+        ]
+      }
+    },
+    "informationsExpert": {
+      "titre": "Informations de l'expert",
+      "dossierMedical": "Femme de 60 ans avec dysphagie progressive très suspecte de cancer œsophagien : progression solides → liquides, perte de poids, fatigue, multiples facteurs de risque (tabac, RGO non traité 18 ans, régime). Achalasie possible mais facteurs de risque cancer trop importants. Endoscopie urgente avec biopsies indispensable. Pronostic dépend du stade si cancer confirmé.",
+      "rolesInterventions": [
+        "L'expert-e intervient si l'étudiant-e fait :",
+        "• Endoscopie : Masse ulcéro-bourgeonnante tiers inférieur œsophage",
+        "• Biopsie : Adénocarcinome (sur Barrett probable)",
+        "• Transit baryté : Sténose irrégulière 'trognon de pomme'",
+        "• CT TAP : Épaississement pariétal, adénopathies médiastinales",
+        "• Manométrie : Non indiquée si masse visible",
+        "• Marqueurs : CEA élevé (non spécifique)"
+      ],
+      "pointsCles": [
+        "Dysphagie progressive = drapeau rouge cancer",
+        "RGO non traité 18 ans = risque Barrett → adénocarcinome",
+        "Endoscopie avec biopsies = gold standard diagnostic",
+        "Toujours rassurer sans mentir face inquiétude cancer",
+        "Tabac + RGO = double risque (épidermoïde + adéno)",
+        "Perte poids + fatigue = signes systémiques inquiétants"
+      ],
+      "pieges": [
+        "Minimiser symptômes car patiente minimise",
+        "Attribuer tout au RGO connu",
+        "Faire transit baryté avant endoscopie",
+        "Oublier ECG (douleur thoracique)",
+        "Ne pas répondre à inquiétude cancer",
+        "Prescrire IPP sans investigation"
+      ]
+    },
+    "theoriePratique": {
+      "titre": "Théorie pratique concernant la vignette",
+      "sections": [
+        {
+          "titre": "Diagnostic le plus probable",
+          "contenu": "Cancer de l'œsophage (adénocarcinome sur œsophage de Barrett)"
+        },
+        {
+          "titre": "Cancer de l'œsophage",
+          "contenu": "Néoplasie maligne avec deux types histologiques principaux :",
+          "points": [
+            "Épidémiologie : 8e cancer mondial, pronostic sombre (survie 5 ans < 20%)",
+            "Adénocarcinome (60% pays occidentaux) : tiers inférieur, sur Barrett",
+            "Carcinome épidermoïde (40%) : tiers moyen/supérieur",
+            "Facteurs risque adénocarcinome : RGO, Barrett, obésité, tabac",
+            "Facteurs risque épidermoïde : tabac, alcool, nitrosamines",
+            "Présentation : dysphagie progressive, perte poids, douleur"
+          ]
+        },
+        {
+          "titre": "Œsophage de Barrett",
+          "contenu": "Métaplasie intestinale de l'œsophage distal :",
+          "points": [
+            "Complication RGO chronique (10-15% patients RGO)",
+            "Transformation : épithélium malpighien → cylindrique intestinal",
+            "Séquence : RGO → métaplasie → dysplasie → adénocarcinome",
+            "Risque cancer : 0.5%/an (30-125× population générale)",
+            "Surveillance : endoscopie + biopsies selon longueur segment",
+            "Traitement : IPP à vie, ablation si dysplasie"
+          ]
+        },
+        {
+          "titre": "Achalasie",
+          "contenu": "Trouble moteur primaire de l'œsophage :",
+          "points": [
+            "Pathophysiologie : perte neurones myentériques → aperistalsis",
+            "Épidémiologie : incidence 1/100 000, pic 25-60 ans",
+            "Clinique : dysphagie solides ET liquides d'emblée",
+            "Transit : dilatation œsophage + 'bec d'oiseau'",
+            "Manométrie : aperistalsis + relaxation SIO absente",
+            "Traitement : dilatation pneumatique ou myotomie"
+          ]
+        },
+        {
+          "titre": "Approche diagnostique de la dysphagie",
+          "contenu": "Algorithme systématique selon présentation :",
+          "points": [
+            "Oropharyngée vs œsophagienne : niveau blocage ressenti",
+            "Mécanique vs motrice : solides seuls vs solides + liquides",
+            "Intermittente vs progressive : anneau/spasme vs sténose/tumeur",
+            "Alarme : perte poids, anémie, > 50 ans, dysphagie progressive",
+            "Endoscopie première si signes alarme ou > 50 ans",
+            "Transit baryté si suspicion trouble motilité"
+          ]
+        },
+        {
+          "titre": "Stadification cancer œsophage",
+          "contenu": "Classification TNM pour guider traitement :",
+          "points": [
+            "T : profondeur invasion (T1 muqueuse → T4 structures adjacentes)",
+            "N : ganglions régionaux (N0-N3 selon nombre)",
+            "M : métastases à distance (M0 ou M1)",
+            "Examens : CT TAP, EUS (T/N), PET-scan (M)",
+            "Stades : I-II résécables, III multimodal, IV palliatif",
+            "Pronostic : stade I 90% à 5 ans, stade IV < 5%"
+          ]
+        },
+        {
+          "titre": "Traitement multimodal cancer œsophage",
+          "contenu": "Approche combinée selon stade :",
+          "points": [
+            "Stade précoce (T1a) : résection endoscopique muqueuse",
+            "Stades I-III : chimio-radiothérapie néoadjuvante + chirurgie",
+            "Chirurgie : œsophagectomie (Ivor-Lewis, McKeown)",
+            "Chimio : FLOT ou CROSS (carboplatine-paclitaxel)",
+            "Palliatif : stent, radiothérapie, nutrition entérale",
+            "Surveillance : endoscopie, CT réguliers 5 ans"
+          ]
+        }
+      ],
+      "rappelsTherapeutiques": [
+        "RGO non compliqué : IPP standard 4-8 semaines",
+        "Barrett sans dysplasie : IPP à vie + surveillance",
+        "Dysplasie bas grade : IPP double dose + surveillance rapprochée",
+        "Dysplasie haut grade : ablation par radiofréquence",
+        "Achalasie : dilatation 30-40 mm ou myotomie Heller",
+        "Sténose peptique : dilatation + IPP double dose",
+        "Cancer localisé : CROSS néoadjuvant puis œsophagectomie",
+        "Cancer avancé : FLOT ou carboplatine-paclitaxel palliatif"
+      ],
+      "examensComplementaires": [
+        "Endoscopie haute : visualisation directe + biopsies multiples",
+        "Biopsies : 4 quadrants tous les 2 cm si Barrett suspecté",
+        "Transit œso-gastro-duodénal : morphologie, motilité",
+        "Manométrie haute résolution : gold standard troubles motilité",
+        "pH-métrie 24h : quantifier RGO si doute",
+        "CT thoraco-abdomino-pelvien : extension si cancer",
+        "Échoendoscopie : staging T et N locorégional",
+        "PET-scan : recherche métastases occultes"
+      ]
+    }
+  }
+}

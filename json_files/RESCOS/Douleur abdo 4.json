@@ -1,0 +1,493 @@
+{
+  "title": "Douleur abdo 4",
+  "context": {
+    "setting": "Urgences",
+    "patient": "Mme Marie Gerber, 30 ans, patiente connue pour une obésité (BMI: 30) consulte aux urgences pour une douleur abdominale",
+    "vitals": {
+      "ta": "120/80 mmHg",
+      "temperature": "37.3°C",
+      "sao2": "99%",
+      "imc": "30 kg/m²"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Caractérisation de la douleur",
+          "details": [
+            "Localisation précise [QIG]",
+            "Intensité [10/10]",
+            "Qualité [coup de poignard]",
+            "Irradiation [irradiation vers les parties génitales]",
+            "Facteurs aggravants [les mouvements]",
+            "Facteurs soulageants [aucun]"
+          ],
+          "scoringRule": "Au moins cinq = oui, quatre = ±, aucun à trois = non"
+        },
+        {
+          "id": "a2",
+          "text": "Chronologie de la douleur",
+          "details": [
+            "Début [survenue soudainement ce matin vers 8h30]",
+            "Progression [péjoration graduelle de la douleur]",
+            "Circonstances de survenue [survenue alors qu'elle était en train de faire ses courses, n'a pas fait de mouvement particulier]"
+          ],
+          "scoringRule": "Les trois = oui, deux = ±, aucun à un = non"
+        },
+        {
+          "id": "a3",
+          "text": "État général",
+          "details": [
+            "Fièvre [non]",
+            "Fatigue [oui, fatigue]",
+            "Perte/prise de poids récente [obésité]"
+          ],
+          "scoringRule": "Les trois = oui, un à deux = ±, aucun = non"
+        },
+        {
+          "id": "a4",
+          "text": "Système reproducteur (DD: grossesse extra-utérine, torsion ovarienne)",
+          "details": [
+            "Test de grossesse (la patiente en a-t-elle fait un ?) [non]",
+            "Contraception [aucune, pas de contraception]",
+            "Antécédent de césarienne/de grossesse [G0P0]",
+            "Aménorrhée [non]",
+            "Métrorragie/ménorragie [non]",
+            "Pertes vaginales [non]"
+          ],
+          "scoringRule": "Au moins quatre = oui, deux à trois = ±, aucun à un = non"
+        },
+        {
+          "id": "a5",
+          "text": "Système digestif (DD: colite, appendicite, diverticulite)",
+          "details": [
+            "Nausées [nausées et vomissement depuis la survenue de la douleur seulement]",
+            "Vomissements [2 épisodes de vomissement alimentaire]",
+            "Dernier transit",
+            "Diarrhées [non]",
+            "Constipation [non]",
+            "Sang dans les selles [non]"
+          ],
+          "scoringRule": "Au moins cinq = oui, trois à quatre = ±, aucun à deux = non"
+        },
+        {
+          "id": "a6",
+          "text": "Système urinaire: (DD: lithiase rénale, cystite, pyélonéphrite)",
+          "details": [
+            "Dysurie/algurie [non]",
+            "Urgenturie [non]",
+            "Couleur des urines [normale]",
+            "Hématurie [non]"
+          ],
+          "scoringRule": "Au moins trois = oui, deux = ±, aucun à un = non"
+        },
+        {
+          "id": "a7",
+          "text": "Habitudes et antécédents personnels",
+          "details": [
+            "Médicaments [traitement topique à base de vitamines pour l'acné]",
+            "Maladies connues [obésité (BMI: 30), dépression et anxiété suivies par psychologue, acné sévère et persistante]",
+            "Antécédents chirurgicaux [aucune hospitalisation préalable]"
+          ],
+          "scoringRule": "Les trois = oui, deux = ±, aucun à un = non"
+        },
+        {
+          "id": "a8",
+          "text": "Anamnèse en général - ciblée, fil conducteur",
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "S'assure du confort d'installation de la patiente",
+          "binaryOnly": true
+        },
+        {
+          "id": "e2",
+          "text": "Status abdominal",
+          "details": [
+            "Observation",
+            "Auscultation",
+            "Palpation superficielle",
+            "Palpation profonde [douleurs intense lors de la palpation du quadrant inférieur gauche avec défense et détente]",
+            "Percussion foie et rate"
+          ],
+          "scoringRule": "Les cinq = oui, quatre = ±, aucun à trois = non"
+        },
+        {
+          "id": "e3",
+          "text": "Status urinaire - percussion des loges rénales",
+          "binaryOnly": true
+        },
+        {
+          "id": "e4",
+          "text": "Status gynécologique - 1",
+          "details": [
+            "Met des gants",
+            "Observation du périnée, vestibule",
+            "Lubrification correcte du spéculum"
+          ],
+          "scoringRule": "Les trois = oui, deux = ±, aucun à un = non"
+        },
+        {
+          "id": "e5",
+          "text": "Status gynécologique - 2",
+          "details": [
+            "Insertion du spéculum avec angle de 45°",
+            "Observation du col",
+            "Palpation bi-manuelle",
+            "Mobilisation du col à une main",
+            "Retire le spéculum sans le fermer"
+          ],
+          "scoringRule": "Au moins trois = oui, deux = ±, aucun à un = non"
+        },
+        {
+          "id": "e6",
+          "text": "Status en général - réalisé de manière structurée, correcte et professionnelle",
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Demande un test de grossesse",
+          "binaryOnly": true
+        },
+        {
+          "id": "m2",
+          "text": "Demande un examen de laboratoire",
+          "details": [
+            "FSC",
+            "CRP"
+          ],
+          "scoringRule": "Les deux = oui, un = ±, aucun = non"
+        },
+        {
+          "id": "m3",
+          "text": "Demande un US ou un CT",
+          "binaryOnly": true
+        },
+        {
+          "id": "m4",
+          "text": "Évoque le diagnostic de torsion ovarienne",
+          "binaryOnly": true,
+          "ddSection": {
+            "title": "Diagnostics différentiels à considérer",
+            "categories": [
+              {
+                "name": "Causes gynécologiques",
+                "items": [
+                  {
+                    "text": "Torsion ovarienne",
+                    "cause": "Arguments POUR:\n\t□ Douleur brutale unilatérale\n\t□ Intensité maximale (10/10)\n\t□ Épisodes similaires antérieurs (torsion-détorsion)\n\t□ Signes d'hyperandrogénie (acné, acanthosis nigricans)\n\t□ Infertilité et cycles irréguliers (SOPK probable)\nArguments CONTRE:\n\t□ Pas de masse palpable mentionnée",
+                    "test": "→ US doppler pelvien en urgence, laparoscopie si confirmé"
+                  },
+                  {
+                    "text": "Grossesse extra-utérine",
+                    "cause": "Arguments POUR:\n\t□ Femme en âge de procréer\n\t□ Pas de contraception\n\t□ Douleur pelvienne brutale\nArguments CONTRE:\n\t□ Test de grossesse négatif\n\t□ Infertilité connue",
+                    "test": "→ βHCG quantitatif, US pelvien"
+                  },
+                  {
+                    "text": "Abcès tubo-ovarien",
+                    "cause": "Arguments POUR:\n\t□ Douleur pelvienne\n\t□ Nausées/vomissements\nArguments CONTRE:\n\t□ Absence de fièvre\n\t□ Pas d'antécédent d'infection pelvienne\n\t□ Début brutal",
+                    "test": "→ NFS, CRP, US pelvien, prélèvements"
+                  }
+                ]
+              },
+              {
+                "name": "Causes digestives",
+                "items": [
+                  {
+                    "text": "Appendicite",
+                    "cause": "Arguments POUR:\n\t□ Douleur abdominale intense\n\t□ Nausées/vomissements\n\t□ Défense à la palpation\nArguments CONTRE:\n\t□ Localisation QIG et non FID\n\t□ Irradiation vers parties génitales\n\t□ Signe du psoas négatif",
+                    "test": "→ NFS, CRP, US ou CT abdominal"
+                  },
+                  {
+                    "text": "Colite/diverticulite",
+                    "cause": "Arguments POUR:\n\t□ Douleur abdominale basse\n\t□ Âge compatible pour diverticulite\nArguments CONTRE:\n\t□ Absence de troubles du transit\n\t□ Pas de syndrome inflammatoire clinique\n\t□ Début très brutal",
+                    "test": "→ CT abdominal avec injection"
+                  }
+                ]
+              },
+              {
+                "name": "Causes urinaires",
+                "items": [
+                  {
+                    "text": "Lithiase rénale/colique néphrétique",
+                    "cause": "Arguments POUR:\n\t□ Douleur intense brutale\n\t□ Irradiation possible vers organes génitaux\nArguments CONTRE:\n\t□ Pas de symptômes urinaires\n\t□ Localisation non lombaire\n\t□ Pas d'hématurie",
+                    "test": "→ Bandelette urinaire, ECBU, US rénal ou CT low-dose"
+                  },
+                  {
+                    "text": "Pyélonéphrite",
+                    "cause": "Arguments POUR:\n\t□ Douleur unilatérale\n\t□ Nausées\nArguments CONTRE:\n\t□ Absence de fièvre\n\t□ Pas de symptômes urinaires\n\t□ Loges rénales non douloureuses",
+                    "test": "→ Bandelette urinaire, ECBU, NFS, CRP"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m5",
+          "text": "Propose une consultation immédiate aux urgences de gynécologie",
+          "binaryOnly": true
+        },
+        {
+          "id": "m6",
+          "text": "Management en général",
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "images": [
+      {
+        "id": "img1",
+        "title": "Échographie transvaginale - Torsion ovarienne",
+        "description": "Image US montrant un ovaire élargi avec interruption du flux sanguin",
+        "filename": "grilles_generees/html/images/douleur-abdo-4-img1.jpg"
+      },
+      {
+        "id": "img2",
+        "title": "Schéma anatomique - Torsion ovarienne",
+        "description": "Illustration montrant la torsion du pédicule ovarien et ses conséquences",
+        "filename": "grilles_generees/html/images/douleur-abdo-4-img2.jpg"
+      },
+      {
+        "id": "img3",
+        "title": "Acanthosis nigricans",
+        "description": "Photo clinique montrant une tache foncée typique sous les aisselles",
+        "filename": "grilles_generees/html/images/douleur-abdo-4-img3.jpg"
+      },
+      {
+        "id": "img4",
+        "title": "Algorithme diagnostique - Douleur abdominale chez la femme en âge de procréer",
+        "description": "Arbre décisionnel pour la prise en charge aux urgences",
+        "filename": "grilles_generees/html/images/douleur-abdo-4-img4.jpg"
+      }
+    ],
+    "scenarioPatienteStandardisee": {
+      "titre": "Scénario pour la patiente standardisée",
+      "nom": "Marie Gerber",
+      "age": "30 ans",
+      "contexte": "Employée de commerce consultant aux urgences pour douleur abdominale intense",
+      "motifConsultation": {
+        "plaintePrincipale": "J'ai terriblement mal au ventre",
+        "autreChose": "Je ne sais pas ce qui m'arrive, mais j'ai soudainement senti une terrible douleur au bas du ventre ce matin alors que je faisais mes courses"
+      },
+      "histoireActuelle": {
+        "symptomePrincipal": [
+          "Douleur intense persistante",
+          "Localisation : QIG",
+          "Qualité : coup de poignard",
+          "Quantité/intensité : 10/10",
+          "Irradiation : irradiation vers les parties génitales",
+          "Chronologie : survenue soudainement, persistant depuis la survenue, 3-4 épisodes similaires par le passé qui se sont résolus spontanément",
+          "Développement : péjoration graduelle de la douleur",
+          "Circonstances de survenue : survenue alors qu'elle était en train de faire ses courses, n'a pas fait de mouvement particulier",
+          "Facteurs atténuants : aucun",
+          "Facteurs déclenchants/aggravants : les mouvements"
+        ],
+        "symptomesAssocies": [
+          "Nausées et vomissement"
+        ],
+        "reponseAuxSymptomes": [
+          "Est venue directement aux urgences"
+        ],
+        "representationMaladie": [
+          "A l'impression que quelque chose s'est déchiré à l'intérieur d'elle"
+        ]
+      },
+      "anamneseSystemes": {
+        "generale": [
+          "Obésité",
+          "Fatigue"
+        ],
+        "psychiatrique": [
+          "Est suivie par un psychologue pour une dépression et de l'anxiété depuis plus de 2 ans"
+        ],
+        "digestive": [
+          "Nausées et vomissement depuis la survenue de la douleur seulement",
+          "2 épisodes de vomissement alimentaire"
+        ],
+        "gynecologique": [
+          "G0P0",
+          "Menstruations irrégulières depuis son adolescence",
+          "Dernières règles il y a environ 1 mois"
+        ],
+        "dermatologique": [
+          "Importante acné",
+          "Tache foncée sous les aisselles"
+        ]
+      },
+      "habitudes": {
+        "alimentation": "Équilibrée",
+        "activitePhysique": "Sédentaire",
+        "tabac": "Non fumeuse",
+        "alcool": "Occasionnellement, 1-2 verres de vin par semaine",
+        "drogues": "Aucune"
+      },
+      "histoireMedicale": [
+        "Patiente connue pour une obésité (BMI: 30), mariée, nulligeste, nullipare (0G0P)",
+        "Elle et son mari tentent d'avoir un enfant depuis >2 ans",
+        "Pas d'antécédents médico-chirurgicaux notables",
+        "Aucune hospitalisation préalable",
+        "Elle ne prend pas de contraception",
+        "Actuellement suivie par un psychologue pour une dépression et de l'anxiété",
+        "Est suivie par un dermatologue pour de l'acné sévère et persistante depuis l'adolescence",
+        "Elle a essayé plusieurs traitements qui n'ont pas amélioré son acné",
+        "Elle essaye actuellement un traitement topique à base de vitamines",
+        "Outre cela, elle ne prend pas de médicament usuellement",
+        "Ses vaccins sont à jour",
+        "Elle n'est connue pour aucune allergie",
+        "Anamnèse familiale : Mère en BSH, Père en BSH, pas de sœur, pas de frère, Grand-père décédé d'un AVC à l'âge de 75 ans"
+      ],
+      "informationsPersonnelles": {
+        "profession": "Employée de commerce",
+        "poids": "Obèse (BMI 30-40)",
+        "orientationSexuelle": "Hétérosexuelle",
+        "etatCivil": "Mariée",
+        "etatEsprit": "Algique et anxieuse"
+      },
+      "simulation": {
+        "durantEntretien": [
+          "Penchée en avant en position algique, anxieuse, nauséeuse"
+        ],
+        "durantStatus": [
+          "Douleurs intense lors de la palpation du quadrant inférieur gauche avec défense et détente",
+          "Pas de douleur lors des différents tests (signe du psoas, signe de l'obturateur négatifs)"
+        ]
+      }
+    },
+    "informationsExpert": {
+      "titre": "Informations de l'expert",
+      "dossierMedical": "Anamnèse actuelle : Patiente de 30 ans, connue pour une obésité (BMI: 30), dépression et acné, consulte suite à l'apparition subite d'une douleur abdominale au quadrant inférieur gauche, décrite comme des coups de couteaux à 10/10 avec irradiation vers les parties génitales. Les douleurs sont péjorées par le mouvement et aucune position soulageant les douleurs. Elle n'a pas pris d'analgésiques. La patiente mentionne également des nausées et vomissements, survenues en même temps que les douleurs. Le reste de l'anamnèse par système est sans particularité, notamment pas de dysurie ni de diarrhées/constipation. Elle mentionne avoir eu 3-4 épisodes similaires par le passé qui se sont résolus spontanément en quelques minutes. Pas de médication, notamment pas de contraception, la patiente étant actuellement en train d'essayer de concevoir un enfant avec son mari. Ses dernières menstruations datent d'environ 1 mois et un test de grossesse urinaire est négatif.",
+      "rolesInterventions": [
+        "Informer l'étudiant que le test de grossesse est négatif si il/elle le demande",
+        "Si l'étudiant demande un laboratoire sanguin : l'expert demande à l'étudiant de préciser ce qu'il/elle veut comme examen, puis lui dit que les résultats seront disponibles dans environ 40 min"
+      ],
+      "pointsCles": [
+        "Tableau très évocateur de torsion ovarienne",
+        "Épisodes similaires antérieurs = torsion-détorsion spontanée",
+        "Syndrome des ovaires polykystiques probable (obésité, acné, hirsutisme, infertilité)",
+        "Urgence chirurgicale nécessitant une prise en charge rapide",
+        "Test de grossesse systématique chez toute femme en âge de procréer"
+      ],
+      "pieges": [
+        "Ne pas oublier le test de grossesse même si la patiente dit ne pas prendre de contraception",
+        "Penser à l'examen gynécologique même aux urgences",
+        "Ne pas se limiter à l'examen abdominal",
+        "La douleur peut être latéralisée à gauche même si classiquement à droite pour l'appendicite"
+      ]
+    },
+    "theoriePratique": {
+      "titre": "Théorie pratique concernant la vignette",
+      "sections": [
+        {
+          "titre": "Prise en charge aux urgences d'un abdomen aigu chez une femme en âge de procréer",
+          "contenu": "1. Exclure une urgence vitale :",
+          "points": [
+            "Chez une femme en âge de procréer qui se présente aux urgences pour une douleur abdominale, il faut tout d'abord exclure une urgence vitale",
+            "Commencer par s'assurer que la patiente soit stable hémodynamiquement et stabiliser si cela n'est pas le cas (voie veineuse, O2, monitoring, résuscitation)",
+            "Exclure une hémorragie interne : rechercher une éventuelle notion de traumatisme et effectuer un US FAST si présente",
+            "Exclure une grossesse extra-utérine : Une fois la patiente stabilisée/si la patiente est stable : faire un test de grossesse urinaire ou sanguin (mesure de hCG), car il faut exclure une grossesse extra-utérine. Si une grossesse est présente, s'assurer qu'elle soit bien intra-utérine (effectuer un US pour visualiser la grossesse)"
+          ]
+        },
+        {
+          "titre": "Explorer d'autres DD",
+          "contenu": "Une fois une urgence vitale exclue nous pouvons explorer d'autres DD possibles. La patiente présente des signes cliniques faisant suspecter un ovaire polykystique (cf. 'Clinique d'ovaire polykystique'), condition qui prédispose la patiente à une torsion ovarienne.",
+          "points": [
+            "Cause ovarienne : effectuer un US doppler abdominal et transvaginal. Dans le cas d'une torsion ovarienne, l'ovaire atteint est élargi et nous pouvons observer l'absence de circulation veineuse. L'ovaire élargi peut parfois se présenter comme une masse douloureuse à la palpation abdominale",
+            "Causes rénales (calcul rénal, pyélonéphrite) : faire un sédiment urinaire",
+            "Cause infectieuse/inflammatoire (abcès tubo-ovarien, maladie pelvienne inflammatoire) : FSC, examen gynécologique",
+            "Cause gastro-intestinale (appendicite) : US montrerait un 'target sign'"
+          ]
+        },
+        {
+          "titre": "Torsion ovarienne",
+          "contenu": "Étiologie :",
+          "points": [
+            "Élargissement ovarien : le plus souvent dû à un kyste ovarien (par ex. Syndrome d'ovaire polykystique) / tumeur / hyperstimulation",
+            "Antécédent de chirurgie pelvienne",
+            "Activité physique intense"
+          ]
+        },
+        {
+          "titre": "Clinique torsion ovarienne",
+          "points": [
+            "Douleurs abdominales unilatérales, d'apparition soudaine",
+            "Le plus souvent chez les femmes en âge de procréer mais peut survenir à tout âge",
+            "Nausées, vomissements",
+            "Masse palpable, douleur à la palpation",
+            "Une torsion partielle peut se manifester comme douleur intermittente qui se résout spontanément"
+          ]
+        },
+        {
+          "titre": "Clinique d'ovaire polykystique",
+          "points": [
+            "Menstruations irrégulières",
+            "Infertilité",
+            "Obésité",
+            "Hirsutisme",
+            "Alopécie androgénique",
+            "Acné vulgaris",
+            "Acanthosis nigricans (taches foncées sous les aisselles)"
+          ]
+        },
+        {
+          "titre": "DD",
+          "points": [
+            "Grossesse extra-utérine",
+            "Abcès tubo-ovarien",
+            "Appendicite",
+            "Diverticulite",
+            "Calcul rénal"
+          ]
+        },
+        {
+          "titre": "Diagnostic",
+          "points": [
+            "Exclure une grossesse extra-utérine : test de grossesse (βHCG urinaire ou sanguin)",
+            "Exclure une cause inflammatoire/infectieuse : labo sanguin",
+            "Exclure un calcul rénal : sédiment urinaire",
+            "US doppler : transvaginal et transabdominal : ovaire élargi, interruption de la circulation veineuse",
+            "US appendice : exclure une appendicite : absence du 'target sign'",
+            "IRM : si US non conclusif"
+          ]
+        },
+        {
+          "titre": "Traitement",
+          "contenu": "Laparoscopie exploratrice en urgence pour une détorsion"
+        },
+        {
+          "titre": "Prise en charge aux urgences",
+          "contenu": "L'anamnèse, l'examen clinique ainsi que l'US doppler font suspecter une torsion ovarienne chez cette patiente. La prise en charge aux urgences consiste à référer la patiente aux urgences gynécologiques."
+        }
+      ],
+      "rappelsTherapeutiques": [
+        "Analgésie adaptée (morphiniques si EVA 10/10)",
+        "Mise en place d'une voie veineuse",
+        "Prémédication avant chirurgie selon protocole",
+        "Antibioprophylaxie péri-opératoire"
+      ],
+      "examensComplementaires": [
+        "Test de grossesse urinaire ou sanguin (βHCG) : systématique",
+        "FSC, CRP : recherche syndrome inflammatoire",
+        "US doppler pelvien : transvaginal et transabdominal",
+        "Bandelette urinaire : exclure infection urinaire",
+        "CT abdomino-pelvien si US non contributif"
+      ]
+    }
+  }
+}

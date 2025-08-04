@@ -1,0 +1,243 @@
+{
+  "title": "Douleur thoracique III",
+  "context": {
+    "setting": "Service d'urgence",
+    "patient": "Homme de 23 ans avec douleur thoracique aiguë",
+    "vitals": {
+      "ta": "114/76 mmHg",
+      "fc": "83 bpm",
+      "fr": "20/min"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction et tâche",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Identification des symptômes",
+          "patientComment": "douleurs dans la poitrine",
+          "binaryOnly": true
+        },
+        {
+          "id": "a3",
+          "text": "Début des symptômes",
+          "patientComment": "depuis quelques heures, s'aggrave constamment"
+        },
+        {
+          "id": "a4",
+          "text": "Caractère de la douleur",
+          "patientComment": "sourd, oppressant, légèrement ondulant"
+        },
+        {
+          "id": "a5",
+          "text": "Localisation de la douleur",
+          "patientComment": "centre de la poitrine, plutôt à droite"
+        },
+        {
+          "id": "a6",
+          "text": "Intensité de la douleur",
+          "patientComment": "7/10"
+        },
+        {
+          "id": "a7",
+          "text": "Douleur liée à la respiration",
+          "patientComment": "non"
+        },
+        {
+          "id": "a8",
+          "text": "Irradiation de la douleur",
+          "patientComment": "un peu dans la nuque"
+        },
+        {
+          "id": "a9",
+          "text": "Facteurs d'influence",
+          "patientComment": "toujours aussi intense"
+        },
+        {
+          "id": "a10",
+          "text": "Traumatisme thoracique",
+          "patientComment": "non"
+        },
+        {
+          "id": "a11",
+          "text": "Événement déclenchant",
+          "patientComment": "a commencé en jouant au basketball"
+        },
+        {
+          "id": "a12",
+          "text": "Dyspnée",
+          "patientComment": "légère"
+        },
+        {
+          "id": "a13",
+          "text": "Perte de connaissance",
+          "patientComment": "non"
+        },
+        {
+          "id": "a14",
+          "text": "Toux",
+          "patientComment": "non"
+        },
+        {
+          "id": "a15",
+          "text": "Infection",
+          "patientComment": "non"
+        },
+        {
+          "id": "a16",
+          "text": "Maladie cardiaque connue",
+          "patientComment": "non"
+        },
+        {
+          "id": "a17",
+          "text": "Asthme",
+          "patientComment": "dans l'enfance, maintenant seulement très rarement"
+        },
+        {
+          "id": "a18",
+          "text": "Antécédents de TVP/EP",
+          "patientComment": "non"
+        },
+        {
+          "id": "a19",
+          "text": "Facteurs de risque d'embolie pulmonaire (score de Wells)",
+          "details": [
+            "Gonflement/douleur mollet (non)",
+            "Voyage récent (non)",
+            "Chirurgie récente (non)",
+            "Cancer actif (non)",
+            "Antécédents familiaux de thrombophilie (non)"
+          ]
+        },
+        {
+          "id": "a20",
+          "text": "Perte de poids, fièvre, sueurs nocturnes",
+          "patientComment": "non"
+        },
+        {
+          "id": "a21",
+          "text": "Anamnèse personnelle",
+          "patientComment": "rien de particulier"
+        },
+        {
+          "id": "a22",
+          "text": "Toxiques",
+          "patientComment": "environ 5 cigarettes par jour, alcool le week-end, pas de drogues"
+        },
+        {
+          "id": "a23",
+          "text": "Médicaments",
+          "patientComment": "rarement Ventolin si nécessaire"
+        },
+        {
+          "id": "a24",
+          "text": "Allergies",
+          "patientComment": "pollen"
+        },
+        {
+          "id": "a25",
+          "text": "Anamnèse familiale",
+          "patientComment": "mère asthmatique, père en bonne santé, fratrie en bonne santé"
+        },
+        {
+          "id": "a26",
+          "text": "Anamnèse sociale",
+          "patientComment": "étudiant"
+        },
+        {
+          "id": "a27",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "binaryOnly": false,
+          "details": [
+            "Anamnèse générale ciblée et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Inspection couleur peau, bouche",
+          "patientComment": "un peu pâle, bouche normale"
+        },
+        {
+          "id": "e2",
+          "text": "État cardiopulmonaire",
+          "patientComment": "tachycardie/tachypnée, murmure vésiculaire normal à gauche, murmure vésiculaire absent à droite, percussion hypersonore"
+        },
+        {
+          "id": "e3",
+          "text": "Inspection des jambes",
+          "patientComment": "normal"
+        },
+        {
+          "id": "e4",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "binaryOnly": false,
+          "details": [
+            "Status général ciblé et bien conduit"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Énonce le diagnostic de suspicion",
+          "patientComment": "pneumothorax spontané"
+        },
+        {
+          "id": "m2",
+          "text": "Nomme au moins 2-3 diagnostics différentiels",
+          "details": [
+            "Embolie pulmonaire",
+            "Crise d'asthme",
+            "Origine musculo-squelettique",
+            "Cardiomyopathie"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Nomme les examens diagnostiques",
+          "details": [
+            "Radiographie thoracique (image typique de pneumothorax)",
+            "Laboratoire (formule sanguine, CRP, troponine, CK)",
+            "Gaz du sang artériel",
+            "ECG"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Thérapie",
+          "details": [
+            "Administration d'O2",
+            "Traitement symptomatique de la douleur",
+            "Hospitalisation pour surveillance",
+            "En cas de signes de pneumothorax sous tension : drainage thoracique"
+          ]
+        },
+        {
+          "id": "m5",
+          "text": "Évaluation globale de la qualité de la prise en charge",
+          "binaryOnly": false,
+          "details": [
+            "Prise en charge générale cohérente et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    }
+  }
+}

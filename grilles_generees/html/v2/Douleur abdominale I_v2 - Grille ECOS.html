@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Douleur abdominale I - Grille ECOS</title>
+<style>
+body { font-family: Arial, sans-serif; margin: 20px; background-color: #f5f5f5; }
+.container { max-width: 1200px; margin: 0 auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); }
+.header { background: #2c5aa0; color: white; padding: 15px; margin: -20px -20px 20px -20px; border-radius: 8px 8px 0 0; }
+.context-info { background: rgba(255, 255, 255, 0.95); padding: 15px; border-radius: 8px; margin-bottom: 15px; }
+.context-setting { font-size: 1.1em; font-weight: bold; color: #333; margin-bottom: 8px; }
+.context-patient { color: #555; line-height: 1.4; }
+.section { margin-bottom: 30px; border: 2px solid #ddd; border-radius: 8px; overflow: hidden; background-color: #ffffff; }
+.section-header { background: #f8f9fa; padding: 15px; font-weight: bold; font-size: 18px; border-bottom: 1px solid #ddd; display: flex; justify-content: space-between; align-items: center; }
+.section-content { padding: 15px; background-color: #ffffff; }
+.header-row { display: grid; grid-template-columns: 2fr 80px 80px 80px 80px; gap: 10px; padding: 10px 0; border-bottom: 2px solid #ddd; font-weight: bold; text-align: center; color: #333333; }
+.header-row div:first-child { text-align: left; }
+.criteria-row { display: grid; grid-template-columns: 2fr 80px 80px 80px 80px; gap: 10px; align-items: start; padding: 15px 0 15px 5px; border-bottom: 1px solid #eeeeee; }
+.criteria-text { font-weight: 500; }
+.sub-criteria { font-size: 0.9em; color: #666; margin-top: 5px; padding-left: 18px; line-height: 1.2; }
+.checkbox-group { text-align: center; }
+.points-display { text-align: center; font-weight: bold; color: #2c5aa0; font-size: 18px; }
+input[type="radio"] { cursor: pointer; transform: scale(1.2); }
+.score { font-weight: bold; color: hsl(216, 57%, 40%); font-size: 18px; }
+.vital-signs { margin-top: 10px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px; font-size: 0.9em; }
+.vital-sign { text-align: center; background: #416caa; padding: 10px; border-radius: 5px; }
+.vital-sign-label { color: #eeeeee; }
+.vital-sign-value { color: white; margin-top: 2px; }
+.communication-section { display: grid; grid-template-columns: 2fr 80px 80px 80px 80px 80px; gap: 10px; align-items: start; padding: 15px 0 15px 5px; border-bottom: 1px solid #eee; }
+.scale-header { display: grid; grid-template-columns: 2fr 80px 80px 80px 80px 80px; gap: 10px; font-weight: bold; text-align: center; margin-bottom: 10px; padding-bottom: 10px; border-bottom: 2px solid #ddd; }
+.scale-header div:first-child { text-align: left; }
+.communication-text { font-weight: 500; }
+.communication-desc { font-size: 0.85em; color: #666; margin-top: 5px; font-style: italic; }
+.total-sections { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 30px; }
+.total-section { display: flex; flex-direction: column; justify-content: space-between; text-align: center; background: #f0f8ff; border: 1px solid #ddd; border-radius: 8px; }
+.total-label { background: #f8f9fa; padding: 5px; font-weight: bold; font-size: 20px; border-bottom: 1px solid #ddd; }
+.total-body { flex: 1; display: flex; align-items: center; justify-content: center; padding: 5px; }
+.total-score, .total-note-globale { font-size: 56px; font-weight: bold; line-height: 1; }
+.grade-scale { margin-top: 20px; padding: 15px; background: #f8f9fa; border-radius: 8px; }
+.dd-section, .therapy-section { margin-top: 10px; padding: 10px; background: #f0f4f8; border-radius: 5px; font-size: 0.9em; }
+.dd-category, .therapy-category { margin-bottom: 10px; }
+.dd-category-name, .therapy-title { font-weight: bold; color: #2c5aa0; margin-bottom: 5px; }
+.dd-items, .therapy-content { margin-left: 15px; line-height: 1.4; white-space: pre-wrap; }
+.dd-item { margin-bottom: 3px; }
+@media print {
+  body { margin: 10mm; background: white; }
+  .container { box-shadow: none; max-width: none; }
+  .section { page-break-inside: avoid; }
+  @page { size: A4; margin: 10mm 9mm 10mm 10mm; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="header">
+<h1>Grille d'évaluation ECOS - Douleur abdominale I</h1>
+<div class="context-info">
+<div class="context-setting">📍 Cabinet de médecine générale</div>
+<div class="context-patient">👤 Mme Hebel, 73 ans, se présente chez le médecin généraliste pour douleurs abdominales</div>
+</div>
+</div>
+<div class="section">
+<div class="section-header">
+<span>Anamnèse (40%)</span>
+<span class="score">Score : <span id="aScore">0</span>/32</span>
+</div>
+<div class="section-content">
+<div class="header-row">
+<div>Critères</div><div>Oui</div><div>±</div><div>Non</div><div>Points</div>
+</div>
+<div class="criteria-row">
+<div>
+<div class="criteria-text">1. Présentation avec nom, fonction et tâche</div>
+</div>
+<div class="checkbox-group"><input type="radio" name="a1" value="2" onchange="updateScore('a1', this)" /></div>
+<div class="checkbox-group" style="visibility: hidden;"><input type="radio" disabled /></div>
+<div class="checkbox-group"><input type="radio" name="a1" value="0" onchange="updateScore('a1', this)" /></div>
+<div class="points-display" id="points-a1">0</div>
+</div>
+<div class="criteria-row">
+<div>
+<div class="criteria-text">2. Identification du symptôme principal</div>
+</div>
+<div class="checkbox-group"><input type="radio" name="a2" value="2" onchange="updateScore('a2', this)" /></div>
+<div class="checkbox-group" style="visibility: hidden;"><input type="radio" disabled /></div>
+<div class="checkbox-group"><input type="radio" name="a2" value="0" onchange="updateScore('a2', this)" /></div>
+<div class="points-display" id="points-a2">0</div>
+</div>
+<div class="criteria-row">
+<div>
+<div class="criteria-text">3. Caractérisation de la douleur (OPQRST)</div>
+<div class="sub-criteria">Localisation précise [bas ventre à gauche - fosse iliaque gauche]</div>
+<div class="sub-criteria">Type/caractère [piquant/en coup de poignard]</div>
+<div class="sub-criteria">Intensité [6/10 sur l'échelle]</div>
+<div class="sub-criteria">Irradiation [non]</div>
+</div>
+<div class="checkbox-group"><input type="radio" name="a3" value="2" onchange="updateScore('a3', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="a3" value="1" onchange="updateScore('a3', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="a3" value="0" onchange="updateScore('a3', this)" /></div>
+<div class="points-display" id="points-a3">0</div>
+</div>
+<div class="criteria-row">
+<div>
+<div class="criteria-text">4. Évolution temporelle</div>
+<div class="sub-criteria">Début [depuis 2 jours]</div>
+<div class="sub-criteria">Mode d'apparition [relativement soudain]</div>
+<div class="sub-criteria">Évolution [s'aggravant progressivement]</div>
+<div class="sub-criteria">Périodicité [constante]</div>
+</div>
+<div class="checkbox-group"><input type="radio" name="a4" value="2" onchange="updateScore('a4', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="a4" value="1" onchange="updateScore('a4', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="a4" value="0" onchange="updateScore('a4', this)" /></div>
+<div class="points-display" id="points-a4">0</div>
+</div>
+<div class="criteria-row">
+<div>
+<div class="criteria-text">5. Facteurs modulateurs</div>
+<div class="sub-criteria">Facteurs aggravants [aucun identifié]</div>
+<div class="sub-criteria">Facteurs améliorants [aucune amélioration]</div>
+<div class="sub-criteria">Position antalgique [non mentionnée]</div>
+<div class="sub-criteria">Relation avec l'alimentation [pas de changement alimentaire]</div>
+</div>
+<div class="checkbox-group"><input type="radio" name="a5" value="2" onchange="updateScore('a5', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="a5" value="1" onchange="updateScore('a5', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="a5" value="0" onchange="updateScore('a5', this)" /></div>
+<div class="points-display" id="points-a5">0</div>
+</div>
+<div class="criteria-row">
+<div>
+<div class="criteria-text">6. Symptômes digestifs associés</div>
+<div class="sub-criteria">Nausées [oui]</div>
+<div class="sub-criteria">Vomissements [non mentionnés]</div>
+<div class="sub-criteria">Transit intestinal - diarrhée [oui]</div>
+<div class="sub-criteria">Flatulences [oui]</div>
+<div class="sub-criteria">Constipation [non]</div>
+</div>
+<div class="checkbox-group"><input type="radio" name="a6" value="2" onchange="updateScore('a6', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="a6" value="1" onchange="updateScore('a6', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="a6" value="0" onchange="updateScore('a6', this)" /></div>
+<div class="points-display" id="points-a6">0</div>
+</div>
+<div class="criteria-row">
+<div>
+<div class="criteria-text">7. Recherche de signes d'alarme</div>
+<div class="sub-criteria">Fièvre [non mentionnée]</div>
+<div class="sub-criteria">Perte de poids inexpliquée [non]</div>
+<div class="sub-criteria">Symptômes B (sueurs nocturnes) [non]</div>
+<div class="sub-criteria">Sang dans les selles [non mentionné]</div>
+<div class="sub-criteria">Masse palpable [à rechercher]</div>
+</div>
+<div class="checkbox-group"><input type="radio" name="a7" value="2" onchange="updateScore('a7', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="a7" value="1" onchange="updateScore('a7', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="a7" value="0" onchange="updateScore('a7', this)" /></div>
+<div class="points-display" id="points-a7">0</div>
+</div>
+<div class="criteria-row">
+<div>
+<div class="criteria-text">8. Anamnèse urogynécologique</div>
+<div class="sub-criteria">Modifications mictionnelles [non]</div>
+<div class="sub-criteria">Dysurie, pollakiurie [non]</div>
+<div class="sub-criteria">Hématurie [non]</div>
+<div class="sub-criteria">Pertes vaginales anormales [non applicables - ménopausée]</div>
+<div class="sub-criteria">Métrorragies post-ménopausiques [non]</div>
+</div>
+<div class="checkbox-group"><input type="radio" name="a8" value="2" onchange="updateScore('a8', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="a8" value="1" onchange="updateScore('a8', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="a8" value="0" onchange="updateScore('a8', this)" /></div>
+<div class="points-display" id="points-a8">0</div>
+</div>
+<div class="criteria-row">
+<div>
+<div class="criteria-text">9. Antécédents obstétricaux et gynécologiques</div>
+<div class="sub-criteria">Parité [2 enfants nés normalement]</div>
+<div class="sub-criteria">Ménopause [oui - âge 73 ans]</div>
+<div class="sub-criteria">Antécédents gynécologiques [non mentionnés]</div>
+<div class="sub-criteria">Hystérectomie [non mentionnée]</div>
+</div>
+<div class="checkbox-group"><input type="radio" name="a9" value="2" onchange="updateScore('a9', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="a9" value="1" onchange="updateScore('a9', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="a9" value="0" onchange="updateScore('a9', this)" /></div>
+<div class="points-display" id="points-a9">0</div>
+</div>
+<div class="criteria-row">
+<div>
+<div class="criteria-text">10. Antécédents médicaux personnels</div>
+<div class="sub-criteria">Pathologies chroniques [hypertension artérielle]</div>
+<div class="sub-criteria">Chirurgies abdominales antérieures [non]</div>
+<div class="sub-criteria">Coloscopie de dépistage [il y a 5 ans - normale]</div>
+<div class="sub-criteria">Antécédents de diverticulose [non mentionnés]</div>
+</div>
+<div class="checkbox-group"><input type="radio" name="a10" value="2" onchange="updateScore('a10', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="a10" value="1" onchange="updateScore('a10', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="a10" value="0" onchange="updateScore('a10', this)" /></div>
+<div class="points-display" id="points-a10">0</div>
+</div>
+<div class="criteria-row">
+<div>
+<div class="criteria-text">11. Traitement actuel et allergies</div>
+<div class="sub-criteria">Médicaments actuels [Valsartan pour hypertension]</div>
+<div class="sub-criteria">Allergies médicamenteuses [aucune]</div>
+<div class="sub-criteria">Automédication récente [non mentionnée]</div>
+</div>
+<div class="checkbox-group"><input type="radio" name="a11" value="2" onchange="updateScore('a11', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="a11" value="1" onchange="updateScore('a11', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="a11" value="0" onchange="updateScore('a11', this)" /></div>
+<div class="points-display" id="points-a11">0</div>
+</div>
+<div class="criteria-row">
+<div>
+<div class="criteria-text">12. Habitudes de vie et facteurs de risque</div>
+<div class="sub-criteria">Tabagisme [non]</div>
+<div class="sub-criteria">Consommation d'alcool [1 verre de vin par jour]</div>
+<div class="sub-criteria">Toxicomanie [non]</div>
+<div class="sub-criteria">Activité physique [non mentionnée]</div>
+<div class="sub-criteria">Régime alimentaire (fibres) [non exploré]</div>
+</div>
+<div class="checkbox-group"><input type="radio" name="a12" value="2" onchange="updateScore('a12', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="a12" value="1" onchange="updateScore('a12', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="a12" value="0" onchange="updateScore('a12', this)" /></div>
+<div class="points-display" id="points-a12">0</div>
+</div>
+<div class="criteria-row">
+<div>
+<div class="criteria-text">13. Anamnèse familiale</div>
+<div class="sub-criteria">Cancer colorectal familial</div>
+<div class="sub-criteria">Maladies inflammatoires intestinales</div>
+<div class="sub-criteria">Diverticulose familiale</div>
+</div>
+<div class="checkbox-group"><input type="radio" name="a13" value="2" onchange="updateScore('a13', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="a13" value="1" onchange="updateScore('a13', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="a13" value="0" onchange="updateScore('a13', this)" /></div>
+<div class="points-display" id="points-a13">0</div>
+</div>
+<div class="criteria-row">
+<div>
+<div class="criteria-text">14. Contexte psychosocial</div>
+<div class="sub-criteria">Situation familiale [vit avec son époux]</div>
+<div class="sub-criteria">Autonomie [autonome]</div>
+<div class="sub-criteria">Stress récent [non mentionné]</div>
+<div class="sub-criteria">Support social [présent]</div>
+</div>
+<div class="checkbox-group"><input type="radio" name="a14" value="2" onchange="updateScore('a14', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="a14" value="1" onchange="updateScore('a14', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="a14" value="0" onchange="updateScore('a14', this)" /></div>
+<div class="points-display" id="points-a14">0</div>
+</div>
+<div class="criteria-row">
+<div>
+<div class="criteria-text">15. Anamnèse par systèmes</div>
+<div class="sub-criteria">Symptômes cardiovasculaires [non]</div>
+<div class="sub-criteria">Symptômes respiratoires [non]</div>
+<div class="sub-criteria">Symptômes neurologiques [non]</div>
+<div class="sub-criteria">Symptômes articulaires [non]</div>
+</div>
+<div class="checkbox-group"><input type="radio" name="a15" value="2" onchange="updateScore('a15', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="a15" value="1" onchange="updateScore('a15', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="a15" value="0" onchange="updateScore('a15', this)" /></div>
+<div class="points-display" id="points-a15">0</div>
+</div>
+<div class="criteria-row">
+<div>
+<div class="criteria-text">16. Évaluation globale de la qualité de l'anamnèse</div>
+<div class="sub-criteria">Anamnèse complète et ciblée sur la pathologie digestive</div>
+</div>
+<div class="checkbox-group"><input type="radio" name="a16" value="2" onchange="updateScore('a16', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="a16" value="1" onchange="updateScore('a16', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="a16" value="0" onchange="updateScore('a16', this)" /></div>
+<div class="points-display" id="points-a16">0</div>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-header">
+<span>Examen clinique (30%)</span>
+<span class="score">Score : <span id="eScore">0</span>/22</span>
+</div>
+<div class="section-content">
+<div class="header-row">
+<div>Critères</div><div>Oui</div><div>±</div><div>Non</div><div>Points</div>
+</div>
+<div class="criteria-row">
+<div>
+<div class="criteria-text">1. Inspection générale et signes vitaux</div>
+<div class="sub-criteria">État général [conservé]</div>
+<div class="sub-criteria">Position antalgique [non]</div>
+<div class="sub-criteria">Faciès douloureux [probable]</div>
+<div class="sub-criteria">Signes vitaux [température à mesurer]</div>
+</div>
+<div class="checkbox-group"><input type="radio" name="e1" value="2" onchange="updateScore('e1', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="e1" value="1" onchange="updateScore('e1', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="e1" value="0" onchange="updateScore('e1', this)" /></div>
+<div class="points-display" id="points-e1">0</div>
+</div>
+<div class="criteria-row">
+<div>
+<div class="criteria-text">2. Inspection abdominale</div>
+<div class="sub-criteria">Distension abdominale [non]</div>
+<div class="sub-criteria">Asymétrie [non]</div>
+<div class="sub-criteria">Cicatrices [absentes]</div>
+<div class="sub-criteria">Péristaltisme visible [non]</div>
+<div class="sub-criteria">Circulation collatérale [non]</div>
+</div>
+<div class="checkbox-group"><input type="radio" name="e2" value="2" onchange="updateScore('e2', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="e2" value="1" onchange="updateScore('e2', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="e2" value="0" onchange="updateScore('e2', this)" /></div>
+<div class="points-display" id="points-e2">0</div>
+</div>
+<div class="criteria-row">
+<div>
+<div class="criteria-text">3. Auscultation abdominale</div>
+<div class="sub-criteria">Bruits hydroaériques [normaux]</div>
+<div class="sub-criteria">Qualité (gargouillis, cliquetis) [normaux]</div>
+<div class="sub-criteria">Quantité (5-34/min) [normale]</div>
+<div class="sub-criteria">Souffles vasculaires [non]</div>
+</div>
+<div class="checkbox-group"><input type="radio" name="e3" value="2" onchange="updateScore('e3', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="e3" value="1" onchange="updateScore('e3', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="e3" value="0" onchange="updateScore('e3', this)" /></div>
+<div class="points-display" id="points-e3">0</div>
+</div>
+<div class="criteria-row">
+<div>
+<div class="criteria-text">4. Percussion abdominale</div>
+<div class="sub-criteria">Tympanisme généralisé [non]</div>
+<div class="sub-criteria">Matité déclive [non]</div>
+<div class="sub-criteria">Douleur à la percussion [fosse iliaque gauche]</div>
+<div class="sub-criteria">Signe du flot [négatif]</div>
+</div>
+<div class="checkbox-group"><input type="radio" name="e4" value="2" onchange="updateScore('e4', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="e4" value="1" onchange="updateScore('e4', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="e4" value="0" onchange="updateScore('e4', this)" /></div>
+<div class="points-display" id="points-e4">0</div>
+</div>
+<div class="criteria-row">
+<div>
+<div class="criteria-text">5. Palpation superficielle et profonde</div>
+<div class="sub-criteria">Douleur à la pression [fosse iliaque gauche]</div>
+<div class="sub-criteria">Résistance/masse palpable [résistance dans le quadrant inférieur gauche]</div>
+<div class="sub-criteria">Défense musculaire [non]</div>
+<div class="sub-criteria">Contracture abdominale [non]</div>
+</div>
+<div class="checkbox-group"><input type="radio" name="e5" value="2" onchange="updateScore('e5', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="e5" value="1" onchange="updateScore('e5', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="e5" value="0" onchange="updateScore('e5', this)" /></div>
+<div class="points-display" id="points-e5">0</div>
+</div>
+<div class="criteria-row">
+<div>
+<div class="criteria-text">6. Recherche de signes péritonéaux</div>
+<div class="sub-criteria">Douleur à la décompression (Blumberg) [non]</div>
+<div class="sub-criteria">Signe de Murphy [non applicable]</div>
+<div class="sub-criteria">Signe du psoas [négatif]</div>
+<div class="sub-criteria">Signe de l'obturateur [négatif]</div>
+<div class="sub-criteria">Signe de Rovsing [négatif]</div>
+</div>
+<div class="checkbox-group"><input type="radio" name="e6" value="2" onchange="updateScore('e6', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="e6" value="1" onchange="updateScore('e6', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="e6" value="0" onchange="updateScore('e6', this)" /></div>
+<div class="points-display" id="points-e6">0</div>
+</div>
+<div class="criteria-row">
+<div>
+<div class="criteria-text">7. Palpation des organes</div>
+<div class="sub-criteria">Foie [non palpable]</div>
+<div class="sub-criteria">Rate [non palpable]</div>
+<div class="sub-criteria">Reins [non palpables]</div>
+<div class="sub-criteria">Vessie [non distendue]</div>
+</div>
+<div class="checkbox-group"><input type="radio" name="e7" value="2" onchange="updateScore('e7', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="e7" value="1" onchange="updateScore('e7', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="e7" value="0" onchange="updateScore('e7', this)" /></div>
+<div class="points-display" id="points-e7">0</div>
+</div>
+<div class="criteria-row">
+<div>
+<div class="criteria-text">8. Examen des orifices herniaires</div>
+<div class="sub-criteria">Hernies inguinales [absentes]</div>
+<div class="sub-criteria">Hernie crurale [absente]</div>
+<div class="sub-criteria">Hernie ombilicale [absente]</div>
+</div>
+<div class="checkbox-group"><input type="radio" name="e8" value="2" onchange="updateScore('e8', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="e8" value="1" onchange="updateScore('e8', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="e8" value="0" onchange="updateScore('e8', this)" /></div>
+<div class="points-display" id="points-e8">0</div>
+</div>
+<div class="criteria-row">
+<div>
+<div class="criteria-text">9. Toucher rectal</div>
+<div class="sub-criteria">Tonus sphinctérien [normal]</div>
+<div class="sub-criteria">Masses rectales [absentes]</div>
+<div class="sub-criteria">Sang au doigtier [absent]</div>
+<div class="sub-criteria">Douglas douloureux [non]</div>
+</div>
+<div class="checkbox-group"><input type="radio" name="e9" value="2" onchange="updateScore('e9', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="e9" value="1" onchange="updateScore('e9', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="e9" value="0" onchange="updateScore('e9', this)" /></div>
+<div class="points-display" id="points-e9">0</div>
+</div>
+<div class="criteria-row">
+<div>
+<div class="criteria-text">10. Examen gynécologique si indiqué</div>
+<div class="sub-criteria">Toucher vaginal</div>
+<div class="sub-criteria">Mobilité utérine douloureuse</div>
+<div class="sub-criteria">Masses annexielles</div>
+</div>
+<div class="checkbox-group"><input type="radio" name="e10" value="2" onchange="updateScore('e10', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="e10" value="1" onchange="updateScore('e10', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="e10" value="0" onchange="updateScore('e10', this)" /></div>
+<div class="points-display" id="points-e10">0</div>
+</div>
+<div class="criteria-row">
+<div>
+<div class="criteria-text">11. Évaluation globale de la qualité de l'examen clinique</div>
+<div class="sub-criteria">Examen abdominal complet et systématique bien conduit</div>
+</div>
+<div class="checkbox-group"><input type="radio" name="e11" value="2" onchange="updateScore('e11', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="e11" value="1" onchange="updateScore('e11', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="e11" value="0" onchange="updateScore('e11', this)" /></div>
+<div class="points-display" id="points-e11">0</div>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-header">
+<span>Management (20%)</span>
+<span class="score">Score : <span id="mScore">0</span>/22</span>
+</div>
+<div class="section-content">
+<div class="header-row">
+<div>Critères</div><div>Oui</div><div>±</div><div>Non</div><div>Points</div>
+</div>
+<div class="criteria-row">
+<div>
+<div class="criteria-text">1. Diagnostic principal</div>
+</div>
+<div class="checkbox-group"><input type="radio" name="m1" value="2" onchange="updateScore('m1', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="m1" value="1" onchange="updateScore('m1', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="m1" value="0" onchange="updateScore('m1', this)" /></div>
+<div class="points-display" id="points-m1">0</div>
+</div>
+<div class="criteria-row">
+<div>
+<div class="criteria-text">2. Diagnostics différentiels</div>
+<div class="dd-section">
+<div class="dd-category">
+<div class="dd-category-name">Diagnostics différentiels à considérer</div>
+<div class="dd-items">
+<div class="dd-item">• Pathologie gynécologique (annexite, kyste ovarien compliqué)</div>
+<div class="dd-item">• Cystite/pyélonéphrite</div>
+<div class="dd-item">• Colite (maladie inflammatoire chronique intestinale - MICI)</div>
+<div class="dd-item">• Cancer colorectal</div>
+<div class="dd-item">• Colite ischémique</div>
+<div class="dd-item">• Appendicite (localisation atypique)</div>
+<div class="dd-item">• Hernie étranglée</div>
+<div class="dd-item">• Constipation sévère/fécalome</div>
+<div class="dd-item">• Syndrome de l'intestin irritable</div>
+<div class="dd-item">• Pathologie vasculaire (anévrisme aortique)</div>
+</div>
+</div>
+</div>
+</div>
+<div class="checkbox-group"><input type="radio" name="m2" value="2" onchange="updateScore('m2', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="m2" value="1" onchange="updateScore('m2', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="m2" value="0" onchange="updateScore('m2', this)" /></div>
+<div class="points-display" id="points-m2">0</div>
+</div>
+<div class="criteria-row">
+<div>
+<div class="criteria-text">3. Examens biologiques</div>
+<div class="sub-criteria">NFS avec formule [leucocytose attendue]</div>
+<div class="sub-criteria">CRP [élevée dans la diverticulite]</div>
+<div class="sub-criteria">VS si disponible</div>
+<div class="sub-criteria">Ionogramme, urée, créatinine</div>
+<div class="sub-criteria">Analyse d'urine (ECBU) [pour exclure infection urinaire]</div>
+<div class="sub-criteria">Test de grossesse si approprié</div>
+</div>
+<div class="checkbox-group"><input type="radio" name="m3" value="2" onchange="updateScore('m3', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="m3" value="1" onchange="updateScore('m3', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="m3" value="0" onchange="updateScore('m3', this)" /></div>
+<div class="points-display" id="points-m3">0</div>
+</div>
+<div class="criteria-row">
+<div>
+<div class="criteria-text">4. Examens d'imagerie</div>
+<div class="sub-criteria">Échographie abdominale [visualisation des diverticules enflammés, épaississement pariétal]</div>
+<div class="sub-criteria">CT abdominal avec contraste (gold standard)</div>
+<div class="sub-criteria">Radiographie abdominale si suspicion de perforation</div>
+<div class="sub-criteria">IRM si contre-indication au CT</div>
+</div>
+<div class="checkbox-group"><input type="radio" name="m4" value="2" onchange="updateScore('m4', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="m4" value="1" onchange="updateScore('m4', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="m4" value="0" onchange="updateScore('m4', this)" /></div>
+<div class="points-display" id="points-m4">0</div>
+</div>
+<div class="criteria-row">
+<div>
+<div class="criteria-text">5. Classification de la diverticulite</div>
+<div class="sub-criteria">Classification de Hinchey</div>
+<div class="sub-criteria">Diverticulite non compliquée</div>
+<div class="sub-criteria">Diverticulite compliquée (abcès, perforation, péritonite)</div>
+</div>
+<div class="checkbox-group"><input type="radio" name="m5" value="2" onchange="updateScore('m5', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="m5" value="1" onchange="updateScore('m5', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="m5" value="0" onchange="updateScore('m5', this)" /></div>
+<div class="points-display" id="points-m5">0</div>
+</div>
+<div class="criteria-row">
+<div>
+<div class="criteria-text">6. Prise en charge thérapeutique</div>
+<div class="therapy-section">
+<div class="therapy-category">
+<div class="therapy-title">Diverticulite légère (ambulatoire)</div>
+<div class="therapy-content">• Antibiothérapie orale 7-10 jours (amoxicilline-clavulanate ou ciprofloxacine + métronidazole)
+• Analgésie (paracétamol, éviter AINS)
+• Régime liquide puis pauvre en résidus
+• Repos digestif relatif
+• Application de froid sur la zone douloureuse</div>
+</div>
+<div class="therapy-category">
+<div class="therapy-title">Diverticulite modérée à sévère (hospitalisation)</div>
+<div class="therapy-content">• Mise à jeun stricte
+• Hydratation IV
+• Antibiothérapie IV (ceftriaxone + métronidazole)
+• Analgésie IV
+• Surveillance clinique et biologique</div>
+</div>
+<div class="therapy-category">
+<div class="therapy-title">Indications chirurgicales</div>
+<div class="therapy-content">• Échec du traitement conservateur
+• Complications (perforation, abcès non drainable)
+• Récidives fréquentes
+• Chirurgie élective après résolution (résection sigmoïdienne)</div>
+</div>
+<div class="therapy-category">
+<div class="therapy-title">Mesures préventives</div>
+<div class="therapy-content">• Régime riche en fibres après phase aiguë
+• Hydratation adéquate
+• Activité physique régulière
+• Éviter constipation
+• Arrêt tabac si applicable</div>
+</div>
+</div>
+</div>
+<div class="checkbox-group"><input type="radio" name="m6" value="2" onchange="updateScore('m6', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="m6" value="1" onchange="updateScore('m6', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="m6" value="0" onchange="updateScore('m6', this)" /></div>
+<div class="points-display" id="points-m6">0</div>
+</div>
+<div class="criteria-row">
+<div>
+<div class="criteria-text">7. Suivi et surveillance</div>
+<div class="sub-criteria">Contrôle clinique à 48-72h si ambulatoire</div>
+<div class="sub-criteria">Contrôle biologique si pas d'amélioration</div>
+<div class="sub-criteria">Coloscopie 6-8 semaines après l'épisode [exclusion de sténoses, tumeurs]</div>
+<div class="sub-criteria">Éducation sur les signes d'alarme</div>
+</div>
+<div class="checkbox-group"><input type="radio" name="m7" value="2" onchange="updateScore('m7', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="m7" value="1" onchange="updateScore('m7', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="m7" value="0" onchange="updateScore('m7', this)" /></div>
+<div class="points-display" id="points-m7">0</div>
+</div>
+<div class="criteria-row">
+<div>
+<div class="criteria-text">8. Critères d'hospitalisation</div>
+</div>
+<div class="checkbox-group"><input type="radio" name="m8" value="2" onchange="updateScore('m8', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="m8" value="1" onchange="updateScore('m8', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="m8" value="0" onchange="updateScore('m8', this)" /></div>
+<div class="points-display" id="points-m8">0</div>
+</div>
+<div class="criteria-row">
+<div>
+<div class="criteria-text">9. Complications potentielles</div>
+<div class="sub-criteria">Abcès péricolique</div>
+<div class="sub-criteria">Perforation avec péritonite</div>
+<div class="sub-criteria">Fistules (colovésicale, colovaginale)</div>
+<div class="sub-criteria">Sténose colique</div>
+<div class="sub-criteria">Hémorragie diverticulaire</div>
+</div>
+<div class="checkbox-group"><input type="radio" name="m9" value="2" onchange="updateScore('m9', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="m9" value="1" onchange="updateScore('m9', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="m9" value="0" onchange="updateScore('m9', this)" /></div>
+<div class="points-display" id="points-m9">0</div>
+</div>
+<div class="criteria-row">
+<div>
+<div class="criteria-text">10. Éducation du patient</div>
+<div class="sub-criteria">Explication de la pathologie diverticulaire</div>
+<div class="sub-criteria">Importance de l'observance thérapeutique</div>
+<div class="sub-criteria">Modifications du mode de vie</div>
+<div class="sub-criteria">Signes nécessitant une reconsultation urgente</div>
+<div class="sub-criteria">Prévention des récidives</div>
+</div>
+<div class="checkbox-group"><input type="radio" name="m10" value="2" onchange="updateScore('m10', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="m10" value="1" onchange="updateScore('m10', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="m10" value="0" onchange="updateScore('m10', this)" /></div>
+<div class="points-display" id="points-m10">0</div>
+</div>
+<div class="criteria-row">
+<div>
+<div class="criteria-text">11. Évaluation globale de la qualité de la prise en charge</div>
+<div class="sub-criteria">Prise en charge complète et adaptée à la sévérité</div>
+</div>
+<div class="checkbox-group"><input type="radio" name="m11" value="2" onchange="updateScore('m11', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="m11" value="1" onchange="updateScore('m11', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="m11" value="0" onchange="updateScore('m11', this)" /></div>
+<div class="points-display" id="points-m11">0</div>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-header">
+<span>Communication (10%)</span>
+<span class="score">Score : <span id="communicationScore">0</span>/20</span>
+</div>
+<div class="section-content">
+<div class="scale-header">
+<div>Critères</div><div>A</div><div>B</div><div>C</div><div>D</div><div>E</div>
+</div>
+<div class="communication-section">
+<div>
+<div class="communication-text">1. Réponse aux sentiments et besoins du patient</div>
+<div class="communication-desc">Empathie, écoute active, validation des émotions</div>
+</div>
+<div class="checkbox-group"><input type="radio" name="c1" value="A" onchange="updateScore('c1', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="c1" value="B" onchange="updateScore('c1', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="c1" value="C" onchange="updateScore('c1', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="c1" value="D" onchange="updateScore('c1', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="c1" value="E" onchange="updateScore('c1', this)" /></div>
+</div>
+<div class="communication-section">
+<div>
+<div class="communication-text">2. Structure de l'entretien</div>
+<div class="communication-desc">Organisation logique, transitions fluides, gestion du temps</div>
+</div>
+<div class="checkbox-group"><input type="radio" name="c2" value="A" onchange="updateScore('c2', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="c2" value="B" onchange="updateScore('c2', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="c2" value="C" onchange="updateScore('c2', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="c2" value="D" onchange="updateScore('c2', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="c2" value="E" onchange="updateScore('c2', this)" /></div>
+</div>
+<div class="communication-section">
+<div>
+<div class="communication-text">3. Expression verbale</div>
+<div class="communication-desc">Clarté, vocabulaire adapté, vérification de la compréhension</div>
+</div>
+<div class="checkbox-group"><input type="radio" name="c3" value="A" onchange="updateScore('c3', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="c3" value="B" onchange="updateScore('c3', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="c3" value="C" onchange="updateScore('c3', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="c3" value="D" onchange="updateScore('c3', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="c3" value="E" onchange="updateScore('c3', this)" /></div>
+</div>
+<div class="communication-section">
+<div>
+<div class="communication-text">4. Expression non verbale</div>
+<div class="communication-desc">Contact visuel, posture, gestuelle appropriée</div>
+</div>
+<div class="checkbox-group"><input type="radio" name="c4" value="A" onchange="updateScore('c4', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="c4" value="B" onchange="updateScore('c4', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="c4" value="C" onchange="updateScore('c4', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="c4" value="D" onchange="updateScore('c4', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="c4" value="E" onchange="updateScore('c4', this)" /></div>
+</div>
+<div class="communication-section">
+<div>
+<div class="communication-text">5. Évaluation générale de la communication</div>
+<div class="communication-desc">Qualité globale de l'interaction médecin-patient</div>
+</div>
+<div class="checkbox-group"><input type="radio" name="c5" value="A" onchange="updateScore('c5', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="c5" value="B" onchange="updateScore('c5', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="c5" value="C" onchange="updateScore('c5', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="c5" value="D" onchange="updateScore('c5', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="c5" value="E" onchange="updateScore('c5', this)" /></div>
+</div>
+</div>
+</div>
+<div class="total-sections">
+<div class="total-section">
+<div class="total-label">Score Global</div>
+<div class="total-body">
+<div class="total-score" id="totalScore">0%</div>
+</div>
+</div>
+<div class="total-section">
+<div class="total-label">Note Globale</div>
+<div class="total-body">
+<div class="total-note-globale" id="globalGrade">E</div>
+</div>
+</div>
+</div>
+<div class="grade-scale">
+<h3>Échelle de notation</h3>
+<div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; text-align: center;">
+<div><div style="font-weight: bold; font-size: 24px; color: #2c974b;">A</div><div style="font-size: 12px; color: #666;">≥90%</div></div>
+<div><div style="font-weight: bold; font-size: 24px; color: #4e9cf0;">B</div><div style="font-size: 12px; color: #666;">80-89%</div></div>
+<div><div style="font-weight: bold; font-size: 24px; color: #f0ad4e;">C</div><div style="font-size: 12px; color: #666;">70-79%</div></div>
+<div><div style="font-weight: bold; font-size: 24px; color: #e67e22;">D</div><div style="font-size: 12px; color: #666;">60-69%</div></div>
+<div><div style="font-weight: bold; font-size: 24px; color: #d9534f;">E</div><div style="font-size: 12px; color: #666;"><60%</div></div>
+</div>
+</div>
+</div>
+<script>
+function updateScore(id, element) {
+  const value = element.value;
+  let pointValue;
+  if (id.startsWith("c")) {
+    const map = { A: 4, B: 3, C: 2, D: 1, E: 0 };
+    pointValue = map[value] || 0;
+  } else {
+    pointValue = Number(value) || 0;
+  }
+  const pointsElement = document.getElementById("points-" + id);
+  if (pointsElement) pointsElement.textContent = pointValue;
+  calculateScores();
+}
+function calculateScores() {
+  let aScore = 0, eScore = 0, mScore = 0, cScore = 0;
+  for (let i = 1; i <= 16; i++) {
+    const radio = document.querySelector("input[name=\"a" + i + "\"]:checked");
+    if (radio) aScore += Number(radio.value) || 0;
+  }
+  document.getElementById("aScore").textContent = aScore;
+  for (let i = 1; i <= 11; i++) {
+    const radio = document.querySelector("input[name=\"e" + i + "\"]:checked");
+    if (radio) eScore += Number(radio.value) || 0;
+  }
+  document.getElementById("eScore").textContent = eScore;
+  for (let i = 1; i <= 11; i++) {
+    const radio = document.querySelector("input[name=\"m" + i + "\"]:checked");
+    if (radio) mScore += Number(radio.value) || 0;
+  }
+  document.getElementById("mScore").textContent = mScore;
+  for (let i = 1; i <= 5; i++) {
+    const radio = document.querySelector("input[name=\"c" + i + "\"]:checked");
+    if (radio) {
+      const map = { A: 4, B: 3, C: 2, D: 1, E: 0 };
+      cScore += map[radio.value] || 0;
+    }
+  }
+  document.getElementById("communicationScore").textContent = cScore;
+  const aP = (aScore / 32) * 100;
+  const eP = (eScore / 22) * 100;
+  const mP = (mScore / 22) * 100;
+  const cP = (cScore / 20) * 100;
+  const globalP = (aP * 0.4 + eP * 0.3 + mP * 0.2 + cP * 0.1);
+  document.getElementById("totalScore").textContent = Math.round(globalP) + "%";
+  const gradeElement = document.getElementById("globalGrade");
+  if (globalP >= 90) gradeElement.textContent = "A";
+  else if (globalP >= 80) gradeElement.textContent = "B";
+  else if (globalP >= 70) gradeElement.textContent = "C";
+  else if (globalP >= 60) gradeElement.textContent = "D";
+  else gradeElement.textContent = "E";
+}
+document.addEventListener("DOMContentLoaded", function() {
+  const elements = document.querySelectorAll(".criteria-text, .sub-criteria");
+  elements.forEach(function(element) {
+    const text = element.innerHTML;
+    const coloredText = text.replace(/\[([^\]]+)\]/g, "<span style=\"color: rgb(44, 90, 160); font-weight: 500;\">[$1]</span>");
+    element.innerHTML = coloredText;
+  });
+  calculateScores();
+});
+</script>
+</body>
+</html>

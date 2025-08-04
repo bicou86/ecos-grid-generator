@@ -1,0 +1,239 @@
+{
+  "title": "Hypertension I",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Femme de 56 ans consultant après découverte d'une hypertension artérielle lors d'automesure",
+    "vitals": {
+      "ta": "162/92 mmHg"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Nom et âge",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Motif de consultation",
+          "binaryOnly": true
+        },
+        {
+          "id": "a3",
+          "text": "Circonstances de découverte",
+          "details": [
+            "Automesure tensionnelle à domicile",
+            "Valeurs relevées (160-170/90-95 mmHg)",
+            "Fréquence des mesures (plusieurs fois/semaine depuis 1 mois)",
+            "Contexte (contrôle après épisode de stress au travail)"
+          ],
+          "patientComment": "J'ai pris ma tension chez moi/Entre 160 et 170 de max/Plusieurs fois par semaine/Après beaucoup de stress au bureau"
+        },
+        {
+          "id": "a4",
+          "text": "Symptômes associés",
+          "details": [
+            "Céphalées occipitales matinales",
+            "Palpitations occasionnelles",
+            "Fatigue",
+            "Absence de troubles visuels",
+            "Absence de douleur thoracique"
+          ],
+          "patientComment": "Mal de tête derrière le matin/Parfois le cœur bat fort/Fatiguée/Non/Non"
+        },
+        {
+          "id": "a5",
+          "text": "Antécédents personnels",
+          "details": [
+            "Ménopause depuis 3 ans",
+            "Pas de diabète",
+            "Pas de maladie cardiovasculaire",
+            "Pas de maladie rénale"
+          ],
+          "patientComment": "Ménopausée depuis 3 ans/Non/Non/Non"
+        },
+        {
+          "id": "a6",
+          "text": "Antécédents familiaux",
+          "details": [
+            "Mère hypertendue",
+            "Père infarctus du myocarde à 65 ans",
+            "Sœur diabète type 2"
+          ],
+          "patientComment": "Ma mère a de la tension/Mon père, crise cardiaque à 65 ans/Ma sœur, diabète"
+        },
+        {
+          "id": "a7",
+          "text": "Habitudes de vie",
+          "details": [
+            "Activité physique (marche 2-3x/semaine)",
+            "Alimentation riche en sel",
+            "Consommation d'alcool modérée",
+            "Non-fumeuse"
+          ],
+          "patientComment": "Je marche 2-3 fois par semaine/J'aime bien salé/1-2 verres de vin le weekend/Je n'ai jamais fumé"
+        },
+        {
+          "id": "a8",
+          "text": "Médicaments et substances",
+          "details": [
+            "Aucun médicament régulier",
+            "Traitement hormonal de substitution arrêté il y a 1 an",
+            "Compléments alimentaires (magnésium)",
+            "Pas de contraception hormonale"
+          ],
+          "patientComment": "Rien de régulier/J'ai arrêté les hormones il y a 1 an/Du magnésium parfois/Non"
+        },
+        {
+          "id": "a9",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "binaryOnly": false,
+          "details": [
+            "Anamnèse générale ciblée et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Mesure tensionnelle correcte",
+          "details": [
+            "Position assise, repos 5 minutes",
+            "Brassard adapté",
+            "Plusieurs mesures à intervalles",
+            "Mesure aux deux bras"
+          ]
+        },
+        {
+          "id": "e2",
+          "text": "Examen cardiovasculaire",
+          "details": [
+            "Auscultation cardiaque",
+            "Recherche de souffles",
+            "Palpation des pouls périphériques",
+            "Recherche d'œdèmes"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Examen des organes cibles",
+          "details": [
+            "Fond d'œil (ou référence)",
+            "Auscultation des carotides",
+            "Palpation rénale",
+            "Examen neurologique sommaire"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Recherche de signes de complications",
+          "details": [
+            "Signes d'insuffisance cardiaque",
+            "Signes d'insuffisance rénale",
+            "Signes neurologiques",
+            "État général"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Mensuration et données anthropométriques",
+          "details": [
+            "Poids et taille (calcul IMC)",
+            "Tour de taille",
+            "Recherche d'obésité abdominale"
+          ]
+        },
+        {
+          "id": "e6",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "binaryOnly": false,
+          "details": [
+            "Status général ciblé et bien conduit"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic",
+          "details": [
+            "Hypertension artérielle essentielle de grade 2",
+            "Hypertension artérielle nouvellement diagnostiquée",
+            "Recherche d'hypertension secondaire si atypique"
+          ]
+        },
+        {
+          "id": "m2",
+          "text": "Examens complémentaires de première intention",
+          "details": [
+            "Bilan biologique (créatinine, urée, ionogramme)",
+            "Glycémie à jeun",
+            "Bilan lipidique",
+            "Bandelette urinaire/ECBU"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Examens complémentaires spécialisés",
+          "details": [
+            "ECG de repos",
+            "Échocardiographie (selon indication)",
+            "MAPA (Mesure Ambulatoire de la PA)",
+            "Microalbuminurie"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Mesures hygiéno-diététiques",
+          "details": [
+            "Réduction du sel (<6g/jour)",
+            "Activité physique régulière",
+            "Contrôle du poids",
+            "Modération alcoolique",
+            "Gestion du stress"
+          ]
+        },
+        {
+          "id": "m5",
+          "text": "Traitement médicamenteux",
+          "details": [
+            "Indication selon grade et facteurs de risque",
+            "Choix de première intention (IEC, ARA2, Diurétique, ICa)",
+            "Objectif tensionnel (<140/90 mmHg)",
+            "Surveillance et adaptation"
+          ]
+        },
+        {
+          "id": "m6",
+          "text": "Surveillance et suivi",
+          "details": [
+            "Automesure tensionnelle",
+            "Contrôle médical régulier",
+            "Surveillance de l'observance",
+            "Dépistage des complications"
+          ]
+        },
+        {
+          "id": "m7",
+          "text": "Évaluation globale de la qualité de la prise en charge",
+          "binaryOnly": false,
+          "details": [
+            "Prise en charge générale cohérente et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    }
+  }
+}

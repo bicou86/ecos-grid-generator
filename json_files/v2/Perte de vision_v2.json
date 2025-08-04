@@ -1,0 +1,391 @@
+{
+  "title": "Perte de vision",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "M. Müller, 78 ans, se présente pour des problèmes de vision qu'il a remarqués depuis quelques mois."
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction et tâche",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Question d'entrée ouverte",
+          "binaryOnly": true,
+          "details": [
+            "Qu'est-ce qui vous amène aujourd'hui ? [J'ai remarqué que je vois de plus en plus mal]"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Caractérisation de la baisse de vision",
+          "details": [
+            "Apparition [progressive sur quelques mois]",
+            "Évolution [aggravation progressive]",
+            "Unilatérale ou bilatérale [bilatérale]",
+            "Prédominance vision de loin ou de près [surtout de loin]"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Symptômes visuels associés",
+          "details": [
+            "Photosensibilité [oui, doit porter des lunettes de soleil plus souvent car ébloui]",
+            "Amélioration paradoxale vision de près [oui, impression soudaine de mieux voir de près]",
+            "Vision des couleurs [rien de particulier remarqué]",
+            "Halos lumineux [parfois autour des lumières]",
+            "Vision double [non]",
+            "Vision trouble/voilée [oui, comme à travers un brouillard]"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Symptômes oculaires associés",
+          "details": [
+            "Douleurs oculaires [non]",
+            "Rougeur oculaire [non]",
+            "Larmoiement [parfois]",
+            "Sécrétions [non]",
+            "Sensation de corps étranger [non]"
+          ]
+        },
+        {
+          "id": "a6",
+          "text": "Symptômes généraux et drapeaux rouges",
+          "details": [
+            "Céphalées [non]",
+            "Claudication de la mâchoire [non]",
+            "Douleurs temporales [non]",
+            "Symptômes B (fièvre, sueurs nocturnes, perte de poids) [non]"
+          ]
+        },
+        {
+          "id": "a7",
+          "text": "Facteurs de risque cardiovasculaire",
+          "details": [
+            "Hypertension artérielle [oui, traitée]",
+            "Diabète [non]",
+            "Dyslipidémie [oui]",
+            "Tabagisme [ancien fumeur, arrêt il y a 10 ans]",
+            "Consommation d'alcool [occasionnelle]"
+          ]
+        },
+        {
+          "id": "a8",
+          "text": "Anamnèse médicamenteuse",
+          "details": [
+            "Corticothérapie systémique [non]",
+            "Collyre myotique [non]",
+            "Autres médicaments [traitement pour l'hypertension et le cholestérol]"
+          ]
+        },
+        {
+          "id": "a9",
+          "text": "Antécédents ophtalmologiques",
+          "details": [
+            "Chirurgie oculaire antérieure [non]",
+            "Traumatisme oculaire [non]",
+            "Glaucome [non]",
+            "Myopie/hypermétropie [presbytie, porte des lunettes pour lire]"
+          ]
+        },
+        {
+          "id": "a10",
+          "text": "Antécédents médicaux personnels",
+          "details": [
+            "Diabète [non]",
+            "Pathologies systémiques [hypertension, dyslipidémie]",
+            "Chirurgies antérieures [appendicectomie dans l'enfance]"
+          ]
+        },
+        {
+          "id": "a11",
+          "text": "Antécédents familiaux",
+          "details": [
+            "Pathologies oculaires familiales [père avait une dégénérescence maculaire]",
+            "Inquiétude du patient [a peur d'avoir la même chose que son père]",
+            "Cataracte familiale [mère opérée de cataracte à 75 ans]"
+          ]
+        },
+        {
+          "id": "a12",
+          "text": "Allergies",
+          "details": [
+            "Allergies médicamenteuses [non]",
+            "Autres allergies [non]"
+          ]
+        },
+        {
+          "id": "a13",
+          "text": "Anamnèse sociale et impact fonctionnel",
+          "patientComment": "Vit seul dans son appartement, retraité",
+          "details": [
+            "Situation de vie [vit seul]",
+            "Autonomie [autonome mais difficultés croissantes]",
+            "Activités quotidiennes [difficultés pour lire, regarder la télévision]",
+            "Conduite automobile [évite de conduire la nuit]"
+          ]
+        },
+        {
+          "id": "a14",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "binaryOnly": false,
+          "details": [
+            "Anamnèse ciblée et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Acuité visuelle",
+          "details": [
+            "Vision de loin avec correction [diminuée bilatéralement, 0.4 OD, 0.5 OG]",
+            "Vision de près avec correction [relativement préservée]",
+            "Test du trou sténopéique [amélioration partielle]"
+          ]
+        },
+        {
+          "id": "e2",
+          "text": "Examen des annexes et segment antérieur",
+          "details": [
+            "Paupières [normales]",
+            "Conjonctive [calme]",
+            "Cornée [transparente]",
+            "Chambre antérieure [profondeur normale]"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Examen à la lampe à fente",
+          "details": [
+            "Cristallin [opacification jaunâtre diffuse visible]",
+            "Type d'opacité [nucléaire prédominante]",
+            "Densité [modérée à sévère]"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Test du reflet rouge rétinien",
+          "details": [
+            "Reflet rouge [diminué, opacification apparaît plus foncée]",
+            "Symétrie [atteinte bilatérale]"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Pupilles et réflexes pupillaires",
+          "details": [
+            "Taille et symétrie [isocorie]",
+            "Réflexe photomoteur direct [présent bilatéralement]",
+            "Réflexe consensuel [présent]",
+            "Défaut pupillaire afférent relatif [absent]"
+          ]
+        },
+        {
+          "id": "e6",
+          "text": "Tonus oculaire",
+          "details": [
+            "Palpation bidigitale [normal]",
+            "Mesure si disponible [non réalisée en cabinet]"
+          ]
+        },
+        {
+          "id": "e7",
+          "text": "Fond d'œil",
+          "details": [
+            "Visualisation [difficile en raison de l'opacité cristallinienne]",
+            "Ce qui est visible [papille et vaisseaux partiellement visibles]",
+            "Exclusion de pathologie rétinienne évidente [dans la mesure du possible]"
+          ]
+        },
+        {
+          "id": "e8",
+          "text": "Examen neurologique de base",
+          "details": [
+            "Champs visuels par confrontation [normaux dans les limites de l'examen]",
+            "Oculomotricité [normale]",
+            "Nerfs crâniens [normaux]"
+          ]
+        },
+        {
+          "id": "e9",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "binaryOnly": false,
+          "details": [
+            "Examen clinique ciblé et bien conduit"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic principal",
+          "details": [
+            "Cataracte sénile bilatérale",
+            "Type nucléaire prédominant"
+          ]
+        },
+        {
+          "id": "m2",
+          "text": "Diagnostics différentiels",
+          "ddSection": {
+            "title": "Diagnostics différentiels de la baisse d'acuité visuelle",
+            "categories": [
+              {
+                "name": "Autres causes d'opacité des milieux",
+                "items": [
+                  {
+                    "text": "Cataracte",
+                    "cause": "Arguments POUR:\n\t□ Âge avancé (78 ans)\n\t□ Baisse progressive bilatérale\n\t□ Vision floue, voilée\n\t□ Photophobie\n\t□ Cristallin opalescent à l'examen",
+                    "test": "→ Examen à la lampe à fente, fond d'œil"
+                  },
+                  {
+                    "text": "Opacités cornéennes",
+                    "cause": "Arguments CONTRE:\n\t□ Cornée claire à l'examen\n\t□ Pas d'antécédent de kératite",
+                    "test": "→ Examen à la lampe à fente"
+                  },
+                  {
+                    "text": "Hémorragie du vitré",
+                    "cause": "Arguments CONTRE:\n\t□ Installation progressive\n\t□ Pas de myodésopsies brutales\n\t□ Pas de diabète connu",
+                    "test": "→ Fond d'œil, échographie mode B"
+                  }
+                ]
+              },
+              {
+                "name": "Pathologies rétiniennes",
+                "items": [
+                  {
+                    "text": "Dégénérescence maculaire liée à l'âge (DMLA)",
+                    "cause": "Arguments POUR:\n\t□ Antécédent familial (père)\n\t□ Âge avancé\nArguments CONTRE:\n\t□ Amélioration en vision de loin\n\t□ Pas de métamorphopsies\n\t□ Pas de scotome central",
+                    "test": "→ Fond d'œil, OCT maculaire, angiographie"
+                  },
+                  {
+                    "text": "Rétinopathie diabétique",
+                    "cause": "Arguments CONTRE:\n\t□ Pas de diabète connu\n\t□ Glycémie normale",
+                    "test": "→ Glycémie, fond d'œil"
+                  },
+                  {
+                    "text": "Décollement de rétine",
+                    "cause": "Arguments CONTRE:\n\t□ Pas de phosphènes\n\t□ Pas de voile périphérique\n\t□ Installation progressive",
+                    "test": "→ Fond d'œil dilaté, échographie B"
+                  }
+                ]
+              },
+              {
+                "name": "Neuropathies optiques",
+                "items": [
+                  {
+                    "text": "Glaucome chronique",
+                    "cause": "Arguments CONTRE:\n\t□ Pression intraoculaire normale\n\t□ Pas d'excavation papillaire\n\t□ Atteinte centrale précoce atypique",
+                    "test": "→ Tonométrie, fond d'œil, champ visuel"
+                  },
+                  {
+                    "text": "Neuropathie optique ischémique",
+                    "cause": "Arguments CONTRE:\n\t□ Installation progressive\n\t□ Bilatérale\n\t□ Pas de déficit altitudinal",
+                    "test": "→ Fond d'œil, angiographie"
+                  },
+                  {
+                    "text": "Névrite optique",
+                    "cause": "Arguments CONTRE:\n\t□ Âge avancé\n\t□ Pas de douleur oculaire\n\t□ Installation lente",
+                    "test": "→ IRM cérébrale et orbitaire"
+                  }
+                ]
+              },
+              {
+                "name": "Urgences à exclure",
+                "items": [
+                  {
+                    "text": "Glaucome aigu par fermeture de l'angle",
+                    "cause": "Arguments CONTRE:\n\t□ Pas de douleur oculaire\n\t□ Pas de nausées/vomissements\n\t□ Pas de halos colorés\n\t□ PIO normale",
+                    "test": "→ Tonométrie, gonioscopie"
+                  },
+                  {
+                    "text": "Artérite temporale (Horton)",
+                    "cause": "Arguments CONTRE:\n\t□ Pas de céphalées\n\t□ Pas de claudication de la mâchoire\n\t□ Installation progressive\n\t□ VS normale",
+                    "test": "→ VS, CRP, biopsie artère temporale"
+                  },
+                  {
+                    "text": "Occlusion vasculaire rétinienne",
+                    "cause": "Arguments CONTRE:\n\t□ Installation progressive\n\t□ Bilatérale\n\t□ Pas de BAV brutale",
+                    "test": "→ Fond d'œil, angiographie rétinienne"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m3",
+          "text": "Examens complémentaires",
+          "details": [
+            "Biométrie oculaire (si chirurgie envisagée)",
+            "Échographie oculaire mode B (si fond d'œil non visible)",
+            "OCT maculaire (pour exclure pathologie maculaire associée)",
+            "Glycémie (dépistage diabète)",
+            "Bilan préopératoire si chirurgie planifiée"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Traitement",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Traitement conservateur",
+                "content": "• Aucun traitement médical efficace pour la cataracte\n• Adaptation de la correction optique temporaire\n• Amélioration de l'éclairage\n• Lunettes de soleil pour la photophobie"
+              },
+              {
+                "title": "Traitement chirurgical",
+                "content": "• Indication opératoire posée (gêne fonctionnelle significative)\n• Phacoémulsification avec implant intraoculaire\n• Information sur les risques et bénéfices\n• Planification de la chirurgie (œil le plus atteint d'abord)"
+              }
+            ]
+          }
+        },
+        {
+          "id": "m5",
+          "text": "Information du patient",
+          "details": [
+            "Explication de la nature de la cataracte",
+            "Rassurer : pas la même pathologie que son père (DMLA)",
+            "Excellent pronostic avec la chirurgie (>95% de succès)",
+            "Risques chirurgicaux faibles mais existants",
+            "Récupération visuelle habituelle en quelques semaines"
+          ]
+        },
+        {
+          "id": "m6",
+          "text": "Suivi et orientation",
+          "details": [
+            "Référence en ophtalmologie pour évaluation chirurgicale",
+            "Suivi régulier en attendant la chirurgie",
+            "Surveillance de la progression",
+            "Contrôle postopératoire après chirurgie"
+          ]
+        },
+        {
+          "id": "m7",
+          "text": "Évaluation globale de la qualité de la prise en charge",
+          "binaryOnly": false,
+          "details": [
+            "Prise en charge cohérente et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,473 @@
+{
+  "title": "Dysphagie",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Homme de 68 ans consultant son médecin de famille car il a de plus en plus de difficultés à avaler les aliments",
+    "vitals": {
+      "ta": "142/88 mmHg",
+      "fc": "78 bpm",
+      "fr": "16/min",
+      "temperature": "36.9°C"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction et objectif de la consultation",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Question ouverte d'introduction → Motif de consultation",
+          "patientComment": "Les aliments passent difficilement, je dois rincer avec de l'eau",
+          "binaryOnly": true
+        },
+        {
+          "id": "a3",
+          "text": "RED FLAGS - Signes d'alarme digestifs",
+          "redflagsSection": [
+            {
+              "text": "Anémie/pâleur [à vérifier]"
+            },
+            {
+              "text": "Loss of weight (perte poids) [non actuellement]"
+            },
+            {
+              "text": "Anorexie [appétit conservé?]"
+            },
+            {
+              "text": "Recent onset/progression [plusieurs semaines!]"
+            },
+            {
+              "text": "Melaena/hémorragie [non]"
+            },
+            {
+              "text": "Dysphagie progressive [OUI - solides]"
+            },
+            {
+              "text": "Âge >50 ans [68 ans!]"
+            },
+            {
+              "text": "Odynophagie [sensation désagréable]"
+            }
+          ],
+          "scoringRule": "≥6 red flags explorés = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a4",
+          "text": "Caractérisation complète de la dysphagie",
+          "details": [
+            "Type: oropharyngée vs œsophagienne [œsophagienne probable]",
+            "Solides seuls → sténose mécanique [OUI]",
+            "Liquides seuls → trouble moteur [non]",
+            "Mixte solides + liquides [non]",
+            "Localisation blocage [rétrosternal?]",
+            "Progression temporelle [aggravation ++]",
+            "Impaction alimentaire [à préciser]",
+            "Régurgitations non acides [non]"
+          ],
+          "scoringRule": "≥6 caractéristiques = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a5",
+          "text": "Facteurs de risque de cancer œsophagien",
+          "details": [
+            "Tabac [40 paquets-années!]",
+            "Alcool chronique [2-3 bières/j, parfois plus]",
+            "Tabac + alcool (effet synergique ++)",
+            "RGO chronique/Barrett [reflux présent]",
+            "Obésité abdominale [IMC?]",
+            "Achalasie ancienne [non]",
+            "Lye/caustiques [non mentionné]",
+            "Tylosis/syndrome Plummer-Vinson [non]"
+          ],
+          "scoringRule": "≥5 facteurs évalués = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a6",
+          "text": "Symptômes associés ORL et respiratoires",
+          "details": [
+            "Dysphonie/enrouement [oui - femme l'a remarqué!]",
+            "Otalgie réflexe [à vérifier]",
+            "Hémoptysie [non]",
+            "Toux chronique [avec tabac?]",
+            "Fausses routes/aspiration [non]",
+            "Dyspnée/stridor [non]",
+            "Adénopathies cervicales [à palper]",
+            "Syndrome cave supérieur [non]"
+          ],
+          "scoringRule": "≥6 symptômes = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a7",
+          "text": "État nutritionnel et impact fonctionnel",
+          "details": [
+            "Poids actuel vs habituel [pas de perte?]",
+            "Modification alimentation [texture adaptée?]",
+            "Temps des repas allongé [probable]",
+            "Évitement social repas [à explorer]",
+            "Suppléments nutritionnels [non]",
+            "Fatigue/asthénie [à évaluer]",
+            "Force musculaire [conservée?]"
+          ],
+          "scoringRule": "≥5 éléments = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a8",
+          "text": "Antécédents digestifs et comorbidités",
+          "details": [
+            "RGO traité par IPP [oui - protection?]",
+            "Œsophagite peptique connue [non mentionnée]",
+            "Endoscopies antérieures [à vérifier]",
+            "HTA [oui - FDR cardiovasculaire]",
+            "Diabète [non mentionné]",
+            "Immunosuppression [non]",
+            "Radiothérapie thoracique [non]"
+          ],
+          "scoringRule": "≥5 ATCD = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a9",
+          "text": "Médicaments et interactions",
+          "details": [
+            "Bêtabloquant [lequel? dose?]",
+            "IPP [protection mais masque symptômes?]",
+            "Biphosphonates oraux [non - œsophagite]",
+            "AINS réguliers [non mentionnés]",
+            "Anticholinergiques [non]",
+            "Observance traitement [à vérifier]"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a10",
+          "text": "Histoire familiale oncologique",
+          "details": [
+            "Cancer œsophage famille [non mentionné]",
+            "Cancer estomac [non]",
+            "Cancers ORL [non]",
+            "Syndrome Lynch [non]",
+            "Autres cancers digestifs [non]",
+            "Père IDM 78 ans [FDR CV familial]"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a11",
+          "text": "Contexte psychosocial et professionnel",
+          "details": [
+            "Profession à risque [électricien - amiante?]",
+            "Exposition professionnelle [poussières?]",
+            "Support familial [marié, 2 enfants]",
+            "Anxiété/inquiétude [à évaluer]",
+            "Compréhension gravité [à explorer]",
+            "Souhaits thérapeutiques [à discuter]"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a12",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "details": [
+            "Anamnèse complète et systématique",
+            "Red flags ALARM explorés",
+            "Facteurs risque cancer identifiés",
+            "Impact nutritionnel évalué",
+            "Contexte biopsychosocial considéré"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Évaluation de l'état général et nutritionnel",
+          "details": [
+            "Aspect général/cachexie [à noter]",
+            "IMC et perte pondérale [calculer]",
+            "Pli cutané/masse musculaire [évaluer]",
+            "Pâleur cutanéo-muqueuse [anémie?]",
+            "Ictère [non - métastases hépatiques?]",
+            "Œdèmes périphériques [hypoalbuminémie?]"
+          ],
+          "scoringRule": "≥5 éléments = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e2",
+          "text": "Examen ORL complet",
+          "details": [
+            "Cavité buccale/dentition [état?]",
+            "Oropharynx/amygdales [normaux?]",
+            "Mobilité laryngée [dysphonie!]",
+            "Palpation base langue [masse?]",
+            "Nasofibroscopie si disponible",
+            "Mobilité cordes vocales [paralysie?]"
+          ],
+          "scoringRule": "≥5 examens = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e3",
+          "text": "Palpation cervicale systématique",
+          "details": [
+            "Chaînes ganglionnaires (sus-claviculaire++)",
+            "Ganglion de Virchow/Troisier [gauche]",
+            "Thyroïde (goitre compressif?) [palper]",
+            "Masses cervicales [non]",
+            "Emphysème sous-cutané [perforation?]",
+            "Pouls carotidiens [symétriques?]"
+          ],
+          "scoringRule": "≥5 zones = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e4",
+          "text": "Test de déglutition sécurisé",
+          "details": [
+            "Position assise sécurisée",
+            "Test 3 gorgées eau [toux? blocage?]",
+            "Temps de déglutition [allongé?]",
+            "Résidu pharyngé [voix mouillée?]",
+            "Réflexe de toux présent [protecteur]"
+          ],
+          "scoringRule": "Test complet = 2 pts, partiel = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e5",
+          "text": "Examen thoracique",
+          "details": [
+            "Auscultation (pneumopathie aspiration?)",
+            "Matité (épanchement pleural?)",
+            "Tirage/détresse respiratoire [non]",
+            "Compression trachéale [non]"
+          ],
+          "scoringRule": "≥3 éléments = 2 pts, 2 = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e6",
+          "text": "Examen abdominal",
+          "details": [
+            "Hépatomégalie [métastases?]",
+            "Ascite [carcinose?]",
+            "Masses palpables [non]",
+            "Ganglion Sister Mary Joseph [ombilic]"
+          ],
+          "scoringRule": "≥3 éléments = 2 pts, 2 = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e7",
+          "text": "Recherche de signes métastatiques",
+          "details": [
+            "Adénopathies périphériques",
+            "Hépatomégalie nodulaire",
+            "Douleurs osseuses focales",
+            "Signes neurologiques focaux",
+            "Nodules cutanés"
+          ],
+          "scoringRule": "Recherche systématique = 2 pts, partielle = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e8",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "details": [
+            "État nutritionnel documenté",
+            "Examen ORL approfondi",
+            "Palpation ganglionnaire complète",
+            "Test déglutition réalisé",
+            "Signes métastases recherchés"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic principal énoncé avec urgence",
+          "details": [
+            "Cancer œsophage fortement suspecté",
+            "Carcinome épidermoïde probable (tabac-alcool)",
+            "Stade probablement avancé (dysphonie)",
+            "Urgence diagnostique et thérapeutique"
+          ],
+          "scoringRule": "Diagnostic complet avec urgence = 2 pts, partiel = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m2",
+          "text": "Diagnostics différentiels pertinents",
+          "ddSection": {
+            "categories": [
+              {
+                "name": "Cancers à éliminer en priorité",
+                "items": [
+                  "Cancer œsophage (épidermoïde/adéno) Endoscopie + biopsies URGENTE",
+                  "Cancer cardia/jonction Endoscopie + écho-endoscopie",
+                  "Cancer ORL (hypopharynx) Panendoscopie ORL",
+                  "Compression médiastinale CT thoracique avec contraste"
+                ]
+              },
+              {
+                "name": "Causes bénignes (peu probables)",
+                "items": [
+                  "Sténose peptique sur RGO Endoscopie, dilatation test",
+                  "Anneau de Schatzki Transit baryte, endoscopie",
+                  "Achalasie Manométrie haute résolution",
+                  "Œsophagite à éosinophiles Biopsies étagées œsophage"
+                ]
+              }
+            ]
+          },
+          "scoringRule": "≥6 DD avec examens = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m3",
+          "text": "Examens complémentaires urgents",
+          "details": [
+            "Endoscopie digestive haute EN URGENCE (<48h)",
+            "Biopsies multiples étagées obligatoires",
+            "CT thoraco-abdomino-pelvien (staging)",
+            "NFS, iono, fonction rénale/hépatique",
+            "Albumine, préalbumine (dénutrition)",
+            "ECG pré-opératoire",
+            "Consultation ORL si dysphonie persistante"
+          ],
+          "scoringRule": "≥6 examens appropriés = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m4",
+          "text": "Stratégie diagnostique et staging",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Bilan diagnostique initial",
+                "content": "• Endoscopie haute URGENTE (48h max)\n• Biopsies multiples + marquage lésion\n• Si sténose franchissable: évaluer extension\n• Photos et schéma précis localisation\n• Chromoendoscopie si disponible\n• Biopsies Barrett adjacent si présent"
+              },
+              {
+                "title": "Bilan d'extension si cancer confirmé",
+                "content": "• CT TAP avec contraste (métastases)\n• Écho-endoscopie (staging T et N local)\n• PET-CT si candidat chirurgical\n• Bronchoscopie si tumeur 1/3 supérieur\n• Échographie cervicale (ganglions)\n• Scintigraphie osseuse si douleurs"
+              },
+              {
+                "title": "Évaluation opérabilité",
+                "content": "• Bilan nutritionnel complet\n• EFR si chirurgie envisagée\n• Échocardiographie (chimio cardiotoxique)\n• Clairance créatinine (cisplatine)\n• Consultation anesthésie précoce\n• Score performance OMS/ECOG"
+              }
+            ]
+          },
+          "scoringRule": "Stratégie complète = 2 pts, partielle = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m5",
+          "text": "Prise en charge nutritionnelle immédiate",
+          "details": [
+            "Consultation diététique urgente",
+            "Alimentation texture modifiée",
+            "Compléments nutritionnels hypercaloriques",
+            "Surveillance poids bi-hebdomadaire",
+            "Sonde naso-gastrique si dénutrition sévère",
+            "Discussion gastrostomie précoce",
+            "Prévention syndrome renutrition"
+          ],
+          "scoringRule": "≥5 mesures = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m6",
+          "text": "Organisation parcours oncologique",
+          "details": [
+            "Contact gastro-entérologue <24h",
+            "Pré-RCP oncologique après biopsies",
+            "Référence centre expert œsophage",
+            "Infirmière coordinatrice parcours",
+            "Assistante sociale (ALD 100%)",
+            "Psycho-oncologue proposé"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m7",
+          "text": "Mesures symptomatiques immédiates",
+          "details": [
+            "Arrêt tabac/alcool immédiat impératif",
+            "IPP double dose (protection + RGO)",
+            "Antalgiques si odynophagie",
+            "Bains de bouche antiseptiques",
+            "Position assise repas + 1h après",
+            "Éviter repas 3h avant coucher"
+          ],
+          "scoringRule": "≥5 mesures = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m8",
+          "text": "Communication et soutien patient/famille",
+          "details": [
+            "Annonce progressive suspicion cancer",
+            "Attendre confirmation histologique",
+            "Expliquer urgence investigations",
+            "Rassurer sur prise en charge douleur",
+            "Proposer présence proche si souhaité",
+            "Donner coordonnées urgence",
+            "Planifier consultation annonce"
+          ],
+          "scoringRule": "≥5 éléments = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m9",
+          "text": "Suivi immédiat et red flags",
+          "details": [
+            "Revoir après endoscopie (48-72h)",
+            "Urgence si dysphagie complète",
+            "Urgence si hématémèse",
+            "Urgence si détresse respiratoire",
+            "Fiche liaison urgences remise",
+            "Téléphone direct médecin"
+          ],
+          "scoringRule": "≥4 consignes = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m10",
+          "text": "Évaluation globale de la qualité de la prise en charge",
+          "details": [
+            "Urgence diagnostique reconnue",
+            "Parcours oncologique organisé",
+            "Support nutritionnel mis en place",
+            "Communication empathique",
+            "Suivi rapproché planifié"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        }
+      ]
+    }
+  }
+}

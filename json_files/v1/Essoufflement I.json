@@ -1,0 +1,253 @@
+{
+  "title": "Essoufflement I",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Mme Bühler, 32 ans, enseignante, consultation pour dyspnée lors du ski de fond",
+    "vitals": {
+      "ta": "120/80 mmHg",
+      "fc": "94 bpm",
+      "fr": "24/min",
+      "temperature": "37.2°C"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "title": "Anamnèse",
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction et objectif",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Symptômes principaux",
+          "binaryOnly": true,
+          "patientComment": "(Dyspnée et toux irritative)"
+        },
+        {
+          "id": "a3",
+          "text": "Circonstances de survenue et facteurs déclenchants",
+          "patientComment": "(Souvent pendant le ski de fond, apparition soudaine)"
+        },
+        {
+          "id": "a4",
+          "text": "Évolution et durée des symptômes",
+          "patientComment": "(Environ 15 minutes, amélioration à l'arrêt)"
+        },
+        {
+          "id": "a5",
+          "text": "Fréquence des épisodes antérieurs",
+          "patientComment": "(Oui, récurrent, environ 2x/semaine)"
+        },
+        {
+          "id": "a6",
+          "text": "Facteurs d'amélioration/aggravation",
+          "patientComment": "(Amélioration lente quand je m'arrête)"
+        },
+        {
+          "id": "a7",
+          "text": "Caractéristiques de la toux",
+          "details": [
+            "Productive/non productive",
+            "Hémoptysie"
+          ],
+          "patientComment": "(Non productive / Non)"
+        },
+        {
+          "id": "a8",
+          "text": "Symptômes nocturnes",
+          "patientComment": "(Non)"
+        },
+        {
+          "id": "a9",
+          "text": "Symptômes associés",
+          "details": [
+            "Infection ORL récente",
+            "Fièvre",
+            "Diminution des performances",
+            "Appétit et poids",
+            "Sensation de corps étranger",
+            "Dysphagie",
+            "Ronflement",
+            "Rhinorrhée postérieure",
+            "Douleurs thoraciques",
+            "Bruits respiratoires"
+          ],
+          "patientComment": "(Rhinosinusite il y a 3 semaines, souvent enrhumée à cause des élèves / Non / Me sens plutôt en forme sinon / Normal / Non / Non / Non, plus depuis l'amygdalectomie / Non / Non / Sifflements)"
+        },
+        {
+          "id": "a10",
+          "text": "Facteurs de risque thromboemboliques",
+          "details": [
+            "Vol long récent",
+            "Immobilisation",
+            "Douleur au mollet"
+          ],
+          "patientComment": "(Non / Non / Non)"
+        },
+        {
+          "id": "a11",
+          "text": "Exposition tuberculose et voyages",
+          "patientComment": "(Aucune)"
+        },
+        {
+          "id": "a12",
+          "text": "Antécédents médicaux",
+          "details": [
+            "Maladies antérieures",
+            "Problèmes respiratoires antérieurs",
+            "Interventions chirurgicales"
+          ],
+          "patientComment": "(Infections respiratoires fréquentes, sinon toujours en bonne santé / Non / Amygdalectomie pour voix nasillarde)"
+        },
+        {
+          "id": "a13",
+          "text": "Médication actuelle",
+          "patientComment": "(Granules homéopathiques pour le stress)"
+        },
+        {
+          "id": "a14",
+          "text": "Habitudes de vie",
+          "patientComment": "(Environ 2 paquets de cigarettes/semaine depuis 10 ans, vin avec amis, ecstasy dans le passé)"
+        },
+        {
+          "id": "a15",
+          "text": "Allergies détaillées",
+          "details": [
+            "Allergènes respiratoires",
+            "Aliments",
+            "Problèmes cutanés enfance",
+            "Croûtes de lait",
+            "Asthme connu"
+          ],
+          "patientComment": "(Acariens, poils de chat / Céleri / Me souviens d'une pommade pour eczéma au creux du genou enfant / Ne sait pas / Pas connu jusqu'à présent)"
+        },
+        {
+          "id": "a16",
+          "text": "Antécédents familiaux",
+          "details": [
+            "Allergies familiales",
+            "Maladies respiratoires"
+          ],
+          "patientComment": "(Mère allergie aux arachides, frère rhume des foins / Grand-père décédé d'une maladie pulmonaire)"
+        },
+        {
+          "id": "a17",
+          "text": "Anamnèse sociale",
+          "details": [
+            "Situation personnelle",
+            "Animaux domestiques"
+          ],
+          "patientComment": "(Récemment mariée, enseignante, désir d'enfant mais pas encore réussi / Non, à cause de l'allergie aux chats)"
+        },
+        {
+          "id": "a18",
+          "text": "Questions supplémentaires et résumé",
+          "patientComment": "(Avons-nous oublié quelque chose ? Avez-vous des questions ?)"
+        },
+        {
+          "id": "a19",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "binaryOnly": false,
+          "details": [
+            "Anamnèse générale ciblée et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "examen": {
+      "title": "Examen clinique",
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Examen cardiaque",
+          "details": [
+            "Palpation",
+            "Auscultation"
+          ]
+        },
+        {
+          "id": "e2",
+          "text": "Examen pulmonaire",
+          "details": [
+            "Inspection",
+            "Palpation",
+            "Percussion avec limites pulmonaires",
+            "Auscultation systématique"
+          ],
+          "patientComment": "(Mouvements respiratoires symétriques / Frémitus vocal / / Wheezing, bronchophonie)"
+        },
+        {
+          "id": "e3",
+          "text": "Examen des extrémités",
+          "details": [
+            "Hippocratisme digital",
+            "Cyanose"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Examen ORL succinct",
+          "patientComment": "(Gorge, oreilles, nez)"
+        },
+        {
+          "id": "e5",
+          "text": "Palpation des ganglions lymphatiques"
+        },
+        {
+          "id": "e6",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "binaryOnly": false,
+          "details": [
+            "Status général ciblé et bien conduit"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "management": {
+      "title": "Prise en charge",
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic de suspicion",
+          "patientComment": "(Asthme bronchique d'effort)"
+        },
+        {
+          "id": "m2",
+          "text": "Diagnostics différentiels (au moins 2-3)",
+          "patientComment": "(BPCO, bronchites récidivantes, embolie pulmonaire)"
+        },
+        {
+          "id": "m3",
+          "text": "Examens complémentaires proposés",
+          "details": [
+            "Épreuves fonctionnelles respiratoires",
+            "Imagerie",
+            "Biologie"
+          ],
+          "patientComment": "(EFR avec bêta-2 mimétiques, éventuellement test de provocation / Radiographie thoracique / Laboratoire - éosinophilie)"
+        },
+        {
+          "id": "m4",
+          "text": "Traitement proposé",
+          "patientComment": "(Bêta-2 mimétiques à la demande, éventuellement glucocorticoïdes inhalés)"
+        },
+        {
+          "id": "m5",
+          "text": "Évaluation globale de la qualité de la prise en charge",
+          "binaryOnly": false,
+          "details": [
+            "Prise en charge générale cohérente et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    }
+  }
+}

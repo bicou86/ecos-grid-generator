@@ -1,0 +1,222 @@
+{
+  "title": "Douleur abdominale II",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Homme de 55 ans consultant pour douleurs abdominales"
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction et tâche",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Identification du symptôme principal",
+          "patientComment": "douleurs dans le haut du ventre",
+          "binaryOnly": true
+        },
+        {
+          "id": "a3",
+          "text": "Début et évolution",
+          "patientComment": "depuis quelques semaines, s'aggravant progressivement"
+        },
+        {
+          "id": "a4",
+          "text": "Localisation précise",
+          "patientComment": "épigastre, irradiation vers le dos"
+        },
+        {
+          "id": "a5",
+          "text": "Caractère de la douleur",
+          "patientComment": "sourde, constante"
+        },
+        {
+          "id": "a6",
+          "text": "Intensité",
+          "patientComment": "7-8/10"
+        },
+        {
+          "id": "a7",
+          "text": "Facteurs déclenchants",
+          "patientComment": "pire après les repas, surtout gras"
+        },
+        {
+          "id": "a8",
+          "text": "Facteurs soulageants",
+          "patientComment": "position penchée en avant"
+        },
+        {
+          "id": "a9",
+          "text": "Symptômes digestifs associés",
+          "patientComment": "nausées, parfois vomissements"
+        },
+        {
+          "id": "a10",
+          "text": "Appétit et poids",
+          "patientComment": "perte d'appétit, perte de poids de 5 kg en 2 mois"
+        },
+        {
+          "id": "a11",
+          "text": "Transit intestinal",
+          "patientComment": "selles grasses, difficiles à évacuer"
+        },
+        {
+          "id": "a12",
+          "text": "Consommation d'alcool",
+          "patientComment": "boire régulièrement, environ 4-5 verres par jour depuis 20 ans"
+        },
+        {
+          "id": "a13",
+          "text": "Tabagisme",
+          "patientComment": "1 paquet par jour depuis 30 ans"
+        },
+        {
+          "id": "a14",
+          "text": "Antécédents médicaux",
+          "patientComment": "diabète type 2 depuis 10 ans"
+        },
+        {
+          "id": "a15",
+          "text": "Médicaments actuels",
+          "patientComment": "Metformine"
+        },
+        {
+          "id": "a16",
+          "text": "Antécédents familiaux",
+          "patientComment": "père décédé d'un cancer du pancréas"
+        },
+        {
+          "id": "a17",
+          "text": "Profession",
+          "patientComment": "comptable"
+        },
+        {
+          "id": "a18",
+          "text": "Allergies",
+          "patientComment": "aucune connue"
+        },
+        {
+          "id": "a19",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "binaryOnly": false,
+          "details": [
+            "Anamnèse générale ciblée et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "État général et inspection",
+          "patientComment": "patient amaigri, légèrement ictérique"
+        },
+        {
+          "id": "e2",
+          "text": "Signes vitaux",
+          "patientComment": "TA 135/85, pouls 90/min, température 37.2°C"
+        },
+        {
+          "id": "e3",
+          "text": "Palpation abdominale",
+          "patientComment": "sensibilité épigastrique, masse palpable dans l'épigastre"
+        },
+        {
+          "id": "e4",
+          "text": "Auscultation abdominale",
+          "patientComment": "bruits intestinaux normaux"
+        },
+        {
+          "id": "e5",
+          "text": "Examen des conjonctives et sclérotiques",
+          "patientComment": "légère coloration jaunâtre"
+        },
+        {
+          "id": "e6",
+          "text": "Palpation des ganglions",
+          "patientComment": "ganglion de Virchow palpable"
+        },
+        {
+          "id": "e7",
+          "text": "Examen du foie",
+          "patientComment": "hépatomégalie modérée"
+        },
+        {
+          "id": "e8",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "binaryOnly": false,
+          "details": [
+            "Status général ciblé et bien conduit"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Énonce le diagnostic de suspicion",
+          "patientComment": "néoplasie pancréatique"
+        },
+        {
+          "id": "m2",
+          "text": "Nomme les diagnostics différentiels",
+          "details": [
+            "Pancréatite chronique",
+            "Cancer de l'estomac",
+            "Cholangiocarcinome",
+            "Métastases hépatiques"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Examens complémentaires de première intention",
+          "details": [
+            "Laboratoire : CA 19-9, CEA, bilirubine, enzymes hépatiques",
+            "Scanner abdominal avec injection de contraste",
+            "Échographie abdominale",
+            "IRM pancréatique"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Examens complémentaires spécialisés",
+          "details": [
+            "Echo-endoscopie avec biopsie",
+            "CPRE si obstruction biliaire",
+            "TEP-scan pour bilan d'extension"
+          ]
+        },
+        {
+          "id": "m5",
+          "text": "Prise en charge immédiate",
+          "details": [
+            "Référence urgente en oncologie",
+            "Soutien nutritionnel",
+            "Analgésie adaptée",
+            "Supplémentation enzymatique pancréatique",
+            "Sevrage tabagique et alcoolique"
+          ]
+        },
+        {
+          "id": "m6",
+          "text": "Évaluation globale de la qualité de la prise en charge",
+          "binaryOnly": false,
+          "details": [
+            "Prise en charge générale cohérente et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    }
+  }
+}

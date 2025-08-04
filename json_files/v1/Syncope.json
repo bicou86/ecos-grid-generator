@@ -1,0 +1,203 @@
+{
+  "title": "Syncope",
+  "context": {
+    "setting": "Service d'urgences",
+    "patient": "M. Münster, 65 ans, consulte car il a fait un malaise"
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction et objectif",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Symptôme principal",
+          "binaryOnly": false,
+          "details": [
+            "[Évanouissement, soudain sans prodromes]"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Fréquence des épisodes",
+          "binaryOnly": false,
+          "details": [
+            "[Dans les 3 dernières semaines déjà 2 fois]"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Symptômes associés",
+          "binaryOnly": false,
+          "details": [
+            "[Dernièrement plus fatigué et faible]",
+            "[Vertiges]",
+            "[Dyspnée (ne peut plus faire de vélo aussi bien)]"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Facteurs de risque cardiovasculaire",
+          "binaryOnly": false,
+          "details": [
+            "Diabète [oui]",
+            "Hypertension [oui]",
+            "Tabac [30 ans]",
+            "Antécédents familiaux [oui]"
+          ]
+        },
+        {
+          "id": "a6",
+          "text": "Substances toxiques",
+          "binaryOnly": false,
+          "details": [
+            "Alcool [de temps en temps]",
+            "[Tabac: 1 paquet par jour depuis 30 ans]",
+            "Drogues [non]"
+          ]
+        },
+        {
+          "id": "a7",
+          "text": "Symptômes B",
+          "binaryOnly": false
+        },
+        {
+          "id": "a8",
+          "text": "Allergies",
+          "binaryOnly": false
+        },
+        {
+          "id": "a9",
+          "text": "Médicaments",
+          "binaryOnly": false,
+          "details": [
+            "[Valsartan contre l'hypertension]"
+          ]
+        },
+        {
+          "id": "a10",
+          "text": "Antécédents médicaux",
+          "binaryOnly": false,
+          "details": [
+            "[Hypertension]"
+          ]
+        },
+        {
+          "id": "a11",
+          "text": "Interventions chirurgicales",
+          "binaryOnly": false
+        },
+        {
+          "id": "a12",
+          "text": "Antécédents familiaux",
+          "binaryOnly": false,
+          "details": [
+            "[Père décédé d'infarctus à 59 ans, mère en bonne santé]"
+          ]
+        },
+        {
+          "id": "a13",
+          "text": "Anamnèse sociale",
+          "binaryOnly": false,
+          "details": [
+            "[Banquier retraité]"
+          ]
+        },
+        {
+          "id": "a14",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "binaryOnly": false,
+          "details": [
+            "Anamnèse générale ciblée et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Examen cardiaque",
+          "binaryOnly": false,
+          "details": [
+            "[Bradycardie (pouls 40), bruits cardiaques normaux]"
+          ]
+        },
+        {
+          "id": "e2",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "binaryOnly": false,
+          "details": [
+            "Status général ciblé et bien conduit"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic principal",
+          "binaryOnly": false,
+          "details": [
+            "Trouble du rythme: bloc AV"
+          ]
+        },
+        {
+          "id": "m2",
+          "text": "Diagnostics différentiels",
+          "binaryOnly": false,
+          "details": [
+            "Syncope vasovagale",
+            "Autres blocs de conduction"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Examens complémentaires",
+          "binaryOnly": false,
+          "details": [
+            "Laboratoire: troponine, BNP [négatifs]",
+            "ECG [bloc AV type Mobitz]",
+            "Échocardiographie pour exclure infarctus"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Thérapie",
+          "binaryOnly": false,
+          "details": [
+            "Indication de stimulateur cardiaque"
+          ]
+        },
+        {
+          "id": "m5",
+          "text": "Évaluation globale de la qualité de la prise en charge",
+          "binaryOnly": false,
+          "details": [
+            "Prise en charge générale cohérente et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "images": [
+      {
+        "id": "annexe1",
+        "data": "grilles_generees/images/syncope-img.jpg",
+        "title": "ECG - Bloc AV de type Mobitz",
+        "description": "ECG montrant un bloc AV avec intervalles RR variables caractéristiques"
+      }
+    ]
+  }
+}

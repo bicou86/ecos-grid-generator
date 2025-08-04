@@ -1,0 +1,517 @@
+{
+  "title": "AMBOSS-28 - Prise de poids - Homme 45 ans",
+  "context": {
+    "setting": "Cabinet médical",
+    "patient": "Steven Collins, homme de 45 ans, consultant pour prise de poids",
+    "vitals": {
+      "temperature": "36.5°C",
+      "ta": "130/80 mmHg",
+      "fc": "60 bpm",
+      "fr": "14/min"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Motif principal",
+          "binaryOnly": true,
+          "patientComment": "J'ai pris au moins 7-10 livres"
+        },
+        {
+          "id": "a2",
+          "text": "Caractérisation de la prise de poids",
+          "binaryOnly": false,
+          "details": [
+            "Début [Ça a commencé il y a environ 2 mois]",
+            "Événements précipitants [Je suppose que ça a commencé juste après que ma femme m'ait quitté. Je ne suis pas sûr si ça a quelque chose à voir avec ça cependant ?]",
+            "Épisodes antérieurs [Je n'ai jamais été mince, mais je n'ai jamais pris autant de poids en si peu de temps. Je pense que je pèse plus de 200 livres maintenant]",
+            "Symptômes associés [Eh bien, maintenant que vous demandez, j'ai aussi été vraiment fatigué - complètement épuisé en fait]"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Recherche de symptômes spécifiques",
+          "binaryOnly": false,
+          "details": [
+            "Œdème des chevilles [Non]",
+            "Fièvre/frissons [Non]",
+            "Éruption cutanée/changements cutanés [Non]",
+            "Douleur thoracique [Non]",
+            "Dyspnée [Non]",
+            "Problèmes intestinaux [Oui, j'ai été constipé dernièrement]",
+            "Troubles du sommeil [Eh bien, je me réveille vraiment tôt le matin même si je suis encore fatigué. Je ne me sens jamais reposé. C'est pourquoi j'ai fait des siestes pendant la journée dernièrement]",
+            "Appétit [Je n'ai pas eu beaucoup d'appétit dernièrement]",
+            "Changements capillaires [Non]",
+            "Changements de voix [Non]",
+            "Intolérance au froid [Maintenant que vous le mentionnez, j'ai eu froid beaucoup dernièrement]"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Évaluation de l'humeur et symptômes dépressifs",
+          "binaryOnly": false,
+          "details": [
+            "Humeur [Je ne pense pas avoir vraiment été heureux depuis que ma femme est partie]",
+            "Perte d'intérêt [J'avais l'habitude de jouer au poker avec mes amis mais je n'y vais plus. Je préférerais être seul]",
+            "Culpabilité/faible estime de soi [Je suis presque sûr que c'est ma faute si ma famille s'est écroulée. Je ne pouvais juste plus rendre ma femme heureuse]",
+            "Faible énergie [Oui, en plus d'être toujours fatigué, je me sens aussi constamment épuisé. Je n'achète même plus d'épicerie. La plupart des jours je commande juste des plats à emporter]",
+            "Difficultés de concentration [Oui, j'ai vraiment du mal au travail maintenant, et mon travail était vraiment la seule chose qui me maintenait encore en vie]",
+            "Agitation ou ralentissement psychomoteur [Non]",
+            "Idées suicidaires [J'y ai pensé avant. Mais je ne le ferais pas vraiment - du moins pas maintenant. Je n'ai même pas l'énergie. Non, je n'ai jamais essayé de me tuer]",
+            "Soutien social [Ma sœur veille sur moi]"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Antécédents médicaux",
+          "binaryOnly": true,
+          "patientComment": "J'ai du reflux"
+        },
+        {
+          "id": "a6",
+          "text": "Allergies",
+          "binaryOnly": true,
+          "patientComment": "Aucune"
+        },
+        {
+          "id": "a7",
+          "text": "Médicaments",
+          "binaryOnly": true,
+          "patientComment": "Aucun"
+        },
+        {
+          "id": "a8",
+          "text": "Hospitalisations et antécédents chirurgicaux",
+          "binaryOnly": true,
+          "details": [
+            "Hospitalisations [Jamais]",
+            "Antécédents chirurgicaux [Aucun]"
+          ]
+        },
+        {
+          "id": "a9",
+          "text": "Antécédents familiaux",
+          "binaryOnly": true,
+          "patientComment": "Ma famille est vraiment en bonne santé même si nous sommes tous un peu en surpoids"
+        },
+        {
+          "id": "a10",
+          "text": "Habitudes et mode de vie",
+          "binaryOnly": false,
+          "details": [
+            "Travail [Je suis agent d'assurance]",
+            "Domicile [Je vis seul maintenant. Ma femme a déménagé après le divorce, et nous n'avons pas d'enfants]",
+            "Alcool [Parfois j'ai une bière ou un verre de vin avant d'aller au lit. Ça rend plus facile de s'endormir]",
+            "Drogues récréatives [Non, jamais]",
+            "Tabac [Non]",
+            "Exercice [Je n'aime pas vraiment faire de l'exercice, mais même si j'aimais, je doute que j'aurais l'énergie maintenant]",
+            "Alimentation [Tout ce que les services de livraison autour de ma maison offrent. Beaucoup de pizza]"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Mesures d'hygiène",
+          "binaryOnly": true,
+          "details": [
+            "Lavage des mains",
+            "Respect de la pudeur avec drap"
+          ]
+        },
+        {
+          "id": "e2",
+          "text": "Examen de la tête, yeux, oreilles, nez et gorge",
+          "binaryOnly": false,
+          "details": [
+            "Inspection de la tête",
+            "Inspection des conjonctives [Recherche de pâleur]",
+            "Inspection du nez",
+            "Inspection de l'oropharynx"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Examen du cou",
+          "binaryOnly": true,
+          "details": [
+            "Examen de la glande thyroïde"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Examen cardiovasculaire",
+          "binaryOnly": true,
+          "details": [
+            "Auscultation cardiaque"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Examen thoracique",
+          "binaryOnly": true,
+          "details": [
+            "Auscultation pulmonaire"
+          ]
+        },
+        {
+          "id": "e6",
+          "text": "Examen des extrémités et cutané",
+          "binaryOnly": true,
+          "details": [
+            "Inspection des membres inférieurs",
+            "Examen cutané"
+          ]
+        },
+        {
+          "id": "e7",
+          "text": "Examen neurologique",
+          "binaryOnly": false,
+          "details": [
+            "Évaluation de l'orientation dans le temps, l'espace et les personnes",
+            "Examen ciblé de l'état mental [Parole lente, affect plat constaté]",
+            "Examen ciblé des réflexes ostéo-tendineux"
+          ]
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Hypothèses diagnostiques",
+          "binaryOnly": false,
+          "scoringRule": "2 points si au moins 2 diagnostics pertinents mentionnés, 1 point si 1 diagnostic",
+          "ddSection": {
+            "title": "Diagnostics différentiels à considérer",
+            "categories": [
+              {
+                "name": "Troubles psychiatriques",
+                "items": [
+                  {
+                    "text": "Trouble dépressif majeur (TDM)",
+                    "cause": "Arguments POUR:\n\t□ Critères SIGECAPS (≥ 5/9 critères > 2 semaines) :\n\t  • Humeur dépressive depuis divorce (2 mois)\n\t  • Perte d'intérêt/plaisir (poker, isolement social)\n\t  • Sentiments de culpabilité (divorce = sa faute)\n\t  • Faible énergie/fatigue constante\n\t  • Difficultés concentration (performance travail)\n\t  • Perte d'appétit\n\t□ Facteur déclenchant clair : divorce récent\n\t□ Idées suicidaires passées (sans passage à l'acte)\n\t□ Affect plat, parole lente à l'examen\n\t□ Évolution temporelle cohérente (2 mois)",
+                    "test": "→ Diagnostic clinique, échelles depression (PHQ-9)"
+                  }
+                ]
+              },
+              {
+                "name": "Pathologies endocriniennes",
+                "items": [
+                  {
+                    "text": "Hypothyroïdie",
+                    "cause": "Arguments POUR:\n\t□ Prise de poids malgré perte d'appétit\n\t□ Fatigue/asthénie persistante\n\t□ Intolérance au froid récente\n\t□ Constipation\n\t□ TA limite élevée (130/80)\n\t□ Bradycardie (FC 60)\n\t□ Difficultés de concentration\n\t□ Symptômes dépressifs (can mimic)\nContre : Pas de changements cutanés/capillaires décrits",
+                    "test": "→ TSH (meilleur test initial)"
+                  },
+                  {
+                    "text": "Syndrome de Cushing",
+                    "cause": "Arguments POUR:\n\t□ Prise de poids rapide\n\t□ HTA modérée\n\t□ Symptômes dépressifs\n\t□ Faiblesse/fatigue\nContre : Pas de répartition androïde typique, pas de vergetures, pas de visage lunaire décrit",
+                    "test": "→ Cortisol libre urinaire 24h, test de freinage"
+                  }
+                ]
+              },
+              {
+                "name": "Troubles du sommeil",
+                "items": [
+                  {
+                    "text": "Apnée obstructive du sommeil (AOS)",
+                    "cause": "Arguments POUR:\n\t□ Réveil non réparateur\n\t□ Fatigue diurne/siestes\n\t□ Symptômes dépressifs secondaires\n\t□ Difficultés de concentration\n\t□ Facteurs de risque : obésité, alcool avant coucher\n\t□ HTA secondaire possible\nContre : Prise de poids malgré perte d'appétit, intolérance au froid",
+                    "test": "→ Polysomnographie (test de référence)"
+                  }
+                ]
+              },
+              {
+                "name": "Autres causes à considérer",
+                "items": [
+                  {
+                    "text": "Anémie",
+                    "cause": "Arguments POUR:\n\t□ Fatigue chronique\n\t□ Difficultés de concentration\nContre : Pas de pâleur évidente, pas d'essoufflement",
+                    "test": "→ NFS avec frottis"
+                  },
+                  {
+                    "text": "Trouble de l'adaptation",
+                    "cause": "Arguments POUR:\n\t□ Facteur stressant identifié (divorce)\n\t□ Symptômes < 6 mois post-événement\nContre : Sévérité symptômes suggère TDM",
+                    "test": "→ Évaluation clinique psychiatrique"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Examens complémentaires de première intention",
+          "binaryOnly": false,
+          "details": [
+            "TSH [TSH est le meilleur test initial pour l'hypothyroïdie suspectée]",
+            "NFS [Important d'évaluer l'anémie chez les patients avec fatigue]",
+            "Électrolytes, calcium, magnésium [les anomalies électrolytiques peuvent se manifester par une dépression]",
+            "Mesure de la tension artérielle (24 heures) [pour confirmer l'hypertension artérielle]"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Examens complémentaires spécialisés",
+          "binaryOnly": false,
+          "details": [
+            "Polysomnographie [test de première ligne pour l'AOS suspectée]",
+            "Cortisol libre urinaire 24h [si suspicion syndrome de Cushing]",
+            "Test de suppression à la dexaméthasone [évaluation axe hypothalamo-hypophyso-surrénalien]"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Évaluation du risque suicidaire",
+          "binaryOnly": false,
+          "details": [
+            "Évaluation des idées suicidaires actuelles",
+            "Recherche de facteurs de risque (isolement, divorce récent)",
+            "Évaluation des facteurs protecteurs (soutien familial - sœur)",
+            "Plan de sécurité si risque élevé",
+            "Orientation urgente si nécessaire"
+          ]
+        },
+        {
+          "id": "m5",
+          "text": "Communication avec le patient",
+          "binaryOnly": false,
+          "details": [
+            "Explications au patient des impressions diagnostiques préliminaires",
+            "Explication du plan de prise en charge",
+            "Utilisation d'un langage non médical et clarification des termes médicaux",
+            "Évaluation de l'accord du patient avec le plan diagnostique",
+            "Recherche des préoccupations et questions du patient"
+          ]
+        },
+        {
+          "id": "m6",
+          "text": "Conseil et soutien",
+          "binaryOnly": false,
+          "details": [
+            "Conseil sur les options de soutien pour les changements de poids et de régime",
+            "Réaction appropriée au défi sur les idées suicidaires",
+            "Orientation vers ressources de santé mentale",
+            "Éducation sur les signes d'alarme dépressifs",
+            "Information sur les groupes de soutien"
+          ],
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Prise en charge selon diagnostic",
+                "content": "• Si trouble dépressif majeur confirmé :\n  - Psychothérapie : TCC (thérapie cognitive-comportementale)\n  - Pharmacothérapie : ISRS (sertraline, citalopram)\n  - Dose initiale faible, augmentation progressive\n  - Surveillance effets secondaires 4-6 semaines\n  - Thérapie combinée si sévère\n  - Suivi rapproché phase initiale\n• Si hypothyroïdie confirmée :\n  - Lévothyroxine : 25-50 μg/j initial si > 50 ans\n  - 1.6 μg/kg/j si jeune et sain\n  - Contrôle TSH à 6-8 semaines\n  - Ajustement par paliers de 25 μg\n  - Cible TSH : 0.5-2.5 mUI/L\n• Si apnée du sommeil confirmée :\n  - CPAP (pression positive continue)\n  - Perte de poids si obésité\n  - Éviter alcool/sédatifs\n  - Hygiène du sommeil\n  - Suivi compliance CPAP\n• Mesures générales :\n  - Amélioration nutrition/activité physique\n  - Soutien psychosocial post-divorce\n  - Limitation alcool (interaction médicaments)\n  - Suivi régulier médecin traitant\n  - Plan de crise si idées suicidaires"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "cl1",
+          "text": "Défi : Idées suicidaires",
+          "content": "[Pourquoi dois-je vivre ?]"
+        },
+        {
+          "id": "cl2",
+          "text": "Réponse type du candidat",
+          "content": "M. Collins, à cause de votre question et des symptômes dont vous me parlez, je suis préoccupé que vous puissiez souffrir de dépression. Pensez-vous à mettre fin à votre vie en ce moment ? Si jamais vous envisagez de vous faire du mal ou de mettre fin à votre vie, j'aimerais que vous veniez aux urgences immédiatement. Si vous ne pouvez pas venir aux urgences, appelez s'il vous plaît le 911. J'aimerais aussi vous mettre en contact avec l'une de nos assistantes sociales aujourd'hui pour qu'elle puisse vous fournir des ressources précieuses. Ma porte est aussi toujours ouverte."
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "images": [],
+    "scenarioPatienteStandardisee": {
+      "titre": "Scénario pour le patient standardisé",
+      "nom": "Steven Collins",
+      "age": "45 ans",
+      "contexte": "Agent d'assurance récemment divorcé avec prise de poids et symptômes dépressifs majeurs",
+      "motifConsultation": {
+        "plaintePrincipale": "J'ai pris au moins 7-10 livres.",
+        "autreChose": "Je me sens complètement épuisé."
+      },
+      "consignes": [
+        "Parler lentement et avec une voix monotone. Ne montrer aucune émotion (ex: sourire).",
+        "Vous n'êtes pas au courant de la signification des termes médicaux (ex: polysomnographie) et demandez des clarifications si l'examinateur les utilise.",
+        "Défi : Demander 'Pourquoi dois-je vivre ?'"
+      ],
+      "histoireActuelle": {
+        "symptomePrincipal": [
+          "Prise de poids 7-10 livres en 2 mois",
+          "Début après divorce récent",
+          "Poids actuel > 200 livres",
+          "Fatigue/épuisement constant",
+          "Réveil précoce non réparateur"
+        ],
+        "symptomesAssocies": [
+          "Constipation récente",
+          "Intolérance au froid",
+          "Perte d'appétit paradoxale",
+          "Siestes diurnes fréquentes",
+          "Isolement social progressif",
+          "Difficultés concentration au travail"
+        ]
+      },
+      "simulation": {
+        "durantEntretien": [
+          "Affect plat et expression inexpressive",
+          "Parole lente et monotone",
+          "Avouer culpabilité sur échec mariage",
+          "Mentionner idées suicidaires passées",
+          "Minimiser soutien social (sœur)",
+          "Insister sur épuisement professionnel"
+        ],
+        "durantStatus": [
+          "Attitude apathique générale",
+          "Réponses lentes aux questions",
+          "Éviter le contact visuel",
+          "Signes possibles hypothyroïdie (bradycardie)",
+          "Obésité récente visible",
+          "Pas de signes évidents d'apnée du sommeil"
+        ]
+      }
+    },
+    "informationsExpert": {
+      "titre": "Informations de l'expert",
+      "dossierMedical": "Homme 45 ans avec trouble dépressif majeur post-divorce : 2 mois de symptômes remplissant critères SIGECAPS (humeur dépressive, anhédonie, culpabilité, fatigue, troubles concentration, perte appétit) + idées suicidaires passées. Prise de poids paradoxale avec intolérance froid évoque hypothyroïdie comorbide possible. Facteurs de risque AOS : obésité, alcool nocturne. Diagnostic différentiel complexe nécessitant bilan organique (TSH, NFS) avant confirmation TDM.",
+      "rolesInterventions": [
+        "L'expert-e intervient si l'étudiant-e fait :",
+        "• Évaluation risque suicidaire : faible actuellement",
+        "• TSH : 8.5 mUI/L (élevé, hypothyroïdie)",
+        "• T4 libre : 9 pmol/L (bas)",
+        "• NFS : normale, pas d'anémie",
+        "• Électrolytes : normaux",
+        "• Score PHQ-9 : 16/27 (dépression modérée-sévère)"
+      ],
+      "pointsCles": [
+        "TDM = diagnostic clinique avec critères SIGECAPS",
+        "Hypothyroïdie peut mimer/aggraver dépression",
+        "Toujours exclure causes organiques avant TDM",
+        "Évaluation systématique risque suicidaire",
+        "Prise de poids + perte appétit = atypique pour TDM",
+        "Facteur déclenchant clair : divorce récent"
+      ],
+      "pieges": [
+        "Négliger l'évaluation du risque suicidaire",
+        "Diagnostiquer TDM sans exclure hypothyroïdie",
+        "Oublier de rechercher apnée du sommeil",
+        "Minimiser l'impact du divorce récent",
+        "Ne pas proposer soutien psychosocial",
+        "Ignorer la constellation symptômes hypothyroïdie"
+      ]
+    },
+    "theoriePratique": {
+      "titre": "Théorie pratique concernant la vignette",
+      "sections": [
+        {
+          "titre": "Diagnostic le plus probable",
+          "contenu": "Trouble dépressif majeur avec hypothyroïdie comorbide"
+        },
+        {
+          "titre": "Trouble dépressif majeur",
+          "contenu": "Trouble de l'humeur caractérisé par épisodes dépressifs majeurs :",
+          "points": [
+            "Prévalence : 8-12% population générale",
+            "Sex-ratio : 2:1 femmes/hommes",
+            "Pic incidence : 20-30 ans et 30-40 ans",
+            "Facteurs de risque : stress, deuil, divorce, ATCD familiaux",
+            "Évolution : épisodique avec risque récidive 50-80%",
+            "Comorbidités : anxiété, troubles somatiques"
+          ]
+        },
+        {
+          "titre": "Critères diagnostiques DSM-5 TDM",
+          "contenu": "≥ 5 symptômes pendant ≥ 2 semaines (SIGECAPS) :",
+          "points": [
+            "S - Sleep : insomnie ou hypersomnie",
+            "I - Interest : perte d'intérêt/plaisir (anhédonie)",
+            "G - Guilt : culpabilité excessive, dévalorisation",
+            "E - Energy : fatigue, perte d'énergie",
+            "C - Concentration : difficultés cognitives",
+            "A - Appetite : perte/gain appétit/poids",
+            "P - Psychomotor : agitation ou ralentissement",
+            "S - Suicidality : idées de mort/suicide",
+            "Au moins 1 : humeur dépressive OU anhédonie"
+          ]
+        },
+        {
+          "titre": "Hypothyroïdie",
+          "contenu": "Déficit en hormones thyroïdiennes avec ralentissement métabolique :",
+          "points": [
+            "Prévalence : 4-8% population, 10:1 femmes/hommes",
+            "Étiologies : Hashimoto (80%), post-chirurgie/I131",
+            "Symptômes : fatigue, prise poids, intolérance froid",
+            "Signes : bradycardie, œdème, peau sèche",
+            "Complications : coma myxœdémateux, cardiopathie",
+            "Diagnostic : TSH élevée (> 4 mUI/L)"
+          ]
+        },
+        {
+          "titre": "Apnée obstructive du sommeil",
+          "contenu": "Obstruction récurrente voies aériennes supérieures :",
+          "points": [
+            "Prévalence : 15-30% hommes, 10-15% femmes",
+            "Facteurs de risque : obésité, âge, alcool, anatomie",
+            "Symptômes : ronflements, apnées, fatigue diurne",
+            "Complications : HTA, arythmies, AVC, dépression",
+            "Diagnostic : polysomnographie (IAH > 5/h)",
+            "Traitement : CPAP, perte poids, chirurgie"
+          ]
+        },
+        {
+          "titre": "Évaluation du risque suicidaire",
+          "contenu": "Systématique chez tout patient dépressif :",
+          "points": [
+            "Facteurs de risque : sexe masculin, âge > 45 ans, isolement",
+            "Idéation : fréquence, intensité, planification",
+            "Moyens : accès armes, médicaments, hauteur",
+            "Facteurs protecteurs : famille, religion, projets",
+            "Échelles : SAD PERSONS, Columbia, RUD",
+            "Hospitalisation si risque imminent"
+          ]
+        },
+        {
+          "titre": "Diagnostic différentiel dépression",
+          "contenu": "Éliminer causes organiques mimant TDM :",
+          "points": [
+            "Endocriniennes : hypothyroïdie, Cushing, Addison",
+            "Neurologiques : démence, Parkinson, AVC",
+            "Métaboliques : anémie, carence B12/folates",
+            "Médicamenteuses : bêtabloquants, corticoïdes",
+            "Substances : alcool, cannabis, opiacés",
+            "Autres : apnée sommeil, cancer, douleur chronique"
+          ]
+        }
+      ],
+      "rappelsTherapeutiques": [
+        "TDM léger-modéré : psychothérapie (TCC) première ligne",
+        "TDM sévère : antidépresseur + psychothérapie",
+        "ISRS première ligne : sertraline 50 mg/j, citalopram 20 mg/j",
+        "Délai d'action : 4-6 semaines, optimisation 8-12 semaines",
+        "Durée traitement : 6-12 mois post-rémission",
+        "Hypothyroïdie : lévothyroxine 1.6 μg/kg/j",
+        "Surveillance TSH à 6-8 semaines",
+        "Évaluation risque suicidaire à chaque consultation"
+      ],
+      "examensComplementaires": [
+        "TSH : élimine hypothyroïdie (cause fréquente dépression)",
+        "NFS : élimine anémie (fatigue, troubles cognitifs)",
+        "Ionogramme complet : désordres électrolytiques",
+        "Glycémie à jeun : diabète, syndrome métabolique",
+        "Créatininémie : fonction rénale (médicaments)",
+        "Bilan hépatique : fonction hépatique (médicaments)",
+        "B12, folates : si suspicion carence",
+        "Polysomnographie : si suspicion apnée du sommeil"
+      ]
+    }
+  }
+}

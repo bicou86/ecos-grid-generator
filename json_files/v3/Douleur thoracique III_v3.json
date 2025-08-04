@@ -1,0 +1,478 @@
+{
+  "title": "Douleur thoracique III",
+  "context": {
+    "setting": "Service d'urgence",
+    "patient": "Homme de 23 ans se présentant avec douleur thoracique aiguë",
+    "vitals": {
+      "ta": "114/76 mmHg",
+      "fc": "83 bpm",
+      "fr": "20/min",
+      "temperature": "36.8°C"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction et objectif de la consultation",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Question ouverte d'introduction → Motif de consultation",
+          "patientComment": "Douleurs dans la poitrine depuis le basket",
+          "binaryOnly": true
+        },
+        {
+          "id": "a3",
+          "text": "RED FLAGS - Urgences thoraciques",
+          "details": [
+            "Détresse respiratoire aiguë [légère dyspnée]",
+            "Douleur thoracique sévère [7/10]",
+            "Signes de pneumothorax sous tension [non]",
+            "Emphysème sous-cutané [à vérifier]",
+            "Instabilité hémodynamique [TA stable]",
+            "Cyanose [non mentionnée]",
+            "Sudation profuse [non]",
+            "Agitation/anxiété [à évaluer]"
+          ],
+          "scoringRule": "≥6 red flags explorés = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a4",
+          "text": "Caractérisation de la douleur thoracique (PQRST)",
+          "details": [
+            "Provocation/palliation [pendant basketball, pas de soulagement]",
+            "Qualité [sourde, oppressante, ondulante]",
+            "Région/radiation [centre-droit poitrine → nuque]",
+            "Sévérité [7/10 constante]",
+            "Temps/début [quelques heures, aggravation progressive]"
+          ],
+          "scoringRule": "PQRST complet = 2 pts, 3-4 éléments = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a5",
+          "text": "Facteurs de risque de pneumothorax primaire",
+          "details": [
+            "Morphotype longiligne [grand et mince typique]",
+            "Tabagisme actif [5 cigarettes/jour]",
+            "Sexe masculin [oui - ratio 6:1]",
+            "Âge 20-30 ans [23 ans - pic d'incidence]",
+            "Effort physique déclenchant [basketball]",
+            "Variations pression atmosphérique [non exploré]",
+            "Consommation cannabis [non mentionnée]",
+            "ATCD pneumothorax [non]"
+          ],
+          "scoringRule": "≥6 facteurs évalués = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a6",
+          "text": "Symptômes respiratoires associés",
+          "details": [
+            "Dyspnée d'effort [présente avec basketball]",
+            "Dyspnée de repos [légère actuellement]",
+            "Toux sèche [non]",
+            "Hémoptysie [non]",
+            "Douleur pleurétique [non - pas respiratoire]",
+            "Sensation d'oppression [oui]",
+            "Impossibilité respiration profonde [à vérifier]"
+          ],
+          "scoringRule": "≥5 symptômes = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a7",
+          "text": "Recherche de pneumothorax secondaire",
+          "details": [
+            "ATCD asthme [enfance, rare maintenant]",
+            "BPCO/emphysème [non à 23 ans]",
+            "Mucoviscidose [non mentionnée]",
+            "Syndrome de Marfan [morphotype?]",
+            "Pneumonie récente [non]",
+            "Tuberculose [non]",
+            "Endométriose thoracique [homme]",
+            "Trauma thoracique [non]"
+          ],
+          "scoringRule": "≥6 causes explorées = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a8",
+          "text": "Exclusion autres urgences cardiovasculaires",
+          "details": [
+            "Douleur angineuse typique [non]",
+            "Palpitations [non mentionnées]",
+            "Syncope/lipothymie [non]",
+            "Facteurs risque CV [tabac seul]",
+            "ATCD familiaux cardiaques [non]",
+            "Prise cocaïne/amphétamines [non]"
+          ],
+          "scoringRule": "≥5 éléments = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a9",
+          "text": "Score de Wells pour EP (exclusion)",
+          "details": [
+            "Signes cliniques TVP [non]",
+            "EP plus probable [non - pneumothorax plus probable]",
+            "FC >100/min [non - 83]",
+            "Immobilisation/chirurgie [non]",
+            "ATCD TVP/EP [non]",
+            "Hémoptysie [non]",
+            "Cancer actif [non]",
+            "Score total: 0 - probabilité faible"
+          ],
+          "scoringRule": "Score correctement calculé = 2 pts, partiel = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a10",
+          "text": "Antécédents médicaux pertinents",
+          "details": [
+            "Asthme [enfance, Ventolin PRN]",
+            "Hospitalisations [non mentionnées]",
+            "Chirurgies [non]",
+            "Traumatismes [non]",
+            "Allergies [pollen seulement]",
+            "Infections respiratoires récurrentes [non]"
+          ],
+          "scoringRule": "≥5 éléments = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a11",
+          "text": "Habitudes et mode de vie",
+          "details": [
+            "Tabac [5 cig/j - facteur majeur]",
+            "Alcool [week-end social]",
+            "Cannabis/vaping [non mentionné]",
+            "Activité physique [basketball régulier]",
+            "Stress études [étudiant]",
+            "Sommeil [à évaluer]",
+            "Nutrition [à explorer]"
+          ],
+          "scoringRule": "≥5 éléments = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a12",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "details": [
+            "Anamnèse complète et systématique",
+            "Red flags explorés",
+            "Facteurs risque pneumothorax identifiés",
+            "Exclusion autres urgences",
+            "Histoire orientée vers diagnostic"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Évaluation de l'état général et vital signs",
+          "details": [
+            "Conscience/orientation [normale]",
+            "Coloration [un peu pâle]",
+            "Détresse respiratoire [légère]",
+            "Position spontanée [assis penché?]",
+            "SpO2 en air ambiant [crucial]",
+            "FR et travail respiratoire [20/min]"
+          ],
+          "scoringRule": "≥5 éléments = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e2",
+          "text": "Inspection thoracique spécifique",
+          "details": [
+            "Asymétrie thoracique [à rechercher]",
+            "Ampliation diminuée côté droit [probable]",
+            "Tirage intercostal [non mentionné]",
+            "Utilisation muscles accessoires [à vérifier]",
+            "Emphysème sous-cutané [palper]",
+            "Cicatrices thoraciques [non]"
+          ],
+          "scoringRule": "≥5 signes = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e3",
+          "text": "Auscultation pulmonaire comparative",
+          "details": [
+            "MV normal à gauche [oui]",
+            "MV absent/diminué à droite [absent!]",
+            "Bruits surajoutés [non]",
+            "Frottement pleural [non]",
+            "Comparaison apex/bases",
+            "Auscultation postérieure"
+          ],
+          "scoringRule": "≥5 éléments = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e4",
+          "text": "Percussion thoracique bilatérale",
+          "details": [
+            "Hypersonorité à droite [oui - pathognomonique]",
+            "Sonorité normale à gauche",
+            "Percussion apex → bases",
+            "Percussion antérieure et latérale"
+          ],
+          "scoringRule": "Percussion complète = 2 pts, partielle = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e5",
+          "text": "Recherche signes de pneumothorax sous tension",
+          "details": [
+            "Déviation trachéale [non - bon signe]",
+            "Turgescence jugulaire [non]",
+            "Hypotension [non - 114/76 normal]",
+            "Tachycardie compensatrice [non - 83]",
+            "Choc obstructif [absent]"
+          ],
+          "scoringRule": "Exclusion complète = 2 pts, partielle = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e6",
+          "text": "Examen cardiovasculaire",
+          "details": [
+            "Bruits du cœur audibles [normaux?]",
+            "Déplacement choc de pointe [à vérifier]",
+            "Pouls périphériques [présents]",
+            "Temps recoloration capillaire [normal?]"
+          ],
+          "scoringRule": "≥3 éléments = 2 pts, 2 = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e7",
+          "text": "Examens complémentaires au lit",
+          "details": [
+            "Peak flow si disponible [utile si asthme]",
+            "US thoracique (absence glissement pleural)",
+            "ECG si doute cardiaque"
+          ],
+          "scoringRule": "≥2 examens = 2 pts, 1 = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e8",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "details": [
+            "Inspection thoracique détaillée",
+            "Auscultation comparative systématique",
+            "Percussion diagnostique réalisée",
+            "Exclusion pneumothorax tension",
+            "Documentation précise des findings"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic principal énoncé",
+          "details": [
+            "Pneumothorax spontané primaire droit",
+            "Jeune homme longiligne fumeur",
+            "Déclenché par effort physique"
+          ],
+          "scoringRule": "Diagnostic complet = 2 pts, partiel = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m2",
+          "text": "Diagnostics différentiels pertinents",
+          "ddSection": {
+            "categories": [
+              {
+                "name": "Causes pulmonaires",
+                "items": [
+                  "Pneumothorax spontané Rx thorax, US thoracique",
+                  "Pleurésie/pleurodynie Rx thorax, CRP",
+                  "Pneumonie atypique Rx thorax, CRP, PCT",
+                  "Crise d'asthme Peak flow, spirométrie"
+                ]
+              },
+              {
+                "name": "Causes cardiovasculaires",
+                "items": [
+                  "Péricardite aiguë ECG, troponine, echo",
+                  "Myocardite ECG, troponine, IRM cardiaque",
+                  "Dissection aortique (rare) Angio-CT thoracique"
+                ]
+              },
+              {
+                "name": "Causes pariétales",
+                "items": [
+                  "Douleur musculosquelettique Examen clinique",
+                  "Costochondrite (Tietze) Palpation costochondrale",
+                  "Fracture de côte occulte Rx thorax, palpation"
+                ]
+              }
+            ]
+          },
+          "scoringRule": "≥6 DD pertinents = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m3",
+          "text": "Examens complémentaires urgents",
+          "details": [
+            "Rx thorax inspiration (gold standard)",
+            "Rx thorax expiration si doute",
+            "US thoracique si Rx non concluante",
+            "Gaz du sang si dyspnée importante",
+            "ECG si doute cardiaque",
+            "Troponine hs si suspicion myocardite",
+            "NFS, CRP si contexte infectieux"
+          ],
+          "scoringRule": "≥5 examens = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m4",
+          "text": "Classification et stratégie thérapeutique",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Pneumothorax < 2cm (petit)",
+                "content": "• Observation simple\n• O2 haut débit (accélère résorption × 4)\n• Surveillance Rx à 4-6h\n• Hospitalisation 24h\n• Analgésie simple (paracétamol)"
+              },
+              {
+                "title": "Pneumothorax > 2cm ou symptomatique",
+                "content": "• Aspiration à l'aiguille première intention\n• Si échec → drain thoracique fin (8-14F)\n• Position Fowler 30-45°\n• Analgésie multimodale\n• Rx contrôle post-drainage"
+              },
+              {
+                "title": "Pneumothorax sous tension",
+                "content": "• Décompression urgente 2e EIC ligne médio-claviculaire\n• Puis drain thoracique large\n• Réanimation si instabilité\n• USI/réanimation"
+              }
+            ]
+          },
+          "scoringRule": "Stratégie adaptée = 2 pts, partielle = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m5",
+          "text": "Surveillance et critères de succès",
+          "details": [
+            "SpO2 continue + alarmes",
+            "FR et travail respiratoire",
+            "Douleur EVA régulière",
+            "Rx contrôle à 4-6h puis 24h",
+            "Ré-expansion complète objectif",
+            "Absence fuite air si drainé",
+            "Mobilisation progressive"
+          ],
+          "scoringRule": "≥5 éléments = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m6",
+          "text": "Critères d'hospitalisation",
+          "details": [
+            "Tout pneumothorax symptomatique",
+            "Pneumothorax > 2cm",
+            "Pneumothorax bilatéral",
+            "Comorbidité pulmonaire (asthme)",
+            "Isolement social",
+            "Distance domicile-hôpital > 1h",
+            "Anxiété importante"
+          ],
+          "scoringRule": "≥5 critères = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m7",
+          "text": "Prévention des récidives",
+          "redflagsSection": [
+            {
+              "text": "Arrêt tabac IMPÉRATIF (↓ risque 4×)"
+            },
+            {
+              "text": "Éviter cannabis/vaping"
+            },
+            {
+              "text": "Plongée INTERDITE à vie"
+            },
+            {
+              "text": "Aviation interdite 2-6 semaines"
+            },
+            {
+              "text": "Éviter Valsalva excessifs"
+            },
+            {
+              "text": "Sports de contact après 6 semaines"
+            },
+            {
+              "text": "Informer pour voyages altitude"
+            }
+          ],
+          "scoringRule": "≥5 conseils = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m8",
+          "text": "Information patient et pronostic",
+          "details": [
+            "Pathologie bénigne généralement",
+            "Risque récidive 30% à 2 ans",
+            "50% récidive si 2e épisode",
+            "Guérison spontanée 1-2% par jour",
+            "Signes alarme à reconnaître",
+            "Consultation si aggravation",
+            "Rdv pneumologie si récidive"
+          ],
+          "scoringRule": "≥5 informations = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m9",
+          "text": "Suivi et chirurgie préventive",
+          "details": [
+            "Rx thorax à 1 semaine",
+            "Consultation pneumologie si récidive",
+            "Indications VATS/bullectomie:",
+            "- 2e épisode ipsilatéral",
+            "- 1er épisode controlatéral",
+            "- Pneumothorax bilatéral",
+            "- Profession à risque (pilote, plongeur)",
+            "- Fuite persistante > 5 jours"
+          ],
+          "scoringRule": "Indications correctes = 2 pts, partielles = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m10",
+          "text": "Évaluation globale de la qualité de la prise en charge",
+          "details": [
+            "Diagnostic clinique correct",
+            "Examens appropriés demandés",
+            "Stratification selon taille/symptômes",
+            "Prévention récidive organisée",
+            "Information patient complète"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        }
+      ]
+    }
+  }
+}

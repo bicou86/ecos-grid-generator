@@ -1,0 +1,369 @@
+{
+  "title": "Énurésie",
+  "context": {
+    "setting": "Cabinet de pédiatrie",
+    "patient": "Mère consulte avec sa fille de 6 ans car celle-ci fait encore pipi dans sa culotte.",
+    "patientComment": "Fillette de 6 ans avec énurésie primaire mixte (nocturne quasi-quotidienne + diurne occasionnelle). Jamais été propre. Pas de signes d'alarme apparents. Contexte familial d'acquisition tardive de la propreté."
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction et tâche",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Caractérisation complète de l'énurésie",
+          "details": [
+            "Type: [pipi au lit la nuit, parfois aussi le jour]",
+            "Primaire vs secondaire: [depuis toujours - jamais été propre]",
+            "Fréquence nocturne: [presque chaque nuit]",
+            "Fréquence diurne: [1-2 fois par semaine]",
+            "Circonstances diurnes: [surtout en jouant]"
+          ],
+          "binaryOnly": false,
+          "patientComment": "Énurésie primaire mixte confirmée",
+          "scoringRule": "≥4 caractéristiques = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "a3",
+          "text": "Recherche de RED FLAGS pédiatriques",
+          "redflagsSection": [
+            {
+              "text": "Douleurs mictionnelles/abdominales [non, rien remarqué]",
+              "isRedFlag": false
+            },
+            {
+              "text": "Fièvre ou infections urinaires récurrentes [aucune connue]",
+              "isRedFlag": false
+            },
+            {
+              "text": "Anomalie du jet urinaire [non exploré]",
+              "isRedFlag": false
+            },
+            {
+              "text": "Constipation chronique/encoprésie [très, très rarement]",
+              "isRedFlag": false
+            },
+            {
+              "text": "Polyurie/polydipsie pathologique [boit beaucoup le soir]",
+              "isRedFlag": true
+            }
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥4 red flags recherchés = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "a4",
+          "text": "Habitudes mictionnelles et comportement",
+          "details": [
+            "Fréquence mictionnelle: [5-6 fois par jour]",
+            "Autonomie toilettes: [va seule]",
+            "Comportement: [sans particularité]",
+            "Urines: [couleur et odeur normales]",
+            "Conscience des accidents: [dort et ne remarque rien la nuit]"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "a5",
+          "text": "Impact psychosocial et familial",
+          "details": [
+            "Enfant: [ne semble pas la déranger]",
+            "Parents: [agacés par lavage, inquiets pour jardin d'enfants]",
+            "Social: [ne veut plus de couches car cousine n'en a plus]",
+            "Port de couches: [non, la fillette ne veut plus]",
+            "Mesures entreprises: [aucune]"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥4 aspects explorés = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "a6",
+          "text": "Facteurs de risque et antécédents familiaux",
+          "details": [
+            "AF énurésie mère: [propre à 4 ans]",
+            "AF énurésie père: [incertain - plutôt tard]",
+            "Fratrie: [non, enfant unique]",
+            "Stress familial: [parents ensemble, pas de divorce]",
+            "Habitudes boisson: [boit beaucoup, grand biberon lait le soir]"
+          ],
+          "binaryOnly": false,
+          "patientComment": "Facteur de risque familial et habitudes inadaptées",
+          "scoringRule": "≥4 facteurs = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "a7",
+          "text": "Développement global et comorbidités",
+          "details": [
+            "Développement psychomoteur",
+            "Bien-être psychologique: [non, pas de problèmes]",
+            "Troubles du sommeil",
+            "TDAH ou troubles comportementaux",
+            "Performances scolaires"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥3 domaines explorés = 2 pts, 2 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "a8",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "binaryOnly": false,
+          "details": [
+            "Anamnèse structurée selon l'approche pédiatrique",
+            "RED FLAGS systématiquement recherchés",
+            "Impact bio-psycho-social évalué"
+          ],
+          "scoringRule": "Excellente = 2 pts, suffisante = 1 pt, insuffisante = 0 pt"
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Préparation et approche pédiatrique",
+          "details": [
+            "Hygiène des mains",
+            "Mise en confiance de l'enfant",
+            "Explication adaptée à l'âge",
+            "Respect de la pudeur",
+            "Présence parentale"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "e2",
+          "text": "Examen abdominal complet",
+          "details": [
+            "Inspection: distension, cicatrices",
+            "Palpation: [souple, pas de résistance]",
+            "Recherche globe vésical",
+            "Recherche fécalome (constipation)",
+            "Bruits intestinaux"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "e3",
+          "text": "Examen rénal et urinaire",
+          "details": [
+            "Palpation rénale: [reins non palpables]",
+            "Points urétéraux",
+            "Percussion lombaire",
+            "Recherche œdèmes",
+            "Tension artérielle si possible"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥3 éléments = 2 pts, 2 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "e4",
+          "text": "Examen génital externe adapté",
+          "details": [
+            "Inspection externe seulement",
+            "Recherche rougeur/irritation",
+            "Signes d'infection locale",
+            "Anomalies anatomiques visibles",
+            "Respect strict de la pudeur"
+          ],
+          "binaryOnly": false,
+          "patientComment": "Examen limité à l'inspection externe si nécessaire",
+          "scoringRule": "Approche appropriée = 2 pts, partielle = 1 pt, inadaptée = 0 pt"
+        },
+        {
+          "id": "e5",
+          "text": "Examen neurologique de dépistage",
+          "details": [
+            "Marche et équilibre",
+            "Réflexes ostéo-tendineux membres inférieurs",
+            "Sensibilité périnéale/sacrée",
+            "Tonus sphinctérien anal",
+            "Inspection colonne vertébrale (spina bifida)"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥3 éléments = 2 pts, 2 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "e6",
+          "text": "Évaluation développementale globale",
+          "details": [
+            "Croissance staturo-pondérale",
+            "Développement pubertaire (Tanner)",
+            "Interaction sociale",
+            "Langage adapté à l'âge",
+            "Comportement général"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥3 éléments = 2 pts, 2 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "e7",
+          "text": "Évaluation globale de la qualité de l'examen",
+          "binaryOnly": false,
+          "details": [
+            "Examen adapté à l'âge et respectueux",
+            "Recherche causes organiques systématique",
+            "Approche holistique pédiatrique"
+          ],
+          "scoringRule": "Excellent = 2 pts, suffisant = 1 pt, insuffisant = 0 pt"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic principal et classification",
+          "patientComment": "Énurésie primaire mixte non compliquée",
+          "details": [
+            "Énurésie primaire (jamais propre)",
+            "Mixte (nocturne + diurne)",
+            "Non monosymptomatique (accidents diurnes)",
+            "Sans signes d'alarme organiques",
+            "Facteurs favorisants identifiés"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "Diagnostic complet avec classification = 2 pts, partiel = 1 pt, incorrect = 0 pt"
+        },
+        {
+          "id": "m2",
+          "text": "Diagnostics différentiels structurés",
+          "ddSection": {
+            "categories": [
+              {
+                "name": "Causes organiques",
+                "items": [
+                  "Infection urinaire",
+                  "Diabète insipide/mellitus",
+                  "Malformation uro-génitale",
+                  "Vessie neurologique"
+                ]
+              },
+              {
+                "name": "Causes fonctionnelles",
+                "items": [
+                  "Immaturité vésicale",
+                  "Vessie hyperactive",
+                  "Constipation chronique occulte"
+                ]
+              },
+              {
+                "name": "Causes psychologiques",
+                "items": [
+                  "Énurésie secondaire (stress)",
+                  "Troubles anxieux",
+                  "Régression comportementale"
+                ]
+              }
+            ]
+          },
+          "binaryOnly": false,
+          "scoringRule": "≥6 DD pertinents = 2 pts, 3-5 DD = 1 pt, <3 DD = 0 pt"
+        },
+        {
+          "id": "m3",
+          "text": "Examens complémentaires ciblés",
+          "binaryOnly": false,
+          "scoringRule": "≥3 examens appropriés = 2 pts, 2 = 1 pt, <2 = 0 pt",
+          "details": [
+            "Analyse urine (BU + ECBU) → Exclure infection, glycosurie, protéinurie",
+            "Échographie rénale et vésicale → Si échec traitement ou signes d'alarme",
+            "Calendrier mictionnel → Évaluer pattern avant traitement",
+            "Débitmétrie/résidu post-mictionnel → Si suspicion dysfonction vésicale"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Approche thérapeutique graduée - Phase 1",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Mesures comportementales",
+                "content": "• Réduction boissons 2h avant coucher\n• Suppression biberon lait nocturne\n• Mictions régulières (toutes les 2-3h)\n• Double miction avant coucher\n• Éviter boissons caféinées"
+              },
+              {
+                "title": "Motivation et renforcement",
+                "content": "• Calendrier soleil/nuages\n• Récompenses progressives\n• Jamais de punition\n• Responsabilisation adaptée\n• Valorisation des progrès"
+              },
+              {
+                "title": "Éducation thérapeutique",
+                "content": "• Explication physiologie simple\n• Normalisation (1/10 enfants)\n• Patience et bienveillance\n• Éviter pression excessive\n• Implication de l'enfant"
+              }
+            ]
+          },
+          "binaryOnly": false,
+          "scoringRule": "≥3 catégories complètes = 2 pts, 2 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "m5",
+          "text": "Options thérapeutiques - Phase 2",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Système d'alarme",
+                "content": "• Culotte avec capteur d'humidité\n• Efficacité 60-70% à 6 mois\n• Nécessite motivation famille\n• Durée minimum 3-4 mois\n• Rechutes possibles"
+              },
+              {
+                "title": "Desmopressine",
+                "content": "• Analogue ADH (Minirin®)\n• 0.2-0.4mg au coucher\n• Efficacité rapide mais temporaire\n• Restriction hydrique le soir\n• Rechute fréquente à l'arrêt"
+              },
+              {
+                "title": "Combinaisons thérapeutiques",
+                "content": "• Alarme + desmopressine\n• Anticholinergiques si vessie hyperactive\n• Prise en charge constipation\n• Soutien psychologique si besoin"
+              }
+            ]
+          },
+          "binaryOnly": false,
+          "patientComment": "Approche progressive selon réponse",
+          "scoringRule": "≥3 options détaillées = 2 pts, 2 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "m6",
+          "text": "Conseils pratiques et soutien familial",
+          "details": [
+            "Protection matelas imperméable",
+            "Changes/pyjamas accessibles",
+            "Participation enfant au nettoyage (sans punition)",
+            "Groupe de soutien parents",
+            "Documentation adaptée âge"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥4 conseils = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "m7",
+          "text": "Plan de suivi structuré",
+          "details": [
+            "Contrôle à 4-6 semaines avec calendrier",
+            "Ajustement stratégie selon réponse",
+            "Suivi téléphonique intermédiaire",
+            "Référence spécialiste si échec 6 mois",
+            "Soutien continu jusqu'à résolution"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "m8",
+          "text": "Évaluation globale de la prise en charge",
+          "binaryOnly": false,
+          "details": [
+            "Approche bio-psycho-sociale complète",
+            "Stratégie thérapeutique graduée",
+            "Famille au centre du traitement"
+          ],
+          "scoringRule": "Excellente = 2 pts, adéquate = 1 pt, insuffisante = 0 pt"
+        }
+      ]
+    }
+  }
+}

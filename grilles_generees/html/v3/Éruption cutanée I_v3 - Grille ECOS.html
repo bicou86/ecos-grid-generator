@@ -1,0 +1,2173 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Éruption cutanée I_v3 - Grille ECOS</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background-color: #f5f5f5; }
+        .container { max-width: 1200px; margin: 0 auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); }
+        .header { background: #2c5aa0; color: white; padding: 15px; margin: -20px -20px 20px -20px; border-radius: 8px 8px 0 0; }
+        .section { margin-bottom: 30px; border: 1px solid #ddd; border-radius: 8px; overflow: hidden; }
+        .section-header { background: #f8f9fa; padding: 15px; font-weight: bold; font-size: 18px; border-bottom: 1px solid #ddd; display: flex; justify-content: space-between; align-items: center; }
+        .section-content { padding: 15px; }
+        .header-row { display: grid; grid-template-columns: 2fr 80px 80px 80px 80px; gap: 10px; padding: 10px 0; border-bottom: 2px solid #ddd; font-weight: bold; text-align: center; }
+        .header-row div:first-child { text-align: left; }
+        .criteria-row { display: grid; grid-template-columns: 2fr 80px 80px 80px 80px; gap: 10px; align-items: start; padding: 15px 0; border-bottom: 1px solid #eeeeee; }
+        .criteria-row:last-child { border-bottom: none; }
+        .criteria-text { font-weight: 500; }
+        .sub-criteria { font-size: 0.9em; color: #666; margin-top: 5px; padding-left: 18px; line-height: 1.2; }
+        .patient-response { font-size: 0.9em; color: rgba(44, 90, 160, 0.65); }
+        .checkbox-group { text-align: center; }
+        .points-display { text-align: center; font-weight: bold; color: #2c5aa0; font-size: 18px; }
+        .scoring-rule { font-size: 0.85em; color: #888; font-style: italic; margin-top: 8px; padding-left: 20px; }
+        input[type="radio"] { cursor: pointer; transform: scale(1.2); }
+        input[type="radio"]:disabled { opacity: 0.3; cursor: not-allowed; }
+        
+        /* Styles pour les commentaires discrets */
+        .comment-button { 
+            background: none; 
+            border: none; 
+            color: #2c5aa0; 
+            cursor: pointer; 
+            font-size: 14px; 
+            padding: 2px 6px; 
+            margin-left: 8px; 
+            border-radius: 3px; 
+            opacity: 0.6;
+            transition: all 0.2s;
+        }
+        .comment-button:hover { opacity: 1; background: rgba(44, 90, 160, 0.1); }
+        .comment-button.has-content { opacity: 1; color: #d9534f; }
+        
+        .section-comment-button {
+            background: rgba(44, 90, 160, 0.1);
+            border: 1px solid #2c5aa0;
+            color: #2c5aa0;
+            cursor: pointer;
+            font-size: 12px;
+            padding: 4px 8px;
+            margin-left: 10px;
+            border-radius: 15px;
+            opacity: 0.8;
+            transition: all 0.2s;
+            font-weight: 500;
+        }
+        .section-comment-button:hover { 
+            opacity: 1; 
+            background: rgba(44, 90, 160, 0.2); 
+            transform: scale(1.05);
+        }
+        .section-comment-button.has-content { 
+            background: rgba(220, 53, 69, 0.1);
+            border-color: #d9534f;
+            color: #d9534f; 
+        }
+        
+        .criterion-comment-section { 
+            display: none; 
+            margin: 8px 0 12px 20px; 
+            padding: 10px; 
+            background: #fafafa; 
+            border-left: 3px solid #2c5aa0; 
+            border-radius: 0 4px 4px 0;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        .criterion-comment-section.show { display: block; }
+        
+        .section-comment-section { 
+            display: none;
+            margin: 20px 0; 
+            padding: 12px; 
+            background: #f8f9fa; 
+            border: 1px solid #e9ecef;
+            border-radius: 6px;
+        }
+        .section-comment-section.show { display: block; }
+        .section-comment-section.global { 
+            display: block; 
+            background: #f0f8ff; 
+            border-color: #2c5aa0;
+        }
+        /* La section commentaire global reste toujours visible sauf à l'impression */
+        
+        .comment-textarea { 
+            width: calc(100% - 20px); 
+            min-height: 50px; 
+            padding: 6px; 
+            margin-right: 20px;
+            border: 1px solid #ddd; 
+            border-radius: 3px; 
+            font-family: Arial, sans-serif; 
+            font-size: 0.85em; 
+            resize: vertical; 
+            font-style: italic;
+            color: #555;
+        }
+        .comment-textarea:focus { 
+            outline: none; 
+            border-color: #2c5aa0; 
+            box-shadow: 0 0 3px rgba(44, 90, 160, 0.3); 
+        }
+        .comment-textarea::placeholder { 
+            font-style: italic; 
+            color: #999; 
+        }
+        .score { font-weight: bold; color: hsl(216, 57%, 40%); font-size: 18px; }
+        .total-sections { display: grid; grid-template-columns: 1fr 2fr 1fr; gap: 20px; margin-bottom: 30px; }
+        .total-section { display: flex; flex-direction: column; justify-content: space-between; text-align: center; background: #f0f8ff; border: 1px solid #ddd; border-radius: 8px; transition: all 0.3s; }
+        .total-label { background: #f8f9fa; padding: 5px; font-weight: bold; font-size: 20px; border-bottom: 1px solid #ddd; border-radius: 8px 8px 0 0; }
+        .total-body { flex: 1; display: flex; align-items: center; justify-content: center; padding: 5px; border-radius: 0 0 8px 8px; }
+        .total-pourcent-body { flex: 1; padding: 10px; border-radius: 0 0 8px 8px; }
+        .total-score, .total-note-globale { font-size: 56px; font-weight: bold; line-height: 1; }
+        .total-pourcent-sections { display: flex; flex-wrap: nowrap; gap: 10px; height: 100%; align-items: stretch; }
+        .total-pourcent-section { flex: 1 1 auto; min-width: 0; display: flex; flex-direction: column; text-align: center; background: #416caa; padding: 10px; border-radius: 5px; transition: all 0.3s; border: none; }
+        .total-pourcent-section:last-child { border-right: none; }
+        .total-section-label { color: #eeeeee; font-size: 14px; font-weight: normal; margin-bottom: 5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+        .pourcent-body { flex: 1; display: flex; align-items: center; justify-content: center; }
+        .total-pourcent-value { font-weight: bold; font-size: 28px; line-height: 1; color: white; transition: all 0.3s; }
+        .note-a { background-color: #e6f4ea; color: #2c974b; }
+        .note-a.total-pourcent-section { background-color: #2c974b; }
+        .note-b { background-color: #e9f3fd; color: #4e9cf0; }
+        .note-b.total-pourcent-section { background-color: #4e9cf0; }
+        .note-c { background-color: #fdf5e6; color: #f0ad4e; }
+        .note-c.total-pourcent-section { background-color: #f0ad4e; }
+        .note-d { background-color: #fceee3; color: #e67e22; }
+        .note-d.total-pourcent-section { background-color: #e67e22; }
+        .note-e { background-color: #fbeaea; color: #d9534f; }
+        .note-e.total-pourcent-section { background-color: #d9534f; }
+        .note-neutral { background-color: #f0f8ff; color: #2c5aa0; }
+        .note-neutral.total-pourcent-section { background-color: #6B8BC3; }
+        .note-a.total-pourcent-body { background-color: #e6f4ea; }
+        .note-b.total-pourcent-body { background-color: #e9f3fd; }
+        .note-c.total-pourcent-body { background-color: #fdf5e6; }
+        .note-d.total-pourcent-body { background-color: #fceee3; }
+        .note-e.total-pourcent-body { background-color: #fbeaea; }
+        .note-neutral.total-pourcent-body { background-color: #f0f8ff; }
+        .grade-scale { margin-top: 20px; padding: 15px; background: #f8f9fa; border-radius: 8px; }
+        .grade-scale h3 { margin-top: 0; }
+        .grade-row { display: flex; justify-content: space-between; padding: 5px 0; }
+        .missing-items { background: #fff3cd; border: 1px solid #ffeeba; color: #856404; padding: 15px; border-radius: 8px; margin-top: 20px; }
+        .missing-items h3 { margin-top: 0; }
+        .missing-item { color: #dc3545; font-weight: bold; }
+        .annexes { margin-top: 30px; padding: 20px; background: #f8f9fa; border-radius: 8px; border: 1px solid #ddd; }
+        .annexes h3 { margin-top: 0; color: #2c5aa0; border-bottom: 2px solid #ddd; padding-bottom: 10px; }
+        .annexes-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 20px; margin-top: 20px; }
+        .annexes-grid .annexe-item:only-child { max-width: 50%; margin: 0 auto; }
+        .annexe-item { padding: 15px; background: white; border-radius: 5px; border: 1px solid #e0e0e0; }
+        .annexe-title { font-weight: bold; color: #2c5aa0; margin-bottom: 8px; font-size: 16px; }
+        .annexe-description { color: #666; font-style: italic; margin-bottom: 10px; font-size: 14px; }
+        
+        /* Masquer les titres et descriptions des annexes en mode examen */
+        .exam-mode .annexe-title,
+        .exam-mode .annexe-description {
+            display: none !important;
+        }
+        .annexe-image { text-align: center; margin: 10px 0; }
+        .annexe-image img { max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .annexe-document { background: #f0f8ff; padding: 10px; border-radius: 4px; border-left: 4px solid #2c5aa0; white-space: pre-wrap; font-family: "Courier New", monospace; font-size: 13px; }
+        .communication-section { display: grid; grid-template-columns: 2fr 80px 80px 80px 80px 80px; gap: 10px; align-items: start; padding: 15px 0; border-bottom: 1px solid #eee; }
+        .communication-text { font-weight: 500; }
+        .communication-desc { font-size: 0.85em; color: #666; margin-top: 5px; font-style: italic; }
+        .scale-header { display: grid; grid-template-columns: 2fr 80px 80px 80px 80px 80px; gap: 10px; font-weight: bold; text-align: center; margin-bottom: 10px; padding-bottom: 10px; border-bottom: 2px solid #ddd; }
+        .scale-header div:first-child { text-align: left; }
+        .vital-signs { margin-top: 10px; margin-bottom: 0px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px; font-size: 0.9em; }
+        .vital-sign { text-align: center; background: #416caa; padding: 10px; border-radius: 5px; }
+        .vital-sign-label { color: #eeeeee; }
+        .vital-sign-value { color: rgb(255, 255, 255); margin-top: 2px; }
+        .dd-section { background: #f0f8ff; padding: 15px; margin: 10px 0; border-radius: 5px; }
+        .dd-title { font-weight: bold; margin-bottom: 10px; color: #2c5aa0; }
+        .dd-category { margin: 10px 0; font-weight: bold; }
+        .dd-item { margin-left: 20px; margin-bottom: 5px; font-weight: normal; }
+        .dd-test { color: #666; font-style: italic; margin-left: 10px; }
+        .therapy-section { background: #f8f9fa; padding: 10px; margin: 5px 0; border-radius: 5px; }
+        .therapy-title { font-weight: bold; margin-bottom: 5px; }
+        .redflags-section { background: #fff5f5; padding: 12px; margin: 8px 0; border-radius: 5px; border-left: 4px solid #dc3545; }
+        .redflags-title { font-weight: bold; margin-bottom: 8px; color: #dc3545; font-size: 1.1em; }
+        .redflags-item { margin: 6px 0; }
+        .redflags-text { font-weight: 600; color: #dc3545; margin-bottom: 3px; }
+        .redflags-description { color: #666; font-size: 0.9em; margin-left: 20px; font-style: italic; }
+        
+        /* MINUTEUR */
+        .timer-container {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background: rgba(255, 255, 255, 0.75);
+            border: 3px solid #2c5aa0;
+            border-radius: 15px;
+            padding: 8px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+            z-index: 1000;
+            text-align: center;
+            min-width: 200px;
+            backdrop-filter: blur(1px);
+        }
+        .timer-display {
+            font-size: 40px;
+            font-weight: bold;
+            color: #2c5aa0;
+            margin-bottom: 15px;
+            font-family: 'Courier New', monospace;
+        }
+        .timer-controls {
+            display: flex;
+            gap: 8px;
+            justify-content: center;
+        }
+        .timer-btn {
+            padding: 6px 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s;
+            font-size: 12px;
+        }
+        .start-btn {
+            background: #28a745;
+            color: white;
+        }
+        .start-btn:hover {
+            background: #218838;
+        }
+        .stop-btn {
+            background: #dc3545;
+            color: white;
+        }
+        .stop-btn:hover {
+            background: #c82333;
+        }
+        .reset-btn {
+            background: #6c757d;
+            color: white;
+        }
+        .reset-btn:hover {
+            background: #5a6268;
+        }
+        .timer-btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+        .timer-btn:disabled:hover {
+            background: #6c757d;
+        }
+        .timer-status {
+            margin-top: 10px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .status-waiting { color: #6c757d; }
+        .status-running { color: #28a745; }
+        .status-warning { color: #ffc107; }
+        .status-finished { color: #dc3545; }
+        
+        /* ANIMATIONS MINUTEUR */
+        .timer-warning {
+            animation: pulse-warning 1s infinite;
+        }
+        .timer-critical {
+            animation: pulse-critical 0.5s infinite;
+        }
+        .timer-finished {
+            border-color: #dc3545;
+            background: rgba(220, 53, 69, 0.1);
+        }
+        @keyframes pulse-warning {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        @keyframes pulse-critical {
+            0%, 100% { transform: scale(1); border-color: #dc3545; }
+            50% { transform: scale(1.1); border-color: #ff0000; }
+        }
+        
+        /* COLORATION POST-MINUTEUR */
+        .criteria-zero-points {
+            background-color: rgba(251, 234, 234, 0.6) !important;
+        }
+        .criteria-one-point {
+            background-color: rgba(253, 245, 230, 0.6) !important;
+        }
+        .criteria-full-points {
+            background-color: rgba(230, 244, 234, 0.6) !important;
+        }
+        .criteria-not-answered {
+            background-color: rgba(240, 248, 255, 0.6) !important;
+        }
+        
+        /* COLORATION COMMUNICATION */
+        .communication-note-a {
+            background-color: rgba(230, 244, 234, 0.6) !important;
+        }
+        .communication-note-b {
+            background-color: rgba(233, 243, 253, 0.6) !important;
+        }
+        .communication-note-c {
+            background-color: rgba(253, 245, 230, 0.6) !important;
+        }
+        .communication-note-d {
+            background-color: rgba(252, 238, 227, 0.6) !important;
+        }
+        .communication-note-e {
+            background-color: rgba(251, 234, 234, 0.6) !important;
+        }
+        .communication-not-answered {
+            background-color: #f0f8ff99 !important;
+        }
+        
+        .print-button { position: fixed; bottom: 20px; right: 20px; background: #2c5aa0; color: white; border: none; padding: 15px 20px; border-radius: 50px; cursor: pointer; font-size: 16px; box-shadow: 0 4px 12px rgba(44, 90, 160, 0.3); z-index: 1000; }
+        .print-button:hover { background: #1e3f70; }
+        
+        /* MODE SELECTOR */
+        .mode-selector {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: white;
+            border: 2px solid #2c5aa0;
+            border-radius: 30px;
+            padding: 5px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            z-index: 1001;
+            display: flex;
+            gap: 5px;
+        }
+        .mode-button {
+            padding: 8px 16px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: 500;
+            transition: all 0.3s;
+            background: transparent;
+            color: #2c5aa0;
+        }
+        .mode-button.active {
+            background: #2c5aa0;
+            color: white;
+        }
+        .mode-button:hover:not(.active) {
+            background: #e8f0fe;
+        }
+        
+        /* Mode-specific hiding */
+        .revision-mode .timer-container {
+            display: none !important;
+        }
+        .exam-mode .lacune-button {
+            display: none !important;
+        }
+        
+        /* Lacune button */
+        .lacune-button {
+            position: fixed;
+            bottom: 80px;
+            right: 20px;
+            background: #4CAF50;
+            color: white;
+            border: none;
+            padding: 15px 20px;
+            border-radius: 50px;
+            cursor: pointer;
+            font-size: 16px;
+            box-shadow: 0 4px 12px rgba(76, 175, 80, 0.3);
+            z-index: 1000;
+        }
+        .lacune-button:hover {
+            background: #45a049;
+        }
+
+        @media print {
+            .mode-selector {
+                display: none !important;
+            }
+            .lacune-button {
+                display: none !important;
+            }
+            .print-button {
+                display: none;
+            }
+            .timer-container {
+                display: none !important;
+            }
+            /* Optimiser les marges et la mise en page */
+            @page {
+                size: A4;
+                margin: 10mm 9mm 10mm 10mm;
+            }
+            body {
+                margin: 0;
+                background: white;
+                font-size: 10pt;
+            }
+            .container {
+                max-width: 100%;
+                margin: 0;
+                box-shadow: none;
+                padding: 0;
+                border-radius: 8px;
+            }
+            .header {
+                margin: 0;
+                padding: 6px;
+                border-radius: 8px;
+                page-break-inside: avoid;
+                margin-bottom: 8px;
+            }
+            .header h1 {
+                margin: 5px 0;
+                font-size: 20px;
+            }
+            .header p {
+                margin: 3px 0;
+            }
+            .section {
+                page-break-inside: avoid;
+                margin-bottom: 8px;
+            }
+            .section-header {
+                font-size: 15px;
+                padding: 6px;
+            }
+            .section-content {
+                padding: 6px;
+            }
+            /* Ajuster la grille pour mieux utiliser l'espace */
+            .header-row,
+            .criteria-row {
+                grid-template-columns: 1fr 40px 40px 40px 65px;
+                gap: 3px;
+            }
+            .communication-section,
+            .scale-header {
+                grid-template-columns: 1fr 50px 50px 50px 50px 50px;
+                gap: 3px;
+            }
+            /* Réduire la taille des polices pour certains éléments */
+            .criteria-text,
+            .communication-text {
+                font-size: 9.5pt;
+            }
+            .sub-criteria,
+            .patient-response {
+                font-size: 8.5pt;
+            }
+            .communication-desc {
+                font-size: 8.5pt;
+                margin-top: 2px;
+            }
+            .scoring-rule {
+                font-size: 8pt;
+                margin-top: 4px;
+                padding-left: 18px;
+            }
+            .points-display {
+                font-size: 14px;
+            }
+            /* Optimiser les sections de totaux */
+            .total-sections {
+                gap: 6px;
+                margin-bottom: 6px;
+            }
+            .total-label {
+                padding: 4px;
+                font-size: 16px;
+                border-radius: 8px 8px 0 0;
+            }
+            .total-body {
+                padding: 3px;
+                border-radius: 0 0 8px 8px;
+            }
+            .total-score,
+            .total-note-globale {
+                font-size: 32px;
+            }
+            /* ADAPTATION DES BLOCS DE POURCENTAGES */
+            .total-pourcent-body {
+                padding: 6px;
+                border-radius: 0 0 8px 8px;
+            }
+            .total-pourcent-sections {
+                display: flex;
+                flex-wrap: nowrap;
+                gap: 4px;
+                align-items: stretch;
+            }
+            .total-pourcent-section {
+                flex: 0 0 auto;
+                min-width: 60px;
+                padding: 6px 8px;
+                white-space: nowrap;
+            }
+            .total-section-label {
+                font-size: 11px;
+                margin-bottom: 3px;
+                white-space: nowrap;
+            }
+            .total-pourcent-value {
+                font-size: 20px;
+            }
+            .pourcent-body {
+                padding: 2px 0;
+            }
+            /* S'assurer que les sections importantes ne sont pas coupées */
+            .total-sections,
+            .grade-scale,
+            .missing-items {
+                page-break-inside: avoid;
+            }
+            /* Réduire l'espacement général */
+            .criteria-row,
+            .communication-section {
+                padding: 4px 0;
+            }
+            .header-row,
+            .scale-header {
+                padding: 4px 0;
+                margin-bottom: 6px;
+            }
+            /* Réduire l'espacement des signes vitaux */
+            .vital-signs {
+                gap: 8px;
+                margin-top: 6px;
+            }
+            .vital-sign {
+                padding: 6px;
+                font-size: 0.85em;
+            }
+            /* Optimiser les DD sections */
+            .dd-section {
+                padding: 10px;
+                margin: 6px 0;
+            }
+            .dd-title {
+                margin-bottom: 6px;
+                font-size: 11pt;
+            }
+            .dd-category {
+                margin: 6px 0;
+                font-size: 10pt;
+            }
+            .dd-item {
+                margin-bottom: 3px;
+                margin-left: 18px;
+                font-size: 9pt;
+                line-height: 1.2;
+            }
+            .dd-test {
+                font-size: 8.5pt;
+                margin-left: 8px;
+            }
+            /* Optimiser les therapy sections */
+            .therapy-section {
+                padding: 6px;
+                margin: 3px 0;
+            }
+            .therapy-title {
+                margin-bottom: 3px;
+                font-size: 9.5pt;
+            }
+            /* Optimiser les redflags sections */
+            .redflags-section {
+                padding: 8px;
+                margin: 4px 0;
+            }
+            .redflags-title {
+                margin-bottom: 4px;
+                font-size: 10pt;
+            }
+            .redflags-text {
+                font-size: 9pt;
+            }
+            .redflags-description {
+                font-size: 8.5pt;
+                margin-left: 15px;
+            }
+            /* Réduire les marges de l'échelle de notation */
+            .grade-scale {
+                margin-top: 10px;
+                padding: 10px;
+            }
+            .grade-scale h3 {
+                margin: 0 0 5px 0;
+                font-size: 14px;
+            }
+            .grade-row {
+                padding: 3px 0;
+            }
+            /* Forcer le fond blanc partout */
+            * {
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+            }
+            
+            /* SOLUTION : Forcer l'anamnèse à commencer sur la page 1 */
+            
+            /* 1. Le header ne doit jamais être seul */
+            .header {
+                page-break-after: avoid;
+            }
+            
+            /* 2. Permettre au container de se diviser */
+            .container {
+                page-break-inside: auto;
+            }
+            
+            /* 3. Configuration spéciale pour l'anamnèse */
+            .section:first-of-type {
+                page-break-before: avoid !important; /* Jamais de saut avant */
+                page-break-inside: auto !important; /* Peut se diviser */
+            }
+            
+            /* 4. L'en-tête de l'anamnèse doit rester avec ses premiers critères */
+            .section:first-of-type .section-header {
+                page-break-after: avoid !important;
+            }
+            
+            /* 5. Le contenu de l'anamnèse peut se diviser librement */
+            .section:first-of-type .section-content {
+                page-break-inside: auto !important;
+            }
+            
+            /* 6. Mais chaque critère individuel reste intact */
+            .criteria-row {
+                page-break-inside: avoid;
+            }
+            
+            /* 7. Les autres sections restent intactes */
+            .section:not(:first-of-type) {
+                page-break-inside: avoid;
+                page-break-before: auto;
+            }
+            
+            /* 8. IMPORTANT : Forcer le premier critère à commencer immédiatement */
+            .section:first-of-type .header-row {
+                page-break-after: avoid !important;
+            }
+            
+            /* 9. Assurer une hauteur minimale pour le début de section */
+            .section:first-of-type .section-content > :first-child,
+            .section:first-of-type .section-content > :nth-child(2) {
+                page-break-before: avoid !important;
+            }
+            
+            /* Styles d'impression pour les commentaires */
+            .comment-button,
+            .section-comment-button { 
+                display: none !important; 
+            }
+            
+            .criterion-comment-section {
+                page-break-inside: avoid;
+                margin: 6px 0 8px 15px;
+                padding: 6px 8px;
+                background: #f9f9f9 !important;
+                border-left: 2px solid #666 !important;
+                border-radius: 0 3px 3px 0;
+                box-shadow: none;
+            }
+            .criterion-comment-section:not(.show) {
+                display: none !important;
+            }
+            /* Cacher les sections de commentaires qui n'ont pas de contenu */
+            .criterion-comment-section.show:not(.has-content) {
+                display: none !important;
+            }
+            
+            .section-comment-section {
+                page-break-inside: avoid;
+                margin: 10px 0;
+                padding: 8px;
+                background: #f5f5f5 !important;
+                border: 1px solid #ccc !important;
+                border-radius: 4px;
+            }
+            /* Cacher toutes les sections de commentaires vides à l'impression */
+            .section-comment-section {
+                display: none !important;
+            }
+            /* Montrer seulement les sections avec contenu */
+            .section-comment-section.has-content {
+                display: block !important;
+            }
+            
+            .comment-textarea {
+                width: calc(100% - 15px);
+                min-height: 30px;
+                padding: 4px;
+                margin-right: 15px;
+                border: 1px solid #ccc;
+                border-radius: 2px;
+                font-size: 8pt;
+                font-family: Arial, sans-serif;
+                background: white;
+                font-style: italic;
+                color: #333;
+                /* Force le textarea à afficher son contenu à l'impression */
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+        }
+    </style>
+</head>
+<body class="revision-mode">
+    <!-- MODE SELECTOR -->
+    <div class="mode-selector">
+        <button class="mode-button active" onclick="switchMode('revision')">🔍 Révision</button>
+        <button class="mode-button" onclick="switchMode('exam')">📝 Examen</button>
+    </div>
+    
+    <!-- BOUTON LACUNES (Mode Révision uniquement) -->
+    <button class="lacune-button" onclick="identifyLacunes()">🎯 Identifier les lacunes</button>
+    
+    <!-- MINUTEUR -->
+    <div class="timer-container" id="timerContainer">
+        <div class="timer-display" id="timerDisplay">13:00</div>
+        <div class="timer-controls">
+            <button class="timer-btn start-btn" id="startBtn" onclick="startTimer()">▶ Démarrer</button>
+            <button class="timer-btn stop-btn" id="stopBtn" onclick="stopTimer()" style="display: none;">⏸ Arrêter</button>
+            <button class="timer-btn reset-btn" id="resetBtn" onclick="resetTimer()">🔄 Reset</button>
+        </div>
+        <div class="timer-status status-waiting" id="timerStatus">En attente</div>
+    </div>
+
+    <div class="container">
+        <div class="header">
+            <h1>Grille d'évaluation ECOS - Éruption cutanée I_v3</h1>
+            <p style="margin: 5px 0;">Contexte : Cabinet de médecine générale</p>
+            <p style="margin: 5px 0;">Patient : M. Meier, 32 ans, se présente en consultation pour une éruption cutanée</p>
+            
+        </div>
+
+        <!-- ANAMNÈSE -->
+        <div class="section">
+            <div class="section-header">
+                <span>Anamnèse (40%)</span>
+                <span class="score">Score : <span id="anamneseScore">0</span>/16</span>
+            </div>
+            <div class="section-content">
+                <div class="header-row">
+                    <div>Critères</div>
+                    <div>Oui</div>
+                    <div>±</div>
+                    <div>Non</div>
+                    <div>Points</div>
+                </div>
+                <div class="criteria-row" id="criteria-a1">
+    <div>
+        <div class="criteria-text">1. Se présente avec nom, fonction et but de la consultation<button class="comment-button" onclick="toggleComment('a1')" title="Ajouter un commentaire">💬</button></div>
+    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="a1" value="2" data-criteria="Se présente avec nom, fonction et but de la consultation" onchange="updateScore('a', this)" />
+    </div>
+    <div class="checkbox-group" style="visibility: hidden;">
+        <input type="radio" disabled />
+    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="a1" value="0" onchange="updateScore('a', this)" />
+    </div>
+    <div class="points-display" id="points-a1">0</div>
+</div>
+<div class="criterion-comment-section" id="comment-section-a1">
+    <textarea class="comment-textarea" id="comment-a1" placeholder="Commentaire sur ce critère..." oninput="updateCommentButton('a1')"></textarea>
+</div>
+<div class="criteria-row" id="criteria-a2">
+    <div>
+        <div class="criteria-text">2. Caractérisation complète de l'éruption cutanée<button class="comment-button" onclick="toggleComment('a2')" title="Ajouter un commentaire">💬</button></div>
+<div class="sub-criteria">Localisation: [au poignet]</div><div class="sub-criteria">Durée: [depuis 2 semaines]</div><div class="sub-criteria">Évolution: [lésions ont grandi, foyers ont fusionné]</div><div class="sub-criteria">Symptômes: [démangeaisons intenses]</div><div class="sub-criteria">Aspect: [desquamation]</div><div class="scoring-rule">≥4 caractéristiques = 2 pts, 2-3 = 1 pt, <2 = 0 pt</div>    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="a2" value="2" data-criteria="Caractérisation complète de l'éruption cutanée" onchange="updateScore('a', this)" />
+    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="a2" value="1" onchange="updateScore('a', this)" />
+    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="a2" value="0" onchange="updateScore('a', this)" />
+    </div>
+    <div class="points-display" id="points-a2">0</div>
+</div>
+<div class="criterion-comment-section" id="comment-section-a2">
+    <textarea class="comment-textarea" id="comment-a2" placeholder="Commentaire sur ce critère..." oninput="updateCommentButton('a2')"></textarea>
+</div>
+<div class="criteria-row" id="criteria-a3">
+    <div>
+        <div class="criteria-text">3. Facteurs de risque et exposition<button class="comment-button" onclick="toggleComment('a3')" title="Ajouter un commentaire">💬</button></div>
+<div class="sub-criteria">[Piscine il y a 3 semaines]</div><div class="sub-criteria">Contact avec animaux domestiques</div><div class="sub-criteria">Voyages récents en zones endémiques</div><div class="sub-criteria">Sports de contact/vestiaires collectifs</div><div class="sub-criteria">Immunosuppression/diabète</div><div class="scoring-rule">≥3 facteurs explorés = 2 pts, 2 = 1 pt, <2 = 0 pt</div>    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="a3" value="2" data-criteria="Facteurs de risque et exposition" onchange="updateScore('a', this)" />
+    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="a3" value="1" onchange="updateScore('a', this)" />
+    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="a3" value="0" onchange="updateScore('a', this)" />
+    </div>
+    <div class="points-display" id="points-a3">0</div>
+</div>
+<div class="criterion-comment-section" id="comment-section-a3">
+    <textarea class="comment-textarea" id="comment-a3" placeholder="Commentaire sur ce critère..." oninput="updateCommentButton('a3')"></textarea>
+</div>
+<div class="criteria-row" id="criteria-a4">
+    <div>
+        <div class="criteria-text">4. Recherche de RED FLAGS dermatologiques<button class="comment-button" onclick="toggleComment('a4')" title="Ajouter un commentaire">💬</button></div>
+<div class="scoring-rule">≥4 red flags recherchés = 2 pts, 2-3 = 1 pt, <2 = 0 pt</div>        <div class="redflags-section">
+            <div class="redflags-item">
+                <div class="redflags-text">⚠️ Fièvre ou signes systémiques [non]</div>
+            </div>
+            <div class="redflags-item">
+                <div class="redflags-text">⚠️ Extension rapide/nécrose [non, progression lente]</div>
+            </div>
+            <div class="redflags-item">
+                <div class="redflags-text">⚠️ Douleur intense/purpura [non, prurit seulement]</div>
+            </div>
+            <div class="redflags-item">
+                <div class="redflags-text">⚠️ Atteinte muqueuse ou systémique [non]</div>
+            </div>
+            <div class="redflags-item">
+                <div class="redflags-text">⚠️ Immunodépression connue [non mentionnée]</div>
+            </div>
+        </div>
+    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="a4" value="2" data-criteria="Recherche de RED FLAGS dermatologiques" onchange="updateScore('a', this)" />
+    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="a4" value="1" onchange="updateScore('a', this)" />
+    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="a4" value="0" onchange="updateScore('a', this)" />
+    </div>
+    <div class="points-display" id="points-a4">0</div>
+</div>
+<div class="criterion-comment-section" id="comment-section-a4">
+    <textarea class="comment-textarea" id="comment-a4" placeholder="Commentaire sur ce critère..." oninput="updateCommentButton('a4')"></textarea>
+</div>
+<div class="criteria-row" id="criteria-a5">
+    <div>
+        <div class="criteria-text">5. Histoire dermatologique et atopie<button class="comment-button" onclick="toggleComment('a5')" title="Ajouter un commentaire">💬</button></div>
+<div class="sub-criteria">Antécédents d'eczéma/psoriasis</div><div class="sub-criteria">Allergies: [arachide, latex]</div><div class="sub-criteria">Asthme/rhinite allergique</div><div class="sub-criteria">Éruptions cutanées antérieures</div><div class="sub-criteria">Réactions médicamenteuses</div><div class="scoring-rule">≥3 éléments = 2 pts, 2 = 1 pt, <2 = 0 pt</div>    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="a5" value="2" data-criteria="Histoire dermatologique et atopie" onchange="updateScore('a', this)" />
+    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="a5" value="1" onchange="updateScore('a', this)" />
+    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="a5" value="0" onchange="updateScore('a', this)" />
+    </div>
+    <div class="points-display" id="points-a5">0</div>
+</div>
+<div class="criterion-comment-section" id="comment-section-a5">
+    <textarea class="comment-textarea" id="comment-a5" placeholder="Commentaire sur ce critère..." oninput="updateCommentButton('a5')"></textarea>
+</div>
+<div class="criteria-row" id="criteria-a6">
+    <div>
+        <div class="criteria-text">6. Traitements essayés et réponse<button class="comment-button" onclick="toggleComment('a6')" title="Ajouter un commentaire">💬</button></div>
+<div class="sub-criteria">Auto-médication tentée</div><div class="sub-criteria">Crèmes/lotions utilisées</div><div class="sub-criteria">Réponse aux traitements</div><div class="sub-criteria">Facteurs aggravants/améliorants</div><div class="sub-criteria">[Pas d'amélioration ni d'aggravation]</div><div class="scoring-rule">≥3 éléments = 2 pts, 2 = 1 pt, <2 = 0 pt</div>    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="a6" value="2" data-criteria="Traitements essayés et réponse" onchange="updateScore('a', this)" />
+    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="a6" value="1" onchange="updateScore('a', this)" />
+    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="a6" value="0" onchange="updateScore('a', this)" />
+    </div>
+    <div class="points-display" id="points-a6">0</div>
+</div>
+<div class="criterion-comment-section" id="comment-section-a6">
+    <textarea class="comment-textarea" id="comment-a6" placeholder="Commentaire sur ce critère..." oninput="updateCommentButton('a6')"></textarea>
+</div>
+<div class="criteria-row" id="criteria-a7">
+    <div>
+        <div class="criteria-text">7. Contexte médical général<button class="comment-button" onclick="toggleComment('a7')" title="Ajouter un commentaire">💬</button></div>
+<div class="sub-criteria">Médicaments: [aucun]</div><div class="sub-criteria">Maladies chroniques: [aucune]</div><div class="sub-criteria">Chirurgies: [aucune]</div><div class="sub-criteria">Tabac: [1 paquet/jour depuis 10 ans]</div><div class="sub-criteria">Symptômes B: [non]</div><div class="scoring-rule">≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt</div>    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="a7" value="2" data-criteria="Contexte médical général" onchange="updateScore('a', this)" />
+    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="a7" value="1" onchange="updateScore('a', this)" />
+    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="a7" value="0" onchange="updateScore('a', this)" />
+    </div>
+    <div class="points-display" id="points-a7">0</div>
+</div>
+<div class="criterion-comment-section" id="comment-section-a7">
+    <textarea class="comment-textarea" id="comment-a7" placeholder="Commentaire sur ce critère..." oninput="updateCommentButton('a7')"></textarea>
+</div>
+<div class="criteria-row" id="criteria-a8">
+    <div>
+        <div class="criteria-text">8. Évaluation globale de la qualité de l'anamnèse<button class="comment-button" onclick="toggleComment('a8')" title="Ajouter un commentaire">💬</button></div>
+<div class="sub-criteria">Anamnèse dermatologique structurée</div><div class="sub-criteria">RED FLAGS systématiquement recherchés</div><div class="sub-criteria">Facteurs de risque identifiés</div><div class="scoring-rule">Excellente = 2 pts, suffisante = 1 pt, insuffisante = 0 pt</div>    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="a8" value="2" data-criteria="Évaluation globale de la qualité de l'anamnèse" onchange="updateScore('a', this)" />
+    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="a8" value="1" onchange="updateScore('a', this)" />
+    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="a8" value="0" onchange="updateScore('a', this)" />
+    </div>
+    <div class="points-display" id="points-a8">0</div>
+</div>
+<div class="criterion-comment-section" id="comment-section-a8">
+    <textarea class="comment-textarea" id="comment-a8" placeholder="Commentaire sur ce critère..." oninput="updateCommentButton('a8')"></textarea>
+</div>
+
+                
+                <!-- Section commentaire Anamnèse -->
+                <div style="text-align: center; margin: 15px 0;">
+                    <button class="section-comment-button" onclick="toggleSectionComment('anamnese')" title="Commentaire sur cette section">📝 Commentaire sur l'Anamnèse</button>
+                </div>
+                <div class="section-comment-section" id="section-comment-anamnese">
+                    <textarea class="comment-textarea" id="comment-section-anamnese" placeholder="Commentaire sur l'anamnèse..." oninput="updateSectionComment('anamnese')"></textarea>
+                </div>
+            </div>
+        </div>
+
+        <!-- EXAMEN CLINIQUE -->
+        <div class="section">
+            <div class="section-header">
+                <span>Examen clinique (30%)</span>
+                <span class="score">Score : <span id="statusScore">0</span>/12</span>
+            </div>
+            <div class="section-content">
+                <div class="header-row">
+                    <div>Critères</div>
+                    <div>Oui</div>
+                    <div>±</div>
+                    <div>Non</div>
+                    <div>Points</div>
+                </div>
+                <div class="criteria-row" id="criteria-e1">
+    <div>
+        <div class="criteria-text">1. Description morphologique précise des lésions<button class="comment-button" onclick="toggleComment('e1')" title="Ajouter un commentaire">💬</button></div>
+<div class="sub-criteria">Type: plaques/macules/papules/vésicules</div><div class="sub-criteria">Bordures: nettes/floues/actives</div><div class="sub-criteria">Centre: clair/squameux/cicatriciel</div><div class="sub-criteria">Couleur: érythémateuse/pigmentée</div><div class="sub-criteria">Configuration: annulaire/serpigineux/groupé</div><div class="scoring-rule">≥4 caractéristiques = 2 pts, 2-3 = 1 pt, <2 = 0 pt</div>    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="e1" value="2" data-criteria="Description morphologique précise des lésions" onchange="updateScore('e', this)" />
+    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="e1" value="1" onchange="updateScore('e', this)" />
+    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="e1" value="0" onchange="updateScore('e', this)" />
+    </div>
+    <div class="points-display" id="points-e1">0</div>
+</div>
+<div class="criterion-comment-section" id="comment-section-e1">
+    <textarea class="comment-textarea" id="comment-e1" placeholder="Commentaire sur ce critère..." oninput="updateCommentButton('e1')"></textarea>
+</div>
+<div class="criteria-row" id="criteria-e2">
+    <div>
+        <div class="criteria-text">2. Distribution et extension des lésions<button class="comment-button" onclick="toggleComment('e2')" title="Ajouter un commentaire">💬</button></div>
+<div class="sub-criteria">Localisation précise documentée</div><div class="sub-criteria">Nombre et taille des lésions</div><div class="sub-criteria">Pattern de distribution</div><div class="sub-criteria">Recherche autres localisations</div><div class="sub-criteria">Photographie/schéma si utile</div><div class="scoring-rule">≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt</div>    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="e2" value="2" data-criteria="Distribution et extension des lésions" onchange="updateScore('e', this)" />
+    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="e2" value="1" onchange="updateScore('e', this)" />
+    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="e2" value="0" onchange="updateScore('e', this)" />
+    </div>
+    <div class="points-display" id="points-e2">0</div>
+</div>
+<div class="criterion-comment-section" id="comment-section-e2">
+    <textarea class="comment-textarea" id="comment-e2" placeholder="Commentaire sur ce critère..." oninput="updateCommentButton('e2')"></textarea>
+</div>
+<div class="criteria-row" id="criteria-e3">
+    <div>
+        <div class="criteria-text">3. Examens complémentaires cutanés<button class="comment-button" onclick="toggleComment('e3')" title="Ajouter un commentaire">💬</button></div>
+<div class="sub-criteria">Dermographisme: [testé]</div><div class="sub-criteria">Test à la lampe de Wood</div><div class="sub-criteria">Diascopy (vitropression)</div><div class="sub-criteria">Signe de Nikolsky négatif</div><div class="sub-criteria">Test du grattage méthodique</div><div class="scoring-rule">≥3 tests = 2 pts, 2 tests = 1 pt, <2 tests = 0 pt</div>    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="e3" value="2" data-criteria="Examens complémentaires cutanés" onchange="updateScore('e', this)" />
+    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="e3" value="1" onchange="updateScore('e', this)" />
+    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="e3" value="0" onchange="updateScore('e', this)" />
+    </div>
+    <div class="points-display" id="points-e3">0</div>
+</div>
+<div class="criterion-comment-section" id="comment-section-e3">
+    <textarea class="comment-textarea" id="comment-e3" placeholder="Commentaire sur ce critère..." oninput="updateCommentButton('e3')"></textarea>
+</div>
+<div class="criteria-row" id="criteria-e4">
+    <div>
+        <div class="criteria-text">4. Recherche de signes associés<button class="comment-button" onclick="toggleComment('e4')" title="Ajouter un commentaire">💬</button></div>
+<div class="sub-criteria">Ganglions régionaux: [non augmentés]</div><div class="sub-criteria">Signes de surinfection: [absents]</div><div class="sub-criteria">Atteinte des phanères</div><div class="sub-criteria">Muqueuses normales</div><div class="sub-criteria">État cutané général</div><div class="scoring-rule">≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt</div>    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="e4" value="2" data-criteria="Recherche de signes associés" onchange="updateScore('e', this)" />
+    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="e4" value="1" onchange="updateScore('e', this)" />
+    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="e4" value="0" onchange="updateScore('e', this)" />
+    </div>
+    <div class="points-display" id="points-e4">0</div>
+</div>
+<div class="criterion-comment-section" id="comment-section-e4">
+    <textarea class="comment-textarea" id="comment-e4" placeholder="Commentaire sur ce critère..." oninput="updateCommentButton('e4')"></textarea>
+</div>
+<div class="criteria-row" id="criteria-e5">
+    <div>
+        <div class="criteria-text">5. Documentation et prélèvements<button class="comment-button" onclick="toggleComment('e5')" title="Ajouter un commentaire">💬</button></div>
+<div class="sub-criteria">Photographie des lésions</div><div class="sub-criteria">Prélèvement pour KOH</div><div class="sub-criteria">Grattage pour mycologie</div><div class="sub-criteria">Biopsie si doute diagnostique</div><div class="sub-criteria">Consentement photo obtenu</div><div class="scoring-rule">≥3 éléments = 2 pts, 2 = 1 pt, <2 = 0 pt</div>    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="e5" value="2" data-criteria="Documentation et prélèvements" onchange="updateScore('e', this)" />
+    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="e5" value="1" onchange="updateScore('e', this)" />
+    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="e5" value="0" onchange="updateScore('e', this)" />
+    </div>
+    <div class="points-display" id="points-e5">0</div>
+</div>
+<div class="criterion-comment-section" id="comment-section-e5">
+    <textarea class="comment-textarea" id="comment-e5" placeholder="Commentaire sur ce critère..." oninput="updateCommentButton('e5')"></textarea>
+</div>
+<div class="criteria-row" id="criteria-e6">
+    <div>
+        <div class="criteria-text">6. Évaluation globale de la qualité de l'examen<button class="comment-button" onclick="toggleComment('e6')" title="Ajouter un commentaire">💬</button></div>
+<div class="sub-criteria">Examen dermatologique systématique</div><div class="sub-criteria">Description morphologique précise</div><div class="sub-criteria">Prélèvements appropriés effectués</div><div class="scoring-rule">Excellent = 2 pts, suffisant = 1 pt, insuffisant = 0 pt</div>    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="e6" value="2" data-criteria="Évaluation globale de la qualité de l'examen" onchange="updateScore('e', this)" />
+    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="e6" value="1" onchange="updateScore('e', this)" />
+    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="e6" value="0" onchange="updateScore('e', this)" />
+    </div>
+    <div class="points-display" id="points-e6">0</div>
+</div>
+<div class="criterion-comment-section" id="comment-section-e6">
+    <textarea class="comment-textarea" id="comment-e6" placeholder="Commentaire sur ce critère..." oninput="updateCommentButton('e6')"></textarea>
+</div>
+
+                
+                <!-- Section commentaire Examen clinique -->
+                <div style="text-align: center; margin: 15px 0;">
+                    <button class="section-comment-button" onclick="toggleSectionComment('examen')" title="Commentaire sur cette section">📝 Commentaire sur l'Examen clinique</button>
+                </div>
+                <div class="section-comment-section" id="section-comment-examen">
+                    <textarea class="comment-textarea" id="comment-section-examen" placeholder="Commentaire sur l'examen clinique..." oninput="updateSectionComment('examen')"></textarea>
+                </div>
+            </div>
+        </div>
+
+        <!-- MANAGEMENT -->
+        <div class="section">
+            <div class="section-header">
+                <span>Management (20%)</span>
+                <span class="score">Score : <span id="managementScore">0</span>/16</span>
+            </div>
+            <div class="section-content">
+                <div class="header-row">
+                    <div>Critères</div>
+                    <div>Oui</div>
+                    <div>±</div>
+                    <div>Non</div>
+                    <div>Points</div>
+                </div>
+                <div class="criteria-row" id="criteria-m1">
+    <div>
+        <div class="criteria-text">1. Diagnostic principal et confirmation<button class="comment-button" onclick="toggleComment('m1')" title="Ajouter un commentaire">💬</button></div>
+<div class="sub-criteria">Aspect clinique typique annulaire</div><div class="sub-criteria">Exposition piscine (facteur de risque)</div><div class="sub-criteria">Prurit intense caractéristique</div><div class="sub-criteria">Confirmation mycologique positive</div><div class="sub-criteria">Extension centrifuge progressive</div><div class="scoring-rule">Diagnostic correct avec ≥3 arguments = 2 pts, avec 2 arguments = 1 pt, <2 = 0 pt</div>    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="m1" value="2" data-criteria="Diagnostic principal et confirmation" onchange="updateScore('m', this)" />
+    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="m1" value="1" onchange="updateScore('m', this)" />
+    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="m1" value="0" onchange="updateScore('m', this)" />
+    </div>
+    <div class="points-display" id="points-m1">0</div>
+</div>
+<div class="criterion-comment-section" id="comment-section-m1">
+    <textarea class="comment-textarea" id="comment-m1" placeholder="Commentaire sur ce critère..." oninput="updateCommentButton('m1')"></textarea>
+</div>
+<div class="criteria-row" id="criteria-m2">
+    <div>
+        <div class="criteria-text">2. Diagnostics différentiels structurés<button class="comment-button" onclick="toggleComment('m2')" title="Ajouter un commentaire">💬</button></div>
+<div class="scoring-rule">≥6 DD pertinents = 2 pts, 3-5 DD = 1 pt, <3 DD = 0 pt</div>    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="m2" value="2" data-criteria="Diagnostics différentiels structurés" onchange="updateScore('m', this)" />
+    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="m2" value="1" onchange="updateScore('m', this)" />
+    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="m2" value="0" onchange="updateScore('m', this)" />
+    </div>
+    <div class="points-display" id="points-m2">0</div>
+</div>
+<div class="dd-section">
+    <div class="dd-category">Dermatoses inflammatoires</div>
+    <div class="dd-item">• Psoriasis</div>
+    <div class="dd-item">• Eczéma nummulaire</div>
+    <div class="dd-item">• Dermatite atopique</div>
+    <div class="dd-item">• Granulome annulaire</div>
+    <div class="dd-category">Infections non-mycosiques</div>
+    <div class="dd-item">• Pityriasis rosé</div>
+    <div class="dd-item">• Érythème migrant (Lyme)</div>
+    <div class="dd-item">• Impétigo circiné</div>
+    <div class="dd-category">Autres causes</div>
+    <div class="dd-item">• Lupus cutané subaigu</div>
+    <div class="dd-item">• Dermatite de contact</div>
+    <div class="dd-item">• Toxidermie</div>
+</div>
+<div class="criterion-comment-section" id="comment-section-m2">
+    <textarea class="comment-textarea" id="comment-m2" placeholder="Commentaire sur ce critère..." oninput="updateCommentButton('m2')"></textarea>
+</div>
+<div class="criteria-row" id="criteria-m3">
+    <div>
+        <div class="criteria-text">3. Examens complémentaires et interprétation<button class="comment-button" onclick="toggleComment('m3')" title="Ajouter un commentaire">💬</button></div>
+<div class="scoring-rule">≥3 examens appropriés = 2 pts, 2 = 1 pt, <2 = 0 pt</div>    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="m3" value="2" data-criteria="Examens complémentaires et interprétation" onchange="updateScore('m', this)" />
+    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="m3" value="1" onchange="updateScore('m', this)" />
+    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="m3" value="0" onchange="updateScore('m', this)" />
+    </div>
+    <div class="points-display" id="points-m3">0</div>
+</div>
+<div class="criterion-comment-section" id="comment-section-m3">
+    <textarea class="comment-textarea" id="comment-m3" placeholder="Commentaire sur ce critère..." oninput="updateCommentButton('m3')"></textarea>
+</div>
+<div class="criteria-row" id="criteria-m4">
+    <div>
+        <div class="criteria-text">4. Traitement antimycotique protocolisé<button class="comment-button" onclick="toggleComment('m4')" title="Ajouter un commentaire">💬</button></div>
+<div class="scoring-rule">≥3 aspects thérapeutiques = 2 pts, 2 = 1 pt, <2 = 0 pt</div>        <div class="therapy-section">
+            <div class="therapy-title">Traitement systémique</div>
+            • Terbinafine 250mg 1x/j PO x 2-4 semaines<br />
+            • Alternative: Itraconazole 100mg 1x/j x 15j<br />
+            • Si échec: Fluconazole 150mg/sem x 4 sem
+        </div>
+        <div class="therapy-section">
+            <div class="therapy-title">Traitement topique adjuvant</div>
+            • Crème terbinafine 1% 2x/j<br />
+            • Ou éconazole crème 2x/j<br />
+            • Application débordant 2cm<br />
+            • Durée: 2 sem après guérison clinique
+        </div>
+        <div class="therapy-section">
+            <div class="therapy-title">Mesures associées</div>
+            • Antihistaminique si prurit sévère<br />
+            • Éviter corticoïdes (aggravation)<br />
+            • Traitement contacts si nécessaire
+        </div>
+    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="m4" value="2" data-criteria="Traitement antimycotique protocolisé" onchange="updateScore('m', this)" />
+    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="m4" value="1" onchange="updateScore('m', this)" />
+    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="m4" value="0" onchange="updateScore('m', this)" />
+    </div>
+    <div class="points-display" id="points-m4">0</div>
+</div>
+<div class="criterion-comment-section" id="comment-section-m4">
+    <textarea class="comment-textarea" id="comment-m4" placeholder="Commentaire sur ce critère..." oninput="updateCommentButton('m4')"></textarea>
+</div>
+<div class="criteria-row" id="criteria-m5">
+    <div>
+        <div class="criteria-text">5. Mesures préventives et hygiène<button class="comment-button" onclick="toggleComment('m5')" title="Ajouter un commentaire">💬</button></div>
+<div class="sub-criteria">Séchage minutieux après douche</div><div class="sub-criteria">Vêtements amples en coton</div><div class="sub-criteria">Éviter partage serviettes/vêtements</div><div class="sub-criteria">Sandales dans lieux publics humides</div><div class="sub-criteria">Désinfecter chaussures/chaussettes</div><div class="scoring-rule">≥4 mesures = 2 pts, 2-3 = 1 pt, <2 = 0 pt</div>    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="m5" value="2" data-criteria="Mesures préventives et hygiène" onchange="updateScore('m', this)" />
+    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="m5" value="1" onchange="updateScore('m', this)" />
+    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="m5" value="0" onchange="updateScore('m', this)" />
+    </div>
+    <div class="points-display" id="points-m5">0</div>
+</div>
+<div class="criterion-comment-section" id="comment-section-m5">
+    <textarea class="comment-textarea" id="comment-m5" placeholder="Commentaire sur ce critère..." oninput="updateCommentButton('m5')"></textarea>
+</div>
+<div class="criteria-row" id="criteria-m6">
+    <div>
+        <div class="criteria-text">6. Information patient et observance<button class="comment-button" onclick="toggleComment('m6')" title="Ajouter un commentaire">💬</button></div>
+<div class="sub-criteria">Nature contagieuse expliquée</div><div class="sub-criteria">Importance traitement complet</div><div class="sub-criteria">Risque récidive si arrêt précoce</div><div class="sub-criteria">Signes amélioration attendus</div><div class="sub-criteria">Consultation si aggravation</div><div class="scoring-rule">≥4 points abordés = 2 pts, 2-3 = 1 pt, <2 = 0 pt</div>    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="m6" value="2" data-criteria="Information patient et observance" onchange="updateScore('m', this)" />
+    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="m6" value="1" onchange="updateScore('m', this)" />
+    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="m6" value="0" onchange="updateScore('m', this)" />
+    </div>
+    <div class="points-display" id="points-m6">0</div>
+</div>
+<div class="criterion-comment-section" id="comment-section-m6">
+    <textarea class="comment-textarea" id="comment-m6" placeholder="Commentaire sur ce critère..." oninput="updateCommentButton('m6')"></textarea>
+</div>
+<div class="criteria-row" id="criteria-m7">
+    <div>
+        <div class="criteria-text">7. Plan de suivi structuré<button class="comment-button" onclick="toggleComment('m7')" title="Ajouter un commentaire">💬</button></div>
+<div class="sub-criteria">Contrôle clinique à 2 semaines</div><div class="sub-criteria">Vérification observance traitement</div><div class="sub-criteria">Contrôle mycologique si persistance</div><div class="sub-criteria">Adaptation si résistance/échec</div><div class="sub-criteria">Prévention récidives discutée</div><div class="scoring-rule">≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt</div>    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="m7" value="2" data-criteria="Plan de suivi structuré" onchange="updateScore('m', this)" />
+    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="m7" value="1" onchange="updateScore('m', this)" />
+    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="m7" value="0" onchange="updateScore('m', this)" />
+    </div>
+    <div class="points-display" id="points-m7">0</div>
+</div>
+<div class="criterion-comment-section" id="comment-section-m7">
+    <textarea class="comment-textarea" id="comment-m7" placeholder="Commentaire sur ce critère..." oninput="updateCommentButton('m7')"></textarea>
+</div>
+<div class="criteria-row" id="criteria-m8">
+    <div>
+        <div class="criteria-text">8. Évaluation globale de la qualité de la prise en charge<button class="comment-button" onclick="toggleComment('m8')" title="Ajouter un commentaire">💬</button></div>
+<div class="sub-criteria">Diagnostic mycologique confirmé</div><div class="sub-criteria">Traitement evidence-based approprié</div><div class="sub-criteria">Prévention récidive intégrée</div><div class="scoring-rule">Excellente = 2 pts, adéquate = 1 pt, insuffisante = 0 pt</div>    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="m8" value="2" data-criteria="Évaluation globale de la qualité de la prise en charge" onchange="updateScore('m', this)" />
+    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="m8" value="1" onchange="updateScore('m', this)" />
+    </div>
+    <div class="checkbox-group">
+        <input type="radio" name="m8" value="0" onchange="updateScore('m', this)" />
+    </div>
+    <div class="points-display" id="points-m8">0</div>
+</div>
+<div class="criterion-comment-section" id="comment-section-m8">
+    <textarea class="comment-textarea" id="comment-m8" placeholder="Commentaire sur ce critère..." oninput="updateCommentButton('m8')"></textarea>
+</div>
+
+                
+                <!-- Section commentaire Management -->
+                <div style="text-align: center; margin: 15px 0;">
+                    <button class="section-comment-button" onclick="toggleSectionComment('management')" title="Commentaire sur cette section">📝 Commentaire sur le Management</button>
+                </div>
+                <div class="section-comment-section" id="section-comment-management">
+                    <textarea class="comment-textarea" id="comment-section-management" placeholder="Commentaire sur le management..." oninput="updateSectionComment('management')"></textarea>
+                </div>
+            </div>
+        </div>
+
+        <!-- COMMUNICATION -->
+        <div class="section">
+            <div class="section-header">
+                <span>Communication (10%)</span>
+                <span class="score">Score : <span id="communicationScore">0</span>/16</span>
+            </div>
+            <div class="section-content">
+                <div class="scale-header">
+                    <div>Critères</div>
+                    <div>A</div>
+                    <div>B</div>
+                    <div>C</div>
+                    <div>D</div>
+                    <div>E</div>
+                </div>
+                <div class="communication-section" id="criteria-c1">
+                    <div>
+                        <div class="communication-text">1. Réponse aux sentiments du patient<button class="comment-button" onclick="toggleComment('c1')" title="Ajouter un commentaire">💬</button></div>
+                        <div class="communication-desc">Empathie, écoute active, validation des émotions</div>
+                    </div>
+                    <div class="checkbox-group">
+                        <input data-criteria="Réponse émotionnelle" name="c1" onchange="updateScore('communication', this)" type="radio" value="A" />
+                    </div>
+                    <div class="checkbox-group">
+                        <input name="c1" onchange="updateScore('communication', this)" type="radio" value="B" />
+                    </div>
+                    <div class="checkbox-group">
+                        <input name="c1" onchange="updateScore('communication', this)" type="radio" value="C" />
+                    </div>
+                    <div class="checkbox-group">
+                        <input name="c1" onchange="updateScore('communication', this)" type="radio" value="D" />
+                    </div>
+                    <div class="checkbox-group">
+                        <input name="c1" onchange="updateScore('communication', this)" type="radio" value="E" />
+                    </div>
+                </div>
+                <div class="criterion-comment-section" id="comment-section-c1">
+                    <textarea class="comment-textarea" id="comment-c1" placeholder="Commentaire sur ce critère..." oninput="updateCommentButton('c1')"></textarea>
+                </div>
+                <div class="communication-section" id="criteria-c2">
+                    <div>
+                        <div class="communication-text">2. Structure de l'entretien<button class="comment-button" onclick="toggleComment('c2')" title="Ajouter un commentaire">💬</button></div>
+                        <div class="communication-desc">Organisation logique, transitions fluides, gestion du temps</div>
+                    </div>
+                    <div class="checkbox-group">
+                        <input data-criteria="Structure" name="c2" onchange="updateScore('communication', this)" type="radio" value="A" />
+                    </div>
+                    <div class="checkbox-group">
+                        <input name="c2" onchange="updateScore('communication', this)" type="radio" value="B" />
+                    </div>
+                    <div class="checkbox-group">
+                        <input name="c2" onchange="updateScore('communication', this)" type="radio" value="C" />
+                    </div>
+                    <div class="checkbox-group">
+                        <input name="c2" onchange="updateScore('communication', this)" type="radio" value="D" />
+                    </div>
+                    <div class="checkbox-group">
+                        <input name="c2" onchange="updateScore('communication', this)" type="radio" value="E" />
+                    </div>
+                </div>
+                <div class="criterion-comment-section" id="comment-section-c2">
+                    <textarea class="comment-textarea" id="comment-c2" placeholder="Commentaire sur ce critère..." oninput="updateCommentButton('c2')"></textarea>
+                </div>
+                <div class="communication-section" id="criteria-c3">
+                    <div>
+                        <div class="communication-text">3. Expression verbale<button class="comment-button" onclick="toggleComment('c3')" title="Ajouter un commentaire">💬</button></div>
+                        <div class="communication-desc">Clarté, vocabulaire adapté, vérification de la compréhension</div>
+                    </div>
+                    <div class="checkbox-group">
+                        <input data-criteria="Expression verbale" name="c3" onchange="updateScore('communication', this)" type="radio" value="A" />
+                    </div>
+                    <div class="checkbox-group">
+                        <input name="c3" onchange="updateScore('communication', this)" type="radio" value="B" />
+                    </div>
+                    <div class="checkbox-group">
+                        <input name="c3" onchange="updateScore('communication', this)" type="radio" value="C" />
+                    </div>
+                    <div class="checkbox-group">
+                        <input name="c3" onchange="updateScore('communication', this)" type="radio" value="D" />
+                    </div>
+                    <div class="checkbox-group">
+                        <input name="c3" onchange="updateScore('communication', this)" type="radio" value="E" />
+                    </div>
+                </div>
+                <div class="criterion-comment-section" id="comment-section-c3">
+                    <textarea class="comment-textarea" id="comment-c3" placeholder="Commentaire sur ce critère..." oninput="updateCommentButton('c3')"></textarea>
+                </div>
+                <div class="communication-section" id="criteria-c4">
+                    <div>
+                        <div class="communication-text">4. Expression non verbale<button class="comment-button" onclick="toggleComment('c4')" title="Ajouter un commentaire">💬</button></div>
+                        <div class="communication-desc">Contact visuel, posture, gestuelle appropriée</div>
+                    </div>
+                    <div class="checkbox-group">
+                        <input data-criteria="Expression non verbale" name="c4" onchange="updateScore('communication', this)" type="radio" value="A" />
+                    </div>
+                    <div class="checkbox-group">
+                        <input name="c4" onchange="updateScore('communication', this)" type="radio" value="B" />
+                    </div>
+                    <div class="checkbox-group">
+                        <input name="c4" onchange="updateScore('communication', this)" type="radio" value="C" />
+                    </div>
+                    <div class="checkbox-group">
+                        <input name="c4" onchange="updateScore('communication', this)" type="radio" value="D" />
+                    </div>
+                    <div class="checkbox-group">
+                        <input name="c4" onchange="updateScore('communication', this)" type="radio" value="E" />
+                    </div>
+                </div>
+                <div class="criterion-comment-section" id="comment-section-c4">
+                    <textarea class="comment-textarea" id="comment-c4" placeholder="Commentaire sur ce critère..." oninput="updateCommentButton('c4')"></textarea>
+                </div>
+                
+                <!-- Section commentaire Communication -->
+                <div style="text-align: center; margin: 15px 0;">
+                    <button class="section-comment-button" onclick="toggleSectionComment('communication')" title="Commentaire sur cette section">📝 Commentaire sur la Communication</button>
+                </div>
+                <div class="section-comment-section" id="section-comment-communication">
+                    <textarea class="comment-textarea" id="comment-section-communication" placeholder="Commentaire sur la communication..." oninput="updateSectionComment('communication')"></textarea>
+                </div>
+            </div>
+        </div>
+
+        <!-- TOTAUX -->
+        <div class="total-sections">
+            <div class="total-section">
+                <div class="total-label">Score Global</div>
+                <div class="total-body">
+                    <div class="total-score" id="totalScore">0%</div>
+                </div>
+            </div>
+            <div class="total-section">
+                <div class="total-label">% par Section</div>
+                <div class="total-pourcent-body">
+                    <div class="total-pourcent-sections">
+                        <div class="total-pourcent-section">
+                            <div class="total-section-label">Anamnèse</div>
+                            <div class="pourcent-body">
+                                <div class="total-pourcent-value"><span id="anamnese-percentage">0</span>%</div>
+                            </div>
+                        </div>
+                        <div class="total-pourcent-section">
+                            <div class="total-section-label">Examen clinique</div>
+                            <div class="pourcent-body">
+                                <div class="total-pourcent-value"><span id="examen-percentage">0</span>%</div>
+                            </div>
+                        </div>
+                        <div class="total-pourcent-section">
+                            <div class="total-section-label">Management</div>
+                            <div class="pourcent-body">
+                                <div class="total-pourcent-value"><span id="management-percentage">0</span>%</div>
+                            </div>
+                        </div>
+                        <div class="total-pourcent-section">
+                            <div class="total-section-label">Communication</div>
+                            <div class="pourcent-body">
+                                <div class="total-pourcent-value"><span id="communication-percentage">0</span>%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="total-section">
+                <div class="total-label">Note Globale</div>
+                <div class="total-body">
+                    <div class="total-note-globale" id="globalGrade">E</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ÉCHELLE DE NOTATION -->
+        <div class="grade-scale">
+            <h3>Échelle de notation</h3>
+            <div class="grade-row">
+                <span>A (Excellent)</span>
+                <span>≥ 54 points (90%)</span>
+            </div>
+            <div class="grade-row">
+                <span>B (Très bien)</span>
+                <span>48-53 points (80-89%)</span>
+            </div>
+            <div class="grade-row">
+                <span>C (Bien)</span>
+                <span>42-47 points (70-79%)</span>
+            </div>
+            <div class="grade-row">
+                <span>D (Suffisant)</span>
+                <span>36-41 points (60-69%)</span>
+            </div>
+            <div class="grade-row">
+                <span>E (Insuffisant)</span>
+                <span>&lt; 36 points (&lt; 60%)</span>
+            </div>
+        </div>
+
+        <!-- ÉLÉMENTS MANQUANTS -->
+        <div class="missing-items" id="missingItems" style="display: none;">
+            <h3>Éléments non évalués</h3>
+            <div id="missingList"></div>
+        </div>
+
+        <!-- COMMENTAIRE GÉNÉRAL -->
+        <div class="section-comment-section global" id="section-comment-general" style="margin-top: 30px;">
+            <textarea class="comment-textarea" id="comment-general" placeholder="Commentaire général sur l'évaluation..." style="min-height: 80px;" oninput="updateGeneralComment()"></textarea>
+        </div>
+
+        
+        <div class="annexes">
+            <h3>Annexes</h3>
+            <div class="annexes-grid">
+                <div class="annexe-item">
+                    <div class="annexe-title">Image clinique - Lésions cutanées</div>
+                    <div class="annexe-description">Photographie montrant des lésions annulaires typiques de tinea corporis au niveau du poignet</div>
+                    <div class="annexe-image">
+                        <img src="data:image/jpeg;base64,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" alt="Image clinique - Lésions cutanées" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- BOUTON IMPRIMER EN PDF -->
+    <button class="print-button" onclick="window.print()">🖨️ Imprimer en PDF</button>
+
+    <script>
+        // Variables globales pour le minuteur
+        let timerInterval;
+        let totalSeconds = 13 * 60; // 13 minutes
+        let currentSeconds = totalSeconds;
+        let isRunning = false;
+        let hasStarted = false;
+        let hasFinished = false;
+        let hasStoppedManually = false;
+        
+        // Variables globales pour les modes
+        let currentMode = 'revision'; // 'revision' ou 'exam'
+
+        // Fonction pour gérer les modes d'affichage
+        function updateDisplayMode() {
+            const body = document.body;
+            if (currentMode === 'exam') {
+                body.classList.add('exam-mode');
+            } else {
+                body.classList.remove('exam-mode');
+            }
+        }
+
+        // Fonction pour créer les sons avec synthèse vocale
+        function playBeep() {
+            const audioContext = new (window.AudioContext || window.webkitAudioContext)();
+            const oscillator = audioContext.createOscillator();
+            const gainNode = audioContext.createGain();
+            
+            oscillator.connect(gainNode);
+            gainNode.connect(audioContext.destination);
+            
+            oscillator.frequency.value = 800;
+            oscillator.type = 'sine';
+            gainNode.gain.setValueAtTime(0.3, audioContext.currentTime);
+            gainNode.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + 0.5);
+            
+            oscillator.start(audioContext.currentTime);
+            oscillator.stop(audioContext.currentTime + 0.5);
+        }
+
+        function speak(text) {
+            if ('speechSynthesis' in window) {
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'fr-FR';
+                utterance.rate = 0.9;
+                utterance.volume = 0.8;
+                speechSynthesis.speak(utterance);
+            }
+        }
+
+        function playSound(message) {
+            playBeep();
+            setTimeout(() => speak(message), 500);
+        }
+
+        // Fonction pour formater le temps
+        function formatTime(seconds) {
+            const minutes = Math.floor(seconds / 60);
+            const secs = seconds % 60;
+            return minutes + ':' + secs.toString().padStart(2, '0');
+        }
+
+        // Fonction pour activer/désactiver les checkboxes
+        function toggleCheckboxes(disabled) {
+            const checkboxes = document.querySelectorAll('input[type="radio"]');
+            checkboxes.forEach(checkbox => {
+                checkbox.disabled = disabled;
+            });
+        }
+
+        // Fonction pour colorer les critères après la fin du minuteur ou arrêt manuel
+        function colorCriteriaByScore() {
+            if (!hasFinished && !hasStoppedManually) return;
+
+            // Pour les critères normaux (anamnèse, examen, management)
+            const normalCriteriaRows = document.querySelectorAll('.criteria-row');
+            normalCriteriaRows.forEach(row => {
+                const id = row.id;
+                if (!id) return;
+                
+                const criteriaName = id.replace('criteria-', '');
+                const checkedRadio = document.querySelector('input[name="' + criteriaName + '"]:checked');
+                
+                // Supprimer les classes de couleur existantes
+                row.classList.remove('criteria-zero-points', 'criteria-one-point', 'criteria-full-points', 'criteria-not-answered');
+                
+                if (checkedRadio) {
+                    const score = Number(checkedRadio.value) || 0;
+                    
+                    // Appliquer la couleur selon le score
+                    if (score === 0) {
+                        row.classList.add('criteria-zero-points');
+                    } else if (score === 1) {
+                        row.classList.add('criteria-one-point');
+                    } else if (score >= 2) {
+                        row.classList.add('criteria-full-points');
+                    }
+                } else {
+                    // Pas de réponse
+                    row.classList.add('criteria-not-answered');
+                }
+            });
+
+            // Pour les critères de communication
+            const communicationRows = document.querySelectorAll('.communication-section');
+            communicationRows.forEach(row => {
+                const id = row.id;
+                if (!id) return;
+                
+                const criteriaName = id.replace('criteria-', '');
+                const checkedRadio = document.querySelector('input[name="' + criteriaName + '"]:checked');
+                
+                // Supprimer les classes de couleur existantes
+                row.classList.remove('communication-note-a', 'communication-note-b', 'communication-note-c', 'communication-note-d', 'communication-note-e', 'communication-not-answered');
+                
+                if (checkedRadio) {
+                    const grade = checkedRadio.value.toLowerCase();
+                    row.classList.add('communication-note-' + grade);
+                } else {
+                    // Pas de réponse
+                    row.classList.add('communication-not-answered');
+                }
+            });
+        }
+
+        // Fonctions du minuteur
+        function startTimer() {
+            if (isRunning) return;
+            
+            // Basculer en mode examen et mettre à jour l'affichage
+            currentMode = 'exam';
+            updateDisplayMode();
+            
+            isRunning = true;
+            hasStarted = true;
+            hasStoppedManually = false;
+            
+            // Activer les checkboxes pendant le minuteur
+            toggleCheckboxes(false);
+            
+            // Jouer le son de début (uniquement en mode examen)
+            playSound("Début de la station");
+            
+            // Mise à jour de l'interface
+            document.getElementById('startBtn').style.display = 'none';
+            document.getElementById('stopBtn').style.display = 'inline-block';
+            document.getElementById('resetBtn').disabled = true;
+            document.getElementById('timerStatus').textContent = 'En cours';
+            document.getElementById('timerStatus').className = 'timer-status status-running';
+            
+            timerInterval = setInterval(() => {
+                currentSeconds--;
+                document.getElementById('timerDisplay').textContent = formatTime(currentSeconds);
+                
+                const container = document.getElementById('timerContainer');
+                
+                // Vérifier les moments clés (uniquement en mode examen)
+                if (currentSeconds === 2 * 60) { // 11 minutes écoulées, 2 minutes restantes
+                    if (currentMode === 'exam') {
+                        playSound("Il vous reste 2 minutes");
+                    }
+                    container.classList.add('timer-warning');
+                    document.getElementById('timerStatus').textContent = '2 min restantes';
+                    document.getElementById('timerStatus').className = 'timer-status status-warning';
+                }
+                
+                if (currentSeconds <= 30) {
+                    container.classList.add('timer-critical');
+                }
+                
+                if (currentSeconds <= 0) {
+                    endTimer();
+                }
+            }, 1000);
+        }
+
+        function stopTimer() {
+            if (!isRunning) return;
+            
+            clearInterval(timerInterval);
+            isRunning = false;
+            hasStoppedManually = true;
+            
+            // Repasser en mode révision et mettre à jour l'affichage
+            currentMode = 'revision';
+            updateDisplayMode();
+            
+            // Désactiver les checkboxes après arrêt manuel
+            toggleCheckboxes(true);
+            
+            // Appliquer la coloration des critères
+            colorCriteriaByScore();
+            
+            document.getElementById('startBtn').style.display = 'inline-block';
+            document.getElementById('stopBtn').style.display = 'none';
+            document.getElementById('resetBtn').disabled = false;
+            document.getElementById('timerStatus').textContent = 'Arrêté';
+            document.getElementById('timerStatus').className = 'timer-status status-waiting';
+            
+            const container = document.getElementById('timerContainer');
+            container.classList.remove('timer-warning', 'timer-critical');
+        }
+
+        function endTimer() {
+            clearInterval(timerInterval);
+            isRunning = false;
+            hasFinished = true;
+            currentSeconds = 0;
+            
+            // Jouer le son de fin (uniquement en mode examen)
+            if (currentMode === 'exam') {
+                playSound("Fin de la station. Veuillez sortir");
+            }
+            
+            // Repasser en mode révision et mettre à jour l'affichage
+            currentMode = 'revision';
+            updateDisplayMode();
+            
+            // Garder les checkboxes désactivées
+            toggleCheckboxes(true);
+            
+            // Appliquer la coloration des critères
+            colorCriteriaByScore();
+            
+            document.getElementById('timerDisplay').textContent = formatTime(0);
+            document.getElementById('startBtn').style.display = 'none';
+            document.getElementById('stopBtn').style.display = 'none';
+            document.getElementById('resetBtn').disabled = false;
+            document.getElementById('timerStatus').textContent = 'Terminé';
+            document.getElementById('timerStatus').className = 'timer-status status-finished';
+            
+            const container = document.getElementById('timerContainer');
+            container.classList.add('timer-critical');
+            
+            // Arrêter l'animation après 5 secondes pour éviter les rebonds infinis
+            setTimeout(() => {
+                container.classList.remove('timer-critical');
+                container.classList.add('timer-finished');
+            }, 5000);
+        }
+
+        function resetTimer() {
+            clearInterval(timerInterval);
+            isRunning = false;
+            hasStarted = false;
+            hasFinished = false;
+            hasStoppedManually = false;
+            currentSeconds = totalSeconds;
+            
+            // Remettre en mode révision et mettre à jour l'affichage
+            currentMode = 'revision';
+            updateDisplayMode();
+            
+            // Désactiver les checkboxes (état initial)
+            toggleCheckboxes(true);
+            
+            // Supprimer toutes les sélections de checkboxes
+            const allRadios = document.querySelectorAll('input[type="radio"]');
+            allRadios.forEach(radio => {
+                radio.checked = false;
+            });
+            
+            // Remettre tous les points à zéro
+            const allPointsDisplays = document.querySelectorAll('.points-display');
+            allPointsDisplays.forEach(display => {
+                display.textContent = '0';
+            });
+            
+            // Supprimer la coloration des critères
+            const allCriteriaRows = document.querySelectorAll('.criteria-row, .communication-section');
+            allCriteriaRows.forEach(row => {
+                row.classList.remove('criteria-zero-points', 'criteria-one-point', 'criteria-full-points', 'criteria-not-answered');
+                row.classList.remove('communication-note-a', 'communication-note-b', 'communication-note-c', 'communication-note-d', 'communication-note-e', 'communication-not-answered');
+            });
+            
+            // Recalculer les scores pour remettre à zéro
+            calculateScores();
+            
+            document.getElementById('timerDisplay').textContent = formatTime(totalSeconds);
+            document.getElementById('startBtn').style.display = 'inline-block';
+            document.getElementById('stopBtn').style.display = 'none';
+            document.getElementById('timerStatus').textContent = 'En attente';
+            document.getElementById('timerStatus').className = 'timer-status status-waiting';
+            
+            const container = document.getElementById('timerContainer');
+            container.classList.remove('timer-warning', 'timer-critical', 'timer-finished');
+        }
+
+        // Fonctions de gestion des modes
+        function switchMode(mode) {
+            currentMode = mode;
+            const body = document.body;
+            const buttons = document.querySelectorAll('.mode-button');
+            
+            // Mise à jour des classes CSS
+            body.className = mode + '-mode';
+            
+            // Mise à jour des boutons actifs
+            buttons.forEach(btn => btn.classList.remove('active'));
+            document.querySelector('[onclick="switchMode(\'' + mode + '\')"]').classList.add('active');
+            
+            if (mode === 'revision') {
+                // Mode révision : checkboxes toujours activées
+                toggleCheckboxes(false);
+            } else {
+                // Mode examen : workflow classique
+                if (!hasStarted) {
+                    toggleCheckboxes(true);
+                }
+            }
+        }
+        
+        function identifyLacunes() {
+            if (currentMode !== 'revision') return;
+            
+            // Appliquer la coloration intelligente (même logique que colorCriteriaByScore)
+            const normalCriteriaRows = document.querySelectorAll('.criteria-row');
+            normalCriteriaRows.forEach(row => {
+                const id = row.id;
+                if (!id) return;
+                
+                const criteriaName = id.replace('criteria-', '');
+                const checkedRadio = document.querySelector('input[name="' + criteriaName + '"]:checked');
+                
+                // Supprimer les classes de couleur existantes
+                row.classList.remove('criteria-zero-points', 'criteria-one-point', 'criteria-full-points', 'criteria-not-answered');
+                
+                if (checkedRadio) {
+                    const score = Number(checkedRadio.value) || 0;
+                    
+                    // Appliquer la couleur selon le score
+                    if (score === 0) {
+                        row.classList.add('criteria-zero-points');
+                    } else if (score === 1) {
+                        row.classList.add('criteria-one-point');
+                    } else if (score >= 2) {
+                        row.classList.add('criteria-full-points');
+                    }
+                } else {
+                    // Pas de réponse
+                    row.classList.add('criteria-not-answered');
+                }
+            });
+
+            // Pour les critères de communication
+            const communicationRows = document.querySelectorAll('.communication-section');
+            communicationRows.forEach(row => {
+                const id = row.id;
+                if (!id) return;
+                
+                const criteriaName = id.replace('criteria-', '');
+                const checkedRadio = document.querySelector('input[name="' + criteriaName + '"]:checked');
+                
+                // Supprimer les classes de couleur existantes
+                row.classList.remove('communication-note-a', 'communication-note-b', 'communication-note-c', 'communication-note-d', 'communication-note-e', 'communication-not-answered');
+                
+                if (checkedRadio) {
+                    const grade = checkedRadio.value.toLowerCase();
+                    row.classList.add('communication-note-' + grade);
+                } else {
+                    // Pas de réponse
+                    row.classList.add('communication-not-answered');
+                }
+            });
+        }
+
+        // Fonction pour colorer le contenu entre crochets []
+        function colorPatientResponses() {
+            // Sélectionner tous les éléments qui peuvent contenir des réponses patients
+            const elements = document.querySelectorAll('.criteria-text, .sub-criteria');
+            
+            elements.forEach(element => {
+                const text = element.innerHTML;
+                // Remplacer tout contenu entre crochets [] par une version colorée
+                const coloredText = text.replace(/\[([^\]]+)\]/g, '<span style="color: rgba(44, 90, 160, 0.8); font-weight: 500;">[$1]</span>');
+                element.innerHTML = coloredText;
+            });
+        }
+
+        // Initialisation: configurer le mode par défaut et colorer les réponses patients
+        document.addEventListener('DOMContentLoaded', function() {
+            switchMode('revision'); // Mode révision par défaut
+            colorPatientResponses(); // Colorer les réponses patients entre crochets
+            initializeComments(); // Initialiser l'état des commentaires
+        });
+        
+        // Initialiser l'état des commentaires au chargement
+        function initializeComments() {
+            // Vérifier tous les textareas de commentaires de critères
+            document.querySelectorAll('.comment-textarea').forEach(textarea => {
+                if (textarea.id.startsWith('comment-') && !textarea.id.includes('section')) {
+                    const criteriaId = textarea.id.replace('comment-', '');
+                    updateCommentButton(criteriaId);
+                }
+            });
+            
+            // Vérifier tous les textareas de commentaires de sections
+            document.querySelectorAll('[id^="comment-section-"]').forEach(textarea => {
+                const sectionName = textarea.id.replace('comment-section-', '');
+                updateSectionComment(sectionName);
+            });
+        }
+
+        // Fonctions de scoring originales (modifiées pour inclure la coloration)
+        function updateScore(section, element) {
+            const value = element.value;
+            const name = element.name;
+            let pointValue;
+
+            if (section === "communication") {
+                const map = { A: 4, B: 3, C: 2, D: 1, E: 0 };
+                pointValue = map[value] || 0;
+            } else {
+                pointValue = Number(value) || 0;
+            }
+
+            const pointsElement = document.getElementById("points-" + name);
+            if (pointsElement) {
+                pointsElement.textContent = pointValue;
+            }
+
+            calculateScores();
+            
+            // Appliquer la coloration si le minuteur est terminé ou arrêté manuellement
+            if (hasFinished || hasStoppedManually) {
+                colorCriteriaByScore();
+            }
+        }
+
+        function calculateScores() {
+            let anamneseScore = 0, statusScore = 0, managementScore = 0, communicationScore = 0;
+            
+            // Maximum scores pour chaque section
+            const maxAnamnese = 8 * 2;
+            const maxStatus = 6 * 2;
+            const maxManagement = 8 * 2;
+            const maxCommunication = 4 * 4; // 16
+            const missingItems = [];
+
+            const coef = {
+                anamnese: 0.4,
+                status: 0.3,
+                management: 0.2,
+                communication: 0.1
+            };
+
+            // Calcul du score pour Anamnèse
+            for (let i = 1; i <= 8; i++) {
+                const radio = document.querySelector('input[name="a' + i + '"]:checked');
+                if (radio) {
+                    anamneseScore += Number(radio.value) || 0;
+                } else {
+                    const criteria = document.querySelector('input[name="a' + i + '"][data-criteria]');
+                    if (criteria) missingItems.push('Anamnèse : ' + criteria.dataset.criteria);
+                }
+            }
+            document.getElementById("anamneseScore").textContent = anamneseScore;
+
+            // Calcul du score pour Examen clinique
+            for (let i = 1; i <= 6; i++) {
+                const radio = document.querySelector('input[name="e' + i + '"]:checked');
+                if (radio) {
+                    statusScore += Number(radio.value) || 0;
+                } else {
+                    const criteria = document.querySelector('input[name="e' + i + '"][data-criteria]');
+                    if (criteria) missingItems.push('Examen clinique : ' + criteria.dataset.criteria);
+                }
+            }
+            document.getElementById("statusScore").textContent = statusScore;
+
+            // Calcul du score pour Management
+            for (let i = 1; i <= 8; i++) {
+                const radio = document.querySelector('input[name="m' + i + '"]:checked');
+                if (radio) {
+                    managementScore += Number(radio.value) || 0;
+                } else {
+                    const criteria = document.querySelector('input[name="m' + i + '"][data-criteria]');
+                    if (criteria) missingItems.push('Management : ' + criteria.dataset.criteria);
+                }
+            }
+            document.getElementById("managementScore").textContent = managementScore;
+
+            // Calcul du score pour Communication
+            for (let i = 1; i <= 4; i++) {
+                const radio = document.querySelector('input[name="c' + i + '"]:checked');
+                if (radio) {
+                    const val = radio.value;
+                    const map = { A: 4, B: 3, C: 2, D: 1, E: 0 };
+                    communicationScore += map[val] || 0;
+                } else {
+                    const criteria = document.querySelector('input[name="c' + i + '"][data-criteria]');
+                    if (criteria) missingItems.push('Communication : ' + criteria.dataset.criteria);
+                }
+            }
+            document.getElementById("communicationScore").textContent = communicationScore;
+
+            // Calcul des pourcentages
+            const anamneseP = (anamneseScore / maxAnamnese) * 100;
+            const statusP = (statusScore / maxStatus) * 100;
+            const managementP = (managementScore / maxManagement) * 100;
+            const communicationP = (communicationScore / maxCommunication) * 100;
+
+            const globalPercentage = anamneseP * coef.anamnese + statusP * coef.status + managementP * coef.management + communicationP * coef.communication;
+
+            const isStarted = anamneseScore + statusScore + managementScore + communicationScore > 0;
+
+            // Calcul du score total maximum
+            const totalScoreText = isStarted ? Math.round(globalPercentage) : 0;
+            document.getElementById("totalScore").textContent = totalScoreText + "%";
+
+            // Mise à jour des pourcentages par section
+            document.getElementById("anamnese-percentage").textContent = Math.round(anamneseP);
+            document.getElementById("examen-percentage").textContent = Math.round(statusP);
+            document.getElementById("management-percentage").textContent = Math.round(managementP);
+            document.getElementById("communication-percentage").textContent = Math.round(communicationP);
+
+            // Mise à jour de la note globale
+            const gradeElement = document.getElementById("globalGrade");
+            const scoreBody = document.getElementById("totalScore").closest(".total-body");
+            const gradeBody = gradeElement.closest(".total-body");
+            const pourcentBody = document.querySelector(".total-pourcent-body");
+            const sections = ["anamnese", "examen", "management", "communication"];
+
+            const allClasses = ["note-a", "note-b", "note-c", "note-d", "note-e", "note-neutral"];
+
+            function getClass(p) {
+                if (p === 0) return "note-neutral";
+                if (p >= 90) return "note-a";
+                if (p >= 80) return "note-b";
+                if (p >= 70) return "note-c";
+                if (p >= 60) return "note-d";
+                return "note-e";
+            }
+
+            const gradeClass = getClass(globalPercentage);
+            const gradeLabel = isStarted ? gradeClass.split("-")[1].toUpperCase() : "A-E";
+            gradeElement.textContent = gradeLabel;
+
+            [gradeElement, scoreBody, gradeBody, pourcentBody].forEach(el => {
+                el.classList.remove(...allClasses);
+                el.classList.add(gradeClass);
+            });
+
+            sections.forEach(id => {
+                const value = parseInt(document.getElementById(id + "-percentage").textContent);
+                const section = document.getElementById(id + "-percentage").closest(".total-pourcent-section");
+                const sectionClass = getClass(value);
+                section.classList.remove(...allClasses);
+                section.classList.add(sectionClass);
+            });
+
+            // Gestion des éléments manquants
+            if (missingItems.length > 0) {
+                document.getElementById("missingItems").style.display = "block";
+                document.getElementById("missingList").innerHTML = missingItems.map(item =>
+                    "<div class=\"missing-item\">• " + item + "</div>"
+                ).join("");
+            } else {
+                document.getElementById("missingItems").style.display = "none";
+            }
+        }
+        
+        // Fonctions de gestion des commentaires
+        function toggleComment(criteriaId) {
+            const commentSection = document.getElementById('comment-section-' + criteriaId);
+            const isShowing = commentSection.classList.contains('show');
+            
+            if (isShowing) {
+                commentSection.classList.remove('show');
+            } else {
+                commentSection.classList.add('show');
+                // Focus sur le textarea
+                setTimeout(() => {
+                    document.getElementById('comment-' + criteriaId).focus();
+                }, 100);
+            }
+        }
+        
+        function updateCommentButton(criteriaId) {
+            const textarea = document.getElementById('comment-' + criteriaId);
+            const button = document.querySelector('[onclick="toggleComment(\'' + criteriaId + '\')"]');
+            const commentSection = document.getElementById('comment-section-' + criteriaId);
+            
+            if (textarea.value.trim() !== '') {
+                button.classList.add('has-content');
+                button.title = 'Commentaire ajouté - Cliquer pour modifier';
+                commentSection.classList.add('has-content');
+            } else {
+                button.classList.remove('has-content');
+                button.title = 'Ajouter un commentaire';
+                commentSection.classList.remove('has-content');
+            }
+        }
+        
+        function toggleSectionComment(sectionName) {
+            const section = document.getElementById('section-comment-' + sectionName);
+            const button = document.querySelector('[onclick="toggleSectionComment(\'' + sectionName + '\')"]');
+            const isShowing = section.classList.contains('show');
+            
+            if (isShowing) {
+                section.classList.remove('show');
+            } else {
+                section.classList.add('show');
+                // Focus sur le textarea
+                setTimeout(() => {
+                    document.getElementById('comment-section-' + sectionName).focus();
+                }, 100);
+            }
+        }
+        
+        function updateSectionComment(sectionName) {
+            const textarea = document.getElementById('comment-section-' + sectionName);
+            const section = document.getElementById('section-comment-' + sectionName);
+            const button = document.querySelector('[onclick="toggleSectionComment(\'' + sectionName + '\')"]');
+            
+            if (textarea.value.trim() === '') {
+                section.classList.remove('has-content');
+                if (section.classList.contains('global')) {
+                    section.classList.add('empty');
+                }
+                if (button) {
+                    button.classList.remove('has-content');
+                    button.title = 'Commentaire sur cette section';
+                }
+            } else {
+                section.classList.add('has-content');
+                section.classList.remove('empty');
+                if (button) {
+                    button.classList.add('has-content');
+                    button.title = 'Commentaire ajouté - Cliquer pour modifier';
+                }
+            }
+        }
+        
+        // Fonction spécifique pour le commentaire général
+        function updateGeneralComment() {
+            const textarea = document.getElementById('comment-general');
+            const section = document.getElementById('section-comment-general');
+            
+            if (textarea.value.trim() === '') {
+                section.classList.remove('has-content');
+            } else {
+                section.classList.add('has-content');
+            }
+        }
+        
+        // Préparer l'impression en masquant les sections vides
+        function prepareForPrint() {
+            // Marquer les sections de critères sans contenu comme show=false pour l'impression
+            document.querySelectorAll('.criterion-comment-section').forEach(section => {
+                const textarea = section.querySelector('.comment-textarea');
+                if (!textarea || textarea.value.trim() === '') {
+                    section.classList.remove('show');
+                }
+            });
+            
+            // Marquer les sections vides
+            ['anamnese', 'examen', 'management', 'communication', 'general'].forEach(sectionName => {
+                const textarea = document.getElementById('comment-section-' + sectionName);
+                const section = document.getElementById('section-comment-' + sectionName);
+                if (textarea && textarea.value.trim() === '') {
+                    section.classList.add('empty');
+                } else if (section) {
+                    section.classList.remove('empty');
+                }
+            });
+        }
+        
+        // Écouter l'événement d'impression
+        window.addEventListener('beforeprint', prepareForPrint);
+
+        // Initialisation
+        calculateScores();
+        
+        // Initialiser la section globale comme vide
+        const globalSection = document.getElementById('section-comment-general');
+        if (globalSection) {
+            globalSection.classList.add('empty');
+        }
+    </script>
+</body>
+</html>

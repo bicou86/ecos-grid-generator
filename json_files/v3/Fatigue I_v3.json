@@ -1,0 +1,393 @@
+{
+  "title": "Fatigue I",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Homme de 42 ans (IMC 29 kg/m²) consultant pour fatigue persistante",
+    "vitals": {
+      "ta": "148/89 mmHg",
+      "fc": "76 bpm",
+      "fr": "16/min"
+    },
+    "patientComment": "Homme d'âge moyen avec tableau classique de syndrome d'apnée obstructive du sommeil (SAOS) : fatigue diurne sévère, ronflements avec apnées observées, surpoids, HTA. Risque cardiovasculaire élevé nécessitant prise en charge rapide."
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Se présente avec nom, fonction et but de la consultation",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Caractérisation complète de la fatigue",
+          "details": [
+            "Symptôme principal: [toujours si fatigué, épuisé le matin]",
+            "Durée: [depuis plusieurs semaines]",
+            "Évolution journalière: [toujours à peu près aussi fatigué]",
+            "Facteurs déclenchants: [non identifiés]",
+            "Impact fonctionnel: [s'est déjà endormi à son bureau]"
+          ],
+          "binaryOnly": false,
+          "patientComment": "Fatigue non réparatrice typique du SAOS",
+          "scoringRule": "≥4 caractéristiques = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "a3",
+          "text": "Exploration détaillée du sommeil",
+          "details": [
+            "Qualité subjective: [bonne mais non réparatrice]",
+            "Durée: [7 heures]",
+            "Endormissement: [pas de problème]",
+            "Maintien: [pas de problème]",
+            "Activités avant coucher: [télévision]",
+            "Heure coucher/lever régulière"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥5 aspects explorés = 2 pts, 3-4 = 1 pt, <3 = 0 pt"
+        },
+        {
+          "id": "a4",
+          "text": "Recherche de RED FLAGS du SAOS",
+          "redflagsSection": [
+            {
+              "text": "Ronflements sonores [oui]",
+              "isRedFlag": true
+            },
+            {
+              "text": "Apnées observées [oui, femme l'a remarqué]",
+              "isRedFlag": true
+            },
+            {
+              "text": "Céphalées matinales [oui]",
+              "isRedFlag": true
+            },
+            {
+              "text": "Somnolence au volant [situations à risque: conduite]",
+              "isRedFlag": true
+            },
+            {
+              "text": "HTA nouvellement diagnostiquée [148/89 mmHg]",
+              "isRedFlag": true
+            }
+          ],
+          "binaryOnly": false,
+          "patientComment": "Score d'Epworth probablement élevé",
+          "scoringRule": "≥4 red flags = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "a5",
+          "text": "Évaluation de l'état psychologique",
+          "details": [
+            "Humeur: [pas de changements]",
+            "Satisfaction de vie: [bien, mais stress au bureau]",
+            "Motivation/élan: [un peu diminués car fatigué]",
+            "Concentration: [légèrement altérée]",
+            "Symptômes dépressifs recherchés"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "a6",
+          "text": "Facteurs de risque cardiovasculaires",
+          "details": [
+            "Tabac: [20 paquets-années]",
+            "Alcool: [1-2 verres vin/soir]",
+            "IMC: [29 kg/m² - surpoids]",
+            "Sédentarité: [pas d'activité physique]",
+            "Stress professionnel: [présent]",
+            "AF cardiovasculaires: [père hypertendu]"
+          ],
+          "binaryOnly": false,
+          "patientComment": "Multiples FdR cardiovasculaires",
+          "scoringRule": "≥5 facteurs = 2 pts, 3-4 = 1 pt, <3 = 0 pt"
+        },
+        {
+          "id": "a7",
+          "text": "Symptômes associés systématiques",
+          "details": [
+            "Fièvre/infection: [non]",
+            "Variations pondérales: [non]",
+            "Polyurie/polydipsie: [non mentionné]",
+            "Troubles digestifs: [reflux connu]",
+            "Troubles mictionnels: [sans particularité]",
+            "Signes thyroïdiens"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥5 symptômes recherchés = 2 pts, 3-4 = 1 pt, <3 = 0 pt"
+        },
+        {
+          "id": "a8",
+          "text": "Antécédents et médication",
+          "details": [
+            "Médicaux: [reflux gastro-œsophagien]",
+            "Chirurgicaux: [non]",
+            "Psychiatriques: [non]",
+            "Médication actuelle: [IPP]",
+            "Allergies médicamenteuses"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "a9",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "binaryOnly": false,
+          "details": [
+            "Anamnèse orientée SAOS",
+            "RED FLAGS systématiquement recherchés",
+            "Facteurs de risque identifiés"
+          ],
+          "scoringRule": "Excellente = 2 pts, suffisante = 1 pt, insuffisante = 0 pt"
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Évaluation morphologique et anthropométrique",
+          "details": [
+            "IMC calculé: 29 kg/m² (surpoids)",
+            "Circonférence cervicale (>43cm = FdR)",
+            "Morphologie faciale (rétrognathie)",
+            "Distribution graisse abdominale",
+            "Score de Mallampati"
+          ],
+          "binaryOnly": false,
+          "patientComment": "Morphotype à risque pour SAOS",
+          "scoringRule": "≥4 paramètres = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "e2",
+          "text": "Examen ORL spécifique SAOS",
+          "details": [
+            "Oropharynx (hypertrophie amygdalienne)",
+            "Palais mou (allongé/épaissi)",
+            "Luette (hypertrophiée)",
+            "Base de langue (position)",
+            "Fosses nasales (obstruction)"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥4 structures = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "e3",
+          "text": "Examen cardiovasculaire approfondi",
+          "details": [
+            "TA confirmée: [148/89 mmHg - HTA grade 1]",
+            "Auscultation cardiaque: [sans particularité]",
+            "Recherche souffle carotidien",
+            "Pouls périphériques",
+            "Signes d'insuffisance cardiaque"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "e4",
+          "text": "Examen pulmonaire",
+          "details": [
+            "Auscultation: [sans particularité]",
+            "Ampliation thoracique",
+            "Recherche wheezing",
+            "Signes d'hypoventilation",
+            "FR documentée"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥3 éléments = 2 pts, 2 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "e5",
+          "text": "Examen abdominal et général",
+          "details": [
+            "Palpation abdominale: [sans particularité]",
+            "Périmètre abdominal",
+            "Recherche hépatomégalie",
+            "Œdèmes périphériques",
+            "Signes cutanés d'endocrinopathie"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥3 éléments = 2 pts, 2 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "e6",
+          "text": "Examen neurologique ciblé",
+          "details": [
+            "État de vigilance actuel",
+            "Réflexes ostéo-tendineux",
+            "Force musculaire",
+            "Sensibilité",
+            "Signes de neuropathie"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥3 éléments = 2 pts, 2 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "e7",
+          "text": "Évaluation globale de la qualité de l'examen",
+          "binaryOnly": false,
+          "details": [
+            "Examen orienté SAOS",
+            "Évaluation cardiovasculaire complète",
+            "Morphotype documenté"
+          ],
+          "scoringRule": "Excellent = 2 pts, suffisant = 1 pt, insuffisant = 0 pt"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic principal et stratification",
+          "patientComment": "Syndrome d'apnée obstructive du sommeil (SAOS) sévère probable",
+          "details": [
+            "Somnolence diurne excessive",
+            "Ronflements + apnées observées",
+            "Céphalées matinales",
+            "HTA nouvellement découverte",
+            "Morphotype à risque (IMC 29)"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "Diagnostic correct avec ≥4 arguments = 2 pts, avec 2-3 arguments = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "m2",
+          "text": "Diagnostics différentiels structurés",
+          "ddSection": {
+            "categories": [
+              {
+                "name": "Causes endocriniennes",
+                "items": [
+                  "Hypothyroïdie",
+                  "Diabète type 2",
+                  "Syndrome de Cushing",
+                  "Hypogonadisme"
+                ]
+              },
+              {
+                "name": "Causes neurologiques",
+                "items": [
+                  "Narcolepsie",
+                  "Hypersomnie idiopathique",
+                  "Syndrome des jambes sans repos",
+                  "Mouvements périodiques du sommeil"
+                ]
+              },
+              {
+                "name": "Causes psychiatriques/autres",
+                "items": [
+                  "Dépression masquée",
+                  "Syndrome de fatigue chronique",
+                  "Burnout professionnel",
+                  "Effets médicamenteux"
+                ]
+              }
+            ]
+          },
+          "binaryOnly": false,
+          "scoringRule": "≥8 DD pertinents = 2 pts, 4-7 DD = 1 pt, <4 DD = 0 pt"
+        },
+        {
+          "id": "m3",
+          "text": "Examens complémentaires ciblés",
+          "binaryOnly": false,
+          "scoringRule": "≥4 examens appropriés = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "details": [
+            "Polysomnographie nocturne → Gold standard - IAH, désaturations, micro-éveils",
+            "Polygraphie ventilatoire → Alternative si PSG non disponible rapidement",
+            "Bilan biologique complet → NFS, TSH, glycémie, bilan lipidique, créatinine",
+            "ECG + échocardiographie → HVG, dysfonction VG, HTAP",
+            "Gazométrie artérielle → Si suspicion syndrome obésité-hypoventilation"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Mesures hygiéno-diététiques immédiates",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Réduction pondérale",
+                "content": "• Objectif -10% poids initial\n• Régime hypocalorique équilibré\n• Activité physique progressive\n• Suivi diététique si possible\n• Impact majeur sur IAH"
+              },
+              {
+                "title": "Hygiène du sommeil",
+                "content": "• Position latérale (éviter décubitus dorsal)\n• Surélévation tête de lit 30°\n• Horaires réguliers\n• Éviction alcool/sédatifs soir\n• Arrêt tabac impératif"
+              },
+              {
+                "title": "Sécurité immédiate",
+                "content": "• Information risque conduite\n• Évaluation aptitude professionnelle\n• Éviter travail en hauteur\n• Certificat d'inaptitude temporaire si besoin"
+              }
+            ]
+          },
+          "binaryOnly": false,
+          "scoringRule": "≥3 catégories complètes = 2 pts, 2 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "m5",
+          "text": "Traitement spécifique du SAOS",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "CPAP/PPC",
+                "content": "• Traitement de référence IAH>30\n• Titration pression efficace\n• Masque adapté (nasal/facial)\n• Humidificateur si sécheresse\n• Observance >4h/nuit cruciale"
+              },
+              {
+                "title": "Alternatives thérapeutiques",
+                "content": "• Orthèse avancée mandibulaire (OAM)\n• Chirurgie ORL si obstacle anatomique\n• Stimulation nerveuse hypoglosse\n• Thérapie positionnelle si SAOS positionnel"
+              },
+              {
+                "title": "Traitement HTA associée",
+                "content": "• IEC/ARA II première ligne\n• Diurétique si œdèmes\n• Surveillance MAPA\n• Objectif <130/80 mmHg"
+              }
+            ]
+          },
+          "binaryOnly": false,
+          "scoringRule": "≥3 options thérapeutiques = 2 pts, 2 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "m6",
+          "text": "Information patient et adhésion",
+          "details": [
+            "Nature du SAOS expliquée simplement",
+            "Risques cardiovasculaires majeurs",
+            "Bénéfices attendus du traitement",
+            "Importance observance CPAP",
+            "Groupe de soutien/association patients"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥4 points abordés = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "m7",
+          "text": "Plan de suivi multidisciplinaire",
+          "details": [
+            "Pneumologue: PSG urgente (délai <1 mois)",
+            "Contrôle observance CPAP à 1 mois",
+            "Suivi TA et poids mensuel initial",
+            "Cardiologue si complications",
+            "Réévaluation globale à 3 mois"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "m8",
+          "text": "Évaluation globale de la qualité de la prise en charge",
+          "binaryOnly": false,
+          "details": [
+            "Suspicion SAOS appropriée",
+            "Risque cardiovasculaire intégré",
+            "Prise en charge urgente justifiée"
+          ],
+          "scoringRule": "Excellente = 2 pts, adéquate = 1 pt, insuffisante = 0 pt"
+        }
+      ]
+    }
+  }
+}

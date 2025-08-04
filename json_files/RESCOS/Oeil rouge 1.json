@@ -1,0 +1,436 @@
+{
+  "title": "Œil rouge 1",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "M./Mme Axel·le Roux, 40 ans, employé(e) de commerce, consulte pour une douleur oculaire droite évoluant depuis quelques jours."
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Caractéristiques de la douleur : Début / Durée / Fréquence",
+          "scoringRule": "Au moins 2 = oui, 1 = ±, aucun = non"
+        },
+        {
+          "id": "a2",
+          "text": "Caractéristiques de la douleur : Évolution / Qualité / Intensité / Localisation / Irradiation",
+          "scoringRule": "Au moins 4 = oui, 2 à 3 = ±, 1 ou aucun = non"
+        },
+        {
+          "id": "a3",
+          "text": "Douleur : Facteurs aggravants / Facteurs atténuants",
+          "scoringRule": "Les 2 = oui, 1 = ±, aucun = non"
+        },
+        {
+          "id": "a4",
+          "text": "Symptômes associés : Vision floue / Photophobie",
+          "scoringRule": "Les 2 = oui, 1 = ±, aucun = non"
+        },
+        {
+          "id": "a5",
+          "text": "Caractéristiques troubles de la vision",
+          "details": [
+            "Mono-binoculaire [monoculaire, œil droit]",
+            "Diplopie [non]",
+            "Myodésopsies (mouches volantes) [non]"
+          ],
+          "scoringRule": "Au moins 2 = oui, 1 = ±, aucun = non"
+        },
+        {
+          "id": "a6",
+          "text": "Altération du champ visuel",
+          "binaryOnly": true,
+          "pointScale": 1
+        },
+        {
+          "id": "a7",
+          "text": "Antécédent similaire par le passé [oui, il y a 2 ans, résolution spontanée]",
+          "binaryOnly": true
+        },
+        {
+          "id": "a8",
+          "text": "Notion de",
+          "details": [
+            "Contage dans l'entourage [mère avec épisodes similaires]",
+            "Port de lentilles [non]",
+            "Traumatisme [non]",
+            "Exposition agent irritant/UV [non]"
+          ],
+          "scoringRule": "Au moins 2 = oui, 1 = ±, aucun = non"
+        },
+        {
+          "id": "a9",
+          "text": "Histoire médicale",
+          "details": [
+            "ATCD médico-chirurgicaux [fracture jambe gauche à 9 ans, boutons de fièvre occasionnels]",
+            "Allergies [piqûres d'abeilles, porte un Epipen]"
+          ],
+          "scoringRule": "Les 2 = oui, 1 = ±, aucun = non"
+        },
+        {
+          "id": "a10",
+          "text": "Traitement en cours [Epipen au besoin, Dafalgan occasionnel]",
+          "binaryOnly": true,
+          "pointScale": 1
+        },
+        {
+          "id": "a11",
+          "text": "Anamnèse en général : ciblée, fil conducteur",
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Observation des yeux",
+          "details": [
+            "Sous paupière supérieure",
+            "Sous paupière inférieure"
+          ],
+          "scoringRule": "Les 2 = oui, 1 = ±, aucun = non"
+        },
+        {
+          "id": "e2",
+          "text": "Palpation oculaire",
+          "scoringRule": "Bilatéral = oui, unilatéral = ±, non = non",
+          "pointScale": 1
+        },
+        {
+          "id": "e3",
+          "text": "Champ visuel",
+          "details": [
+            "Les 4 quadrants",
+            "La périphérie"
+          ],
+          "scoringRule": "Les 2 = oui, 1 = ±, aucun = non"
+        },
+        {
+          "id": "e4",
+          "text": "Oculomotricité",
+          "details": [
+            "Convergence",
+            "6 directions"
+          ],
+          "scoringRule": "Les 2 = oui, 1 = ±, aucun = non"
+        },
+        {
+          "id": "e5",
+          "text": "Réflexe pupillaire",
+          "details": [
+            "Direct",
+            "Consensuel",
+            "À la convergence"
+          ],
+          "scoringRule": "Au moins 2 = oui, 1 = ±, aucun = non"
+        },
+        {
+          "id": "e6",
+          "text": "Nerfs crâniens",
+          "details": [
+            "Sensibilité de la face (V)",
+            "Mobilité de la face (VII)"
+          ],
+          "scoringRule": "Les 2 = oui, 1 = ±, aucun = non"
+        },
+        {
+          "id": "e7",
+          "text": "Acuité visuelle de loin OU de près",
+          "binaryOnly": true,
+          "pointScale": 1
+        },
+        {
+          "id": "e8",
+          "text": "Propose une ophtalmoscopie directe",
+          "binaryOnly": true,
+          "pointScale": 1
+        },
+        {
+          "id": "e9",
+          "text": "Propose un examen à la lampe à fente [ulcération dendritique de la cornée]",
+          "binaryOnly": true
+        },
+        {
+          "id": "e10",
+          "text": "Examen physique en général : effectué de manière structurée, correcte et professionnelle",
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic de suspicion",
+          "scoringRule": "Kératite = oui, conjonctivite = ±, aucun ou autre = non"
+        },
+        {
+          "id": "m2",
+          "text": "Origine",
+          "scoringRule": "Herpétique = oui, virale/infectieuse = ±, aucun ou autre = non"
+        },
+        {
+          "id": "m3",
+          "text": "Propose un traitement topique",
+          "binaryOnly": true
+        },
+        {
+          "id": "m4",
+          "text": "Propose un avis ophtalmologique",
+          "binaryOnly": true
+        },
+        {
+          "id": "m5",
+          "text": "Management en général",
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "images": [
+      {
+        "id": "img1",
+        "title": "Œil rouge avec injection conjonctivale",
+        "description": "Image montrant un œil rouge avec injection conjonctivale importante et rougeur diffuse caractéristique",
+        "filename": "grilles_generees/html/images/oeil-rouge-img1.jpg"
+      }
+    ],
+    "scenarioPatienteStandardisee": {
+      "titre": "Scénario pour le/la patient(e) standardisé(e)",
+      "nom": "Axel·le Roux",
+      "age": "40 ans",
+      "contexte": "Employé(e) de commerce dans une grande surface, marié(e) depuis 15 ans avec 2 garçons (12 et 14 ans)",
+      "motifConsultation": {
+        "plaintePrincipale": "Ça fait quelques jours que j'ai mal à l'œil",
+        "autreChose": "J'ai peur que ce soit grave et de perdre la vue, c'est pour ça que je suis là"
+      },
+      "histoireActuelle": {
+        "symptomePrincipal": [
+          "Douleur dans et autour de l'œil droit",
+          "Œil devenu rouge",
+          "Vision un peu floutée",
+          "Très sensible à la lumière depuis cet œil",
+          "Port d'un cache-œil (œil de pirate) pour se protéger"
+        ],
+        "symptomesAssocies": [
+          "Douleur oppressante, brûlante [5-6/10]",
+          "Irradiation tout autour de l'œil",
+          "Photophobie importante [7/10 à la lumière]",
+          "Vision floue [je vois un peu flou]",
+          "Rougeur de l'œil droit"
+        ],
+        "evolution": [
+          "Début il y a quelques jours",
+          "Au début léger [pensais avoir quelque chose dans l'œil]",
+          "Devenu de pire en pire",
+          "Épisode similaire il y a 2 ans",
+          "Résolution spontanée en 1-2 semaines la dernière fois",
+          "Pas consulté de médecin à l'époque"
+        ],
+        "facteursModulateurs": [
+          "Facteur aggravant : exposition à la lumière",
+          "Facteur atténuant : se cacher de la lumière",
+          "Emprunté cache-œil à ma mère"
+        ],
+        "questions": [
+          "Vous pensez que c'est contagieux ? J'ai peur pour mes enfants (à poser une fois durant l'entretien)"
+        ]
+      },
+      "anamneseSystemes": {
+        "generale": [
+          "Bonne santé habituelle",
+          "Pas de fièvre ou frissons",
+          "Fait des boutons de fièvre de temps en temps"
+        ],
+        "ophtalmologique": [
+          "Pas d'altération du champ visuel",
+          "Pas de diplopie",
+          "Pas de myodésopsies (mouches volantes)",
+          "Vision monoculaire affectée (œil droit uniquement)"
+        ],
+        "genitourinaire": [
+          "Rien de particulier",
+          "Important pour DD infections à Gonorrhée ou Chlamydia"
+        ]
+      },
+      "habitudes": {
+        "alimentation": "Équilibrée",
+        "activitePhysique": "Volley-ball de temps en temps",
+        "sommeil": "Normal",
+        "tabac": "N'a jamais fumé",
+        "alcool": "1-2 verres de vin par semaine avec conjoint",
+        "drogues": "Non",
+        "medicaments": "Epipen (adrénaline) au besoin, Dafalgan parfois pour maux de tête"
+      },
+      "histoireMedicale": [
+        "Fracture jambe gauche à 9 ans (traitement conservateur avec plâtre)",
+        "Pas d'opération",
+        "Si femme : 2 accouchements par voie basse sans complication",
+        "Allergie aux piqûres d'abeilles (porte Epipen)",
+        "Épisode similaire il y a 2 ans (résolution spontanée)",
+        "Boutons de fièvre occasionnels",
+        "Vaccins à jour"
+      ],
+      "antecedentsFamiliaux": [
+        "Mère : BSH, plusieurs épisodes similaires de douleur à l'œil (prêt du cache-œil)",
+        "Père : BSH",
+        "Pas de frère et sœur",
+        "Grands-parents décédés"
+      ],
+      "informationsPersonnelles": {
+        "profession": "Employé(e) de commerce dans une grande surface",
+        "hobbies": "Bricolage",
+        "poids": "Normal",
+        "orientationSexuelle": "Hétérosexuel(le)",
+        "etatCivil": "Marié(e) depuis 15 ans",
+        "enfants": "2 garçons (12 et 14 ans)",
+        "situationSocioEconomique": "Stable",
+        "origine": "Non précisée",
+        "etatEsprit": "Inquiet(ète) pour sa vue"
+      },
+      "simulation": {
+        "durantEntretien": [
+          "Assis(e) sur une chaise avec cache-œil",
+          "Éviter les lentilles de contact ce jour-là si porteur habituel",
+          "Simuler douleur œil droit",
+          "Sensibilité++ à la lumière (œil droit uniquement)"
+        ],
+        "durantExamen": [
+          "Acuité visuelle légèrement abaissée œil droit",
+          "Performer un peu moins bien avec œil droit lors du test",
+          "Pas de diplopie ou autres symptômes"
+        ]
+      },
+      "informationADonner": "À mentionner après la sonnerie des 2 minutes si le candidat n'a pas posé la question : 'Ça m'est déjà arrivé par le passé mais je n'étais pas venu consulter, c'était parti tout seul.'"
+    },
+    "informationsExpert": {
+      "titre": "Informations pour l'expert",
+      "dossierMedical": "M./Mme Roux, 40 ans, employé(e) de commerce, consulte pour douleur oculaire droite progressive depuis quelques jours avec œil rouge, photophobie et vision floue. ATCD d'épisode similaire il y a 2 ans résolu spontanément. Mère avec épisodes similaires récurrents. Allergie piqûres d'abeilles. Boutons de fièvre occasionnels.",
+      "rolesInterventions": [
+        "Interrompre après proposition d'acuité visuelle et dire 'L'acuité visuelle de loin/près est identique'",
+        "Interrompre après proposition d'ophtalmoscopie et dire 'Le fond d'œil est normal'",
+        "Interrompre après proposition d'examen à la lampe à fente et dire 'Ulcération dendritique de la cornée'"
+      ],
+      "pointsCles": [
+        "Kératite herpétique (dendritique) typique",
+        "Antécédent d'épisode similaire évocateur de récurrence",
+        "Boutons de fièvre = terrain herpétique",
+        "Mère avec épisodes similaires (notion familiale)",
+        "Ulcération dendritique pathognomonique à la lampe à fente",
+        "Risque de complications si non traité"
+      ],
+      "pieges": [
+        "Ne pas oublier l'examen à la lampe à fente",
+        "Explorer la notion de récidive",
+        "Penser à la cause herpétique devant les boutons de fièvre",
+        "Référer en ophtalmologie",
+        "Rassurer sur la contagiosité (par contact direct)"
+      ]
+    },
+    "theoriePratique": {
+      "titre": "Théorie pratique sur la kératite herpétique",
+      "sections": [
+        {
+          "titre": "Présentation clinique",
+          "contenu": "La kératite herpétique est une infection cornéenne causée par le virus Herpes simplex.",
+          "points": [
+            "Douleur oculaire unilatérale progressive",
+            "Œil rouge avec injection conjonctivale",
+            "Photophobie marquée",
+            "Vision floue ou baisse d'acuité visuelle",
+            "Sensation de corps étranger",
+            "Larmoiement",
+            "Récidives fréquentes (virus latent dans ganglion trijumeau)"
+          ]
+        },
+        {
+          "titre": "Diagnostic",
+          "contenu": "Le diagnostic repose sur l'examen clinique et la mise en évidence de lésions caractéristiques.",
+          "points": [
+            "Examen à la lampe à fente indispensable",
+            "Ulcération dendritique pathognomonique",
+            "Test à la fluorescéine : arbre dendritique fluorescent",
+            "Anesthésie cornéenne (test au coton)",
+            "Fond d'œil normal en général",
+            "Pas d'examen biologique nécessaire en routine"
+          ]
+        },
+        {
+          "titre": "Diagnostics différentiels",
+          "contenu": "Plusieurs pathologies peuvent mimer une kératite herpétique.",
+          "points": [
+            "Kératites bactériennes (abcès cornéen)",
+            "Kératites traumatiques (corps étranger, érosion)",
+            "Conjonctivite virale ou bactérienne",
+            "Herpès zoster ophtalmique (zona)",
+            "Kératite amibienne (porteurs de lentilles)",
+            "Uvéite antérieure",
+            "Glaucome aigu"
+          ]
+        },
+        {
+          "titre": "Traitement",
+          "contenu": "Le traitement est essentiellement antiviral local.",
+          "points": [
+            "Antiviraux topiques : aciclovir pommade 5x/jour",
+            "Alternative : ganciclovir gel ophtalmique",
+            "Durée : 10-14 jours minimum",
+            "Cycloplégie si uvéite associée",
+            "CONTRE-INDICATION aux corticoïdes (aggravation)",
+            "Antiviraux oraux si récidives fréquentes",
+            "Suivi ophtalmologique indispensable"
+          ]
+        },
+        {
+          "titre": "Complications",
+          "contenu": "Non traitée, la kératite herpétique peut entraîner des complications graves.",
+          "points": [
+            "Ulcère géographique ou amibien",
+            "Perforation cornéenne",
+            "Cicatrices cornéennes avec baisse d'acuité visuelle",
+            "Kératite stromale (infiltration profonde)",
+            "Uvéite herpétique",
+            "Glaucome secondaire",
+            "Surinfection bactérienne"
+          ]
+        },
+        {
+          "titre": "Prévention des récidives",
+          "contenu": "Mesures pour limiter les récurrences fréquentes de cette pathologie.",
+          "points": [
+            "Éviter les facteurs déclenchants (stress, fatigue, UV)",
+            "Protection solaire oculaire",
+            "Traitement précoce des prodromes",
+            "Prophylaxie antivirale orale si > 3 récidives/an",
+            "Éducation du patient sur les signes d'alerte",
+            "Suivi ophtalmologique régulier"
+          ]
+        }
+      ],
+      "rappelsTherapeutiques": [
+        "Aciclovir pommade ophtalmique 3% : 5 applications/jour pendant 10-14 jours",
+        "Ganciclovir gel 0.15% : 5 fois/jour jusqu'à cicatrisation puis 3x/j pendant 7j",
+        "Cyclopentolate 1% si photophobie importante",
+        "PAS de corticoïdes (risque d'aggravation et perforation)",
+        "Analgésiques oraux si besoin",
+        "Larmes artificielles sans conservateur",
+        "Prophylaxie orale (valaciclovir 500mg/j) si récidives fréquentes"
+      ],
+      "examensComplementaires": [
+        "Examen à la lampe à fente avec fluorescéine (gold standard)",
+        "Test de sensibilité cornéenne",
+        "Mesure de la pression intraoculaire",
+        "Culture virale sur frottis cornéen (si doute diagnostique)",
+        "PCR HSV sur larmes (cas atypiques)",
+        "Photographie cornéenne pour suivi",
+        "OCT du segment antérieur si disponible"
+      ]
+    }
+  }
+}

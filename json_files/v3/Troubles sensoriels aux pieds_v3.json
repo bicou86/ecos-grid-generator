@@ -1,0 +1,596 @@
+{
+  "title": "Troubles sensoriels aux pieds",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "M. Stirni, 52 ans, plombier, consulte en cabinet de médecine générale pour des troubles de la sensibilité aux pieds.",
+    "vitals": {
+      "ta": "145/95 mmHg",
+      "fc": "72 bpm",
+      "temperature": "37,2°C"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction et tâche",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Plainte principale",
+          "binaryOnly": true,
+          "details": [
+            "[Troubles de la sensibilité aux pieds]"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Début et évolution",
+          "binaryOnly": false,
+          "details": [
+            "Début des symptômes [Remarqué vraiment il y a 2 mois]",
+            "Probable durée réelle [Probablement déjà présent depuis plus longtemps]",
+            "Évolution [Progressive]",
+            "Facteur déclencheur [Aucun identifié]"
+          ],
+          "scoringRule": "≥3 aspects temporels = 2 points, 2 aspects = 1 point"
+        },
+        {
+          "id": "a4",
+          "text": "Caractéristiques des troubles sensitifs",
+          "binaryOnly": false,
+          "details": [
+            "Type de sensations [Fourmillements en position assise]",
+            "À la marche [Parfois comme engourdi]",
+            "Picotements [Oui]",
+            "Engourdissement [Oui]",
+            "Distribution [En chaussettes]"
+          ],
+          "scoringRule": "≥4 caractéristiques sensitives = 2 points, 3 caractéristiques = 1 point"
+        },
+        {
+          "id": "a5",
+          "text": "Extension et localisation",
+          "binaryOnly": false,
+          "details": [
+            "Limite supérieure [Juste au-dessus des chevilles]",
+            "Bilatéral [Oui]",
+            "Symétrique [Oui]"
+          ],
+          "scoringRule": "≥2 aspects de localisation = 2 points"
+        },
+        {
+          "id": "a6",
+          "text": "Facteurs modulants",
+          "binaryOnly": false,
+          "details": [
+            "Facteurs améliorants [Aucun]",
+            "Facteurs aggravants [Aucun]",
+            "Variation selon l'heure [Non]"
+          ],
+          "scoringRule": "≥2 facteurs modulants explorés = 2 points"
+        },
+        {
+          "id": "a7",
+          "text": "Symptômes moteurs associés",
+          "binaryOnly": false,
+          "details": [
+            "Perte de force [Non]",
+            "Difficultés à la marche [Non]",
+            "Chutes [Non]"
+          ],
+          "scoringRule": "≥2 symptômes moteurs explorés = 2 points"
+        },
+        {
+          "id": "a8",
+          "text": "Douleur",
+          "binaryOnly": false,
+          "details": [
+            "Présence de douleur [Oui et non, c'est très désagréable]",
+            "Type [Sensation désagréable plutôt que vraie douleur]",
+            "Intensité [Modérée]"
+          ],
+          "scoringRule": "≥2 aspects douloureux = 2 points"
+        },
+        {
+          "id": "a9",
+          "text": "Plaie au pied",
+          "binaryOnly": false,
+          "details": [
+            "Présence d'une plaie [Oui]",
+            "Circonstances [S'est planté une épine il y a 3 semaines]",
+            "Cicatrisation [Pas encore bien cicatrisée]",
+            "Localisation [Plante du pied]"
+          ],
+          "scoringRule": "≥3 aspects de la plaie = 2 points, 2 aspects = 1 point"
+        },
+        {
+          "id": "a10",
+          "text": "Suivi médical",
+          "binaryOnly": false,
+          "details": [
+            "Dernière consultation [Il y a des années]",
+            "Raison de l'absence de suivi [Ancien médecin a fermé son cabinet]",
+            "Attitude face aux consultations [N'aime pas aller chez le médecin]"
+          ],
+          "scoringRule": "≥2 aspects du suivi médical = 2 points"
+        },
+        {
+          "id": "a11",
+          "text": "Symptômes visuels",
+          "binaryOnly": false,
+          "details": [
+            "Troubles visuels [Non]",
+            "Port de lunettes [Lunettes de lecture seulement]",
+            "Vision floue [Non]",
+            "Baisse d'acuité [Non]"
+          ],
+          "scoringRule": "≥3 aspects visuels = 2 points, 2 aspects = 1 point"
+        },
+        {
+          "id": "a12",
+          "text": "Symptômes urinaires",
+          "binaryOnly": false,
+          "details": [
+            "Jet urinaire [Plus faible qu'avant]",
+            "Urines mousseuses [Non]",
+            "Polyurie [Non mentionnée]",
+            "Pollakiurie [Non mentionnée]"
+          ],
+          "scoringRule": "≥3 symptômes urinaires = 2 points, 2 symptômes = 1 point"
+        },
+        {
+          "id": "a13",
+          "text": "Symptômes cardiovasculaires",
+          "binaryOnly": false,
+          "details": [
+            "Palpitations [De temps en temps]",
+            "Douleurs thoraciques [Non]",
+            "Dyspnée [Non]",
+            "État depuis l'infarctus [Sinon OK]"
+          ],
+          "scoringRule": "≥3 symptômes cardiovasculaires = 2 points, 2 symptômes = 1 point"
+        },
+        {
+          "id": "a14",
+          "text": "Antécédents personnels",
+          "binaryOnly": false,
+          "details": [
+            "[Infarctus du myocarde il y a 3 ans]",
+            "[Fracture de jambe dans l'enfance]"
+          ],
+          "scoringRule": "≥1 antécédent personnel = 2 points"
+        },
+        {
+          "id": "a15",
+          "text": "Facteurs de risque cardiovasculaire",
+          "binaryOnly": false,
+          "details": [
+            "Diabète [Non diagnostiqué jusqu'à présent]",
+            "Hypertension [Oui, sous traitement]",
+            "Hypercholestérolémie [Oui, sous traitement]",
+            "Tabagisme [Ex-fumeur, 40 paquets-années, arrêt après l'infarctus]",
+            "Antécédents familiaux [Positifs - voir plus bas]"
+          ],
+          "scoringRule": "≥4 facteurs de risque = 2 points, 3 facteurs = 1 point"
+        },
+        {
+          "id": "a16",
+          "text": "Revue des systèmes - Neurologique",
+          "binaryOnly": false,
+          "details": [
+            "Céphalées [Non]",
+            "Vision [Normale avec lunettes]",
+            "Audition [Normale]"
+          ],
+          "scoringRule": "≥2 symptômes neurologiques = 2 points"
+        },
+        {
+          "id": "a17",
+          "text": "Revue des systèmes - Digestif",
+          "binaryOnly": false,
+          "details": [
+            "Dysphagie [Non]",
+            "Digestion [Normale]",
+            "Transit intestinal [Parfois diarrhée]",
+            "Poids [Stable]",
+            "Appétit [Normal]"
+          ],
+          "scoringRule": "≥4 symptômes digestifs = 2 points, 3 symptômes = 1 point"
+        },
+        {
+          "id": "a18",
+          "text": "Revue des systèmes - Respiratoire",
+          "binaryOnly": false,
+          "details": [
+            "Dyspnée [Non]",
+            "Toux [Non]"
+          ],
+          "scoringRule": "≥1 symptôme respiratoire = 2 points"
+        },
+        {
+          "id": "a19",
+          "text": "Revue des systèmes - Locomoteur",
+          "binaryOnly": false,
+          "details": [
+            "Douleurs articulaires [Oui, en rapport avec l'âge]",
+            "Raideur matinale [Non spécifiée]",
+            "Gonflement articulaire [Non]"
+          ],
+          "scoringRule": "≥2 symptômes locomoteurs = 2 points"
+        },
+        {
+          "id": "a20",
+          "text": "État cutané et œdèmes",
+          "binaryOnly": false,
+          "details": [
+            "Peau [Sèche]",
+            "Œdèmes des membres inférieurs [Non]"
+          ],
+          "scoringRule": "≥1 aspect cutané = 2 points"
+        },
+        {
+          "id": "a21",
+          "text": "Fonction sexuelle",
+          "binaryOnly": false,
+          "details": [
+            "[Dysfonction érectile]"
+          ],
+          "scoringRule": "Fonction sexuelle explorée = 2 points"
+        },
+        {
+          "id": "a22",
+          "text": "Médicaments actuels",
+          "binaryOnly": false,
+          "details": [
+            "[Aténolol (bêta-bloquant)]",
+            "[Simvastatine (statine)]",
+            "[AAS (aspirine)]"
+          ],
+          "scoringRule": "≥2 médicaments identifiés = 2 points"
+        },
+        {
+          "id": "a23",
+          "text": "Habitudes et toxiques",
+          "binaryOnly": false,
+          "details": [
+            "Tabac [Ex-fumeur, 2 paquets/jour pendant 20 ans, arrêt il y a 3 ans]",
+            "Alcool [3 bières/jour]",
+            "Digestif [Parfois un schnaps après le repas]",
+            "Drogues [Non]"
+          ],
+          "scoringRule": "≥3 substances explorées = 2 points, 2 substances = 1 point"
+        },
+        {
+          "id": "a24",
+          "text": "Allergies",
+          "binaryOnly": false,
+          "details": [
+            "[Aucune allergie connue]"
+          ],
+          "scoringRule": "Allergies explorées = 2 points"
+        },
+        {
+          "id": "a25",
+          "text": "Antécédents familiaux",
+          "binaryOnly": false,
+          "details": [
+            "Frère [Infarctus à 47 ans]",
+            "Mère [Décédée d'infarctus à 68 ans]",
+            "Diabète familial [Non mentionné]"
+          ],
+          "scoringRule": "≥2 antécédents familiaux = 2 points"
+        },
+        {
+          "id": "a26",
+          "text": "Anamnèse sociale",
+          "binaryOnly": false,
+          "details": [
+            "Profession [Plombier]",
+            "Situation familiale [Divorcé]",
+            "Enfants [Aucun]",
+            "Activité physique [Peu d'exercice]"
+          ],
+          "scoringRule": "≥3 aspects sociaux = 2 points, 2 aspects = 1 point"
+        },
+        {
+          "id": "a27",
+          "text": "Questions supplémentaires",
+          "binaryOnly": false,
+          "details": [
+            "Autres préoccupations [À explorer]",
+            "Questions du patient [À encourager]"
+          ],
+          "scoringRule": "≥1 question supplémentaire = 2 points"
+        },
+        {
+          "id": "a28",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "binaryOnly": false,
+          "details": [
+            "Anamnèse ciblée et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Examen cardiovasculaire",
+          "binaryOnly": false,
+          "details": [
+            "Palpation cardiaque [Choc de pointe normal]",
+            "Auscultation cardiaque [B1 B2 réguliers, pas de souffle]",
+            "Auscultation des carotides [Pas de souffle]"
+          ],
+          "scoringRule": "≥2 aspects cardiovasculaires = 2 points"
+        },
+        {
+          "id": "e2",
+          "text": "Status vasculaire périphérique",
+          "binaryOnly": false,
+          "details": [
+            "Pouls pédieux [Présents bilatéralement]",
+            "Pouls tibial postérieur [Présents bilatéralement]",
+            "Pouls poplités [Présents]",
+            "Temps de recoloration capillaire [Normal]",
+            "Température des pieds [Normale]"
+          ],
+          "scoringRule": "≥4 aspects vasculaires = 2 points, 3 aspects = 1 point"
+        },
+        {
+          "id": "e3",
+          "text": "Inspection des pieds",
+          "binaryOnly": false,
+          "details": [
+            "Aspect général [Peau sèche]",
+            "Déformations [Aucune]",
+            "Ongles [Normaux]",
+            "Espaces interdigitaux [Normaux]",
+            "Hyperkératose [Possible]"
+          ],
+          "scoringRule": "≥4 aspects de l'inspection = 2 points, 3 aspects = 1 point"
+        },
+        {
+          "id": "e4",
+          "text": "Inspection de la plaie",
+          "binaryOnly": false,
+          "details": [
+            "Localisation [Plante du pied]",
+            "Aspect [Cicatrisation retardée]",
+            "Signes d'infection [À évaluer]",
+            "Tissus nécrotiques [À évaluer]"
+          ],
+          "scoringRule": "≥3 aspects de la plaie = 2 points, 2 aspects = 1 point"
+        },
+        {
+          "id": "e5",
+          "text": "Examen de la sensibilité",
+          "binaryOnly": false,
+          "details": [
+            "Sensibilité vibratoire (diapason) [Diminuée distalement]",
+            "Sensibilité au monofilament [Diminuée]",
+            "Sensibilité thermique [À tester]",
+            "Sensibilité douloureuse [Diminuée]",
+            "Distribution [En chaussettes, symétrique]"
+          ],
+          "scoringRule": "≥4 tests de sensibilité = 2 points, 3 tests = 1 point"
+        },
+        {
+          "id": "e6",
+          "text": "Examen des réflexes",
+          "binaryOnly": false,
+          "details": [
+            "Réflexes achilléens [Diminués ou absents]",
+            "Réflexes rotuliens [À tester]",
+            "Babinski [Négatif bilatéralement]"
+          ],
+          "scoringRule": "≥2 réflexes testés = 2 points"
+        },
+        {
+          "id": "e7",
+          "text": "Fond d'œil",
+          "binaryOnly": false,
+          "details": [
+            "Rétinopathie diabétique [À rechercher]",
+            "Signes d'hypertension [À rechercher]"
+          ],
+          "scoringRule": "≥1 aspect du fond d'œil = 2 points"
+        },
+        {
+          "id": "e8",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "binaryOnly": false,
+          "details": [
+            "Examen clinique ciblé et bien conduit"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic principal évoqué",
+          "binaryOnly": false,
+          "details": [
+            "[Neuropathie diabétique périphérique]"
+          ]
+        },
+        {
+          "id": "m2",
+          "text": "Diagnostics différentiels",
+          "binaryOnly": false,
+          "ddSection": {
+            "categories": [
+              {
+                "name": "Neuropathies métaboliques",
+                "items": [
+                  "Neuropathie diabétique périphérique",
+                  "Neuropathie alcoolique",
+                  "Neuropathie urémique",
+                  "Hypothyroïdie"
+                ]
+              },
+              {
+                "name": "Neuropathies carentielles",
+                "items": [
+                  "Carence en vitamine B12",
+                  "Carence en vitamine B1 (thiamine)",
+                  "Carence en vitamine B6",
+                  "Carence en acide folique"
+                ]
+              },
+              {
+                "name": "Causes vasculaires",
+                "items": [
+                  "Artériopathie oblitérante des membres inférieurs (AOMI)",
+                  "Microangiopathie diabétique",
+                  "Thrombose veineuse",
+                  "Insuffisance veineuse chronique"
+                ]
+              },
+              {
+                "name": "Neuropathies inflammatoires",
+                "items": [
+                  "Syndrome de Guillain-Barré chronique",
+                  "Neuropathie auto-immune",
+                  "Vascularite des nerfs périphériques",
+                  "Neuropathie paranéoplasique"
+                ]
+              },
+              {
+                "name": "Causes médicamenteuses/toxiques",
+                "items": [
+                  "Neuropathie iatrogène (chimiothérapie)",
+                  "Intoxication aux métaux lourds",
+                  "Neuropathie alcoolique",
+                  "Médicaments neurotoxiques"
+                ]
+              }
+            ]
+          },
+          "scoringRule": "≥3 catégories diagnostiques = 2 points, 2 catégories = 1 point"
+        },
+        {
+          "id": "m3",
+          "text": "Autres problèmes identifiés",
+          "binaryOnly": false,
+          "details": [
+            "[Hypertension mal contrôlée post-infarctus]",
+            "[Dysfonction érectile d'origine vasculaire ou médicamenteuse]",
+            "[Probable hypertrophie prostatique]",
+            "[Consommation d'alcool excessive]"
+          ],
+          "scoringRule": "≥3 problèmes identifiés = 2 points, 2 problèmes = 1 point"
+        },
+        {
+          "id": "m4",
+          "text": "Examens complémentaires",
+          "binaryOnly": false,
+          "details": [
+            "Glycémie à jeun",
+            "HbA1c",
+            "Bilan lipidique complet",
+            "Tests hépatiques",
+            "Créatinine et DFG",
+            "Microalbuminurie",
+            "TSH",
+            "Vitamine B12",
+            "FSC"
+          ],
+          "scoringRule": "≥7 examens pertinents = 2 points, 5-6 examens = 1 point"
+        },
+        {
+          "id": "m5",
+          "text": "Orientations spécialisées",
+          "binaryOnly": false,
+          "details": [
+            "Ophtalmologue [Pour dépistage rétinopathie]",
+            "Diabétologue/endocrinologue [Pour équilibre diabétique]",
+            "Consultation plaies et cicatrisation",
+            "Urologue [Pour dysfonction érectile et troubles mictionnels]",
+            "Éventuellement angiologue [Si suspicion AOMI]"
+          ],
+          "scoringRule": "≥4 orientations appropriées = 2 points, 3 orientations = 1 point"
+        },
+        {
+          "id": "m6",
+          "text": "Prise en charge immédiate",
+          "binaryOnly": false,
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Prise en charge glycémique",
+                "content": "• Metformine en première intention\n• Objectif HbA1c < 7%\n• Surveillance glycémique adaptée\n• Éducation thérapeutique\n• Diététique personnalisée"
+              },
+              {
+                "title": "Traitement de la neuropathie",
+                "content": "• Prégabaline ou gabapentine (douleurs neuropathiques)\n• Duloxétine ou amitriptyline si dépression associée\n• Acide alpha-lipoïque\n• Vitamines B1, B6, B12\n• Analgésiques selon l'intensité"
+              },
+              {
+                "title": "Soins podologiques",
+                "content": "• Soins de plaie spécialisés\n• Chaussage thérapeutique adapté\n• Orthèses plantaires si nécessaire\n• Éducation à l'auto-examen des pieds\n• Surveillance podologique régulière"
+              }
+            ]
+          },
+          "scoringRule": "≥2 catégories thérapeutiques = 2 points"
+        },
+        {
+          "id": "m7",
+          "text": "Examens complémentaires additionnels",
+          "binaryOnly": false,
+          "details": [
+            "Échographie Doppler des artères des membres inférieurs",
+            "ECG de contrôle",
+            "Éventuellement EMG si doute diagnostique"
+          ],
+          "scoringRule": "≥2 examens additionnels = 2 points"
+        },
+        {
+          "id": "m8",
+          "text": "Mesures préventives",
+          "binaryOnly": false,
+          "details": [
+            "Arrêt définitif du tabac (déjà fait)",
+            "Réduction de la consommation d'alcool",
+            "Contrôle glycémique strict",
+            "Contrôle tensionnel optimal",
+            "Activité physique régulière adaptée",
+            "Surveillance podologique régulière"
+          ],
+          "scoringRule": "≥5 mesures préventives = 2 points, 3-4 mesures = 1 point"
+        },
+        {
+          "id": "m9",
+          "text": "Éducation du patient",
+          "binaryOnly": false,
+          "details": [
+            "Importance du suivi médical régulier",
+            "Risques liés au diabète non traité",
+            "Prévention des complications du pied diabétique",
+            "Signes d'alarme à surveiller"
+          ],
+          "scoringRule": "≥3 aspects éducatifs = 2 points, 2 aspects = 1 point"
+        },
+        {
+          "id": "m10",
+          "text": "Évaluation globale de la qualité de la prise en charge",
+          "binaryOnly": false,
+          "details": [
+            "Prise en charge cohérente et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    }
+  }
+}

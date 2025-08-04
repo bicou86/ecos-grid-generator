@@ -1,0 +1,450 @@
+{
+  "title": "Douleur à l'oreille",
+  "context": {
+    "setting": "Service d'urgences pédiatriques",
+    "patient": "Une mère se présente aux urgences avec sa fille de 3 ans. L'enfant a de la fièvre et pleure beaucoup."
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction et objectif de la consultation",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Question ouverte pour identifier le problème actuel",
+          "details": [
+            "[L'enfant pleure et a de la fièvre]"
+          ],
+          "binaryOnly": true
+        },
+        {
+          "id": "a3",
+          "text": "RED FLAGS - Signaux d'alarme otite compliquée",
+          "redflagsSection": [
+            {
+              "text": "Douleur rétro-auriculaire ou mastoïdienne"
+            },
+            {
+              "text": "Œdème/rougeur rétro-auriculaire"
+            },
+            {
+              "text": "Décollement du pavillon auriculaire"
+            },
+            {
+              "text": "Paralysie faciale périphérique"
+            },
+            {
+              "text": "Signes méningés (raideur nuque, photophobie)"
+            },
+            {
+              "text": "Altération état conscience/léthargie"
+            },
+            {
+              "text": "Vertiges importants ou nystagmus"
+            },
+            {
+              "text": "Otorrhée purulente abondante"
+            }
+          ],
+          "scoringRule": "≥2 red flags = 2 pts, 1 = 1 pt, 0 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a4",
+          "text": "Caractérisation temporelle et évolution",
+          "details": [
+            "Début exact des symptômes [depuis 2 jours]",
+            "Installation brutale ou progressive",
+            "Évolution (amélioration/aggravation) [toujours pareil]",
+            "Symptômes nocturnes (réveils douloureux)",
+            "Épisodes similaires antérieurs [une fois déjà]",
+            "Délai depuis dernier épisode"
+          ],
+          "scoringRule": "≥5 éléments temporels = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a5",
+          "text": "Symptômes ORL spécifiques et localisateurs",
+          "details": [
+            "Otalgie (uni/bilatérale, intensité) [se touche l'oreille]",
+            "Hypoacousie ou surdité [rien remarqué]",
+            "Otorrhée (aspect : séreux/purulent/sanglant) [non]",
+            "Acouphènes ou sensations de plénitude",
+            "Vertiges vrais ou instabilité [je ne sais pas]",
+            "Prurit auriculaire"
+          ],
+          "scoringRule": "≥5 symptômes explorés = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a6",
+          "text": "Contexte infectieux et symptômes associés",
+          "details": [
+            "Fièvre quantifiée (T° max) [oui - valeur?]",
+            "Rhinorrhée (claire/purulente) [oui]",
+            "Toux (sèche/productive) [non]",
+            "Mal de gorge ou dysphagie",
+            "Conjonctivite associée",
+            "Éruption cutanée"
+          ],
+          "scoringRule": "≥5 symptômes évalués = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a7",
+          "text": "État général et retentissement",
+          "details": [
+            "Appétit conservé ou diminué",
+            "Hydratation (nombre de biberons/repas)",
+            "Jeu et interactions normales",
+            "Sommeil perturbé par douleur",
+            "Irritabilité ou prostration",
+            "Pleurs consolables ou inconsolables"
+          ],
+          "scoringRule": "≥5 aspects évalués = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a8",
+          "text": "Antécédents ORL et facteurs de risque",
+          "details": [
+            "Nombre d'otites antérieures [une fois]",
+            "Otites récidivantes (>4/an)",
+            "Otite séreuse chronique",
+            "Pose d'aérateurs transtympaniques",
+            "Malformation crânio-faciale",
+            "Reflux gastro-œsophagien"
+          ],
+          "scoringRule": "≥5 facteurs explorés = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a9",
+          "text": "Facteurs environnementaux et épidémiologiques",
+          "details": [
+            "Mode de garde (crèche/domicile) [crèche!]",
+            "Tabagisme passif au domicile",
+            "Allaitement maternel (durée)",
+            "Utilisation sucette/biberon couché",
+            "Baignades récentes (piscine)",
+            "Voyage récent en avion"
+          ],
+          "scoringRule": "≥5 facteurs = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a10",
+          "text": "Statut vaccinal et allergies",
+          "details": [
+            "Vaccins à jour (carnet) [selon schéma]",
+            "Pneumocoque (PCV13) spécifiquement",
+            "Haemophilus influenzae b",
+            "Grippe saisonnière si indiquée",
+            "Allergies médicamenteuses connues",
+            "Intolérances alimentaires"
+          ],
+          "scoringRule": "≥4 éléments vérifiés = 2 pts, 2-3 = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a11",
+          "text": "Traitements déjà administrés et efficacité",
+          "details": [
+            "Antipyrétiques/antalgiques (dose, fréquence) [paracétamol]",
+            "Efficacité sur fièvre et douleur [pas durable]",
+            "Gouttes auriculaires utilisées",
+            "Lavages de nez (technique) [NaCl]",
+            "Antibiotiques récents (<1 mois)",
+            "Automédication autres"
+          ],
+          "scoringRule": "≥5 traitements évalués = 2 pts, 3-4 = 1 pt",
+          "binaryOnly": false
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Évaluation de l'état général pédiatrique",
+          "details": [
+            "Triangle d'évaluation pédiatrique (TEP)",
+            "Aspect général (tonus, réactivité)",
+            "Travail respiratoire",
+            "Circulation cutanée",
+            "Échelle de douleur adaptée (FLACC/EVA)",
+            "Signes de déshydratation"
+          ],
+          "scoringRule": "≥5 éléments = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e2",
+          "text": "Examen otologique externe systématique",
+          "details": [
+            "Inspection pavillon (position, déformation)",
+            "Région rétro-auriculaire (œdème, rougeur)",
+            "Palpation tragus (signe du tragus) [pleure!]",
+            "Mobilisation pavillon (otite externe) [pleure!]",
+            "Palpation mastoïdienne (douleur, empâtement)",
+            "Recherche fistule ou écoulement"
+          ],
+          "scoringRule": "≥5 gestes = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e3",
+          "text": "Otoscopie bilatérale méthodique",
+          "details": [
+            "Visualisation tympan droit [rouge]",
+            "Visualisation tympan gauche [rouge]",
+            "Bombement tympanique (sévérité)",
+            "Niveau liquide rétrotympanique",
+            "Perforation ou paracentèse",
+            "État du CAE (cérumen, inflammation)"
+          ],
+          "scoringRule": "Otoscopie bilatérale complète = 2 pts, unilatérale = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e4",
+          "text": "Critères diagnostiques AAP pour OMA",
+          "details": [
+            "Début aigu des symptômes",
+            "Épanchement de l'oreille moyenne (OME)",
+            "Inflammation tympanique (érythème marqué)",
+            "Otalgie ou irritabilité inexpliquée",
+            "Bombement tympanique modéré/sévère",
+            "Otorrhée non liée à otite externe"
+          ],
+          "scoringRule": "≥3 critères AAP = 2 pts, 2 = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e5",
+          "text": "Examen ORL complémentaire",
+          "details": [
+            "Oropharynx (érythème, exsudat) [rouge]",
+            "Rhinoscopie antérieure si possible",
+            "Palpation sinus (sinusite associée)",
+            "Examen dentaire (douleur référée)",
+            "Mobilité tympanique (otoscope pneumatique)"
+          ],
+          "scoringRule": "≥4 structures = 2 pts, 2-3 = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e6",
+          "text": "Examen ganglionnaire cervical",
+          "details": [
+            "Ganglions pré-auriculaires",
+            "Ganglions rétro-auriculaires",
+            "Chaîne jugulo-carotidienne [légèrement augmentés]",
+            "Ganglions sous-mandibulaires",
+            "Caractère (taille, consistance, mobilité)"
+          ],
+          "scoringRule": "≥4 sites palpés = 2 pts, 2-3 = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e7",
+          "text": "Recherche complications et examen neurologique",
+          "details": [
+            "Test de Kernig/Brudzinski (méningite)",
+            "Examen des paires crâniennes (VII++)",
+            "Recherche nystagmus (labyrinthite)",
+            "Démarche et équilibre si âge approprié",
+            "Réflexes ostéotendineux",
+            "Tonus et force musculaire"
+          ],
+          "scoringRule": "≥4 éléments neurologiques = 2 pts, 2-3 = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e8",
+          "text": "Examen général systématique",
+          "details": [
+            "Auscultation pulmonaire bilatérale [normal]",
+            "Auscultation cardiaque [normal]",
+            "Palpation abdominale [normal]",
+            "Examen cutané (éruption virale)",
+            "Température rectale/axillaire",
+            "Saturation O2 si dyspnée"
+          ],
+          "scoringRule": "≥5 systèmes = 2 pts, 3-4 = 1 pt",
+          "binaryOnly": false
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic principal avec critères",
+          "patientComment": "Otite moyenne aiguë bilatérale chez enfant de 3 ans, probablement bactérienne (tympans rouges bombés, otalgie, fièvre >48h, contexte IVAS)",
+          "binaryOnly": true
+        },
+        {
+          "id": "m2",
+          "text": "Diagnostics différentiels pédiatriques structurés",
+          "ddSection": {
+            "categories": [
+              {
+                "name": "Causes otologiques primaires",
+                "items": [
+                  "OMA bactérienne (S. pneumoniae, H. influenzae)",
+                  "OMA virale (RSV, rhinovirus)",
+                  "Otite externe (swimmer's ear)",
+                  "Otite moyenne avec épanchement (OME)",
+                  "Myringite bulleuse (mycoplasme)"
+                ]
+              },
+              {
+                "name": "Otalgie secondaire (référée)",
+                "items": [
+                  "Pharyngite/amygdalite streptococcique",
+                  "Adénite cervicale",
+                  "Dentition ou abcès dentaire",
+                  "Dysfonction ATM (rare à cet âge)",
+                  "Parotidite (oreillons si non vacciné)"
+                ]
+              },
+              {
+                "name": "Complications à exclure",
+                "items": [
+                  "Mastoïdite aiguë",
+                  "Labyrinthite",
+                  "Paralysie faciale otogène",
+                  "Méningite otogène",
+                  "Thrombose sinus latéral"
+                ]
+              },
+              {
+                "name": "Autres causes pédiatriques",
+                "items": [
+                  "Corps étranger auriculaire",
+                  "Barotraumatisme",
+                  "Trauma auriculaire",
+                  "Zona auriculaire (rare)",
+                  "Tumeur (très rare)"
+                ]
+              }
+            ]
+          },
+          "scoringRule": "≥3 catégories avec DD pertinents = 2 pts",
+          "binaryOnly": false
+        },
+        {
+          "id": "m3",
+          "text": "Stratégie diagnostique raisonnée",
+          "details": [
+            "Diagnostic clinique suffisant si critères AAP",
+            "Pas d'imagerie en routine",
+            "Tympanométrie si otoscopie difficile",
+            "Audiométrie si hypoacousie persistante",
+            "NFS/CRP si signes systémiques sévères",
+            "Hémocultures si suspicion bactériémie",
+            "CT/IRM si suspicion mastoïdite"
+          ],
+          "scoringRule": "Approche raisonnée = 2 pts, excessive = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m4",
+          "text": "Traitement selon recommandations AAP 2013",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Analgésie systématique",
+                "content": "• Paracétamol 15 mg/kg/dose toutes 4-6h (max 60 mg/kg/j)\n• Alternative : ibuprofène 10 mg/kg/dose toutes 6-8h\n• Éviter codéine chez <12 ans\n• Gouttes auriculaires analgésiques si tympan intact\n• Application chaleur locale\n• Position tête surélevée"
+              },
+              {
+                "title": "Antibiothérapie - Enfant 3 ans bilatérale",
+                "content": "• INDICATION FORMELLE (bilatérale + 2-5 ans)\n• Amoxicilline HD : 90 mg/kg/j en 2 prises × 10j\n• Si allergie IgE : céfuroxime 30 mg/kg/j × 10j\n• Si allergie non-IgE : céfpodoxime 10 mg/kg/j\n• Si échec 48-72h : amox-clav 90/6.4 mg/kg/j"
+              },
+              {
+                "title": "Surveillance active (si unilatérale >2 ans)",
+                "content": "• Prescription différée remise aux parents\n• Débuter ATB si pas amélioration 48-72h\n• Contrôle clinique ou téléphonique J2-J3\n• Critères détérioration expliqués\n• Analgésie optimale maintenue"
+              },
+              {
+                "title": "Mesures adjuvantes",
+                "content": "• Mouchage doux et lavages nasaux salins\n• Éviction collectivité si fièvre\n• Hydratation orale encouragée\n• Éviter exposition fumée cigarette\n• Pas de décongestionnants <6 ans\n• Pas d'antihistaminiques (inefficaces)"
+              }
+            ]
+          },
+          "scoringRule": "Traitement conforme guidelines = 2 pts",
+          "binaryOnly": false
+        },
+        {
+          "id": "m5",
+          "text": "Critères d'hospitalisation pédiatriques",
+          "redflagsSection": [
+            {
+              "text": "Signes de mastoïdite (œdème rétro-auriculaire)"
+            },
+            {
+              "text": "Complications intracrâniennes suspectées"
+            },
+            {
+              "text": "Paralysie faciale périphérique"
+            },
+            {
+              "text": "Sepsis ou état toxique"
+            },
+            {
+              "text": "Échec antibiothérapie orale"
+            },
+            {
+              "text": "Âge <6 mois avec OMA"
+            },
+            {
+              "text": "Déshydratation sévère"
+            },
+            {
+              "text": "Contexte social défavorable"
+            }
+          ],
+          "scoringRule": "≥5 critères définis = 2 pts, 3-4 = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m6",
+          "text": "Plan de suivi et prévention",
+          "details": [
+            "Contrôle 48-72h si pas amélioration",
+            "Contrôle systématique fin ATB si <2 ans",
+            "Audiométrie à 3 mois si OME persistante",
+            "ORL si >3 OMA en 6 mois",
+            "Discussion tubes transtympaniques",
+            "Vaccination antigrippale annuelle",
+            "Éviction tabagisme passif"
+          ],
+          "scoringRule": "≥5 éléments = 2 pts, 3-4 = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m7",
+          "text": "Éducation parentale et conseils",
+          "details": [
+            "Technique administration médicaments",
+            "Signes d'alarme à surveiller (red flags)",
+            "Importance observance ATB complète",
+            "Ne pas mettre coton dans oreille",
+            "Éviter eau dans oreilles si perforation",
+            "Prévention : allaitement, pas biberon couché",
+            "Numéro urgence si détérioration"
+          ],
+          "scoringRule": "≥5 conseils = 2 pts, 3-4 = 1 pt",
+          "binaryOnly": false
+        }
+      ]
+    }
+  }
+}

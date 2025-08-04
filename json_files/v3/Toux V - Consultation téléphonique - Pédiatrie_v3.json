@@ -1,0 +1,436 @@
+{
+  "title": "Toux V",
+  "context": {
+    "setting": "Consultation téléphonique pédiatrique - 21h00",
+    "patient": "Appel d'une mère inquiète concernant sa fille Jasmin, 5 ans, qui présente une toux aboyante avec dyspnée légère. Mère isolée à la campagne, non motorisée avec 3 autres enfants",
+    "vitals": {
+      "note": "Évaluation téléphonique - signes vitaux rapportés par la mère",
+      "temperature": "Se sent un peu chaude (non mesurée)",
+      "respiration": "Rauque avec dyspnée légère",
+      "etat_general": "Consciente, réactive, sur le canapé",
+      "coloration": "Pas de cyanose rapportée"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation professionnelle et identification",
+          "details": [
+            "Nom, fonction médicale",
+            "Service/établissement",
+            "Contexte consultation téléphonique",
+            "Vérification identité appelant",
+            "Numéro rappel sécurisé"
+          ],
+          "scoringRule": "≥4 éléments identification = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a2",
+          "text": "Question ouverte empathique initiale",
+          "patientComment": "Ma fille Jasmin de 5 ans a une toux depuis ce matin et maintenant elle a du mal à respirer. Je suis inquiète car on habite à la campagne et je ne peux pas venir facilement",
+          "binaryOnly": true
+        },
+        {
+          "id": "a3",
+          "text": "RED FLAGS pédiatriques urgence vitale",
+          "redflagsSection": [
+            {
+              "text": "Trouble conscience [non - répond bien]"
+            },
+            {
+              "text": "Cyanose périphérique [non rapportée]"
+            },
+            {
+              "text": "Tirage intercostal [non observé]"
+            },
+            {
+              "text": "Tirage sus-sternal [non]"
+            },
+            {
+              "text": "Stridor audible [respiration rauque]"
+            },
+            {
+              "text": "Impossibilité parler/pleurer [peut répondre]"
+            },
+            {
+              "text": "Position tripode [allongée canapé]"
+            },
+            {
+              "text": "Refus boire/manger [à vérifier]"
+            }
+          ],
+          "scoringRule": "≥6 red flags explorés = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a4",
+          "text": "Syndrome laryngite striduleuse (faux-croup)",
+          "details": [
+            "Toux aboyante caractéristique [oui]",
+            "Toux sèche non productive [confirmé]",
+            "Respiration rauque/stridor [oui]",
+            "Dyspnée inspiratoire [légère]",
+            "Dysphonie/voix rauque [à préciser]",
+            "Début progressif [ce matin]",
+            "Horaire nocturne aggravation [21h]",
+            "Âge typique [5 ans]"
+          ],
+          "scoringRule": "≥6 signes faux-croup = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a5",
+          "text": "Contexte infectieux et prodromique",
+          "details": [
+            "Rhume précédent [léger rhume]",
+            "Fièvre [sensation chaude non mesurée]",
+            "Symptômes ORL [nez qui coule]",
+            "Mal de gorge [à demander]",
+            "Période épidémique [automne/hiver]",
+            "Contage familial [frères-sœurs]",
+            "Évolution progressive [matin → soir]",
+            "Jeu extérieur [exposition froid]"
+          ],
+          "scoringRule": "≥6 éléments contexte = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a6",
+          "text": "Évaluation sévérité faux-croup",
+          "details": [
+            "Stridor repos [respiration rauque]",
+            "Stridor effort [à préciser]",
+            "Tirage musculaire [non observé]",
+            "Agitation/anxiété [état émotionnel]",
+            "Capacité alimentation [boit? mange?]",
+            "Sommeil possible [réveillée?]",
+            "Réaction parent/enfant [mère inquiète]",
+            "Évolution dernières heures [stable? aggravation?]"
+          ],
+          "scoringRule": "≥6 critères sévérité = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a7",
+          "text": "Exclusion corps étranger et autres urgences",
+          "details": [
+            "Début soudain [non - progressif]",
+            "Jeu avec petits objets [ne pense pas]",
+            "Surveillance adulte [mère présente]",
+            "Épisode étouffement [non rapporté]",
+            "Toux quinteuse initiale [non]",
+            "Asymétrie symptômes [bilatéral]",
+            "Modification voix brutale [progressive]",
+            "Antécédents aspiration [non]"
+          ],
+          "scoringRule": "≥6 éléments exclusion = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a8",
+          "text": "Antécédents pédiatriques et terrain",
+          "details": [
+            "Épisodes faux-croup antérieurs [non avec dyspnée]",
+            "Asthme/bronchiolites [aucune maladie]",
+            "Allergies connues [rhume des foins]",
+            "Prématurité [à préciser]",
+            "Hospitalisations [non]",
+            "Malformations ORL [non connues]",
+            "Reflux gastro-œsophagien [non]",
+            "Développement normal [supposé]"
+          ],
+          "scoringRule": "≥6 antécédents explorés = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a9",
+          "text": "État général et signes associés",
+          "details": [
+            "Niveau conscience [répond bien]",
+            "Réactivité [normale rapportée]",
+            "Appétit récent [à vérifier]",
+            "Hydratation [boissons acceptées?]",
+            "Sommeil [perturbé par toux?]",
+            "Jeu/activités [capacité jouer]",
+            "Pleurs/irritabilité [calme sur canapé]",
+            "Position préférentielle [allongée acceptée]"
+          ],
+          "scoringRule": "≥6 éléments état général = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a10",
+          "text": "Contexte familial et social critique",
+          "details": [
+            "Isolement géographique [campagne]",
+            "Absence transport [non motorisée]",
+            "Autres enfants [3 plus jeunes]",
+            "Support familial [père présent?]",
+            "Compétence parentale [capable observation]",
+            "Niveau éducation [compréhension conseils]",
+            "Moyens communication [téléphone fixe/portable]",
+            "Accès services urgence [ambulance possible]"
+          ],
+          "scoringRule": "≥6 éléments contexte social = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a11",
+          "text": "Capacité surveillance parentale",
+          "details": [
+            "Expérience maternelle [4 enfants]",
+            "Observation clinique [décrit bien]",
+            "Reconnaissance urgence [appel approprié]",
+            "Disponibilité surveillance [nuit]",
+            "Compréhension consignes [répétition]",
+            "Moyens mesure fièvre [thermomètre]",
+            "Pharmacie domicile [paracétamol]",
+            "Connaissance signes alarme [à enseigner]"
+          ],
+          "scoringRule": "≥6 éléments capacité = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a12",
+          "text": "Évaluation globale de la qualité de l'anamnèse téléphonique",
+          "details": [
+            "Anamnèse faux-croup téléphonique complète",
+            "Red flags pédiatriques systématiquement explorés",
+            "Contexte social et familial documenté",
+            "Capacité surveillance parentale évaluée",
+            "Questions structurées et empathiques"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Adaptation consultation téléphonique pédiatrique",
+          "details": [
+            "Reconnaissance limitation examen direct",
+            "Guidance observation parentale",
+            "Description signes visuels demandée",
+            "Évaluation indirecte état général",
+            "Instructions observation structurée",
+            "Vérification compréhension descriptions"
+          ],
+          "scoringRule": "≥5 adaptations téléphoniques = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e2",
+          "text": "Guidance évaluation respiratoire parentale",
+          "details": [
+            "Observation fréquence respiratoire [compter]",
+            "Reconnaissance tirage [creusement côtes]",
+            "Évaluation coloration [lèvres, ongles]",
+            "Position enfant [confort respiratoire]",
+            "Bruits respiratoires audibles [stridor]",
+            "Capacité vocalisation [pleurs, parole]"
+          ],
+          "scoringRule": "≥5 éléments guidance = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e3",
+          "text": "Instructions mesures objectives",
+          "details": [
+            "Prise température [rectale <2 ans, axillaire]",
+            "Observation comportement [jeu, alimentation]",
+            "Test hydratation [boissons acceptées]",
+            "Évaluation conscience [réactivité]",
+            "Inspection cutanée [éruption, cyanose]",
+            "Documentation évolution [carnet notes]"
+          ],
+          "scoringRule": "≥4 mesures objectives = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e4",
+          "text": "Évaluation globale adaptation examen téléphonique",
+          "details": [
+            "Compétences consultation téléphonique pédiatrique",
+            "Guidance parentale structurée et claire",
+            "Reconnaissance limites et sécurité",
+            "Instructions observation adaptées à l'âge",
+            "Communication empathique et rassurante"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic principal avec classification",
+          "details": [
+            "Faux-croup (laryngite striduleuse)",
+            "Sévérité légère à modérée",
+            "Origine virale probable",
+            "Âge typique (1-6 ans)",
+            "Contexte épidémique automne/hiver"
+          ],
+          "scoringRule": "Diagnostic précis avec sévérité = 2 pts, partiel = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m2",
+          "text": "Diagnostics différentiels pédiatriques urgents",
+          "ddSection": {
+            "categories": [
+              {
+                "name": "Urgences immédiates",
+                "items": [
+                  "Corps étranger laryngé Anamnèse, fibroscopie urgente",
+                  "Épiglottite aiguë Fibroscopie, hémocultures",
+                  "Œdème de Quincke Anamnèse allergique, urticaire",
+                  "Abcès rétropharyngé Fièvre élevée, dysphagie"
+                ]
+              },
+              {
+                "name": "Respiratoires",
+                "items": [
+                  "Bronchiolite (nourrisson) Âge <2 ans, sifflements",
+                  "Asthme aigu Antécédents, sifflements expiratoires",
+                  "Pneumonie avec pleurésie Fièvre, radiographie"
+                ]
+              },
+              {
+                "name": "Autres laryngites",
+                "items": [
+                  "Laryngite bactérienne Fièvre élevée, état général altéré",
+                  "Laryngite spasmodique Récidives, terrain allergique"
+                ]
+              }
+            ]
+          },
+          "scoringRule": "≥5 DD avec critères = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m3",
+          "text": "Traitement symptomatique domicile",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Humidification et position",
+                "content": "• Salle de bain vapeur chaude 10-15 min\\n• Humidificateur chambre (60-70%)\\n• Position semi-assise pour dormir\\n• Air frais extérieur si amélioration\\n• Éviter air sec et irritants\\n• Calme et réassurance enfant"
+              },
+              {
+                "title": "Traitement médicamenteux",
+                "content": "• Paracétamol si fièvre >38.5°C\\n• Dose: 15mg/kg/6h (max 60mg/kg/jour)\\n• Sirop forme adaptée âge\\n• Pas d'aspirine (Reye)\\n• Pas d'antitussifs (contre-productifs)\\n• Corticoïdes si prescription médicale"
+              },
+              {
+                "title": "Mesures générales",
+                "content": "• Hydratation fréquente petites quantités\\n• Boissons tièdes, miel >1 an\\n• Repos, éviter fatigue\\n• Surveillance continue\\n• Éviter exposition fumée\\n• Maintenir température ambiante 18-20°C"
+              }
+            ]
+          },
+          "scoringRule": "Conseils thérapeutiques complets = 2 pts, partiels = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m4",
+          "text": "Signes d'alarme et critères hospitalisation",
+          "details": [
+            "Tirage intercostal/sus-sternal [hospitalisation]",
+            "Cyanose périphérique [urgence vitale]",
+            "Stridor repos sévère [évaluation urgente]",
+            "Refus alimentation/boissons [déshydratation]",
+            "Agitation/épuisement [détresse]",
+            "Fièvre >39°C persistante [complications]",
+            "Troubles conscience [hypoxie]",
+            "Pas d'amélioration 2-3h [réévaluation]"
+          ],
+          "scoringRule": "≥6 signes alarme enseignés = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m5",
+          "text": "Organisation surveillance et suivi",
+          "details": [
+            "Rappel programmé 1-2h [évaluation évolution]",
+            "Surveillance continue parentale [nuit]",
+            "Carnet observation [heures, symptômes]",
+            "Contact 24h/24 [numéro urgence]",
+            "Transport ambulance si aggravation",
+            "Consultation pédiatrie lendemain [si persistance]",
+            "Information médecin traitant [suivi]"
+          ],
+          "scoringRule": "≥5 éléments organisation = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m6",
+          "text": "Éducation parentale et prévention",
+          "details": [
+            "Explication faux-croup [évolution bénigne]",
+            "Reconnaissance signes gravité [formation parent]",
+            "Mesures prévention [humidification, hygiène]",
+            "Éviction facteurs déclenchants [froid, irritants]",
+            "Vaccination à jour [grippe, coqueluche]",
+            "Tabagisme passif [éviction absolue]",
+            "Récidives possibles [surveillance]"
+          ],
+          "scoringRule": "≥5 éléments éducation = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m7",
+          "text": "Communication et vérification compréhension",
+          "details": [
+            "Langage adapté niveau parental",
+            "Répétition consignes importantes",
+            "Vérification active compréhension",
+            "Questions ouvertes [\"Qu'avez-vous compris?\"]",
+            "Rassurance appropriée [pronostic bon]",
+            "Disponibilité rappel [porte ouverte]",
+            "Coordination avec autres professionnels"
+          ],
+          "scoringRule": "≥5 éléments communication = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m8",
+          "text": "Gestion contraintes socio-géographiques",
+          "details": [
+            "Reconnaissance isolement [campagne]",
+            "Adaptation conseils contexte [3 autres enfants]",
+            "Solution transport urgence [ambulance]",
+            "Support réseau [voisins, famille]",
+            "Ressources locales [pharmacie, médecin]",
+            "Communication claire [téléphone fiable]",
+            "Plan B si aggravation [procédure claire]"
+          ],
+          "scoringRule": "≥5 adaptations contexte = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m9",
+          "text": "Évaluation globale qualité prise en charge téléphonique",
+          "details": [
+            "Diagnostic faux-croup approprié",
+            "Évaluation sévérité téléphonique correcte",
+            "Conseils thérapeutiques adaptés domicile",
+            "Organisation surveillance sécurisée",
+            "Communication empathique et professionnelle"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        }
+      ]
+    }
+  }
+}

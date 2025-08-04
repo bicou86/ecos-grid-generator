@@ -1,0 +1,455 @@
+{
+  "title": "Douleur abdominale VII",
+  "context": {
+    "setting": "Service d'urgence d'un hôpital régional",
+    "patient": "Femme de 57 ans se présente avec des douleurs épigastriques."
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction et objectif de la consultation",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Question ouverte d'introduction → Motif de consultation",
+          "patientComment": "Douleurs épigastriques",
+          "binaryOnly": true
+        },
+        {
+          "id": "a3",
+          "text": "RED FLAGS - Signes d'alarme du RGO",
+          "redflagsSection": [
+            {
+              "text": "Dysphagie progressive [non]"
+            },
+            {
+              "text": "Odynophagie [non]"
+            },
+            {
+              "text": "Perte de poids involontaire [non]"
+            },
+            {
+              "text": "Anémie/saignement GI [non exploré]"
+            },
+            {
+              "text": "Vomissements récurrents [non]"
+            },
+            {
+              "text": "Masse épigastrique [à palper]"
+            },
+            {
+              "text": "Âge >50 ans + symptômes nouveaux [57 ans, mais 2 ans]"
+            },
+            {
+              "text": "Antécédents familiaux cancer GI [négatif]"
+            }
+          ],
+          "scoringRule": "≥6 red flags explorés = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a4",
+          "text": "Caractérisation de la pyrosis (SOCRATES adapté)",
+          "details": [
+            "Site/localisation [sous appendice xiphoïde]",
+            "Onset/début [depuis 2 ans]",
+            "Character/qualité [brûlures]",
+            "Radiation/irradiation [rétrosternale? gorge?]",
+            "Associated symptoms [éructations acides]",
+            "Timing/fréquence [quotidien, nuit, jeun]",
+            "Exacerbating factors [stress, certains aliments]",
+            "Severity/sévérité [à quantifier 1-10]"
+          ],
+          "scoringRule": "≥6 éléments = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a5",
+          "text": "Symptômes typiques du RGO",
+          "details": [
+            "Pyrosis (brûlures rétrosternales) [oui]",
+            "Régurgitations acides [oui, éructations]",
+            "Goût acide/amer au réveil [oui]",
+            "Aggravation position couchée [à explorer]",
+            "Aggravation en se penchant [oui, train]",
+            "Soulagement par antiacides [oui mais moins]"
+          ],
+          "scoringRule": "≥5 symptômes = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a6",
+          "text": "Symptômes extra-œsophagiens du RGO",
+          "details": [
+            "Toux chronique nocturne [à explorer]",
+            "Enrouement matinal [à explorer]",
+            "Asthme/bronchospasme [à explorer]",
+            "Douleur thoracique non cardiaque [à explorer]",
+            "Érosions dentaires [à vérifier]",
+            "Pharyngite chronique [à explorer]",
+            "Sensation de globus [à explorer]"
+          ],
+          "scoringRule": "≥5 manifestations explorées = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a7",
+          "text": "Facteurs de risque et aggravants du RGO",
+          "details": [
+            "Obésité/surpoids [IMC à calculer]",
+            "Tabagisme [pipe occasionnelle]",
+            "Alcool [whisky - connaisseur]",
+            "Café excessif [5 tasses/jour !]",
+            "Repas copieux tardifs [grand repas soir]",
+            "Aliments déclencheurs [oignons, chocolat, vin]",
+            "Stress [psychique et professionnel]",
+            "Médicaments (AINS, Ca-bloquants) [à explorer]"
+          ],
+          "scoringRule": "≥6 facteurs = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a8",
+          "text": "Habitudes alimentaires et mode de vie",
+          "details": [
+            "Horaires repas [déjeuner sauté]",
+            "Taille des portions [grand repas soir]",
+            "Vitesse d'ingestion [à évaluer]",
+            "Position après repas [à explorer]",
+            "Heure du coucher vs dîner [à préciser]",
+            "Activité physique [jogging 2x/semaine]",
+            "Vêtements serrés [à explorer]"
+          ],
+          "scoringRule": "≥5 éléments = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a9",
+          "text": "Complications potentielles du RGO",
+          "details": [
+            "Œsophagite érosive [à explorer]",
+            "Sténose peptique [dysphagie non]",
+            "Œsophage de Barrett [risque à évaluer]",
+            "Adénocarcinome œsophagien [prévention]",
+            "Hémorragie digestive [non rapportée]",
+            "Pneumopathie d'inhalation [non]"
+          ],
+          "scoringRule": "≥4 complications évaluées = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a10",
+          "text": "Historique thérapeutique du RGO",
+          "details": [
+            "Antiacides utilisés [oui, moins efficaces]",
+            "Durée utilisation [à préciser]",
+            "Efficacité initiale vs actuelle [diminuée]",
+            "IPP essayés [à explorer]",
+            "Anti-H2 essayés [à explorer]",
+            "Observance traitement [à évaluer]",
+            "Automédication [probable]"
+          ],
+          "scoringRule": "≥5 éléments = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a11",
+          "text": "Impact sur la qualité de vie",
+          "details": [
+            "Sommeil perturbé [réveils nocturnes]",
+            "Alimentation restreinte [évite certains aliments]",
+            "Activités sociales limitées [à explorer]",
+            "Anxiété liée aux symptômes [stress ++]",
+            "Productivité au travail [à évaluer]",
+            "Qualité de vie globale [à scorer]"
+          ],
+          "scoringRule": "≥4 impacts évalués = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a12",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "details": [
+            "Anamnèse complète et systématique",
+            "Red flags explorés",
+            "Facteurs de risque identifiés",
+            "Impact QoL évalué",
+            "Approche holistique du RGO"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "État général et mesures anthropométriques",
+          "details": [
+            "Aspect général [stress visible?]",
+            "Poids et taille [calcul IMC obligatoire]",
+            "Obésité abdominale [tour de taille]",
+            "État nutritionnel global",
+            "Signes d'anxiété"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e2",
+          "text": "Inspection buccale et ORL",
+          "details": [
+            "Érosions dentaires [signe RGO chronique]",
+            "État dentaire général",
+            "Érythème pharyngé postérieur",
+            "Hypertrophie amygdalienne",
+            "Halitose acide [possible]"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e3",
+          "text": "Auscultation cardio-pulmonaire",
+          "details": [
+            "Auscultation cardiaque [DD angor]",
+            "Auscultation pulmonaire bilatérale",
+            "Recherche sibilants [asthme RGO]",
+            "Recherche crépitants [pneumopathie]"
+          ],
+          "scoringRule": "≥3 éléments = 2 pts, 2 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e4",
+          "text": "Examen abdominal - Inspection et auscultation",
+          "details": [
+            "Inspection [distension, cicatrices]",
+            "Auscultation 4 quadrants",
+            "Bruits hydroaériques normaux",
+            "Absence de souffle vasculaire"
+          ],
+          "scoringRule": "≥3 éléments = 2 pts, 2 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e5",
+          "text": "Palpation abdominale méthodique",
+          "details": [
+            "Palpation superficielle 9 régions",
+            "Palpation profonde prudente",
+            "Douleur épigastrique [à quantifier]",
+            "Recherche masse épigastrique",
+            "Murphy négatif [DD biliaire]",
+            "Pas de défense/contracture"
+          ],
+          "scoringRule": "≥5 éléments = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e6",
+          "text": "Palpation des organes",
+          "details": [
+            "Foie : taille, consistance, bord",
+            "Rate : débord costal?",
+            "Reins : douleur lombaire?",
+            "Recherche adénopathies",
+            "Orifices herniaires"
+          ],
+          "scoringRule": "≥4 organes = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e7",
+          "text": "Tests spécifiques RGO",
+          "details": [
+            "Test de déglutition d'eau",
+            "Recherche xiphodynie",
+            "Palpation angle de His",
+            "Test antiacide thérapeutique"
+          ],
+          "scoringRule": "≥2 tests = 2 pts, 1 = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e8",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "details": [
+            "Examen complet et ciblé",
+            "Recherche complications",
+            "Exclusion diagnostics différentiels",
+            "Documentation IMC"
+          ],
+          "scoringRule": "≥3 éléments = 2 pts, 2 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic principal énoncé",
+          "details": [
+            "Reflux gastro-œsophagien (RGO)",
+            "Probablement non compliqué",
+            "Facteurs de risque multiples identifiés"
+          ],
+          "scoringRule": "Diagnostic complet = 2 pts, partiel = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m2",
+          "text": "Diagnostics différentiels pertinents",
+          "scoringRule": "≥6 DD = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false,
+          "ddSection": {
+            "categories": [
+              {
+                "name": "Diagnostics différentiels à considérer",
+                "items": [
+                  "Dyspepsie fonctionnelle",
+                  "Ulcère gastro-duodénal",
+                  "Gastrite (H. pylori, AINS)",
+                  "Angor/syndrome coronarien",
+                  "Lithiase biliaire",
+                  "Pancréatite chronique",
+                  "Cancer gastrique (âge)",
+                  "Troubles moteurs œsophagiens"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m3",
+          "text": "Indications de gastroscopie selon guidelines",
+          "details": [
+            "Âge >50 ans + symptômes d'alarme",
+            "Échec IPP dose standard 4-8 semaines",
+            "Symptômes persistants/récidivants",
+            "Dysphagie/odynophagie",
+            "Perte poids/anémie",
+            "Antécédents familiaux cancer GI",
+            "Surveillance Barrett si connu"
+          ],
+          "scoringRule": "≥5 indications = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m4",
+          "text": "Mesures hygiéno-diététiques complètes",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Modifications alimentaires",
+                "content": "• Réduire café à 1-2 tasses/jour\n• Limiter alcool (whisky++)\n• Éviter aliments déclencheurs identifiés\n• Repas légers et fréquents\n• Éviter repas 3h avant coucher\n• Bien mastiquer, manger lentement"
+              },
+              {
+                "title": "Modifications posturales",
+                "content": "• Surélever tête de lit 15-20 cm\n• Éviter position penchée après repas\n• Dormir côté gauche de préférence\n• Éviter vêtements serrés abdomen\n• Position assise 30 min post-repas"
+              },
+              {
+                "title": "Modifications style de vie",
+                "content": "• Perte de poids si IMC >25\n• Arrêt tabac (pipe)\n• Gestion du stress (relaxation)\n• Activité physique régulière\n• Éviter efforts post-prandiaux"
+              }
+            ]
+          },
+          "scoringRule": "≥10 mesures = 2 pts, 6-9 = 1 pt, <6 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m5",
+          "text": "Traitement médicamenteux selon algorithme",
+          "details": [
+            "IPP dose standard 4-8 semaines",
+            "Ex: oméprazole 20mg 1x/j avant repas",
+            "Si échec: doubler dose ou changer IPP",
+            "Alternative: anti-H2 si CI aux IPP",
+            "Antiacides/alginates en appoint",
+            "Prokinétiques si stase gastrique",
+            "Test H. pylori si dyspepsie associée"
+          ],
+          "scoringRule": "≥5 éléments = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m6",
+          "text": "Stratégie à long terme",
+          "details": [
+            "IPP à la demande si RGO léger",
+            "IPP continu dose minimale si sévère",
+            "Sevrage IPP tenté annuellement",
+            "Surveillance complications (Barrett)",
+            "Gastroscopie si symptômes persistent",
+            "Éducation auto-gestion"
+          ],
+          "scoringRule": "≥4 stratégies = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m7",
+          "text": "Indications chirurgicales (fundoplicature)",
+          "details": [
+            "Échec traitement médical optimal",
+            "Dépendance IPP chez jeune",
+            "Régurgitations invalidantes",
+            "Complications respiratoires RGO",
+            "Hernie hiatale volumineuse symptomatique",
+            "Patient motivé après information"
+          ],
+          "scoringRule": "≥4 indications = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m8",
+          "text": "Surveillance et prévention complications",
+          "details": [
+            "Contrôle symptômes à 4-8 semaines",
+            "Gastroscopie si échec traitement",
+            "Dépistage Barrett si RGO >5 ans",
+            "Surveillance Barrett q 3-5 ans",
+            "Éducation signes alarme",
+            "Prévention ostéoporose si IPP long"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m9",
+          "text": "Information patient complète",
+          "details": [
+            "Nature bénigne mais chronique RGO",
+            "Importance observance traitement",
+            "Rôle crucial mesures hygiéno-diététiques",
+            "Effets secondaires IPP possibles",
+            "Signes alarme à consulter",
+            "Ressources éducatives (brochures)"
+          ],
+          "scoringRule": "≥4 informations = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m10",
+          "text": "Évaluation globale de la qualité de la prise en charge",
+          "details": [
+            "Approche step-up appropriée",
+            "Mesures non-pharmacologiques prioritaires",
+            "Traitement individualisé",
+            "Surveillance organisée",
+            "Éducation thérapeutique"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        }
+      ]
+    }
+  }
+}

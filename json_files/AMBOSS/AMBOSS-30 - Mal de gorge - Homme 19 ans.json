@@ -1,0 +1,562 @@
+{
+  "title": "AMBOSS-30 - Mal de gorge - Homme 19 ans",
+  "context": {
+    "setting": "Clinique de soins urgents",
+    "patient": "Alex Soto, homme de 19 ans, consultant pour mal de gorge",
+    "vitals": {
+      "temperature": "38.9°C",
+      "ta": "122/74 mmHg",
+      "fc": "70 bpm",
+      "fr": "15/min"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Motif principal",
+          "binaryOnly": true,
+          "patientComment": "J'ai vraiment mal à la gorge"
+        },
+        {
+          "id": "a2",
+          "text": "Caractérisation du mal de gorge",
+          "binaryOnly": false,
+          "details": [
+            "Localisation [C'est surtout l'arrière de ma gorge]",
+            "Intensité (échelle 0-10) [Je dirais au moins un 7, peut-être un 8]",
+            "Qualité [C'est presque une douleur brûlante]",
+            "Début [Ça a commencé hier soir]",
+            "Événements précipitants [Aucun]",
+            "Progression/constant/intermittent [Je pense que ça s'aggrave]",
+            "Épisodes antérieurs [Peut-être quand j'étais enfant. Mais rien récemment]",
+            "Irradiation [Non]",
+            "Facteurs améliorants [Les boissons froides aident vraiment]",
+            "Facteurs aggravants [Ça fait plus mal quand j'avale]",
+            "Symptômes associés [Je me suis aussi réveillé avec une voix vraiment rauque ce matin]"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Symptômes associés à la dysphonie",
+          "binaryOnly": false,
+          "details": [
+            "Épisodes antérieurs de voix rauque [Non]",
+            "Problèmes pour avaler la nourriture [Oui, ça fait vraiment mal de manger ou d'avaler donc je n'ai vraiment rien mangé depuis hier]",
+            "Capacité d'avaler des liquides [Non, je n'ai pas de problème à avaler des liquides - mais c'est vraiment douloureux]"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Recherche de symptômes spécifiques",
+          "binaryOnly": false,
+          "details": [
+            "Céphalées [Non]",
+            "Nausées/vomissements [Oui, ma gorge est tellement gonflée que je me sens un peu nauséeux quand je parle. Mais je n'ai pas vomi]",
+            "Fièvre/frissons [Je pense que oui. J'ai définitivement eu des frissons hier soir. L'infirmière n'a pas pris ma température quand je suis arrivé ?]",
+            "Fatigue [Oui, j'étais fatigué toute la journée hier et aujourd'hui]",
+            "Éruption cutanée/changements cutanés [Non]",
+            "Toux [Non]",
+            "Dyspnée [Non]",
+            "Appétit [Je n'ai pas beaucoup d'appétit en ce moment]",
+            "Variations pondérales [Non]",
+            "Infections récentes [J'ai eu un rhume il y a 2 semaines]",
+            "Rhinorrhée [Non]",
+            "Ganglions lymphatiques gonflés [Non, pas que j'aie remarqué]",
+            "Changements de voix [Eh bien, je suis vraiment enroué]",
+            "Halitose [Hmm, pas sûr mais j'ai un goût bizarre dans la bouche et j'ai l'impression que ça sent]",
+            "Douleur abdominale [Tout mon ventre me fait un peu mal depuis aujourd'hui. Mais c'est très léger]"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Antécédents médicaux",
+          "binaryOnly": true,
+          "patientComment": "Aucun"
+        },
+        {
+          "id": "a6",
+          "text": "Allergies",
+          "binaryOnly": true,
+          "patientComment": "Aucune"
+        },
+        {
+          "id": "a7",
+          "text": "Médicaments",
+          "binaryOnly": true,
+          "patientComment": "Aucun"
+        },
+        {
+          "id": "a8",
+          "text": "Hospitalisations et antécédents chirurgicaux",
+          "binaryOnly": true,
+          "details": [
+            "Hospitalisations [Jamais]",
+            "Antécédents chirurgicaux [Aucun]"
+          ]
+        },
+        {
+          "id": "a9",
+          "text": "Contacts malades et antécédents familiaux",
+          "binaryOnly": true,
+          "details": [
+            "Contacts malades [Ma petite amie dit qu'elle a aussi eu mal à la gorge ces dernières semaines]",
+            "Antécédents familiaux [Mon père a du diabète]"
+          ]
+        },
+        {
+          "id": "a10",
+          "text": "Habitudes et mode de vie",
+          "binaryOnly": false,
+          "details": [
+            "Travail [Je vais à l'université et je me spécialise en justice pénale, mais surtout je suis intéressé à jouer au football pour l'équipe universitaire]",
+            "Domicile [Je vis dans une résidence sur le campus]",
+            "Alcool [Je bois 1-2 bières le week-end. Pendant la semaine j'ai toujours l'entraînement de football, donc je n'ai pas le temps de sortir ou de boire]",
+            "Drogues récréatives [Non]",
+            "Tabac [Jamais]",
+            "Exercice [Entraînement de football presque tous les jours]"
+          ]
+        },
+        {
+          "id": "a11",
+          "text": "Antécédents sexuels",
+          "binaryOnly": false,
+          "details": [
+            "Activité sexuelle [Oui]",
+            "Avec qui [Eh bien, depuis 2 mois, ma petite amie. Et avant ça, juste quelques filles différentes sur le campus]",
+            "Hommes ou femmes [Quel genre de question est-ce ? Seulement des femmes]",
+            "Nombre de partenaires au cours de la dernière année [Mec, vous posez pas mal de questions là-dessus. Peut-être 9 ? 10 ?]",
+            "Protection [Oui, j'utilise toujours un préservatif. La dernière chose dont j'ai besoin c'est de mettre une de ces filles enceinte]"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Mesures d'hygiène",
+          "binaryOnly": true,
+          "details": [
+            "Lavage des mains",
+            "Respect de la pudeur avec drap"
+          ]
+        },
+        {
+          "id": "e2",
+          "text": "Examen de la tête, yeux, oreilles, nez et gorge",
+          "binaryOnly": false,
+          "details": [
+            "Inspection de la tête",
+            "Palpation de la tête",
+            "Inspection du nez",
+            "Inspection de l'oropharynx [Montrer l'image de la gorge au patient]"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Examen du cou",
+          "binaryOnly": false,
+          "details": [
+            "Inspection du cou",
+            "Palpation des ganglions lymphatiques de la tête et du cou [Sensibilité à la palpation]"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Examen thoracique",
+          "binaryOnly": true,
+          "details": [
+            "Auscultation pulmonaire"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Examen abdominal",
+          "binaryOnly": false,
+          "details": [
+            "Inspection de l'abdomen",
+            "Auscultation de l'abdomen",
+            "Percussion de l'abdomen",
+            "Palpation de l'abdomen [Légère sensibilité à la palpation dans tout l'abdomen]",
+            "Palpation du foie",
+            "Palpation de la rate"
+          ]
+        },
+        {
+          "id": "e6",
+          "text": "Examen cutané",
+          "binaryOnly": true
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Hypothèses diagnostiques",
+          "binaryOnly": false,
+          "scoringRule": "2 points si au moins 2 diagnostics pertinents mentionnés, 1 point si 1 diagnostic",
+          "ddSection": {
+            "title": "Diagnostics différentiels à considérer",
+            "categories": [
+              {
+                "name": "Pharyngites bactériennes",
+                "items": [
+                  {
+                    "text": "Pharyngite streptococcique (SGA)",
+                    "cause": "Arguments POUR:\n\t□ Début brutal mal de gorge intense\n\t□ Adénopathies cervicales sensibles\n\t□ Fièvre élevée (38.9°C)\n\t□ Absence de toux (critère de Centor)\n\t□ Pétéchies palatines visibles\n\t□ Âge compatible (15-25 ans)\n\t□ Contact malade (petite amie)\n\t□ Halitose (signe classique)\nContre : Pas d'exsudat amygdalien visible (mais pas obligatoire)",
+                    "test": "→ Test rapide streptocoque, culture de gorge"
+                  }
+                ]
+              },
+              {
+                "name": "Infections virales",
+                "items": [
+                  {
+                    "text": "Mononucléose infectieuse (EBV)",
+                    "cause": "Arguments POUR:\n\t□ Âge typique (jeune adulte)\n\t□ Mal de gorge intense + fièvre\n\t□ Fatigue marquée\n\t□ Douleur abdominale (splénomégalie ?)\n\t□ Sportif actif (football) : risque rupture rate\n\t□ Partenaires multiples (transmission salivaire)\nContre : Pas d'adénopathies généralisées décrites, pas d'exsudat gris-blanc typique",
+                    "test": "→ Test monospot, sérologie EBV, NFS"
+                  },
+                  {
+                    "text": "Pharyngite virale",
+                    "cause": "Arguments POUR:\n\t□ Antécédent rhume récent (2 semaines)\n\t□ Dysphonie associée\n\t□ Oropharynx érythémateux\nContre : Fièvre élevée, pas de symptômes ORL (rhinite), sensibilité ganglionnaire marquée",
+                    "test": "→ Diagnostic clinique d'exclusion"
+                  }
+                ]
+              },
+              {
+                "name": "Autres causes à considérer",
+                "items": [
+                  {
+                    "text": "Infection VIH aiguë",
+                    "cause": "Arguments POUR:\n\t□ Partenaires multiples (9-10/an)\n\t□ Syndrome pseudo-mononucléosique\n\t□ Âge à risque\nContre : Protection systématique déclarée",
+                    "test": "→ Test VIH 4e génération si indiqué"
+                  },
+                  {
+                    "text": "Laryngite",
+                    "cause": "Arguments POUR:\n\t□ Dysphonie marquée\n\t□ Voix rauque\nContre : Douleur pharyngée prédominante",
+                    "test": "→ Laryngoscopie si persistance"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Examens complémentaires de première intention",
+          "binaryOnly": false,
+          "details": [
+            "Test rapide streptocoque [prélèvement de gorge permet une détection simple et rapide de l'infection streptococcique du groupe A (très spécifique, sensibilité 70-90%). En cas de test rapide négatif, une culture de gorge peut être utilisée comme test de suivi]",
+            "NFS [Non spécifique, mais peut aider à différencier les infections virales des bactériennes. La leucocytose est généralement plus fréquente dans la pharyngite bactérienne, tandis que la lymphocytose est plus fréquente dans la pharyngite virale et la mononucléose infectieuse]",
+            "Frottis sanguin [Les lymphocytes T atypiques peuvent être observés sur frottis dans la mononucléose infectieuse]"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Examens complémentaires spécialisés si suspicion MNI",
+          "binaryOnly": false,
+          "details": [
+            "Test monospot [peut être utilisé pour soutenir le diagnostic de mononucléose infectieuse. Comporte un risque élevé de résultats faux négatifs et faux positifs]",
+            "Sérologie EBV [étude de laboratoire la plus fiable pour diagnostiquer la mononucléose infectieuse. L'anti-VCA IgM seul suffit pour diagnostiquer une infection aiguë]"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Communication avec le patient",
+          "binaryOnly": false,
+          "details": [
+            "Explications au patient des impressions diagnostiques préliminaires",
+            "Explication du plan de prise en charge",
+            "Utilisation d'un langage non médical et clarification des termes médicaux",
+            "Évaluation de l'accord du patient avec le plan diagnostique",
+            "Recherche des préoccupations et questions du patient",
+            "Ne pas répéter les manœuvres douloureuses pendant l'examen physique"
+          ]
+        },
+        {
+          "id": "m5",
+          "text": "Conseil et soutien",
+          "binaryOnly": false,
+          "details": [
+            "Conseil sur l'évitement des sports de contact en cas de mononucléose suspectée",
+            "Réaction appropriée au défi sur les antibiotiques",
+            "Éducation sur l'utilisation appropriée des antibiotiques",
+            "Information sur les mesures de confort",
+            "Conseils de prévention transmission"
+          ],
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Prise en charge selon diagnostic",
+                "content": "• Si pharyngite streptococcique confirmée :\n  - Pénicilline V : 500 mg × 2-3/j × 10 jours\n  - Ou amoxicilline : 1000 mg × 2/j × 10 jours\n  - Si allergie : azithromycine 500 mg J1 puis 250 mg × 4j\n  - Paracétamol/ibuprofène pour symptômes\n  - Gargarismes eau salée tiède\n  - Retour activités après 24h antibiotiques\n• Si mononucléose infectieuse confirmée :\n  - Repos au lit phase aiguë\n  - Paracétamol 500-1000 mg × 3-4/j\n  - ÉVITER amoxicilline (éruption 90%)\n  - Corticoïdes si obstruction voies aériennes\n  - INTERDICTION sports contact 3-4 semaines\n  - Surveillance splénomégalie clinique\n• Si pharyngite virale :\n  - Traitement symptomatique uniquement\n  - Analgésiques (paracétamol, ibuprofène)\n  - Pastilles anesthésiantes locales\n  - Hydratation abondante\n  - Repos vocal si dysphonie\n• Mesures générales :\n  - Hydratation (liquides froids apaisants)\n  - Alimentation molle non irritante\n  - Éviter tabac/irritants\n  - Isolement si streptocoque (24h antibiotiques)\n  - Certificat médical pour sport si nécessaire"
+              }
+            ]
+          },
+          "redflagsSection": {
+            "title": "Complications à surveiller",
+            "items": [
+              {
+                "text": "Abcès péri-amygdalien",
+                "description": "Trismus, voix étouffée, déviation luette → drainage urgent"
+              },
+              {
+                "text": "Rhumatisme articulaire aigu",
+                "description": "Post-streptocoque non traité : cardite, arthrite, chorée"
+              },
+              {
+                "text": "Glomérulonéphrite post-streptococcique",
+                "description": "Hématurie, œdèmes, HTA 1-3 semaines après"
+              },
+              {
+                "text": "Rupture splénique (si MNI)",
+                "description": "Douleur abdominale aiguë, choc → urgence chirurgicale"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "cl1",
+          "text": "Défi : Demande d'antibiotiques",
+          "content": "Quand l'examinateur mentionne qu'il aimerait faire des tests, dire : [Pouvez-vous pas juste me donner des antibiotiques ? J'ai vraiment envie de sortir d'ici.]"
+        },
+        {
+          "id": "cl2",
+          "text": "Réponse type du candidat",
+          "content": "M. Soto, je comprends que vous ne vous sentez pas bien et que vous aimeriez rentrer chez vous le plus rapidement possible. Cependant, à ce stade je ne peux pas dire avec certitude si vos symptômes sont causés par une infection bactérienne ou virale. Les antibiotiques ne seraient appropriés que si des bactéries causaient vos symptômes, et sinon ils pourraient faire plus de mal que de bien, ou même causer une éruption cutanée. J'aimerais faire quelques tests pour déterminer la cause exacte de vos symptômes et ensuite discuter du traitement approprié avec vous. Est-ce que ça vous convient ?"
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "images": [
+      {
+        "title": "Amygdalopharyngite aiguë",
+        "description": "Il y a un érythème et un œdème amygdalien bilatéral ainsi qu'un énanthème pétéchial du palais mou.",
+        "data": "grilles_generees/html/images/AMBOSS-30-img1-Acute tonsillopharyngitis.jpg"
+      },
+      {
+        "title": "Amygdalopharyngite exsudative",
+        "description": "Pharynx et amygdales chez un patient atteint de mononucléose infectieuse. Les amygdales sont massivement hypertrophiées, se touchant sur la ligne médiane (connues sous le nom d''amygdales qui s'embrassent'), et recouvertes d'exsudat gris-blanc. Les parties visibles du pharynx sont érythémateuses.",
+        "data": "grilles_generees/html/images/AMBOSS-30-img2-Exudative tonsillopharyngitis.jpg"
+      },
+      {
+        "title": "Pharyngite aiguë",
+        "description": "De multiples vaisseaux sanguins dilatés sont visibles sur la paroi pharyngée postérieure, les piliers amygdaliens antérieurs et la luette. Une hyperplasie lymphoïde est visible, identifiable comme de multiples petits nodules sur la muqueuse pharyngée. Les amygdales ne sont pas hypertrophiées. Ce sont les caractéristiques typiques de la pharyngite aiguë, qui est le plus souvent causée par une infection virale.",
+        "data": "grilles_generees/html/images/AMBOSS-30-img3-Acute pharyngitis.jpg"
+      }
+    ],
+    "scenarioPatienteStandardisee": {
+      "titre": "Scénario pour le patient standardisé",
+      "nom": "Alex Soto",
+      "age": "19 ans",
+      "contexte": "Étudiant universitaire et joueur de football avec pharyngite aiguë fébrile",
+      "motifConsultation": {
+        "plaintePrincipale": "J'ai vraiment mal à la gorge.",
+        "autreChose": "C'est vraiment douloureux."
+      },
+      "consignes": [
+        "Parler avec une voix rauque.",
+        "Quand l'examinateur palpe les ganglions lymphatiques dans votre cou, dire que ça fait mal.",
+        "Quand l'examinateur appuie sur votre abdomen, dire que ça fait un peu mal partout.",
+        "Vous n'êtes pas au courant de la signification des termes médicaux (ex: laryngoscopie) et demandez des clarifications si l'examinateur les utilise.",
+        "Défi : Quand l'examinateur mentionne qu'il aimerait faire des tests, dire : 'Pouvez-vous pas juste me donner des antibiotiques ? J'ai vraiment envie de sortir d'ici.'"
+      ],
+      "histoireActuelle": {
+        "symptomePrincipal": [
+          "Mal de gorge intense depuis hier soir",
+          "Douleur brûlante intensité 7-8/10",
+          "Aggravation à la déglutition",
+          "Voix rauque au réveil",
+          "Odynophagie marquée"
+        ],
+        "symptomesAssocies": [
+          "Fièvre avec frissons hier soir",
+          "Fatigue depuis 2 jours",
+          "Nausées sans vomissements",
+          "Halitose et goût désagréable",
+          "Douleur abdominale diffuse légère",
+          "Petite amie avec symptômes similaires"
+        ]
+      },
+      "simulation": {
+        "durantEntretien": [
+          "Voix rauque constante",
+          "Montrer inconfort lors déglutition",
+          "Mentionner importance football universitaire",
+          "Attitude un peu défensive sur questions sexuelles",
+          "Impatience pour traitement rapide"
+        ],
+        "durantStatus": [
+          "Sensibilité palpation ganglions cervicaux",
+          "Coopérer pour examen oropharynx",
+          "Sensibilité abdominale diffuse légère",
+          "Pas de signe méningé",
+          "Pas d'éruption cutanée visible"
+        ]
+      }
+    },
+    "informationsExpert": {
+      "titre": "Informations de l'expert",
+      "dossierMedical": "Homme 19 ans avec pharyngite aiguë fébrile : critères de Centor 3-4/4 (fièvre, adénopathies sensibles, pas de toux, âge < 45). Pétéchies palatines = très évocateur streptocoque groupe A. Douleur abdominale légère évoque possible splénomégalie débutante (MNI ?). Sportif actif : si MNI confirmée, INTERDICTION sports contact 3-4 semaines (risque rupture rate). Test rapide streptocoque indiqué, si négatif → culture + monospot. Contact malade (petite amie) suggère transmission.",
+      "rolesInterventions": [
+        "L'expert-e intervient si l'étudiant-e fait :",
+        "• Oropharynx : érythème diffus + pétéchies palatines",
+        "• Adénopathies : cervicales antérieures bilatérales sensibles",
+        "• Abdomen : sensibilité diffuse légère, pas de défense",
+        "• Rate : limite palpable (à confirmer)",
+        "• Test rapide streptocoque : positif",
+        "• NFS : leucocytose 14 000, PNN 75%"
+      ],
+      "pointsCles": [
+        "Critères de Centor : fièvre + adénopathies + pas toux + < 45 ans",
+        "Pétéchies palatines = hautement suggestif streptocoque A",
+        "Traitement antibiotique prévient RAA et GNA post-streptococcique",
+        "MNI + sports contact = risque rupture splénique mortel",
+        "Test rapide négatif n'exclut pas → culture de gorge",
+        "Éviter amoxicilline si doute MNI (éruption 90%)"
+      ],
+      "pieges": [
+        "Prescrire antibiotiques sans test microbiologique",
+        "Oublier risque rupture rate si MNI (football)",
+        "Négliger la petite amie malade (traiter aussi ?)",
+        "Confondre pharyngite virale et bactérienne",
+        "Ne pas rechercher complications streptocoque",
+        "Minimiser importance prévention RAA"
+      ]
+    },
+    "theoriePratique": {
+      "titre": "Théorie pratique concernant la vignette",
+      "sections": [
+        {
+          "titre": "Diagnostic le plus probable",
+          "contenu": "Pharyngite streptococcique (angine à streptocoque du groupe A)"
+        },
+        {
+          "titre": "Pharyngite streptococcique",
+          "contenu": "Infection bactérienne pharyngée la plus fréquente :",
+          "points": [
+            "Agent : Streptococcus pyogenes (groupe A β-hémolytique)",
+            "Transmission : gouttelettes, contact direct, incubation 2-5j",
+            "Épidémiologie : pic 5-15 ans, mais fréquent jeunes adultes",
+            "Saisonnalité : hiver-printemps dans climats tempérés",
+            "Contagiosité : élevée sans traitement, nulle après 24h ATB",
+            "Immunité : pas de protection croisée entre souches"
+          ]
+        },
+        {
+          "titre": "Critères de Centor modifiés",
+          "contenu": "Score prédictif pharyngite streptococcique :",
+          "points": [
+            "Fièvre > 38°C : +1 point",
+            "Absence de toux : +1 point",
+            "Adénopathies cervicales antérieures sensibles : +1 point",
+            "Exsudat amygdalien : +1 point",
+            "Âge 3-14 ans : +1 point",
+            "Âge 15-44 ans : 0 point",
+            "Âge ≥ 45 ans : -1 point",
+            "Score 0-1 : pas de test ni traitement",
+            "Score 2-3 : test rapide ± culture",
+            "Score ≥ 4 : traitement empirique ou test"
+          ]
+        },
+        {
+          "titre": "Présentation clinique pharyngite SGA",
+          "contenu": "Tableau typique début brutal :",
+          "points": [
+            "Mal de gorge intense, odynophagie sévère",
+            "Fièvre élevée (> 38.5°C), frissons",
+            "Adénopathies cervicales antérieures douloureuses",
+            "Pharynx érythémateux, amygdales hypertrophiées",
+            "Exsudat amygdalien purulent (50-70%)",
+            "Pétéchies palais mou (pathognomonique)",
+            "Halitose caractéristique",
+            "Absence symptômes viraux : toux, rhinite, conjonctivite"
+          ]
+        },
+        {
+          "titre": "Diagnostic pharyngite streptococcique",
+          "contenu": "Confirmation microbiologique recommandée :",
+          "points": [
+            "Test rapide antigénique : spécificité 95%, sensibilité 70-90%",
+            "Culture gorge : gold standard, résultats 24-48h",
+            "Si test rapide négatif + suspicion clinique → culture",
+            "Sérologie ASLO : diagnostic rétrospectif RAA",
+            "PCR multiplex : identifie multiple pathogènes",
+            "Pas d'antibiothérapie empirique sauf score Centor ≥ 4"
+          ]
+        },
+        {
+          "titre": "Complications pharyngite streptococcique",
+          "contenu": "Suppuratives et non-suppuratives :",
+          "points": [
+            "Complications suppuratives précoces :",
+            "- Abcès péri-amygdalien (phlegmon)",
+            "- Abcès rétro-pharyngé",
+            "- Lymphadénite suppurative",
+            "- Otite moyenne aiguë, sinusite",
+            "Complications non-suppuratives tardives :",
+            "- RAA : 2-3 semaines après, prévenu par ATB",
+            "- GNA post-streptococcique : 1-3 semaines",
+            "- PANDAS : troubles neuropsychiatriques"
+          ]
+        },
+        {
+          "titre": "Mononucléose infectieuse",
+          "contenu": "Principal diagnostic différentiel jeune adulte :",
+          "points": [
+            "Triade : fièvre + pharyngite + adénopathies",
+            "Splénomégalie 50% : RISQUE RUPTURE si sport",
+            "Fatigue prolongée 2-3 mois",
+            "Lymphocytes atypiques > 10%",
+            "Test monospot : faux négatifs début",
+            "Éruption si amoxicilline dans 90% cas"
+          ]
+        },
+        {
+          "titre": "Traitement antibiotique pharyngite SGA",
+          "contenu": "Objectifs : guérison + prévention complications :",
+          "points": [
+            "1ère ligne : pénicilline V 500 mg × 2-3/j × 10j",
+            "Alternative : amoxicilline 1000 mg × 2/j × 10j",
+            "Si allergie : azithromycine 500 mg J1 puis 250 mg × 4j",
+            "Ou céphalexine 500 mg × 2/j × 10j (si allergie non IgE)",
+            "Durée 10 jours obligatoire (sauf azithromycine 5j)",
+            "Amélioration clinique attendue 24-48h",
+            "Non contagieux après 24h traitement"
+          ]
+        }
+      ],
+      "rappelsTherapeutiques": [
+        "Pénicilline V : 500 mg × 2-3/j × 10 jours (adulte)",
+        "Amoxicilline : 50 mg/kg/j en 2 prises × 10j (max 2g/j)",
+        "Azithromycine : 12 mg/kg/j × 5j si allergie pénicilline",
+        "Paracétamol : 15 mg/kg × 4-6/j pour fièvre/douleur",
+        "Gargarismes eau salée tiède 3-4×/j",
+        "Pastilles anesthésiantes locales si besoin",
+        "Retour école/travail après 24h antibiotiques",
+        "Traitement contacts si RAA dans entourage"
+      ],
+      "examensComplementaires": [
+        "Test rapide streptocoque A : première intention",
+        "Culture gorge sur gélose sang : si test rapide négatif",
+        "NFS : leucocytose PNN si bactérien",
+        "Frottis : lymphocytes atypiques si MNI",
+        "Test monospot : si suspicion mononucléose",
+        "Sérologie EBV : anti-VCA IgM si MNI",
+        "ASLO : si suspicion complications post-streptococciques",
+        "Échographie abdominale : si suspicion splénomégalie"
+      ]
+    }
+  }
+}

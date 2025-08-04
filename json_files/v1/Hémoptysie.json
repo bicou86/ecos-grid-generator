@@ -1,0 +1,224 @@
+{
+  "title": "Hémoptysie",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Homme de 63 ans consultant pour sang dans les expectorations lors de toux",
+    "vitals": {
+      "ta": "135/80 mmHg",
+      "temperature": "37.1°C"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Nom et âge",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Motif de consultation",
+          "binaryOnly": true
+        },
+        {
+          "id": "a3",
+          "text": "Anamnèse de la plainte principale",
+          "details": [
+            "Début (depuis 3 semaines)",
+            "Quantité (quelques filets de sang)",
+            "Fréquence (seulement lors de quintes de toux)",
+            "Qualité (sang rouge vif, parfois mélangé aux expectorations)"
+          ],
+          "patientComment": "Depuis 3 semaines/Quelques filets/Seulement quand je tousse fort/Rouge vif"
+        },
+        {
+          "id": "a4",
+          "text": "Symptômes associés",
+          "details": [
+            "Toux productive",
+            "Fatigue",
+            "Perte de poids (3 kg en 2 mois)",
+            "Sueurs nocturnes occasionnelles",
+            "Dyspnée d'effort"
+          ],
+          "patientComment": "Oui je tousse et crache/Je suis fatigué/J'ai perdu du poids/Parfois la nuit/Essoufflé en montant les escaliers"
+        },
+        {
+          "id": "a5",
+          "text": "Antécédents médicaux",
+          "details": [
+            "BPCO diagnostiquée il y a 5 ans",
+            "Hypertension artérielle",
+            "Pas d'autres maladies connues"
+          ],
+          "patientComment": "BPCO depuis 5 ans/Tension élevée/Non, rien d'autre"
+        },
+        {
+          "id": "a6",
+          "text": "Habitudes toxiques",
+          "details": [
+            "Tabagisme (40 paquets-années)",
+            "Arrêt du tabac il y a 1 an",
+            "Alcool modéré (1-2 verres/semaine)"
+          ],
+          "patientComment": "J'ai fumé 2 paquets par jour pendant 20 ans/Arrêté il y a un an/Très peu"
+        },
+        {
+          "id": "a7",
+          "text": "Médicaments actuels",
+          "details": [
+            "Bronchodilatateurs (Spiriva)",
+            "Antihypertenseur (Lisinopril)",
+            "Pas d'anticoagulants"
+          ],
+          "patientComment": "Spiriva pour respirer/Lisinopril pour la tension/Non"
+        },
+        {
+          "id": "a8",
+          "text": "Antécédents familiaux",
+          "details": [
+            "Père décédé d'un cancer du poumon",
+            "Mère hypertension",
+            "Pas d'autres cancers familiaux"
+          ],
+          "patientComment": "Mon père, cancer du poumon/Ma mère, tension/Non"
+        },
+        {
+          "id": "a9",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "binaryOnly": false,
+          "details": [
+            "Anamnèse générale ciblée et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Inspection générale",
+          "details": [
+            "État général",
+            "Coloration cutanéo-muqueuse",
+            "Signes de détresse respiratoire",
+            "Hippocratisme digital"
+          ]
+        },
+        {
+          "id": "e2",
+          "text": "Examen pulmonaire",
+          "details": [
+            "Inspection du thorax",
+            "Palpation",
+            "Percussion",
+            "Auscultation"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Examen cardiovasculaire",
+          "details": [
+            "Auscultation cardiaque",
+            "Recherche d'œdèmes",
+            "Pouls périphériques"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Examen ORL",
+          "details": [
+            "Cavité buccale",
+            "Pharynx",
+            "Recherche de saignement nasal"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Palpation ganglionnaire",
+          "details": [
+            "Aires cervicales",
+            "Aires sus-claviculaires",
+            "Aires axillaires"
+          ]
+        },
+        {
+          "id": "e6",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "binaryOnly": false,
+          "details": [
+            "Status général ciblé et bien conduit"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic principal évoqué",
+          "details": [
+            "Cancer bronchopulmonaire (forte suspicion)",
+            "Exacerbation BPCO avec surinfection",
+            "Tuberculose pulmonaire"
+          ]
+        },
+        {
+          "id": "m2",
+          "text": "Examens complémentaires immédiats",
+          "details": [
+            "Radiographie thoracique",
+            "Gazométrie artérielle",
+            "NFS, CRP",
+            "Recherche BAAR dans les crachats"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Examens de deuxième intention",
+          "details": [
+            "Scanner thoracique haute résolution",
+            "Fibroscopie bronchique avec biopsies",
+            "Cytologie des crachats",
+            "Test tuberculinique/QuantiFERON"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Prise en charge immédiate",
+          "details": [
+            "Surveillance des constantes",
+            "Oxygénothérapie si nécessaire",
+            "Éviter les anticoagulants",
+            "Référence urgente en pneumologie"
+          ]
+        },
+        {
+          "id": "m5",
+          "text": "Red Flags - Signes d'alarme",
+          "details": [
+            "Hémoptysie massive (>200ml/24h)",
+            "Détresse respiratoire aiguë",
+            "Instabilité hémodynamique",
+            "Altération importante de l'état général"
+          ]
+        },
+        {
+          "id": "m6",
+          "text": "Évaluation globale de la qualité de la prise en charge",
+          "binaryOnly": false,
+          "details": [
+            "Prise en charge générale cohérente et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    }
+  }
+}

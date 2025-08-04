@@ -1,0 +1,520 @@
+{
+  "title": "AMBOSS-3 - Douleurs abdominales - Femme 34 ans",
+  "context": {
+    "setting": "Cabinet médical",
+    "patient": "Stephanie Hernandez, femme de 34 ans, consultante pour des douleurs abdominales",
+    "vitals": {
+      "temperature": "37°C",
+      "ta": "118/76 mmHg",
+      "fc": "68 bpm",
+      "fr": "16/min"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Motif principal",
+          "binaryOnly": true,
+          "patientComment": "J'ai des douleurs dans le ventre"
+        },
+        {
+          "id": "a2",
+          "text": "Caractérisation de la douleur",
+          "binaryOnly": false,
+          "details": [
+            "Localisation [Du côté droit]",
+            "Intensité [1-2/10 depuis quelques semaines, mais 5/10 depuis ce matin]",
+            "Qualité [C'était une douleur sourde, mais je faisais de l'exercice ce matin et j'ai soudainement ressenti une douleur aiguë là]",
+            "Début [La douleur sourde est là depuis quelques semaines. La douleur aiguë depuis ce matin]",
+            "Évolution temporelle [La douleur sourde est toujours là, et maintenant la douleur aiguë aussi]",
+            "Irradiation [Non]",
+            "Facteurs améliorants [J'utilise un coussin chauffant la nuit, je pense que ça aide un peu]",
+            "Facteurs aggravants [Rien vraiment sauf l'aérobic ce matin]",
+            "Épisodes antérieurs similaires [Jamais]",
+            "Événements précipitants [Rien de spécial à part l'aérobic ce matin]"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Symptômes associés",
+          "binaryOnly": false,
+          "details": [
+            "Ballonnements [Je me sens un peu ballonnée aussi. J'ai l'impression d'être plus lourde qu'avant]",
+            "Prise de poids [Hmm, je ne suis pas sûre - je n'ai pas de balance. Mais ma taille de pantalon a augmenté le mois dernier]",
+            "Nausées [Je me sens un peu barbouillée depuis quelques semaines, mais je n'ai pas vomi]",
+            "Vomissements [Non]",
+            "Appétit [Pas très bon parce que je me sens barbouillée, comme je vous l'ai dit]"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Recherche de symptômes spécifiques",
+          "binaryOnly": false,
+          "details": [
+            "Traumatisme [Non]",
+            "Voyage récent [Je reviens tout juste de Paris il y a un mois]",
+            "Fièvre/frissons [Non]",
+            "Sueurs nocturnes [Non]",
+            "Fatigue [J'ai eu un mauvais décalage horaire en revenant de Paris. Ça s'améliore lentement]",
+            "Dyspnée [Non]",
+            "Troubles urinaires [Maintenant que vous le mentionnez, j'ai l'impression d'uriner plus que d'habitude dernièrement]",
+            "Troubles du transit [Non]",
+            "Infections récentes [Non]"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Antécédents médicaux",
+          "binaryOnly": true,
+          "patientComment": "J'ai des migraines"
+        },
+        {
+          "id": "a6",
+          "text": "Antécédents chirurgicaux",
+          "binaryOnly": true,
+          "patientComment": "Aucun"
+        },
+        {
+          "id": "a7",
+          "text": "Allergies",
+          "binaryOnly": true,
+          "patientComment": "Non"
+        },
+        {
+          "id": "a8",
+          "text": "Médicaments",
+          "binaryOnly": true,
+          "patientComment": "Je prends une multivitamine et de l'ibuprofène quand j'ai mal à la tête"
+        },
+        {
+          "id": "a9",
+          "text": "Hospitalisations",
+          "binaryOnly": true,
+          "patientComment": "J'ai été hospitalisée pour une infection de l'articulation de la hanche quand j'étais enfant"
+        },
+        {
+          "id": "a10",
+          "text": "Antécédents familiaux",
+          "binaryOnly": false,
+          "details": [
+            "Mère [Diagnostiquée avec un cancer du sein à 51 ans]",
+            "Sœur [Diagnostiquée avec un cancer du sein à seulement 39 ans]",
+            "Grand-mère [Cancer de l'ovaire]",
+            "Père [En bonne santé]"
+          ]
+        },
+        {
+          "id": "a11",
+          "text": "Habitudes et mode de vie",
+          "binaryOnly": false,
+          "details": [
+            "Occupation [Je suis guide touristique en Europe]",
+            "Domicile [Mon mari est pilote de ligne, donc nous voyageons beaucoup tous les deux, ce qui peut être stressant. Nous attendons tous les deux avec impatience notre temps ensemble à la maison]",
+            "Tabac [Non]",
+            "Alcool [J'aime boire un verre de vin avec le dîner]",
+            "Drogues illicites [Non, jamais]"
+          ]
+        },
+        {
+          "id": "a12",
+          "text": "Histoire sexuelle et gynécologique",
+          "binaryOnly": false,
+          "details": [
+            "Activité sexuelle [Oui, avec mon mari]",
+            "Nombre de partenaires dans l'année [Juste mon mari]",
+            "Protection [Nous n'utilisons pas de protection. Nous faisons juste attention au moment où j'ovule]",
+            "Dernières règles [Je pense qu'c'était il y a 2 semaines. Je ne suis même pas sûre que c'était des règles, parce qu'elles étaient en retard et très légères - juste quelques taches]",
+            "Ménarche [J'avais 10 ans]",
+            "Durée des règles [4 jours]",
+            "Régularité [Habituellement, oui. Juste cette fois c'était différent]",
+            "Nombre de tampons par jour [Peut-être 3]",
+            "Pertes vaginales [Normales]",
+            "Démangeaisons vaginales [Non]",
+            "Grossesses [Aucune. Nous sommes tous les deux très occupés par nos carrières et ne voulons pas d'enfants maintenant]",
+            "Dernier frottis [Il y a 10 mois. C'était normal]"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Mesures d'hygiène",
+          "binaryOnly": true,
+          "details": [
+            "Lavage des mains",
+            "Respect de la pudeur avec drap"
+          ]
+        },
+        {
+          "id": "e2",
+          "text": "Examen de la tête et du cou",
+          "binaryOnly": true,
+          "details": [
+            "Inspection des conjonctives"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Examen cardiovasculaire",
+          "binaryOnly": true,
+          "patientComment": "Auscultation cardiaque normale"
+        },
+        {
+          "id": "e4",
+          "text": "Examen pulmonaire",
+          "binaryOnly": false,
+          "details": [
+            "Percussion des champs pulmonaires",
+            "Auscultation pulmonaire"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Examen abdominal",
+          "binaryOnly": false,
+          "details": [
+            "Inspection de l'abdomen",
+            "Auscultation de l'abdomen",
+            "Percussion de l'abdomen",
+            "Palpation de l'abdomen [Douleur au quadrant inférieur droit]"
+          ]
+        },
+        {
+          "id": "e6",
+          "text": "Éviter de répéter les manœuvres douloureuses",
+          "binaryOnly": true,
+          "patientComment": "L'examinateur n'a pas répété les manœuvres douloureuses pendant l'examen physique"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Hypothèses diagnostiques",
+          "binaryOnly": false,
+          "scoringRule": "2 points si au moins 2 diagnostics pertinents mentionnés, 1 point si 1 diagnostic",
+          "ddSection": {
+            "title": "Diagnostics différentiels à considérer",
+            "categories": [
+              {
+                "name": "Pathologie gynécologique prioritaire",
+                "items": [
+                  {
+                    "text": "Cancer de l'ovaire",
+                    "cause": "Arguments POUR:\n\t□ Douleur abdominale basse sourde\n\t□ Augmentation de la fréquence urinaire\n\t□ Diminution de l'appétit\n\t□ Modifications du cycle menstruel (spotting)\n\t□ Augmentation du périmètre abdominal (souvent premier signe)\n\t□ Ménarche précoce et nulliparité (facteurs de risque)\n\t□ Histoire familiale très évocatrice de mutation BRCA\n\t□ Cancer du sein chez mère (51 ans) et sœur (39 ans)\n\t□ Cancer de l'ovaire chez grand-mère",
+                    "test": "→ US transvaginale + CA-125"
+                  },
+                  {
+                    "text": "Grossesse extra-utérine",
+                    "cause": "Arguments POUR:\n\t□ Aménorrhée possible\n\t□ Augmentation du périmètre abdominal\n\t□ Fréquence urinaire augmentée\n\t□ Nausées\n\t□ Méthode du calendrier pour contraception\n\t□ Douleur sourde puis aiguë soudaine\n\t□ Douleur au quadrant inférieur droit\n\tCependant : Histoire familiale oriente vers cancer ovarien",
+                    "test": "→ β-hCG sérique urgent"
+                  },
+                  {
+                    "text": "Rupture de kyste ovarien",
+                    "cause": "Arguments POUR:\n\t□ Douleur aiguë soudaine pendant l'exercice\n\t□ Localisation au quadrant inférieur\n\t□ Âge typique (18-35 ans)\n\tCependant : N'explique pas la douleur sourde de 3 semaines\n\t□ N'explique pas les autres symptômes",
+                    "test": "→ US pelvienne"
+                  }
+                ]
+              },
+              {
+                "name": "Autres diagnostics à éliminer",
+                "items": [
+                  {
+                    "text": "Grossesse intra-utérine",
+                    "cause": "Arguments POUR:\n\t□ Symptômes évocateurs\n\t□ Méthode contraceptive peu fiable",
+                    "test": "→ β-hCG + US si positif"
+                  },
+                  {
+                    "text": "Avortement manqué",
+                    "cause": "Arguments POUR:\n\t□ Saignements légers inhabituels",
+                    "test": "→ β-hCG + US"
+                  },
+                  {
+                    "text": "Torsion ovarienne",
+                    "cause": "Arguments POUR:\n\t□ Douleur aiguë soudaine",
+                    "test": "→ US Doppler en urgence"
+                  },
+                  {
+                    "text": "Appendicite aiguë",
+                    "cause": "Arguments POUR:\n\t□ Douleur au quadrant inférieur droit",
+                    "test": "→ US ou CT abdominal"
+                  },
+                  {
+                    "text": "Abcès tubo-ovarien",
+                    "test": "→ US pelvienne + marqueurs inflammatoires"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Examens complémentaires urgents",
+          "binaryOnly": false,
+          "details": [
+            "Examen pelvien [obligatoire dans tous les cas où la plainte principale est gynécologique]",
+            "β-hCG sérique [peut détecter une grossesse 6-9 jours après fécondation, plus sensible que le test urinaire]",
+            "FSC [pour évaluer une possible anémie due au cancer ou perte sanguine aiguë par rupture de kyste]"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Examens d'imagerie",
+          "binaryOnly": false,
+          "details": [
+            "US transvaginale [peut montrer liquide libre en cas de kyste rompu, grossesses extra-utérines et pathologies ovariennes comme cancer ou kystes]",
+            "US transabdominale [complément de l'US transvaginale]"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Examens complémentaires secondaires",
+          "binaryOnly": false,
+          "details": [
+            "CA-125 [si suspicion de cancer ovarien]",
+            "Laparoscopie [pour obtenir un échantillon histologique en cas de suspicion de cancer ovarien; peut aussi traiter cancer ovarien et grossesses extra-utérines]",
+            "Test génétique BRCA [vu l'histoire familiale]"
+          ]
+        },
+        {
+          "id": "m5",
+          "text": "Communication avec la patiente",
+          "binaryOnly": false,
+          "details": [
+            "Explications au patient des impressions diagnostiques préliminaires",
+            "Explication du plan de prise en charge",
+            "Utilisation d'un langage non médical et clarification des termes médicaux",
+            "Évaluation de l'accord du patient avec le plan diagnostique",
+            "Recherche des préoccupations et questions du patient"
+          ]
+        },
+        {
+          "id": "m6",
+          "text": "Conseil et prévention",
+          "binaryOnly": false,
+          "details": [
+            "Conseil sur les options de contraception",
+            "Réaction appropriée au défi concernant la chirurgie"
+          ],
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Stabilisation initiale de l'AVC",
+                "content": "• Monitoring neurologique continu (score NIHSS)\n• Contrôle TA : maintenir < 185/110 si thrombolyse envisagée\n• Glycémie : maintenir 140-180 mg/dL\n• Température : traiter si > 37.5°C\n• SpO2 > 94% (O2 si nécessaire)\n• Position tête surélevée 30°"
+              },
+              {
+                "title": "Thrombolyse IV (si éligible)",
+                "content": "• Critères : AVC ischémique < 4.5h, absence de CI\n• rt-PA (alteplase) : 0.9 mg/kg (max 90 mg)\n• 10% en bolus, reste sur 60 min\n• Surveillance neurologique étroite\n• Pas d'antiagrégants/anticoagulants × 24h\n• CT contrôle à 24h avant reprise antithrombotiques"
+              },
+              {
+                "title": "Prévention secondaire AVC",
+                "content": "• Antiagrégants : aspirine 100-300 mg/j après 24h\n• Si fibrillation auriculaire : anticoagulation après phase aiguë\n• Statines haute intensité : atorvastatine 80 mg\n• Contrôle TA : cible < 130/80\n• Arrêt tabac impératif\n• Rééducation précoce : kiné, orthophonie, ergothérapie"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "cl1",
+          "text": "Questions difficiles à poser",
+          "content": "[Est-ce que cela signifie que je vais devoir subir une chirurgie ?]"
+        },
+        {
+          "id": "cl2",
+          "text": "Réponse type du candidat",
+          "content": "Mme Hernandez, je comprends votre inquiétude concernant une éventuelle chirurgie. Pour l'instant, il m'est impossible de dire exactement ce qui cause votre douleur. Pour cela, je devrai effectuer des tests et un examen pelvien, ainsi que faire une imagerie de votre abdomen. Ensuite, vous et moi pourrons discuter ensemble des résultats et des options de traitement possibles. Est-ce que cela vous convient ? Je vous promets que je serai avec vous à chaque étape."
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "images": [
+      {
+        "title": "Kyste dermoïde",
+        "description": "Échographie de l'ovaire droit. Une tumeur ovarienne partiellement kystique (superposition blanche), partiellement solide (superposition verte) d'un diamètre approximatif de 35 mm est visible. Ce résultat est compatible avec un kyste dermoïde (tératome mature).",
+        "data": "grilles_generees/html/images/AMBOSS-3-img1-Dermoid cyst.jpg"
+      },
+      {
+        "title": "Grossesse extra-utérine",
+        "description": "Échographie pelvienne (transvaginale ; plan sagittal). Un sac gestationnel (indiqué par les curseurs) contenant un embryon (superposition verte) est visible lors de l'imagerie annexielle. Il n'y a pas de liquide libre adjacent. L'utérus n'est pas visible sur cette image.",
+        "data": "grilles_generees/html/images/AMBOSS-3-img2-Ectopic pregnancy.jpg"
+      }
+    ],
+    "scenarioPatienteStandardisee": {
+      "titre": "Scénario pour la patiente standardisée",
+      "nom": "Stephanie Hernandez",
+      "age": "34 ans",
+      "contexte": "Femme consultant au cabinet médical pour douleurs abdominales",
+      "motifConsultation": {
+        "plaintePrincipale": "J'ai des douleurs dans le ventre.",
+        "autreChose": "Ça m'inquiète, surtout que ça empire."
+      },
+      "consignes": [
+        "Quand l'examinateur vous demande où se situe la douleur, pointer la partie inférieure droite de votre abdomen.",
+        "Quand l'examinateur appuie sur la partie inférieure droite de votre abdomen, dire que ça fait mal.",
+        "Vous n'êtes pas au courant de la signification des termes médicaux (ex: échographie) et demandez des clarifications si l'examinateur les utilise.",
+        "Défi : Après que l'examinateur vous explique ce qu'il/elle pense être votre diagnostic, demander 'Est-ce que cela signifie que je vais devoir subir une chirurgie ?'"
+      ],
+      "histoireActuelle": {
+        "symptomePrincipal": [
+          "Douleurs abdominales",
+          "Localisation : Côté droit",
+          "Qualité : Douleur sourde devenue aiguë",
+          "Quantité/intensité : 1-2/10 depuis quelques semaines, 5/10 depuis ce matin",
+          "Chronologie : Douleur sourde depuis quelques semaines, aiguë ce matin pendant l'aérobic",
+          "Développement : Douleur sourde constante, maintenant avec douleur aiguë",
+          "Circonstances de survenue : Douleur aiguë pendant l'exercice",
+          "Facteurs atténuants : Coussin chauffant la nuit",
+          "Facteurs déclenchants/aggravants : Aérobic ce matin",
+          "Épisodes antérieurs : Jamais"
+        ],
+        "symptomesAssocies": [
+          "Ballonnements",
+          "Sensation de lourdeur",
+          "Augmentation de la taille de pantalon",
+          "Nausées légères depuis quelques semaines",
+          "Diminution de l'appétit"
+        ],
+        "reponseAuxSymptomes": [
+          "Utilisation d'un coussin chauffant",
+          "Consultation aujourd'hui car aggravation"
+        ]
+      },
+      "simulation": {
+        "durantEntretien": [
+          "Posture normale, pas de signe de douleur aiguë sévère",
+          "Inquiétude modérée",
+          "Pointer précisément le quadrant inférieur droit"
+        ],
+        "durantStatus": [
+          "Douleur à la palpation du quadrant inférieur droit",
+          "Pas de défense abdominale",
+          "Coopération normale à l'examen"
+        ]
+      }
+    },
+    "informationsExpert": {
+      "titre": "Informations de l'expert",
+      "dossierMedical": "Patiente de 34 ans consultant pour douleurs abdominales évoluant depuis 3 semaines (sourdes) avec aggravation aiguë ce matin pendant l'exercice. Associées à ballonnements, prise de poids, pollakiurie, nausées. Règles irrégulières récentes (spotting). Histoire familiale hautement évocatrice de syndrome BRCA (cancer sein mère 51 ans, sœur 39 ans, cancer ovaire grand-mère). Nullipare, méthode du calendrier.",
+      "rolesInterventions": [
+        "L'expert-e intervient si l'étudiant-e dit vouloir faire :",
+        "• β-hCG : donner un résultat négatif",
+        "• US pelvienne : donner le résultat montrant une masse ovarienne complexe",
+        "• CA-125 : donner un résultat élevé si demandé"
+      ],
+      "pointsCles": [
+        "L'histoire familiale est le point clé - syndrome BRCA probable",
+        "Le cancer de l'ovaire reste rare à 34 ans SAUF si mutation BRCA",
+        "Ne pas se focaliser uniquement sur grossesse/kyste rompu",
+        "L'examen pelvien est obligatoire",
+        "La présentation insidieuse est typique du cancer ovarien précoce"
+      ],
+      "pieges": [
+        "Minimiser l'importance de l'histoire familiale",
+        "Se concentrer uniquement sur la douleur aiguë récente",
+        "Oublier de demander sur les symptômes associés subtils",
+        "Ne pas explorer la méthode contraceptive peu fiable",
+        "Mauvaise gestion du défi sur la chirurgie"
+      ]
+    },
+    "theoriePratique": {
+      "titre": "Théorie pratique concernant la vignette",
+      "sections": [
+        {
+          "titre": "Diagnostic",
+          "contenu": "Suspicion de cancer ovarien précoce dans un contexte de syndrome héréditaire (BRCA) probable"
+        },
+        {
+          "titre": "Syndrome BRCA et risque de cancer",
+          "contenu": "Les mutations BRCA1 et BRCA2 augmentent considérablement le risque de cancers :",
+          "points": [
+            "BRCA1 : Risque de cancer du sein 65-80%, cancer de l'ovaire 35-46%",
+            "BRCA2 : Risque de cancer du sein 45-85%, cancer de l'ovaire 10-27%",
+            "Âge moyen du cancer de l'ovaire avec BRCA : 42-54 ans (vs 63 ans population générale)",
+            "Histoire familiale suggestive : cancers multiples, âge précoce, lignée maternelle ou paternelle",
+            "Critères pour test génétique : ≥ 2 cas cancer sein < 50 ans ou cancer ovaire dans la famille"
+          ]
+        },
+        {
+          "titre": "Présentation clinique du cancer ovarien précoce",
+          "contenu": "Le cancer ovarien est souvent appelé 'tueur silencieux' car symptômes tardifs :",
+          "points": [
+            "Symptômes non spécifiques : ballonnements, douleur pelvienne, satiété précoce",
+            "Augmentation du périmètre abdominal (souvent premier signe)",
+            "Symptômes urinaires (urgence, fréquence) par compression",
+            "Modifications menstruelles (saignements irréguliers)",
+            "Fatigue, perte de poids (stades avancés)"
+          ]
+        },
+        {
+          "titre": "Facteurs de risque du cancer ovarien",
+          "contenu": "Cette patiente présente plusieurs facteurs de risque importants :",
+          "points": [
+            "Histoire familiale de syndrome héréditaire (facteur majeur)",
+            "Nulliparité (pas de grossesses protectrices)",
+            "Ménarche précoce (10 ans)",
+            "Pas d'utilisation de contraceptifs oraux (effet protecteur)",
+            "Âge : bien que jeune, à risque si BRCA+"
+          ]
+        },
+        {
+          "titre": "Approche diagnostique",
+          "contenu": "L'évaluation doit être complète et systématique :",
+          "points": [
+            "Examen pelvien bimanuel : masses annexielles, ascite",
+            "US transvaginale : première ligne, morphologie des ovaires",
+            "CA-125 : élevé dans 80% des cancers épithéliaux, mais peu spécifique",
+            "Test génétique BRCA : indiqué vu l'histoire familiale",
+            "Laparoscopie diagnostique si forte suspicion"
+          ]
+        },
+        {
+          "titre": "Diagnostic différentiel de la douleur aiguë",
+          "contenu": "La douleur aiguë pendant l'exercice suggère aussi :",
+          "points": [
+            "Rupture de kyste ovarien : Douleur brutale, résolution spontanée possible",
+            "Torsion ovarienne : Urgence chirurgicale, douleur intense",
+            "Hémorragie intra-kystique : Douleur aiguë, masse persistante",
+            "Ces pathologies peuvent coexister avec une tumeur ovarienne"
+          ]
+        },
+        {
+          "titre": "Implications du diagnostic",
+          "contenu": "Si cancer ovarien confirmé chez une patiente BRCA+ :",
+          "points": [
+            "Chirurgie de stadification complète nécessaire",
+            "Discussion sur la préservation de fertilité difficile",
+            "Prophylaxie controlatérale à discuter",
+            "Surveillance mammaire renforcée",
+            "Conseil génétique familial essentiel"
+          ]
+        }
+      ],
+      "rappelsTherapeutiques": [
+        "Cancer ovarien précoce : Chirurgie de stadification +/- chimiothérapie adjuvante",
+        "Prophylaxie BRCA+ : Salpingo-ovariectomie bilatérale recommandée après 35-40 ans",
+        "Surveillance BRCA+ : US transvaginale + CA-125 tous les 6 mois dès 30 ans",
+        "Alternative temporaire : Contraceptifs oraux (réduction risque 40-50%)"
+      ],
+      "examensComplementaires": [
+        "US transvaginale : Sensibilité 85-97% pour masses ovariennes, évalue morphologie",
+        "CA-125 : Normal < 35 U/mL, élevé dans 50% stades I-II, 90% stades III-IV",
+        "Test BRCA : Par prise de sang, délai 2-4 semaines, implications familiales",
+        "IRM pelvienne : Si US non concluante, excellente caractérisation tissulaire"
+      ]
+    }
+  }
+}

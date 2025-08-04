@@ -1,0 +1,485 @@
+{
+  "title": "Acouphènes",
+  "context": {
+    "setting": "Cabinet ORL",
+    "patient": "M. Dupont, 50 ans, se présente chez l'ORL pour un nouveau problème auriculaire",
+    "vitals": {
+      "temperature": "36.5°C"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction et objectif de la consultation",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Question ouverte d'introduction → Motif de consultation",
+          "patientComment": "Acouphènes - ça siffle toujours comme ça",
+          "binaryOnly": true
+        },
+        {
+          "id": "a3",
+          "text": "RED FLAGS - Urgences ORL",
+          "scoringRule": "≥6 red flags explorés = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false,
+          "redflagsSection": [
+            {
+              "text": "Surdité brusque associée [non, mais fait répéter]"
+            },
+            {
+              "text": "Acouphènes pulsatiles unilatéraux [non, bilatéral]"
+            },
+            {
+              "text": "Vertiges vrais invalidants [parfois bizarre]"
+            },
+            {
+              "text": "Signes neurologiques focaux [à explorer]"
+            },
+            {
+              "text": "Céphalées inhabituelles [non]"
+            },
+            {
+              "text": "Otorrhée/otalgie [non]"
+            },
+            {
+              "text": "Paralysie faciale [à vérifier]"
+            },
+            {
+              "text": "Masse cervicale [à palper]"
+            }
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Caractérisation précise des acouphènes",
+          "details": [
+            "Début exact [il y a 1 mois]",
+            "Mode installation (brutal/progressif) [à préciser]",
+            "Évolution (constant/intermittent) [constant, intensité variable]",
+            "Type de son [sifflement aigu]",
+            "Tonalité (grave/aigu/mixte) [aigu]",
+            "Latéralisation [bilatéral]",
+            "Synchrone au pouls [non - exclut pulsatile]",
+            "Modification par mouvements [à explorer]"
+          ],
+          "scoringRule": "≥6 caractéristiques = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a5",
+          "text": "Facteurs modulateurs et déclenchants",
+          "details": [
+            "Augmentation effort physique [oui]",
+            "Augmentation stress [oui]",
+            "Position tête/cou [à explorer]",
+            "Mastication/déglutition [à explorer]",
+            "Silence vs bruit ambiant [à préciser]",
+            "Fatigue [à évaluer]",
+            "Moment de la journée [à préciser]"
+          ],
+          "scoringRule": "≥5 facteurs explorés = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a6",
+          "text": "Symptômes auditifs associés",
+          "details": [
+            "Hypoacousie subjective [oui, fait répéter]",
+            "Caractère fluctuant audition [à explorer]",
+            "Plénitude auriculaire [non]",
+            "Hyperacousie/phonophobie [à explorer]",
+            "Distorsion sonore [à explorer]",
+            "Autophonie [à explorer]",
+            "Otalgie [non]"
+          ],
+          "scoringRule": "≥5 symptômes explorés = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a7",
+          "text": "Symptômes vestibulaires détaillés",
+          "details": [
+            "Vertiges vrais rotatoires [non précisé]",
+            "Instabilité/déséquilibre [parfois bizarre]",
+            "Durée des épisodes [à quantifier]",
+            "Facteurs déclenchants vertiges [à explorer]",
+            "Nausées/vomissements [non]",
+            "Signes végétatifs [à explorer]"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a8",
+          "text": "Exposition aux facteurs de risque",
+          "details": [
+            "Traumatisme acoustique aigu [non rapporté]",
+            "Exposition chronique bruit [facteur - limitée]",
+            "Port protections auditives [à vérifier]",
+            "Loisirs bruyants [à explorer]",
+            "Barotraumatisme [non]",
+            "Traumatisme crânien [chutes vélo sans gravité]"
+          ],
+          "scoringRule": "≥5 facteurs évalués = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a9",
+          "text": "Médicaments ototoxiques - Recherche systématique",
+          "details": [
+            "Aspirine haute dose [à vérifier]",
+            "AINS chroniques [à explorer]",
+            "Aminosides [non probable]",
+            "Diurétiques de l'anse [HTA - possible]",
+            "Chimiothérapie platine [non]",
+            "Quinine/antipaludéens [non]",
+            "Antidépresseurs [burnout traité]"
+          ],
+          "scoringRule": "≥5 médicaments explorés = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a10",
+          "text": "Comorbidités et facteurs de risque vasculaires",
+          "details": [
+            "HTA [oui, légèrement élevée]",
+            "Diabète [à dépister]",
+            "Dyslipidémie [à explorer]",
+            "Tabagisme [à quantifier]",
+            "Obésité [IMC à calculer]",
+            "Migraine [non mentionnée]",
+            "Troubles thyroïdiens [à explorer]",
+            "Anémie [à dépister]"
+          ],
+          "scoringRule": "≥6 facteurs = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a11",
+          "text": "Impact psychosocial et qualité de vie",
+          "details": [
+            "Troubles du sommeil [à quantifier]",
+            "Difficultés concentration [à évaluer]",
+            "Anxiété/dépression [burnout traité]",
+            "Retentissement professionnel [facteur]",
+            "Vie conjugale [malheureux]",
+            "Échelle THI (Tinnitus Handicap Inventory) [idéalement]",
+            "Évitement social [à explorer]"
+          ],
+          "scoringRule": "≥5 impacts évalués = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a12",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "details": [
+            "Anamnèse complète et systématique",
+            "Red flags explorés",
+            "Caractérisation précise acouphènes",
+            "Impact psychosocial évalué",
+            "Facteurs de risque identifiés"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Inspection ORL complète",
+          "details": [
+            "Pavillon auriculaire bilatéral [normal]",
+            "Conduit auditif externe [normal]",
+            "Recherche cicatrices/malformations [absentes]",
+            "Région mastoïdienne [normale]",
+            "Asymétrie faciale [non]"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e2",
+          "text": "Otoscopie bilatérale systématique",
+          "details": [
+            "Tympan droit [normal]",
+            "Tympan gauche [normal]",
+            "Cérumen obstructif [non]",
+            "Signes inflammatoires [non]",
+            "Perforation/rétraction [non]",
+            "Masses/polypes [non]",
+            "Battements vasculaires [non]"
+          ],
+          "scoringRule": "≥5 éléments = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e3",
+          "text": "Tests au diapason complets",
+          "details": [
+            "Weber 512 Hz [pas de latéralisation]",
+            "Rinne droit [CA > CO normal]",
+            "Rinne gauche [CA > CO normal]",
+            "Recherche surdité transmission",
+            "Recherche surdité perception"
+          ],
+          "scoringRule": "≥4 tests = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e4",
+          "text": "Examen vestibulaire approfondi",
+          "details": [
+            "Romberg sensibilisé [légèrement instable]",
+            "Fukuda/piétinement [à tester]",
+            "Head impulse test [à réaliser]",
+            "Recherche nystagmus spontané [absent]",
+            "Nystagmus provoqué (Dix-Hallpike) [à tester]",
+            "Coordination cérébelleuse [normale]"
+          ],
+          "scoringRule": "≥4 tests = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e5",
+          "text": "Examen des nerfs crâniens",
+          "details": [
+            "Nerf V (sensibilité face, masséters) [normal]",
+            "Nerf VII (mimique faciale) [symétrique]",
+            "Nerf VIII (déjà testé)",
+            "Nerfs IX-X (voile, déglutition) [normal]",
+            "Nerf XI (SCM, trapèzes) [normal]",
+            "Nerf XII (langue) [normal]"
+          ],
+          "scoringRule": "≥5 nerfs testés = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e6",
+          "text": "Examen cervical et vasculaire",
+          "details": [
+            "Palpation ganglions cervicaux [normaux]",
+            "Mobilité cervicale [à tester]",
+            "Auscultation carotides [pas de souffle]",
+            "Palpation thyroïde [normale]",
+            "Recherche masses cervicales [absentes]"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e7",
+          "text": "Examen cardiovasculaire ciblé",
+          "details": [
+            "TA aux deux bras [légèrement élevée]",
+            "Auscultation cardiaque [normale]",
+            "Recherche souffles vasculaires",
+            "Pouls périphériques [normaux]",
+            "Signes d'insuffisance cardiaque [non]"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e8",
+          "text": "Examen ATM et cavité buccale",
+          "details": [
+            "Palpation ATM bilatérale [normale]",
+            "Ouverture buccale [normale]",
+            "Craquements/douleur ATM [non]",
+            "État dentaire [à vérifier]",
+            "Oropharynx [normal]"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e9",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "details": [
+            "Examen ORL complet",
+            "Examen neurologique ciblé",
+            "Recherche causes vasculaires",
+            "Documentation précise",
+            "Approche systématique"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic principal et classification",
+          "details": [
+            "Acouphènes subjectifs bilatéraux",
+            "Non pulsatiles",
+            "Probablement idiopathiques",
+            "Avec hypoacousie légère associée"
+          ],
+          "scoringRule": "Classification complète = 2 pts, partielle = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m2",
+          "text": "Diagnostics différentiels systématiques",
+          "scoringRule": "≥7 DD = 2 pts, 5-6 = 1 pt, <5 = 0 pt",
+          "binaryOnly": false,
+          "ddSection": {
+            "categories": [
+              {
+                "name": "Diagnostics différentiels à considérer",
+                "items": [
+                  "Presbyacousie avec acouphènes",
+                  "Traumatisme sonore chronique",
+                  "Neurinome acoustique (si unilatéral)",
+                  "Maladie de Ménière",
+                  "Otospongiose débutante",
+                  "HTA avec retentissement",
+                  "Dysfonction tubaire",
+                  "Troubles ATM",
+                  "Causes médicamenteuses",
+                  "Causes métaboliques"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m3",
+          "text": "Examens complémentaires de première intention",
+          "details": [
+            "Audiométrie tonale et vocale OBLIGATOIRE",
+            "Tympanométrie + réflexes stapédiens",
+            "Acouphénométrie (caractérisation)",
+            "Test d'inhibition résiduelle",
+            "Bilan sanguin : NFS, TSH, glycémie",
+            "Bilan lipidique (FdR vasculaire)"
+          ],
+          "scoringRule": "≥5 examens = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m4",
+          "text": "Imagerie selon indications",
+          "details": [
+            "IRM cérébrale + CAI si : unilatéral",
+            "IRM si : asymétrie auditive",
+            "IRM si : signes neurologiques",
+            "IRM si : acouphènes pulsatiles",
+            "Angio-IRM/CT si vasculaire suspecté"
+          ],
+          "scoringRule": "Indications correctes = 2 pts, partielles = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m5",
+          "text": "Prise en charge thérapeutique multimodale",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Si acouphènes récents (<3 mois)",
+                "content": "• Corticothérapie d'épreuve (prednisolone 1mg/kg × 7-10j)\n• Vasodilatateurs/rhéologiques (pentoxifylline)\n• Oxygénothérapie hyperbare si trauma sonore\n• Urgence si surdité brusque associée"
+              },
+              {
+                "title": "Traitement étiologique",
+                "content": "• Contrôle HTA (IEC, ARA2)\n• Sevrage médicaments ototoxiques\n• Correction troubles métaboliques\n• Traitement anxiété/dépression\n• Prise en charge troubles sommeil"
+              },
+              {
+                "title": "Thérapies sonores",
+                "content": "• Masquage par bruit blanc\n• Thérapie TRT (Tinnitus Retraining Therapy)\n• Appareillage auditif si hypoacousie\n• Applications smartphone dédiées\n• Musique filtrée personnalisée"
+              },
+              {
+                "title": "Approches psychologiques",
+                "content": "• TCC spécifique acouphènes\n• Techniques relaxation (sophrologie)\n• Méditation pleine conscience\n• Gestion du stress\n• Groupes de parole"
+              }
+            ]
+          },
+          "scoringRule": "≥3 modalités = 2 pts, 2 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m6",
+          "text": "Conseils hygiéno-diététiques",
+          "details": [
+            "Éviter silence complet",
+            "Protection auditive si bruit",
+            "Réduction café/alcool",
+            "Activité physique régulière",
+            "Sommeil régulier suffisant",
+            "Éviter stress excessif",
+            "Maintenir vie sociale"
+          ],
+          "scoringRule": "≥5 conseils = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m7",
+          "text": "Information et éducation thérapeutique",
+          "details": [
+            "Nature bénigne habituelle",
+            "Mécanismes neurophysiologiques",
+            "Pas de traitement miracle",
+            "Importance approche globale",
+            "Habituation possible",
+            "Ressources (associations, sites)",
+            "Journal de suivi"
+          ],
+          "scoringRule": "≥5 éléments = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m8",
+          "text": "Plan de suivi structuré",
+          "details": [
+            "Contrôle audiométrique 3 mois",
+            "Évaluation efficacité traitement",
+            "Ajustement thérapeutique",
+            "Questionnaire THI évolution",
+            "Orientation spécialisée si échec",
+            "Suivi psychologique si besoin"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m9",
+          "text": "Critères d'orientation spécialisée",
+          "details": [
+            "Centre spécialisé acouphènes",
+            "Consultation multidisciplinaire",
+            "Si échec traitement 6 mois",
+            "Si handicap sévère (THI >58)",
+            "Si comorbidités psychiatriques",
+            "Pour thérapies innovantes"
+          ],
+          "scoringRule": "≥4 critères = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m10",
+          "text": "Évaluation globale de la qualité de la prise en charge",
+          "details": [
+            "Approche diagnostique complète",
+            "PEC multimodale adaptée",
+            "Information patient claire",
+            "Suivi organisé",
+            "Orientation si nécessaire"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        }
+      ]
+    }
+  }
+}

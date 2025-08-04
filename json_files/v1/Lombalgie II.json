@@ -1,0 +1,363 @@
+{
+  "title": "Lombalgie II",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Hugo Betschart, 53 ans, consulte pour des douleurs dorsales",
+    "vitals": {
+      "ta": "135/90 mmHg",
+      "fc": "80 bpm",
+      "fr": "18/min"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction et objectif",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Question ouverte d'introduction → symptôme principal",
+          "binaryOnly": false,
+          "details": [
+            "[Douleurs dorsales]"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Localisation",
+          "binaryOnly": false,
+          "details": [
+            "[Bas du dos]"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Apparition temporelle",
+          "binaryOnly": false,
+          "details": [
+            "Début soudain vs insidieux [de plus en plus]",
+            "Durée [depuis environ 2 semaines]"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Évolution",
+          "binaryOnly": false,
+          "details": [
+            "Paroxystique vs persistant vs permanent [constant]",
+            "Épisodes antérieurs [oui mais jamais si grave]"
+          ]
+        },
+        {
+          "id": "a6",
+          "text": "Douleurs nocturnes",
+          "binaryOnly": false,
+          "details": [
+            "[Moins]"
+          ]
+        },
+        {
+          "id": "a7",
+          "text": "Irradiation",
+          "binaryOnly": false,
+          "details": [
+            "[Dans la jambe]"
+          ]
+        },
+        {
+          "id": "a8",
+          "text": "Qualité de la douleur",
+          "binaryOnly": false,
+          "details": [
+            "[Lancinante]"
+          ]
+        },
+        {
+          "id": "a9",
+          "text": "Intensité",
+          "binaryOnly": false,
+          "details": [
+            "[7/10]"
+          ]
+        },
+        {
+          "id": "a10",
+          "text": "Facteurs aggravants",
+          "binaryOnly": false,
+          "details": [
+            "[En position debout et assise, toux]"
+          ]
+        },
+        {
+          "id": "a11",
+          "text": "Facteurs d'amélioration",
+          "binaryOnly": false,
+          "details": [
+            "[Couché avec jambes fléchies]"
+          ]
+        },
+        {
+          "id": "a12",
+          "text": "Événement déclenchant/traumatisme",
+          "binaryOnly": false,
+          "details": [
+            "[Mouvement de rotation en déchargeant la voiture]",
+            "[Pas de port de charge lourde, pas de traumatisme]"
+          ]
+        },
+        {
+          "id": "a13",
+          "text": "Faiblesse musculaire",
+          "binaryOnly": false,
+          "details": [
+            "[Sensation bizarre à gauche, peut-être faiblesse]"
+          ]
+        },
+        {
+          "id": "a14",
+          "text": "Troubles sensitifs",
+          "binaryOnly": false,
+          "details": [
+            "[Fourmillements dans le pied gauche et la jambe]"
+          ]
+        },
+        {
+          "id": "a15",
+          "text": "Incontinence, rétention urinaire",
+          "binaryOnly": false,
+          "details": [
+            "[Non]"
+          ]
+        },
+        {
+          "id": "a16",
+          "text": "Symptômes B",
+          "binaryOnly": false,
+          "details": [
+            "Fièvre [non]",
+            "Perte de poids [non]",
+            "Sueurs nocturnes [non]"
+          ]
+        },
+        {
+          "id": "a17",
+          "text": "Fractures",
+          "binaryOnly": false,
+          "details": [
+            "[Non]"
+          ]
+        },
+        {
+          "id": "a18",
+          "text": "Antécédents médicaux",
+          "binaryOnly": false,
+          "details": [
+            "[Anciennement migraine]",
+            "Histoire de douleurs dorsales [récidivantes tous les quelques années]"
+          ]
+        },
+        {
+          "id": "a19",
+          "text": "Interventions chirurgicales",
+          "binaryOnly": false,
+          "details": [
+            "[Plastie du ligament croisé]"
+          ]
+        },
+        {
+          "id": "a20",
+          "text": "Médicaments",
+          "binaryOnly": false,
+          "details": [
+            "[Aucun, Celebrex en cas de douleurs]"
+          ]
+        },
+        {
+          "id": "a21",
+          "text": "Allergies",
+          "binaryOnly": false,
+          "details": [
+            "[Iode]"
+          ]
+        },
+        {
+          "id": "a22",
+          "text": "Substances toxiques",
+          "binaryOnly": false,
+          "details": [
+            "Alcool [non]",
+            "Tabac [non]",
+            "Drogues [non]"
+          ]
+        },
+        {
+          "id": "a23",
+          "text": "Immunosuppression, maladies cancéreuses",
+          "binaryOnly": false
+        },
+        {
+          "id": "a24",
+          "text": "Antécédents familiaux",
+          "binaryOnly": false,
+          "details": [
+            "Ostéoporose [à préciser]",
+            "[Mère artérite temporale]",
+            "[Père déjà 2x AIT, sténose aortique]"
+          ]
+        },
+        {
+          "id": "a25",
+          "text": "Anamnèse sociale, stress, profession, capacité de travail",
+          "binaryOnly": false
+        },
+        {
+          "id": "a26",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "binaryOnly": false,
+          "details": [
+            "Anamnèse générale ciblée et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Examen du dos",
+          "binaryOnly": false,
+          "details": [
+            "Marche",
+            "Position debout",
+            "Position assise"
+          ]
+        },
+        {
+          "id": "e2",
+          "text": "Analyse de la marche",
+          "binaryOnly": false,
+          "details": [
+            "Marche sur la pointe des pieds/talons"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Examen statique et dynamique",
+          "binaryOnly": false,
+          "details": [
+            "Scoliose, déformation en marches",
+            "Tests de Schober/Ott"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Douleur à la pression/percussion",
+          "binaryOnly": true
+        },
+        {
+          "id": "e5",
+          "text": "Réflexes",
+          "binaryOnly": false,
+          "details": [
+            "ROT rotulien",
+            "ROT achilléen"
+          ]
+        },
+        {
+          "id": "e6",
+          "text": "Testing de force/sensibilité",
+          "binaryOnly": false,
+          "details": [
+            "Muscles clés L3/L4: quadriceps fémoral",
+            "L5: long extenseur de l'hallux",
+            "S1: triceps sural"
+          ]
+        },
+        {
+          "id": "e7",
+          "text": "Dermatomes",
+          "binaryOnly": true
+        },
+        {
+          "id": "e8",
+          "text": "Examen en décubitus",
+          "binaryOnly": false,
+          "details": [
+            "Contracture musculaire",
+            "Lasègue, hanche (dynamique)"
+          ]
+        },
+        {
+          "id": "e9",
+          "text": "Toucher rectal",
+          "binaryOnly": false
+        },
+        {
+          "id": "e10",
+          "text": "Pouls périphériques",
+          "binaryOnly": false,
+          "details": [
+            "Surtout en cas d'irradiation dans les jambes"
+          ]
+        },
+        {
+          "id": "e11",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "binaryOnly": false,
+          "details": [
+            "Status général ciblé et bien conduit"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic principal",
+          "binaryOnly": false,
+          "details": [
+            "Hernie discale/prolapsus"
+          ]
+        },
+        {
+          "id": "m2",
+          "text": "Diagnostics différentiels",
+          "binaryOnly": false,
+          "details": [
+            "Fracture",
+            "Contracture musculaire",
+            "Inflammation"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Examens complémentaires",
+          "binaryOnly": false,
+          "details": [
+            "Laboratoire pour exclure un processus inflammatoire",
+            "Selon les signes neurologiques: IRM",
+            "Référence à l'orthopédiste"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Évaluation globale de la qualité de la prise en charge",
+          "binaryOnly": false,
+          "details": [
+            "Prise en charge générale cohérente et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    }
+  }
+}

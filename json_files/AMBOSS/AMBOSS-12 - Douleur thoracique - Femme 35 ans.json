@@ -1,0 +1,537 @@
+{
+  "title": "AMBOSS-12 - Douleur thoracique - Femme 35 ans",
+  "context": {
+    "setting": "Service d'urgences",
+    "patient": "Hazel Porter, femme de 35 ans, consultant aux urgences pour douleur thoracique",
+    "vitals": {
+      "temperature": "38°C",
+      "ta": "110/65 mmHg",
+      "fc": "105 bpm",
+      "fr": "30/min"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Motif principal",
+          "binaryOnly": true,
+          "patientComment": "Ma poitrine me fait mal"
+        },
+        {
+          "id": "a2",
+          "text": "Caractérisation de la douleur thoracique",
+          "binaryOnly": false,
+          "details": [
+            "Localisation [C'est difficile à dire exactement, mais je pense que c'est du côté gauche]",
+            "Intensité (échelle 0-10) [C'est un 5]",
+            "Qualité [J'ai l'impression que ma poitrine est vraiment serrée et puis il y a aussi une douleur lancinante]",
+            "Début [Ça a commencé soudainement ce matin après que je me sois levée]",
+            "Événements précipitants [Je ne pense pas. J'étais endormie avant que ça commence]",
+            "Progression/constant/intermittent [Ça empire]",
+            "Épisodes antérieurs [Non]",
+            "Irradiation [Non, c'est juste dans ma poitrine]",
+            "Facteurs améliorants [M'asseoir le rend un peu mieux]",
+            "Facteurs aggravants [La douleur lancinante empire chaque fois que j'inspire]"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Symptômes associés",
+          "binaryOnly": true,
+          "patientComment": "J'ai du mal à respirer"
+        },
+        {
+          "id": "a4",
+          "text": "Recherche de symptômes spécifiques",
+          "binaryOnly": false,
+          "details": [
+            "Traumatisme [Non]",
+            "Voyage récent [J'étais au Japon ces 2 dernières semaines. Je suis rentrée hier soir]",
+            "Gonflement des chevilles [Mes jambes étaient gonflées sur le vol de retour, mais elles gonflent toujours dans l'avion, donc je n'y ai pas pensé]",
+            "Nausées/vomissements [Non]",
+            "Fièvre/frissons [Je n'ai pas pris ma température, mais j'ai eu des frissons ces derniers jours]",
+            "Fatigue [J'ai été vraiment fatiguée avec tous les voyages de ces 2 dernières semaines]",
+            "Palpitations [Oui, depuis ce matin]",
+            "Éruption/changements cutanés [Non]",
+            "Toux [J'ai eu une toux depuis la semaine dernière, mais c'est encore pire aujourd'hui]",
+            "Toux productive [Non]",
+            "Sang dans les crachats [Non]",
+            "Infections récentes [Juste le rhume que j'ai attrapé la semaine dernière au Japon]",
+            "Vertiges [Un peu si la douleur devient vraiment forte]",
+            "Douleur aux jambes [Ma jambe droite me fait mal maintenant. Mais tout mon corps a été douloureux ces derniers jours]"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Antécédents médicaux",
+          "binaryOnly": true,
+          "patientComment": "Aucun"
+        },
+        {
+          "id": "a6",
+          "text": "Antécédents chirurgicaux",
+          "binaryOnly": true,
+          "patientComment": "Aucun"
+        },
+        {
+          "id": "a7",
+          "text": "Allergies",
+          "binaryOnly": true,
+          "patientComment": "Aucune"
+        },
+        {
+          "id": "a8",
+          "text": "Médicaments",
+          "binaryOnly": true,
+          "patientComment": "Je prends une pilule contraceptive et une multivitamine quotidienne"
+        },
+        {
+          "id": "a9",
+          "text": "Hospitalisations et contacts malades",
+          "binaryOnly": true,
+          "details": [
+            "Hospitalisations [Jamais]",
+            "Contacts malades [Non]"
+          ]
+        },
+        {
+          "id": "a10",
+          "text": "Antécédents familiaux",
+          "binaryOnly": false,
+          "patientComment": "Ma mère est morte d'une crise cardiaque quand elle avait 40 ans. Et ma grand-mère a aussi eu une crise cardiaque quand elle était jeune, mais je ne me souviens pas exactement de son âge"
+        },
+        {
+          "id": "a11",
+          "text": "Habitudes et mode de vie",
+          "binaryOnly": false,
+          "details": [
+            "Occupation [Je suis responsable des achats pour un grand détaillant en ligne. C'est pourquoi j'étais au Japon]",
+            "Domicile [Je vis seule]",
+            "Alcool [Pas beaucoup. Parfois le week-end si je sors dîner avec mes amis]",
+            "Drogues illicites [Jamais]",
+            "Tabac [Oui. Je fume environ 2 paquets par jour. Je pense avoir commencé quand j'avais environ 15 ans]",
+            "Exercice [Non]",
+            "Alimentation [Je mange beaucoup au restaurant - BBQ, poulet frit, ce genre de choses. Je sais que je n'ai pas l'alimentation la plus saine]"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Mesures d'hygiène",
+          "binaryOnly": true,
+          "details": [
+            "Lavage des mains",
+            "Respect de la pudeur avec drap"
+          ]
+        },
+        {
+          "id": "e2",
+          "text": "Examen du cou",
+          "binaryOnly": true,
+          "details": [
+            "Évaluation de la distension jugulaire"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Examen cardiovasculaire",
+          "binaryOnly": true,
+          "details": [
+            "Palpation du pouls radial",
+            "Auscultation cardiaque"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Examen thoracique",
+          "binaryOnly": false,
+          "details": [
+            "Inspection du thorax [Effort respiratoire augmenté (utilisation des muscles accessoires de la respiration)]",
+            "Palpation du thorax",
+            "Percussion des champs pulmonaires",
+            "Auscultation pulmonaire",
+            "Recherche de frémitus"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Examen des extrémités",
+          "binaryOnly": false,
+          "details": [
+            "Inspection des membres inférieurs",
+            "Palpation des membres inférieurs [Mollet droit sensible à la palpation]",
+            "Signe de Homans [Positif]",
+            "Recherche d'œdème prenant le godet",
+            "Palpation des pouls pédieux"
+          ]
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Hypothèses diagnostiques",
+          "binaryOnly": false,
+          "scoringRule": "2 points si au moins 2 diagnostics pertinents mentionnés, 1 point si 1 diagnostic",
+          "ddSection": {
+            "title": "Diagnostics différentiels à considérer",
+            "categories": [
+              {
+                "name": "Causes cardiovasculaires urgentes",
+                "items": [
+                  {
+                    "text": "Embolie pulmonaire",
+                    "cause": "Arguments POUR:\n\t□ Dyspnée aiguë + douleur thoracique pleurétique\n\t□ Tachycardie (105 bpm) + tachypnée (30/min)\n\t□ Début au lever (mobilisation thrombus)\n\t□ TVP clinique (mollet droit douloureux, Homans positif)\n\t□ Score de Wells = 7.5 (probabilité élevée)\n\t□ Facteurs de risque : vol long-courrier, tabac, contraception orale\n\t□ Fièvre légère (peut accompagner EP)",
+                    "test": "→ D-dimères + angio-CT thoracique"
+                  },
+                  {
+                    "text": "Infarctus du myocarde",
+                    "cause": "Arguments POUR:\n\t□ Douleur thoracique avec oppression\n\t□ Début matinal (pic circadien IDM)\n\t□ Antécédents familiaux forts (mère 40 ans, grand-mère)\n\t□ Facteurs de risque : tabac 40 PA, sédentarité, alimentation\n\t□ Dyspnée associée\nContre : Âge jeune (35 ans), TVP associée, caractère pleurétique",
+                    "test": "→ ECG + troponines sériées"
+                  }
+                ]
+              },
+              {
+                "name": "Autres causes",
+                "items": [
+                  {
+                    "text": "Pneumonie atypique",
+                    "cause": "Arguments POUR:\n\t□ Toux sèche depuis 1 semaine\n\t□ Fièvre légère + frissons\n\t□ Fatigue\n\t□ Contexte voyage (exposition)\n\t□ Tabagisme (facteur de risque)\nContre : TVP associée, début brutal douleur, douleur pleurétique typique EP",
+                    "test": "→ Radiographie thoracique + FSC"
+                  },
+                  {
+                    "text": "Péricardite",
+                    "cause": "Arguments POUR : Douleur soulagée position assise\nContre : Pas de frottement, TVP associée",
+                    "test": "→ ECG (sus-décalage ST diffus)"
+                  },
+                  {
+                    "text": "Pneumothorax",
+                    "cause": "Contre : Pas de début brutal, percussion normale",
+                    "test": "→ Radiographie thoracique"
+                  },
+                  {
+                    "text": "Dissection aortique",
+                    "cause": "Contre : Âge jeune, pas de douleur déchirante dorsale",
+                    "test": "→ CT thoracique avec contraste"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Examens complémentaires urgents",
+          "binaryOnly": false,
+          "details": [
+            "ECG [meilleur test initial pour l'infarctus du myocarde, qui présenterait typiquement des sus-décalages ST. Dans l'EP, on voit le plus souvent une tachycardie sinusale, mais l'ECG peut aussi montrer des signes de surcharge ventriculaire droite (nouveau bloc de branche droit, aspect S1Q3T3)]",
+            "Troponine T, CK-MB [La troponine T est le marqueur cardiaque le plus important et spécifique et peut être mesurée 3-4 heures après le début de l'infarctus. Les valeurs de CK-MB corrèlent avec la taille de l'infarction. Une troponine T augmentée peut aussi survenir dans l'EP (due à la surcharge ventriculaire droite)]"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Examens d'imagerie",
+          "binaryOnly": false,
+          "details": [
+            "Échographie Doppler de compression des jambes [peut être utilisée pour diagnostiquer une thrombose veineuse profonde potentielle comme cause d'embolie pulmonaire]",
+            "Échocardiographie transthoracique [peut montrer des anomalies de la cinétique pariétale dans l'infarctus du myocarde. Dans l'EP, l'échocardiographie peut montrer des signes de pression auriculaire droite et dilatation et hypokinésie du ventricule droit]",
+            "Radiographie thoracique [Peut montrer une opacité réticulaire diffuse dans la pneumonie atypique ou interstitielle. Une opacité étendue limitée à un lobe pulmonaire avec bronchogramme aérien positif est typique de la pneumonie lobaire. Dans de rares cas, l'EP présente des signes radiologiques typiques comme la bosse de Hampton ou le signe de Westermark]",
+            "Angiographie pulmonaire par CT [fournit une sensibilité, spécificité élevées et une preuve immédiate d'obstruction artérielle pulmonaire]"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Examens biologiques",
+          "binaryOnly": false,
+          "details": [
+            "FSC, VS, hémocultures [La leucocytose et la VS élevée sont des signes d'inflammation dans la pneumonie. Les hémocultures sont toujours recommandées pour détecter l'agent pathogène causal dans la pneumonie]",
+            "Gaz du sang artériel [peut montrer une hypoxémie dans la pneumonie et l'EP sévère]"
+          ]
+        },
+        {
+          "id": "m5",
+          "text": "Communication avec la patiente",
+          "binaryOnly": false,
+          "details": [
+            "Explications à la patiente des impressions diagnostiques préliminaires",
+            "Explication du plan de prise en charge",
+            "Utilisation d'un langage non médical et clarification des termes médicaux",
+            "Évaluation de l'accord de la patiente avec le plan diagnostique",
+            "Recherche des préoccupations et questions de la patiente"
+          ]
+        },
+        {
+          "id": "m6",
+          "text": "Conseil et soutien",
+          "binaryOnly": false,
+          "details": [
+            "Conseil sur l'arrêt du tabac",
+            "Réaction appropriée au défi concernant l'anxiété",
+            "Rassurer la patiente sur la prise en charge",
+            "Proposer présence famille/amis pour soutien"
+          ],
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Prise en charge thérapeutique immédiate",
+                "content": "• Oxygénothérapie pour maintenir SpO2 > 92%\n• Voie veineuse périphérique\n• Analgésie adaptée (morphine si douleur sévère)\n• Monitoring continu (FC, TA, SpO2)\n• Position demi-assise si tolérée\n• Préparation anticoagulation si EP confirmée"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "cl1",
+          "text": "Défi : Anxiété de la patiente",
+          "content": "[C'est vraiment grave, n'est-ce pas ?]"
+        },
+        {
+          "id": "cl2",
+          "text": "Réponse type du candidat",
+          "content": "Mme Porter, je comprends votre inquiétude. Je suis très content que vous ayez décidé de me voir dès que vos symptômes ont commencé aujourd'hui. Étant donné vos antécédents familiaux et votre récent vol long-courrier, j'aimerais exclure que vous ayez un caillot sanguin dans votre cœur ou vos poumons. Je peux vous assurer que nous faisons tout ce qui est en notre pouvoir pour vous fournir les meilleurs soins possibles. Une fois que nous aurons terminé ici, nous vous donnerons de l'oxygène et des médicaments contre la douleur pour faciliter un peu la respiration. J'aimerais aussi prélever du sang, examiner le fonctionnement de votre cœur et prendre des images de vos poumons. Un technicien viendra faire un ECG. C'est un moyen pour nous d'avoir une meilleure idée si votre cœur reçoit suffisamment d'oxygène et s'il fonctionne comme il le devrait. Le technicien mettra de petits patchs sur votre poitrine, vos bras et vos jambes, puis une machine lira les courants électriques qui traversent votre cœur. Le test ne fait pas mal et ne prend pas longtemps. J'aimerais aussi faire un CT, une tomodensitométrie, de vos poumons. Ce test est très rapide et nous fournit des images très détaillées de vos poumons. Il nous permet de voir s'il y a un caillot sanguin ou une infection. Si quelque chose n'est pas clair pendant que vous êtes ici ou si vous avez des questions ou des préoccupations, assurez-vous de nous le faire savoir. Si vous aimeriez avoir des amis ou de la famille ici pour vous soutenir aujourd'hui, nous serions plus qu'heureux de les contacter pour vous. Est-ce que tout cela vous convient ? Avez-vous des questions maintenant ?"
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "images": [
+      {
+        "title": "Œdème prenant le godet du membre inférieur",
+        "description": "Le tissu est nettement œdémateux au-dessus de la ligne jusqu'à laquelle la chaussette du patient avait précédemment été remontée. Après avoir appliqué une pression sur la zone prétibiale, l'indentation résiduelle caractéristique de l'œdème prenant le godet devient visible.",
+        "data": "grilles_generees/html/images/AMBOSS-12-img1-Pitting edema of lower leg.jpg"
+      },
+      {
+        "title": "Approche diagnostique de l'embolie pulmonaire",
+        "description": "Approche diagnostique de l'embolie pulmonaire. CTPA : angiographie pulmonaire par tomodensitométrie ; PE : embolie pulmonaire ; PERC : critères d'exclusion de l'embolie pulmonaire ; PTP : probabilité pré-test ; RV : ventricule droit ; V/Q scan : scintigraphie ventilation/perfusion.",
+        "data": "grilles_generees/html/images/AMBOSS-12-img2-Diagnostic approach to pulmonary embolism.jpg"
+      },
+      {
+        "title": "Infarctus du myocarde antérieur avec sus-décalage ST (STEMI)",
+        "description": "ECG 12 dérivations (vitesse du papier : 25 mm/s). Rythme sinusal avec fréquence cardiaque d'environ 85/min. Axe cardiaque normal (dérivations I, II et III positives, mais difficile à interpréter à cause des modifications ST). Sus-décalage ST en V2-V6, aVL et légèrement en I. Sous-décalage ST réciproque dans les dérivations II, III et aVF.",
+        "data": "grilles_generees/html/images/AMBOSS-12-img3-Acute anterior ST-elevation myocardial infarction (STEMI).jpg"
+      },
+      {
+        "title": "Pneumonie lobaire avec épanchement parapneumonique",
+        "description": "Radiographie thoracique (gauche : vue PA ; droite : vue latérale) d'un patient avec antécédents de pneumonie. Consolidation extensive hétérogène de l'espace aérien dans le lobe supérieur gauche touchant une partie de la grande scissure. Un petit épanchement pleural est présent. Les causes de consolidation pulmonaire pouvant mimer l'apparence d'une pneumonie infectieuse incluent la pneumonie organisante, la malignité (adénocarcinome, lymphome) et l'hémorragie pulmonaire.",
+        "data": "grilles_generees/html/images/AMBOSS-12-img4-Lobar pneumonia with parapneumonic effusion.jpg"
+      },
+      {
+        "title": "Consolidation alvéolaire (1/2)",
+        "description": "Radiographie thoracique (vue PA) d'un patient fébrile avec toux sévère et douleur thoracique droite. Opacification hétérogène par consolidation dans le poumon droit moyen et inférieur se projetant à travers l'ombre du sein droit. En l'absence d'études comparatives, la radiographie ne peut pas distinguer si la cause est aiguë ou chronique.",
+        "data": "grilles_generees/html/images/AMBOSS-12-img5-Airspace consolidation (1:2).jpg"
+      },
+      {
+        "title": "Consolidation alvéolaire (2/2)",
+        "description": "Radiographie thoracique (vue latérale). Opacification (superposition verte) se projetant sur la silhouette cardiaque touchant la grande scissure (ligne pointillée noire), qui est légèrement déplacée supérieurement compatible avec une petite composante de perte de volume. Une vue PA a montré que l'anomalie était située du côté droit. L'opacification est compatible avec une consolidation de l'espace aérien dans le lobe moyen droit (ML). En l'absence d'études comparatives, la radiographie ne peut pas distinguer si la cause est aiguë ou chronique. LL : lobe inférieur ; UL : lobe supérieur ; ligne pointillée blanche : petite scissure.",
+        "data": "grilles_generees/html/images/AMBOSS-12-img6-Airspace consolidation (2:2).jpg"
+      },
+      {
+        "title": "Pneumonie du lobe supérieur gauche (1/2)",
+        "description": "Radiographie thoracique (vue PA). Une grande zone d'opacification dans le poumon gauche obscurcit les vaisseaux pulmonaires, le bord cardiaque gauche et le hile gauche. Des bronchogrammes aériens sont visibles, compatibles avec la présence d'une maladie de l'espace aérien. La non-visualisation du hile limite la capacité à évaluer une masse centrale.",
+        "data": "grilles_generees/html/images/AMBOSS-12-img7-Left upper lobe pneumonia 1:2.jpg"
+      },
+      {
+        "title": "Opacité périphérique (bosse de Hampton) par embolie pulmonaire",
+        "description": "Radiographie thoracique (vue PA) d'un patient avec douleur thoracique pleurétique. Une opacité périphérique (bosse de Hampton ; superposition verte) obscurcit la marge adjacente de l'hémidiaphragme droit. Une bosse de Hampton est sous-pleurale et est causée par une hémorragie ou un infarctus pulmonaire. L'apparence est souvent cuniforme ; cependant, elle peut alternativement être en forme de dôme si l'apex est épargné en raison du flux sanguin artériel bronchique collatéral. Le diagnostic différentiel inclut la pneumonie et la malignité. À noter, la plus grande distance entre les processus épineux et le bord médial de la clavicule à droite par rapport à gauche indique que le patient est légèrement tourné vers la droite. Lignes pointillées : marges des clavicules médiales ; Ligne blanche et ellipses : processus épineux.",
+        "data": "grilles_generees/html/images/AMBOSS-12-img8-Peripheral opacity (Hampton hump) from pulmonary embolism.jpg"
+      },
+      {
+        "title": "Embolie pulmonaire",
+        "description": "CT thoracique (avec contraste ; plan axial). De gros thromboemboles (superposition verte) sont visibles comme des défects de remplissage à la bifurcation du tronc pulmonaire (PT) et dans les artères pulmonaires droite et gauche. AO : aorte ; SVC : veine cave supérieure.",
+        "data": "grilles_generees/html/images/AMBOSS-12-img9-Pulmonary embolism.jpg"
+      }
+    ],
+    "scenarioPatienteStandardisee": {
+      "titre": "Scénario pour la patiente standardisée",
+      "nom": "Hazel Porter",
+      "age": "35 ans",
+      "contexte": "Responsable achats consultant aux urgences pour douleur thoracique aiguë post-vol long-courrier",
+      "motifConsultation": {
+        "plaintePrincipale": "Ma poitrine me fait mal.",
+        "autreChose": "J'ai du mal à respirer depuis ce matin."
+      },
+      "consignes": [
+        "Agir comme si vous aviez du mal à respirer (penchez-vous en avant et appuyez-vous sur vos genoux avec vos mains ; faites des pauses en parlant pour reprendre votre souffle).",
+        "Faire semblant d'avoir une douleur thoracique qui empire quand vous inspirez.",
+        "Tousser de temps en temps.",
+        "Quand l'examinateur pousse votre pied droit vers le haut, dire que ça fait mal dans votre mollet droit.",
+        "Faire semblant que ça fait mal quand l'examinateur appuie sur votre mollet droit.",
+        "Vous n'êtes pas au courant de la signification des termes médicaux (ex: échographie) et demandez des clarifications si l'examinateur les utilise.",
+        "Défi : Agir très anxieuse et demander 'C'est vraiment grave, n'est-ce pas ?'"
+      ],
+      "histoireActuelle": {
+        "symptomePrincipal": [
+          "Douleur thoracique gauche début brutal ce matin",
+          "Oppression thoracique + composante pleurétique",
+          "Dyspnée importante associée",
+          "Aggravation à l'inspiration profonde",
+          "Amélioration légère en position assise"
+        ],
+        "symptomesAssocies": [
+          "Toux sèche depuis 1 semaine (rhume au Japon)",
+          "Palpitations depuis ce matin",
+          "Fièvre subjective avec frissons",
+          "Douleur mollet droit",
+          "Œdème des jambes pendant le vol",
+          "Fatigue liée aux voyages"
+        ]
+      },
+      "simulation": {
+        "durantEntretien": [
+          "Dyspnée visible avec pauses respiratoires",
+          "Position penchée en avant",
+          "Toux occasionnelle",
+          "Anxiété manifeste",
+          "Demander clarifications termes médicaux"
+        ],
+        "durantStatus": [
+          "Utilisation muscles respiratoires accessoires",
+          "Douleur à la dorsiflexion pied (Homans)",
+          "Douleur à la palpation mollet droit",
+          "Grimace à l'inspiration profonde",
+          "Tachypnée évidente"
+        ]
+      }
+    },
+    "informationsExpert": {
+      "titre": "Informations de l'expert",
+      "dossierMedical": "Femme de 35 ans avec embolie pulmonaire probable sur TVP post-vol long-courrier. Score de Wells élevé (7.5). Facteurs de risque multiples : contraception orale, tabac 40 PA, immobilisation prolongée. Antécédents familiaux coronariens précoces. Présentation classique : dyspnée aiguë, douleur pleurétique, TVP clinique.",
+      "rolesInterventions": [
+        "L'expert-e intervient si l'étudiant-e fait :",
+        "• ECG : Tachycardie sinusale, aspect S1Q3T3",
+        "• D-dimères : 2850 ng/mL (N < 500)",
+        "• Angio-CT thoracique : Emboles bilatéraux artères segmentaires",
+        "• Doppler MI : TVP fémoro-poplitée droite",
+        "• Troponine T : 0.08 ng/mL (légèrement élevée)",
+        "• Gaz du sang : pH 7.48, PaO2 68 mmHg, PaCO2 28 mmHg"
+      ],
+      "pointsCles": [
+        "Score de Wells > 4 = probabilité élevée EP → angio-CT directe",
+        "Triade de Virchow complète : stase (vol), hypercoagulabilité (CO), lésion endothéliale (tabac)",
+        "S1Q3T3 spécifique mais peu sensible (20% des EP)",
+        "Troponine peut être élevée dans EP (strain VD)",
+        "Anticoagulation urgente si forte suspicion avant confirmation"
+      ],
+      "pieges": [
+        "Se focaliser sur l'IDM vu antécédents familiaux",
+        "Minimiser l'importance du vol long-courrier",
+        "Ne pas examiner les membres inférieurs",
+        "Retarder l'anticoagulation",
+        "Oublier la stratification du risque (sPESI)"
+      ]
+    },
+    "theoriePratique": {
+      "titre": "Théorie pratique concernant la vignette",
+      "sections": [
+        {
+          "titre": "Diagnostic le plus probable",
+          "contenu": "Embolie pulmonaire sur thrombose veineuse profonde post-vol"
+        },
+        {
+          "titre": "Embolie pulmonaire",
+          "contenu": "Obstruction artérielle pulmonaire par matériel thrombotique :",
+          "points": [
+            "Incidence : 60-70/100'000/an, mortalité 7-11% si traitée",
+            "Sources : TVP (90%), thrombus cardiaque, embolie graisseuse/amniotique",
+            "Physiopathologie : augmentation postcharge VD → strain/défaillance VD",
+            "Présentation : dyspnée (80%), douleur pleurétique (50%), toux (20%)",
+            "Stratification risque : sPESI, troponine, échocardiographie",
+            "Mortalité non traitée : 30% (vs 2-8% si anticoagulée)"
+          ]
+        },
+        {
+          "titre": "Score de Wells pour EP",
+          "contenu": "Probabilité clinique pré-test :",
+          "points": [
+            "TVP clinique : 3 points",
+            "EP plus probable qu'autre diagnostic : 3 points",
+            "FC > 100/min : 1.5 points",
+            "Immobilisation/chirurgie < 4 sem : 1.5 points",
+            "ATCD TVP/EP : 1.5 points",
+            "Hémoptysie : 1 point",
+            "Cancer actif : 1 point",
+            "Score > 4 = probabilité élevée (40% EP)"
+          ]
+        },
+        {
+          "titre": "Thrombose veineuse profonde",
+          "contenu": "Formation thrombus dans système veineux profond :",
+          "points": [
+            "Localisation : fémorale/poplitée (50%), iliaque (20%), distale (30%)",
+            "Facteurs risque : triade de Virchow",
+            "Contraception orale : RR × 3-4",
+            "Vol > 4h : RR × 2-3 (> 8h : RR × 4)",
+            "Tabac : synergie avec CO (RR × 8-10)",
+            "Complications : EP (50% TVP proximales), syndrome post-thrombotique"
+          ]
+        },
+        {
+          "titre": "Approche diagnostique EP",
+          "contenu": "Algorithme basé sur probabilité clinique :",
+          "points": [
+            "Probabilité faible : D-dimères → si + : angio-CT",
+            "Probabilité intermédiaire : D-dimères → si + : angio-CT",
+            "Probabilité élevée : angio-CT directe",
+            "D-dimères : VPN 95-98% si probabilité non élevée",
+            "Angio-CT : sensibilité 83-100%, spécificité 89-97%",
+            "Alternative si CT contre-indiquée : scintigraphie V/Q"
+          ]
+        },
+        {
+          "titre": "Prise en charge aiguë EP",
+          "contenu": "Stabilisation et anticoagulation urgente :",
+          "points": [
+            "1. ABC : O2 si SpO2 < 90%, monitoring, VVP",
+            "2. Stratification risque : TA, troponine, BNP, écho",
+            "3. Anticoagulation immédiate si probabilité élevée",
+            "4. HBPM : énoxaparine 1mg/kg SC BID",
+            "5. AOD alternative : rivaroxaban 15mg BID × 21j",
+            "6. Thrombolyse si EP massive (instabilité hémodynamique)"
+          ]
+        },
+        {
+          "titre": "Diagnostic différentiel douleur thoracique aiguë",
+          "contenu": "Approche systématique urgences :",
+          "points": [
+            "Cardiovasculaire : SCA, EP, dissection aortique, péricardite",
+            "Pulmonaire : pneumonie, pneumothorax, pleurésie",
+            "GI : RGO, spasme œsophagien, perforation",
+            "Musculosquelettique : costochondrite, fracture côte",
+            "Psychogène : attaque panique (diagnostic d'exclusion)",
+            "Red flags : début brutal, signes vitaux anormaux, facteurs risque"
+          ]
+        }
+      ],
+      "rappelsTherapeutiques": [
+        "Anticoagulation urgente EP : Énoxaparine 1mg/kg SC BID ou 1.5mg/kg/j",
+        "Alternative : Fondaparinux 7.5mg SC/j (5mg si < 50kg, 10mg si > 100kg)",
+        "AOD : Rivaroxaban 15mg PO BID × 21j puis 20mg/j",
+        "Thrombolyse (EP massive) : Alteplase 100mg IV/2h",
+        "Durée anticoagulation : 3-6 mois si facteur transitoire, indéfinie si idiopathique",
+        "Prophylaxie vol : Bas compression + mobilisation + hydratation",
+        "Arrêt CO définitif + alternative contraception non hormonale"
+      ],
+      "examensComplementaires": [
+        "D-dimères ELISA : Seuil ajusté âge (âge × 10 après 50 ans)",
+        "Angio-CT thoracique : Protocole EP avec bolus contraste synchronisé",
+        "Échocardiographie : Dilatation VD, septum paradoxal, IT, PAPS élevée",
+        "Biomarqueurs : Troponine I/T, BNP/NT-proBNP pour stratification",
+        "Doppler veineux MI : Sensibilité 95% TVP proximale, 60% distale",
+        "Score sPESI : Âge, cancer, IC, FC, TA, SpO2 pour pronostic"
+      ]
+    }
+  }
+}

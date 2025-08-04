@@ -1,0 +1,446 @@
+{
+  "title": "Hémoptysie",
+  "context": {
+    "setting": "Service d'urgence",
+    "patient": "M. Schmid, 62 ans, ancien fumeur, se présente aux urgences pour toux avec crachats sanglants",
+    "vitals": {
+      "ta": "145/90 mmHg",
+      "fc": "92 bpm",
+      "fr": "22/min",
+      "temperature": "37.8°C",
+      "saturation": "93% en air ambiant"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "title": "Anamnèse",
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction et objectif",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Motif de consultation principal",
+          "patientComment": "Toux avec crachats sanglants depuis 3 jours, quantité croissante"
+        },
+        {
+          "id": "a3",
+          "text": "Caractéristiques détaillées de l'hémoptysie",
+          "details": [
+            "Début et évolution [progressif sur 3 jours]",
+            "Quantité précise [2-3 cuillères à soupe/jour, environ 30-50 ml]",
+            "Aspect du sang [rouge vif, mousseux, mélangé aux crachats]",
+            "Timing [plusieurs fois/jour, surtout le matin]",
+            "Facteurs déclenchants [toux, effort physique]",
+            "Évolution de la quantité [augmentation progressive]",
+            "Épisodes antérieurs [première fois]"
+          ],
+          "patientComment": "Hémoptysie de moyenne abondance, aspect typique",
+          "scoringRule": "≥5 caractéristiques = 2 pts, 3-4 = 1 pt"
+        },
+        {
+          "id": "a4",
+          "text": "Symptômes respiratoires associés",
+          "details": [
+            "Toux chronique [productive depuis 2 mois]",
+            "Caractère des expectorations [purulentes jaunâtres avant hémoptysie]",
+            "Dyspnée [effort modéré, MRC grade 2, aggravée]",
+            "Douleur thoracique [oppression diffuse]",
+            "Sifflements [parfois, surtout nocturnes]",
+            "Orthopnée [non]",
+            "Toux nocturne [oui, réveille parfois]"
+          ],
+          "patientComment": "Tableau de bronchopathie chronique avec aggravation",
+          "scoringRule": "≥5 symptômes explorés = 2 pts, 3-4 = 1 pt"
+        },
+        {
+          "id": "a5",
+          "text": "Symptômes généraux et systémiques",
+          "details": [
+            "Fièvre [fébricule 37.8°C depuis 1 semaine]",
+            "Frissons [occasionnels]",
+            "Sueurs nocturnes [profuses, change de pyjama]",
+            "Perte de poids [5 kg en 2 mois sans régime]",
+            "Asthénie [fatigue majeure, limite les activités]",
+            "Anorexie [perte d'appétit marquée]",
+            "Myalgies/arthralgies [non]"
+          ],
+          "patientComment": "Syndrome B complet évocateur",
+          "scoringRule": "≥5 symptômes = 2 pts, 3-4 = 1 pt"
+        },
+        {
+          "id": "a6",
+          "text": "Antécédents respiratoires",
+          "details": [
+            "BPCO [diagnostiquée il y a 5 ans, stade II]",
+            "Exacerbations fréquentes [2-3/an]",
+            "Hospitalisations pour BPCO [1 fois il y a 2 ans]",
+            "Pneumonies antérieures [1 épisode il y a 3 ans]",
+            "Tuberculose [jamais]",
+            "Asthme [non]",
+            "Pneumothorax [jamais]"
+          ],
+          "patientComment": "BPCO connue avec exacerbations fréquentes",
+          "scoringRule": "≥5 antécédents = 2 pts"
+        },
+        {
+          "id": "a7",
+          "text": "Facteurs de risque et expositions",
+          "details": [
+            "Tabagisme [40 PA (2 paquets/jour × 20 ans)]",
+            "Arrêt tabac [il y a 1 an seulement]",
+            "Cannabis [jamais]",
+            "Exposition professionnelle [poussière de bois 30 ans]",
+            "Amiante [possible en menuiserie ancienne]",
+            "Produits chimiques [vernis, colles]",
+            "Animaux [chat à domicile]",
+            "Voyages récents [aucun]"
+          ],
+          "patientComment": "Multiples facteurs de risque professionnels et tabagiques",
+          "scoringRule": "≥6 facteurs explorés = 2 pts"
+        },
+        {
+          "id": "a8",
+          "text": "Autres antécédents médicaux",
+          "details": [
+            "HTA [traitée depuis 8 ans]",
+            "Diabète [non]",
+            "Cardiopathie [non]",
+            "Insuffisance rénale [non]",
+            "Cancers antérieurs [aucun]",
+            "Maladies auto-immunes [non]",
+            "Chirurgies [appendicectomie dans l'enfance]"
+          ],
+          "patientComment": "HTA comme seule comorbidité"
+        },
+        {
+          "id": "a9",
+          "text": "Traitements actuels",
+          "details": [
+            "Bronchodilatateurs [Spiriva 1×/jour]",
+            "Corticoïdes inhalés [non actuellement]",
+            "β2-mimétiques courte durée [Ventolin si besoin]",
+            "Antihypertenseurs [Lisinopril 10 mg/jour]",
+            "Anticoagulants [aucun]",
+            "AINS [non]",
+            "Oxygénothérapie [non]"
+          ],
+          "patientComment": "Traitement BPCO minimal, pas d'anticoagulant",
+          "scoringRule": "≥5 médicaments explorés = 2 pts"
+        },
+        {
+          "id": "a10",
+          "text": "Antécédents familiaux oncologiques",
+          "details": [
+            "Cancer pulmonaire [père décédé à 65 ans]",
+            "Autres cancers respiratoires [oncle fumeur]",
+            "Cancer du sein [mère]",
+            "Tuberculose familiale [non]",
+            "Maladies génétiques [non connues]"
+          ],
+          "patientComment": "Antécédents familiaux de cancer pulmonaire au 1er degré"
+        },
+        {
+          "id": "a11",
+          "text": "Contexte psychosocial",
+          "details": [
+            "Profession [menuisier retraité depuis 2 ans]",
+            "Situation familiale [marié, 3 enfants]",
+            "Autonomie [complète mais diminuée]",
+            "Anxiété face aux symptômes [très inquiet]",
+            "Support familial [épouse présente et aidante]",
+            "Observance thérapeutique [bonne]"
+          ],
+          "patientComment": "Retraité récent, anxieux, bien entouré"
+        },
+        {
+          "id": "a12",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "binaryOnly": false,
+          "details": [
+            "Anamnèse pneumologique exhaustive et orientée"
+          ],
+          "scoringRule": "Anamnèse excellente = 2 pts, correcte = 1 pt, insuffisante = 0 pt"
+        }
+      ]
+    },
+    "examen": {
+      "title": "Examen clinique",
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "État général et constantes",
+          "details": [
+            "État général [altéré, amaigrissement visible]",
+            "Coloration [pâleur cutanéo-muqueuse]",
+            "Cyanose [discrète, péribuccale]",
+            "Signes de lutte [tirage intercostal léger]",
+            "Hippocratisme digital [début de déformation]",
+            "Œdèmes périphériques [absents]"
+          ],
+          "patientComment": "Altération modérée de l'état général",
+          "scoringRule": "≥4 éléments = 2 pts"
+        },
+        {
+          "id": "e2",
+          "text": "Examen pulmonaire approfondi",
+          "details": [
+            "Inspection thoracique [distension, asymétrie légère]",
+            "Fréquence respiratoire [22/min, polypnée]",
+            "Ampliation thoracique [diminuée bilatéralement]",
+            "Palpation vibrations vocales [symétriques]",
+            "Percussion [hypersonorité diffuse (BPCO)]",
+            "Auscultation MV [diminué aux bases]",
+            "Bruits surajoutés [ronchi diffus, crépitants base droite]"
+          ],
+          "patientComment": "Signes de BPCO + foyer de crépitants",
+          "scoringRule": "≥6 éléments = 2 pts, 4-5 = 1 pt"
+        },
+        {
+          "id": "e3",
+          "text": "Examen cardiovasculaire",
+          "details": [
+            "Bruits du cœur [réguliers, pas de souffle]",
+            "Signes droits [léger éclat B2 pulmonaire]",
+            "Reflux hépato-jugulaire [absent]",
+            "Turgescence jugulaire [normale]",
+            "Pouls périphériques [perçus, symétriques]"
+          ],
+          "patientComment": "Début d'hypertension pulmonaire possible"
+        },
+        {
+          "id": "e4",
+          "text": "Examen ORL complet",
+          "details": [
+            "Cavité buccale [normale, pas de saignement]",
+            "Pharynx [normal, pas d'inflammation]",
+            "Fosses nasales [pas d'épistaxis]",
+            "Sinus [indolores à la pression]",
+            "Dentition [correcte, pas de foyer]"
+          ],
+          "patientComment": "Pas de saignement ORL",
+          "scoringRule": "≥4 zones = 2 pts"
+        },
+        {
+          "id": "e5",
+          "text": "Palpation ganglionnaire systématique",
+          "details": [
+            "Cervicaux [quelques petits ganglions mobiles]",
+            "Sus-claviculaires [ganglion dur 1,5 cm à droite]",
+            "Axillaires [non palpables]",
+            "Inguinaux [non pathologiques]",
+            "Épitrochléens [non palpables]"
+          ],
+          "patientComment": "Adénopathie sus-claviculaire droite suspecte (Troisier)",
+          "scoringRule": "≥4 aires = 2 pts"
+        },
+        {
+          "id": "e6",
+          "text": "Recherche de complications",
+          "details": [
+            "Signes de choc [TA limite, tachycardie]",
+            "Syndrome cave supérieur [absent]",
+            "Syndrome paranéoplasique [à rechercher]",
+            "Métastases cutanées [non visibles]",
+            "Douleurs osseuses [niées]"
+          ],
+          "patientComment": "Pas de complication aiguë évidente"
+        },
+        {
+          "id": "e7",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "binaryOnly": false,
+          "details": [
+            "Examen pneumologique complet avec recherche de signes associés"
+          ],
+          "scoringRule": "Examen excellent = 2 pts, correct = 1 pt, insuffisant = 0 pt"
+        }
+      ]
+    },
+    "management": {
+      "title": "Prise en charge",
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic principal suspecté",
+          "patientComment": "Cancer bronchique primitif (terrain, symptômes B, adénopathie)",
+          "scoringRule": "Diagnostic prioritaire approprié = 2 pts"
+        },
+        {
+          "id": "m2",
+          "text": "Diagnostics différentiels complets",
+          "ddSection": {
+            "categories": [
+              {
+                "name": "Causes néoplasiques",
+                "items": [
+                  "Carcinome bronchique primitif (épidermoïde probable)",
+                  "Adénocarcinome pulmonaire",
+                  "Carcinome à petites cellules",
+                  "Métastases pulmonaires",
+                  "Lymphome pulmonaire"
+                ]
+              },
+              {
+                "name": "Causes infectieuses",
+                "items": [
+                  "Tuberculose pulmonaire active",
+                  "Pneumonie bactérienne nécrosante",
+                  "Abcès pulmonaire",
+                  "Aspergillose broncho-pulmonaire",
+                  "Exacerbation infectieuse de BPCO"
+                ]
+              },
+              {
+                "name": "Causes vasculaires et autres",
+                "items": [
+                  "Embolie pulmonaire avec infarctus",
+                  "Bronchiectasies surinfectées",
+                  "Vascularite (Granulomatose de Wegener)",
+                  "Syndrome de Goodpasture",
+                  "Malformation artério-veineuse"
+                ]
+              }
+            ]
+          },
+          "scoringRule": "≥10 diagnostics dans 3 catégories = 2 pts, 5-9 = 1 pt"
+        },
+        {
+          "id": "m3",
+          "text": "Examens biologiques urgents",
+          "details": [
+            "NFS complète, plaquettes (anémie, polyglobulie)",
+            "Ionogramme, urée, créatinine",
+            "Bilan hépatique complet",
+            "CRP, VS (syndrome inflammatoire)",
+            "TP, TCA, fibrinogène",
+            "Gazométrie artérielle",
+            "D-dimères si suspicion EP"
+          ],
+          "patientComment": "Bilan complet avec gazométrie",
+          "scoringRule": "≥6 examens = 2 pts"
+        },
+        {
+          "id": "m4",
+          "text": "Imagerie thoracique",
+          "details": [
+            "Radiographie thorax face + profil en urgence",
+            "Scanner thoracique avec injection",
+            "Fenêtres parenchymateuses et médiastinales",
+            "Recherche d'adénopathies médiastinales",
+            "Angio-scanner si suspicion EP",
+            "Extension abdominale haute (surrénales, foie)"
+          ],
+          "patientComment": "Imagerie complète pour bilan d'extension",
+          "scoringRule": "≥4 éléments = 2 pts"
+        },
+        {
+          "id": "m5",
+          "text": "Examens microbiologiques et cytologiques",
+          "details": [
+            "Examen direct expectoration + culture",
+            "Recherche BAAR sur 3 prélèvements",
+            "PCR tuberculose si urgent",
+            "Cytologie expectoration (3 échantillons)",
+            "Recherche Aspergillus",
+            "Hémocultures × 2 si fièvre",
+            "Antigénurie pneumocoque/légionelle"
+          ],
+          "patientComment": "Recherche infectieuse et cytologique complète",
+          "scoringRule": "≥5 examens = 2 pts"
+        },
+        {
+          "id": "m6",
+          "text": "Explorations pneumologiques spécialisées",
+          "details": [
+            "Bronchoscopie urgente (< 48h)",
+            "Lavage broncho-alvéolaire",
+            "Biopsies bronchiques étagées",
+            "Brossage bronchique",
+            "Biopsie ganglionnaire EBUS si adénopathies",
+            "Ponction transpariétale si lésion périphérique"
+          ],
+          "patientComment": "Confirmation histologique indispensable",
+          "scoringRule": "≥4 procédures = 2 pts"
+        },
+        {
+          "id": "m7",
+          "text": "Prise en charge thérapeutique immédiate",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Stabilisation et surveillance",
+                "content": "• Hospitalisation en pneumologie\n• Position demi-assise\n• Oxygénothérapie pour SpO2 > 94%\n• Voie veineuse, bilan sanguin\n• Monitoring continu (scope, SpO2)\n• Crachoir gradué pour quantifier"
+              },
+              {
+                "title": "Traitement symptomatique",
+                "content": "• Antitussifs codéinés si toux majeure\n• Anxiolytique léger si anxiété\n• Antipyrétique si fièvre\n• Réhydratation IV prudente\n• Kinésithérapie respiratoire douce\n• Éviter anticoagulants/AINS"
+              },
+              {
+                "title": "Traitement spécifique selon étiologie",
+                "content": "• Si infection: antibiothérapie probabiliste\n• Si tuberculose: isolement + quadrithérapie\n• Si cancer confirmé: RCP oncologique urgente\n• Si EP: anticoagulation après bilan\n• Transfusion si Hb < 7 g/dl"
+              }
+            ]
+          },
+          "scoringRule": "Plan thérapeutique structuré = 2 pts"
+        },
+        {
+          "id": "m8",
+          "text": "Critères de gravité et orientation",
+          "details": [
+            "Hospitalisation systématique (hémoptysie + terrain)",
+            "Soins intensifs si hémoptysie > 200 ml/24h",
+            "Embolisation artérielle si massive",
+            "Chirurgie d'hémostase en dernier recours",
+            "Consultation oncologie si cancer",
+            "Isolement respiratoire si tuberculose"
+          ],
+          "patientComment": "Hospitalisation en pneumologie requise",
+          "scoringRule": "≥4 critères = 2 pts"
+        },
+        {
+          "id": "m9",
+          "text": "Information et soutien",
+          "details": [
+            "Expliquer la démarche sans alarmer",
+            "Préparer à la bronchoscopie",
+            "Évoquer les diagnostics possibles",
+            "Proposer soutien psychologique",
+            "Impliquer famille avec accord",
+            "Aide sevrage tabagique définitif",
+            "Coordonnées associations patients"
+          ],
+          "patientComment": "Accompagnement global du patient anxieux",
+          "scoringRule": "≥5 mesures = 2 pts"
+        },
+        {
+          "id": "m10",
+          "text": "Suivi et coordination",
+          "details": [
+            "RDV pneumologie dans 48h post-sortie",
+            "Résultats anatomopathologie en urgence",
+            "RCP oncologique si cancer",
+            "Déclaration obligatoire si tuberculose",
+            "Suivi psycho-social",
+            "Plan de soins coordonné"
+          ],
+          "patientComment": "Coordination multidisciplinaire essentielle"
+        },
+        {
+          "id": "m11",
+          "text": "Évaluation globale de la prise en charge",
+          "binaryOnly": false,
+          "details": [
+            "PEC pneumologique urgente et complète"
+          ],
+          "scoringRule": "PEC excellente = 2 pts, correcte = 1 pt, insuffisante = 0 pt"
+        }
+      ]
+    }
+  }
+}

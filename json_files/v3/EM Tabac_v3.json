@@ -1,0 +1,447 @@
+{
+  "title": "Entretien motivationnel",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Homme de 42 ans se présente chez son médecin généraliste pour un contrôle de routine et souhaite discuter de l'arrêt du tabac",
+    "vitals": {
+      "ta": "128/82 mmHg",
+      "fc": "76 bpm",
+      "fr": "16/min",
+      "temperature": "36.8°C",
+      "satO2": "97%"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction et objectif de la consultation",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Question ouverte d'introduction → Exploration ambivalence",
+          "patientComment": "Je suis venu pour un contrôle de routine, mais j'aimerais peut-être discuter de l'arrêt du tabac",
+          "binaryOnly": true
+        },
+        {
+          "id": "a3",
+          "text": "Exploration approfondie de la dépendance (test de Fagerström)",
+          "details": [
+            "Première cigarette après réveil [<5min = 3pts]",
+            "Difficulté ne pas fumer lieux interdits [0-1pt]",
+            "Cigarette la plus importante [matin = 1pt]",
+            "Nombre cigarettes/jour [20 = 2pts]",
+            "Fume plus le matin [oui = 1pt]",
+            "Fume même si malade [oui = 1pt]",
+            "Score total Fagerström [/10]",
+            "Durée tabagisme [26 ans] → 26 PA"
+          ],
+          "scoringRule": "Score complet calculé = 2 pts, partiel = 1 pt, absent = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a4",
+          "text": "Histoire des tentatives d'arrêt (STAR)",
+          "details": [
+            "Set quit date [dates des 3 tentatives]",
+            "Tell family/friends [support social?]",
+            "Anticipate challenges [symptômes vécus]",
+            "Remove cigarettes [environnement préparé?]",
+            "Durée maximale abstinence [1 semaine]",
+            "Facteurs de rechute identifiés [stress, social]",
+            "Symptômes sevrage vécus [nervosité ++]",
+            "Apprentissages des échecs [besoin aide]"
+          ],
+          "scoringRule": "≥6 éléments explorés = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a5",
+          "text": "Évaluation du stade de changement (Prochaska)",
+          "details": [
+            "Pré-contemplation [non - veut discuter]",
+            "Contemplation [OUI - ambivalent 7/10]",
+            "Préparation [non - pas de date]",
+            "Action [non actuellement]",
+            "Maintien [non applicable]",
+            "Rechute [oui - 3 fois]",
+            "Motivations intrinsèques explorées",
+            "Motivations extrinsèques identifiées"
+          ],
+          "scoringRule": "Stade correctement identifié = 2 pts, partiel = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a6",
+          "text": "Balance décisionnelle (avantages/inconvénients)",
+          "details": [
+            "AVANTAGES cigarette: social, détente, café",
+            "AVANTAGES arrêt: santé, endurance, enfants",
+            "INCONVÉNIENTS cigarette: toux, coût, père décédé",
+            "INCONVÉNIENTS arrêt: isolement, poids, stress",
+            "Balance actuelle [légèrement pro-arrêt]",
+            "Discordance cognitive explorée",
+            "Valeurs personnelles clarifiées"
+          ],
+          "scoringRule": "Balance complète = 2 pts, partielle = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a7",
+          "text": "Exploration des barrières spécifiques",
+          "details": [
+            "Barrière sociale [amis + épouse fument]",
+            "Barrière émotionnelle [peur isolement]",
+            "Barrière comportementale [rituels ancrés]",
+            "Barrière cognitive [plaisir perçu]",
+            "Barrière physiologique [dépendance forte]",
+            "Barrière environnementale [tabac accessible]",
+            "Auto-efficacité évaluée [modérée 7/10]"
+          ],
+          "scoringRule": "≥5 barrières = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a8",
+          "text": "Comorbidités et facteurs de risque cardiovasculaire",
+          "details": [
+            "HTA/diabète/dyslipidémie [non actuellement]",
+            "Antécédent familial cancer poumon [père!]",
+            "Symptômes respiratoires [toux matinale]",
+            "Impact performance physique [endurance ↓]",
+            "Risque CV global à calculer (SCORE2)",
+            "Autres FDR CV [sédentarité bureau]",
+            "Consommation alcool associée [soir/WE]"
+          ],
+          "scoringRule": "≥5 facteurs évalués = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a9",
+          "text": "Environnement tabagique et soutien social",
+          "details": [
+            "Conjoint fumeur [épouse fume aussi]",
+            "Tabagisme domicile [balcon, pas toujours]",
+            "Exposition enfants [passive parfois]",
+            "Collègues fumeurs [probable]",
+            "Réseau soutien potentiel [à construire]",
+            "Pression sociale perçue [forte]",
+            "Modèles non-fumeurs [à identifier]"
+          ],
+          "scoringRule": "≥5 éléments = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a10",
+          "text": "Évaluation santé mentale et stratégies coping",
+          "details": [
+            "Anxiété/stress actuel [employé bureau stressé]",
+            "Dépression screening [non évoquée]",
+            "Stratégies gestion stress [cigarette++]",
+            "Autres addictions [alcool modéré]",
+            "Activités plaisir alternatives [musculation 2×/sem]",
+            "Ressources psychologiques [à explorer]",
+            "Motivation intrinsèque [santé, enfants]"
+          ],
+          "scoringRule": "≥5 aspects = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a11",
+          "text": "Attentes et préférences thérapeutiques",
+          "details": [
+            "Méthode souhaitée [hypnose évoquée]",
+            "Connaissances substituts nicotiniques [à évaluer]",
+            "Craintes médicaments [non exprimées]",
+            "Expériences antérieures aides [aucune]",
+            "Préférence individuel/groupe [à clarifier]",
+            "Budget disponible [non abordé]",
+            "Timing souhaité [pas urgent]"
+          ],
+          "scoringRule": "≥5 préférences = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a12",
+          "text": "Évaluation globale de la qualité de l'anamnèse motivationnelle",
+          "details": [
+            "Approche centrée patient",
+            "Ambivalence explorée sans jugement",
+            "Stade changement identifié",
+            "Balance décisionnelle établie",
+            "Empathie et partenariat démontrés"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Examen cardiovasculaire ciblé tabac",
+          "details": [
+            "TA et FC [128/82, 76 bpm]",
+            "Auscultation cardiaque [B1-B2 normaux?]",
+            "Souffles vasculaires [carotides, fémorales]",
+            "Pouls périphériques [symétriques?]",
+            "Temps recoloration capillaire [<2s?]",
+            "Œdèmes MI [non]"
+          ],
+          "scoringRule": "≥5 éléments = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e2",
+          "text": "Examen respiratoire approfondi",
+          "details": [
+            "FR et amplitude [16/min normale]",
+            "Auscultation 6 points bilatérale",
+            "Murmure vésiculaire [symétrique?]",
+            "Bruits surajoutés [ronchi? sibilants?]",
+            "Percussion thoracique [sonorité normale?]",
+            "Peak flow si disponible"
+          ],
+          "scoringRule": "≥5 examens = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e3",
+          "text": "Examen ORL et buccal complet",
+          "details": [
+            "Coloration dents/gencives [tabagique?]",
+            "État parodontal [gingivite?]",
+            "Muqueuse buccale [leucoplasie?]",
+            "Langue [aspect, mobilité]",
+            "Pharynx postérieur [érythème?]",
+            "Haleine tabagique [notable?]"
+          ],
+          "scoringRule": "≥5 zones = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e4",
+          "text": "Mesure CO expiré et interprétation",
+          "details": [
+            "Explication test au patient",
+            "Technique mesure correcte",
+            "Valeur obtenue [>10 ppm fumeur]",
+            "Comparaison valeurs non-fumeurs",
+            "Utilisation pédagogique résultat",
+            "Motivation par feedback objectif"
+          ],
+          "scoringRule": "Test réalisé correctement = 2 pts, partiel = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e5",
+          "text": "Évaluation état général et signes tabagisme",
+          "details": [
+            "IMC calculé [poids/taille²]",
+            "Teint/coloration cutanée [grisâtre?]",
+            "Rides péribuccales prématurées",
+            "Coloration ongles/doigts [nicotine?]",
+            "Odeur tabac vêtements/cheveux"
+          ],
+          "scoringRule": "≥4 signes = 2 pts, 2-3 = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e6",
+          "text": "Dépistages recommandés fumeurs",
+          "details": [
+            "Proposition spirométrie [VEMS/CVF]",
+            "AAA si >65 ans ou 50+ si FDR",
+            "AOMI (IPS) si symptômes",
+            "Discussion dépistage poumon (55-80 ans)"
+          ],
+          "scoringRule": "≥3 dépistages = 2 pts, 2 = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e7",
+          "text": "Documentation et scores",
+          "details": [
+            "Score Fagerström documenté",
+            "Risque CV calculé (SCORE2)",
+            "PA notés dans dossier",
+            "Stade motivation noté"
+          ],
+          "scoringRule": "≥3 scores = 2 pts, 2 = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e8",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "details": [
+            "Examen cardiovasculaire complet",
+            "Recherche complications tabac",
+            "CO expiré mesuré",
+            "Dépistages proposés",
+            "Documentation adéquate"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Application modèle 5A : ASSESS",
+          "details": [
+            "Ask: tabagisme confirmé [20 cig/j]",
+            "Assess readiness: contemplation [7/10]",
+            "Assess dependence: Fagerström élevé",
+            "Assess barriers: multiples identifiées",
+            "Assess supports: épouse fumeuse",
+            "Documentation claire stade"
+          ],
+          "scoringRule": "5A complet = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m2",
+          "text": "ADVISE adapté au stade contemplation",
+          "details": [
+            "Message clair, ferme, personnalisé",
+            "Lien avec antécédent père [cancer poumon]",
+            "Bénéfices pour enfants soulignés",
+            "Amélioration endurance promise",
+            "Économies financières calculées",
+            "Respect ambivalence actuelle"
+          ],
+          "scoringRule": "≥5 éléments = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m3",
+          "text": "Techniques entretien motivationnel (OARS)",
+          "details": [
+            "Open questions: ambivalence explorée",
+            "Affirmation: efforts reconnus",
+            "Reflection: émotions reflétées",
+            "Summary: résumé empathique",
+            "Éviter réflexe correcteur",
+            "Développer discordance",
+            "Rouler avec résistance"
+          ],
+          "scoringRule": "≥5 techniques = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m4",
+          "text": "AGREE sur objectifs adaptés au stade",
+          "details": [
+            "Pas de date arrêt imposée [contemplation]",
+            "Objectif: augmenter motivation",
+            "Réduction envisageable d'abord",
+            "Journal tabagique proposé",
+            "Identifier triggers personnels",
+            "Préparer environnement progressivement"
+          ],
+          "scoringRule": "Objectifs adaptés = 2 pts, partiels = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m5",
+          "text": "ASSIST : Options thérapeutiques présentées",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Approches comportementales",
+                "content": "• Entretiens motivationnels suivis\n• Thérapie cognitive-comportementale\n• Ligne stop-tabac: 0848 000 181\n• Apps mobiles (Stop-tabac.ch)\n• Groupes de soutien locaux\n• Hypnose si intérêt maintenu"
+              },
+              {
+                "title": "Substituts nicotiniques (TSN)",
+                "content": "• Patches 21mg/24h si >10 cig/j\n• Gommes 4mg pour craving\n• Combinaison patch + forme orale\n• Spray buccal action rapide\n• Inhalateur si gestuelle importante\n• Durée 8-12 semaines minimum"
+              },
+              {
+                "title": "Médicaments sur ordonnance",
+                "content": "• Varénicline (Champix): agoniste partiel\n• Bupropion (Zyban): si dépression associée\n• Commencer 1-2 sem avant arrêt\n• Surveillance effets secondaires\n• Contre-indications à vérifier\n• Remboursement partiel possible"
+              }
+            ]
+          },
+          "scoringRule": "3 catégories présentées = 2 pts, 2 = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m6",
+          "text": "Stratégies spécifiques barrières identifiées",
+          "details": [
+            "Épouse fumeuse → arrêt couple proposé",
+            "Rituels café → changement routine",
+            "Stress travail → relaxation/sport",
+            "Peur poids → diététicien préventif",
+            "Social fumeurs → activités alternatives",
+            "Renforcement activité physique existante"
+          ],
+          "scoringRule": "≥5 stratégies = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m7",
+          "text": "ARRANGE : Suivi adapté au stade",
+          "details": [
+            "RDV dans 1-2 mois [pas 6 mois!]",
+            "Contact téléphonique possible avant",
+            "Documentation remise [brochures]",
+            "Sites web recommandés notés",
+            "Porte ouverte si motivation ↑",
+            "Prescription TSN anticipée possible"
+          ],
+          "scoringRule": "≥5 éléments suivi = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m8",
+          "text": "Communication empathique et partenariat",
+          "details": [
+            "Validation ambivalence normale",
+            "Respect autonomie patient",
+            "Évitement confrontation",
+            "Renforcement auto-efficacité",
+            "Hope instillé (père exemple négatif)",
+            "Engagement continuer ensemble"
+          ],
+          "scoringRule": "≥5 éléments = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m9",
+          "text": "Prévention et promotion santé globale",
+          "details": [
+            "Activité physique renforcée",
+            "Alimentation équilibrée anticipée",
+            "Gestion stress sans tabac",
+            "Modération alcool associé",
+            "Dépistages âge recommandés",
+            "Vaccination grippe/pneumocoque"
+          ],
+          "scoringRule": "≥4 mesures = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m10",
+          "text": "Évaluation globale de la qualité de la prise en charge motivationnelle",
+          "details": [
+            "5A correctement appliqués",
+            "Stade changement respecté",
+            "Techniques EM utilisées",
+            "Options thérapeutiques présentées",
+            "Suivi approprié planifié"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        }
+      ]
+    }
+  }
+}

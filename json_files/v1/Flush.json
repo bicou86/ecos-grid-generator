@@ -1,0 +1,324 @@
+{
+  "title": "Flush",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Anna Hibelig, 47 ans, consulte pour des bouffées de chaleur",
+    "vitals": {
+      "ta": "164/95 mmHg",
+      "fc": "70 bpm"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction et objectif",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Évolution temporelle des symptômes",
+          "binaryOnly": false,
+          "details": [
+            "Fréquence [quotidienne]",
+            "Depuis quand [6 semaines]",
+            "Durée [30 minutes]"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Facteurs déclenchants",
+          "binaryOnly": false,
+          "details": [
+            "Excitation [aucune]",
+            "Alcool [aucun]"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Modifications cutanées",
+          "binaryOnly": false,
+          "details": [
+            "[Tête rouge, sinon pâle, mains froides]",
+            "Rougeur/démangeaisons [oui]"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Sueurs / bouffées de chaleur",
+          "binaryOnly": false,
+          "details": [
+            "[Forte transpiration]"
+          ]
+        },
+        {
+          "id": "a6",
+          "text": "Faiblesse physique",
+          "binaryOnly": false,
+          "details": [
+            "[Aucune]"
+          ]
+        },
+        {
+          "id": "a7",
+          "text": "Agitation interne",
+          "binaryOnly": false,
+          "details": [
+            "[Forte anxiété avec tremblements]"
+          ]
+        },
+        {
+          "id": "a8",
+          "text": "Troubles gastro-intestinaux",
+          "binaryOnly": false,
+          "details": [
+            "Diarrhée [non]",
+            "Nausées [oui]",
+            "Crampes abdominales [non]",
+            "[Constipation]"
+          ]
+        },
+        {
+          "id": "a9",
+          "text": "Symptômes respiratoires",
+          "binaryOnly": false,
+          "details": [
+            "Dyspnée [aucune]",
+            "Toux [aucune]"
+          ]
+        },
+        {
+          "id": "a10",
+          "text": "Symptômes cardiovasculaires",
+          "binaryOnly": false,
+          "details": [
+            "[Tachycardie/palpitations]"
+          ]
+        },
+        {
+          "id": "a11",
+          "text": "Céphalées",
+          "binaryOnly": false,
+          "details": [
+            "[Légères céphalées]"
+          ]
+        },
+        {
+          "id": "a12",
+          "text": "Symptômes B",
+          "binaryOnly": false,
+          "details": [
+            "Perte de poids [5 kg en 6 mois]",
+            "Sueurs nocturnes [non]",
+            "Fièvre [non]"
+          ]
+        },
+        {
+          "id": "a13",
+          "text": "Symptômes urinaires",
+          "binaryOnly": false,
+          "details": [
+            "Nycturie [aucune]",
+            "Polyurie [aucune]"
+          ]
+        },
+        {
+          "id": "a14",
+          "text": "Intolérance à la chaleur / modifications oculaires",
+          "binaryOnly": false
+        },
+        {
+          "id": "a15",
+          "text": "Statut ménopausique",
+          "binaryOnly": false,
+          "details": [
+            "[Saignements irréguliers mais conservés]"
+          ]
+        },
+        {
+          "id": "a16",
+          "text": "Antécédents médicaux / interventions",
+          "binaryOnly": false,
+          "details": [
+            "Cardiovasculaire [à préciser]",
+            "Thyroïde/rein [à préciser]",
+            "Diabète [à préciser]",
+            "Cancer [à préciser]"
+          ]
+        },
+        {
+          "id": "a17",
+          "text": "Substances toxiques",
+          "binaryOnly": false,
+          "details": [
+            "[1-2 verres de vin le week-end]"
+          ]
+        },
+        {
+          "id": "a18",
+          "text": "Allergies",
+          "binaryOnly": false,
+          "details": [
+            "[Acariens]"
+          ]
+        },
+        {
+          "id": "a19",
+          "text": "Médicaments",
+          "binaryOnly": false,
+          "details": [
+            "[Aucun]"
+          ]
+        },
+        {
+          "id": "a20",
+          "text": "Antécédents familiaux",
+          "binaryOnly": false,
+          "details": [
+            "[Frère décédé d'un carcinome rénal]"
+          ]
+        },
+        {
+          "id": "a21",
+          "text": "Anamnèse sociale",
+          "binaryOnly": false
+        },
+        {
+          "id": "a22",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "binaryOnly": false,
+          "details": [
+            "Anamnèse générale ciblée et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Pression artérielle / pouls",
+          "binaryOnly": false,
+          "details": [
+            "164/95 mmHg, 70/min"
+          ]
+        },
+        {
+          "id": "e2",
+          "text": "Auscultation cardiaque",
+          "binaryOnly": false,
+          "details": [
+            "[Normal]"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Auscultation pulmonaire",
+          "binaryOnly": false,
+          "details": [
+            "[Normal]"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Modifications cutanées",
+          "binaryOnly": false,
+          "details": [
+            "[Aucune]"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Abdomen - hépatomégalie/splénomégalie",
+          "binaryOnly": false,
+          "details": [
+            "[Aucune]"
+          ]
+        },
+        {
+          "id": "e6",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "binaryOnly": false,
+          "details": [
+            "Status général ciblé et bien conduit"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic principal suspecté",
+          "binaryOnly": false,
+          "details": [
+            "Phéochromocytome"
+          ]
+        },
+        {
+          "id": "m2",
+          "text": "Diagnostics différentiels",
+          "binaryOnly": false,
+          "details": [
+            "Ménopause",
+            "Médicamenteux",
+            "Syndrome carcinoïde",
+            "Polyglobulie",
+            "Abus d'alcool chronique",
+            "Syndrome de Cushing",
+            "Diabète sucré",
+            "Hypertension essentielle",
+            "Rosacée",
+            "Lupus érythémateux",
+            "Dermatomyosite",
+            "Sténose/insuffisance mitrale",
+            "Œdème pulmonaire",
+            "Fièvre"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Examens complémentaires proposés",
+          "binaryOnly": false,
+          "details": [
+            "Laboratoire (FSC, TSH, VS/CRP)",
+            "Urine (catécholamines, acide hydroxylindolacétique)",
+            "ECG",
+            "US abdominale"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Rassurer le patient",
+          "binaryOnly": false,
+          "details": [
+            "Gestion de l'anxiété concernant le cancer rénal familial"
+          ]
+        },
+        {
+          "id": "m5",
+          "text": "Orientation si nécessaire",
+          "binaryOnly": false,
+          "details": [
+            "Transfert hospitalier si indiqué"
+          ]
+        },
+        {
+          "id": "m6",
+          "text": "Évaluation globale de la qualité de la prise en charge",
+          "binaryOnly": false,
+          "details": [
+            "Prise en charge générale cohérente et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    }
+  }
+}

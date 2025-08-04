@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Acouphènes - Grille ECOS</title>
+<style>
+body { font-family: Arial, sans-serif; margin: 20px; background-color: #f5f5f5; }
+.container { max-width: 1200px; margin: 0 auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); }
+.header { background: #2c5aa0; color: white; padding: 15px; margin: -20px -20px 20px -20px; border-radius: 8px 8px 0 0; }
+.context-info { background: rgba(255, 255, 255, 0.95); padding: 15px; border-radius: 8px; margin-bottom: 15px; }
+.context-setting { font-size: 1.1em; font-weight: bold; color: #333; margin-bottom: 8px; }
+.context-patient { color: #555; line-height: 1.4; }
+.section { margin-bottom: 30px; border: 2px solid #ddd; border-radius: 8px; overflow: hidden; background-color: #ffffff; }
+.section-header { background: #f8f9fa; padding: 15px; font-weight: bold; font-size: 18px; border-bottom: 1px solid #ddd; display: flex; justify-content: space-between; align-items: center; }
+.section-content { padding: 15px; background-color: #ffffff; }
+.header-row { display: grid; grid-template-columns: 2fr 80px 80px 80px 80px; gap: 10px; padding: 10px 0; border-bottom: 2px solid #ddd; font-weight: bold; text-align: center; color: #333333; }
+.header-row div:first-child { text-align: left; }
+.criteria-row { display: grid; grid-template-columns: 2fr 80px 80px 80px 80px; gap: 10px; align-items: start; padding: 15px 0 15px 5px; border-bottom: 1px solid #eeeeee; }
+.criteria-text { font-weight: 500; }
+.sub-criteria { font-size: 0.9em; color: #666; margin-top: 5px; padding-left: 18px; line-height: 1.2; }
+.checkbox-group { text-align: center; }
+.points-display { text-align: center; font-weight: bold; color: #2c5aa0; font-size: 18px; }
+input[type="radio"] { cursor: pointer; transform: scale(1.2); }
+.score { font-weight: bold; color: hsl(216, 57%, 40%); font-size: 18px; }
+.vital-signs { margin-top: 10px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px; font-size: 0.9em; }
+.vital-sign { text-align: center; background: #416caa; padding: 10px; border-radius: 5px; }
+.vital-sign-label { color: #eeeeee; }
+.vital-sign-value { color: white; margin-top: 2px; }
+.communication-section { display: grid; grid-template-columns: 2fr 80px 80px 80px 80px 80px; gap: 10px; align-items: start; padding: 15px 0 15px 5px; border-bottom: 1px solid #eee; }
+.scale-header { display: grid; grid-template-columns: 2fr 80px 80px 80px 80px 80px; gap: 10px; font-weight: bold; text-align: center; margin-bottom: 10px; padding-bottom: 10px; border-bottom: 2px solid #ddd; }
+.scale-header div:first-child { text-align: left; }
+.communication-text { font-weight: 500; }
+.communication-desc { font-size: 0.85em; color: #666; margin-top: 5px; font-style: italic; }
+.total-sections { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 30px; }
+.total-section { display: flex; flex-direction: column; justify-content: space-between; text-align: center; background: #f0f8ff; border: 1px solid #ddd; border-radius: 8px; }
+.total-label { background: #f8f9fa; padding: 5px; font-weight: bold; font-size: 20px; border-bottom: 1px solid #ddd; }
+.total-body { flex: 1; display: flex; align-items: center; justify-content: center; padding: 5px; }
+.total-score, .total-note-globale { font-size: 56px; font-weight: bold; line-height: 1; }
+.grade-scale { margin-top: 20px; padding: 15px; background: #f8f9fa; border-radius: 8px; }
+.dd-section, .therapy-section { margin-top: 10px; padding: 10px; background: #f0f4f8; border-radius: 5px; font-size: 0.9em; }
+.dd-category, .therapy-category { margin-bottom: 10px; }
+.dd-category-name, .therapy-title { font-weight: bold; color: #2c5aa0; margin-bottom: 5px; }
+.dd-items, .therapy-content { margin-left: 15px; line-height: 1.4; white-space: pre-wrap; }
+.dd-item { margin-bottom: 3px; }
+@media print {
+  body { margin: 10mm; background: white; }
+  .container { box-shadow: none; max-width: none; }
+  .section { page-break-inside: avoid; }
+  @page { size: A4; margin: 10mm 9mm 10mm 10mm; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="header">
+<h1>Grille d'évaluation ECOS - Acouphènes</h1>
+<div class="context-info">
+<div class="context-setting">📍 Cabinet ORL</div>
+<div class="context-patient">👤 M. Dupont, 50 ans, se présente chez l'ORL pour un nouveau problème auriculaire</div>
+</div>
+</div>
+<div class="section">
+<div class="section-header">
+<span>Anamnèse (40%)</span>
+<span class="score">Score : <span id="aScore">0</span>/28</span>
+</div>
+<div class="section-content">
+<div class="header-row">
+<div>Critères</div><div>Oui</div><div>±</div><div>Non</div><div>Points</div>
+</div>
+<div class="criteria-row">
+<div>
+<div class="criteria-text">1. Présentation avec nom, fonction et tâche</div>
+</div>
+<div class="checkbox-group"><input type="radio" name="a1" value="2" onchange="updateScore('a1', this)" /></div>
+<div class="checkbox-group" style="visibility: hidden;"><input type="radio" disabled /></div>
+<div class="checkbox-group"><input type="radio" name="a1" value="0" onchange="updateScore('a1', this)" /></div>
+<div class="points-display" id="points-a1">0</div>
+</div>
+<div class="criteria-row">
+<div>
+<div class="criteria-text">2. Problème actuel</div>
+</div>
+<div class="checkbox-group"><input type="radio" name="a2" value="2" onchange="updateScore('a2', this)" /></div>
+<div class="checkbox-group" style="visibility: hidden;"><input type="radio" disabled /></div>
+<div class="checkbox-group"><input type="radio" name="a2" value="0" onchange="updateScore('a2', this)" /></div>
+<div class="points-display" id="points-a2">0</div>
+</div>
+<div class="criteria-row">
+<div>
+<div class="criteria-text">3. Caractérisation des acouphènes</div>
+<div class="sub-criteria">Apparition temporelle [depuis environ 1 mois]</div>
+<div class="sub-criteria">Évolution [constant, parfois plus fort, parfois plus faible]</div>
+<div class="sub-criteria">Facteurs modulateurs [augmente lors d'effort et de stress]</div>
+<div class="sub-criteria">Type de son [sifflement aigu]</div>
+<div class="sub-criteria">Latéralisation [bilatérale]</div>
+</div>
+<div class="checkbox-group"><input type="radio" name="a3" value="2" onchange="updateScore('a3', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="a3" value="1" onchange="updateScore('a3', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="a3" value="0" onchange="updateScore('a3', this)" /></div>
+<div class="points-display" id="points-a3">0</div>
+</div>
+<div class="criteria-row">
+<div>
+<div class="criteria-text">4. Symptômes ORL associés</div>
+<div class="sub-criteria">Troubles auditifs [possible, doit souvent faire répéter]</div>
+<div class="sub-criteria">Sécrétions auriculaires (cérumen, sang, pus) [non]</div>
+<div class="sub-criteria">Otalgie [non]</div>
+<div class="sub-criteria">Vertiges [parfois - ce son rend tout bizarre !]</div>
+<div class="sub-criteria">Sensation de plénitude auriculaire [non mentionnée]</div>
+</div>
+<div class="checkbox-group"><input type="radio" name="a4" value="2" onchange="updateScore('a4', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="a4" value="1" onchange="updateScore('a4', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="a4" value="0" onchange="updateScore('a4', this)" /></div>
+<div class="points-display" id="points-a4">0</div>
+</div>
+<div class="criteria-row">
+<div>
+<div class="criteria-text">5. Symptômes généraux d'accompagnement</div>
+<div class="sub-criteria">Fièvre [non]</div>
+<div class="sub-criteria">Toux [non]</div>
+<div class="sub-criteria">Rhinite [non]</div>
+<div class="sub-criteria">Nausées/vomissements [non]</div>
+<div class="sub-criteria">Céphalées [non mentionnées]</div>
+</div>
+<div class="checkbox-group"><input type="radio" name="a5" value="2" onchange="updateScore('a5', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="a5" value="1" onchange="updateScore('a5', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="a5" value="0" onchange="updateScore('a5', this)" /></div>
+<div class="points-display" id="points-a5">0</div>
+</div>
+<div class="criteria-row">
+<div>
+<div class="criteria-text">6. Recherche de facteurs déclenchants</div>
+<div class="sub-criteria">Traumatisme acoustique récent</div>
+<div class="sub-criteria">Exposition au bruit</div>
+<div class="sub-criteria">Situations particulières</div>
+</div>
+<div class="checkbox-group"><input type="radio" name="a6" value="2" onchange="updateScore('a6', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="a6" value="1" onchange="updateScore('a6', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="a6" value="0" onchange="updateScore('a6', this)" /></div>
+<div class="points-display" id="points-a6">0</div>
+</div>
+<div class="criteria-row">
+<div>
+<div class="criteria-text">7. Antécédents ORL</div>
+<div class="sub-criteria">Otites à répétition</div>
+<div class="sub-criteria">Chirurgie ORL</div>
+<div class="sub-criteria">Surdité familiale</div>
+</div>
+<div class="checkbox-group"><input type="radio" name="a7" value="2" onchange="updateScore('a7', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="a7" value="1" onchange="updateScore('a7', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="a7" value="0" onchange="updateScore('a7', this)" /></div>
+<div class="points-display" id="points-a7">0</div>
+</div>
+<div class="criteria-row">
+<div>
+<div class="criteria-text">8. Antécédents médicaux généraux</div>
+<div class="sub-criteria">Hypertension artérielle [légèrement élevée]</div>
+<div class="sub-criteria">Diabète [non mentionné]</div>
+<div class="sub-criteria">Maladies cardiovasculaires [non mentionnées]</div>
+<div class="sub-criteria">Troubles neurologiques [non]</div>
+<div class="sub-criteria">Antécédents psychiatriques [burnout traité - va bien maintenant]</div>
+</div>
+<div class="checkbox-group"><input type="radio" name="a8" value="2" onchange="updateScore('a8', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="a8" value="1" onchange="updateScore('a8', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="a8" value="0" onchange="updateScore('a8', this)" /></div>
+<div class="points-display" id="points-a8">0</div>
+</div>
+<div class="criteria-row">
+<div>
+<div class="criteria-text">9. Traumatismes</div>
+<div class="sub-criteria">Traumatisme crânien</div>
+<div class="sub-criteria">Barotraumatisme</div>
+<div class="sub-criteria">Traumatisme cervical</div>
+</div>
+<div class="checkbox-group"><input type="radio" name="a9" value="2" onchange="updateScore('a9', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="a9" value="1" onchange="updateScore('a9', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="a9" value="0" onchange="updateScore('a9', this)" /></div>
+<div class="points-display" id="points-a9">0</div>
+</div>
+<div class="criteria-row">
+<div>
+<div class="criteria-text">10. Anamnèse médicamenteuse</div>
+<div class="sub-criteria">Recherche de médicaments ototoxiques (aminosides, diurétiques de l'anse, aspirine haute dose)</div>
+<div class="sub-criteria">Chimiothérapie</div>
+<div class="sub-criteria">Médicaments actuels</div>
+</div>
+<div class="checkbox-group"><input type="radio" name="a10" value="2" onchange="updateScore('a10', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="a10" value="1" onchange="updateScore('a10', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="a10" value="0" onchange="updateScore('a10', this)" /></div>
+<div class="points-display" id="points-a10">0</div>
+</div>
+<div class="criteria-row">
+<div>
+<div class="criteria-text">11. Anamnèse sociale et professionnelle</div>
+<div class="sub-criteria">Situation familiale [marié - malheureux avec sa femme, 3 enfants adultes]</div>
+<div class="sub-criteria">Profession [facteur]</div>
+<div class="sub-criteria">Exposition professionnelle au bruit [exposition limitée]</div>
+<div class="sub-criteria">Consommation de substances (tabac, alcool, café)</div>
+</div>
+<div class="checkbox-group"><input type="radio" name="a11" value="2" onchange="updateScore('a11', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="a11" value="1" onchange="updateScore('a11', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="a11" value="0" onchange="updateScore('a11', this)" /></div>
+<div class="points-display" id="points-a11">0</div>
+</div>
+<div class="criteria-row">
+<div>
+<div class="criteria-text">12. Anamnèse systémique</div>
+<div class="sub-criteria">Revue des systèmes cardiovasculaire</div>
+<div class="sub-criteria">Revue du système neurologique</div>
+<div class="sub-criteria">Recherche de signes d'alerte</div>
+</div>
+<div class="checkbox-group"><input type="radio" name="a12" value="2" onchange="updateScore('a12', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="a12" value="1" onchange="updateScore('a12', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="a12" value="0" onchange="updateScore('a12', this)" /></div>
+<div class="points-display" id="points-a12">0</div>
+</div>
+<div class="criteria-row">
+<div>
+<div class="criteria-text">13. Impact sur la qualité de vie</div>
+<div class="sub-criteria">Troubles du sommeil</div>
+<div class="sub-criteria">Difficultés de concentration</div>
+<div class="sub-criteria">Retentissement professionnel</div>
+<div class="sub-criteria">Anxiété liée aux acouphènes</div>
+</div>
+<div class="checkbox-group"><input type="radio" name="a13" value="2" onchange="updateScore('a13', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="a13" value="1" onchange="updateScore('a13', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="a13" value="0" onchange="updateScore('a13', this)" /></div>
+<div class="points-display" id="points-a13">0</div>
+</div>
+<div class="criteria-row">
+<div>
+<div class="criteria-text">14. Évaluation globale de la qualité de l'anamnèse</div>
+<div class="sub-criteria">Anamnèse ciblée et systématique bien conduite</div>
+</div>
+<div class="checkbox-group"><input type="radio" name="a14" value="2" onchange="updateScore('a14', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="a14" value="1" onchange="updateScore('a14', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="a14" value="0" onchange="updateScore('a14', this)" /></div>
+<div class="points-display" id="points-a14">0</div>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-header">
+<span>Examen clinique (30%)</span>
+<span class="score">Score : <span id="eScore">0</span>/18</span>
+</div>
+<div class="section-content">
+<div class="header-row">
+<div>Critères</div><div>Oui</div><div>±</div><div>Non</div><div>Points</div>
+</div>
+<div class="criteria-row">
+<div>
+<div class="criteria-text">1. Inspection</div>
+<div class="sub-criteria">Inspection du pavillon auriculaire [normal]</div>
+<div class="sub-criteria">Recherche de cicatrices ou malformations [absentes]</div>
+<div class="sub-criteria">Inspection du conduit auditif externe [normal]</div>
+</div>
+<div class="checkbox-group"><input type="radio" name="e1" value="2" onchange="updateScore('e1', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="e1" value="1" onchange="updateScore('e1', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="e1" value="0" onchange="updateScore('e1', this)" /></div>
+<div class="points-display" id="points-e1">0</div>
+</div>
+<div class="criteria-row">
+<div>
+<div class="criteria-text">2. Palpation</div>
+<div class="sub-criteria">Pression du tragus [non douloureux]</div>
+<div class="sub-criteria">Traction du pavillon [non douloureux]</div>
+<div class="sub-criteria">Palpation mastoïdienne [normale]</div>
+<div class="sub-criteria">Palpation des ganglions cervicaux [normaux]</div>
+</div>
+<div class="checkbox-group"><input type="radio" name="e2" value="2" onchange="updateScore('e2', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="e2" value="1" onchange="updateScore('e2', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="e2" value="0" onchange="updateScore('e2', this)" /></div>
+<div class="points-display" id="points-e2">0</div>
+</div>
+<div class="criteria-row">
+<div>
+<div class="criteria-text">3. Otoscopie bilatérale</div>
+<div class="sub-criteria">Aspect du tympan</div>
+<div class="sub-criteria">Présence de cérumen</div>
+<div class="sub-criteria">Signes inflammatoires</div>
+<div class="sub-criteria">Perforations</div>
+</div>
+<div class="checkbox-group"><input type="radio" name="e3" value="2" onchange="updateScore('e3', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="e3" value="1" onchange="updateScore('e3', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="e3" value="0" onchange="updateScore('e3', this)" /></div>
+<div class="points-display" id="points-e3">0</div>
+</div>
+<div class="criteria-row">
+<div>
+<div class="criteria-text">4. Tests auditifs au diapason</div>
+<div class="sub-criteria">Test de Weber [normal - pas de latéralisation]</div>
+<div class="sub-criteria">Test de Rinne bilatéral [normal - conduction aérienne > osseuse]</div>
+</div>
+<div class="checkbox-group"><input type="radio" name="e4" value="2" onchange="updateScore('e4', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="e4" value="1" onchange="updateScore('e4', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="e4" value="0" onchange="updateScore('e4', this)" /></div>
+<div class="points-display" id="points-e4">0</div>
+</div>
+<div class="criteria-row">
+<div>
+<div class="criteria-text">5. Examen vestibulaire et de l'équilibre</div>
+<div class="sub-criteria">Test de Romberg [légèrement instable]</div>
+<div class="sub-criteria">Recherche de nystagmus [absent]</div>
+<div class="sub-criteria">Test de marche aveugle [normal]</div>
+<div class="sub-criteria">Épreuve des index [normale]</div>
+</div>
+<div class="checkbox-group"><input type="radio" name="e5" value="2" onchange="updateScore('e5', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="e5" value="1" onchange="updateScore('e5', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="e5" value="0" onchange="updateScore('e5', this)" /></div>
+<div class="points-display" id="points-e5">0</div>
+</div>
+<div class="criteria-row">
+<div>
+<div class="criteria-text">6. Examen neurologique ciblé</div>
+<div class="sub-criteria">Nerfs crâniens (notamment V, VII, VIII)</div>
+<div class="sub-criteria">Réflexes</div>
+<div class="sub-criteria">Sensibilité faciale</div>
+<div class="sub-criteria">Force musculaire</div>
+</div>
+<div class="checkbox-group"><input type="radio" name="e6" value="2" onchange="updateScore('e6', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="e6" value="1" onchange="updateScore('e6', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="e6" value="0" onchange="updateScore('e6', this)" /></div>
+<div class="points-display" id="points-e6">0</div>
+</div>
+<div class="criteria-row">
+<div>
+<div class="criteria-text">7. Examen cardiovasculaire</div>
+<div class="sub-criteria">Auscultation cardiaque [normale]</div>
+<div class="sub-criteria">Auscultation carotidienne (souffle) [absente]</div>
+<div class="sub-criteria">Mesure de la tension artérielle [légèrement élevée]</div>
+<div class="sub-criteria">Pouls périphériques [normaux]</div>
+</div>
+<div class="checkbox-group"><input type="radio" name="e7" value="2" onchange="updateScore('e7', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="e7" value="1" onchange="updateScore('e7', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="e7" value="0" onchange="updateScore('e7', this)" /></div>
+<div class="points-display" id="points-e7">0</div>
+</div>
+<div class="criteria-row">
+<div>
+<div class="criteria-text">8. Examen de la cavité buccale et du pharynx</div>
+<div class="sub-criteria">Inspection de l'oropharynx</div>
+<div class="sub-criteria">Palpation de l'articulation temporo-mandibulaire</div>
+<div class="sub-criteria">Dentition</div>
+</div>
+<div class="checkbox-group"><input type="radio" name="e8" value="2" onchange="updateScore('e8', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="e8" value="1" onchange="updateScore('e8', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="e8" value="0" onchange="updateScore('e8', this)" /></div>
+<div class="points-display" id="points-e8">0</div>
+</div>
+<div class="criteria-row">
+<div>
+<div class="criteria-text">9. Évaluation globale de la qualité de l'examen clinique</div>
+<div class="sub-criteria">Examen clinique ciblé et systématique bien conduit</div>
+</div>
+<div class="checkbox-group"><input type="radio" name="e9" value="2" onchange="updateScore('e9', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="e9" value="1" onchange="updateScore('e9', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="e9" value="0" onchange="updateScore('e9', this)" /></div>
+<div class="points-display" id="points-e9">0</div>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-header">
+<span>Management (20%)</span>
+<span class="score">Score : <span id="mScore">0</span>/16</span>
+</div>
+<div class="section-content">
+<div class="header-row">
+<div>Critères</div><div>Oui</div><div>±</div><div>Non</div><div>Points</div>
+</div>
+<div class="criteria-row">
+<div>
+<div class="criteria-text">1. Diagnostic principal</div>
+</div>
+<div class="checkbox-group"><input type="radio" name="m1" value="2" onchange="updateScore('m1', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="m1" value="1" onchange="updateScore('m1', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="m1" value="0" onchange="updateScore('m1', this)" /></div>
+<div class="points-display" id="points-m1">0</div>
+</div>
+<div class="criteria-row">
+<div>
+<div class="criteria-text">2. Diagnostics différentiels</div>
+<div class="dd-section">
+<div class="dd-category">
+<div class="dd-category-name">Diagnostics différentiels à considérer</div>
+<div class="dd-items">
+<div class="dd-item">• Surdité brusque (diagnostic d'exclusion)</div>
+<div class="dd-item">• Hypertension artérielle</div>
+<div class="dd-item">• Neurinome de l'acoustique (schwannome vestibulaire)</div>
+<div class="dd-item">• Maladie de Ménière</div>
+<div class="dd-item">• Otospongiose</div>
+<div class="dd-item">• Presbyacousie avec acouphènes</div>
+<div class="dd-item">• Infections (otite moyenne chronique, labyrinthite)</div>
+<div class="dd-item">• Bouchon de cérumen</div>
+<div class="dd-item">• Causes vasculaires (malformation artério-veineuse)</div>
+<div class="dd-item">• Causes métaboliques (dysthyroïdie)</div>
+<div class="dd-item">• Traumatisme acoustique</div>
+<div class="dd-item">• Médicaments ototoxiques</div>
+</div>
+</div>
+</div>
+</div>
+<div class="checkbox-group"><input type="radio" name="m2" value="2" onchange="updateScore('m2', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="m2" value="1" onchange="updateScore('m2', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="m2" value="0" onchange="updateScore('m2', this)" /></div>
+<div class="points-display" id="points-m2">0</div>
+</div>
+<div class="criteria-row">
+<div>
+<div class="criteria-text">3. Examens complémentaires</div>
+<div class="sub-criteria">Audiométrie tonale et vocale</div>
+<div class="sub-criteria">Tympanométrie</div>
+<div class="sub-criteria">Potentiels évoqués auditifs</div>
+<div class="sub-criteria">Acouphénométrie</div>
+<div class="sub-criteria">IRM cérébrale avec séquences du rocher (si suspicion de neurinome)</div>
+<div class="sub-criteria">Bilan biologique (NFS, TSH, glycémie)</div>
+<div class="sub-criteria">Bilan cardiovasculaire si indiqué</div>
+</div>
+<div class="checkbox-group"><input type="radio" name="m3" value="2" onchange="updateScore('m3', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="m3" value="1" onchange="updateScore('m3', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="m3" value="0" onchange="updateScore('m3', this)" /></div>
+<div class="points-display" id="points-m3">0</div>
+</div>
+<div class="criteria-row">
+<div>
+<div class="criteria-text">4. Prise en charge thérapeutique</div>
+<div class="therapy-section">
+<div class="therapy-category">
+<div class="therapy-title">Traitement aigu (si récent)</div>
+<div class="therapy-content">• Corticothérapie (comme pour surdité brusque)
+• Prednisolone 1 mg/kg/j pendant 7-10 jours
+• Hémodilution (hydroxyéthylamidon)</div>
+</div>
+<div class="therapy-category">
+<div class="therapy-title">Traitement de la cause sous-jacente</div>
+<div class="therapy-content">• Contrôle de l'hypertension artérielle
+• Correction des troubles métaboliques
+• Arrêt des médicaments ototoxiques si possible
+• Extraction du bouchon de cérumen</div>
+</div>
+<div class="therapy-category">
+<div class="therapy-title">Traitement symptomatique chronique</div>
+<div class="therapy-content">• Thérapie cognitivo-comportementale (TCC)
+• Thérapie sonore (masquage, habituation)
+• Appareillage auditif avec générateur de bruit blanc
+• Techniques de relaxation
+• Prise en charge du stress</div>
+</div>
+<div class="therapy-category">
+<div class="therapy-title">Mesures générales</div>
+<div class="therapy-content">• Éviter le silence complet
+• Hygiène de sommeil
+• Réduction de la consommation de caféine
+• Activité physique régulière</div>
+</div>
+</div>
+</div>
+<div class="checkbox-group"><input type="radio" name="m4" value="2" onchange="updateScore('m4', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="m4" value="1" onchange="updateScore('m4', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="m4" value="0" onchange="updateScore('m4', this)" /></div>
+<div class="points-display" id="points-m4">0</div>
+</div>
+<div class="criteria-row">
+<div>
+<div class="criteria-text">5. Information et éducation du patient</div>
+<div class="sub-criteria">Expliquer la nature bénigne dans la majorité des cas</div>
+<div class="sub-criteria">Informer sur la complexité du traitement [le traitement des acouphènes n'est pas simple]</div>
+<div class="sub-criteria">Rassurer sur l'absence de gravité habituelle</div>
+<div class="sub-criteria">Expliquer l'importance de la prise en charge globale</div>
+</div>
+<div class="checkbox-group"><input type="radio" name="m5" value="2" onchange="updateScore('m5', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="m5" value="1" onchange="updateScore('m5', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="m5" value="0" onchange="updateScore('m5', this)" /></div>
+<div class="points-display" id="points-m5">0</div>
+</div>
+<div class="criteria-row">
+<div>
+<div class="criteria-text">6. Suivi et orientation</div>
+<div class="sub-criteria">Contrôle audiométrique régulier</div>
+<div class="sub-criteria">Suivi ORL spécialisé</div>
+<div class="sub-criteria">Orientation psychologique si retentissement important</div>
+<div class="sub-criteria">Groupe de soutien pour patients acouphéniques</div>
+</div>
+<div class="checkbox-group"><input type="radio" name="m6" value="2" onchange="updateScore('m6', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="m6" value="1" onchange="updateScore('m6', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="m6" value="0" onchange="updateScore('m6', this)" /></div>
+<div class="points-display" id="points-m6">0</div>
+</div>
+<div class="criteria-row">
+<div>
+<div class="criteria-text">7. Signes d'alerte nécessitant une prise en charge urgente</div>
+</div>
+<div class="checkbox-group"><input type="radio" name="m7" value="2" onchange="updateScore('m7', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="m7" value="1" onchange="updateScore('m7', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="m7" value="0" onchange="updateScore('m7', this)" /></div>
+<div class="points-display" id="points-m7">0</div>
+</div>
+<div class="criteria-row">
+<div>
+<div class="criteria-text">8. Évaluation globale de la qualité de la prise en charge</div>
+<div class="sub-criteria">Prise en charge complète, structurée et adaptée au patient</div>
+</div>
+<div class="checkbox-group"><input type="radio" name="m8" value="2" onchange="updateScore('m8', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="m8" value="1" onchange="updateScore('m8', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="m8" value="0" onchange="updateScore('m8', this)" /></div>
+<div class="points-display" id="points-m8">0</div>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-header">
+<span>Communication (10%)</span>
+<span class="score">Score : <span id="communicationScore">0</span>/20</span>
+</div>
+<div class="section-content">
+<div class="scale-header">
+<div>Critères</div><div>A</div><div>B</div><div>C</div><div>D</div><div>E</div>
+</div>
+<div class="communication-section">
+<div>
+<div class="communication-text">1. Réponse aux sentiments et besoins du patient</div>
+<div class="communication-desc">Empathie, écoute active, validation des émotions</div>
+</div>
+<div class="checkbox-group"><input type="radio" name="c1" value="A" onchange="updateScore('c1', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="c1" value="B" onchange="updateScore('c1', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="c1" value="C" onchange="updateScore('c1', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="c1" value="D" onchange="updateScore('c1', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="c1" value="E" onchange="updateScore('c1', this)" /></div>
+</div>
+<div class="communication-section">
+<div>
+<div class="communication-text">2. Structure de l'entretien</div>
+<div class="communication-desc">Organisation logique, transitions fluides, gestion du temps</div>
+</div>
+<div class="checkbox-group"><input type="radio" name="c2" value="A" onchange="updateScore('c2', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="c2" value="B" onchange="updateScore('c2', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="c2" value="C" onchange="updateScore('c2', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="c2" value="D" onchange="updateScore('c2', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="c2" value="E" onchange="updateScore('c2', this)" /></div>
+</div>
+<div class="communication-section">
+<div>
+<div class="communication-text">3. Expression verbale</div>
+<div class="communication-desc">Clarté, vocabulaire adapté, vérification de la compréhension</div>
+</div>
+<div class="checkbox-group"><input type="radio" name="c3" value="A" onchange="updateScore('c3', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="c3" value="B" onchange="updateScore('c3', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="c3" value="C" onchange="updateScore('c3', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="c3" value="D" onchange="updateScore('c3', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="c3" value="E" onchange="updateScore('c3', this)" /></div>
+</div>
+<div class="communication-section">
+<div>
+<div class="communication-text">4. Expression non verbale</div>
+<div class="communication-desc">Contact visuel, posture, gestuelle appropriée</div>
+</div>
+<div class="checkbox-group"><input type="radio" name="c4" value="A" onchange="updateScore('c4', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="c4" value="B" onchange="updateScore('c4', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="c4" value="C" onchange="updateScore('c4', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="c4" value="D" onchange="updateScore('c4', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="c4" value="E" onchange="updateScore('c4', this)" /></div>
+</div>
+<div class="communication-section">
+<div>
+<div class="communication-text">5. Évaluation générale de la communication</div>
+<div class="communication-desc">Qualité globale de l'interaction médecin-patient</div>
+</div>
+<div class="checkbox-group"><input type="radio" name="c5" value="A" onchange="updateScore('c5', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="c5" value="B" onchange="updateScore('c5', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="c5" value="C" onchange="updateScore('c5', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="c5" value="D" onchange="updateScore('c5', this)" /></div>
+<div class="checkbox-group"><input type="radio" name="c5" value="E" onchange="updateScore('c5', this)" /></div>
+</div>
+</div>
+</div>
+<div class="total-sections">
+<div class="total-section">
+<div class="total-label">Score Global</div>
+<div class="total-body">
+<div class="total-score" id="totalScore">0%</div>
+</div>
+</div>
+<div class="total-section">
+<div class="total-label">Note Globale</div>
+<div class="total-body">
+<div class="total-note-globale" id="globalGrade">E</div>
+</div>
+</div>
+</div>
+<div class="grade-scale">
+<h3>Échelle de notation</h3>
+<div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; text-align: center;">
+<div><div style="font-weight: bold; font-size: 24px; color: #2c974b;">A</div><div style="font-size: 12px; color: #666;">≥90%</div></div>
+<div><div style="font-weight: bold; font-size: 24px; color: #4e9cf0;">B</div><div style="font-size: 12px; color: #666;">80-89%</div></div>
+<div><div style="font-weight: bold; font-size: 24px; color: #f0ad4e;">C</div><div style="font-size: 12px; color: #666;">70-79%</div></div>
+<div><div style="font-weight: bold; font-size: 24px; color: #e67e22;">D</div><div style="font-size: 12px; color: #666;">60-69%</div></div>
+<div><div style="font-weight: bold; font-size: 24px; color: #d9534f;">E</div><div style="font-size: 12px; color: #666;"><60%</div></div>
+</div>
+</div>
+</div>
+<script>
+function updateScore(id, element) {
+  const value = element.value;
+  let pointValue;
+  if (id.startsWith("c")) {
+    const map = { A: 4, B: 3, C: 2, D: 1, E: 0 };
+    pointValue = map[value] || 0;
+  } else {
+    pointValue = Number(value) || 0;
+  }
+  const pointsElement = document.getElementById("points-" + id);
+  if (pointsElement) pointsElement.textContent = pointValue;
+  calculateScores();
+}
+function calculateScores() {
+  let aScore = 0, eScore = 0, mScore = 0, cScore = 0;
+  for (let i = 1; i <= 14; i++) {
+    const radio = document.querySelector("input[name=\"a" + i + "\"]:checked");
+    if (radio) aScore += Number(radio.value) || 0;
+  }
+  document.getElementById("aScore").textContent = aScore;
+  for (let i = 1; i <= 9; i++) {
+    const radio = document.querySelector("input[name=\"e" + i + "\"]:checked");
+    if (radio) eScore += Number(radio.value) || 0;
+  }
+  document.getElementById("eScore").textContent = eScore;
+  for (let i = 1; i <= 8; i++) {
+    const radio = document.querySelector("input[name=\"m" + i + "\"]:checked");
+    if (radio) mScore += Number(radio.value) || 0;
+  }
+  document.getElementById("mScore").textContent = mScore;
+  for (let i = 1; i <= 5; i++) {
+    const radio = document.querySelector("input[name=\"c" + i + "\"]:checked");
+    if (radio) {
+      const map = { A: 4, B: 3, C: 2, D: 1, E: 0 };
+      cScore += map[radio.value] || 0;
+    }
+  }
+  document.getElementById("communicationScore").textContent = cScore;
+  const aP = (aScore / 28) * 100;
+  const eP = (eScore / 18) * 100;
+  const mP = (mScore / 16) * 100;
+  const cP = (cScore / 20) * 100;
+  const globalP = (aP * 0.4 + eP * 0.3 + mP * 0.2 + cP * 0.1);
+  document.getElementById("totalScore").textContent = Math.round(globalP) + "%";
+  const gradeElement = document.getElementById("globalGrade");
+  if (globalP >= 90) gradeElement.textContent = "A";
+  else if (globalP >= 80) gradeElement.textContent = "B";
+  else if (globalP >= 70) gradeElement.textContent = "C";
+  else if (globalP >= 60) gradeElement.textContent = "D";
+  else gradeElement.textContent = "E";
+}
+document.addEventListener("DOMContentLoaded", function() {
+  const elements = document.querySelectorAll(".criteria-text, .sub-criteria");
+  elements.forEach(function(element) {
+    const text = element.innerHTML;
+    const coloredText = text.replace(/\[([^\]]+)\]/g, "<span style=\"color: rgb(44, 90, 160); font-weight: 500;\">[$1]</span>");
+    element.innerHTML = coloredText;
+  });
+  calculateScores();
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,453 @@
+{
+  "title": "Douleur abdominale V",
+  "context": {
+    "setting": "Service médical",
+    "patient": "Homme de 21 ans se présente avec des douleurs abdominales et de la diarrhée.",
+    "vitals": {
+      "ta": "116/75 mmHg",
+      "fc": "75 bpm",
+      "fr": "15/min",
+      "temperature": "37.5°C"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction et objectif de la consultation",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Question ouverte d'introduction → Motif de consultation",
+          "patientComment": "Douleurs abdominales et diarrhée",
+          "binaryOnly": true
+        },
+        {
+          "id": "a3",
+          "text": "RED FLAGS - Urgences digestives",
+          "redflagsSection": [
+            {
+              "text": "Mégacôlon toxique [diamètre >6cm, toxique]"
+            },
+            {
+              "text": "Perforation intestinale [défense, contracture]"
+            },
+            {
+              "text": "Hémorragie massive [instabilité HD]"
+            },
+            {
+              "text": "Occlusion intestinale [arrêt matières/gaz]"
+            },
+            {
+              "text": "Abcès intra-abdominal [fièvre, masse]"
+            },
+            {
+              "text": "Déshydratation sévère [hypotension]"
+            },
+            {
+              "text": "Choc septique [signes SIRS]"
+            }
+          ],
+          "scoringRule": "≥5 red flags explorés = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a4",
+          "text": "Caractérisation des douleurs abdominales (SOCRATES)",
+          "details": [
+            "Site/localisation [région abdominale inférieure]",
+            "Onset/début [plus d'une semaine]",
+            "Character/qualité [sourde, parfois crampoïde]",
+            "Radiation/irradiation [non]",
+            "Associated symptoms [diarrhée, perte poids]",
+            "Timing/évolution [légèrement ondulant]",
+            "Exacerbating/alleviating [mieux après défécation]",
+            "Severity/sévérité [4-5/10]"
+          ],
+          "scoringRule": "≥6 éléments SOCRATES = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a5",
+          "text": "Caractérisation détaillée de la diarrhée",
+          "details": [
+            "Nombre de selles/jour [à quantifier]",
+            "Consistance [liquides/molles]",
+            "Présence de sang [oui, sanglantes]",
+            "Présence de mucus [oui, muqueuses]",
+            "Urgences défécatoires [à explorer]",
+            "Incontinence fécale [à explorer]",
+            "Selles nocturnes [à explorer - signe organique]",
+            "Ténesme/faux besoins [à explorer]"
+          ],
+          "scoringRule": "≥6 éléments = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a6",
+          "text": "Score de Mayo clinique pour RCH",
+          "details": [
+            "Fréquence selles [>4-6/jour = 2-3 pts]",
+            "Rectorragies [sang visible = 2-3 pts]",
+            "Évaluation globale médecin [modérée = 2 pts]",
+            "Endoscopie [non faite - à prévoir]",
+            "Score total /12 (≥6 = modéré-sévère)"
+          ],
+          "scoringRule": "Score calculé = 2 pts, partiel = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a7",
+          "text": "Manifestations extra-intestinales MICI",
+          "details": [
+            "Aphtes buccaux [non]",
+            "Uvéite/épisclérite [non]",
+            "Arthrites périphériques [non]",
+            "Spondylarthrite axiale [à explorer]",
+            "Érythème noueux [non visible]",
+            "Pyoderma gangrenosum [non]",
+            "CSP (cholangite sclérosante) [à dépister]"
+          ],
+          "scoringRule": "≥5 manifestations explorées = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a8",
+          "text": "Facteurs déclenchants et épidémiologie",
+          "details": [
+            "Voyage récent [Égypte il y a 2 semaines]",
+            "Alimentation suspecte [à explorer]",
+            "Prise d'antibiotiques récente [à explorer]",
+            "AINS récents [à explorer - facteur déclenchant]",
+            "Stress psychologique [à évaluer]",
+            "Infections récentes [état grippal]",
+            "Tabagisme [3 cigarettes/jour - protecteur RCH]"
+          ],
+          "scoringRule": "≥5 facteurs évalués = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a9",
+          "text": "Symptômes généraux et nutritionnels",
+          "details": [
+            "Perte pondérale [-2 kg en semaines]",
+            "Asthénie [à quantifier]",
+            "Anorexie [à explorer]",
+            "Fièvre/frissons [sensation grippale]",
+            "Sueurs nocturnes [non]",
+            "Retard croissance (si jeune) [non applicable]"
+          ],
+          "scoringRule": "≥4 symptômes = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a10",
+          "text": "Antécédents familiaux MICI",
+          "details": [
+            "MICI famille 1er degré [à explorer]",
+            "Cancer colorectal familial [à explorer]",
+            "Maladies auto-immunes [à explorer]",
+            "Âge au diagnostic famille [si applicable]"
+          ],
+          "scoringRule": "≥3 éléments explorés = 2 pts, 2 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a11",
+          "text": "Diagnostics différentiels infectieux",
+          "scoringRule": "≥4 DD infectieux = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false,
+          "ddSection": {
+            "categories": [
+              {
+                "name": "Diagnostics différentiels à considérer",
+                "items": [
+                  "Gastro-entérite virale [possible]",
+                  "Colite bactérienne [Salmonella, Shigella, Campylobacter]",
+                  "Colite amibienne [voyage Égypte]",
+                  "Giardiase [à considérer]",
+                  "C. difficile [si ATB récents]",
+                  "CMV si immunosupprimé [non]"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "a12",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "details": [
+            "Anamnèse complète et systématique",
+            "Exploration des red flags",
+            "Quantification précise symptômes",
+            "Recherche manifestations extra-intestinales",
+            "Évaluation facteurs déclenchants"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "État général et signes vitaux",
+          "details": [
+            "Aspect général [normal mais fatigué]",
+            "État d'hydratation [à évaluer]",
+            "IMC/état nutritionnel [perte 2kg]",
+            "Température [37.5°C - subfébrilité]",
+            "Pouls et TA [normaux]"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e2",
+          "text": "Inspection cutanéo-muqueuse",
+          "details": [
+            "Pâleur conjonctivale [à rechercher]",
+            "Cavité buccale/aphtes [normale]",
+            "Lésions cutanées [normale]",
+            "Ictère scléral [absent]",
+            "Œdèmes périphériques [absents]"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e3",
+          "text": "Examen abdominal complet",
+          "details": [
+            "Inspection [normale]",
+            "Auscultation [bruits intestinaux actifs]",
+            "Palpation superficielle [sensibilité diffuse bas-ventre]",
+            "Palpation profonde [prédominance gauche]",
+            "Recherche masse/organomégalie [absente]",
+            "Signes péritonéaux [normaux - pas défense]"
+          ],
+          "scoringRule": "≥5 éléments = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e4",
+          "text": "Toucher rectal et inspection anale",
+          "details": [
+            "Inspection péri-anale [fissures, fistules, abcès]",
+            "Tonus sphinctérien [normal]",
+            "Masses rectales [absentes]",
+            "Douleur au toucher [présente]",
+            "Sang au doigtier [à vérifier]",
+            "Selles aspect [si présentes]"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e5",
+          "text": "Recherche manifestations extra-intestinales",
+          "details": [
+            "Examen articulaire [mobilité, gonflement]",
+            "Examen ophtalmologique [rougeur, douleur]",
+            "Palpation thyroïde [auto-immunité]",
+            "Examen neurologique sommaire",
+            "Palpation ganglionnaire [normale]"
+          ],
+          "scoringRule": "≥4 examens = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e6",
+          "text": "Évaluation de la sévérité clinique",
+          "details": [
+            "Signes de toxicité systémique",
+            "Distension abdominale (mégacôlon?)",
+            "Sensibilité abdominale marquée",
+            "Tachycardie/hypotension",
+            "Classification Truelove-Witts"
+          ],
+          "scoringRule": "Évaluation complète = 2 pts, partielle = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e7",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "details": [
+            "Examen complet et méthodique",
+            "Toucher rectal approprié",
+            "Recherche complications",
+            "Évaluation sévérité",
+            "Documentation précise"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic principal énoncé",
+          "details": [
+            "Rectocolite hémorragique (colite ulcéreuse)",
+            "Poussée aiguë modérée probable",
+            "Extension à déterminer (coloscopie)"
+          ],
+          "scoringRule": "Diagnostic complet = 2 pts, partiel = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m2",
+          "text": "Diagnostics différentiels pertinents",
+          "scoringRule": "≥5 DD = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false,
+          "ddSection": {
+            "categories": [
+              {
+                "name": "Diagnostics différentiels à considérer",
+                "items": [
+                  "Maladie de Crohn colique",
+                  "Colite infectieuse (voyage Égypte)",
+                  "Colite ischémique (rare à 21 ans)",
+                  "Syndrome intestin irritable post-infectieux",
+                  "Colite médicamenteuse (AINS)",
+                  "Colite microscopique",
+                  "Cancer colorectal (très rare)"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m3",
+          "text": "Examens biologiques de première intention",
+          "details": [
+            "NFS (anémie, thrombocytose)",
+            "CRP, VS (inflammation)",
+            "Ionogramme, urée, créat (déshydratation)",
+            "Albumine (dénutrition, sévérité)",
+            "ASAT/ALAT, PAL, GGT (CSP associée)",
+            "Calprotectine fécale (MICI vs fonctionnel)",
+            "Coproculture + parasitologie (DD infectieux)"
+          ],
+          "scoringRule": "≥6 examens = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m4",
+          "text": "Examens endoscopiques et imagerie",
+          "details": [
+            "Iléo-coloscopie complète + biopsies étagées",
+            "Rectosigmoïdoscopie si état instable",
+            "Score endoscopique Mayo",
+            "Échographie abdominale (complications)",
+            "IRM/entéro-IRM si Crohn suspecté",
+            "Radiographie abdomen si mégacôlon"
+          ],
+          "scoringRule": "≥4 examens appropriés = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m5",
+          "text": "Traitement d'induction de la rémission",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Poussée légère à modérée",
+                "content": "• 5-ASA oral (mésalazine 3-4g/j)\n• 5-ASA topique (suppositoires/lavements)\n• Combinaison orale + topique (plus efficace)\n• Durée 6-8 semaines minimum"
+              },
+              {
+                "title": "Poussée modérée à sévère",
+                "content": "• Corticoïdes oraux (prednisolone 40mg/j)\n• Décroissance progressive sur 8-12 semaines\n• 5-ASA en association\n• Si échec : anti-TNF, védolizumab, tofacitinib"
+              },
+              {
+                "title": "Mesures associées",
+                "content": "• Supplémentation fer si anémie\n• Vitamine D + calcium si corticoïdes\n• Régime pauvre en résidus si actif\n• Hydratation et électrolytes\n• Thromboprophylaxie si hospitalisé"
+              }
+            ]
+          },
+          "scoringRule": "Traitement adapté = 2 pts, partiel = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m6",
+          "text": "Traitement de maintien et surveillance",
+          "details": [
+            "5-ASA oral au long cours (2-2.4g/j)",
+            "Thiopurines si cortico-dépendance",
+            "Biologiques si échec conventionnel",
+            "Surveillance cancérologique (8-10 ans)",
+            "Vaccination (avant immunosuppresseurs)",
+            "Dépistage CSP (PAL annuelles)"
+          ],
+          "scoringRule": "≥5 éléments = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m7",
+          "text": "Critères d'hospitalisation",
+          "details": [
+            ">6 selles sanglantes/jour",
+            "Fièvre >37.8°C persistante",
+            "FC >90/min",
+            "Hb <10.5 g/dL",
+            "CRP >30 mg/L",
+            "Signes de complications",
+            "Échec traitement ambulatoire"
+          ],
+          "scoringRule": "≥5 critères évalués = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m8",
+          "text": "Information et éducation du patient",
+          "details": [
+            "Maladie chronique évoluant par poussées",
+            "Importance de l'observance thérapeutique",
+            "Risque de cancer colorectal (surveillance)",
+            "Complications possibles (mégacôlon, perforation)",
+            "Associations de patients",
+            "Impact fertilité/grossesse",
+            "Arrêt tabac (paradoxal mais recommandé)"
+          ],
+          "scoringRule": "≥5 éléments = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m9",
+          "text": "Suivi multidisciplinaire",
+          "details": [
+            "Gastro-entérologue référent MICI",
+            "Consultation 3 mois puis annuelle",
+            "Biologiste (calprotectine suivi)",
+            "Diététicien si dénutrition",
+            "Psychologue si besoin",
+            "Chirurgien si complications"
+          ],
+          "scoringRule": "≥4 intervenants = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m10",
+          "text": "Évaluation globale de la qualité de la prise en charge",
+          "details": [
+            "Diagnostic différentiel complet",
+            "Examens adaptés (bio + endoscopie)",
+            "Traitement selon sévérité",
+            "Surveillance organisée",
+            "Information patient complète"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        }
+      ]
+    }
+  }
+}

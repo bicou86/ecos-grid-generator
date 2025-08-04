@@ -1,0 +1,302 @@
+{
+  "title": "Vomissements - Consultation téléphonique - Pédiatrie",
+  "context": {
+    "setting": "Consultation téléphonique pédiatrique - 23h00",
+    "patient": "Mère inquiète appelle pour Severin, 18 mois, qui a de la fièvre et vomit",
+    "vitals": {
+      "temperature": "38,7°C (oreille)"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom et fonction",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Identification de l'appelant",
+          "binaryOnly": false,
+          "details": [
+            "Nom de l'appelant",
+            "Nom, âge et sexe de l'enfant [Severin, 18 mois, garçon]",
+            "Numéro de téléphone pour rappel"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Question ouverte initiale",
+          "binaryOnly": true,
+          "details": [
+            "[Severin a de la fièvre et vomit]"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Début des symptômes",
+          "binaryOnly": false,
+          "details": [
+            "[Depuis cet après-midi]"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Fièvre",
+          "binaryOnly": false,
+          "details": [
+            "Mesure de la température [38,7°C dans l'oreille]",
+            "Modalité de mesure",
+            "Évolution temporelle"
+          ]
+        },
+        {
+          "id": "a6",
+          "text": "Caractéristiques des vomissements",
+          "binaryOnly": false,
+          "details": [
+            "Fréquence [3 fois]",
+            "Contenu et aspect",
+            "Relation avec les repas",
+            "Volume"
+          ]
+        },
+        {
+          "id": "a7",
+          "text": "Symptômes digestifs associés",
+          "binaryOnly": false,
+          "details": [
+            "Diarrhée",
+            "Douleurs abdominales",
+            "Refus alimentaire"
+          ]
+        },
+        {
+          "id": "a8",
+          "text": "État général de l'enfant",
+          "binaryOnly": false,
+          "details": [
+            "Conscience, réactivité",
+            "Comportement habituel",
+            "Pleurs, consolabilité"
+          ]
+        },
+        {
+          "id": "a9",
+          "text": "Évaluation de l'hydratation",
+          "binaryOnly": false,
+          "details": [
+            "Capacité à boire",
+            "Production de larmes",
+            "Couches mouillées",
+            "Muqueuses"
+          ]
+        },
+        {
+          "id": "a10",
+          "text": "Tentatives thérapeutiques déjà entreprises",
+          "binaryOnly": false,
+          "details": [
+            "Médicaments donnés",
+            "Mesures prises"
+          ]
+        },
+        {
+          "id": "a11",
+          "text": "Red flags - État général et neurologique",
+          "binaryOnly": false,
+          "details": [
+            "Troubles de conscience",
+            "Convulsions",
+            "Raideur nucale (méningisme)",
+            "Traumatisme crânien récent"
+          ]
+        },
+        {
+          "id": "a12",
+          "text": "Red flags - Stations fébriles",
+          "binaryOnly": false,
+          "details": [
+            "Symptômes ORL",
+            "Symptômes urinaires",
+            "Toux, difficultés respiratoires",
+            "Éruption cutanée"
+          ]
+        },
+        {
+          "id": "a13",
+          "text": "Antécédents personnels",
+          "binaryOnly": false,
+          "details": [
+            "Épisodes similaires antérieurs",
+            "Maladies de base",
+            "Hospitalisations",
+            "Allergies"
+          ]
+        },
+        {
+          "id": "a14",
+          "text": "Médicaments",
+          "binaryOnly": false,
+          "details": [
+            "Traitements en cours",
+            "Médicaments récents"
+          ]
+        },
+        {
+          "id": "a15",
+          "text": "Anamnèse d'environnement",
+          "binaryOnly": false,
+          "details": [
+            "État de santé de l'entourage [sœur aînée en bonne santé]",
+            "Garderie/crèche [il y a 3 jours en groupe de jeu, un enfant a dû être récupéré car il vomissait]"
+          ]
+        },
+        {
+          "id": "a16",
+          "text": "Circonstances de l'appel",
+          "binaryOnly": false,
+          "details": [
+            "Situation familiale [mère seule à la maison, père à l'étranger]",
+            "Possibilités de déplacement"
+          ]
+        },
+        {
+          "id": "a17",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "binaryOnly": false,
+          "details": [
+            "Anamnèse générale ciblée et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Résumé et confirmation des informations",
+          "binaryOnly": false,
+          "details": [
+            "Synthèse claire des symptômes",
+            "Vérification avec la mère"
+          ]
+        },
+        {
+          "id": "e2",
+          "text": "Évaluation à distance de l'état général",
+          "binaryOnly": false,
+          "details": [
+            "Questions ciblées sur le comportement",
+            "Estimation de la gravité"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Instructions pour observation à domicile",
+          "binaryOnly": false,
+          "details": [
+            "Signes à surveiller",
+            "Fréquence d'observation"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "binaryOnly": false,
+          "details": [
+            "Status général ciblé et bien conduit"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic probable",
+          "binaryOnly": false,
+          "details": [
+            "Gastro-entérite bénigne"
+          ]
+        },
+        {
+          "id": "m2",
+          "text": "Explication de la cause et du pronostic",
+          "binaryOnly": false,
+          "details": [
+            "Cause probable (virale, contagion)",
+            "Évolution attendue",
+            "Caractère non urgent"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Conseils thérapeutiques pour vomissements",
+          "binaryOnly": false,
+          "details": [
+            "Alimentation fractionnée",
+            "Solutions de réhydratation",
+            "Médicaments antiémétiques si nécessaire"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Conseils pour la fièvre",
+          "binaryOnly": false,
+          "details": [
+            "Paracétamol adapté au poids",
+            "Mesures physiques",
+            "Surveillance de la température"
+          ]
+        },
+        {
+          "id": "m5",
+          "text": "Critères de consultation d'urgence",
+          "binaryOnly": false,
+          "details": [
+            "Détérioration de l'état général",
+            "Signes de déshydratation",
+            "Persistance ou aggravation des symptômes",
+            "Nouveaux symptômes inquiétants"
+          ]
+        },
+        {
+          "id": "m6",
+          "text": "Planification du suivi",
+          "binaryOnly": false,
+          "details": [
+            "Rappel si besoin",
+            "Consultation de contrôle si nécessaire",
+            "Numéro d'urgence"
+          ]
+        },
+        {
+          "id": "m7",
+          "text": "Vérification de la compréhension",
+          "binaryOnly": false,
+          "details": [
+            "Questions de la mère",
+            "Reformulation des conseils",
+            "Rassurement approprié"
+          ]
+        },
+        {
+          "id": "m8",
+          "text": "Évaluation globale de la qualité de la prise en charge",
+          "binaryOnly": false,
+          "details": [
+            "Prise en charge générale cohérente et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    }
+  }
+}

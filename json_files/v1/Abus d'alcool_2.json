@@ -1,0 +1,382 @@
+{
+  "title": "Abus d'alcool",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Monsieur Jägermeister, 53 ans, se présente chez son médecin traitant pour un problème d'alcool évoluant depuis des années"
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction et objectif",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Question ouverte d'introduction → Symptôme principal (problème d'alcool)",
+          "binaryOnly": true,
+          "patientComment": "J'ai un problème avec l'alcool depuis des années"
+        },
+        {
+          "id": "a3",
+          "text": "Évolution temporelle",
+          "details": [
+            "Durée [depuis 8 ans]",
+            "Évolution : intermittente – continue [tout le temps]"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Évaluation quantitative de la consommation",
+          "details": [
+            "Quantité quotidienne [4 litres de bière, 1 bouteille de vin]",
+            "Type de boissons alcoolisées [bière, vin]",
+            "Fréquence [tous les jours]"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Consommation d'autres substances",
+          "patientComment": "Non, aucune drogue"
+        },
+        {
+          "id": "a6",
+          "text": "Circonstances de consommation",
+          "details": [
+            "En société – seul [autrefois en société, maintenant surtout à la maison]"
+          ]
+        },
+        {
+          "id": "a7",
+          "text": "Effet recherché",
+          "details": [
+            "Anxiolyse, évitement des symptômes de sevrage [pour déconnecter et me détendre]"
+          ]
+        },
+        {
+          "id": "a8",
+          "text": "Tentatives de sevrage antérieures",
+          "details": [
+            "Traitements de sevrage (ambulatoire – hospitalier) [aucun]",
+            "Pharmacothérapies (anti-craving) [aucune]",
+            "Groupes d'entraide (Croix-Bleue, Alcooliques Anonymes) [essayé une fois, arrêté rapidement]"
+          ]
+        },
+        {
+          "id": "a9",
+          "text": "Critères de dépendance (≥3/6 pour diagnostic)",
+          "details": [
+            "Besoin impérieux de consommer (craving) [oui, devenu de plus en plus fort]",
+            "Perte de contrôle [lors de fêtes, ne me souviens souvent pas de la soirée]",
+            "Développement de tolérance [je supporte déjà plus que les autres]",
+            "Symptômes de sevrage [léger tremblement quand je ne bois pas]",
+            "Négligence d'autres intérêts [plus de loisirs, ma femme m'a quitté, les enfants ne viennent plus]",
+            "Consommation malgré conséquences négatives [perdu emploi il y a 2 mois, bois encore plus depuis]"
+          ]
+        },
+        {
+          "id": "a10",
+          "text": "Test CAGE (>2/4 = positif)",
+          "details": [
+            "Cut down – Avez-vous déjà essayé de boire moins ? [oui, ça n'a pas marché]",
+            "Annoyed – Votre entourage vous a-t-il critiqué ? [ma femme me critiquait sans arrêt, je l'ai parfois frappée]",
+            "Guilty – Vous sentez-vous coupable de boire ? [oui beaucoup, j'ai honte de ma situation actuelle]",
+            "Eye opener – Buvez-vous le matin pour vous sentir mieux ? [le matin il me faut une ou deux bières pour démarrer]"
+          ]
+        },
+        {
+          "id": "a11",
+          "text": "Suivi psychiatrique",
+          "patientComment": "Non"
+        },
+        {
+          "id": "a12",
+          "text": "Habitudes alimentaires",
+          "patientComment": "Ne mange presque plus, parfois un peu de pain mais très peu"
+        },
+        {
+          "id": "a13",
+          "text": "Symptômes B (fièvre / sueurs nocturnes / perte de poids)",
+          "patientComment": "À explorer"
+        },
+        {
+          "id": "a14",
+          "text": "Symptômes accompagnateurs",
+          "details": [
+            "Tendance hémorragique accrue [non]",
+            "Ictère [non]",
+            "Encéphalopathie hépatique [à explorer]",
+            "Œdèmes / Ascite [non]",
+            "Douleurs abdominales [oui, crampes abdominales fréquentes]",
+            "RGO / Œsophagite de reflux [non]"
+          ]
+        },
+        {
+          "id": "a15",
+          "text": "Troubles digestifs",
+          "details": [
+            "Dysphagie / Odynophagie [non]",
+            "Gastrite / Ulcère gastrique [sensation désagréable à l'estomac]",
+            "Hémorragies gastro-intestinales (méléna, hématochézie) [non]"
+          ]
+        },
+        {
+          "id": "a16",
+          "text": "Symptômes neurologiques",
+          "details": [
+            "Douleurs/faiblesse musculaires [non]",
+            "Vertiges / Chutes [souvent tombé quand ivre, sinon non]",
+            "Polyneuropathie (douleurs aux pieds, sensibilité diminuée) [non]",
+            "Troubles de la mémoire / Diplopie [oublie beaucoup, pas de diplopie]",
+            "Troubles de coordination/ataxie [renverse le café, moins adroit qu'avant]"
+          ]
+        },
+        {
+          "id": "a17",
+          "text": "Production/couleur urinaire",
+          "patientComment": "Toujours pareil, plutôt claire"
+        },
+        {
+          "id": "a18",
+          "text": "Antécédents personnels",
+          "details": [
+            "Maladies antérieures [aucune]",
+            "Maladies psychiatriques (autres addictions) [à explorer]",
+            "Maladies hépatiques / pancréatiques [ne sait pas]",
+            "Allergies [aucune]",
+            "Médicaments [aucun]"
+          ]
+        },
+        {
+          "id": "a19",
+          "text": "Autres toxiques",
+          "details": [
+            "Tabagisme [50 paquets-années]",
+            "Drogues [aucune]"
+          ]
+        },
+        {
+          "id": "a20",
+          "text": "Antécédents familiaux",
+          "details": [
+            "Maladies psychiatriques [ne connaît pas sa famille]",
+            "Abus d'alcool [ne connaît pas sa famille]",
+            "Maladies hépatiques/pancréatiques [ne connaît pas sa famille]"
+          ]
+        },
+        {
+          "id": "a21",
+          "text": "Anamnèse sociale",
+          "details": [
+            "Formation / Parcours professionnel [école obligatoire, apprentissage d'électricien]",
+            "Famille / Amis (réseau social) [plus personne, femme et enfants ne veulent plus de contact, suis seul]",
+            "Emploi [au chômage depuis 2 mois]",
+            "Logement [petit appartement à Glattfelden]",
+            "Finances [grosses dettes chez beaucoup d'amis]"
+          ]
+        },
+        {
+          "id": "a22",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "binaryOnly": false,
+          "details": [
+            "Anamnèse générale ciblée et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Examen abdominal",
+          "details": [
+            "Inspection",
+            "Auscultation",
+            "Palpation",
+            "Percussion",
+            "Recherche de signes cutanés hépatiques",
+            "Toucher rectal"
+          ]
+        },
+        {
+          "id": "e2",
+          "text": "Inspection de la cavité buccale",
+          "details": [
+            "Recherche de leucoplasie/érythroplasie"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Mini-status neurologique",
+          "details": [
+            "Orientation",
+            "Motricité oculaire",
+            "Force musculaire",
+            "Coordination",
+            "Sensibilité vibratoire"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Examen cardiopulmonaire",
+          "details": [
+            "Auscultation cardiaque",
+            "Auscultation pulmonaire"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Examen général",
+          "details": [
+            "État général",
+            "Signes de dénutrition",
+            "Haleine alcoolisée",
+            "Signes cutanés de consommation chronique"
+          ]
+        },
+        {
+          "id": "e6",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "binaryOnly": false,
+          "details": [
+            "Examen clinique ciblé et bien conduit"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic principal",
+          "details": [
+            "Trouble de l'usage de l'alcool avec dépendance (alcoolisme chronique)"
+          ]
+        },
+        {
+          "id": "m2",
+          "text": "Diagnostics différentiels (au moins 2-3 diagnostics appropriés)",
+          "binaryOnly": false,
+          "details": [
+            "Usage nocif d'alcool (sans dépendance)",
+            "Polytoxicomanie",
+            "Troubles psychiatriques associés"
+          ],
+          "scoringRule": "Au moins deux = oui, un = ±, aucun = non",
+          "ddSection": {
+            "title": "Diagnostics différentiels des troubles liés à l'alcool",
+            "categories": [
+              {
+                "name": "Classification selon DSM-5 :",
+                "items": [
+                  {
+                    "text": "Trouble de l'usage de l'alcool léger (2-3 critères)",
+                    "test": "→ Évaluation des 11 critères DSM-5"
+                  },
+                  {
+                    "text": "Trouble de l'usage de l'alcool modéré (4-5 critères)",
+                    "test": "→ Évaluation des 11 critères DSM-5"
+                  },
+                  {
+                    "text": "Trouble de l'usage de l'alcool sévère (≥6 critères)",
+                    "test": "→ Évaluation des 11 critères DSM-5"
+                  }
+                ]
+              },
+              {
+                "name": "Comorbidités psychiatriques :",
+                "items": [
+                  {
+                    "text": "Épisode dépressif majeur",
+                    "test": "→ Évaluation psychiatrique spécialisée"
+                  },
+                  {
+                    "text": "Troubles anxieux",
+                    "test": "→ Échelles d'évaluation (GAD-7, HAM-A)"
+                  },
+                  {
+                    "text": "Polytoxicomanie",
+                    "test": "→ Dépistage urinaire, anamnèse approfondie"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m3",
+          "text": "Examens complémentaires diagnostiques",
+          "details": [
+            "Biologie : NFS, CRP, leucocytes, créatinine, électrolytes (Na, K, Ca), TSH",
+            "Bilan hépatique : transaminases, GGT, PAL, albumine, Quick/aPTT, lipase, amylase",
+            "Examen ORL",
+            "Échographie abdominale / Scanner abdominal",
+            "Gastroscopie (si indiquée)"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Prise en charge du sevrage",
+          "binaryOnly": false,
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Traitement de sevrage :",
+                "content": "• Évaluation du risque de sevrage (échelle CIWA-Ar)\n• Benzodiazépines si nécessaire (lorazépam, diazépam)\n• Vitaminothérapie B1 (thiamine)\n• Surveillance clinique rapprochée"
+              },
+              {
+                "title": "Traitement médicamenteux :",
+                "content": "• Benzodiazépines (traitement initial du sevrage)\n• Acamprosate (Aotal) → Anti-craving\n• Disulfirame (Antabuse) → Inhibiteur d'aldéhyde déshydrogénase\n• Naltrexone (selon indication)"
+              }
+            ]
+          }
+        },
+        {
+          "id": "m5",
+          "text": "Prise en charge psychosociale",
+          "details": [
+            "Psychothérapie (aptitudes sociales, gestion du stress, autocontrôle)",
+            "Aide sociale (pour les dettes)",
+            "Aide à la réinsertion professionnelle",
+            "Groupes d'entraide (Alcooliques Anonymes, Croix-Bleue)"
+          ]
+        },
+        {
+          "id": "m6",
+          "text": "Orientation si nécessaire",
+          "details": [
+            "Hospitalisation si sevrage compliqué",
+            "Consultation spécialisée en addictologie",
+            "Centre de traitement résidentiel"
+          ]
+        },
+        {
+          "id": "m7",
+          "text": "Information et suivi du patient",
+          "details": [
+            "Explication de la maladie addictive",
+            "Information sur les traitements disponibles",
+            "Planification du suivi médical",
+            "Prévention des rechutes"
+          ]
+        },
+        {
+          "id": "m8",
+          "text": "Évaluation globale de la qualité de la prise en charge",
+          "binaryOnly": false,
+          "details": [
+            "Prise en charge générale cohérente et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    }
+  }
+}

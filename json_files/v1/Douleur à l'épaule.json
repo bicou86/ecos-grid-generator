@@ -1,0 +1,235 @@
+{
+  "title": "Douleur à l'épaule",
+  "context": {
+    "setting": "Cabinet de médecine générale (remplacement)",
+    "patient": "Madame Spielmann, 60 ans, consultant pour douleurs d'épaule"
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction et tâche",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Motif de consultation",
+          "patientComment": "douleurs d'épaule gauche",
+          "binaryOnly": true
+        },
+        {
+          "id": "a3",
+          "text": "Début des symptômes",
+          "patientComment": "depuis environ 1 mois"
+        },
+        {
+          "id": "a4",
+          "text": "Évolution",
+          "patientComment": "plutôt progressive"
+        },
+        {
+          "id": "a5",
+          "text": "Raideur matinale",
+          "patientComment": "aucune, rarement fourmillements dans le bras"
+        },
+        {
+          "id": "a6",
+          "text": "Sommeil",
+          "patientComment": "se réveille la nuit à cause des douleurs et engourdissements, dort souvent sur le côté gauche"
+        },
+        {
+          "id": "a7",
+          "text": "Facteurs aggravants/améliorants",
+          "patientComment": "douleur lors de certains mouvements, par ex. travail au-dessus de la tête, pas exactement explicable, rien d'améliorant remarqué pour l'instant"
+        },
+        {
+          "id": "a8",
+          "text": "Traumatisme",
+          "patientComment": "aucun"
+        },
+        {
+          "id": "a9",
+          "text": "Infection",
+          "patientComment": "aucune"
+        },
+        {
+          "id": "a10",
+          "text": "Symptômes B",
+          "patientComment": "aucun"
+        },
+        {
+          "id": "a11",
+          "text": "Fatigue, état général",
+          "patientComment": "normal"
+        },
+        {
+          "id": "a12",
+          "text": "Automédication",
+          "patientComment": "un peu de pommade, rien n'a aidé"
+        },
+        {
+          "id": "a13",
+          "text": "Chirurgies antérieures",
+          "patientComment": "aucune, ablation thyroïde pour nodule froid il y a 20 ans"
+        },
+        {
+          "id": "a14",
+          "text": "Antécédents médicaux (particulièrement rhumatologiques)",
+          "patientComment": "aucun"
+        },
+        {
+          "id": "a15",
+          "text": "Toxiques",
+          "patientComment": "aucun, un peu de vin le week-end"
+        },
+        {
+          "id": "a16",
+          "text": "Médicaments",
+          "patientComment": "Euthyrox"
+        },
+        {
+          "id": "a17",
+          "text": "Anamnèse familiale",
+          "patientComment": "père décédé de leucémie à 60 ans, mère décédée à 78 ans"
+        },
+        {
+          "id": "a18",
+          "text": "Anamnèse sociale",
+          "patientComment": "enseignante, divorcée, un fils adulte"
+        },
+        {
+          "id": "a19",
+          "text": "Retentissement",
+          "patientComment": "capable de travailler, juste très gênant, surtout qualité du sommeil"
+        },
+        {
+          "id": "a20",
+          "text": "Résumé, questions du patient",
+          "patientComment": "est-ce que ça redeviendra normal ?"
+        },
+        {
+          "id": "a21",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "binaryOnly": false,
+          "details": [
+            "Anamnèse générale ciblée et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Inspection"
+        },
+        {
+          "id": "e2",
+          "text": "Palpation",
+          "details": [
+            "Processus coracoïde",
+            "Articulation acromio-claviculaire",
+            "Coiffe des rotateurs (tubercule majeur et mineur)",
+            "Biceps"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Amplitude de mouvement",
+          "details": [
+            "Abduction",
+            "Élévation",
+            "Rétroversion",
+            "Antéversion",
+            "Rotation externe",
+            "Rotation interne",
+            "Prise nuque, prise tablier"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Tests des rotateurs",
+          "details": [
+            "Test de Jobe pour le muscle supra-épineux (gauche moins de force, douleur)",
+            "Test lift-off pour le muscle subscapulaire (un peu limité des deux côtés)",
+            "Rotation externe pour muscles infra-épineux/petit rond"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Test d'impingement",
+          "patientComment": "pathologique"
+        },
+        {
+          "id": "e6",
+          "text": "Test d'appréhension"
+        },
+        {
+          "id": "e7",
+          "text": "Articulation acromio-claviculaire"
+        },
+        {
+          "id": "e8",
+          "text": "Biceps brachial"
+        },
+        {
+          "id": "e9",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "binaryOnly": false,
+          "details": [
+            "Status général ciblé et bien conduit"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Énonce le diagnostic de suspicion",
+          "patientComment": "impingement = syndrome du supra-épineux"
+        },
+        {
+          "id": "m2",
+          "text": "Diagnostics différentiels",
+          "details": [
+            "Myalgie",
+            "Syndrome du nerf cubital"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Examens diagnostiques",
+          "details": [
+            "Radiographie épaule AP et latérale",
+            "En cas d'incertitudes : IRM"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Thérapie",
+          "details": [
+            "Anti-inflammatoires antalgiques",
+            "Pommades",
+            "Physiothérapie"
+          ]
+        },
+        {
+          "id": "m5",
+          "text": "Évaluation globale de la qualité de la prise en charge",
+          "binaryOnly": false,
+          "details": [
+            "Prise en charge générale cohérente et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    }
+  }
+}

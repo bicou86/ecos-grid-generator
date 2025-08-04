@@ -1,0 +1,200 @@
+{
+  "title": "Fièvre infantile",
+  "context": {
+    "setting": "Cabinet de pédiatrie",
+    "patient": "Mme Huber consulte avec son fils Max, 2 ans, pour maladie fébrile depuis plusieurs jours",
+    "vitals": {
+      "fc": "120 bpm",
+      "fr": "16/min",
+      "temperature": "39.0°C"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "title": "Anamnèse",
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Désinfection des mains et présentation avec nom et fonction",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Durée et dynamique de la fièvre",
+          "patientComment": "(Depuis 3 jours, fièvre soudaine avec toux, mais état général plutôt bon)"
+        },
+        {
+          "id": "a3",
+          "text": "Premier épisode",
+          "patientComment": "(Oui, n'a jamais eu de convulsions fébriles)"
+        },
+        {
+          "id": "a4",
+          "text": "Anamnèse de la fratrie",
+          "patientComment": "(Laura 5 ans, en bonne santé)"
+        },
+        {
+          "id": "a5",
+          "text": "Revue des systèmes",
+          "details": [
+            "Respiration et tirages",
+            "Prise alimentaire",
+            "Troubles digestifs",
+            "Problèmes mictionnels",
+            "Sommeil",
+            "Douleurs"
+          ],
+          "patientComment": "(À part une légère toux, pas de problèmes / Oui, mange normalement et boit suffisamment / Comme d'habitude / Tout normal / Endormissement et sommeil non perturbés, un peu plus somnolent pendant la fièvre / Rien remarqué)"
+        },
+        {
+          "id": "a6",
+          "text": "Développement jusqu'à présent",
+          "details": [
+            "Moteur",
+            "Langage",
+            "Social"
+          ],
+          "patientComment": "(Tout normal, fait des phrases courtes et marche déjà)"
+        },
+        {
+          "id": "a7",
+          "text": "Comportement récent",
+          "patientComment": "(Enfant un peu plus fatigué ces derniers jours, mais sinon tout normal ces dernières semaines)"
+        },
+        {
+          "id": "a8",
+          "text": "Antécédents médicaux et médicaments",
+          "patientComment": "(Aucun jusqu'à présent)"
+        },
+        {
+          "id": "a9",
+          "text": "Allergies",
+          "patientComment": "(Aucune connue)"
+        },
+        {
+          "id": "a10",
+          "text": "Anamnèse d'environnement et voyages",
+          "patientComment": "(Famille en bonne santé, voyage en Italie chez la grand-mère, quelques enfants malades à la crèche mais probablement saisonnier)"
+        },
+        {
+          "id": "a11",
+          "text": "Vaccinations",
+          "patientComment": "(Toutes faites selon les parents)"
+        },
+        {
+          "id": "a12",
+          "text": "Antécédents familiaux",
+          "patientComment": "(Père avec thalassémie mineure, sinon pas de maladies connues)"
+        },
+        {
+          "id": "a13",
+          "text": "Anamnèse psychosociale",
+          "patientComment": "(Mère/père/enfants habitent dans un appartement à Binningen, pas de contraintes particulières)"
+        },
+        {
+          "id": "a14",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "binaryOnly": false,
+          "details": [
+            "Anamnèse générale ciblée et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "examen": {
+      "title": "Examen clinique",
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Inspection générale",
+          "patientComment": "(Pas d'exanthème ni autres anomalies)"
+        },
+        {
+          "id": "e2",
+          "text": "Examen cardio-pulmonaire",
+          "patientComment": "(MV présent sur tous les champs pulmonaires, pas de bruits cardiaques pathologiques)"
+        },
+        {
+          "id": "e3",
+          "text": "Examen ORL bref",
+          "patientComment": "(Paroi pharyngée postérieure légèrement rouge, sinon sans particularité)"
+        },
+        {
+          "id": "e4",
+          "text": "Palpation des ganglions",
+          "patientComment": "(Ganglions cervicaux réactifs augmentés de volume)"
+        },
+        {
+          "id": "e5",
+          "text": "Recherche de méningisme",
+          "patientComment": "(Négatif)"
+        },
+        {
+          "id": "e6",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "binaryOnly": false,
+          "details": [
+            "Status général ciblé et bien conduit"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "management": {
+      "title": "Prise en charge",
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic de suspicion",
+          "patientComment": "(Exanthème subit)"
+        },
+        {
+          "id": "m2",
+          "text": "Diagnostics différentiels",
+          "details": [
+            "Exanthème subit",
+            "Érythème infectieux (5e maladie)",
+            "Rubéole",
+            "Rougeole"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Explication du diagnostic probable",
+          "patientComment": "(C'est probablement rien de grave)"
+        },
+        {
+          "id": "m4",
+          "text": "Prise en charge proposée",
+          "details": [
+            "Antipyrétiques si nécessaire",
+            "Instructions pour nouveau contrôle (Si changement des symptômes, nouvelle consultation dans 3-4 jours)"
+          ]
+        },
+        {
+          "id": "m5",
+          "text": "Arguments contre les diagnostics différentiels",
+          "details": [
+            "Rougeole",
+            "Rubéole",
+            "Érythème infectieux"
+          ],
+          "patientComment": "(Vaccination, pas de conjonctivite, pas de taches de Koplik, bon état général / Vaccination, plutôt fièvre légère, typiquement conjonctivite / Plutôt fièvre plus faible, convulsions pas typiques, pas d'érythème)"
+        },
+        {
+          "id": "m6",
+          "text": "Évaluation globale de la qualité de la prise en charge",
+          "binaryOnly": false,
+          "details": [
+            "Prise en charge générale cohérente et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,297 @@
+{
+  "title": "Érythème",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Mme Kählin, 27 ans, consulte suite à l'apparition d'un érythème cutané",
+    "vitals": {
+      "ta": "127/82 mmHg",
+      "fc": "73 bpm",
+      "temperature": "37.8°C"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "title": "Anamnèse",
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Désinfection des mains, présentation avec nom, fonction et but de la consultation",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Exploration du symptôme principal",
+          "binaryOnly": true
+        },
+        {
+          "id": "a3",
+          "text": "Caractéristiques de l'érythème",
+          "details": [
+            "Douleur [Non douloureux]",
+            "Sensation de brûlure [Pas de brûlure]",
+            "Prurit [Pas de démangeaisons]"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Évolution temporelle et facteurs déclenchants",
+          "details": [
+            "Durée [Depuis environ 3 semaines]",
+            "Facteur déclenchant [Aucun déclencheur identifié]",
+            "Évolution [Progressif]"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Antécédents d'épisodes similaires",
+          "patientComment": "Non, premier épisode"
+        },
+        {
+          "id": "a6",
+          "text": "Symptômes associés",
+          "details": [
+            "Fatigue/asthénie [Un peu fatiguée]",
+            "Arthralgies [Légères douleurs articulaires]",
+            "Céphalées [Céphalées fréquentes]",
+            "Perte de poids [Possible]"
+          ]
+        },
+        {
+          "id": "a7",
+          "text": "Revue des systèmes",
+          "patientComment": "Rien de particulier"
+        },
+        {
+          "id": "a8",
+          "text": "Habitudes de vie",
+          "details": [
+            "Tabac [5 paquets-années]",
+            "Alcool [Occasionnel]",
+            "Drogues [Cannabis rarement]"
+          ]
+        },
+        {
+          "id": "a9",
+          "text": "Médicaments actuels",
+          "patientComment": "Contraception orale combinée"
+        },
+        {
+          "id": "a10",
+          "text": "Antécédents médicaux et chirurgicaux",
+          "patientComment": "Amygdalectomie dans l'enfance, sinon rien"
+        },
+        {
+          "id": "a11",
+          "text": "Antécédents familiaux",
+          "patientComment": "Grands-parents hypertendus après 65 ans, grand-père avec goutte"
+        },
+        {
+          "id": "a12",
+          "text": "Anamnèse sociale",
+          "patientComment": "Vit avec son compagnon, travaille au bureau"
+        },
+        {
+          "id": "a13",
+          "text": "Anamnèse de voyage et exposition solaire",
+          "details": [
+            "Voyage récent [Retour d'Italie il y a 2 semaines]",
+            "Évolution pendant le voyage [Érythème plus marqué en vacances]",
+            "Fièvre au retour [Pas de fièvre remarquée]",
+            "Exposition solaire [Oui, pendant les vacances]"
+          ]
+        },
+        {
+          "id": "a14",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "binaryOnly": false,
+          "details": [
+            "Anamnèse ciblée et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "examen": {
+      "title": "Examen clinique",
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Inspection générale",
+          "details": [
+            "État des yeux [Légèrement secs et rouges]",
+            "Muqueuses [Rosées]"
+          ]
+        },
+        {
+          "id": "e2",
+          "text": "Examen cutané détaillé",
+          "details": [
+            "Description de l'érythème",
+            "Localisation",
+            "Aspect"
+          ],
+          "patientComment": "Érythème rouge légèrement squameux au niveau du dos - voir image en annexe"
+        },
+        {
+          "id": "e3",
+          "text": "Examen articulaire",
+          "details": [
+            "Douleur à la palpation [Articulations légèrement douloureuses à la pression]",
+            "Épanchement articulaire [Pas d'épanchement]",
+            "Limitation des mouvements [Non]"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Examen cardio-pulmonaire",
+          "patientComment": "Sans particularité"
+        },
+        {
+          "id": "e5",
+          "text": "Examen neurologique",
+          "patientComment": "Pas d'anomalie"
+        },
+        {
+          "id": "e6",
+          "text": "Recherche de signes évocateurs de lupus",
+          "details": [
+            "Éruption malaire",
+            "Ulcérations buccales",
+            "Alopécie",
+            "Phénomène de Raynaud"
+          ],
+          "patientComment": "Tous absents"
+        },
+        {
+          "id": "e7",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "binaryOnly": false,
+          "details": [
+            "Examen ciblé et bien conduit"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "management": {
+      "title": "Prise en charge",
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic de suspicion principal",
+          "patientComment": "Lupus érythémateux cutané (CLE)"
+        },
+        {
+          "id": "m2",
+          "text": "Diagnostics différentiels évoqués",
+          "ddSection": {
+            "categories": [
+              {
+                "name": "Dermatoses inflammatoires",
+                "items": [
+                  "Psoriasis : Plaques érythémato-squameuses bien délimitées, localisations typiques (coudes, genoux), antécédents familiaux possibles",
+                  "Photodermatose : Éruption liée à l'exposition solaire, amélioration à l'ombre, récidive à chaque exposition"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m3",
+          "text": "Examens complémentaires proposés",
+          "details": [
+            "Biologie sanguine [VS, CRP, anticorps anti-nucléaires (ANA), hémoglobine]",
+            "Analyse d'urine [Bandelette urinaire - recherche protéinurie/hématurie]",
+            "Fonction rénale [Créatinine, urée]"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Justification des examens",
+          "details": [
+            "Recherche de signes de lupus systémique",
+            "Évaluation de l'inflammation",
+            "Dépistage d'atteinte rénale (néphrite lupique)"
+          ]
+        },
+        {
+          "id": "m5",
+          "text": "Traitement proposé",
+          "therapySection": {
+            "introduction": "Prise en charge du lupus érythémateux cutané :",
+            "categories": [
+              {
+                "name": "Mesures générales",
+                "items": [
+                  {
+                    "treatment": "Protection solaire stricte",
+                    "details": "Éviter l'exposition solaire, crème solaire SPF 50+, vêtements couvrants",
+                    "importance": "Essentiel - les UV aggravent le lupus"
+                  }
+                ]
+              },
+              {
+                "name": "Traitement topique",
+                "items": [
+                  {
+                    "treatment": "Corticostéroïdes topiques",
+                    "details": "Application locale sur les lésions actives",
+                    "duration": "Selon évolution"
+                  },
+                  {
+                    "treatment": "Inhibiteurs de la calcineurine",
+                    "details": "Alternative aux corticoïdes, surtout pour le visage",
+                    "duration": "Traitement au long cours possible"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m6",
+          "text": "Information sur l'évolution possible",
+          "redflagsSection": [
+            {
+              "text": "Évolution vers lupus systémique"
+            },
+            {
+              "text": "Signes d'alerte"
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "text": "Surveillance et suivi recommandés",
+          "details": [
+            "Contrôle dans 4-6 semaines avec résultats",
+            "Surveillance biologique régulière si ANA positifs",
+            "Examen des autres systèmes à chaque consultation",
+            "Référence en dermatologie si évolution défavorable"
+          ]
+        },
+        {
+          "id": "m8",
+          "text": "Évaluation globale de la qualité de la prise en charge",
+          "binaryOnly": false,
+          "details": [
+            "Prise en charge cohérente et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "images": [
+      {
+        "title": "Image clinique - Érythème cutané",
+        "description": "Photographie montrant un érythème rouge légèrement squameux typique du lupus érythémateux cutané au niveau du dos",
+        "filename": "erytheme-img.jpg"
+      }
+    ]
+  }
+}

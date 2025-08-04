@@ -1,0 +1,207 @@
+{
+  "title": "Voyage à Madagascar",
+  "context": {
+    "setting": "Consultation de médecine des voyages",
+    "patient": "Père célibataire planifie un voyage à Madagascar avec son fils de 10 ans [3 semaines]"
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction et objectif",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Problème actuel et motif de consultation",
+          "binaryOnly": false,
+          "details": [
+            "[Voyage à Madagascar planifié pour 3 semaines]"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Questions et préoccupations du patient",
+          "binaryOnly": false,
+          "details": [
+            "[Que faut-il prendre en compte]",
+            "[Fièvre jaune]",
+            "[Médicaments]",
+            "[Vaccinations]",
+            "[Spécificités avec l'enfant]"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Statut vaccinal actuel",
+          "binaryOnly": false,
+          "details": [
+            "[Selon le schéma pour tous les deux]"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Maladies particulières et allergies",
+          "binaryOnly": false,
+          "details": [
+            "[Fils : rhume des foins]"
+          ]
+        },
+        {
+          "id": "a6",
+          "text": "Expériences de voyage antérieures",
+          "binaryOnly": false,
+          "details": [
+            "[Amérique, Australie, Égypte, Europe]"
+          ]
+        },
+        {
+          "id": "a7",
+          "text": "Type de voyage planifié",
+          "binaryOnly": false,
+          "details": [
+            "Plage, jungle, transports publics, trekking ?",
+            "[Tour en jungle, observation d'oiseaux, plongée, hôtel à la plage pour 1 semaine]"
+          ]
+        },
+        {
+          "id": "a8",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "binaryOnly": false,
+          "details": [
+            "Anamnèse générale ciblée et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Vaccinations recommandées",
+          "binaryOnly": false,
+          "details": [
+            "Vaccinations standard [toutes faites]",
+            "Fièvre jaune [non recommandée]",
+            "Hépatite [pour tous les deux]",
+            "Grippe [éventuellement pour tous les deux]"
+          ]
+        },
+        {
+          "id": "e2",
+          "text": "Conseils sur les comportements à risque",
+          "binaryOnly": false,
+          "details": [
+            "Alimentation : \"cook it, boil it, peel it or forget it\"",
+            "Accidents de la circulation",
+            "Protection solaire",
+            "Comportement sexuel",
+            "Peste à Madagascar [attention aux rats]"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Pharmacie de voyage",
+          "binaryOnly": false,
+          "details": [
+            "Protection solaire",
+            "Antalgique",
+            "Imodium pour diarrhée",
+            "Antibiotique (Ciprofloxacine)",
+            "Spray nasal pour rhume",
+            "Désinfectant et pommade",
+            "Pansements",
+            "Éventuellement comprimés de purification d'eau",
+            "Fenistil"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Prophylaxie antipaludique",
+          "binaryOnly": false,
+          "details": [
+            "Prophylaxie recommandée [dans tout le pays avec Méfloquine]",
+            "[Pour tous les deux recommandé, car seulement 1x/semaine]",
+            "[Début 1-2 semaines avant le voyage et 4 semaines après le voyage]"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Protection contre les moustiques",
+          "binaryOnly": false,
+          "details": [
+            "Protection suffisante contre les moustiques importante",
+            "Moustiquaire",
+            "Répulsif (Antibrumm)"
+          ]
+        },
+        {
+          "id": "e6",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "binaryOnly": false,
+          "details": [
+            "Status général ciblé et bien conduit"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Synthèse et planification du voyage",
+          "binaryOnly": false,
+          "details": [
+            "Résumé des recommandations",
+            "Calendrier de préparation"
+          ]
+        },
+        {
+          "id": "m2",
+          "text": "Information sur les risques spécifiques à Madagascar",
+          "binaryOnly": false,
+          "details": [
+            "Paludisme endémique",
+            "Peste présente",
+            "Conditions sanitaires locales"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Conseils pour le voyage avec enfant",
+          "binaryOnly": false,
+          "details": [
+            "Adaptations spécifiques à l'âge",
+            "Dosages médicamenteux pédiatriques",
+            "Surveillance particulière"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Planification du suivi",
+          "binaryOnly": false,
+          "details": [
+            "Consultation de contrôle si nécessaire",
+            "Numéros d'urgence",
+            "Suivi post-voyage"
+          ]
+        },
+        {
+          "id": "m5",
+          "text": "Évaluation globale de la qualité de la prise en charge",
+          "binaryOnly": false,
+          "details": [
+            "Prise en charge générale cohérente et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    }
+  }
+}

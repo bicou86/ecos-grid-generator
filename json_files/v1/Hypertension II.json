@@ -1,0 +1,344 @@
+{
+  "title": "Hypertension II",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Mme Bättig, 58 ans, consulte pour contrôle de tension artérielle",
+    "vitals": {
+      "ta": "159/112 mmHg"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction et objectif",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Symptômes actuels",
+          "binaryOnly": false,
+          "details": [
+            "[En fait aucun symptôme]"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Dyspnée d'effort (classification NYHA)",
+          "binaryOnly": false,
+          "details": [
+            "Au repos [non]",
+            "Effort léger [non]",
+            "Effort intense [non]"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Céphalées",
+          "binaryOnly": false,
+          "details": [
+            "[Parfois, mais depuis longtemps déjà]"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Acouphènes",
+          "binaryOnly": false,
+          "details": [
+            "[Non]"
+          ]
+        },
+        {
+          "id": "a6",
+          "text": "Vertiges",
+          "binaryOnly": false,
+          "details": [
+            "[Non]"
+          ]
+        },
+        {
+          "id": "a7",
+          "text": "Épistaxis",
+          "binaryOnly": false,
+          "details": [
+            "[Non]"
+          ]
+        },
+        {
+          "id": "a8",
+          "text": "Nycturie",
+          "binaryOnly": false,
+          "details": [
+            "[2-3 fois par nuit - plutôt nouveau, avant seulement 1 fois par nuit]"
+          ]
+        },
+        {
+          "id": "a9",
+          "text": "Capacité de marche",
+          "binaryOnly": false,
+          "details": [
+            "[En fait rien de particulier]"
+          ]
+        },
+        {
+          "id": "a10",
+          "text": "Maladies cardiaques",
+          "binaryOnly": false,
+          "details": [
+            "[Hypertension depuis 5 ans]"
+          ]
+        },
+        {
+          "id": "a11",
+          "text": "Maladies rénales",
+          "binaryOnly": false,
+          "details": [
+            "[Rien de connu]"
+          ]
+        },
+        {
+          "id": "a12",
+          "text": "Anamnèse médicamenteuse",
+          "binaryOnly": false,
+          "details": [
+            "[Prend un IEC - mais l'oublie parfois]"
+          ]
+        },
+        {
+          "id": "a13",
+          "text": "Diabète",
+          "binaryOnly": false,
+          "details": [
+            "[Non]"
+          ]
+        },
+        {
+          "id": "a14",
+          "text": "Hypercholestérolémie",
+          "binaryOnly": false,
+          "details": [
+            "[Non]"
+          ]
+        },
+        {
+          "id": "a15",
+          "text": "Autres antécédents",
+          "binaryOnly": false,
+          "details": [
+            "[Une fois en traitement pour dépression après décès de la mère]"
+          ]
+        },
+        {
+          "id": "a16",
+          "text": "Statut ménopausique",
+          "binaryOnly": false,
+          "details": [
+            "[Oui, depuis quelques années]"
+          ]
+        },
+        {
+          "id": "a17",
+          "text": "Habitudes alimentaires",
+          "binaryOnly": false,
+          "details": [
+            "Sel [normal]",
+            "Alcool [normal]"
+          ]
+        },
+        {
+          "id": "a18",
+          "text": "Substances toxiques",
+          "binaryOnly": false,
+          "details": [
+            "[Non]"
+          ]
+        },
+        {
+          "id": "a19",
+          "text": "Activités sportives et loisirs",
+          "binaryOnly": false,
+          "details": [
+            "[Famille et amis, pas de sport]"
+          ]
+        },
+        {
+          "id": "a20",
+          "text": "Antécédents familiaux",
+          "binaryOnly": false,
+          "details": [
+            "Hypertension, diabète, néphropathie, infarctus [parents tous deux infarctus]"
+          ]
+        },
+        {
+          "id": "a21",
+          "text": "Anamnèse sociale",
+          "binaryOnly": false,
+          "details": [
+            "[Mariée, pas d'enfants, vendeuse dans une boutique de vêtements]"
+          ]
+        },
+        {
+          "id": "a22",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "binaryOnly": false,
+          "details": [
+            "Anamnèse générale ciblée et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Désinfection des mains",
+          "binaryOnly": true
+        },
+        {
+          "id": "e2",
+          "text": "Mesure de la pression artérielle",
+          "binaryOnly": false,
+          "details": [
+            "[Encore si élevée]"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Inspection générale",
+          "binaryOnly": false,
+          "details": [
+            "IMC 25"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Examen cardiaque et pouls",
+          "binaryOnly": false,
+          "details": [
+            "[Régulier, 3e bruit audible]"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Auscultation pulmonaire",
+          "binaryOnly": false,
+          "details": [
+            "[Râles crépitants basaux]"
+          ]
+        },
+        {
+          "id": "e6",
+          "text": "Œdèmes des membres inférieurs",
+          "binaryOnly": false,
+          "details": [
+            "[Bilatéraux]"
+          ]
+        },
+        {
+          "id": "e7",
+          "text": "Examens complémentaires",
+          "binaryOnly": false,
+          "details": [
+            "Fond d'œil [normal]",
+            "Reins [normaux]"
+          ]
+        },
+        {
+          "id": "e8",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "binaryOnly": false,
+          "details": [
+            "Status général ciblé et bien conduit"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic principal",
+          "binaryOnly": false,
+          "details": [
+            "Hypertension artérielle"
+          ]
+        },
+        {
+          "id": "m2",
+          "text": "Explication des résultats",
+          "binaryOnly": false,
+          "details": [
+            "Hypertension connue, maintenant plutôt détérioration",
+            "Plus de compliance nécessaire",
+            "Réajustement de la médication",
+            "Pas de bilan cardiologique supplémentaire actuellement nécessaire",
+            "Expliquer la nécessité du traitement"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Mesures non médicamenteuses",
+          "binaryOnly": false,
+          "details": [
+            "Réduction pondérale",
+            "Régime pauvre en sel",
+            "Sport (motivation!)"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Traitement médicamenteux de première ligne",
+          "binaryOnly": false,
+          "details": [
+            "Diurétiques (thiazidiques) + IEC",
+            "Ou antagoniste de l'angiotensine II",
+            "Ou bêtabloquant",
+            "Ou antagoniste calcique"
+          ]
+        },
+        {
+          "id": "m5",
+          "text": "Traitement de deuxième ligne",
+          "binaryOnly": false,
+          "details": [
+            "Si pas d'amélioration: combinaison à 2",
+            "Diurétiques + IEC + antagoniste calcique",
+            "Ou diurétiques + bêtabloquant + vasodilatateur",
+            "Ou diurétiques + antisympathique + vasodilatateur"
+          ]
+        },
+        {
+          "id": "m6",
+          "text": "Traitement réfractaire",
+          "binaryOnly": false,
+          "details": [
+            "Tentative avec diurétique de l'anse + bêtabloquant + minoxidil"
+          ]
+        },
+        {
+          "id": "m7",
+          "text": "Planification du suivi",
+          "binaryOnly": false,
+          "details": [
+            "Rendez-vous de contrôle dans 6 semaines"
+          ]
+        },
+        {
+          "id": "m8",
+          "text": "Évaluation globale de la qualité de la prise en charge",
+          "binaryOnly": false,
+          "details": [
+            "Prise en charge générale cohérente et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    }
+  }
+}

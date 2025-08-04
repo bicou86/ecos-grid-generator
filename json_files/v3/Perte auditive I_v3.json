@@ -1,0 +1,332 @@
+{
+  "title": "Perte auditive I",
+  "context": {
+    "setting": "Consultation ORL d'urgence",
+    "patient": "M. Dumont, 40 ans, se présente en urgence à la consultation ORL car il n'entend plus rien. Il est complètement désespéré."
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction et tâche",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Question d'entrée ouverte",
+          "binaryOnly": true,
+          "details": [
+            "Qu'est-ce qui vous amène aujourd'hui ? [Hein ? Je ne vous entends pas]"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Caractérisation de la perte auditive",
+          "binaryOnly": false,
+          "details": [
+            "Apparition temporelle [soudaine]",
+            "Évolution temporelle [pas d'aggravation]",
+            "Latéralisation [gauche > droite]",
+            "Intensité de la perte auditive [sévère à gauche]"
+          ],
+          "scoringRule": "≥3 caractéristiques = 2 points, 2 caractéristiques = 1 point"
+        },
+        {
+          "id": "a4",
+          "text": "Symptômes associés ORL",
+          "binaryOnly": false,
+          "details": [
+            "Sécrétions auriculaires (cérumen, sang, pus) [non]",
+            "Douleurs auriculaires [non]",
+            "Acouphènes [temporairement, pas en ce moment]",
+            "Vertiges [non]"
+          ],
+          "scoringRule": "≥3 symptômes recherchés = 2 points, 2 symptômes = 1 point"
+        },
+        {
+          "id": "a5",
+          "text": "Symptômes généraux",
+          "binaryOnly": false,
+          "details": [
+            "Fièvre [non]",
+            "Toux [non]",
+            "Rhinite [non]",
+            "Vomissements [non]"
+          ],
+          "scoringRule": "≥3 symptômes recherchés = 2 points, 2 symptômes = 1 point"
+        },
+        {
+          "id": "a6",
+          "text": "Facteurs déclenchants et traumatismes",
+          "binaryOnly": false,
+          "details": [
+            "Facteur déclenchant identifiable [aucune idée]",
+            "Traumatisme récent [non]",
+            "Situation particulière [non]"
+          ]
+        },
+        {
+          "id": "a7",
+          "text": "Antécédents ORL et exposition",
+          "binaryOnly": false,
+          "details": [
+            "Antécédents de maladies auriculaires [non]",
+            "Exposition professionnelle au bruit [clients qui crient, sinon plutôt calme]",
+            "Traumatismes auditifs antérieurs [non]"
+          ]
+        },
+        {
+          "id": "a8",
+          "text": "Anamnèse médicamenteuse",
+          "binaryOnly": false,
+          "details": [
+            "Médicaments actuels [aucun]",
+            "Médicaments ototoxiques [non]",
+            "Automédication récente [non]"
+          ]
+        },
+        {
+          "id": "a9",
+          "text": "Anamnèse systémique",
+          "binaryOnly": false,
+          "details": [
+            "Hypertension artérielle [non]",
+            "Diabète [non]",
+            "Troubles neurologiques [non]",
+            "Facteurs psychosociaux [stress professionnel important]"
+          ],
+          "scoringRule": "≥3 systèmes explorés = 2 points, 2 systèmes = 1 point"
+        },
+        {
+          "id": "a10",
+          "text": "Anamnèse sociale et professionnelle",
+          "binaryOnly": false,
+          "details": [
+            "Profession [avocat]",
+            "Situation familiale [célibataire]",
+            "Stress professionnel [beaucoup de travail]"
+          ]
+        },
+        {
+          "id": "a11",
+          "text": "Allergies",
+          "binaryOnly": false,
+          "details": [
+            "Allergies connues [non]"
+          ]
+        },
+        {
+          "id": "a12",
+          "text": "Antécédents familiaux",
+          "binaryOnly": false,
+          "details": [
+            "Surdité familiale [non]",
+            "Autres pathologies ORL familiales [non]"
+          ]
+        },
+        {
+          "id": "a13",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "binaryOnly": false,
+          "details": [
+            "Anamnèse ciblée et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Inspection de l'oreille",
+          "binaryOnly": false,
+          "details": [
+            "Inspection du pavillon auriculaire [sans particularité]",
+            "Inspection du conduit auditif externe visible [sans particularité]"
+          ]
+        },
+        {
+          "id": "e2",
+          "text": "Palpation de l'oreille et recherche d'adénopathies",
+          "binaryOnly": false,
+          "details": [
+            "Palpation du tragus [indolore]",
+            "Traction du pavillon auriculaire [indolore]",
+            "Palpation mastoïdienne [indolore]",
+            "Recherche d'adénopathies cervicales [absentes]"
+          ],
+          "scoringRule": "≥3 manœuvres = 2 points, 2 manœuvres = 1 point"
+        },
+        {
+          "id": "e3",
+          "text": "Otoscopie bilatérale",
+          "binaryOnly": false,
+          "details": [
+            "Conduit auditif externe droit [normal]",
+            "Tympan droit [normal]",
+            "Conduit auditif externe gauche [normal]",
+            "Tympan gauche [normal]"
+          ],
+          "scoringRule": "≥3 structures examinées = 2 points, 2 structures = 1 point"
+        },
+        {
+          "id": "e4",
+          "text": "Tests auditifs au diapason",
+          "binaryOnly": false,
+          "details": [
+            "Test de Weber [latéralisation vers la droite]",
+            "Test de Rinne à droite [positif]",
+            "Test de Rinne à gauche [positif]"
+          ],
+          "scoringRule": "≥2 tests = 2 points"
+        },
+        {
+          "id": "e5",
+          "text": "Test de la voix chuchotée",
+          "binaryOnly": false,
+          "details": [
+            "Oreille droite [normale]",
+            "Oreille gauche [très diminuée]"
+          ]
+        },
+        {
+          "id": "e6",
+          "text": "Examen de l'équilibre et coordination",
+          "binaryOnly": false,
+          "details": [
+            "Équilibre statique [normal]",
+            "Marche [normale]",
+            "Recherche de nystagmus [absent]"
+          ],
+          "scoringRule": "≥2 tests = 2 points"
+        },
+        {
+          "id": "e7",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "binaryOnly": false,
+          "details": [
+            "Examen clinique ciblé et bien conduit"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic principal",
+          "binaryOnly": false,
+          "details": [
+            "Surdité brusque idiopathique gauche",
+            "Surdité de perception unilatérale gauche"
+          ]
+        },
+        {
+          "id": "m2",
+          "text": "Diagnostics différentiels",
+          "binaryOnly": false,
+          "ddSection": {
+            "categories": [
+              {
+                "name": "Oreille externe et moyenne",
+                "items": [
+                  "Bouchon de cérumen",
+                  "Corps étranger",
+                  "Perforation tympanique traumatique",
+                  "Otite moyenne aiguë avec épanchement",
+                  "Otite moyenne séreuse"
+                ]
+              },
+              {
+                "name": "Oreille interne et voie auditive",
+                "items": [
+                  "Insuffisance circulatoire cochléaire aiguë (surdité brusque)",
+                  "Labyrinthite virale",
+                  "Réaction toxique de l'oreille interne",
+                  "Traumatisme acoustique",
+                  "Traumatisme crânien avec fracture du rocher",
+                  "Maladie de Ménière"
+                ]
+              },
+              {
+                "name": "Causes centrales",
+                "items": [
+                  "Schwannome vestibulaire",
+                  "Sclérose en plaques",
+                  "Pathologies du système nerveux central"
+                ]
+              }
+            ]
+          },
+          "scoringRule": "≥2 catégories avec diagnostics = 2 points"
+        },
+        {
+          "id": "m3",
+          "text": "Examens complémentaires",
+          "binaryOnly": false,
+          "details": [
+            "Audiométrie tonale en urgence",
+            "Audiométrie vocale",
+            "Tympanométrie",
+            "Diagnostic vestibulaire (nystagmus, épreuve calorique)",
+            "Bilan biologique (FSC, CRP, VS, glycémie)",
+            "Recherche d'hypertension artérielle",
+            "Recherche d'hyperlipidémie",
+            "IRM cérébrale et du conduit auditif interne si pas d'amélioration"
+          ],
+          "scoringRule": "≥5 examens pertinents = 2 points, 3-4 examens = 1 point"
+        },
+        {
+          "id": "m4",
+          "text": "Traitement",
+          "binaryOnly": false,
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Traitement médical",
+                "content": "• Corticothérapie systémique haute dose (prednisolone 1mg/kg/j)\n• Hémodilution (pentoxifylline ou hydroxyéthylamidon)\n• Hospitalisation pour réduction du stress\n• Repos auditif"
+              },
+              {
+                "title": "Surveillance",
+                "content": "• Contrôle audiométrique à J3, J7\n• Adaptation thérapeutique selon évolution\n• Réévaluation du traitement si pas d'amélioration\n• IRM si échec thérapeutique"
+              },
+              {
+                "title": "Traitements alternatifs",
+                "content": "• Injection intratympanique de corticoïdes si échec\n• Oxygénothérapie hyperbare (dans les 48h)\n• Caisson hyperbare selon disponibilité\n• Thérapie par chambre hyperbare"
+              }
+            ]
+          },
+          "scoringRule": "≥2 modalités thérapeutiques = 2 points"
+        },
+        {
+          "id": "m5",
+          "text": "Information du patient et pronostic",
+          "binaryOnly": false,
+          "details": [
+            "Récupération complète dans 60% des cas",
+            "Récupération partielle dans 20% des cas",
+            "Possibilité de récidive",
+            "Importance du traitement précoce",
+            "Nécessité d'un suivi audiométrique"
+          ],
+          "scoringRule": "≥4 éléments informatifs = 2 points, 2-3 éléments = 1 point"
+        },
+        {
+          "id": "m6",
+          "text": "Évaluation globale de la qualité de la prise en charge",
+          "binaryOnly": false,
+          "details": [
+            "Prise en charge cohérente et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,582 @@
+{
+  "title": "Chute I",
+  "context": {
+    "setting": "Service d'urgences de l'hôpital cantonal de Lucerne",
+    "patient": "Madame Bauer, 74 ans, amenée par sa fille après être tombée de la chaise sur le sol de la cuisine devant son mari, était très confuse"
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction et tâche",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "RED FLAGS AVC - Évaluation urgente",
+          "scoringRule": "≥6 red flags explorés = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false,
+          "redflagsSection": [
+            {
+              "text": "Déficit neurologique focal brutal [faiblesse côté gauche]"
+            },
+            {
+              "text": "Troubles de conscience/confusion [oui, très confuse]"
+            },
+            {
+              "text": "Trouble du langage (aphasie) [à vérifier]"
+            },
+            {
+              "text": "Trouble de déglutition [à vérifier]"
+            },
+            {
+              "text": "Convulsions [non rapportées]"
+            },
+            {
+              "text": "Céphalées intenses brutales [à explorer]"
+            },
+            {
+              "text": "Vomissements en jet [à explorer]"
+            },
+            {
+              "text": "Trouble visuel brutal [vision normale rapportée]"
+            }
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Chronologie précise - FAST-ED",
+          "details": [
+            "Heure exacte des premiers symptômes [il y a 2h]",
+            "Dernier moment où patient était normal [il y a 2h]",
+            "Témoin de l'événement [mari présent]",
+            "Mode d'installation (brutal vs progressif) [brutal]",
+            "Évolution depuis le début [stable vs aggravation]"
+          ],
+          "scoringRule": "≥4 éléments précis = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a4",
+          "text": "Circonstances de l'événement",
+          "details": [
+            "Activité au moment de l'AVC [assise en cuisine]",
+            "Chute secondaire ou cause de l'AVC [chute secondaire à l'AVC]",
+            "Traumatisme crânien associé [à vérifier]",
+            "Position trouvée [sol de cuisine]",
+            "État initial de conscience [confuse]"
+          ],
+          "scoringRule": "≥4 circonstances = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a5",
+          "text": "Déficits neurologiques - Topographie",
+          "details": [
+            "Déficit moteur : localisation [côté gauche]",
+            "Déficit moteur : sévérité [ne bougeait plus]",
+            "Déficit sensitif [diminué à gauche, fourmillements]",
+            "Atteinte faciale [à explorer]",
+            "Coordination/ataxie [motricité fine diminuée]",
+            "Négligence/héminégligence [à tester]"
+          ],
+          "scoringRule": "≥5 déficits explorés = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a6",
+          "text": "Fonctions supérieures",
+          "details": [
+            "Langage/aphasie [normal rapporté]",
+            "Compréhension [à tester]",
+            "Articulation/dysarthrie [à explorer]",
+            "Apraxie gestuelle [à tester]",
+            "Mémoire/orientation [confusion rapportée]",
+            "Fonctions exécutives"
+          ],
+          "scoringRule": "≥5 fonctions = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a7",
+          "text": "Fonctions sensorielles",
+          "details": [
+            "Vision : champs visuels [normale rapportée]",
+            "Vision : diplopie [à explorer]",
+            "Audition [normale rapportée]",
+            "Vertiges/instabilité [à explorer]",
+            "Troubles de déglutition [crucial à évaluer]"
+          ],
+          "scoringRule": "≥4 fonctions = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a8",
+          "text": "Facteurs de risque cardiovasculaire majeurs",
+          "details": [
+            "Hypertension [oui]",
+            "Diabète [à explorer]",
+            "Hyperlipidémie [statine prescrite]",
+            "Tabagisme [à explorer]",
+            "Fibrillation auriculaire [à rechercher]",
+            "Antécédent AVC/AIT [à rechercher]",
+            "Cardiopathie [à explorer]",
+            "Âge >65 ans [74 ans]"
+          ],
+          "scoringRule": "≥6 facteurs explorés = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a9",
+          "text": "Médicaments et anticoagulation",
+          "details": [
+            "Anticoagulants oraux [à vérifier]",
+            "Antiagrégants plaquettaires [à vérifier]",
+            "Antihypertenseurs [bêta-bloquant]",
+            "Statines [oui]",
+            "Autres médicaments neurologiques",
+            "Pilule contraceptive (si femme jeune)",
+            "Observance thérapeutique"
+          ],
+          "scoringRule": "≥5 médicaments explorés = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a10",
+          "text": "Antécédents médicaux pertinents",
+          "details": [
+            "AVC/AIT antérieurs [à rechercher]",
+            "Cardiopathie emboligène [à explorer]",
+            "Fibrillation auriculaire [à rechercher]",
+            "Valvulopathie [à explorer]",
+            "Migraine avec aura [à explorer]",
+            "Troubles de coagulation [à explorer]",
+            "Cancer actif [à explorer]"
+          ],
+          "scoringRule": "≥6 antécédents = 2 pts, 3-5 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a11",
+          "text": "Facteurs précipitants",
+          "details": [
+            "Effort physique intense [aucune activité sportive]",
+            "Stress émotionnel récent [à explorer]",
+            "Infection récente [à rechercher]",
+            "Déshydratation [à évaluer]",
+            "Hypotension récente [à explorer]",
+            "Changement de traitement [à vérifier]"
+          ],
+          "scoringRule": "≥4 facteurs = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a12",
+          "text": "Toxiques et habitudes",
+          "patientComment": "Aucun toxique, pas d'alcool, pas de tabac",
+          "binaryOnly": true
+        },
+        {
+          "id": "a13",
+          "text": "Anamnèse familiale ciblée",
+          "details": [
+            "AVC familiaux [à rechercher]",
+            "Maladies cardiaques [à explorer]",
+            "Hypertension familiale [à explorer]",
+            "Diabète familial [père fibrose pulmonaire]",
+            "Maladies thrombotiques héréditaires"
+          ],
+          "scoringRule": "≥4 antécédents familiaux = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a14",
+          "text": "Autonomie et fonction avant l'AVC",
+          "details": [
+            "Autonomie ADL (Activities of Daily Living) [aide 2x/semaine]",
+            "Marche sans aide [à préciser]",
+            "Fonctions cognitives antérieures [à évaluer]",
+            "Qualité de vie antérieure",
+            "Support social [mariée]"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a15",
+          "text": "Contre-indications à la thrombolyse",
+          "details": [
+            "Chirurgie récente <3 mois [à vérifier]",
+            "Traumatisme crânien récent [à vérifier avec chute]",
+            "Hémorragie digestive récente [à explorer]",
+            "Grossesse [non applicable - 74 ans]",
+            "Convulsions au début [non]",
+            "Glycémie <2.8 ou >22 mmol/L [à mesurer]",
+            "TA >180/110 mmHg [à mesurer]"
+          ],
+          "scoringRule": "≥5 CI explorées = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a16",
+          "text": "Anamnèse sociale et support",
+          "details": [
+            "Entourage familial [fille présente]",
+            "Conditions de vie [à domicile]",
+            "Support médico-social [aide 2x/semaine]",
+            "Directives anticipées [à explorer]",
+            "Personne de confiance [mari]"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a17",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "binaryOnly": false,
+          "details": [
+            "Anamnèse urgente complète avec chronologie précise",
+            "Exploration systématique des contre-indications à la thrombolyse",
+            "Évaluation des facteurs de risque et antécédents"
+          ],
+          "scoringRule": "Excellent = 2 pts, satisfaisant = 1 pt, insuffisant = 0 pt"
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Signes vitaux complets et urgents",
+          "details": [
+            "TA bilatérale [crucial pour thrombolyse]",
+            "FC et rythme cardiaque [FA?]",
+            "FR [détresse respiratoire?]",
+            "Température [infection?]",
+            "Saturation O2 [hypoxie?]",
+            "Glycémie capillaire [hypoglycémie?]"
+          ],
+          "scoringRule": "≥5 paramètres = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e2",
+          "text": "Échelle NIHSS - Évaluation standardisée",
+          "details": [
+            "1a - Niveau de conscience",
+            "1b - Questions d'orientation",
+            "1c - Commandes",
+            "2 - Motilité oculaire",
+            "3 - Champs visuels",
+            "4 - Paralysie faciale",
+            "5a,5b - Motricité membres",
+            "6a,6b - Ataxie",
+            "7 - Sensibilité",
+            "8 - Langage",
+            "9 - Dysarthrie",
+            "10 - Négligence"
+          ],
+          "scoringRule": "NIHSS complet = 2 pts, partiel = 1 pt, non fait = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e3",
+          "text": "État de conscience - Glasgow",
+          "details": [
+            "Ouverture des yeux [spontanée/à la voix/douleur]",
+            "Réponse verbale [orientée/confuse/inappropriée]",
+            "Réponse motrice [obéit/localise/retire/flexion/extension]",
+            "Score total Glasgow [/15]"
+          ],
+          "scoringRule": "Score complet = 2 pts, partiel = 1 pt, non évalué = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e4",
+          "text": "Examen neurologique focal - Motricité",
+          "details": [
+            "Force musculaire 4 membres (0-5) [diminuée à gauche]",
+            "Tonus musculaire [spasticité/flaccidité]",
+            "Réflexes ostéo-tendineux [asymétrie]",
+            "Réflexes cutanés plantaires [Babinski]",
+            "Réflexes archaïques [préhension, aspiration]"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e5",
+          "text": "Examen neurologique focal - Sensibilité",
+          "details": [
+            "Sensibilité tactile [diminuée à gauche]",
+            "Sensibilité douloureuse",
+            "Sensibilité vibratoire",
+            "Sensibilité proprioceptive",
+            "Extinction sensitive [négligence]"
+          ],
+          "scoringRule": "≥4 modalités = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e6",
+          "text": "Nerfs crâniens systématiques",
+          "details": [
+            "II - Acuité visuelle, champs visuels",
+            "III,IV,VI - Motilité oculaire, pupilles",
+            "V - Sensibilité faciale, réflexe cornéen",
+            "VII - Motricité faciale, asymétrie",
+            "VIII - Audition, vertige",
+            "IX,X - Déglutition, réflexe nauséeux",
+            "XI - Force sterno-cléido-mastoïdien",
+            "XII - Motricité linguale"
+          ],
+          "scoringRule": "≥6 nerfs testés = 2 pts, 3-5 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e7",
+          "text": "Tests de coordination et équilibre",
+          "details": [
+            "Épreuve doigt-nez [si possible]",
+            "Épreuve talon-genou [si possible]",
+            "Diadococinésie [si possible]",
+            "Station debout [si possible]",
+            "Test de Romberg [si applicable]",
+            "Marche [si possible]"
+          ],
+          "scoringRule": "≥4 tests réalisables = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e8",
+          "text": "Fonctions supérieures",
+          "details": [
+            "Orientation temporo-spatiale",
+            "Langage spontané/compréhension",
+            "Répétition/dénomination",
+            "Lecture/écriture [si possible]",
+            "Calcul simple",
+            "Apraxie gestuelle",
+            "Négligence spatiale"
+          ],
+          "scoringRule": "≥5 fonctions = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e9",
+          "text": "Test de déglutition - Sécurité",
+          "details": [
+            "Déglutition de salive",
+            "Test à l'eau (3 cuillerées) [si déglutition salive OK]",
+            "Voix gargouillante",
+            "Toux pendant/après déglutition",
+            "Évaluation de fausse route"
+          ],
+          "scoringRule": "Test complet = 2 pts, partiel = 1 pt, non fait = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e10",
+          "text": "Examen cardiovasculaire",
+          "details": [
+            "Auscultation cardiaque [rythme, souffles]",
+            "Auscultation carotidienne [souffles]",
+            "Pouls périphériques [asymétrie]",
+            "Palpation carotidienne [si pas de souffle]",
+            "Recherche FA [pouls irrégulier]"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e11",
+          "text": "Recherche complications",
+          "details": [
+            "Signes d'HTIC [céphalées, vomissements]",
+            "Transformation hémorragique [aggravation]",
+            "Œdème cérébral [troubles conscience]",
+            "Infection pulmonaire [fièvre, toux]",
+            "Troubles du rythme [monitoring]"
+          ],
+          "scoringRule": "≥4 complications = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e12",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "binaryOnly": false,
+          "details": [
+            "Examen neurologique urgent et systématique",
+            "NIHSS réalisé correctement",
+            "Recherche de complications",
+            "Évaluation sécurité déglutition"
+          ],
+          "scoringRule": "Excellent = 2 pts, satisfaisant = 1 pt, insuffisant = 0 pt"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic principal avec localisation",
+          "patientComment": "AVC ischémique aigu territoire sylvien droit avec hémiparésie gauche",
+          "binaryOnly": true
+        },
+        {
+          "id": "m2",
+          "text": "Diagnostics différentiels neurologiques urgents",
+          "scoringRule": "≥6 DD = 2 pts, 3-5 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false,
+          "ddSection": {
+            "categories": [
+              {
+                "name": "Diagnostics différentiels à considérer",
+                "items": [
+                  "AVC hémorragique [nécessite imagerie urgente]",
+                  "AIT (si <24h et récupération) [peu probable vu persistance]",
+                  "Migraine avec aura complexe [atypique à cet âge]",
+                  "Crise comitiale avec paralysie de Todd",
+                  "Hypoglycémie sévère [glycémie urgente]",
+                  "Dissection artérielle [trauma, âge]",
+                  "Thrombose veineuse cérébrale [rare mais possible]",
+                  "Métastase cérébrale [si cancer connu]"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m3",
+          "text": "Examens complémentaires urgents",
+          "details": [
+            "CT cérébral sans contraste [urgence absolue]",
+            "Glycémie capillaire puis veineuse [urgence]",
+            "NFS, plaquettes [thrombolyse]",
+            "TP, TCA, INR [anticoagulation]",
+            "Urée, créatinine, ionogramme",
+            "Troponine, CK-MB [cardio-embolique]",
+            "ECG 12 dérivations [FA, infarctus]"
+          ],
+          "scoringRule": "≥6 examens = 2 pts, 3-5 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m4",
+          "text": "Imagerie vasculaire",
+          "details": [
+            "Angio-CT des troncs supra-aortiques [si thrombolyse]",
+            "Échographie-Doppler carotidienne [sténose]",
+            "IRM cérébrale + diffusion [si doute diagnostic]",
+            "ARM intracrânienne [occlusion proximale]",
+            "Échographie cardiaque [source embolique]"
+          ],
+          "scoringRule": "≥3 examens adaptés = 2 pts, 2 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m5",
+          "text": "Thrombolyse IV - Éligibilité et protocole",
+          "details": [
+            "Critères temporels <4.5h [2h = OK]",
+            "Critères cliniques (NIHSS 4-25) [à calculer]",
+            "Exclusion hémorragie (CT normal) [indispensable]",
+            "Vérification contre-indications [anticoagulants, chirurgie]",
+            "rt-PA 0.9mg/kg (max 90mg) [si éligible]",
+            "10% en bolus, 90% sur 1h [protocole]",
+            "Surveillance rapprochée post-thrombolyse"
+          ],
+          "scoringRule": "Protocole complet = 2 pts, partiel = 1 pt, non considéré = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m6",
+          "text": "Thrombectomie mécanique - Indications",
+          "details": [
+            "Occlusion proximale (carotide, M1, M2) [si angio-CT+]",
+            "Critères temporels <6h (ou <24h si critères étendus)",
+            "NIHSS élevé (>6) [probable ici]",
+            "Référence urgente centre neuro-vasculaire",
+            "Transport médicalisé si nécessaire"
+          ],
+          "scoringRule": "Évaluation correcte = 2 pts, partielle = 1 pt, manquée = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m7",
+          "text": "Mesures de neuroprotection",
+          "details": [
+            "Position tête à 30° [anti-œdème]",
+            "Maintien SaO2 >94% [oxygène si besoin]",
+            "Glycémie 4-10 mmol/L [éviter hypo/hyperglycémie]",
+            "TA <185/110 mmHg [pour thrombolyse seulement]",
+            "Température <37.5°C [antipyrétiques]",
+            "Jeûne absolu [troubles déglutition]",
+            "Prévention thrombose veineuse"
+          ],
+          "scoringRule": "≥6 mesures = 2 pts, 3-5 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m8",
+          "text": "Surveillance et complications",
+          "details": [
+            "Monitoring neurologique q15min puis qh",
+            "Surveillance hémorragique [post-thrombolyse]",
+            "Évaluation déglutition avant alimentation",
+            "Prévention pneumonie d'inhalation",
+            "Mobilisation précoce [<24h si stable]",
+            "Kinésithérapie et orthophonie",
+            "Bilan de l'autonomie"
+          ],
+          "scoringRule": "≥5 éléments = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m9",
+          "text": "Prévention secondaire",
+          "details": [
+            "Antiagrégation plaquettaire [sauf si anticoag]",
+            "Statine haute intensité [déjà prescrite]",
+            "Contrôle optimal TA <140/90 mmHg",
+            "Recherche et traitement FA [si détectée]",
+            "Contrôle facteurs de risque [diabète, tabac]",
+            "Éducation thérapeutique patient/famille"
+          ],
+          "scoringRule": "≥5 mesures = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m10",
+          "text": "Organisation des soins et communication",
+          "details": [
+            "Consultation neurologique urgente [organisée]",
+            "Information famille sur pronostic",
+            "Planification réadaptation",
+            "Évaluation retour à domicile",
+            "Suivi médico-social adapté",
+            "Directives anticipées si approprié"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m11",
+          "text": "Évaluation globale de la qualité de la prise en charge",
+          "binaryOnly": false,
+          "details": [
+            "Prise en charge urgente optimale dans les délais",
+            "Évaluation complète thrombolyse/thrombectomie",
+            "Mesures de neuroprotection appropriées",
+            "Organisation du suivi multidisciplinaire"
+          ],
+          "scoringRule": "Excellent = 2 pts, satisfaisant = 1 pt, insuffisant = 0 pt"
+        }
+      ]
+    }
+  }
+}

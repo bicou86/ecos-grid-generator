@@ -1,0 +1,591 @@
+{
+  "title": "USMLE Triage 8 - Syncope",
+  "context": {
+    "setting": "Service des urgences",
+    "patient": "James Patterson, un homme de 23 ans, se présente aux urgences pour l'évaluation d'une chute ayant entraîné une fracture dentaire.",
+    "vitals": {
+      "ta": "118/72 mmHg",
+      "fc": "54 bpm",
+      "fr": "12/min",
+      "temperature": "36.9°C"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Introduction et approche empathique (nom, fonction et questions ouvertes)",
+          "binaryOnly": true,
+          "exemplesPhrases": [
+            "Bonjour M. Patterson, je suis le Dr Drake.",
+            "Je comprends que vous avez fait une chute aujourd'hui et que vous vous êtes cassé une dent ? Puis-je vous demander de m'expliquer ce qui s'est passé ?"
+          ]
+        },
+        {
+          "id": "a2",
+          "text": "Caractérisation de l'épisode syncopal",
+          "details": [
+            "Perte de connaissance confirmée [oui, quelques secondes]",
+            "Circonstances [montait escaliers, se réveillé sur marche du haut]",
+            "Durée [quelques secondes selon témoin]",
+            "Récupération [confus au réveil ('dans les vapes')]",
+            "Traumatisme associé [fracture dentaire, lacération labiale]"
+          ],
+          "exemplesPhrases": [
+            "Vous semblez un peu hésitant. Vous souvenez-vous bien de l'incident ?",
+            "D'accord. Donc, avez-vous perdu connaissance ?",
+            "Revenez à l'incident lui-même pour moi, si vous voulez bien. Vous souvenez-vous avoir trébuché sur une marche puis avoir heurté votre visage, ou avez-vous d'abord perdu connaissance puis êtes tombé ?"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Témoignage et circonstances exactes",
+          "details": [
+            "Témoin présent [ami avec lui]",
+            "Description du témoin [ne savait pas immédiatement qu'il était tombé]",
+            "Position retrouvée [sur marche du haut des escaliers]",
+            "Délai de récupération [quelques secondes]",
+            "Aucune convulsion observée [ami redescendu quelques secondes après]"
+          ],
+          "exemplesPhrases": [
+            "Très bien. Votre ami a-t-il dit que vous avez eu des convulsions quand vous étiez au sol ? Quelque chose comme une crise d'épilepsie ?",
+            "Votre ami a-t-il dit combien de temps vous êtes resté inconscient ?"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Symptômes précédant la syncope",
+          "details": [
+            "Douleurs thoraciques [non]",
+            "Palpitations [non]",
+            "Vertiges ou étourdissements [non]",
+            "Activité précédente [partie de racquetball habituelle]",
+            "Montée d'escaliers habituelle [vit au 3e étage, habitude de courir]"
+          ],
+          "exemplesPhrases": [
+            "Juste avant de perdre connaissance, aviez-vous des douleurs thoraciques ou la sensation que votre cœur battait fort ?",
+            "Et des vertiges ou des étourdissements ?",
+            "Que faisiez-vous avant cet incident ?"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Antécédents d'épisodes similaires",
+          "details": [
+            "Syncopes antérieures [non, sauf liées à l'alcool à l'université]",
+            "Crises d'épilepsie [non, pas que je sache]",
+            "Problèmes cardiaques [non, sportif avec examens médicaux]",
+            "ECG ou échocardiographie antérieurs [jamais fait]"
+          ],
+          "exemplesPhrases": [
+            "Cela vous est-il déjà arrivé auparavant ?",
+            "D'accord. Avez-vous déjà eu une crise d'épilepsie ?",
+            "Et des problèmes cardiaques ?",
+            "Avez-vous déjà eu un ECG, ou un médecin a-t-il déjà regardé votre cœur avec un appareil d'échographie ?"
+          ]
+        },
+        {
+          "id": "a6",
+          "text": "Symptômes systémiques récents",
+          "details": [
+            "Maladies récentes [rhume il y a 3 mois]",
+            "Symptômes digestifs [diarrhée récente, quelques jours]",
+            "Caractéristiques diarrhée [liquide, pas de sang]",
+            "Nausées/vomissements [non]",
+            "Douleurs thoraciques au repos [non]"
+          ],
+          "exemplesPhrases": [
+            "Très bien. Avez-vous eu des maladies récentes ? Des problèmes de santé mineurs ?",
+            "Et des nausées, vomissements, maux d'estomac, diarrhée ?",
+            "Avez-vous eu des nausées ou des vomissements avec ça ?"
+          ]
+        },
+        {
+          "id": "a7",
+          "text": "Médicaments et suppléments",
+          "details": [
+            "Médicaments [aucun]",
+            "Suppléments [poudre de protéines le matin]",
+            "Composition supplément [protéine de soja uniquement]"
+          ],
+          "exemplesPhrases": [
+            "Très bien. Prenez-vous des médicaments ?",
+            "Et des compléments alimentaires ?",
+            "Y a-t-il d'autres ingrédients que des protéines dedans ?"
+          ]
+        },
+        {
+          "id": "a8",
+          "text": "Habitudes de vie",
+          "details": [
+            "Tabac [non, trop de sport]",
+            "Alcool actuel [oui, quelques verres/semaine, weekends]",
+            "Quantité précise [3-4 verres quand sort]",
+            "Dernière consommation [3 bières samedi, il y a 5 jours]",
+            "Questions CAGE [toutes négatives]"
+          ],
+          "exemplesPhrases": [
+            "Très bien. Fumez-vous ou utilisez-vous d'autres produits du tabac ?",
+            "Vous avez mentionné que vous buviez de la bière avant. En buvez-vous toujours ?",
+            "Combien de verres par nuit le week-end diriez-vous ?"
+          ]
+        },
+        {
+          "id": "a9",
+          "text": "Antécédents médicaux personnels",
+          "details": [
+            "Santé générale [en bonne santé, première fois aux urgences]",
+            "Hospitalisations [jamais]",
+            "Chirurgies [aucune]",
+            "Activité sportive [athlétisme universitaire]",
+            "Examens médicaux sportifs [normaux]"
+          ],
+          "exemplesPhrases": [
+            "Êtes-vous allé chez le médecin pour autre chose qu'une maladie mineure dans votre vie ? Surtout quelque chose pour lequel vous avez passé la nuit à l'hôpital ?",
+            "Et des interventions chirurgicales ?"
+          ]
+        },
+        {
+          "id": "a10",
+          "text": "Histoire familiale",
+          "details": [
+            "Père [hypertension artérielle, pas d'autres problèmes cardiaques]",
+            "Mère [dépression]",
+            "Frère [syndrome de Down]",
+            "Syncopes familiales [aucune]",
+            "Problèmes cardiaques familiaux [non]"
+          ],
+          "exemplesPhrases": [
+            "Quelqu'un dans votre famille a-t-il des maladies importantes ?",
+            "Spécifiquement, quelqu'un a-t-il eu un problème de perte de connaissance ?",
+            "Vous avez dit que votre père avait de l'hypertension artérielle, d'autres problèmes avec son cœur ?"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Préparation à l'examen",
+          "binaryOnly": true,
+          "details": [
+            "Se laver les mains",
+            "Commenter les signes vitaux normaux",
+            "Expliquer l'examen au patient"
+          ],
+          "exemplesPhrases": [
+            "D'accord. J'aimerais faire un examen physique maintenant, si vous n'y voyez pas d'inconvénient.",
+            "Laissez-moi juste me laver les mains.",
+            "Il semble que vos signes vitaux soient normaux, alors permettez-moi d'abord de regarder dans vos oreilles..."
+          ]
+        },
+        {
+          "id": "e2",
+          "text": "Mesure de la pression artérielle",
+          "details": [
+            "PA aux deux bras [120/72 droit, 118/70 gauche]",
+            "Noter les différences à haute voix",
+            "Recherche d'hypotension orthostatique"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Examen ORL et traumatisme",
+          "details": [
+            "Examen de la tête [atraumatique, normocéphale]",
+            "Otoscopie [tympans gris nacré bilatéraux]",
+            "Examen ophtalmologique [pupilles égales, réactives]",
+            "Examen buccal détaillé [fracture incisive droite, lacération labiale]",
+            "Recherche fragments dentaires [pas incrustés]"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Examen neurologique complet",
+          "details": [
+            "Sensation tactile [normale aux 4 extrémités]",
+            "Force motrice [5/5 partout]",
+            "Nerfs crâniens [II-XII intacts]",
+            "Réflexes ostéotendineux [2+ symétriques]",
+            "Proprioception [intacte]",
+            "Test piqué/mousse [normal]",
+            "Dysdiadococinésie [normale]",
+            "Test de Romberg [négatif]",
+            "Évaluation de la marche [normale, talons/orteils]",
+            "Signe de Babinski [flexion plantaire]",
+            "Clonus de cheville [un battement]"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Examen cardiovasculaire",
+          "details": [
+            "Auscultation 4 foyers [rythme régulier]",
+            "Recherche de souffles [aucun]",
+            "Recherche frottements/galops [absents]",
+            "Auscultation carotidienne [pas de souffles]",
+            "Vérification des pouls [normaux]"
+          ]
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostics différentiels",
+          "ddSection": {
+            "title": "Diagnostics différentiels de syncope chez l'adulte jeune sportif",
+            "categories": [
+              {
+                "name": "Causes cardiaques (priorité chez sportif)",
+                "items": [
+                  {
+                    "text": "Arythmie cardiaque",
+                    "cause": "Arguments POUR:\n\t□ Syncope d'effort (après racquetball)\n\t□ Sportif (risque arythmies)\n\t□ Perte de connaissance brutale\n\t□ Récupération rapide\n\t□ Bradycardie relative (54 bpm)\nArguments CONTRE:\n\t□ Pas de palpitations\n\t□ Pas d'ATCD cardiaques\n\t□ Examens sportifs normaux",
+                    "test": "→ ECG 12 dérivations, Holter 24h"
+                  },
+                  {
+                    "text": "Cardiomyopathie hypertrophique obstructive",
+                    "cause": "Arguments POUR:\n\t□ Jeune sportif\n\t□ Syncope d'effort\n\t□ Première manifestation possible\nArguments CONTRE:\n\t□ Pas de souffles à l'auscultation\n\t□ Pas d'ATCD familiaux\n\t□ Examens sportifs normaux antérieurs",
+                    "test": "→ Échocardiographie transthoracique"
+                  }
+                ]
+              },
+              {
+                "name": "Causes vasculaires",
+                "items": [
+                  {
+                    "text": "Hypotension orthostatique",
+                    "cause": "Arguments POUR:\n\t□ Sportif (risque déshydratation)\n\t□ Syncope lors montée escaliers\n\t□ Diarrhée récente (déshydratation)\n\t□ Récupération rapide\nArguments CONTRE:\n\t□ PA normale au repos\n\t□ Pas de vertiges prémonitoires",
+                    "test": "→ Test d'inclinaison, mesures orthostatiques"
+                  },
+                  {
+                    "text": "Syncope vasovagale",
+                    "cause": "Arguments POUR:\n\t□ Âge jeune\n\t□ Contexte émotionnel possible\n\t□ Récupération rapide sans séquelles\n\t□ Pas de récidive\nArguments CONTRE:\n\t□ Pas de prodromes typiques\n\t□ Contexte d'effort physique",
+                    "test": "→ Test d'inclinaison (tilt test)"
+                  }
+                ]
+              },
+              {
+                "name": "Causes neurologiques",
+                "items": [
+                  {
+                    "text": "Crise d'épilepsie",
+                    "cause": "Arguments POUR:\n\t□ Perte de connaissance brutale\n\t□ Confusion post-critique ('dans les vapes')\n\t□ Première crise possible\nArguments CONTRE:\n\t□ Pas de convulsions observées\n\t□ Récupération très rapide\n\t□ Examen neurologique normal\n\t□ Circonstances (escaliers)",
+                    "test": "→ EEG, IRM cérébrale si récidive"
+                  }
+                ]
+              },
+              {
+                "name": "Causes métaboliques",
+                "items": [
+                  {
+                    "text": "Hypoglycémie",
+                    "cause": "Arguments POUR:\n\t□ Sportif (consommation glucides)\n\t□ Récupération rapide\nArguments CONTRE:\n\t□ Pas de signes neurovégétatifs\n\t□ Pas de notion de jeûne\n\t□ Glycémie non mesurée",
+                    "test": "→ Glycémie capillaire, HbA1c"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Examens d'urgence immédiate",
+          "details": [
+            "ECG 12 dérivations (recherche arythmies, QT long)",
+            "Glycémie capillaire",
+            "Test orthostatique (couché/debout)",
+            "Troponines (éliminer ischémie)"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Examens complémentaires selon orientation",
+          "details": [
+            "NFS (recherche d'anémie)",
+            "Ionogramme complet avec magnésium",
+            "Fonction rénale et hépatique",
+            "CT cérébral (si suspicion traumatisme)",
+            "Échocardiographie si ECG anormal"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Prise en charge immédiate",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Stabilisation et surveillance",
+                "content": "• Monitoring cardiaque continu\n• Voie veineuse périphérique\n• Surveillance neurologique\n• Position demi-assise\n• Réhydratation si nécessaire\n• NPO en attendant évaluation complète"
+              },
+              {
+                "title": "Gestion du traumatisme dentaire",
+                "content": "• Évaluation orthodontique urgente\n• Nettoyage de la plaie labiale\n• Analgésie appropriée\n• Prévention infectieuse locale\n• Pas de fragments à extraire"
+              },
+              {
+                "title": "Investigations cardiologiques",
+                "content": "• ECG sériels si anormal\n• Consultation cardiologie si anomalie\n• Holter 24-48h si suspicion arythmique\n• Échocardiographie de stress si indiquée\n• Éviter efforts intenses jusqu'à clarification"
+              }
+            ]
+          }
+        },
+        {
+          "id": "m5",
+          "text": "Communication et conseils",
+          "details": [
+            "Explication des causes possibles",
+            "Importance du bilan cardiaque chez sportif",
+            "Consignes de sécurité (conduite, sport)",
+            "Retour si récidive ou symptômes",
+            "Suivi programmé en cardiologie"
+          ],
+          "exemplesPhrases": [
+            "M. Patterson, vous avez eu ce que nous appelons une 'syncope', ce qui signifie simplement un épisode de perte de connaissance.",
+            "D'après votre récit de l'incident et votre examen physique, je ne peux pas dire avec certitude ce qui l'a causé.",
+            "Une raison de la syncope est quelque chose appelé 'hypotension orthostatique'.",
+            "Une autre possibilité est que vous ayez eu un rythme cardiaque anormal, peut-être juste pour une seconde, qui a causé un manque d'oxygène délivré à votre cerveau."
+          ]
+        },
+        {
+          "id": "m6",
+          "text": "Red flags et contre-indications",
+          "redflagsSection": {
+            "title": "Signes d'alerte nécessitant bilan cardiaque urgent",
+            "items": [
+              {
+                "text": "Syncope d'effort répétée",
+                "description": "Risque de mort subite cardiaque"
+              },
+              {
+                "text": "Antécédents familiaux de mort subite",
+                "description": "Cardiomyopathie héréditaire"
+              },
+              {
+                "text": "Douleurs thoraciques associées",
+                "description": "Ischémie myocardique"
+              },
+              {
+                "text": "Palpitations avant syncope",
+                "description": "Arythmie ventriculaire"
+              },
+              {
+                "text": "ECG anormal",
+                "description": "Cardiopathie sous-jacente"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Explication diagnostique et plan",
+          "content": "M. Patterson, vous avez eu ce que nous appelons une 'syncope', ce qui signifie simplement un épisode de perte de connaissance. D'après votre récit de l'incident et votre examen physique, je ne peux pas dire avec certitude ce qui l'a causé. Cependant, parce que c'est une question très importante pour trouver la réponse, j'aimerais faire quelques tests sur vous. Une raison de la syncope est quelque chose appelé 'hypotension orthostatique'. Ceci est causé lorsque votre corps, pour une raison ou une autre, ne compense pas correctement la baisse normale de la pression artérielle qui se produit lorsque nous nous levons ou faisons une activité intense. Nous pouvons tester cela en vérifiant votre pression artérielle dans plusieurs positions différentes. Une autre possibilité est que vous ayez eu un rythme cardiaque anormal, peut-être juste pour une seconde, qui a causé un manque d'oxygène délivré à votre cerveau. Pour cette possibilité, j'aimerais obtenir un ECG, qui est ce test dont j'avais parlé plus tôt pour vérifier l'activité électrique de votre cœur. En plus de ceux-ci, j'aimerais également obtenir des analyses de sang et un scanner de votre tête. Le scanner est une radiographie spéciale qui peut montrer des coupes transversales de votre cerveau pour montrer s'il y a des dommages réels causés par cette chute. Dès que j'aurai les résultats, je reviendrai pour les discuter avec vous. J'aimerais sortir maintenant et organiser cela avec mon infirmière.\n\nY a-t-il un autre aspect de vos soins de santé dont nous n'avons pas déjà discuté ? D'accord alors, merci."
+        },
+        {
+          "id": "c2",
+          "text": "Question difficile du patient",
+          "content": "[Est-ce que ça peut être grave ? Suis-je en danger ?]"
+        },
+        {
+          "id": "c3",
+          "text": "Réponse appropriée du candidat",
+          "content": "C'est compréhensible que vous vous inquiétiez. La plupart des syncopes chez les jeunes ne sont pas dangereuses, mais comme vous êtes sportif, nous devons être très prudents et écarter toute cause cardiaque. Les tests que nous allons faire vont nous donner des réponses rassurantes."
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "informationsExpert": {
+      "titre": "Points clés pour l'évaluation",
+      "dossierMedical": "",
+      "interventionsQuestions": [],
+      "pointsCles": [
+        "Homme de 23 ans sportif avec premier épisode syncopal",
+        "Syncope lors d'effort (montée escaliers après sport)",
+        "Témoin présent, pas de convulsions observées",
+        "Récupération rapide avec confusion transitoire",
+        "Traumatisme secondaire (fracture dentaire)",
+        "Bradycardie relative (54 bpm) chez sportif",
+        "Diarrhée récente (déshydratation possible)",
+        "Aucun antécédent cardiaque connu",
+        "Examens médicaux sportifs antérieurs normaux"
+      ],
+      "pieges": [
+        "Banaliser la syncope chez un jeune sportif",
+        "Ne pas faire d'ECG systématique",
+        "Oublier le test orthostatique",
+        "Ne pas explorer les antécédents familiaux cardiaques",
+        "Négliger l'impact de la diarrhée (déshydratation)",
+        "Ne pas donner de consignes de sécurité",
+        "Retour au sport sans bilan cardiaque",
+        "Ne pas programmer de suivi spécialisé"
+      ],
+      "defis": [],
+      "objectifsApprentissage": [],
+      "diagnosticDifferentiel": [],
+      "urgences": [],
+      "signesAlarme": [],
+      "facteursRisques": [],
+      "priseEnCharge": [],
+      "resultatsLaboratoire": [],
+      "autre": []
+    },
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour le patient standardisé",
+      "nom": "James Patterson",
+      "age": "23 ans",
+      "contexte": "Étudiant universitaire, athlète (course à pied), première visite aux urgences",
+      "motifConsultation": {
+        "plaintePrincipale": "Chute avec fracture dentaire",
+        "autreChose": "J'ai perdu connaissance en montant les escaliers"
+      },
+      "consignes": [],
+      "histoire": {
+        "debut": "",
+        "evolution": "",
+        "contexte": "",
+        "facteursDeclenchants": [],
+        "caracteristiques": {
+          "localisation": "",
+          "irradiation": "",
+          "type": "",
+          "qualite": "",
+          "intensite": "",
+          "frequence": "",
+          "duree": ""
+        },
+        "facteursModulateurs": {
+          "ameliorants": [],
+          "aggravants": []
+        },
+        "traitements": {
+          "essayes": [],
+          "efficacite": [],
+          "actuels": []
+        }
+      },
+      "symptomesAssocies": {
+        "generaux": [],
+        "neurologiques": [],
+        "cardiovasculaires": [],
+        "respiratoires": [],
+        "digestifs": [],
+        "urinaires": [],
+        "gynecologiques": [],
+        "musculosquelettiques": [],
+        "dermatologiques": [],
+        "psychiatriques": [],
+        "ORL": []
+      },
+      "anamnèseSystemique": {
+        "generale": [],
+        "neurologique": [],
+        "cardiovasculaire": [],
+        "respiratoire": [],
+        "digestive": [],
+        "urinaire": [],
+        "gynecologique": [],
+        "dermatologique": [],
+        "musculosquelettique": [],
+        "psychiatrique": []
+      },
+      "antecedentsMedicaux": [
+        "Généralement en bonne santé",
+        "Jamais hospitalisé",
+        "Première visite aux urgences",
+        "Examens médicaux sportifs normaux",
+        "Jamais de vraie syncope",
+        "Quelques 'black-out' à l'université (alcool)",
+        "Jamais de crises d'épilepsie"
+      ],
+      "medicaments": [
+        "Aucun",
+        "Protéines de soja le matin"
+      ],
+      "antecedentsFamiliaux": [
+        "Hypertension, pas d'autres problèmes cardiaques",
+        "Dépression",
+        "Frère avec syndrome de Down",
+        "Aucune connue",
+        "Dépression",
+        "Hypertension, pas d'autres problèmes cardiaques",
+        "Frère avec syndrome de Down"
+      ],
+      "habitudes": [
+        "Athlétisme universitaire, très actif",
+        "3-4 verres/week-end, dernière fois samedi",
+        "Non (incompatible avec sport)",
+        "Aucun",
+        "Protéines de soja le matin",
+        "Non (incompatible avec sport)",
+        "3-4 verres/week-end, dernière fois samedi"
+      ],
+      "contextePsychoSocial": [],
+      "simulation": [
+        "Minimise l'incident initialement",
+        "Dit que c'est 'juste un accident'",
+        "Inquiet mais veut rassurer",
+        "Coopératif pour l'examen",
+        "Examen neurologique normal",
+        "Pouls lent mais régulier",
+        "Fracture dentaire visible",
+        "Lacération labiale avec œdème",
+        "Se touche la dent cassée",
+        "Montre la lèvre gonflée",
+        "Hésite sur les détails (confusion)",
+        "Insiste sur le fait qu'il est sportif"
+      ],
+      "drapeauxRouges": [],
+      "informationsSupplementaires": []
+    },
+    "theoriePratique": {
+      "titre": "Rappels théoriques - Syncope chez le sportif",
+      "sections": [
+        {
+          "titre": "Étiologies de syncope chez le jeune sportif",
+          "contenu": "Causes cardiaques (20%) : cardiomyopathie hypertrophique, DAVD, coronaropathie précoce, troubles du rythme héréditaires. Causes vasculaires (70%) : hypotension orthostatique, syncope vasovagale. Causes neurologiques (5%) : épilepsie. Causes métaboliques (5%) : hypoglycémie.",
+          "points": []
+        },
+        {
+          "titre": "Cardiomyopathie hypertrophique obstructive",
+          "contenu": "Première cause de mort subite chez jeunes sportifs. Transmission autosomique dominante. Syncope d'effort typique. Diagnostic : échocardiographie (hypertrophie asymétrique), ECG (ondes Q, HVG). Contre-indication absolue au sport de compétition.",
+          "points": []
+        },
+        {
+          "titre": "Bilan de syncope chez sportif",
+          "contenu": "ECG 12 dérivations obligatoire. Échocardiographie si ECG anormal ou syncope d'effort. Test d'effort si suspicion ischémique. Holter si suspicion rythmique. IRM cardiaque si cardiomyopathie suspectée.",
+          "points": []
+        }
+      ],
+      "rappelsTherapeutiques": [
+        "Arrêt immédiat du sport jusqu'à bilan complet",
+        "ECG et échocardiographie systématiques",
+        "Consultation cardiologique spécialisée obligatoire",
+        "Test d'effort supervisé si pas de contre-indication",
+        "Reprise progressive après clearance cardiologique"
+      ],
+      "examensComplementaires": [
+        "ECG 12 dérivations : recherche troubles rythme/conduction",
+        "Échocardiographie : fonction VG, hypertrophie, valvulopathies",
+        "Holter 24-48h : arythmies intermittentes",
+        "Test d'inclinaison : hypotension orthostatique, syncope vasovagale",
+        "IRM cardiaque : cardiomyopathies, cicatrices myocardiques"
+      ],
+      "diagnosticDifferentiel": [],
+      "priseEnCharge": [],
+      "protocoles": [],
+      "guidePratique": []
+    }
+  }
+}

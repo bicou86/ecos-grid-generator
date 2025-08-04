@@ -1,0 +1,301 @@
+{
+  "title": "Dysphagie",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Homme de 68 ans consultant son médecin de famille car il a de plus en plus de difficultés à avaler les aliments"
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction et tâche",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Symptôme principal",
+          "details": [
+            "[Les aliments passent difficilement, je dois rincer avec de l'eau]"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Type d'aliments concernés",
+          "details": [
+            "[Seulement les aliments solides]"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Chronologie des symptômes",
+          "details": [
+            "Début [Depuis plusieurs semaines]",
+            "Mode d'installation [Progressif]",
+            "Évolution [Constant, s'aggrave]"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Odynophagie (douleur à la déglutition)",
+          "details": [
+            "[Juste une sensation désagréable]"
+          ]
+        },
+        {
+          "id": "a6",
+          "text": "Habitudes alimentaires et masticatoires",
+          "details": [
+            "[Je mange tranquillement, pas de douleur en mâchant]"
+          ]
+        },
+        {
+          "id": "a7",
+          "text": "Symptômes associés ORL",
+          "details": [
+            "Fièvre [non]",
+            "Dysphonie [oui, ma femme m'a fait la remarque]",
+            "Hémoptysie [non]",
+            "Sensation de pression au cou, globe pharyngé [non]"
+          ]
+        },
+        {
+          "id": "a8",
+          "text": "Symptômes respiratoires et digestifs",
+          "details": [
+            "Fausses routes, toux lors des repas [non]",
+            "Régurgitations [non]",
+            "Pyrosis, reflux [oui]",
+            "Perte de poids [non]"
+          ]
+        },
+        {
+          "id": "a9",
+          "text": "Antécédents médicaux",
+          "details": [
+            "[Hypertension]"
+          ]
+        },
+        {
+          "id": "a10",
+          "text": "Allergies",
+          "details": [
+            "[Non]"
+          ]
+        },
+        {
+          "id": "a11",
+          "text": "Habitudes de vie",
+          "details": [
+            "Tabac [40 paquets-années]",
+            "Alcool [2-3 bières par jour, parfois plus]",
+            "Drogues [non]"
+          ]
+        },
+        {
+          "id": "a12",
+          "text": "Médicaments actuels",
+          "details": [
+            "[Bêtabloquant]",
+            "[IPP (inhibiteur de la pompe à protons)]"
+          ]
+        },
+        {
+          "id": "a13",
+          "text": "Anamnèse familiale",
+          "details": [
+            "[Père : infarctus à 78 ans]",
+            "[Mère : en bonne santé]"
+          ]
+        },
+        {
+          "id": "a14",
+          "text": "Anamnèse sociale",
+          "details": [
+            "[Ancien électricien]",
+            "[Marié, 2 enfants]"
+          ]
+        },
+        {
+          "id": "a15",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "binaryOnly": false,
+          "details": [
+            "Anamnèse complète ciblée sur la dysphagie avec recherche systématique des signes d'alarme"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Inspection générale",
+          "details": [
+            "État général",
+            "Signes de dénutrition",
+            "Pâleur conjonctivale"
+          ]
+        },
+        {
+          "id": "e2",
+          "text": "Examen de la déglutition",
+          "details": [
+            "Observation de l'acte de déglutition",
+            "Test de déglutition avec de l'eau"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Examen de la cavité buccale et du pharynx",
+          "details": [
+            "Inspection de la cavité buccale",
+            "Examen du pharynx",
+            "État des amygdales"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Palpation cervicale",
+          "details": [
+            "Chaînes ganglionnaires cervicales",
+            "Thyroïde",
+            "Masses cervicales"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Laryngoscopie indirecte",
+          "binaryOnly": true
+        },
+        {
+          "id": "e6",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "binaryOnly": false,
+          "details": [
+            "Examen ORL et cervical complet adapté à la dysphagie"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Énonce le diagnostic de suspicion principal",
+          "details": [
+            "[Cancer de l'œsophage]"
+          ]
+        },
+        {
+          "id": "m2",
+          "text": "Nomme les diagnostics différentiels",
+          "details": [
+            "Cancer du larynx",
+            "Tumeur oropharyngée",
+            "Corps étranger",
+            "Achalasie"
+          ],
+          "ddSection": {
+            "categories": [
+              {
+                "name": "Causes néoplasiques",
+                "items": [
+                  "Cancer de l'œsophage → Endoscopie digestive haute avec biopsies",
+                  "Cancer ORL (larynx, pharynx) → Laryngoscopie, CT ORL",
+                  "Compression extrinsèque (médiastin) → CT thoracique"
+                ]
+              },
+              {
+                "name": "Causes bénignes",
+                "items": [
+                  "Sténose peptique → Endoscopie, pH-métrie",
+                  "Achalasie → Manométrie œsophagienne",
+                  "Corps étranger → Radiographie, endoscopie",
+                  "Anneau de Schatzki → Transit baryte, endoscopie"
+                ]
+              },
+              {
+                "name": "Causes neurologiques",
+                "items": [
+                  "AVC, pathologie du tronc cérébral → IRM cérébrale",
+                  "Myasthénie → Test à la néostigmine, anticorps",
+                  "Sclérose latérale amyotrophique → EMG, consultation neurologique"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m3",
+          "text": "Examens diagnostiques à réaliser",
+          "details": [
+            "Endoscopie digestive haute avec biopsies (urgent)",
+            "Radiographie thoracique (corps étranger)",
+            "Transit œsophagien au produit de contraste",
+            "Manométrie œsophagienne (si endoscopie normale)"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Prise en charge selon le diagnostic",
+          "details": [
+            "Si cancer : chirurgie, radiothérapie, chimiothérapie",
+            "Mesures palliatives si stade avancé",
+            "Référence en oncologie"
+          ],
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Prise en charge immédiate",
+                "content": "• Endoscopie digestive haute EN URGENCE\n• Biopsies multiples si lésion suspecte\n• Bilan nutritionnel (albumine, préalbumine)\n• Arrêt tabac et alcool immédiat\n• Adaptation de l'alimentation (mixée, liquide)"
+              },
+              {
+                "title": "Si cancer confirmé",
+                "content": "• Bilan d'extension : CT TAP, écho-endoscopie, PET-CT\n• Discussion en RCP oncologique\n• Options thérapeutiques selon le stade :\n  - Chirurgie si résécable\n  - Radio-chimiothérapie\n  - Soins palliatifs si avancé\n• Pose de prothèse œsophagienne si obstruction"
+              },
+              {
+                "title": "Support nutritionnel",
+                "content": "• Consultation diététique\n• Compléments nutritionnels oraux\n• Sonde naso-gastrique si dénutrition sévère\n• Gastrostomie si traitement prolongé\n• Surveillance du poids hebdomadaire"
+              }
+            ]
+          }
+        },
+        {
+          "id": "m5",
+          "text": "Orientation vers un spécialiste",
+          "details": [
+            "Gastro-entérologue en urgence",
+            "Oncologue si cancer confirmé",
+            "ORL si suspicion de cancer ORL",
+            "Radiologue pour imagerie complémentaire"
+          ]
+        },
+        {
+          "id": "m6",
+          "text": "Information et soutien du patient",
+          "details": [
+            "Expliquer la nécessité d'examens urgents",
+            "Préparer à l'éventualité d'un diagnostic grave",
+            "Proposer un soutien psychologique",
+            "Impliquer la famille avec accord du patient"
+          ]
+        },
+        {
+          "id": "m7",
+          "text": "Évaluation globale de la qualité de la prise en charge",
+          "binaryOnly": false,
+          "details": [
+            "Prise en charge urgente adaptée avec orientation rapide vers la gastro-entérologie"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    }
+  }
+}

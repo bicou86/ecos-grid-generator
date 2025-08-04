@@ -1,0 +1,283 @@
+{
+  "title": "Tachycardie",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Mme Meier, 56 ans, se présente au cabinet de médecine générale avec des palpitations aiguës.",
+    "vitals": {
+      "ta": "135/90 mmHg",
+      "fc": "127 bpm",
+      "fr": "18/min"
+    }
+  },
+  "tasks": [
+    "Effectuez une anamnèse ciblée",
+    "Réalisez un examen clinique ciblé",
+    "Expliquez au patient votre diagnostic suspecté",
+    "Discutez avec le patient de la suite de la prise en charge"
+  ],
+  "sections": {
+    "anamnese": {
+      "title": "Anamnèse",
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction, tâche"
+        },
+        {
+          "id": "a2",
+          "text": "Question ouverte d'entrée → Symptôme principal [palpitations]"
+        },
+        {
+          "id": "a3",
+          "text": "Survenue temporelle"
+        },
+        {
+          "id": "a4",
+          "text": "Début brutal - progressif [brutal]"
+        },
+        {
+          "id": "a5",
+          "text": "Durée [30 min]"
+        },
+        {
+          "id": "a6",
+          "text": "Évolution paroxystique - persistante - permanente [va et vient]"
+        },
+        {
+          "id": "a7",
+          "text": "Épisodes antérieurs [déjà 5 fois]"
+        },
+        {
+          "id": "a8",
+          "text": "Fréquence cardiaque [155/min]"
+        },
+        {
+          "id": "a9",
+          "text": "Rythme cardiaque (régulier - irrégulier) [irrégulier]"
+        },
+        {
+          "id": "a10",
+          "text": "Palpitations / Pauses [pendant la crise oui]"
+        },
+        {
+          "id": "a11",
+          "text": "Facteurs influençants [stress, caféine, alcool]"
+        },
+        {
+          "id": "a12",
+          "text": "Symptômes associés"
+        },
+        {
+          "id": "a13",
+          "text": "Douleurs thoraciques + éventuellement 7 dimensions [non]"
+        },
+        {
+          "id": "a14",
+          "text": "Vertiges / Malaise [oui]"
+        },
+        {
+          "id": "a15",
+          "text": "Sueurs [non]"
+        },
+        {
+          "id": "a16",
+          "text": "Dyspnée [non]"
+        },
+        {
+          "id": "a17",
+          "text": "Œdèmes [non]"
+        },
+        {
+          "id": "a18",
+          "text": "Évolution pondérale [stable]"
+        },
+        {
+          "id": "a19",
+          "text": "Fièvre [non]"
+        },
+        {
+          "id": "a20",
+          "text": "Diurèse augmentée [oui, environ 30 min après la crise 2x aux toilettes]"
+        },
+        {
+          "id": "a21",
+          "text": "Intolérance à la chaleur, perte de poids, diarrhée, tremblements [non]"
+        },
+        {
+          "id": "a22",
+          "text": "Statut ménopausique [depuis 5 ans plus de règles, pas de symptômes de ménopause]"
+        },
+        {
+          "id": "a23",
+          "text": "Situation de stress psychique/social aigu [non]"
+        },
+        {
+          "id": "a24",
+          "text": "Facteurs de risque cardiovasculaire",
+          "details": [
+            "Hypertension [oui]",
+            "Tabagisme [1 paquet/j, 20 ans]",
+            "Diabète [non]",
+            "Dyslipidémie [oui]",
+            "Antécédents familiaux d'infarctus [oui, père décédé d'un IM à 60 ans]"
+          ]
+        },
+        {
+          "id": "a25",
+          "text": "Score de Wells pour EP",
+          "details": [
+            "Mollet gonflé [non]",
+            "Immobilisation / Post-op [non]",
+            "Cancer actif [non]",
+            "Antécédent TVP/EP [oui, TVP gauche en 2006]",
+            "Hémoptysie [non]"
+          ]
+        },
+        {
+          "id": "a26",
+          "text": "Résumé, avez-vous encore des questions?"
+        },
+        {
+          "id": "a27",
+          "text": "Antécédents personnels",
+          "details": [
+            "Maladies cardiaques (coronaropathie, infarctus) [non]",
+            "AVC (AIT, AVC) [non]",
+            "AOMI [non]",
+            "Thyroïde [non]",
+            "Troubles anxieux / maladies psychiatriques [non]"
+          ]
+        },
+        {
+          "id": "a28",
+          "text": "Chirurgies [sigmoidectomie pour diverticulites récidivantes]"
+        },
+        {
+          "id": "a29",
+          "text": "Allergies [pénicilline]"
+        },
+        {
+          "id": "a30",
+          "text": "Médicaments [énalapril 20mg 1-0-0]"
+        },
+        {
+          "id": "a31",
+          "text": "Habitudes (alcool / tabac / drogues) [tabac oui, reste non]"
+        },
+        {
+          "id": "a32",
+          "text": "Anamnèse familiale",
+          "details": [
+            "Maladies cardiovasculaires (coronaropathie, AOMI, AVC, infarctus) [père IM]",
+            "Maladies thyroïdiennes",
+            "Morts subites"
+          ]
+        },
+        {
+          "id": "a33",
+          "text": "Anamnèse sociale",
+          "details": [
+            "Famille [vit seule, divorcée, 3 enfants]",
+            "Profession [enseignante]"
+          ]
+        },
+        {
+          "id": "a34",
+          "text": "Habitudes alimentaires - Consommation de café [5 cafés/jour]"
+        },
+        {
+          "id": "a35",
+          "text": "Loisirs (activités sportives) [jogging 2x/semaine]"
+        }
+      ]
+    },
+    "examen": {
+      "title": "Examen clinique",
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "État cardiaque"
+        },
+        {
+          "id": "e2",
+          "text": "Inspection [veines jugulaires légèrement turgescentes, RHJ positif]"
+        },
+        {
+          "id": "e3",
+          "text": "Palpation [pouls irrégulier, intensité variable]"
+        },
+        {
+          "id": "e4",
+          "text": "Percussion [normale]"
+        },
+        {
+          "id": "e5",
+          "text": "Auscultation [bruits cardiaques purs, pas de souffle]"
+        },
+        {
+          "id": "e6",
+          "text": "État pulmonaire [normal]",
+          "details": [
+            "Inspection",
+            "Palpation",
+            "Percussion",
+            "Auscultation"
+          ]
+        },
+        {
+          "id": "e7",
+          "text": "Thyroïde examinée (palpation, auscultation) [pas d'hypertrophie]"
+        },
+        {
+          "id": "e8",
+          "text": "Peau (coloration, conjonctives/muqueuses) [un peu pâle, pas de signes d'anémie]"
+        }
+      ]
+    },
+    "management": {
+      "title": "Suite de la prise en charge",
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "L'étudiant nomme le diagnostic suspecté"
+        },
+        {
+          "id": "m2",
+          "text": "Nomme au moins 2-3 diagnostics différentiels",
+          "details": [
+            "Fibrillation auriculaire paroxystique",
+            "Tachycardie par réentrée AV",
+            "Extrasystolie",
+            "Flutter auriculaire"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Nomme les examens diagnostiques",
+          "details": [
+            "Laboratoire : FSC, CRP, ferritine, troponine I, CK-MB, LDH",
+            "Créatinine, électrolytes (Na, K, Ca), TSH, glucose",
+            "Transaminases, Gamma-GT, phosphatases alcalines (PAL), albumine, Quick/aPTT",
+            "Radiographie thoracique / ECG / Échocardiographie",
+            "Éventuellement angio-CT (si suspicion d'EP)"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Reconnaît la pathologie sur radiographie/ECG"
+        },
+        {
+          "id": "m5",
+          "text": "Nomme le traitement médicamenteux / chirurgical"
+        },
+        {
+          "id": "m6",
+          "text": "Organise si nécessaire le transfert à l'hôpital"
+        }
+      ]
+    }
+  }
+}

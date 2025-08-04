@@ -1,0 +1,464 @@
+{
+  "title": "Douleur à la hanche",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "M. Müller, 42 ans, se présente chez le médecin généraliste pour douleurs de hanche",
+    "vitals": {
+      "ta": "110/73 mmHg",
+      "fc": "70 bpm",
+      "fr": "13/min"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction et tâche",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Question ouverte - motif de consultation",
+          "binaryOnly": true,
+          "patientComment": "Douleurs de hanche"
+        },
+        {
+          "id": "a3",
+          "text": "RED FLAGS - Signaux d'alarme hanche chez immunosupprimé",
+          "redflagsSection": [
+            {
+              "text": "Patient immunosupprimé (transplantation) [OUI!]"
+            },
+            {
+              "text": "Corticothérapie au long cours [Prednisone 7.5mg!]"
+            },
+            {
+              "text": "Fièvre ou signes infectieux [non]"
+            },
+            {
+              "text": "Douleur nocturne ou de repos [non]"
+            },
+            {
+              "text": "Perte de poids inexpliquée [non]"
+            },
+            {
+              "text": "Antécédent de cancer"
+            },
+            {
+              "text": "Traumatisme récent [non]"
+            },
+            {
+              "text": "Début brutal < 72h"
+            }
+          ],
+          "scoringRule": "≥3 red flags = 2 pts, 2 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a4",
+          "text": "Caractérisation complète de la douleur (SOCRATES)",
+          "details": [
+            "Site : localisation précise [aine gauche]",
+            "Onset : début et mode installation [insidieux, 1 mois]",
+            "Character : type de douleur [sourde]",
+            "Radiation : irradiation [genou gauche!]",
+            "Associated symptoms : boiterie [oui, soir]",
+            "Time : pattern temporel [permanente]",
+            "Exacerbating factors [marche, station debout]",
+            "Severity : intensité EVA [5/10]"
+          ],
+          "scoringRule": "≥7 éléments SOCRATES = 2 pts, 5-6 = 1 pt, <5 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a5",
+          "text": "Facteurs de risque spécifiques d'ostéonécrose",
+          "details": [
+            "Corticothérapie dose et durée [7.5mg/j × 10 ans!]",
+            "Transplantation d'organe [rénale il y a 10 ans!]",
+            "Consommation alcool excessive [non]",
+            "Drépanocytose ou hémoglobinopathie",
+            "Lupus ou connectivite",
+            "Chimiothérapie antérieure",
+            "Radiothérapie pelvienne",
+            "Dyslipidémie ou syndrome métabolique"
+          ],
+          "scoringRule": "≥3 facteurs de risque = 2 pts, 2 = 1 pt, 1 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a6",
+          "text": "Recherche de symptômes mécaniques vs inflammatoires",
+          "details": [
+            "Douleur mécanique (effort) vs repos [mécanique!]",
+            "Raideur matinale >30 min [non]",
+            "Dérouillage matinal [non mentionné]",
+            "Amélioration au repos [oui!]",
+            "Aggravation nocturne [non]",
+            "Réveils nocturnes douloureux [non]"
+          ],
+          "scoringRule": "≥5 caractéristiques = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a7",
+          "text": "Limitation fonctionnelle et retentissement",
+          "details": [
+            "Périmètre de marche actuel vs antérieur",
+            "Montée/descente escaliers",
+            "Chaussage/habillage",
+            "Position assise prolongée",
+            "Conduite automobile",
+            "Activités sportives [non explorées]",
+            "Nécessité d'aide technique [non]"
+          ],
+          "scoringRule": "≥5 limitations évaluées = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a8",
+          "text": "Antécédents médicaux détaillés du transplanté",
+          "details": [
+            "Indication transplantation [polykystose rénale]",
+            "Date et type greffe [rénale, 10 ans]",
+            "Épisodes de rejet",
+            "Fonction du greffon actuelle",
+            "Infections opportunistes antérieures",
+            "Complications post-transplantation",
+            "Suivi néphrologique régulier"
+          ],
+          "scoringRule": "≥5 éléments = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a9",
+          "text": "Traitements immunosuppresseurs et interactions",
+          "details": [
+            "Prednisone dose actuelle [7.5mg/j]",
+            "Azathioprine posologie",
+            "Cyclophosphamide (inhabituel à 10 ans)",
+            "Taux résiduels thérapeutiques",
+            "Compliance thérapeutique",
+            "Effets secondaires connus",
+            "AINS contre-indiqués [important!]"
+          ],
+          "scoringRule": "≥5 médicaments détaillés = 2 pts, 3-4 = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a10",
+          "text": "Recherche de complications iatrogènes",
+          "details": [
+            "Ostéoporose cortico-induite",
+            "Myopathie cortisonique",
+            "Diabète cortico-induit",
+            "Cataracte ou glaucome",
+            "Fragilité cutanée",
+            "Syndrome cushingoïde"
+          ],
+          "scoringRule": "≥4 complications recherchées = 2 pts, 2-3 = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a11",
+          "text": "Histoire familiale et génétique",
+          "details": [
+            "Polykystose rénale familiale [père aussi!]",
+            "Complications vasculaires [père AVC]",
+            "Pathologies osseuses familiales",
+            "Maladies rhumatismales",
+            "Cancers familiaux"
+          ],
+          "scoringRule": "≥4 éléments familiaux = 2 pts, 2-3 = 1 pt",
+          "binaryOnly": false
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Évaluation globale et signes vitaux",
+          "details": [
+            "État général (AEG?)",
+            "IMC et morphotype",
+            "Température (fébricule?)",
+            "Signes de surcharge cortisonique",
+            "Cicatrices chirurgicales (transplantation)",
+            "État cutané (fragilité cortisonique)"
+          ],
+          "scoringRule": "≥5 éléments = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e2",
+          "text": "Analyse de la marche et tests fonctionnels",
+          "details": [
+            "Boiterie d'esquive vs insuffisance [esquive légère]",
+            "Test de Trendelenburg debout [négatif]",
+            "Signe de Duchenne à la marche",
+            "Périmètre de marche sans douleur",
+            "Montée sur pointe des pieds",
+            "Accroupissement et relèvement"
+          ],
+          "scoringRule": "≥5 tests fonctionnels = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e3",
+          "text": "Palpation systématique et comparative",
+          "details": [
+            "Point douloureux inguinal [douleur ligament!]",
+            "Grand trochanter (bursite?) [non douloureux]",
+            "Petit trochanter (psoas)",
+            "Épine iliaque antéro-supérieure",
+            "Symphyse pubienne",
+            "Adénopathies inguinales [absentes]"
+          ],
+          "scoringRule": "≥5 points palpés = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e4",
+          "text": "Mobilités articulaires passives complètes",
+          "details": [
+            "Flexion (N: 120°) [normale, douleur fin course]",
+            "Extension (N: 10-20°) [normale, douleur fin course]",
+            "Abduction (N: 45°) [normale]",
+            "Adduction (N: 30°) [normale]",
+            "Rotation interne (N: 35°) [limitée!]",
+            "Rotation externe (N: 45°) [normale]"
+          ],
+          "scoringRule": "6 mouvements testés avec valeurs = 2 pts, 4-5 = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e5",
+          "text": "Tests provocateurs spécifiques validés",
+          "details": [
+            "FADIR/Impingement (flexion-adduction-RI) [négatif]",
+            "FABER/Patrick (flexion-abduction-RE) [15cm distance!]",
+            "Log roll test (roulement passif) [positif si douleur]",
+            "Test de Thomas (flexum) [négatif]",
+            "Signe de la sonnette (rotation)",
+            "Test de compression axiale"
+          ],
+          "scoringRule": "≥5 tests spécifiques = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e6",
+          "text": "Examen musculaire et neurologique",
+          "details": [
+            "Force psoas (L2-L3)",
+            "Force moyen fessier (L5)",
+            "Force quadriceps (L3-L4)",
+            "ROT rotulien et achilléen",
+            "Sensibilité territoire crural",
+            "Signe de Lasègue/SLR [négatif]"
+          ],
+          "scoringRule": "≥5 éléments neuro = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e7",
+          "text": "Mesures et tests complémentaires",
+          "details": [
+            "Mesure longueur membres (vraie/apparente)",
+            "Distance doigt-sol",
+            "Test de Schober lombaire",
+            "Indice de Womac ou Harris Hip Score",
+            "Évaluation posturale globale"
+          ],
+          "scoringRule": "≥3 mesures objectives = 2 pts, 2 = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e8",
+          "text": "Examen régional élargi",
+          "details": [
+            "Rachis lombaire (L2-L3 référée)",
+            "Articulation sacro-iliaque",
+            "Genou homolatéral (irradiation)",
+            "Examen vasculaire (pouls)",
+            "Recherche hernie inguinale",
+            "Examen abdominal (psoas)"
+          ],
+          "scoringRule": "≥5 régions examinées = 2 pts, 3-4 = 1 pt",
+          "binaryOnly": false
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Synthèse diagnostique avec facteurs de risque",
+          "patientComment": "Ostéonécrose aseptique de la tête fémorale gauche stade précoce (Ficat I-II) chez patient de 42 ans transplanté rénal sous corticothérapie au long cours (10 ans). Facteurs de risque majeurs : corticoïdes + immunosuppression",
+          "binaryOnly": true
+        },
+        {
+          "id": "m2",
+          "text": "Diagnostics différentiels hiérarchisés par probabilité",
+          "ddSection": {
+            "categories": [
+              {
+                "name": "Haute probabilité (contexte)",
+                "items": [
+                  "Ostéonécrose cortico-induite",
+                  "Arthrite septique (immunosupprimé!)",
+                  "Coxarthrose précoce",
+                  "Fracture de contrainte col fémoral"
+                ]
+              },
+              {
+                "name": "Probabilité intermédiaire",
+                "items": [
+                  "Conflit fémoro-acétabulaire",
+                  "Tendinopathie du psoas",
+                  "Bursite ilio-psoas",
+                  "Pathologie labrale"
+                ]
+              },
+              {
+                "name": "Faible probabilité mais graves",
+                "items": [
+                  "Métastase osseuse",
+                  "Myélome/lymphome",
+                  "Ostéomyélite chronique",
+                  "Tumeur osseuse primitive"
+                ]
+              },
+              {
+                "name": "Douleurs projetées",
+                "items": [
+                  "Hernie discale L2-L3",
+                  "Syndrome facettaire lombaire",
+                  "Neuropathie crurale",
+                  "Pathologie intra-abdominale"
+                ]
+              }
+            ]
+          },
+          "scoringRule": "≥3 catégories avec DD pertinents = 2 pts",
+          "binaryOnly": false
+        },
+        {
+          "id": "m3",
+          "text": "Stratégie d'imagerie adaptée et séquentielle",
+          "details": [
+            "Radio bassin face + hanche F/P [ostéolyse + sclérose]",
+            "IRM hanche URGENTE (gold standard) [suspicion nécrose]",
+            "Séquences T1, T2, STIR (œdème médullaire)",
+            "Évaluation classification ARCO",
+            "Échographie si épanchement [négatif]",
+            "TDM si IRM CI (pacemaker, claustrophobie)"
+          ],
+          "scoringRule": "Stratégie IRM prioritaire = 2 pts, radio seule = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m4",
+          "text": "Bilan biologique ciblé immunosupprimé",
+          "details": [
+            "NFS, CRP, VS (infection/inflammation)",
+            "Hémocultures × 2 si moindre doute",
+            "Fonction rénale + iono (greffon)",
+            "Calcémie, phosphatémie, PTH",
+            "25-OH vitamine D",
+            "Bilan hépatique complet",
+            "HbA1c (diabète cortisonique)"
+          ],
+          "scoringRule": "≥6 examens pertinents = 2 pts, 4-5 = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m5",
+          "text": "Prise en charge thérapeutique adaptée au transplanté",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Analgésie sans AINS (CI absolue!)",
+                "content": "• Paracétamol 1g × 3-4/j max 4g\n• Tramadol 50-100mg × 3-4/j (max 400mg)\n• Néfopam si insuffisant\n• Gabapentine 300mg progressive si neuropathique\n• TENS ou acupuncture\n• PAS D'AINS NI DE COX-2!"
+              },
+              {
+                "title": "Traitement conservateur stade précoce",
+                "content": "• Décharge partielle 6-12 semaines\n• Cannes anglaises ou déambulateur\n• Kinésithérapie : mobilisation douce\n• Renforcement isométrique\n• Hydrothérapie/balnéothérapie\n• Magnétothérapie (controversée)"
+              },
+              {
+                "title": "Options médicamenteuses spécifiques",
+                "content": "• Bisphosphonates (alendronate 70mg/sem)\n• Anticoagulation préventive (HBPM)\n• Iloprost IV (vasodilatateur)\n• Supplémentation Ca + Vit D\n• Discussion réduction corticoïdes\n• Statines si dyslipidémie"
+              },
+              {
+                "title": "Stratégie chirurgicale selon stade",
+                "content": "• Stade I-II : forage + greffe\n• Stade III : ostéotomie rotation\n• Stade IV : PTH (sujet jeune!)\n• Arthroscopie si labrum\n• Coordination avec néphrologue++"
+              }
+            ]
+          },
+          "scoringRule": "Plan personnalisé sans AINS = 2 pts",
+          "binaryOnly": false
+        },
+        {
+          "id": "m6",
+          "text": "Surveillance et critères de détérioration",
+          "redflagsSection": [
+            {
+              "text": "Douleur brutale (fracture sur nécrose)"
+            },
+            {
+              "text": "Impossibilité appui (effondrement)"
+            },
+            {
+              "text": "Fièvre (arthrite septique)"
+            },
+            {
+              "text": "Raccourcissement membre"
+            },
+            {
+              "text": "Blocage articulaire complet"
+            },
+            {
+              "text": "Douleur controlatérale (bilatérale 70%)"
+            }
+          ],
+          "scoringRule": "≥5 critères surveillance = 2 pts, 3-4 = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m7",
+          "text": "Coordination multidisciplinaire obligatoire",
+          "details": [
+            "Contact néphrologue (ajustement IS)",
+            "Avis orthopédiste spécialisé hanche",
+            "Rhumatologue si doute diagnostique",
+            "Médecine physique et réadaptation",
+            "Infectiologue si suspicion septique",
+            "Consultation douleur si réfractaire",
+            "Assistante sociale (aides techniques)"
+          ],
+          "scoringRule": "≥5 intervenants = 2 pts, 3-4 = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m8",
+          "text": "Prévention et éducation thérapeutique",
+          "details": [
+            "Surveillance hanche controlatérale ++",
+            "Prévention ostéoporose cortisonique",
+            "Activité physique adaptée maintenue",
+            "Contrôle facteurs risque CV",
+            "Sevrage tabac impératif",
+            "Éviter alcool (facteur risque)",
+            "Information sur évolution naturelle"
+          ],
+          "scoringRule": "≥5 mesures préventives = 2 pts, 3-4 = 1 pt",
+          "binaryOnly": false
+        }
+      ]
+    }
+  }
+}

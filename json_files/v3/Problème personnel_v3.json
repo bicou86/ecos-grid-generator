@@ -1,0 +1,444 @@
+{
+  "title": "Problème personnel",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "M. Häberli, 59 ans, consulte pour un problème personnel qu'il ne voulait pas dire à la secrétaire - patient connu depuis 20 ans",
+    "vitals": {
+      "ta": "150/95 mmHg"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation du médecin",
+          "binaryOnly": true,
+          "details": [
+            "Se présenter avec nom, fonction et tâche"
+          ]
+        },
+        {
+          "id": "a2",
+          "text": "Exploration du problème principal",
+          "binaryOnly": true,
+          "details": [
+            "Plainte principale",
+            "[Ça ne fonctionne plus comme il faut en bas]"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Caractérisation temporelle du problème",
+          "binaryOnly": false,
+          "details": [
+            "Durée du problème [depuis longtemps, certainement 1 an]",
+            "[Maintenant ça dérange la femme et il a besoin de conseil]",
+            "Fréquence [maintenant toujours]"
+          ],
+          "scoringRule": "≥2 aspects temporels explorés = 2 points"
+        },
+        {
+          "id": "a4",
+          "text": "Symptômes associés",
+          "binaryOnly": false,
+          "details": [
+            "Douleurs [non]",
+            "Autres symptômes urogénitaux"
+          ],
+          "scoringRule": "≥1 symptôme associé exploré = 2 points"
+        },
+        {
+          "id": "a5",
+          "text": "Fonction érectile",
+          "binaryOnly": false,
+          "details": [
+            "Érection possible [oui, mais ne tient que très brièvement]",
+            "Éjaculation possible [non, l'érection ne dure pas assez longtemps]",
+            "Libido préservée"
+          ],
+          "scoringRule": "≥2 aspects de la fonction érectile = 2 points"
+        },
+        {
+          "id": "a6",
+          "text": "Antécédents cardiovasculaires",
+          "binaryOnly": false,
+          "details": [
+            "Maladies cardiaques [jusqu'à présent rien de connu - se sent bien]",
+            "Hypertension artérielle",
+            "Hypercholestérolémie [était élevée lors de la dernière consultation]"
+          ],
+          "scoringRule": "≥2 facteurs de risque CV explorés = 2 points"
+        },
+        {
+          "id": "a7",
+          "text": "Autres antécédents médicaux",
+          "binaryOnly": false,
+          "details": [
+            "Maladies rénales [non, rien de connu non plus]",
+            "Diabète sucré [non]",
+            "Autres maladies [non]"
+          ],
+          "scoringRule": "≥2 antécédents médicaux explorés = 2 points"
+        },
+        {
+          "id": "a8",
+          "text": "Symptômes généraux",
+          "binaryOnly": false,
+          "details": [
+            "Fièvre [non]",
+            "Perte de poids [non]",
+            "Sueurs nocturnes [non]"
+          ],
+          "scoringRule": "≥2 symptômes généraux explorés = 2 points"
+        },
+        {
+          "id": "a9",
+          "text": "Médicaments",
+          "binaryOnly": false,
+          "details": [
+            "Traitement actuel [statine]",
+            "Autres médicaments [aucun]",
+            "Observance thérapeutique"
+          ],
+          "scoringRule": "≥2 aspects médicamenteux explorés = 2 points"
+        },
+        {
+          "id": "a10",
+          "text": "Bien-être psychologique et relationnel",
+          "binaryOnly": false,
+          "details": [
+            "État psychologique [bien]",
+            "Problèmes relationnels [aucun]",
+            "Stress professionnel ou personnel"
+          ],
+          "scoringRule": "≥2 aspects psychosociaux explorés = 2 points"
+        },
+        {
+          "id": "a11",
+          "text": "Mode de vie",
+          "binaryOnly": false,
+          "details": [
+            "Habitudes alimentaires [aime manger, surtout la viande]",
+            "Activités sportives [tennis, promenades avec le chien]",
+            "Loisirs [Stammtisch (table des habitués)]"
+          ],
+          "scoringRule": "≥2 aspects du mode de vie explorés = 2 points"
+        },
+        {
+          "id": "a12",
+          "text": "Substances",
+          "binaryOnly": false,
+          "details": [
+            "Tabac [oui, 20 paquets-années]",
+            "Alcool [1 bière par jour environ]",
+            "Drogues [non]"
+          ],
+          "scoringRule": "≥2 substances explorées = 2 points"
+        },
+        {
+          "id": "a13",
+          "text": "Anamnèse familiale",
+          "binaryOnly": false,
+          "details": [
+            "[Père décédé d'infarctus du myocarde]",
+            "[Mère a des rhumatismes]",
+            "[Frère a une angine de poitrine]"
+          ],
+          "scoringRule": "≥2 antécédents familiaux explorés = 2 points"
+        },
+        {
+          "id": "a14",
+          "text": "Anamnèse sociale",
+          "binaryOnly": false,
+          "details": [
+            "Situation familiale [marié, 4 enfants]",
+            "Profession [banquier]",
+            "Soutien social"
+          ],
+          "scoringRule": "≥2 aspects sociaux explorés = 2 points"
+        },
+        {
+          "id": "a15",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "binaryOnly": false,
+          "details": [
+            "Anamnèse ciblée et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Hygiène et préparation",
+          "binaryOnly": false,
+          "details": [
+            "Désinfection des mains"
+          ]
+        },
+        {
+          "id": "e2",
+          "text": "Signes vitaux et mesures anthropométriques",
+          "binaryOnly": false,
+          "details": [
+            "Mesure de la tension artérielle [150/95 mmHg]",
+            "Poids et calcul du BMI [BMI 28]"
+          ],
+          "scoringRule": "≥1 mesure anthropométrique = 2 points"
+        },
+        {
+          "id": "e3",
+          "text": "Inspection générale",
+          "binaryOnly": false,
+          "details": [
+            "État cutané [normal]",
+            "Veines jugulaires [normales]"
+          ],
+          "scoringRule": "≥1 aspect de l'inspection = 2 points"
+        },
+        {
+          "id": "e4",
+          "text": "Examen cardiovasculaire",
+          "binaryOnly": false,
+          "details": [
+            "Auscultation cardiaque [régulier, léger souffle sur la valve aortique]",
+            "Pouls [régulier]",
+            "Recherche de souffles vasculaires [pas de souffle sur l'aorte, artères rénales]"
+          ],
+          "scoringRule": "≥2 aspects cardiovasculaires = 2 points"
+        },
+        {
+          "id": "e5",
+          "text": "Examen vasculaire périphérique",
+          "binaryOnly": false,
+          "details": [
+            "Palpation des pouls périphériques",
+            "[Pouls légèrement plus faibles aux membres inférieurs]"
+          ],
+          "scoringRule": "Examen vasculaire réalisé = 2 points"
+        },
+        {
+          "id": "e6",
+          "text": "Examen pulmonaire",
+          "binaryOnly": false,
+          "details": [
+            "Auscultation pulmonaire [sans particularité]"
+          ]
+        },
+        {
+          "id": "e7",
+          "text": "Examen neurologique",
+          "binaryOnly": false,
+          "details": [
+            "Sensibilité [intacte]",
+            "Réflexes ostéo-tendineux"
+          ],
+          "scoringRule": "≥1 test neurologique = 2 points"
+        },
+        {
+          "id": "e8",
+          "text": "Toucher rectal",
+          "binaryOnly": false,
+          "details": [
+            "Examen de la prostate",
+            "[Prostate légèrement augmentée de volume]"
+          ],
+          "scoringRule": "Toucher rectal réalisé = 2 points"
+        },
+        {
+          "id": "e9",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "binaryOnly": false,
+          "details": [
+            "Examen clinique ciblé et bien conduit"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic principal",
+          "binaryOnly": false,
+          "details": [
+            "Dysfonction érectile"
+          ]
+        },
+        {
+          "id": "m2",
+          "text": "Diagnostics différentiels et étiologies",
+          "binaryOnly": false,
+          "ddSection": {
+            "categories": [
+              {
+                "name": "Causes vasculaires",
+                "items": [
+                  "Artériosclérose des artères péniennes",
+                  "Maladie coronarienne",
+                  "Hypertension artérielle",
+                  "Diabète sucré (microangiopathie)"
+                ]
+              },
+              {
+                "name": "Causes neurologiques",
+                "items": [
+                  "Neuropathie diabétique",
+                  "Sclérose en plaques",
+                  "Lésions médullaires",
+                  "Chirurgie pelvienne"
+                ]
+              },
+              {
+                "name": "Causes hormonales",
+                "items": [
+                  "Hypogonadisme",
+                  "Hyperprolactinémie",
+                  "Hypothyroïdie",
+                  "Syndrome métabolique"
+                ]
+              },
+              {
+                "name": "Causes anatomiques/locales",
+                "items": [
+                  "Hyperplasie bénigne de la prostate",
+                  "Cancer de la prostate",
+                  "Maladie de Peyronie",
+                  "Priapisme antérieur"
+                ]
+              },
+              {
+                "name": "Causes psychogènes",
+                "items": [
+                  "Dépression",
+                  "Anxiété de performance",
+                  "Stress chronique",
+                  "Problèmes relationnels"
+                ]
+              },
+              {
+                "name": "Causes médicamenteuses",
+                "items": [
+                  "Antihypertenseurs (bêta-bloquants, diurétiques)",
+                  "Antidépresseurs",
+                  "Antihistaminiques",
+                  "Anti-androgènes"
+                ]
+              }
+            ]
+          },
+          "scoringRule": "≥3 catégories avec étiologies = 2 points, 2 catégories = 1 point"
+        },
+        {
+          "id": "m3",
+          "text": "Identification des facteurs de risque",
+          "binaryOnly": false,
+          "details": [
+            "Maladie coronarienne",
+            "Surpoids",
+            "Sédentarité",
+            "Consommation d'alcool",
+            "Hypercholestérolémie",
+            "Tabagisme"
+          ],
+          "scoringRule": "≥4 facteurs de risque identifiés = 2 points, 2-3 facteurs = 1 point"
+        },
+        {
+          "id": "m4",
+          "text": "Examens complémentaires - Biologie",
+          "binaryOnly": false,
+          "details": [
+            "Formule sanguine complète",
+            "Bilan lipidique (cholestérol)",
+            "Électrolytes",
+            "Glycémie"
+          ],
+          "scoringRule": "≥3 examens biologiques = 2 points, 2 examens = 1 point"
+        },
+        {
+          "id": "m5",
+          "text": "Examens complémentaires - Autres",
+          "binaryOnly": false,
+          "details": [
+            "Analyse d'urine (exclure infection urinaire)",
+            "PSA si indiqué"
+          ],
+          "scoringRule": "≥1 examen spécialisé = 2 points"
+        },
+        {
+          "id": "m6",
+          "text": "Bilan cardiologique",
+          "binaryOnly": false,
+          "details": [
+            "ECG",
+            "Échocardiographie",
+            "Radiographie thoracique si indiquée"
+          ],
+          "scoringRule": "≥2 examens cardiologiques = 2 points"
+        },
+        {
+          "id": "m7",
+          "text": "Prise en charge non médicamenteuse",
+          "binaryOnly": false,
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Modifications du mode de vie",
+                "content": "• Réduction pondérale (objectif BMI <25)\n• Activité physique régulière (30 min 3x/semaine)\n• Arrêt du tabac obligatoire\n• Limitation de la consommation d'alcool\n• Régime méditerranéen riche en antioxydants"
+              },
+              {
+                "title": "Prise en charge cardiovasculaire",
+                "content": "• Contrôle de l'hypertension artérielle\n• Optimisation du traitement hypolipémiant\n• Régime pauvre en sel et en graisses saturées\n• Surveillance glycémique\n• Bilan cardiologique avant traitement"
+              },
+              {
+                "title": "Soutien psychologique",
+                "content": "• Counseling sexuel individuel ou de couple\n• Thérapie cognitivo-comportementale\n• Gestion du stress et relaxation\n• Implication de la/du partenaire si souhaité\n• Éducation sur la sexualité"
+              }
+            ]
+          },
+          "scoringRule": "≥2 catégories de prise en charge = 2 points"
+        },
+        {
+          "id": "m8",
+          "text": "Prise en charge médicamenteuse",
+          "binaryOnly": false,
+          "details": [
+            "Inhibiteurs de la phosphodiestérase 5 (Viagra®)",
+            "Après bilan cardiologique",
+            "Explication des modalités de prise",
+            "Contre-indications et précautions"
+          ],
+          "scoringRule": "≥3 aspects du traitement médicamenteux = 2 points, 2 aspects = 1 point"
+        },
+        {
+          "id": "m9",
+          "text": "Suivi et accompagnement",
+          "binaryOnly": false,
+          "details": [
+            "Rendez-vous de contrôle dans 2 semaines",
+            "Évaluation de l'efficacité du traitement",
+            "Soutien psychologique si nécessaire",
+            "Implication du/de la partenaire si souhaité"
+          ],
+          "scoringRule": "≥3 aspects de suivi = 2 points, 2 aspects = 1 point"
+        },
+        {
+          "id": "m10",
+          "text": "Évaluation globale de la qualité de la prise en charge",
+          "binaryOnly": false,
+          "details": [
+            "Prise en charge cohérente et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    }
+  }
+}

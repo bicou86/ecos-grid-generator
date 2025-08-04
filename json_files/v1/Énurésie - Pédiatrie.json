@@ -1,0 +1,232 @@
+{
+  "title": "Énurésie - Pédiatrie",
+  "context": {
+    "setting": "Cabinet de pédiatrie",
+    "patient": "Fille de 6 ans accompagnée de sa mère pour énurésie persistante"
+  },
+  "sections": {
+    "anamnese": {
+      "title": "Anamnèse",
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction et objectif",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Description du problème par les parents",
+          "patientComment": "(La fillette fait encore pipi au lit la nuit, parfois aussi le jour)",
+          "binaryOnly": true
+        },
+        {
+          "id": "a3",
+          "text": "Évolution temporelle depuis quand",
+          "patientComment": "(Depuis toujours - n'a jamais été propre)"
+        },
+        {
+          "id": "a4",
+          "text": "Fréquence du problème",
+          "details": [
+            "Fréquence nocturne",
+            "Fréquence diurne"
+          ],
+          "patientComment": "(Presque chaque nuit / 1-2x par semaine le jour)"
+        },
+        {
+          "id": "a5",
+          "text": "Port de couches",
+          "patientComment": "(Non, la fillette ne veut plus)"
+        },
+        {
+          "id": "a6",
+          "text": "Circonstances des accidents diurnes",
+          "patientComment": "(Surtout en jouant)"
+        },
+        {
+          "id": "a7",
+          "text": "Douleurs associées",
+          "patientComment": "(Non, rien remarqué)"
+        },
+        {
+          "id": "a8",
+          "text": "Impact psychologique sur l'enfant et les parents",
+          "patientComment": "(L'enfant ne semble pas gênée, continue à dormir / Les parents sont fatigués des lessives constantes et s'inquiètent pour l'entrée à l'école maternelle)"
+        },
+        {
+          "id": "a9",
+          "text": "Caractéristiques de l'urine",
+          "details": [
+            "Couleur",
+            "Odeur"
+          ],
+          "patientComment": "(Normale / Normale)"
+        },
+        {
+          "id": "a10",
+          "text": "Comportement mictionnel",
+          "details": [
+            "Fréquence des mictions",
+            "Autonomie toilettes"
+          ],
+          "patientComment": "(5-6x par jour / Va seule aux toilettes)"
+        },
+        {
+          "id": "a11",
+          "text": "Comportement de défécation et encoprésie",
+          "patientComment": "(Très, très rarement des accidents)"
+        },
+        {
+          "id": "a12",
+          "text": "Mesures déjà prises",
+          "patientComment": "(Aucune mesure prise jusqu'à présent)"
+        },
+        {
+          "id": "a13",
+          "text": "Antécédents familiaux de propreté",
+          "details": [
+            "Âge propreté mère",
+            "Âge propreté père"
+          ],
+          "patientComment": "(Mère à 4 ans / Père plus tard, âge incertain)"
+        },
+        {
+          "id": "a14",
+          "text": "Fratrie pour comparaison",
+          "patientComment": "(Non, enfant unique)"
+        },
+        {
+          "id": "a15",
+          "text": "Antécédents d'infections urinaires ou maladies rénales",
+          "patientComment": "(Rien de connu)"
+        },
+        {
+          "id": "a16",
+          "text": "Autres antécédents médicaux",
+          "patientComment": "(Non)"
+        },
+        {
+          "id": "a17",
+          "text": "Bien-être psychique et problèmes éducatifs",
+          "patientComment": "(Non)"
+        },
+        {
+          "id": "a18",
+          "text": "Statut relationnel des parents",
+          "patientComment": "(Pas de divorce)"
+        },
+        {
+          "id": "a19",
+          "text": "Habitudes de boisson",
+          "patientComment": "(Boit plutôt beaucoup, grand biberon de lait le soir)"
+        },
+        {
+          "id": "a20",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "binaryOnly": false,
+          "details": [
+            "Anamnèse générale ciblée et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "examen": {
+      "title": "Examen clinique",
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Désinfection des mains"
+        },
+        {
+          "id": "e2",
+          "text": "Examen abdominal",
+          "patientComment": "(Souple, pas de résistances)"
+        },
+        {
+          "id": "e3",
+          "text": "Palpation rénale",
+          "patientComment": "(Non palpables, donc pas d'hypertrophie, pas de douleurs)"
+        },
+        {
+          "id": "e4",
+          "text": "Examen génital si approprié",
+          "details": [
+            "Recherche de rougeur",
+            "Signes d'infection"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "binaryOnly": false,
+          "details": [
+            "Status général ciblé et bien conduit"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "management": {
+      "title": "Prise en charge",
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic de suspicion : Énurésie primaire"
+        },
+        {
+          "id": "m2",
+          "text": "Diagnostics différentiels",
+          "details": [
+            "Énurésie secondaire",
+            "Cause psychologique/stress",
+            "Infection/infection urinaire",
+            "Malformation",
+            "Cause neurologique",
+            "Oublis diurnes (typique de l'âge)"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Examens diagnostiques proposés",
+          "details": [
+            "Analyse d'urine (exclusion infection urinaire)",
+            "Échographie rénale si nécessaire"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Options thérapeutiques expliquées",
+          "details": [
+            "Modification des habitudes de boisson",
+            "Calendrier soleil/nuages avec encouragements",
+            "Système d'alarme (sonnette)",
+            "Médicaments : analogues de vasopressine (desmopressine)"
+          ]
+        },
+        {
+          "id": "m5",
+          "text": "Conseils de soutien et rassurance",
+          "patientComment": "(Nécessite de la patience, pas encore inquiétant ! 1/10 enfants pas propres à l'école maternelle. Ne pas mettre trop de pression. Ça va venir !)"
+        },
+        {
+          "id": "m6",
+          "text": "Planification du suivi",
+          "patientComment": "(Contrôle dans 2-3 mois)"
+        },
+        {
+          "id": "m7",
+          "text": "Évaluation globale de la qualité de la prise en charge",
+          "binaryOnly": false,
+          "details": [
+            "Prise en charge générale cohérente et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    }
+  }
+}

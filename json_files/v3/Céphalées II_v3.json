@@ -1,0 +1,476 @@
+{
+  "title": "Céphalées II",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Monsieur Immrich, 67 ans, se présente au cabinet pour céphalées sévères depuis hier"
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction et tâche",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Question d'entrée ouverte → Symptôme principal",
+          "patientComment": "Céphalées sévères depuis hier",
+          "binaryOnly": true
+        },
+        {
+          "id": "a3",
+          "text": "RED FLAGS - Évaluation urgente des signes de gravité",
+          "scoringRule": "≥7 red flags explorés = 2 pts, 4-6 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false,
+          "redflagsSection": [
+            {
+              "text": "Céphalée brutale en coup de tonnerre [non, progressive]"
+            },
+            {
+              "text": "Céphalée inhabituelle après 50 ans [oui, 67 ans]"
+            },
+            {
+              "text": "Intensité maximale d'emblée [non, progressive]"
+            },
+            {
+              "text": "Fièvre associée [à vérifier]"
+            },
+            {
+              "text": "Raideur de nuque [à explorer]"
+            },
+            {
+              "text": "Confusion/troubles de conscience [confusion légère]"
+            },
+            {
+              "text": "Déficit neurologique focal [à explorer]"
+            },
+            {
+              "text": "Convulsions [non]"
+            },
+            {
+              "text": "Immunosuppression [non]"
+            }
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Anamnèse SOCRATES - Site et localisation",
+          "details": [
+            "Localisation précise (frontal, temporal, occipital)",
+            "Unilatéral vs bilatéral",
+            "Diffus vs localisé",
+            "Irradiation (nuque, épaules)"
+          ],
+          "scoringRule": "≥3 éléments = 2 pts, 2 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a5",
+          "text": "Anamnèse SOCRATES - Onset et évolution",
+          "details": [
+            "Début exact [hier]",
+            "Installation brutale vs progressive [progressive]",
+            "Évolution dans le temps [constante]",
+            "Pic d'intensité",
+            "Céphalée matinale"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a6",
+          "text": "Anamnèse SOCRATES - Character et qualité",
+          "details": [
+            "Type de douleur [piquante]",
+            "Pulsatile vs constante",
+            "Serrement vs éclatement",
+            "Lancinante vs sourde"
+          ],
+          "scoringRule": "≥3 descripteurs = 2 pts, 2 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a7",
+          "text": "Anamnèse SOCRATES - Associated symptoms",
+          "details": [
+            "Fièvre/frissons [à vérifier]",
+            "Nausées/vomissements [non mentionnés]",
+            "Photophobie [oui]",
+            "Phonophobie [à explorer]",
+            "Raideur de nuque [crucial à vérifier]",
+            "Éruption cutanée [à explorer]",
+            "Transpiration [oui]",
+            "Faiblesse générale [oui]"
+          ],
+          "scoringRule": "≥6 symptômes explorés = 2 pts, 3-5 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a8",
+          "text": "Anamnèse SOCRATES - Exacerbating/Relieving",
+          "details": [
+            "Facteurs aggravants [pencher en avant]",
+            "Position (couché vs debout)",
+            "Toux/Valsalva",
+            "Mouvements de la tête",
+            "Facteurs de soulagement [aucun]",
+            "Réponse aux antalgiques"
+          ],
+          "scoringRule": "≥4 facteurs = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a9",
+          "text": "Anamnèse SOCRATES - Severity",
+          "patientComment": "8/10 sur l'échelle EVA",
+          "binaryOnly": true
+        },
+        {
+          "id": "a10",
+          "text": "Contexte épidémiologique et contacts",
+          "details": [
+            "Contact avec personne malade [petit-enfant grippal il y a 2 semaines]",
+            "Voyage récent",
+            "Exposition professionnelle",
+            "Animaux domestiques",
+            "Vaccination (méningocoque, pneumocoque)"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a11",
+          "text": "Recherche infections spécifiques",
+          "details": [
+            "Antécédent herpès [à explorer]",
+            "Varicelle/zona [à explorer]",
+            "Infections ORL récentes",
+            "Infections urinaires",
+            "Infections cutanées"
+          ],
+          "scoringRule": "≥4 infections recherchées = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a12",
+          "text": "Antécédents médicaux pertinents",
+          "details": [
+            "Hypercholestérolémie [oui]",
+            "Immunosuppression/HIV [non]",
+            "Cancer actif ou passé [non]",
+            "Maladies neurologiques",
+            "Sinusites récurrentes",
+            "Céphalées antérieures"
+          ],
+          "scoringRule": "≥4 antécédents = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a13",
+          "text": "Médicaments et allergies",
+          "details": [
+            "Médicaments actuels [statine]",
+            "Antibiotiques récents",
+            "Immunosuppresseurs",
+            "Allergies médicamenteuses [cacahuètes]",
+            "Vaccinations à jour"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a14",
+          "text": "Habitudes et toxiques",
+          "details": [
+            "Alcool [occasionnellement]",
+            "Tabac [à explorer]",
+            "Drogues [à explorer]",
+            "Exposition professionnelle"
+          ],
+          "scoringRule": "Tous explorés = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a15",
+          "text": "Symptômes généraux (B)",
+          "patientComment": "Aucun symptôme B (perte de poids, sueurs nocturnes, fièvre prolongée)",
+          "binaryOnly": true
+        },
+        {
+          "id": "a16",
+          "text": "Anamnèse familiale",
+          "details": [
+            "Méningites familiales",
+            "Migraines",
+            "Maladies auto-immunes",
+            "Cancers cérébraux"
+          ],
+          "scoringRule": "≥3 éléments = 2 pts, 2 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a17",
+          "text": "Anamnèse sociale",
+          "details": [
+            "Conditions de vie [vit avec femme]",
+            "Autonomie",
+            "Support social",
+            "Profession/retraite"
+          ],
+          "scoringRule": "≥3 éléments = 2 pts, 2 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a18",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "binaryOnly": false,
+          "details": [
+            "Exploration systématique des red flags méningés",
+            "Anamnèse infectieuse complète",
+            "Contexte épidémiologique exploré"
+          ],
+          "scoringRule": "Excellent = 2 pts, satisfaisant = 1 pt, insuffisant = 0 pt"
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Signes vitaux complets",
+          "details": [
+            "Température [crucial - fièvre?]",
+            "TA [à mesurer]",
+            "FC [à mesurer]",
+            "FR [à mesurer]",
+            "Saturation O2 [à mesurer]",
+            "Glasgow si confusion"
+          ],
+          "scoringRule": "≥5 paramètres = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e2",
+          "text": "Examen méningé complet et systématique",
+          "details": [
+            "Raideur de nuque active et passive",
+            "Signe de Brudzinski [positif]",
+            "Signe de Kernig [à tester]",
+            "Signe de Lasègue (DD) [à tester]",
+            "Hyperesthésie cutanée",
+            "Position en chien de fusil"
+          ],
+          "scoringRule": "≥5 signes testés = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e3",
+          "text": "Examen cutané - Recherche active",
+          "details": [
+            "Purpura/pétéchies (méningocoque)",
+            "Éruption vésiculaire (VZV)",
+            "Érythème migrant (Lyme)",
+            "Lésions d'emboles septiques",
+            "Portes d'entrée infectieuses"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e4",
+          "text": "Examen neurologique focal complet",
+          "details": [
+            "Nerfs crâniens (II-XII)",
+            "Force motrice 4 membres",
+            "ROT et RCP",
+            "Sensibilité",
+            "Coordination/cérébelleux",
+            "Marche si possible"
+          ],
+          "scoringRule": "≥5 éléments = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e5",
+          "text": "Examen des nerfs crâniens spécifiques",
+          "details": [
+            "II - Fond d'œil (œdème papillaire)",
+            "III, IV, VI - Oculomotricité",
+            "V - Sensibilité faciale/cornéenne",
+            "VII - Paralysie faciale",
+            "VIII - Audition/vertiges"
+          ],
+          "scoringRule": "≥4 nerfs = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e6",
+          "text": "Examen ORL et foyers infectieux",
+          "details": [
+            "Otoscopie (otite)",
+            "Rhinoscopie (sinusite)",
+            "Pharynx (pharyngite)",
+            "Palpation sinus",
+            "Adénopathies cervicales"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e7",
+          "text": "Signes de gravité à rechercher",
+          "details": [
+            "Troubles de conscience (Glasgow)",
+            "Signes de localisation",
+            "Convulsions",
+            "Signes d'HTIC",
+            "Instabilité hémodynamique"
+          ],
+          "scoringRule": "Tous recherchés = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e8",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "binaryOnly": false,
+          "details": [
+            "Examen méningé rigoureux",
+            "Recherche systématique des complications",
+            "Examen adapté à la suspicion de méningite"
+          ],
+          "scoringRule": "Excellent = 2 pts, satisfaisant = 1 pt, insuffisant = 0 pt"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic principal avec justification",
+          "patientComment": "Méningite virale (contexte épidémique, signes méningés, absence de gravité)",
+          "binaryOnly": true
+        },
+        {
+          "id": "m2",
+          "text": "Diagnostics différentiels complets et hiérarchisés",
+          "scoringRule": "≥6 DD = 2 pts, 3-5 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false,
+          "ddSection": {
+            "categories": [
+              {
+                "name": "Diagnostics différentiels à considérer",
+                "items": [
+                  "Méningite bactérienne (urgence absolue)",
+                  "Méningite virale (entérovirus, HSV, VZV)",
+                  "Méningite tuberculeuse",
+                  "Méningite fongique (immunodéprimé)",
+                  "Méningo-encéphalite",
+                  "Hémorragie sous-arachnoïdienne",
+                  "Abcès cérébral/empyème",
+                  "Thrombose veineuse cérébrale"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m3",
+          "text": "Examens complémentaires urgents",
+          "details": [
+            "NFS, plaquettes",
+            "CRP, PCT (procalcitonine)",
+            "Hémocultures AVANT antibiotiques",
+            "Coagulation (TP, TCA)",
+            "Ionogramme, urée, créatinine",
+            "Glycémie",
+            "Lactates"
+          ],
+          "scoringRule": "≥6 examens = 2 pts, 3-5 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m4",
+          "text": "Imagerie cérébrale - Indications",
+          "details": [
+            "CT cérébral AVANT PL si : déficit focal, troubles conscience, convulsions, œdème papillaire",
+            "Recherche complications : hydrocéphalie, abcès, empyème",
+            "IRM si suspicion encéphalite ou thrombose veineuse"
+          ],
+          "scoringRule": "Indications correctes = 2 pts, partielles = 1 pt, incorrectes = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m5",
+          "text": "Ponction lombaire - Analyse complète",
+          "details": [
+            "Aspect macroscopique [clair = viral]",
+            "Cellularité et formule [lymphocytes = viral]",
+            "Protéinorachie [légèrement augmentée]",
+            "Glycorachie/glycémie [normale si viral]",
+            "Lactates LCR [normaux si viral]",
+            "Gram, cultures",
+            "PCR virales (HSV, VZV, entérovirus)"
+          ],
+          "scoringRule": "≥6 paramètres = 2 pts, 3-5 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m6",
+          "text": "Traitement empirique immédiat",
+          "details": [
+            "Si suspicion bactérienne : Ceftriaxone 2g IV + Amoxicilline (Listeria)",
+            "Dexaméthasone si bactérienne suspectée",
+            "Si suspicion HSV : Aciclovir IV",
+            "Analgésie adaptée",
+            "Antipyrétiques si fièvre",
+            "Hydratation IV si nécessaire"
+          ],
+          "scoringRule": "≥4 mesures = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m7",
+          "text": "Mesures de santé publique",
+          "details": [
+            "Isolement respiratoire initial",
+            "Déclaration obligatoire si méningocoque",
+            "Prophylaxie des contacts si bactérienne",
+            "Information de l'entourage",
+            "Mesures d'hygiène"
+          ],
+          "scoringRule": "≥4 mesures = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m8",
+          "text": "Critères d'hospitalisation et surveillance",
+          "details": [
+            "Hospitalisation systématique si méningite",
+            "Surveillance neurologique rapprochée",
+            "Monitoring signes vitaux",
+            "Bilan de complications",
+            "Adaptation thérapeutique selon résultats"
+          ],
+          "scoringRule": "≥4 critères = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m9",
+          "text": "Évaluation globale de la qualité de la prise en charge",
+          "binaryOnly": false,
+          "details": [
+            "Prise en charge urgente appropriée",
+            "Examens complets et hiérarchisés",
+            "Traitement empirique adapté",
+            "Mesures de santé publique"
+          ],
+          "scoringRule": "Excellent = 2 pts, satisfaisant = 1 pt, insuffisant = 0 pt"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,263 @@
+{
+  "title": "Fatigue II",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Femme de 20 ans, jusqu'ici en bonne santé, consultation pour fatigue"
+  },
+  "sections": {
+    "anamnese": {
+      "title": "Anamnèse",
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction et objectif",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Problème actuel et plaintes subjectives",
+          "binaryOnly": true
+        },
+        {
+          "id": "a3",
+          "text": "Symptômes cardiovasculaires",
+          "details": [
+            "Dyspnée",
+            "Palpitations"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "État général",
+          "details": [
+            "Capacité de performance",
+            "Fatigue",
+            "État psychique"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Symptômes fonctionnels",
+          "details": [
+            "Troubles orthostatiques",
+            "Qualité du sommeil",
+            "Pâleur"
+          ]
+        },
+        {
+          "id": "a6",
+          "text": "Épisodes antérieurs similaires et problèmes médicaux passés"
+        },
+        {
+          "id": "a7",
+          "text": "Pathologies sous-jacentes",
+          "details": [
+            "Infection",
+            "Maladie rénale"
+          ]
+        },
+        {
+          "id": "a8",
+          "text": "Anamnèse de pertes sanguines",
+          "details": [
+            "Menstruations abondantes",
+            "Mélaena",
+            "Hématémèse"
+          ]
+        },
+        {
+          "id": "a9",
+          "text": "Habitudes alimentaires et de boisson",
+          "details": [
+            "Alimentation déséquilibrée",
+            "Végétarisme",
+            "Consommation d'alcool"
+          ]
+        },
+        {
+          "id": "a10",
+          "text": "Troubles gastro-intestinaux",
+          "details": [
+            "Digestion",
+            "Dysphagie",
+            "Maladie ulcéreuse"
+          ]
+        },
+        {
+          "id": "a11",
+          "text": "Troubles neurologiques",
+          "details": [
+            "Troubles de la marche",
+            "Paresthésies (anémie pernicieuse)"
+          ]
+        },
+        {
+          "id": "a12",
+          "text": "Douleurs osseuses",
+          "patientComment": "(Drépanocytose, tumeurs malignes)"
+        },
+        {
+          "id": "a13",
+          "text": "Médicaments et toxiques professionnels",
+          "patientComment": "(Si suspicion d'atteinte toxique)"
+        },
+        {
+          "id": "a14",
+          "text": "Antécédents familiaux",
+          "patientComment": "(Anémie héréditaire)"
+        },
+        {
+          "id": "a15",
+          "text": "Habitudes de vie",
+          "details": [
+            "Tabac",
+            "Alcool",
+            "Drogues"
+          ]
+        },
+        {
+          "id": "a16",
+          "text": "Anamnèse sociale"
+        },
+        {
+          "id": "a17",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "binaryOnly": false,
+          "details": [
+            "Anamnèse générale ciblée et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "examen": {
+      "title": "Examen clinique",
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Inspection de la pâleur",
+          "details": [
+            "Pâleur cutanée",
+            "Pâleur des muqueuses (yeux)"
+          ]
+        },
+        {
+          "id": "e2",
+          "text": "Recherche d'ictère"
+        },
+        {
+          "id": "e3",
+          "text": "Examen de la cavité buccale",
+          "details": [
+            "Perlèche",
+            "Surface linguale"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Examen cardiovasculaire",
+          "details": [
+            "Auscultation cardiaque",
+            "Fréquence cardiaque",
+            "Tension artérielle",
+            "Souffles cardiaques/vasculaires"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Palpation abdominale",
+          "details": [
+            "Foie",
+            "Rate (hépato-splénomégalie)"
+          ]
+        },
+        {
+          "id": "e6",
+          "text": "Palpation des ganglions lymphatiques"
+        },
+        {
+          "id": "e7",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "binaryOnly": false,
+          "details": [
+            "Status général ciblé et bien conduit"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "management": {
+      "title": "Prise en charge",
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostics différentiels (au moins 2-3)"
+        },
+        {
+          "id": "m2",
+          "text": "Examens de laboratoire",
+          "details": [
+            "FSC avec différentielle",
+            "Fer sérique",
+            "CRP/VS",
+            "Bilirubine",
+            "VGM, CCMH",
+            "Frottis sanguin",
+            "Test FIT (recherche de sang occulte dans les selles)"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Reconnaissance d'une carence en fer au laboratoire",
+          "details": [
+            "Anémie hypochrome microcytaire",
+            "Ferritine basse",
+            "Thérapie proposée",
+            "Explication des effets secondaires"
+          ],
+          "patientComment": "(Hypochrome microcytaire, ferritine basse / Fer Fe2+ per os / Douleurs abdominales, coloration foncée inoffensive des selles)"
+        },
+        {
+          "id": "m4",
+          "text": "Modalités de suivi et alternatives",
+          "details": [
+            "Contrôle de la ferritine",
+            "Alternative en cas d'intolérance"
+          ],
+          "patientComment": "(Contrôle ferritine / En cas d'intolérance per os → Fe3+ IV)"
+        },
+        {
+          "id": "m5",
+          "text": "Reconnaissance d'une carence en vitamine B12/folates",
+          "details": [
+            "Anémie hyperchrome macrocytaire",
+            "Thérapie proposée"
+          ],
+          "patientComment": "(Hyperchrome macrocytaire / Substitution, traitement causal - sevrage alcoolique, nutrition)"
+        },
+        {
+          "id": "m6",
+          "text": "Examens complémentaires selon orientation diagnostique",
+          "details": [
+            "Suspicion de saignement gastro-intestinal",
+            "Suspicion de maladie médullaire",
+            "Suspicion d'hyperménorrhée"
+          ],
+          "patientComment": "(Gastroscopie ou coloscopie / Ponction de moelle osseuse / Consultation gynécologique)"
+        },
+        {
+          "id": "m7",
+          "text": "Évaluation globale de la qualité de la prise en charge",
+          "binaryOnly": false,
+          "details": [
+            "Prise en charge générale cohérente et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    }
+  }
+}

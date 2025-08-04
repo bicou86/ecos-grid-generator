@@ -1,0 +1,338 @@
+{
+  "title": "AVP",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Madame Bachmann, 56 ans, se présente au cabinet suite à un accident de la voie publique"
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction et tâche",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Question ouverte d'entrée",
+          "patientComment": "Docteur, j'ai un coup du lapin",
+          "binaryOnly": true
+        },
+        {
+          "id": "a3",
+          "text": "Clarification : \"Qu'entendez-vous par coup du lapin ?\"",
+          "patientComment": "Une voiture m'est rentrée dedans par derrière et je me suis cogné la tête. Depuis j'ai des maux de tête",
+          "binaryOnly": true
+        },
+        {
+          "id": "a4",
+          "text": "Moment de l'accident",
+          "patientComment": "Il y a 1 semaine",
+          "binaryOnly": true
+        },
+        {
+          "id": "a5",
+          "text": "Déroulement détaillé de l'accident",
+          "details": [
+            "Vitesse estimée [environ 30 km/h]",
+            "Port de la ceinture [oui, ceinturée]",
+            "Mécanisme du traumatisme [tête contre l'appui-tête]",
+            "Prise en charge immédiate [pas d'hospitalisation, tout allait bien juste après]"
+          ],
+          "scoringRule": "Au moins trois = 2 pts, deux = 1 pt, aucun à un = 0 pt"
+        },
+        {
+          "id": "a6",
+          "text": "Céphalées - Localisation",
+          "patientComment": "Occipitales",
+          "binaryOnly": true
+        },
+        {
+          "id": "a7",
+          "text": "Céphalées - Évolution dans la journée",
+          "patientComment": "Plus faibles le matin, plus fortes le soir",
+          "binaryOnly": true
+        },
+        {
+          "id": "a8",
+          "text": "Céphalées - Irradiation cervicale",
+          "patientComment": "Oui, vers la nuque",
+          "binaryOnly": true
+        },
+        {
+          "id": "a9",
+          "text": "Céphalées - Intensité sur échelle 0-10",
+          "patientComment": "Matin 2, soir 7",
+          "binaryOnly": true
+        },
+        {
+          "id": "a10",
+          "text": "Céphalées - Caractère",
+          "patientComment": "Sourdes",
+          "binaryOnly": true
+        },
+        {
+          "id": "a11",
+          "text": "Facteurs d'amélioration et d'aggravation",
+          "details": [
+            "Amélioration [ne voulait pas prendre de médicaments, position allongée fait du bien, chaleur sur la nuque]",
+            "Aggravation [station debout prolongée et stress]"
+          ],
+          "scoringRule": "Les deux = 2 pts, un = 1 pt, aucun = 0 pt"
+        },
+        {
+          "id": "a12",
+          "text": "Symptômes d'accompagnement neurologiques",
+          "details": [
+            "Vertiges [non]",
+            "Nausées/vomissements [non]",
+            "Troubles sensitifs des bras [non]",
+            "Déficit moteur des bras [non]",
+            "Troubles olfactifs [non]",
+            "Acouphènes [non]",
+            "Diplopie [non]"
+          ],
+          "scoringRule": "Au moins cinq = 2 pts, trois à quatre = 1 pt, moins de trois = 0 pt"
+        },
+        {
+          "id": "a13",
+          "text": "Antécédents de céphalées",
+          "patientComment": "Oui, parfois des céphalées de tension, déjà des investigations pour migraine mais négatives",
+          "binaryOnly": true
+        },
+        {
+          "id": "a14",
+          "text": "Symptômes généraux",
+          "details": [
+            "Fièvre [non]",
+            "Symptômes grippaux [non]"
+          ],
+          "scoringRule": "Les deux = 2 pts, un = 1 pt, aucun = 0 pt"
+        },
+        {
+          "id": "a15",
+          "text": "Antécédents chirurgicaux cervicaux ou céphaliques",
+          "patientComment": "Non",
+          "binaryOnly": true
+        },
+        {
+          "id": "a16",
+          "text": "Antécédents médicaux",
+          "patientComment": "Aucun",
+          "binaryOnly": true
+        },
+        {
+          "id": "a17",
+          "text": "Médicaments actuels",
+          "patientComment": "Parfois graines de lin pour régulation du transit, réticente aux médicaments",
+          "binaryOnly": true
+        },
+        {
+          "id": "a18",
+          "text": "Allergies",
+          "patientComment": "Aucune connue",
+          "binaryOnly": true
+        },
+        {
+          "id": "a19",
+          "text": "Toxiques",
+          "patientComment": "Non-fumeuse, pas d'alcool, pas de drogues",
+          "binaryOnly": true
+        },
+        {
+          "id": "a20",
+          "text": "Anamnèse familiale",
+          "patientComment": "Mère migraineuse, père en bonne santé",
+          "binaryOnly": true
+        },
+        {
+          "id": "a21",
+          "text": "Anamnèse sociale",
+          "details": [
+            "Profession [vendeuse de chaussures]",
+            "Situation familiale [mère célibataire, enfants adolescents]",
+            "Activité physique [sportive]",
+            "Médecines alternatives [adepte de médecine complémentaire]"
+          ],
+          "scoringRule": "Au moins trois = 2 pts, deux = 1 pt, aucun à un = 0 pt"
+        },
+        {
+          "id": "a22",
+          "text": "Synthèse et questions du patient",
+          "patientComment": "Pensez-vous que je doive me faire opérer de la colonne vertébrale ?",
+          "binaryOnly": true
+        },
+        {
+          "id": "a23",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "binaryOnly": false,
+          "details": [
+            "Anamnèse ciblée et bien conduite"
+          ],
+          "scoringRule": "Bien = 2 pts, suffisant = 1 pt, insuffisant = 0 pt"
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Examen bref des nerfs crâniens",
+          "binaryOnly": true
+        },
+        {
+          "id": "e2",
+          "text": "Évaluation de la marche",
+          "patientComment": "Marche assurée",
+          "binaryOnly": true
+        },
+        {
+          "id": "e3",
+          "text": "Inspection cervicale",
+          "details": [
+            "Hématomes",
+            "Rougeur",
+            "Points de pression",
+            "Symétrie musculaire"
+          ],
+          "patientComment": "Aucune anomalie",
+          "scoringRule": "Au moins trois = 2 pts, deux = 1 pt, aucun à un = 0 pt"
+        },
+        {
+          "id": "e4",
+          "text": "Mobilité cervicale active",
+          "details": [
+            "Rotation",
+            "Flexion",
+            "Extension",
+            "Flexion latérale",
+            "Rotation en flexion (rachis cervical supérieur)",
+            "Rotation en extension (rachis cervical inférieur)"
+          ],
+          "scoringRule": "Au moins cinq = 2 pts, trois à quatre = 1 pt, moins de trois = 0 pt"
+        },
+        {
+          "id": "e5",
+          "text": "Mobilité cervicale passive - Où se situe le déficit",
+          "patientComment": "Rotation droite limitée",
+          "binaryOnly": true
+        },
+        {
+          "id": "e6",
+          "text": "Éventuellement mesure distance menton-sternum en flexion/extension",
+          "binaryOnly": true
+        },
+        {
+          "id": "e7",
+          "text": "Palpation musculaire",
+          "details": [
+            "Sterno-cléido-mastoïdien",
+            "Muscles occipitaux",
+            "Élévateur de la scapula"
+          ],
+          "scoringRule": "Les trois = 2 pts, deux = 1 pt, aucun à un = 0 pt"
+        },
+        {
+          "id": "e8",
+          "text": "Test de compression axiale",
+          "details": [
+            "En position neutre",
+            "Éventuellement en flexion latérale"
+          ],
+          "scoringRule": "Les deux = 2 pts, un = 1 pt, aucun = 0 pt"
+        },
+        {
+          "id": "e9",
+          "text": "Examen neurologique des membres supérieurs",
+          "details": [
+            "Force",
+            "Sensibilité",
+            "Réflexes"
+          ],
+          "scoringRule": "Les trois = 2 pts, deux = 1 pt, aucun à un = 0 pt"
+        },
+        {
+          "id": "e10",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "binaryOnly": false,
+          "details": [
+            "Examen ciblé et bien conduit"
+          ],
+          "scoringRule": "Bien = 2 pts, suffisant = 1 pt, insuffisant = 0 pt"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic de suspicion",
+          "patientComment": "Distorsion cervicale post-coup du lapin, contracture musculaire, éventuellement blocage des articulations facettaires",
+          "binaryOnly": true
+        },
+        {
+          "id": "m2",
+          "text": "Diagnostics différentiels à l'expert",
+          "details": [
+            "Hernie discale",
+            "Fracture vertébrale"
+          ],
+          "scoringRule": "Les deux = 2 pts, un = 1 pt, aucun = 0 pt"
+        },
+        {
+          "id": "m3",
+          "text": "Justification de l'absence d'imagerie immédiate",
+          "details": [
+            "Pas de chute",
+            "Pas la pire céphalée de sa vie",
+            "Pas de nouveau type de céphalée",
+            "Pas de déficit neurologique"
+          ],
+          "patientComment": "RX et IRM non indiqués",
+          "scoringRule": "Au moins trois = 2 pts, deux = 1 pt, aucun à un = 0 pt"
+        },
+        {
+          "id": "m4",
+          "text": "Traitement médicamenteux",
+          "details": [
+            "AINS (si troubles gastriques exclus) pour 3-5 jours fixes",
+            "Éventuellement myorelaxants (si pas d'amélioration → IRM)"
+          ],
+          "scoringRule": "Les deux = 2 pts, un = 1 pt, aucun = 0 pt"
+        },
+        {
+          "id": "m5",
+          "text": "Mesures non médicamenteuses",
+          "details": [
+            "Mobilisation",
+            "Application de chaleur",
+            "Chiropracteur",
+            "Physiothérapie avec mouvements passifs et actifs"
+          ],
+          "scoringRule": "Au moins trois = 2 pts, deux = 1 pt, aucun à un = 0 pt"
+        },
+        {
+          "id": "m6",
+          "text": "Planification du suivi",
+          "details": [
+            "Contrôle dans 5 jours selon physiothérapie/chiropractie",
+            "Éventuellement arrêt de travail"
+          ],
+          "scoringRule": "Les deux = 2 pts, un = 1 pt, aucun = 0 pt"
+        },
+        {
+          "id": "m7",
+          "text": "Évaluation globale de la qualité de la prise en charge",
+          "binaryOnly": false,
+          "details": [
+            "Prise en charge cohérente et bien conduite"
+          ],
+          "scoringRule": "Bien = 2 pts, suffisant = 1 pt, insuffisant = 0 pt"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,288 @@
+{
+  "title": "Douleur abdominale VI",
+  "context": {
+    "setting": "Service d'urgence",
+    "patient": "Homme de 72 ans avec douleurs abdominales, se tord de douleur",
+    "vitals": {
+      "ta": "142/89 mmHg",
+      "fc": "84 bpm",
+      "fr": "14/min",
+      "temperature": "36.8°C"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction et tâche",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Identification des symptômes",
+          "patientComment": "fortes douleurs abdominales",
+          "binaryOnly": true
+        },
+        {
+          "id": "a3",
+          "text": "Début des symptômes",
+          "patientComment": "depuis quelques heures"
+        },
+        {
+          "id": "a4",
+          "text": "Localisation",
+          "patientComment": "plutôt à gauche, région moyenne à inférieure de l'abdomen"
+        },
+        {
+          "id": "a5",
+          "text": "Migration de la douleur",
+          "patientComment": "toujours au même endroit"
+        },
+        {
+          "id": "a6",
+          "text": "Irradiation",
+          "patientComment": "non"
+        },
+        {
+          "id": "a7",
+          "text": "Mode de début",
+          "patientComment": "soudain"
+        },
+        {
+          "id": "a8",
+          "text": "Premier épisode",
+          "patientComment": "depuis longtemps déjà des douleurs récurrentes après les repas"
+        },
+        {
+          "id": "a9",
+          "text": "Fréquence, périodicité",
+          "patientComment": "légèrement ondulant"
+        },
+        {
+          "id": "a10",
+          "text": "Intensité",
+          "patientComment": "8/10"
+        },
+        {
+          "id": "a11",
+          "text": "Caractère",
+          "patientComment": "piquant, colique"
+        },
+        {
+          "id": "a12",
+          "text": "Facteurs aggravants/soulageants",
+          "patientComment": "en ce moment rien n'aide du tout !"
+        },
+        {
+          "id": "a13",
+          "text": "Douleurs liées à l'alimentation",
+          "patientComment": "non"
+        },
+        {
+          "id": "a14",
+          "text": "Fièvre",
+          "patientComment": "non"
+        },
+        {
+          "id": "a15",
+          "text": "Transit intestinal, gaz",
+          "patientComment": "maintenant pas du tout !"
+        },
+        {
+          "id": "a16",
+          "text": "Nausées, vomissements",
+          "patientComment": "nausées"
+        },
+        {
+          "id": "a17",
+          "text": "Sang dans les vomissements",
+          "patientComment": "non"
+        },
+        {
+          "id": "a18",
+          "text": "Diarrhée, constipation",
+          "patientComment": "non"
+        },
+        {
+          "id": "a19",
+          "text": "Sang dans les selles",
+          "patientComment": "non"
+        },
+        {
+          "id": "a20",
+          "text": "Antécédent de chirurgie abdominale",
+          "patientComment": "non"
+        },
+        {
+          "id": "a21",
+          "text": "Anamnèse de voyage",
+          "patientComment": "rien de particulier"
+        },
+        {
+          "id": "a22",
+          "text": "Anamnèse de l'entourage",
+          "patientComment": "rien de particulier"
+        },
+        {
+          "id": "a23",
+          "text": "Perte de poids, sueurs nocturnes, fièvre",
+          "patientComment": "non"
+        },
+        {
+          "id": "a24",
+          "text": "Facteurs de risque cardiovasculaire",
+          "details": [
+            "Hypertension artérielle (oui)",
+            "Dyslipidémie (oui)",
+            "Diabète sucré (oui)",
+            "Tabagisme (oui)",
+            "Antécédents familiaux de maladie coronarienne <55 ans (non)"
+          ]
+        },
+        {
+          "id": "a25",
+          "text": "Anamnèse personnelle",
+          "patientComment": "antécédent d'infarctus du myocarde il y a 6 ans, fibrillation auriculaire, hypertension artérielle, diabète sucré"
+        },
+        {
+          "id": "a26",
+          "text": "Toxiques",
+          "patientComment": "40 paquets-années, alcool occasionnel, pas de drogues"
+        },
+        {
+          "id": "a27",
+          "text": "Médicaments",
+          "patientComment": "IEC, bêta-bloquant, diurétique, digitaline, aspirine, statine, metformine"
+        },
+        {
+          "id": "a28",
+          "text": "Allergies",
+          "patientComment": "non"
+        },
+        {
+          "id": "a29",
+          "text": "Anamnèse sociale",
+          "patientComment": "agriculteur"
+        },
+        {
+          "id": "a30",
+          "text": "Anamnèse familiale",
+          "patientComment": "père infarctus du myocarde à 73 ans"
+        },
+        {
+          "id": "a31",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "binaryOnly": false,
+          "details": [
+            "Anamnèse générale ciblée et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Inspection abdomen, peau"
+        },
+        {
+          "id": "e2",
+          "text": "Auscultation abdominale",
+          "patientComment": "bruits intestinaux rares, bruit vasculaire synchrone au pouls"
+        },
+        {
+          "id": "e3",
+          "text": "Palpation",
+          "patientComment": "abdomen entier douloureux à la pression avec masse palpable dans l'abdomen moyen gauche, défense musculaire"
+        },
+        {
+          "id": "e4",
+          "text": "Signes péritonéaux",
+          "patientComment": "oui"
+        },
+        {
+          "id": "e5",
+          "text": "Toucher rectal",
+          "patientComment": "normal"
+        },
+        {
+          "id": "e6",
+          "text": "État des ganglions lymphatiques",
+          "patientComment": "normal"
+        },
+        {
+          "id": "e7",
+          "text": "État cardiopulmonaire"
+        },
+        {
+          "id": "e8",
+          "text": "État vasculaire"
+        },
+        {
+          "id": "e9",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "binaryOnly": false,
+          "details": [
+            "Status général ciblé et bien conduit"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Énonce le diagnostic de suspicion",
+          "patientComment": "infarctus mésentérique artériel aigu"
+        },
+        {
+          "id": "m2",
+          "text": "Nomme au moins 2-3 diagnostics différentiels",
+          "details": [
+            "Thrombose veineuse mésentérique",
+            "Colique néphrétique",
+            "Diverticulite"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Nomme les examens diagnostiques",
+          "details": [
+            "Laboratoire (formule sanguine, CRP, lactates, CK, LDH)",
+            "Radiographie thoracique",
+            "ECG",
+            "Radiographie abdominale (niveaux hydro-aériques, anses intestinales dilatées)",
+            "Échographie abdominale (liquide libre, anses intestinales stationnaires)",
+            "Duplex couleur, angio-IRM",
+            "Coloscopie (risque de perforation !)"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Thérapie",
+          "details": [
+            "Tolérance à l'ischémie intestinale maximum 6 heures !",
+            "Dès suspicion clinique : angiographie et laparotomie exploratrice",
+            "Selon les résultats : embolectomie, désoblitération, chirurgie de pontage",
+            "Réévaluation du traitement médicamenteux"
+          ]
+        },
+        {
+          "id": "m5",
+          "text": "Évaluation globale de la qualité de la prise en charge",
+          "binaryOnly": false,
+          "details": [
+            "Prise en charge générale cohérente et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,427 @@
+{
+  "title": "Hématurie",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "M. Müller, 52 ans, banquier, se présente chez son médecin traitant pour du sang dans les urines"
+  },
+  "sections": {
+    "anamnese": {
+      "title": "Anamnèse",
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction et objectif",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Motif de consultation principal",
+          "patientComment": "Sang dans les urines depuis 4 semaines, augmentation récente"
+        },
+        {
+          "id": "a3",
+          "text": "Caractéristiques de l'hématurie",
+          "details": [
+            "Début et évolution [depuis 4 semaines, intermittent]",
+            "Quantité de sang [augmentation progressive, plus important aujourd'hui]",
+            "Couleur des urines [rouge clair à rouge foncé]",
+            "Présence de caillots [non, juste urine colorée]",
+            "Moment dans le jet [plutôt en fin de miction]",
+            "Facteurs déclenchants [aucun identifié]",
+            "Hématurie au repos vs effort [présente même au repos]"
+          ],
+          "patientComment": "Hématurie terminale évocatrice d'origine vésicale",
+          "scoringRule": "≥5 caractéristiques explorées = 2 pts, 3-4 = 1 pt"
+        },
+        {
+          "id": "a4",
+          "text": "Symptômes mictionnels associés",
+          "details": [
+            "Pollakiurie [oui, 6-8 fois/jour]",
+            "Nycturie [2-3 fois/nuit]",
+            "Dysurie/brûlures mictionnelles [non]",
+            "Jet urinaire faible [parfois]",
+            "Mictions impérieuses [occasionnellement]",
+            "Sensation de vidange incomplète [oui]",
+            "Gouttes retardataires [presque toujours]",
+            "Incontinence [non]"
+          ],
+          "patientComment": "Symptômes du bas appareil urinaire mixtes",
+          "scoringRule": "≥5 symptômes explorés = 2 pts, 3-4 = 1 pt"
+        },
+        {
+          "id": "a5",
+          "text": "Symptômes associés et complications",
+          "details": [
+            "Douleurs lombaires/flanc [aucune]",
+            "Douleurs sus-pubiennes [non]",
+            "Coliques néphrétiques [jamais]",
+            "Fièvre/frissons [non]",
+            "Traumatisme récent [non]",
+            "Manipulations urétrales [oui, pratiques sexuelles à risque]",
+            "Effort physique intense [marathon il y a 4 semaines]"
+          ],
+          "patientComment": "Facteurs traumatiques potentiels identifiés",
+          "scoringRule": "≥5 éléments = 2 pts, 3-4 = 1 pt"
+        },
+        {
+          "id": "a6",
+          "text": "Revue des systèmes complète",
+          "details": [
+            "Symptômes B (fièvre, sueurs, amaigrissement) [aucun]",
+            "Fatigue/asthénie [non]",
+            "Anorexie [non, appétit conservé]",
+            "Douleurs osseuses [non]",
+            "Symptômes neurologiques [aucun]",
+            "Symptômes cardio-respiratoires [aucun]",
+            "Troubles digestifs [transit normal]",
+            "Éruptions cutanées [non]"
+          ],
+          "patientComment": "Pas de signe d'extension ou de maladie systémique",
+          "scoringRule": "≥6 systèmes = 2 pts, 4-5 = 1 pt"
+        },
+        {
+          "id": "a7",
+          "text": "Habitudes et facteurs de risque",
+          "details": [
+            "Tabagisme [10 cigarettes/jour depuis 20 ans = 10 PA]",
+            "Exposition professionnelle (colorants, solvants) [non, travail de bureau]",
+            "Alcool [modéré, demi-bouteille de vin le weekend]",
+            "Drogues/toxiques [non]",
+            "Médicaments néphrotoxiques [aucun]",
+            "Anticoagulants/antiagrégants [non]",
+            "AINS réguliers [non]",
+            "Phytothérapie/compléments [non]"
+          ],
+          "patientComment": "Tabagisme significatif = facteur de risque majeur",
+          "scoringRule": "≥6 facteurs explorés = 2 pts"
+        },
+        {
+          "id": "a8",
+          "text": "Antécédents médicaux urologiques",
+          "details": [
+            "Infections urinaires récidivantes [non]",
+            "Lithiases rénales/vésicales [jamais]",
+            "Pathologie prostatique [non connue]",
+            "Interventions urologiques [aucune]",
+            "Sondages vésicaux [jamais]",
+            "Anomalies congénitales [non]",
+            "Maladies rénales [non]"
+          ],
+          "patientComment": "Pas d'antécédent urologique",
+          "scoringRule": "≥5 antécédents = 2 pts"
+        },
+        {
+          "id": "a9",
+          "text": "Autres antécédents médicaux",
+          "details": [
+            "HTA [non]",
+            "Diabète [non]",
+            "Maladies cardiovasculaires [non]",
+            "Troubles de coagulation [non]",
+            "Maladies auto-immunes [non]",
+            "Cancers antérieurs [aucun]",
+            "Chirurgies [aucune]"
+          ],
+          "patientComment": "Pas de comorbidité significative"
+        },
+        {
+          "id": "a10",
+          "text": "Activités et expositions récentes",
+          "details": [
+            "Sports intenses [course régulière, marathon récent]",
+            "Traumatismes abdominaux [non]",
+            "Voyages (bilharziose) [aucun voyage tropical]",
+            "Radiothérapie pelvienne [jamais]",
+            "Chimiothérapie antérieure [non]"
+          ],
+          "patientComment": "Hématurie d'effort possible mais insuffisante pour expliquer la persistance"
+        },
+        {
+          "id": "a11",
+          "text": "Antécédents familiaux",
+          "details": [
+            "Cancers urologiques familiaux [aucun connu]",
+            "Cancer vessie/rein/prostate [non]",
+            "Polykystose rénale [non]",
+            "Maladies rénales héréditaires [non]",
+            "Autres cancers [père IDM à 68 ans]"
+          ],
+          "patientComment": "Pas d'antécédent familial contributif"
+        },
+        {
+          "id": "a12",
+          "text": "Contexte psychosocial",
+          "details": [
+            "Profession à risque [non, banquier]",
+            "Situation familiale [marié, 2 adolescents]",
+            "Stress/anxiété [travail prenant mais gérable]",
+            "Observance probable [bonne]",
+            "Support social [bon]"
+          ],
+          "patientComment": "Contexte socio-professionnel favorable"
+        },
+        {
+          "id": "a13",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "binaryOnly": false,
+          "details": [
+            "Anamnèse urologique exhaustive et méthodique"
+          ],
+          "scoringRule": "Anamnèse excellente = 2 pts, correcte = 1 pt, insuffisante = 0 pt"
+        }
+      ]
+    },
+    "examen": {
+      "title": "Examen clinique",
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Signes vitaux et état général",
+          "details": [
+            "TA [135/85 mmHg, limite supérieure]",
+            "FC [72 bpm]",
+            "Température [36.5°C]",
+            "Poids/taille/IMC [75 kg, 180 cm, IMC 23.1]",
+            "État général [bon, pas d'altération]"
+          ],
+          "patientComment": "Signes vitaux stables, TA limite"
+        },
+        {
+          "id": "e2",
+          "text": "Examen abdominal complet",
+          "details": [
+            "Inspection (cicatrices, distension) [normale]",
+            "Palpation des 4 quadrants [souple, indolore]",
+            "Palpation des fosses lombaires [pas de masse]",
+            "Recherche de globe vésical [non palpable]",
+            "Contact lombaire bilatéral [négatif]",
+            "Percussion rénale [indolore]"
+          ],
+          "patientComment": "Abdomen normal, pas de masse palpable",
+          "scoringRule": "≥5 éléments = 2 pts, 3-4 = 1 pt"
+        },
+        {
+          "id": "e3",
+          "text": "Examen génito-urinaire externe",
+          "details": [
+            "Inspection du méat urétral [normal, pas d'écoulement]",
+            "Palpation urétrale [normale]",
+            "Inspection scrotale [normale]",
+            "Palpation testiculaire bilatérale [testicules normaux]",
+            "Recherche de varicocèle [absent]",
+            "Examen du pénis [normal, pas de lésion]"
+          ],
+          "binaryOnly": true,
+          "patientComment": "Organes génitaux externes normaux"
+        },
+        {
+          "id": "e4",
+          "text": "Toucher rectal",
+          "details": [
+            "Tonus sphinctérien [normal]",
+            "Prostate: volume [légèrement augmenté]",
+            "Prostate: consistance [ferme, homogène]",
+            "Prostate: surface [lisse, régulière]",
+            "Nodules prostatiques [aucun]",
+            "Douleur [non douloureuse]",
+            "Sang au doigtier [non]"
+          ],
+          "binaryOnly": true,
+          "patientComment": "HBP probable, pas de nodule suspect"
+        },
+        {
+          "id": "e5",
+          "text": "Recherche d'adénopathies",
+          "details": [
+            "Ganglions inguinaux [non palpables]",
+            "Ganglions iliaques [non accessibles]",
+            "Ganglions sus-claviculaires [non palpables]",
+            "Autres aires ganglionnaires [normales]"
+          ],
+          "patientComment": "Pas d'adénopathie périphérique",
+          "scoringRule": "≥3 sites = 2 pts"
+        },
+        {
+          "id": "e6",
+          "text": "Examen complémentaire",
+          "details": [
+            "Examen cardiovasculaire [normal]",
+            "Auscultation pulmonaire [normale]",
+            "Examen neurologique sommaire [normal]",
+            "Œdèmes des membres inférieurs [absents]"
+          ],
+          "patientComment": "Pas de signe de dissémination"
+        },
+        {
+          "id": "e7",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "binaryOnly": false,
+          "details": [
+            "Examen urologique complet incluant TR"
+          ],
+          "scoringRule": "Examen excellent = 2 pts, correct = 1 pt, insuffisant = 0 pt"
+        }
+      ]
+    },
+    "management": {
+      "title": "Prise en charge",
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic principal à éliminer",
+          "patientComment": "Carcinome urothélial de vessie (homme > 50 ans, fumeur, hématurie macroscopique)",
+          "scoringRule": "Diagnostic prioritaire correct = 2 pts"
+        },
+        {
+          "id": "m2",
+          "text": "Diagnostics différentiels",
+          "ddSection": {
+            "categories": [
+              {
+                "name": "Causes néoplasiques",
+                "items": [
+                  "Carcinome urothélial vésical (le plus probable)",
+                  "Carcinome rénal",
+                  "Cancer de la prostate localement avancé",
+                  "Tumeur urétrale"
+                ]
+              },
+              {
+                "name": "Causes non néoplasiques",
+                "items": [
+                  "Lésion urétrale traumatique (manipulations)",
+                  "Hématurie d'effort post-marathon",
+                  "Lithiase vésicale ou rénale",
+                  "Infection urinaire compliquée"
+                ]
+              },
+              {
+                "name": "Causes bénignes",
+                "items": [
+                  "Hypertrophie bénigne de la prostate",
+                  "Cystite hémorragique",
+                  "Néphropathie glomérulaire",
+                  "Malformation vasculaire"
+                ]
+              }
+            ]
+          },
+          "scoringRule": "≥8 diagnostics différentiels organisés = 2 pts, 4-7 = 1 pt"
+        },
+        {
+          "id": "m3",
+          "text": "Examens biologiques urgents",
+          "details": [
+            "NFS complète (recherche anémie)",
+            "Créatinine + DFG (fonction rénale)",
+            "Ionogramme sanguin",
+            "CRP (inflammation/infection)",
+            "Coagulation (TP, TCA)",
+            "PSA total (homme > 50 ans)"
+          ],
+          "patientComment": "Bilan rénal et recherche de retentissement",
+          "scoringRule": "≥5 examens = 2 pts, 3-4 = 1 pt"
+        },
+        {
+          "id": "m4",
+          "text": "Analyses urinaires complètes",
+          "details": [
+            "Bandelette urinaire immédiate",
+            "ECBU avec antibiogramme",
+            "Cytologie urinaire sur 3 jours",
+            "Recherche de BK urinaire si contexte",
+            "Protéinurie des 24h si nécessaire",
+            "Recherche de cylindres/cristaux"
+          ],
+          "patientComment": "Cytologie essentielle pour carcinome urothélial",
+          "scoringRule": "≥4 analyses = 2 pts"
+        },
+        {
+          "id": "m5",
+          "text": "Imagerie et explorations fonctionnelles",
+          "details": [
+            "Échographie vésico-rénale en urgence",
+            "Mesure du résidu post-mictionnel",
+            "Uro-scanner avec temps néphrographique",
+            "Cystoscopie diagnostique (gold standard)",
+            "Urétéroscopie si lésion haute",
+            "Biopsie sous cystoscopie si lésion"
+          ],
+          "patientComment": "Exploration complète des voies urinaires",
+          "scoringRule": "≥4 examens planifiés = 2 pts"
+        },
+        {
+          "id": "m6",
+          "text": "Prise en charge thérapeutique initiale",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Mesures symptomatiques",
+                "content": "• Hyperhydratation (3L/jour) pour diluer les urines\n• Repos relatif, éviter efforts intenses\n• Antispasmodiques si besoin (Spasfon)\n• Surveillance des urines\n• Pas d'AINS ni d'anticoagulants"
+              },
+              {
+                "title": "Si tumeur vésicale confirmée",
+                "content": "• Résection transurétrale de vessie (RTUV)\n• Instillations endovésicales (BCG, mitomycine)\n• Surveillance cystoscopique régulière\n• Cystectomie si tumeur infiltrante\n• Chimiothérapie néoadjuvante si T2+"
+              },
+              {
+                "title": "Prévention et suivi",
+                "content": "• Arrêt impératif du tabac\n• Éviter manipulations urétrales\n• Hydratation quotidienne suffisante\n• Surveillance urologique à vie\n• Cytologies urinaires régulières"
+              }
+            ]
+          },
+          "scoringRule": "Plan thérapeutique complet = 2 pts"
+        },
+        {
+          "id": "m7",
+          "text": "Orientation spécialisée",
+          "details": [
+            "Référence urgente en urologie (< 2 semaines)",
+            "Lettre détaillée avec facteurs de risque",
+            "Coordination pour cystoscopie rapide",
+            "RDV post-explorations pour résultats"
+          ],
+          "patientComment": "Prise en charge urologique urgente indispensable"
+        },
+        {
+          "id": "m8",
+          "text": "Conseils et éducation du patient",
+          "details": [
+            "Expliquer la démarche diagnostique",
+            "Importance de l'arrêt du tabac (risque x4-7)",
+            "Surveillance des urines et alarmes",
+            "Consulter si aggravation/rétention",
+            "Rassurer sur les examens",
+            "Information sur les traitements possibles"
+          ],
+          "patientComment": "Information adaptée sans alarmer",
+          "scoringRule": "≥4 conseils = 2 pts"
+        },
+        {
+          "id": "m9",
+          "text": "Suivi et surveillance",
+          "details": [
+            "Contrôle clinique à 1 semaine",
+            "Résultats biologiques à 48h",
+            "Suivi post-cystoscopie",
+            "Surveillance au long cours si tumeur",
+            "Dépistage familial si indiqué"
+          ],
+          "patientComment": "Suivi rapproché initial"
+        },
+        {
+          "id": "m10",
+          "text": "Évaluation globale de la prise en charge",
+          "binaryOnly": false,
+          "details": [
+            "PEC urologique complète et urgente"
+          ],
+          "scoringRule": "PEC excellente = 2 pts, correcte = 1 pt, insuffisante = 0 pt"
+        }
+      ]
+    }
+  }
+}

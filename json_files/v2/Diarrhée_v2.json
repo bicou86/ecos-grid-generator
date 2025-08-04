@@ -1,0 +1,358 @@
+{
+  "title": "Diarrhée",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Monsieur Ogi, 69 ans, se présente au cabinet pour une diarrhée évoluant depuis 6 mois"
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction et objectif de la consultation",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Question ouverte pour identifier le symptôme principal",
+          "details": [
+            "[Diarrhée depuis 6 mois]"
+          ],
+          "binaryOnly": true
+        },
+        {
+          "id": "a3",
+          "text": "Question de clarification : \"Que comprenez-vous par diarrhée ?\"",
+          "binaryOnly": false
+        },
+        {
+          "id": "a4",
+          "text": "Caractérisation temporelle de la diarrhée",
+          "details": [
+            "Durée [Depuis 4 mois, survient 5h après les repas]",
+            "Évolution : intermittente - continue - croissante [Constante]",
+            "Épisodes antérieurs [Non]"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Caractéristiques des selles",
+          "details": [
+            "Fréquence [Environ 7 fois par jour]",
+            "Consistance : liquide - pâteuse - moulée - dure [Aqueuse-pâteuse]",
+            "Volume [Plus qu'habituellement]"
+          ]
+        },
+        {
+          "id": "a6",
+          "text": "Aspect des selles",
+          "details": [
+            "Couleur : grise (acholique) - noire (méléna) - rouge (hématochézie) [Non, couleur normale]",
+            "Odeur : normale - très malodorante [Très malodorante]",
+            "Présence de sang/méléna [Non]",
+            "Présence de mucus/pus [Non]"
+          ]
+        },
+        {
+          "id": "a7",
+          "text": "Facteurs influençants",
+          "details": [
+            "Alimentation, gluten [Mauvaise tolérance des aliments gras]",
+            "Changements alimentaires récents [Non]"
+          ]
+        },
+        {
+          "id": "a8",
+          "text": "Symptômes associés généraux",
+          "details": [
+            "Fièvre [Non]",
+            "Céphalées [Non]",
+            "Douleurs musculaires/articulaires [Non]",
+            "Éruption cutanée [Non]"
+          ]
+        },
+        {
+          "id": "a9",
+          "text": "Signes de déshydratation",
+          "details": [
+            "Production/couleur urinaire [Un peu plus foncée qu'habituellement]",
+            "Vertiges/hypotension orthostatique [Parfois en se levant]"
+          ]
+        },
+        {
+          "id": "a10",
+          "text": "Symptômes constitutionnels",
+          "details": [
+            "Symptômes B (sueurs nocturnes, perte de poids) [Non]",
+            "Intolérance à la chaleur/transpiration excessive/tremblements [Non]"
+          ]
+        },
+        {
+          "id": "a11",
+          "text": "Symptômes gastro-intestinaux associés",
+          "details": [
+            "Nausées/vomissements [Non]",
+            "Ballonnements/flatulences [Rien de particulier]",
+            "Constipation paradoxale [Non]",
+            "Douleurs abdominales [Plus depuis longtemps]",
+            "Douleurs rectales [Non]",
+            "Incontinence fécale [Non]"
+          ]
+        },
+        {
+          "id": "a12",
+          "text": "Antécédents médicaux pertinents",
+          "details": [
+            "Maladies préexistantes [Pancréatites multiples dues à des lithiases biliaires]",
+            "Diabète [Non exploré]",
+            "Chirurgies abdominales [Non exploré]",
+            "Pathologie thyroïdienne [Non exploré]",
+            "Radiothérapie abdominale [Non exploré]"
+          ]
+        },
+        {
+          "id": "a13",
+          "text": "Médicaments et allergies",
+          "details": [
+            "Médicaments actuels [Paracétamol 3x500mg]",
+            "Antibiotiques récents [Non exploré]",
+            "Laxatifs [Non exploré]",
+            "Autres médicaments pertinents [Non exploré]",
+            "Allergies [Aucune]"
+          ]
+        },
+        {
+          "id": "a14",
+          "text": "Habitudes de vie",
+          "details": [
+            "Alcool [4 bières par jour]",
+            "Tabac [Non]",
+            "Drogues [Non]"
+          ]
+        },
+        {
+          "id": "a15",
+          "text": "Antécédents familiaux digestifs",
+          "details": [
+            "Cancer colorectal [À explorer]",
+            "Maladie cœliaque [À explorer]",
+            "Maladies inflammatoires intestinales (MICI) [À explorer]"
+          ]
+        },
+        {
+          "id": "a16",
+          "text": "Contexte épidémiologique",
+          "details": [
+            "Restauration collective [Bistrot du village, bonne cuisine, aucun cas connu]",
+            "Consommation de viande crue [Non]",
+            "Eau non potable [Non]",
+            "Entourage affecté [Non]",
+            "Voyages récents [Il y a 3 ans en Syrie, sans problème]"
+          ]
+        },
+        {
+          "id": "a17",
+          "text": "Contexte social et professionnel",
+          "details": [
+            "[Vit avec son épouse]",
+            "[3 enfants]",
+            "[Diplomate]",
+            "[Maison individuelle à Dübendorf]"
+          ]
+        },
+        {
+          "id": "a18",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "binaryOnly": false,
+          "details": [
+            "Anamnèse complète et systématique",
+            "Questions pertinentes posées",
+            "Exploration des facteurs de risque"
+          ],
+          "scoringRule": "Excellente = 2 pts, Suffisante = 1 pt, Insuffisante = 0 pt"
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Examen abdominal complet",
+          "details": [
+            "Inspection (distension, cicatrices)",
+            "Auscultation (bruits hydroaériques)",
+            "Palpation (masses, douleur, défense)",
+            "Percussion (matité, tympanisme)"
+          ]
+        },
+        {
+          "id": "e2",
+          "text": "Évaluation de l'état d'hydratation",
+          "details": [
+            "Turgor cutané",
+            "État des muqueuses"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Recherche de signes cutanés",
+          "details": [
+            "Érythème noueux",
+            "Pyoderma gangrenosum",
+            "Autres manifestations extra-intestinales"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Toucher rectal",
+          "details": [
+            "Tonus sphinctérien",
+            "Présence de sang",
+            "Masses rectales",
+            "Fécalome"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Examen thyroïdien",
+          "details": [
+            "Palpation de la thyroïde",
+            "Recherche de nodules"
+          ]
+        },
+        {
+          "id": "e6",
+          "text": "Auscultation cardiopulmonaire",
+          "binaryOnly": false
+        },
+        {
+          "id": "e7",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "binaryOnly": false,
+          "details": [
+            "Examen ciblé et complet",
+            "Techniques appropriées",
+            "Interprétation correcte des signes"
+          ],
+          "scoringRule": "Méthodique et complet = 2 pts, Suffisant = 1 pt, Insuffisant = 0 pt"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "L'étudiant énonce le diagnostic principal",
+          "details": [
+            "Insuffisance pancréatique exocrine (sur pancréatites chroniques)"
+          ]
+        },
+        {
+          "id": "m2",
+          "text": "L'étudiant évoque les diagnostics différentiels pertinents",
+          "binaryOnly": false,
+          "ddSection": {
+            "categories": [
+              {
+                "name": "Causes malabsorptives",
+                "items": [
+                  "Maladie cœliaque → Anticorps anti-transglutaminase, anti-gliadine, anti-endomysium + biopsie duodénale",
+                  "Insuffisance pancréatique exocrine → Élastase fécale, test de la sécrétine"
+                ]
+              },
+              {
+                "name": "Causes inflammatoires",
+                "items": [
+                  "Maladie de Crohn → Coloscopie avec biopsies, IRM entérique",
+                  "Colite ulcéreuse → Coloscopie avec biopsies"
+                ]
+              },
+              {
+                "name": "Causes néoplasiques",
+                "items": [
+                  "Cancer colorectal → Coloscopie avec biopsies",
+                  "Tumeur neuroendocrine → Chromogranine A, 5-HIAA urinaire"
+                ]
+              },
+              {
+                "name": "Causes infectieuses",
+                "items": [
+                  "Infections parasitaires chroniques → Examen parasitologique des selles (3 échantillons)",
+                  "Colite à Clostridium difficile → Recherche de toxines A et B"
+                ]
+              }
+            ]
+          },
+          "scoringRule": "Au moins 3 diagnostics différentiels avec examens appropriés = 2 pts"
+        },
+        {
+          "id": "m3",
+          "text": "L'étudiant propose les examens complémentaires de première intention",
+          "details": [
+            "Biologie : NFS, CRP, ionogramme (Na, K, Ca)",
+            "Fonction rénale : créatinine, urée",
+            "Fonction hépatique : transaminases, GGT, phosphatases alcalines (PAL), albumine",
+            "Bilan de coagulation : TP/INR, TCA",
+            "Fonction thyroïdienne : TSH"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "L'étudiant propose les examens complémentaires spécifiques",
+          "details": [
+            "Élastase fécale (insuffisance pancréatique)",
+            "Calprotectine fécale (inflammation intestinale)",
+            "Coproculture et recherche de parasites",
+            "US abdominal ou CT abdominal",
+            "Coloscopie avec biopsies"
+          ]
+        },
+        {
+          "id": "m5",
+          "text": "L'étudiant propose une prise en charge thérapeutique adaptée",
+          "binaryOnly": false,
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Traitement symptomatique",
+                "content": "• Réhydratation orale ou IV selon sévérité\n• Correction des troubles électrolytiques\n• Ralentisseurs du transit si nécessaire (lopéramide)"
+              },
+              {
+                "title": "Traitement spécifique selon étiologie",
+                "content": "• Insuffisance pancréatique : enzymes pancréatiques (Créon®)\n• Maladie cœliaque : régime sans gluten strict\n• MICI : corticoïdes, immunosuppresseurs\n• Infection : antibiothérapie ciblée"
+              },
+              {
+                "title": "Mesures générales",
+                "content": "• Régime pauvre en graisses si malabsorption\n• Supplémentation vitaminique (A, D, E, K)\n• Arrêt de l'alcool\n• Suivi nutritionnel"
+              }
+            ]
+          }
+        },
+        {
+          "id": "m6",
+          "text": "L'étudiant organise le suivi et reconnaît les complications",
+          "details": [
+            "Surveillance de l'état nutritionnel",
+            "Dépistage du cancer colorectal si indiqué",
+            "Orientation spécialisée si nécessaire (gastro-entérologie)",
+            "Hospitalisation si déshydratation sévère"
+          ]
+        },
+        {
+          "id": "m7",
+          "text": "Évaluation globale de la qualité de la prise en charge",
+          "binaryOnly": false,
+          "details": [
+            "Démarche diagnostique logique",
+            "Examens pertinents et hiérarchisés",
+            "Traitement adapté à l'étiologie suspectée"
+          ],
+          "scoringRule": "Prise en charge excellente = 2 pts, Correcte = 1 pt, Insuffisante = 0 pt"
+        }
+      ]
+    }
+  }
+}

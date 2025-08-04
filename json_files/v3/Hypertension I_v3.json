@@ -1,0 +1,473 @@
+{
+  "title": "Hypertension I",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Mme Schneider, 56 ans, secrétaire, se présente chez son médecin traitant après avoir découvert une tension artérielle élevée lors d'automesure à domicile",
+    "vitals": {
+      "ta": "162/92 mmHg"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "title": "Anamnèse",
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction et objectif",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Motif de consultation principal",
+          "patientComment": "Découverte de tension élevée à domicile, inquiétude"
+        },
+        {
+          "id": "a3",
+          "text": "Circonstances de découverte détaillées",
+          "details": [
+            "Contexte de la mesure [après stress important au bureau]",
+            "Type d'appareil [ancien tensiomètre de sa mère]",
+            "Valeurs mesurées [160-170/90-95 mmHg]",
+            "Fréquence des mesures [plusieurs fois/semaine]",
+            "Durée d'évolution [depuis 1 mois]",
+            "Horaire des mesures [variable]",
+            "Position lors de la mesure [assise]"
+          ],
+          "patientComment": "Mesures répétées élevées mais technique incertaine",
+          "scoringRule": "≥5 éléments explorés = 2 pts, 3-4 = 1 pt"
+        },
+        {
+          "id": "a4",
+          "text": "Symptômes cardiovasculaires",
+          "details": [
+            "Céphalées [oui, occipitales matinales]",
+            "Vertiges/étourdissements [non]",
+            "Acouphènes [non]",
+            "Épistaxis [non]",
+            "Troubles visuels [non]",
+            "Douleur thoracique [non]",
+            "Dyspnée d'effort [non]",
+            "Orthopnée [non]",
+            "Palpitations [parfois, cœur qui bat fort]",
+            "Œdèmes des chevilles [non]"
+          ],
+          "patientComment": "Céphalées matinales et palpitations occasionnelles",
+          "scoringRule": "≥7 symptômes explorés = 2 pts, 4-6 = 1 pt"
+        },
+        {
+          "id": "a5",
+          "text": "Antécédents cardiovasculaires personnels",
+          "details": [
+            "HTA connue [non, première fois]",
+            "Cardiopathie ischémique [non]",
+            "Insuffisance cardiaque [non]",
+            "Arythmie [non]",
+            "AVC/AIT [non]",
+            "Artériopathie périphérique [non]",
+            "Maladie thromboembolique [non]"
+          ],
+          "patientComment": "Pas d'antécédent cardiovasculaire personnel",
+          "scoringRule": "≥5 antécédents = 2 pts"
+        },
+        {
+          "id": "a6",
+          "text": "Facteurs de risque cardiovasculaire",
+          "details": [
+            "Âge [56 ans, femme ménopausée]",
+            "Diabète [non connu]",
+            "Dyslipidémie [non testée récemment]",
+            "Tabagisme [jamais fumé]",
+            "Obésité abdominale [tour de taille 92 cm]",
+            "Sédentarité [travail de bureau, peu d'exercice]",
+            "Consommation de sel [aime bien saler]",
+            "Alcool [1-2 verres de vin/weekend]",
+            "Stress chronique [important au travail]"
+          ],
+          "patientComment": "Multiples facteurs de risque modifiables",
+          "scoringRule": "≥6 facteurs évalués = 2 pts"
+        },
+        {
+          "id": "a7",
+          "text": "Antécédents endocriniens et rénaux",
+          "details": [
+            "Diabète [non]",
+            "Maladie thyroïdienne [non]",
+            "Néphropathie [non]",
+            "Infections urinaires récidivantes [non]",
+            "Lithiases rénales [non]",
+            "Protéinurie connue [jamais testée]",
+            "Syndrome d'apnée du sommeil [ronfle parfois]"
+          ],
+          "patientComment": "Pas d'antécédent endocrino-rénal"
+        },
+        {
+          "id": "a8",
+          "text": "Statut hormonal et gynécologique",
+          "details": [
+            "Statut ménopausique [ménopausée depuis 3 ans]",
+            "Âge de la ménopause [53 ans]",
+            "THS actuel [non]",
+            "Contraception antérieure [pilule jusqu'à 45 ans]",
+            "Durée de prise [20 ans]",
+            "Grossesses [2 grossesses normales]",
+            "HTA gravidique [non]"
+          ],
+          "patientComment": "Ménopause récente, longue prise de contraception orale",
+          "scoringRule": "≥5 éléments = 2 pts"
+        },
+        {
+          "id": "a9",
+          "text": "Médicaments et substances",
+          "details": [
+            "Antihypertenseurs [aucun]",
+            "AINS réguliers [non]",
+            "Corticoïdes [non]",
+            "Décongestionnants nasaux [non]",
+            "Antidépresseurs [non]",
+            "Contraception orale [arrêtée]",
+            "Suppléments/phytothérapie [vitamine D occasionnelle]",
+            "Réglisse/boissons énergisantes [non]"
+          ],
+          "patientComment": "Pas de médicament hypertenseur"
+        },
+        {
+          "id": "a10",
+          "text": "Mode de vie détaillé",
+          "details": [
+            "Alimentation [plats préparés fréquents, sale beaucoup]",
+            "Consommation de sodium [> 10g/jour estimé]",
+            "Fruits et légumes [peu, 2-3 portions/jour]",
+            "Activité physique [< 30 min/semaine]",
+            "Temps assis [> 8h/jour]",
+            "Sommeil [6-7h, parfois agité]",
+            "Techniques de relaxation [aucune]"
+          ],
+          "patientComment": "Mode de vie sédentaire avec alimentation déséquilibrée",
+          "scoringRule": "≥5 habitudes explorées = 2 pts"
+        },
+        {
+          "id": "a11",
+          "text": "Antécédents familiaux cardiovasculaires",
+          "details": [
+            "HTA parentale [père et mère hypertendus]",
+            "Âge de diagnostic [parents vers 50 ans]",
+            "Complications HTA [père IDM à 65 ans]",
+            "AVC familiaux [grand-mère AVC à 78 ans]",
+            "Diabète familial [mère DT2]",
+            "Mort subite [non]",
+            "Néphropathie familiale [non]"
+          ],
+          "patientComment": "Lourds antécédents familiaux cardiovasculaires",
+          "scoringRule": "≥5 antécédents = 2 pts"
+        },
+        {
+          "id": "a12",
+          "text": "Contexte psychosocial",
+          "details": [
+            "Profession stressante [secrétaire de direction]",
+            "Charge de travail [surcharge actuelle]",
+            "Situation familiale [mariée, stable]",
+            "Support social [bon, mari soutenant]",
+            "Anxiété/dépression [anxiété liée au travail]",
+            "Événements récents [restructuration au travail]"
+          ],
+          "patientComment": "Stress professionnel majeur comme facteur déclenchant"
+        },
+        {
+          "id": "a13",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "binaryOnly": false,
+          "details": [
+            "Anamnèse cardiovasculaire exhaustive et orientée"
+          ],
+          "scoringRule": "Anamnèse excellente = 2 pts, correcte = 1 pt, insuffisante = 0 pt"
+        }
+      ]
+    },
+    "examen": {
+      "title": "Examen clinique",
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Mesure standardisée de la TA",
+          "details": [
+            "Repos 5 minutes avant mesure",
+            "Position assise, pieds au sol",
+            "Dos appuyé, bras soutenu",
+            "Bras au niveau du cœur",
+            "Brassard adapté à la circonférence",
+            "2-3 mesures à 1-2 min d'intervalle",
+            "Mesure aux deux bras",
+            "Recherche hypotension orthostatique"
+          ],
+          "patientComment": "TA confirmée élevée : 162/92 mmHg",
+          "scoringRule": "≥6 éléments de bonne pratique = 2 pts, 4-5 = 1 pt"
+        },
+        {
+          "id": "e2",
+          "text": "Examen cardiovasculaire complet",
+          "details": [
+            "FC et rythme [78 bpm, régulier]",
+            "Auscultation cardiaque [B1-B2 normaux, pas de souffle]",
+            "Recherche B3/B4 [absents]",
+            "Souffle carotidien [absent]",
+            "Souffle abdominal [absent]",
+            "Souffle fémoral [non recherché]",
+            "Pouls périphériques [tous perçus]",
+            "Temps de recoloration capillaire [< 2 sec]"
+          ],
+          "patientComment": "Examen cardiovasculaire sans particularité",
+          "scoringRule": "≥6 éléments = 2 pts, 4-5 = 1 pt"
+        },
+        {
+          "id": "e3",
+          "text": "Recherche d'atteinte d'organes cibles",
+          "details": [
+            "Auscultation pulmonaire [claire, pas de râles]",
+            "Œdèmes des MI [absents]",
+            "Reflux hépato-jugulaire [absent]",
+            "Turgescence jugulaire [normale]",
+            "Choc de pointe [non dévié]",
+            "Hépatomégalie [non]"
+          ],
+          "patientComment": "Pas de signe d'insuffisance cardiaque"
+        },
+        {
+          "id": "e4",
+          "text": "Recherche HTA secondaire",
+          "details": [
+            "Morphotype cushingoïde [non]",
+            "Faciès lunaire [non]",
+            "Vergetures pourpres [non]",
+            "Masses abdominales [non palpables]",
+            "Souffle para-ombilical [absent]",
+            "Thyroïde [normale]",
+            "Signes d'hyperthyroïdie [non]",
+            "Différence TA membres sup/inf [non testée]"
+          ],
+          "patientComment": "Pas de signe évident d'HTA secondaire",
+          "scoringRule": "≥5 signes recherchés = 2 pts"
+        },
+        {
+          "id": "e5",
+          "text": "Évaluation métabolique",
+          "details": [
+            "Poids [78 kg]",
+            "Taille [164 cm]",
+            "IMC calculé [29 kg/m²]",
+            "Tour de taille [92 cm]",
+            "Tour de hanches [108 cm]",
+            "Rapport taille/hanches [0.85]",
+            "Répartition des graisses [androïde]"
+          ],
+          "patientComment": "Surpoids avec obésité abdominale",
+          "scoringRule": "≥5 mesures = 2 pts"
+        },
+        {
+          "id": "e6",
+          "text": "Examen neurologique et ophtalmologique",
+          "details": [
+            "État de conscience [normal]",
+            "Déficit focal [absent]",
+            "ROT symétriques [normaux]",
+            "Sensibilité [normale]",
+            "Fond d'œil [à programmer]",
+            "Acuité visuelle [normale avec correction]"
+          ],
+          "patientComment": "Examen neurologique normal, FO à faire"
+        },
+        {
+          "id": "e7",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "binaryOnly": false,
+          "details": [
+            "Examen cardiovasculaire méthodique et complet"
+          ],
+          "scoringRule": "Examen excellent = 2 pts, correct = 1 pt, insuffisant = 0 pt"
+        }
+      ]
+    },
+    "management": {
+      "title": "Prise en charge",
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic principal",
+          "patientComment": "HTA essentielle grade 2 (160-179/100-109) nouvellement découverte chez femme ménopausée avec facteurs de risque",
+          "scoringRule": "Diagnostic précis avec grade = 2 pts"
+        },
+        {
+          "id": "m2",
+          "text": "Causes d'HTA secondaire à éliminer",
+          "ddSection": {
+            "categories": [
+              {
+                "name": "Causes rénales",
+                "items": [
+                  "Néphropathie parenchymateuse",
+                  "Sténose de l'artère rénale",
+                  "Polykystose rénale",
+                  "Glomérulonéphrite chronique"
+                ]
+              },
+              {
+                "name": "Causes endocriniennes",
+                "items": [
+                  "Hyperaldostéronisme primaire (Conn)",
+                  "Phéochromocytome",
+                  "Syndrome de Cushing",
+                  "Hyperparathyroïdie",
+                  "Hypo/hyperthyroïdie"
+                ]
+              },
+              {
+                "name": "Autres causes",
+                "items": [
+                  "Syndrome d'apnée du sommeil",
+                  "Coarctation de l'aorte",
+                  "HTA médicamenteuse (pilule, AINS)",
+                  "Consommation excessive de réglisse"
+                ]
+              }
+            ]
+          },
+          "scoringRule": "≥8 causes dans 3 catégories = 2 pts, 4-7 = 1 pt"
+        },
+        {
+          "id": "m3",
+          "text": "Stratification du risque cardiovasculaire",
+          "details": [
+            "Facteurs de risque identifiés : âge, ATCD familiaux, surpoids, sédentarité",
+            "Atteinte d'organe cible à rechercher",
+            "Risque CV global modéré à élevé",
+            "Calcul du SCORE à faire",
+            "Objectifs tensionnels < 140/90 mmHg"
+          ],
+          "patientComment": "Risque CV modéré-élevé nécessitant PEC globale",
+          "scoringRule": "Évaluation complète du risque = 2 pts"
+        },
+        {
+          "id": "m4",
+          "text": "Bilan paraclinique initial",
+          "details": [
+            "NFS, ionogramme, créatinine, DFG",
+            "Glycémie à jeun, HbA1c si > 5.6 mmol/L",
+            "Bilan lipidique complet (CT, HDL, LDL, TG)",
+            "TSH",
+            "Bandelette urinaire (protéinurie, hématurie)",
+            "Microalbuminurie si diabète ou > 1 FDR",
+            "ECG de repos 12 dérivations",
+            "MAPA ou automesure (confirmer HTA)"
+          ],
+          "patientComment": "Bilan pour confirmer HTA et rechercher complications",
+          "scoringRule": "≥7 examens = 2 pts, 5-6 = 1 pt"
+        },
+        {
+          "id": "m5",
+          "text": "Recherche de complications",
+          "details": [
+            "Échocardiographie (HVG, dysfonction VG)",
+            "Fond d'œil ou rétinographie",
+            "Écho-Doppler carotidien si > 2 FDR",
+            "Test d'effort si symptômes",
+            "Polysomnographie si suspicion SAOS",
+            "Écho rénale et Doppler si suspicion"
+          ],
+          "patientComment": "Bilan de retentissement adapté au risque"
+        },
+        {
+          "id": "m6",
+          "text": "Mesures hygiéno-diététiques",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Modifications alimentaires",
+                "content": "• Réduction sel < 5-6g/jour (éviter plats préparés)\n• Régime DASH : fruits/légumes 5 portions/jour\n• Réduction poids : objectif -5% puis IMC < 25\n• Alcool : max 1 verre/jour femme\n• Augmenter potassium (bananes, légumes verts)\n• Réduire graisses saturées"
+              },
+              {
+                "title": "Activité physique régulière",
+                "content": "• Endurance : 150 min/semaine intensité modérée\n• Ou 75 min/semaine intensité soutenue\n• Marche rapide 30 min × 5j/semaine\n• Renforcement musculaire 2×/semaine\n• Activités adaptées : natation, vélo, gym douce\n• Progression progressive"
+              },
+              {
+                "title": "Gestion du stress",
+                "content": "• Identifier sources de stress professionnel\n• Techniques relaxation : cohérence cardiaque\n• Méditation pleine conscience 10 min/jour\n• Yoga ou tai-chi\n• Amélioration hygiène de sommeil\n• Soutien psychologique si besoin"
+              }
+            ]
+          },
+          "scoringRule": "Plan complet personnalisé = 2 pts"
+        },
+        {
+          "id": "m7",
+          "text": "Stratégie médicamenteuse",
+          "details": [
+            "Confirmer HTA par MAPA avant traitement",
+            "Si confirmée (grade 2 + FDR) : traitement d'emblée",
+            "1ère ligne : IEC ou ARA2 (femme ménopausée)",
+            "Alternative : diurétique thiazidique ou ICa",
+            "Monothérapie initiale, titration progressive",
+            "Bithérapie si objectif non atteint à 4-6 sem",
+            "Éviter bêta-bloquants en 1ère intention"
+          ],
+          "patientComment": "Traitement après confirmation MAPA",
+          "scoringRule": "Stratégie adaptée = 2 pts"
+        },
+        {
+          "id": "m8",
+          "text": "Surveillance et objectifs",
+          "details": [
+            "Objectif < 140/90 en consultation",
+            "< 135/85 en automesure domicile",
+            "Contrôle M1 : tolérance, observance",
+            "Créatinine + K+ à 2-4 semaines si IEC/ARA2",
+            "Ajustement doses selon réponse",
+            "Contrôle M3 puis tous les 3-6 mois",
+            "Bilan annuel complet"
+          ],
+          "patientComment": "Suivi rapproché initial puis régulier"
+        },
+        {
+          "id": "m9",
+          "text": "Éducation thérapeutique",
+          "details": [
+            "Expliquer risques HTA non traitée",
+            "Importance observance à vie",
+            "Technique automesure (règle des 3)",
+            "Carnet de suivi tensionnel",
+            "Reconnaître effets secondaires",
+            "Ne jamais arrêter brutalement",
+            "Application mobile de suivi",
+            "Brochures d'information"
+          ],
+          "patientComment": "Éducation pour autonomie et observance",
+          "scoringRule": "≥6 points d'éducation = 2 pts"
+        },
+        {
+          "id": "m10",
+          "text": "Prévention globale",
+          "details": [
+            "Arrêt tabac si fumeuse",
+            "Vaccination grippe annuelle",
+            "Dépistage diabète annuel",
+            "Mammographie selon âge",
+            "Frottis cervical",
+            "Consultation diététicienne",
+            "Activité physique adaptée"
+          ],
+          "patientComment": "Approche préventive globale"
+        },
+        {
+          "id": "m11",
+          "text": "Évaluation globale de la prise en charge",
+          "binaryOnly": false,
+          "details": [
+            "PEC complète HTA avec approche globale du risque CV"
+          ],
+          "scoringRule": "PEC excellente = 2 pts, correcte = 1 pt, insuffisante = 0 pt"
+        }
+      ]
+    }
+  }
+}

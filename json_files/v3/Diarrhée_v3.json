@@ -1,0 +1,419 @@
+{
+  "title": "Diarrhée",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Monsieur Ogi, 69 ans, se présente au cabinet pour une diarrhée évoluant depuis 6 mois"
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction et objectif de la consultation",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Question ouverte pour identifier le symptôme principal",
+          "details": [
+            "[Diarrhée depuis 6 mois]"
+          ],
+          "binaryOnly": true
+        },
+        {
+          "id": "a3",
+          "text": "Question de clarification : \"Que comprenez-vous par diarrhée ?\"",
+          "binaryOnly": true
+        },
+        {
+          "id": "a4",
+          "text": "RED FLAGS - Signaux d'alarme en diarrhée chronique",
+          "redflagsSection": [
+            {
+              "text": "Âge > 50 ans avec début récent [69 ans !]"
+            },
+            {
+              "text": "Diarrhée nocturne réveillant le patient"
+            },
+            {
+              "text": "Sang dans les selles (méléna/rectorragies) [non]"
+            },
+            {
+              "text": "Perte de poids involontaire > 5% [non exploré !]"
+            },
+            {
+              "text": "Symptômes B (fièvre, sueurs nocturnes) [non]"
+            },
+            {
+              "text": "Antécédents familiaux cancer colorectal [à explorer !]"
+            },
+            {
+              "text": "Anémie ferriprive inexpliquée"
+            },
+            {
+              "text": "Masse abdominale palpable"
+            }
+          ],
+          "scoringRule": "≥3 red flags = 2 pts, 2 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a5",
+          "text": "Caractérisation complète du syndrome diarrhéique",
+          "details": [
+            "Durée exacte [4-6 mois]",
+            "Fréquence quotidienne [7 fois/jour]",
+            "Volume (petites vs grandes quantités) [plus qu'habituellement]",
+            "Consistance (Bristol 5-7) [aqueuse-pâteuse]",
+            "Timing (postprandial immédiat vs tardif) [5h après repas]",
+            "Urgence défécatoire et incontinence [non]"
+          ],
+          "scoringRule": "≥5 caractéristiques = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a6",
+          "text": "Analyse sémiologique des selles",
+          "details": [
+            "Stéatorrhée (selles grasses, flottantes) [très malodorantes!]",
+            "Couleur acholique (déficit biliaire) [non, normale]",
+            "Présence de résidus alimentaires non digérés",
+            "Sang visible ou méléna [non]",
+            "Mucus ou pus (inflammation) [non]",
+            "Odeur nauséabonde (malabsorption) [très malodorante!]"
+          ],
+          "scoringRule": "≥4 éléments évalués = 2 pts, 3 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a7",
+          "text": "Facteurs déclenchants et aggravants systématiques",
+          "details": [
+            "Aliments gras (malabsorption) [mauvaise tolérance!]",
+            "Produits laitiers (intolérance lactose)",
+            "Gluten (maladie cœliaque)",
+            "Stress émotionnel (SII)",
+            "Alcool [4 bières/jour!]",
+            "Médicaments récents"
+          ],
+          "scoringRule": "≥5 facteurs explorés = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a8",
+          "text": "Symptômes digestifs associés orientateurs",
+          "details": [
+            "Douleurs abdominales (localisation, type) [plus depuis longtemps]",
+            "Ballonnements/distension [rien de particulier]",
+            "Nausées/vomissements [non]",
+            "Dyspepsie ou pyrosis",
+            "Ténesme ou faux besoins",
+            "Alternance diarrhée/constipation [non]"
+          ],
+          "scoringRule": "≥5 symptômes évalués = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a9",
+          "text": "Antécédents cruciaux - pancréatites et chirurgies",
+          "details": [
+            "Pancréatites répétées [multiples sur lithiases!]",
+            "Cholécystectomie (diarrhée biliaire)",
+            "Résections intestinales",
+            "Radiothérapie abdominale [non]",
+            "Diabète (neuropathie) [non exploré!]",
+            "Pathologie thyroïdienne [non exploré!]"
+          ],
+          "scoringRule": "≥5 antécédents = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a10",
+          "text": "État nutritionnel et signes de malabsorption",
+          "details": [
+            "Perte de poids quantifiée [non exploré!]",
+            "Signes carentiels (fatigue, paresthésies)",
+            "Œdèmes (hypoalbuminémie)",
+            "Ecchymoses faciles (vit K)",
+            "Cécité nocturne (vit A)",
+            "Crampes/tétanie (Ca, Mg)"
+          ],
+          "scoringRule": "≥4 signes recherchés = 2 pts, 3 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a11",
+          "text": "Médicaments et toxiques contributifs",
+          "details": [
+            "Antibiotiques récents (C. difficile) [non]",
+            "Metformine (diabète)",
+            "IPP au long cours",
+            "AINS réguliers",
+            "Colchicine",
+            "Alcool chronique [4 bières/jour!]"
+          ],
+          "scoringRule": "≥4 substances évaluées = 2 pts, 3 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a12",
+          "text": "Histoire familiale digestive et oncologique",
+          "details": [
+            "Cancer colorectal (âge, degré parenté) [à explorer!]",
+            "Polypes coliques",
+            "MICI (Crohn, RCH) [à explorer!]",
+            "Maladie cœliaque [à explorer!]",
+            "Cancer pancréatique",
+            "Syndromes génétiques (Lynch, PAF)"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 3 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Évaluation de l'état général et nutritionnel",
+          "details": [
+            "IMC et perte pondérale",
+            "Signes de dénutrition",
+            "Pâleur (anémie)",
+            "Ictère (pathologie biliaire)",
+            "Signes cutanés carentiels",
+            "Œdèmes périphériques"
+          ],
+          "scoringRule": "≥5 éléments = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e2",
+          "text": "Examen abdominal méthodique et complet",
+          "details": [
+            "Inspection (distension, circulation collatérale)",
+            "Auscultation (hyperperistaltisme)",
+            "Palpation douce puis profonde",
+            "Recherche masses/organomégalie",
+            "Douleur épigastrique (pancréas)",
+            "Murphy, défense, contracture"
+          ],
+          "scoringRule": "≥5 techniques = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e3",
+          "text": "Toucher rectal - examen indispensable",
+          "details": [
+            "Tonus sphinctérien (incontinence)",
+            "Impaction fécale paradoxale",
+            "Masses rectales palpables",
+            "Sang sur doigtier",
+            "Fissures ou fistules anales",
+            "Hémorroïdes pathologiques"
+          ],
+          "scoringRule": "TR avec ≥4 éléments = 2 pts, TR mentionné = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e4",
+          "text": "Recherche manifestations extra-intestinales MICI",
+          "details": [
+            "Aphtes buccaux récurrents",
+            "Uvéite ou épisclérite",
+            "Arthrites périphériques",
+            "Érythème noueux",
+            "Pyoderma gangrenosum",
+            "Cholangite sclérosante (ictère)"
+          ],
+          "scoringRule": "≥4 sites examinés = 2 pts, 2-3 = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e5",
+          "text": "Signes d'hyperthyroïdie (diarrhée motrice)",
+          "details": [
+            "Goitre ou nodules thyroïdiens",
+            "Tremblements fins des mains",
+            "Tachycardie de repos",
+            "Dermopathie (myxœdème prétibial)",
+            "Exophtalmie (Basedow)"
+          ],
+          "scoringRule": "≥3 signes = 2 pts, 2 = 1 pt",
+          "binaryOnly": false
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Synthèse diagnostique avec orientation étiologique",
+          "patientComment": "Diarrhée chronique de type malabsorption (stéatorrhée) chez patient 69 ans avec antécédents de pancréatites répétées sur lithiases biliaires et consommation alcoolique. Forte suspicion d'insuffisance pancréatique exocrine. DD: néoplasie à exclure vu l'âge",
+          "binaryOnly": true
+        },
+        {
+          "id": "m2",
+          "text": "Diagnostics différentiels structurés par mécanisme",
+          "ddSection": {
+            "categories": [
+              {
+                "name": "Malabsorption/Maldigestion",
+                "items": [
+                  "Insuffisance pancréatique exocrine (chronique/tumorale)",
+                  "Maladie cœliaque",
+                  "Pullulation bactérienne (SIBO)",
+                  "Maladie de Whipple",
+                  "Entéropathie aux sels biliaires"
+                ]
+              },
+              {
+                "name": "Causes inflammatoires",
+                "items": [
+                  "Maladie de Crohn",
+                  "Rectocolite hémorragique",
+                  "Colite microscopique",
+                  "Entérite radique"
+                ]
+              },
+              {
+                "name": "Causes néoplasiques (RED FLAG âge)",
+                "items": [
+                  "Adénocarcinome colique",
+                  "Cancer pancréatique",
+                  "Lymphome intestinal",
+                  "Tumeur carcinoïde (syndrome)",
+                  "VIPome"
+                ]
+              },
+              {
+                "name": "Causes fonctionnelles/motrices",
+                "items": [
+                  "Syndrome intestin irritable type D",
+                  "Hyperthyroïdie",
+                  "Neuropathie diabétique",
+                  "Diarrhée post-vagotomie"
+                ]
+              }
+            ]
+          },
+          "scoringRule": "≥3 catégories avec ≥3 exemples chacune = 2 pts",
+          "binaryOnly": false
+        },
+        {
+          "id": "m3",
+          "text": "Examens biologiques de première intention",
+          "details": [
+            "NFS, ferritine (anémie, carence martiale)",
+            "CRP, VS (inflammation)",
+            "Ionogramme, urée, créat (déshydratation)",
+            "Albumine, préalbumine (dénutrition)",
+            "Transaminases, GGT, PAL, bilirubine",
+            "TSH (hyperthyroïdie)",
+            "Glycémie, HbA1c (diabète)"
+          ],
+          "scoringRule": "≥6 examens pertinents = 2 pts, 4-5 = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m4",
+          "text": "Examens spécifiques orientés selon suspicion",
+          "details": [
+            "Élastase fécale <200 μg/g (insuff. pancréatique)",
+            "Calprotectine fécale (MICI)",
+            "Anticorps anti-transglutaminase IgA",
+            "Test respiratoire au glucose (SIBO)",
+            "Coproculture + parasito (3 selles)",
+            "Test FIT ou recherche sang occulte",
+            "Chromogranine A, 5-HIAA (carcinoïde)"
+          ],
+          "scoringRule": "≥5 examens ciblés = 2 pts, 3-4 = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m5",
+          "text": "Imagerie et endoscopie selon algorithme",
+          "details": [
+            "Coloscopie totale + iléoscopie (biopsies étagées)",
+            "CT abdominal avec protocole pancréatique",
+            "IRM pancréatique + MRCP si doute",
+            "Entéro-IRM ou vidéocapsule (grêle)",
+            "Écho-endoscopie pancréatique"
+          ],
+          "scoringRule": "Stratégie cohérente = 2 pts, partielle = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m6",
+          "text": "Prise en charge thérapeutique spécifique",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Insuffisance pancréatique exocrine",
+                "content": "• Enzymes pancréatiques : Créon® 25000-50000 UI/repas\n• Ajuster selon stéatorrhée (jusqu'à 80000 UI)\n• Prendre pendant les repas\n• IPP associé (protection enzymes)\n• Régime normolipidique maintenu\n• Supplémentation ADEK"
+              },
+              {
+                "title": "Mesures nutritionnelles",
+                "content": "• Évaluation diététique spécialisée\n• Fractionnement des repas\n• TCM si malabsorption sévère\n• Suppléments vitaminiques liposolubles\n• Calcium, magnésium, zinc\n• B12 IM si carence"
+              },
+              {
+                "title": "Symptomatique et support",
+                "content": "• Réhydratation orale (SRO)\n• Lopéramide si diarrhée motrice pure\n• Cholestyramine si diarrhée biliaire\n• Probiotiques (souches spécifiques)\n• Psychothérapie si composante fonctionnelle"
+              },
+              {
+                "title": "Traitement étiologique crucial",
+                "content": "• ARRÊT ALCOOL IMPÉRATIF\n• Prise en charge addictologique\n• Antidiabétiques si diabète pancréatique\n• Surveillance cancer pancréas\n• Gestion douleur chronique"
+              }
+            ]
+          },
+          "scoringRule": "Plan complet et personnalisé = 2 pts",
+          "binaryOnly": false
+        },
+        {
+          "id": "m7",
+          "text": "Critères d'hospitalisation et suivi",
+          "redflagsSection": [
+            {
+              "text": "Déshydratation sévère avec troubles ioniques"
+            },
+            {
+              "text": "Dénutrition sévère (albumine <25 g/L)"
+            },
+            {
+              "text": "Suspicion occlusion ou perforation"
+            },
+            {
+              "text": "Hémorragie digestive active"
+            },
+            {
+              "text": "Sepsis sur translocation bactérienne"
+            },
+            {
+              "text": "Découverte masse tumorale"
+            }
+          ],
+          "scoringRule": "≥4 critères = 2 pts, 2-3 = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m8",
+          "text": "Plan de surveillance et prévention",
+          "details": [
+            "Suivi pondéral et nutritionnel mensuel",
+            "Bilan vitaminique trimestriel",
+            "Élastase fécale de contrôle à 3 mois",
+            "Coloscopie de dépistage si non faite",
+            "IRM/CT annuel si pancréatite chronique",
+            "Éducation red flags (sang, perte poids)",
+            "Sevrage alcoolique accompagné"
+          ],
+          "scoringRule": "≥5 éléments = 2 pts, 3-4 = 1 pt",
+          "binaryOnly": false
+        }
+      ]
+    }
+  }
+}

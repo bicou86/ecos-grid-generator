@@ -1,0 +1,245 @@
+{
+  "title": "Malaise",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Homme de 79 ans consultant pour insécurité et malaise au lever du lit ou après sa sieste dans le fauteuil à bascule"
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Nom et âge",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Motif de consultation",
+          "binaryOnly": true
+        },
+        {
+          "id": "a3",
+          "text": "Caractérisation des symptômes",
+          "details": [
+            "Déclenchés par changements de position",
+            "Amélioration en position allongée",
+            "Prédominance matinale par rapport au soir"
+          ],
+          "patientComment": "Oui/En me couchant c'est mieux/Le matin c'est pire"
+        },
+        {
+          "id": "a4",
+          "text": "Symptômes neurovegetatifs associés",
+          "details": [
+            "Vertiges au lever",
+            "Tachycardie parfois",
+            "Sueurs",
+            "Pâleur"
+          ],
+          "patientComment": "Oui, quand je me lève/Parfois oui/Parfois oui/Parfois oui"
+        },
+        {
+          "id": "a5",
+          "text": "Épisodes syncopaux",
+          "details": [
+            "Chutes (2 épisodes)",
+            "Perte de connaissance",
+            "Gravité des chutes"
+          ],
+          "patientComment": "Je suis tombé 2 fois/Mais la chute n'était pas grave"
+        },
+        {
+          "id": "a6",
+          "text": "Autres symptômes",
+          "details": [
+            "Problèmes de concentration (comme toujours, je suis vieux)",
+            "Fatigue",
+            "Céphalées (rares)",
+            "Intolérance au froid (non)"
+          ],
+          "patientComment": "Comme toujours, je suis vieux/Non/Rarement/Non"
+        },
+        {
+          "id": "a7",
+          "text": "Antécédents médicaux",
+          "details": [
+            "Maladies cardiaques (pas de contrôle récent)",
+            "Maladies rénales (non)",
+            "Autres pathologies (non)"
+          ],
+          "patientComment": "Pas contrôlé depuis longtemps mais je me sens bien/Non/Non"
+        },
+        {
+          "id": "a8",
+          "text": "Médicaments",
+          "details": [
+            "Médicaments à domicile",
+            "Connaissance des traitements"
+          ],
+          "patientComment": "Seulement ce qu'il y a à la maison/Je ne sais pas exactement"
+        },
+        {
+          "id": "a9",
+          "text": "Habitudes de vie",
+          "details": [
+            "Alimentation (mange beaucoup)",
+            "Hydratation (1 litre par jour)",
+            "Tabac (cigares)",
+            "Alcool (occasionnellement un verre de vin)",
+            "Activité physique (échecs, fauteuil à bascule, promenade)"
+          ],
+          "patientComment": "Je mange beaucoup/1 litre par jour/Je fume des cigares/De temps en temps un verre de vin/Échecs, fauteuil à bascule, promenade"
+        },
+        {
+          "id": "a10",
+          "text": "Antécédents familiaux et sociaux",
+          "details": [
+            "Antécédents familiaux (mère décédée dans un accident, père inconnu)",
+            "Situation familiale (marié avec Heidi, 4 enfants, 8 petits-enfants)",
+            "Profession (ancien cuisinier)"
+          ],
+          "patientComment": "Mère décédée dans un accident, père inconnu/Marié avec Heidi, 4 enfants, 8 petits-enfants/Ancien cuisinier"
+        },
+        {
+          "id": "a11",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "binaryOnly": false,
+          "details": [
+            "Anamnèse générale ciblée et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Désinfection des mains"
+        },
+        {
+          "id": "e2",
+          "text": "Mesure de la tension artérielle",
+          "details": [
+            "En position debout",
+            "En position allongée",
+            "Test de Schellong"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Examen cardiovasculaire",
+          "details": [
+            "Auscultation cardiaque",
+            "Palpation du pouls"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Examen pulmonaire",
+          "details": [
+            "Inspection",
+            "Auscultation pulmonaire"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Inspection générale de la peau",
+          "details": [
+            "Recherche de pâleur",
+            "Varices",
+            "Autres anomalies cutanées"
+          ]
+        },
+        {
+          "id": "e6",
+          "text": "Examen neurologique sommaire",
+          "details": [
+            "Orientation",
+            "Équilibre",
+            "Réflexes"
+          ]
+        },
+        {
+          "id": "e7",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "binaryOnly": false,
+          "details": [
+            "Status général ciblé et bien conduit"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic principal",
+          "details": [
+            "Hypotension orthostatique"
+          ]
+        },
+        {
+          "id": "m2",
+          "text": "Diagnostics différentiels",
+          "details": [
+            "Hypotension essentielle",
+            "Hypotension secondaire à une insuffisance cardiaque",
+            "Causes endocriniennes (hypothyroïdie, insuffisance surrénalienne)",
+            "Causes neurogènes",
+            "Intoxication médicamenteuse",
+            "Hypovolémie"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Examens complémentaires",
+          "details": [
+            "Tension artérielle sur 3 jours différents",
+            "Holter tensionnel 24h",
+            "Test de Schellong",
+            "Bilan biologique",
+            "ECG",
+            "Échocardiographie"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Mesures thérapeutiques non médicamenteuses",
+          "details": [
+            "Hydratation suffisante et sel",
+            "Lever lent et progressif",
+            "Bas de contention en cas de varices"
+          ]
+        },
+        {
+          "id": "m5",
+          "text": "Traitement médicamenteux",
+          "details": [
+            "Fludrocortisone (Florinef® 0,1mg/jour, max 0,5mg) en première intention"
+          ]
+        },
+        {
+          "id": "m6",
+          "text": "Suivi",
+          "details": [
+            "Planification d'un rendez-vous de contrôle"
+          ]
+        },
+        {
+          "id": "m7",
+          "text": "Évaluation globale de la qualité de la prise en charge",
+          "binaryOnly": false,
+          "details": [
+            "Prise en charge générale cohérente et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    }
+  }
+}

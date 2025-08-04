@@ -1,0 +1,237 @@
+{
+  "title": "Douleur au poignet",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Madame Timoni, 66 ans, consultant pour problèmes au poignet"
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction et tâche",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Question d'entrée ouverte - Symptôme principal",
+          "patientComment": "fourmillements et douleurs au poignet",
+          "binaryOnly": true
+        },
+        {
+          "id": "a3",
+          "text": "Localisation des symptômes",
+          "patientComment": "poignet droit, face palmaire, doigts 1-3"
+        },
+        {
+          "id": "a4",
+          "text": "Début et évolution",
+          "patientComment": "depuis plusieurs mois, progressif, pire la nuit"
+        },
+        {
+          "id": "a5",
+          "text": "Qualité des symptômes",
+          "patientComment": "fourmillements, engourdissement, douleur brûlante"
+        },
+        {
+          "id": "a6",
+          "text": "Facteurs aggravants",
+          "patientComment": "travail répétitif, position prolongée du poignet"
+        },
+        {
+          "id": "a7",
+          "text": "Facteurs améliorants",
+          "patientComment": "secouer la main, changer de position"
+        },
+        {
+          "id": "a8",
+          "text": "Symptômes nocturnes",
+          "patientComment": "réveils fréquents par fourmillements"
+        },
+        {
+          "id": "a9",
+          "text": "Limitation fonctionnelle",
+          "patientComment": "difficulté à tenir des objets fins, boutonner"
+        },
+        {
+          "id": "a10",
+          "text": "Faiblesse musculaire",
+          "patientComment": "perte de force dans la main"
+        },
+        {
+          "id": "a11",
+          "text": "Anamnèse personnelle",
+          "details": [
+            "Diabète type 2",
+            "Hypothyroïdie",
+            "Arthrite rhumatoïde",
+            "Grossesses antérieures"
+          ]
+        },
+        {
+          "id": "a12",
+          "text": "Médicaments actuels",
+          "patientComment": "metformine, lévothyroxine"
+        },
+        {
+          "id": "a13",
+          "text": "Profession et activités",
+          "patientComment": "secrétaire, beaucoup de frappe au clavier"
+        },
+        {
+          "id": "a14",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "binaryOnly": false,
+          "details": [
+            "Anamnèse générale ciblée et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Inspection du poignet et de la main",
+          "details": [
+            "Gonflement",
+            "Atrophie thénarienne",
+            "Déformation",
+            "Cicatrices"
+          ]
+        },
+        {
+          "id": "e2",
+          "text": "Palpation",
+          "details": [
+            "Canal carpien",
+            "Tendons fléchisseurs",
+            "Pouls radial et cubital",
+            "Points douloureux"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Tests sensitifs",
+          "details": [
+            "Discrimination à 2 points",
+            "Sensibilité au toucher léger",
+            "Distribution du nerf médian",
+            "Comparaison bilatérale"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Tests moteurs",
+          "details": [
+            "Force de l'opposition du pouce",
+            "Abduction du pouce",
+            "Flexion des doigts",
+            "Préhension fine"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Tests spécifiques du canal carpien",
+          "details": [
+            "Test de Tinel (percussion canal carpien)",
+            "Test de Phalen (flexion poignet 60 sec)",
+            "Test de compression directe",
+            "Test de Durkan"
+          ]
+        },
+        {
+          "id": "e6",
+          "text": "Mobilité du poignet",
+          "details": [
+            "Flexion/Extension",
+            "Déviation radiale/cubitale",
+            "Pronation/Supination",
+            "Amplitude de mouvement"
+          ]
+        },
+        {
+          "id": "e7",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "binaryOnly": false,
+          "details": [
+            "Status général ciblé et bien conduit"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic principal",
+          "patientComment": "Syndrome du canal carpien"
+        },
+        {
+          "id": "m2",
+          "text": "Diagnostics différentiels",
+          "details": [
+            "Syndrome du défilé thoracique",
+            "Radiculopathie cervicale C6-C7",
+            "Neuropathie diabétique",
+            "Tendinite des fléchisseurs"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Examens complémentaires",
+          "details": [
+            "Électromyographie (EMG)",
+            "Vitesse de conduction nerveuse",
+            "Échographie du canal carpien",
+            "IRM si doute diagnostique"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Traitement conservateur",
+          "details": [
+            "Attelle de repos nocturne",
+            "Anti-inflammatoires (ibuprofène)",
+            "Infiltration corticoïde locale",
+            "Ergothérapie, adaptation du poste de travail"
+          ]
+        },
+        {
+          "id": "m5",
+          "text": "Traitement chirurgical",
+          "details": [
+            "Libération du canal carpien",
+            "Indication si échec traitement conservateur",
+            "Technique endoscopique ou à ciel ouvert",
+            "Excellents résultats généralement"
+          ]
+        },
+        {
+          "id": "m6",
+          "text": "Prévention et conseils",
+          "details": [
+            "Ergonomie du poste de travail",
+            "Pauses régulières",
+            "Exercices d'étirement",
+            "Contrôle du diabète et hypothyroïdie"
+          ]
+        },
+        {
+          "id": "m7",
+          "text": "Évaluation globale de la qualité de la prise en charge",
+          "binaryOnly": false,
+          "details": [
+            "Prise en charge générale cohérente et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    }
+  }
+}

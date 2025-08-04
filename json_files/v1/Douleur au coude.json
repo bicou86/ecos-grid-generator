@@ -1,0 +1,227 @@
+{
+  "title": "Douleur au coude",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Madame Wieser, 25 ans, consultant pour douleurs au coude"
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction et tâche",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Question d'entrée ouverte - Symptôme principal",
+          "patientComment": "douleurs au coude",
+          "binaryOnly": true
+        },
+        {
+          "id": "a3",
+          "text": "Localisation de la douleur",
+          "patientComment": "coude droit, côté externe"
+        },
+        {
+          "id": "a4",
+          "text": "Début et durée des symptômes",
+          "patientComment": "depuis 2 semaines, progressif"
+        },
+        {
+          "id": "a5",
+          "text": "Intensité de la douleur",
+          "patientComment": "6/10, augmente avec l'activité"
+        },
+        {
+          "id": "a6",
+          "text": "Facteurs déclenchants ou aggravants",
+          "patientComment": "saisir des objets, tourner la poignée de porte, tennis"
+        },
+        {
+          "id": "a7",
+          "text": "Facteurs améliorants",
+          "patientComment": "repos, application de froid"
+        },
+        {
+          "id": "a8",
+          "text": "Irradiation de la douleur",
+          "patientComment": "vers l'avant-bras"
+        },
+        {
+          "id": "a9",
+          "text": "Limitation fonctionnelle",
+          "patientComment": "difficulté à porter des objets"
+        },
+        {
+          "id": "a10",
+          "text": "Traumatisme ou surmenage",
+          "patientComment": "tennis intensif récemment"
+        },
+        {
+          "id": "a11",
+          "text": "Anamnèse personnelle",
+          "patientComment": "aucun antécédent médical particulier"
+        },
+        {
+          "id": "a12",
+          "text": "Médicaments actuels",
+          "patientComment": "ibuprofène occasionnel"
+        },
+        {
+          "id": "a13",
+          "text": "Profession et activités",
+          "patientComment": "informaticienne, joue au tennis"
+        },
+        {
+          "id": "a14",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "binaryOnly": false,
+          "details": [
+            "Anamnèse générale ciblée et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Inspection du coude",
+          "details": [
+            "Gonflement",
+            "Rougeur",
+            "Déformation",
+            "Position spontanée"
+          ]
+        },
+        {
+          "id": "e2",
+          "text": "Palpation",
+          "details": [
+            "Épicondyle latéral (douleur)",
+            "Épicondyle médial",
+            "Tête radiale",
+            "Olécrane"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Mobilité passive",
+          "details": [
+            "Flexion/Extension",
+            "Pronation/Supination",
+            "Douleur en fin de course"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Mobilité active",
+          "details": [
+            "Flexion/Extension contre résistance",
+            "Extension du poignet contre résistance",
+            "Préhension forte"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Tests spécifiques",
+          "details": [
+            "Test de Cozen (extension du poignet contre résistance)",
+            "Test de Mill (flexion passive du poignet)",
+            "Test de la chaise (soulever une chaise)"
+          ]
+        },
+        {
+          "id": "e6",
+          "text": "Examen neurologique",
+          "details": [
+            "Sensibilité",
+            "Force musculaire",
+            "Réflexes tendineux"
+          ]
+        },
+        {
+          "id": "e7",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "binaryOnly": false,
+          "details": [
+            "Status général ciblé et bien conduit"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic principal",
+          "patientComment": "Épicondylite latérale (tennis elbow)"
+        },
+        {
+          "id": "m2",
+          "text": "Diagnostics différentiels",
+          "details": [
+            "Épicondylite médiale",
+            "Syndrome du tunnel radial",
+            "Arthrite du coude",
+            "Fracture de fatigue"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Examens complémentaires",
+          "details": [
+            "Radiographie du coude (si doute fracture)",
+            "Échographie (tendon)",
+            "IRM (si résistant au traitement)"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Traitement conservateur",
+          "details": [
+            "Repos relatif, éviter les activités déclenchantes",
+            "Anti-inflammatoires (ibuprofène 400mg 3x/j)",
+            "Application de froid 15-20 min plusieurs fois/j",
+            "Physiothérapie (étirements, renforcement excentrique)"
+          ]
+        },
+        {
+          "id": "m5",
+          "text": "Prévention et conseils",
+          "details": [
+            "Modification de la technique au tennis",
+            "Échauffement avant le sport",
+            "Utilisation d'une épicondylienne",
+            "Éviter les mouvements répétitifs"
+          ]
+        },
+        {
+          "id": "m6",
+          "text": "Suivi et pronostic",
+          "details": [
+            "Contrôle dans 2-3 semaines",
+            "Amélioration attendue en 6-12 semaines",
+            "Reprise progressive du sport",
+            "Consulter si pas d'amélioration"
+          ]
+        },
+        {
+          "id": "m7",
+          "text": "Évaluation globale de la qualité de la prise en charge",
+          "binaryOnly": false,
+          "details": [
+            "Prise en charge générale cohérente et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    }
+  }
+}

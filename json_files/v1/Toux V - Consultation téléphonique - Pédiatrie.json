@@ -1,0 +1,179 @@
+{
+  "title": "Toux enfant - Consultation téléphonique",
+  "context": {
+    "setting": "Consultation téléphonique - 21h00",
+    "patient": "Appel d'une mère inquiète concernant sa fille Jasmin, 5 ans, qui présente une toux. La mère habite à la campagne, n'est pas motorisée et a encore 3 autres enfants."
+  },
+  "tasks": [
+    "Gérez cette consultation téléphonique de manière appropriée",
+    "Effectuez une anamnèse ciblée par téléphone",
+    "Évaluez la gravité de la situation",
+    "Donnez des conseils pratiques et organisez le suivi"
+  ],
+  "sections": {
+    "anamnese": {
+      "title": "Anamnèse téléphonique",
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Se présente avec nom et fonction"
+        },
+        {
+          "id": "a2",
+          "text": "Demande le nom, l'âge et le sexe de l'enfant ainsi que le numéro de téléphone de l'appelant"
+        },
+        {
+          "id": "a3",
+          "text": "Commence par une question ouverte [Jasmin 5 ans a une toux. Maman ne peut pas venir à l'hôpital car habite à la campagne et n'est pas motorisée, a encore 3 autres enfants]"
+        },
+        {
+          "id": "a4",
+          "text": "Début [depuis ce matin toux, avant jouait un peu dehors, maintenant sortie du lit et se plaint de légère dyspnée]"
+        },
+        {
+          "id": "a5",
+          "text": "Comment va Jasmin maintenant? Léthargique, réactivité [allongée sur le canapé et peut encore bien répondre aux questions]"
+        },
+        {
+          "id": "a6",
+          "text": "Tirage intercostal et sus-sternal, respiration rapide et superficielle? [non pas particulièrement]"
+        },
+        {
+          "id": "a7",
+          "text": "Fièvre mesurée? Combien? Où? [non, mais se sent un peu chaude]"
+        },
+        {
+          "id": "a8",
+          "text": "Infection du nez, gorge, cou, trachée? [oui léger rhume]"
+        },
+        {
+          "id": "a9",
+          "text": "Comment sonne la respiration? [rauque]"
+        },
+        {
+          "id": "a10",
+          "text": "Une aspiration de corps étranger est-elle possible? [ne pense pas]"
+        },
+        {
+          "id": "a11",
+          "text": "Comment sonne la toux, aboyante, productive ou sèche? [oui aboyante, sèche]"
+        },
+        {
+          "id": "a12",
+          "text": "Peau bleutée? [non]"
+        },
+        {
+          "id": "a13",
+          "text": "Déjà essayé des choses pour le traitement/ Remarqué que quelque chose fait du bien? [non vient juste d'appeler]"
+        },
+        {
+          "id": "a14",
+          "text": "RED FLAGS vérifiés",
+          "details": [
+            "État général, troubles de la conscience",
+            "Stations fébriles : ORL (troubles de la déglutition, douleurs aux oreilles), méningisme",
+            "Urines, toux, éruption cutanée, traumatisme crânien récent dans l'anamnèse",
+            "[tout négatif]"
+          ]
+        },
+        {
+          "id": "a15",
+          "text": "Déjà eu quelque chose de similaire auparavant? [non pas avec dyspnée]"
+        },
+        {
+          "id": "a16",
+          "text": "Maladie de base?"
+        },
+        {
+          "id": "a17",
+          "text": "Hospitalisations antérieures?"
+        },
+        {
+          "id": "a18",
+          "text": "Médicaments, allergies [antihistaminiques pour rhume des foins]"
+        },
+        {
+          "id": "a19",
+          "text": "Anamnèse de l'entourage? [petits frères en bonne santé]"
+        },
+        {
+          "id": "a20",
+          "text": "Bref résumé et faire confirmer l'exactitude"
+        }
+      ]
+    },
+    "examen": {
+      "title": "Évaluation et diagnostic",
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Nomme le diagnostic suspecté : Faux-croup"
+        },
+        {
+          "id": "e2",
+          "text": "Nomme les diagnostics différentiels : crise d'asthme, aspiration de corps étranger"
+        },
+        {
+          "id": "e3",
+          "text": "Nomme la cause possible et l'urgence de se présenter en urgence"
+        },
+        {
+          "id": "e4",
+          "text": "Mieux se présenter [impossible de venir immédiatement à l'hôpital] → Proposer des mesures et rappel dans 1 heure"
+        }
+      ]
+    },
+    "management": {
+      "title": "Conseils et prise en charge",
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Donne des recommandations pour la suite et vérifie la faisabilité",
+          "details": [
+            "Mesurer la fièvre, si fièvre, Paracétamol/Algifor sirop",
+            "Bonne humidification de l'air",
+            "Remèdes maison : lait au miel, tisanes, enveloppements de pommes de terre",
+            "Mettre l'enfant dans la salle de bain, faire couler de l'eau chaude",
+            "Calmer l'enfant"
+          ]
+        },
+        {
+          "id": "m2",
+          "text": "Explique quoi faire si le problème s'aggrave et pour quels problèmes il faut rappeler",
+          "details": [
+            "Rechercher une aide médicale si :",
+            "La respiration difficile augmente, apparition de tirage etc.",
+            "Pas d'amélioration malgré les mesures",
+            "Refuse de boire",
+            "État général en baisse",
+            "Si peau bleutée",
+            "Expectorations sanglantes"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Faire appliquer les mesures et rappeler en cas d'aggravation envoyer une ambulance pour chercher l'enfant"
+        },
+        {
+          "id": "m4",
+          "text": "Fait répéter les recommandations données par l'appelant"
+        },
+        {
+          "id": "m5",
+          "text": "Demande si l'appelant est d'accord avec les recommandations données"
+        },
+        {
+          "id": "m6",
+          "text": "Demande s'il y a des points peu clairs ou des questions"
+        },
+        {
+          "id": "m7",
+          "text": "Encourage à rappeler ou à se présenter en cas d'incertitude"
+        }
+      ]
+    }
+  }
+}

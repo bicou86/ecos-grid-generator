@@ -1,0 +1,466 @@
+{
+  "title": "Douleur abdominale III",
+  "context": {
+    "setting": "Cabinet de gynécologie",
+    "patient": "Femme de 27 ans se présente avec des douleurs abdominales. Paramètres vitaux normaux.",
+    "vitals": {
+      "ta": "120/75 mmHg",
+      "fc": "68 bpm",
+      "temperature": "36.8°C"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction et objectif de la consultation",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Question ouverte d'introduction → Motif de consultation",
+          "patientComment": "Douleurs abdominales et douleurs menstruelles",
+          "binaryOnly": true
+        },
+        {
+          "id": "a3",
+          "text": "RED FLAGS - Urgences gynécologiques",
+          "scoringRule": "≥5 red flags explorés = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false,
+          "redflagsSection": [
+            {
+              "text": "Grossesse extra-utérine [test grossesse négatif]"
+            },
+            {
+              "text": "Torsion d'annexe [douleur non aiguë]"
+            },
+            {
+              "text": "Rupture de kyste [pas de douleur brutale]"
+            },
+            {
+              "text": "Hémorragie active [pas de métrorragies]"
+            },
+            {
+              "text": "Choc/hypotension [TA normale]"
+            },
+            {
+              "text": "Péritonite [abdomen souple]"
+            },
+            {
+              "text": "Infection pelvienne aiguë [pas de fièvre]"
+            }
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Caractérisation des douleurs pelviennes (SOCRATES)",
+          "details": [
+            "Site/localisation [bas-ventre]",
+            "Onset/début [depuis longtemps déjà]",
+            "Character/qualité [sourde et piquante]",
+            "Radiation/irradiation [non]",
+            "Associated symptoms [gaz, constipation]",
+            "Timing/évolution [cyclique avec règles]",
+            "Exacerbating factors [pendant les règles]",
+            "Severity/sévérité [6/10]"
+          ],
+          "scoringRule": "≥6 éléments SOCRATES = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a5",
+          "text": "Les 3 D de l'endométriose",
+          "details": [
+            "Dysménorrhée [oui, douleurs intenses pendant règles]",
+            "Dyspareunie profonde [oui, parfois]",
+            "Dyschezie [constipation fréquente, explore douleurs défécation]",
+            "Dysurie cyclique [normale - mais à explorer]",
+            "Caractère progressif des symptômes [à confirmer]"
+          ],
+          "scoringRule": "≥4 éléments des 3D+2 = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a6",
+          "text": "Anamnèse menstruelle détaillée",
+          "details": [
+            "Ménarche [âge à préciser]",
+            "Durée du cycle [28 jours]",
+            "Régularité [régulier]",
+            "Durée des règles [5 jours]",
+            "Quantité [abondantes, beaucoup de tampons]",
+            "Présence de caillots [à explorer]",
+            "Score de Higham [à calculer si possible]",
+            "Impact sur qualité de vie [à évaluer]"
+          ],
+          "scoringRule": "≥6 éléments = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a7",
+          "text": "Fertilité et santé reproductive",
+          "details": [
+            "Désir de grossesse actuel [oui]",
+            "Durée d'essais conception [à préciser]",
+            "Contraception antérieure [non actuellement]",
+            "Grossesses antérieures [non]",
+            "Fausses couches [non]",
+            "IVG [non mentionné]",
+            "Bilan fertilité réalisé [à explorer]",
+            "Fertilité du partenaire [à explorer]"
+          ],
+          "scoringRule": "≥6 éléments = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a8",
+          "text": "Symptômes extra-pelviens d'endométriose",
+          "details": [
+            "Fatigue chronique [à explorer]",
+            "Troubles intestinaux cycliques [constipation notée]",
+            "Rectorragies cycliques [non]",
+            "Hématurie cyclique [non]",
+            "Douleurs scapulaires cycliques [à explorer]",
+            "Pneumothorax cataménial [non]"
+          ],
+          "scoringRule": "≥5 éléments explorés = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a9",
+          "text": "Facteurs de risque d'endométriose",
+          "details": [
+            "Antécédents familiaux [à explorer mère/sœurs]",
+            "Ménarche précoce [à vérifier <12 ans]",
+            "Cycles courts [28j - normal]",
+            "Ménorragies [oui, règles abondantes]",
+            "Nulliparité [oui]",
+            "IMC bas [à calculer]",
+            "Exposition in utero au DES [non applicable]"
+          ],
+          "scoringRule": "≥5 facteurs évalués = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a10",
+          "text": "Impact psychosocial et qualité de vie",
+          "details": [
+            "Absentéisme professionnel [à quantifier]",
+            "Impact sur vie sexuelle [dyspareunie]",
+            "Impact sur vie sociale [à évaluer]",
+            "Symptômes anxio-dépressifs [à explorer]",
+            "Troubles du sommeil [à explorer]",
+            "Stratégies d'adaptation [Panadol parfois]"
+          ],
+          "scoringRule": "≥5 éléments = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a11",
+          "text": "Antécédents médico-chirurgicaux",
+          "details": [
+            "Chirurgies abdominales [non]",
+            "Chirurgies gynécologiques [non]",
+            "Maladies auto-immunes [à explorer]",
+            "Allergies [non]",
+            "Médications actuelles [Panadol occasionnel]",
+            "Traitements antérieurs endométriose [aucun]"
+          ],
+          "scoringRule": "≥5 éléments = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a12",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "details": [
+            "Anamnèse complète et systématique",
+            "Exploration des 3D caractéristiques",
+            "Évaluation de l'impact sur fertilité",
+            "Recherche des red flags",
+            "Approche holistique bio-psycho-sociale"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Préparation et consentement",
+          "details": [
+            "Explication de l'examen",
+            "Consentement verbal obtenu",
+            "Installation confortable",
+            "Présence d'une assistante proposée"
+          ],
+          "binaryOnly": true
+        },
+        {
+          "id": "e2",
+          "text": "Examen abdominal systématique",
+          "details": [
+            "Inspection [cicatrices, distension]",
+            "Palpation superficielle [sensibilité diffuse bas-ventre]",
+            "Palpation profonde quadrant par quadrant",
+            "Recherche de masses",
+            "Points douloureux spécifiques",
+            "Signes péritonéaux [absents]"
+          ],
+          "scoringRule": "≥5 éléments = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e3",
+          "text": "Examen au spéculum",
+          "details": [
+            "Inspection vulve [normale]",
+            "Inspection parois vaginales [normales]",
+            "Visualisation col [normal]",
+            "Recherche lésions endométriosiques [bleuâtres]",
+            "Leucorrhées [normales]",
+            "Saignements de contact [non]"
+          ],
+          "scoringRule": "≥5 éléments = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e4",
+          "text": "Toucher vaginal - Évaluation utérus",
+          "details": [
+            "Position utérus [légèrement fixé]",
+            "Taille utérus [normale ou augmentée]",
+            "Mobilité utérine [réduite]",
+            "Douleur à la mobilisation [à évaluer]",
+            "Consistance [à préciser]"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e5",
+          "text": "Toucher vaginal - Évaluation annexes et cul-de-sac",
+          "details": [
+            "Palpation annexes droite et gauche",
+            "Masses annexielles [non palpées]",
+            "Cul-de-sac de Douglas [induration palpable]",
+            "Nodules ligaments utéro-sacrés [à rechercher]",
+            "Douleur élective [à préciser localisation]"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e6",
+          "text": "Toucher rectal (si indiqué)",
+          "details": [
+            "Évaluation cloison recto-vaginale",
+            "Recherche nodules endométriosiques",
+            "Évaluation du Douglas",
+            "Douleur à la palpation"
+          ],
+          "scoringRule": "TR réalisé si indiqué = 2 pts, évoqué = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e7",
+          "text": "Recherche signes cliniques spécifiques endométriose",
+          "redflagsSection": [
+            {
+              "text": "Utérus fixé en rétroversion"
+            },
+            {
+              "text": "Nodules bleutés vaginaux"
+            },
+            {
+              "text": "Nodules palpables ligaments utéro-sacrés"
+            },
+            {
+              "text": "Induration/nodules cul-de-sac Douglas"
+            },
+            {
+              "text": "Masses annexielles (endométriomes)"
+            },
+            {
+              "text": "Douleur élective reproduisant symptômes"
+            }
+          ],
+          "scoringRule": "≥3 signes recherchés = 2 pts, 2 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e8",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "details": [
+            "Examen gynécologique complet",
+            "Recherche spécifique signes endométriose",
+            "Respect et confort de la patiente",
+            "Documentation précise des findings"
+          ],
+          "scoringRule": "≥3 éléments = 2 pts, 2 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic principal énoncé",
+          "details": [
+            "Suspicion forte d'endométriose",
+            "Stade probable (I-IV)",
+            "Localisation suspectée"
+          ],
+          "scoringRule": "Diagnostic clair = 2 pts, partiel = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m2",
+          "text": "Diagnostics différentiels pertinents",
+          "scoringRule": "≥5 DD = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false,
+          "ddSection": {
+            "categories": [
+              {
+                "name": "Diagnostics différentiels à considérer",
+                "items": [
+                  "Syndrome de l'intestin irritable",
+                  "Maladie inflammatoire pelvienne",
+                  "Adhérences pelviennes",
+                  "Adénomyose",
+                  "Cystite interstitielle",
+                  "Syndrome de congestion pelvienne",
+                  "Pathologie ovarienne (kyste)"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m3",
+          "text": "Examens complémentaires de première intention",
+          "details": [
+            "β-hCG (exclusion grossesse)",
+            "FSC, CRP (état inflammatoire)",
+            "CA-125 (non spécifique mais utile suivi)",
+            "Échographie pelvienne transvaginale",
+            "IRM pelvienne si échographie non concluante",
+            "Bilan IST si contexte"
+          ],
+          "scoringRule": "≥5 examens = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m4",
+          "text": "Gold standard diagnostique évoqué",
+          "details": [
+            "Laparoscopie diagnostique et thérapeutique",
+            "Biopsies avec confirmation histologique",
+            "Stadification selon classification rASRM",
+            "Documentation photographique lésions"
+          ],
+          "scoringRule": "Laparoscopie mentionnée = 2 pts, partiel = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m5",
+          "text": "Traitement médical - Désir de grossesse",
+          "details": [
+            "Analgésie adaptée (AINS première ligne)",
+            "Pas de traitement hormonal si conception active",
+            "Optimisation fertilité naturelle",
+            "Référence PMA si infertilité >12 mois",
+            "Supplémentation acide folique",
+            "Support psychologique"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m6",
+          "text": "Options thérapeutiques si pas de désir grossesse immédiat",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Traitement hormonal première ligne",
+                "content": "• Contraceptifs œstroprogestatifs continus\n• DIU au lévonorgestrel (Mirena®)\n• Progestatifs continus (diénogest)\n• Implant progestatif"
+              },
+              {
+                "title": "Traitement hormonal deuxième ligne",
+                "content": "• Agonistes GnRH + add-back therapy\n• Antagonistes GnRH oraux\n• Danazol (rarement utilisé)\n• Inhibiteurs aromatase (hors AMM)"
+              },
+              {
+                "title": "Traitement chirurgical",
+                "content": "• Laparoscopie avec excision/ablation lésions\n• Préservation fertilité si désir grossesse\n• Hystérectomie + annexectomie si complet\n• Traitement lésions profondes par expert"
+              }
+            ]
+          },
+          "scoringRule": "Options complètes = 2 pts, partielles = 1 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m7",
+          "text": "Prise en charge multidisciplinaire",
+          "details": [
+            "Algologie si douleurs réfractaires",
+            "Kinésithérapie pelvienne",
+            "Sexologie si dyspareunie importante",
+            "Psychothérapie de soutien",
+            "Diététique anti-inflammatoire",
+            "Médecine intégrative (yoga, acupuncture)"
+          ],
+          "scoringRule": "≥4 aspects = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m8",
+          "text": "Information et éducation complète",
+          "details": [
+            "Maladie chronique évolutive",
+            "Impact potentiel sur fertilité (30-40%)",
+            "Options préservation fertilité",
+            "Risque récidive après traitement",
+            "Amélioration fréquente grossesse/ménopause",
+            "Associations de patientes",
+            "Ressources d'information fiables"
+          ],
+          "scoringRule": "≥5 éléments = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m9",
+          "text": "Planification du suivi",
+          "details": [
+            "Consultation de suivi 3 mois",
+            "Réévaluation symptômes et QoL",
+            "Ajustement thérapeutique si nécessaire",
+            "Surveillance effets secondaires",
+            "Référence centre spécialisé endométriose",
+            "Suivi fertilité si désir grossesse"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m10",
+          "text": "Évaluation globale de la qualité de la prise en charge",
+          "details": [
+            "Approche centrée patiente",
+            "Respect du désir de grossesse",
+            "Options thérapeutiques complètes",
+            "Prise en charge holistique",
+            "Information claire et empathique"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        }
+      ]
+    }
+  }
+}

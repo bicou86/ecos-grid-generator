@@ -1,0 +1,383 @@
+{
+  "title": "Érythème",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Mme Kählin, 27 ans, consulte suite à l'apparition d'un érythème cutané",
+    "vitals": {
+      "ta": "127/82 mmHg",
+      "fc": "73 bpm",
+      "temperature": "37.8°C"
+    },
+    "patientComment": "Femme jeune avec érythème évoluant depuis 3 semaines, aggravé par exposition solaire en Italie. Symptômes systémiques associés (fatigue, arthralgies, céphalées). Suspicion forte de lupus érythémateux cutané avec risque d'évolution systémique."
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Désinfection des mains, présentation avec nom, fonction et but de la consultation",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Caractérisation complète de l'érythème",
+          "details": [
+            "Douleur: [non douloureux]",
+            "Brûlure: [pas de brûlure]",
+            "Prurit: [pas de démangeaisons]",
+            "Durée: [depuis environ 3 semaines]",
+            "Évolution: [progressif]"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥4 caractéristiques = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "a3",
+          "text": "Facteurs déclenchants et modulateurs",
+          "details": [
+            "Exposition solaire: [oui, pendant vacances]",
+            "Voyage récent: [Italie il y a 2 semaines]",
+            "Aggravation solaire: [érythème plus marqué en vacances]",
+            "Facteur déclenchant initial: [aucun identifié]",
+            "Médicaments photosensibilisants"
+          ],
+          "binaryOnly": false,
+          "patientComment": "Photosensibilité marquée = signe évocateur de lupus",
+          "scoringRule": "≥4 facteurs explorés = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "a4",
+          "text": "Recherche de RED FLAGS systémiques",
+          "redflagsSection": [
+            {
+              "text": "Fièvre persistante [température 37.8°C]",
+              "isRedFlag": true
+            },
+            {
+              "text": "Arthralgies multiples [légères douleurs articulaires]",
+              "isRedFlag": true
+            },
+            {
+              "text": "Fatigue inexpliquée [un peu fatiguée]",
+              "isRedFlag": true
+            },
+            {
+              "text": "Perte de poids [possible]",
+              "isRedFlag": true
+            },
+            {
+              "text": "Atteinte rénale (urines mousseuses) [non explorée]",
+              "isRedFlag": false
+            }
+          ],
+          "binaryOnly": false,
+          "patientComment": "Multiples signes systémiques suggérant lupus érythémateux",
+          "scoringRule": "≥4 red flags recherchés = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "a5",
+          "text": "Symptômes systémiques associés",
+          "details": [
+            "Céphalées: [fréquentes]",
+            "Ulcères buccaux/nasaux",
+            "Alopécie",
+            "Phénomène de Raynaud",
+            "Sérites (douleur thoracique)"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥3 symptômes recherchés = 2 pts, 2 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "a6",
+          "text": "Antécédents et facteurs de risque",
+          "details": [
+            "Premier épisode: [oui]",
+            "Contraception orale: [pilule combinée]",
+            "Tabac: [5 paquets-années]",
+            "AF auto-immuns",
+            "Infections récentes"
+          ],
+          "binaryOnly": false,
+          "patientComment": "Contraception orale = facteur de risque pour lupus",
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "a7",
+          "text": "Revue des systèmes complète",
+          "details": [
+            "Système rénal (œdèmes, dysurie)",
+            "Système respiratoire (dyspnée, toux)",
+            "Système neurologique (paresthésies)",
+            "Système hématologique (ecchymoses)",
+            "[Rien de particulier]"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥4 systèmes = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "a8",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "binaryOnly": false,
+          "details": [
+            "Anamnèse orientée pathologie auto-immune",
+            "RED FLAGS systématiquement recherchés",
+            "Facteurs de risque identifiés"
+          ],
+          "scoringRule": "Excellente = 2 pts, suffisante = 1 pt, insuffisante = 0 pt"
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Examen général et muqueux",
+          "details": [
+            "État général",
+            "Yeux: [légèrement secs et rouges]",
+            "Muqueuses buccales: [rosées]",
+            "Recherche ulcérations",
+            "Adénopathies"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "e2",
+          "text": "Examen cutané détaillé et spécifique",
+          "details": [
+            "Description: érythème rouge légèrement squameux",
+            "Distribution: dos (photosensible)",
+            "Recherche éruption malaire",
+            "Recherche lésions discoïdes",
+            "Photographie documentée"
+          ],
+          "binaryOnly": false,
+          "patientComment": "Localisation photosensible typique",
+          "scoringRule": "≥4 caractéristiques = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "e3",
+          "text": "Examen articulaire systématique",
+          "details": [
+            "Palpation: [articulations légèrement douloureuses]",
+            "Gonflement: [pas d'épanchement]",
+            "Limitation: [non]",
+            "Déformation",
+            "Chaleur locale"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥4 aspects = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "e4",
+          "text": "Recherche signes spécifiques de lupus",
+          "details": [
+            "Éruption malaire: [absente]",
+            "Ulcérations buccales: [absentes]",
+            "Alopécie: [absente]",
+            "Phénomène de Raynaud: [absent]",
+            "Livedo reticularis"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥4 signes recherchés = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "e5",
+          "text": "Examen systémique complet",
+          "details": [
+            "Cardio-pulmonaire: [sans particularité]",
+            "Neurologique: [pas d'anomalie]",
+            "Abdominal (hépato-splénomégalie)",
+            "Rénal (œdèmes)",
+            "Tension artérielle documentée"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥4 systèmes = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "e6",
+          "text": "Évaluation de la sévérité",
+          "details": [
+            "Extension des lésions",
+            "Signes d'activité inflammatoire",
+            "Retentissement fonctionnel",
+            "Signes de gravité systémique",
+            "Score CLASI si approprié"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥3 éléments = 2 pts, 2 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "e7",
+          "text": "Évaluation globale de la qualité de l'examen",
+          "binaryOnly": false,
+          "details": [
+            "Examen systématique orienté lupus",
+            "Signes spécifiques recherchés",
+            "Atteintes d'organes évaluées"
+          ],
+          "scoringRule": "Excellent = 2 pts, suffisant = 1 pt, insuffisant = 0 pt"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic principal et classification",
+          "patientComment": "Lupus érythémateux cutané subaigu (SCLE) probable",
+          "details": [
+            "Érythème photosensible",
+            "Évolution subaiguë (3 semaines)",
+            "Symptômes systémiques associés",
+            "Femme jeune avec contraception",
+            "Aggravation solaire documentée"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "Diagnostic correct avec ≥4 arguments = 2 pts, avec 2-3 arguments = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "m2",
+          "text": "Diagnostics différentiels structurés",
+          "ddSection": {
+            "categories": [
+              {
+                "name": "Photodermatoses",
+                "items": [
+                  "Lucite estivale bénigne",
+                  "Photodermatose polymorphe",
+                  "Dermite actinique chronique"
+                ]
+              },
+              {
+                "name": "Dermatoses inflammatoires",
+                "items": [
+                  "Psoriasis",
+                  "Dermatomyosite",
+                  "Dermatite séborrhéique"
+                ]
+              },
+              {
+                "name": "Causes médicamenteuses",
+                "items": [
+                  "Lupus induit (contraception)",
+                  "Phototoxicité médicamenteuse",
+                  "DRESS syndrome"
+                ]
+              }
+            ]
+          },
+          "binaryOnly": false,
+          "scoringRule": "≥6 DD pertinents = 2 pts, 3-5 DD = 1 pt, <3 DD = 0 pt"
+        },
+        {
+          "id": "m3",
+          "text": "Examens complémentaires ciblés",
+          "binaryOnly": false,
+          "scoringRule": "≥4 examens appropriés = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "details": [
+            "Anticorps anti-nucléaires (ANA) → Dépistage lupus systémique - titre et fluorescence",
+            "Panel auto-anticorps → Anti-dsDNA, anti-Sm, anti-SSA/SSB, anti-RNP",
+            "Bilan inflammatoire → VS, CRP, complément C3/C4",
+            "Bilan rénal → Créatinine, ECBU, protéinurie/24h",
+            "NFS, fonction hépatique → Cytopénies lupiques, transaminases"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Protection solaire et mesures générales",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Photoprotection stricte",
+                "content": "• SPF 50+ quotidien sur zones exposées\n• Renouvellement toutes les 2h\n• Vêtements couvrants UV\n• Éviction 10h-16h\n• Lunettes solaires"
+              },
+              {
+                "title": "Adaptations lifestyle",
+                "content": "• Arrêt tabac (aggrave lupus)\n• Discussion contraception\n• Gestion stress\n• Activité physique adaptée\n• Vitamine D si carence"
+              },
+              {
+                "title": "Surveillance",
+                "content": "• Auto-surveillance lésions\n• Thermomètre à domicile\n• Carnet symptômes\n• Photos évolution\n• Alertes rouges expliquées"
+              }
+            ]
+          },
+          "binaryOnly": false,
+          "scoringRule": "≥3 catégories complètes = 2 pts, 2 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "m5",
+          "text": "Traitement médicamenteux adapté",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Traitement local",
+                "content": "• Dermocorticoïdes classe II-III\n• 1x/j sur lésions x 2-4 sem\n• Tacrolimus 0.1% si visage\n• Surveillance atrophie cutanée"
+              },
+              {
+                "title": "Antipaludéens systémiques",
+                "content": "• Hydroxychloroquine 200-400mg/j\n• Après bilan ophtalmo initial\n• Efficace sur cutané + systémique\n• Délai action 6-12 semaines"
+              },
+              {
+                "title": "Si échec/sévère",
+                "content": "• Méthotrexate 10-20mg/sem\n• Azathioprine 1-2mg/kg/j\n• Corticoïdes systémiques courts\n• Immunosuppresseurs si systémique"
+              }
+            ]
+          },
+          "binaryOnly": false,
+          "scoringRule": "≥3 options thérapeutiques = 2 pts, 2 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "m6",
+          "text": "Information patient et surveillance",
+          "details": [
+            "Nature auto-immune expliquée",
+            "Risque évolution systémique 5-10%",
+            "Signes d'alerte: fièvre, œdèmes, dyspnée",
+            "Importance photoprotection à vie",
+            "Grossesse à planifier (antipaludéens OK)"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥4 points abordés = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "m7",
+          "text": "Plan de suivi structuré",
+          "details": [
+            "Contrôle 4-6 semaines avec résultats",
+            "Si ANA+: bilan trimestriel initial",
+            "Surveillance rénale régulière",
+            "Ophtalmo annuel si hydroxychloroquine",
+            "Référence dermato/rhumato si besoin"
+          ],
+          "binaryOnly": false,
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt"
+        },
+        {
+          "id": "m8",
+          "text": "Évaluation globale de la qualité de la prise en charge",
+          "binaryOnly": false,
+          "details": [
+            "Suspicion lupus appropriée",
+            "Bilan exhaustif programmé",
+            "Photoprotection prioritaire"
+          ],
+          "scoringRule": "Excellente = 2 pts, adéquate = 1 pt, insuffisante = 0 pt"
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "images": [
+      {
+        "title": "Image clinique - Érythème cutané",
+        "description": "Photographie montrant un érythème rouge légèrement squameux typique du lupus érythémateux cutané au niveau du dos",
+        "data": "grilles_generees/images/erytheme-img.jpg"
+      }
+    ]
+  }
+}

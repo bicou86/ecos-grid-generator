@@ -1,0 +1,502 @@
+{
+  "title": "Incontinence",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Mme Rohner, 60 ans, se présente en consultation pour une incontinence urinaire",
+    "vitals": {
+      "imc": "30 kg/m²"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "title": "Anamnèse",
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction et objectif",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Motif de consultation",
+          "patientComment": "Incontinence urinaire gênante"
+        },
+        {
+          "id": "a3",
+          "text": "Caractérisation temporelle précise",
+          "details": [
+            "Début exact [il y a 7 mois]",
+            "Mode d'apparition [progressif]",
+            "Évolution [aggravation progressive]",
+            "Fréquence actuelle [plusieurs fois par jour]",
+            "Impact fonctionnel [très gênant socialement]",
+            "Retentissement psychologique [honte, évitement social]"
+          ],
+          "patientComment": "Incontinence progressive depuis 7 mois, impact majeur",
+          "scoringRule": "≥4 éléments temporels = 2 pts, 2-3 = 1 pt"
+        },
+        {
+          "id": "a4",
+          "text": "Circonstances déclenchantes détaillées",
+          "details": [
+            "Toux [oui, toujours]",
+            "Éternuement [oui, toujours]",
+            "Rire [oui, toujours]",
+            "Effort physique [oui, escaliers]",
+            "Port de charges [oui]",
+            "Changement de position [parfois]",
+            "Marche rapide [oui récemment]",
+            "Sports [évite maintenant]"
+          ],
+          "patientComment": "Incontinence d'effort typique avec aggravation",
+          "scoringRule": "≥6 circonstances = 2 pts, 4-5 = 1 pt"
+        },
+        {
+          "id": "a5",
+          "text": "Symptômes d'hyperactivité vésicale",
+          "details": [
+            "Urgences mictionnelles [oui, fréquentes]",
+            "Capacité de se retenir [oui, arrive aux toilettes]",
+            "Fuites sur urgence [non]",
+            "Nombre d'urgences/jour [3-4 fois]",
+            "Réveil par urgences [non]",
+            "Triggers (eau, froid) [eau qui coule parfois]"
+          ],
+          "patientComment": "Composante d'urgence présente mais contrôlée",
+          "scoringRule": "≥5 symptômes explorés = 2 pts"
+        },
+        {
+          "id": "a6",
+          "text": "Profil mictionnel complet",
+          "details": [
+            "Fréquence diurne [8 fois/jour]",
+            "Volume par miction [normal]",
+            "Jet urinaire [normal]",
+            "Efforts de poussée [non]",
+            "Sensation vidange complète [oui]",
+            "Gouttes retardataires [non]",
+            "Douleurs mictionnelles [non]",
+            "Brûlures [non]"
+          ],
+          "patientComment": "Mictions normales sans dysurie",
+          "scoringRule": "≥6 éléments = 2 pts, 4-5 = 1 pt"
+        },
+        {
+          "id": "a7",
+          "text": "Quantification des fuites",
+          "details": [
+            "Volume perdu [quelques gouttes]",
+            "Protections utilisées [protège-slips]",
+            "Nombre protections/jour [2-3]",
+            "Changements vestimentaires [parfois]",
+            "Limitation activités [oui, évite sorties]",
+            "Odeur d'urine [parfois inquiète]"
+          ],
+          "patientComment": "Fuites modérées mais impact social important",
+          "scoringRule": "≥4 éléments = 2 pts"
+        },
+        {
+          "id": "a8",
+          "text": "Symptômes nocturnes",
+          "details": [
+            "Nycturie [non]",
+            "Nombre de levers [0]",
+            "Incontinence nocturne [jamais]",
+            "Énurésie [non]",
+            "Qualité du sommeil [bonne]"
+          ],
+          "patientComment": "Pas de symptômes nocturnes (contre vessie hyperactive)"
+        },
+        {
+          "id": "a9",
+          "text": "Antécédents uro-gynécologiques",
+          "details": [
+            "Infections urinaires [fréquentes jeune femme]",
+            "Dernière infection [> 10 ans]",
+            "Calculs urinaires [jamais]",
+            "Chirurgies pelviennes [hystérectomie à 40 ans]",
+            "Voie d'abord [abdominale ou vaginale?]",
+            "Complications post-op [non]",
+            "Radiothérapie pelvienne [non]"
+          ],
+          "patientComment": "ATCD hystérectomie, facteur de risque majeur",
+          "scoringRule": "≥5 antécédents = 2 pts"
+        },
+        {
+          "id": "a10",
+          "text": "Symptômes de prolapsus",
+          "details": [
+            "Sensation de boule vaginale [non]",
+            "Pesanteur pelvienne [non]",
+            "Quelque chose qui descend [non]",
+            "Gêne en position debout [non]",
+            "Amélioration allongée [non applicable]",
+            "Difficulté défécation [non]",
+            "Manœuvres digitales [non]"
+          ],
+          "patientComment": "Pas de symptôme de prolapsus associé",
+          "scoringRule": "≥5 symptômes = 2 pts"
+        },
+        {
+          "id": "a11",
+          "text": "Statut hormonal et ménopause",
+          "details": [
+            "Âge ménopause [40 ans, chirurgicale]",
+            "Ovaires conservés [à préciser]",
+            "Symptômes climatériques [bouffées de chaleur initiales]",
+            "THS [jamais]",
+            "Sécheresse vaginale [oui parfois]",
+            "Dyspareunie [non abordé]",
+            "Œstrogènes locaux [jamais essayé]"
+          ],
+          "patientComment": "Ménopause chirurgicale précoce, carence œstrogénique",
+          "scoringRule": "≥5 éléments = 2 pts"
+        },
+        {
+          "id": "a12",
+          "text": "Antécédents obstétricaux détaillés",
+          "details": [
+            "Nombre grossesses [3]",
+            "Nombre accouchements [3]",
+            "Voie d'accouchement [voie basse présumée]",
+            "Poids des bébés [à préciser, > 4kg?]",
+            "Déchirures périnéales [à préciser]",
+            "Épisiotomie [à préciser]",
+            "Forceps/ventouse [à préciser]",
+            "Durée du travail [à préciser]"
+          ],
+          "patientComment": "3 accouchements, facteurs de risque obstétricaux à préciser",
+          "scoringRule": "≥6 éléments = 2 pts"
+        },
+        {
+          "id": "a13",
+          "text": "Impact sur la qualité de vie",
+          "details": [
+            "Vie sociale [limitée, évite sorties]",
+            "Vie professionnelle [femme au foyer]",
+            "Activités physiques [évite tout sport]",
+            "Vie sexuelle [non abordé]",
+            "Estime de soi [diminuée]",
+            "Anxiété/dépression [anxiété sociale]",
+            "Relations familiales [gênée avec enfants]"
+          ],
+          "patientComment": "Retentissement psychosocial majeur",
+          "scoringRule": "≥5 domaines = 2 pts"
+        },
+        {
+          "id": "a14",
+          "text": "Comorbidités et facteurs aggravants",
+          "details": [
+            "Diabète type 2 [depuis 8 ans]",
+            "Équilibre glycémique [à vérifier]",
+            "Neuropathie diabétique [non explorée]",
+            "Obésité [IMC 30]",
+            "Constipation chronique [non]",
+            "Toux chronique [oui, tabagisme]",
+            "Médicaments (diurétiques) [non]",
+            "Mobilité [normale]"
+          ],
+          "patientComment": "Multiples facteurs de risque: diabète, obésité, tabac",
+          "scoringRule": "≥6 facteurs = 2 pts"
+        },
+        {
+          "id": "a15",
+          "text": "Traitements déjà tentés",
+          "details": [
+            "Rééducation périnéale [auto-exercices internet]",
+            "Durée tentative [quelques semaines]",
+            "Efficacité [minime]",
+            "Kinésithérapie spécialisée [jamais]",
+            "Médicaments [aucun]",
+            "Pessaire [non proposé]",
+            "Conseils hygiéniques [aucun]"
+          ],
+          "patientComment": "Tentative inadéquate d'auto-rééducation",
+          "scoringRule": "≥5 éléments = 2 pts"
+        },
+        {
+          "id": "a16",
+          "text": "Habitudes de vie et hydratation",
+          "details": [
+            "Apports hydriques [1.5-2L/jour]",
+            "Café/thé [3-4 tasses/jour]",
+            "Alcool [non]",
+            "Boissons gazeuses [parfois]",
+            "Tabac [1 paquet/jour × 30 ans]",
+            "Activité physique [sédentaire]",
+            "Alimentation [équilibre à revoir]"
+          ],
+          "patientComment": "Tabagisme important, sédentarité, surpoids",
+          "scoringRule": "≥5 habitudes = 2 pts"
+        },
+        {
+          "id": "a17",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "binaryOnly": false,
+          "details": [
+            "Anamnèse uro-gynécologique complète et systématique"
+          ],
+          "scoringRule": "Anamnèse excellente = 2 pts, correcte = 1 pt, insuffisante = 0 pt"
+        }
+      ]
+    },
+    "examen": {
+      "title": "Examen clinique",
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Examen abdominal complet",
+          "details": [
+            "Inspection [obésité abdominale, cicatrice?]",
+            "Auscultation [bruits normaux]",
+            "Palpation superficielle [souple]",
+            "Palpation profonde [indolore]",
+            "Globe vésical [absent]",
+            "Masses pelviennes [non palpables]",
+            "Douleur sus-pubienne [non]"
+          ],
+          "patientComment": "Abdomen normal, recherche de globe importante",
+          "scoringRule": "≥5 éléments = 2 pts, 3-4 = 1 pt"
+        },
+        {
+          "id": "e2",
+          "text": "Examen des fosses lombaires",
+          "details": [
+            "Contact lombaire bilatéral [non douloureux]",
+            "Masses rénales [non palpables]",
+            "Douleur à l'ébranlement [négative]",
+            "Cicatrices lombaires [aucune]"
+          ],
+          "patientComment": "Pas de pathologie rénale évidente"
+        },
+        {
+          "id": "e3",
+          "text": "Examen périnéal externe",
+          "details": [
+            "Installation correcte [lithotomie]",
+            "Inspection vulvaire au repos [normale]",
+            "Trophicité muqueuse [atrophie modérée]",
+            "Test de toux [fuite visible à l'effort]",
+            "Mobilité urétrale [hypermobile]",
+            "Béance vulvaire [non]",
+            "Cicatrices périnéales [à rechercher]"
+          ],
+          "patientComment": "Fuite à la toux confirmée, atrophie vaginale",
+          "scoringRule": "≥5 éléments = 2 pts"
+        },
+        {
+          "id": "e4",
+          "text": "Testing musculaire périnéal",
+          "details": [
+            "Contraction volontaire [testée]",
+            "Force musculaire [cotation 0-5]",
+            "Endurance [< 5 secondes]",
+            "Fatigabilité [rapide]",
+            "Co-contractions [abdominaux]",
+            "Inversion de commande [non]"
+          ],
+          "patientComment": "Faiblesse périnéale importante",
+          "scoringRule": "≥4 éléments = 2 pts"
+        },
+        {
+          "id": "e5",
+          "text": "Examen gynécologique ou orientation",
+          "details": [
+            "Nécessité examen complet [oui]",
+            "Recherche prolapsus [indispensable]",
+            "Classification POP-Q [si prolapsus]",
+            "Résidu post-mictionnel [à mesurer]",
+            "Orientation spécialiste [si non fait]"
+          ],
+          "binaryOnly": true,
+          "patientComment": "Examen gynécologique complet nécessaire"
+        },
+        {
+          "id": "e6",
+          "text": "Examen neurologique périnéal",
+          "details": [
+            "Sensibilité périnéale [normale]",
+            "Réflexe bulbo-caverneux [à tester]",
+            "Tonus anal [à évaluer]",
+            "Réflexes ostéotendineux MI [normaux]",
+            "Force musculaire MI [5/5]",
+            "Troubles de la marche [non]"
+          ],
+          "patientComment": "Pas de déficit neurologique",
+          "scoringRule": "≥4 éléments = 2 pts"
+        },
+        {
+          "id": "e7",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "binaryOnly": false,
+          "details": [
+            "Examen uro-gynécologique ciblé et méthodique"
+          ],
+          "scoringRule": "Examen excellent = 2 pts, correct = 1 pt, insuffisant = 0 pt"
+        }
+      ]
+    },
+    "management": {
+      "title": "Prise en charge",
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic principal",
+          "patientComment": "Incontinence urinaire d'effort prédominante avec composante mixte possible",
+          "scoringRule": "Diagnostic précis = 2 pts"
+        },
+        {
+          "id": "m2",
+          "text": "Diagnostics différentiels complets",
+          "ddSection": {
+            "categories": [
+              {
+                "name": "Incontinence d'effort",
+                "items": [
+                  "Hypermobilité urétrale post-hystérectomie",
+                  "Insuffisance sphinctérienne intrinsèque",
+                  "Déficit du support pelvien",
+                  "Carence œstrogénique"
+                ]
+              },
+              {
+                "name": "Composante d'urgence",
+                "items": [
+                  "Vessie hyperactive idiopathique",
+                  "Vessie diabétique",
+                  "Instabilité détrusorienne",
+                  "Syndrome d'hyperactivité vésicale"
+                ]
+              },
+              {
+                "name": "Causes complexes",
+                "items": [
+                  "Incontinence mixte (effort + urgence)",
+                  "Incontinence par regorgement",
+                  "Fistule vésico-vaginale tardive",
+                  "Vessie neurogène diabétique"
+                ]
+              }
+            ]
+          },
+          "scoringRule": "≥8 diagnostics organisés = 2 pts, 5-7 = 1 pt"
+        },
+        {
+          "id": "m3",
+          "text": "Examens complémentaires adaptés",
+          "details": [
+            "Calendrier mictionnel 3 jours (obligatoire)",
+            "ECBU + bandelette urinaire",
+            "Résidu post-mictionnel échographique",
+            "HbA1c (contrôle diabète)",
+            "Créatinine + DFG",
+            "Questionnaire qualité de vie (ICIQ-SF)",
+            "Pad-test 1h si quantification nécessaire",
+            "Examen gynécologique complet"
+          ],
+          "patientComment": "Bilan de première intention avant traitement",
+          "scoringRule": "≥6 examens = 2 pts, 4-5 = 1 pt"
+        },
+        {
+          "id": "m4",
+          "text": "Examens de deuxième intention",
+          "details": [
+            "Bilan urodynamique si échec conservateur",
+            "Cystomanométrie + débitmétrie",
+            "Profilométrie urétrale si chirurgie",
+            "Cystoscopie si hématurie",
+            "IRM pelvienne si prolapsus complexe"
+          ],
+          "patientComment": "Réserver aux échecs ou cas complexes"
+        },
+        {
+          "id": "m5",
+          "text": "Mesures hygiéno-diététiques prioritaires",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Modifications du mode de vie",
+                "content": "• Perte de poids (objectif -10%, IMC < 25)\n• Arrêt tabac impératif (toux chronique)\n• Régulation hydrique (1.5L/jour, éviter le soir)\n• Réduction café/thé (max 2/jour)\n• Éviter boissons gazeuses et alcool\n• Traiter constipation si présente\n• Éviter efforts de poussée"
+              },
+              {
+                "title": "Rééducation périnéale spécialisée",
+                "content": "• Kinésithérapie périnéale par professionnel formé\n• 15-20 séances minimum\n• Exercices de Kegel supervisés\n• Biofeedback instrumental\n• Électrostimulation fonctionnelle\n• Cônes vaginaux progressifs\n• Exercices à domicile quotidiens"
+              },
+              {
+                "title": "Traitement hormonal local",
+                "content": "• Œstrogènes vaginaux (ovules, crème)\n• Estriol 0.5mg 2×/semaine\n• Améliore trophicité et continence\n• Peu de contre-indications\n• Durée prolongée possible"
+              }
+            ]
+          },
+          "scoringRule": "Plan thérapeutique complet = 2 pts"
+        },
+        {
+          "id": "m6",
+          "text": "Options médicamenteuses",
+          "details": [
+            "Duloxétine 40-80mg/j si échec rééducation",
+            "Non remboursée en Suisse",
+            "Effets secondaires fréquents",
+            "Anticholinergiques si urgences prédominantes",
+            "Mirabegron si intolérance",
+            "Association possible"
+          ],
+          "patientComment": "Médicaments en 2e intention seulement"
+        },
+        {
+          "id": "m7",
+          "text": "Options chirurgicales",
+          "details": [
+            "Bandelette sous-urétrale (TVT/TOT)",
+            "Taux de succès 80-90%",
+            "Mini-invasif, ambulatoire possible",
+            "Colposuspension si échec",
+            "Agents de comblement péri-urétraux",
+            "Sphincter artificiel (dernier recours)"
+          ],
+          "patientComment": "Si échec traitement conservateur 6 mois"
+        },
+        {
+          "id": "m8",
+          "text": "Plan de suivi structuré",
+          "details": [
+            "Contrôle à 3 mois avec calendrier",
+            "Évaluation progrès rééducation",
+            "Ajustement traitement hormonal",
+            "Orientation urologie/gynécologie si échec",
+            "Questionnaire qualité de vie",
+            "Support psychologique si besoin"
+          ],
+          "patientComment": "Suivi rapproché pour optimiser résultats",
+          "scoringRule": "≥4 éléments de suivi = 2 pts"
+        },
+        {
+          "id": "m9",
+          "text": "Éducation et conseils pratiques",
+          "details": [
+            "Protections adaptées temporaires",
+            "Mictions programmées",
+            "Position mictionnelle correcte",
+            "Éviter rétention prolongée",
+            "Gestion urgences (distraction)",
+            "Vêtements pratiques",
+            "Carte toilettes urgentes"
+          ],
+          "patientComment": "Améliorer qualité de vie immédiate"
+        },
+        {
+          "id": "m10",
+          "text": "Évaluation globale de la prise en charge",
+          "binaryOnly": false,
+          "details": [
+            "PEC graduée et evidence-based de l'incontinence"
+          ],
+          "scoringRule": "PEC excellente = 2 pts, correcte = 1 pt, insuffisante = 0 pt"
+        }
+      ]
+    }
+  }
+}

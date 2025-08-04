@@ -1,0 +1,388 @@
+{
+  "title": "Perte de vision",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "M. Müller, 78 ans, se présente pour des problèmes de vision qu'il a remarqués depuis quelques mois."
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction et tâche",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Question d'entrée ouverte",
+          "binaryOnly": true,
+          "details": [
+            "Qu'est-ce qui vous amène aujourd'hui ? [J'ai remarqué que je vois de plus en plus mal]"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Caractérisation de la baisse de vision",
+          "binaryOnly": false,
+          "details": [
+            "Apparition [progressive sur quelques mois]",
+            "Évolution [aggravation progressive]",
+            "Unilatérale ou bilatérale [bilatérale]",
+            "Prédominance vision de loin ou de près [surtout de loin]"
+          ],
+          "scoringRule": "≥3 caractéristiques = 2 points, 2 caractéristiques = 1 point"
+        },
+        {
+          "id": "a4",
+          "text": "Symptômes visuels associés",
+          "binaryOnly": false,
+          "details": [
+            "Photosensibilité [oui, doit porter des lunettes de soleil plus souvent car ébloui]",
+            "Amélioration paradoxale vision de près [oui, impression soudaine de mieux voir de près]",
+            "Vision des couleurs [rien de particulier remarqué]",
+            "Halos lumineux [parfois autour des lumières]",
+            "Vision double [non]",
+            "Vision trouble/voilée [oui, comme à travers un brouillard]"
+          ],
+          "scoringRule": "≥4 symptômes recherchés = 2 points, 2-3 symptômes = 1 point"
+        },
+        {
+          "id": "a5",
+          "text": "Symptômes oculaires associés",
+          "binaryOnly": false,
+          "details": [
+            "Douleurs oculaires [non]",
+            "Rougeur oculaire [non]",
+            "Larmoiement [parfois]",
+            "Sécrétions [non]",
+            "Sensation de corps étranger [non]"
+          ],
+          "scoringRule": "≥4 symptômes recherchés = 2 points, 2-3 symptômes = 1 point"
+        },
+        {
+          "id": "a6",
+          "text": "Symptômes généraux et drapeaux rouges",
+          "binaryOnly": false,
+          "details": [
+            "Céphalées [non]",
+            "Claudication de la mâchoire [non]",
+            "Douleurs temporales [non]",
+            "Symptômes B (fièvre, sueurs nocturnes, perte de poids) [non]"
+          ],
+          "scoringRule": "≥3 symptômes RED FLAGS recherchés = 2 points"
+        },
+        {
+          "id": "a7",
+          "text": "Facteurs de risque cardiovasculaire",
+          "binaryOnly": false,
+          "details": [
+            "Hypertension artérielle [oui, traitée]",
+            "Diabète [non]",
+            "Dyslipidémie [oui]",
+            "Tabagisme [ancien fumeur, arrêt il y a 10 ans]",
+            "Consommation d'alcool [occasionnelle]"
+          ],
+          "scoringRule": "≥4 facteurs explorés = 2 points, 2-3 facteurs = 1 point"
+        },
+        {
+          "id": "a8",
+          "text": "Anamnèse médicamenteuse",
+          "binaryOnly": false,
+          "details": [
+            "Corticothérapie systémique [non]",
+            "Collyre myotique [non]",
+            "Autres médicaments [traitement pour l'hypertension et le cholestérol]"
+          ],
+          "scoringRule": "≥2 catégories médicamenteuses explorées = 2 points"
+        },
+        {
+          "id": "a9",
+          "text": "Antécédents ophtalmologiques",
+          "binaryOnly": false,
+          "details": [
+            "Chirurgie oculaire antérieure [non]",
+            "Traumatisme oculaire [non]",
+            "Glaucome [non]",
+            "Myopie/hypermétropie [presbytie, porte des lunettes pour lire]"
+          ],
+          "scoringRule": "≥3 antécédents explorés = 2 points, 2 antécédents = 1 point"
+        },
+        {
+          "id": "a10",
+          "text": "Antécédents médicaux personnels",
+          "binaryOnly": false,
+          "details": [
+            "Diabète [non]",
+            "Pathologies systémiques [hypertension, dyslipidémie]",
+            "Chirurgies antérieures [appendicectomie dans l'enfance]"
+          ]
+        },
+        {
+          "id": "a11",
+          "text": "Antécédents familiaux",
+          "binaryOnly": false,
+          "details": [
+            "Pathologies oculaires familiales [père avait une dégénérescence maculaire]",
+            "Inquiétude du patient [a peur d'avoir la même chose que son père]",
+            "Cataracte familiale [mère opérée de cataracte à 75 ans]"
+          ],
+          "scoringRule": "≥2 antécédents familiaux explorés = 2 points"
+        },
+        {
+          "id": "a12",
+          "text": "Allergies",
+          "binaryOnly": false,
+          "details": [
+            "Allergies médicamenteuses [non]",
+            "Autres allergies [non]"
+          ]
+        },
+        {
+          "id": "a13",
+          "text": "Anamnèse sociale et impact fonctionnel",
+          "binaryOnly": false,
+          "patientComment": "Vit seul dans son appartement, retraité",
+          "details": [
+            "Situation de vie [vit seul]",
+            "Autonomie [autonome mais difficultés croissantes]",
+            "Activités quotidiennes [difficultés pour lire, regarder la télévision]",
+            "Conduite automobile [évite de conduire la nuit]"
+          ],
+          "scoringRule": "≥3 aspects fonctionnels explorés = 2 points, 2 aspects = 1 point"
+        },
+        {
+          "id": "a14",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "binaryOnly": false,
+          "details": [
+            "Anamnèse ciblée et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Acuité visuelle",
+          "binaryOnly": false,
+          "details": [
+            "Vision de loin avec correction [diminuée bilatéralement, 0.4 OD, 0.5 OG]",
+            "Vision de près avec correction [relativement préservée]",
+            "Test du trou sténopéique [amélioration partielle]"
+          ],
+          "scoringRule": "≥2 tests d'acuité = 2 points"
+        },
+        {
+          "id": "e2",
+          "text": "Examen des annexes et segment antérieur",
+          "binaryOnly": false,
+          "details": [
+            "Paupières [normales]",
+            "Conjonctive [calme]",
+            "Cornée [transparente]",
+            "Chambre antérieure [profondeur normale]"
+          ],
+          "scoringRule": "≥3 structures examinées = 2 points, 2 structures = 1 point"
+        },
+        {
+          "id": "e3",
+          "text": "Examen à la lampe à fente",
+          "binaryOnly": false,
+          "details": [
+            "Cristallin [opacification jaunâtre diffuse visible]",
+            "Type d'opacité [nucléaire prédominante]",
+            "Densité [modérée à sévère]"
+          ],
+          "scoringRule": "≥2 caractéristiques de l'opacité = 2 points"
+        },
+        {
+          "id": "e4",
+          "text": "Test du reflet rouge rétinien",
+          "binaryOnly": false,
+          "details": [
+            "Reflet rouge [diminué, opacification apparaît plus foncée]",
+            "Symétrie [atteinte bilatérale]"
+          ],
+          "scoringRule": "Test réalisé et interprété = 2 points"
+        },
+        {
+          "id": "e5",
+          "text": "Pupilles et réflexes pupillaires",
+          "binaryOnly": false,
+          "details": [
+            "Taille et symétrie [isocorie]",
+            "Réflexe photomoteur direct [présent bilatéralement]",
+            "Réflexe consensuel [présent]",
+            "Défaut pupillaire afférent relatif [absent]"
+          ],
+          "scoringRule": "≥3 réflexes testés = 2 points, 2 réflexes = 1 point"
+        },
+        {
+          "id": "e6",
+          "text": "Tonus oculaire",
+          "binaryOnly": false,
+          "details": [
+            "Palpation bidigitale [normal]",
+            "Mesure si disponible [non réalisée en cabinet]"
+          ]
+        },
+        {
+          "id": "e7",
+          "text": "Fond d'œil",
+          "binaryOnly": false,
+          "details": [
+            "Visualisation [difficile en raison de l'opacité cristallinienne]",
+            "Ce qui est visible [papille et vaisseaux partiellement visibles]",
+            "Exclusion de pathologie rétinienne évidente [dans la mesure du possible]"
+          ],
+          "scoringRule": "Tentative d'examen avec interprétation = 2 points"
+        },
+        {
+          "id": "e8",
+          "text": "Examen neurologique de base",
+          "binaryOnly": false,
+          "details": [
+            "Champs visuels par confrontation [normaux dans les limites de l'examen]",
+            "Oculomotricité [normale]",
+            "Nerfs crâniens [normaux]"
+          ],
+          "scoringRule": "≥2 tests neurologiques = 2 points"
+        },
+        {
+          "id": "e9",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "binaryOnly": false,
+          "details": [
+            "Examen clinique ciblé et bien conduit"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic principal",
+          "binaryOnly": false,
+          "details": [
+            "Cataracte sénile bilatérale",
+            "Type nucléaire prédominant"
+          ]
+        },
+        {
+          "id": "m2",
+          "text": "Diagnostics différentiels",
+          "binaryOnly": false,
+          "ddSection": {
+            "categories": [
+              {
+                "name": "Autres causes d'opacité des milieux",
+                "items": [
+                  "Cataracte (sénile, diabétique, traumatique, cortisonique)",
+                  "Opacités cornéennes",
+                  "Hémorragie du vitré"
+                ]
+              },
+              {
+                "name": "Pathologies rétiniennes",
+                "items": [
+                  "Dégénérescence maculaire liée à l'âge (DMLA)",
+                  "Rétinopathie diabétique",
+                  "Décollement de rétine"
+                ]
+              },
+              {
+                "name": "Neuropathies optiques",
+                "items": [
+                  "Glaucome chronique",
+                  "Neuropathie optique ischémique",
+                  "Névrite optique"
+                ]
+              },
+              {
+                "name": "Urgences à exclure",
+                "items": [
+                  "Glaucome aigu par fermeture de l'angle",
+                  "Artérite temporale (Horton)",
+                  "Occlusion vasculaire rétinienne"
+                ]
+              }
+            ]
+          },
+          "scoringRule": "≥3 catégories avec diagnostics = 2 points, 2 catégories = 1 point"
+        },
+        {
+          "id": "m3",
+          "text": "Examens complémentaires",
+          "binaryOnly": false,
+          "details": [
+            "Biométrie oculaire (si chirurgie envisagée)",
+            "Échographie oculaire mode B (si fond d'œil non visible)",
+            "OCT maculaire (pour exclure pathologie maculaire associée)",
+            "Glycémie (dépistage diabète)",
+            "Bilan préopératoire si chirurgie planifiée"
+          ],
+          "scoringRule": "≥4 examens pertinents = 2 points, 2-3 examens = 1 point"
+        },
+        {
+          "id": "m4",
+          "text": "Traitement",
+          "binaryOnly": false,
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Traitement conservateur",
+                "content": "• Aucun traitement médical efficace pour la cataracte\n• Adaptation de la correction optique temporaire\n• Amélioration de l'éclairage\n• Lunettes de soleil pour la photophobie"
+              },
+              {
+                "title": "Traitement chirurgical",
+                "content": "• Indication opératoire posée (gêne fonctionnelle significative)\n• Phacoémulsification avec implant intraoculaire\n• Information sur les risques et bénéfices\n• Planification de la chirurgie (œil le plus atteint d'abord)"
+              }
+            ]
+          },
+          "scoringRule": "≥2 modalités thérapeutiques = 2 points"
+        },
+        {
+          "id": "m5",
+          "text": "Information du patient",
+          "binaryOnly": false,
+          "details": [
+            "Explication de la nature de la cataracte",
+            "Rassurer : pas la même pathologie que son père (DMLA)",
+            "Excellent pronostic avec la chirurgie (>95% de succès)",
+            "Risques chirurgicaux faibles mais existants",
+            "Récupération visuelle habituelle en quelques semaines"
+          ],
+          "scoringRule": "≥4 éléments informatifs = 2 points, 2-3 éléments = 1 point"
+        },
+        {
+          "id": "m6",
+          "text": "Suivi et orientation",
+          "binaryOnly": false,
+          "details": [
+            "Référence en ophtalmologie pour évaluation chirurgicale",
+            "Suivi régulier en attendant la chirurgie",
+            "Surveillance de la progression",
+            "Contrôle postopératoire après chirurgie"
+          ],
+          "scoringRule": "≥3 éléments de suivi = 2 points, 2 éléments = 1 point"
+        },
+        {
+          "id": "m7",
+          "text": "Évaluation globale de la qualité de la prise en charge",
+          "binaryOnly": false,
+          "details": [
+            "Prise en charge cohérente et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    }
+  }
+}

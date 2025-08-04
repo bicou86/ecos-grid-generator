@@ -1,0 +1,417 @@
+{
+  "title": "Allaitement - Pédiatrie",
+  "context": {
+    "setting": "Cabinet de pédiatrie",
+    "patient": "Mère avec son fils de 2 mois consultant pour faiblesse de prise alimentaire"
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction et objectif",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Question ouverte d'introduction → Symptôme principal (faiblesse de prise alimentaire)",
+          "binaryOnly": true,
+          "patientComment": "Il ne veut tout simplement pas boire et il est si maigre !"
+        },
+        {
+          "id": "a3",
+          "text": "Début et évolution des symptômes",
+          "details": [
+            "Depuis quand [déjà depuis le début, peu de prise]",
+            "Évolution temporelle [toujours à peu près pareil]"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Mode d'alimentation",
+          "patientComment": "Allaitement maternel"
+        },
+        {
+          "id": "a5",
+          "text": "Quantités d'alimentation",
+          "details": [
+            "Quantité par repas [100ml]",
+            "Quantité totale par jour [450ml]",
+            "Nombre de repas par jour [j'essaie toujours à nouveau]"
+          ]
+        },
+        {
+          "id": "a6",
+          "text": "Durée des repas",
+          "patientComment": "Environ 10 min, il a si vite assez !"
+        },
+        {
+          "id": "a7",
+          "text": "Comportement alimentaire de l'enfant",
+          "details": [
+            "Demande de nourriture [oui]",
+            "Comportement lors de la prise [très goulûment !]",
+            "Réaction pendant l'allaitement [crie parfois quand il n'en veut plus]"
+          ]
+        },
+        {
+          "id": "a8",
+          "text": "Symptômes digestifs",
+          "details": [
+            "Rots [oui, assez fréquemment]",
+            "Vomissements [non]",
+            "Selles [normales]"
+          ]
+        },
+        {
+          "id": "a9",
+          "text": "Douleurs et inconfort",
+          "patientComment": "Je ne crois pas, pleure rarement"
+        },
+        {
+          "id": "a10",
+          "text": "Symptômes généraux",
+          "details": [
+            "Fièvre, infections [non]",
+            "État général de l'enfant [à évaluer]"
+          ]
+        },
+        {
+          "id": "a11",
+          "text": "Facteurs influençants",
+          "patientComment": "Non, toujours à peu près pareil"
+        },
+        {
+          "id": "a12",
+          "text": "Conditions d'allaitement maternelles",
+          "details": [
+            "Temps suffisant pour allaiter [souvent un peu stressée]",
+            "Technique d'allaitement [on ne peut pas faire grand-chose de mal là-dedans, n'est-ce pas ?!]",
+            "Production de lait suffisante [oui]"
+          ]
+        },
+        {
+          "id": "a13",
+          "text": "Problèmes maternels liés à l'allaitement",
+          "details": [
+            "Pathologie des mamelons [non]",
+            "Douleurs maternelles lors de l'allaitement [non]"
+          ]
+        },
+        {
+          "id": "a14",
+          "text": "Données périnatales",
+          "details": [
+            "Naissance à terme [oui, 38+3 SA]",
+            "Poids de naissance [2800g = p10]",
+            "Taille et périmètre crânien à la naissance [T: 51cm = p25-p50, PC: 35,2cm = p50]"
+          ]
+        },
+        {
+          "id": "a15",
+          "text": "Croissance actuelle",
+          "details": [
+            "Poids actuel [4,5 kg = p10]",
+            "Taille et périmètre crânien actuels [je ne sais pas]"
+          ]
+        },
+        {
+          "id": "a16",
+          "text": "Anamnèse de grossesse",
+          "details": [
+            "Déroulement de la grossesse [normal]",
+            "Maladies, consommation de drogues pendant la grossesse [non]"
+          ]
+        },
+        {
+          "id": "a17",
+          "text": "Vaccinations et préventions",
+          "patientComment": "La première vaccination est prévue"
+        },
+        {
+          "id": "a18",
+          "text": "Contexte familial et social",
+          "details": [
+            "Père à la maison [oui]",
+            "Relations familiales [famille heureuse]",
+            "Fratrie [fille de 2 ans, buvait plus et n'était pas si mince que le fils]"
+          ]
+        },
+        {
+          "id": "a19",
+          "text": "Antécédents personnels de l'enfant",
+          "details": [
+            "Antécédents médicaux [sans particularité]",
+            "Médicaments [non]"
+          ]
+        },
+        {
+          "id": "a20",
+          "text": "Antécédents familiaux",
+          "patientComment": "Aucune maladie connue"
+        },
+        {
+          "id": "a21",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "binaryOnly": false,
+          "details": [
+            "Anamnèse générale ciblée et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Examen général de l'enfant",
+          "details": [
+            "Inspection de la couleur de la peau [rosée]",
+            "État général et réactivité [à évaluer]"
+          ]
+        },
+        {
+          "id": "e2",
+          "text": "Évaluation de l'hydratation et de l'état nutritionnel",
+          "details": [
+            "Turgor cutané [normal]",
+            "Temps de recoloration capillaire [normal]",
+            "Tonus musculaire [normal]"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Examen de la tête",
+          "details": [
+            "Fontanelles [normales]",
+            "Périmètre crânien [à mesurer]"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Réflexes néonataux",
+          "details": [
+            "Réflexe de préhension [présent]",
+            "Réflexe de succion [présent]"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Examen de la sphère ORL",
+          "details": [
+            "Inspection bouche [normal]",
+            "Inspection pharynx [normal]",
+            "Inspection nez [normal]"
+          ]
+        },
+        {
+          "id": "e6",
+          "text": "Examen abdominal",
+          "details": [
+            "Inspection abdominale",
+            "Palpation abdominale",
+            "Recherche d'organomégalie"
+          ],
+          "patientComment": "Normal"
+        },
+        {
+          "id": "e7",
+          "text": "Examen cardiopulmonaire",
+          "details": [
+            "Auscultation cardiaque [normale]",
+            "Auscultation pulmonaire [normale]",
+            "Recherche de souffle [à effectuer]"
+          ]
+        },
+        {
+          "id": "e8",
+          "text": "Mesures anthropométriques et courbes de croissance",
+          "details": [
+            "Poids et report sur courbe de percentiles",
+            "Taille et report sur courbe",
+            "Périmètre crânien et report sur courbe"
+          ],
+          "patientComment": "Poids sur p10-25, sinon p25-50"
+        },
+        {
+          "id": "e9",
+          "text": "Observation d'une tétée (si possible)",
+          "details": [
+            "Position de l'enfant",
+            "Prise du mamelon",
+            "Efficacité de la succion",
+            "Comportement pendant la tétée"
+          ]
+        },
+        {
+          "id": "e10",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "binaryOnly": false,
+          "details": [
+            "Examen clinique ciblé et bien conduit"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic principal",
+          "details": [
+            "Difficultés d'allaitement avec prise alimentaire insuffisante",
+            "Possible satiété rapide due à l'aérophagie lors de prise goulue"
+          ]
+        },
+        {
+          "id": "m2",
+          "text": "Diagnostics différentiels (au moins 2-3 diagnostics appropriés)",
+          "binaryOnly": false,
+          "details": [
+            "Stress maternel lors de l'allaitement",
+            "Technique d'allaitement incorrecte",
+            "Pathologie du tractus gastro-intestinal",
+            "Maladie hématologique",
+            "Insuffisance de production lactée"
+          ],
+          "scoringRule": "Au moins deux = oui, un = ±, aucun = non",
+          "ddSection": {
+            "title": "Diagnostics différentiels des difficultés d'allaitement",
+            "categories": [
+              {
+                "name": "Causes maternelles :",
+                "items": [
+                  {
+                    "text": "Insuffisance de production lactée",
+                    "test": "→ Évaluation des montées de lait, pesées avant/après tétées"
+                  },
+                  {
+                    "text": "Technique d'allaitement inadéquate",
+                    "test": "→ Observation d'une tétée, conseil en lactation"
+                  },
+                  {
+                    "text": "Stress maternel, anxiété",
+                    "test": "→ Évaluation psychosociale, soutien"
+                  },
+                  {
+                    "text": "Problèmes anatomiques (mamelons invaginés)",
+                    "test": "→ Examen des seins"
+                  }
+                ]
+              },
+              {
+                "name": "Causes liées à l'enfant :",
+                "items": [
+                  {
+                    "text": "Prématurité, hypotrophie",
+                    "test": "→ Courbes de croissance, adaptation de l'alimentation"
+                  },
+                  {
+                    "text": "Pathologie digestive (reflux, sténose du pylore)",
+                    "test": "→ Échographie abdominale, transit baryté"
+                  },
+                  {
+                    "text": "Cardiopathie congénitale",
+                    "test": "→ Échocardiographie, auscultation cardiaque"
+                  },
+                  {
+                    "text": "Troubles de la déglutition",
+                    "test": "→ Évaluation ORL, observation de la succion"
+                  }
+                ]
+              },
+              {
+                "name": "Causes infectieuses :",
+                "items": [
+                  {
+                    "text": "Infection néonatale",
+                    "test": "→ Hémogramme, CRP, hémocultures"
+                  },
+                  {
+                    "text": "Muguet buccal",
+                    "test": "→ Inspection de la cavité buccale"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m3",
+          "text": "Examens complémentaires",
+          "details": [
+            "Hémogramme complet",
+            "Échographie abdominale (si suspicion de pathologie digestive)",
+            "Surveillance rapprochée de l'évolution des percentiles",
+            "Pesées avant/après tétées"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Prise en charge immédiate",
+          "binaryOnly": false,
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Conseil et soutien à l'allaitement :",
+                "content": "• Consultation en lactation spécialisée\n• Amélioration de la technique d'allaitement\n• Positions d'allaitement optimales\n• Gestion de l'aérophagie (pauses, rot)"
+              },
+              {
+                "title": "Soutien maternel :",
+                "content": "• Gestion du stress maternel\n• Soutien psychologique si nécessaire\n• Information et rassurance\n• Création d'un environnement calme pour l'allaitement"
+              },
+              {
+                "title": "Surveillance :",
+                "content": "• Contrôles de poids rapprochés\n• Surveillance de l'hydratation\n• Évaluation de l'efficacité des mesures prises"
+              }
+            ]
+          }
+        },
+        {
+          "id": "m5",
+          "text": "Suivi et orientation",
+          "details": [
+            "Contrôle du poids dans 48-72h",
+            "Réévaluation de l'allaitement dans 1 semaine",
+            "Consultation spécialisée si pas d'amélioration",
+            "Soutien parental continu"
+          ]
+        },
+        {
+          "id": "m6",
+          "text": "Information et éducation parentale",
+          "details": [
+            "Explication des besoins nutritionnels du nourrisson",
+            "Signes d'alarme à surveiller",
+            "Importance du suivi de croissance",
+            "Ressources d'aide à l'allaitement"
+          ]
+        },
+        {
+          "id": "m7",
+          "text": "Alternatives si échec de l'allaitement",
+          "details": [
+            "Allaitement mixte comme étape intermédiaire",
+            "Choix du lait artificiel adapté",
+            "Modalités de préparation des biberons",
+            "Maintien du lien mère-enfant"
+          ]
+        },
+        {
+          "id": "m8",
+          "text": "Évaluation globale de la qualité de la prise en charge",
+          "binaryOnly": false,
+          "details": [
+            "Prise en charge générale cohérente et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    }
+  }
+}

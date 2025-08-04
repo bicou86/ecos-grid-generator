@@ -1,0 +1,698 @@
+{
+  "title": "Douleur abdominale I",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Mme Hebel, 73 ans, se présente chez le médecin généraliste pour douleurs abdominales"
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction et tâche",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Question ouverte d'introduction → Symptôme principal",
+          "patientComment": "Douleurs abdominales (mal au ventre)",
+          "binaryOnly": true
+        },
+        {
+          "id": "a3",
+          "text": "RED FLAGS - Abdomen aigu et urgences",
+          "scoringRule": "≥6 red flags explorés = 2 pts, 4-5 = 1 pt, <4 = 0 pt",
+          "binaryOnly": false,
+          "redflagsSection": [
+            {
+              "text": "Douleur brutale en coup de poignard [non]"
+            },
+            {
+              "text": "Défense abdominale [non]"
+            },
+            {
+              "text": "Contracture abdominale [non]"
+            },
+            {
+              "text": "Fièvre élevée >38.5°C [à vérifier]"
+            },
+            {
+              "text": "Vomissements incoercibles [non]"
+            },
+            {
+              "text": "Arrêt des matières et des gaz [non]"
+            },
+            {
+              "text": "Choc/hypotension [à évaluer]"
+            },
+            {
+              "text": "Hémorragie digestive (méléna, rectorragies) [non visible]"
+            }
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Anamnèse SOCRATES - Site et localisation",
+          "details": [
+            "Localisation précise [fosse iliaque gauche]",
+            "Douleur diffuse vs localisée [localisée]",
+            "Quadrant(s) touché(s) [quadrant inférieur gauche]",
+            "Migration de la douleur [non]",
+            "Point de McBurney (appendicite) [non applicable]"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a5",
+          "text": "Anamnèse SOCRATES - Onset et évolution",
+          "details": [
+            "Début précis [depuis 2 jours]",
+            "Installation brutale vs progressive [relativement soudain]",
+            "Heure d'apparition [à préciser]",
+            "Évolution depuis le début [s'aggravant progressivement]",
+            "Douleur continue vs intermittente [constante]"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a6",
+          "text": "Anamnèse SOCRATES - Character et qualité",
+          "details": [
+            "Type de douleur [piquante, en coup de poignard]",
+            "Crampes vs douleur continue [continue]",
+            "Brûlures vs douleur sourde",
+            "Coliques vs douleur fixe [fixe]"
+          ],
+          "scoringRule": "≥3 descripteurs = 2 pts, 2 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a7",
+          "text": "Anamnèse SOCRATES - Radiation",
+          "patientComment": "Pas d'irradiation rapportée",
+          "binaryOnly": true
+        },
+        {
+          "id": "a8",
+          "text": "Anamnèse SOCRATES - Associated symptoms",
+          "details": [
+            "Fièvre/frissons [à vérifier]",
+            "Nausées [oui]",
+            "Vomissements [non mentionnés]",
+            "Diarrhée [oui]",
+            "Constipation [non]",
+            "Flatulences [oui]",
+            "Rectorragies [non mentionnées]",
+            "Ténesme [à explorer]"
+          ],
+          "scoringRule": "≥6 symptômes explorés = 2 pts, 3-5 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a9",
+          "text": "Anamnèse SOCRATES - Time course",
+          "details": [
+            "Douleur permanente [constante]",
+            "Épisodes récurrents [à explorer]",
+            "Durée des crises précédentes",
+            "Pattern habituel vs nouveau [nouveau]"
+          ],
+          "scoringRule": "≥3 éléments = 2 pts, 2 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a10",
+          "text": "Anamnèse SOCRATES - Exacerbating/Relieving",
+          "details": [
+            "Facteurs aggravants [aucun identifié]",
+            "Relation avec alimentation [pas de changement]",
+            "Position antalgique [non mentionnée]",
+            "Facteurs de soulagement [aucune amélioration]",
+            "Effet des antalgiques [à tester]",
+            "Amélioration au repos [à explorer]"
+          ],
+          "scoringRule": "≥4 facteurs = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a11",
+          "text": "Anamnèse SOCRATES - Severity",
+          "patientComment": "6/10 sur l'échelle EVA",
+          "binaryOnly": true
+        },
+        {
+          "id": "a12",
+          "text": "Transit intestinal détaillé",
+          "details": [
+            "Fréquence selles normales [à préciser]",
+            "Modification récente transit [diarrhée]",
+            "Consistance selles [à décrire]",
+            "Présence sang/glaires [non mentionné]",
+            "Ténesme/faux besoins [à explorer]",
+            "Dernière selle normale [à préciser]"
+          ],
+          "scoringRule": "≥5 éléments = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a13",
+          "text": "Symptômes urogénitaux",
+          "details": [
+            "Dysurie/pollakiurie [non]",
+            "Hématurie [non]",
+            "Douleurs lombaires [à explorer]",
+            "Pertes vaginales [non applicables]",
+            "Métrorragies post-ménopausiques [non]",
+            "Symptômes urinaires d'irritation [non]"
+          ],
+          "scoringRule": "≥5 symptômes explorés = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a14",
+          "text": "Antécédents digestifs pertinents",
+          "details": [
+            "Coloscopie précédente [il y a 5 ans - normale]",
+            "Diverticulose connue [non mentionnée]",
+            "Épisodes similaires antérieurs [à explorer]",
+            "MICI connues [non]",
+            "Chirurgie abdominale [non]",
+            "Cancer digestif/familial [négatif familial]",
+            "Constipation chronique [à explorer]"
+          ],
+          "scoringRule": "≥6 antécédents = 2 pts, 3-5 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a15",
+          "text": "Facteurs de risque diverticulite",
+          "details": [
+            "Âge >60 ans [73 ans]",
+            "Régime pauvre en fibres [non exploré]",
+            "Constipation chronique [à explorer]",
+            "Obésité [à évaluer]",
+            "Sédentarité [non mentionnée]",
+            "Tabagisme [non]",
+            "AINS réguliers [à vérifier]",
+            "Corticoïdes [à vérifier]"
+          ],
+          "scoringRule": "≥6 facteurs explorés = 2 pts, 3-5 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a16",
+          "text": "Médicaments et allergies",
+          "details": [
+            "Médicaments actuels [Valsartan HTA]",
+            "AINS récents [à vérifier - favorisent perforation]",
+            "Antibiotiques récents [à explorer]",
+            "Laxatifs/anti-diarrhéiques [à vérifier]",
+            "Allergies médicamenteuses [aucune]",
+            "Automédication [non mentionnée]"
+          ],
+          "scoringRule": "≥5 éléments = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a17",
+          "text": "Antécédents gynéco-obstétricaux",
+          "details": [
+            "Parité [2 enfants nés normalement]",
+            "Ménopause [oui - 73 ans]",
+            "THS [à explorer]",
+            "Hystérectomie [non mentionnée]",
+            "Pathologie annexielle connue [non]"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a18",
+          "text": "Comorbidités et terrain",
+          "details": [
+            "Hypertension artérielle [oui]",
+            "Diabète [à explorer]",
+            "Immunosuppression [à vérifier]",
+            "Insuffisance rénale [à évaluer]",
+            "Cardiopathie [à explorer]",
+            "Autres pathologies chroniques [à rechercher]"
+          ],
+          "scoringRule": "≥5 pathologies = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a19",
+          "text": "Habitudes de vie",
+          "details": [
+            "Tabagisme [non]",
+            "Alcool [1 verre vin/jour]",
+            "Activité physique [non mentionnée]",
+            "Régime alimentaire/fibres [non exploré]",
+            "Hydratation [à évaluer]"
+          ],
+          "scoringRule": "≥4 habitudes = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a20",
+          "text": "Anamnèse familiale ciblée",
+          "details": [
+            "Cancer colorectal familial [négatif]",
+            "MICI familiales [négatif]",
+            "Diverticulose familiale [non mentionnée]",
+            "Autres pathologies digestives [négatives]"
+          ],
+          "scoringRule": "≥3 antécédents = 2 pts, 2 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a21",
+          "text": "Contexte psychosocial",
+          "details": [
+            "Situation familiale [vit avec époux]",
+            "Autonomie [autonome]",
+            "Support social [présent]",
+            "Stress récent [non mentionné]",
+            "Impact sur qualité de vie [à évaluer]"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "a22",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "binaryOnly": false,
+          "details": [
+            "Anamnèse SOCRATES complète",
+            "Recherche systématique red flags",
+            "Exploration facteurs de risque diverticulite",
+            "Anamnèse différentielle exhaustive"
+          ],
+          "scoringRule": "Excellent = 2 pts, satisfaisant = 1 pt, insuffisant = 0 pt"
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Signes vitaux complets et état général",
+          "details": [
+            "TA [à mesurer]",
+            "FC [tachycardie si sepsis]",
+            "Température [crucial - fièvre dans diverticulite]",
+            "FR [tachypnée si sepsis]",
+            "État général [conservé rapporté]",
+            "Position antalgique [non]",
+            "Faciès douloureux [probable]"
+          ],
+          "scoringRule": "≥6 paramètres = 2 pts, 3-5 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e2",
+          "text": "Inspection abdominale systématique",
+          "details": [
+            "Distension abdominale [non]",
+            "Asymétrie [non]",
+            "Cicatrices chirurgicales [absentes]",
+            "Péristaltisme visible [non]",
+            "Circulation collatérale [non]",
+            "Hernie visible [non]",
+            "Masse visible [non]"
+          ],
+          "scoringRule": "≥6 éléments = 2 pts, 3-5 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e3",
+          "text": "Auscultation abdominale",
+          "details": [
+            "Bruits hydroaériques [normaux]",
+            "Qualité des bruits [normaux]",
+            "Fréquence (5-34/min) [normale]",
+            "Souffles vasculaires [non]",
+            "Silence auscultatoire [non]"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e4",
+          "text": "Percussion abdominale",
+          "details": [
+            "Tympanisme généralisé [non]",
+            "Matité déclive [non]",
+            "Douleur à la percussion [fosse iliaque gauche]",
+            "Signe du flot [négatif]",
+            "Percussion hépatique [normale]",
+            "Percussion splénique [normale]"
+          ],
+          "scoringRule": "≥5 éléments = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e5",
+          "text": "Palpation superficielle abdominale",
+          "details": [
+            "Douleur à la pression [fosse iliaque gauche]",
+            "Défense musculaire localisée [non]",
+            "Contracture abdominale [non]",
+            "Hyperesthésie cutanée [à tester]",
+            "Palpation systématique 9 quadrants [complète]"
+          ],
+          "scoringRule": "≥4 éléments = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e6",
+          "text": "Palpation profonde et recherche masses",
+          "details": [
+            "Résistance/masse palpable [résistance quadrant inférieur gauche]",
+            "Palpation côlon sigmoïde [douloureux]",
+            "Masse appendiculaire [non applicable]",
+            "Masse pelvienne [non]",
+            "Hépatomégalie [non]",
+            "Splénomégalie [non]"
+          ],
+          "scoringRule": "≥5 éléments = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e7",
+          "text": "Signes péritonéaux spécifiques",
+          "details": [
+            "Signe de Blumberg (décompression) [non]",
+            "Signe de Murphy [non applicable]",
+            "Signe du psoas [négatif]",
+            "Signe de l'obturateur [négatif]",
+            "Signe de Rovsing [négatif]",
+            "Douleur à la toux [à tester]"
+          ],
+          "scoringRule": "≥5 signes testés = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e8",
+          "text": "Palpation des organes",
+          "details": [
+            "Foie [non palpable - normal]",
+            "Rate [non palpable - normal]",
+            "Reins [non palpables - normal]",
+            "Vessie [non distendue]",
+            "Aorte abdominale [palpation si possible]"
+          ],
+          "scoringRule": "≥4 organes = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e9",
+          "text": "Examen des orifices herniaires",
+          "details": [
+            "Hernies inguinales bilatérales [absentes]",
+            "Hernie crurale [absente]",
+            "Hernie ombilicale [absente]",
+            "Hernie épigastrique [absente]",
+            "Examen debout si possible [pour hernies]"
+          ],
+          "scoringRule": "≥4 orifices = 2 pts, 2-3 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e10",
+          "text": "Toucher rectal obligatoire",
+          "details": [
+            "Tonus sphinctérien [normal]",
+            "Masses rectales [absentes]",
+            "Sang au doigtier [absent]",
+            "Douglas douloureux [non]",
+            "Prostate si homme [non applicable]",
+            "Ampulla recti [normale]"
+          ],
+          "scoringRule": "≥5 éléments = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e11",
+          "text": "Examen gynécologique si indiqué",
+          "details": [
+            "Toucher vaginal [si suspicion annexielle]",
+            "Mobilité utérine douloureuse [à tester]",
+            "Masses annexielles [à rechercher]",
+            "Col utérin [examen si indiqué]"
+          ],
+          "scoringRule": "Si réalisé = 2 pts, si non indiqué = 2 pts, si indiqué non fait = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e12",
+          "text": "Examen général complémentaire",
+          "details": [
+            "Auscultation cardio-pulmonaire [si fièvre]",
+            "Examen cutané [recherche signes sepsis]",
+            "Adénopathies [si suspicion néoplasie]",
+            "Examen neurologique [si confusion/sepsis]"
+          ],
+          "scoringRule": "≥3 systèmes = 2 pts, 2 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "e13",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "binaryOnly": false,
+          "details": [
+            "Examen abdominal systématique et complet",
+            "Recherche active des signes de gravité",
+            "Technique d'examen appropriée",
+            "Toucher rectal réalisé"
+          ],
+          "scoringRule": "Excellent = 2 pts, satisfaisant = 1 pt, insuffisant = 0 pt"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic principal avec classification",
+          "patientComment": "Diverticulite sigmoïdienne non compliquée (probable Hinchey 0-1a)",
+          "binaryOnly": true
+        },
+        {
+          "id": "m2",
+          "text": "Diagnostics différentiels complets et hiérarchisés",
+          "scoringRule": "≥8 DD = 2 pts, 5-7 = 1 pt, <5 = 0 pt",
+          "binaryOnly": false,
+          "ddSection": {
+            "categories": [
+              {
+                "name": "Diagnostics différentiels à considérer",
+                "items": [
+                  "Appendicite (localisation atypique chez âgé)",
+                  "Cancer colorectal (masse, âge, anémie)",
+                  "MICI (Crohn, RCH) - colite inflammatoire",
+                  "Colite ischémique (âge, facteurs vasculaires)",
+                  "Pathologie gynécologique (annexite, kyste tordu)",
+                  "Infection urinaire compliquée/pyélonéphrite",
+                  "Hernie étranglée (inguinale, crurale)",
+                  "Constipation sévère/fécalome",
+                  "Syndrome intestin irritable (si récurrent)",
+                  "Anévrisme aorte abdominale (rupture/fissuration)"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m3",
+          "text": "Examens biologiques urgents",
+          "details": [
+            "NFS avec formule [leucocytose attendue]",
+            "CRP [élevée inflammation]",
+            "PCT si suspicion sepsis [si fièvre élevée]",
+            "Ionogramme, urée, créatinine [fonction rénale]",
+            "Fonction hépatique (ALAT, bilirubine)",
+            "Lipase [si douleur épigastrique]",
+            "Lactates [si sepsis suspecté]"
+          ],
+          "scoringRule": "≥6 examens = 2 pts, 3-5 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m4",
+          "text": "Examens microbiologiques",
+          "details": [
+            "ECBU [exclusion infection urinaire]",
+            "Hémocultures [si fièvre >38.5°C]",
+            "Coproculture [si diarrhée importante]",
+            "Recherche toxines C. difficile [si ATB récents]"
+          ],
+          "scoringRule": "≥3 examens adaptés = 2 pts, 2 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m5",
+          "text": "Imagerie diagnostique",
+          "details": [
+            "CT abdomino-pelvien avec contraste [gold standard]",
+            "Échographie abdominale [première intention possible]",
+            "Radiographie abdominale [si suspicion perforation/occlusion]",
+            "IRM [si CI au produit de contraste]",
+            "Échographie pelvienne [si suspicion gynéco]"
+          ],
+          "scoringRule": "≥3 modalités adaptées = 2 pts, 2 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m6",
+          "text": "Classification et stadification",
+          "details": [
+            "Classification de Hinchey [0: non compliquée, I: abcès <5cm, II: abcès >5cm, III: péritonite purulente, IV: péritonite stercorale]",
+            "Diverticulite simple vs compliquée",
+            "Score de sévérité clinique",
+            "Facteurs pronostiques (âge, comorbidités)"
+          ],
+          "scoringRule": "≥3 éléments = 2 pts, 2 = 1 pt, <2 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m7",
+          "text": "Traitement ambulatoire - Diverticulite simple",
+          "details": [
+            "Antibiothérapie orale 7-10j [amoxicilline-clavulanate 3x1g ou ciprofloxacine 2x500mg + métronidazole 3x500mg]",
+            "Analgésie [paracétamol, éviter AINS]",
+            "Régime liquide clair puis pauvre résidus",
+            "Repos digestif relatif 2-3 jours",
+            "Hydratation orale suffisante",
+            "Application froid local [si soulagement]"
+          ],
+          "scoringRule": "≥5 mesures = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m8",
+          "text": "Indications hospitalisation",
+          "redflagsSection": [
+            {
+              "text": "Signes de péritonite ou sepsis sévère"
+            },
+            {
+              "text": "Échec traitement ambulatoire 48-72h"
+            },
+            {
+              "text": "Impossibilité alimentation/hydratation orale"
+            },
+            {
+              "text": "Comorbidités importantes (immunosuppression, insuffisance d'organe)"
+            },
+            {
+              "text": "Âge >85 ans avec facteurs de risque"
+            },
+            {
+              "text": "Complications à l'imagerie (abcès, perforation)"
+            },
+            {
+              "text": "Doute diagnostique nécessitant surveillance"
+            },
+            {
+              "text": "Contexte social défavorable/isolement"
+            }
+          ],
+          "scoringRule": "≥6 critères = 2 pts, 3-5 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m9",
+          "text": "Traitement hospitalier - Diverticulite compliquée",
+          "details": [
+            "Mise à jeun stricte",
+            "Hydratation IV [NaCl 0.9% ou Ringer]",
+            "Antibiothérapie IV [ceftriaxone 1-2g/j + métronidazole 1.5g/j ou pipéracilline-tazobactam]",
+            "Analgésie IV [morphiniques si nécessaire]",
+            "Surveillance clinique rapprochée",
+            "Contrôle biologique 48-72h",
+            "Drainage percutané si abcès >4-5cm"
+          ],
+          "scoringRule": "≥6 mesures = 2 pts, 3-5 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m10",
+          "text": "Indications chirurgicales",
+          "details": [
+            "Péritonite généralisée (Hinchey III-IV)",
+            "Abcès non accessible au drainage percutané",
+            "Échec traitement médical + drainage",
+            "Perforation libre avec pneumopéritoine",
+            "Sténose symptomatique",
+            "Hémorragie massive incontrôlable",
+            "Récidives fréquentes (>2 épisodes)"
+          ],
+          "scoringRule": "≥5 indications = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m11",
+          "text": "Surveillance et suivi",
+          "details": [
+            "Contrôle clinique 48-72h si ambulatoire",
+            "Réévaluation si pas d'amélioration à 72h",
+            "Contrôle biologique (CRP, leucocytes)",
+            "Reprise alimentation progressive",
+            "Arrêt antibiotique selon évolution",
+            "Surveillance complications tardives"
+          ],
+          "scoringRule": "≥5 éléments = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m12",
+          "text": "Prévention et suivi à long terme",
+          "details": [
+            "Coloscopie 6-8 semaines post-épisode [exclusion cancer/sténose]",
+            "Régime riche en fibres après phase aiguë",
+            "Hydratation adéquate 1.5-2L/j",
+            "Activité physique régulière",
+            "Éviter constipation (laxatifs doux si besoin)",
+            "Éviter AINS et corticoïdes",
+            "Arrêt tabac si fumeur",
+            "Probiotiques [efficacité débattue]"
+          ],
+          "scoringRule": "≥6 mesures = 2 pts, 3-5 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m13",
+          "text": "Éducation patient et entourage",
+          "details": [
+            "Explication pathologie diverticulaire",
+            "Importance observance antibiotique",
+            "Signes d'alarme nécessitant reconsultation",
+            "Modifications mode de vie préventives",
+            "Information sur récidives possibles",
+            "Planification suivi médical"
+          ],
+          "scoringRule": "≥5 éléments = 2 pts, 3-4 = 1 pt, <3 = 0 pt",
+          "binaryOnly": false
+        },
+        {
+          "id": "m14",
+          "text": "Évaluation globale de la qualité de la prise en charge",
+          "binaryOnly": false,
+          "details": [
+            "Diagnostic précis avec classification appropriée",
+            "Traitement adapté à la sévérité",
+            "Surveillance et suivi organisés",
+            "Prévention secondaire mise en place"
+          ],
+          "scoringRule": "Excellent = 2 pts, satisfaisant = 1 pt, insuffisant = 0 pt"
+        }
+      ]
+    }
+  }
+}

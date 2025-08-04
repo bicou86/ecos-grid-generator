@@ -1,0 +1,241 @@
+{
+  "title": "Obésité",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Femme de 34 ans (IMC 28 kg/m²) consultant pour un souhait de perte de poids, craignant une maladie qui la fait grossir"
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Nom et âge",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Motif de consultation",
+          "binaryOnly": true
+        },
+        {
+          "id": "a3",
+          "text": "Caractérisation du surpoids",
+          "details": [
+            "Poids actuel (76 kg)",
+            "Taille (1,65 m)",
+            "Début du surpoids (depuis la puberté)",
+            "Objectif de perte de poids (10 kg)"
+          ],
+          "patientComment": "76 kg/1,65 m/Depuis la puberté/10 kg"
+        },
+        {
+          "id": "a4",
+          "text": "Tentatives de régimes antérieures",
+          "details": [
+            "Régimes déjà essayés (plusieurs fois une semaine avec seulement des légumes)",
+            "Résultats (reprise de tout le poids)"
+          ],
+          "patientComment": "Déjà plusieurs fois une semaine seulement des légumes/Mais j'ai toujours tout repris"
+        },
+        {
+          "id": "a5",
+          "text": "Habitudes alimentaires - repas principaux",
+          "details": [
+            "Petit-déjeuner (3 tranches de pain avec Nutella, café)",
+            "Déjeuner (la plupart du temps salade)",
+            "Dîner (la plupart du temps viande avec pâtes, repas copieux)",
+            "Taille des portions (grandes, se ressert)",
+            "Cuisine maison (le soir)"
+          ],
+          "patientComment": "3 tranches de pain avec Nutella, café/La plupart du temps salade/La plupart du temps viande avec pâtes, repas copieux/Grandes portions, je me ressers/Le soir"
+        },
+        {
+          "id": "a6",
+          "text": "Collations et grignotage",
+          "details": [
+            "Collation du matin (banane et croissant, grand café au lait)",
+            "Après-midi (faim rapidement après le déjeuner, yaourt, gâteau, pâtisserie)",
+            "Après le dîner (quelque chose devant la télévision)"
+          ],
+          "patientComment": "Banane et croissant, grand café au lait/Faim vite après le déjeuner, yaourt, gâteau, de la boulangerie/Quelque chose devant la télé"
+        },
+        {
+          "id": "a7",
+          "text": "Boissons et comportement alimentaire",
+          "details": [
+            "Boissons sucrées (l'eau n'est pas assez savoureuse, préfère le thé glacé)",
+            "Manger sans faim (oui)",
+            "Manger pour gérer le stress (oui)"
+          ],
+          "patientComment": "L'eau n'est pas assez bonne, je préfère le thé glacé/Oui/Oui"
+        },
+        {
+          "id": "a8",
+          "text": "Contexte psychosocial",
+          "details": [
+            "Situation sociale (disputes fréquentes avec le partenaire qui est aussi en surpoids)",
+            "Activité physique (aucune)"
+          ],
+          "patientComment": "Disputes fréquentes avec mon partenaire qui est aussi en surpoids/Aucune"
+        },
+        {
+          "id": "a9",
+          "text": "Symptômes associés",
+          "details": [
+            "Transit intestinal (tendance à la constipation)",
+            "Miction (normale)",
+            "Hypertension, diabète (non)",
+            "Fatigue (non)",
+            "Polyurie, polydipsie (non)"
+          ],
+          "patientComment": "Tendance constipée/Normal/Non/Non/Non"
+        },
+        {
+          "id": "a10",
+          "text": "Antécédents médicaux et habitudes",
+          "details": [
+            "Antécédents personnels (douleurs aux genoux)",
+            "Tabac, alcool, drogues (non)",
+            "Médicaments (aucun)",
+            "Allergies (chats)"
+          ],
+          "patientComment": "Douleurs aux genoux/Non/Aucun/Chats"
+        },
+        {
+          "id": "a11",
+          "text": "Antécédents familiaux et sociaux",
+          "details": [
+            "Antécédents familiaux (mère diabétique, père en bonne santé)",
+            "Situation sociale (comptable, partage un logement avec le partenaire, pas d'enfants)"
+          ],
+          "patientComment": "Mère diabétique, père en bonne santé/Comptable, je partage un logement avec mon partenaire, pas d'enfants"
+        },
+        {
+          "id": "a12",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "binaryOnly": false,
+          "details": [
+            "Anamnèse générale ciblée et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Inspection générale",
+          "details": [
+            "Recherche d'œdèmes",
+            "Anomalies cutanées (stries rouges)",
+            "Répartition de la graisse"
+          ]
+        },
+        {
+          "id": "e2",
+          "text": "Examen cardiovasculaire",
+          "details": [
+            "Auscultation cardiaque",
+            "Mesure de la tension artérielle",
+            "Recherche de signes d'insuffisance cardiaque"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Examen pulmonaire",
+          "details": [
+            "Inspection thoracique",
+            "Auscultation pulmonaire"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Examen abdominal",
+          "details": [
+            "Inspection de l'abdomen",
+            "Palpation abdominale",
+            "Recherche d'hépatomégalie"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Palpation thyroïdienne",
+          "details": [
+            "Inspection du cou",
+            "Palpation de la thyroïde",
+            "Recherche de nodules"
+          ]
+        },
+        {
+          "id": "e6",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "binaryOnly": false,
+          "details": [
+            "Status général ciblé et bien conduit"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic principal",
+          "details": [
+            "Surpoids (IMC 28 kg/m²)"
+          ]
+        },
+        {
+          "id": "m2",
+          "text": "Diagnostics différentiels",
+          "details": [
+            "Hypothyroïdie",
+            "Syndrome de Cushing"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Examens complémentaires",
+          "details": [
+            "Glycémie",
+            "TSH (fonction thyroïdienne)"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Conseil nutritionnel - éducation",
+          "details": [
+            "Information sur les risques (diabète, hypertension, infarctus, problèmes articulaires)",
+            "Éducation sur l'alimentation équilibrée et la pyramide alimentaire",
+            "Remplacement des collations par des aliments sains ou suppression",
+            "Éviter les boissons sucrées"
+          ]
+        },
+        {
+          "id": "m5",
+          "text": "Conseil sur l'activité physique et objectifs",
+          "details": [
+            "Importance de l'exercice physique",
+            "Information sur une perte de poids réaliste (maximum 5 kg par an)",
+            "Tenue d'un journal alimentaire pendant 1 semaine à discuter en consultation",
+            "Référence vers une consultation nutritionnelle"
+          ]
+        },
+        {
+          "id": "m6",
+          "text": "Évaluation globale de la qualité de la prise en charge",
+          "binaryOnly": false,
+          "details": [
+            "Prise en charge générale cohérente et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    }
+  }
+}

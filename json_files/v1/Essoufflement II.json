@@ -1,0 +1,256 @@
+{
+  "title": "Essoufflement II",
+  "context": {
+    "setting": "Cabinet de médecine générale en campagne (remplacement)",
+    "patient": "Patient de 56 ans consulte pour essoufflement"
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction et objectif",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Dyspnée (orthopnée)",
+          "binaryOnly": false,
+          "details": [
+            "[Après 1 étage, doit dormir avec 3 oreillers]"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Toux",
+          "binaryOnly": false,
+          "details": [
+            "[Par crises, productive]"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Expectoration",
+          "binaryOnly": false,
+          "details": [
+            "[Crachats jaunâtres]"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Durée des symptômes",
+          "binaryOnly": false,
+          "details": [
+            "[Depuis deux ans, surtout janvier/février/mars]"
+          ]
+        },
+        {
+          "id": "a6",
+          "text": "Déclencheurs / amélioration / timing",
+          "binaryOnly": false,
+          "details": [
+            "Par temps froid [oui]",
+            "Tabagisme passif [oui]",
+            "Après refroidissements [oui]",
+            "[Doit ouvrir la fenêtre pour dormir]",
+            "[Expectoration matinale]"
+          ]
+        },
+        {
+          "id": "a7",
+          "text": "Performance physique",
+          "binaryOnly": false,
+          "details": [
+            "[Diminution des performances]"
+          ]
+        },
+        {
+          "id": "a8",
+          "text": "Exacerbations",
+          "binaryOnly": false,
+          "details": [
+            "Bronchites [oui]",
+            "Prise d'antibiotiques [jamais]",
+            "Hospitalisations [aucune]"
+          ]
+        },
+        {
+          "id": "a9",
+          "text": "Activités sportives et loisirs",
+          "binaryOnly": false,
+          "details": [
+            "[Aucune actuellement, anciennement championnats d'échecs]"
+          ]
+        },
+        {
+          "id": "a10",
+          "text": "Antécédents médicaux",
+          "binaryOnly": false,
+          "details": [
+            "[Anciennement héroïne IV, actuellement programme méthadone]"
+          ]
+        },
+        {
+          "id": "a11",
+          "text": "Substances toxiques, allergies, médicaments",
+          "binaryOnly": false,
+          "details": [
+            "[Fume 1 paquet depuis 30 ans]",
+            "Anciennement héroïne IV [oui]",
+            "Actuellement méthadone [oui]"
+          ]
+        },
+        {
+          "id": "a12",
+          "text": "Antécédents familiaux",
+          "binaryOnly": false,
+          "details": [
+            "[Cancer bronchique du père à 60 ans]"
+          ]
+        },
+        {
+          "id": "a13",
+          "text": "Anamnèse sociale",
+          "binaryOnly": false,
+          "details": [
+            "[Célibataire, l'année dernière 5 mois en prison pour infraction à la loi sur les stupéfiants]"
+          ]
+        },
+        {
+          "id": "a14",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "binaryOnly": false,
+          "details": [
+            "Anamnèse générale ciblée et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Inspection pulmonaire",
+          "binaryOnly": false
+        },
+        {
+          "id": "e2",
+          "text": "Palpation du thorax",
+          "binaryOnly": false
+        },
+        {
+          "id": "e3",
+          "text": "Auscultation pulmonaire systématique antérieure et postérieure",
+          "binaryOnly": false,
+          "details": [
+            "Sibilants/ronchus [présents à l'auscultation]"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Évaluation des muscles respiratoires accessoires",
+          "binaryOnly": false
+        },
+        {
+          "id": "e5",
+          "text": "Contrôle des jambes pour œdèmes",
+          "binaryOnly": false
+        },
+        {
+          "id": "e6",
+          "text": "Recherche de cyanose et hippocratisme digital",
+          "binaryOnly": false,
+          "details": [
+            "Cyanose endobuccale",
+            "Hippocratisme digital"
+          ]
+        },
+        {
+          "id": "e7",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "binaryOnly": false,
+          "details": [
+            "Status général ciblé et bien conduit"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic principal",
+          "binaryOnly": false,
+          "details": [
+            "BPCO légère"
+          ]
+        },
+        {
+          "id": "m2",
+          "text": "Diagnostics différentiels",
+          "binaryOnly": false,
+          "details": [
+            "Bronchite chronique",
+            "Asthme bronchique"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Examens complémentaires",
+          "binaryOnly": false,
+          "details": [
+            "Culture des crachats",
+            "Radiographie thoracique",
+            "Spirométrie",
+            "Test de bronchodilatation",
+            "Gazométrie artérielle"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Interprétation de la spirométrie",
+          "binaryOnly": false,
+          "details": [
+            "Évaluation correcte GOLD stade I",
+            "VEMS < 80%",
+            "VEMS/CVF < 70%",
+            "Pas de réversibilité au test de bronchodilatation"
+          ]
+        },
+        {
+          "id": "m5",
+          "text": "Thérapie proposée",
+          "binaryOnly": false,
+          "details": [
+            "Bêta2-sympathomimétique d'action courte",
+            "Anticholinergique"
+          ]
+        },
+        {
+          "id": "m6",
+          "text": "Évaluation globale de la qualité de la prise en charge",
+          "binaryOnly": false,
+          "details": [
+            "Prise en charge générale cohérente et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "images": [
+      {
+        "id": "annexe1",
+        "data": "grilles_generees/images/essoufflement-img.jpg",
+        "title": "Spirométrie",
+        "description": "Résultats spirométriques avec courbes débit-volume et valeurs numériques"
+      }
+    ]
+  }
+}

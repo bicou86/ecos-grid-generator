@@ -1,0 +1,414 @@
+{
+  "title": "Fièvre - Pédiatrie",
+  "context": {
+    "setting": "Cabinet de pédiatrie",
+    "patient": "Mme Huber consulte avec son fils Max, 2 ans, pour maladie fébrile depuis plusieurs jours",
+    "vitals": {
+      "fc": "120 bpm",
+      "fr": "16/min",
+      "temperature": "39.0°C"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Désinfection des mains et présentation avec nom et fonction",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Durée et évolution de la fièvre",
+          "binaryOnly": false,
+          "details": [
+            "[Depuis 3 jours]",
+            "[Apparition soudaine]",
+            "[Fièvre élevée avec toux]",
+            "[État général plutôt bon malgré la fièvre]"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Premier épisode fébrile",
+          "binaryOnly": false,
+          "details": [
+            "[Oui, première fois]",
+            "[Jamais eu de convulsions fébriles]"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Anamnèse de la fratrie",
+          "binaryOnly": false,
+          "details": [
+            "[Laura, 5 ans]",
+            "[En bonne santé]"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Revue des systèmes - Respiratoire",
+          "binaryOnly": false,
+          "details": [
+            "Toux [légère toux présente]",
+            "Respiration normale [oui]",
+            "Tirages intercostaux [non]",
+            "Dyspnée [non]"
+          ]
+        },
+        {
+          "id": "a6",
+          "text": "Revue des systèmes - Digestif",
+          "binaryOnly": false,
+          "details": [
+            "Prise alimentaire [mange normalement]",
+            "Hydratation [boit suffisamment]",
+            "Transit intestinal [normal, comme d'habitude]",
+            "Vomissements [non]",
+            "Diarrhée [non]"
+          ]
+        },
+        {
+          "id": "a7",
+          "text": "Revue des systèmes - Urinaire et neurologique",
+          "binaryOnly": false,
+          "details": [
+            "Mictions [normales]",
+            "Couleur des urines [normale]",
+            "Sommeil [endormissement et sommeil non perturbés]",
+            "Somnolence [un peu plus somnolent pendant les épisodes de fièvre]",
+            "Irritabilité [non]"
+          ]
+        },
+        {
+          "id": "a8",
+          "text": "Douleurs",
+          "binaryOnly": false,
+          "details": [
+            "[Rien remarqué]",
+            "[Pas de plaintes particulières]"
+          ]
+        },
+        {
+          "id": "a9",
+          "text": "Développement psychomoteur",
+          "binaryOnly": false,
+          "details": [
+            "Motricité [marche déjà]",
+            "Langage [fait des phrases courtes]",
+            "Social [développement normal]"
+          ]
+        },
+        {
+          "id": "a10",
+          "text": "Comportement récent",
+          "binaryOnly": false,
+          "details": [
+            "[Un peu plus fatigué ces derniers jours]",
+            "[Sinon tout normal ces dernières semaines]"
+          ]
+        },
+        {
+          "id": "a11",
+          "text": "Antécédents médicaux personnels",
+          "binaryOnly": false,
+          "details": [
+            "Maladies antérieures [aucune]",
+            "Hospitalisations [aucune]",
+            "Chirurgies [aucune]"
+          ]
+        },
+        {
+          "id": "a12",
+          "text": "Médicaments actuels",
+          "binaryOnly": false,
+          "details": [
+            "[Aucun médicament]"
+          ]
+        },
+        {
+          "id": "a13",
+          "text": "Allergies",
+          "binaryOnly": false,
+          "details": [
+            "[Aucune allergie connue]"
+          ]
+        },
+        {
+          "id": "a14",
+          "text": "Vaccinations",
+          "binaryOnly": false,
+          "details": [
+            "[Toutes les vaccinations faites selon le calendrier]",
+            "[Carnet de vaccination à jour]"
+          ]
+        },
+        {
+          "id": "a15",
+          "text": "Anamnèse d'environnement",
+          "binaryOnly": false,
+          "details": [
+            "Famille [tous en bonne santé]",
+            "Crèche [quelques enfants malades, probablement saisonnier]",
+            "Voyages récents [voyage en Italie chez la grand-mère]",
+            "Contact avec des malades [oui, à la crèche]"
+          ]
+        },
+        {
+          "id": "a16",
+          "text": "Antécédents familiaux",
+          "binaryOnly": false,
+          "details": [
+            "[Père : thalassémie mineure]",
+            "[Sinon pas de maladies héréditaires connues]"
+          ]
+        },
+        {
+          "id": "a17",
+          "text": "Anamnèse psychosociale",
+          "binaryOnly": false,
+          "details": [
+            "[Vit avec mère et père]",
+            "[Habitent dans un appartement à Binningen]",
+            "[Pas de contraintes particulières]"
+          ]
+        },
+        {
+          "id": "a18",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "binaryOnly": false,
+          "details": [
+            "Anamnèse générale ciblée et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Inspection générale",
+          "binaryOnly": false,
+          "details": [
+            "État général [bon malgré la fièvre]",
+            "Coloration cutanée [normale]",
+            "Exanthème [absent]",
+            "Autres anomalies visibles [aucune]"
+          ]
+        },
+        {
+          "id": "e2",
+          "text": "Examen cardio-pulmonaire",
+          "binaryOnly": false,
+          "details": [
+            "Auscultation pulmonaire [murmure vésiculaire présent sur tous les champs pulmonaires]",
+            "Bruits surajoutés [aucun]",
+            "Auscultation cardiaque [pas de bruits pathologiques]",
+            "Rythme cardiaque [régulier]"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Examen ORL",
+          "binaryOnly": false,
+          "details": [
+            "Oropharynx [paroi pharyngée postérieure légèrement rouge]",
+            "Tympans [normaux]",
+            "Narines [libres]",
+            "Amygdales [non hypertrophiées]"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Palpation des ganglions lymphatiques",
+          "binaryOnly": false,
+          "details": [
+            "Ganglions cervicaux [réactifs, augmentés de volume]",
+            "Ganglions occipitaux [non palpables]",
+            "Ganglions axillaires [non palpables]",
+            "Ganglions inguinaux [non palpables]"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Recherche de signes méningés",
+          "binaryOnly": false,
+          "details": [
+            "Raideur de nuque [absente]",
+            "Signe de Kernig [négatif]",
+            "Signe de Brudzinski [négatif]"
+          ]
+        },
+        {
+          "id": "e6",
+          "text": "Examen abdominal",
+          "binaryOnly": false,
+          "details": [
+            "Inspection [abdomen souple]",
+            "Palpation [non douloureux]",
+            "Hépatomégalie [absente]",
+            "Splénomégalie [absente]"
+          ]
+        },
+        {
+          "id": "e7",
+          "text": "Examen cutané",
+          "binaryOnly": false,
+          "details": [
+            "Éruption cutanée [absente]",
+            "Pétéchies [absentes]",
+            "Marbrures [absentes]"
+          ]
+        },
+        {
+          "id": "e8",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "binaryOnly": false,
+          "details": [
+            "Examen clinique ciblé et bien conduit"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic principal évoqué",
+          "binaryOnly": false,
+          "details": [
+            "[Exanthème subit (roséole infantile)]"
+          ]
+        },
+        {
+          "id": "m2",
+          "text": "Diagnostics différentiels",
+          "binaryOnly": false,
+          "details": [
+            "Exanthème subit",
+            "Érythème infectieux (5e maladie)",
+            "Rubéole",
+            "Rougeole"
+          ],
+          "ddSection": {
+            "categories": [
+              {
+                "name": "Exanthème subit",
+                "items": [
+                  "Âge typique (6 mois - 2 ans) → Diagnostic clinique",
+                  "Fièvre élevée avec bon état général → Surveillance"
+                ]
+              },
+              {
+                "name": "Diagnostics moins probables",
+                "items": [
+                  "Rougeole : vaccination complète, pas de conjonctivite, pas de taches de Koplik, bon état général",
+                  "Rubéole : vaccination complète, fièvre habituellement plus modérée, conjonctivite typique absente",
+                  "Érythème infectieux : fièvre généralement plus faible, convulsions non typiques, pas d'érythème en papillon"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m3",
+          "text": "Explication du diagnostic aux parents",
+          "binaryOnly": false,
+          "details": [
+            "Nature bénigne de la maladie",
+            "Évolution spontanément favorable",
+            "Apparition probable d'une éruption cutanée à la défervescence"
+          ],
+          "patientComment": "C'est probablement rien de grave, une infection virale bénigne fréquente à cet âge"
+        },
+        {
+          "id": "m4",
+          "text": "Prise en charge thérapeutique",
+          "binaryOnly": false,
+          "details": [
+            "Traitement symptomatique",
+            "Antipyrétiques si nécessaire (paracétamol)",
+            "Hydratation adéquate",
+            "Surveillance de l'état général"
+          ],
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Traitement symptomatique",
+                "content": "• Paracétamol 15 mg/kg toutes les 6 heures si fièvre mal tolérée\n• Maintenir une bonne hydratation\n• Repos au calme\n• Vêtements légers"
+              },
+              {
+                "title": "Surveillance",
+                "content": "• Température régulière\n• État de conscience\n• Hydratation\n• Apparition d'éruption cutanée"
+              }
+            ]
+          }
+        },
+        {
+          "id": "m5",
+          "text": "Instructions de suivi",
+          "binaryOnly": false,
+          "details": [
+            "Nouvelle consultation si changement des symptômes",
+            "Contrôle dans 3-4 jours si persistance",
+            "Consultation urgente si détérioration"
+          ]
+        },
+        {
+          "id": "m6",
+          "text": "Signes d'alarme à expliquer",
+          "binaryOnly": false,
+          "details": [
+            "Altération de l'état de conscience",
+            "Convulsions",
+            "Signes de déshydratation",
+            "Détresse respiratoire",
+            "Éruption cutanée purpurique"
+          ],
+          "redflagsSection": [
+            {
+              "text": "Somnolence excessive ou difficultés à réveiller l'enfant"
+            },
+            {
+              "text": "Convulsions fébriles"
+            },
+            {
+              "text": "Refus de boire ou signes de déshydratation"
+            },
+            {
+              "text": "Difficultés respiratoires"
+            },
+            {
+              "text": "Éruption cutanée ne blanchissant pas à la vitropression"
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "text": "Mesures préventives",
+          "binaryOnly": false,
+          "details": [
+            "Éviction de la crèche jusqu'à 24h après défervescence",
+            "Hygiène des mains",
+            "Information de la crèche"
+          ]
+        },
+        {
+          "id": "m8",
+          "text": "Évaluation globale de la qualité de la prise en charge",
+          "binaryOnly": false,
+          "details": [
+            "Prise en charge générale cohérente et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    }
+  }
+}

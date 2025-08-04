@@ -1,0 +1,277 @@
+{
+  "title": "Déshydratation - Pédiatrie",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "2 scénarios: Petit enfant avec vomissements et diarrhée / Femme âgée d'EMS avec confusion"
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction et objectif",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Question ouverte d'introduction → Symptôme principal",
+          "patientComment": "Vomissements et diarrhée chez l'enfant / Confusion chez la personne âgée",
+          "binaryOnly": true
+        },
+        {
+          "id": "a3",
+          "text": "Signes de déshydratation",
+          "details": [
+            "Pli cutané persistant",
+            "Muqueuses sèches",
+            "Oligurie"
+          ],
+          "patientComment": "Oui, pli cutané reste visible / Bouche très sèche / Très peu d'urines"
+        },
+        {
+          "id": "a4",
+          "text": "Vomissements et diarrhée",
+          "details": [
+            "Fréquence des vomissements",
+            "Caractéristiques de la diarrhée",
+            "Début des symptômes"
+          ],
+          "patientComment": "[Vomit après chaque repas] / [Diarrhée liquide 5-6 fois par jour] / [Depuis 2 jours]"
+        },
+        {
+          "id": "a5",
+          "text": "Quantité de boissons et élimination",
+          "details": [
+            "Apport hydrique",
+            "Production d'urines",
+            "Signes spécifiques chez l'enfant"
+          ],
+          "patientComment": "[Refuse de boire] / [Couche sèche depuis ce matin] / [Pleure sans larmes]"
+        },
+        {
+          "id": "a6",
+          "text": "État neurologique",
+          "details": [
+            "Confusion",
+            "Somnolence", 
+            "Sopor"
+          ],
+          "patientComment": "[Confuse depuis hier] / [Très somnolente] / [Difficile à réveiller]"
+        },
+        {
+          "id": "a7",
+          "text": "Signes d'infection urinaire",
+          "patientComment": "[Chez l'enfant : pas de fièvre urinaire] / [Chez la personne âgée : urines troubles et malodorantes]",
+          "details": [
+            "Symptômes urinaires",
+            "Fièvre associée"
+          ]
+        },
+        {
+          "id": "a8",
+          "text": "Signes de diabète sucré",
+          "details": [
+            "Polyurie-polydipsie",
+            "Amaigrissement récent",
+            "Antécédents de diabète"
+          ],
+          "patientComment": "[Non, pas de soif excessive avant] / [Poids stable] / [Pas de diabète connu]"
+        },
+        {
+          "id": "a9",
+          "text": "Signes d'insuffisance surrénalienne",
+          "details": [
+            "Asthénie profonde",
+            "Hyperpigmentation",
+            "Hypotension"
+          ],
+          "patientComment": "[Fatigue mais dans le contexte] / [Non] / [À vérifier]"
+        },
+        {
+          "id": "a10",
+          "text": "Antécédents personnels",
+          "details": [
+            "Maladies rénales",
+            "Pathologies chroniques",
+            "Hospitalisations antérieures"
+          ],
+          "patientComment": "[Aucune maladie rénale connue] / [En bonne santé habituelle] / [Jamais hospitalisé]"
+        },
+        {
+          "id": "a11",
+          "text": "Habitudes alimentaires",
+          "patientComment": "[Alimentation équilibrée habituellement] / [Mange à la crèche]"
+        },
+        {
+          "id": "a12",
+          "text": "Substances et médicaments",
+          "details": [
+            "Médicaments actuels",
+            "Toxiques potentiels",
+            "Intoxication possible"
+          ],
+          "patientComment": "[Aucun médicament] / [Pas d'accès aux toxiques] / [Non]"
+        },
+        {
+          "id": "a13",
+          "text": "Anamnèse de l'entourage",
+          "patientComment": "[Plusieurs enfants malades à la crèche] / [Gastro-entérite dans la famille]"
+        },
+        {
+          "id": "a14",
+          "text": "Antécédents familiaux",
+          "patientComment": "[Rien de particulier]"
+        },
+        {
+          "id": "a15",
+          "text": "Anamnèse sociale",
+          "details": [
+            "Conditions de vie",
+            "Garde de l'enfant",
+            "Support familial"
+          ],
+          "patientComment": "[Vit avec ses deux parents] / [Va à la crèche] / [Parents présents et attentifs]"
+        },
+        {
+          "id": "a16",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "binaryOnly": false,
+          "details": [
+            "Anamnèse ciblée et structurée",
+            "Questions pertinentes posées",
+            "Diagnostic différentiel exploré"
+          ],
+          "scoringRule": "Bien = 2 points, Suffisant = 1 point, Insuffisant = 0 point"
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Évaluation des signes de déshydratation",
+          "details": [
+            "Test du pli cutané",
+            "Examen des muqueuses",
+            "Temps de recoloration capillaire",
+            "État des fontanelles (nourrisson)"
+          ],
+          "patientComment": "[Pli cutané persiste 3 secondes] / [Muqueuses très sèches] / [>2 secondes] / [Fontanelle déprimée]"
+        },
+        {
+          "id": "e2",
+          "text": "Palpation vésicale",
+          "patientComment": "[Vessie vide]"
+        },
+        {
+          "id": "e3",
+          "text": "Examen rénal",
+          "details": [
+            "Palpation des fosses lombaires",
+            "Recherche de douleur à l'ébranlement"
+          ],
+          "patientComment": "[Fosses lombaires souples] / [Pas de douleur]"
+        },
+        {
+          "id": "e4",
+          "text": "Mesure de la tension artérielle",
+          "patientComment": "[TA = 85/50 mmHg, hypotension]",
+          "details": [
+            "Recherche d'hypotension",
+            "Test d'orthostatisme si possible"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Évaluation de l'état général",
+          "details": [
+            "État de conscience",
+            "Signes de choc",
+            "Température"
+          ],
+          "patientComment": "[Somnolent mais réveillable] / [Extrémités froides, marbrures] / [37.8°C]"
+        },
+        {
+          "id": "e6",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "binaryOnly": false,
+          "details": [
+            "Examen ciblé sur la déshydratation",
+            "Recherche systématique des complications",
+            "Évaluation de la gravité"
+          ],
+          "scoringRule": "Bien = 2 points, Suffisant = 1 point, Insuffisant = 0 point"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic principal de déshydratation correctement posé",
+          "patientComment": "L'étudiant doit évoquer une déshydratation aiguë"
+        },
+        {
+          "id": "m2",
+          "text": "Diagnostics différentiels pertinents évoqués",
+          "details": [
+            "Déshydratation par pertes digestives",
+            "Diabète sucré décompensé",
+            "Insuffisance surrénalienne (maladie d'Addison)",
+            "Syndrome néphrotique",
+            "Insuffisance rénale aiguë"
+          ],
+          "scoringRule": "Au moins 2-3 diagnostics différentiels = 2 points"
+        },
+        {
+          "id": "m3",
+          "text": "Examens complémentaires appropriés",
+          "details": [
+            "Ionogramme sanguin (Na, K, Cl)",
+            "Créatinine, urée",
+            "NFS (hématocrite)",
+            "Glycémie",
+            "Gaz du sang si sévère",
+            "Bandelette urinaire"
+          ],
+          "patientComment": "Bilan de déshydratation et recherche étiologique"
+        },
+        {
+          "id": "m4",
+          "text": "Prise en charge thérapeutique adaptée",
+          "details": [
+            "Réhydratation orale si déshydratation légère",
+            "Perfusion IV si déshydratation modérée à sévère",
+            "Correction des troubles électrolytiques",
+            "Surveillance clinique rapprochée"
+          ],
+          "patientComment": "Adaptation selon le degré de déshydratation"
+        },
+        {
+          "id": "m5",
+          "text": "Organisation du transfert si nécessaire",
+          "details": [
+            "Critères d'hospitalisation identifiés",
+            "Transport médicalisé si état grave",
+            "Information des parents/famille"
+          ],
+          "patientComment": "Hospitalisation si déshydratation >5% ou échec de réhydratation orale"
+        },
+        {
+          "id": "m6",
+          "text": "Évaluation globale de la qualité de la prise en charge",
+          "binaryOnly": false,
+          "details": [
+            "Prise en charge cohérente et sécuritaire",
+            "Adaptation au degré de gravité",
+            "Communication claire avec patient/famille"
+          ],
+          "scoringRule": "Bien = 2 points, Suffisant = 1 point, Insuffisant = 0 point"
+        }
+      ]
+    }
+  }
+}

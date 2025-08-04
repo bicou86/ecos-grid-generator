@@ -1,0 +1,549 @@
+{
+  "title": "Ictère",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "M. Hamidi, 28 ans, employé de restauration rapide, se présente chez son médecin traitant car il a remarqué qu'il était devenu jaune",
+    "vitals": {
+      "temperature": "37.3°C"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "title": "Anamnèse",
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction et objectif",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Motif de consultation principal",
+          "patientComment": "Coloration jaune remarquée par les collègues de travail"
+        },
+        {
+          "id": "a3",
+          "text": "Caractéristiques détaillées de l'ictère",
+          "details": [
+            "Début précis [avant-hier, soit 2 jours]",
+            "Mode d'apparition [progressif]",
+            "Évolution [s'aggrave progressivement]",
+            "Localisation initiale [sclérotiques puis visage]",
+            "Extension [maintenant yeux, visage et mains]",
+            "Intensité [nettement visible]",
+            "Facteurs modulants [aucun]"
+          ],
+          "patientComment": "Ictère franc d'apparition récente et progressive",
+          "scoringRule": "≥5 caractéristiques = 2 pts, 3-4 = 1 pt"
+        },
+        {
+          "id": "a4",
+          "text": "Symptômes digestifs associés",
+          "details": [
+            "Douleur abdominale [légères douleurs épigastriques]",
+            "Localisation précise [épigastre diffus]",
+            "Irradiation [non]",
+            "Nausées actuelles [non]",
+            "Vomissements actuels [non]",
+            "Troubles du transit [transit normal]",
+            "Ballonnements [non]",
+            "Dyspepsie [non]"
+          ],
+          "patientComment": "Symptômes digestifs minimes",
+          "scoringRule": "≥6 symptômes explorés = 2 pts, 4-5 = 1 pt"
+        },
+        {
+          "id": "a5",
+          "text": "Caractéristiques des selles et urines",
+          "details": [
+            "Couleur des selles [normale, pas décolorées]",
+            "Consistance [normale, formées]",
+            "Présence de sang [non]",
+            "Stéatorrhée [non]",
+            "Couleur des urines [foncées comme du thé]",
+            "Mousseuses [non notées]",
+            "Volume urinaire [normal]",
+            "Brûlures mictionnelles [non]"
+          ],
+          "patientComment": "Urines foncées typiques, selles non décolorées",
+          "scoringRule": "≥6 éléments = 2 pts, 4-5 = 1 pt"
+        },
+        {
+          "id": "a6",
+          "text": "Symptômes généraux et constitutionnels",
+          "details": [
+            "Fièvre [non, température 37.3°C]",
+            "Frissons [non]",
+            "Sueurs nocturnes [non]",
+            "Asthénie [oui, très fatigué]",
+            "Degré fatigue [importante, inhabituelle]",
+            "Perte de poids [non]",
+            "Anorexie [oui, moins d'appétit]",
+            "Myalgies/arthralgies [non]"
+          ],
+          "patientComment": "Syndrome pseudo-grippal partiel",
+          "scoringRule": "≥6 symptômes = 2 pts"
+        },
+        {
+          "id": "a7",
+          "text": "Événements récents et exposition",
+          "details": [
+            "Maladie récente [gastro-entérite il y a 2 semaines]",
+            "Symptômes gastro [vomissements et diarrhée]",
+            "Durée gastro [3 jours]",
+            "Médicaments pris [paracétamol pour fièvre]",
+            "Dose paracétamol [< 3g/jour]",
+            "Autres médicaments [aucun]",
+            "Contact malades [non rappelé]",
+            "Aliments suspects [non identifiés]"
+          ],
+          "patientComment": "Gastro-entérite récente, prise modérée paracétamol",
+          "scoringRule": "≥6 éléments = 2 pts"
+        },
+        {
+          "id": "a8",
+          "text": "Prurit et signes cutanés",
+          "details": [
+            "Prurit [non, aucune démangeaison]",
+            "Lésions de grattage [non]",
+            "Éruption cutanée [non]",
+            "Pétéchies/ecchymoses [non]"
+          ],
+          "patientComment": "Absence de prurit (contre obstruction)"
+        },
+        {
+          "id": "a9",
+          "text": "Signes d'hépatopathie chronique recherchés",
+          "details": [
+            "Ascite [non]",
+            "Œdèmes MI [non]",
+            "Circulation collatérale [non visible]",
+            "Gynécomastie [non]",
+            "Angiomes stellaires [non]",
+            "Érythrose palmaire [non]",
+            "Hippocratisme digital [non]"
+          ],
+          "patientComment": "Aucun signe d'hépatopathie chronique",
+          "scoringRule": "≥5 signes = 2 pts"
+        },
+        {
+          "id": "a10",
+          "text": "Facteurs de risque hépatiques",
+          "details": [
+            "Alcool [non, ne boit jamais]",
+            "Quantification [0 g/jour]",
+            "Toxicomanie IV [jamais]",
+            "Tatouages/piercings [aucun]",
+            "Transfusions [jamais]",
+            "Chirurgies [aucune]",
+            "Rapports à risque [non, couple stable]",
+            "Partenaires multiples [non]",
+            "Exposition professionnelle [restauration]"
+          ],
+          "patientComment": "Pas de facteur de risque majeur identifié",
+          "scoringRule": "≥7 facteurs = 2 pts, 5-6 = 1 pt"
+        },
+        {
+          "id": "a11",
+          "text": "Antécédents médicaux hépatobiliaires",
+          "details": [
+            "Diabète [non]",
+            "Obésité [IMC normal]",
+            "Hépatites antérieures [non]",
+            "Lithiase biliaire [jamais]",
+            "Pancréatite [non]",
+            "Chirurgie abdominale [aucune]",
+            "Maladies auto-immunes [non]",
+            "MICI [non]"
+          ],
+          "patientComment": "Pas d'antécédent hépatobiliaire"
+        },
+        {
+          "id": "a12",
+          "text": "Médicaments et substances",
+          "details": [
+            "Traitements chroniques [aucun]",
+            "AINS récents [non]",
+            "Antibiotiques [non]",
+            "Phytothérapie [non]",
+            "Compléments alimentaires [non]",
+            "Produits de musculation [non]",
+            "Drogues récréatives [non]",
+            "Allergies médicamenteuses [aucune]"
+          ],
+          "patientComment": "Pas de prise médicamenteuse à risque",
+          "scoringRule": "≥6 substances = 2 pts"
+        },
+        {
+          "id": "a13",
+          "text": "Statut vaccinal hépatites",
+          "details": [
+            "Vaccination VHA [non]",
+            "Vaccination VHB [non]",
+            "Carnet de vaccination [non disponible]",
+            "Vaccinations enfance [présumées faites]"
+          ],
+          "patientComment": "Non vacciné contre les hépatites virales"
+        },
+        {
+          "id": "a14",
+          "text": "Voyage récent et exposition",
+          "details": [
+            "Destination [Algérie, région d'origine]",
+            "Date voyage [retour il y a 1 mois]",
+            "Durée séjour [3 semaines]",
+            "Type hébergement [famille]",
+            "Eau consommée [robinet local]",
+            "Alimentation [cuisine familiale locale]",
+            "Fruits/crudités [oui, lavés eau robinet]",
+            "Glaces/jus rue [probablement]",
+            "Baignades [non]",
+            "Prophylaxie [aucune]"
+          ],
+          "patientComment": "Exposition à risque VHA en zone endémique",
+          "scoringRule": "≥7 éléments = 2 pts, 5-6 = 1 pt"
+        },
+        {
+          "id": "a15",
+          "text": "Antécédents familiaux",
+          "details": [
+            "Hépatites familiales [non connues]",
+            "Cirrhose familiale [non]",
+            "Cancers digestifs [non]",
+            "Hémochromatose [non]",
+            "Maladie de Wilson [non]",
+            "Déficit alpha-1 antitrypsine [non]",
+            "Frère tuberculeux [oui, en Algérie]"
+          ],
+          "patientComment": "Pas d'hépatopathie familiale connue"
+        },
+        {
+          "id": "a16",
+          "text": "Contexte socioprofessionnel",
+          "details": [
+            "Profession [employé McDonald's]",
+            "Ancienneté [3 ans]",
+            "Manipulation aliments [oui, cuisine]",
+            "Hygiène travail [stricte normalement]",
+            "Arrêts maladie récents [non]",
+            "Statut Suisse [permis B, 8 ans]",
+            "Couverture sociale [LAMal]",
+            "Situation familiale [vit avec copine]"
+          ],
+          "patientComment": "Travaille en restauration (risque transmission)",
+          "scoringRule": "≥6 éléments = 2 pts"
+        },
+        {
+          "id": "a17",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "binaryOnly": false,
+          "details": [
+            "Anamnèse hépatologique complète et ciblée"
+          ],
+          "scoringRule": "Anamnèse excellente = 2 pts, correcte = 1 pt, insuffisante = 0 pt"
+        }
+      ]
+    },
+    "examen": {
+      "title": "Examen clinique",
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "État général et paramètres vitaux",
+          "details": [
+            "État général [conservé, fatigué]",
+            "Glasgow [15/15]",
+            "TA [120/75 mmHg]",
+            "FC [78 bpm]",
+            "FR [16/min]",
+            "Température [37.3°C]",
+            "SpO2 [98% AA]"
+          ],
+          "patientComment": "Bon état général, apyrétique",
+          "scoringRule": "≥5 paramètres = 2 pts"
+        },
+        {
+          "id": "e2",
+          "text": "Examen cutanéo-muqueux approfondi",
+          "details": [
+            "Ictère conjonctival [franc, bilatéral]",
+            "Ictère cutané [visible visage et mains]",
+            "Ictère muqueux [frein langue jaune]",
+            "Angiomes stellaires [absents]",
+            "Érythrose palmaire [non]",
+            "Lésions de grattage [aucune]",
+            "Pétéchies/purpura [non]",
+            "Xanthomes [non]"
+          ],
+          "patientComment": "Ictère franc sans signe d'hépatopathie chronique",
+          "scoringRule": "≥6 éléments = 2 pts, 4-5 = 1 pt"
+        },
+        {
+          "id": "e3",
+          "text": "Examen abdominal complet et méthodique",
+          "details": [
+            "Inspection [abdomen plat, souple]",
+            "Cicatrices [aucune]",
+            "Circulation collatérale [absente]",
+            "Palpation hépatique [foie palpable, 2 cm sous rebord]",
+            "Consistance foie [souple, lisse]",
+            "Bord hépatique [mousse]",
+            "Douleur palpation [légère sensibilité]",
+            "Splénomégalie [non palpable]",
+            "Murphy [négatif]",
+            "Masse abdominale [aucune]",
+            "Ascite recherche [matité déclive absente]",
+            "Signe du flot [négatif]"
+          ],
+          "patientComment": "Hépatomégalie modérée sensible, pas de signe d'HTP",
+          "scoringRule": "≥8 éléments = 2 pts, 5-7 = 1 pt"
+        },
+        {
+          "id": "e4",
+          "text": "Examen ganglionnaire systématique",
+          "details": [
+            "Ganglions cervicaux [non palpables]",
+            "Sus-claviculaires [non palpables]",
+            "Troisier [absent]",
+            "Axillaires [non palpables]",
+            "Inguinaux [quelques petits, mous]",
+            "Épitrochléens [non palpables]"
+          ],
+          "patientComment": "Pas d'adénopathie significative",
+          "scoringRule": "≥5 aires = 2 pts"
+        },
+        {
+          "id": "e5",
+          "text": "Examen cardio-pulmonaire",
+          "details": [
+            "Auscultation cardiaque [rythme régulier, pas de souffle]",
+            "B3/B4 [absents]",
+            "Auscultation pulmonaire [MV normal, pas de râles]",
+            "Œdèmes MI [absents]",
+            "Signe de Harzer [absent]",
+            "TRC [< 2 secondes]"
+          ],
+          "patientComment": "Examen cardio-pulmonaire normal"
+        },
+        {
+          "id": "e6",
+          "text": "Examen neurologique orienté",
+          "details": [
+            "Conscience [normale, orienté]",
+            "Astérixis [absent]",
+            "Tremor [non]",
+            "ROT [symétriques, normaux]",
+            "Babinski [négatif]",
+            "Force musculaire [5/5]",
+            "Tonus [normal]"
+          ],
+          "patientComment": "Pas de signe d'encéphalopathie hépatique",
+          "scoringRule": "≥5 éléments = 2 pts"
+        },
+        {
+          "id": "e7",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "binaryOnly": false,
+          "details": [
+            "Examen hépatologique complet et systématique"
+          ],
+          "scoringRule": "Examen excellent = 2 pts, correct = 1 pt, insuffisant = 0 pt"
+        }
+      ]
+    },
+    "management": {
+      "title": "Prise en charge",
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic principal évoqué",
+          "patientComment": "Hépatite aiguë virale A (voyage récent zone endémique, gastro-entérite prodromique, âge jeune)",
+          "scoringRule": "Diagnostic avec justification = 2 pts"
+        },
+        {
+          "id": "m2",
+          "text": "Diagnostics différentiels complets",
+          "ddSection": {
+            "categories": [
+              {
+                "name": "Hépatites virales",
+                "items": [
+                  "Hépatite A aiguë (plus probable)",
+                  "Hépatite B aiguë",
+                  "Hépatite C aiguë (rare)",
+                  "Hépatite E (voyage)",
+                  "EBV, CMV"
+                ]
+              },
+              {
+                "name": "Causes toxiques/médicamenteuses",
+                "items": [
+                  "Hépatite au paracétamol",
+                  "Autres médicaments hépatotoxiques",
+                  "Toxiques professionnels",
+                  "Champignons, herbes"
+                ]
+              },
+              {
+                "name": "Causes obstructives",
+                "items": [
+                  "Lithiase cholédocienne",
+                  "Cholangite sclérosante",
+                  "Compression extrinsèque",
+                  "Parasitose biliaire"
+                ]
+              },
+              {
+                "name": "Autres causes",
+                "items": [
+                  "Syndrome de Gilbert (mais symptômes)",
+                  "Hépatite auto-immune",
+                  "Maladie de Wilson (âge)",
+                  "Leptospirose"
+                ]
+              }
+            ]
+          },
+          "scoringRule": "≥10 diagnostics dans 3+ catégories = 2 pts, 5-9 = 1 pt"
+        },
+        {
+          "id": "m3",
+          "text": "Bilan biologique hépatique complet",
+          "details": [
+            "ASAT, ALAT (cytolyse)",
+            "GGT, phosphatases alcalines (cholestase)",
+            "Bilirubine totale et conjuguée",
+            "TP, facteur V (fonction hépatique)",
+            "Albumine, protéines totales",
+            "NFS, plaquettes",
+            "Ionogramme, urée, créatinine",
+            "Glycémie (fonction hépatique)"
+          ],
+          "patientComment": "Bilan pour typer l'atteinte et évaluer la gravité",
+          "scoringRule": "≥7 examens = 2 pts, 5-6 = 1 pt"
+        },
+        {
+          "id": "m4",
+          "text": "Sérologies virales hépatites",
+          "details": [
+            "IgM anti-VHA (prioritaire)",
+            "Ag HBs + Ac anti-HBc IgM",
+            "Ac anti-HBc totaux",
+            "Ac anti-VHC",
+            "IgM anti-VHE (voyage)",
+            "Sérologie EBV si doute",
+            "Sérologie CMV si doute"
+          ],
+          "patientComment": "Panel complet hépatites virales",
+          "scoringRule": "≥5 sérologies = 2 pts"
+        },
+        {
+          "id": "m5",
+          "text": "Imagerie hépatobiliaire",
+          "details": [
+            "Échographie abdominale en urgence",
+            "Évaluation parenchyme hépatique",
+            "Recherche lithiase vésiculaire",
+            "Voies biliaires (dilatation)",
+            "Veine porte (perméabilité)",
+            "Rate (taille)",
+            "Ascite (quantification)"
+          ],
+          "patientComment": "Échographie pour éliminer obstacle",
+          "scoringRule": "≥5 éléments recherchés = 2 pts"
+        },
+        {
+          "id": "m6",
+          "text": "Prise en charge thérapeutique adaptée",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Mesures générales immédiates",
+                "content": "• Repos au domicile\n• Hydratation orale 2-3L/jour\n• Alimentation selon tolérance (pas de régime)\n• Éviction alcool absolue\n• Arrêt paracétamol et hépatotoxiques\n• Surveillance état général"
+              },
+              {
+                "title": "Traitement symptomatique",
+                "content": "• Antiémétiques si nausées (métoclopramide)\n• Antalgiques non hépatotoxiques si besoin\n• Pas de corticoïdes\n• Éviter AINS\n• Vitamine K si TP < 70%"
+              },
+              {
+                "title": "Mesures préventives obligatoires",
+                "content": "• Déclaration obligatoire si VHA confirmé\n• Éviction travail (manipulation aliments) 2 semaines\n• Hygiène stricte (lavage mains)\n• Désinfection sanitaires\n• Information entourage\n• Vaccination entourage non immunisé"
+              }
+            ]
+          },
+          "scoringRule": "Plan complet avec prévention = 2 pts"
+        },
+        {
+          "id": "m7",
+          "text": "Critères d'hospitalisation",
+          "details": [
+            "TP < 50% ou INR > 1.5",
+            "Encéphalopathie même minime",
+            "Vomissements incoercibles",
+            "Déshydratation sévère",
+            "Comorbidités importantes",
+            "Contexte social défavorable",
+            "Doute diagnostique important"
+          ],
+          "patientComment": "Surveillance ambulatoire si pas de critère de gravité",
+          "scoringRule": "≥5 critères = 2 pts"
+        },
+        {
+          "id": "m8",
+          "text": "Surveillance et suivi",
+          "details": [
+            "Contrôle biologique J3-J5",
+            "TP obligatoire (gravité)",
+            "Transaminases (pic puis décroissance)",
+            "Bilirubine (normalisation lente)",
+            "Consultation si aggravation",
+            "Contrôle à 1 mois",
+            "Normalisation complète 6-8 semaines"
+          ],
+          "patientComment": "Suivi rapproché initial puis espacé",
+          "scoringRule": "≥5 éléments de suivi = 2 pts"
+        },
+        {
+          "id": "m9",
+          "text": "Information et éducation patient",
+          "details": [
+            "Expliquer hépatite A probable",
+            "Évolution favorable habituelle (> 99%)",
+            "Durée symptômes (4-6 semaines)",
+            "Contagiosité (15j avant - 1 sem après ictère)",
+            "Signes d'alarme (confusion, saignements)",
+            "Importance suivi biologique",
+            "Immunité définitive après guérison"
+          ],
+          "patientComment": "Information rassurante mais vigilance",
+          "scoringRule": "≥5 points d'information = 2 pts"
+        },
+        {
+          "id": "m10",
+          "text": "Prévention future",
+          "details": [
+            "Vaccination VHA après guérison",
+            "Vaccination VHB recommandée",
+            "Conseils voyages futurs",
+            "Hygiène alimentaire",
+            "Éviter eau non potable",
+            "Protection entourage actuel"
+          ],
+          "patientComment": "Plan de prévention complet"
+        },
+        {
+          "id": "m11",
+          "text": "Évaluation globale de la prise en charge",
+          "binaryOnly": false,
+          "details": [
+            "PEC complète d'un ictère aigu avec prévention"
+          ],
+          "scoringRule": "PEC excellente = 2 pts, correcte = 1 pt, insuffisante = 0 pt"
+        }
+      ]
+    }
+  }
+}

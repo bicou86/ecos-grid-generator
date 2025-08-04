@@ -1,0 +1,230 @@
+{
+  "title": "Douleur à la hanche",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Monsieur Müller, 42 ans, consultant pour douleurs de hanche",
+    "vitals": {
+      "ta": "110/73 mmHg",
+      "fc": "70 bpm",
+      "fr": "13/min"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Présentation avec nom, fonction et tâche",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Question d'entrée ouverte - Symptôme principal",
+          "patientComment": "douleurs de hanche",
+          "binaryOnly": true
+        },
+        {
+          "id": "a3",
+          "text": "Localisation",
+          "patientComment": "aine gauche"
+        },
+        {
+          "id": "a4",
+          "text": "Apparition temporelle",
+          "details": [
+            "Début soudain - insidieux (lent, légèrement croissant)",
+            "Durée (depuis environ 1 mois)",
+            "Évolution paroxystique - persistante - permanente (constante)",
+            "Épisodes antérieurs (non)",
+            "Douleurs nocturnes (aucune)"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Irradiation",
+          "patientComment": "dans le genou gauche"
+        },
+        {
+          "id": "a6",
+          "text": "Qualité",
+          "patientComment": "sourde"
+        },
+        {
+          "id": "a7",
+          "text": "Intensité",
+          "patientComment": "5/10"
+        },
+        {
+          "id": "a8",
+          "text": "Facteurs aggravants",
+          "patientComment": "lors de la marche, en position debout"
+        },
+        {
+          "id": "a9",
+          "text": "Facteurs améliorants",
+          "patientComment": "en position assise, couchée"
+        },
+        {
+          "id": "a10",
+          "text": "Événement déclenchant, traumatisme",
+          "patientComment": "ne sait pas, non"
+        },
+        {
+          "id": "a11",
+          "text": "Symptômes B",
+          "patientComment": "fièvre, perte de poids, sueurs nocturnes (non)"
+        },
+        {
+          "id": "a12",
+          "text": "Boiterie",
+          "patientComment": "légère boiterie gauche en soirée"
+        },
+        {
+          "id": "a13",
+          "text": "Fractures",
+          "patientComment": "non"
+        },
+        {
+          "id": "a14",
+          "text": "Fonction limitée",
+          "patientComment": "pas remarqué"
+        },
+        {
+          "id": "a15",
+          "text": "Gonflement dans l'aine",
+          "patientComment": "non"
+        },
+        {
+          "id": "a16",
+          "text": "Anamnèse personnelle",
+          "details": [
+            "Antécédents (transplantation rénale pour maladie polykystique il y a 10 ans)",
+            "Chirurgies (appendicectomie dans l'enfance)",
+            "Médicaments (Prednisone 7,5mg/j, Azathioprine, Cyclophosphamide, Paracétamol pour les douleurs)",
+            "Allergies (aucune)"
+          ]
+        },
+        {
+          "id": "a17",
+          "text": "Toxiques",
+          "patientComment": "alcool/tabac/drogues (non)"
+        },
+        {
+          "id": "a18",
+          "text": "Immunosuppression, cancer",
+          "patientComment": "oui, non"
+        },
+        {
+          "id": "a19",
+          "text": "Anamnèse familiale",
+          "patientComment": "père également maladie polykystique, décédé d'hémorragie cérébrale"
+        },
+        {
+          "id": "a20",
+          "text": "Anamnèse sociale, stress, situation de charge, profession, capacité de travail"
+        },
+        {
+          "id": "a21",
+          "text": "Évaluation globale de la qualité de l'anamnèse",
+          "binaryOnly": false,
+          "details": [
+            "Anamnèse générale ciblée et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Articulation de la hanche (bilatérale !)",
+          "details": [
+            "Inspection (gonflement, rougeur, hyperthermie, montrer localisation de la douleur)",
+            "Palpation des contours (douleur à la pression sur ligament inguinal)",
+            "Position du tailleur / signe en 4 (distance genou-sol augmentée env. 15 cm)",
+            "Flexion/Extension (aucune limitation, douleur en fin de course)",
+            "Rotation interne/externe (rotation interne limitée)",
+            "Test d'impingement (négatif)"
+          ]
+        },
+        {
+          "id": "e2",
+          "text": "Démarche",
+          "patientComment": "légère boiterie de décharge"
+        },
+        {
+          "id": "e3",
+          "text": "Position debout",
+          "patientComment": "signe de Trendelenburg négatif"
+        },
+        {
+          "id": "e4",
+          "text": "Évaluation globale de la qualité de l'examen clinique",
+          "binaryOnly": false,
+          "details": [
+            "Status général ciblé et bien conduit"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Énonce le diagnostic de suspicion",
+          "patientComment": "nécrose aseptique de la tête fémorale"
+        },
+        {
+          "id": "m2",
+          "text": "Diagnostics différentiels",
+          "details": [
+            "Coxarthrose",
+            "Arthrite réactive (M. Reiter)",
+            "Tendinopathie des adducteurs",
+            "Impingement fémoro-acétabulaire",
+            "Tumeur/Métastase"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Nomme les examens diagnostiques",
+          "details": [
+            "Radiographie vue d'ensemble du bassin, hanche AP/axiale (ostéolyses + ostéosclérose côte à côte)",
+            "Échographie de la hanche (épanchement articulaire négatif)",
+            "IRM (suspicion de nécrose de la tête fémorale)",
+            "Laboratoire (exclusion inflammation)"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Thérapie",
+          "details": [
+            "Physiothérapie (mobilisation)",
+            "Sport ménageant les articulations (natation, vélo)",
+            "Forage osseux",
+            "Prothèse totale de hanche"
+          ]
+        },
+        {
+          "id": "m5",
+          "text": "Précautions importantes",
+          "patientComment": "CAVE : pas d'AINS après transplantation rénale → Tramal 1g-1,5 gttes/j"
+        },
+        {
+          "id": "m6",
+          "text": "Évaluation globale de la qualité de la prise en charge",
+          "binaryOnly": false,
+          "details": [
+            "Prise en charge générale cohérente et bien conduite"
+          ],
+          "scoringRule": "Bien = oui, suffisant = ±, insuffisant = non"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,666 @@
+{
+  "title": "Pharmacologie clinique 1 - Traitement de la douleur",
+  "context": {
+    "setting": "Cabinet médical / Urgences ambulatoires",
+    "patient": "4 cas cliniques de prescription d'antalgiques en médecine ambulatoire",
+    "vitals": {}
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "title": "Cas cliniques et anamnèse",
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Cas 1 : Entorse de cheville - Jeune femme 18 ans",
+          "description": "Match de basket, torsion cheville gauche",
+          "details": [
+            "Mécanisme [Torsion lors d'un match de basket]",
+            "Douleur [Face externe cheville gauche]",
+            "Œdème [Tuméfaction discrète]",
+            "Mobilité [Flexion-extension douloureuse]",
+            "Marche [Possible en boitant]",
+            "Gravité [Pas de signes de gravité]"
+          ]
+        },
+        {
+          "id": "a2",
+          "text": "Cas 2 : Arthrose de hanche - Dame 70 ans",
+          "description": "HTA traitée, douleur hanche gauche depuis 1 an",
+          "details": [
+            "Évolution [Douleur progressive sur 1 an]",
+            "Caractère [Initialement à la marche, maintenant au repos]",
+            "Raideur matinale [20 minutes]",
+            "Mobilité [Difficultés croissantes]",
+            "Traitement actuel [Ibuprofène à la demande]",
+            "Imagerie [Rétrécissement articulaire, ostéophytes]"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Cas 3 : Lombalgie et alcoolisme - Homme 56 ans",
+          "description": "Patron d'entreprise en faillite, stress et alcool",
+          "details": [
+            "Contexte [Faillite entreprise il y a 1 an]",
+            "Consommation alcool [Whisky pour dormir, plusieurs/jour]",
+            "Lombalgie [Permanente sauf couché ou après alcool]",
+            "Automédication [4 cp paracétamol/jour]",
+            "Céphalées [Fond de mal de tête attribué à l'alcool]",
+            "Mode de vie [Plus de sport, prise de poids]"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Cas 4 : Douleur métastatique - Femme 55 ans",
+          "description": "Adénocarcinome mammaire métastatique",
+          "details": [
+            "Cancer [Adénocarcinome mammaire d'emblée métastatique]",
+            "Localisation [Métastase L2 très douloureuse]",
+            "Caractère douleur [Dorsale permanente, intense, nocturne]",
+            "Traitement oncologique [Chimio, radiothérapie, hormonothérapie]",
+            "Analgésie actuelle [Fentanyl patch + morphine réserves 6×/j]",
+            "Effets secondaires [Constipation malgré fibres]"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "title": "Examen clinique et évaluation",
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Évaluation de la douleur - Mécanisme et intensité",
+          "details": [
+            "Type de douleur [Nociceptive vs neuropathique]",
+            "Composante inflammatoire [Présente ou absente]",
+            "Intensité [Échelle EVA ou paliers OMS]",
+            "Caractère [Aiguë vs chronique]",
+            "Retentissement [Fonctionnel et psychosocial]"
+          ]
+        },
+        {
+          "id": "e2",
+          "text": "Examen cas 1 - Entorse cheville",
+          "details": [
+            "Inspection [Œdème discret face externe]",
+            "Palpation [Douleur ligamentaire]",
+            "Mobilité [Flexion-extension douloureuse]",
+            "Tests ligamentaires [Tiroir antérieur]",
+            "Critères Ottawa [Pas d'indication radiologique]"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Examen cas 2 - Arthrose hanche",
+          "details": [
+            "Mobilité hanche [Limitation rotations]",
+            "Boiterie [Présente]",
+            "Amyotrophie [Possible quadriceps]",
+            "Rachis lombaire [À examiner]",
+            "Signes inflammatoires [Absents - VS normale]"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Examen cas 3 - Lombalgie et alcoolisme",
+          "details": [
+            "État général [Conservé]",
+            "Signes d'alcoolisme [Érythrose faciale, tremblement, foetor]",
+            "TA [150/90 mmHg - HTA]",
+            "Rachis lombaire [Rectitude, contracture bilatérale]",
+            "Mobilité [Limitation tous les plans]",
+            "Syndrome radiculaire [Absent]"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Examen cas 4 - Douleur métastatique",
+          "details": [
+            "Douleur dorsale [L2, permanente, intense]",
+            "Signes de compression [Absents]",
+            "Examen neurologique [Normal]",
+            "État général [Altéré par la maladie]",
+            "Efficacité analgésie [Insuffisante, 6 réserves/jour]"
+          ]
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "title": "Choix thérapeutique et prescription",
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Principes de choix d'un antalgique",
+          "details": [
+            "Paliers OMS [1: Non-opioïdes, 2: Opioïdes faibles, 3: Opioïdes forts]",
+            "Mécanisme douleur [Nociceptive → paliers, Neuropathique → spécifique]",
+            "Composante inflammatoire [AINS si présente]",
+            "Terrain patient [Comorbidités, interactions]",
+            "Balance bénéfice/risque [Efficacité vs effets indésirables]",
+            "Coût [Rapport coût-efficacité]"
+          ]
+        },
+        {
+          "id": "m2",
+          "text": "Cas 1 - Prescription entorse cheville",
+          "details": [
+            "Choix [AINS de première intention]",
+            "Justification [Douleur inflammatoire, jeune sans facteur de risque]",
+            "Molécule [Ibuprofène 400 mg × 3/j ou diclofénac]",
+            "Durée [5-7 jours]",
+            "Adjuvants [RICE, Aircast]",
+            "IPP [Pas nécessaire chez jeune sans facteur de risque]"
+          ],
+          "therapySection": {
+            "categories": [
+              {
+                "title": "AINS - Classe thérapeutique",
+                "content": "MÉCANISME:\n- Inhibition COX-1 et COX-2\n- Réduction prostaglandines inflammatoires\n\nEFFETS INDÉSIRABLES:\n- Digestifs: dyspepsie, ulcères (1%)\n- Rénaux: insuffisance fonctionnelle\n- CV: HTA, risque ischémique (COX-2)\n- Plaquettes: anti-agrégation\n\nCONTRE-INDICATIONS:\n- Ulcère actif\n- Insuffisance rénale\n- Insuffisance cardiaque sévère"
+              }
+            ]
+          }
+        },
+        {
+          "id": "m3",
+          "text": "Cas 2 - Prescription arthrose hanche",
+          "details": [
+            "Choix prudent [Paracétamol d'abord vu l'âge et HTA]",
+            "Alternative [AINS courte durée si échec]",
+            "Précautions [Surveillance rénale, TA]",
+            "IPP [Si AINS prescrit vu âge + IEC]",
+            "Adjuvants [Physiothérapie, perte de poids]",
+            "Chirurgie [À discuter avec orthopédiste]"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Cas 3 - Gestion lombalgie et alcoolisme",
+          "details": [
+            "Paracétamol [À éviter - risque hépatique avec alcool]",
+            "Alternative [AINS possible, physiothérapie+++]",
+            "Opioïdes [Non recommandés - risque d'abus]",
+            "Prise en charge globale [Sevrage alcool prioritaire]",
+            "Approche physique [Exercices, étirements]",
+            "Suivi [Addictologie nécessaire]"
+          ],
+          "redflagsSection": {
+            "title": "Risques du paracétamol avec alcool",
+            "items": [
+              {
+                "text": "Hépatotoxicité",
+                "description": "Alcool chronique épuise glutathion, métabolite toxique du paracétamol s'accumule"
+              },
+              {
+                "text": "Surdosage accidentel",
+                "description": "Multiples préparations contenant paracétamol"
+              },
+              {
+                "text": "Insuffisance hépatique",
+                "description": "Risque majoré si > 4g/j avec alcoolisme chronique"
+              }
+            ]
+          }
+        },
+        {
+          "id": "m5",
+          "text": "Cas 4 - Adaptation traitement douleur métastatique",
+          "details": [
+            "Augmentation opioïdes [Rotation ou augmentation doses]",
+            "Calcul doses [6 réserves/j → augmenter le fond]",
+            "Co-analgésiques [Corticoïdes pour douleur osseuse]",
+            "Constipation [Laxatifs stimulants, pas mucilages]",
+            "Exemple [Dexaméthasone 3×4 mg/j]",
+            "Surveillance [Efficacité, effets secondaires]"
+          ],
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Opioïdes forts - Gestion",
+                "content": "ROTATION OPIOÏDES:\n- Si efficacité insuffisante\n- Si effets indésirables limitants\n- Équivalences: morphine PO 30 mg = fentanyl 12 μg/h\n\nGESTION CONSTIPATION:\n- Systématique, pas de tolérance\n- Laxatifs stimulants (bisacodyl)\n- Éviter mucilages si opioïdes\n\nCO-ANALGÉSIQUES:\n- Corticoïdes: douleur osseuse, compression\n- Bisphosphonates: métastases osseuses\n- Radiothérapie antalgique"
+              }
+            ]
+          }
+        },
+        {
+          "id": "m6",
+          "text": "Pharmacocinétique et choix moléculaire",
+          "details": [
+            "AINS courte demi-vie [Diclofénac 2h, ibuprofène 2-3h]",
+            "AINS longue demi-vie [Naproxène 12-15h, célécoxib 10-12h]",
+            "Paracétamol [T½ 2h, métabolisme hépatique]",
+            "Opioïdes et IR [Buprénorphine, fentanyl si IR]",
+            "Interactions CYP [Tramadol/codéine CYP2D6]",
+            "Polymorphisme génétique [Métaboliseurs lents/rapides]"
+          ]
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Messages clés de prescription",
+          "content": "La prescription d'antalgiques doit être individualisée selon le mécanisme de la douleur, son intensité, le terrain du patient et le rapport bénéfice/risque. Les paliers de l'OMS restent la référence pour la douleur nociceptive."
+        },
+        {
+          "id": "c2",
+          "text": "Questions types des patients",
+          "content": "[Puis-je prendre plusieurs antalgiques ensemble ?]\n[Combien de temps puis-je prendre ces médicaments ?]\n[Y a-t-il un risque de dépendance ?]\n[Que faire si la douleur persiste ?]"
+        },
+        {
+          "id": "c3",
+          "text": "Réponses adaptées",
+          "exemplesPhrases": [
+            "Certaines associations sont possibles et synergiques (paracétamol + AINS), mais attention aux médicaments combinés qui peuvent contenir les mêmes principes actifs.",
+            "Les AINS doivent être utilisés sur la durée la plus courte possible, idéalement moins de 7-10 jours en aigu. Le paracétamol peut être utilisé plus longtemps si fonction hépatique normale.",
+            "Le risque de dépendance existe surtout avec les opioïdes. Pour les douleurs aiguës, une utilisation courte et contrôlée minimise ce risque.",
+            "Si la douleur persiste malgré le traitement, une réévaluation est nécessaire pour adapter la stratégie ou rechercher une autre cause."
+          ]
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour les patients standardisés - 4 cas",
+      "cas1": {
+        "nom": "Jeune femme sportive",
+        "age": "18 ans",
+        "contexte": "Urgences ambulatoires",
+        "presentation": "Boite légèrement, cheville enflée, anxieuse de reprendre le sport rapidement",
+        "questions": [
+          "Quand pourrai-je rejouer ?",
+          "C'est grave ?",
+          "J'ai mal à l'estomac avec les anti-inflammatoires d'habitude"
+        ]
+      },
+      "cas2": {
+        "nom": "Dame âgée",
+        "age": "70 ans",
+        "contexte": "Cabinet médical",
+        "presentation": "Marche avec difficulté, se tient la hanche, fatiguée par la douleur chronique",
+        "questions": [
+          "Je ne veux pas d'opération",
+          "L'ibuprofène me donne des brûlures",
+          "Mes reins vont bien avec tous ces médicaments ?"
+        ]
+      },
+      "cas3": {
+        "nom": "Homme d'affaires stressé",
+        "age": "56 ans",
+        "contexte": "Premier rendez-vous cabinet",
+        "presentation": "Érythrose faciale, léger tremblement, odeur d'alcool, minimise sa consommation",
+        "questions": [
+          "Le paracétamol m'aide bien, je peux continuer ?",
+          "C'est le stress qui me fait mal au dos",
+          "Un whisky me soulage mieux que les médicaments"
+        ]
+      },
+      "cas4": {
+        "nom": "Patiente oncologique",
+        "age": "55 ans",
+        "contexte": "Suivi cabinet",
+        "presentation": "Fatiguée, amaigrie, douleur visible, inquiète de l'escalade des doses",
+        "questions": [
+          "Je vais devenir dépendante ?",
+          "La constipation est insupportable",
+          "Il n'y a plus rien d'autre à faire ?"
+        ]
+      }
+    },
+    "informationsExpert": {
+      "titre": "Points clés pour l'évaluation - Pharmacologie de la douleur",
+      "objectifsPedagogiques": [
+        "Identifier le mécanisme de la douleur (nociceptive vs neuropathique)",
+        "Appliquer les paliers de l'OMS de manière appropriée",
+        "Connaître les mécanismes d'action des antalgiques",
+        "Identifier les effets indésirables et contre-indications",
+        "Adapter la prescription au terrain du patient",
+        "Gérer les situations à risque (alcool, IRC, sujet âgé)"
+      ],
+      "pointsCles": [
+        "AINS première intention si composante inflammatoire sans contre-indication",
+        "Paracétamol prudent si alcoolisme ou hépatopathie",
+        "Opioïdes: toujours prévenir la constipation",
+        "Sujet âgé: commencer bas, augmenter lentement",
+        "Interactions médicamenteuses fréquentes",
+        "Rotation des opioïdes si inefficacité ou intolérance"
+      ],
+      "pieges": [
+        "Oublier le risque hépatique du paracétamol avec l'alcool",
+        "Prescrire des AINS sans considérer les interactions (IEC, diurétiques)",
+        "Ne pas prévenir la constipation sous opioïdes",
+        "Méconnaître les polymorphismes CYP2D6 (codéine, tramadol)",
+        "Sous-estimer le risque d'abus des opioïdes",
+        "Ne pas utiliser les co-analgésiques dans les douleurs métastatiques"
+      ]
+    },
+    "theoriePratique": {
+      "titre": "Rappels pharmacologiques - Traitement de la douleur",
+      "sections": [
+        {
+          "titre": "Classification de la douleur",
+          "contenu": "Distinction fondamentale pour le choix thérapeutique",
+          "points": [
+            "Douleur nociceptive: excès de stimulation des nocicepteurs",
+            "Douleur neuropathique: lésion du système nerveux",
+            "Douleur inflammatoire: médiateurs de l'inflammation",
+            "Douleur aiguë: signal d'alarme < 3 mois",
+            "Douleur chronique: > 3-6 mois, perte fonction d'alarme",
+            "Composante psychosociale toujours présente"
+          ]
+        },
+        {
+          "titre": "Paliers de l'OMS",
+          "contenu": "Approche graduée du traitement antalgique",
+          "points": [
+            "Palier 1: Paracétamol, AINS ± adjuvants",
+            "Palier 2: Opioïdes faibles (codéine, tramadol) ± palier 1",
+            "Palier 3: Opioïdes forts (morphine, fentanyl) ± adjuvants",
+            "Ascenseur antalgique: possibilité de sauter un palier",
+            "Co-analgésiques: corticoïdes, antiépileptiques, antidépresseurs",
+            "Approche multimodale recommandée"
+          ]
+        },
+        {
+          "titre": "Mécanismes d'action",
+          "contenu": "Cibles pharmacologiques des antalgiques",
+          "points": [
+            "Paracétamol: inhibition COX centrale, voies sérotoninergiques, système cannabinoïde",
+            "AINS: inhibition COX-1/2 périphérique, réduction prostaglandines",
+            "Opioïdes: agonistes récepteurs μ, κ, δ médullaires et supraspinaux",
+            "Tramadol: double action opioïde + inhibition recapture 5-HT/NA",
+            "Gabapentinoïdes: canaux calciques voltage-dépendants (douleur neuropathique)",
+            "Corticoïdes: anti-inflammatoire, réduction œdème péritumoral"
+          ]
+        }
+      ],
+      "rappelsTherapeutiques": [
+        "Paracétamol: max 4g/j (2g si facteurs de risque hépatiques)",
+        "AINS: durée minimale, protection gastrique si risque",
+        "Opioïdes: titration individuelle, prévention constipation systématique",
+        "Rotation opioïdes: changement de molécule si inefficacité/intolérance",
+        "Co-analgésiques: essentiels dans douleurs neuropathiques et métastatiques",
+        "N-acétylcystéine: antidote intoxication paracétamol",
+        "Naloxone: antidote surdosage opioïdes"
+      ],
+      "examensComplementaires": [
+        "EVA/EN: évaluation intensité douleur",
+        "DN4: dépistage douleur neuropathique",
+        "Bilan hépatique: avant paracétamol si facteurs de risque",
+        "Créatinine: avant AINS chez sujet âgé ou à risque",
+        "Radiographie: selon critères (Ottawa pour cheville)",
+        "Monitoring: TA sous AINS, fonction rénale",
+        "Dosage paracétamol: si suspicion intoxication (nomogramme de Prescott)"
+      ]
+    },
+    "resume": {
+      "titre": "💊 Traitement de la douleur – Choix de l’antalgique selon mécanisme – Résumé ECOS",
+      "sections": [
+        {
+          "titre": "🔍 Anamnèse",
+          "subsections": [
+            {
+              "titre": "Éléments à explorer",
+              "points": [
+                "Localisation, intensité (EVA/NRS), durée, facteurs déclenchants",
+                "Qualité de la douleur : nociceptive (somatique/viscérale) vs neuropathique",
+                "Impact sur sommeil, activité, humeur",
+                "ATCD médicaux : insuffisance rénale/hépatique, ulcère, addictions",
+                "Médicaments déjà essayés et tolérance"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "👀 Examen clinique",
+          "subsections": [
+            {
+              "titre": "Points à rechercher",
+              "points": [
+                "Signes inflammatoires (douleur nociceptive somatique)",
+                "Douleur profonde mal localisée (viscérale)",
+                "Allodynie, paresthésies, brûlures (neuropathique)",
+                "Évaluation des comorbidités (HTA, IR, IC, hépatopathie)",
+                "Recherche d’effets secondaires des antalgiques (constipation, sédation, hémorragie digestive)"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "🧪 Examens diagnostiques",
+          "subsections": [
+            {
+              "titre": "Évaluation initiale",
+              "points": [
+                "Score EVA/NRS ou échelle verbale",
+                "Grille DN4 si suspicion de douleur neuropathique",
+                "Bilan biologique selon comorbidités (NFS, créat, bilan hépatique)",
+                "Imagerie selon étiologie"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "⚙️ Prise en charge",
+          "subsections": [
+            {
+              "titre": "Principes généraux (DNA)",
+              "points": [
+                "By the mouth : voie orale privilégiée, formes retard",
+                "By the clock : prises régulières, pas seulement à la demande",
+                "By the ladder : suivre les paliers de l’OMS"
+              ]
+            },
+            {
+              "titre": "Choix selon mécanisme",
+              "points": [
+                "Douleur nociceptive légère : paracétamol, AINS ± adjuvants",
+                "Douleur nociceptive modérée : + opioïdes faibles (tramadol, codéine)",
+                "Douleur nociceptive intense : + opioïdes forts (morphine, oxycodone, fentanyl)",
+                "Douleur neuropathique : co-antalgiques (antidépresseurs tricycliques, ISRN, antiépileptiques : gabapentine, prégabaline)",
+                "Douleurs osseuses tumorales : bisphosphonates ± corticoïdes",
+                "Douleur compressive : corticoïdes"
+              ]
+            },
+            {
+              "titre": "Adjuvants et prévention EI",
+              "points": [
+                "Laxatifs systématiques si opioïdes",
+                "Antiemétiques si opioïdes",
+                "IPP si AINS"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "✅ Points clés ECOS",
+          "points": [
+            "Toujours évaluer intensité et mécanisme de la douleur",
+            "Utiliser l’échelle de l’OMS (3 paliers) + coantalgiques adaptés",
+            "Ne jamais prescrire un opioïde seul : toujours associer un non-opioïde",
+            "Évaluer et prévenir les effets indésirables (laxatifs, antiémétiques, IPP)",
+            "Réévaluer régulièrement efficacité et tolérance"
+          ]
+        },
+        {
+          "titre": "📋 Check-list rapide ECOS",
+          "subsections": [
+            {
+              "titre": "Questions à poser",
+              "points": [
+                "Caractéristiques de la douleur (intensité, type, durée, localisation) ?",
+                "Facteurs aggravants et soulageants ?",
+                "ATCD d’ulcère, insuffisance rénale, hépatique, addictions ?",
+                "Traitements antalgiques déjà testés ?",
+                "Impacts sur sommeil, vie quotidienne, humeur ?"
+              ]
+            },
+            {
+              "titre": "Examens à faire",
+              "points": [
+                "Échelle EVA/NRS",
+                "Grille DN4 si suspicion neuropathique",
+                "Biologie (créat, bilan hépatique, NFS) selon contexte",
+                "Évaluation comorbidités et risques iatrogènes"
+              ]
+            },
+            {
+              "titre": "PEC en 3 points",
+              "points": [
+                "Appliquer échelle OMS adaptée à la douleur",
+                "Adapter aux mécanismes : co-antalgiques pour neuropathiques",
+                "Prévenir systématiquement effets indésirables"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "presentationPatient": {
+      "titre": "📑 Fiche ECOS – Cas : Pharmacologie clinique – Traitement de la douleur (4 situations pratiques)",
+      "sections": [
+        {
+          "titre": "🧩 Checklist mentale (présentation systématisée)",
+          "points": [
+            "Toujours commencer par caractériser la douleur → localisation, intensité (EVA), durée, type (nociceptive/neuropathique), aiguë vs chronique",
+            "Identifier facteurs déclenchants/aggravants, contexte (trauma, cancer, arthrose, alcool, âge)",
+            "Rechercher comorbidités et contre-indications (ulcère, IR, IH, addictions, âge avancé)",
+            "Appliquer les paliers OMS (1 = paracétamol/AINS ; 2 = opioïdes faibles ; 3 = opioïdes forts)",
+            "Adapter selon mécanisme (inflammatoire → AINS, neuropathique → coantalgiques, tumorale → opioïdes + co-antalgiques)",
+            "Toujours prévenir et traiter les effets indésirables (IPP si AINS, laxatifs si opioïdes, éviter paracétamol si alcool)",
+            "Réévaluer systématiquement efficacité et tolérance"
+          ],
+          "mnemo": {
+            "titre": "👉 Mnémo rapide : DNA (règles OMS de prescription)",
+            "elements": [
+              "D = By the **Door** (voie orale privilégiée)",
+              "N = By the **Number** (selon palier OMS)",
+              "A = By the **Alarm clock** (prises régulières, pas seulement à la demande)"
+            ]
+          }
+        },
+        {
+          "titre": "🎤 Version longue (≈2-3 min, oralisée)",
+          "contenu": "Il s’agit d’une série de situations cliniques illustrant la prescription des antalgiques en médecine ambulatoire, que je vais présenter de façon structurée.\n\nCas 1 : Une jeune femme de 18 ans présente une entorse de cheville gauche après un match de basket. La douleur est localisée, nociceptive, aiguë, à composante inflammatoire, avec œdème discret et marche possible. Mon hypothèse est une douleur inflammatoire aiguë, sans signe de gravité. Le traitement adapté est un AINS comme l’ibuprofène 400 mg 3 fois par jour pendant 5 à 7 jours, associé aux mesures RICE et une orthèse type Aircast. Pas besoin d’IPP vu l’absence de facteur de risque.\n\nCas 2 : Une dame de 70 ans souffre d’arthrose de hanche gauche évoluant depuis un an, avec douleur maintenant présente au repos et retentissement fonctionnel important. C’est une douleur nociceptive chronique, sans composante inflammatoire marquée. Elle prend de l’ibuprofène à la demande mais se plaint de brûlures gastriques. Compte tenu de son âge et de l’HTA traitée, le choix de première intention est le paracétamol, en adaptation posologique. Si échec, on peut envisager un AINS courte durée avec IPP obligatoire. Des adjuvants non pharmacologiques comme physiothérapie et perte de poids sont recommandés, et la chirurgie prothétique devra être discutée.\n\nCas 3 : Un homme de 56 ans, consommant du whisky quotidiennement, consulte pour lombalgies chroniques. La douleur est nociceptive mécanique, sans signe radiculaire, mais le contexte est marqué par un alcoolisme chronique avec prise de paracétamol 4 g/j. Le risque ici est la toxicité hépatique du paracétamol associée à l’alcool. Le traitement doit donc exclure le paracétamol et privilégier des mesures physiques (rééducation, physiothérapie), éventuellement un AINS de courte durée avec précautions. La priorité est la prise en charge de l’alcoolisme avec orientation addictologique.\n\nCas 4 : Une femme de 55 ans atteinte d’un cancer du sein métastatique osseux présente une douleur dorsale intense et permanente, insuffisamment contrôlée par un patch de fentanyl et 6 doses de morphine de réserve par jour. Il s’agit d’une douleur cancéreuse chronique intense nécessitant une adaptation du traitement : augmenter le traitement de fond (rotation ou augmentation des opioïdes), introduire des co-antalgiques comme corticoïdes ou bisphosphonates, et traiter systématiquement la constipation induite par les opioïdes avec laxatifs stimulants. Le suivi doit évaluer l’efficacité et les effets secondaires."
+        },
+        {
+          "titre": "⚡ Version express (SBAR, 30 sec)",
+          "contenu": "S (Situation) : 4 cas illustrant prescription antalgique : entorse cheville, arthrose hanche, lombalgie alcoolique, cancer métastatique.\n\nB (Background) : Terrain jeune sain, sujet âgé avec comorbidités, alcoolisme chronique, patiente oncologique sous opioïdes.\n\nA (Assessment) : Douleur nociceptive aiguë (AINS), douleur chronique arthrosique (paracétamol, AINS prudence), lombalgie alcoolique (éviter paracétamol, PEC addiction), douleur métastatique (opiacés adaptés + coantalgiques + laxatifs).\n\nR (Recommendation) : Respect des paliers OMS, adaptation au terrain, prévention EI (IPP, laxatifs), suivi et réévaluation systématiques."
+        },
+        {
+          "titre": "🎲 Touches ludiques / mnémos",
+          "subsections": [
+            {
+              "titre": "👉 Paliers OMS",
+              "points": [
+                "Palier 1 : Paracétamol, AINS ± adjuvants",
+                "Palier 2 : Opioïdes faibles (codéine, tramadol) ± palier 1",
+                "Palier 3 : Opioïdes forts (morphine, fentanyl, oxycodone) ± adjuvants"
+              ]
+            },
+            {
+              "titre": "👉 Douleur cancéreuse (3 règles OMS)",
+              "points": [
+                "By the mouth : voie orale si possible",
+                "By the clock : horaires fixes, pas seulement à la demande",
+                "By the ladder : progression selon les paliers OMS"
+              ]
+            },
+            {
+              "titre": "👉 Risques spécifiques",
+              "points": [
+                "Paracétamol + alcool = hépatotoxicité",
+                "AINS + âge/HTA/IR = risque rénal, digestif, CV",
+                "Opioïdes = constipation systématique (prévenir, traiter)"
+              ]
+            },
+            {
+              "titre": "⚠️ Pièges ECOS",
+              "points": [
+                "Ne pas donner AINS prolongés chez sujets âgés hypertendus sans IPP",
+                "Ne jamais prescrire paracétamol fort chez alcoolique",
+                "Toujours associer un laxatif avec opioïdes",
+                "Toujours réévaluer efficacité et EI"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "❓ Questions probables de l'examinateur (avec réponses orales)",
+          "subsections": [
+            {
+              "titre": "1. Choix d’antalgiques selon mécanisme",
+              "questions": [
+                {
+                  "question": "Douleur inflammatoire aiguë (entorse) ?",
+                  "reponse": [
+                    "AINS en première intention",
+                    "Durée courte (5-7 jours)",
+                    "Associer repos/immobilisation"
+                  ]
+                },
+                {
+                  "question": "Douleur arthrosique chez sujet âgé ?",
+                  "reponse": [
+                    "Paracétamol en première intention",
+                    "AINS possible si échec mais courte durée + IPP",
+                    "Adjuvants non pharmacologiques (physio, perte poids)"
+                  ]
+                },
+                {
+                  "question": "Douleur chez alcoolique chronique ?",
+                  "reponse": [
+                    "Éviter paracétamol (risque hépatique)",
+                    "Privilégier AINS si pas de contre-indication",
+                    "PEC globale avec sevrage alcool"
+                  ]
+                },
+                {
+                  "question": "Douleur cancéreuse métastatique ?",
+                  "reponse": [
+                    "Opioïdes forts adaptés",
+                    "Augmenter dose de fond si recours fréquent aux réserves",
+                    "Co-antalgiques (corticoïdes, bisphosphonates)",
+                    "Laxatifs systématiques"
+                  ]
+                }
+              ]
+            },
+            {
+              "titre": "2. Examens complémentaires utiles",
+              "questions": [
+                {
+                  "question": "Quels examens demander selon les cas ?",
+                  "reponse": [
+                    "Cas 1 : Pas d’imagerie si critères Ottawa négatifs",
+                    "Cas 2 : Radiographie hanche, suivi fonction rénale/TA si AINS",
+                    "Cas 3 : Bilan hépatique, addictologique",
+                    "Cas 4 : Bilan douleur (EVA), bilan rénal/hépatique avant adaptation opioïdes"
+                  ]
+                }
+              ]
+            },
+            {
+              "titre": "3. Messages clés de prescription",
+              "questions": [
+                {
+                  "question": "Quels sont les principes de base ?",
+                  "reponse": [
+                    "Individualiser selon mécanisme, intensité et terrain",
+                    "Appliquer les paliers OMS",
+                    "Associer systématiquement prévention EI (IPP, laxatifs)",
+                    "Réévaluer régulièrement efficacité et tolérance"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

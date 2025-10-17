@@ -1,0 +1,395 @@
+{
+  "title": "Épisode dépressif majeur - Femme de 35 ans",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Femme de 35 ans consultant pour fatigue et troubles du sommeil depuis 3 semaines",
+    "vitals": {
+      "ta": "125/80 mmHg",
+      "fc": "88 bpm",
+      "temperature": "36.8°C"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Motif principal de consultation",
+          "binaryOnly": true,
+          "patientComment": "[Je suis très fatiguée depuis quelques semaines et je n'arrive plus à dormir normalement]"
+        },
+        {
+          "id": "a2",
+          "text": "Caractérisation des symptômes dépressifs",
+          "details": [
+            "Humeur dépressive [Oui, je me sens triste pratiquement tous les jours depuis 3 semaines]",
+            "Anhédonie [Je n'ai plus de plaisir à faire les choses que j'aimais avant, même voir mes amis]",
+            "Troubles du sommeil [Je me réveille vers 4h du matin et n'arrive plus à me rendormir]",
+            "Fatigue ou perte d'énergie [J'ai l'impression de n'avoir aucune énergie, même pour les tâches simples]",
+            "Troubles de l'appétit [J'ai perdu l'appétit, j'ai maigri de 4 kg en 3 semaines]",
+            "Difficultés de concentration [J'ai de la peine à me concentrer au travail, je fais des erreurs]"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Recherche d'idées suicidaires",
+          "patientComment": "[Parfois je me dis que ce serait plus simple si je n'étais plus là, mais je n'ai pas de plan précis]"
+        },
+        {
+          "id": "a4",
+          "text": "Sentiment de dévalorisation ou culpabilité excessive",
+          "patientComment": "[J'ai l'impression de ne rien valoir, d'être un poids pour ma famille]"
+        },
+        {
+          "id": "a5",
+          "text": "Facteurs déclenchants ou événements récents",
+          "patientComment": "[Il n'y a pas eu d'événement particulier, c'est venu progressivement]"
+        },
+        {
+          "id": "a6",
+          "text": "Antécédents psychiatriques personnels",
+          "patientComment": "[J'ai déjà eu une période difficile il y a 5 ans après ma séparation, mais pas comme ça]"
+        },
+        {
+          "id": "a7",
+          "text": "Antécédents familiaux de troubles de l'humeur",
+          "patientComment": "[Ma mère a été traitée pour dépression]"
+        },
+        {
+          "id": "a8",
+          "text": "Consommation d'alcool et substances",
+          "patientComment": "[Je bois parfois un verre de vin le soir, pas plus. Pas de drogues]"
+        },
+        {
+          "id": "a9",
+          "text": "Médicaments actuels",
+          "patientComment": "[Je ne prends rien actuellement]"
+        },
+        {
+          "id": "a10",
+          "text": "Retentissement fonctionnel",
+          "patientComment": "[J'ai dû prendre quelques jours de congé maladie, j'arrive plus à assurer au travail]"
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Observation générale et présentation",
+          "details": [
+            "Aspect général [Patiente soignée mais fatiguée, regard triste]",
+            "Psychomotricité [Ralentissement psychomoteur discret]",
+            "Contact [Contact préservé, coopérante]"
+          ]
+        },
+        {
+          "id": "e2",
+          "text": "Examen de l'état mental",
+          "details": [
+            "Humeur observée [Humeur dépressive évidente]",
+            "Débit verbal [Parle lentement, avec des pauses]",
+            "Contenu du discours [Thèmes pessimistes, dévalorisation]",
+            "Troubles de la pensée [Pas de troubles formels de la pensée]"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Recherche de signes psychotiques",
+          "patientComment": "[Non, je n'entends pas de voix et je n'ai pas d'idées bizarres]"
+        },
+        {
+          "id": "e4",
+          "text": "Évaluation cognitive",
+          "details": [
+            "Orientation temporo-spatiale [Orientée correctement]",
+            "Concentration [Difficultés de concentration confirmées]",
+            "Mémoire [Mémoire préservée]"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Examen somatique ciblé",
+          "details": [
+            "Examen thyroïdien [Glande thyroïde de taille normale, pas de nodules]",
+            "Examen neurologique de base [Pas de déficit neurologique focal]",
+            "Signes vitaux [TA, FC et température normales]"
+          ]
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic principal",
+          "content": "Épisode dépressif majeur (F32.1 - intensité moyenne)"
+        },
+        {
+          "id": "m2",
+          "text": "Diagnostics différentiels à considérer",
+          "ddSection": {
+            "title": "Diagnostics différentiels",
+            "categories": [
+              {
+                "name": "Causes organiques",
+                "items": [
+                  {
+                    "text": "Hypothyroïdie",
+                    "cause": "Arguments POUR :\n\t□ Fatigue\n\t□ Troubles de l'humeur\n\t□ Prise de poids possible",
+                    "test": "→ TSH, T4 libre"
+                  },
+                  {
+                    "text": "Anémie",
+                    "cause": "Arguments POUR :\n\t□ Fatigue\n\t□ Perte de poids",
+                    "test": "→ FSC, ferritine, B12, folates"
+                  }
+                ]
+              },
+              {
+                "name": "Autres troubles psychiatriques",
+                "items": [
+                  {
+                    "text": "Trouble bipolaire (épisode dépressif)",
+                    "cause": "Arguments CONTRE :\n\t□ Pas d'antécédent maniaque ou hypomaniaque",
+                    "test": "→ Rechercher antécédents d'épisodes maniaques"
+                  },
+                  {
+                    "text": "Trouble de l'adaptation",
+                    "cause": "Arguments CONTRE :\n\t□ Pas de facteur de stress identifiable récent",
+                    "test": "→ Anamnèse approfondie"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m3",
+          "text": "Examens complémentaires",
+          "details": [
+            "TSH, T4 libre [Exclure hypothyroïdie]",
+            "FSC [Rechercher anémie]",
+            "Ionogramme, créatinine [Bilan de base]",
+            "Vitamines B12, folates [Carences vitaminiques]",
+            "Ferritine [Carence martiale]"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Prise en charge thérapeutique",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Traitement de première ligne",
+                "content": "Psychothérapie spécifique (TCC ou psychothérapie interpersonnelle) pour épisode dépressif moyennement sévère"
+              },
+              {
+                "title": "Alternative/Complément",
+                "content": "Antidépresseur IRRS (sertraline, citalopram) si psychothérapie insuffisante ou non disponible"
+              },
+              {
+                "title": "Mesures de soutien",
+                "content": "Psychoéducation, hygiène de sommeil, activité physique adaptée"
+              }
+            ]
+          }
+        },
+        {
+          "id": "m5",
+          "text": "Surveillance et suivi",
+          "details": [
+            "Réévaluation dans 1-2 semaines [Surveillance de l'évolution et des idées suicidaires]",
+            "Contacts réguliers [Planifier les rendez-vous à l'avance]",
+            "Critères d'amélioration [Amélioration de l'humeur, du sommeil, de l'énergie]"
+          ]
+        },
+        {
+          "id": "m6",
+          "text": "Critères de référence au psychiatre",
+          "redflagsSection": {
+            "title": "Signaux d'alarme nécessitant référence urgente",
+            "items": [
+              {
+                "text": "Idées suicidaires avec plan précis",
+                "description": "Évaluation psychiatrique urgente"
+              },
+              {
+                "text": "Symptômes psychotiques",
+                "description": "Hallucinations ou idées délirantes"
+              },
+              {
+                "text": "Résistance au traitement",
+                "description": "Pas d'amélioration après 6-8 semaines"
+              },
+              {
+                "text": "Dépression sévère avec inhibition majeure",
+                "description": "Incapacité fonctionnelle importante"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Information et rassurance",
+          "content": "\"La dépression est une maladie fréquente et qui se soigne bien. Il existe plusieurs traitements efficaces et nous allons trouver celui qui vous convient le mieux. L'important est de ne pas rester seule avec ces difficultés.\""
+        },
+        {
+          "id": "c2",
+          "text": "Questions difficiles du patient",
+          "content": "[Est-ce que je vais m'en sortir ? Combien de temps ça va durer ? Est-ce que c'est de ma faute ?]"
+        },
+        {
+          "id": "c3",
+          "text": "Réponse type du candidat",
+          "content": "\"Ces questions sont tout à fait légitimes. La dépression est une maladie, ce n'est pas de votre faute. Avec un traitement adapté, la grande majorité des personnes se rétablissent complètement. Nous allons vous accompagner dans cette démarche.\""
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "scenarioPatienteStandardisee": {
+      "titre": "Épisode dépressif majeur",
+      "nom": "Claire Martin",
+      "age": "35 ans",
+      "contexte": "Cabinet de médecine générale, consultation programmée",
+      "motifConsultation": {
+        "plaintePrincipale": "\"Je suis très fatiguée depuis quelques semaines et je n'arrive plus à dormir normalement\"",
+        "autreChose": "Espère obtenir quelque chose pour mieux dormir"
+      },
+      "histoireActuelle": {
+        "symptomesPrincipaux": [
+          "Fatigue importante depuis 3 semaines, progressive",
+          "Insomnie avec réveil matinal vers 4h du matin",
+          "Tristesse quasi-quotidienne",
+          "Perte d'appétit avec amaigrissement de 4 kg",
+          "Difficultés de concentration au travail",
+          "Perte de plaisir pour les activités habituelles"
+        ],
+        "symptomesAssocies": [
+          "Sentiment de dévalorisation",
+          "Culpabilité excessive (se sent un poids)",
+          "Idées suicidaires passives sans plan précis",
+          "Ralentissement psychomoteur discret"
+        ],
+        "reponseAuxSymptomes": [
+          "A essayé des tisanes pour dormir, sans effet",
+          "Évite de plus en plus les contacts sociaux",
+          "A pris quelques jours d'arrêt maladie"
+        ],
+        "contextePsychosocial": [
+          "Vit seule depuis 2 ans",
+          "Emploi stable en tant qu'enseignante",
+          "Contacts familiaux distants"
+        ]
+      },
+      "simulation": {
+        "attitude": [
+          "Présentation soignée mais visage fatigué",
+          "Regard triste, contact visuel intermittent",
+          "Parle lentement avec des pauses",
+          "Coopérante mais semble fragile émotionnellement"
+        ],
+        "durantEntretien": [
+          "Peut se mettre à pleurer en parlant de sa situation",
+          "Minimise parfois ses symptômes ('ce n'est pas si grave')",
+          "Montre des signes d'anxiété quand on aborde les idées suicidaires"
+        ],
+        "durantExamen": [
+          "Accepte l'examen physique",
+          "Mouvements lents, posture affaissée",
+          "Peut paraître absente pendant l'examen"
+        ]
+      },
+      "anamneseSystemes": {
+        "generale": [
+          "Asthénie marquée",
+          "Perte de poids de 4 kg en 3 semaines",
+          "Pas de fièvre"
+        ],
+        "neurologique": [
+          "Pas de céphalées",
+          "Difficultés de concentration",
+          "Pas de troubles de mémoire"
+        ],
+        "cardiovasculaire": [
+          "Pas de palpitations",
+          "Pas de douleurs thoraciques"
+        ]
+      },
+      "antecedents": {
+        "personnels": "Épisode difficile il y a 5 ans lors de séparation conjugale, sans traitement spécifique",
+        "familiaux": "Mère traitée pour dépression",
+        "allergies": "Aucune allergie connue"
+      },
+      "traitements": {
+        "actuels": "Aucun traitement",
+        "toxiques": "Consommation occasionnelle d'alcool (1 verre de vin), pas de tabac, pas de drogues"
+      },
+      "inquietudes": {
+        "principales": [
+          "\"Est-ce que je vais m'en sortir ?\"",
+          "\"Combien de temps ça va durer ?\"",
+          "\"Est-ce que c'est de ma faute si je me sens comme ça ?\""
+        ],
+        "questions": [
+          "\"Est-ce que je dois arrêter de travailler ?\"",
+          "\"Faut-il que je prévienne ma famille ?\""
+        ]
+      }
+    },
+    "informationsExpert": {
+      "titre": "Points clés pour l'évaluation",
+      "pointsCles": [
+        "Confirmer au moins 5 critères DSM-5 pour épisode dépressif majeur",
+        "Évaluer systématiquement le risque suicidaire",
+        "Rechercher des antécédents maniaques (écarter trouble bipolaire)",
+        "Éliminer causes organiques (thyroïde, anémie)",
+        "Évaluer le retentissement fonctionnel"
+      ],
+      "pieges": [
+        "Ne pas négliger l'évaluation des idées suicidaires par peur d'en 'donner l'idée'",
+        "Ne pas oublier l'anamnèse familiale de troubles de l'humeur",
+        "Ne pas prescrire d'antidépresseur sans écarter un trouble bipolaire",
+        "Attention aux diagnostics différentiels somatiques chez la femme jeune"
+      ]
+    },
+    "theoriePratique": {
+      "titre": "Épisode dépressif majeur",
+      "sections": [
+        {
+          "titre": "Critères diagnostiques DSM-5",
+          "contenu": "Au moins 5 symptômes pendant minimum 2 semaines, incluant obligatoirement humeur dépressive ou anhédonie"
+        },
+        {
+          "titre": "Gravité",
+          "contenu": "Léger (5-6 symptômes), modéré (7-8), sévère (≥9 symptômes)"
+        },
+        {
+          "titre": "Épidémiologie",
+          "contenu": "Prévalence vie entière : 20% femmes, 10% hommes. Pic d'incidence 25-35 ans"
+        }
+      ],
+      "rappelsTherapeutiques": [
+        "Psychothérapie de première intention pour épisodes légers à modérés",
+        "Antidépresseurs IRRS en première ligne si traitement pharmacologique",
+        "Éviter benzodiazépines au long cours",
+        "Traitement maintenu 6-12 mois après rémission complète"
+      ],
+      "examensComplementaires": [
+        "TSH, T4 libre : systématique pour éliminer hypothyroïdie",
+        "FSC : recherche d'anémie",
+        "Vitamines B12, folates : carences fréquentes",
+        "Bilan hépatique si prescription antidépresseurs"
+      ]
+    }
+  }
+}

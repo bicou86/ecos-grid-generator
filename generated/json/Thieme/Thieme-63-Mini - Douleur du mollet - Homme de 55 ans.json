@@ -1,0 +1,203 @@
+{
+  "title": "Thieme Mini-Cas 63 - Douleur du mollet - Homme de 55 ans",
+  "category": "Thieme Mini-Cas",
+  "subcategory": "Douleur du mollet",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Homme de 55 ans, Patient standardisé, consulte pour douleur du mollet"
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Motif principal de consultation",
+          "binaryOnly": true,
+          "patientComment": "douleur du mollet"
+        },
+        {
+          "id": "a2",
+          "text": "Analyse ciblée de la plainte",
+          "details": [
+            "Début brutal/progressif",
+            "Voyage récent",
+            "Immobilisation",
+            "Traumatisme"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Recherche des éléments clés",
+          "details": [
+            "Signe de Homans",
+            "Recherche TVP",
+            "Signes inflammatoires"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Antécédents pertinents",
+          "details": [
+            "Chirurgie récente",
+            "Plâtre",
+            "Voyage prolongé",
+            "Cancer"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Revue des systèmes ciblée",
+          "details": [
+            "Vasculaire",
+            "Musculo-squelettique",
+            "Hématologique"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Inspection mollet [œdème, rougeur]",
+          "binaryOnly": true
+        },
+        {
+          "id": "e2",
+          "text": "Signe de Homans [positif si TVP]"
+        },
+        {
+          "id": "e3",
+          "text": "Mesure circonférence mollets"
+        },
+        {
+          "id": "e4",
+          "text": "Palpation pouls périphériques"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostics différentiels",
+          "ddSection": {
+            "title": "Hypothèses diagnostiques à considérer",
+            "categories": [
+              {
+                "name": "Diagnostics prioritaires",
+                "items": [
+                  {
+                    "text": "Thrombose veineuse profonde",
+                    "cause": "Arguments POUR:\n\t□ Œdème, Homans+, facteurs risque (immobilisation)",
+                    "test": "→ D-dimères, écho-Doppler veineux"
+                  },
+                  {
+                    "text": "Lésion musculaire",
+                    "cause": "Arguments POUR:\n\t□ Effort sportif, douleur contraction, pas œdème",
+                    "test": "→ Échographie musculaire, CPK"
+                  },
+                  {
+                    "text": "Cellulite/myosite",
+                    "cause": "Arguments POUR:\n\t□ Signes inflammatoires, fièvre, rougeur",
+                    "test": "→ Examens selon orientation clinique"
+                  },
+                  {
+                    "text": "Rupture kyste de Baker",
+                    "cause": "Arguments POUR:\n\t□ Douleur brutale, œdème descendant, arthrose genou",
+                    "test": "→ Échographie, IRM genou"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Examens complémentaires",
+          "details": [
+            "Échographie Doppler membres inférieurs",
+            "D-dimères",
+            "IRM si kyste suspecté"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Plan de prise en charge",
+          "details": [
+            "Si TVP: anticoagulation urgente",
+            "Si musculaire: repos, glace",
+            "Surveillance"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Conseils au patient",
+          "details": [
+            "Mobilisation précoce",
+            "Bas contention si TVP",
+            "Hydratation"
+          ]
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Explications au patient",
+          "content": "Plusieurs causes possibles, de la simple contracture à la thrombose. Les examens détermineront la cause."
+        },
+        {
+          "id": "c2",
+          "text": "Questions du patient",
+          "content": "[Est-ce grave?]\n[Puis-je marcher?]\n[Est-ce un caillot?]"
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour le patient standardisé",
+      "nom": "Patient standardisé",
+      "age": "55 ans",
+      "contexte": "Cabinet de médecine générale",
+      "motifConsultation": {
+        "plaintePrincipale": "douleur du mollet",
+        "contexte": "Diagnostic différentiel entre causes musculaires et vasculaires"
+      },
+      "simulation": {
+        "attitude": [
+          "Très inquiet",
+          "Peur de la thrombose"
+        ],
+        "signesPhysiques": [
+          "Œdème unilatéral possible",
+          "Homans positif si TVP"
+        ],
+        "durantConsultation": [
+          "Anxiété marquée",
+          "Demander examens urgents"
+        ]
+      }
+    },
+    "informationsExpert": {
+      "titre": "Informations pour l'expert",
+      "pointsCles": [
+        "Mini-cas clinique: Douleur du mollet",
+        "Focus: Signe de Homans, Recherche TVP, Signes inflammatoires",
+        "Consultation ciblée de 10 minutes",
+        "Évaluation de l'approche diagnostique"
+      ],
+      "pieges": [
+        "Manquer TVP",
+        "Ne pas mesurer mollets",
+        "Banaliser symptômes"
+      ]
+    }
+  }
+}

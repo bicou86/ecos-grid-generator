@@ -1,0 +1,743 @@
+{
+  "title": "Grille ECOS USIT2 - Hernie discale - Canal étroit",
+  "context": {
+    "setting": "Cabinet médical / Service de neurologie",
+    "patient": "Patient avec douleurs lombaires et sciatique - Station Clément Lombard",
+    "vitals": {}
+  },
+  "sections": {
+    "management": {
+      "weight": 0.25,
+      "title": "Communication",
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Accueille le patient par son nom, se présente et le met à l'aise",
+          "scoringRule": "2pts = les 3"
+        },
+        {
+          "id": "m2",
+          "text": "Explique au patient le déroulement de la consultation (1 pt) et vérifie s'il a une autre préoccupation (1 pt)"
+        },
+        {
+          "id": "m3",
+          "text": "Commence l'anamnèse par une question ouverte",
+          "binaryOnly": true
+        },
+        {
+          "id": "m4",
+          "text": "S'exprime dans un langage clair, sans jargon tout au long de l'entretien",
+          "scoringRule": "2pts = souvent, 1pt = rarement, 0 = jamais"
+        },
+        {
+          "id": "m5",
+          "text": "Fait une synthèse de la consultation"
+        },
+        {
+          "id": "m6",
+          "text": "L'anamnèse a suivi un cours logique et harmonieux",
+          "binaryOnly": true,
+          "scoringRule": "2pts = le plus souvent, 1pt = souvent, 0 = rarement"
+        },
+        {
+          "id": "m7",
+          "text": "Tient compte des représentations et des émotions du patient dans l'explication",
+          "scoringRule": "2pts = le plus souvent, 1pt = souvent, 0 = rarement"
+        },
+        {
+          "id": "m8",
+          "text": "Met fin à l'entretien : salue et remercie le patient avec un mot personnel"
+        },
+        {
+          "id": "m9",
+          "text": "Adopte un comportement non verbal facilitant la relation",
+          "scoringRule": "2pts = souvent, 1pt = rarement, 0 = jamais"
+        },
+        {
+          "id": "m10",
+          "text": "Reconnaît, verbalise et légitime les émotions du patient. Fournit du soutien",
+          "scoringRule": "2pts = souvent, 1pt = rarement, 0 = jamais"
+        },
+        {
+          "id": "m11",
+          "text": "Durant la phase d'explication / planification, l'étudiant·e propose au patient de faire une imagerie",
+          "details": [
+            "IRM, CT, Myélographie"
+          ]
+        },
+        {
+          "id": "m12",
+          "text": "Durant la phase d'explication / planification, l'étudiant·e émet l'hypothèse :",
+          "ddSection": {
+            "title": "Diagnostic de suspicion",
+            "categories": [
+              {
+                "name": "Suspicion de :",
+                "items": [
+                  {
+                    "text": "Canal lombaire étroit",
+                    "cause": "Arguments POUR:\n\t□ Claudication neurogène intermittente (douleur à la marche)\n\t□ Soulagement au repos en 5-6 minutes\n\t□ Périmètre de marche limité (100m)\n\t□ Soulagement en position penchée en avant (signe du caddie)\n\t□ Facteurs de risque présents (prise de poids, arthrose, métier physique)\n\t□ Évolution progressive sur plusieurs mois/années\n\t□ Âge compatible (> 50 ans habituellement)\n\t□ Aggravation en extension du rachis\nArguments CONTRE:\n\t□ Pas de déficit neurologique fixe\n\t□ Pas de troubles sphinctériens (urgence si présents)\n\t□ Pas de signe de Lasègue franc",
+                    "test": "→ IRM lombaire (gold standard) ou CT-myélographie si IRM contre-indiquée"
+                  }
+                ]
+              }
+            ]
+          },
+          "redflagsSection": {
+            "title": "Signes d'alarme et complications",
+            "items": [
+              {
+                "text": "Syndrome de la queue de cheval",
+                "description": "Troubles sphinctériens (urinaire/anal), anesthésie en selle, déficit moteur bilatéral → IRM urgente et chirurgie immédiate"
+              },
+              {
+                "text": "Déficit neurologique progressif",
+                "description": "Paralysie ascendante, perte de force rapide, steppage → Avis neurochirurgical urgent"
+              },
+              {
+                "text": "Claudication vasculaire sévère",
+                "description": "Absence de pouls périphériques, membre froid et pâle, douleur de repos → Écho-Doppler urgent, risque ischémie"
+              },
+              {
+                "text": "Compression médullaire",
+                "description": "Niveau sensitif net, spasticité, Babinski bilatéral, hyperréflexie → IRM médullaire urgente"
+              },
+              {
+                "text": "Fracture pathologique vertébrale",
+                "description": "Antécédent néoplasique, douleur nocturne intense, percussion vertébrale douloureuse → IRM + bilan d'extension"
+              },
+              {
+                "text": "Instabilité rachidienne",
+                "description": "Spondylolisthésis, escalier palpable, aggravation brutale → Radiographies dynamiques, avis chirurgical"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "anamnese": {
+      "weight": 0.25,
+      "title": "Anamnèse - Durant l'anamnèse, l'étudiant·e a exploré",
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Localisation des douleurs",
+          "patientComment": "bas du dos",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Irradiation des douleurs",
+          "patientComment": "fesses, cuisses et mollets",
+          "binaryOnly": true
+        },
+        {
+          "id": "a3",
+          "text": "Caractère des douleurs",
+          "patientComment": "crampes",
+          "binaryOnly": true
+        },
+        {
+          "id": "a4",
+          "text": "Présence de douleurs nocturnes",
+          "binaryOnly": true
+        },
+        {
+          "id": "a5",
+          "text": "Mode d'apparition et disparition des douleurs",
+          "details": [
+            "[à la marche 1pt]",
+            "[au repos en 5-6 min 1pt]"
+          ]
+        },
+        {
+          "id": "a6",
+          "text": "Périmètre de marche",
+          "patientComment": "100m",
+          "binaryOnly": true
+        },
+        {
+          "id": "a7",
+          "text": "Faiblesse des membres inférieurs",
+          "patientComment": "oui",
+          "binaryOnly": true
+        },
+        {
+          "id": "a8",
+          "text": "Troubles sensitifs des membres inférieurs",
+          "binaryOnly": true
+        },
+        {
+          "id": "a9",
+          "text": "Début (1pt) et évolution des douleurs (1pt)",
+          "details": [
+            "[occasionnelles et contrôlées par AINS au début]",
+            "[actuellement mobilité limitée]"
+          ]
+        },
+        {
+          "id": "a10",
+          "text": "Facteurs aggravants",
+          "details": [
+            "[à la marche]",
+            "[station debout]",
+            "[descente escaliers]"
+          ]
+        },
+        {
+          "id": "a11",
+          "text": "Facteurs soulageant",
+          "patientComment": "légèrement penché en avant"
+        },
+        {
+          "id": "a12",
+          "text": "FR pour un CLE",
+          "details": [
+            "[prise de poids]",
+            "[arthrose]",
+            "[métier à risque (3-2=2pt)]"
+          ]
+        },
+        {
+          "id": "a13",
+          "text": "Trouble sphinctérien urinaire (1pt) anal (1pt)"
+        },
+        {
+          "id": "a14",
+          "text": "FRCV",
+          "details": [
+            "[HTA]",
+            "[diabète]",
+            "[cholestérol]",
+            "[anamnèse familiale]",
+            "[sédentarité]",
+            "[>6-5=1pt]"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "title": "Examen clinique",
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Fait marcher le patient"
+        },
+        {
+          "id": "e2",
+          "text": "Teste la marche sur les talons (1pt) et les pointes (1pt)"
+        },
+        {
+          "id": "e3",
+          "text": "Teste la mobilité de la colonne",
+          "details": [
+            "[flexion]",
+            "[extension 1pt]",
+            "[mvmts latéraux 1pt]"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Recherche amyotrophie des MIs"
+        },
+        {
+          "id": "e5",
+          "text": "Teste la force des MIs",
+          "details": [
+            "[muscles proximaux 1pt]",
+            "[et distaux 1pt]"
+          ]
+        },
+        {
+          "id": "e6",
+          "text": "Teste la sensibilité superficielle des MIs"
+        },
+        {
+          "id": "e7",
+          "text": "Teste la sensibilité profonde des MIs"
+        },
+        {
+          "id": "e8",
+          "text": "Teste les ROT achilléens (1pt) et rotuliens (1pt)"
+        },
+        {
+          "id": "e9",
+          "text": "Palpe les artères tibiales post (1pt) et pédieuses (1pt)"
+        },
+        {
+          "id": "e10",
+          "text": "Palpe (1pt) et ausculte les artères fémorales (1pt)"
+        },
+        {
+          "id": "e11",
+          "text": "Teste de Lasègue"
+        },
+        {
+          "id": "e12",
+          "text": "Propose un toucher rectal",
+          "binaryOnly": true
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour le patient standardisé",
+      "nom": "Patient adulte",
+      "age": "Variable selon scénario",
+      "contexte": "Cabinet médical",
+      "motifConsultation": {
+        "plaintePrincipale": "Douleurs dans le bas du dos avec irradiation dans les jambes",
+        "autreChose": "Difficulté croissante à marcher"
+      },
+      "histoireActuelle": {
+        "symptomesPrincipaux": [
+          "Douleurs lombaires basses",
+          "Irradiation aux fesses, cuisses et mollets",
+          "Caractère de crampes",
+          "Apparition à la marche",
+          "Soulagement au repos en 5-6 minutes",
+          "Périmètre de marche limité à 100m"
+        ],
+        "symptomesAssocies": [
+          "Faiblesse des membres inférieurs",
+          "Pas de troubles sensitifs nets",
+          "Pas de troubles sphinctériens"
+        ],
+        "evolution": [
+          "Début avec douleurs occasionnelles",
+          "Contrôlées initialement par AINS",
+          "Actuellement mobilité très limitée"
+        ],
+        "facteurs": {
+          "aggravants": [
+            "Marche",
+            "Station debout prolongée",
+            "Descente des escaliers"
+          ],
+          "soulageants": [
+            "Position légèrement penchée en avant",
+            "Repos assis"
+          ]
+        }
+      },
+      "antecedents": {
+        "facteurs_risque_CLE": [
+          "Prise de poids récente",
+          "Arthrose lombaire connue",
+          "Métier physique (port de charges)"
+        ],
+        "cardiovasculaires": [
+          "HTA",
+          "Diabète type 2",
+          "Hypercholestérolémie",
+          "Sédentarité"
+        ]
+      },
+      "simulation": {
+        "attitude": [
+          "Inquiet de la progression des symptômes",
+          "Frustré par la limitation fonctionnelle",
+          "Demande si une opération est nécessaire"
+        ],
+        "durantExamen": [
+          "Difficulté à marcher sur la pointe des pieds",
+          "Limitation de l'extension lombaire",
+          "Soulagement en position penchée"
+        ]
+      },
+      "inquietudes": {
+        "principales": [
+          "Est-ce que je vais finir en fauteuil roulant ?",
+          "Faut-il opérer ?",
+          "Est-ce de l'arthrose ou quelque chose de plus grave ?",
+          "Pourquoi les médicaments ne marchent plus ?"
+        ]
+      }
+    },
+    "informationsExpert": {
+      "titre": "Points clés pour l'évaluation - Canal lombaire étroit vs Hernie discale",
+      "objectifsPedagogiques": [
+        "Reconnaître la claudication neurogène intermittente",
+        "Différencier canal étroit et hernie discale",
+        "Identifier les signes d'alarme (syndrome de la queue de cheval)",
+        "Rechercher une claudication vasculaire différentielle",
+        "Proposer les examens d'imagerie appropriés",
+        "Connaître les options thérapeutiques"
+      ],
+      "pointsCles": [
+        "Claudication neurogène = douleur à la marche, soulagement au repos",
+        "Position antéfléchie soulage (signe du caddie)",
+        "Différence avec claudication vasculaire : pouls présents, soulagement plus lent",
+        "IRM = gold standard pour diagnostic",
+        "Pas de déficit neurologique fixe dans forme non compliquée",
+        "Évolution progressive sur des années"
+      ],
+      "diagnosticsDifferentiels": {
+        "canal_etroit": [
+          "Âge > 60 ans habituellement",
+          "Claudication neurogène intermittente",
+          "Soulagement en position fléchie",
+          "Périmètre de marche limité",
+          "Évolution progressive"
+        ],
+        "hernie_discale": [
+          "Peut survenir à tout âge",
+          "Douleur radiculaire plus nette",
+          "Signe de Lasègue positif",
+          "Déficit neurologique possible",
+          "Début souvent brutal"
+        ],
+        "claudication_vasculaire": [
+          "Douleur au mollet à l'effort",
+          "Soulagement rapide au repos",
+          "Pouls périphériques diminués/absents",
+          "Peau froide, pâle"
+        ]
+      },
+      "pieges": [
+        "Ne pas rechercher les troubles sphinctériens (urgence)",
+        "Confondre avec claudication vasculaire",
+        "Ne pas tester la marche",
+        "Oublier de rechercher les facteurs de soulagement posturaux",
+        "Ne pas proposer d'imagerie",
+        "Méconnaître le syndrome de la queue de cheval"
+      ]
+    },
+    "theoriePratique": {
+      "titre": "Rappels théoriques - Canal lombaire étroit",
+      "sections": [
+        {
+          "titre": "Physiopathologie",
+          "contenu": "Mécanisme de la sténose canalaire",
+          "points": [
+            "Rétrécissement du canal rachidien lombaire",
+            "Causes : dégénérescence discale, hypertrophie ligamentaire, arthrose facettaire",
+            "Compression des racines nerveuses et vascularisation",
+            "Aggravation en extension (réduction du diamètre)",
+            "Amélioration en flexion (augmentation du diamètre)",
+            "Évolution lente et progressive"
+          ]
+        },
+        {
+          "titre": "Présentation clinique",
+          "contenu": "Signes et symptômes caractéristiques",
+          "points": [
+            "Claudication neurogène intermittente pathognomonique",
+            "Douleurs, paresthésies, faiblesse à la marche",
+            "Périmètre de marche progressivement réduit",
+            "Signe du caddie : soulagement penché en avant",
+            "Vélo mieux toléré que la marche",
+            "Symptômes bilatéraux mais souvent asymétriques"
+          ]
+        },
+        {
+          "titre": "Examens et traitement",
+          "contenu": "Stratégie diagnostique et thérapeutique",
+          "points": [
+            "IRM lombaire : examen de référence",
+            "CT-myélographie si IRM contre-indiquée",
+            "Traitement conservateur initial : kiné, AINS, infiltrations",
+            "Chirurgie (laminectomie) si échec conservateur",
+            "Pronostic : 70% amélioration avec traitement conservateur",
+            "Indications chirurgicales : déficit neurologique, échec conservateur > 3-6 mois"
+          ]
+        }
+      ],
+      "rappelsTherapeutiques": [
+        "Traitement conservateur première ligne pendant 3-6 mois",
+        "Kinésithérapie : renforcement, étirements, posture",
+        "AINS en cures courtes",
+        "Infiltrations épidurales de corticoïdes",
+        "Antalgiques palier 2 si nécessaire",
+        "Chirurgie : décompression (laminectomie ± arthrodèse)",
+        "Éducation posturale et ergonomique"
+      ],
+      "examensComplementaires": [
+        "IRM lombaire : gold standard, visualise sténose et compression",
+        "CT-scanner : alternative si IRM impossible",
+        "Radiographies standard : peu contributives",
+        "EMG : si doute sur neuropathie périphérique",
+        "Écho-Doppler MI : si suspicion claudication vasculaire",
+        "Myélographie-CT : si discordance clinico-radiologique"
+      ]
+    },
+    "resume": {
+      "titre": "🦴 Hernie discale lombaire – Résumé ECOS",
+      "sections": [
+        {
+          "titre": "🔍 Anamnèse",
+          "subsections": [
+            {
+              "titre": "Symptomatologie typique",
+              "points": [
+                "Lombalgie aiguë ou chronique avec irradiation radiculaire (sciatalgie)",
+                "Douleur augmentée à la flexion, à l’effort, en position assise",
+                "Soulagement en décubitus",
+                "Parfois paresthésies, engourdissements ou faiblesse motrice"
+              ]
+            },
+            {
+              "titre": "Signes d’alerte (red flags)",
+              "points": [
+                "Troubles sphinctériens (rétention urinaire, incontinence)",
+                "Anesthésie en selle",
+                "Déficit moteur progressif",
+                "Douleur nocturne ou fébricule (suspicion de tumeur/infection)"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "👀 Examen clinique",
+          "subsections": [
+            {
+              "titre": "Tests cliniques",
+              "points": [
+                "Lasègue (straight leg raise) positif : douleur irradiant dans le territoire radiculaire",
+                "Bragard : reproduction douleur à dorsiflexion pied après Lasègue",
+                "Crossed Lasègue : douleur controlatérale (spécifique)"
+              ]
+            },
+            {
+              "titre": "Atteintes radiculaires typiques",
+              "points": [
+                "L4 : déficit extension genou, hypoesthésie face antéro-médiale jambe, ROT rotulien ↓",
+                "L5 : déficit dorsiflexion pied (steppage), hypoesthésie dos pied/gros orteil",
+                "S1 : déficit flexion plantaire, hypoesthésie bord externe pied, ROT achilléen ↓"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "🧪 Examens diagnostiques",
+          "subsections": [
+            {
+              "titre": "Imagerie",
+              "points": [
+                "IRM lombaire : examen de référence, visualise hernie, compression radiculaire",
+                "Scanner lombaire si IRM contre-indiquée"
+              ]
+            },
+            {
+              "titre": "Autres",
+              "points": [
+                "EMG utile pour différencier neuropathie périphérique vs radiculopathie",
+                "Pas d’imagerie systématique si absence de red flags"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "⚙️ Prise en charge",
+          "subsections": [
+            {
+              "titre": "Conservateur (1ère intention)",
+              "points": [
+                "Repos relatif (éviter immobilisation prolongée)",
+                "Antalgiques, AINS ± myorelaxants",
+                "Kinésithérapie (renforcement, posture)",
+                "Infiltrations épidurales corticoïdes si douleur persistante"
+              ]
+            },
+            {
+              "titre": "Chirurgical",
+              "points": [
+                "Indications : déficit moteur progressif, syndrome de la queue de cheval, douleur invalidante > 6–8 semaines malgré traitement",
+                "Technique : discectomie ± microchirurgie"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "✅ Points clés ECOS",
+          "points": [
+            "Douleur radiculaire typique déclenchée par flexion = hernie discale probable",
+            "Tests de Lasègue/Bragard = outils simples de confirmation",
+            "Red flags = urgence neurochirurgicale (queue de cheval, déficit moteur)",
+            "IRM lombaire = examen clé si indication chirurgicale ou red flags",
+            "PEC initiale = conservatrice (antalgiques, kiné), chirurgie si échec ou urgence"
+          ]
+        },
+        {
+          "titre": "📋 Check-list rapide ECOS",
+          "subsections": [
+            {
+              "titre": "Questions à poser",
+              "points": [
+                "Début et évolution de la douleur lombaire ?",
+                "Douleur irradiant jambe ? Territoire précis ?",
+                "Facteurs aggravants : flexion, assise prolongée ?",
+                "Déficit moteur ou sensitif associé ?",
+                "Troubles urinaires, sexuels, ou anesthésie en selle ?"
+              ]
+            },
+            {
+              "titre": "Examens à faire",
+              "points": [
+                "Examen neurologique complet (force, sensibilité, ROT)",
+                "Tests de Lasègue, Bragard, Lasègue croisé",
+                "IRM lombaire si red flags ou avant chirurgie",
+                "EMG si doute diagnostique"
+              ]
+            },
+            {
+              "titre": "PEC en 3 points",
+              "points": [
+                "Antalgiques + kinésithérapie en 1ère intention",
+                "Surveillance des signes neurologiques",
+                "Référer en neurochirurgie si red flags ou échec du traitement conservateur"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "presentationPatient": {
+      "titre": "📑 Fiche ECOS – Cas : Hernie discale lombaire vs Canal lombaire étroit",
+      "sections": [
+        {
+          "titre": "🧩 Checklist mentale (présentation systématisée)",
+          "points": [
+            "Intro → âge, contexte (lombalgie + irradiation MI), motif de consultation",
+            "Caractériser la douleur → localisation, irradiation, type (crampes), intensité, mode d’apparition (marche, effort), soulagement (repos, flexion)",
+            "Symptômes associés → faiblesse, paresthésies, troubles sensitifs, troubles sphinctériens ?",
+            "Antécédents → facteurs de risque (poids, arthrose, métier physique), FRCV (HTA, diabète, cholestérol, tabac, sédentarité)",
+            "Évolution → progressive (canal étroit) vs brutale (hernie discale)",
+            "Examen clinique → marche talons/pointes, mobilité rachis, ROT, sensibilité superficielle et profonde, Lasègue, palpation pouls périphériques",
+            "Résumé + hypothèse principale (canal lombaire étroit) + diagnostics différentiels (hernie discale, claudication vasculaire, métastase, fracture)",
+            "Examens complémentaires → IRM lombaire (gold standard), CT/myélographie si CI, EMG si doute, écho-Doppler MI si doute vasculaire",
+            "PEC → conservatrice initialement (antalgiques, AINS, kiné, infiltrations), chirurgie (laminectomie) si échec ou déficit neurologique"
+          ],
+          "mnemo": {
+            "titre": "👉 Mnémo rapide : LOMBARE",
+            "elements": [
+              "L = Localisation douleur",
+              "O = Origine (mécanique vs neurogène vs vasculaire)",
+              "M = Marche limitée (claudication)",
+              "B = Bilatérale fréquente dans canal étroit",
+              "A = Antéflexion soulage (signe du caddie)",
+              "R = Red flags (sphincters, déficit moteur)",
+              "E = Examens : IRM, EMG, Doppler"
+            ]
+          }
+        },
+        {
+          "titre": "🎤 Version longue (≈2-3 min)",
+          "contenu": "Il s’agit de M. Clément Lombard, patient adulte, qui consulte pour des douleurs dans le bas du dos avec irradiation dans les jambes. Les douleurs sont apparues progressivement il y a plusieurs mois, initialement bien contrôlées par des anti-inflammatoires, mais elles sont devenues de plus en plus invalidantes. \n\nLa douleur est décrite comme une crampe lombaire irradiant aux fesses, aux cuisses et aux mollets, apparaissant typiquement à la marche, notamment après environ 100 mètres. Elle oblige le patient à s’arrêter, puis disparaît en 5 à 6 minutes de repos. Elle est soulagée en position penchée en avant, comme lorsqu’il pousse un caddie. Les positions debout prolongées ou la descente des escaliers aggravent les symptômes. \n\nIl rapporte également une faiblesse croissante des membres inférieurs, sans déficit sensitif franc ni troubles sphinctériens. \n\nSes antécédents incluent une prise de poids récente, une arthrose lombaire connue et un métier physique avec port de charges. Sur le plan cardiovasculaire, il est suivi pour une hypertension, un diabète de type 2 et une hypercholestérolémie. Il est sédentaire.\n\nÀ l’examen clinique, la marche est limitée avec difficulté à marcher sur la pointe des pieds. La marche sur talons est possible. L’extension lombaire est douloureuse et limitée, alors que la flexion soulage. Pas d’atrophie musculaire nette, mais une faiblesse distale modérée. Les réflexes rotuliens et achilléens sont présents. Pas de déficit sensitif franc, pas de signe de Lasègue typique. Les pouls périphériques sont palpables et symétriques. \n\nEn résumé, il s’agit d’un patient présentant une claudication neurogène intermittente, avec douleur à la marche disparaissant rapidement au repos, soulagée par l’antéflexion, et un périmètre de marche limité à 100 mètres. L’hypothèse principale est un canal lombaire étroit. Les diagnostics différentiels incluent une hernie discale (mais début brutal, Lasègue positif), une claudication vasculaire (mais ici pouls présents et symptômes soulagés par flexion), une fracture pathologique ou des métastases. \n\nL’examen clé est une IRM lombaire qui permettra de confirmer la sténose. On peut compléter par une myélographie-CT si contre-indication, un EMG si doute, et un écho-Doppler si suspicion de claudication vasculaire. \n\nLa prise en charge initiale repose sur un traitement conservateur avec antalgiques, AINS, kinésithérapie, infiltrations épidurales si nécessaire et éducation posturale. La chirurgie par laminectomie est indiquée en cas d’échec du traitement conservateur après 3 à 6 mois ou en cas de déficit neurologique progressif."
+        },
+        {
+          "titre": "⚡ Version express (SBAR, 30 sec)",
+          "contenu": "S (Situation) : M. Lombard, adulte, douleurs lombaires chroniques avec irradiation bilatérale, claudication neurogène intermittente, périmètre de marche limité à 100m.\n\nB (Background) : Arthrose lombaire, HTA, diabète, dyslipidémie, métier physique avec port de charges, prise de poids récente.\n\nA (Assessment) : Canal lombaire étroit probable. DD : hernie discale, claudication vasculaire, métastases, fracture.\n\nR (Recommendation) : IRM lombaire, EMG si doute, écho-Doppler MI si suspicion vasculaire. PEC = antalgiques, AINS, kiné, infiltrations ; chirurgie si échec conservateur ou déficit neurologique."
+        },
+        {
+          "titre": "🎲 Touches ludiques / mnémos",
+          "subsections": [
+            {
+              "titre": "👉 Signe du caddie",
+              "points": [
+                "Soulagement en position penchée en avant",
+                "Typique du canal lombaire étroit"
+              ]
+            },
+            {
+              "titre": "👉 Claudication neurogène vs vasculaire",
+              "points": [
+                "Neurogène : soulagée en flexion, pouls présents, disparaît en 5-6 min",
+                "Vasculaire : soulagée uniquement au repos, pouls diminués/absents, peau froide"
+              ]
+            },
+            {
+              "titre": "👉 Indications chirurgicales canal étroit",
+              "points": [
+                "Déficit neurologique progressif",
+                "Syndrome de la queue de cheval",
+                "Échec traitement conservateur > 3–6 mois",
+                "Douleur invalidante"
+              ]
+            },
+            {
+              "titre": "⚠️ Pièges ECOS",
+              "points": [
+                "Oublier de rechercher troubles sphinctériens",
+                "Confondre avec claudication vasculaire",
+                "Ne pas tester la marche",
+                "Ne pas proposer IRM",
+                "Ne pas évoquer le syndrome de la queue de cheval"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "❓ Questions probables de l'examinateur (avec réponses orales)",
+          "subsections": [
+            {
+              "titre": "1. Diagnostic différentiel",
+              "questions": [
+                {
+                  "question": "Quels diagnostics distinguer entre canal étroit et hernie discale ?",
+                  "reponse": {
+                    "canal_etroit": [
+                      "Douleur progressive, bilatérale, claudication neurogène",
+                      "Soulagement en antéflexion",
+                      "IRM : sténose canalaire"
+                    ],
+                    "hernie_discale": [
+                      "Douleur brutale, radiculaire, souvent unilatérale",
+                      "Signe de Lasègue positif",
+                      "IRM : protrusion discale"
+                    ]
+                  }
+                },
+                {
+                  "question": "Comment distinguer canal étroit d’une claudication vasculaire ?",
+                  "reponse": [
+                    "Canal étroit : pouls présents, flexion soulage, vélo mieux toléré que marche",
+                    "Vasculaire : pouls diminués, douleur mollet, pas d’amélioration en flexion"
+                  ]
+                }
+              ]
+            },
+            {
+              "titre": "2. Examens complémentaires",
+              "questions": [
+                {
+                  "question": "Quels examens demanderiez-vous ?",
+                  "reponse": [
+                    "IRM lombaire (gold standard)",
+                    "CT-myélographie si IRM CI",
+                    "EMG si doute diagnostique",
+                    "Écho-Doppler MI si suspicion claudication vasculaire"
+                  ]
+                }
+              ]
+            },
+            {
+              "titre": "3. Prise en charge",
+              "questions": [
+                {
+                  "question": "Quel est le traitement de première intention ?",
+                  "reponse": [
+                    "Traitement conservateur 3-6 mois",
+                    "Antalgiques, AINS",
+                    "Kinésithérapie posturale",
+                    "Infiltrations épidurales si douleurs persistantes"
+                  ]
+                },
+                {
+                  "question": "Quand envisager une chirurgie ?",
+                  "reponse": [
+                    "Déficit neurologique progressif",
+                    "Syndrome de la queue de cheval",
+                    "Douleur invalidante malgré 3-6 mois de traitement conservateur"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

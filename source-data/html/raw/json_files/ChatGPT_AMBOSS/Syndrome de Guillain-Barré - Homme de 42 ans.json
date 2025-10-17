@@ -1,0 +1,825 @@
+{
+  "title": "Syndrome de Guillain-Barré - Homme de 42 ans",
+  "context": {
+    "setting": "Service de neurologie/médecine interne",
+    "patient": "Homme de 42 ans consultant pour fourmillements et faiblesse des jambes"
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Motif principal de consultation",
+          "binaryOnly": true,
+          "patientComment": "J'ai des fourmillements dans les jambes depuis 3 jours et j'ai de plus en plus de mal à marcher"
+        },
+        {
+          "id": "a2",
+          "text": "Caractérisation des symptômes neurologiques",
+          "details": [
+            "Début des symptômes [il y a 3 jours]",
+            "Paresthésies [fourmillements des pieds]",
+            "Localisation initiale [pieds puis remontée]",
+            "Évolution [progressive et ascendante]",
+            "Symétrie [bilatérale et symétrique]",
+            "Intensité [croissante]"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Déficit moteur",
+          "details": [
+            "Faiblesse des membres inférieurs [oui, progressive]",
+            "Difficultés à la marche [difficultés à monter les escaliers]",
+            "Chutes récentes [non]",
+            "Atteinte des membres supérieurs [non pour l'instant]",
+            "Force musculaire résiduelle [marche encore possible]",
+            "Progression [sur 3 jours]"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Signes associés",
+          "details": [
+            "Douleurs [dorsales ou des membres]",
+            "Troubles sensitifs objectifs",
+            "Troubles sphinctériens [non]",
+            "Troubles de la déglutition [non]",
+            "Diplopie ou troubles oculomoteurs [non]",
+            "Dyspnée ou orthopnée [non]"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Contexte infectieux récent",
+          "details": [
+            "Infection récente [gastro-entérite il y a une semaine]",
+            "Type d'infection [diarrhée fébrile]",
+            "Durée de l'infection [quelques jours]",
+            "Documentation microbiologique [non documentée]",
+            "Syndrome pseudo-grippal",
+            "Vaccination récente [non]"
+          ]
+        },
+        {
+          "id": "a6",
+          "text": "Antécédents neurologiques",
+          "details": [
+            "Épisodes similaires antérieurs [non]",
+            "Maladies neurologiques [aucun antécédent]",
+            "Traumatisme récent [non]",
+            "Chirurgie récente [non]"
+          ]
+        },
+        {
+          "id": "a7",
+          "text": "Antécédents médicaux généraux",
+          "details": [
+            "Pathologies chroniques",
+            "Diabète",
+            "Maladies auto-immunes",
+            "Cancer",
+            "VIH"
+          ]
+        },
+        {
+          "id": "a8",
+          "text": "Médicaments et toxiques",
+          "details": [
+            "Médicaments récents [aucune prise récente]",
+            "Chimiothérapie",
+            "Exposition à des toxiques",
+            "Consommation d'alcool",
+            "Drogues"
+          ]
+        },
+        {
+          "id": "a9",
+          "text": "Signes de gravité",
+          "details": [
+            "Progression rapide des symptômes",
+            "Atteinte respiratoire",
+            "Troubles de la déglutition",
+            "Dysautonomie [palpitations, sueurs]",
+            "Paralysie faciale"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Examen neurologique moteur",
+          "details": [
+            "Force musculaire membres inférieurs [diminuée, symétrique]",
+            "Force musculaire membres supérieurs [normale pour l'instant]",
+            "Testing musculaire segmentaire (0-5)",
+            "Tonus musculaire [hypotonique]",
+            "Amyotrophie [non]"
+          ]
+        },
+        {
+          "id": "e2",
+          "text": "Réflexes ostéo-tendineux",
+          "details": [
+            "Réflexes rotuliens [diminués ou absents]",
+            "Réflexes achilléens [diminués ou absents]",
+            "Réflexes membres supérieurs [normaux ou diminués]",
+            "Réflexe cutané plantaire [flexion]"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Examen sensitif",
+          "details": [
+            "Sensibilité superficielle",
+            "Sensibilité profonde",
+            "Niveau sensitif [non, atteinte périphérique]",
+            "Distribution [gants et chaussettes]"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Nerfs crâniens",
+          "details": [
+            "Paralysie faciale [non actuellement]",
+            "Diplopie [non]",
+            "Troubles de la déglutition [non]",
+            "Dysphonie [non]",
+            "Réflexe nauséeux"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Signes dysautonomiques",
+          "details": [
+            "Tension artérielle [variations]",
+            "Fréquence cardiaque [tachycardie/bradycardie]",
+            "Sudation anormale",
+            "Troubles digestifs"
+          ]
+        },
+        {
+          "id": "e6",
+          "text": "Évaluation respiratoire",
+          "details": [
+            "Fréquence respiratoire",
+            "Utilisation muscles accessoires",
+            "Toux efficace",
+            "Capacité vitale (spirométrie)",
+            "Pression inspiratoire maximale (MIP)",
+            "Pression expiratoire maximale (MEP)"
+          ]
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic différentiel",
+          "ddSection": {
+            "title": "Diagnostics différentiels à considérer",
+            "categories": [
+              {
+                "name": "Diagnostic principal",
+                "items": [
+                  {
+                    "text": "Syndrome de Guillain-Barré (GBS)",
+                    "cause": "Arguments POUR:\n\t□ Polyradiculonévrite aiguë post-infectieuse\n\t□ Faiblesse symétrique ascendante\n\t□ Aréflexie progressive\n\t□ Paresthésies distales\n\t□ Gastro-entérite récente (Campylobacter?)",
+                    "test": "→ Ponction lombaire, ENMG"
+                  }
+                ]
+              },
+              {
+                "name": "Autres neuropathies aiguës",
+                "items": [
+                  {
+                    "text": "Myélite transverse",
+                    "cause": "Arguments CONTRE:\n\t□ Pas de niveau sensitif\n\t□ Pas de troubles sphinctériens\n\t□ Évolution progressive",
+                    "test": "→ IRM médullaire"
+                  },
+                  {
+                    "text": "Compression médullaire",
+                    "cause": "Arguments CONTRE:\n\t□ Pas de douleurs rachidiennes\n\t□ Pas de niveau sensitif\n\t□ Symétrie des symptômes",
+                    "test": "→ IRM médullaire urgente"
+                  },
+                  {
+                    "text": "Neuropathie toxique/métabolique",
+                    "cause": "Arguments CONTRE:\n\t□ Évolution rapide\n\t□ Contexte post-infectieux\n\t□ Pas d'exposition toxique",
+                    "test": "→ Bilan métabolique, toxicologie"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Examens complémentaires urgents",
+          "details": [
+            "Ponction lombaire [dissociation albumino-cytologique]",
+            "ENMG [↓ vitesse conduction, bloc conduction, ↑ latence F]",
+            "NFS, ionogramme, fonction rénale",
+            "CRP, VS [exclure infection active]",
+            "CPK [éliminer myopathie]",
+            "Fonction respiratoire [capacité vitale, MIP, MEP]"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Examens complémentaires secondaires",
+          "details": [
+            "IRM médullaire [si doute diagnostic]",
+            "Sérologies [Campylobacter, CMV, EBV, VIH]",
+            "Anticorps anti-gangliosides",
+            "Électrophorèse des protéines",
+            "Recherche bande monoclonale"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Critères d'hospitalisation",
+          "details": [
+            "Tout patient suspect de GBS [oui]",
+            "Surveillance en soins intensifs si:",
+            "- Progression rapide",
+            "- Atteinte bulbaire",
+            "- Dysautonomie",
+            "- Insuffisance respiratoire"
+          ]
+        },
+        {
+          "id": "m5",
+          "text": "Traitement spécifique",
+          "details": [
+            "Immunoglobulines IV (IVIg) [0.4g/kg/j pendant 5 jours]",
+            "OU Plasmaphérèse [5 échanges sur 10-14 jours]",
+            "Indication: incapacité marcher >10m sans aide",
+            "Débuter dans les 2 premières semaines",
+            "Pas de corticoïdes [inefficaces]"
+          ],
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Traitement immunomodulateur",
+                "items": [
+                  {
+                    "treatment": "IVIg",
+                    "details": "0.4g/kg/jour pendant 5 jours",
+                    "duration": "Traitement de première intention"
+                  },
+                  {
+                    "treatment": "Plasmaphérèse",
+                    "details": "5 échanges sur 10-14 jours",
+                    "duration": "Alternative équivalente"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m6",
+          "text": "Surveillance et monitorage",
+          "details": [
+            "Fonction respiratoire 4x/jour [capacité vitale, MIP/MEP]",
+            "Critères intubation [CV <15-20mL/kg, MIP >-30cmH2O]",
+            "Monitoring cardiaque continu",
+            "Tension artérielle",
+            "Testing force musculaire quotidien",
+            "Troubles déglutition"
+          ],
+          "redflagsSection": {
+            "title": "Signes d'alerte nécessitant réanimation",
+            "items": [
+              {
+                "text": "Détresse respiratoire",
+                "description": "CV <20mL/kg, MIP faible, dyspnée"
+              },
+              {
+                "text": "Dysautonomie sévère",
+                "description": "Bradycardie, hypotension, arythmie"
+              },
+              {
+                "text": "Atteinte bulbaire",
+                "description": "Troubles déglutition, dysphonie"
+              }
+            ]
+          }
+        },
+        {
+          "id": "m7",
+          "text": "Soins de support",
+          "details": [
+            "Anticoagulation prophylactique [HBPM]",
+            "Kinésithérapie précoce et quotidienne",
+            "Analgésie neuropathique [gabapentine, prégabaline]",
+            "Prévention escarres",
+            "Support nutritionnel",
+            "Soutien psychologique"
+          ]
+        },
+        {
+          "id": "m8",
+          "text": "Information et pronostic",
+          "details": [
+            "Hospitalisation nécessaire [surveillance imprévisible]",
+            "Phase d'aggravation [2-4 semaines]",
+            "Plateau puis récupération [semaines à mois]",
+            "Pronostic généralement bon [85% récupération complète]",
+            "Récidive rare [<5%]",
+            "Séquelles possibles [15-20%]"
+          ],
+          "exemplesPhrases": [
+            "Elle peut être grave si elle touche les muscles respiratoires ou le cœur",
+            "Détectée tôt et bien prise en charge, la récupération est généralement bonne",
+            "L'évolution peut être imprévisible, d'où la surveillance hospitalière"
+          ]
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Clôture de la consultation",
+          "content": "Vos symptômes évoquent un syndrome de Guillain-Barré. C'est une urgence neurologique nécessitant une hospitalisation immédiate pour surveillance et traitement.",
+          "exemplesPhrases": [
+            "Nous allons vous hospitaliser pour une surveillance rapprochée",
+            "Des examens vont confirmer le diagnostic (ponction lombaire, ENMG)",
+            "Le traitement par immunoglobulines sera probablement débuté rapidement",
+            "Avec une prise en charge adaptée, le pronostic est généralement favorable"
+          ]
+        },
+        {
+          "id": "c2",
+          "text": "Questions difficiles du patient",
+          "content": "[Est-ce une maladie grave ?] [Vais-je devoir être hospitalisé ?] [Est-ce que ça peut revenir ?] [Est-ce lié à la diarrhée de la semaine dernière ?]"
+        },
+        {
+          "id": "c3",
+          "text": "Réponses types aux questions difficiles",
+          "exemplesPhrases": [
+            "Elle peut l'être si elle touche les muscles respiratoires, mais bien prise en charge, la récupération est généralement bonne",
+            "Oui, pour une surveillance rapprochée car l'évolution peut être imprévisible",
+            "En général non, la récidive est rare",
+            "C'est possible, une infection peut déclencher une réaction immunitaire contre les nerfs"
+          ]
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour le patient standardisé",
+      "nom": "Patient",
+      "age": "42 ans",
+      "contexte": "Service de neurologie/médecine interne",
+      "profession": "Enseignant",
+      "motifConsultation": {
+        "plaintePrincipale": "Fourmillements et faiblesse dans les jambes depuis 3 jours",
+        "autreChose": "Difficultés croissantes à monter les escaliers"
+      },
+      "histoireActuelle": {
+        "symptomesNeurologiques": [
+          "Fourmillements débutés aux pieds il y a 3 jours",
+          "Progression ascendante vers les jambes",
+          "Faiblesse musculaire progressive",
+          "Difficultés à monter les escaliers aujourd'hui",
+          "Marche encore possible mais difficile",
+          "Symétrie des symptômes"
+        ],
+        "contexteInfectieux": [
+          "Gastro-entérite il y a une semaine",
+          "Diarrhée fébrile pendant 2-3 jours",
+          "Non documentée microbiologiquement",
+          "Résolution spontanée",
+          "Pas d'antibiotique"
+        ],
+        "symptomesAbsents": [
+          "Pas de troubles sphinctériens",
+          "Pas de troubles visuels",
+          "Pas de troubles de déglutition",
+          "Pas de dyspnée",
+          "Pas de céphalées",
+          "Pas de fièvre actuelle"
+        ]
+      },
+      "simulation": {
+        "attitude": [
+          "Inquiet de la progression des symptômes",
+          "Coopératif pour l'examen",
+          "Cherche à comprendre ce qui lui arrive",
+          "Rationnel mais anxieux"
+        ],
+        "durantExamen": [
+          "Faiblesse objectivable aux membres inférieurs",
+          "Difficulté à se lever de la chaise",
+          "Marche possible mais instable",
+          "Réflexes diminués ou absents aux membres inférieurs"
+        ]
+      },
+      "antecedents": {
+        "medicaux": "Aucune pathologie chronique",
+        "neurologiques": "Aucun antécédent neurologique",
+        "chirurgicaux": "Appendicectomie à 20 ans",
+        "familiaux": "Sans particularité",
+        "medicaments": "Aucune prise médicamenteuse récente"
+      },
+      "habitudes": {
+        "tabac": "Non fumeur",
+        "alcool": "Consommation occasionnelle",
+        "activite": "Enseignant, vie active",
+        "vaccinations": "À jour"
+      },
+      "inquietudes": {
+        "principales": [
+          "Gravité de la maladie",
+          "Risque de paralysie",
+          "Durée de récupération",
+          "Impact sur le travail",
+          "Lien avec la gastro-entérite"
+        ],
+        "questions": [
+          "Est-ce une maladie grave ?",
+          "Vais-je devoir être hospitalisé ?",
+          "Est-ce que ça peut revenir ?",
+          "Est-ce lié à la diarrhée de la semaine dernière ?",
+          "Vais-je récupérer complètement ?",
+          "Combien de temps dure le traitement ?"
+        ]
+      }
+    },
+    "informationsExpert": {
+      "titre": "Points clés pour l'expert évaluateur",
+      "pointsCles": [
+        "Reconnaissance du tableau de polyradiculonévrite aiguë",
+        "Recherche du contexte infectieux récent",
+        "Examen neurologique complet avec testing musculaire",
+        "Recherche des signes de gravité (respiratoire, bulbaire)",
+        "Prescription des examens appropriés (PL, ENMG)",
+        "Indication à l'hospitalisation systématique",
+        "Information claire sur le pronostic"
+      ],
+      "pieges": [
+        "Ne pas reconnaître l'urgence neurologique",
+        "Oublier d'évaluer la fonction respiratoire",
+        "Ne pas rechercher la dysautonomie",
+        "Prescrire des corticoïdes (inefficaces)",
+        "Sous-estimer la gravité potentielle",
+        "Ne pas hospitaliser le patient",
+        "Oublier la prophylaxie thromboembolique"
+      ]
+    },
+    "theoriePratique": {
+      "titre": "Rappels théoriques sur le syndrome de Guillain-Barré",
+      "sections": [
+        {
+          "titre": "Physiopathologie",
+          "points": [
+            "Polyradiculonévrite aiguë inflammatoire démyélinisante",
+            "Mécanisme auto-immun post-infectieux",
+            "Mimétisme moléculaire (anticorps anti-gangliosides)",
+            "Atteinte de la myéline périphérique",
+            "Parfois atteinte axonale (formes AMAN/AMSAN)"
+          ]
+        },
+        {
+          "titre": "Formes cliniques",
+          "points": [
+            "AIDP : forme classique démyélinisante (60-80%)",
+            "AMAN : forme axonale motrice pure",
+            "AMSAN : forme axonale sensitivo-motrice",
+            "Miller-Fisher : ophtalmoplégie, ataxie, aréflexie",
+            "Formes régionales : pharyngo-cervico-brachiale"
+          ]
+        },
+        {
+          "titre": "Critères diagnostiques",
+          "points": [
+            "Faiblesse progressive symétrique",
+            "Aréflexie ou hyporéflexie",
+            "Évolution < 4 semaines",
+            "Dissociation albumino-cytologique au LCR",
+            "Anomalies ENMG caractéristiques"
+          ]
+        },
+        {
+          "titre": "Facteurs pronostiques défavorables",
+          "points": [
+            "Âge > 60 ans",
+            "Progression rapide < 7 jours",
+            "Ventilation mécanique nécessaire",
+            "Diarrhée à Campylobacter jejuni",
+            "Score EGDS élevé",
+            "Forme axonale (AMAN/AMSAN)"
+          ]
+        }
+      ],
+      "rappelsTherapeutiques": [
+        "IVIg et plasmaphérèse : efficacité équivalente",
+        "Débuter le traitement dans les 2 premières semaines",
+        "Pas de bénéfice à associer IVIg et plasmaphérèse",
+        "Corticoïdes inefficaces voire délétères",
+        "Surveillance respiratoire rapprochée indispensable",
+        "Kinésithérapie précoce pour limiter les séquelles"
+      ],
+      "examensComplementaires": [
+        "PL : dissociation albumino-cytologique (après J7)",
+        "ENMG : ralentissement conduction, blocs, allongement ondes F",
+        "IRM médullaire : prise de contraste des racines (optionnel)",
+        "Sérologies : Campylobacter, CMV, EBV, Mycoplasma",
+        "Anticorps anti-gangliosides : formes axonales"
+      ]
+    },
+    "resume": {
+      "titre": "🧠 Syndrome de Guillain-Barré – Résumé ECOS",
+      "sections": [
+        {
+          "titre": "🔍 Anamnèse",
+          "subsections": [
+            {
+              "titre": "Contexte déclencheur",
+              "points": [
+                "Infection respiratoire haute ou gastro-entérite dans les 2–6 semaines précédentes (ex. Campylobacter jejuni, CMV, EBV)",
+                "Vaccination ou chirurgie récente (plus rare)"
+              ]
+            },
+            {
+              "titre": "Symptomatologie initiale",
+              "points": [
+                "Paresthésies distales (mains, pieds)",
+                "Faiblesse musculaire ascendante et progressive (jours à semaines)",
+                "Douleurs neuropathiques possibles"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "👀 Examen clinique",
+          "subsections": [
+            {
+              "titre": "Signes neurologiques",
+              "points": [
+                "Paralysie flasque symétrique, ascendante",
+                "Réflexes ostéo-tendineux abolis ou diminués",
+                "Atteinte sensitive modérée (paresthésies)",
+                "Atteinte des nerfs crâniens possible (parésie faciale bilatérale)"
+              ]
+            },
+            {
+              "titre": "Signes de gravité",
+              "points": [
+                "Atteinte respiratoire (dyspnée, polypnée, faiblesse des muscles respiratoires)",
+                "Dysautonomie (troubles de la TA, tachycardie/bradycardie, troubles du rythme)",
+                "Dysphagie, dysarthrie"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "🧪 Examens diagnostiques",
+          "subsections": [
+            {
+              "titre": "Examens complémentaires",
+              "points": [
+                "LCR : dissociation albumino-cytologique (protéines ↑, cellules normales)",
+                "Électroneuromyogramme : ralentissement de conduction, blocs de conduction",
+                "Gaz du sang si suspicion d’insuffisance respiratoire",
+                "Surveillance cardiologique (TA, ECG) si dysautonomie"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "⚙️ Prise en charge",
+          "subsections": [
+            {
+              "titre": "Urgences et surveillance",
+              "points": [
+                "Hospitalisation en unité de soins intensifs si atteinte respiratoire ou dysautonomie",
+                "Surveillance régulière : capacité vitale forcée, saturation O₂, TA, FC"
+              ]
+            },
+            {
+              "titre": "Traitement spécifique",
+              "points": [
+                "Immunoglobulines IV (IVIg) 5 jours",
+                "Plasmaphérèse alternative",
+                "⚠️ Pas de corticothérapie (inefficace)"
+              ]
+            },
+            {
+              "titre": "Support",
+              "points": [
+                "Assistance ventilatoire si besoin",
+                "Prévention des complications : kinésithérapie, anticoagulation préventive",
+                "Prise en charge de la douleur neuropathique"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "✅ Points clés ECOS",
+          "points": [
+            "Paralysie flasque ascendante + aréflexie = tableau typique",
+            "Toujours rechercher atteinte respiratoire (mesurer capacité vitale)",
+            "Hospitaliser d’emblée (risque évolutif rapide)",
+            "Traitement = IVIg ou plasmaphérèse",
+            "Surveillance vitale essentielle (TA, FC, respiration)"
+          ]
+        },
+        {
+          "titre": "📋 Check-list rapide ECOS",
+          "subsections": [
+            {
+              "titre": "Questions à poser",
+              "points": [
+                "Infection récente (respiratoire, digestive) ?",
+                "Début des symptômes : paresthésies, faiblesse ascendante ?",
+                "Atteinte faciale ou troubles de déglutition/parole ?",
+                "Dyspnée, palpitations, vertiges (dysautonomie) ?"
+              ]
+            },
+            {
+              "titre": "Examens à faire",
+              "points": [
+                "Examen neuro complet (force, ROT, sensibilité, nerfs crâniens)",
+                "Mesure de la capacité vitale forcée",
+                "Ponction lombaire (LCR)",
+                "ENMG",
+                "ECG + surveillance TA"
+              ]
+            },
+            {
+              "titre": "PEC en 3 points",
+              "points": [
+                "Hospitaliser pour surveillance rapprochée",
+                "Initier IVIg ou plasmaphérèse",
+                "Surveiller fonction respiratoire et autonome en continu"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "presentationPatient": {
+      "titre": "📑 Fiche ECOS – Cas : Syndrome de Guillain-Barré (Homme de 42 ans, faiblesse ascendante)",
+      "sections": [
+        {
+          "titre": "🧩 Checklist mentale (présentation systématisée)",
+          "points": [
+            "Intro → âge, motif (fourmillements et faiblesse des jambes depuis 3 jours, difficulté à marcher)",
+            "Chronologie → début distal (pieds), progression ascendante, symétrique",
+            "Déficit moteur → faiblesse MI, difficultés escaliers, pas encore MS",
+            "Sensitif → paresthésies type 'gants et chaussettes', pas de niveau sensitif",
+            "Réflexes → ROT diminués/absents MI",
+            "Signes associés → pas de sphinctériens, pas de déglutition, pas de dyspnée, douleurs dorsales possibles",
+            "Contexte infectieux → diarrhée fébrile il y a 1 semaine (Campylobacter?)",
+            "ATCD → pas de maladies chroniques ni neurologiques",
+            "Exam clinique → paralysie flasque ascendante symétrique, aréflexie",
+            "Signes de gravité à rechercher → atteinte respiratoire, bulbaire, dysautonomie",
+            "DD → myélite transverse, compression médullaire, neuropathie toxique/métabolique",
+            "Examens clés → PL (dissociation albumino-cytologique), ENMG, spirométrie (CV), ECG",
+            "PEC → hospitalisation d’emblée, surveillance respi/cardio, IVIg ou plasmaphérèse, soins de support",
+            "Pronostic → récupération complète dans 80-85%, séquelles possibles 15-20%, récidive rare"
+          ],
+          "mnemo": {
+            "titre": "👉 Mnémo rapide : GBS = GUILLAIN",
+            "elements": [
+              "G = Gastro-entérite (contexte déclencheur)",
+              "U = Urgence neurologique",
+              "I = IVIg ou plasmaphérèse",
+              "L = LCR dissociation albumino-cytologique",
+              "L = Limiter complications (HBPM, kiné, nutrition)",
+              "A = Aréflexie + faiblesse ascendante",
+              "I = Insuffisance respi/dysautonomie = réa",
+              "N = Neurologie (ENMG pour confirmation)"
+            ]
+          }
+        },
+        {
+          "titre": "🎤 Version longue (≈2-3 min)",
+          "contenu": "Il s’agit de Monsieur D., un homme de 42 ans, enseignant, qui consulte pour des fourmillements et une faiblesse progressive des jambes depuis 3 jours. Les symptômes ont commencé aux pieds, puis sont remontés vers les jambes, de façon symétrique. Il décrit une marche de plus en plus difficile, avec des difficultés à monter les escaliers, mais il arrive encore à marcher sans aide. Il n’a pas présenté de chutes. \n\nIl n’a pas de troubles sphinctériens, pas de troubles de la déglutition, pas de diplopie ni de dyspnée. À l’interrogatoire, il rapporte une gastro-entérite fébrile il y a environ une semaine, spontanément résolutive. Il n’a pas d’antécédents neurologiques ni médicaux significatifs. Pas de médicaments récents, pas d’exposition toxique. \n\nÀ l’examen clinique, on retrouve une faiblesse motrice des membres inférieurs, symétrique, avec hypotonie. Les réflexes ostéo-tendineux rotuliens et achilléens sont abolis. Les membres supérieurs sont encore indemnes. La sensibilité est altérée distalement, type 'chaussettes', mais pas de niveau sensitif. Pas d’atteinte des nerfs crâniens à ce stade. La marche est possible mais instable. \n\nEn résumé, il s’agit d’un homme de 42 ans présentant une faiblesse motrice ascendante symétrique, associée à des paresthésies distales et une aréflexie, survenue dans un contexte post-infectieux. Le diagnostic principal est un syndrome de Guillain-Barré. Les diagnostics différentiels incluent une myélite transverse (mais absence de niveau sensitif, pas de troubles sphinctériens), une compression médullaire (pas de douleur rachidienne, évolution symétrique) et une neuropathie toxique ou métabolique (pas d’exposition, évolution trop rapide). \n\nLes examens complémentaires à réaliser en urgence sont une ponction lombaire à la recherche d’une dissociation albumino-cytologique, un électroneuromyogramme pour confirmer l’atteinte démyélinisante, un bilan respiratoire (capacité vitale, MIP/MEP), une NFS, ionogramme, CRP, CPK et une surveillance cardiaque pour dépister une dysautonomie. Une IRM médullaire est indiquée si doute diagnostic. \n\nLa prise en charge repose sur une hospitalisation immédiate, avec surveillance rapprochée de la fonction respiratoire et du système autonome. Le traitement spécifique repose sur les immunoglobulines intraveineuses pendant 5 jours ou une plasmaphérèse en alternative. Les corticoïdes ne sont pas indiqués car inefficaces. Les soins de support incluent une prophylaxie anticoagulante, une kinésithérapie précoce, une prévention des escarres et une prise en charge de la douleur neuropathique. \n\nConcernant le pronostic, il existe une phase d’aggravation durant 2 à 4 semaines suivie d’un plateau puis d’une récupération progressive sur plusieurs semaines à mois. Environ 85 % des patients récupèrent complètement, mais 15 à 20 % gardent des séquelles motrices ou sensitives, et la récidive est rare (<5 %)."
+        },
+        {
+          "titre": "⚡ Version express (SBAR, 30 sec)",
+          "contenu": "S (Situation) : Monsieur D., 42 ans, présente une faiblesse ascendante des membres inférieurs avec aréflexie depuis 3 jours.\n\nB (Background) : Gastro-entérite fébrile il y a une semaine, pas d’antécédents neurologiques, pas de toxiques. Examen : faiblesse symétrique MI, ROT abolis, pas d’atteinte bulbaire ni respi.\n\nA (Assessment) : Suspicion de syndrome de Guillain-Barré. DD : myélite transverse, compression médullaire, neuropathie toxique.\n\nR (Recommendation) : Hospitalisation immédiate, ponction lombaire + ENMG, surveillance respiratoire et cardiaque, débuter IVIg ou plasmaphérèse, soins de support (HBPM, kiné)."
+        },
+        {
+          "titre": "🎲 Touches ludiques / mnémos",
+          "subsections": [
+            {
+              "titre": "👉 Critères diagnostiques majeurs (GBS)",
+              "points": [
+                "Faiblesse progressive symétrique",
+                "Aréflexie ou hyporéflexie",
+                "Durée < 4 semaines",
+                "Atteinte sensitive modérée",
+                "Absence de fièvre au début",
+                "Dissociation albumino-cytologique (LCR)",
+                "Anomalies ENMG caractéristiques"
+              ]
+            },
+            {
+              "titre": "👉 Signes de gravité = RAD",
+              "points": [
+                "R = Respiration (dyspnée, CV <20mL/kg)",
+                "A = Atteinte bulbaire (dysphagie, dysphonie)",
+                "D = Dysautonomie (TA, FC, arythmie)"
+              ]
+            },
+            {
+              "titre": "👉 PEC en 3 axes",
+              "points": [
+                "Spécifique → IVIg ou plasmaphérèse",
+                "Surveillance → respi, cardio, force musculaire",
+                "Support → anticoagulation, kiné, nutrition, analgésie"
+              ]
+            },
+            {
+              "titre": "⚠️ Pièges ECOS",
+              "points": [
+                "Oublier d’évaluer la capacité vitale (risque respi !)",
+                "Prescrire corticoïdes (inefficaces)",
+                "Ne pas hospitaliser d’emblée",
+                "Ignorer la dysautonomie",
+                "Négliger la prévention des complications (TVP, escarres)"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "❓ Questions probables de l'examinateur (avec réponses orales)",
+          "subsections": [
+            {
+              "titre": "1. Diagnostic différentiel",
+              "questions": [
+                {
+                  "question": "Quels diagnostics différentiels devez-vous évoquer ?",
+                  "reponse": [
+                    "Myélite transverse → niveau sensitif, troubles sphinctériens",
+                    "Compression médullaire → douleurs rachidiennes, déficit asymétrique",
+                    "Neuropathie toxique/métabolique → contexte d’exposition, évolution chronique"
+                  ]
+                }
+              ]
+            },
+            {
+              "titre": "2. Examens complémentaires",
+              "questions": [
+                {
+                  "question": "Quels examens confirmez-vous en urgence ?",
+                  "reponse": [
+                    "Ponction lombaire → dissociation albumino-cytologique",
+                    "ENMG → ralentissement conduction, blocs",
+                    "Fonction respiratoire (CV, MIP/MEP)",
+                    "Surveillance ECG et TA"
+                  ]
+                }
+              ]
+            },
+            {
+              "titre": "3. Prise en charge",
+              "questions": [
+                {
+                  "question": "Quel est le traitement spécifique ?",
+                  "reponse": [
+                    "Immunoglobulines IV 0,4 g/kg/j pendant 5 jours",
+                    "ou Plasmaphérèse (5 échanges sur 10-14 jours)",
+                    "⚠️ Corticoïdes inefficaces"
+                  ]
+                },
+                {
+                  "question": "Quels soins de support associeriez-vous ?",
+                  "reponse": [
+                    "Anticoagulation prophylactique",
+                    "Kinésithérapie quotidienne",
+                    "Surveillance respiratoire et cardiaque",
+                    "Nutrition adaptée, prévention escarres",
+                    "Traitement douleurs neuropathiques"
+                  ]
+                },
+                {
+                  "question": "Quel est le pronostic ?",
+                  "reponse": [
+                    "Phase d’aggravation 2-4 semaines, puis récupération en semaines-mois",
+                    "85 % récupération complète",
+                    "15-20 % séquelles motrices/sensitives",
+                    "Récidive rare (<5 %)"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

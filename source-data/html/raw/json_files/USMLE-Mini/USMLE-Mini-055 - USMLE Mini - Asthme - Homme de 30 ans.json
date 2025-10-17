@@ -1,0 +1,120 @@
+{
+  "title": "USMLE Mini - Asthme - Homme de 30 ans",
+  "category": "USMLE Mini-Cas",
+  "originalCategory": "TOUX/DYSPNÉE",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Homme de 30 ans consultant pour dyspnée, toux et sifflements qui s'aggravent par temps froid. Il a eu plusieurs épisodes similaires au cours des 4 derniers mois."
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Motif principal de consultation",
+          "binaryOnly": true,
+          "patientComment": "dyspnée, toux et sifflements qui s'aggravent par temps froid. Il a eu plusieurs épisodes similaires au cours des 4 derniers mois."
+        },
+        {
+          "id": "a2",
+          "text": "Éléments clés de l'anamnèse à explorer",
+          "details": [
+            "Aiguë/subaiguë vs chronique, augmentation de la fréquence de la toux si chronique, moment",
+            "présence/description des expectorations, présence d'hémoptysie",
+            "symptômes associés (constitutionnels, infection des voies respiratoires supérieures, écoulement postnasal, dyspnée, sifflement, douleur thoracique, brûlures d'estomac)",
+            "facteurs aggravants et soulageants, expositions",
+            "antécédents de tabagisme",
+            "antécédents de maladie pulmonaire, vomissements post-tussifs ou insuffisance cardiaque",
+            "allergies",
+            "médicaments (en particulier les inhibiteurs de l'ECA)."
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Éléments clés de l'examen physique",
+          "details": [
+            "Signes vitaux ± oxymétrie de pouls",
+            "examen de la muqueuse nasale, oropharynx, cœur, poumons, ganglions lymphatiques et extrémités (hippocratisme digital, cyanose, œdème)."
+          ]
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostics différentiels à considérer",
+          "ddSection": {
+            "title": "Diagnostics différentiels",
+            "categories": [
+              {
+                "name": "Hypothèses diagnostiques",
+                "items": [
+                  {
+                    "text": "Asthme",
+                    "cause": "À évaluer selon l'anamnèse et l'examen clinique",
+                    "test": "→ NFS"
+                  },
+                  {
+                    "text": "RGO",
+                    "cause": "À évaluer selon l'anamnèse et l'examen clinique",
+                    "test": "→ Radiographie thoracique"
+                  },
+                  {
+                    "text": "Bronchite",
+                    "cause": "À évaluer selon l'anamnèse et l'examen clinique",
+                    "test": "→ Mesure du débit de pointe"
+                  },
+                  {
+                    "text": "Pneumopathie",
+                    "cause": "À évaluer selon l'anamnèse et l'examen clinique",
+                    "test": "→ EFR"
+                  },
+                  {
+                    "text": "Corps étranger",
+                    "cause": "À évaluer selon l'anamnèse et l'examen clinique",
+                    "test": "→ Test de provocation à la méthacholine"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Examens complémentaires pertinents",
+          "details": [
+            "NFS",
+            "Radiographie thoracique",
+            "Mesure du débit de pointe",
+            "EFR",
+            "Test de provocation à la méthacholine"
+          ]
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "informationsExpert": {
+      "titre": "Informations pour l'expert",
+      "pointsCles": [
+        "Cas de toux/dyspnée",
+        "Patient: Homme de 30 ans",
+        "Évaluation de la démarche diagnostique",
+        "Choix approprié des examens complémentaires"
+      ],
+      "pieges": [
+        "Ne pas explorer systématiquement tous les éléments de l'anamnèse",
+        "Oublier certains diagnostics différentiels importants",
+        "Demander des examens non pertinents ou excessifs"
+      ]
+    }
+  }
+}

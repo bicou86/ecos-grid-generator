@@ -1,0 +1,496 @@
+{
+  "title": "AMC Urgences 3A - Douleur thoracique aiguë - STEMI",
+  "context": {
+    "setting": "Service d'urgences - Appel téléphonique puis intervention SMUR",
+    "patient": "Homme de 59 ans se plaignant de douleurs thoraciques depuis 1 heure",
+    "vitals": {
+      "ta": "140/100 mmHg",
+      "fc": "92 bpm",
+      "fr": "22/min",
+      "temperature": "36.5°C"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Motif principal",
+          "details": [
+            "Douleur thoracique [Oui, depuis 1 heure]"
+          ],
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Caractérisation de la douleur thoracique",
+          "details": [
+            "Localisation [Rétrosternale]",
+            "Type de douleur [Constrictive, en étau]",
+            "Intensité [8/10]",
+            "Irradiation [Bras gauche et mâchoire]",
+            "Facteurs déclenchants [Au repos]",
+            "Facteurs soulageants [Aucun]",
+            "Durée continue [Oui, depuis 1 heure]"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Symptômes associés",
+          "details": [
+            "Nausées [Oui]",
+            "Vomissements [Non]",
+            "Dyspnée [Oui, légère]",
+            "Sueurs [Oui, profuses]",
+            "Palpitations [Non]",
+            "Syncope/malaise [Non]",
+            "Anxiété [Oui, importante]"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Antécédents cardiovasculaires",
+          "details": [
+            "Hypertension artérielle [Oui, depuis 5 ans]",
+            "Diabète [Non]",
+            "Dyslipidémie [Non mentionnée]",
+            "Cardiopathie connue [Non]",
+            "AVC/AIT [Non]",
+            "Artériopathie périphérique [Non]"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Facteurs de risque cardiovasculaire",
+          "details": [
+            "Tabagisme [À rechercher]",
+            "Antécédents familiaux coronariens [À rechercher]",
+            "Obésité/surpoids [À évaluer]",
+            "Sédentarité [À rechercher]",
+            "Stress [À évaluer]"
+          ]
+        },
+        {
+          "id": "a6",
+          "text": "Médicaments actuels",
+          "details": [
+            "Antihypertenseurs [À préciser]",
+            "Antiagrégants [À vérifier]",
+            "Statines [À vérifier]",
+            "Autres médicaments [À rechercher]"
+          ]
+        },
+        {
+          "id": "a7",
+          "text": "Allergies médicamenteuses",
+          "details": [
+            "Allergies connues [À rechercher systématiquement]"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Évaluation initiale ABC",
+          "details": [
+            "Voies aériennes [Libres]",
+            "Respiration [Spontanée, FR 22/min]",
+            "Circulation [TA 140/100, FC 92 bpm irrégulier]",
+            "État de conscience [Conscient, anxieux]"
+          ],
+          "binaryOnly": true
+        },
+        {
+          "id": "e2",
+          "text": "Aspect général",
+          "details": [
+            "Pâleur [Oui, marquée]",
+            "Diaphorèse [Oui, profuse]",
+            "Position antalgique [Oui]",
+            "Détresse apparente [Oui]"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Examen cardiovasculaire",
+          "details": [
+            "Auscultation cardiaque [Souffle systolique d'éjection]",
+            "Rythme cardiaque [Irrégulier]",
+            "Bruits surajoutés [B3 absent, B4 possible]",
+            "Pouls périphériques [Présents, symétriques]",
+            "Signes d'insuffisance cardiaque droite [Absents]"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Examen pulmonaire",
+          "details": [
+            "Auscultation pulmonaire [Râles crépitants aux bases]",
+            "Signes de détresse respiratoire [Polypnée légère]",
+            "SpO2 [À mesurer]"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Examen abdominal",
+          "details": [
+            "Palpation abdominale [Souple, indolore]",
+            "Organomégalie [Absente]",
+            "Pouls fémoraux [Présents et symétriques]"
+          ]
+        },
+        {
+          "id": "e6",
+          "text": "Examen neurologique sommaire",
+          "details": [
+            "Déficit focal [Absent]",
+            "Signes méningés [Absents]"
+          ]
+        },
+        {
+          "id": "e7",
+          "text": "ECG 12 dérivations",
+          "details": [
+            "Réalisation immédiate [Dans les 10 minutes]",
+            "Sus-décalage ST [Présent en V2-V5]",
+            "Onde Q pathologique [À rechercher]",
+            "Territoire concerné [Antéro-septal étendu]",
+            "Signes en miroir [À rechercher en inférieur]"
+          ],
+          "binaryOnly": true
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Mesures immédiates",
+          "details": [
+            "Installation en salle de déchocage",
+            "Monitoring cardiaque continu",
+            "Voie veineuse périphérique (2 VVP de bon calibre)",
+            "Oxygénothérapie si SpO2 < 94%",
+            "Position semi-assise"
+          ],
+          "binaryOnly": true
+        },
+        {
+          "id": "m2",
+          "text": "Traitement MONA initial",
+          "details": [
+            "Morphine IV titration (2-5 mg toutes les 5-10 min)",
+            "Oxygène si hypoxémie",
+            "Nitrés sublinguaux (0.4 mg, répétable x3)",
+            "Aspirine 250-500 mg à croquer"
+          ],
+          "binaryOnly": true
+        },
+        {
+          "id": "m3",
+          "text": "Traitement antithrombotique",
+          "details": [
+            "Double antiagrégation plaquettaire",
+            "Clopidogrel 600 mg ou Prasugrel 60 mg ou Ticagrelor 180 mg",
+            "Anticoagulation par héparine (HBPM ou HNF)",
+            "Dosage adapté au poids"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Stratégie de reperfusion",
+          "details": [
+            "Angioplastie primaire si disponible < 120 min",
+            "Thrombolyse si PCI non disponible < 120 min",
+            "Transfert urgent en salle de cathétérisme",
+            "Objectif door-to-balloon < 90 min"
+          ],
+          "binaryOnly": true
+        },
+        {
+          "id": "m5",
+          "text": "Examens complémentaires urgents",
+          "details": [
+            "Troponines HS (T0 et contrôle)",
+            "NFS, ionogramme, urée, créatinine",
+            "Bilan de coagulation (TP, TCA)",
+            "Glycémie capillaire",
+            "BNP ou NT-proBNP",
+            "Radiographie thoracique"
+          ]
+        },
+        {
+          "id": "m6",
+          "text": "Diagnostics différentiels",
+          "ddSection": {
+            "title": "Diagnostics différentiels de la douleur thoracique aiguë",
+            "categories": [
+              {
+                "name": "Urgences vitales cardiovasculaires",
+                "items": [
+                  {
+                    "text": "STEMI",
+                    "cause": "Arguments POUR:\n\t□ Douleur constrictive rétrosternale\n\t□ Irradiation bras gauche et mâchoire\n\t□ Sus-décalage ST en V2-V5\n\t□ Facteur de risque (HTA)",
+                    "test": "→ Coronarographie urgente"
+                  },
+                  {
+                    "text": "Dissection aortique",
+                    "cause": "Arguments CONTRE:\n\t□ Douleur non déchirante\n\t□ Pas d'asymétrie tensionnelle\n\t□ Pouls périphériques présents",
+                    "test": "→ Angio-CT thoracique si doute"
+                  },
+                  {
+                    "text": "Embolie pulmonaire",
+                    "cause": "Arguments CONTRE:\n\t□ Pas de facteurs de risque thromboembolique évidents\n\t□ Douleur non pleurale\n\t□ ECG typique de STEMI",
+                    "test": "→ D-dimères et angio-CT pulmonaire si doute"
+                  }
+                ]
+              },
+              {
+                "name": "Autres causes",
+                "items": [
+                  {
+                    "text": "Péricardite",
+                    "cause": "Arguments CONTRE:\n\t□ Pas de frottement péricardique\n\t□ Sus-décalage localisé (non diffus)\n\t□ Pas de contexte viral",
+                    "test": "→ Échocardiographie"
+                  },
+                  {
+                    "text": "Pneumothorax sous tension",
+                    "cause": "Arguments CONTRE:\n\t□ Auscultation pulmonaire symétrique\n\t□ Pas de déviation trachéale",
+                    "test": "→ Radiographie thoracique"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m7",
+          "text": "Surveillance et réévaluation",
+          "details": [
+            "Monitoring continu ECG et signes vitaux",
+            "Évaluation de la douleur (EVA)",
+            "Surveillance des signes de complications",
+            "ECG de contrôle après traitement",
+            "Préparation au transfert en coronarographie"
+          ]
+        },
+        {
+          "id": "m8",
+          "text": "Information et consentement",
+          "details": [
+            "Explication du diagnostic de STEMI",
+            "Information sur la coronarographie urgente",
+            "Risques et bénéfices de l'angioplastie",
+            "Consentement éclairé si possible",
+            "Rassurer et accompagner le patient"
+          ]
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Synthèse pour le patient",
+          "content": "Monsieur, vous présentez un infarctus du myocarde, c'est-à-dire une crise cardiaque. Une artère de votre cœur est bouchée. Nous devons agir très rapidement pour la déboucher. Nous allons vous transférer immédiatement en salle de cathétérisme pour une coronarographie et très probablement poser un stent pour rouvrir l'artère. Le traitement que nous avons débuté vise à limiter les dégâts sur votre cœur. Avez-vous des questions?"
+        },
+        {
+          "id": "c2",
+          "text": "Questions difficiles du patient",
+          "content": "[Est-ce que je vais mourir?] [Est-ce que mon cœur va récupérer complètement?] [Combien de temps vais-je rester à l'hôpital?] [Pourrai-je reprendre une vie normale?]"
+        },
+        {
+          "id": "c3",
+          "text": "Réponses types aux questions difficiles",
+          "exemplesPhrases": [
+            "Nous faisons tout pour vous soigner rapidement. L'angioplastie est très efficace quand elle est faite rapidement.",
+            "La récupération dépend de la rapidité du traitement. Plus vite nous débouchons l'artère, mieux votre cœur récupérera.",
+            "Généralement, l'hospitalisation dure 3 à 5 jours si tout se passe bien. Une réadaptation cardiaque suivra.",
+            "Avec un bon traitement et un suivi adapté, la plupart des patients reprennent une vie normale après quelques semaines."
+          ]
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "images": [
+      {
+        "title": "ECG 12 dérivations - STEMI antéro-septal",
+        "description": "ECG montrant un sus-décalage du segment ST en V1-V4, ondes Q de nécrose et miroir en DII, DIII, aVF",
+        "data": "grilles_generees/html/images/AMC-Urgences-Medecine-Intensive-3/A1-ECG.jpg"
+      },
+      {
+        "title": "Spectre des syndromes coronariens aigus",
+        "description": "Schéma montrant la classification des SCA : STEMI, NSTEMI et angor instable avec leurs caractéristiques",
+        "data": "grilles_generees/html/images/AMC-Urgences-Medecine-Intensive-3/A2-Spectre des SCA.jpg"
+      },
+      {
+        "title": "Critères d'infarctus du myocarde type 1",
+        "description": "Tableau des critères diagnostiques de l'IM type 1 selon la 4ème définition universelle",
+        "data": "grilles_generees/html/images/AMC-Urgences-Medecine-Intensive-3/A3-Critères IM type 1.jpg"
+      },
+      {
+        "title": "Critères d'infarctus du myocarde type 2",
+        "description": "Tableau des critères diagnostiques de l'IM type 2 avec déséquilibre offre/demande en oxygène",
+        "data": "grilles_generees/html/images/AMC-Urgences-Medecine-Intensive-3/A4-Critères IM type 2.jpg"
+      },
+      {
+        "title": "Temps cibles de prise en charge du STEMI",
+        "description": "Chronologie avec les délais recommandés : premier contact médical, ECG, reperfusion",
+        "data": "grilles_generees/html/images/AMC-Urgences-Medecine-Intensive-3/A5-Temps cibles de prise en charge.jpg"
+      },
+      {
+        "title": "Contre-indications à la fibrinolyse",
+        "description": "Liste détaillée des contre-indications absolues et relatives à la fibrinolyse",
+        "data": "grilles_generees/html/images/AMC-Urgences-Medecine-Intensive-3/A6-Contre-indications à la fibrinolyse.jpg"
+      },
+      {
+        "title": "Étapes et délais de prise en charge d'un STEMI",
+        "description": "Algorithme décisionnel avec les étapes clés et les délais cibles pour la reperfusion",
+        "data": "grilles_generees/html/images/AMC-Urgences-Medecine-Intensive-3/A7-Etapes et délais de la prise en charge d'un STEMI.jpg"
+      }
+    ],
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour le patient standardisé - STEMI",
+      "nom": "Monsieur Martin",
+      "age": "59 ans",
+      "contexte": "Vous êtes chez vous quand la douleur a commencé il y a 1 heure. Vous avez d'abord appelé le 144, puis le SMUR est arrivé.",
+      "motifConsultation": {
+        "plaintePrincipale": "J'ai une douleur terrible dans la poitrine depuis 1 heure",
+        "autreChose": "J'ai peur, je n'ai jamais ressenti ça avant"
+      },
+      "histoireActuelle": {
+        "symptomesPrincipaux": [
+          "Douleur rétrosternale en étau, comme si on m'écrasait la poitrine",
+          "La douleur irradie dans mon bras gauche et ma mâchoire",
+          "Intensité 8/10, c'est insupportable",
+          "J'ai des nausées et je transpire beaucoup",
+          "Je suis essoufflé et très anxieux"
+        ],
+        "facteursDeclenchants": [
+          "La douleur est apparue au repos, j'étais assis dans mon fauteuil",
+          "Rien ne la soulage, j'ai essayé de changer de position"
+        ]
+      },
+      "simulation": {
+        "attitude": [
+          "Paraître très anxieux et en détresse",
+          "Se tenir la poitrine avec la main",
+          "Transpirer visiblement (si possible)",
+          "Respirer rapidement mais pas de façon exagérée",
+          "Demander régulièrement si c'est grave"
+        ],
+        "durantExamen": [
+          "Rester allongé ou semi-assis",
+          "Grimacer lors de la palpation thoracique",
+          "Collaborer mais montrer de l'anxiété",
+          "Poser des questions sur ce qui va se passer"
+        ]
+      },
+      "antecedents": {
+        "medicaux": [
+          "Hypertension depuis 5 ans",
+          "Pas de diabète connu",
+          "Pas de problème cardiaque antérieur"
+        ],
+        "chirurgicaux": [
+          "Appendicectomie à 25 ans"
+        ],
+        "familiaux": [
+          "Père décédé d'un infarctus à 65 ans",
+          "Mère hypertendue"
+        ]
+      },
+      "habitudes": {
+        "tabac": "Ancien fumeur, arrêt il y a 2 ans (20 paquets-années)",
+        "alcool": "Occasionnel, 1-2 verres de vin par repas",
+        "activite": "Sédentaire, travail de bureau",
+        "medicaments": "Un médicament pour la tension (ne se souvient pas du nom)"
+      }
+    },
+    "informationsExpert": {
+      "titre": "Points clés pour l'évaluateur - STEMI",
+      "pointsCles": [
+        "Reconnaissance rapide du STEMI sur l'ECG (< 10 minutes)",
+        "Application du protocole MONA",
+        "Double antiagrégation plaquettaire systématique",
+        "Stratégie de reperfusion claire (PCI vs thrombolyse)",
+        "Respect des délais (door-to-balloon < 90 min)",
+        "Prise en charge de l'anxiété du patient"
+      ],
+      "pieges": [
+        "Oublier l'ECG dans les 10 premières minutes",
+        "Ne pas donner l'aspirine à croquer",
+        "Oublier la double antiagrégation",
+        "Ne pas évoquer la stratégie de reperfusion",
+        "Négliger l'aspect communication avec un patient anxieux",
+        "Oublier le consentement pour la coronarographie"
+      ],
+      "rolesInterventions": [
+        "L'examinateur joue le rôle du médecin urgentiste senior si besoin",
+        "Fournir les résultats d'examens sur demande",
+        "Rappeler le temps écoulé si nécessaire",
+        "Évaluer la gestion du stress et de l'urgence"
+      ]
+    },
+    "theoriePratique": {
+      "titre": "Rappels théoriques - Syndrome coronarien aigu ST+",
+      "sections": [
+        {
+          "titre": "Définition et physiopathologie",
+          "contenu": "Le STEMI résulte de l'occlusion complète d'une artère coronaire par un thrombus sur plaque d'athérome rompue. La nécrose myocardique débute après 20-30 minutes d'ischémie et s'étend de l'endocarde vers l'épicarde. La rapidité de la reperfusion est cruciale pour limiter la taille de l'infarctus."
+        },
+        {
+          "titre": "Critères ECG du STEMI",
+          "points": [
+            "Sus-décalage ST ≥ 1 mm dans au moins 2 dérivations contiguës périphériques",
+            "Sus-décalage ST ≥ 2 mm en V2-V3 chez l'homme (≥ 1.5 mm chez la femme)",
+            "Nouveau BBG complet",
+            "Territoires: antérieur (V1-V4), latéral (I, aVL, V5-V6), inférieur (II, III, aVF)",
+            "Signes en miroir possibles dans le territoire opposé"
+          ]
+        },
+        {
+          "titre": "Score de risque TIMI pour STEMI",
+          "points": [
+            "Âge ≥ 65 ans (2 points) ou ≥ 75 ans (3 points)",
+            "Diabète, HTA ou angor (1 point)",
+            "PAS < 100 mmHg (3 points)",
+            "FC > 100 bpm (2 points)",
+            "Killip II-IV (2 points)",
+            "Poids < 67 kg (1 point)",
+            "STEMI antérieur ou BBG (1 point)",
+            "Délai > 4h (1 point)"
+          ]
+        }
+      ],
+      "rappelsTherapeutiques": [
+        "Aspirine 250-500 mg à croquer (puis 75-100 mg/j)",
+        "Clopidogrel 600 mg (ou Prasugrel 60 mg si < 75 ans et > 60 kg, ou Ticagrelor 180 mg)",
+        "Héparine: Enoxaparine 0.5 mg/kg IV puis 1 mg/kg SC x2/j ou HNF 60-70 UI/kg IV",
+        "Morphine IV par titration de 2-3 mg toutes les 5-10 minutes",
+        "Dérivés nitrés SL 0.4 mg, répétable toutes les 5 min x3 (CI si PAS < 90 mmHg)",
+        "Bêtabloquants précoces si pas de contre-indication",
+        "IEC dans les 24 premières heures si pas d'hypotension",
+        "Statines haute intensité (Atorvastatine 80 mg ou Rosuvastatine 40 mg)"
+      ],
+      "examensComplementaires": [
+        "ECG 12 dérivations: dans les 10 minutes, répété toutes les 15-30 min",
+        "Troponines HS: dosage initial et contrôle à 1-3h (pic à 12-24h)",
+        "NFS: recherche anémie (facteur aggravant)",
+        "Ionogramme, urée, créatinine: fonction rénale avant coronarographie",
+        "Glycémie: dépistage diabète, hyperglycémie de stress",
+        "Bilan lipidique: dans les 24h (modification après)",
+        "BNP/NT-proBNP: évaluation de l'insuffisance cardiaque",
+        "Radiographie thoracique: OAP, cardiomégalie, complications",
+        "Échocardiographie: fonction VG, complications mécaniques"
+      ]
+    }
+  }
+}

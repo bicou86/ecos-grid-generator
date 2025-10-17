@@ -1,0 +1,616 @@
+{
+  "title": "Voyage au Brésil - Femme de 22 ans",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Femme de 22 ans consultant pour préparer un voyage au Brésil"
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Motif principal de consultation",
+          "binaryOnly": true,
+          "patientComment": "Je pars au Brésil dans un mois pour 3 semaines, je viens pour les vaccins et conseils"
+        },
+        {
+          "id": "a2",
+          "text": "Détails du voyage",
+          "details": [
+            "Durée du séjour [3 semaines]",
+            "Date de départ [dans un mois]",
+            "Type de voyage [sac à dos]",
+            "Destinations [milieu urbain et rural, Amazonie]",
+            "Activités prévues [randonnée en Amazonie]",
+            "Hébergement [variable, incluant zones rurales]"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Antécédents de voyages",
+          "details": [
+            "Voyages internationaux précédents",
+            "Destinations tropicales antérieures",
+            "Problèmes de santé lors de voyages",
+            "Tolérance aux médicaments prophylactiques"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Statut vaccinal actuel",
+          "details": [
+            "Vaccinations de base (DTP, MMR)",
+            "Hépatite A",
+            "Hépatite B",
+            "Fièvre jaune",
+            "COVID-19",
+            "Grippe saisonnière",
+            "Carnet de vaccination"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Antécédents médicaux",
+          "details": [
+            "Pathologies chroniques",
+            "Allergies médicamenteuses",
+            "Traitements en cours",
+            "Contraception",
+            "Immunosuppression",
+            "Troubles psychiatriques"
+          ]
+        },
+        {
+          "id": "a6",
+          "text": "Conditions spécifiques du voyage",
+          "details": [
+            "Accès aux soins sur place",
+            "Assurance voyage",
+            "Budget pour les médicaments",
+            "Compagnons de voyage",
+            "Contact local d'urgence"
+          ]
+        },
+        {
+          "id": "a7",
+          "text": "Comportements à risque",
+          "details": [
+            "Alimentation de rue",
+            "Baignade en eau douce",
+            "Contact avec animaux",
+            "Rapports sexuels potentiels",
+            "Sports à risque",
+            "Tatouages/piercings"
+          ]
+        },
+        {
+          "id": "a8",
+          "text": "Préoccupations et attentes",
+          "details": [
+            "Inquiétudes sur les maladies",
+            "Effets secondaires des vaccins",
+            "Coût des vaccinations",
+            "Préférences pour la prophylaxie"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Examen général",
+          "details": [
+            "État général",
+            "Signes vitaux",
+            "IMC",
+            "État cutané (contre-indications vaccinales)"
+          ]
+        },
+        {
+          "id": "e2",
+          "text": "Recherche de contre-indications",
+          "details": [
+            "Immunosuppression",
+            "Grossesse actuelle",
+            "Allergies sévères (œuf, gélatine)",
+            "Maladie fébrile aiguë"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Évaluation de l'état vaccinal",
+          "details": [
+            "Vérification du carnet de vaccination",
+            "Cicatrice de BCG",
+            "Documentation des vaccins antérieurs"
+          ]
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Vaccinations recommandées",
+          "details": [
+            "Fièvre jaune [obligatoire dans certaines régions, ≥10 jours avant départ]",
+            "Hépatite A [recommandé pour tous les voyageurs]",
+            "Hépatite B [si rapports sexuels ou soins médicaux potentiels]",
+            "Typhoïde [voyage rural, alimentation à risque]",
+            "Rappel DTP [si >10 ans]",
+            "MMR [vérifier vaccination complète]"
+          ],
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Calendrier vaccinal",
+                "items": [
+                  {
+                    "treatment": "Fièvre jaune",
+                    "details": "Centre agréé, certificat international",
+                    "duration": "Protection 10 ans"
+                  },
+                  {
+                    "treatment": "Hépatite A",
+                    "details": "2 doses à 6-12 mois d'intervalle",
+                    "duration": "Protection >20 ans"
+                  },
+                  {
+                    "treatment": "Typhoïde",
+                    "details": "1 dose IM ou oral",
+                    "duration": "Protection 3 ans"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Prophylaxie antipaludique",
+          "details": [
+            "Zone amazonienne [risque élevé de paludisme]",
+            "Atovaquone-proguanil [1cp/jour, J-1 à J+7]",
+            "Doxycycline [100mg/jour, J-1 à J+28]",
+            "Méfloquine [1cp/sem, J-14 à J+28]",
+            "Choix selon tolérance et préférence"
+          ],
+          "exemplesPhrases": [
+            "Vous allez dans une région amazonienne où le paludisme est présent",
+            "Je vous recommande une prophylaxie antipaludique",
+            "Nous choisirons celui qui vous convient le mieux, avec le moins d'effets secondaires possibles"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Prévention des piqûres de moustiques",
+          "details": [
+            "Répulsifs DEET ≥30%",
+            "Vêtements longs imprégnés",
+            "Moustiquaire imprégnée",
+            "Éviter sorties crépusculaires",
+            "Protection contre dengue, Zika, chikungunya"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Conseils hygiéno-diététiques",
+          "details": [
+            "Eau embouteillée uniquement",
+            "Éviter glaçons",
+            "Éviter crudités et fruits non pelés",
+            "Aliments bien cuits",
+            "Hygiène des mains fréquente",
+            "Éviter alimentation de rue"
+          ],
+          "exemplesPhrases": [
+            "Éviter l'eau non traitée, glaçons, crudités",
+            "Il est essentiel d'avoir une assurance médicale"
+          ]
+        },
+        {
+          "id": "m5",
+          "text": "Trousse médicale de voyage",
+          "details": [
+            "Antibiotique pour diarrhée [azithromycine]",
+            "Antidiarrhéique [lopéramide]",
+            "Solutions de réhydratation",
+            "Antalgiques/antipyrétiques",
+            "Antiémétiques",
+            "Pansements, désinfectant"
+          ]
+        },
+        {
+          "id": "m6",
+          "text": "Autres précautions",
+          "details": [
+            "Protection solaire",
+            "Éviter baignade en eau douce [schistosomiase]",
+            "Rapports protégés [IST]",
+            "Éviter contact avec animaux [rage]",
+            "Assurance rapatriement",
+            "Photocopie des documents"
+          ]
+        },
+        {
+          "id": "m7",
+          "text": "Maladies endémiques à surveiller",
+          "ddSection": {
+            "title": "Risques sanitaires au Brésil",
+            "categories": [
+              {
+                "name": "Maladies vectorielles",
+                "items": [
+                  {
+                    "text": "Paludisme",
+                    "cause": "Zones amazoniennes, transmission par Anophèles",
+                    "test": "→ Prophylaxie antipaludique obligatoire"
+                  },
+                  {
+                    "text": "Dengue/Zika/Chikungunya",
+                    "cause": "Tout le pays, transmission par Aedes",
+                    "test": "→ Protection antimoustique stricte"
+                  },
+                  {
+                    "text": "Fièvre jaune",
+                    "cause": "Zones rurales et forestières",
+                    "test": "→ Vaccination obligatoire"
+                  }
+                ]
+              },
+              {
+                "name": "Maladies entériques",
+                "items": [
+                  {
+                    "text": "Diarrhée du voyageur",
+                    "cause": "Hygiène alimentaire variable",
+                    "test": "→ Précautions alimentaires, antibiotique de secours"
+                  },
+                  {
+                    "text": "Hépatite A",
+                    "cause": "Transmission féco-orale",
+                    "test": "→ Vaccination recommandée"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m8",
+          "text": "Documentation et suivi",
+          "details": [
+            "Carnet de vaccination international",
+            "Certificat fièvre jaune",
+            "Ordonnances avec DCI",
+            "Coordonnées consulat",
+            "Consultation retour si fièvre"
+          ]
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Clôture de la consultation",
+          "content": "Nous avons passé en revue tous les aspects de votre voyage. Je vais vous prescrire les vaccins et médicaments nécessaires. Avez-vous d'autres questions ?",
+          "exemplesPhrases": [
+            "Voici les prescriptions pour les vaccins et la prophylaxie",
+            "Le centre de vaccination pour la fièvre jaune est situé à...",
+            "N'oubliez pas de consulter si vous avez de la fièvre au retour",
+            "Je vous donne une fiche avec tous les conseils importants"
+          ]
+        },
+        {
+          "id": "c2",
+          "text": "Questions difficiles de la patiente",
+          "content": "[Est-ce que tous ces vaccins sont obligatoires ?] [Et si je tombe malade là-bas ?] [Je n'aime pas trop les médicaments, c'est grave si je ne fais pas la prophylaxie du paludisme ?]"
+        },
+        {
+          "id": "c3",
+          "text": "Réponses types aux questions difficiles",
+          "exemplesPhrases": [
+            "Pas tous, mais certains sont fortement recommandés pour votre sécurité",
+            "La fièvre jaune peut être exigée à l'entrée de certaines zones",
+            "Le paludisme peut être grave et potentiellement mortel",
+            "Je vous donnerai une trousse et des conseils pour les situations courantes"
+          ]
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour la patiente standardisée",
+      "nom": "Patiente voyageuse",
+      "age": "22 ans",
+      "contexte": "Cabinet de médecine générale",
+      "motifConsultation": {
+        "plaintePrincipale": "Je pars au Brésil dans un mois pour 3 semaines",
+        "autreChose": "Je veux savoir quels vaccins faire et comment me protéger"
+      },
+      "histoireActuelle": {
+        "detailsVoyage": [
+          "Voyage en sac à dos de 3 semaines",
+          "Départ dans un mois",
+          "Séjour en milieu urbain et rural",
+          "Randonnée prévue en Amazonie",
+          "Hébergement variable (auberges, chez l'habitant)",
+          "Budget limité mais suffisant"
+        ],
+        "experienceVoyage": [
+          "Premier voyage en zone tropicale",
+          "A déjà voyagé en Europe",
+          "Pas d'expérience avec la prophylaxie antipaludique",
+          "Inquiète des maladies tropicales"
+        ]
+      },
+      "simulation": {
+        "attitude": [
+          "Jeune femme enthousiaste mais prudente",
+          "Veut bien se préparer",
+          "Pose des questions sur les risques",
+          "Préoccupée par le coût des vaccins"
+        ],
+        "durantEntretien": [
+          "Demande quels vaccins sont vraiment nécessaires",
+          "S'inquiète des effets secondaires",
+          "Questionne sur le paludisme",
+          "Veut des conseils pratiques",
+          "Hésite sur la prophylaxie antipaludique"
+        ]
+      },
+      "habitudes": {
+        "sante": "Bonne santé générale",
+        "medicaments": "Contraception orale",
+        "allergies": "Aucune allergie connue",
+        "vaccinations": "Calendrier vaccinal de base à jour",
+        "alimentation": "Omnivore, aime goûter la cuisine locale"
+      },
+      "antecedents": {
+        "medicaux": "Aucune pathologie chronique",
+        "chirurgicaux": "Appendicectomie à 15 ans",
+        "familiaux": "Sans particularité",
+        "gynecologiques": "Contraception orale depuis 2 ans"
+      },
+      "inquietudes": {
+        "principales": [
+          "Risque de paludisme",
+          "Coût total des vaccinations",
+          "Effets secondaires des médicaments",
+          "Que faire si malade sur place",
+          "Sécurité en Amazonie"
+        ],
+        "questions": [
+          "Est-ce que tous ces vaccins sont obligatoires ?",
+          "Et si je tombe malade là-bas ?",
+          "Je n'aime pas trop les médicaments, c'est grave si je ne fais pas la prophylaxie du paludisme ?",
+          "Combien vont coûter tous ces vaccins ?",
+          "Est-ce que je peux manger la nourriture locale ?"
+        ]
+      }
+    },
+    "informationsExpert": {
+      "titre": "Points clés pour l'expert évaluateur",
+      "pointsCles": [
+        "Évaluation complète des risques du voyage",
+        "Vérification du statut vaccinal de base",
+        "Prescription adaptée des vaccinations",
+        "Choix approprié de prophylaxie antipaludique",
+        "Conseils de prévention complets",
+        "Communication centrée sur la patiente",
+        "Approche participative dans les décisions"
+      ],
+      "pieges": [
+        "Oublier la fièvre jaune (obligatoire en Amazonie)",
+        "Ne pas proposer de prophylaxie antipaludique",
+        "Négliger les autres risques (dengue, Zika)",
+        "Pas de conseils hygiéno-diététiques",
+        "Oublier la trousse médicale",
+        "Ne pas vérifier l'assurance voyage",
+        "Imposer sans tenir compte des préférences"
+      ]
+    },
+    "theoriePratique": {
+      "titre": "Rappels théoriques sur la médecine des voyages",
+      "sections": [
+        {
+          "titre": "Vaccinations pour le Brésil",
+          "points": [
+            "Fièvre jaune : obligatoire pour l'Amazonie",
+            "Hépatite A : systématique en zone tropicale",
+            "Hépatite B : si séjour prolongé ou à risque",
+            "Typhoïde : zones rurales ou hygiène précaire",
+            "Rage : si contact avec animaux prévu"
+          ]
+        },
+        {
+          "titre": "Paludisme au Brésil",
+          "points": [
+            "Zone amazonienne : transmission toute l'année",
+            "Plasmodium vivax prédominant (75%)",
+            "P. falciparum présent (25%)",
+            "Résistance à la chloroquine",
+            "Prophylaxie obligatoire en zone d'endémie"
+          ]
+        },
+        {
+          "titre": "Autres arboviroses",
+          "points": [
+            "Dengue : tout le pays, pic saison des pluies",
+            "Zika : risque pour femmes enceintes",
+            "Chikungunya : épidémies sporadiques",
+            "Protection antimoustique essentielle",
+            "Pas de prophylaxie médicamenteuse"
+          ]
+        },
+        {
+          "titre": "Diarrhée du voyageur",
+          "points": [
+            "Incidence : 20-40% des voyageurs",
+            "Prévention : mesures hygiéno-diététiques",
+            "Traitement : réhydratation + azithromycine si sévère",
+            "Lopéramide : soulagement symptomatique",
+            "Consultation si fièvre, sang dans selles"
+          ]
+        }
+      ],
+      "rappelsTherapeutiques": [
+        "Débuter prophylaxie antipaludique avant le départ",
+        "Fièvre jaune : administrer ≥10 jours avant départ",
+        "Atovaquone-proguanil : meilleure tolérance, coût élevé",
+        "Doxycycline : photosensibilisation, interactions contraception",
+        "Consultation au retour si fièvre dans les 3 mois"
+      ],
+      "examensComplementaires": [
+        "Sérologie hépatites si statut inconnu",
+        "Test de grossesse si doute",
+        "NFS si antécédent de mauvaise tolérance",
+        "Consultation spécialisée si immunosuppression"
+      ]
+    },
+    "resume": {
+      "titre": "🌍 Médecine des voyages – Résumé ECOS",
+      "sections": [
+        {
+          "titre": "🔍 Anamnèse",
+          "subsections": [
+            {
+              "titre": "Points essentiels",
+              "points": [
+                "Destination (pays, zones rurales vs urbaines, climat, altitude)",
+                "Durée et conditions de séjour",
+                "Type de voyage (tourisme, mission humanitaire, expatriation, pèlerinage)",
+                "Vaccinations antérieures connues",
+                "Antécédents médicaux et traitements en cours (immunosuppression, grossesse, enfants)",
+                "Voyages précédents et incidents médicaux (paludisme, diarrhée du voyageur)"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "👀 Examen clinique",
+          "subsections": [
+            {
+              "titre": "Avant départ",
+              "points": [
+                "Évaluation du statut vaccinal",
+                "Évaluation des comorbidités (cardiaque, respiratoire, métabolique)",
+                "Recherche de CI aux vaccins vivants (grossesse, immunodépression)"
+              ]
+            },
+            {
+              "titre": "Au retour (fièvre au retour de voyageur)",
+              "points": [
+                "Recherche systématique d’un paludisme (urgence absolue)",
+                "Autres diagnostics : dengue, chikungunya, fièvre jaune, typhoïde",
+                "Évaluation cutanée (ulcères, piqûres, lésions)",
+                "Examen digestif si diarrhée persistante"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "🧪 Prévention et examens",
+          "subsections": [
+            {
+              "titre": "Vaccinations de routine et spécifiques",
+              "points": [
+                "Vaccins universels à jour : DTCaP, ROR, hépatite B, grippe",
+                "Vaccins recommandés selon destination : hépatite A, fièvre jaune, typhoïde, rage, méningocoque ACYW, encéphalite japonaise, polio",
+                "Certains obligatoires : fièvre jaune (Afrique, Amérique du Sud), méningocoque pour le Hajj"
+              ]
+            },
+            {
+              "titre": "Chimioprophylaxie",
+              "points": [
+                "Paludisme : atovaquone-proguanil, doxycycline ou méfloquine selon zone",
+                "Débuter avant départ et poursuivre après retour (selon molécule)"
+              ]
+            },
+            {
+              "titre": "Prévention non médicamenteuse",
+              "points": [
+                "Mesures anti-moustiques : moustiquaire imprégnée, répulsifs, vêtements longs",
+                "Précautions alimentaires : eau en bouteille, éviter glaçons, éviter crudités",
+                "Hygiène : lavage des mains fréquent",
+                "Prévention altitude : ascension progressive, acétazolamide si risque"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "⚙️ Prise en charge / conseils pratiques",
+          "subsections": [
+            {
+              "titre": "Kit du voyageur",
+              "points": [
+                "Antipyrétiques (paracétamol)",
+                "Antidiarrhéiques ± antibiotiques en automédication (ex. azithromycine)",
+                "Traitement prophylactique/curatif paludisme selon zone",
+                "Matériel de protection (répulsifs, moustiquaire)"
+              ]
+            },
+            {
+              "titre": "Au retour si symptômes",
+              "points": [
+                "Fièvre = urgence → paludisme à éliminer en priorité",
+                "Isoler et diagnostiquer rapidement maladies à déclaration obligatoire (fièvre jaune, dengue, chikungunya)",
+                "Surveillance des maladies incubées (hépatite, tuberculose, VIH)"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "✅ Points clés ECOS",
+          "points": [
+            "Toujours vérifier statut vaccinal et comorbidités avant départ",
+            "Fièvre au retour de zone endémique = paludisme jusqu’à preuve du contraire",
+            "Chimioprophylaxie antipaludique adaptée à la zone → expliquer observance",
+            "Prévention non médicamenteuse essentielle (moustiques, hygiène, eau)",
+            "Certaines vaccinations sont obligatoires pour entrer dans certains pays"
+          ]
+        },
+        {
+          "titre": "📋 Check-list rapide ECOS",
+          "subsections": [
+            {
+              "titre": "Questions à poser",
+              "points": [
+                "Destination précise et durée de séjour ?",
+                "Type de voyage (rural, urbain, professionnel, humanitaire) ?",
+                "Vaccinations antérieures connues ?",
+                "Prise de traitements chroniques (immunosuppresseurs, anticoagulants) ?",
+                "Grossesse ou projet de grossesse ?"
+              ]
+            },
+            {
+              "titre": "Examens/Préparation",
+              "points": [
+                "Mettre à jour vaccins de base",
+                "Vérifier vaccins spécifiques selon destination",
+                "Prescrire prophylaxie paludisme si nécessaire",
+                "Donner conseils prévention alimentaire et moustiques",
+                "Préparer kit médical personnalisé"
+              ]
+            },
+            {
+              "titre": "PEC en 3 points",
+              "points": [
+                "Anticiper et prescrire vaccins + prophylaxie selon destination",
+                "Informer sur mesures de prévention non médicamenteuses",
+                "Surveiller retour de voyageur fébrile = paludisme en premier"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

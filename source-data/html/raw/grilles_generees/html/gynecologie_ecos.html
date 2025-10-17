@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guide Gynécologie-Obstétrique ECOS</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #ff6b9d 0%, #c44569 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, #c44569 0%, #a8577e 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::before {
+            content: "🤰";
+            position: absolute;
+            font-size: 200px;
+            opacity: 0.1;
+            top: -50px;
+            right: 50px;
+            animation: float 20s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(10deg); }
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+            position: relative;
+            z-index: 1;
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            opacity: 0.95;
+            position: relative;
+            z-index: 1;
+        }
+
+        .navigation {
+            background: #f8f9fa;
+            padding: 20px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .nav-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            list-style: none;
+        }
+
+        .nav-list li {
+            background: linear-gradient(135deg, #ff6b9d, #c44569);
+            border-radius: 25px;
+            overflow: hidden;
+        }
+
+        .nav-list a {
+            display: block;
+            padding: 10px 20px;
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+
+        .nav-list a:hover {
+            background: rgba(255,255,255,0.2);
+            transform: translateY(-2px);
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        .section {
+            margin-bottom: 50px;
+            opacity: 0;
+            animation: fadeIn 0.6s forwards;
+        }
+
+        @keyframes fadeIn {
+            to { opacity: 1; }
+        }
+
+        .section-header {
+            background: linear-gradient(135deg, #ff6b9d20, #c4456920);
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            border-left: 5px solid #c44569;
+        }
+
+        .section-header h2 {
+            color: #c44569;
+            font-size: 1.8em;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .badge {
+            background: linear-gradient(135deg, #ff6b9d, #c44569);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.8em;
+            font-weight: bold;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        thead {
+            background: linear-gradient(135deg, #c44569, #a8577e);
+            color: white;
+        }
+
+        th {
+            padding: 15px;
+            text-align: left;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.9em;
+            letter-spacing: 0.5px;
+            position: sticky;
+            top: 80px;
+            background: inherit;
+            z-index: 10;
+        }
+
+        tbody tr {
+            transition: all 0.3s;
+        }
+
+        tbody tr:hover {
+            background-color: #fff5f7;
+            transform: scale(1.01);
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #fafafa;
+        }
+
+        td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #eee;
+            vertical-align: top;
+        }
+
+        td:first-child {
+            font-weight: 600;
+            color: #c44569;
+            position: sticky;
+            left: 0;
+            background: inherit;
+            z-index: 5;
+            border-right: 2px solid #f0f0f0;
+        }
+
+        tbody tr:hover td:first-child {
+            background-color: #fff5f7;
+        }
+
+        tbody tr:nth-child(even) td:first-child {
+            background-color: #fafafa;
+        }
+
+        .search-container {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .search-box {
+            padding: 12px 30px;
+            font-size: 1em;
+            border: 2px solid #ff6b9d;
+            border-radius: 30px;
+            width: 100%;
+            max-width: 500px;
+            outline: none;
+            transition: all 0.3s;
+        }
+
+        .search-box:focus {
+            border-color: #c44569;
+            box-shadow: 0 0 0 3px rgba(196, 69, 105, 0.1);
+        }
+
+        .note-box {
+            background: linear-gradient(135deg, #fff5f7, #ffebf0);
+            border-left: 4px solid #c44569;
+            padding: 20px;
+            margin: 30px 0;
+            border-radius: 10px;
+            font-weight: 500;
+            color: #c44569;
+        }
+
+        .note-box::before {
+            content: "⚠️ ";
+            font-size: 1.2em;
+            margin-right: 10px;
+        }
+
+        .scroll-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: linear-gradient(135deg, #ff6b9d, #c44569);
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(196, 69, 105, 0.4);
+            transition: all 0.3s;
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .scroll-top.visible {
+            opacity: 1;
+            pointer-events: all;
+        }
+
+        .scroll-top:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 20px rgba(196, 69, 105, 0.5);
+        }
+
+        .icon {
+            display: inline-block;
+            margin-right: 8px;
+        }
+
+        @media print {
+            body {
+                background: white;
+            }
+            .navigation, .search-container, .scroll-top {
+                display: none;
+            }
+            .section {
+                page-break-inside: avoid;
+            }
+            table {
+                page-break-inside: auto;
+            }
+            tr {
+                page-break-inside: avoid;
+            }
+        }
+
+        @media (max-width: 768px) {
+            table {
+                font-size: 0.85em;
+            }
+            td, th {
+                padding: 8px;
+            }
+            td:first-child {
+                position: static;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Guide Gynécologie-Obstétrique ECOS</h1>
+            <p class="subtitle">Terminologie Française - Guide de Référence Clinique</p>
+        </header>
+
+        <nav class="navigation">
+            <ul class="nav-list">
+                <li><a href="#section-1">1. Contraception</a></li>
+                <li><a href="#section-2">2. Grossesse</a></li>
+                <li><a href="#section-3">3. Pathologies</a></li>
+                <li><a href="#section-4">4. Troubles Menstruels</a></li>
+                <li><a href="#section-5">5. Infections/MST</a></li>
+                <li><a href="#section-6">6. Oncologie</a></li>
+                <li><a href="#section-7">7. Ménopause</a></li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <div class="search-container">
+                <input type="text" class="search-box" id="searchBox" placeholder="🔍 Rechercher une pathologie...">
+            </div>
+
+            <div class="note-box">
+                <strong>Note importante :</strong> Test grossesse jamais faux ! Par sécurité toujours faire au début diagnostic !
+            </div>
+
+            <div class="section" id="section-1">
+                <div class="section-header">
+                    <h2><span class="icon">💊</span>1. Contraception et Planification Familiale <span class="badge">2 pathologies</span></h2>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Pathologie</th>
+                            <th>Anamnèse</th>
+                            <th>Examen Physique</th>
+                            <th>Procédures/Examens</th>
+                            <th>Thérapie</th>
+                            <th>Commentaires</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Contraception</td>
+                            <td>Anamnèse partenaire, anamnèse sexuelle, contraception antérieure, désir d'enfant, anamnèse gynécologique, anamnèse cycles, questions/anxiétés, bien informer, récapituler. Facteurs de risque : tabac, âge, tension artérielle, IMC, thromboses + embolie pulmonaire, antécédents familiaux. Questions : méthodes les plus sûres possible ou les plus pratiques ? Prise quotidienne pilule ou plutôt pas ? Impliquer homme aussi (préservatif, stérilisation) ? Accepter effets secondaires ?</td>
+                            <td>Examen gynécologique éventuel, frottis éventuel</td>
+                            <td>Bilan biologique éventuel (glycémie, lipides, coagulation)</td>
+                            <td>IP : indice de Pearl (<0,5 très sûr). Œstrogènes : inhibent maturation folliculaire (via suppression FSH). Progestatifs : inhibent ovulation + glaire + endomètre. Contre-indications : grossesse, maladies cardiovasculaires, nombreux facteurs de risque, maladies oncologiques, troubles métaboliques. Changement pilule : commencer directement après dernier comprimé actif (pilule précédente) avec nouvelle pilule, par sécurité 7 jours préservatifs en plus</td>
+                            <td>Planification familiale naturelle : méthode température, méthode glaire, allaitement. Non-hormonales : préservatifs (risque déchirure > IP 2-12), stérilet cuivre (dysménorrhée, saignements, infections, perforation), diaphragme (IP 1-20), spermicides (IP 3-20, efficace 1h seulement), ligature tubaire (insuffisance ovarienne, ménopause précoce), stérilisation homme. Hormonales : contraceptifs oraux/pilule (progestatif seul ou combiné œstrogènes), anneau vaginal (corps étranger, pas toujours applicable), patch hormonal, injection 3 mois, implant (bâtonnet peut migrer), stérilet hormonal (saignements intercalaires). EI progestatifs : saignements intercalaires. EI œstrogènes : état procoagulant (thromboses, EP, IDM, AVC), cancer du sein. Les deux : tension mammaire, prise poids, œdèmes, céphalées, crampes, dépression, cancer sein éventuel, cancer col éventuel (cancer endomètre diminué !). Information : fiabilité/IP, méthodes non-hormonales, méthodes naturelles, mode prise (21/7, 24/4 ou long terme : 1 an, puis 7 jours pause > saignement ; progestatif seul pas d'intervalle libre), effets secondaires, arrêt avant chirurgies importantes, consultation si douleurs, céphalées, gonflement jambes ou yeux...</td>
+                        </tr>
+                        <tr>
+                            <td>Stérilité</td>
+                            <td>Anamnèse sexuelle + cycles, anamnèse gynécologique, maladies. Causes/facteurs de risque : stress, âge, obésité, nicotine, alcool, hormonal/troubles ovulation, mécanique/trompes/utérus/adhérences, spermatozoïdes défaillants, endométriose</td>
+                            <td>Examen interniste + gynécologique</td>
+                            <td>Bilan hormonal (FSH, LH, TSH, progestérone, prolactine), échographie transvaginale (ovaires, utérus, trompes), hystéroscopie (problèmes anatomiques), hystérosalpingographie* (perméabilité), laparoscopie, spermogramme, tests immunologiques (anticorps contre spermatozoïdes dans éjaculat), dépistage infectieux, tests psychologiques</td>
+                            <td>Thérapie causale, arrêt facteurs de risque (nicotine, obésité, stress), corriger problème mécanique, infection. Stimulation hormonale (clomifène, gonadotrophines FSH/LH, hCG), insémination (dépôt sperme vagin, col ou utérus), procréation médicalement assistée/FIV</td>
+                            <td>Critère : si pendant 1-2 ans rapports sans contraception pas de grossesse. *Test perméabilité</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="section" id="section-2">
+                <div class="section-header">
+                    <h2><span class="icon">🤰</span>2. Grossesse et Complications <span class="badge">10 pathologies</span></h2>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Pathologie</th>
+                            <th>Anamnèse</th>
+                            <th>Examen Physique</th>
+                            <th>Procédures/Examens</th>
+                            <th>Thérapie</th>
+                            <th>Commentaires</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Femme avec suspicion grossesse/aménorrhée</td>
+                            <td>Anamnèse sexuelle + cycles, SAFT, signes subjectifs (aménorrhée, tension mammaire, vomissements/nausées, augmentation tour de taille...), signes objectifs (augmentation seins, mouvements fœtaux, colostrum...), désir d'enfant, social, partenaire</td>
+                            <td>Signes objectifs grossesse : augmentation seins, colostrum, col + vagin violacés, température élevée, mouvements fœtaux (dès 20ème semaine). Examen au spéculum (coloration violacée, frottis)</td>
+                            <td>hCG urinaire, frottis (lors examen spéculum), échographie (vers 12ème semaine), Doppler (bruits du cœur dès 6ème semaine)</td>
+                            <td>Détermination âge gestationnel + terme, alimentation, acide folique (commencer avant grossesse), arrêt facteurs de risque/dépendances, vaccinations, arrêt médicaments si possible, discuter maladies maternelles</td>
+                            <td>hCG : dès 6 jours après conception. Terme : 1er jour dernières règles - 3 mois + 7 jours. Âge gestationnel : longueur cranio-caudale, diamètre bipariétal</td>
+                        </tr>
+                        <tr>
+                            <td>Contraception d'urgence</td>
+                            <td>Anamnèse sexuelle, psychique, social, risques sanitaires, facteurs de risque, clarifier questions, anxiétés, bien informer</td>
+                            <td></td>
+                            <td></td>
+                            <td>Lévonorgestrel dose unique (dans 72h après rapport !)</td>
+                            <td>Pratiquement pas d'effets secondaires bien que système coagulation activé</td>
+                        </tr>
+                        <tr>
+                            <td>Interruption volontaire grossesse</td>
+                            <td>Demande écrite de la femme enceinte : détresse, maximum jusqu'à 12ème semaine. Entretien conseil avant interruption. Test rhésus (si mère Rh- > prophylaxie anti-D avant avortement !)</td>
+                            <td></td>
+                            <td></td>
+                            <td>Jusqu'à 8ème semaine : dilatation col + aspiration sous vide ou médicamenteux (antagoniste progestérone/mifépristone + analogue PG/misoprostol). 9-14ème semaine : dilatation col + aspiration sous vide. Dès 15ème semaine : médicamenteux (surtout prostaglandines)</td>
+                            <td>Risques : lésion col si dilatation, saignements, perforation, infections. Aussi après 12ème semaine possible si danger grave sanitaire ou psychique pour femme enceinte</td>
+                        </tr>
+                        <tr>
+                            <td>Avortement/Fausse couche</td>
+                            <td>Fièvre, état général, saignement (spotting jusqu'à hémorragie massive), douleurs, expulsion fruit/tissus, souvent pas de symptômes, SAFT, signes subjectifs grossesse. Facteurs de risque : nicotine, alcool, traumatisme, infection, immunologique, hormonal, anémie, cancer, fibromes, anomalies génitales, aberrations chromosomiques fœtus</td>
+                            <td>Examen vaginal minutieux !</td>
+                            <td>Test grossesse, échographie (confirmation avortement), test rhésus (si mère Rh- > prophylaxie anti-D avant avortement !). Explorations complémentaires seulement en cas avortements à répétition (minimum 3 avortements série) > analyse chromosomique, bilan hormonal, infections, immunosérologies (auto-anticorps), imagerie (malformation/fibromes utérus), hystéroscopie</td>
+                            <td>Missed abortion : curettage/aspiration. A. imminens : psychologie, repos au lit, magnésium + progestérone éventuels > avortement éventuellement évitable. A. incipiens : curettage/aspiration > avortement non évitable. A. incompletus + completus : si completus curettage pas nécessaire, si incompletus curettage. A. febrilis : antibiotiques, héparine, plasma frais congelé</td>
+                            <td>Critères : <500g ou <22 semaines. Avortement précoce : jusqu'à 12 semaines, 13-22 semaines = avortement tardif. Missed A : peu symptômes, régression signes grossesse, saignements éventuels, fruit reste dans utérus, col fermé, hCG bas ou décroissant. Imminens : avortement menaçant, saignement léger, éventuellement évitable, col encore fermé + fœtus intact ! Incipiens : avortement débutant, saignement fort, expulsion tissus éventuelle, non évitable, col ouvert, utérus dur. Incompletus : saignement + douleurs, pas tout du fruit sorti, utérus petit, col ouvert. Avortement habituel</td>
+                        </tr>
+                        <tr>
+                            <td>Suivi grossesse</td>
+                            <td>Douleurs, mouvements fœtaux, alimentation, sommeil, anxiétés, social, travail, questions</td>
+                            <td>Manœuvres de Léopold (position fœtus), âge gestationnel + terme, sexe éventuel, paramètres vitaux (tension artérielle !)</td>
+                            <td>Paramètres vitaux (tension artérielle > prééclampsie !), bilan sanguin (protéines, glucose, hématocrite, CRP, leucocytes, bilan hépatique, TP), groupe sanguin + rhésus, sérologies : syphilis, rubéole, hépatite B, VIH, toxoplasmose, frottis, HGPO (exclusion diabète/diabète gestationnel), examen urines (protéinurie), échographie (12, 22, 32), trisomie : sang + échographie, Doppler (bruits cœur fœtal, fréquence)</td>
+                            <td>Planifier lieu + mode accouchement, expliquer déroulement grossesse + accouchement, attribuer sage-femme</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Grossesse avec traumatisme</td>
+                            <td>Douleurs, saignement, mouvements fœtaux, état général, fièvre, céphalées, accident/circonstances, semaines grossesse, examens, évolution grossesse jusqu'ici, maladies, facteurs de risque</td>
+                            <td>Manœuvres Léopold, cœur, poumons, examen vaginal</td>
+                            <td>Paramètres vitaux, voie veineuse + bilan sanguin (HbF + Hb), surveiller état fœtus : contrôles échographiques sériés, Doppler échographie (artères ombilicales > situation placentaire, Doppler artère cérébrale moyenne > centralisation, Doppler système veineux > décompensation reconnaissable), monitoring fœtal</td>
+                            <td>Échographie éventuelle, césarienne éventuelle</td>
+                            <td>Monitoring fœtal : contractions/contractions, bruits cœur/pouls fœtus + mouvements fœtaux. Baseline : pouls moyen. Danger : décélérations/chutes pouls (synchrones avec contraction ou après contraction > mauvais), bradycardie, monitoring silencieux (très petites oscillations, souvent signes hypoxie), monitoring sinusoïdal (très mauvais). Inoffensif : accélérations, tachycardie (sauf si très longue). Bon état fœtus si : pouls 90-150, monitoring saltatoire (grandes pointes/amplitudes, peu décélérations, pas bradycardie). Calcul variabilité court terme > si courte acidose fœtus !</td>
+                        </tr>
+                        <tr>
+                            <td>Grossesse avec rupture membranes</td>
+                            <td>Quantité, couleur (claire ? sanglante ?), fièvre, signes infection, douleurs, mouvements fœtaux, état général, semaines grossesse, évolution grossesse jusqu'ici, maladies, facteurs de risque</td>
+                            <td>Paramètres vitaux, manœuvres Léopold, examen vaginal (score de Bishop), cœur, poumons</td>
+                            <td>1. Hospitalisation : voie veineuse + bilan sanguin, antibiotiques, frottis, échographie 2. Attendre 24h, si pas de contractions > déclenchement accouchement (sauf encore trop tôt > attendre, tocolyse)</td>
+                            <td></td>
+                            <td>Explication médicaments grossesse : paracétamol, péthidine, péridurale, pénicilline</td>
+                        </tr>
+                        <tr>
+                            <td>Grossesse avec prééclampsie</td>
+                            <td>SAFT, prééclampsie grossesse précédente, prééclampsie famille, douleurs, œdèmes, problèmes neurologiques. Prééclampsie sévère : douleurs abdominales, céphalées, diplopie, scintillements visuels, dyspnée, hyperréflexie</td>
+                            <td>Paramètres vitaux > mesure tension artérielle !</td>
+                            <td>Bilan sanguin (plaquettes, bilan hépatique, TP, hématocrite, LDH, Hb, reins), urines 24h. *Surveiller intensivement taux magnésium : taux sanguin, réflexes (si trop magnésium aréflexie), respiration (provoque dépression respiratoire)</td>
+                            <td>1. Hospitalisation souvent 2. Contrôles serrés mère (paramètres + symptômes) + fœtus (monitoring, échographie) 3. Médicaments : métoprolol ou nifédipine (seulement si >160/110mmHg !), *magnésium IV (prééclampsie sévère, anticonvulsivant) 4. Déclenchement accouchement : MAIS peser risque enfant (prématuré) et risque mère (par prééclampsie)</td>
+                            <td>Critères : >140/90 + protéinurie >3g/24h. Prééclampsie sévère : >5g protéinurie ou >160/110 mmHg, troubles SNC, œdème pulmonaire. HELLP : hémolyse, élévation enzymes hépatiques, thrombopénie, possible aussi post-partum, typiquement douleurs abdomen supérieur. Éclampsie : crises épileptiques, traitement : magnésium. Prééclampsie atypique : protéinurie isolée</td>
+                        </tr>
+                        <tr>
+                            <td>Diabète gestationnel</td>
+                            <td>Diabète préexistant ou apparu grossesse, antécédents familiaux, soif, polyurie, comportement alimentaire, HGPO fait ?</td>
+                            <td></td>
+                            <td>Glycémie, si pathologique > HGPO (entre 24-28ème semaine), bilan sanguin (créatinine, glucose, HbA1c)</td>
+                            <td>1. Contrôles glycémie 2. Régime, insuline si nécessaire 3. Surveillance fœtus via échographie (croissance, quantité liquide amniotique) + monitoring 4. Si macrosomie accoucher avant terme ou césarienne 5. Surveiller fœtus post-partum + donner glucose</td>
+                            <td>Critères : non préexistant (si seulement après 22ème semaine probablement non préexistant). Conséquences : facteur de risque prééclampsie + infections, macrosomie, prématuré, hydramnios, insuffisance placentaire</td>
+                        </tr>
+                        <tr>
+                            <td>Femme enceinte en travail</td>
+                            <td>Voir formations cliniques. Mesures : signes vitaux, poids, taille, température. Examen : cardio, poumons, neurologique, loges rénales, psychisme, ganglions, thyroïde, œdèmes, varices. Manœuvres Léopold, examen vaginal digital (score Bishop, mesurer régulièrement)</td>
+                            <td>Voie veineuse + bilan sanguin, échographie (position, présentation, attitude enfant, placenta), monitoring (surveillance fœtus + contractions mère)</td>
+                            <td>1. Analgésie (opiacés, péridurale) 2. Accouchement spontané ou 3. Déclenchement : si accouchement vaginal et femme à terme ou dépassement terme et contractions pas assez fortes > rupture membranes + prostaglandines (misoprostol, ramollit col), et/ou ocytocine (syntocinon, provoque contractions, donner seulement quand col ouvert). Accouchement : césarienne ou vaginal</td>
+                            <td>Score Bishop : présentation tête, antéversion/rétroversion, ouverture col importance, col fermeté raccourcissement, position col</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="section" id="section-3">
+                <div class="section-header">
+                    <h2><span class="icon">🏥</span>3. Pathologies Gynécologiques <span class="badge">6 pathologies</span></h2>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Pathologie</th>
+                            <th>Anamnèse</th>
+                            <th>Examen Physique</th>
+                            <th>Procédures/Examens</th>
+                            <th>Thérapie</th>
+                            <th>Commentaires</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Endométriose</td>
+                            <td>Anamnèse cycles (souvent hyperménorrhée + métrorragies), anamnèse gynécologique, dysménorrhée, autres douleurs (souvent cycliques, diffuses cavité abdominale surtout, chroniques-récidivantes, gauche souvent plus), dyspareunie, désir d'enfant non exaucé, troubles défécation, dysurie, lors aménorrhée (grossesse par ex) + entre cycles sans troubles, infertilité ? Sang urines/selles/règles</td>
+                            <td>Examen abdomen, examen gynécologique : inspection vulve/vagin, examen spéculum (inspection minutieuse col), palpation bimanuelle (palpation éventuelle), ganglions lymphatiques, cœur-poumons</td>
+                            <td>Échographie, laparoscopie avec biopsies, rectoscopie éventuelle, bilan biologique inutile</td>
+                            <td>1. Attendre (si découverte fortuite et pas symptômes) 2. AINS, inhibiteurs ovulation (à prédominance progestative) 3. Analogues GnRH 4. Chirurgie (exérèse, vaporisation laser)</td>
+                            <td>Rarement dégénérescence maligne (selon cours ne dégénère pas, mais risque cancer ovarien). Analogues GnRH : rétrocontrôle négatif production FSH/LH > stimulus endométriose disparaît. Effets secondaires !</td>
+                        </tr>
+                        <tr>
+                            <td>Fibrome utérin</td>
+                            <td>Troubles hémorragiques chroniques (saignements intercalaires ou permanents, hyperménorrhée), douleurs chroniques (distension ou compression), dysménorrhée, crampes, parfois abdomen aigu, problèmes fertilité éventuels, parfois asymptomatique</td>
+                            <td>Abdomen, examen gynécologique</td>
+                            <td>Échographie transvaginale, hystéroscopie, rarement scanner ou laparoscopie</td>
+                            <td>1. Médicaments : progestatifs long terme per os ou stérilet hormonal intra-utérin, analogues GnRH 2. Myomectomie ou embolisation 3. Hystérectomie éventuelle</td>
+                            <td>Thérapie seulement si fibromes symptomatiques ou gros fibromes croissance rapide ou infertilité. Très rarement dégénérescence. Thérapie médicamenteuse : saignements + croissance fibromes inhibée</td>
+                        </tr>
+                        <tr>
+                            <td>Saignement vaginal</td>
+                            <td>Anamnèse saignement (soudain ou chronique, quantité), anamnèse cycles, anamnèse gynécologique (grossesse, dysménorrhée, dyspareunie, saignement, pertes, prurit, sensation corps étranger), signes accompagnement (fièvre, nausées/vomissements, état général, fatigue, symptômes B), anamnèse sexuelle (contraception, sexualité, MST), impossibilité tomber enceinte, sang selles ou urines</td>
+                            <td>Abdomen, examen gynécologique, ganglions lymphatiques</td>
+                            <td>Test grossesse !, bilan biologique (Hb, β-hCG, CRP, leucocytes, coagulation, marqueurs tumoraux éventuels), examen urines, échographie (transvaginale généralement), hystéroscopie + biopsie éventuelle, laparoscopie si doute, scanner/IRM</td>
+                            <td>SPMB/facteurs risque/endomètre épais : hystéroscopie + biopsie > si cancer thérapie selon cancer/stadification, sinon curettage (arrêt saignement), traitement hormonal substitutif éventuel. Reste voir ci-dessus/ci-dessous</td>
+                            <td>Diagnostics différentiels : endométriose (voir ci-dessous), troubles cycles (voir ci-dessous), avortement (curettage, voir ci-dessus), grossesse extra-utérine (voir ci-dessous), fibromes/polypes, facteurs risque/endomètre épaissi/SPMB (après ménopause penser cancer endomètre !). SPMB : saignement post-ménopausique</td>
+                        </tr>
+                        <tr>
+                            <td>Douleurs abdomen inférieur</td>
+                            <td>Anamnèse douleur (soudaine ou chronique, bilatérale, irradiation, douleur marche, nocturne, après mouvement brusque), anamnèse cycles, anamnèse gynécologique (grossesse, dysménorrhée, dyspareunie, saignement, pertes, prurit, sensation corps étranger), signes accompagnement (fièvre, nausées/vomissements, état général, fatigue, symptômes B), anamnèse sexuelle (contraception, sexualité, MST), impossibilité tomber enceinte, sang selles ou urines...</td>
+                            <td>Abdomen (auscultation, palpation : 4 quadrants, douleur décompression (croisée), points appendicite), examen gynécologique, ganglions lymphatiques. Explication : kyste ovarien/rupture Douleur lors rupture, rupture spontanée, lors rapports ou lors examen bimanuel, abdomen aigu/douleur, saignement éventuel (dans abdomen) > laparoscopie. Corps jaune hémorragique peut faire exactement même symptomatologie</td>
+                            <td>Test grossesse, bilan biologique (NFS, β-hCG, CRP, leucocytes, marqueurs tumoraux éventuels), examen urines, échographie transvaginale, hystéroscopie, laparoscopie si doute, scanner, IRM, frottis éventuels</td>
+                            <td>Malformations : correction chirurgicale. Kystes : thérapie laparoscopique ou surveillance. Douleurs ovulation/corps jaune hémorragique : donner pilule (suppression ovulations), si symptomatologie très forte laparoscopie avec coagulation ou suture follicule saignant. Annexite : antibiotiques, analgésie, drainage laparoscopique abcès éventuel</td>
+                            <td>Diagnostics différentiels : douleurs ovulation/corps jaune hémorragique, dysménorrhée (règles douloureuses lors déséquilibre hormonal, voir ci-dessus), malformations anatomiques, fibromes (douleur + saignement éventuel), endométriose (voir ci-dessous), grossesse extra-utérine (voir ci-dessous), rupture kyste (douleur), torsion ovaire (douleur soudaine forte), annexite (ascension germes, douleur + fièvre, souvent bilatérale !), autre (GI : diverticules, appendicite)</td>
+                        </tr>
+                        <tr>
+                            <td>Grossesse extra-utérine</td>
+                            <td>Douleurs abdomen inférieur (douleur sourd spasmodique intensité variable, intervalles sans douleur éventuels, irradiation dos + épaule éventuelle, si rupture tubaire douleur soudaine forte), aménorrhée, test grossesse positif, saignements/spotting ou saignement permanent fort, signes subjectifs grossesse souvent faibles (nausées, vomissements, tension mammaire...). Facteurs de risque : traitement stérilité, grossesse extra-utérine antérieure, chirurgies, antécédent infection, tabac, DIU</td>
+                            <td>Abdomen (péritonisme éventuel, douleur pression éventuelle, douleur décompression éventuelle), examen spéculum (écoulement brun canal cervical), examen bimanuel (douleur pression région annexielle, douleur mobilisation col, résistance éventuelle)</td>
+                            <td>Paramètres vitaux, voie veineuse, bilan biologique (β-hCG, créatine-kinase, progestérone), échographie abdominale + transvaginale (exclusion grossesse cavité utérine, pas simple), laparoscopie éventuelle (si β-hCG élevé, échographie pas claire)</td>
+                            <td>Initial médicamenteux éventuel : méthotrexate (parfois contre-indiqué ! Per os rare, intramusculaire éventuel). Laparoscopie (2/3 cas) > salpingotomie, rarement salpingectomie</td>
+                            <td>Souvent 6-8ème semaine</td>
+                        </tr>
+                        <tr>
+                            <td>Torsion ovaire</td>
+                            <td>Généralement douleur forte aiguë unilatérale abdominale, souvent apparition nocturne, coliques, parfois complètement sans douleur, fièvre, nausées/vomissements, mouvement comme déclencheur ?</td>
+                            <td>Abdomen (douleur décompression, défense), examen gynécologique (tumeur palpable, région annexielle douloureuse)</td>
+                            <td>Paramètres vitaux, voie veineuse (analgésie), bilan sanguin, Doppler échographie (flux sanguin vers ovaire, souvent difficile), laparoscopie, examen urines</td>
+                            <td>Laparoscopie (détorsion + ovariopexie, si infarctus ectomie)</td>
+                            <td>Diagnostic différentiel : grossesse extra-utérine, salpingite, avortement, kyste ovarien, fibrome nécrotique, appendicite, pyélonéphrite, cystite, lithiase rénale</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="section" id="section-4">
+                <div class="section-header">
+                    <h2><span class="icon">📅</span>4. Troubles Menstruels et Hormonaux <span class="badge">2 pathologies</span></h2>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Pathologie</th>
+                            <th>Anamnèse</th>
+                            <th>Examen Physique</th>
+                            <th>Procédures/Examens</th>
+                            <th>Thérapie</th>
+                            <th>Commentaires</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Troubles cycles/Saignements</td>
+                            <td>Règles trop fortes ou trop faibles (hypoménorrhée, hyperménorrhée, ménorragie, métrorragie, ménométrorragie), cycle trop long ou trop court (poly-, oligo- ou aménorrhée), anamnèse cycles, anamnèse gynécologique</td>
+                            <td>Examen gynécologique</td>
+                            <td>Bilan biologique (Hb, hématocrite, fer), échographie, biopsie endomètre (si métrorragies ou ménométrorragies récidivantes > cancer endomètre)</td>
+                            <td>Progestatifs, inhibiteurs ovulation. Si pas efficace ou saignement trop fort : sanification chirurgicale éventuelle (ablation endomètre via laser/coagulation, hystérectomie même éventuellement), généralement</td>
+                            <td>Hypoménorrhée : règles faibles courtes, constitution/atrophie. Hyperménorrhée : règles fortes longues, fibromes/endométriose/polypes. Ménorragie : si règles 7-14 jours. Métrorragie : saignements intercalaires. Ménométrorragie : si métrorragie >14 jours, souvent adolescence + périménopause, tumeur. Polyménorrhée : cycle <25 jours, généralement insuffisance lutéale bénigne. Oligoménorrhée : >35 jours, explorations comme aménorrhée. Aménorrhée : cycle >90 jours</td>
+                        </tr>
+                        <tr>
+                            <td>Aménorrhée</td>
+                            <td>Anamnèse cycles, anamnèse gynécologique, développement. Facteurs déclenchants : médicaments, stress, alimentation, chimiothérapie, radiothérapie, grossesse</td>
+                            <td>Examen interniste, poids, examen gynécologique (signes androgénisation), stades Tanner (adolescentes)</td>
+                            <td>Bilan biologique (exclusion grossesse : hCG), bilan hormonal (FSH, prolactine, TSH, testostérone, œstradiol), test progestatifs (administration progestatifs 10 jours, après arrêt saignement seulement si suffisamment œstrogènes), échographie transvaginale</td>
+                            <td>1. Thérapie maladie de base 2. Traitement œstrogènes-progestatifs (si pas assez œstrogènes) 3. Traitement progestatifs (si suffisamment œstrogènes, test progestatifs positif) 4. Si désir enfant maturation folliculaire via FSH ou clomifène</td>
+                            <td>Aménorrhée primaire : si ménarche après 16 ans pas survenue, troubles gonadiques éventuels (syndrome Turner/dysgénésie gonadique/syndrome insensibilité androgènes), troubles hypothalamo-hypophysaires (syndrome Kallmann), troubles utérins, troubles extragénitaux (hypothyroïdie). Aménorrhée secondaire : grossesse, troubles ovariens (SOPK), climatère précoce (avant 40 ans), trouble hypothalamo-hypophysaire, hyperprolactinémie, anorexie, sport extrême</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="section" id="section-5">
+                <div class="section-header">
+                    <h2><span class="icon">🦠</span>5. Pathologies Infectieuses et MST <span class="badge">2 pathologies</span></h2>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Pathologie</th>
+                            <th>Anamnèse</th>
+                            <th>Examen Physique</th>
+                            <th>Procédures/Examens</th>
+                            <th>Thérapie</th>
+                            <th>Commentaires</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Infection vaginale</td>
+                            <td>Anamnèse sexuelle (quand, quoi exactement, contraception, partenaire, voyages), symptômes (pertes > couleur/odeur/quantité, prurit, douleur, rougeur, odeur, spotting, dysurie, articulations, yeux, bouche), ganglions lymphatiques, examen interniste : peau (lésions cutanées), conjonctivite, arthrite, lymphadénopathie</td>
+                            <td>Examen gynécologique : inspection (rougeur, gonflement, pertes, vésicules, ulcères, croûtes, enduits), vulve, vagin + col (spéculum), douleur mobilisation col, abdomen</td>
+                            <td>Préparation native (vagin), préparations colorées (champignons notamment), préparation Gardnerella, frottis (chlamydiae, gonorrhée), test rapide syphilis ou sérologie, mesure pH</td>
+                            <td>Chlamydiae : doxycycline. Gonorrhée : ceftriaxone. Syphilis : pénicilline : antibiotiques. Vaginose bactérienne : métronidazole. Trichomonas vaginalis : métronidazole. Champignon : antimycosiques topiques (crème). Herpès génital : aciclovir, analgésie. Condylomes : Aldara, laser, cryothérapie</td>
+                            <td>Diagnostics différentiels : Chlamydiae (frottis), gonorrhée (frottis), syphilis (test rapide ou sérologie), vaginose bactérienne/Gardnerella (préparation amine), Trichomonas vaginalis : préparation native, champignon (préparation native ou colorée), herpès génital (diagnostic visuel ou frottis), condylomes (diagnostic visuel ou biopsie, si au col frottis et/ou acide acétique)</td>
+                        </tr>
+                        <tr>
+                            <td>Infection urinaire</td>
+                            <td>Cystite : fièvre, douleur/brûlure miction, mictions fréquentes, urgences mictionnelles, couleur urine, sang, quantité, trouble, boisson, état général, hygiène intime, comportement hydrique, constipation, fréquence mictions. Pyélonéphrite : en plus fièvre, douleur rénale, état général altéré. Facteurs déclenchants : sexualité, antécédent infection urinaire, antécédents familiaux, tampons + préservatifs, antibiotiques, âge</td>
+                            <td>Examen vaginal seulement nécessaire si infections urinaires récidivantes ou compliquées : inspection vaginale, frottis (urètre inclus). Loges rénales !</td>
+                            <td>Test bandelette urinaire suffit généralement (leucocytes, nitrites), mais examen cytobactériologique urines (avec sédiment : leucocytes, hématies, bactéries) + uroculture souvent fait aussi. Échographie (seulement si récidivantes, persistantes ou compliquées > résidu post-mictionnel), UIV (reflux), scanner, rarement</td>
+                            <td>1. Beaucoup boire (jus canneberge, tisane busserole) 2. Antibiotiques (3 jours ciprofloxacine par ex), spasmolytiques/si compliqué minimum 10 jours (et si possible selon résistances/culture) 3. Contrôle si après 3 jours pas amélioration. Pyélonéphrite : en plus repos au lit, hospitalisation éventuelle</td>
+                            <td>Généralement E. coli</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="section" id="section-6">
+                <div class="section-header">
+                    <h2><span class="icon">🎗️</span>6. Oncologie Gynécologique <span class="badge">2 pathologies</span></h2>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Pathologie</th>
+                            <th>Anamnèse</th>
+                            <th>Examen Physique</th>
+                            <th>Procédures/Examens</th>
+                            <th>Thérapie</th>
+                            <th>Commentaires</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Dysplasie col utérin</td>
+                            <td>Généralement asymptomatique, anamnèse sexuelle + gynécologique. Facteurs de risque : tabac, carences vitaminiques, immunodépression, contraception orale</td>
+                            <td>Examen spéculum (parfois on voit CIN comme diagnostic visuel dans zone de transformation)</td>
+                            <td>Frottis/cytologie, acide acétique, biopsie (si test acide acétique suspect ou visible à l'œil)</td>
+                            <td>Prophylaxie : vaccination HPV (11-14 ans ou avant première activité sexuelle > 15-19 ans aussi recommandée car âge moyen première fois 18 ans). Thérapie CIN : I > destruction locale (laser, cryothérapie...), II-III > exérèse/conisation + curettage cervical</td>
+                            <td>Vaccination HPV : 6, 11, 16, 18, maximum jusqu'à 26 ans possible</td>
+                        </tr>
+                        <tr>
+                            <td>Nodule sein</td>
+                            <td>Nodule palpable, rétraction, sécrétion mamelonnaire, peau d'orange, rougeur, douleurs, ganglions axillaires, douleurs osseuses, symptômes B, état général, fatigue. Facteurs de risque : traitement hormonal substitutif, antécédents familiaux positifs, âge, antécédent cancer sein, obésité, alcool</td>
+                            <td>Examen seins (voir formations cliniques), ganglions lymphatiques (cou + axillaires)</td>
+                            <td>Échographie, mammographie, IRM (chez jeunes), biopsie, cytoponction/biopsie ganglions éventuelles. Stadification (pas pour petites tumeurs) : scanner/TEP ou : bilan sanguin, mammographie côté opposé, ganglion sentinelle, radiographie thorax, scintigraphie, échographie abdomen supérieur</td>
+                            <td>Selon type cancer/taille, grading, âge, statut hormonal, stadification > thérapie individualisée. Si tumeur opérable ou récidive locorégionale et pas métastases : chirurgie (conservatrice ou mastectomie), lymphadénectomie éventuelle, chimiothérapie néo- + adjuvante éventuelle, hormonothérapie éventuelle (tamoxifène/anti-récepteurs œstrogènes + inhibiteurs aromatase éventuels). Si métastases : palliatif</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="section" id="section-7">
+                <div class="section-header">
+                    <h2><span class="icon">🌙</span>7. Ménopause et Troubles Fonctionnels <span class="badge">3 pathologies</span></h2>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Pathologie</th>
+                            <th>Anamnèse</th>
+                            <th>Examen Physique</th>
+                            <th>Procédures/Examens</th>
+                            <th>Thérapie</th>
+                            <th>Commentaires</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Dyspareunie</td>
+                            <td>Anamnèse sexuelle, anamnèse gynécologique</td>
+                            <td>Examen gynécologique</td>
+                            <td>Bilan hormonal éventuel</td>
+                            <td>Lubrifiant, crèmes, hormonothérapie éventuelle</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Troubles ménopause</td>
+                            <td>Dyspareunie, troubles sommeil, fatigue, changements humeur, irritabilité, dépression, céphalées, bouffées chaleur, sueurs, perte libido, muqueuses sèches, tachycardie, panique, manque énergie</td>
+                            <td>Examen interniste (cœur, poumons, abdomen, peau, muqueuses, neurologique), examen gynécologique</td>
+                            <td></td>
+                            <td>Traitement hormonal substitutif (œstrogènes, progestatifs, androgènes, tibolone, anti-androgènes, anti-œstrogènes), méthodes non-hormonales (extraits plantes, ISRS, acupuncture, training autogène)</td>
+                            <td>Critère : 12 mois aménorrhée secondaire, généralement entre 40-56 ans. Tibolone : prodrogue, composante progestative, œstrogénique + androgénique. Effets secondaires traitement hormonal substitutif : prise poids, facteurs risque cardiovasculaire, tumeurs hormono-dépendants favorisés (cancer sein). Effets secondaires ménopause : ostéoporose, risques cardiovasculaires (profil lipidique change + parois vasculaires), Alzheimer, incontinence</td>
+                        </tr>
+                        <tr>
+                            <td>Incontinence urinaire</td>
+                            <td>Incontinence effort : fuite urinaire involontaire effort, éternuement, toux. Facteurs de risque : grossesse, accouchements, âge, tabac, obésité. Vessie hyperactive : fuite urinaire involontaire car contractions détrusor, fréquence mictionnelle augmentée, nycturie, pollakisurie, urgences mictionnelles impossibles retenir. Incontinence mixte : combinaison symptômes</td>
+                            <td>Examen vaginal : prolapsus, trophicité, cèles, sécrétions. Test toux vessie pleine (fuite urinaire ?), entraînement périnée ? Facteurs déclenchants : multipare, maladies pulmonaires obstructives, obésité, ménopause, génétique</td>
+                            <td>Calendrier mictionnel (fréquence, quantité, déclencheurs), bilan sanguin (diabète), examen urines (exclusion infection), mesure résidu post-mictionnel (échographie), mesure épaisseur paroi vésicale, examen périnée, échographie périnéale + introïtus, urétro-cystoscopie éventuelles, urodynamique (mesure pression urétrale, cystométrie), objectivation/quantification perte urinaire (peser couches)</td>
+                            <td>Vessie hyperactive : surtout médicaments. Modifier comportement mictionnel/entraînement vésical, médicaments (anticholinergiques, injections botulique), psychologie. Incontinence effort : surtout chirurgie. Entraînement périnée, pessaires, chirurgie (écharpes ou suspension), médicaments éventuels (IRSN, œstrogènes). Les deux : perte poids, arrêt tabac, régulariser transit</td>
+                            <td>Incontinence effort (stress). Vessie hyperactive (impériosité). Mesure épaisseur paroi vésicale (diagnostic différentiel incontinence effort ou vessie hyperactive > 5mm = vessie hyperactive)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="scroll-top" id="scrollTop">
+            ↑
+        </div>
+    </div>
+
+    <script>
+        // Search functionality
+        const searchBox = document.getElementById('searchBox');
+        const tables = document.querySelectorAll('table');
+
+        searchBox.addEventListener('input', function() {
+            const searchTerm = this.value.toLowerCase();
+            
+            tables.forEach(table => {
+                const rows = table.querySelectorAll('tbody tr');
+                rows.forEach(row => {
+                    const text = row.textContent.toLowerCase();
+                    if (text.includes(searchTerm)) {
+                        row.style.display = '';
+                        row.style.background = searchTerm ? '#fff5f7' : '';
+                    } else {
+                        row.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Smooth scrolling for navigation
+        document.querySelectorAll('.nav-list a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Scroll to top button
+        const scrollTop = document.getElementById('scrollTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                scrollTop.classList.add('visible');
+            } else {
+                scrollTop.classList.remove('visible');
+            }
+        });
+
+        scrollTop.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Animate sections on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry, index) => {
+                if (entry.isIntersecting) {
+                    setTimeout(() => {
+                        entry.target.style.animationDelay = `${index * 0.1}s`;
+                    }, 100);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.section').forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>

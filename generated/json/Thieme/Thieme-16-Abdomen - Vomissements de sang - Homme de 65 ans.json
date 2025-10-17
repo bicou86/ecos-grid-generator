@@ -1,0 +1,216 @@
+{
+  "title": "Thieme Abdomen 16 - Vomissements de sang - Homme de 65 ans",
+  "category": "Thieme Abdomen",
+  "subcategory": "Vomissements de sang",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Homme de 65 ans, M. Kevin Brown, consultant pour vomissements de sang",
+    "vitals": {
+      "temperature": "37°C",
+      "ta": "100/60 mmHg",
+      "fc": "100 bpm",
+      "fr": "18/min"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Motif principal de consultation",
+          "binaryOnly": true,
+          "patientComment": "vomissements de sang"
+        },
+        {
+          "id": "a2",
+          "text": "Analyse de la plainte principale (ABCDE)",
+          "details": [
+            "Apparition et durée [Hématémèse × 2 aujourd'hui (1 tasse sang rouge)]",
+            "Bilan (localisation, irradiation)",
+            "Caractère et qualité de la douleur",
+            "Degré d'intensité (échelle 1-10)",
+            "Éléments associés et facteurs modifiants"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Symptômes associés et antécédents",
+          "details": [
+            "Selles noires",
+            "Perte 15 lb/2 mois",
+            "Utilisation chronique AINS pour arthrose"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Histoire sociale et habitudes de vie",
+          "details": [
+            "Retraité",
+            "Fume 2 pqt/j × 40 ans",
+            "Alcool 4 verres/j",
+            "CAGE 3/4"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Revue des systèmes",
+          "details": [
+            "Système gastro-intestinal",
+            "Système cardiovasculaire"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Signes vitaux et apparence générale",
+          "binaryOnly": true
+        },
+        {
+          "id": "e2",
+          "text": "Examen de la tête et du cou",
+          "details": [
+            "Recherche pâleur, ictère",
+            "Examen ORL avec abaisse-langue",
+            "Palpation ganglions lymphatiques",
+            "Examen thyroïde"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Examen cardio-pulmonaire",
+          "details": [
+            "Auscultation cardiaque [S1 et S2 normaux]",
+            "Auscultation pulmonaire bilatérale"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Examen abdominal complet",
+          "details": [
+            "Inspection (cicatrices, distension)",
+            "Auscultation (bruits intestinaux)",
+            "Percussion (matité, tympanisme)",
+            "Palpation superficielle et profonde"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Examens spécifiques selon le cas",
+          "details": [
+            "Toucher rectal"
+          ]
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostics différentiels à évoquer",
+          "ddSection": {
+            "title": "Hypothèses diagnostiques",
+            "categories": [
+              {
+                "name": "Diagnostics prioritaires",
+                "items": [
+                  {
+                    "text": "Saignement d'ulcère peptique",
+                    "cause": "Arguments POUR:\n\t□ Hématémèse, AINS, alcool",
+                    "test": "→ Selon orientation clinique"
+                  },
+                  {
+                    "text": "Cancer de l'estomac",
+                    "cause": "Arguments POUR:\n\t□ Âge, perte poids, méléna, ATCD familiaux",
+                    "test": "→ Endoscopie avec biopsies"
+                  },
+                  {
+                    "text": "Gastrite aiguë",
+                    "cause": "Arguments POUR:\n\t□ Selon présentation clinique",
+                    "test": "→ Selon orientation clinique"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Examens complémentaires pertinents",
+          "details": [
+            "Toucher rectal",
+            "Recherche sang occulte",
+            "NFS",
+            "US abdominale",
+            "Endoscopie urgente"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Plan de prise en charge immédiate",
+          "details": [
+            "Stabilisation hémodynamique",
+            "Voie veineuse grand calibre",
+            "Endoscopie urgente"
+          ]
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour le patient standardisé",
+      "nom": "M. Kevin Brown",
+      "age": "65 ans",
+      "contexte": "Cabinet de médecine générale",
+      "motifConsultation": {
+        "plaintePrincipale": "vomissements de sang",
+        "autreChose": "Hématémèse × 2 aujourd'hui (1 tasse sang rouge). Douleur épigastrique depuis 1 mois."
+      },
+      "histoireActuelle": {
+        "symptomesPrincipaux": [
+          "Hématémèse × 2 aujourd'hui (1 tasse sang rouge)",
+          " Douleur épigastrique depuis 1 mois"
+        ],
+        "contextePsychosocial": [
+          "Retraité",
+          " Fume 2 pqt/j × 40 ans",
+          " Alcool 4 verres/j",
+          " CAGE 3/4"
+        ]
+      },
+      "simulation": {
+        "attitude": [
+          "Faible",
+          "Anxieux"
+        ],
+        "durantExamen": [
+          "Pâleur",
+          "Hypotension"
+        ]
+      },
+      "inquietudes": {
+        "principales": []
+      }
+    },
+    "informationsExpert": {
+      "titre": "Informations pour l'expert",
+      "pointsCles": [
+        "Cas de Vomissements de sang",
+        "Patient: Homme de 65 ans",
+        "Anamnèse complète avec ABCDE",
+        "Examen abdominal détaillé",
+        "Diagnostic différentiel approprié"
+      ],
+      "pieges": [
+        "Ne pas reconnaître urgence hémorragique",
+        "Retarder endoscopie"
+      ]
+    }
+  }
+}

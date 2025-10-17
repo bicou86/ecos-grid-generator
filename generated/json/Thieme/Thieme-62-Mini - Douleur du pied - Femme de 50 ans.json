@@ -1,0 +1,197 @@
+{
+  "title": "Thieme Mini-Cas 62 - Douleur du pied - Femme de 50 ans",
+  "category": "Thieme Mini-Cas",
+  "subcategory": "Douleur du pied",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Femme de 50 ans, Patient standardisé, consulte pour douleur au talon et à la plante du pied"
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Motif principal de consultation",
+          "binaryOnly": true,
+          "patientComment": "douleur au talon et à la plante du pied"
+        },
+        {
+          "id": "a2",
+          "text": "Analyse ciblée de la plainte",
+          "details": [
+            "Douleur matinale",
+            "Activité physique",
+            "Chaussures",
+            "Traumatisme"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Recherche des éléments clés",
+          "details": [
+            "Palpation fascia plantaire",
+            "Tendon d'Achille",
+            "Recherche corps étranger"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Antécédents pertinents",
+          "details": [
+            "Obésité",
+            "Diabète",
+            "Activité physique habituelle"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Revue des systèmes ciblée",
+          "details": [
+            "Musculo-squelettique",
+            "Vasculaire",
+            "Neurologique"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Inspection pied et cheville",
+          "binaryOnly": true
+        },
+        {
+          "id": "e2",
+          "text": "Palpation fascia plantaire [sensibilité]"
+        },
+        {
+          "id": "e3",
+          "text": "Palpation tendon Achille [douleur/œdème]"
+        },
+        {
+          "id": "e4",
+          "text": "Recherche corps étranger"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostics différentiels",
+          "ddSection": {
+            "title": "Hypothèses diagnostiques à considérer",
+            "categories": [
+              {
+                "name": "Diagnostics prioritaires",
+                "items": [
+                  {
+                    "text": "Fasciite plantaire",
+                    "cause": "Arguments POUR:\n\t□ Douleur talon matin, station debout prolongée, obésité",
+                    "test": "→ Radiographie (épine calcanéenne), échographie"
+                  },
+                  {
+                    "text": "Tendinite d'Achille",
+                    "cause": "Arguments POUR:\n\t□ Douleur postérieure, activité sportive, œdème",
+                    "test": "→ Échographie, IRM"
+                  },
+                  {
+                    "text": "Corps étranger",
+                    "cause": "Arguments POUR:\n\t□ Début brutal, jeu, toux inefficace",
+                    "test": "→ Radiographie, bronchoscopie"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Examens complémentaires",
+          "details": [
+            "Radiographie du pied",
+            "IRM de la cheville si nécessaire"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Plan de prise en charge",
+          "details": [
+            "Repos",
+            "Étirements",
+            "Orthèses plantaires",
+            "AINS",
+            "Physiothérapie"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Conseils au patient",
+          "details": [
+            "Chaussures adaptées",
+            "Perte poids si surpoids",
+            "Étirements quotidiens"
+          ]
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Explications au patient",
+          "content": "Inflammation du fascia plantaire ou du tendon d'Achille. Le repos et les étirements sont essentiels."
+        },
+        {
+          "id": "c2",
+          "text": "Questions du patient",
+          "content": "[Pourquoi ai-je si mal aux pieds?]\n[Les semelles vont-elles aider?]"
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour le patient standardisé",
+      "nom": "Patient standardisé",
+      "age": "50 ans",
+      "contexte": "Cabinet de médecine générale",
+      "motifConsultation": {
+        "plaintePrincipale": "douleur au talon et à la plante du pied",
+        "contexte": "Fasciite plantaire ou tendinite d'Achille"
+      },
+      "simulation": {
+        "attitude": [
+          "Gêné dans activités quotidiennes",
+          "Recherche soulagement"
+        ],
+        "signesPhysiques": [
+          "Douleur palpation talon",
+          "Tension tendon Achille"
+        ],
+        "durantConsultation": [
+          "Boiterie",
+          "Évitement appui"
+        ]
+      }
+    },
+    "informationsExpert": {
+      "titre": "Informations pour l'expert",
+      "pointsCles": [
+        "Mini-cas clinique: Douleur du pied",
+        "Focus: Palpation fascia plantaire, Tendon d'Achille, Recherche corps étranger",
+        "Consultation ciblée de 10 minutes",
+        "Évaluation de l'approche diagnostique"
+      ],
+      "pieges": [
+        "Méconnaître fasciite plantaire",
+        "Négliger facteurs favorisants"
+      ]
+    }
+  }
+}

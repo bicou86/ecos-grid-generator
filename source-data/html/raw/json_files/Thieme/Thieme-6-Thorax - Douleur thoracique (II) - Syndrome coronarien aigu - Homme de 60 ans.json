@@ -1,0 +1,196 @@
+{
+  "title": "Thieme Thorax 6 - Douleur thoracique (II) - Syndrome coronarien aigu - Homme de 60 ans",
+  "category": "Thieme Thorax",
+  "subcategory": "Douleur thoracique (II) - Syndrome coronarien aigu",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Homme de 60 ans, M. Carlini, consultant pour douleur thoracique",
+    "vitals": {
+      "temperature": "37°C",
+      "fc": "104 bpm",
+      "ta": "160/110 mmHg",
+      "fr": "24/min"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Motif principal de consultation",
+          "binaryOnly": true,
+          "patientComment": "douleur thoracique"
+        },
+        {
+          "id": "a2",
+          "text": "Analyse de la plainte principale",
+          "details": [
+            "Début et évolution [Douleur thoracique aiguë depuis 1h, écrasante 9/10, irradiant vers bras gauche]",
+            "Localisation et irradiation de la douleur",
+            "Caractéristiques et intensité",
+            "Facteurs aggravants et soulageants",
+            "Symptômes associés"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Antécédents médicaux et chirurgicaux",
+          "details": [
+            "Dyspnée d'effort chronique (4-5 blocs)",
+            "Épisode similaire il y a 1 mois soulagé par O2 et nitrates"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Histoire sociale et habitudes de vie",
+          "details": [
+            "HTA 20 ans",
+            "Hypercholestérolémie 10 ans",
+            "Père décédé d'IM à 65 ans",
+            "Fume 1 pqt/j × 30 ans"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Signes vitaux",
+          "binaryOnly": true
+        },
+        {
+          "id": "e2",
+          "text": "Examen de la tête et du cou",
+          "details": [
+            "PERRLA",
+            "Examen ORL complet",
+            "Palpation thyroïde",
+            "Recherche ganglions lymphatiques"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Examen cardio-pulmonaire",
+          "details": [
+            "Auscultation cardiaque [S1 et S2 normaux]",
+            "Recherche de souffles ou galop",
+            "Auscultation pulmonaire bilatérale",
+            "Recherche de râles ou sibilances"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Examen abdominal si pertinent",
+          "details": []
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostics différentiels à évoquer",
+          "ddSection": {
+            "title": "Hypothèses diagnostiques",
+            "categories": [
+              {
+                "name": "Diagnostics principaux",
+                "items": [
+                  {
+                    "text": "Infarctus du myocarde aigu",
+                    "cause": "Arguments POUR:\n\t□ Douleur thoracique écrasante, irradiation, facteurs de risque CV",
+                    "test": "→ ECG, troponines"
+                  },
+                  {
+                    "text": "Angor instable",
+                    "cause": "Arguments POUR:\n\t□ Douleur thoracique typique, facteurs risque, ATCD angor",
+                    "test": "→ ECG, enzymes cardiaques"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Examens complémentaires pertinents",
+          "details": [
+            "Enzymes cardiaques",
+            "GSA",
+            "Électrolytes",
+            "Radiographie thoracique",
+            "Échocardiographie",
+            "Angiographie coronaire",
+            "ECG"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Plan de prise en charge",
+          "details": [
+            "Investigations ambulatoires",
+            "Traitement symptomatique si approprié",
+            "Suivi après résultats"
+          ]
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour le patient standardisé",
+      "nom": "M. Carlini",
+      "age": "60 ans",
+      "contexte": "Cabinet de médecine générale",
+      "motifConsultation": {
+        "plaintePrincipale": "douleur thoracique",
+        "autreChose": "Douleur thoracique aiguë depuis 1h, écrasante 9/10, irradiant vers bras gauche. Dyspnée, palpitations, diaphorèse."
+      },
+      "histoireActuelle": {
+        "symptomesPrincipaux": [
+          "Douleur thoracique aiguë depuis 1h, écrasante 9/10, irradiant vers bras gauche",
+          " Dyspnée, palpitations, diaphorèse"
+        ],
+        "contextePsychosocial": [
+          "HTA 20 ans",
+          " Hypercholestérolémie 10 ans",
+          " Père décédé d'IM à 65 ans",
+          " Fume 1 pqt/j × 30 ans"
+        ]
+      },
+      "simulation": {
+        "attitude": [
+          "Douleur sévère",
+          "Main sur la poitrine",
+          "Respiration rapide"
+        ],
+        "durantExamen": [
+          "Exprimer douleur thoracique sévère"
+        ]
+      },
+      "inquietudes": {
+        "principales": [
+          "Est-ce que je fais une crise cardiaque?",
+          "Pouvez-vous me donner un analgésique?"
+        ]
+      }
+    },
+    "informationsExpert": {
+      "titre": "Informations pour l'expert",
+      "pointsCles": [
+        "Cas de Douleur thoracique (II) - Syndrome coronarien aigu",
+        "Patient: Homme de 60 ans",
+        "Évaluation de l'anamnèse ciblée",
+        "Examen physique pertinent",
+        "Diagnostic différentiel approprié"
+      ],
+      "pieges": [
+        "Retarder la prise en charge urgente"
+      ]
+    }
+  }
+}

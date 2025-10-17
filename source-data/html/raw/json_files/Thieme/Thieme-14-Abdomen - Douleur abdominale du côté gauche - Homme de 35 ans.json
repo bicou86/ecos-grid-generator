@@ -1,0 +1,209 @@
+{
+  "title": "Thieme Abdomen 14 - Douleur abdominale du côté gauche - Homme de 35 ans",
+  "category": "Thieme Abdomen",
+  "subcategory": "Douleur abdominale du côté gauche",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Homme de 35 ans, M. Kenneth Smith, consultant pour douleur abdominale gauche",
+    "vitals": {
+      "temperature": "38°C",
+      "ta": "110/70 mmHg",
+      "fc": "90 bpm",
+      "fr": "16/min"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Motif principal de consultation",
+          "binaryOnly": true,
+          "patientComment": "douleur abdominale gauche"
+        },
+        {
+          "id": "a2",
+          "text": "Analyse de la plainte principale (ABCDE)",
+          "details": [
+            "Apparition et durée [Douleur QIG depuis 3 mois, crampes]",
+            "Bilan (localisation, irradiation)",
+            "Caractère et qualité de la douleur",
+            "Degré d'intensité (échelle 1-10)",
+            "Éléments associés et facteurs modifiants"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Symptômes associés et antécédents",
+          "details": [
+            "Perte 15 lb/3 mois",
+            "Fatigue",
+            "Urgences et ténesme",
+            "Pas d'ATCD chirurgicaux"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Histoire sociale et habitudes de vie",
+          "details": [
+            "Consultant",
+            "Fume 1/2 pqt/j × 10 ans",
+            "Alcool occasionnel",
+            "Célibataire"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Revue des systèmes",
+          "details": [
+            "Système gastro-intestinal",
+            "Système urinaire"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Signes vitaux et apparence générale",
+          "binaryOnly": true
+        },
+        {
+          "id": "e2",
+          "text": "Examen de la tête et du cou",
+          "details": [
+            "Recherche pâleur, ictère",
+            "Examen ORL avec abaisse-langue",
+            "Palpation ganglions lymphatiques",
+            "Examen thyroïde"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Examen cardio-pulmonaire",
+          "details": [
+            "Auscultation cardiaque [S1 et S2 normaux]",
+            "Auscultation pulmonaire bilatérale"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Examen abdominal complet",
+          "details": [
+            "Inspection (cicatrices, distension)",
+            "Auscultation (bruits intestinaux)",
+            "Percussion (matité, tympanisme)",
+            "Palpation superficielle et profonde"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Examens spécifiques selon le cas",
+          "details": [
+            "Toucher rectal programmé"
+          ]
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostics différentiels à évoquer",
+          "ddSection": {
+            "title": "Hypothèses diagnostiques",
+            "categories": [
+              {
+                "name": "Diagnostics prioritaires",
+                "items": [
+                  {
+                    "text": "Maladie inflammatoire intestinale",
+                    "cause": "Arguments POUR:\n\t□ Diarrhée sanglante, perte poids, âge jeune",
+                    "test": "→ Coloscopie avec biopsies"
+                  },
+                  {
+                    "text": "Infection urinaire",
+                    "cause": "Arguments POUR:\n\t□ Selon présentation clinique",
+                    "test": "→ Selon orientation clinique"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Examens complémentaires pertinents",
+          "details": [
+            "Examens pelvien et rectal",
+            "ECBU",
+            "NFS",
+            "US abdominale",
+            "Coloscopie"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Plan de prise en charge immédiate",
+          "details": [
+            "Investigations ambulatoires",
+            "Traitement symptomatique",
+            "Suivi après résultats"
+          ]
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour le patient standardisé",
+      "nom": "M. Kenneth Smith",
+      "age": "35 ans",
+      "contexte": "Cabinet de médecine générale",
+      "motifConsultation": {
+        "plaintePrincipale": "douleur abdominale gauche",
+        "autreChose": "Douleur QIG depuis 3 mois, crampes. Diarrhée sanglante 3-4×/jour. Fièvre intermittente."
+      },
+      "histoireActuelle": {
+        "symptomesPrincipaux": [
+          "Douleur QIG depuis 3 mois, crampes",
+          " Diarrhée sanglante 3-4×/jour",
+          " Fièvre intermittente"
+        ],
+        "contextePsychosocial": [
+          "Consultant",
+          " Fume 1/2 pqt/j × 10 ans",
+          " Alcool occasionnel",
+          " Célibataire"
+        ]
+      },
+      "simulation": {
+        "attitude": [
+          "Coopératif"
+        ],
+        "durantExamen": []
+      },
+      "inquietudes": {
+        "principales": []
+      }
+    },
+    "informationsExpert": {
+      "titre": "Informations pour l'expert",
+      "pointsCles": [
+        "Cas de Douleur abdominale du côté gauche",
+        "Patient: Homme de 35 ans",
+        "Anamnèse complète avec ABCDE",
+        "Examen abdominal détaillé",
+        "Diagnostic différentiel approprié"
+      ],
+      "pieges": [
+        "Ne pas évoquer MICI devant diarrhée sanglante",
+        "Manquer examens"
+      ]
+    }
+  }
+}

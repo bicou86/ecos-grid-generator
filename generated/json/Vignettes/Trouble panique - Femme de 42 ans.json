@@ -1,0 +1,457 @@
+{
+  "title": "Trouble panique - Femme de 42 ans",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Femme de 42 ans consultant pour épisodes d'angoisse aiguë avec peur de mourir",
+    "vitals": {
+      "ta": "160/95 mmHg",
+      "fc": "95 bpm",
+      "temperature": "36.9°C"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Motif principal de consultation",
+          "binaryOnly": true,
+          "patientComment": "[J'ai des crises d'angoisse terribles, j'ai l'impression que je vais mourir]"
+        },
+        {
+          "id": "a2",
+          "text": "Caractérisation des attaques de panique",
+          "details": [
+            "Début et durée [Début brutal, pics en quelques minutes, durent 10-30 minutes]",
+            "Palpitations [Cœur qui bat très fort, j'ai peur d'un infarctus]",
+            "Sueurs [Je transpire énormément pendant les crises]",
+            "Tremblements [Mes mains tremblent, tout mon corps tremble]",
+            "Sensation d'étouffement [J'ai l'impression de manquer d'air, de suffoquer]",
+            "Douleur thoracique [Douleur oppressante dans la poitrine]",
+            "Nausées [J'ai mal au ventre, parfois envie de vomir]",
+            "Vertiges [Tête qui tourne, impression de perdre l'équilibre]"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Symptômes cognitifs lors des crises",
+          "details": [
+            "Peur de mourir [J'ai vraiment peur que ce soit grave, que je meure]",
+            "Peur de devenir folle [J'ai peur de perdre la raison, de ne plus me contrôler]",
+            "Déréalisation [Tout semble irréel, comme dans un rêve]",
+            "Dépersonnalisation [J'ai l'impression de me voir de l'extérieur]"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Fréquence et circonstances des crises",
+          "details": [
+            "Fréquence [2-3 crises par semaine depuis 2 mois]",
+            "Déclencheurs [Ça arrive n'importe où, sans raison apparente]",
+            "Lieux [Au travail, à la maison, même en dormant parfois]",
+            "Facteurs aggravants [Les endroits fermés, la foule]"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Anticipation anxieuse et évitements",
+          "details": [
+            "Anxiété anticipatoire [J'ai constamment peur que ça recommence]",
+            "Évitements [J'évite le métro, les grands magasins]",
+            "Agoraphobie [J'ai peur des endroits d'où je ne peux pas sortir facilement]",
+            "Retentissement [J'ai dû prendre des congés, j'évite de sortir seule]"
+          ]
+        },
+        {
+          "id": "a6",
+          "text": "Consultations médicales antérieures",
+          "patientComment": "[J'ai été 3 fois aux urgences, ils m'ont dit que c'était du stress, mais les examens étaient normaux]"
+        },
+        {
+          "id": "a7",
+          "text": "Antécédents psychiatriques",
+          "patientComment": "[J'ai toujours été un peu anxieuse, mais jamais comme ça]"
+        },
+        {
+          "id": "a8",
+          "text": "Antécédents familiaux",
+          "patientComment": "[Ma sœur a des problèmes d'anxiété aussi, ma mère était très nerveuse]"
+        },
+        {
+          "id": "a9",
+          "text": "Facteurs déclenchants récents",
+          "patientComment": "[J'ai eu beaucoup de stress au travail ces derniers mois, changement de poste]"
+        },
+        {
+          "id": "a10",
+          "text": "Consommation de substances",
+          "patientComment": "[Je bois plus de café depuis que ça a commencé, ça m'aide à rester réveillée. Pas d'alcool ni de drogues]"
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Observation générale et présentation",
+          "details": [
+            "Aspect général [Patiente soignée, légèrement agitée]",
+            "Signes d'anxiété [Hypervigilance, regarde souvent vers la sortie]",
+            "Contact [Coopérative mais anxieuse, pose beaucoup de questions]"
+          ]
+        },
+        {
+          "id": "e2",
+          "text": "Examen des signes neurovégétatifs",
+          "details": [
+            "Signes vitaux [TA élevée, pouls légèrement accéléré]",
+            "Signes cutanés [Paumes moites, légère transpiration]",
+            "Tremblements [Tremblement fin des extrémités]",
+            "Respiration [Respiration légèrement accélérée]"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Examen de l'état mental",
+          "details": [
+            "Humeur [Anxieuse, inquiète]",
+            "Affect [Labile, facilement émue]",
+            "Idéation [Préoccupations hypocondriaques]",
+            "Pas de symptômes psychotiques [Pas d'hallucinations ni d'idées délirantes]"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Évaluation cognitive",
+          "details": [
+            "Orientation [Orientée correctement]",
+            "Concentration [Difficultés à se concentrer par l'anxiété]",
+            "Mémoire [Mémoire préservée]"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Examen cardiovasculaire",
+          "details": [
+            "Auscultation cardiaque [Rythme régulier, pas de souffle]",
+            "Palpation des pouls [Pouls périphériques présents et symétriques]",
+            "Signes d'insuffisance cardiaque [Pas d'œdèmes, pas de turgescence jugulaire]"
+          ]
+        },
+        {
+          "id": "e6",
+          "text": "Examen thyroïdien",
+          "details": [
+            "Inspection [Pas de goître visible]",
+            "Palpation [Glande thyroïde de taille normale, souple]",
+            "Signes d'hyperthyroïdie [Pas de signes cliniques évidents]"
+          ]
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic principal",
+          "content": "Trouble panique avec agoraphobie (F41.0)"
+        },
+        {
+          "id": "m2",
+          "text": "Diagnostics différentiels",
+          "ddSection": {
+            "title": "Diagnostics différentiels à éliminer",
+            "categories": [
+              {
+                "name": "Causes cardiologiques",
+                "items": [
+                  {
+                    "text": "Infarctus du myocarde",
+                    "cause": "Arguments CONTRE :\n\t□ Jeune âge\n\t□ Épisodes récurrents et brefs\n\t□ Pas de facteurs de risque CV",
+                    "test": "→ ECG, troponines si doute"
+                  },
+                  {
+                    "text": "Troubles du rythme",
+                    "cause": "Arguments POUR :\n\t□ Palpitations\n\t□ Malaise",
+                    "test": "→ ECG, Holter si indiqué"
+                  }
+                ]
+              },
+              {
+                "name": "Causes endocriniennes",
+                "items": [
+                  {
+                    "text": "Hyperthyroïdie",
+                    "cause": "Arguments POUR :\n\t□ Palpitations\n\t□ Tremblements\n\t□ Sueurs\n\t□ Anxiété",
+                    "test": "→ TSH, T3, T4"
+                  },
+                  {
+                    "text": "Phéochromocytome",
+                    "cause": "Arguments POUR :\n\t□ HTA épisodique\n\t□ Sueurs\n\t□ Palpitations",
+                    "test": "→ Métanéphrines urinaires si suspicion"
+                  }
+                ]
+              },
+              {
+                "name": "Causes pulmonaires",
+                "items": [
+                  {
+                    "text": "Embolie pulmonaire",
+                    "cause": "Arguments CONTRE :\n\t□ Épisodes récurrents\n\t□ Durée brève\n\t□ Pas de facteurs de risque",
+                    "test": "→ D-dimères si suspicion clinique"
+                  }
+                ]
+              },
+              {
+                "name": "Causes toxiques",
+                "items": [
+                  {
+                    "text": "Intoxication à la caféine",
+                    "cause": "Arguments POUR :\n\t□ Consommation augmentée de café\n\t□ Tremblements\n\t□ Agitation",
+                    "test": "→ Réduction/arrêt de la caféine"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m3",
+          "text": "Examens complémentaires",
+          "details": [
+            "ECG [Éliminer troubles du rythme, cardiopathie]",
+            "TSH, T3, T4 libre [Exclure hyperthyroïdie]",
+            "FSC, ionogramme [Bilan général]",
+            "Glycémie [Éliminer hypoglycémie]"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Traitement de l'épisode aigu",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Crise aiguë",
+                "items": [
+                  {
+                    "treatment": "Techniques respiratoires",
+                    "details": "Respiration lente et profonde, cohérence cardiaque",
+                    "duration": "Immédiat"
+                  },
+                  {
+                    "treatment": "Benzodiazépines si nécessaire",
+                    "details": "Lorazépam 0.5-1 mg sublingual",
+                    "duration": "Prise occasionnelle uniquement"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m5",
+          "text": "Traitement de fond",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Première ligne",
+                "content": "Psychothérapie cognitivo-comportementale (TCC) spécialisée dans les troubles paniques"
+              },
+              {
+                "title": "Traitement pharmacologique",
+                "items": [
+                  {
+                    "treatment": "IRRS",
+                    "details": "Sertraline 50 mg/j ou Paroxétine 20 mg/j",
+                    "duration": "6-12 mois minimum"
+                  },
+                  {
+                    "treatment": "IRSN",
+                    "details": "Venlafaxine 75 mg/j en alternative",
+                    "duration": "6-12 mois minimum"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m6",
+          "text": "Mesures comportementales",
+          "details": [
+            "Exposition progressive [Réhabiter progressivement les situations évitées]",
+            "Techniques de relaxation [Apprentissage de méthodes de gestion du stress]",
+            "Hygiène de vie [Réduction caféine, exercice physique régulier]",
+            "Psychoéducation [Expliquer la physiologie de l'anxiété]"
+          ]
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Explication de la maladie",
+          "content": "\"Les attaques de panique sont des épisodes d'anxiété intense qui, bien qu'impressionnants, ne sont pas dangereux. C'est votre système d'alarme qui se déclenche sans véritable danger. Avec un traitement adapté, on peut très bien contrôler ces symptômes.\""
+        },
+        {
+          "id": "c2",
+          "text": "Questions difficiles du patient",
+          "content": "[Est-ce que je risque vraiment de mourir ? Vais-je devenir folle ? Est-ce que ça va passer ?]"
+        },
+        {
+          "id": "c3",
+          "text": "Réponse rassurante et éducative",
+          "content": "\"Les attaques de panique ne sont pas mortelles et ne rendent pas fou. C'est une réaction physique normale mais excessive de votre corps au stress. Avec le bon traitement, la plupart des personnes retrouvent une vie normale.\""
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "scenarioPatienteStandardisee": {
+      "titre": "Trouble panique avec agoraphobie",
+      "nom": "Sophie Martineau",
+      "age": "42 ans",
+      "contexte": "Cabinet de médecine générale, consultation programmée",
+      "motifConsultation": {
+        "plaintePrincipale": "\"J'ai des crises d'angoisse terribles, j'ai l'impression que je vais mourir\"",
+        "autreChose": "Demande si c'est cardiaque, veut être rassurée"
+      },
+      "histoireActuelle": {
+        "debutSymptomes": "Il y a 2 mois, première crise au travail",
+        "symptomesCrises": [
+          "Palpitations intenses avec peur d'infarctus",
+          "Sueurs profuses",
+          "Tremblements généralisés",
+          "Sensation d'étouffement, oppression thoracique",
+          "Nausées, vertiges",
+          "Peur intense de mourir ou de devenir folle"
+        ],
+        "frequence": "2-3 crises par semaine, durent 10-30 minutes",
+        "declencheurs": "Aucun déclencheur apparent, survient spontanément",
+        "anticipation": [
+          "Anxiété constante entre les crises",
+          "Peur permanente que ça recommence",
+          "Hypervigilance aux sensations corporelles"
+        ],
+        "evitements": [
+          "Métro, transports en commun",
+          "Grands magasins, foules",
+          "Sorties seule",
+          "Certaines réunions professionnelles"
+        ]
+      },
+      "simulation": {
+        "attitude": [
+          "Anxieuse mais coopérante",
+          "Pose beaucoup de questions sur son cœur",
+          "Regarde régulièrement vers la sortie",
+          "Mains moites, léger tremblement"
+        ],
+        "durantEntretien": [
+          "Décrit ses symptômes avec précision et anxiété",
+          "Interrompt pour demander si c'est grave",
+          "Peut manifester de l'anxiété pendant la consultation",
+          "Demande souvent confirmation que ce n'est pas cardiaque"
+        ],
+        "durantExamen": [
+          "Légèrement tendue pendant l'examen cardiaque",
+          "Demande des explications sur chaque geste",
+          "Peut avoir une légère tachycardie d'anxiété"
+        ]
+      },
+      "anamneseSystemes": {
+        "cardiovasculaire": [
+          "Palpitations récurrentes",
+          "Douleurs thoraciques lors des crises",
+          "Pas d'antécédents cardiaques"
+        ],
+        "respiratoire": [
+          "Sensation d'étouffement lors des crises",
+          "Hyperventilation parfois"
+        ],
+        "digestive": [
+          "Nausées lors des crises",
+          "Appétit diminué par l'anxiété"
+        ],
+        "neurologique": [
+          "Vertiges, sensation de tête vide",
+          "Troubles de concentration liés à l'anxiété"
+        ]
+      },
+      "antecedents": {
+        "personnels": "Anxiété généralisée depuis l'adolescence, jamais traitée",
+        "familiaux": "Sœur : trouble anxieux, Mère : 'très nerveuse'",
+        "gynecologiques": "Règles régulières, pré-ménopause possible"
+      },
+      "habitudes": {
+        "cafe": "4-5 tasses par jour (augmenté récemment)",
+        "alcool": "Occasionnel",
+        "tabac": "Non-fumeuse",
+        "sport": "Arrêté depuis les crises par peur"
+      },
+      "contexteSocial": {
+        "profession": "Comptable, récemment promue chef d'équipe",
+        "stress": "Stress professionnel important depuis 3 mois",
+        "famille": "Mariée, 2 enfants adolescents"
+      },
+      "inquietudes": {
+        "principales": [
+          "\"Est-ce que c'est mon cœur ?\"",
+          "\"Vais-je devenir folle ?\"",
+          "\"Est-ce que je risque de mourir ?\"",
+          "\"Mes enfants vont-ils avoir la même chose ?\""
+        ]
+      }
+    },
+    "informationsExpert": {
+      "titre": "Trouble panique - Points clés",
+      "pointsCles": [
+        "Diagnostic essentiellement clinique basé sur la symptomatologie",
+        "Importance de l'exclusion des causes organiques",
+        "Éviter la prescription de benzodiazépines au long cours",
+        "TCC = traitement de première ligne",
+        "Psychoéducation essentielle pour la compliance"
+      ],
+      "pieges": [
+        "Multiplier les examens complémentaires (iatrogénie anxieuse)",
+        "Minimiser l'impact fonctionnel (agoraphobie secondaire)",
+        "Prescrire des benzodiazépines comme traitement de fond",
+        "Omettre l'évaluation de la consommation de caféine"
+      ]
+    },
+    "theoriePratique": {
+      "titre": "Trouble panique",
+      "sections": [
+        {
+          "titre": "Définition",
+          "contenu": "Attaques récurrentes de peur intense avec symptômes physiques et cognitifs, pic en quelques minutes"
+        },
+        {
+          "titre": "Épidémiologie", 
+          "contenu": "Prévalence 2-3%, F>H (2:1), début typique 20-30 ans"
+        },
+        {
+          "titre": "Physiopathologie",
+          "contenu": "Dysfonction du système d'alarme avec hyperactivation sympathique"
+        }
+      ],
+      "rappelsTherapeutiques": [
+        "TCC spécialisée = traitement de référence",
+        "IRRS/IRSN si traitement pharmacologique nécessaire",
+        "Éviter benzodiazépines au long cours (risque de dépendance)",
+        "Exposition progressive aux situations évitées"
+      ],
+      "examensComplementaires": [
+        "ECG : éliminer troubles du rythme, cardiopathie ischémique",
+        "TSH, T3, T4 : hyperthyroïdie (cause fréquente)",
+        "Glycémie : éliminer hypoglycémie",
+        "Holter si suspicion de troubles du rythme"
+      ]
+    }
+  }
+}

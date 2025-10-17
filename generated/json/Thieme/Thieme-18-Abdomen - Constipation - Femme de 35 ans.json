@@ -1,0 +1,209 @@
+{
+  "title": "Thieme Abdomen 18 - Constipation - Femme de 35 ans",
+  "category": "Thieme Abdomen",
+  "subcategory": "Constipation",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Femme de 35 ans, Mme Nancy King, consultant pour constipation",
+    "vitals": {
+      "temperature": "37°C",
+      "ta": "120/80 mmHg",
+      "fc": "84 bpm",
+      "fr": "16/min"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Motif principal de consultation",
+          "binaryOnly": true,
+          "patientComment": "constipation"
+        },
+        {
+          "id": "a2",
+          "text": "Analyse de la plainte principale (ABCDE)",
+          "details": [
+            "Apparition et durée [Constipation depuis 3 mois (1 selle/3-4 jours)]",
+            "Bilan (localisation, irradiation)",
+            "Caractère et qualité de la douleur",
+            "Degré d'intensité (échelle 1-10)",
+            "Éléments associés et facteurs modifiants"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Symptômes associés et antécédents",
+          "details": [
+            "Intolérance au froid, peau sèche, prise de poids",
+            "Thyroïdectomie il y a 2 ans pour goitre"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Histoire sociale et habitudes de vie",
+          "details": [
+            "Secrétaire",
+            "Ne fume pas",
+            "Pas d'alcool",
+            "Mariée, 2 enfants"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Revue des systèmes",
+          "details": [
+            "Système gastro-intestinal",
+            "Système endocrinien"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Signes vitaux et apparence générale",
+          "binaryOnly": true
+        },
+        {
+          "id": "e2",
+          "text": "Examen de la tête et du cou",
+          "details": [
+            "Recherche pâleur, ictère",
+            "Examen ORL avec abaisse-langue",
+            "Palpation ganglions lymphatiques",
+            "Examen thyroïde"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Examen cardio-pulmonaire",
+          "details": [
+            "Auscultation cardiaque [S1 et S2 normaux]",
+            "Auscultation pulmonaire bilatérale"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Examen abdominal complet",
+          "details": [
+            "Inspection (cicatrices, distension)",
+            "Auscultation (bruits intestinaux)",
+            "Percussion (matité, tympanisme)",
+            "Palpation superficielle et profonde"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Examens spécifiques selon le cas",
+          "details": [
+            "Toucher rectal"
+          ]
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostics différentiels à évoquer",
+          "ddSection": {
+            "title": "Hypothèses diagnostiques",
+            "categories": [
+              {
+                "name": "Diagnostics prioritaires",
+                "items": [
+                  {
+                    "text": "Hypothyroïdie",
+                    "cause": "Arguments POUR:\n\t□ Constipation, intolérance froid, ATCD thyroïde",
+                    "test": "→ Selon orientation clinique"
+                  },
+                  {
+                    "text": "Constipation médicamenteuse",
+                    "cause": "Arguments POUR:\n\t□ Selon présentation clinique",
+                    "test": "→ Selon orientation clinique"
+                  },
+                  {
+                    "text": "Constipation alimentaire",
+                    "cause": "Arguments POUR:\n\t□ Selon présentation clinique",
+                    "test": "→ Selon orientation clinique"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Examens complémentaires pertinents",
+          "details": [
+            "Toucher rectal",
+            "TSH, T3, T4",
+            "NFS",
+            "Coloscopie de dépistage"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Plan de prise en charge immédiate",
+          "details": [
+            "Investigations ambulatoires",
+            "Traitement symptomatique",
+            "Suivi après résultats"
+          ]
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour le patient standardisé",
+      "nom": "Mme Nancy King",
+      "age": "35 ans",
+      "contexte": "Cabinet de médecine générale",
+      "motifConsultation": {
+        "plaintePrincipale": "constipation",
+        "autreChose": "Constipation depuis 3 mois (1 selle/3-4 jours). Selles dures, effort important."
+      },
+      "histoireActuelle": {
+        "symptomesPrincipaux": [
+          "Constipation depuis 3 mois (1 selle/3-4 jours)",
+          " Selles dures, effort important"
+        ],
+        "contextePsychosocial": [
+          "Secrétaire",
+          " Ne fume pas",
+          " Pas d'alcool",
+          " Mariée, 2 enfants"
+        ]
+      },
+      "simulation": {
+        "attitude": [
+          "Coopératif"
+        ],
+        "durantExamen": []
+      },
+      "inquietudes": {
+        "principales": []
+      }
+    },
+    "informationsExpert": {
+      "titre": "Informations pour l'expert",
+      "pointsCles": [
+        "Cas de Constipation",
+        "Patient: Femme de 35 ans",
+        "Anamnèse complète avec ABCDE",
+        "Examen abdominal détaillé",
+        "Diagnostic différentiel approprié"
+      ],
+      "pieges": [
+        "Manquer hypothyroïdie post-thyroïdectomie"
+      ]
+    }
+  }
+}

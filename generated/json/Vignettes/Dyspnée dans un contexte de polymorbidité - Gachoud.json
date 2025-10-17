@@ -1,0 +1,335 @@
+{
+  "title": "Dyspnée dans un contexte de polymorbidité",
+  "context": {
+    "setting": "Service de médecine interne",
+    "patient": "Madame F.B, 56 ans, obèse morbide (BMI 46), diabétique, hospitalisée pour dermohypodermite bilatérale avec échec de l'antibiothérapie orale. Présente diarrhées profuses, vomissements, oligurie et aggravation de sa dyspnée chronique",
+    "vitals": {
+      "ta": "90/46 mmHg",
+      "fc": "120/min",
+      "fr": "20/min",
+      "sao2": "93% (2L O2/min)"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Motif d'hospitalisation et symptômes actuels",
+          "details": [
+            "Dermohypodermite bilatérale MI [Évolution défavorable sous antibiotiques PO]",
+            "Diarrhées importantes [+++]",
+            "Vomissements [Présents]",
+            "Asthénie profonde [Très marquée]",
+            "Oligurie [Diminution diurèse]",
+            "Dyspnée chronique stade III → IV [Aggravation récente]"
+          ]
+        },
+        {
+          "id": "a2",
+          "text": "Comorbidités importantes",
+          "details": [
+            "Obésité morbide [BMI 46 kg/m²]",
+            "Diabète type 2 non insulino-requérant [Sous Metformine]",
+            "Hypertension artérielle [Traitée]",
+            "Dyslipidémie [Sous traitement]",
+            "Trouble anxio-dépressif sévère [Suivi psychiatrique]",
+            "Antécédent d'ostéosarcome fémur G [Résection à 34 ans]",
+            "PTG droite [À 53 ans]"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Symptômes respiratoires",
+          "details": [
+            "Dyspnée d'effort chronique [Stade III habituellement]",
+            "Aggravation récente [Actuellement stade IV]",
+            "Orthopnée [Non]",
+            "DPN (dyspnée paroxystique nocturne) [Non]",
+            "Douleurs thoraciques [Non]",
+            "Palpitations [Non]",
+            "Toux [Non]",
+            "Expectorations [Non]"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Symptômes digestifs et généraux",
+          "details": [
+            "Diarrhées profuses [+++]",
+            "Vomissements [Récents]",
+            "Douleurs abdominales [Non]",
+            "Nausées [Associées aux vomissements]",
+            "Déshydratation probable [Diarrhées + vomissements + oligurie]"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Mode de vie et autonomie",
+          "details": [
+            "Vit seule [Célibataire]",
+            "CMS 2x/jour [Aide à domicile]",
+            "Ancienne secrétaire [Demande AI en cours]",
+            "Tabagisme [Non]",
+            "Alcool [Occasionnel]"
+          ]
+        },
+        {
+          "id": "a6",
+          "text": "Médicaments à l'admission",
+          "details": [
+            "Amoxicilline-acide clavulanique [Pour dermohypodermite]",
+            "Metformine [Pour diabète]",
+            "Antihypertenseurs",
+            "Statines [Pour dyslipidémie]",
+            "Psychotropes [Pour trouble anxio-dépressif]"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "État général et signes vitaux",
+          "details": [
+            "État général altéré [Asthénie profonde]",
+            "TA basse [90/46 mmHg - hypotension]",
+            "Tachycardie [120/min]",
+            "Tachypnée [20/min]",
+            "Saturation [93% sous 2L O2/min]",
+            "BMI [46 kg/m² - obésité morbide]"
+          ]
+        },
+        {
+          "id": "e2",
+          "text": "Examen cardio-pulmonaire",
+          "details": [
+            "Auscultation cardiaque [Sans particularité]",
+            "Auscultation pulmonaire [Sans particularité]",
+            "Signes de surcharge droite [À rechercher]",
+            "Œdèmes MI bilatéraux [Jusqu'à mi-mollet]"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Examen cutané",
+          "details": [
+            "Dermohypodermite bilatérale MI [Signes inflammatoires]",
+            "Évolution défavorable [Malgré antibiothérapie PO]",
+            "Œdème bilatéral [Mi-mollet]",
+            "Signes de gravité cutanés"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Examen abdominal",
+          "details": [
+            "Palpation abdominale",
+            "Bruits hydroaériques [Augmentés si diarrhées]",
+            "Hépatomégalie [À rechercher]",
+            "Signes de déshydratation"
+          ]
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Problèmes prioritaires et diagnostic",
+          "ddSection": {
+            "title": "Problèmes aigus à traiter en urgence",
+            "categories": [
+              {
+                "name": "Problèmes prioritaires",
+                "items": [
+                  {
+                    "text": "Insuffisance rénale aiguë avec hyperkaliémie",
+                    "cause": "Étiologie multifactorielle:\n\t□ Sepsis d'origine cutanée\n\t□ Hypovolémie sur diarrhées/vomissements\n\t□ Hypotension/hypoperfusion rénale\n\t□ Créatinine 574 µmol/L (N<80)\n\t□ K+ 6.9 mmol/L - URGENT",
+                    "test": "→ ECG urgent (QT court), dialyse si nécessaire"
+                  },
+                  {
+                    "text": "Acidose métabolique sévère",
+                    "cause": "Causes multiples:\n\t□ pH 7.19, HCO3- 10.4 mmol/L\n\t□ Insuffisance rénale (non excrétion H+)\n\t□ Pertes digestives de bicarbonates (diarrhées)\n\t□ Acidose lactique (lactates 14.5 mmol/L):\n\t  • Metformine (accumulation si IR)\n\t  • Hypoperfusion tissulaire (type A)",
+                    "test": "→ Gazométrie, lactates, arrêt Metformine"
+                  },
+                  {
+                    "text": "Dyspnée métabolique compensatrice",
+                    "cause": "Compensation respiratoire de l'acidose:\n\t□ Formule de Winter: PaCO2 attendue = 1.5×[HCO3-]+8±2\n\t□ PaCO2 attendue = 22-26 mmHg\n\t□ PaCO2 mesurée = 27 mmHg\n\t□ Compensation presque complète",
+                    "test": "→ Gazométrie sériée"
+                  }
+                ]
+              },
+              {
+                "name": "État septique",
+                "items": [
+                  {
+                    "text": "Sepsis sur dermohypodermite",
+                    "cause": "Arguments POUR:\n\t□ Infection cutanée évolutive\n\t□ Échec antibiothérapie orale\n\t□ Hypotension\n\t□ Tachycardie\n\t□ Hyperlactatémie\n\t□ Insuffisance rénale aiguë",
+                    "test": "→ Hémocultures, antibiothérapie IV large spectre"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Examens complémentaires urgents",
+          "details": [
+            "Gazométrie artérielle [pH 7.19, pCO2 27, pO2 101, HCO3- 10.4]",
+            "Ionogramme [K+ 6.9 mmol/L - hyperkaliémie sévère]",
+            "Créatinine [574 µmol/L - IRA sévère]",
+            "Lactates [14.5 mmol/L - hyperlactatémie]",
+            "ECG [QT court, signes d'hyperkaliémie]",
+            "US-doppler rénal [Exclure obstruction]",
+            "Hémocultures [Avant antibiothérapie]",
+            "Pro-BNP [Éliminer cause cardiaque]"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Traitement aigu immédiat",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "1. Hydratation",
+                "content": "• Remplissage IV prudent\n• Surveillance stricte diurèse\n• Correction hypovolémie\n• Attention surcharge si IRC"
+              },
+              {
+                "title": "2. Correction acidose et hyperkaliémie",
+                "content": "• Dialyse en urgence si nécessaire\n• Bicarbonates IV si pH < 7.1\n• Calcium gluconate IV (cardioprotection)\n• Insuline-glucose\n• Salbutamol nébulisé\n• Résines échangeuses d'ions"
+              },
+              {
+                "title": "3. Arrêt Metformine",
+                "content": "• Stop immédiat (CI si clairance < 50)\n• Risque d'acidose lactique\n• Accumulation en cas d'IR\n• Reprise après normalisation fonction rénale"
+              },
+              {
+                "title": "4. Antibiothérapie IV",
+                "content": "• Large spectre empirique\n• Après hémocultures\n• Adaptation selon antibiogramme\n• Durée selon évolution"
+              }
+            ]
+          }
+        },
+        {
+          "id": "m4",
+          "text": "Évolution à J+3 et diagnostic chronique",
+          "details": [
+            "Amélioration biologique [Créat 143, K+ normal, pH 7.41]",
+            "Persistance hypoxémie [PaO2 54 mmHg en air ambiant]",
+            "Diagnostic dyspnée chronique établi:",
+            "→ Syndrome obésité-hypoventilation (SOH)",
+            "→ Syndrome d'apnées du sommeil (SAS)",
+            "→ Hypertension pulmonaire sévère secondaire"
+          ]
+        },
+        {
+          "id": "m5",
+          "text": "Explorations de la dyspnée chronique",
+          "details": [
+            "Échocardiographie [HTAP sévère, PAPs 55mmHg, VD dilaté]",
+            "Cathétérisme cardiaque droit [Confirmation HTAP]",
+            "Spirométrie [Syndrome restrictif, CV diminuée]",
+            "DLCO [Normale - barrière alvéolaire intacte]",
+            "Oxymétrie nocturne [Désaturations multiples + tachycardie]",
+            "Scintigraphie pulmonaire [Exclure EP chronique]",
+            "Polysomnographie [Confirmer SAS]"
+          ]
+        },
+        {
+          "id": "m6",
+          "text": "Traitement de la dyspnée chronique",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Mesures hygiéno-diététiques",
+                "content": "• Perte de poids PRIORITAIRE\n• Évitement alcool et sédatifs\n• Position semi-assise pour dormir\n• Activité physique adaptée"
+              },
+              {
+                "title": "Ventilation non invasive",
+                "content": "• CPAP ou BiPAP nocturne\n• ± Oxygénothérapie\n• Traitement du SAS et SOH\n• Amélioration HTAP secondaire"
+              },
+              {
+                "title": "Traitement médical",
+                "content": "• Diurétiques (surcharge droite)\n• Traitement HTAP en 2ème intention\n• Optimisation diabète sans Metformine\n• Gestion comorbidités"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Messages clés",
+          "content": "• Différencier dyspnée aiguë et chronique - un symptôme peut avoir plusieurs causes\n• 'Divide et Impera' - établir une liste des problèmes prioritaires\n• Hypothèses diagnostiques avec arguments pour et contre\n• L'insuffisance rénale aiguë avec hyperkaliémie est une urgence vitale\n• L'acidose lactique sur Metformine nécessite l'arrêt immédiat du médicament\n• Le syndrome obésité-hypoventilation est souvent associé au SAS (90%)\n• L'HTAP est une conséquence de l'hypoxie chronique\n• La perte de poids est le traitement principal du SOH"
+        },
+        {
+          "id": "c2",
+          "text": "Évolution du cas",
+          "content": "Cette patiente polymorbide a présenté une décompensation aiguë multifactorielle (sepsis, IRA, acidose lactique sur Metformine) sur un terrain de dyspnée chronique liée à un syndrome obésité-hypoventilation avec SAS et HTAP secondaire. Le traitement aigu par dialyse, réhydratation et antibiothérapie a permis la résolution de l'épisode aigu, révélant la pathologie respiratoire chronique sous-jacente nécessitant une VNI au long cours."
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "theoriePratique": {
+      "titre": "Dyspnée et polymorbidité",
+      "sections": [
+        {
+          "titre": "Syndrome obésité-hypoventilation (SOH)",
+          "points": [
+            "Obésité morbide (IMC > 30 kg/m²)",
+            "Hypercapnie diurne (PaCO2 > 45 mmHg)",
+            "Absence d'autre affection pulmonaire/neurologique",
+            "Association avec SAS dans 90% des cas",
+            "Syndrome restrictif (↓ capacité vitale)",
+            "↓ compliance thoracique par obésité",
+            "↑ travail respiratoire",
+            "Rôle de la leptine dans réponse ventilatoire au CO2"
+          ]
+        },
+        {
+          "titre": "Syndrome d'apnées du sommeil (SAS)",
+          "points": [
+            "≥5 apnées/hypopnées par heure de sommeil",
+            "Somnolence diurne",
+            "Fatigue diurne",
+            "Réveils nocturnes répétés",
+            "Étouffements nocturnes",
+            "Troubles de concentration",
+            "Sommeil non réparateur"
+          ]
+        },
+        {
+          "titre": "Acidose lactique sur Metformine",
+          "contenu": "La Metformine inhibe la néoglucogenèse hépatique (moindre utilisation du lactate) et favorise l'utilisation périphérique du glucose. Elle est éliminée à 90% par voie rénale. Le risque d'acidose lactique survient en cas d'accumulation (IR) ou d'association avec d'autres conditions favorisant l'acidose lactique (hypoxie tissulaire, insuffisance hépato-cellulaire). Une clairance < 50 mL/min contre-indique la Metformine."
+        }
+      ],
+      "rappelsTherapeutiques": [
+        "Dialyse urgente si hyperkaliémie sévère menaçante",
+        "Arrêt Metformine si clairance < 50 mL/min",
+        "Antibiothérapie IV empirique large spectre dans le sepsis",
+        "CPAP/BiPAP pour SOH et SAS",
+        "Perte de poids = traitement principal du SOH",
+        "Diurétiques si surcharge droite",
+        "Oxygénothérapie prudente (risque hypercapnie)"
+      ],
+      "examensComplementaires": [
+        "Gazométrie: évaluation acidose et compensation",
+        "ECG urgent si hyperkaliémie (ondes T, QRS, QT)",
+        "Échocardiographie: fonction VG, HTAP, VD",
+        "Spirométrie: syndrome restrictif dans SOH",
+        "Polysomnographie: diagnostic SAS",
+        "Oxymétrie nocturne: désaturations",
+        "Cathétérisme droit: confirmation HTAP"
+      ]
+    }
+  }
+}

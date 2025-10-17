@@ -1,0 +1,321 @@
+{
+  "title": "Pédiatrie - Enfant 3 ans avec toux",
+  "type": "ECOS",
+  "context": {
+    "setting": "Cabinet de pédiatrie",
+    "patient": "Enfant de 3 ans amené par son père pour toux persistante",
+    "vitals": {
+      "temperature": "37.8°C",
+      "fc": "110 bpm",
+      "fr": "28/min"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Motif de consultation",
+          "binaryOnly": true,
+          "patientComment": "[Mon fils tousse beaucoup depuis 5 jours]"
+        },
+        {
+          "id": "a2",
+          "text": "Caractérisation de la toux",
+          "details": [
+            "Début [Il y a 5 jours, progressivement]",
+            "Type de toux [Grasse, productive]",
+            "Horaire [Toute la journée, pire le matin]",
+            "Facteurs déclenchants [Effort, rire]",
+            "Expectoration [Glaires claires à jaunâtres]",
+            "Toux nocturne [Oui, le réveille 2-3 fois]"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Symptômes associés",
+          "details": [
+            "Fièvre [38.5°C les 2 premiers jours, maintenant 37.8°C]",
+            "Rhinorrhée [Nez qui coule depuis une semaine]",
+            "Dyspnée [Non, pas d'essoufflement]",
+            "Sifflements [Non]",
+            "Douleur thoracique [Non]",
+            "Appétit [Diminué]",
+            "Fatigue [Plus fatigué que d'habitude]",
+            "Vomissements [Une fois après quinte de toux]"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Antécédents respiratoires",
+          "details": [
+            "Bronchites récurrentes [2-3 par hiver]",
+            "Asthme [Non diagnostiqué]",
+            "Allergies [Eczéma atopique]",
+            "Hospitalisations [Une bronchiolite à 8 mois]"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Contexte épidémiologique",
+          "details": [
+            "École maternelle [Oui, petite section]",
+            "Cas similaires [Plusieurs enfants toussent à l'école]",
+            "Tabagisme passif [Non, parents non-fumeurs]",
+            "Animaux domestiques [Un chat depuis 6 mois]"
+          ]
+        },
+        {
+          "id": "a6",
+          "text": "Vaccinations",
+          "binaryOnly": true,
+          "patientComment": "[À jour, incluant vaccin contre la coqueluche]"
+        },
+        {
+          "id": "a7",
+          "text": "Traitements essayés",
+          "details": [
+            "Médicaments [Paracétamol pour la fièvre]",
+            "Sirops antitussifs [Non]",
+            "Inhalations [Sérum physiologique]",
+            "Effet [Amélioration temporaire avec inhalations]"
+          ]
+        },
+        {
+          "id": "a8",
+          "text": "Antécédents familiaux",
+          "details": [
+            "Asthme [Mère asthmatique]",
+            "Allergies [Père allergique aux pollens]",
+            "Tuberculose [Non]"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "État général",
+          "details": [
+            "Conscience [Éveillé, coopératif]",
+            "Coloration [Normale]",
+            "Hydratation [Correcte]"
+          ]
+        },
+        {
+          "id": "e2",
+          "text": "Signes vitaux",
+          "details": [
+            "Température [37.8°C]",
+            "Fréquence cardiaque [110 bpm]",
+            "Fréquence respiratoire [28/min]",
+            "Saturation O2 [97% en air ambiant]"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Examen ORL",
+          "details": [
+            "Rhinorrhée [Antérieure, mucopurulente]",
+            "Pharynx [Légèrement érythémateux]",
+            "Amygdales [Non hypertrophiées]",
+            "Oreilles [Tympans normaux]",
+            "Ganglions [Quelques adénopathies cervicales < 1cm]"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Examen pulmonaire",
+          "details": [
+            "Inspection [Pas de tirage, pas de cyanose]",
+            "Fréquence respiratoire [28/min, régulière]",
+            "Percussion [Sonorité normale]",
+            "Auscultation [Râles bronchiques diffus, pas de sibilants]",
+            "Toux provoquée [Productive]"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Examen cardiaque",
+          "details": [
+            "Bruits du cœur [Réguliers]",
+            "Souffle [Absent]",
+            "Pouls périphériques [Présents et symétriques]"
+          ]
+        },
+        {
+          "id": "e6",
+          "text": "Examen abdominal",
+          "details": [
+            "Abdomen [Souple, indolore]",
+            "Hépatomégalie [Absente]",
+            "Splénomégalie [Absente]"
+          ]
+        },
+        {
+          "id": "e7",
+          "text": "Examen cutané",
+          "details": [
+            "Éruption [Absente]",
+            "Lésions d'eczéma [Plis des coudes]",
+            "Signes d'atopie [Présents]"
+          ]
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic différentiel",
+          "ddSection": {
+            "title": "Diagnostics à considérer pour toux persistante chez l'enfant",
+            "categories": [
+              {
+                "name": "Diagnostic le plus probable",
+                "items": [
+                  {
+                    "text": "Bronchite virale",
+                    "cause": "Arguments POUR:\n\t□ Contexte épidémique\n\t□ Toux productive\n\t□ Râles bronchiques\n\t□ Évolution typique",
+                    "test": "→ Pas d'examens nécessaires"
+                  }
+                ]
+              },
+              {
+                "name": "Autres diagnostics possibles",
+                "items": [
+                  {
+                    "text": "Asthme du jeune enfant",
+                    "cause": "Arguments POUR:\n\t□ Terrain atopique\n\t□ Antécédents familiaux\n\t□ Bronchites récurrentes\nArguments CONTRE:\n\t□ Pas de sibilants",
+                    "test": "→ Test thérapeutique bronchodilatateur"
+                  },
+                  {
+                    "text": "Pneumonie",
+                    "cause": "Arguments CONTRE:\n\t□ Pas de fièvre élevée\n\t□ État général conservé\n\t□ Auscultation sans foyer",
+                    "test": "→ Radio thorax si aggravation"
+                  },
+                  {
+                    "text": "Coqueluche",
+                    "cause": "Arguments CONTRE:\n\t□ Vaccination à jour\n\t□ Pas de quintes typiques\n\t□ Pas de chant du coq",
+                    "test": "→ PCR si suspicion"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Examens complémentaires",
+          "details": [
+            "Aucun examen en première intention",
+            "Radiographie thoracique si persistance > 10 jours",
+            "NFS-CRP si suspicion de surinfection",
+            "Test de fonction respiratoire si suspicion d'asthme (après 5 ans)"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Traitement",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Mesures générales",
+                "content": "Hydratation abondante\nHumidification de l'air\nMouchage régulier\nSurélévation tête de lit\nÉviction scolaire si fièvre"
+              },
+              {
+                "title": "Traitement symptomatique",
+                "content": "Paracétamol 15mg/kg x 4/jour si fièvre ou douleur\nLavages de nez au sérum physiologique\nPas d'antitussifs (contre-indiqués < 6 ans)\nPas d'antibiotiques en première intention"
+              },
+              {
+                "title": "Si suspicion composante asthmatiforme",
+                "content": "Test thérapeutique salbutamol\n2 bouffées x 3/jour pendant 5 jours\nChambre d'inhalation adaptée"
+              }
+            ]
+          }
+        },
+        {
+          "id": "m4",
+          "text": "Signes de gravité à surveiller",
+          "redflagsSection": {
+            "title": "Signes nécessitant une réévaluation urgente",
+            "items": [
+              {
+                "text": "Difficultés respiratoires",
+                "description": "Tirage, battement des ailes du nez, cyanose"
+              },
+              {
+                "text": "Fièvre élevée persistante",
+                "description": "Température > 39°C pendant plus de 3 jours"
+              },
+              {
+                "text": "Altération de l'état général",
+                "description": "Enfant prostré, refuse de s'alimenter"
+              },
+              {
+                "text": "Toux émétisante",
+                "description": "Vomissements répétés après quintes de toux"
+              },
+              {
+                "text": "Douleur thoracique",
+                "description": "Apparition de douleur à la respiration"
+              }
+            ]
+          }
+        },
+        {
+          "id": "m5",
+          "text": "Conseils préventifs",
+          "details": [
+            "Lavage des mains fréquent",
+            "Tousser dans le coude",
+            "Éviter les irritants (fumée, parfums)",
+            "Aération régulière de la chambre",
+            "Maintenir température 18-20°C"
+          ]
+        },
+        {
+          "id": "m6",
+          "text": "Suivi",
+          "details": [
+            "Reconsultation si pas d'amélioration dans 5-7 jours",
+            "Reconsultation si apparition de signes de gravité",
+            "Suivi pneumo-pédiatrique si bronchites récurrentes",
+            "Bilan allergologique à discuter"
+          ]
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Résumé pour les parents",
+          "exemplesPhrases": [
+            "Votre fils présente une bronchite virale qui devrait s'améliorer progressivement dans les prochains jours.",
+            "Les lavages de nez et l'hydratation sont les traitements les plus importants. Les antibiotiques ne sont pas nécessaires."
+          ]
+        },
+        {
+          "id": "c2",
+          "text": "Questions du père",
+          "content": "[Faut-il des antibiotiques?] [Peut-il retourner à l'école?] [Est-ce qu'il pourrait avoir de l'asthme comme sa mère?]"
+        },
+        {
+          "id": "c3",
+          "text": "Réponses adaptées",
+          "exemplesPhrases": [
+            "Les antibiotiques ne sont pas efficaces contre les virus. Ils ne sont prescrits qu'en cas de surinfection bactérienne.",
+            "Il peut retourner à l'école quand il n'a plus de fièvre et qu'il se sent mieux, même s'il tousse encore un peu.",
+            "Le terrain familial augmente effectivement le risque. Nous surveillerons l'évolution et ferons un bilan si les bronchites se répètent."
+          ]
+        }
+      ]
+    }
+  }
+}

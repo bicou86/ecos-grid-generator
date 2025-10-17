@@ -1,0 +1,645 @@
+{
+  "title": "Otosclérose - Femme de 33 ans",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Madame B., 33 ans, se présente pour une baisse progressive de l'audition à droite depuis plusieurs mois. Pas d'otalgie ni d'otorrhée. Elle remarque que les bruits de fond l'aident à mieux entendre. Son entourage lui dit qu'elle parle plus fort."
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Motif principal de consultation",
+          "binaryOnly": true,
+          "patientComment": "J'ai de plus en plus de mal à entendre de l'oreille droite"
+        },
+        {
+          "id": "a2",
+          "text": "Caractérisation de la baisse auditive",
+          "details": [
+            "Début et évolution [progressive sur plusieurs mois]",
+            "Unilatéral ou bilatéral [principalement droite, mais un peu à gauche aussi]",
+            "Circonstances d'amélioration [bruits de fond aident à mieux entendre]",
+            "Impact sur la communication [je parle plus fort d'après mon entourage]"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Symptômes associés",
+          "details": [
+            "Douleur auriculaire [Non, jamais de douleur]",
+            "Écoulement auriculaire [Non, jamais d'écoulement]",
+            "Acouphènes [Oui, parfois des sifflements à droite]",
+            "Vertiges ou troubles de l'équilibre [Non, pas de vertiges]",
+            "Sensation d'oreille bouchée [Oui, comme si j'avais du coton dans l'oreille]"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Facteurs déclenchants et contexte",
+          "details": [
+            "Traumatisme récent [Non]",
+            "Exposition au bruit [Non, je travaille dans un bureau]",
+            "Infections ORL récentes [Non]",
+            "Grossesse récente ou en cours [J'ai accouché il y a 6 mois, c'est mon deuxième enfant]"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Antécédents médicaux personnels",
+          "details": [
+            "Problèmes auditifs antérieurs [Non, première fois]",
+            "Otites récidivantes dans l'enfance [Non]",
+            "Chirurgie ORL [Non]",
+            "Maladies chroniques [Non, je suis en bonne santé]"
+          ]
+        },
+        {
+          "id": "a6",
+          "text": "Antécédents familiaux",
+          "patientComment": "Ma mère a été opérée de l'oreille vers 40 ans, elle entend mieux depuis. Ma grand-mère maternelle était sourde"
+        },
+        {
+          "id": "a7",
+          "text": "Médicaments actuels",
+          "patientComment": "Rien de particulier, juste des vitamines depuis la grossesse"
+        },
+        {
+          "id": "a8",
+          "text": "Allergie médicamenteuse",
+          "patientComment": "Non, aucune allergie connue"
+        },
+        {
+          "id": "a9",
+          "text": "Habitudes de vie",
+          "details": [
+            "Tabagisme [Non, jamais fumé]",
+            "Alcool [Occasionnellement, en social]",
+            "Profession [Comptable dans une entreprise]"
+          ]
+        },
+        {
+          "id": "a10",
+          "text": "Impact sur la qualité de vie",
+          "details": [
+            "Difficultés au travail [Oui, surtout en réunion]",
+            "Difficultés sociales [Je dois souvent faire répéter]",
+            "Anxiété liée au problème [Oui, j'ai peur que ça empire]"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Inspection des pavillons auriculaires",
+          "patientComment": "Normal bilatéralement"
+        },
+        {
+          "id": "e2",
+          "text": "Otoscopie bilatérale",
+          "patientComment": "Tympans normaux, pas de perforation, pas d'épanchement, pas de cérumen obstructif"
+        },
+        {
+          "id": "e3",
+          "text": "Test de Weber",
+          "patientComment": "Latéralisé vers l'oreille droite",
+          "description": "Placer le diapason vibrant sur le vertex"
+        },
+        {
+          "id": "e4",
+          "text": "Test de Rinne droit",
+          "patientComment": "Négatif - conduction osseuse > conduction aérienne",
+          "description": "Comparer conduction osseuse (mastoïde) et aérienne (devant le CAE)"
+        },
+        {
+          "id": "e5",
+          "text": "Test de Rinne gauche",
+          "patientComment": "Positif - conduction aérienne > conduction osseuse (normal)",
+          "description": "Comparer conduction osseuse (mastoïde) et aérienne (devant le CAE)"
+        },
+        {
+          "id": "e6",
+          "text": "Examen neurologique des nerfs crâniens",
+          "details": [
+            "Nerf facial (VII) [Symétrique, pas de paralysie]",
+            "Autres nerfs crâniens [Normaux]"
+          ]
+        },
+        {
+          "id": "e7",
+          "text": "Palpation mastoïdienne",
+          "patientComment": "Indolore bilatéralement"
+        },
+        {
+          "id": "e8",
+          "text": "Examen de l'oropharynx",
+          "patientComment": "Normal, pas d'inflammation"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Explication du diagnostic probable",
+          "patientComment": "Vos symptômes et l'examen clinique évoquent fortement une otosclérose, une maladie de l'os de l'oreille qui bloque la transmission du son",
+          "exemplesPhrases": [
+            "L'otosclérose est une croissance anormale de l'os autour de l'étrier, un petit os de l'oreille moyenne",
+            "C'est une cause fréquente de surdité progressive chez l'adulte jeune, surtout chez les femmes"
+          ]
+        },
+        {
+          "id": "m2",
+          "text": "Examens complémentaires à prescrire",
+          "details": [
+            "Audiogramme tonal et vocal",
+            "Impédancemétrie avec recherche du réflexe stapédien",
+            "CT scan des rochers si confirmation chirurgicale envisagée"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Référence en ORL",
+          "patientComment": "Je vais vous adresser à un spécialiste ORL pour confirmer le diagnostic et discuter des options thérapeutiques"
+        },
+        {
+          "id": "m4",
+          "text": "Options thérapeutiques",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Surveillance simple",
+                "content": "Pour les formes très légères, sans gêne importante"
+              },
+              {
+                "title": "Appareillage auditif",
+                "content": "Prothèse auditive pour compenser la perte auditive, option non invasive"
+              },
+              {
+                "title": "Chirurgie - Stapédotomie",
+                "content": "Traitement de choix : remplacement de l'étrier par une prothèse. Taux de succès > 90% pour améliorer l'audition"
+              }
+            ]
+          }
+        },
+        {
+          "id": "m5",
+          "text": "Explications sur l'évolution naturelle",
+          "patientComment": "Sans traitement, la surdité peut progresser, mais nous avons des solutions efficaces. Le lien avec votre grossesse récente est possible car les hormones peuvent influencer l'évolution"
+        },
+        {
+          "id": "m6",
+          "text": "Conseils et mesures préventives",
+          "details": [
+            "Protection auditive dans les environnements bruyants",
+            "Éviter l'automédication avec des médicaments ototoxiques",
+            "Suivi régulier pour monitorer la progression"
+          ]
+        },
+        {
+          "id": "m7",
+          "text": "Réponse aux inquiétudes",
+          "patientComment": "Ce n'est pas une tumeur et ce n'est pas grave pour votre santé générale. La chirurgie donne d'excellents résultats dans la majorité des cas",
+          "exemplesPhrases": [
+            "Je comprends votre inquiétude, c'est normal de s'inquiéter quand on perd l'audition",
+            "Les antécédents familiaux confirment notre suspicion, c'est souvent héréditaire"
+          ]
+        },
+        {
+          "id": "m8",
+          "text": "Plan de suivi",
+          "details": [
+            "Rendez-vous ORL dans les 2-4 semaines",
+            "Audiogramme de contrôle annuel si surveillance",
+            "Retour en consultation après avis ORL pour discussion"
+          ]
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Résumé et vérification de la compréhension",
+          "content": "Donc pour résumer, vous avez très probablement une otosclérose, une maladie héréditaire qui fixe un petit os de l'oreille. Les examens vont confirmer le diagnostic et nous pourrons discuter du meilleur traitement pour vous. Avez-vous des questions?"
+        },
+        {
+          "id": "c2",
+          "text": "Questions difficiles du patient",
+          "content": "[Est-ce que mes enfants vont avoir la même chose ?] C'est une maladie avec une composante génétique, donc il y a un risque, mais ce n'est pas systématique. Si vos enfants développent des symptômes auditifs, il faudra consulter."
+        },
+        {
+          "id": "c3",
+          "text": "Question sur les grossesses futures",
+          "content": "[Dois-je éviter d'autres grossesses ?] Non, vous n'êtes pas obligée d'éviter les grossesses. Les changements hormonaux peuvent temporairement influencer l'évolution, mais ce n'est pas une contre-indication. Un suivi ORL pendant la grossesse est recommandé."
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour le patient standardisé - Otosclérose",
+      "nom": "Madame B.",
+      "age": "33 ans",
+      "contexte": "Cabinet de médecine générale",
+      "motifConsultation": {
+        "plaintePrincipale": "J'ai de plus en plus de mal à entendre, surtout de l'oreille droite",
+        "autreChose": "Mon entourage me dit que je parle plus fort qu'avant"
+      },
+      "histoireActuelle": {
+        "evolution": "Cela a commencé progressivement il y a environ 6-8 mois, juste après mon accouchement. Au début, je pensais que c'était la fatigue, mais ça empire doucement.",
+        "lateralite": "C'est surtout l'oreille droite, mais parfois j'ai l'impression que la gauche aussi est un peu touchée.",
+        "particularites": "Bizarrement, j'entends mieux quand il y a du bruit de fond, comme au restaurant. C'est dans le calme que c'est le plus difficile.",
+        "symptomesAssocies": [
+          "Parfois des sifflements dans l'oreille droite, surtout le soir",
+          "Sensation d'avoir du coton dans l'oreille",
+          "Pas de douleur, pas d'écoulement, pas de vertiges"
+        ],
+        "grossesse": "J'ai accouché de mon deuxième enfant il y a 6 mois. J'ai remarqué que ça s'est aggravé après la grossesse.",
+        "antecedentsFamiliaux": "Ma mère a eu le même problème vers 40 ans. Elle s'est fait opérer et entend beaucoup mieux depuis. Ma grand-mère maternelle était sourde."
+      },
+      "simulation": {
+        "attitude": [
+          "Inquiète mais calme",
+          "Parle un peu plus fort que nécessaire",
+          "Demande parfois de répéter les questions",
+          "Tourne légèrement la tête gauche vers l'examinateur"
+        ],
+        "durantExamen": [
+          "Pour le test de Weber : 'J'entends mieux du côté droit'",
+          "Pour le test de Rinne : À droite, entend mieux quand le diapason est sur l'os",
+          "Coopérative pour l'otoscopie"
+        ]
+      },
+      "inquietudes": {
+        "principales": [
+          "J'ai peur de devenir sourde comme ma grand-mère",
+          "Est-ce que c'est une tumeur ?",
+          "Est-ce que mes enfants vont avoir la même chose ?",
+          "Est-ce que je dois éviter d'autres grossesses ?"
+        ],
+        "questions": [
+          "Est-ce que la chirurgie est risquée ?",
+          "Combien de temps d'arrêt de travail si je me fais opérer ?",
+          "Est-ce que les appareils auditifs sont efficaces ?",
+          "Est-ce que ça peut empirer rapidement ?"
+        ]
+      }
+    },
+    "informationsExpert": {
+      "titre": "Informations pour l'expert - Otosclérose",
+      "pointsCles": [
+        "Reconnaître la triade : surdité de transmission progressive + test de Weber latéralisé côté atteint + test de Rinne négatif",
+        "Identifier le terrain typique : femme jeune, aggravation post-grossesse, antécédents familiaux",
+        "Savoir expliquer simplement la physiopathologie",
+        "Connaître les options thérapeutiques et leurs indications",
+        "Rassurer sur le pronostic avec traitement"
+      ],
+      "pieges": [
+        "Ne pas oublier l'otoscopie (doit être normale)",
+        "Ne pas confondre avec une surdité de perception",
+        "Ne pas omettre les antécédents familiaux",
+        "Ne pas oublier de mentionner le lien avec la grossesse",
+        "Ne pas faire de promesses sur les résultats chirurgicaux"
+      ],
+      "questionsExaminateur": [
+        "Quelle est la physiopathologie de l'otosclérose ?",
+        "Quel est l'aspect caractéristique de l'audiogramme ?",
+        "Quelle est la différence entre stapédotomie et stapédectomie ?",
+        "Quels sont les risques de la chirurgie ?",
+        "Quel est le diagnostic différentiel principal ?"
+      ]
+    },
+    "theoriePratique": {
+      "titre": "Rappels théoriques - Otosclérose",
+      "sections": [
+        {
+          "titre": "Physiopathologie",
+          "contenu": "Remodelage osseux anormal de la capsule otique avec formation de foyers otospongieux puis otosclérotiques. Ankylose progressive de la platine de l'étrier dans la fenêtre ovale → blocage de la transmission mécanique des vibrations → surdité de transmission."
+        },
+        {
+          "titre": "Épidémiologie",
+          "points": [
+            "Prévalence : 0.3-0.4% de la population",
+            "Âge de début : 20-40 ans",
+            "Prédominance féminine (2:1)",
+            "Transmission autosomique dominante à pénétrance variable",
+            "Bilatérale dans 70-80% des cas"
+          ]
+        },
+        {
+          "titre": "Diagnostic différentiel",
+          "points": [
+            "Obstruction du CAE (cérumen, corps étranger)",
+            "Otite séreuse",
+            "Perforation tympanique",
+            "Luxation de la chaîne ossiculaire",
+            "Tympanosclérose",
+            "Tumeur de l'oreille moyenne"
+          ]
+        }
+      ],
+      "rappelsTherapeutiques": [
+        "Stapédotomie : taux de succès > 90% pour fermer le Rinne audiométrique",
+        "Complications chirurgicales rares : surdité de perception (1%), vertiges persistants (< 1%), acouphènes",
+        "Appareillage auditif : alternative pour patients refusant la chirurgie ou contre-indication",
+        "Fluorure de sodium : traitement médical controversé, peut ralentir la progression"
+      ],
+      "examensComplementaires": [
+        "Audiogramme : surdité de transmission avec encoche de Carhart à 2000 Hz (dépression de la conduction osseuse)",
+        "Impédancemétrie : courbe As (compliance normale), réflexe stapédien absent du côté atteint (signe précoce)",
+        "CT rochers : hypodensités de la capsule otique (foyers otospongieux), épaississement de la platine",
+        "IRM : non indiquée sauf suspicion de complications"
+      ]
+    },
+    "resume": {
+      "titre": "👂 Otosclérose – Résumé ECOS",
+      "sections": [
+        {
+          "titre": "🔍 Anamnèse",
+          "subsections": [
+            {
+              "titre": "Symptomatologie",
+              "points": [
+                "Hypoacousie de transmission progressive, bilatérale dans 70–80 % des cas",
+                "Survenue chez adulte jeune (souvent femme, 20–40 ans)",
+                "Aggravation pendant la grossesse possible",
+                "Pas d’otalgie, pas d’otorrhée"
+              ]
+            },
+            {
+              "titre": "Signes associés",
+              "points": [
+                "Paracousie de Willis : meilleure audition en ambiance bruyante",
+                "Acouphènes fréquents",
+                "Pas de vertiges typiquement"
+              ]
+            },
+            {
+              "titre": "Facteurs de risque",
+              "points": [
+                "Antécédents familiaux (origine génétique probable)",
+                "Sexe féminin (2x plus fréquent)",
+                "Grossesses multiples favorisant l’évolution"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "👀 Examen clinique",
+          "subsections": [
+            {
+              "titre": "Otoscope",
+              "points": [
+                "Tympan d’aspect normal",
+                "Parfois signe de Schwartze (hyperhémie rétrotympanique)"
+              ]
+            },
+            {
+              "titre": "Tests cliniques",
+              "points": [
+                "Rinne négatif (conduction osseuse > conduction aérienne)",
+                "Weber latéralisé du côté atteint",
+                "Gelle test négatif (pas d’atténuation du son malgré surpression)"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "🧪 Examens diagnostiques",
+          "subsections": [
+            {
+              "titre": "Audiométrie",
+              "points": [
+                "Hypoacousie de transmission pure",
+                "Encoche de Carhart à 2 000 Hz en conduction osseuse",
+                "Bonne discrimination vocale"
+              ]
+            },
+            {
+              "titre": "Imagerie",
+              "points": [
+                "Scanner rochers : utile avant chirurgie pour évaluer fenêtre ovale et autres lésions"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "⚙️ Prise en charge",
+          "subsections": [
+            {
+              "titre": "Traitements",
+              "points": [
+                "Surveillance si formes débutantes",
+                "Aides auditives si hypoacousie modérée",
+                "Chirurgie = stapedotomie avec mise en place d’une prothèse (traitement de choix)",
+                "Bilatéralisation fréquente → suivi prolongé"
+              ]
+            },
+            {
+              "titre": "Points pratiques",
+              "points": [
+                "Informer la patiente du risque d’aggravation pendant grossesse",
+                "Prévenir du risque de surdité totale post-op (rare mais grave)",
+                "Rééducation orthophonique possible en complément"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "✅ Points clés ECOS",
+          "points": [
+            "Jeune femme avec hypoacousie de transmission progressive, tympan normal = penser otosclérose",
+            "Encoche de Carhart à l’audiométrie = signe typique",
+            "PEC = stapedotomie avec prothèse, sinon aide auditive",
+            "Toujours rechercher une atteinte bilatérale",
+            "Informer patient sur évolution et risques"
+          ]
+        },
+        {
+          "titre": "📋 Check-list rapide ECOS",
+          "subsections": [
+            {
+              "titre": "Questions à poser",
+              "points": [
+                "Âge de début et évolution de la surdité ?",
+                "Unilatérale ou bilatérale ?",
+                "Antécédents familiaux de surdité ?",
+                "Acouphènes associés ?",
+                "Grossesses ou aggravation pendant celles-ci ?",
+                "Pas de douleurs ni d’écoulement (≠ otite)"
+              ]
+            },
+            {
+              "titre": "Examens à faire",
+              "points": [
+                "Audiométrie tonale et vocale",
+                "Épreuves de Rinne et Weber",
+                "Épreuve de Gelle",
+                "Scanner rochers avant chirurgie"
+              ]
+            },
+            {
+              "titre": "PEC en 3 points",
+              "points": [
+                "Confirmer diagnostic (audiométrie + clinique)",
+                "Proposer stapedotomie si gêne fonctionnelle",
+                "Sinon proposer appareillage auditif + suivi"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "presentationPatient": {
+      "titre": "📑 Fiche ECOS – Cas : Otosclérose (Femme de 33 ans)",
+      "sections": [
+        {
+          "titre": "🧩 Checklist mentale (présentation systématisée)",
+          "points": [
+            "Intro → âge, motif (hypoacousie progressive à droite, début post-grossesse)",
+            "Caractériser la surdité → progressive, surtout droite mais bilatéralisée possible, meilleure audition en bruit (paracousie de Willis)",
+            "Symptômes associés → acouphènes, sensation oreille bouchée, pas de douleur, pas de vertiges",
+            "ATCD familiaux → mère opérée (stapédotomie), grand-mère sourde",
+            "Examen clinique → tympans normaux, Rinne négatif à droite, Weber latéralisé côté atteint",
+            "Examens complémentaires → audiogramme (encoche de Carhart 2 kHz), impédancemétrie (réflexe stapédien aboli), scanner rochers si chirurgie envisagée",
+            "Diagnostic principal → otosclérose",
+            "Diagnostics différentiels → otite séreuse, tympanosclérose, luxation ossiculaire, tumeur oreille moyenne",
+            "PEC → explication maladie, surveillance si formes mineures, appareillage auditif si gêne modérée, stapédotomie si invalidant"
+          ],
+          "mnemo": {
+            "titre": "👉 Mnémo rapide : OTO",
+            "elements": [
+              "O = Oreille moyenne (pathologie transmission, tympan normal)",
+              "T = Transmission bloquée (Rinne négatif, Weber latéralisé)",
+              "O = Options : appareillage ou opération (stapedotomie)"
+            ]
+          }
+        },
+        {
+          "titre": "🎤 Version longue (≈2-3 min)",
+          "contenu": "Il s’agit de Mme B., 33 ans, venue consulter pour une baisse progressive de l’audition, surtout à droite, évoluant depuis environ 6 à 8 mois, peu après son accouchement. Elle explique que la gêne auditive s’aggrave progressivement, qu’elle entend paradoxalement mieux en environnement bruyant qu’au calme – ce que l’on appelle la paracousie de Willis. Elle se plaint aussi de sifflements occasionnels à droite, d’une sensation d’oreille bouchée, mais n’a jamais eu de douleurs, d’écoulements ou de vertiges.\n\nDans ses antécédents, elle n’a jamais eu d’otite ni de chirurgie ORL. Sa mère a présenté le même problème et a été opérée avec succès, et sa grand-mère maternelle était sourde. Pas d’autres maladies chroniques. Elle est comptable, ne fume pas, consomme de l’alcool occasionnellement.\n\nÀ l’examen, les pavillons et les tympans sont normaux. Le test de Weber se latéralise du côté droit. Le test de Rinne est négatif à droite (conduction osseuse > conduction aérienne), et positif à gauche. Le reste de l’examen ORL et neurologique est normal.\n\nEn résumé, il s’agit d’une femme jeune avec une surdité de transmission progressive, tympans normaux, test de Rinne négatif du côté atteint, contexte familial évocateur, et aggravation post-grossesse. Mon hypothèse principale est une otosclérose.\n\nLes examens à demander sont une audiométrie tonale et vocale qui devrait montrer une surdité de transmission pure avec encoche de Carhart à 2000 Hz, une impédancemétrie avec recherche du réflexe stapédien qui sera absent, et un scanner des rochers si une chirurgie est envisagée.\n\nLa prise en charge consiste à expliquer la maladie à la patiente, rassurer sur le fait qu’il ne s’agit pas d’une tumeur, et proposer différentes options : une simple surveillance si la gêne est faible, un appareillage auditif si la perte auditive est modérée, ou une stapédotomie si la gêne fonctionnelle est importante. Cette intervention a un taux de succès supérieur à 90 %, mais comporte un risque rare de surdité totale. Un suivi régulier ORL est indispensable."
+        },
+        {
+          "titre": "⚡ Version express (SBAR, 30 sec)",
+          "contenu": "S (Situation) : Mme B., 33 ans, baisse progressive audition droite, depuis post-grossesse, gêne en réunions.\n\nB (Background) : Pas d’otites ni chirurgie ORL, mère opérée pour otosclérose, grand-mère sourde.\n\nA (Assessment) : Hypoacousie de transmission droite, tympans normaux, Rinne négatif droit, Weber latéralisé → suspicion otosclérose. DD : otite séreuse, tympanosclérose.\n\nR (Recommendation) : Audiométrie, impédancemétrie, scanner si chirurgie. PEC = explications, options : surveillance, appareillage, stapédotomie."
+        },
+        {
+          "titre": "🎲 Touches ludiques / mnémos",
+          "subsections": [
+            {
+              "titre": "👉 Encoche de Carhart",
+              "points": [
+                "Dépression conduction osseuse à 2000 Hz",
+                "Signe audiométrique typique de l’otosclérose"
+              ]
+            },
+            {
+              "titre": "👉 Triade diagnostique",
+              "points": [
+                "Hypoacousie de transmission progressive",
+                "Tympan normal",
+                "Rinne négatif, Weber latéralisé côté atteint"
+              ]
+            },
+            {
+              "titre": "👉 Options thérapeutiques",
+              "points": [
+                "Surveillance",
+                "Appareillage auditif",
+                "Stapédotomie avec prothèse"
+              ]
+            },
+            {
+              "titre": "⚠️ Pièges ECOS",
+              "points": [
+                "Ne pas confondre avec une surdité de perception",
+                "Ne pas oublier de demander audiogramme",
+                "Ne pas promettre succès garanti de la chirurgie",
+                "Toujours mentionner risque de surdité post-op"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "❓ Questions probables de l'examinateur (avec réponses orales)",
+          "subsections": [
+            {
+              "titre": "1. Diagnostic et physiopathologie",
+              "questions": [
+                {
+                  "question": "Quelle est la physiopathologie de l’otosclérose ?",
+                  "reponse": "Remodelage osseux anormal de la capsule otique entraînant fixation progressive de l’étrier dans la fenêtre ovale → blocage transmission sonore."
+                },
+                {
+                  "question": "Quel est le terrain typique ?",
+                  "reponse": [
+                    "Femme jeune (20-40 ans)",
+                    "Aggravation pendant grossesses",
+                    "ATCD familiaux fréquents"
+                  ]
+                }
+              ]
+            },
+            {
+              "titre": "2. Examens complémentaires",
+              "questions": [
+                {
+                  "question": "Quels examens complémentaires demander ?",
+                  "reponse": [
+                    "Audiogramme tonal et vocal (encoche Carhart 2000 Hz)",
+                    "Impédancemétrie (réflexe stapédien absent)",
+                    "Scanner rochers si chirurgie envisagée"
+                  ]
+                }
+              ]
+            },
+            {
+              "titre": "3. Traitements",
+              "questions": [
+                {
+                  "question": "Quels sont les traitements possibles ?",
+                  "reponse": [
+                    "Surveillance si gêne faible",
+                    "Appareil auditif",
+                    "Stapédotomie (traitement de choix)"
+                  ]
+                },
+                {
+                  "question": "Quels sont les risques chirurgicaux ?",
+                  "reponse": [
+                    "Surdité totale (≈1%)",
+                    "Vertiges persistants",
+                    "Acouphènes",
+                    "Lésion nerf facial (rare)"
+                  ]
+                }
+              ]
+            },
+            {
+              "titre": "4. Diagnostic différentiel",
+              "questions": [
+                {
+                  "question": "Quels diagnostics différentiels évoquer ?",
+                  "reponse": [
+                    "Otite séreuse",
+                    "Tympanosclérose",
+                    "Luxation ossiculaire",
+                    "Tumeur oreille moyenne",
+                    "Obstruction par cérumen"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

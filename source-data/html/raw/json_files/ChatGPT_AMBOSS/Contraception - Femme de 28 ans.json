@@ -1,0 +1,655 @@
+{
+  "title": "Contraception - Femme de 28 ans",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Femme de 28 ans consultant pour discuter des options contraceptives"
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Motif principal de consultation",
+          "binaryOnly": true,
+          "patientComment": "Je cherche une contraception fiable, je ne veux pas encore avoir d'enfants"
+        },
+        {
+          "id": "a2",
+          "text": "Bilan de sexualité (Les 5 P)",
+          "details": [
+            "Partenaire(s) [1 partenaire stable masculin]",
+            "Prévention grossesse [veut éviter une grossesse]",
+            "Pratiques [rapports vaginaux uniquement]",
+            "Protection IST [préservatifs utilisés occasionnellement]",
+            "Passé d'IST [aucun]"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Histoire gynécologique",
+          "details": [
+            "Cycle menstruel [régulier]",
+            "Dernières règles",
+            "Grossesses antérieures [aucune]",
+            "Parité [nullipare]",
+            "Fausses couches [aucune]"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Préférences personnelles",
+          "details": [
+            "Méthode hormonale ou non [prête à considérer les deux]",
+            "Fréquence de prise [ne veut pas de contraception quotidienne]",
+            "Durée d'action souhaitée [longue durée préférée]",
+            "Réversibilité [importante, veut des enfants plus tard]",
+            "Importance de la régularité des règles",
+            "Acceptabilité des effets secondaires"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Antécédents médicaux",
+          "details": [
+            "Pathologies chroniques [aucune]",
+            "Thrombose veineuse/embolie [non]",
+            "AVC [non]",
+            "Migraines [avec ou sans aura]",
+            "HTA [non]",
+            "Diabète [non]",
+            "Cancer hormono-dépendant [non]"
+          ]
+        },
+        {
+          "id": "a6",
+          "text": "Habitudes de vie",
+          "details": [
+            "Tabac [non-fumeuse]",
+            "Alcool",
+            "Poids/IMC",
+            "Activité physique"
+          ]
+        },
+        {
+          "id": "a7",
+          "text": "Médicaments actuels et allergies",
+          "details": [
+            "Médicaments réguliers [aucun]",
+            "Allergies médicamenteuses [aucune]"
+          ]
+        },
+        {
+          "id": "a8",
+          "text": "Antécédents familiaux",
+          "details": [
+            "Thrombose/embolie",
+            "Cancer du sein",
+            "Cancer de l'ovaire",
+            "Maladies cardiovasculaires précoces"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Examen général",
+          "details": [
+            "État général",
+            "Poids et taille (IMC)",
+            "Tension artérielle"
+          ]
+        },
+        {
+          "id": "e2",
+          "text": "Examen gynécologique si pertinent",
+          "description": "Selon les recommandations et le contexte clinique",
+          "details": [
+            "Inspection vulvaire",
+            "Examen au spéculum",
+            "Toucher vaginal",
+            "Examen des seins si indiqué"
+          ]
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Présentation des méthodes très efficaces",
+          "details": [
+            "Implant progestatif [3 ans, efficacité >99%]",
+            "DIU hormonal [3 à 8 ans, efficacité >99%]",
+            "DIU au cuivre [jusqu'à 10 ans, sans hormones, efficacité >99%]",
+            "Injection progestative [3 mois, efficacité élevée]"
+          ]
+        },
+        {
+          "id": "m2",
+          "text": "Discussion des avantages et inconvénients",
+          "details": [
+            "Si éviter les hormones → DIU cuivre",
+            "Si souhaite moins de règles → DIU hormonal",
+            "Si éviter toute manipulation → Implant",
+            "Réversibilité de chaque méthode"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Vérification des contre-indications",
+          "details": [
+            "Contre-indications absolues aux œstroprogestatifs",
+            "Contre-indications au DIU",
+            "Contre-indications à l'implant"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Plan de mise en œuvre",
+          "details": [
+            "Proposition de dépistage IST si pertinent",
+            "Information sur la contraception d'urgence",
+            "Organisation de la pose ou prescription",
+            "Planification du suivi"
+          ]
+        },
+        {
+          "id": "m5",
+          "text": "Éducation et conseils",
+          "details": [
+            "Efficacité de la méthode choisie",
+            "Effets secondaires possibles",
+            "Que faire en cas d'oubli ou de problème",
+            "Signes d'alerte nécessitant une consultation",
+            "Protection contre les IST"
+          ],
+          "exemplesPhrases": [
+            "Les dispositifs les plus fiables sont les implants hormonaux et les stérilets, qui ont une efficacité supérieure à 99%",
+            "La fertilité revient rapidement après l'arrêt de la plupart des contraceptifs",
+            "Il existe des méthodes naturelles basées sur l'observation du cycle, mais elles sont moins fiables"
+          ]
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Clôture de la consultation",
+          "content": "Avez-vous d'autres questions concernant la contraception ou votre santé gynécologique ? Je reste disponible pour tout suivi ou ajustement si nécessaire.",
+          "exemplesPhrases": [
+            "Nous allons planifier la pose du DIU/implant dans les prochaines semaines",
+            "Voici l'ordonnance pour la méthode choisie, avec les instructions d'utilisation",
+            "N'hésitez pas à me recontacter si vous avez des effets secondaires ou des questions"
+          ]
+        },
+        {
+          "id": "c2",
+          "text": "Questions difficiles du patient",
+          "content": "[Est-ce que les hormones font grossir ?] [Est-ce que je pourrai tomber enceinte rapidement après l'arrêt ?] [Quelle est la méthode la plus efficace ?] [Existe-t-il une méthode naturelle ?]"
+        },
+        {
+          "id": "c3",
+          "text": "Réponses types aux questions difficiles",
+          "exemplesPhrases": [
+            "Certaines femmes prennent un peu de poids, notamment avec l'injection, mais ce n'est pas systématique",
+            "Les implants et les pilules ont en général peu d'impact sur le poids",
+            "Oui, la fertilité revient rapidement après l'arrêt de la plupart des contraceptifs"
+          ]
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour la patiente standardisée",
+      "nom": "Sarah Dupont",
+      "age": "28 ans",
+      "contexte": "Cabinet de médecine générale",
+      "motifConsultation": {
+        "plaintePrincipale": "Je cherche une contraception fiable, je ne veux pas encore avoir d'enfants",
+        "autreChose": "Souhaite discuter des options contraceptives"
+      },
+      "histoireActuelle": {
+        "situationPersonnelle": [
+          "En couple stable avec un partenaire masculin",
+          "Pas d'enfants actuellement",
+          "Ne prévoit pas de grossesse dans les prochaines années"
+        ],
+        "preferenceContraceptive": [
+          "Ne veut pas de contraception à prendre tous les jours",
+          "Prête à considérer une méthode hormonale ou non hormonale",
+          "Souhaite que la méthode soit réversible"
+        ],
+        "santéGynécologique": [
+          "Cycle menstruel régulier",
+          "Pas de problèmes gynécologiques"
+        ]
+      },
+      "simulation": {
+        "attitude": [
+          "Femme calme et réfléchie",
+          "Pose des questions pertinentes",
+          "Semble bien informée mais cherche des conseils professionnels",
+          "Ouverte aux suggestions mais avec des préférences claires"
+        ],
+        "durantEntretien": [
+          "Répond clairement aux questions",
+          "Demande des précisions sur l'efficacité",
+          "S'inquiète des effets secondaires potentiels",
+          "Veut comprendre la réversibilité des méthodes"
+        ]
+      },
+      "habitudes": {
+        "tabac": "Non-fumeuse",
+        "alcool": "Consommation occasionnelle",
+        "activite": "Active, fait du sport régulièrement",
+        "sexualite": "Rapports vaginaux uniquement, préservatifs utilisés occasionnellement"
+      },
+      "antecedents": {
+        "medicaux": "Aucune pathologie chronique",
+        "chirurgicaux": "Aucune intervention",
+        "familiaux": "Aucun antécédent thromboembolique familial",
+        "gynecologiques": "Nullipare, jamais de grossesse"
+      },
+      "inquietudes": {
+        "principales": [
+          "Efficacité de la contraception",
+          "Prise de poids avec les hormones",
+          "Réversibilité pour future grossesse",
+          "Effets secondaires possibles"
+        ],
+        "questions": [
+          "Quelle est la méthode la plus efficace ?",
+          "Est-ce que les hormones font grossir ?",
+          "Est-ce que je pourrai tomber enceinte rapidement après l'arrêt ?",
+          "Existe-t-il une méthode naturelle ?"
+        ]
+      }
+    },
+    "informationsExpert": {
+      "titre": "Points clés pour l'expert évaluateur",
+      "pointsCles": [
+        "Anamnèse sexuelle complète (les 5 P)",
+        "Évaluation des contre-indications aux différentes méthodes",
+        "Présentation équilibrée des options adaptées",
+        "Décision partagée avec la patiente",
+        "Éducation sur l'utilisation et les effets secondaires"
+      ],
+      "pieges": [
+        "Ne pas rechercher les contre-indications aux œstroprogestatifs",
+        "Oublier de mentionner la contraception d'urgence",
+        "Ne pas aborder la protection contre les IST",
+        "Imposer une méthode sans tenir compte des préférences",
+        "Ne pas planifier le suivi"
+      ]
+    },
+    "theoriePratique": {
+      "titre": "Rappels théoriques sur la contraception",
+      "sections": [
+        {
+          "titre": "Méthodes les plus efficaces (>99%)",
+          "points": [
+            "Implant sous-cutané : 3 ans, progestatif seul",
+            "DIU hormonal : 3-8 ans selon le modèle",
+            "DIU au cuivre : jusqu'à 10 ans, sans hormones",
+            "Stérilisation : permanente"
+          ]
+        },
+        {
+          "titre": "Contre-indications aux œstroprogestatifs",
+          "points": [
+            "Tabagisme après 35 ans",
+            "Antécédent de thrombose veineuse ou AVC",
+            "Migraine avec aura",
+            "HTA non contrôlée",
+            "Cancer hormono-dépendant",
+            "Maladie hépatique active"
+          ]
+        },
+        {
+          "titre": "Contraception d'urgence",
+          "points": [
+            "Lévonorgestrel : jusqu'à 72h après le rapport",
+            "Ulipristal acétate : jusqu'à 120h",
+            "DIU au cuivre : jusqu'à 5 jours, le plus efficace"
+          ]
+        }
+      ],
+      "rappelsTherapeutiques": [
+        "Toute méthode contraceptive doit être adaptée au profil de la patiente",
+        "La décision doit être partagée avec information claire sur les options",
+        "Le suivi est essentiel pour ajuster si nécessaire",
+        "La protection contre les IST nécessite l'usage de préservatifs"
+      ]
+    },
+    "resume": {
+      "titre": "⚖️ Contraception – Décision partagée – Résumé ECOS",
+      "sections": [
+        {
+          "titre": "🔍 Anamnèse",
+          "subsections": [
+            {
+              "titre": "Points à explorer",
+              "points": [
+                "Âge, antécédents médicaux et gynécologiques",
+                "Projet de grossesse à court, moyen ou long terme",
+                "Tolérance et expérience antérieure de contraception",
+                "Habitudes de vie : tabac, poids, adhérence possible",
+                "Facteurs de risque : thrombose, migraines, HTA, cancer du sein"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "👀 Examen clinique",
+          "subsections": [
+            {
+              "titre": "Éléments utiles",
+              "points": [
+                "Mesure TA (avant contraception hormonale combinée)",
+                "IMC (risque métabolique, efficacité pilule)",
+                "Examen gynécologique si DIU envisagé",
+                "Bilan selon contexte (thrombophilie, maladies chroniques)"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "🧪 Examens diagnostiques",
+          "subsections": [
+            {
+              "titre": "Selon contexte",
+              "points": [
+                "Aucun examen systématique requis avant contraception orale",
+                "Bilan biologique si facteurs de risque (glycémie, lipides, coagulation)",
+                "Test grossesse avant DIU ou implant si doute"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "⚙️ Options contraceptives",
+          "subsections": [
+            {
+              "titre": "Contraception hormonale combinée",
+              "points": [
+                "Pilule estroprogestative, anneau vaginal, patch transdermique",
+                "CI si tabac >35 ans, ATCD thrombose, migraines avec aura"
+              ]
+            },
+            {
+              "titre": "Progestatifs seuls",
+              "points": [
+                "Pilule microprogestative, implant, injection trimestrielle",
+                "Bonne tolérance en cas de CI estrogènes"
+              ]
+            },
+            {
+              "titre": "Dispositifs intra-utérins (DIU)",
+              "points": [
+                "DIU au cuivre : efficace, sans hormones, règles plus abondantes",
+                "DIU hormonal (lévonorgestrel) : règles moins abondantes, spotting initial"
+              ]
+            },
+            {
+              "titre": "Méthodes barrières",
+              "points": [
+                "Préservatifs masculins et féminins (seule protection IST)",
+                "Diaphragme, cape cervicale (moins efficaces)"
+              ]
+            },
+            {
+              "titre": "Méthodes définitives",
+              "points": [
+                "Stérilisation féminine (ligature des trompes)",
+                "Vasectomie",
+                "Décision réfléchie et consentement éclairé requis"
+              ]
+            },
+            {
+              "titre": "Méthodes naturelles",
+              "points": [
+                "Méthode Ogino, courbe de température, observation glaire cervicale",
+                "Efficacité faible, dépend de l’observance"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "✅ Points clés ECOS",
+          "points": [
+            "Aucune méthode n’est universelle : choix individualisé",
+            "Décision partagée = informations claires sur efficacité, contraintes, EI",
+            "Évaluer CI médicales avant contraception hormonale",
+            "Préservatifs = seule protection IST",
+            "Revoir régulièrement la contraception selon âge et projet de grossesse"
+          ]
+        },
+        {
+          "titre": "📋 Check-list rapide ECOS",
+          "subsections": [
+            {
+              "titre": "Questions à poser",
+              "points": [
+                "Projet de grossesse à court, moyen ou long terme ?",
+                "Antécédents médicaux (thrombose, HTA, migraines, cancers) ?",
+                "Tabac, IMC, comorbidités ?",
+                "Préférences : hormones ou non, quotidien ou longue durée ?",
+                "Besoin de protection contre IST ?"
+              ]
+            },
+            {
+              "titre": "Examens à faire",
+              "points": [
+                "TA et IMC",
+                "Examen gynécologique si DIU envisagé",
+                "Bilan biologique seulement si facteurs de risque",
+                "Test grossesse si contraception d’urgence ou DIU post-coïtal"
+              ]
+            },
+            {
+              "titre": "PEC en 3 points",
+              "points": [
+                "Présenter toutes les méthodes avec avantages/inconvénients",
+                "Adapter le choix au profil médical et préférences",
+                "Revoir régulièrement efficacité, tolérance et adhérence"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "presentationPatient": {
+      "titre": "📑 Fiche ECOS – Cas : Contraception (femme de 28 ans, nullipare, souhait de méthode fiable et réversible)",
+      "sections": [
+        {
+          "titre": "🧩 Checklist mentale (présentation systématisée)",
+          "points": [
+            "Intro → âge, motif (28 ans, souhaite une contraception fiable, réversible, pas quotidienne)",
+            "Bilan de sexualité (5P) → 1 partenaire stable, rapports vaginaux, préservatifs occasionnels, pas d’IST",
+            "Histoire gynécologique → cycles réguliers, nullipare, pas de grossesse antérieure",
+            "Préférences personnelles → contraception longue durée, réversible, ouverte à hormonale ou non, importance de la régularité des règles",
+            "ATCD médicaux et familiaux → pas de thrombose, AVC, cancer hormono-dépendant ; pas de comorbidité",
+            "Habitudes de vie → non-fumeuse, sportive, IMC normal",
+            "Examen clinique → TA, IMC, examen gynécologique si DIU envisagé",
+            "Résumé → jeune femme sans contre-indications, demande contraception LARC (implant ou DIU)",
+            "Discussion options → DIU cuivre, DIU hormonal, implant progestatif, injection trimestrielle, comparaison avantages/inconvénients",
+            "PEC → décision partagée, informer sur contraception d’urgence, protection IST, organisation pose/prescription, suivi planifié"
+          ],
+          "mnemo": {
+            "titre": "👉 Mnémo rapide : 5P Sexualité",
+            "elements": [
+              "Partenaires",
+              "Prévention grossesse",
+              "Pratiques sexuelles",
+              "Protection IST",
+              "Passé d’IST"
+            ]
+          }
+        },
+        {
+          "titre": "🎤 Version longue (≈2-3 min)",
+          "contenu": "Il s’agit de Sarah Dupont, une femme de 28 ans, qui consulte pour discuter d’une contraception. Elle explique qu’elle ne souhaite pas d’enfant pour l’instant, mais souhaite garder une contraception réversible en vue d’un projet ultérieur. Elle souhaite une méthode efficace et simple, sans contrainte quotidienne.\n\nElle est en couple stable avec un partenaire masculin. Elle a des rapports vaginaux exclusivement, utilise parfois des préservatifs mais pas systématiquement. Elle n’a pas d’antécédent d’IST. Ses cycles menstruels sont réguliers, elle est nullipare et n’a jamais été enceinte.\n\nElle est ouverte à une méthode hormonale ou non, mais insiste sur le fait qu’elle ne veut pas d’une pilule à prendre tous les jours. Elle préfère une contraception de longue durée et réversible. Elle est attentive aux effets secondaires et à l’impact sur ses règles.\n\nSes antécédents médicaux sont négatifs : pas de thrombose, d’AVC, de migraine avec aura, d’HTA, de diabète ni de cancer hormono-dépendant. Elle est non-fumeuse, sportive, son IMC est normal. Pas d’antécédents familiaux de thrombose ni de cancer gynécologique. Elle ne prend aucun traitement régulier et n’a pas d’allergies connues.\n\nÀ l’examen, on mesure sa tension artérielle et son IMC. Un examen gynécologique est indiqué si un DIU est envisagé.\n\nEn résumé, il s’agit d’une femme jeune, en bonne santé, qui souhaite une contraception efficace, réversible et non quotidienne. Les méthodes les plus adaptées sont les contraceptions de longue durée (LARC) : implant progestatif sous-cutané, DIU hormonal au lévonorgestrel, ou DIU au cuivre. L’injection trimestrielle est une option mais moins utilisée à cause de ses effets secondaires (prise de poids, retard retour fertilité). On explique que le DIU au cuivre est sans hormones, très efficace et peut donner des règles plus abondantes, tandis que le DIU hormonal réduit souvent les règles. L’implant est très efficace, discret et totalement réversible. \n\nJe lui présente aussi les contre-indications aux œstroprogestatifs, même si elles ne la concernent pas ici. On discute de la contraception d’urgence et de la protection contre les IST, car son partenaire n’est pas systématiquement protégé.\n\nEnfin, je propose de planifier la pose du DIU ou de l’implant selon son choix, avec explications sur le suivi et les effets secondaires possibles. Je m’assure de la décision partagée et de son accord éclairé."
+        },
+        {
+          "titre": "⚡ Version express (SBAR, 30 sec)",
+          "contenu": "S (Situation) : Sarah, 28 ans, consulte pour contraception, ne veut pas d’enfant actuellement, contraception réversible souhaitée.\n\nB (Background) : Nullipare, cycles réguliers, pas de comorbidité ni facteur de risque, non-fumeuse, partenaire stable, préservatifs occasionnels.\n\nA (Assessment) : Demande contraception efficace, longue durée, réversible. Options : DIU cuivre, DIU hormonal, implant. DD : pilule, patch, anneau mais moins adaptés à ses préférences.\n\nR (Recommendation) : Présenter LARC, vérifier CI, informer contraception d’urgence et IST, organiser pose DIU ou implant, suivi planifié."
+        },
+        {
+          "titre": "🎲 Touches ludiques / mnémos",
+          "subsections": [
+            {
+              "titre": "👉 LARC (Long Acting Reversible Contraception)",
+              "points": [
+                "Implant progestatif : 3 ans",
+                "DIU hormonal : 3–8 ans",
+                "DIU cuivre : jusqu’à 10 ans",
+                "Très efficaces >99%"
+              ]
+            },
+            {
+              "titre": "👉 Contre-indications estroprogestatifs",
+              "points": [
+                "Tabac >35 ans",
+                "Thrombose/AVC",
+                "Migraine avec aura",
+                "HTA non contrôlée",
+                "Cancer sein/hormono-dépendant"
+              ]
+            },
+            {
+              "titre": "👉 Contraception d’urgence",
+              "points": [
+                "Lévonorgestrel ≤72h",
+                "Ulipristal ≤120h",
+                "DIU cuivre ≤5 jours"
+              ]
+            },
+            {
+              "titre": "⚠️ Pièges ECOS",
+              "points": [
+                "Imposer une méthode sans décision partagée",
+                "Oublier de vérifier CI médicales",
+                "Ne pas aborder IST/protection barrière",
+                "Oublier de parler contraception d’urgence",
+                "Négliger planification du suivi"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "❓ Questions probables de l'examinateur (avec réponses orales)",
+          "subsections": [
+            {
+              "titre": "1. Arguments pour et contre chaque option",
+              "questions": [
+                {
+                  "question": "Implant progestatif",
+                  "reponse": {
+                    "pour": [
+                      "Très efficace >99%",
+                      "Durée 3 ans",
+                      "Pas d’hormones œstrogènes",
+                      "Discret, pas de contrainte"
+                    ],
+                    "contre": [
+                      "Troubles du cycle (spotting)",
+                      "Nécessite un geste médical pour pose/retrait"
+                    ]
+                  }
+                },
+                {
+                  "question": "DIU hormonal",
+                  "reponse": {
+                    "pour": [
+                      "Très efficace >99%",
+                      "Durée 3–8 ans",
+                      "Diminue règles et douleurs"
+                    ],
+                    "contre": [
+                      "Pose invasive",
+                      "Spotting les premiers mois"
+                    ]
+                  }
+                },
+                {
+                  "question": "DIU cuivre",
+                  "reponse": {
+                    "pour": [
+                      "Très efficace >99%",
+                      "Durée jusqu’à 10 ans",
+                      "Sans hormones"
+                    ],
+                    "contre": [
+                      "Règles plus abondantes/douloureuses"
+                    ]
+                  }
+                },
+                {
+                  "question": "Injection trimestrielle",
+                  "reponse": {
+                    "pour": [
+                      "Efficace, sans contrainte quotidienne"
+                    ],
+                    "contre": [
+                      "Retard au retour fertilité",
+                      "Prise de poids possible"
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "titre": "2. Examens complémentaires utiles",
+              "questions": [
+                {
+                  "question": "Quels examens sont nécessaires avant prescription ?",
+                  "reponse": [
+                    "TA et IMC systématiques",
+                    "Examen gynécologique si DIU envisagé",
+                    "Aucun bilan biologique systématique",
+                    "Test de grossesse si doute"
+                  ]
+                }
+              ]
+            },
+            {
+              "titre": "3. Décision, traitement, suivi",
+              "questions": [
+                {
+                  "question": "Diagnostic",
+                  "reponse": "Demande de contraception chez une femme jeune, sans contre-indications, préférant une méthode réversible et non quotidienne"
+                },
+                {
+                  "question": "Traitement",
+                  "reponse": {
+                    "immediat": [
+                      "Discussion partagée sur DIU hormonal, DIU cuivre, implant",
+                      "Information contraception d’urgence",
+                      "Information IST/préservatif"
+                    ]
+                  }
+                },
+                {
+                  "question": "Suivi",
+                  "reponse": [
+                    "Contrôle après pose (DIU ou implant) pour tolérance",
+                    "Réévaluation annuelle (TA, poids, tolérance, satisfaction)",
+                    "Réajuster selon projet de grossesse futur"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

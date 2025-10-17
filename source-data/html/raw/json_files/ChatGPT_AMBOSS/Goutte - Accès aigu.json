@@ -1,0 +1,750 @@
+{
+  "title": "Goutte - Accès aigu",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Monsieur T., 54 ans, se présente pour une douleur brutale du gros orteil droit survenue dans la nuit"
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Motif principal de consultation",
+          "binaryOnly": true,
+          "patientComment": "Douleur brutale du gros orteil droit"
+        },
+        {
+          "id": "a2",
+          "text": "Caractérisation de la douleur",
+          "details": [
+            "Début [Brutal, pendant la nuit]",
+            "Localisation [Gros orteil droit, articulation métatarso-phalangienne]",
+            "Intensité [Très intense, insupportable]",
+            "Évolution [Depuis cette nuit]"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Signes associés",
+          "details": [
+            "Rougeur locale [Oui, orteil très rouge]",
+            "Gonflement [Oui, articulation gonflée]",
+            "Chaleur locale [Oui, sensation de chaleur]",
+            "Fièvre [Non, pas de fièvre]"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Facteurs déclenchants",
+          "details": [
+            "Traumatisme [Non, aucun trauma]",
+            "Alimentation récente [Repas copieux hier soir avec viande rouge]",
+            "Consommation d'alcool [Vin rouge pendant le repas]",
+            "Effort inhabituel [Non]"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Antécédents médicaux",
+          "details": [
+            "Hyperuricémie connue [Non, jamais dosé]",
+            "Crises similaires antérieures [Première fois]",
+            "Insuffisance rénale [Non]",
+            "Hypertension artérielle [Non]"
+          ]
+        },
+        {
+          "id": "a6",
+          "text": "Médicaments",
+          "details": [
+            "Diurétiques [Non]",
+            "Aspirine [Non]",
+            "Autres médicaments réguliers [Aucun]"
+          ]
+        },
+        {
+          "id": "a7",
+          "text": "Habitudes de vie",
+          "details": [
+            "Consommation d'alcool habituelle [2-3 verres de vin par jour]",
+            "Alimentation riche en purines [Aime la viande rouge et fruits de mer]",
+            "Hydratation [Boit peu d'eau]",
+            "Activité physique [Sédentaire]"
+          ]
+        },
+        {
+          "id": "a8",
+          "text": "Antécédents familiaux",
+          "details": [
+            "Goutte dans la famille [Père avait la goutte]",
+            "Maladies rénales [Non]"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Inspection de l'articulation atteinte",
+          "details": [
+            "Érythème [Orteil rouge vif]",
+            "Tuméfaction [Gonflement important de l'articulation MTP]",
+            "Déformation [Non]"
+          ]
+        },
+        {
+          "id": "e2",
+          "text": "Palpation de l'articulation",
+          "details": [
+            "Chaleur locale [Augmentation nette de la température]",
+            "Douleur à la palpation [Très douloureuse au toucher]",
+            "Épanchement articulaire [Tension articulaire présente]"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Mobilisation articulaire",
+          "details": [
+            "Amplitude de mouvement [Très limitée par la douleur]",
+            "Douleur à la mobilisation [Extrêmement douloureuse]"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Examen des autres articulations",
+          "details": [
+            "Autres articulations douloureuses [Non, uniquement le gros orteil]",
+            "Recherche de tophus [Pas de tophus visible]"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Signes généraux",
+          "details": [
+            "Température [37.8°C]",
+            "État général [Conservé mais douleur importante]"
+          ]
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic proposé",
+          "patientComment": "Vous avez très probablement une crise de goutte",
+          "ddSection": {
+            "title": "Diagnostics différentiels à considérer",
+            "categories": [
+              {
+                "name": "Diagnostic principal",
+                "items": [
+                  {
+                    "text": "Crise de goutte (arthrite goutteuse aiguë)",
+                    "cause": "Arguments POUR:\n\t□ Monoarthrite aiguë du gros orteil (podagre)\n\t□ Début brutal nocturne\n\t□ Facteurs déclenchants présents (alcool, repas riche)\n\t□ Antécédent familial de goutte",
+                    "test": "→ Ponction articulaire si doute (cristaux d'urate)"
+                  }
+                ]
+              },
+              {
+                "name": "Autres causes à éliminer",
+                "items": [
+                  {
+                    "text": "Arthrite septique",
+                    "cause": "Arguments CONTRE:\n\t□ Pas de porte d'entrée\n\t□ Pas de fièvre élevée\n\t□ Contexte évocateur de goutte",
+                    "test": "→ Ponction articulaire avec culture si suspicion"
+                  },
+                  {
+                    "text": "Arthrite à chondrocalcinose",
+                    "cause": "Arguments CONTRE:\n\t□ Plus fréquent au genou\n\t□ Patient relativement jeune",
+                    "test": "→ Radiographie (calcifications)"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Examens complémentaires immédiats",
+          "details": [
+            "Biologie : NFS, CRP, VS [Pour confirmer l'inflammation]",
+            "Acide urique sérique [Peut être normal en phase aiguë]",
+            "Fonction rénale (urée, créatinine) [Avant traitement AINS]",
+            "Ponction articulaire [Si doute diagnostique - cristaux d'urate]"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Traitement de la crise aiguë",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Traitement anti-inflammatoire",
+                "items": [
+                  {
+                    "treatment": "AINS (naproxène 500mg)",
+                    "details": "2 fois par jour pendant 5-7 jours",
+                    "duration": "Si pas de contre-indication rénale ou digestive"
+                  },
+                  {
+                    "treatment": "Alternative : Colchicine",
+                    "details": "1mg puis 0.5mg après 1 heure",
+                    "duration": "Puis 0.5mg 2-3 fois par jour"
+                  },
+                  {
+                    "treatment": "Si contre-indication : Corticoïdes",
+                    "details": "Prednisone 30-40mg/jour",
+                    "duration": "Décroissance sur 5-7 jours"
+                  }
+                ]
+              },
+              {
+                "title": "Mesures associées",
+                "items": [
+                  {
+                    "treatment": "Repos de l'articulation",
+                    "details": "Éviter l'appui pendant 48h"
+                  },
+                  {
+                    "treatment": "Application de glace",
+                    "details": "15-20 minutes, 3-4 fois par jour"
+                  },
+                  {
+                    "treatment": "Hydratation abondante",
+                    "details": "Au moins 2L d'eau par jour"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m4",
+          "text": "Éducation sur la maladie",
+          "patientComment": "La goutte est causée par un excès d'acide urique qui forme des cristaux dans les articulations",
+          "details": [
+            "Mécanisme de la maladie [Cristaux d'acide urique dans l'articulation]",
+            "Facteurs favorisants [Alcool, purines alimentaires, déshydratation]",
+            "Risque de récidive [Élevé sans traitement préventif]",
+            "Complications possibles [Tophus, arthropathie chronique, calculs rénaux]"
+          ]
+        },
+        {
+          "id": "m5",
+          "text": "Prévention des récidives",
+          "details": [
+            "Règles hygiéno-diététiques [Réduction pondérale si surpoids]",
+            "Limiter l'alcool [Surtout bière et spiritueux]",
+            "Réduire les aliments riches en purines [Viande rouge, abats, fruits de mer]",
+            "Hydratation [Au moins 2L d'eau par jour]",
+            "Traitement hypouricémiant [À discuter après résolution de la crise si récidives]"
+          ],
+          "redflagsSection": {
+            "title": "Points importants à retenir",
+            "items": [
+              {
+                "text": "Ne jamais débuter l'allopurinol pendant la crise",
+                "description": "Risque d'aggraver ou prolonger la crise"
+              },
+              {
+                "text": "Surveillance fonction rénale",
+                "description": "Avant et pendant traitement AINS"
+              },
+              {
+                "text": "Consulter si aggravation",
+                "description": "Fièvre élevée, plusieurs articulations atteintes"
+              }
+            ]
+          }
+        },
+        {
+          "id": "m6",
+          "text": "Planification du suivi",
+          "details": [
+            "Rendez-vous de contrôle [Dans 1-2 semaines]",
+            "Dosage acide urique [À distance de la crise (4 semaines)]",
+            "Discussion traitement de fond [Si récidives fréquentes (≥2/an)]",
+            "Objectif thérapeutique [Uricémie < 360 µmol/L]"
+          ]
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Clôture de la consultation",
+          "content": "Récapitulatif et questions du patient",
+          "exemplesPhrases": [
+            "Je vais vous prescrire un anti-inflammatoire pour soulager rapidement votre douleur. Il est important de bien vous hydrater et d'éviter l'alcool pendant quelques jours.",
+            "Nous nous reverrons dans une à deux semaines pour voir comment vous allez et discuter de la prévention des futures crises."
+          ]
+        },
+        {
+          "id": "c2",
+          "text": "Questions difficiles du patient",
+          "content": "[Est-ce que je peux continuer à boire du vin ?] [Pourquoi je n'ai pas eu mal avant si j'ai trop d'acide urique ?] [Est-ce que ça va revenir souvent ?]"
+        },
+        {
+          "id": "c3",
+          "text": "Réponses types aux questions",
+          "exemplesPhrases": [
+            "Il est conseillé de limiter fortement l'alcool, surtout pendant les crises. Le vin rouge est effectivement un facteur déclenchant fréquent.",
+            "L'hyperuricémie est souvent silencieuse pendant des années. La douleur n'apparaît que lorsque les cristaux se déposent dans l'articulation.",
+            "Sans traitement préventif et sans changement d'habitudes de vie, les récidives sont effectivement fréquentes. Mais nous pouvons les éviter avec un bon suivi."
+          ]
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour le patient standardisé - Crise de goutte",
+      "nom": "Monsieur T.",
+      "age": "54 ans",
+      "contexte": "Cabinet de médecine générale, première consultation pour cette douleur",
+      "motifConsultation": {
+        "plaintePrincipale": "Douleur insupportable du gros orteil droit depuis cette nuit",
+        "autreChose": "Inquiet car n'a jamais eu ce type de douleur"
+      },
+      "histoireActuelle": {
+        "symptomePrincipal": [
+          "Douleur brutale apparue vers 3h du matin",
+          "Réveillé par la douleur, impossible de se rendormir",
+          "Orteil rouge et très gonflé",
+          "Ne supporte même pas le contact du drap",
+          "Impossible de marcher normalement ce matin"
+        ],
+        "facteurs": [
+          "Repas d'anniversaire hier soir avec beaucoup de viande",
+          "Bu plusieurs verres de vin rouge",
+          "Pas de traumatisme, pas de chute",
+          "Première fois que cela arrive"
+        ]
+      },
+      "simulation": {
+        "attitude": [
+          "Patient souffrant, grimace quand bouge le pied",
+          "Anxieux par rapport à l'intensité de la douleur",
+          "Coopératif mais protège son pied",
+          "Soulagé quand comprend que c'est traitable"
+        ],
+        "durantExamen": [
+          "Crie si on touche l'orteil directement",
+          "Retire le pied par réflexe si approche trop rapide",
+          "Accepte l'examen si fait doucement"
+        ]
+      },
+      "habitudes": {
+        "alcool": "2-3 verres de vin par jour, plus lors des repas festifs",
+        "alimentation": "Aime la bonne chère, viande rouge 3-4 fois par semaine",
+        "tabac": "Non-fumeur",
+        "activite": "Travail de bureau, peu d'activité physique",
+        "medicaments": "Aucun traitement régulier"
+      },
+      "antecedents": {
+        "medicaux": "Rien de particulier, jamais eu de problème articulaire",
+        "familiaux": "Père avait 'des crises aux pieds' après 60 ans"
+      },
+      "inquietudes": {
+        "principales": [
+          "Est-ce grave ?",
+          "Est-ce que ça va passer ?",
+          "Est-ce que je vais pouvoir remarcher normalement ?"
+        ],
+        "questions": [
+          "Est-ce de l'arthrite ?",
+          "Est-ce que c'est à cause du vin d'hier ?",
+          "Mon père avait des problèmes similaires, est-ce héréditaire ?"
+        ]
+      }
+    },
+    "informationsExpert": {
+      "titre": "Points clés pour l'évaluateur - Crise de goutte",
+      "pointsCles": [
+        "Reconnaître le tableau clinique typique de crise de goutte",
+        "Identifier les facteurs déclenchants (alcool, alimentation)",
+        "Proposer un traitement anti-inflammatoire adapté",
+        "Ne PAS débuter d'hypouricémiant en phase aiguë",
+        "Éduquer sur les mesures préventives",
+        "Planifier le suivi et la prévention secondaire"
+      ],
+      "pieges": [
+        "Oublier de vérifier la fonction rénale avant AINS",
+        "Débuter l'allopurinol pendant la crise",
+        "Ne pas rechercher les facteurs déclenchants",
+        "Oublier l'éducation sur les règles hygiéno-diététiques",
+        "Ne pas planifier le suivi pour prévention secondaire"
+      ]
+    },
+    "theoriePratique": {
+      "titre": "Rappels théoriques - Goutte",
+      "sections": [
+        {
+          "titre": "Physiopathologie",
+          "points": [
+            "Hyperuricémie > 420 µmol/L favorise la cristallisation",
+            "Dépôts de cristaux d'urate monosodique dans les articulations",
+            "Réaction inflammatoire aiguë médiée par l'inflammasome NLRP3",
+            "Facteurs déclenchants modifient la solubilité de l'acide urique"
+          ]
+        },
+        {
+          "titre": "Critères diagnostiques",
+          "points": [
+            "Monoarthrite aiguë inflammatoire",
+            "Prédilection pour la 1ère MTP (podagre)",
+            "Début brutal, souvent nocturne",
+            "Résolution spontanée en 7-14 jours sans traitement",
+            "Cristaux d'urate à l'examen du liquide synovial = gold standard"
+          ]
+        }
+      ],
+      "rappelsTherapeutiques": [
+        "AINS première ligne si pas de contre-indication",
+        "Colchicine : efficace si débutée précocement (< 24h)",
+        "Corticoïdes : alternative si AINS/colchicine contre-indiqués",
+        "Traitement hypouricémiant : seulement après résolution de la crise",
+        "Objectif uricémie < 360 µmol/L (< 300 si forme sévère)"
+      ],
+      "examensComplementaires": [
+        "Ponction articulaire : liquide inflammatoire, cristaux d'urate en aiguille à biréfringence négative",
+        "Biologie : syndrome inflammatoire (CRP, VS élevées), uricémie (peut être normale en crise)",
+        "Fonction rénale : indispensable avant traitement",
+        "Radiographie : normale en début, érosions en bordure si chronique",
+        "Échographie : double contour caractéristique"
+      ]
+    },
+    "resume": {
+      "titre": "🦶 Crise de goutte – Résumé ECOS",
+      "sections": [
+        {
+          "titre": "🔍 Anamnèse",
+          "subsections": [
+            {
+              "titre": "Symptômes principaux",
+              "points": [
+                "Douleur articulaire brutale, intense, souvent nocturne",
+                "Monoarthrite aiguë : atteinte typique de la 1ère MTP (podagre)",
+                "Rougeur, chaleur, impotence fonctionnelle complète",
+                "Épisodes récidivants, spontanément résolutifs en quelques jours"
+              ]
+            },
+            {
+              "titre": "Contexte et facteurs favorisants",
+              "points": [
+                "Homme d’âge moyen",
+                "Consommation d’alcool, excès alimentaires (viandes rouges, fruits de mer)",
+                "Prise de diurétiques thiazidiques ou de l’anse",
+                "ATCD d’hyperuricémie connue",
+                "Insuffisance rénale chronique"
+              ]
+            },
+            {
+              "titre": "Évolution",
+              "points": [
+                "Crises de plus en plus fréquentes et prolongées",
+                "Entre les crises : rémission complète",
+                "Risque de goutte chronique avec tophus et atteintes articulaires destructrices"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "👀 Examen clinique",
+          "subsections": [
+            {
+              "titre": "Aspect articulaire",
+              "points": [
+                "Articulation rouge, chaude, tuméfiée, très douloureuse",
+                "Monoarthrite typique (MTP1), mais peut toucher cheville, genou, poignet",
+                "Impotence fonctionnelle totale"
+              ]
+            },
+            {
+              "titre": "Signes associés",
+              "points": [
+                "Fièvre modérée possible (ne pas confondre avec arthrite septique)",
+                "Tophi goutteux (forme chronique)"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "🧪 Examens diagnostiques",
+          "subsections": [
+            {
+              "titre": "Examens de certitude",
+              "points": [
+                "Ponction articulaire avec analyse du liquide synovial : cristaux d’urate de sodium, aspect en aiguilles, biréfringence négative",
+                "Examen direct pour éliminer une arthrite septique"
+              ]
+            },
+            {
+              "titre": "Biologie",
+              "points": [
+                "Urates sériques souvent élevés (mais peuvent être normaux pendant la crise)",
+                "CRP et VS modérément augmentées"
+              ]
+            },
+            {
+              "titre": "Imagerie",
+              "points": [
+                "Échographie articulaire : signe du « double contour » (dépôt d’urate sur cartilage)",
+                "Radiographie : géodes, érosions, aspect chronique si goutte ancienne"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "⚙️ Prise en charge",
+          "subsections": [
+            {
+              "titre": "Traitement de la crise",
+              "points": [
+                "AINS en première intention (si pas de CI)",
+                "Colchicine (schéma décroissant, prudence toxicité digestive)",
+                "Corticothérapie orale ou infiltration intra-articulaire si CI AINS/colchicine",
+                "Repos et glace locale"
+              ]
+            },
+            {
+              "titre": "Traitement de fond (hors crise)",
+              "points": [
+                "Allopurinol ou fébuxostat (hypouricémiants) après résolution de la crise",
+                "Colchicine faible dose prophylactique lors de l’introduction du traitement hypouricémiant",
+                "Adaptation posologique en fonction de l’uricémie cible (< 360 µmol/L, < 300 µmol/L si tophus)"
+              ]
+            },
+            {
+              "titre": "Mesures hygiéno-diététiques",
+              "points": [
+                "Réduction consommation alcool, viandes rouges, abats, fruits de mer",
+                "Hydratation abondante",
+                "Correction des facteurs de risque (diurétiques si possible, surpoids)"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "✅ Points clés ECOS",
+          "points": [
+            "Crise brutale, douloureuse, souvent nocturne, typiquement MTP1",
+            "Ponction articulaire = diagnostic de certitude",
+            "AINS, colchicine ou corticoïdes = traitement de la crise",
+            "Jamais introduire un hypouricémiant en phase aiguë",
+            "Prévention par traitement de fond + hygiène de vie"
+          ]
+        },
+        {
+          "titre": "📋 Check-list rapide ECOS",
+          "subsections": [
+            {
+              "titre": "Questions à poser",
+              "points": [
+                "Début brutal nocturne ? Localisation typique (orteil, cheville, genou) ?",
+                "Antécédents de crises similaires ?",
+                "Alcool, alimentation riche en purines, médicaments (diurétiques) ?",
+                "ATCD d’hyperuricémie, insuffisance rénale ?",
+                "Présence de tophi ou déformations articulaires ?"
+              ]
+            },
+            {
+              "titre": "Examens à faire",
+              "points": [
+                "Ponction articulaire (analyse cristaux d’urate, éliminer arthrite septique)",
+                "Uricémie (hors crise)",
+                "CRP, VS si doute infectieux",
+                "Échographie articulaire (signe double contour)",
+                "Radiographie si goutte chronique"
+              ]
+            },
+            {
+              "titre": "PEC en 3 points",
+              "points": [
+                "Traiter la crise (AINS/colchicine/corticoïdes)",
+                "Ponction articulaire pour confirmer si doute diagnostic",
+                "Prévention secondaire : hypouricémiant + hygiène de vie"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "presentationPatient": {
+      "titre": "📑 Fiche ECOS – Cas : Douleur brutale du gros orteil (Accès aigu de goutte)",
+      "sections": [
+        {
+          "titre": "🧩 Checklist mentale (présentation systématisée)",
+          "points": [
+            "Intro → âge, contexte, motif (douleur brutale gros orteil, nuit)",
+            "Caractériser la douleur → début brutal nocturne, intensité insupportable, impotence fonctionnelle",
+            "Signes locaux → rougeur, chaleur, gonflement, douleur au simple contact du drap",
+            "Facteurs déclenchants → repas copieux, alcool (vin rouge), excès alimentaires",
+            "ATCD médicaux et familiaux → père goutteux, pas d’HTA ni IR, pas de diurétiques",
+            "Habitudes de vie → alcool quotidien, alimentation riche en purines, hydratation insuffisante",
+            "Examen clinique → articulation MTP1 rouge, chaude, tuméfiée, mobilité impossible",
+            "Résumé + hypothèse principale + DD",
+            "Examens complémentaires → ponction articulaire si doute (cristaux d’urate), NFS/CRP, uricémie, créat",
+            "Prise en charge → AINS/colchicine/corticoïdes, repos, glace, hydratation, éducation, prévention récidives"
+          ],
+          "mnemo": {
+            "titre": "👉 Mnémo rapide : GOUTTE",
+            "elements": [
+              "G = Gros orteil (atteinte typique)",
+              "O = Onset nocturne brutal",
+              "U = Urate cristaux",
+              "T = Tophi (chronique, absent ici)",
+              "T = Trigger = alcool, repas riche",
+              "E = Éviter allopurinol en crise"
+            ]
+          }
+        },
+        {
+          "titre": "🎤 Version longue (≈2-3 min)",
+          "contenu": "Il s’agit de M. T., un homme de 54 ans, qui consulte en urgence pour une douleur insupportable du gros orteil droit apparue cette nuit vers 3 heures du matin.\n\nIl explique qu’il a été réveillé par une douleur brutale et très intense, au point de ne pas supporter le contact du drap. L’articulation métatarso-phalangienne du gros orteil est rouge, gonflée, chaude et il est incapable de marcher normalement. La douleur est évaluée comme insupportable.\n\nIl rapporte avoir participé hier soir à un repas d’anniversaire copieux, avec beaucoup de viande rouge et plusieurs verres de vin. Il n’a pas eu de traumatisme ni d’effort inhabituel. C’est la première fois qu’il a ce type de crise. Pas de fièvre ni d’autres articulations douloureuses.\n\nConcernant ses antécédents, il n’a pas d’hypertension, pas d’insuffisance rénale, ne prend pas de diurétiques. Son père souffrait de crises de goutte. Ses habitudes de vie sont marquées par une consommation régulière de 2 à 3 verres de vin par jour, une alimentation riche en viandes rouges et fruits de mer, une hydratation insuffisante et une sédentarité.\n\nÀ l’examen, on retrouve un gros orteil rouge vif, tuméfié, chaud, extrêmement douloureux à la palpation et quasi immobile. Pas d’autres articulations atteintes, pas de tophus, pas de fièvre élevée.\n\nEn résumé, il s’agit d’une monoarthrite aiguë typique du gros orteil, début brutal nocturne, très douloureuse, déclenchée par un repas riche et de l’alcool, avec antécédent familial. Mon hypothèse principale est une crise de goutte. Les diagnostics différentiels incluent une arthrite septique (mais pas de fièvre, pas de porte d’entrée), et une chondrocalcinose (plus fréquente au genou, âge plus avancé).\n\nComme examens, je demanderais une NFS/CRP/VS, une uricémie (qui peut être normale en crise), une créatinine avant traitement, et surtout une ponction articulaire si doute, pour rechercher des cristaux d’urate et exclure une infection.\n\nLa prise en charge immédiate repose sur le traitement de la crise : AINS si pas de contre-indication, sinon colchicine, ou corticoïdes en alternative. On associe repos articulaire, glace locale, hydratation abondante. L’allopurinol ne doit surtout pas être introduit pendant la crise. La prévention repose sur des mesures hygiéno-diététiques et, en cas de récidives, un traitement hypouricémiant pourra être envisagé à distance."
+        },
+        {
+          "titre": "⚡ Version express (SBAR, 30 sec)",
+          "contenu": "S (Situation) : M. T., 54 ans, présente une douleur brutale, insupportable, du gros orteil droit depuis cette nuit.\n\nB (Background) : Première crise, déclenchée après repas copieux et alcool, père goutteux, pas d’ATCD médicaux significatifs.\n\nA (Assessment) : Monoarthrite aiguë typique → forte suspicion de crise de goutte. DD : arthrite septique, chondrocalcinose.\n\nR (Recommendation) : NFS/CRP, uricémie, créat, ponction articulaire si doute. Traitement immédiat par AINS ou colchicine, repos, glace, hydratation. Éducation et prévention secondaire."
+        },
+        {
+          "titre": "🎲 Touches ludiques / mnémos",
+          "subsections": [
+            {
+              "titre": "👉 Podagre typique",
+              "points": [
+                "Homme d’âge moyen",
+                "Début brutal, souvent nocturne",
+                "Gros orteil rouge, chaud, gonflé",
+                "Douleur insupportable, impotence complète"
+              ]
+            },
+            {
+              "titre": "👉 Diagnostic différentiel rapide",
+              "points": [
+                "Arthrite septique : fièvre, porte d’entrée, ponction impérative si doute",
+                "Chondrocalcinose : genou, sujet plus âgé, calcifications radio",
+                "Arthrose : douleur mécanique, pas de crise inflammatoire brutale"
+              ]
+            },
+            {
+              "titre": "⚠️ Pièges ECOS",
+              "points": [
+                "Prescrire allopurinol en pleine crise (interdit)",
+                "Oublier de vérifier fonction rénale avant AINS",
+                "Ne pas proposer ponction articulaire si doute infectieux",
+                "Négliger l’éducation hygiéno-diététique"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "❓ Questions probables de l'examinateur (avec réponses orales)",
+          "subsections": [
+            {
+              "titre": "1. Arguments pour et contre chaque hypothèse",
+              "questions": [
+                {
+                  "question": "Crise de goutte",
+                  "reponse": {
+                    "pour": [
+                      "Monoarthrite MTP1",
+                      "Début brutal nocturne",
+                      "Facteurs déclenchants alimentaires/alcool",
+                      "ATCD familial positif"
+                    ],
+                    "contre": [
+                      "Pas de crises antérieures",
+                      "Pas de tophus visibles"
+                    ]
+                  }
+                },
+                {
+                  "question": "Arthrite septique",
+                  "reponse": {
+                    "pour": [
+                      "Monoarthrite aiguë douloureuse"
+                    ],
+                    "contre": [
+                      "Pas de fièvre élevée",
+                      "Pas de porte d’entrée",
+                      "Contexte évocateur goutte"
+                    ]
+                  }
+                },
+                {
+                  "question": "Chondrocalcinose",
+                  "reponse": {
+                    "pour": [
+                      "Monoarthrite aiguë possible"
+                    ],
+                    "contre": [
+                      "Plus fréquente au genou",
+                      "Âge plus élevé",
+                      "Pas de calcifications visibles ici"
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "titre": "2. Examens complémentaires immédiats",
+              "questions": [
+                {
+                  "question": "Quels examens demanderiez-vous ?",
+                  "reponse": [
+                    "NFS, CRP, VS",
+                    "Uricémie (à distance plus fiable)",
+                    "Créatinine avant AINS",
+                    "Ponction articulaire avec recherche de cristaux et culture si doute"
+                  ]
+                }
+              ]
+            },
+            {
+              "titre": "3. Diagnostic définitif, traitement, suivi",
+              "questions": [
+                {
+                  "question": "Diagnostic",
+                  "reponse": "Crise de goutte (arthrite microcristalline aiguë de la MTP1)"
+                },
+                {
+                  "question": "Traitement",
+                  "reponse": {
+                    "immediat": [
+                      "AINS (naproxène, indométacine) si pas CI",
+                      "Colchicine si CI ou inefficacité",
+                      "Corticoïdes PO ou infiltration si CI AINS/colchicine",
+                      "Repos, glace, hydratation"
+                    ],
+                    "apresCrise": [
+                      "Discussion hypouricémiant (allopurinol/fébuxostat) si récidives",
+                      "Toujours introduire après résolution complète de la crise"
+                    ]
+                  }
+                },
+                {
+                  "question": "Suivi",
+                  "reponse": [
+                    "Consultation contrôle dans 1-2 semaines",
+                    "Dosage uricémie à distance (≥ 4 semaines)",
+                    "Éducation hygiéno-diététique",
+                    "Objectif uricémie < 360 µmol/L (< 300 µmol/L si tophus)",
+                    "Suivi rénal et métabolique"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

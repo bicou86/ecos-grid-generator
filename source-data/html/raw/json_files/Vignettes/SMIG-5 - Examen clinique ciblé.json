@@ -1,0 +1,529 @@
+{
+  "title": "SMIG-5 - Examen clinique ciblé par hypothèses",
+  "context": {
+    "setting": "Service d'urgences",
+    "patient": "Monsieur D., 64 ans, se présente pour dyspnée progressive depuis 3 semaines. Antécédents : décompensation cardiaque sur FA rapide il y a 2 ans, sténose aortique 1.35 cm² avec FEVG 25%, coronaropathie",
+    "vitals": {
+      "ta": "145/85 mmHg",
+      "fc": "88 bpm irrégulier",
+      "fr": "24/min",
+      "sao2": "92% air ambiant",
+      "temperature": "37.1°C"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Motif principal de consultation",
+          "binaryOnly": true,
+          "patientComment": "[Essoufflement qui s'aggrave depuis 3 semaines]"
+        },
+        {
+          "id": "a2",
+          "text": "Caractérisation de la dyspnée",
+          "details": [
+            "Début [Progressif sur 3 semaines]",
+            "Classe NYHA [III - limitation marquée]",
+            "Orthopnée [3 oreillers maintenant vs 1 avant]",
+            "Dyspnée paroxystique nocturne [Oui, plusieurs fois par semaine]",
+            "Aggravation [Progressive, pire depuis 3 jours]",
+            "Facteurs déclenchants [Effort minime]"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Symptômes associés",
+          "details": [
+            "Œdèmes membres inférieurs [Bilatéraux, prennent le godet]",
+            "Prise de poids [5 kg en 3 semaines]",
+            "Toux [Nocturne, productive]",
+            "Expectoration [Mousseuse parfois rosée]",
+            "Douleur thoracique [Non]",
+            "Palpitations [Sensation de cœur irrégulier]"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Recherche de facteurs déclenchants",
+          "details": [
+            "Observance thérapeutique [Douteuse, oublis fréquents]",
+            "Écart de régime [Repas salés récents]",
+            "Infection récente [Syndrome grippal il y a 10 jours]",
+            "Modification traitement [Non]",
+            "Consommation alcool [Occasionnelle]",
+            "Stress récent [Problèmes familiaux]"
+          ],
+          "scoringRule": "2 points si facteurs déclenchants multiples identifiés"
+        },
+        {
+          "id": "a5",
+          "text": "Antécédents cardiovasculaires détaillés",
+          "details": [
+            "Décompensation cardiaque [Il y a 2 ans, FA rapide]",
+            "Sténose aortique [1.35 cm², serrée]",
+            "FEVG [25%, IC sévère]",
+            "Coronaropathie [Documentée, non revascularisée]",
+            "FA [Paroxystique devenue permanente]",
+            "HTA [Ancienne, traitée]"
+          ]
+        },
+        {
+          "id": "a6",
+          "text": "Traitement habituel",
+          "details": [
+            "IEC [Ramipril 5 mg/j]",
+            "Bêtabloquant [Bisoprolol 2.5 mg/j]",
+            "Diurétique [Furosémide 40 mg/j]",
+            "Anticoagulant [Rivaroxaban 20 mg/j]",
+            "Statine [Atorvastatine 40 mg/j]",
+            "Observance [Mauvaise, oublis fréquents]"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "title": "Examen clinique orienté par hypothèses",
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Formulation des hypothèses diagnostiques",
+          "description": "Avant l'examen physique",
+          "details": [
+            "Hypothèse 1 [Décompensation cardiaque gauche]",
+            "Hypothèse 2 [Œdème aigu du poumon]",
+            "Hypothèse 3 [Embolie pulmonaire]",
+            "Hypothèse 4 [Pneumonie décompensant l'IC]",
+            "Hypothèse 5 [Progression sténose aortique]",
+            "Hypothèse 6 [FA mal contrôlée]"
+          ],
+          "binaryOnly": true,
+          "scoringRule": "2 points si hypothèses pertinentes formulées"
+        },
+        {
+          "id": "e2",
+          "text": "Examen pour IC gauche décompensée",
+          "description": "Tests spécifiques pour hypothèse 1",
+          "details": [
+            "Auscultation pulmonaire [Râles crépitants bibasaux remontant mi-champs]",
+            "Galop [B3 présent]",
+            "Souffle systolique [3/6 râpeux, foyer aortique]",
+            "Choc de pointe [Dévié et étalé]",
+            "Position préférentielle [Assis penché en avant]",
+            "Tirage respiratoire [Présent]"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Examen pour IC droite associée",
+          "description": "Signes de congestion systémique",
+          "details": [
+            "Turgescence jugulaire [Élevée à 45°, 10 cm H₂O]",
+            "Reflux hépato-jugulaire [Positif]",
+            "Œdèmes MI [Bilatéraux symétriques, godet ++]",
+            "Hépatomégalie [Bord inférieur palpable, sensible]",
+            "Ascite [Matité des flancs]",
+            "Pouls hépatique [Présent si IT]"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Examen pour embolie pulmonaire",
+          "description": "Tests spécifiques pour hypothèse 3",
+          "details": [
+            "Asymétrie auscultatoire [Non]",
+            "Frottement pleural [Non]",
+            "Signes de TVP [Mollets souples, symétriques]",
+            "Tachycardie [Non, FC 88]",
+            "Signes de cœur pulmonaire aigu [Non]",
+            "Score de Wells [Faible probabilité]"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Examen pour pneumonie",
+          "description": "Tests spécifiques pour hypothèse 4",
+          "details": [
+            "Foyer de crépitants [Non, crépitants diffus]",
+            "Matité localisée [Non]",
+            "Souffle tubaire [Non]",
+            "Fièvre [Non, 37.1°C]",
+            "Bronchophonie [Non]",
+            "Pectoriloquie [Non]"
+          ]
+        },
+        {
+          "id": "e6",
+          "text": "Évaluation hémodynamique globale",
+          "details": [
+            "TA [145/85 mmHg, pas d'hypotension]",
+            "FC [88 bpm, irrégulier - FA]",
+            "Perfusion périphérique [Extrémités froides]",
+            "Temps de recoloration [3 secondes]",
+            "Diurèse [Oligurie rapportée]",
+            "État de conscience [Normal]"
+          ]
+        },
+        {
+          "id": "e7",
+          "text": "Synthèse de l'examen ciblé",
+          "description": "Conclusion basée sur les hypothèses",
+          "content": "L'examen ciblé confirme une décompensation cardiaque globale (gauche et droite) sur cardiopathie valvulaire et ischémique avec FA. Pas d'arguments pour EP ou pneumonie.",
+          "binaryOnly": true,
+          "scoringRule": "2 points si synthèse correcte des findings"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Examens complémentaires ciblés",
+          "description": "Selon les hypothèses",
+          "details": [
+            "ECG [FA à 88/min, HVG, pas d'ischémie aiguë]",
+            "Radiographie thorax [Cardiomégalie, œdème interstitiel]",
+            "BNP/NT-proBNP [Élevé > 1000 pg/mL]",
+            "Troponines [Légèrement élevées - stress myocardique]",
+            "D-dimères [Non indiqué - faible probabilité EP]",
+            "Gazométrie [Hypoxémie, alcalose respiratoire]"
+          ]
+        },
+        {
+          "id": "m2",
+          "text": "Diagnostic final basé sur l'approche par hypothèses",
+          "content": "Décompensation cardiaque aiguë sur chronique, à prédominance gauche, sur cardiopathie valvulaire (sténose aortique serrée) et ischémique avec FA permanente mal contrôlée",
+          "ddSection": {
+            "title": "Synthèse diagnostique par hypothèses",
+            "categories": [
+              {
+                "name": "Hypothèse confirmée",
+                "items": [
+                  {
+                    "text": "Décompensation cardiaque globale",
+                    "cause": "Arguments POUR:\n\t□ Dyspnée progressive NYHA III\n\t□ Orthopnée et DPN\n\t□ Râles crépitants bilatéraux\n\t□ Œdèmes MI avec prise de poids\n\t□ TJ élevée + RHJ positif\n\t□ BNP très élevé",
+                    "test": "→ Diagnostic retenu"
+                  }
+                ]
+              },
+              {
+                "name": "Hypothèses écartées",
+                "items": [
+                  {
+                    "text": "Embolie pulmonaire",
+                    "cause": "Arguments CONTRE:\n\t□ Pas de facteur de risque\n\t□ Installation progressive\n\t□ Pas de TVP clinique\n\t□ Wells score faible",
+                    "test": "→ Non retenu"
+                  },
+                  {
+                    "text": "Pneumonie",
+                    "cause": "Arguments CONTRE:\n\t□ Afébrile\n\t□ Pas de foyer auscultatoire\n\t□ Râles diffus non localisés",
+                    "test": "→ Non retenu"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m3",
+          "text": "Facteurs déclenchants identifiés",
+          "details": [
+            "Mauvaise observance [Confirmée - majeure]",
+            "Écarts de régime [Apports sodés excessifs]",
+            "Infection virale récente [Facteur contributif]",
+            "FA mal contrôlée [FC cible non atteinte]",
+            "Progression sténose aortique [Possible]"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Traitement de la décompensation",
+          "details": [
+            "Diurétiques IV [Furosémide 80 mg IVL puis 40 mg × 2]",
+            "Oxygénothérapie [Pour SpO2 > 94%]",
+            "Position demi-assise [Améliore la dyspnée]",
+            "Restriction hydrosodée [< 2L/j, < 2g sel/j]",
+            "Optimisation FC [Augmenter bêtabloquant après stabilisation]",
+            "VNI [Si OAP réfractaire]"
+          ],
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Protocole de prise en charge de la décompensation cardiaque",
+                "content": "PHASE AIGUË (0-24h):\n- Furosémide 80 mg IVL puis 40 mg IV × 2/j\n- O₂ pour SpO2 94-96%\n- Position demi-assise\n- Monitoring continu\n- Balance hydrique stricte\n\nPHASE DE STABILISATION (24-72h):\n- Ajustement diurétiques selon diurèse\n- Objectif: -1 à -1.5 L/jour\n- Introduction/titration IEC si TA permet\n- Optimisation bêtabloquant pour FC 60-70\n\nPHASE DE CONSOLIDATION:\n- Relais per os diurétiques\n- Éducation thérapeutique+++\n- Planification suivi rapproché\n- Discussion remplacement valvulaire aortique"
+              }
+            ]
+          }
+        },
+        {
+          "id": "m5",
+          "text": "Évaluation du rapport bénéfice/risque des examens",
+          "description": "Principe de l'examen ciblé",
+          "details": [
+            "ECG et Rx thorax [Indispensables - faible coût/risque]",
+            "Biomarqueurs cardiaques [Utiles - confirment diagnostic]",
+            "D-dimères [Non indiqués - probabilité EP faible]",
+            "Angio-CT [Non indiqué - risque néphrotoxicité]",
+            "Échocardiographie [Utile mais non urgente]",
+            "Coronarographie [Non indiquée en aigu]"
+          ],
+          "scoringRule": "2 points si examens pertinents et économiques"
+        },
+        {
+          "id": "m6",
+          "text": "Plan de suivi et prévention des récidives",
+          "details": [
+            "Consultation cardiologie [Dans 1-2 semaines]",
+            "Titration médicamenteuse [Progressive]",
+            "Éducation thérapeutique [Cruciale - observance]",
+            "Autosurveillance [Poids quotidien, symptômes]",
+            "Discussion TAVI [Vu sténose aortique serrée]",
+            "Réhabilitation cardiaque [Après stabilisation]"
+          ],
+          "redflagsSection": {
+            "title": "Signes d'alarme à surveiller",
+            "items": [
+              {
+                "text": "Choc cardiogénique",
+                "description": "Hypotension, oligurie, confusion → USI"
+              },
+              {
+                "text": "OAP réfractaire",
+                "description": "Désaturation persistante → VNI/intubation"
+              },
+              {
+                "text": "Troubles du rythme",
+                "description": "FA rapide, TV → cardioversion"
+              },
+              {
+                "text": "Insuffisance rénale aiguë",
+                "description": "Créatinine × 2 → ajuster diurétiques"
+              },
+              {
+                "text": "Hypokaliémie sévère",
+                "description": "K < 3.0 → risque arythmie"
+              }
+            ]
+          }
+        },
+        {
+          "id": "m7",
+          "text": "Réflexion sur l'approche diagnostique",
+          "description": "Avantages de l'examen ciblé par hypothèses",
+          "content": "L'approche par hypothèses permet un examen plus efficace et pertinent : gain de temps, meilleure orientation diagnostique, examens complémentaires ciblés, évite les investigations inutiles et coûteuses",
+          "exemplesPhrases": [
+            "En formulant des hypothèses avant l'examen, je peux cibler mes tests cliniques sur ce qui différencie ces diagnostics.",
+            "Cette approche évite l'examen 'tête aux pieds' systématique qui peut faire perdre du temps en urgence.",
+            "Les examens complémentaires sont choisis pour confirmer ou infirmer des hypothèses spécifiques, pas en 'screening'."
+          ]
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Communication du diagnostic au patient",
+          "content": "Monsieur D., votre cœur est en décompensation. C'est une aggravation de votre insuffisance cardiaque connue, probablement déclenchée par les oublis de médicaments et l'infection récente. Nous allons vous hospitaliser pour un traitement par diurétiques intraveineux afin d'éliminer l'excès de liquide. Une fois stabilisé, nous devrons discuter du remplacement de votre valve aortique."
+        },
+        {
+          "id": "c2",
+          "text": "Questions du patient",
+          "content": "[Je vais m'en sortir docteur ?]\n[Combien de temps à l'hôpital ?]\n[C'est de ma faute avec les médicaments ?]\n[L'opération de la valve, c'est obligatoire ?]"
+        },
+        {
+          "id": "c3",
+          "text": "Réponses adaptées",
+          "exemplesPhrases": [
+            "Avec le traitement approprié, la plupart des patients s'améliorent rapidement. Votre pronostic dépend de votre réponse au traitement et de l'observance future.",
+            "Généralement 3-5 jours pour stabiliser votre état, puis suivi rapproché en ambulatoire.",
+            "Les oublis de médicaments ont contribué, mais ce n'est pas une question de faute. L'important est de mettre en place des stratégies pour améliorer l'observance.",
+            "Vu la sévérité de votre sténose aortique, le remplacement valvulaire (probablement TAVI vu votre âge) améliorerait significativement votre qualité de vie et votre pronostic."
+          ]
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour le patient standardisé - M. D., décompensation cardiaque",
+      "nom": "Monsieur D.",
+      "age": "64 ans",
+      "contexte": "Service d'urgences",
+      "motifConsultation": {
+        "plaintePrincipale": "Je suis de plus en plus essoufflé",
+        "autreChose": "Ça empire depuis 3 semaines"
+      },
+      "histoireActuelle": {
+        "symptomesPrincipaux": [
+          "Essoufflement progressif, maintenant au moindre effort",
+          "Dort avec 3 oreillers maintenant",
+          "Se réveille la nuit en manque d'air",
+          "Jambes enflées jusqu'aux genoux",
+          "Prise de 5 kg en 3 semaines",
+          "Toux nocturne avec crachats mousseux"
+        ],
+        "facteursDeclenchants": [
+          "Oublie souvent ses médicaments",
+          "A mangé salé lors de repas familiaux",
+          "A eu une grippe il y a 10 jours",
+          "Stress familial récent"
+        ]
+      },
+      "simulation": {
+        "attitude": [
+          "Dyspnéique au repos, parle par phrases courtes",
+          "Position assise préférée, penché en avant",
+          "Anxieux mais coopératif",
+          "Minimise les oublis de traitement"
+        ],
+        "durantExamen": [
+          "Respiration laborieuse audible",
+          "Œdèmes visibles aux chevilles",
+          "Veines du cou dilatées en position assise",
+          "Râles crépitants audibles à distance"
+        ]
+      },
+      "antecedents": {
+        "medicaux": [
+          "Décompensation cardiaque il y a 2 ans",
+          "Sténose aortique serrée 1.35 cm²",
+          "Insuffisance cardiaque FEVG 25%",
+          "Coronaropathie non revascularisée",
+          "FA permanente",
+          "HTA"
+        ],
+        "observance": "Mauvaise, oublis fréquents, pas de pilulier"
+      },
+      "medicaments": {
+        "actuels": [
+          "Ramipril 5 mg (souvent oublié)",
+          "Bisoprolol 2.5 mg",
+          "Furosémide 40 mg",
+          "Rivaroxaban 20 mg",
+          "Atorvastatine 40 mg"
+        ]
+      },
+      "inquietudes": {
+        "principales": [
+          "Peur de mourir étouffé",
+          "Ne veut pas être intubé",
+          "Inquiet pour l'opération de la valve",
+          "Culpabilité vis-à-vis des oublis"
+        ],
+        "questions": [
+          "Je vais m'en sortir ?",
+          "Je vais rester longtemps ?",
+          "L'opération est risquée ?",
+          "C'est ma faute ?"
+        ]
+      }
+    },
+    "informationsExpert": {
+      "titre": "Guide pour l'expert - Examen clinique ciblé par hypothèses",
+      "dossierMedical": "Patient 64 ans, cardiopathie sévère multiple, décompensation cardiaque aiguë sur chronique",
+      "pointsCles": [
+        "FORMULATION D'HYPOTHÈSES avant l'examen physique",
+        "Examen CIBLÉ sur les hypothèses, pas systématique",
+        "Tests cliniques DISCRIMINANTS entre hypothèses",
+        "Examens complémentaires PERTINENTS et économiques",
+        "Synthèse basée sur confirmation/infirmation des hypothèses",
+        "Identification des multiples facteurs déclenchants",
+        "Plan thérapeutique adapté à la sévérité"
+      ],
+      "pieges": [
+        "Faire un examen 'tête aux pieds' sans hypothèses",
+        "Commander tous les examens 'au cas où'",
+        "Manquer les facteurs déclenchants multiples",
+        "Oublier l'évaluation de la sténose aortique",
+        "Ne pas optimiser le traitement de fond",
+        "Sous-estimer la gravité (FEVG 25%)"
+      ],
+      "rolesInterventions": [
+        "Insister sur l'approche par hypothèses",
+        "Valoriser l'examen ciblé vs systématique",
+        "Noter la pertinence des examens demandés",
+        "Évaluer la synthèse diagnostique",
+        "Vérifier l'identification des facteurs déclenchants"
+      ]
+    },
+    "theoriePratique": {
+      "titre": "L'examen clinique orienté par hypothèses",
+      "sections": [
+        {
+          "titre": "Principes de l'approche hypothético-déductive",
+          "contenu": "Méthode diagnostique efficace basée sur la génération et le test d'hypothèses.",
+          "points": [
+            "Génération précoce d'hypothèses dès l'anamnèse",
+            "Maximum 5-6 hypothèses actives simultanément",
+            "Hypothèses classées par probabilité et gravité",
+            "Examen physique ciblé sur discrimination",
+            "Tests avec haute valeur prédictive privilégiés",
+            "Réévaluation continue des hypothèses"
+          ]
+        },
+        {
+          "titre": "Avantages de l'examen ciblé",
+          "contenu": "Bénéfices par rapport à l'approche systématique traditionnelle.",
+          "points": [
+            "EFFICACITÉ : gain de temps considérable",
+            "PERTINENCE : focus sur l'essentiel",
+            "ÉCONOMIE : moins d'examens inutiles",
+            "SÉCURITÉ : moins d'erreurs par surcharge cognitive",
+            "PÉDAGOGIE : développe le raisonnement clinique",
+            "PATIENT : moins d'inconfort, examens justifiés"
+          ]
+        },
+        {
+          "titre": "Application pratique en cardiologie",
+          "contenu": "Exemple de la dyspnée aiguë chez le patient cardiaque.",
+          "points": [
+            "Hypothèses fréquentes : IC, EP, pneumonie, BPCO",
+            "Tests discriminants : râles diffus vs localisés",
+            "Œdèmes : bilatéraux (IC) vs unilatéraux (TVP/EP)",
+            "BNP : très élevé (IC) vs normal (BPCO)",
+            "Réponse aux diurétiques : test thérapeutique",
+            "Échocardiographie : si doute diagnostique persiste"
+          ]
+        },
+        {
+          "titre": "Limites et précautions",
+          "contenu": "Situations où l'approche systématique reste indiquée.",
+          "points": [
+            "Patient confus ou non fiable",
+            "Présentation atypique ou complexe",
+            "Pathologies multiples intriquées",
+            "Bilan de santé préventif",
+            "Examen médico-légal",
+            "Formation initiale des étudiants"
+          ]
+        }
+      ],
+      "rappelsTherapeutiques": [
+        "Diurétiques de l'anse : furosémide 40-80 mg IV puis PO",
+        "IEC/ARA2 : ramipril 2.5-10 mg, titration progressive",
+        "Bêtabloquants : bisoprolol 1.25-10 mg, cible FC 60-70",
+        "ARM : spironolactone 25 mg si FEVG < 35%",
+        "Anticoagulation : INR 2-3 ou NACO si FA",
+        "Restriction hydrosodée : < 2L/j, < 2g sel/j",
+        "Vaccination : grippe et pneumocoque",
+        "TAVI si sténose aortique symptomatique serrée"
+      ],
+      "examensComplementaires": [
+        "ECG : rythme, ischémie, HVG, troubles conduction",
+        "Radiographie thorax : index cardio-thoracique, œdème",
+        "BNP/NT-proBNP : > 100/300 pg/mL diagnostic",
+        "Troponines : élévation minime dans IC aiguë",
+        "Ionogramme, urée, créatinine : fonction rénale",
+        "NFS : anémie aggravant l'IC",
+        "TSH : dysthyroïdie décompensante",
+        "Échocardiographie : FEVG, valves, PAPs"
+      ]
+    }
+  }
+}

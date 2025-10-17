@@ -1,0 +1,549 @@
+{
+  "title": "Détresse respiratoire du nourrisson - Bronchiolite/Crise d'asthme",
+  "context": {
+    "setting": "Service d'Urgence de Pédiatrie",
+    "patient": "Marc, garçon de 10 mois (Partie 1) puis 7 ans (Partie 2), présentant une détresse respiratoire",
+    "vitals": {
+      "temperature": "38°C",
+      "Poids": "7 kg (10 mois) / 21 kg (7 ans)",
+      "Taille": "66 cm (10 mois) / 122 cm (7 ans)",
+      "fc": "140 bpm (10 mois) / 120 bpm (7 ans)",
+      "fr": "65/min (10 mois) / 48/min (7 ans)",
+      "sao2": "90% (10 mois) / 88-94% (7 ans)"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Histoire de la maladie actuelle - Partie 1 (10 mois)",
+          "binaryOnly": true,
+          "details": [
+            "Début des symptômes [il y a 2 jours, le 8 janvier]",
+            "Rhinorrhée [nez qui coule]",
+            "Toux [sèche, sans quintes, avec stridor inspiratoire]",
+            "Difficultés respiratoires [très pâle]",
+            "Température [38°C]",
+            "Alimentation [refuse de manger le matin même]",
+            "État général [très bien jusqu'à la veille au soir où il a mal dormi]"
+          ]
+        },
+        {
+          "id": "a2",
+          "text": "Symptômes associés - Partie 1",
+          "details": [
+            "Vomissements [non]",
+            "Diarrhées [non]",
+            "Contact malade [sœur aînée de 5 ans avec rhume depuis 4-5 jours]",
+            "Changement de couleur [non, la maman ne l'a pas remarqué]"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Antécédents personnels",
+          "details": [
+            "Naissance [à terme, sans particularités]",
+            "Allaitement [oui, mange également des fruits]",
+            "Maladies antérieures [non]",
+            "Problèmes respiratoires [eczéma atopique depuis l'âge de 2 mois]",
+            "Vaccinations [2 premiers vaccins]",
+            "Crèche [non]"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Antécédents familiaux",
+          "details": [
+            "Terrain atopique [père a souffert d'asthme dans l'enfance et l'adolescence]",
+            "Mère [a le rhume des foins]",
+            "Fratrie [sœur de 5 ans actuellement enrhumée]",
+            "Parents [non fumeurs]"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Histoire de la maladie - Partie 2 (7 ans)",
+          "details": [
+            "Épisodes antérieurs [2-3 crises de bronchite obstructive par année]",
+            "Association [infections virales]",
+            "Symptômes entre crises [pas de symptômes au calme ni à l'effort]",
+            "Traitement habituel [Ventolin et Atrovent avec chambre d'inhalation]",
+            "Évolution actuelle [toux et dyspnée après nuit chez grand-mère]",
+            "Amélioration initiale [sous médicament habituel]",
+            "Détérioration [ne s'améliore plus après prise habituelle]"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "État général et signes vitaux - Partie 1 (10 mois)",
+          "binaryOnly": true,
+          "patientComment": "Peu réactif, pâle, acrocyanose, T: 38°C, P: 7kg, Taille: 66cm"
+        },
+        {
+          "id": "e2",
+          "text": "Examen cutané et hydratation",
+          "details": [
+            "Coloration [pâle, acrocyanose]",
+            "Hydratation [non déshydraté]",
+            "Peau [plaque érythémato-squameuse discrète au pli du coude et sur les joues]"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Examen respiratoire - Partie 1",
+          "details": [
+            "Fréquence respiratoire [65/min]",
+            "Diamètre antéro-postérieur [augmenté]",
+            "Stridor/Dyspnée [inspiratoire]",
+            "Tirage [sous-sternal et intercostal modéré]",
+            "Battement des ailes du nez [présent]",
+            "Geignements [présents]",
+            "Râles crépitants [diffus avec sibilances sur les 2 plages pulmonaires]"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Examen cardiovasculaire",
+          "details": [
+            "Fréquence cardiaque [140/min avec souffle systolique éjectionnel 1/6]",
+            "Tension artérielle [85/37 mmHg - normale]",
+            "Pouls périphériques [présents]"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Examen abdominal et rénal",
+          "details": [
+            "Abdomen [souple, sans particularité]",
+            "Foie [non palpable]",
+            "Rate [non palpable]"
+          ]
+        },
+        {
+          "id": "e6",
+          "text": "Examen ORL",
+          "details": [
+            "Écoulement nasal [clair]",
+            "Tympans [sans particularité]"
+          ]
+        },
+        {
+          "id": "e7",
+          "text": "Examen neurologique et ostéo-articulaire",
+          "details": [
+            "Fontanelle antérieure [normotendue]",
+            "Tonus axial [bon]",
+            "Pas de head drop [absent]",
+            "Mobilisation des membres [bonne]"
+          ]
+        },
+        {
+          "id": "e8",
+          "text": "Examen clinique - Partie 2 (7 ans)",
+          "details": [
+            "État général [afébrile, a de la peine à parler, pas de cyanose centrale]",
+            "Saturation O2 [88% à l'air ambiant]",
+            "FR [48/min]",
+            "Tirage [intercostal, susternal et muscles scalènes modéré]",
+            "Expiration [prolongée avec sibilances expiratoires et inspiratoires]",
+            "Entrée d'air [diminuée aux bases]",
+            "FC [120/min]",
+            "TA [97/57 mmHg - normale]"
+          ]
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostics différentiels",
+          "ddSection": {
+            "title": "Diagnostics différentiels de la détresse respiratoire",
+            "categories": [
+              {
+                "name": "Diagnostic principal",
+                "items": [
+                  {
+                    "text": "Bronchiolite (10 mois)",
+                    "cause": "Arguments POUR:\n\t□ Âge < 1 an\n\t□ Contexte viral (rhinite, toux)\n\t□ Contact malade (sœur)\n\t□ Détresse respiratoire avec sibilances\n\t□ Hyperinflation thoracique\n\t□ Râles crépitants diffus",
+                    "test": "→ Diagnostic clinique, radiographie si doute"
+                  },
+                  {
+                    "text": "Crise d'asthme (7 ans)",
+                    "cause": "Arguments POUR:\n\t□ Antécédents de bronchites obstructives récidivantes\n\t□ Terrain atopique familial\n\t□ Déclenchement par infection virale\n\t□ Sibilances expiratoires et inspiratoires\n\t□ Amélioration partielle aux bronchodilatateurs",
+                    "test": "→ Score PRAM, gaz du sang si sévère"
+                  }
+                ]
+              },
+              {
+                "name": "Autres causes à considérer",
+                "items": [
+                  {
+                    "text": "Pneumonie",
+                    "cause": "Arguments MIXTES:\n\t□ POUR: Fièvre, toux, détresse respiratoire\n\t□ CONTRE: Râles diffus plutôt que localisés",
+                    "test": "→ Radiographie thoracique"
+                  },
+                  {
+                    "text": "Corps étranger",
+                    "cause": "Arguments CONTRE:\n\t□ Début progressif\n\t□ Contexte viral\n\t□ Atteinte bilatérale",
+                    "test": "→ Radiographie, fibroscopie si doute"
+                  },
+                  {
+                    "text": "Mucoviscidose",
+                    "cause": "Arguments À CONSIDÉRER:\n\t□ Si infections respiratoires récurrentes\n\t□ Mais poids et taille normaux",
+                    "test": "→ Test de la sueur si indiqué"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Score de gravité PRAM",
+          "details": [
+            "Tirage susternal [présent = 2 points]",
+            "Tirage muscles scalènes [présent = 2 points]",
+            "Entrée d'air [diminuée aux bases = 1 point]",
+            "Wheezing/Sibilances [inspiratoire et expiratoire = 2 points]",
+            "Saturation O2 [< 92% = 3 points]",
+            "Score total Partie 1 [9-10 points = risque élevé d'hospitalisation]",
+            "Score total Partie 2 [8-9 points = risque élevé d'hospitalisation]"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Examens complémentaires",
+          "details": [
+            "Gazométrie capillaire [pH 7.45, pCO2 4.6 kPa, BE -1.5, HCO3 21 mmol/L]",
+            "Radiographie thoracique [hyperinflation, infiltrats péri-hilaires]",
+            "FSC [si suspicion surinfection bactérienne]",
+            "Recherche antigènes viraux [VRS, grippe dans sécrétions nasopharyngées]",
+            "Ionogramme [si déshydratation]"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Traitement d'urgence - Partie 1 (Bronchiolite)",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Support respiratoire",
+                "items": [
+                  {
+                    "treatment": "Oxygénothérapie",
+                    "details": "Masque ou lunettes pour SpO2 > 90%",
+                    "duration": "Continu jusqu'à amélioration"
+                  },
+                  {
+                    "treatment": "Hydratation",
+                    "details": "Surveillance des apports, IV si nécessaire",
+                    "duration": "Selon tolérance orale"
+                  }
+                ]
+              },
+              {
+                "title": "Traitement controversé",
+                "items": [
+                  {
+                    "treatment": "Bronchodilatateurs (β2-mimétiques)",
+                    "details": "Test thérapeutique possible mais efficacité limitée",
+                    "duration": "Arrêt si pas d'amélioration"
+                  },
+                  {
+                    "treatment": "Corticoïdes",
+                    "details": "Non recommandés en routine pour bronchiolite",
+                    "duration": "Sauf si composante asthmatiforme"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m5",
+          "text": "Traitement d'urgence - Partie 2 (Crise d'asthme)",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Traitement de la crise",
+                "items": [
+                  {
+                    "treatment": "Salbutamol (Ventolin)",
+                    "details": "Aérosol-doseur avec chambre d'inhalation, 4-10 bouffées",
+                    "duration": "Répéter toutes les 20 min x3 si nécessaire"
+                  },
+                  {
+                    "treatment": "Ipratropium (Atrovent)",
+                    "details": "En association avec salbutamol si crise sévère",
+                    "duration": "3 premières doses"
+                  },
+                  {
+                    "treatment": "Corticoïdes systémiques",
+                    "details": "Prednisolone 1-2 mg/kg PO ou IV",
+                    "duration": "3-5 jours"
+                  },
+                  {
+                    "treatment": "Oxygénothérapie",
+                    "details": "Pour maintenir SpO2 > 94%",
+                    "duration": "Selon saturation"
+                  }
+                ]
+              },
+              {
+                "title": "Traitement de fond à discuter",
+                "items": [
+                  {
+                    "treatment": "Corticoïdes inhalés",
+                    "details": "Si crises récurrentes (> 2-3/an)",
+                    "duration": "Au long cours"
+                  },
+                  {
+                    "treatment": "β2-mimétiques au besoin",
+                    "details": "Avec chambre d'inhalation",
+                    "duration": "Si symptômes"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m6",
+          "text": "Critères d'hospitalisation",
+          "details": [
+            "Score PRAM > 7 [risque élevé]",
+            "Saturation O2 < 90% malgré oxygène",
+            "Signes de détresse respiratoire sévère",
+            "Épuisement respiratoire",
+            "Difficultés alimentaires importantes",
+            "Contexte social défavorable",
+            "Âge < 3 mois",
+            "Comorbidités (prématurité, cardiopathie)"
+          ]
+        },
+        {
+          "id": "m7",
+          "text": "Surveillance et évolution",
+          "details": [
+            "Monitoring cardio-respiratoire continu",
+            "Saturation O2 continue",
+            "Score PRAM toutes les 2-4h",
+            "Hydratation et diurèse",
+            "Évolution attendue bronchiolite [pic J3-5, amélioration J7-10]",
+            "Évolution attendue asthme [amélioration en 2-6h si bonne réponse]",
+            "Critères de sortie [SpO2 > 94% air ambiant, alimentation normale]"
+          ]
+        },
+        {
+          "id": "m8",
+          "text": "Prévention et éducation",
+          "redflagsSection": {
+            "title": "Signes d'alerte et mesures préventives",
+            "items": [
+              {
+                "text": "Détresse respiratoire sévère",
+                "description": "Cyanose, épuisement, apnées = urgence vitale"
+              },
+              {
+                "text": "Déshydratation",
+                "description": "Refus alimentaire, diurèse diminuée"
+              },
+              {
+                "text": "Altération de l'état de conscience",
+                "description": "Léthargie, irritabilité extrême"
+              },
+              {
+                "text": "Prévention bronchiolite",
+                "description": "Lavage des mains, éviter tabagisme passif, éviter collectivités si < 3 mois"
+              },
+              {
+                "text": "Plan d'action asthme",
+                "description": "Reconnaître signes précoces, utilisation correcte inhalateurs"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Clôture type - Bronchiolite",
+          "content": "Madame, Marc présente une bronchiolite, une infection virale des petites bronches très fréquente chez les nourrissons. C'est probablement lié au rhume de sa sœur. Nous devons l'hospitaliser pour surveiller sa respiration et lui donner de l'oxygène. La maladie évolue sur 7-10 jours avec un pic vers le 3-5e jour. La plupart des enfants récupèrent complètement."
+        },
+        {
+          "id": "c2",
+          "text": "Clôture type - Asthme",
+          "content": "Marc fait une crise d'asthme sévère déclenchée par une infection virale. Malgré son traitement habituel, la crise ne s'améliore pas suffisamment. Nous devons l'hospitaliser pour intensifier le traitement avec des corticoïdes et surveiller sa respiration. Vu la fréquence de ses crises, nous devrons discuter d'un traitement de fond pour prévenir les récidives."
+        },
+        {
+          "id": "c3",
+          "text": "Questions fréquentes des parents",
+          "content": "[Est-ce grave docteur ?]\n[Combien de temps va durer la maladie ?]\n[Va-t-il garder des séquelles ?]\n[Comment éviter que cela se reproduise ?]\n[Est-ce de l'asthme ?]\n[C'est de notre faute ?]"
+        },
+        {
+          "id": "c4",
+          "text": "Réponse type du candidat",
+          "exemplesPhrases": [
+            "\"C'est une infection sérieuse mais avec le traitement approprié, la grande majorité des enfants récupèrent complètement.\"",
+            "\"La bronchiolite dure généralement 7-10 jours. Les premiers jours sont les plus difficiles.\"",
+            "\"Non, la plupart des enfants n'ont pas de séquelles. Certains peuvent développer de l'asthme plus tard.\"",
+            "\"Lavage des mains fréquent, éviter le tabagisme passif, limiter les contacts avec des personnes malades.\"",
+            "\"Chez le nourrisson c'est une bronchiolite, mais vu les antécédents familiaux, un asthme pourrait se développer.\"",
+            "\"Non, ce n'est pas votre faute. Ces infections virales sont très fréquentes chez les jeunes enfants.\""
+          ]
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "images": [
+      {
+        "id": "img1",
+        "title": "Radiographies thoraciques - Bronchiolite",
+        "description": "Images montrant hyperinflation et infiltrats péri-hilaires typiques"
+      },
+      {
+        "id": "img2",
+        "title": "Score PRAM",
+        "description": "Tableau de score de gravité pour évaluation du risque d'hospitalisation"
+      }
+    ],
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour le parent standardisé",
+      "nom": "Mère de Marc",
+      "contexte": "Service d'urgences pédiatriques",
+      "motifConsultation": {
+        "plaintePrincipale": "Mon fils a du mal à respirer",
+        "autreChose": "Il tousse beaucoup et il est très pâle"
+      },
+      "histoireActuelle": {
+        "partie1": {
+          "debut": [
+            "Ça a commencé il y a 2 jours",
+            "D'abord le nez qui coule",
+            "Puis il a commencé à tousser",
+            "Cette nuit il a mal dormi",
+            "Ce matin il refuse de manger"
+          ],
+          "symptomes": [
+            "Il est très pâle",
+            "Il respire vite et fort",
+            "Il fait du bruit en respirant",
+            "Il a 38°C de fièvre"
+          ]
+        },
+        "partie2": {
+          "historique": [
+            "Il fait des crises comme ça 2-3 fois par an",
+            "Toujours quand il attrape un rhume",
+            "D'habitude le Ventolin marche bien",
+            "Cette fois ça ne s'améliore pas"
+          ]
+        }
+      },
+      "simulation": {
+        "attitude": [
+          "Mère inquiète mais calme",
+          "Répond précisément aux questions",
+          "Connaît bien les antécédents",
+          "Apporte les médicaments habituels (Partie 2)"
+        ],
+        "comportementEnfant": [
+          "Enfant en détresse respiratoire visible",
+          "Tirage intercostal net",
+          "Respiration bruyante avec sifflements",
+          "Peu réactif (Partie 1) ou anxieux (Partie 2)"
+        ]
+      }
+    },
+    "informationsExpert": {
+      "titre": "Points clés pour l'évaluateur",
+      "pointsCles": [
+        "Reconnaître les signes de détresse respiratoire",
+        "Calculer le score PRAM correctement",
+        "Différencier bronchiolite (< 2 ans) et asthme",
+        "Identifier les critères d'hospitalisation",
+        "Connaître le traitement d'urgence approprié",
+        "Savoir que les bronchodilatateurs sont peu efficaces dans la bronchiolite pure",
+        "Reconnaître l'importance du terrain atopique familial"
+      ],
+      "pieges": [
+        "Sous-estimer la gravité de la détresse respiratoire",
+        "Prescrire systématiquement des antibiotiques",
+        "Oublier l'oxygénothérapie",
+        "Ne pas reconnaître les signes d'épuisement",
+        "Confondre bronchiolite et pneumonie",
+        "Ne pas évaluer l'hydratation",
+        "Oublier la prévention et l'éducation"
+      ]
+    },
+    "theoriePratique": {
+      "titre": "Rappels théoriques - Bronchiolite et Asthme du jeune enfant",
+      "sections": [
+        {
+          "titre": "Bronchiolite",
+          "points": [
+            "Infection virale des bronchioles (VRS dans 70%)",
+            "Pic d'incidence 2-8 mois",
+            "Évolution naturelle: J1-3 rhinite, J3-5 détresse max, J7-10 amélioration",
+            "Hyperinflation par piégeage aérien (obstruction bronchiolaire)",
+            "Traitement essentiellement supportif",
+            "Mortalité < 1% si prise en charge appropriée"
+          ]
+        },
+        {
+          "titre": "Asthme du nourrisson et jeune enfant",
+          "points": [
+            "Définition: ≥ 3 épisodes de bronchite obstructive",
+            "Facteurs de risque: atopie familiale, eczéma, sensibilisation allergique",
+            "Phénotypes: viro-induit, allergique, non-atopique",
+            "50% des nourrissons siffleurs ne deviennent pas asthmatiques",
+            "Indice prédictif d'asthme (API): critères majeurs et mineurs",
+            "Traitement de crise: β2-mimétiques + corticoïdes systémiques"
+          ]
+        },
+        {
+          "titre": "Score PRAM",
+          "points": [
+            "Score 0-12 points",
+            "0-3: risque faible (<10% hospitalisation)",
+            "4-7: risque modéré (10-50%)",
+            "8-12: risque élevé (>50%)",
+            "Réévaluation toutes les 2-4h",
+            "Guide les décisions thérapeutiques"
+          ]
+        }
+      ],
+      "rappelsTherapeutiques": [
+        "Oxygène si SpO2 < 90-92%",
+        "Bronchodilatateurs: test thérapeutique, arrêt si inefficace",
+        "Corticoïdes systémiques si asthme/bronchite obstructive récidivante",
+        "Hydratation: PO si possible, IV si détresse sévère",
+        "Pas d'antibiotiques sauf surinfection bactérienne prouvée",
+        "Kinésithérapie respiratoire: non recommandée en phase aiguë bronchiolite",
+        "Surveillance continue si score PRAM élevé"
+      ],
+      "examensComplementaires": [
+        "Radiographie thoracique: si doute diagnostique ou complications",
+        "Gaz du sang: si détresse sévère ou épuisement",
+        "Antigènes viraux: épidémiologie, cohorting hospitalier",
+        "FSC, CRP: si suspicion surinfection",
+        "Ionogramme: si déshydratation importante",
+        "Test de la sueur: si bronchites obstructives récidivantes inexpliquées"
+      ]
+    }
+  }
+}

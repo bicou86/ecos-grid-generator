@@ -1,0 +1,393 @@
+{
+  "title": "Intoxication - Arrêt cardio-respiratoire sur intoxication aux opioïdes",
+  "context": {
+    "setting": "Service d'urgences - Couloir d'hôtel",
+    "patient": "Femme de 30 ans, antécédents de multiples dépendances sous substitution (méthadone 60mg/j + clonazépam 2mg/j), trouvée en arrêt cardio-respiratoire dans un hôtel",
+    "vitals": {
+      "ta": "77/65 mmHg",
+      "fc": "80 bpm",
+      "fr": "6/min",
+      "temperature": "37.1°C",
+      "sao2": "87% sous O2 100%"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Circonstances de découverte",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Hétéro-anamnèse",
+          "details": [
+            "Informations des ambulanciers [trouvée en décubitus latéral gauche dans le couloir]",
+            "Témoins présents [personnel de l'hôtel]",
+            "Délai depuis la découverte [variable]",
+            "État initial [inconsciente, gasping]"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Antécédents de toxicomanie",
+          "details": [
+            "Substances habituelles [méthadone 60mg/j]",
+            "Traitement de substitution actuel [oui, méthadone]",
+            "Benzodiazépines associées [clonazépam 2mg/j]",
+            "Consommation récente probable [à évaluer]"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Recherche de substances",
+          "details": [
+            "Emballages ou matériel d'injection sur place",
+            "Seringues ou aiguilles",
+            "Médicaments ou sachets suspects",
+            "Effets personnels à inspecter"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Événements pré-hospitaliers",
+          "details": [
+            "Arrêt cardio-respiratoire initial [oui]",
+            "Durée de RCP [2 minutes]",
+            "ROSC obtenu [oui]",
+            "Traitements administrés [naloxone IM et IO]"
+          ]
+        },
+        {
+          "id": "a6",
+          "text": "Antécédents médicaux",
+          "patientComment": "Multiples dépendances"
+        },
+        {
+          "id": "a7",
+          "text": "Allergies connues"
+        },
+        {
+          "id": "a8",
+          "text": "Contexte social",
+          "details": [
+            "Situation de logement [hôtel]",
+            "Entourage présent",
+            "Suivi addictologique"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Évaluation ABCDE immédiate",
+          "binaryOnly": true
+        },
+        {
+          "id": "e2",
+          "text": "Airways - Voies aériennes",
+          "details": [
+            "Perméabilité [libres après manœuvres]",
+            "Présence de corps étranger [non]",
+            "Sécrétions [possibles]",
+            "Protection des voies aériennes [compromise initialement]"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Breathing - Respiration",
+          "details": [
+            "Fréquence respiratoire [6/min puis 12/min après naloxone]",
+            "Type respiratoire [gasping initial]",
+            "SpO2 [87% sous O2 100%]",
+            "Auscultation pulmonaire [à évaluer]"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Circulation",
+          "details": [
+            "Pouls [absent puis présent après RCP]",
+            "Tension artérielle [77/65 mmHg]",
+            "Fréquence cardiaque [80 bpm régulière]",
+            "Temps de recoloration capillaire",
+            "ECG de surveillance"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Disability - État neurologique",
+          "details": [
+            "Glasgow initial [3/15]",
+            "Glasgow après naloxone [8/15]",
+            "Pupilles [myosis bilatéral - signe d'intoxication aux opioïdes]",
+            "Déficit focal [absent]",
+            "Réflexes du tronc cérébral"
+          ]
+        },
+        {
+          "id": "e6",
+          "text": "Exposure - Examen complet",
+          "details": [
+            "Température [37.1°C]",
+            "Glycémie [8.6 mmol/L]",
+            "Signes de traumatisme [hématome en monocle gauche, hématome cervical antérieur]",
+            "Marques d'injection [à rechercher]",
+            "Autres lésions cutanées"
+          ]
+        },
+        {
+          "id": "e7",
+          "text": "Identification du toxidrome",
+          "patientComment": "Toxidrome opioïde : myosis, dépression respiratoire, coma, bradycardie relative"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Mesures de réanimation immédiates",
+          "details": [
+            "Maintien de la perméabilité des voies aériennes",
+            "Oxygénothérapie haut débit",
+            "Accès veineux périphérique ou intra-osseux",
+            "Monitoring continu (ECG, SpO2, TA)",
+            "Intubation si nécessaire"
+          ]
+        },
+        {
+          "id": "m2",
+          "text": "Administration de naloxone",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Protocole naloxone",
+                "content": "Dose initiale: 0.4mg IV/IM/IO\nRépéter toutes les 2-3 minutes si nécessaire\nDose maximale: jusqu'à 10mg\nObjectif: FR > 12/min et protection des voies aériennes"
+              },
+              {
+                "title": "Surveillance post-naloxone",
+                "content": "- Durée minimale: 60-90 minutes\n- Risque de re-narcose (demi-vie courte naloxone)\n- Syndrome de sevrage possible\n- Agitation ou convulsions rares"
+              }
+            ]
+          }
+        },
+        {
+          "id": "m3",
+          "text": "Examens complémentaires urgents",
+          "details": [
+            "Gazométrie artérielle",
+            "ECG 12 dérivations [recherche QT long, troubles du rythme]",
+            "Glycémie capillaire [8.6 mmol/L]",
+            "Toxicologie urinaire qualitative",
+            "Bilan biologique standard (NFS, ionogramme, fonction rénale et hépatique)",
+            "CT cérébral si traumatisme crânien suspecté"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Considération du flumazénil",
+          "patientComment": "Prudence: risque de convulsions si co-intoxication aux antidépresseurs tricycliques ou cocaïne"
+        },
+        {
+          "id": "m5",
+          "text": "Prise en charge des traumatismes",
+          "details": [
+            "Évaluation de l'hématome péri-orbitaire",
+            "Examen du rachis cervical",
+            "CT cérébral si indiqué",
+            "Immobilisation cervicale si suspicion"
+          ]
+        },
+        {
+          "id": "m6",
+          "text": "Surveillance en milieu de soins intensifs",
+          "details": [
+            "Monitoring continu des signes vitaux",
+            "Surveillance neurologique rapprochée",
+            "Prévention de la re-narcose",
+            "Support hémodynamique si nécessaire"
+          ]
+        },
+        {
+          "id": "m7",
+          "text": "Contact Tox Info Suisse",
+          "patientComment": "Appel au 145 pour conseils spécialisés"
+        },
+        {
+          "id": "m8",
+          "text": "Diagnostics différentiels",
+          "ddSection": {
+            "title": "Diagnostics différentiels à considérer",
+            "categories": [
+              {
+                "name": "Causes toxicologiques",
+                "items": [
+                  {
+                    "text": "Intoxication aux opioïdes",
+                    "cause": "Arguments POUR:\n\t□ Myosis bilatéral\n\t□ Dépression respiratoire (FR 6/min)\n\t□ Coma (GCS 3/15)\n\t□ Réponse à la naloxone\n\t□ Antécédent de substitution méthadone",
+                    "test": "→ Toxicologie urinaire, maintien naloxone"
+                  },
+                  {
+                    "text": "Polyintoxication (opioïdes + benzodiazépines)",
+                    "cause": "Arguments POUR:\n\t□ Traitement par clonazépam\n\t□ Profondeur du coma\n\t□ Association fréquente",
+                    "test": "→ Flumazénil prudent si nécessaire"
+                  },
+                  {
+                    "text": "Intoxication aux drogues récréatives",
+                    "cause": "Arguments POSSIBLES:\n\t□ Contexte (hôtel)\n\t□ Antécédents de dépendances multiples",
+                    "test": "→ Screening toxicologique large"
+                  }
+                ]
+              },
+              {
+                "name": "Causes traumatiques",
+                "items": [
+                  {
+                    "text": "Traumatisme crânien",
+                    "cause": "Arguments POUR:\n\t□ Hématome en monocle gauche\n\t□ Hématome cervical antérieur\n\t□ Contexte de chute possible",
+                    "test": "→ CT cérébral urgent"
+                  },
+                  {
+                    "text": "Lésion cervicale",
+                    "cause": "Arguments POUR:\n\t□ Hématome cervical\n\t□ Mécanisme de chute",
+                    "test": "→ Immobilisation, imagerie cervicale"
+                  }
+                ]
+              },
+              {
+                "name": "Autres causes",
+                "items": [
+                  {
+                    "text": "AVC hémorragique ou ischémique",
+                    "cause": "Arguments POSSIBLES:\n\t□ Coma profond\n\t□ Âge relativement jeune (30 ans)",
+                    "test": "→ CT cérébral"
+                  },
+                  {
+                    "text": "État de mal épileptique",
+                    "cause": "Arguments CONTRE:\n\t□ Pas de mouvements tonico-cloniques\n\t□ Réponse à la naloxone",
+                    "test": "→ EEG si doute persistant"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m9",
+          "text": "Prévention et suivi",
+          "details": [
+            "Consultation d'addictologie",
+            "Ajustement du traitement substitutif",
+            "Programme de réduction des risques",
+            "Distribution de naloxone à domicile",
+            "Suivi psychiatrique"
+          ]
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Clôture de la prise en charge initiale",
+          "content": "«Votre amie a fait un arrêt cardio-respiratoire probablement lié à une intoxication aux opioïdes. Nous avons pu la réanimer et elle répond bien au traitement antidote. Nous devons la surveiller étroitement car le risque de rechute existe. Elle va être transférée en soins intensifs.»"
+        },
+        {
+          "id": "c2",
+          "text": "Questions difficiles de l'entourage",
+          "content": "[Va-t-elle s'en sortir?] [Y a-t-il des séquelles cérébrales?] [Comment est-ce arrivé?] [Était-ce une tentative de suicide?]"
+        },
+        {
+          "id": "c3",
+          "text": "Réponse type du candidat",
+          "exemplesPhrases": [
+            "«Le pronostic vital est engagé mais elle a bien répondu au traitement initial. Les prochaines heures sont cruciales.»",
+            "«Il est trop tôt pour évaluer d'éventuelles séquelles neurologiques. Nous ferons des examens complémentaires.»",
+            "«L'arrêt cardiaque était de courte durée et la réanimation a été efficace, ce qui est encourageant.»",
+            "«Nous devons d'abord stabiliser son état. Un suivi spécialisé en addictologie sera proposé.»"
+          ]
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "images": [
+      {
+        "id": "img1",
+        "title": "Tableau des toxidromes",
+        "description": "Tableau comparatif des différents toxidromes avec leurs caractéristiques cliniques",
+        "filename": "grilles_generees/html/images/toxidromes-tableau.jpg"
+      },
+      {
+        "id": "img2",
+        "title": "Algorithme de prise en charge ABCDE",
+        "description": "Algorithme décisionnel pour la prise en charge des intoxications avec trouble de vigilance",
+        "filename": "grilles_generees/html/images/algorithme-abcde-intox.jpg"
+      }
+    ],
+    "informationsExpert": {
+      "titre": "Points clés pour l'expert",
+      "pointsCles": [
+        "La naloxone doit être administrée rapidement en cas de suspicion d'intoxication aux opioïdes",
+        "Le myosis bilatéral est un signe cardinal du toxidrome opioïde",
+        "La durée d'action de la naloxone (30-90 min) est plus courte que celle de la méthadone",
+        "Un arrêt cardiaque sur intoxication aux opioïdes a généralement un bon pronostic si RCP rapide",
+        "La polyintoxication opioïdes-benzodiazépines est fréquente et grave",
+        "Les traumatismes associés doivent être systématiquement recherchés"
+      ],
+      "pieges": [
+        "Ne pas maintenir une surveillance suffisante après naloxone (risque de re-narcose)",
+        "Administrer du flumazénil sans précaution (risque de convulsions)",
+        "Oublier de rechercher un traumatisme associé",
+        "Ne pas contacter le centre antipoison",
+        "Sous-estimer le risque de syndrome de sevrage après naloxone",
+        "Ne pas prévoir de suivi addictologique"
+      ]
+    },
+    "theoriePratique": {
+      "titre": "Bases théoriques",
+      "sections": [
+        {
+          "titre": "Physiopathologie de l'intoxication aux opioïdes",
+          "contenu": "Les opioïdes agissent sur les récepteurs μ, κ et δ. L'activation des récepteurs μ provoque une dépression respiratoire centrale, une bradycardie, un myosis et une sédation. La mort survient par dépression respiratoire."
+        },
+        {
+          "titre": "Épidémiologie des intoxications récréatives",
+          "points": [
+            "78% d'hommes, âge moyen 34 ans",
+            "54% avec co-ingestion d'alcool",
+            "Séjour hospitalier: 77% < 12h",
+            "13% nécessitent de la naloxone",
+            "Mortalité hospitalière < 1%"
+          ]
+        },
+        {
+          "titre": "Principes du protocole ABCDE",
+          "contenu": "A: Airways (voies aériennes)\nB: Breathing (respiration)\nC: Circulation\nD: Disability (neurologique)\nE: Exposure (examen complet)"
+        }
+      ],
+      "rappelsTherapeutiques": [
+        "Naloxone: antagoniste compétitif des récepteurs opioïdes, action en 1-2 minutes IV/IM",
+        "Flumazénil: antagoniste des benzodiazépines, CI si tricycliques ou cocaïne",
+        "Oxygénothérapie: objectif SpO2 > 94%",
+        "Support ventilatoire: si FR < 10/min ou SpO2 < 90% sous O2",
+        "Charbon activé: inutile si > 1h ou si patient comateux non intubé"
+      ],
+      "examensComplementaires": [
+        "Gazométrie: évalue l'hypoxémie et l'hypercapnie",
+        "ECG: recherche QT long (méthadone), troubles du rythme",
+        "Toxicologie urinaire: screening qualitatif large",
+        "CT cérébral: si traumatisme ou diagnostic différentiel neurologique",
+        "Dosages spécifiques: rarement utiles sauf exceptions (digoxine, lithium)"
+      ]
+    }
+  }
+}

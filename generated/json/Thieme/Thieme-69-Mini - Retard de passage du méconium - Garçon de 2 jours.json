@@ -1,0 +1,200 @@
+{
+  "title": "Thieme Mini-Cas 69 - Retard de passage du méconium - Garçon de 2 jours",
+  "category": "Thieme Mini-Cas",
+  "subcategory": "Retard de passage du méconium",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Parents consulte pour Nouveau-né, 2 jours, qui présente: pas de selles depuis la naissance"
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Motif principal de consultation",
+          "binaryOnly": true,
+          "patientComment": "pas de selles depuis la naissance"
+        },
+        {
+          "id": "a2",
+          "text": "Analyse ciblée de la plainte",
+          "details": [
+            "Vomissements",
+            "Distension",
+            "Alimentation",
+            "Grossesse/accouchement"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Recherche des éléments clés",
+          "details": [
+            "Distension abdominale",
+            "Vomissements",
+            "Alimentation"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Antécédents pertinents",
+          "details": [
+            "Prématurité",
+            "Médicaments maternels",
+            "Complications accouchement"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Revue des systèmes ciblée",
+          "details": [
+            "Digestif",
+            "Génito-urinaire"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Inspection abdominale [distension]",
+          "binaryOnly": true
+        },
+        {
+          "id": "e2",
+          "text": "Palpation abdominale douce"
+        },
+        {
+          "id": "e3",
+          "text": "Toucher rectal (avec consentement)"
+        },
+        {
+          "id": "e4",
+          "text": "Auscultation bruits intestinaux"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostics différentiels",
+          "ddSection": {
+            "title": "Hypothèses diagnostiques à considérer",
+            "categories": [
+              {
+                "name": "Diagnostics prioritaires",
+                "items": [
+                  {
+                    "text": "Iléus méconial",
+                    "cause": "Arguments POUR:\n\t□ Fibrose kystique, obstruction, distension",
+                    "test": "→ Test sueur (mucoviscidose), radiographie"
+                  },
+                  {
+                    "text": "Maladie de Hirschsprung",
+                    "cause": "Arguments POUR:\n\t□ Absence ganglions, constipation, distension",
+                    "test": "→ Biopsie rectale, manométrie"
+                  },
+                  {
+                    "text": "Anus imperforé",
+                    "cause": "Arguments POUR:\n\t□ Malformation visible, absence orifice",
+                    "test": "→ Examens selon orientation clinique"
+                  },
+                  {
+                    "text": "Atrésie intestinale",
+                    "cause": "Arguments POUR:\n\t□ Vomissements bilieux, polyhydramnios",
+                    "test": "→ Examens selon orientation clinique"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Examens complémentaires",
+          "details": [
+            "Toucher rectal",
+            "Radiographie abdominale",
+            "Lavement opaque"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Plan de prise en charge",
+          "details": [
+            "Référence chirurgie pédiatrique urgente",
+            "Nil per os",
+            "Hydratation IV"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Conseils au patient",
+          "details": [
+            "Surveillance étroite",
+            "Signes alerte",
+            "Suivi post-opératoire"
+          ]
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Explications au patient",
+          "content": "Obstruction intestinale probable nécessitant une prise en charge chirurgicale urgente."
+        },
+        {
+          "id": "c2",
+          "text": "Questions du patient",
+          "content": "[Mon bébé va bien?]\n[Faut-il opérer?]"
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour le patient standardisé",
+      "nom": "Nouveau-né",
+      "age": "2 jours",
+      "contexte": "Cabinet de médecine générale",
+      "motifConsultation": {
+        "plaintePrincipale": "pas de selles depuis la naissance",
+        "contexte": "Nouveau-né avec retard d'émission méconiale"
+      },
+      "simulation": {
+        "attitude": [
+          "Parents très inquiets",
+          "Urgence"
+        ],
+        "signesPhysiques": [
+          "Distension abdominale",
+          "Absence selles"
+        ],
+        "durantConsultation": [
+          "Urgence",
+          "Parents affolés"
+        ]
+      }
+    },
+    "informationsExpert": {
+      "titre": "Informations pour l'expert",
+      "pointsCles": [
+        "Mini-cas clinique: Retard de passage du méconium",
+        "Focus: Distension abdominale, Vomissements, Alimentation",
+        "Consultation ciblée de 10 minutes",
+        "Évaluation de l'approche diagnostique"
+      ],
+      "pieges": [
+        "Retarder chirurgie",
+        "Ne pas reconnaître urgence"
+      ]
+    }
+  }
+}

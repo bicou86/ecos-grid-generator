@@ -1,0 +1,922 @@
+{
+  "title": "Diverticulite sigmoidienne - Homme de 58 ans",
+  "context": {
+    "setting": "Service d'urgences",
+    "patient": "Monsieur D., 58 ans, consulte pour des douleurs abdominales au quadrant inférieur gauche évoluant depuis 48 heures",
+    "vitals": {
+      "temperature": "38.3°C"
+    },
+    "patientComment": "Douleurs accompagnées de nausées, sans vomissements, sans rectorragies"
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Motif principal de consultation",
+          "binaryOnly": true,
+          "patientComment": "Douleurs abdominales importantes depuis 2 jours"
+        },
+        {
+          "id": "a2",
+          "text": "Caractérisation de la douleur",
+          "details": [
+            "Localisation [Quadrant inférieur gauche, fosse iliaque gauche]",
+            "Évolution temporelle [Depuis 48 heures, progressive]",
+            "Type/caractère [Constante, sourde, non crampoïde]",
+            "Intensité [6-7/10]",
+            "Irradiation [Non, reste localisée]",
+            "Facteurs aggravants [Mouvement, toux, pression]",
+            "Facteurs soulagants [Repos, position antalgique]"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Symptômes associés",
+          "details": [
+            "Fièvre [Oui, depuis hier, 38.3°C mesurée à la maison]",
+            "Nausées [Oui, depuis le début des douleurs]",
+            "Vomissements [Non]",
+            "Transit intestinal [Alternance diarrhée/constipation ces derniers jours]",
+            "Ballonnements [Oui, sensation de distension]",
+            "Brûlures mictionnelles [Non]",
+            "Rectorragies [Non]"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Signes d'alerte (drapeaux rouges)",
+          "details": [
+            "Douleur généralisée [Non, reste localisée]",
+            "Défense/contracture [Non explorée en anamnèse]",
+            "Vomissements répétés [Non]",
+            "Arrêt des matières et gaz [Non]",
+            "Hypotension/malaise [Non]",
+            "Perte de poids récente [Non]",
+            "Sueurs nocturnes [Non]"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Antécédents médicaux",
+          "details": [
+            "Diverticulose connue [Non diagnostiquée]",
+            "Épisodes similaires [Non, première fois]",
+            "Maladies digestives [Non]",
+            "Diabète [Non]",
+            "Hypertension [Non]",
+            "Immunosuppression [Non]"
+          ]
+        },
+        {
+          "id": "a6",
+          "text": "Antécédents chirurgicaux",
+          "patientComment": "Appendicectomie à 20 ans, pas d'autre chirurgie"
+        },
+        {
+          "id": "a7",
+          "text": "Allergies",
+          "patientComment": "Aucune allergie connue"
+        },
+        {
+          "id": "a8",
+          "text": "Médicaments actuels",
+          "patientComment": "Aucun traitement régulier, paracétamol occasionnel"
+        },
+        {
+          "id": "a9",
+          "text": "Antécédents familiaux",
+          "details": [
+            "Cancer colorectal [Non]",
+            "MICI (Crohn, RCH) [Non]",
+            "Diverticulose [Père opéré à 65 ans]"
+          ]
+        },
+        {
+          "id": "a10",
+          "text": "Habitudes de vie et facteurs de risque",
+          "details": [
+            "Tabagisme [10 cigarettes/jour depuis 30 ans]",
+            "Alcool [Occasionnel, 1-2 verres de vin/semaine]",
+            "Alimentation [Pauvre en fibres, fast-food fréquent]",
+            "Activité physique [Sédentaire, travail de bureau]",
+            "IMC/Poids [Surpoids, IMC 28]",
+            "Prise d'AINS [Occasionnelle pour douleurs]"
+          ]
+        },
+        {
+          "id": "a11",
+          "text": "Revue des systèmes",
+          "details": [
+            "Génito-urinaire [Pas de dysurie, pas d'hématurie]",
+            "Cardio-respiratoire [Pas de dyspnée, pas de douleur thoracique]",
+            "Neurologique [Pas de paresthésies, pas de faiblesse]"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "État général et signes vitaux",
+          "details": [
+            "Apparence générale [Patient algique mais stable]",
+            "Température [38.3°C]",
+            "Tension artérielle [Normale]",
+            "Fréquence cardiaque [Légère tachycardie]",
+            "Fréquence respiratoire [Normale]",
+            "Saturation O2 [Normale]"
+          ]
+        },
+        {
+          "id": "e2",
+          "text": "Inspection abdominale",
+          "details": [
+            "Distension [Légère distension]",
+            "Cicatrices [Cicatrice d'appendicectomie]",
+            "Mouvements respiratoires [Respiration superficielle par douleur]",
+            "Péristaltisme visible [Non]"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Auscultation abdominale",
+          "patientComment": "Bruits hydroaériques présents mais diminués"
+        },
+        {
+          "id": "e4",
+          "text": "Percussion abdominale",
+          "details": [
+            "Tympanisme [Légèrement augmenté]",
+            "Matité déclive [Non]",
+            "Douleur à la percussion [Oui au QIG]"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Palpation superficielle",
+          "details": [
+            "Sensibilité [Maximum au QIG/fosse iliaque gauche]",
+            "Défense musculaire [Présente localement au QIG]",
+            "Rebond [Absent]"
+          ]
+        },
+        {
+          "id": "e6",
+          "text": "Palpation profonde",
+          "details": [
+            "Masse palpable [Non]",
+            "Hépatomégalie [Non]",
+            "Splénomégalie [Non]",
+            "Reins palpables [Non]"
+          ]
+        },
+        {
+          "id": "e7",
+          "text": "Signes spécifiques",
+          "details": [
+            "Signe de Murphy [Négatif]",
+            "Signe de McBurney [Négatif]",
+            "Signe du psoas [Négatif]",
+            "Signe de Rovsing [Négatif]"
+          ]
+        },
+        {
+          "id": "e8",
+          "text": "Toucher rectal",
+          "patientComment": "Non réalisé selon instructions",
+          "scoringRule": "Ne pas pénaliser si non fait"
+        },
+        {
+          "id": "e9",
+          "text": "Examen des orifices herniaires",
+          "patientComment": "Pas de hernie inguinale ou crurale"
+        },
+        {
+          "id": "e10",
+          "text": "Examen des fosses lombaires",
+          "patientComment": "Pas de douleur à la percussion, pas de contact lombaire"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Examens biologiques",
+          "details": [
+            "NFS-plaquettes [Leucocytose attendue]",
+            "CRP [Élevée > 50 mg/L attendue]",
+            "Créatinine/urée [Avant contraste IV]",
+            "Ionogramme [Bilan de base]",
+            "Bilan hépatique [Si doute diagnostique]",
+            "Lipase [Si doute pancréatite]",
+            "β-hCG [Si femme en âge de procréer]",
+            "BU/ECBU [Éliminer infection urinaire]"
+          ]
+        },
+        {
+          "id": "m2",
+          "text": "Imagerie diagnostique",
+          "details": [
+            "CT abdominopelvien avec contraste IV [Examen de référence]",
+            "Recherche épaississement pariétal colique [> 3 mm]",
+            "Infiltration graisse péricolique [Signe clé]",
+            "Présence de diverticules [Diagnostic]",
+            "Recherche de complications [Abcès, perforation, fistule]",
+            "Alternative si CI au scanner [IRM ou échographie]"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Diagnostic différentiel et orientation",
+          "ddSection": {
+            "title": "Diagnostics différentiels à considérer",
+            "categories": [
+              {
+                "name": "Causes digestives",
+                "items": [
+                  {
+                    "text": "Diverticulite non compliquée",
+                    "cause": "Arguments POUR:\n\t□ Douleur QIG\n\t□ Fièvre modérée\n\t□ Défense localisée\n\t□ Âge > 50 ans\n\t□ Facteurs de risque (régime, tabac)",
+                    "test": "→ CT abdominal avec contraste"
+                  },
+                  {
+                    "text": "Appendicite",
+                    "cause": "Arguments CONTRE:\n\t□ Appendicectomie antérieure\n\t□ Localisation QIG",
+                    "test": "→ Peu probable"
+                  },
+                  {
+                    "text": "Colite ischémique",
+                    "cause": "Arguments CONTRE:\n\t□ Pas de rectorragies\n\t□ Pas de facteurs vasculaires",
+                    "test": "→ CT avec contraste"
+                  },
+                  {
+                    "text": "Cancer colique compliqué",
+                    "cause": "Arguments CONTRE:\n\t□ Pas de perte de poids\n\t□ Évolution aiguë",
+                    "test": "→ Coloscopie à distance"
+                  }
+                ]
+              },
+              {
+                "name": "Causes urologiques",
+                "items": [
+                  {
+                    "text": "Colique néphrétique",
+                    "cause": "Arguments CONTRE:\n\t□ Pas d'irradiation\n\t□ Pas d'hématurie\n\t□ Défense présente",
+                    "test": "→ BU, échographie rénale"
+                  },
+                  {
+                    "text": "Pyélonéphrite",
+                    "cause": "Arguments CONTRE:\n\t□ Pas de brûlures mictionnelles\n\t□ Localisation QIG",
+                    "test": "→ ECBU"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m4",
+          "text": "Traitement initial - Diverticulite non compliquée",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Antibiothérapie (sélective selon facteurs de risque)",
+                "items": [
+                  {
+                    "treatment": "Métronidazole 500 mg 3x/j + Ciprofloxacine 500 mg 2x/j",
+                    "duration": "4-7 jours PO"
+                  },
+                  {
+                    "treatment": "Alternative: Amoxicilline/acide clavulanique 875/125 mg 3x/j",
+                    "duration": "4-7 jours PO"
+                  }
+                ]
+              },
+              {
+                "title": "Traitement symptomatique",
+                "content": "• Repos digestif partiel (alimentation liquide 24-48h)\n• Paracétamol 1g 4x/j (max 4g/j)\n• Antispasmodiques si besoin (Spasfon)\n• Éviter AINS et opioïdes\n• Hydratation orale ou IV selon tolérance"
+              }
+            ]
+          }
+        },
+        {
+          "id": "m5",
+          "text": "Critères d'hospitalisation",
+          "redflagsSection": {
+            "title": "Indications d'hospitalisation",
+            "items": [
+              {
+                "text": "Diverticulite compliquée",
+                "description": "Abcès > 4 cm, perforation, péritonite, fistule"
+              },
+              {
+                "text": "Échec du traitement ambulatoire",
+                "description": "Pas d'amélioration à 48-72h"
+              },
+              {
+                "text": "Intolérance orale",
+                "description": "Vomissements répétés, déshydratation"
+              },
+              {
+                "text": "Comorbidités sévères",
+                "description": "Immunosuppression, insuffisance d'organe"
+              },
+              {
+                "text": "Contexte social défavorable",
+                "description": "Isolement, suivi impossible"
+              }
+            ]
+          }
+        },
+        {
+          "id": "m6",
+          "text": "Plan de suivi ambulatoire",
+          "details": [
+            "Réévaluation clinique à 48-72h [Obligatoire]",
+            "Consignes de reconsultation urgente [Si aggravation]",
+            "Amélioration attendue sous 3-4 jours [Information patient]",
+            "Coloscopie à 6-8 semaines [Après résolution]",
+            "Consultation de contrôle à 1 semaine [Ajustement traitement]"
+          ]
+        },
+        {
+          "id": "m7",
+          "text": "Prévention secondaire et éducation",
+          "details": [
+            "Régime riche en fibres (25-30g/j) [Après phase aiguë]",
+            "Hydratation suffisante (1.5-2L/j) [Important]",
+            "Activité physique régulière [30 min/j]",
+            "Perte de poids si surpoids [Objectif IMC < 25]",
+            "Arrêt du tabac [Fortement recommandé]",
+            "Éviter AINS au long cours [Facteur de risque]",
+            "Information sur signes de récidive [Éducation]"
+          ]
+        },
+        {
+          "id": "m8",
+          "text": "Indications chirurgicales électives",
+          "details": [
+            "Récidives fréquentes (≥ 2 épisodes/an) [Discussion]",
+            "Complications antérieures [Abcès, perforation]",
+            "Fistule chronique [Indication formelle]",
+            "Sténose symptomatique [Occlusions répétées]",
+            "Immunosuppression [Risque élevé]"
+          ]
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Clôture de consultation",
+          "content": "Monsieur D., les examens confirment une diverticulite non compliquée. Nous allons débuter un traitement antibiotique et antalgique. Vous devriez vous sentir mieux dans 2-3 jours. Je vous reverrai dans 48-72h pour m'assurer de votre amélioration. Avez-vous des questions concernant votre traitement ou le suivi?",
+          "exemplesPhrases": [
+            "\"Le diagnostic le plus probable est une diverticulite du côlon sigmoïde.\"",
+            "\"C'est une inflammation de petites poches dans votre côlon.\"",
+            "\"Avec le traitement, l'évolution est généralement favorable.\"",
+            "\"Il est important de respecter le repos digestif les premiers jours.\""
+          ]
+        },
+        {
+          "id": "c2",
+          "text": "Questions difficiles du patient",
+          "content": "[Est-ce que c'est grave? Vais-je devoir me faire opérer?]"
+        },
+        {
+          "id": "c3",
+          "text": "Réponse aux inquiétudes",
+          "content": "C'est une forme non compliquée qui répond généralement bien au traitement médical. La chirurgie n'est envisagée qu'en cas de récidives fréquentes ou de complications, ce qui n'est pas votre cas actuellement.",
+          "exemplesPhrases": [
+            "\"La majorité des patients (90%) guérissent sans chirurgie.\"",
+            "\"Nous réserverons la chirurgie uniquement si nécessaire.\"",
+            "\"Les mesures préventives réduisent significativement le risque de récidive.\"",
+            "\"Un suivi régulier nous permettra d'adapter la prise en charge.\""
+          ]
+        },
+        {
+          "id": "c4",
+          "text": "Questions sur l'alimentation",
+          "content": "[Est-ce que je peux manger normalement? Qu'est-ce que je dois éviter?]"
+        },
+        {
+          "id": "c5",
+          "text": "Conseils diététiques",
+          "content": "Durant 24-48h, privilégiez une alimentation liquide ou semi-liquide. Ensuite, réintroduction progressive d'aliments solides. À long terme, augmentez votre consommation de fibres progressivement après guérison complète.",
+          "exemplesPhrases": [
+            "\"Commencez par des bouillons, soupes et yaourts.\"",
+            "\"Évitez temporairement les aliments irritants et les graines.\"",
+            "\"Les fibres seront réintroduites progressivement après guérison.\"",
+            "\"Une bonne hydratation est essentielle pour votre rétablissement.\""
+          ]
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour le patient standardisé - Diverticulite",
+      "nom": "Monsieur D.",
+      "age": "58 ans",
+      "contexte": "Service d'urgences",
+      "motifConsultation": {
+        "plaintePrincipale": "J'ai très mal au ventre depuis 2 jours, surtout en bas à gauche.",
+        "autreChose": "J'ai aussi de la fièvre et des nausées."
+      },
+      "histoireActuelle": {
+        "symptomesPrincipaux": [
+          "Douleur abdominale QIG depuis 48h",
+          "Début progressif, s'est aggravé",
+          "Douleur constante, sourde",
+          "Intensité 6-7/10",
+          "Augmentée par mouvement et toux",
+          "Soulagée par le repos"
+        ],
+        "signesAssocies": [
+          "Fièvre à 38.3°C depuis hier",
+          "Nausées sans vomissements",
+          "Alternance diarrhée/constipation",
+          "Ballonnements abdominaux",
+          "Pas de sang dans les selles",
+          "Pas de brûlures urinaires"
+        ]
+      },
+      "simulation": {
+        "attitude": [
+          "Patient anxieux mais coopératif",
+          "Se tient le ventre côté gauche",
+          "Marche lentement, penché en avant",
+          "Grimace à la mobilisation"
+        ],
+        "durantExamen": [
+          "Réagir douloureusement à la palpation QIG",
+          "Contracter les muscles abdominaux (défense)",
+          "Respirer superficiellement pendant la palpation",
+          "Pas de douleur à la palpation QID"
+        ]
+      },
+      "anamneseSystemes": {
+        "generale": [
+          "Pas de perte de poids récente",
+          "Pas de sueurs nocturnes",
+          "Appétit diminué depuis 2 jours"
+        ],
+        "digestive": [
+          "Transit habituellement irrégulier",
+          "Tendance à la constipation",
+          "Pas d'antécédent de sang dans les selles",
+          "Pas de reflux gastrique"
+        ],
+        "urinaire": [
+          "Pas de dysurie",
+          "Pas d'hématurie",
+          "Pas d'urgences mictionnelles"
+        ]
+      },
+      "habitudes": {
+        "tabac": "10 cigarettes/jour depuis 30 ans",
+        "alcool": "Occasionnel, 1-2 verres de vin/semaine",
+        "alimentation": "Fast-food fréquent, peu de fruits et légumes",
+        "activite": "Sédentaire, travail de bureau",
+        "medicaments": "Paracétamol occasionnel, AINS pour douleurs"
+      },
+      "antecedents": {
+        "medicaux": "Aucun diagnostic de diverticulose",
+        "chirurgicaux": "Appendicectomie à 20 ans",
+        "familiaux": "Père opéré pour diverticulite à 65 ans",
+        "allergies": "Aucune"
+      },
+      "inquietudes": {
+        "principales": [
+          "Est-ce que c'est grave?",
+          "Vais-je devoir me faire opérer?",
+          "Est-ce que ça peut être un cancer?"
+        ],
+        "questions": [
+          "Combien de temps vais-je avoir mal?",
+          "Quand pourrai-je remanger normalement?",
+          "Est-ce que ça peut revenir?"
+        ]
+      }
+    },
+    "informationsExpert": {
+      "titre": "Guide pour l'examinateur - Diverticulite",
+      "dossierMedical": "Patient de 58 ans, consulte aux urgences pour douleurs abdominales QIG depuis 48h avec fièvre. Facteurs de risque: tabagisme, régime pauvre en fibres, surpoids, sédentarité.",
+      "pointsCles": [
+        "Reconnaître la présentation classique de diverticulite",
+        "Identifier les signes de complication",
+        "Demander les examens appropriés (CT avec contraste)",
+        "Proposer un traitement adapté (ATB sélective)",
+        "Planifier le suivi et la prévention"
+      ],
+      "pieges": [
+        "Oublier d'éliminer une grossesse chez la femme en âge de procréer",
+        "Proposer une coloscopie en phase aiguë (contre-indiquée)",
+        "Prescrire des AINS (facteur de risque de complication)",
+        "Ne pas planifier de coloscopie à distance",
+        "Oublier les conseils de prévention secondaire"
+      ],
+      "rolesInterventions": [
+        "Si l'étudiant demande un CT: confirmer diverticulite non compliquée",
+        "Si antibiotiques prescrits: approuver le choix",
+        "Si hospitalisation proposée sans indication: questionner",
+        "Si coloscopie immédiate: rappeler la contre-indication"
+      ]
+    },
+    "theoriePratique": {
+      "titre": "Points théoriques - Diverticulite",
+      "sections": [
+        {
+          "titre": "Classification de Hinchey",
+          "contenu": "Stade I: Abcès péricolique\nStade II: Abcès pelvien\nStade III: Péritonite purulente\nStade IV: Péritonite fécale"
+        },
+        {
+          "titre": "Critères d'antibiothérapie",
+          "contenu": "Indiquée si: immunosuppression, comorbidités sévères, signes systémiques importants, absence d'amélioration à 48h sans ATB"
+        }
+      ],
+      "rappelsTherapeutiques": [
+        "Antibiothérapie première ligne: Métronidazole + Fluoroquinolone ou Amox-clav",
+        "Durée: 4-7 jours si non compliquée, 10-14 jours si compliquée",
+        "Antalgie: Paracétamol en première intention, éviter AINS et morphiniques",
+        "Chirurgie: résection sigmoïdienne élective après 2e épisode ou complications"
+      ],
+      "examensComplementaires": [
+        "CT abdominal avec contraste IV: sensibilité 94%, spécificité 99%",
+        "Échographie: alternative si CI au scanner, opérateur-dépendant",
+        "IRM: si allergie au contraste iodé ou grossesse",
+        "Coloscopie: à 6-8 semaines pour éliminer cancer (10-15% des cas)"
+      ]
+    },
+    "questionsPostStation": [
+      {
+        "question": "Quelle est l'imagerie de choix dans une suspicion de diverticulite?",
+        "reponse": "Scanner abdominopelvien avec injection de contraste IV."
+      },
+      {
+        "question": "Quand faut-il hospitaliser un patient avec diverticulite?",
+        "reponse": "En cas de forme compliquée, comorbidités, impossibilité de suivi ou mauvaise tolérance digestive."
+      },
+      {
+        "question": "Quelle est la principale complication aiguë?",
+        "reponse": "Perforation avec péritonite, nécessitant une chirurgie en urgence."
+      },
+      {
+        "question": "Quelle est la conduite à tenir après l'épisode aigu?",
+        "reponse": "Réaliser une coloscopie après 6-8 semaines, instaurer une prévention secondaire (fibres, hygiène de vie)."
+      }
+    ],
+    "resume": {
+      "titre": "🧩 Diverticulite – Résumé ECOS",
+      "sections": [
+        {
+          "titre": "🔍 Anamnèse",
+          "subsections": [
+            {
+              "titre": "Symptômes principaux",
+              "points": [
+                "Douleur abdominale localisée, typiquement en fosse iliaque gauche",
+                "Fièvre, frissons",
+                "Troubles du transit (constipation, diarrhée, ténesme)",
+                "Nausées, anorexie"
+              ]
+            },
+            {
+              "titre": "Contexte",
+              "points": [
+                "Âge > 50 ans",
+                "ATCD de diverticulose colique connue",
+                "Antécédents familiaux de diverticulite ou de chirurgie digestive"
+              ]
+            },
+            {
+              "titre": "Signes de gravité à rechercher",
+              "points": [
+                "Douleur diffuse ou péritonéale",
+                "Vomissements incoercibles",
+                "Altération de l’état général",
+                "Immunodépression, terrain fragile (âge, comorbidités)"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "👀 Examen clinique",
+          "subsections": [
+            {
+              "titre": "Inspection et palpation abdominale",
+              "points": [
+                "Douleur localisée en FIDG (sigmoïde) à la palpation",
+                "Contracture localisée ou défense abdominale",
+                "Masse palpable (abcès péri-diverticulaire possible)"
+              ]
+            },
+            {
+              "titre": "Constantes",
+              "points": [
+                "Fièvre, tachycardie",
+                "TA basse si choc septique"
+              ]
+            },
+            {
+              "titre": "Recherche complications",
+              "points": [
+                "Signe de péritonite généralisée (perforation)",
+                "Signe occlusif (arrêt gaz/selles, météorisme)",
+                "Signe d’abcès (masse sensible, fièvre persistante)"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "🧪 Examens diagnostiques",
+          "subsections": [
+            {
+              "titre": "Biologie",
+              "points": [
+                "Syndrome inflammatoire (CRP, hyperleucocytose)",
+                "Bilan rénal et ionogramme (en vue d’imagerie et antibiothérapie)",
+                "Hémocultures si fièvre élevée"
+              ]
+            },
+            {
+              "titre": "Imagerie",
+              "points": [
+                "Scanner abdomino-pelvien avec injection = examen de référence (diagnostic + recherche complications)",
+                "Échographie possible mais moins sensible"
+              ]
+            },
+            {
+              "titre": "Coloscopie",
+              "points": [
+                "Contre-indiquée en phase aiguë (risque perforation)",
+                "À réaliser à distance (4–6 semaines) pour exclusion cancer colorectal"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "⚙️ Prise en charge",
+          "subsections": [
+            {
+              "titre": "Formes simples (non compliquées)",
+              "points": [
+                "Antibiothérapie probabiliste large spectre (anaérobies + bacilles G-)",
+                "Régime sans résidu ou jeûne si douleur importante",
+                "Hospitalisation selon terrain et douleur"
+              ]
+            },
+            {
+              "titre": "Formes compliquées",
+              "points": [
+                "Abcès : drainage percutané guidé + antibiotiques",
+                "Péritonite : chirurgie en urgence (sigmoïdectomie ± stomie)",
+                "Occlusion : chirurgie selon gravité"
+              ]
+            },
+            {
+              "titre": "Prévention des récidives",
+              "points": [
+                "Alimentation riche en fibres après épisode",
+                "Coloscopie de contrôle à distance",
+                "Discussion chirurgie prophylactique si récidives multiples ou formes compliquées"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "✅ Points clés ECOS",
+          "points": [
+            "Douleur FIDG fébrile = évoquer diverticulite",
+            "Scanner = examen diagnostique de référence",
+            "Pas de coloscopie en phase aiguë",
+            "Antibiothérapie + surveillance si forme simple",
+            "Complications (abcès, perforation, péritonite) = indication chirurgicale ou drainage"
+          ]
+        },
+        {
+          "titre": "📋 Check-list rapide ECOS",
+          "subsections": [
+            {
+              "titre": "Questions à poser",
+              "points": [
+                "Localisation et durée de la douleur ?",
+                "Fièvre, frissons ?",
+                "Troubles du transit récents ?",
+                "ATCD de diverticulose ou épisodes similaires ?",
+                "Perte de poids, rectorragies (diagnostic différentiel cancer colorectal) ?"
+              ]
+            },
+            {
+              "titre": "Examens à faire",
+              "points": [
+                "Constantes vitales : TA, FC, T°, SpO₂",
+                "Palpation abdominale : douleur FIDG, défense, masse",
+                "Biologie : NFS, CRP, iono, créatinine",
+                "Scanner abdomino-pelvien avec injection",
+                "Coloscopie différée à 4–6 semaines"
+              ]
+            },
+            {
+              "titre": "PEC en 3 points",
+              "points": [
+                "Confirmer diagnostic par scanner",
+                "Antibiothérapie large spectre + repos digestif si forme simple",
+                "Hospitalisation et chirurgie/drainage si forme compliquée"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "presentationPatient": {
+      "titre": "📑 Fiche ECOS – Cas : Douleur abdominale FIDG fébrile (Diverticulite sigmoïdienne)",
+      "sections": [
+        {
+          "titre": "🧩 Checklist mentale (présentation systématisée)",
+          "points": [
+            "Intro → âge, contexte (urgence), motif (douleur QIG/FIDG fébrile)",
+            "Caractériser douleur → durée (48h), type (sourde, constante), intensité, irradiation, aggravants/soulageants",
+            "Signes associés → fièvre, nausées, transit modifié, ballonnements",
+            "Signes de gravité → défense, péritonite, vomissements répétés, arrêt gaz/selles, hypotension",
+            "ATCD médicaux et chirurgicaux → appendicectomie, pas de maladie digestive connue, père diverticulite",
+            "Habitudes de vie → tabac, alimentation pauvre en fibres, sédentarité, surpoids",
+            "Examen clinique → inspection, palpation (défense FIDG), auscultation, percussion",
+            "Résumé + hypothèse principale + diagnostics différentiels (colite, cancer, colique néphrétique, pyélonéphrite)",
+            "Examens complémentaires → NFS/CRP, BU/ECBU, CT abdomino-pelvien avec contraste",
+            "Prise en charge → antibiothérapie (si facteurs risque), antalgie, repos digestif, surveillance 48-72h, chirurgie si compliqué"
+          ],
+          "mnemo": {
+            "titre": "👉 Mnémo rapide : DIVERTI",
+            "elements": [
+              "D = Douleur QIG/FIDG",
+              "I = Inflammation (fièvre, CRP, leucocytose)",
+              "V = Vérifier complications (abcès, perforation, fistule)",
+              "E = Examen clé = scanner abdo avec contraste",
+              "R = Repos digestif + antibiotiques",
+              "T = Toucher rectal non systématique",
+              "I = Indications chirurgicales si compliquée/récidive"
+            ]
+          }
+        },
+        {
+          "titre": "🎤 Version longue (≈2-3 min)",
+          "contenu": "Il s’agit de Monsieur D., un homme de 58 ans, qui consulte aux urgences pour des douleurs abdominales du quadrant inférieur gauche évoluant depuis 48 heures.\n\nIl rapporte une douleur sourde, constante, notée à 6–7/10, localisée à la fosse iliaque gauche, sans irradiation, aggravée par les mouvements, la toux et la palpation, et soulagée par le repos. Elle s’accompagne de nausées mais sans vomissements, d’une alternance diarrhée-constipation ces derniers jours et de ballonnements. Il a mesuré de la fièvre à 38,3 °C à domicile. Pas de rectorragies, pas de brûlures urinaires.\n\nIl n’a jamais eu d’épisodes similaires, pas de diverticulose diagnostiquée, ni de maladies digestives connues. Antécédent d’appendicectomie à 20 ans. Pas de diabète, pas d’immunosuppression. Dans ses habitudes de vie, il fume 10 cigarettes/jour depuis 30 ans, consomme occasionnellement de l’alcool, a une alimentation riche en fast-foods et pauvre en fibres. Il est en surpoids (IMC 28) et plutôt sédentaire. Son père a été opéré pour diverticulite à 65 ans.\n\nÀ l’examen, le patient est algique mais stable hémodynamiquement. T° 38,3 °C, légère tachycardie. L’abdomen est légèrement distendu, cicatrice d’appendicectomie. À la palpation, douleur maximale en fosse iliaque gauche avec défense localisée. Rebond absent. Pas de masse palpable, pas d’hépato- ou splénomégalie. Les bruits intestinaux sont diminués. Pas de douleur lombaire ni de signes urologiques.\n\nEn résumé, il s’agit d’un homme de 58 ans, consultant pour douleur fébrile de fosse iliaque gauche, avec défense localisée et contexte de facteurs de risque (âge, tabac, régime pauvre en fibres). Mon hypothèse principale est une diverticulite sigmoïdienne non compliquée. Les diagnostics différentiels incluent une colite infectieuse ou ischémique, un cancer colique, une colique néphrétique ou une pyélonéphrite.\n\nComme examens complémentaires, je demanderais une NFS (attente leucocytose), CRP, ionogramme, créatinine, BU/ECBU pour éliminer cause urinaire, et surtout un scanner abdomino-pelvien avec injection de contraste, qui est l’examen de référence. Pas de coloscopie en phase aiguë.\n\nEn termes de prise en charge, il s’agit d’une forme non compliquée : repos digestif, hydratation, paracétamol, éviter AINS et opioïdes. Une antibiothérapie par métronidazole + fluoroquinolone ou amoxicilline/acide clavulanique peut être débutée selon le contexte. Le patient doit être surveillé de près avec réévaluation à 48–72h. À distance, une coloscopie est indiquée à 6–8 semaines pour exclure un cancer colorectal. Enfin, prévention secondaire : régime riche en fibres, hydratation, activité physique, perte de poids, arrêt tabac."
+        },
+        {
+          "titre": "⚡ Version express (SBAR, 30 sec)",
+          "contenu": "S (Situation) : M. D., 58 ans, consulte aux urgences pour douleur abdominale gauche depuis 48h, avec fièvre 38,3 °C.\n\nB (Background) : ATCD appendicectomie, père diverticulite, tabagisme, alimentation pauvre en fibres, surpoids. Pas d’épisodes similaires.\n\nA (Assessment) : Suspicion forte de diverticulite sigmoïdienne non compliquée. DD : colite infectieuse/ischémique, cancer colique, pathologie urinaire.\n\nR (Recommendation) : NFS/CRP, ionogramme, BU/ECBU, scanner abdomino-pelvien avec contraste. PEC : repos digestif, paracétamol, antibiothérapie sélective, surveillance 48–72h, coloscopie à distance."
+        },
+        {
+          "titre": "🎲 Touches ludiques / mnémos",
+          "subsections": [
+            {
+              "titre": "👉 Classification Hinchey",
+              "points": [
+                "Stade I : Abcès péricolique",
+                "Stade II : Abcès pelvien",
+                "Stade III : Péritonite purulente",
+                "Stade IV : Péritonite fécale"
+              ]
+            },
+            {
+              "titre": "👉 Diagnostics différentiels",
+              "points": [
+                "Appendicite (si non opérée)",
+                "Colite infectieuse (C. difficile, salmonellose)",
+                "Colite ischémique",
+                "Cancer colique compliqué",
+                "Colique néphrétique ou pyélonéphrite"
+              ]
+            },
+            {
+              "titre": "⚠️ Pièges ECOS",
+              "points": [
+                "Proposer coloscopie en phase aiguë",
+                "Oublier grossesse si femme en âge de procréer",
+                "Prescrire AINS ou opioïdes",
+                "Négliger prévention secondaire"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "❓ Questions probables de l'examinateur (avec réponses orales)",
+          "subsections": [
+            {
+              "titre": "1. Arguments pour et contre chaque hypothèse",
+              "questions": [
+                {
+                  "question": "Diverticulite sigmoïdienne",
+                  "reponse": {
+                    "pour": [
+                      "Douleur FIDG fébrile",
+                      "Défense localisée",
+                      "Facteurs de risque (tabac, régime pauvre en fibres, âge > 50)",
+                      "Syndrome inflammatoire attendu"
+                    ],
+                    "contre": [
+                      "Pas de diagnostic de diverticulose connu avant"
+                    ]
+                  }
+                },
+                {
+                  "question": "Colite infectieuse",
+                  "reponse": {
+                    "pour": [
+                      "Fièvre + douleurs abdominales"
+                    ],
+                    "contre": [
+                      "Pas de diarrhée profuse",
+                      "Pas de contexte infectieux clair"
+                    ]
+                  }
+                },
+                {
+                  "question": "Cancer colique compliqué",
+                  "reponse": {
+                    "pour": [
+                      "Âge > 50 ans",
+                      "ATCD familial"
+                    ],
+                    "contre": [
+                      "Évolution aiguë",
+                      "Pas de rectorragie ni perte de poids"
+                    ]
+                  }
+                },
+                {
+                  "question": "Colique néphrétique / pyélonéphrite",
+                  "reponse": {
+                    "pour": [
+                      "Douleur abdominale possible"
+                    ],
+                    "contre": [
+                      "Pas d’irradiation lombaire",
+                      "Pas d’hématurie ni de brûlures urinaires"
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "titre": "2. Examens complémentaires immédiats",
+              "questions": [
+                {
+                  "question": "Quels examens demanderiez-vous ?",
+                  "reponse": [
+                    "NFS, CRP",
+                    "Ionogramme, créatinine",
+                    "BU/ECBU",
+                    "Scanner abdomino-pelvien avec injection",
+                    "Pas de coloscopie en phase aiguë"
+                  ]
+                }
+              ]
+            },
+            {
+              "titre": "3. Diagnostic définitif, traitement, suivi",
+              "questions": [
+                {
+                  "question": "Diagnostic",
+                  "reponse": "Diverticulite sigmoïdienne non compliquée confirmée au scanner"
+                },
+                {
+                  "question": "Traitement",
+                  "reponse": {
+                    "immediat": [
+                      "Repos digestif",
+                      "Hydratation",
+                      "Paracétamol",
+                      "Antibiothérapie sélective (métronidazole + fluoroquinolone ou amox-clav)"
+                    ],
+                    "siCompliquee": [
+                      "Abcès > 4 cm → drainage",
+                      "Péritonite → chirurgie en urgence"
+                    ]
+                  }
+                },
+                {
+                  "question": "Suivi",
+                  "reponse": [
+                    "Réévaluation clinique à 48–72h",
+                    "Coloscopie à 6–8 semaines",
+                    "Prévention secondaire (fibres, activité, sevrage tabac, perte de poids)",
+                    "Surveillance récidives (indication chirurgicale si fréquentes)"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

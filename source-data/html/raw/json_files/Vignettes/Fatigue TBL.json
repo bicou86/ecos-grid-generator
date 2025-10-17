@@ -1,0 +1,360 @@
+{
+  "title": "Fatigue TBL",
+  "context": {
+    "setting": "Service de médecine interne",
+    "patient": "Monsieur C, 74 ans, présentant une faiblesse progressive et dyspnée depuis 4 mois",
+    "vitals": {
+      "ta": "165/85 mmHg",
+      "fc": "95 bpm",
+      "fr": "15/min",
+      "temperature": "37.3°C",
+      "sao2": "98% AA"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Motif de consultation et symptômes principaux",
+          "details": [
+            "Faiblesse très importante [Oui, depuis 4 mois]",
+            "Évolution progressive [S'aggrave progressivement]",
+            "Dyspnée associée [J'ai du mal à respirer]",
+            "Impact fonctionnel [Je ne sors plus de chez moi]"
+          ]
+        },
+        {
+          "id": "a2",
+          "text": "Antécédents médicaux récents",
+          "details": [
+            "Hypertension découverte [Il y a 4 mois]",
+            "Troubles anxio-dépressifs [Apparus récemment]",
+            "Baisse de la libido [Depuis la même période]",
+            "Investigations déjà réalisées [Echo cœur normale, CT normal, IRM cérébrale normale]"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Revue des systèmes - Symptômes associés",
+          "details": [
+            "Prise de poids [8 kg en 4 mois]",
+            "Œdèmes membres supérieurs [J'ai eu de la peine à enlever ma bague]",
+            "Œdème facial [Ma fille dit que j'ai des joues de hamster]",
+            "Changement de voix [Ma voix est devenue aphone]",
+            "Dyspnée à la parole [Je m'essouffle en parlant]"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Faiblesse musculaire spécifique",
+          "details": [
+            "Difficulté à se déplacer [Je ne sors plus]",
+            "Faiblesse proximale [Je n'arrive plus à me relever de la position accroupie]",
+            "Progression temporelle [Depuis quelques semaines]",
+            "Impact sur autonomie [Je reste à la maison]"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Médicaments actuels",
+          "details": [
+            "Co-Aprovel (Irbesartan + Hydrochlorothiazide) [1-0-0]",
+            "Fluctine (Fluoxétine, ISRS) [1-0-0 depuis 1 mois]",
+            "Temesta (Lorazépam) [En réserve]"
+          ]
+        },
+        {
+          "id": "a6",
+          "text": "Habitudes et mode de vie",
+          "details": [
+            "Tabac",
+            "Alcool",
+            "Activité physique [Réduite progressivement]",
+            "Alimentation"
+          ]
+        },
+        {
+          "id": "a7",
+          "text": "Chronologie des symptômes",
+          "details": [
+            "Début il y a 4 mois avec hypertension",
+            "Apparition progressive de la faiblesse",
+            "Prise de poids concomitante",
+            "Troubles de l'humeur récents"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Inspection générale",
+          "details": [
+            "Lésions pétéchiales au torse [Présentes]",
+            "Œdème des joues [Léger œdème visible]",
+            "Aspect cushingoïde [Buffalo hump, moon face]",
+            "État général"
+          ]
+        },
+        {
+          "id": "e2",
+          "text": "Examen neurologique",
+          "details": [
+            "Dysphonie à la parole [Claire dysphonie]",
+            "Ralentissement neuropsychologique [Légèrement ralenti]",
+            "Orientation et cohérence [Orienté et cohérent]",
+            "ROT [Tous présents et symétriques]",
+            "Tonus musculaire [Normal]"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Testing musculaire",
+          "details": [
+            "Force membres inférieurs proximaux [M4, diminution symétrique]",
+            "Force membres supérieurs",
+            "Pas de latéralisation [Non]",
+            "Myopathie proximale [Présente]"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Examen cardio-pulmonaire",
+          "details": [
+            "Auscultation cardiaque [Normale]",
+            "Auscultation pulmonaire [Normale]",
+            "Recherche d'insuffisance cardiaque [Absente]",
+            "Signes de surcharge [Non]"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Tests neurologiques complémentaires",
+          "details": [
+            "Sensibilité [Sans particularité]",
+            "Tests cérébelleux [Sans particularité]",
+            "Coordination",
+            "Marche et équilibre"
+          ]
+        },
+        {
+          "id": "e6",
+          "text": "Signes spécifiques d'hypercorticisme",
+          "details": [
+            "Dépôts graisseux supraclaviculaires [Fat pads]",
+            "Vergetures abdominales",
+            "Ecchymoses faciles [Pétéchies]",
+            "Pléthore faciale"
+          ]
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Hypothèses diagnostiques principales",
+          "ddSection": {
+            "title": "Diagnostics différentiels à considérer",
+            "categories": [
+              {
+                "name": "Hypothèse prioritaire",
+                "items": [
+                  {
+                    "text": "Syndrome de Cushing / Hypercorticisme",
+                    "cause": "Arguments POUR:\n\t□ Faiblesse musculaire proximale (myopathie)\n\t□ Prise de poids centrale (8 kg)\n\t□ Moon face (joues de hamster)\n\t□ Buffalo hump suggéré\n\t□ HTA d'apparition récente\n\t□ Troubles neuropsychiatriques\n\t□ Baisse de libido\n\t□ Pétéchies (fragilité capillaire)\n\t□ Hypokaliémie sévère (1.7 mmol/L)\n\t□ Alcalose métabolique",
+                    "test": "→ Cortisol libre urinaire 24h, test de freinage à la dexaméthasone"
+                  }
+                ]
+              },
+              {
+                "name": "Autres hypothèses à explorer",
+                "items": [
+                  {
+                    "text": "Hypothyroïdie",
+                    "cause": "Arguments POUR:\n\t□ Faiblesse et fatigue\n\t□ Ralentissement psychomoteur\n\t□ Baisse de libido\n\t□ Prise de poids\n\t□ Dysphonie (possible myxœdème laryngé)\nArguments CONTRE:\n\t□ HTA (rare dans hypothyroïdie)\n\t□ Pétéchies non expliquées",
+                    "test": "→ TSH, T4 libre"
+                  },
+                  {
+                    "text": "Maladie auto-immune / Vascularite",
+                    "cause": "Arguments POUR:\n\t□ HTA (atteinte rénale possible)\n\t□ Pétéchies\n\t□ Faiblesse (myosite inflammatoire possible)\nArguments CONTRE:\n\t□ CT scan normal\n\t□ Pas de dysphonie typique",
+                    "test": "→ CRP, VS, anticorps anti-nucléaires (ANA), ANCA"
+                  },
+                  {
+                    "text": "Cause médicamenteuse",
+                    "cause": "Arguments POUR:\n\t□ Chronologie avec Co-Aprovel (diurétique)\n\t□ Prise de poids paradoxale\nArguments CONTRE:\n\t□ Œdèmes atypiques\n\t□ Dyspnée et dysphonie non expliquées",
+                    "test": "→ Ionogramme, fonction rénale"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Examens complémentaires initiaux",
+          "details": [
+            "Bilan sanguin complet (NFS, plaquettes)",
+            "Ionogramme avec potassium, magnésium",
+            "Fonction rénale (urée, créatinine)",
+            "Fonction hépatique (ASAT, ALAT, PAL, GGT)",
+            "Glycémie à jeun",
+            "CK, LDH (myopathie)",
+            "Gazométrie artérielle",
+            "Protéines totales, albumine"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Résultats biologiques et interprétation",
+          "details": [
+            "Hypokaliémie sévère [K+ 1.7 mmol/L] - Critique",
+            "Alcalose métabolique [pH 7.526, HCO3- 27.8]",
+            "Hypoalbuminémie [33 g/L]",
+            "Élévation CK [46 U/L] - Myopathie",
+            "Hyperglycémie [7.1 mmol/L]",
+            "NT-proBNP élevé [655 ng/L]"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Diagnostic final et physiopathologie",
+          "description": "Syndrome de Cushing avec excès de minéralocorticoïdes",
+          "details": [
+            "Hypokaliémie + alcalose = excès minéralocorticoïdes",
+            "Myopathie hypokaliémique",
+            "Probable ACTH ectopique (hypokaliémie sévère)",
+            "Confirmation par PET-CT au F-DOPA: tumeur neuroendocrine ectopique"
+          ]
+        },
+        {
+          "id": "m5",
+          "text": "Examens spécifiques pour confirmation",
+          "details": [
+            "Cortisol libre urinaire 24h",
+            "Test de freinage faible/fort à la dexaméthasone",
+            "ACTH plasmatique",
+            "IRM hypophysaire si ACTH central",
+            "CT thoraco-abdominal (recherche tumeur ectopique)",
+            "PET-CT au F-DOPA si ACTH ectopique suspecté"
+          ]
+        },
+        {
+          "id": "m6",
+          "text": "Prise en charge thérapeutique urgente",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Mesures immédiates",
+                "content": "• Correction urgente de l'hypokaliémie (risque d'arythmie)\n• Supplémentation potassique IV puis PO\n• Monitoring cardiaque continu\n• Arrêt des diurétiques\n• Contrôle tensionnel"
+              },
+              {
+                "title": "Traitement étiologique",
+                "content": "• Inhibiteurs de la synthèse du cortisol (kétoconazole, métyrapone)\n• Chirurgie de la tumeur si localisée\n• Si ACTH ectopique: exérèse de la tumeur primitive\n• Si maladie de Cushing: chirurgie hypophysaire"
+              },
+              {
+                "title": "Suivi et surveillance",
+                "content": "• Ionogramme quotidien jusqu'à normalisation\n• Surveillance glycémique\n• Prévention des infections (immunosuppression)\n• Physiothérapie pour myopathie\n• Support psychologique"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Communication du diagnostic",
+          "content": "Monsieur, vos symptômes et les examens biologiques suggèrent fortement un syndrome de Cushing, c'est-à-dire un excès de cortisol dans votre organisme. L'hypokaliémie sévère et l'alcalose métabolique orientent vers une forme particulière avec excès de minéralocorticoïdes, possiblement due à une tumeur sécrétant de l'ACTH. Nous devons d'abord corriger d'urgence votre taux de potassium qui est dangereusement bas, puis confirmer le diagnostic avec des examens spécifiques et localiser la source de production excessive d'hormones."
+        },
+        {
+          "id": "c2",
+          "text": "Questions difficiles du patient",
+          "content": "[Est-ce grave docteur?]\n[C'est un cancer?]\n[Pourquoi mes muscles sont si faibles?]\n[Les médicaments sont responsables?]"
+        },
+        {
+          "id": "c3",
+          "text": "Réponses type",
+          "exemplesPhrases": [
+            "C'est une situation sérieuse qui nécessite un traitement rapide, mais nous avons de bonnes options thérapeutiques.",
+            "Il peut s'agir d'une tumeur bénigne ou maligne, les examens nous le préciseront.",
+            "L'excès de cortisol et surtout le manque de potassium causent cette faiblesse musculaire.",
+            "Les diurétiques ont pu aggraver la perte de potassium, mais ne sont pas la cause principale."
+          ]
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "images": [
+      {
+        "id": "img1",
+        "title": "Signes cliniques du syndrome de Cushing",
+        "filename": "grilles_generees/html/images/Fatigue TBL-img1.jpg",
+        "description": "Photos cliniques montrant les fat pads supraclaviculaires et l'aspect cushingoïde"
+      },
+      {
+        "id": "img2",
+        "title": "Évolution morphologique",
+        "filename": "grilles_generees/html/images/Fatigue TBL-img2.jpg",
+        "description": "Comparaison avant/après montrant l'évolution du faciès"
+      },
+      {
+        "id": "img3",
+        "title": "Myopathie proximale",
+        "filename": "grilles_generees/html/images/Fatigue TBL-img3.jpg",
+        "description": "Illustration de l'atrophie musculaire et pseudoarthrose"
+      },
+      {
+        "id": "img4",
+        "title": "Examens paracliniques",
+        "filename": "grilles_generees/html/images/Fatigue TBL-img4-Examens paracliniques.jpg",
+        "description": "Tableau des résultats biologiques montrant l'hypokaliémie sévère et l'alcalose métabolique"
+      }
+    ],
+    "theoriePratique": {
+      "titre": "Points théoriques clés - Syndrome de Cushing",
+      "sections": [
+        {
+          "titre": "Physiopathologie de l'hypokaliémie",
+          "contenu": "Dans le syndrome de Cushing avec ACTH ectopique, l'excès massif de cortisol dépasse la capacité de l'enzyme 11β-hydroxystéroïde déshydrogénase 2 à convertir le cortisol en cortisone inactive. Le cortisol agit alors sur les récepteurs minéralocorticoïdes rénaux, causant une réabsorption de sodium et une perte de potassium et d'hydrogène, d'où l'hypokaliémie sévère et l'alcalose métabolique."
+        },
+        {
+          "titre": "Signes cliniques spécifiques",
+          "points": [
+            "Fat pads supraclaviculaires : signe le plus spécifique",
+            "Obésité centripète (79-97%)",
+            "Pléthore faciale (50-94%)",
+            "Myopathie proximale (29-90%)",
+            "HTA (74-87%)",
+            "Changements psychologiques (31-86%)",
+            "Ecchymoses faciles (23-84%)"
+          ]
+        },
+        {
+          "titre": "Clé diagnostique",
+          "contenu": "Le développement simultané et l'aggravation progressive de plusieurs symptômes est un indice clinique important de l'excès de glucocorticoïdes. Aucun signe n'est pathognomonique isolément."
+        }
+      ],
+      "rappelsTherapeutiques": [
+        "Correction urgente de l'hypokaliémie (risque vital)",
+        "Inhibiteurs de la synthèse du cortisol en attendant le traitement étiologique",
+        "Chirurgie de la tumeur primitive si possible",
+        "Surveillance étroite des complications métaboliques"
+      ],
+      "examensComplementaires": [
+        "Cortisol libre urinaire 24h : dépistage initial",
+        "Test de freinage à la dexaméthasone : confirmation du diagnostic",
+        "ACTH plasmatique : différencier origine centrale vs ectopique",
+        "PET-CT au F-DOPA : localisation tumeur neuroendocrine ectopique"
+      ]
+    }
+  }
+}

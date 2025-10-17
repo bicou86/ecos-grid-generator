@@ -1,0 +1,221 @@
+{
+  "title": "Thieme Abdomen 11 - Douleur abdominale droite supérieure - Femme de 50 ans",
+  "category": "Thieme Abdomen",
+  "subcategory": "Douleur abdominale droite supérieure",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Femme de 50 ans, Mme Linda Thomas, consultant pour douleur abdominale droite supérieure",
+    "vitals": {
+      "temperature": "38°C",
+      "ta": "130/90 mmHg",
+      "fc": "100 bpm",
+      "fr": "16/min"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Motif principal de consultation",
+          "binaryOnly": true,
+          "patientComment": "douleur abdominale droite supérieure"
+        },
+        {
+          "id": "a2",
+          "text": "Analyse de la plainte principale (ABCDE)",
+          "details": [
+            "Apparition et durée [Douleur QSD depuis 1 mois, irradiant vers épaule droite]",
+            "Bilan (localisation, irradiation)",
+            "Caractère et qualité de la douleur",
+            "Degré d'intensité (échelle 1-10)",
+            "Éléments associés et facteurs modifiants"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Symptômes associés et antécédents",
+          "details": [
+            "Perte de poids",
+            "Antécédents de calculs biliaires",
+            "Hystérectomie il y a 5 ans"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Histoire sociale et habitudes de vie",
+          "details": [
+            "Employée de bureau",
+            "Ex-fumeuse",
+            "Alcool social",
+            "Monogame avec mari"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Revue des systèmes",
+          "details": [
+            "Système gastro-intestinal",
+            "Système hépatobiliaire"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Signes vitaux et apparence générale",
+          "binaryOnly": true
+        },
+        {
+          "id": "e2",
+          "text": "Examen de la tête et du cou",
+          "details": [
+            "Recherche pâleur, ictère",
+            "Examen ORL avec abaisse-langue",
+            "Palpation ganglions lymphatiques",
+            "Examen thyroïde"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Examen cardio-pulmonaire",
+          "details": [
+            "Auscultation cardiaque [S1 et S2 normaux]",
+            "Auscultation pulmonaire bilatérale"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Examen abdominal complet",
+          "details": [
+            "Inspection (cicatrices, distension)",
+            "Auscultation (bruits intestinaux)",
+            "Percussion (matité, tympanisme)",
+            "Palpation superficielle et profonde",
+            "Recherche défense et signe de Murphy [sensibilité épigastrique]"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Examens spécifiques selon le cas",
+          "details": []
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostics différentiels à évoquer",
+          "ddSection": {
+            "title": "Hypothèses diagnostiques",
+            "categories": [
+              {
+                "name": "Diagnostics prioritaires",
+                "items": [
+                  {
+                    "text": "Cholécystite aiguë",
+                    "cause": "Arguments POUR:\n\t□ Douleur QSD, fièvre, Murphy positif, ATCD calculs",
+                    "test": "→ US abdominale, NFS, CRP"
+                  },
+                  {
+                    "text": "Colique biliaire",
+                    "cause": "Arguments POUR:\n\t□ Douleur QSD post-prandiale, irradiation épaule",
+                    "test": "→ Selon orientation clinique"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Examens complémentaires pertinents",
+          "details": [
+            "NFS",
+            "Tests hépatiques",
+            "Lipase/Amylase",
+            "US abdominale",
+            "CT abdomen"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Plan de prise en charge immédiate",
+          "details": [
+            "Investigations ambulatoires",
+            "Traitement symptomatique",
+            "Suivi après résultats"
+          ]
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Questions difficiles du patient",
+          "content": "Vais-je avoir besoin d'une chirurgie?"
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour le patient standardisé",
+      "nom": "Mme Linda Thomas",
+      "age": "50 ans",
+      "contexte": "Cabinet de médecine générale",
+      "motifConsultation": {
+        "plaintePrincipale": "douleur abdominale droite supérieure",
+        "autreChose": "Douleur QSD depuis 1 mois, irradiant vers épaule droite. Fièvre, nausées. Aggravée par aliments gras."
+      },
+      "histoireActuelle": {
+        "symptomesPrincipaux": [
+          "Douleur QSD depuis 1 mois, irradiant vers épaule droite",
+          " Fièvre, nausées",
+          " Aggravée par aliments gras"
+        ],
+        "contextePsychosocial": [
+          "Employée de bureau",
+          " Ex-fumeuse",
+          " Alcool social",
+          " Monogame avec mari"
+        ]
+      },
+      "simulation": {
+        "attitude": [
+          "Douleur importante"
+        ],
+        "durantExamen": [
+          "Sensibilité QSD, signe de Murphy positif"
+        ]
+      },
+      "inquietudes": {
+        "principales": [
+          "Vais-je avoir besoin d'une chirurgie?"
+        ]
+      }
+    },
+    "informationsExpert": {
+      "titre": "Informations pour l'expert",
+      "pointsCles": [
+        "Cas de Douleur abdominale droite supérieure",
+        "Patient: Femme de 50 ans",
+        "Anamnèse complète avec ABCDE",
+        "Examen abdominal détaillé",
+        "Diagnostic différentiel approprié"
+      ],
+      "pieges": [
+        "Confondre avec colique biliaire simple",
+        "Oublier complications"
+      ]
+    }
+  }
+}

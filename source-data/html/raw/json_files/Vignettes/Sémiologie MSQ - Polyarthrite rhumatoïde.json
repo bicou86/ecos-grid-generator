@@ -1,0 +1,474 @@
+{
+  "title": "Sémiologie MSQ - Polyarthrite rhumatoïde",
+  "type": "ecos-pedagogique",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Patiente de 45 ans présentant des douleurs articulaires multiples",
+    "vitals": {}
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "title": "Anamnèse",
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Caractérisation des douleurs",
+          "details": [
+            "Début [Depuis 6 mois, douleurs du poignet droit devenues symétriques]",
+            "Localisation [Articulations métacarpo-phalangiennes et inter-phalangiennes proximales de façon symétrique]",
+            "Évolution [Rapidement devenues symétriques, touchant également les coudes et genoux]"
+          ]
+        },
+        {
+          "id": "a2",
+          "text": "Caractère inflammatoire",
+          "details": [
+            "Raideur matinale [Environ 2 heures le matin et après immobilité]",
+            "Douleurs nocturnes [Réveillée en fin de nuit par les douleurs]",
+            "Amélioration à la mobilisation [Mouvements plus faciles et douleurs diminuent après dérouillage]"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Symptômes associés",
+          "details": [
+            "Tuméfaction articulaire [Elle remarque des difficultés pour mettre ou enlever ses bagues]",
+            "Asthénie [Depuis quelques mois]",
+            "Pas de fièvre",
+            "Pas de symptômes cutanés ou muqueux",
+            "Pas de symptômes digestifs"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Réponse aux traitements",
+          "details": [
+            "Anti-inflammatoires [N'ont qu'un effet partiel sur les symptômes]",
+            "Repos [Douleurs ne sont pas calmées par le repos]"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Antécédents",
+          "details": [
+            "Pas de rachialgie",
+            "Pas de problèmes cutanés",
+            "Pas de plaintes digestives",
+            "Antécédents personnels et familiaux sans particularité"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "title": "Examen clinique",
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Inspection générale",
+          "details": [
+            "Attitude antalgique",
+            "Tuméfaction des articulations MCP et IPP",
+            "Symétrie de l'atteinte"
+          ]
+        },
+        {
+          "id": "e2",
+          "text": "Palpation articulaire",
+          "details": [
+            "Articulations douloureuses",
+            "Synovite (gonflement, chaleur)",
+            "Recherche d'épanchements articulaires"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Mobilité articulaire",
+          "details": [
+            "Limitation des amplitudes",
+            "Douleur à la mobilisation passive et active",
+            "Raideur articulaire"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Examen des mains",
+          "details": [
+            "Squeeze test des MCP",
+            "Squeeze test des MTP",
+            "Recherche de ténosynovite",
+            "Recherche de nodules rhumatoïdes"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Examen général",
+          "details": [
+            "Recherche d'autres articulations touchées",
+            "Examen cutané (psoriasis, érythème)",
+            "Recherche d'adénopathies",
+            "Auscultation cardio-pulmonaire"
+          ]
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "title": "Management",
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic proposé",
+          "content": "Polyarthrite rhumatoïde",
+          "ddSection": {
+            "title": "Diagnostics différentiels",
+            "categories": [
+              {
+                "name": "Pathologies inflammatoires",
+                "items": [
+                  {
+                    "text": "Polyarthrite rhumatoïde",
+                    "cause": "Arguments POUR:\n\t□ Femme de 45 ans\n\t□ Atteinte symétrique MCP et IPP\n\t□ Raideur matinale > 1 heure\n\t□ Évolution > 6 semaines\n\t□ Caractère inflammatoire\n\t□ Asthénie associée",
+                    "test": "→ FR, anti-CCP, VS, CRP, radiographies des mains"
+                  },
+                  {
+                    "text": "Arthrite psoriasique",
+                    "cause": "Arguments CONTRE:\n\t□ Pas de psoriasis\n\t□ Pas d'atteinte des IPD\n\t□ Distribution symétrique",
+                    "test": "→ Recherche de psoriasis cutané ou unguéal"
+                  },
+                  {
+                    "text": "Lupus érythémateux systémique",
+                    "cause": "Arguments CONTRE:\n\t□ Pas de symptômes cutanés\n\t□ Pas de symptômes systémiques\n\t□ Âge moins typique",
+                    "test": "→ AAN, anti-ADN, complément"
+                  },
+                  {
+                    "text": "Arthrose érosive des mains",
+                    "cause": "Arguments CONTRE:\n\t□ Âge jeune\n\t□ Caractère inflammatoire marqué\n\t□ Atteinte MCP (rare dans l'arthrose)",
+                    "test": "→ Radiographies des mains"
+                  }
+                ]
+              },
+              {
+                "name": "Autres causes",
+                "items": [
+                  {
+                    "text": "Arthrite virale",
+                    "cause": "Arguments CONTRE:\n\t□ Durée > 6 mois\n\t□ Pas de contexte infectieux",
+                    "test": "→ Sérologies virales si suspicion"
+                  },
+                  {
+                    "text": "Connectivite indifférenciée",
+                    "cause": "Arguments POSSIBLES:\n\t□ Tableau inflammatoire\n\t□ Nécessite bilan auto-immun",
+                    "test": "→ Bilan auto-immun complet"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Examens complémentaires",
+          "details": [
+            "Bilan inflammatoire : VS, CRP",
+            "Facteur rhumatoïde (FR)",
+            "Anticorps anti-CCP (plus spécifiques)",
+            "Radiographies des mains et pieds",
+            "NFS, fonction rénale et hépatique (pré-thérapeutique)",
+            "Éventuellement échographie articulaire"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Prise en charge thérapeutique",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Traitement symptomatique",
+                "items": [
+                  {
+                    "treatment": "AINS",
+                    "details": "Soulagement symptomatique, pas d'effet sur l'évolution"
+                  },
+                  {
+                    "treatment": "Corticoïdes",
+                    "details": "Faibles doses en attente de l'efficacité du traitement de fond"
+                  }
+                ]
+              },
+              {
+                "title": "Traitement de fond (DMARDs)",
+                "items": [
+                  {
+                    "treatment": "Méthotrexate",
+                    "details": "Première ligne, 15-25 mg/semaine"
+                  },
+                  {
+                    "treatment": "Biologiques",
+                    "details": "Anti-TNF, anti-IL6 si échec du méthotrexate"
+                  }
+                ]
+              },
+              {
+                "title": "Prise en charge globale",
+                "items": [
+                  {
+                    "treatment": "Physiothérapie",
+                    "details": "Maintien de la fonction articulaire"
+                  },
+                  {
+                    "treatment": "Ergothérapie",
+                    "details": "Adaptation des activités quotidiennes"
+                  },
+                  {
+                    "treatment": "Suivi rhumatologique",
+                    "details": "Surveillance de l'activité et ajustement thérapeutique"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "title": "Clôture",
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Clôture type",
+          "content": "Vos symptômes évoquent une polyarthrite rhumatoïde, une maladie inflammatoire auto-immune des articulations. Nous devons confirmer le diagnostic par des examens sanguins et radiologiques, puis débuter rapidement un traitement pour prévenir les déformations articulaires.",
+          "exemplesPhrases": [
+            "\"C'est une maladie chronique mais les traitements actuels sont très efficaces.\"",
+            "\"Un traitement précoce permet de prévenir les complications.\"",
+            "\"Nous allons vous orienter vers un rhumatologue pour la prise en charge spécialisée.\""
+          ]
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "scenarioPatienteStandardisee": {
+      "titre": "Scénario pour le patient simulé - Polyarthrite rhumatoïde",
+      "nom": "Patiente type",
+      "age": "45 ans",
+      "contexte": "Femme active avec apparition récente de douleurs articulaires",
+      "motifConsultation": {
+        "plaintePrincipale": "Douleurs articulaires multiples depuis 6 mois",
+        "autreChose": "Raideur matinale importante"
+      },
+      "histoireActuelle": {
+        "douleurs": [
+          "Début au poignet droit il y a 6 mois",
+          "Rapidement devenues symétriques",
+          "Touchent MCP, IPP, coudes, genoux",
+          "Tuméfaction articulaire",
+          "Difficultés pour les bagues"
+        ],
+        "caracteresInflammatoires": [
+          "Raideur matinale de 2 heures",
+          "Réveil nocturne par douleurs",
+          "Amélioration après dérouillage",
+          "Pas de soulagement au repos"
+        ],
+        "symptomesAssocies": [
+          "Asthénie depuis quelques mois",
+          "AINS peu efficaces"
+        ]
+      }
+    },
+    "informationsExpert": {
+      "titre": "Points clés pour l'évaluation",
+      "pointsCles": [
+        "Identifier le caractère inflammatoire des douleurs",
+        "Reconnaître la distribution typique (MCP, IPP, symétrique)",
+        "Différencier des pathologies mécaniques",
+        "Importance de la raideur matinale prolongée",
+        "Nécessité d'un bilan auto-immun",
+        "Urgence du traitement pour prévenir les destructions articulaires"
+      ]
+    },
+    "theoriePratique": {
+      "titre": "Points théoriques",
+      "sections": [
+        {
+          "titre": "Critères diagnostiques ACR/EULAR",
+          "points": [
+            "Atteinte articulaire symétrique",
+            "Durée > 6 semaines",
+            "Petites articulations des mains",
+            "Marqueurs biologiques (FR, anti-CCP)",
+            "Inflammation biologique (VS, CRP)"
+          ]
+        },
+        {
+          "titre": "Différences mécanique vs inflammatoire",
+          "points": [
+            "Mécanique : douleur d'effort, soulagée au repos",
+            "Inflammatoire : douleur de repos, raideur matinale > 30 min",
+            "Inflammatoire : réveil nocturne, amélioration à la mobilisation"
+          ]
+        }
+      ]
+    },
+    "resume": {
+      "titre": "🦴 Polyarthrite rhumatoïde – Résumé ECOS",
+      "sections": [
+        {
+          "titre": "🔍 Anamnèse",
+          "subsections": [
+            {
+              "titre": "Symptômes principaux",
+              "points": [
+                "Douleurs articulaires inflammatoires (repos, fin de nuit, réveils nocturnes)",
+                "Raideur matinale > 30 minutes",
+                "Atteinte bilatérale et symétrique (métacarpophalangiennes, interphalangiennes proximales, poignets)",
+                "Fatigue, asthénie, altération de l’état général possible"
+              ]
+            },
+            {
+              "titre": "Contexte",
+              "points": [
+                "Femme jeune ou d’âge moyen (30–50 ans)",
+                "Antécédents familiaux de maladies auto-immunes",
+                "Tabagisme (facteur de risque et de sévérité)"
+              ]
+            },
+            {
+              "titre": "Évolution",
+              "points": [
+                "Début insidieux, progression chronique par poussées",
+                "Peut évoluer vers des déformations articulaires irréversibles"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "👀 Examen clinique",
+          "subsections": [
+            {
+              "titre": "Signes articulaires",
+              "points": [
+                "Synovite bilatérale et symétrique",
+                "Articulations douloureuses, tuméfiées, chaudes mais non rouges",
+                "Poignets, MCP et IPP le plus souvent atteintes",
+                "Raideur et diminution de mobilité"
+              ]
+            },
+            {
+              "titre": "Signes évolutifs",
+              "points": [
+                "Déformations en coup de vent cubital, col de cygne, boutonnière (stades avancés)",
+                "Atteinte des grosses articulations possible (genoux, chevilles, coudes)",
+                "Syndrome du canal carpien"
+              ]
+            },
+            {
+              "titre": "Manifestations extra-articulaires",
+              "points": [
+                "Nodules rhumatoïdes sous-cutanés",
+                "Atteintes pulmonaires (fibrose, nodules), cardiaques, oculaires (sclérite)",
+                "Syndrome de Sjögren secondaire"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "🧪 Examens diagnostiques",
+          "subsections": [
+            {
+              "titre": "Biologie",
+              "points": [
+                "Syndrome inflammatoire (VS, CRP)",
+                "Facteur rhumatoïde et anticorps anti-CCP positifs (spécifiques)",
+                "Bilan pré-thérapeutique (hémogramme, transaminases, sérologies infectieuses)"
+              ]
+            },
+            {
+              "titre": "Imagerie",
+              "points": [
+                "Radiographies mains et poignets : érosions, pincement articulaire, ostéopénie juxta-articulaire",
+                "Échographie ou IRM utiles pour détection précoce de synovite/érosions"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "⚙️ Prise en charge",
+          "subsections": [
+            {
+              "titre": "Traitement de fond (DMARDs)",
+              "points": [
+                "Méthotrexate en première intention",
+                "Leflunomide, sulfasalazine, hydroxychloroquine si contre-indication ou association",
+                "Biothérapies (anti-TNF, anti-IL6, anti-CD20) en cas d’échec"
+              ]
+            },
+            {
+              "titre": "Traitement symptomatique",
+              "points": [
+                "AINS en phase de poussée (court terme)",
+                "Corticothérapie faible dose pour contrôler l’inflammation en relais",
+                "Antalgiques selon intensité de la douleur"
+              ]
+            },
+            {
+              "titre": "Prise en charge globale",
+              "points": [
+                "Kinésithérapie : entretien de la mobilité articulaire",
+                "Ergothérapie : adaptation des gestes quotidiens",
+                "Sevrage tabagique",
+                "Surveillance régulière (clinique, biologique, radiologique)"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "✅ Points clés ECOS",
+          "points": [
+            "Arthrite bilatérale et symétrique, prédominant aux petites articulations",
+            "Raideur matinale > 30 minutes = signe distinctif",
+            "Facteur rhumatoïde et anti-CCP = arguments diagnostiques",
+            "Traitement précoce par DMARDs pour éviter les destructions articulaires",
+            "Toujours rechercher atteintes extra-articulaires (poumon, cœur, œil)"
+          ]
+        },
+        {
+          "titre": "📋 Check-list rapide ECOS",
+          "subsections": [
+            {
+              "titre": "Questions à poser",
+              "points": [
+                "Douleur articulaire depuis quand ? Début brutal ou progressif ?",
+                "Raideur matinale, durée > 30 min ?",
+                "Atteinte bilatérale et symétrique ?",
+                "Fatigue, amaigrissement, fièvre ?",
+                "ATCD familiaux de maladies auto-immunes ? Tabac ?"
+              ]
+            },
+            {
+              "titre": "Examens à faire",
+              "points": [
+                "Inspection et palpation : articulations tuméfiées, chaudes, douloureuses",
+                "Évaluer mobilité et présence de déformations",
+                "Recherche de nodules rhumatoïdes",
+                "Biologie : VS, CRP, FR, anti-CCP",
+                "Radiographie mains/poignets"
+              ]
+            },
+            {
+              "titre": "PEC en 3 points",
+              "points": [
+                "Confirmer diagnostic avec clinique + biologie + imagerie",
+                "Introduire précocement un DMARD (méthotrexate 1ère intention)",
+                "PEC multidisciplinaire (rhumatologie, kiné, suivi biologique et radiologique)"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

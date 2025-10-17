@@ -1,0 +1,487 @@
+{
+  "title": "SMIG-2 - Situation 2 - Masse pulmonaire - SIADH sur cancer pulmonaire",
+  "context": {
+    "setting": "Service de médecine interne",
+    "patient": "Monsieur B., 63 ans, adressé pour investigation d'une masse pulmonaire découverte sur radiographie thoracique dans un contexte de baisse de l'état général et perte de poids. Fumeur actif 60 paquets-années. Adénopathies médiastinales visibles",
+    "vitals": {
+      "ta": "130/80 mmHg",
+      "fc": "78 bpm",
+      "fr": "18/min",
+      "temperature": "37.2°C"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Motif de consultation et symptômes",
+          "binaryOnly": true,
+          "patientComment": "[Baisse de l'état général et perte de poids depuis 2 mois]"
+        },
+        {
+          "id": "a2",
+          "text": "Caractérisation des symptômes généraux",
+          "details": [
+            "Perte de poids [8 kg en 2 mois]",
+            "Appétit [Diminué]",
+            "Asthénie [Progressive, importante]",
+            "Sueurs nocturnes [Occasionnelles]",
+            "Fièvre [Non]",
+            "État général [Altéré]"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Symptômes respiratoires",
+          "details": [
+            "Toux [Sèche, irritative]",
+            "Expectoration [Non]",
+            "Hémoptysie [Non]",
+            "Dyspnée [Légère d'effort]",
+            "Douleur thoracique [Non]",
+            "Infections respiratoires [Non récemment]"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Symptômes neurologiques",
+          "details": [
+            "Céphalées [Non]",
+            "Confusion [Non]",
+            "Troubles de concentration [Légers]",
+            "Nausées [Occasionnelles, légères]",
+            "Vomissements [Non]",
+            "Convulsions [Non]"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Facteurs de risque et antécédents",
+          "details": [
+            "Tabagisme [60 paquets-années, actif]",
+            "Exposition professionnelle [À rechercher - amiante, silice]",
+            "Antécédents familiaux cancer [À rechercher]",
+            "Antécédents personnels cancer [Non]",
+            "Immunodépression [Non]",
+            "Tuberculose [Non]"
+          ],
+          "scoringRule": "2 points si tabagisme important identifié"
+        },
+        {
+          "id": "a6",
+          "text": "Recherche de symptômes d'hyponatrémie",
+          "details": [
+            "Fatigue inhabituelle [Oui, marquée]",
+            "Anorexie [Oui]",
+            "Malaise général [Présent]",
+            "Crampes musculaires [Occasionnelles]",
+            "Léthargie [Non]",
+            "Installation [Progressive sur semaines]"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "État général et paramètres vitaux",
+          "details": [
+            "État général [Altéré, amaigrissement visible]",
+            "IMC [21 kg/m² (était 24)]",
+            "TA [130/80 mmHg]",
+            "FC [78 bpm]",
+            "FR [18/min]",
+            "Température [37.2°C]",
+            "SpO2 [95% air ambiant]"
+          ]
+        },
+        {
+          "id": "e2",
+          "text": "Examen pulmonaire",
+          "details": [
+            "Inspection [Thorax normal]",
+            "Palpation [Vibrations vocales normales]",
+            "Percussion [Matité apicale droite]",
+            "Auscultation [Diminution du murmure vésiculaire apex droit]",
+            "Râles [Absents]",
+            "Sibilants [Absents]"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Examen ganglionnaire",
+          "details": [
+            "Adénopathies cervicales [Non palpables]",
+            "Adénopathies sus-claviculaires [Gauche palpable, dure, fixée]",
+            "Adénopathies axillaires [Non]",
+            "Adénopathies inguinales [Non]",
+            "Hépato-splénomégalie [Non]"
+          ],
+          "scoringRule": "2 points si ganglion de Troisier identifié"
+        },
+        {
+          "id": "e4",
+          "text": "Évaluation de la volémie",
+          "details": [
+            "Signes de déshydratation [Absents]",
+            "Œdèmes [Absents]",
+            "Turgescence jugulaire [Normale]",
+            "Orthostatisme [Absent]",
+            "Pli cutané [Normal]",
+            "Conclusion [Euvolémie clinique]"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Examen neurologique",
+          "details": [
+            "État de conscience [Normal]",
+            "Orientation [Correcte]",
+            "Déficit focal [Absent]",
+            "Réflexes [Normaux]",
+            "Signes méningés [Absents]",
+            "Troubles cognitifs [Minimes]"
+          ]
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Interprétation des examens biologiques",
+          "details": [
+            "Natrémie [124 mmol/L - hyponatrémie modérée]",
+            "Kaliémie [4.2 mmol/L - normale]",
+            "Osmolalité plasmatique [250 mOsm/kg - hypoosmolaire]",
+            "Urée [3.4 mmol/L - normale]",
+            "Créatinine [75 μmol/L - normale]",
+            "Fonction thyroïdienne [TSH normale]",
+            "Fonction surrénalienne [Cortisol normal]"
+          ]
+        },
+        {
+          "id": "m2",
+          "text": "Diagnostic de SIADH",
+          "description": "Critères diagnostiques",
+          "details": [
+            "Hyponatrémie hypoosmolaire [Oui - Na 124, Osm 250]",
+            "Euvolémie clinique [Oui]",
+            "Osmolalité urinaire > 100 [Attendue > 300 mOsm/kg]",
+            "Natriurèse > 40 mmol/L [Attendue]",
+            "Fonctions rénale, thyroïdienne, surrénalienne normales [Oui]",
+            "Absence de diurétiques [Oui]"
+          ],
+          "ddSection": {
+            "title": "Critères diagnostiques du SIADH",
+            "categories": [
+              {
+                "name": "Critères majeurs",
+                "items": [
+                  {
+                    "text": "Hyponatrémie hypoosmolaire",
+                    "cause": "• Na < 135 mmol/L\n• Osmolalité < 275 mOsm/kg",
+                    "test": "→ Confirmé : Na 124, Osm 250"
+                  },
+                  {
+                    "text": "Euvolémie clinique",
+                    "cause": "• Pas de signes de déshydratation\n• Pas d'œdèmes\n• TA normale",
+                    "test": "→ Confirmé à l'examen"
+                  },
+                  {
+                    "text": "Osmolalité urinaire inadaptée",
+                    "cause": "• > 100 mOsm/kg\n• Généralement > 300 mOsm/kg",
+                    "test": "→ À vérifier au spot urinaire"
+                  }
+                ]
+              },
+              {
+                "name": "Critères mineurs",
+                "items": [
+                  {
+                    "text": "Natriurèse > 40 mmol/L",
+                    "cause": "• Excrétion rénale de sodium\n• Malgré hyponatrémie",
+                    "test": "→ À confirmer"
+                  },
+                  {
+                    "text": "Amélioration avec restriction hydrique",
+                    "cause": "• Test thérapeutique\n• < 90% charge hydrique/osmolalité urinaire",
+                    "test": "→ À évaluer"
+                  }
+                ]
+              }
+            ]
+          },
+          "binaryOnly": true,
+          "scoringRule": "2 points si SIADH correctement diagnostiqué"
+        },
+        {
+          "id": "m3",
+          "text": "Étiologie du SIADH",
+          "details": [
+            "Cause néoplasique [Cancer pulmonaire très probable]",
+            "Type histologique probable [Carcinome à petites cellules]",
+            "Autres causes exclues [Médicaments, infections, SNC]",
+            "Sécrétion ectopique ADH [Mécanisme probable]",
+            "Confirmation [Biopsie transthoracique en cours]"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Traitement du SIADH",
+          "details": [
+            "Restriction hydrique [500-1000 mL/jour]",
+            "Surveillance natrémie [Quotidienne initialement]",
+            "Vitesse de correction [Maximum 8-10 mmol/L/24h]",
+            "Si échec restriction [Comprimés NaCl + furosémide]",
+            "Vaptans [Si SIADH réfractaire]",
+            "Traitement étiologique [Chimiothérapie si cancer confirmé]"
+          ],
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Stratégie thérapeutique du SIADH",
+                "content": "PREMIÈRE LIGNE:\n- Restriction hydrique 500-1000 mL/j\n- Surveillance natrémie quotidienne\n- Objectif: augmentation 0.5-1 mmol/L/j\n\nDEUXIÈME LIGNE (si échec):\n- NaCl per os 3-6 g/j\n- ± Furosémide 20-40 mg/j\n- Augmente excrétion eau libre\n\nTROISIÈME LIGNE:\n- Antagonistes V2 (tolvaptan)\n- Déméclocycline 600-1200 mg/j\n- Urée 15-30 g/j\n\nTRAITEMENT ÉTIOLOGIQUE:\n- Chimiothérapie si cancer\n- Arrêt médicament causal\n- Traitement infection/pathologie SNC"
+              }
+            ]
+          }
+        },
+        {
+          "id": "m5",
+          "text": "Investigations complémentaires",
+          "details": [
+            "Spot urinaire [Na, osmolalité pour confirmer SIADH]",
+            "Biopsie pulmonaire [Confirmation histologique]",
+            "CT thoraco-abdominal [Bilan d'extension]",
+            "PET-scan [Si cancer confirmé]",
+            "Marqueurs tumoraux [NSE, ProGRP si petites cellules]",
+            "IRM cérébrale [Recherche métastases]"
+          ]
+        },
+        {
+          "id": "m6",
+          "text": "Surveillance et pronostic",
+          "details": [
+            "Surveillance natrémie [Quotidienne puis bi-hebdomadaire]",
+            "Réponse au traitement [Évaluation à 48-72h]",
+            "Complications [Prévention myélinolyse]",
+            "Pronostic SIADH [Lié au cancer sous-jacent]",
+            "Survie médiane [12-18 mois si petites cellules]",
+            "Suivi oncologique [Multidisciplinaire]"
+          ],
+          "redflagsSection": {
+            "title": "Points de vigilance",
+            "items": [
+              {
+                "text": "Correction trop rapide",
+                "description": "Risque de myélinolyse centropontine si > 10 mmol/L/24h"
+              },
+              {
+                "text": "Aggravation neurologique",
+                "description": "Peut indiquer métastases cérébrales ou hyponatrémie sévère"
+              },
+              {
+                "text": "Non-réponse à la restriction",
+                "description": "Nécessite escalade thérapeutique rapide"
+              },
+              {
+                "text": "Syndrome cave supérieur",
+                "description": "Complication possible du cancer médiastinal"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Communication du diagnostic",
+          "content": "Monsieur B., les examens montrent une masse pulmonaire qui nécessite une biopsie pour confirmation. Vous avez également un taux de sodium bas dans le sang, probablement lié à cette masse qui sécrète une hormone. C'est ce qu'on appelle un SIADH. Nous allons commencer par restreindre vos apports en eau et surveiller étroitement votre natrémie. Le traitement définitif dépendra des résultats de la biopsie."
+        },
+        {
+          "id": "c2",
+          "text": "Questions du patient",
+          "content": "[C'est un cancer docteur ?]\n[Le sodium bas, c'est grave ?]\n[Quel est le traitement ?]\n[Quel est mon pronostic ?]"
+        },
+        {
+          "id": "c3",
+          "text": "Réponses adaptées",
+          "exemplesPhrases": [
+            "La masse pulmonaire avec vos antécédents de tabagisme fait effectivement suspecter un cancer. La biopsie nous donnera la certitude et le type exact.",
+            "L'hyponatrémie modérée est gérable. Le plus important est de la corriger progressivement pour éviter les complications.",
+            "Le traitement dépendra du type de cancer. Si c'est un carcinome à petites cellules, la chimiothérapie est souvent très efficace initialement.",
+            "Le pronostic dépend du type et du stade. Nous devons attendre les résultats complets pour vous donner des informations précises."
+          ]
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "images": [
+      {
+        "title": "Critères diagnostiques du SIADH",
+        "description": "Tableau récapitulatif des critères majeurs et mineurs pour le diagnostic du syndrome de sécrétion inappropriée d'ADH",
+        "data": "grilles_generees/html/images/SMIG/SMIG-2-Situation 2-Critères diagnostiques du SIADH.jpg"
+      }
+    ],
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour le patient standardisé - M. B., SIADH sur cancer pulmonaire",
+      "nom": "Monsieur B.",
+      "age": "63 ans",
+      "contexte": "Service de médecine interne",
+      "motifConsultation": {
+        "plaintePrincipale": "Découverte d'une masse pulmonaire sur radiographie",
+        "autreChose": "Perte de poids et fatigue depuis 2 mois"
+      },
+      "histoireActuelle": {
+        "symptomesPrincipaux": [
+          "Perte de 8 kg en 2 mois",
+          "Fatigue progressive importante",
+          "Appétit diminué",
+          "Toux sèche irritative",
+          "Légère dyspnée d'effort"
+        ],
+        "tabagisme": [
+          "Fumeur actif 60 paquets-années",
+          "Début à 18 ans",
+          "1.5 paquet par jour actuellement",
+          "Jamais essayé d'arrêter"
+        ]
+      },
+      "simulation": {
+        "attitude": [
+          "Fatigué, amaigri",
+          "Inquiet mais résigné",
+          "Tousse occasionnellement",
+          "Parle lentement, économise ses efforts"
+        ],
+        "durantExamen": [
+          "Matité pulmonaire droite",
+          "Ganglion sus-claviculaire gauche",
+          "Pas de signes de déshydratation",
+          "Pas d'œdèmes"
+        ]
+      },
+      "antecedents": {
+        "medicaux": "BPCO légère, HTA",
+        "chirurgicaux": "Hernie inguinale il y a 10 ans",
+        "familiaux": "Père décédé cancer poumon à 70 ans",
+        "professionnels": "Mécanicien, exposition amiante possible"
+      },
+      "medicaments": {
+        "actuels": [
+          "Amlodipine 5 mg pour HTA",
+          "Bronchodilatateur occasionnel"
+        ]
+      },
+      "inquietudes": {
+        "principales": [
+          "Peur du diagnostic de cancer",
+          "Inquiétude sur le traitement",
+          "Culpabilité vis-à-vis du tabac",
+          "Peur de la mort"
+        ],
+        "questions": [
+          "C'est un cancer ?",
+          "J'ai combien de temps ?",
+          "C'est à cause de la cigarette ?",
+          "On peut me guérir ?"
+        ]
+      }
+    },
+    "informationsExpert": {
+      "titre": "Guide pour l'expert évaluateur - SIADH paranéoplasique",
+      "dossierMedical": "Patient de 63 ans, masse pulmonaire avec adénopathies, hyponatrémie à 124 mmol/L par SIADH",
+      "pointsCles": [
+        "Reconnaissance de l'hyponatrémie euvolémique",
+        "Application des critères diagnostiques du SIADH",
+        "Identification de la cause paranéoplasique probable",
+        "Association avec carcinome à petites cellules",
+        "Traitement par restriction hydrique en première intention",
+        "Surveillance de la vitesse de correction",
+        "Importance du traitement étiologique"
+      ],
+      "pieges": [
+        "Confondre avec une hypovolémie ou hypervolémie",
+        "Oublier d'exclure hypothyroïdie et insuffisance surrénale",
+        "Corriger trop rapidement la natrémie",
+        "Ne pas faire le lien avec le cancer pulmonaire",
+        "Utiliser du sérum salé sans restriction hydrique",
+        "Oublier le spot urinaire pour confirmer le diagnostic"
+      ],
+      "rolesInterventions": [
+        "Montrer la fatigue et l'amaigrissement",
+        "Tousser occasionnellement",
+        "Exprimer l'inquiétude sur le diagnostic",
+        "Mentionner le tabagisme important",
+        "Pas de confusion malgré l'hyponatrémie"
+      ]
+    },
+    "theoriePratique": {
+      "titre": "Rappels théoriques - SIADH",
+      "sections": [
+        {
+          "titre": "Physiopathologie du SIADH",
+          "contenu": "Sécrétion inappropriée d'ADH entraînant une rétention d'eau libre avec dilution du sodium.",
+          "points": [
+            "ADH : synthèse hypothalamique, stockage neurohypophyse",
+            "Action rénale : réabsorption d'eau au tube collecteur",
+            "SIADH : sécrétion non régulée par osmolalité/volémie",
+            "Conséquence : hyponatrémie de dilution avec euvolémie",
+            "Natriurèse préservée malgré hyponatrémie"
+          ]
+        },
+        {
+          "titre": "Étiologies du SIADH",
+          "contenu": "Causes multiples regroupées en grandes catégories.",
+          "points": [
+            "NÉOPLASIES : poumon (petites cellules+++), pancréas, prostate",
+            "PULMONAIRES : pneumonie, tuberculose, aspergillose",
+            "SNC : méningite, encéphalite, AVC, trauma",
+            "MÉDICAMENTS : ISRS, carbamazépine, AINS, chimiothérapie",
+            "POST-OPÉRATOIRE : douleur, nausées, stress",
+            "IDIOPATHIQUE : souvent chez le sujet âgé"
+          ]
+        },
+        {
+          "titre": "Cancer pulmonaire et SIADH",
+          "contenu": "Association fréquente avec le carcinome à petites cellules.",
+          "points": [
+            "Incidence SIADH : 10-15% des cancers petites cellules",
+            "Mécanisme : sécrétion ectopique d'ADH par tumeur",
+            "Peut précéder le diagnostic de cancer",
+            "Marqueur de mauvais pronostic",
+            "Réponse au traitement anticancéreux variable",
+            "Récidive du SIADH = récidive tumorale possible"
+          ]
+        }
+      ],
+      "rappelsTherapeutiques": [
+        "Restriction hydrique 500-1000 mL/j en première intention",
+        "NaCl per os 3-6 g/j si échec restriction seule",
+        "Furosémide 20-40 mg/j : augmente excrétion eau libre",
+        "Tolvaptan 15-60 mg/j : antagoniste récepteur V2",
+        "Déméclocycline 600-1200 mg/j : induit diabète insipide néphrogénique",
+        "Urée 15-30 g/j : augmente osmolalité et diurèse",
+        "Chimiothérapie si cancer : traitement étiologique principal"
+      ],
+      "examensComplementaires": [
+        "Spot urinaire : Na > 40 mmol/L, osmolalité > 100 mOsm/kg",
+        "TSH, cortisol : exclure autres causes d'hyponatrémie",
+        "Radiographie thoracique : masse, adénopathies",
+        "CT thoracique : précise la lésion et extension",
+        "Biopsie transthoracique ou bronchoscopie : diagnostic histologique",
+        "Marqueurs tumoraux : NSE, ProGRP si petites cellules suspecté",
+        "PET-scan : bilan d'extension si cancer confirmé"
+      ]
+    }
+  }
+}

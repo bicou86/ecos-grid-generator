@@ -1,0 +1,190 @@
+{
+  "title": "Thieme Thorax 7 - Douleur thoracique (III) - Costochondrite - Homme de 28 ans",
+  "category": "Thieme Thorax",
+  "subcategory": "Douleur thoracique (III) - Costochondrite",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Homme de 28 ans, M. Adams, consultant pour douleur thoracique",
+    "vitals": {
+      "temperature": "37°C",
+      "fc": "84 bpm",
+      "ta": "110/70 mmHg",
+      "fr": "16/min"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Motif principal de consultation",
+          "binaryOnly": true,
+          "patientComment": "douleur thoracique"
+        },
+        {
+          "id": "a2",
+          "text": "Analyse de la plainte principale",
+          "details": [
+            "Début et évolution [Douleur thoracique depuis 2 semaines, début pendant match de lutte]",
+            "Localisation et irradiation de la douleur",
+            "Caractéristiques et intensité",
+            "Facteurs aggravants et soulageants",
+            "Symptômes associés"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Antécédents médicaux et chirurgicaux",
+          "details": [
+            "Augmente avec mouvement bras droit et inspiration profonde",
+            "Diminue au repos et massage",
+            "Grippe la semaine dernière"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Histoire sociale et habitudes de vie",
+          "details": [
+            "Fume 1 pqt/j × 10 ans",
+            "Père décédé cancer poumon",
+            "Sexuellement actif avec préservatifs"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Signes vitaux",
+          "binaryOnly": true
+        },
+        {
+          "id": "e2",
+          "text": "Examen de la tête et du cou",
+          "details": [
+            "PERRLA",
+            "Examen ORL complet",
+            "Palpation thyroïde",
+            "Recherche ganglions lymphatiques"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Examen cardio-pulmonaire",
+          "details": [
+            "Auscultation cardiaque [S1 et S2 normaux]",
+            "Recherche de souffles ou galop",
+            "Auscultation pulmonaire bilatérale",
+            "Recherche de râles ou sibilances"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Examen abdominal si pertinent",
+          "details": []
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostics différentiels à évoquer",
+          "ddSection": {
+            "title": "Hypothèses diagnostiques",
+            "categories": [
+              {
+                "name": "Diagnostics principaux",
+                "items": [
+                  {
+                    "text": "Costochondrite",
+                    "cause": "Arguments POUR:\n\t□ Traumatisme, douleur reproductible, sensibilité locale",
+                    "test": "→ Radiographie thoracique si doute"
+                  },
+                  {
+                    "text": "Pleurésie",
+                    "cause": "Arguments POUR:\n\t□ Douleur à l'inspiration profonde, ATCD infection respiratoire",
+                    "test": "→ Radiographie thoracique"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Examens complémentaires pertinents",
+          "details": [
+            "Enzymes cardiaques",
+            "ECG",
+            "Radiographie thoracique"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Plan de prise en charge",
+          "details": [
+            "Investigations ambulatoires",
+            "Traitement symptomatique si approprié",
+            "Suivi après résultats"
+          ]
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour le patient standardisé",
+      "nom": "M. Adams",
+      "age": "28 ans",
+      "contexte": "Cabinet de médecine générale",
+      "motifConsultation": {
+        "plaintePrincipale": "douleur thoracique",
+        "autreChose": "Douleur thoracique depuis 2 semaines, début pendant match de lutte. Côté droit, 3/10, sourde."
+      },
+      "histoireActuelle": {
+        "symptomesPrincipaux": [
+          "Douleur thoracique depuis 2 semaines, début pendant match de lutte",
+          " Côté droit, 3/10, sourde"
+        ],
+        "contextePsychosocial": [
+          "Fume 1 pqt/j × 10 ans",
+          " Père décédé cancer poumon",
+          " Sexuellement actif avec préservatifs"
+        ]
+      },
+      "simulation": {
+        "attitude": [
+          "Sportif",
+          "Minimiser les symptômes"
+        ],
+        "durantExamen": [
+          "Sensibilité côté droit poitrine"
+        ]
+      },
+      "inquietudes": {
+        "principales": [
+          "Puis-je participer au match de lutte?",
+          "Dois-je utiliser une pommade?"
+        ]
+      }
+    },
+    "informationsExpert": {
+      "titre": "Informations pour l'expert",
+      "pointsCles": [
+        "Cas de Douleur thoracique (III) - Costochondrite",
+        "Patient: Homme de 28 ans",
+        "Évaluation de l'anamnèse ciblée",
+        "Examen physique pertinent",
+        "Diagnostic différentiel approprié"
+      ],
+      "pieges": [
+        "Sur-investiguer une costochondrite simple"
+      ]
+    }
+  }
+}

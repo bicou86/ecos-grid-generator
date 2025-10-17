@@ -1,0 +1,226 @@
+{
+  "title": "Thieme Pédiatrie 28 - Fièvre chez nourrisson (consultation téléphonique) - Fille de 1 an",
+  "category": "Thieme Pédiatrie",
+  "subcategory": "Fièvre chez nourrisson (consultation téléphonique)",
+  "context": {
+    "setting": "Consultation téléphonique",
+    "patient": "Fille de 1 an, Rose David, Mme Morny David consulte pour fièvre",
+    "vitals": {
+      "temperature": "38.3°C"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Motif principal de consultation",
+          "binaryOnly": true,
+          "patientComment": "fièvre"
+        },
+        {
+          "id": "a2",
+          "text": "Analyse de la plainte principale",
+          "details": [
+            "Durée et évolution [5 jours, aggravée hier]",
+            "Température mesurée [101°F/38.3°C]",
+            "Réponse aux antipyrétiques [peu de réponse au Tylenol]",
+            "Tire sur l'oreille [oui]",
+            "Difficultés alimentaires et sommeil"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Recherche diagnostique différentielle",
+          "details": [
+            "Symptômes ORL (oreille, nez, gorge)",
+            "Symptômes respiratoires bas",
+            "Signes méningés",
+            "Contact avec malades",
+            "Vaccinations à jour"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Antécédents et développement de l'enfant",
+          "details": [
+            "Développement: dit 'maman' et 'papa', s'assoit sans soutien"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Histoire sociale et familiale",
+          "details": [
+            "Vit avec ses deux parents",
+            "Mère a asthme bronchique",
+            "Grossesse à terme, accouchement naturel",
+            "Vaccinations à jour"
+          ]
+        },
+        {
+          "id": "a6",
+          "text": "Revue des systèmes pédiatriques",
+          "details": [
+            "Système respiratoire",
+            "Système ORL",
+            "État général"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Examen physique non réalisé (consultation téléphonique)",
+          "binaryOnly": true,
+          "patientComment": "Recommandation de consultation en présentiel si nécessaire"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostics différentiels pédiatriques",
+          "ddSection": {
+            "title": "Hypothèses diagnostiques à considérer",
+            "categories": [
+              {
+                "name": "Diagnostics prioritaires",
+                "items": [
+                  {
+                    "text": "Otite moyenne",
+                    "cause": "Arguments POUR:\n\t□ Fièvre, tire oreille, ATCD otite, post-infection virale",
+                    "test": "→ Otoscopie, tympanométrie si disponible"
+                  },
+                  {
+                    "text": "Infection voies respiratoires inférieures",
+                    "cause": "Arguments POUR:\n\t□ Fièvre, toux, difficultés respiratoires, ATCD asthme mère",
+                    "test": "→ Radiographie thoracique, NFS"
+                  },
+                  {
+                    "text": "Asthme bronchique",
+                    "cause": "Arguments POUR:\n\t□ Toux nocturne, ATCD familial asthme, symptômes récurrents",
+                    "test": "→ Spirométrie (si âge approprié), test bronchodilatateur"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Examens complémentaires appropriés à l'âge",
+          "details": [
+            "Examen physique et otoscopie",
+            "NFS avec différentiel",
+            "Radiographie thoracique",
+            "Envisager nébuliseur si sifflements"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Plan de prise en charge pédiatrique",
+          "details": [
+            "Consultation présentielle recommandée",
+            "Antibiothérapie si otite confirmée (éviter amoxicilline - allergie)",
+            "Antipyrétiques adaptés",
+            "Surveillance respiratoire"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Conseils aux parents",
+          "details": [
+            "Surveillance température",
+            "Hydratation++",
+            "Retour si aggravation",
+            "Éviter garderie si fièvre"
+          ]
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Questions des parents",
+          "content": "[Pourquoi ma fille tire-t-elle sur son oreille?]\n[Puis-je lui donner les antibiotiques de son frère?]\n[Est-ce que Rose va bien aller?]"
+        },
+        {
+          "id": "c2",
+          "text": "Conseils spécifiques et éducation",
+          "content": "Otite probable après infection virale. Consultation présentielle nécessaire. Transport urgent si pas possible."
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour le parent standardisé",
+      "nom": "Mme Morny David",
+      "enfant": "Rose David, 1 an",
+      "contexte": "Consultation téléphonique",
+      "motifConsultation": {
+        "plaintePrincipale": "fièvre",
+        "autreChose": "Fièvre depuis 5 jours avec rhume banal, rhinorrhée, toux sèche légère. Fièvre augmentée depuis hier (101°F), peu de réponse au Tylenol. Tire sur oreille, difficultés allaitement, troubles sommeil."
+      },
+      "histoireActuelle": {
+        "symptomesPrincipaux": [
+          "Fièvre depuis 5 jours avec rhume banal, rhinorrhée, toux sèche légère",
+          " Fièvre augmentée depuis hier (101°F), peu de réponse au Tylenol",
+          " Tire sur oreille, difficultés allaitement, troubles sommeil"
+        ],
+        "développement": [
+          "Épisode similaire il y a 3 mois guéri",
+          " Va à la garderie",
+          " Développement: dit 'maman' et 'papa', s'assoit sans soutien",
+          " Dernière visite contrôle il y a 1 mois normale"
+        ],
+        "contexteSocial": [
+          "Vit avec ses deux parents",
+          " Mère a asthme bronchique",
+          " Grossesse à terme, accouchement naturel",
+          " Vaccinations à jour"
+        ]
+      },
+      "simulation": {
+        "attitude": [
+          "Mère inquiète",
+          "Difficultés transport si consultation demandée"
+        ],
+        "durantConsultation": [
+          "Mentionner difficultés transport",
+          "Insister sur inquiétudes"
+        ]
+      },
+      "inquietudes": {
+        "principales": [
+          "[Pourquoi ma fille tire-t-elle sur son oreille?]",
+          "[Puis-je lui donner les antibiotiques de son frère?]",
+          "[Est-ce que Rose va bien aller?]"
+        ]
+      }
+    },
+    "informationsExpert": {
+      "titre": "Informations pour l'expert",
+      "pointsCles": [
+        "Cas pédiatrique: Fièvre chez nourrisson (consultation téléphonique)",
+        "Enfant: Fille de 1 an",
+        "Anamnèse adaptée à l'âge",
+        "Consultation téléphonique - pas d'examen physique",
+        "Communication avec le parent"
+      ],
+      "pieges": [
+        "Ne pas reconnaître urgence otite",
+        "Oublier allergie amoxicilline",
+        "Ne pas proposer consultation présentielle"
+      ]
+    }
+  }
+}

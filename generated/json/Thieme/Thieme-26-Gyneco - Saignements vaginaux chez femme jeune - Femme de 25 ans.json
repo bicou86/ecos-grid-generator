@@ -1,0 +1,234 @@
+{
+  "title": "Thieme Gynéco 26 - Saignements vaginaux chez femme jeune - Femme de 25 ans",
+  "category": "Thieme Gynécologie-Obstétrique",
+  "subcategory": "Saignements vaginaux chez femme jeune",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Femme de 25 ans, Mme Donna Mitchell, consultant pour saignements vaginaux",
+    "vitals": {
+      "temperature": "37°C",
+      "fc": "100 bpm",
+      "fr": "16/min",
+      "ta": "90/50 mmHg"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Motif principal de consultation",
+          "binaryOnly": true,
+          "patientComment": "saignements vaginaux"
+        },
+        {
+          "id": "a2",
+          "text": "Analyse de la plainte principale (ABCDE)",
+          "details": [
+            "Début [hier] et progression",
+            "Quantité [4 serviettes]",
+            "Caractéristiques [sang rouge vif]",
+            "Douleur abdominale [crampes 6/10]",
+            "Contexte de grossesse possible"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Antécédents gynécologiques et obstétricaux",
+          "details": [
+            "DDR il y a 7 semaines, règles manquées",
+            "Test grossesse domicile positif",
+            "G1P1, césarienne il y a 2 ans"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Histoire sociale et habitudes de vie",
+          "details": [
+            "Travaille restaurant",
+            "Fume 1 pqt/j × 5 ans",
+            "Alcool social, plus le week-end",
+            "Sexuellement active, monogame avec mari, pas de contraception"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Revue des systèmes",
+          "details": [
+            "Système gynécologique",
+            "Symptômes de grossesse"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Signes vitaux et apparence générale",
+          "binaryOnly": true
+        },
+        {
+          "id": "e2",
+          "text": "Examen de la tête et du cou",
+          "details": [
+            "PERRLA",
+            "Recherche pâleur ou cyanose",
+            "Examen gorge",
+            "Palpation thyroïde et ganglions"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Examen cardio-pulmonaire",
+          "details": [
+            "Auscultation cardiaque [S1 et S2 normaux]",
+            "Auscultation pulmonaire bilatérale"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Examen abdominal complet",
+          "details": [
+            "Inspection (cicatrices, distension)",
+            "Auscultation (bruits intestinaux)",
+            "Palpation superficielle et profonde",
+            "Recherche défense [sensibilité QIG]"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Examens spécifiques selon le cas",
+          "details": [
+            "Demander examen pelvien et vaginal"
+          ]
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostics différentiels à évoquer",
+          "ddSection": {
+            "title": "Hypothèses diagnostiques gynécologiques",
+            "categories": [
+              {
+                "name": "Diagnostics prioritaires",
+                "items": [
+                  {
+                    "text": "Avortement spontané",
+                    "cause": "Arguments POUR:\n\t□ DDR manquées, saignements vaginaux, douleur crampes, test grossesse positif",
+                    "test": "→ βhCG sériée, US pelvienne"
+                  },
+                  {
+                    "text": "Grossesse extra-utérine",
+                    "cause": "Arguments POUR:\n\t□ DDR manquées, douleur aiguë QIG, saignement vaginal, hypotension",
+                    "test": "→ βhCG quantitative, US pelvienne, laparoscopie"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Examens complémentaires pertinents",
+          "details": [
+            "Examen pelvien et vaginal",
+            "Test grossesse et hCG quantitative",
+            "NFS, ECBU",
+            "US pelvienne"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Plan de prise en charge",
+          "details": [
+            "Hospitalisation",
+            "Surveillance saignements",
+            "Support psychologique"
+          ]
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Questions difficiles de la patiente",
+          "content": "Est-ce que je fais une fausse couche?"
+        },
+        {
+          "id": "c2",
+          "text": "Conseils spécifiques",
+          "content": "Support psychologique. Arrêt tabac et alcool."
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour la patiente standardisée",
+      "nom": "Mme Donna Mitchell",
+      "age": "25 ans",
+      "contexte": "Cabinet de médecine générale",
+      "motifConsultation": {
+        "plaintePrincipale": "saignements vaginaux",
+        "autreChose": "Saignements vaginaux depuis hier, aggravés ce matin. 4 serviettes utilisées. Sang rouge vif, pas de caillots. Douleur abdominale basse en crampes 6/10."
+      },
+      "histoireActuelle": {
+        "symptomesPrincipaux": [
+          "Saignements vaginaux depuis hier, aggravés ce matin",
+          " 4 serviettes utilisées",
+          " Sang rouge vif, pas de caillots",
+          " Douleur abdominale basse en crampes 6/10"
+        ],
+        "antecedentsGynecologiques": [
+          "DDR il y a 7 semaines, règles manquées",
+          " Test grossesse domicile positif",
+          " Nausées matinales et seins sensibles",
+          " G1P1, césarienne il y a 2 ans"
+        ],
+        "contextePsychosocial": [
+          "Travaille restaurant",
+          " Fume 1 pqt/j × 5 ans",
+          " Alcool social, plus le week-end",
+          " Sexuellement active, monogame avec mari, pas de contraception"
+        ]
+      },
+      "simulation": {
+        "attitude": [
+          "Anxieuse",
+          "Douleur abdominale"
+        ],
+        "durantExamen": [
+          "Sensibilité abdomen inférieur"
+        ]
+      },
+      "inquietudes": {
+        "principales": [
+          "Est-ce que je fais une fausse couche?"
+        ]
+      }
+    },
+    "informationsExpert": {
+      "titre": "Informations pour l'expert",
+      "pointsCles": [
+        "Cas de Saignements vaginaux chez femme jeune",
+        "Patiente: Femme de 25 ans",
+        "Anamnèse gynécologique complète",
+        "Examen abdominal et pelvien appropriés",
+        "Diagnostic différentiel ciblé"
+      ],
+      "pieges": [
+        "Ne pas hospitaliser",
+        "Minimiser détresse psychologique"
+      ]
+    }
+  }
+}

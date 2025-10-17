@@ -1,0 +1,111 @@
+{
+  "title": "USMLE Mini - Avortement spontané - Femme de 28 ans",
+  "category": "USMLE Mini-Cas",
+  "originalCategory": "SAIGNEMENT VAGINAL",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Femme de 28 ans consultant pour enceinte de 8 semaines se présente avec douleur abdominale basse et saignement vaginal."
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Motif principal de consultation",
+          "binaryOnly": true,
+          "patientComment": "enceinte de 8 semaines se présente avec douleur abdominale basse et saignement vaginal."
+        },
+        {
+          "id": "a2",
+          "text": "Éléments clés de l'anamnèse à explorer",
+          "details": [
+            "Statut pré- vs post-ménopausique, durée, quantité",
+            "antécédents menstruels et relation avec les dernières règles",
+            "écoulement associé, douleur pelvienne ou abdominale, ou symptômes urinaires",
+            "traumatisme",
+            "médicaments (en particulier anticoagulants, contraceptifs)",
+            "antécédents de saignements ou ecchymoses faciles",
+            "antécédents de frottis anormaux."
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Éléments clés de l'examen physique",
+          "details": [
+            "Signes vitaux",
+            "examen abdominal",
+            "examen pelvien complet."
+          ]
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostics différentiels à considérer",
+          "ddSection": {
+            "title": "Diagnostics différentiels",
+            "categories": [
+              {
+                "name": "Hypothèses diagnostiques",
+                "items": [
+                  {
+                    "text": "Avortement spontané",
+                    "cause": "À évaluer selon l'anamnèse et l'examen clinique",
+                    "test": "→ hCG urinaire"
+                  },
+                  {
+                    "text": "Grossesse ectopique",
+                    "cause": "À évaluer selon l'anamnèse et l'examen clinique",
+                    "test": "→ hCG sérique quantitatif"
+                  },
+                  {
+                    "text": "Môle hydatiforme",
+                    "cause": "À évaluer selon l'anamnèse et l'examen clinique",
+                    "test": "→ Échographie abdomino-pelvienne"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Examens complémentaires pertinents",
+          "details": [
+            "hCG urinaire",
+            "hCG sérique quantitatif",
+            "Échographie abdomino-pelvienne",
+            "Examen pelvien",
+            "NFS",
+            "TP/TCA"
+          ]
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "informationsExpert": {
+      "titre": "Informations pour l'expert",
+      "pointsCles": [
+        "Cas de saignement vaginal",
+        "Patient: Femme de 28 ans",
+        "Évaluation de la démarche diagnostique",
+        "Choix approprié des examens complémentaires"
+      ],
+      "pieges": [
+        "Ne pas explorer systématiquement tous les éléments de l'anamnèse",
+        "Oublier certains diagnostics différentiels importants",
+        "Demander des examens non pertinents ou excessifs"
+      ]
+    }
+  }
+}

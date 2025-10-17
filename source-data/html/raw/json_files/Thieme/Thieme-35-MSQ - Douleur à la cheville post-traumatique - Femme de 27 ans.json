@@ -1,0 +1,268 @@
+{
+  "title": "Thieme MSQ 35 - Douleur à la cheville post-traumatique - Femme de 27 ans",
+  "category": "Thieme Musculosquelettique",
+  "subcategory": "Douleur à la cheville post-traumatique",
+  "context": {
+    "setting": "Service d'urgences",
+    "patient": "Femme de 27 ans, Mme Luisa Landro, consultant pour douleur à la cheville",
+    "vitals": {
+      "fc": "64 bpm",
+      "ta": "110/70 mmHg",
+      "fr": "16/min",
+      "temperature": "37°C"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Motif principal de consultation",
+          "binaryOnly": true,
+          "patientComment": "douleur à la cheville"
+        },
+        {
+          "id": "a2",
+          "text": "Analyse de la douleur (ABCDE)",
+          "details": [
+            "Intensité [9/10]",
+            "Localisation et irradiation",
+            "Caractère de la douleur",
+            "Facteurs aggravants et soulageants"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Mécanisme de survenue et contexte",
+          "details": [
+            "Torsion en patinant il y a 2h",
+            "Incapacité de marcher",
+            "Transport par amis"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Signes inflammatoires et symptômes associés",
+          "details": [
+            "Rougeur",
+            "Gonflement important",
+            "Impossibilité mise en charge"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Antécédents musculosquelettiques",
+          "details": [
+            "Il y a 2 semaines"
+          ]
+        },
+        {
+          "id": "a6",
+          "text": "Histoire sociale et facteurs de risque",
+          "details": [
+            "Ingénieure électricienne",
+            "Boit socialement"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Signes vitaux et apparence générale",
+          "binaryOnly": true
+        },
+        {
+          "id": "e2",
+          "text": "Inspection de la zone affectée",
+          "details": [
+            "Érythème cheville droite",
+            "Gonflement important",
+            "Position antalgique"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Palpation et recherche de sensibilité",
+          "details": [
+            "Sensibilité diffuse cheville",
+            "Chaleur locale",
+            "Œdème palpable"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Évaluation vasculo-nerveuse",
+          "details": [
+            "Pouls tibial et pédieux présents",
+            "Sensation normale",
+            "Force 5/5",
+            "ROT 2+"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Amplitude de mouvement et force musculaire",
+          "details": [
+            "Flexion dorsale/plantaire impossibles",
+            "Éversion/inversion limitées",
+            "Non testable en charge"
+          ]
+        },
+        {
+          "id": "e6",
+          "text": "Tests spéciaux orthopédiques",
+          "details": [
+            "Test tiroir antérieur cheville",
+            "Test stress varus/valgus",
+            "Test Thompson négatif"
+          ]
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostics différentiels musculosquelettiques",
+          "ddSection": {
+            "title": "Hypothèses diagnostiques à considérer",
+            "categories": [
+              {
+                "name": "Diagnostics prioritaires",
+                "items": [
+                  {
+                    "text": "Entorse de la cheville",
+                    "cause": "Arguments POUR:\n\t□ Torsion cheville, œdème, douleur, impotence fonctionnelle",
+                    "test": "→ Radiographie cheville (critères Ottawa)"
+                  },
+                  {
+                    "text": "Fracture de Pott",
+                    "cause": "Arguments POUR:\n\t□ Traumatisme torsion, douleur sévère, impossibilité appui",
+                    "test": "→ Radiographie cheville face/profil/mortaise"
+                  },
+                  {
+                    "text": "Fracture du calcanéum",
+                    "cause": "Arguments POUR:\n\t□ Chute hauteur, douleur talon, œdème important",
+                    "test": "→ Radiographie pied, CT pour bilan"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Examens d'imagerie appropriés",
+          "details": [
+            "Radiographie cheville droite (AP et latérale)",
+            "Radiographie des deux chevilles",
+            "CT ou IRM cheville droite"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Plan de prise en charge orthopédique",
+          "details": [
+            "Immobilisation urgente",
+            "Radiographie urgente",
+            "AINS/antalgiques",
+            "Béquilles",
+            "Plâtre si fracture"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Conseils et restrictions d'activité",
+          "details": [
+            "Aucun appui initial",
+            "Béquilles obligatoires",
+            "Surélévation membre",
+            "Mobilisation selon évolution"
+          ]
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Questions du patient",
+          "content": "[Pensez-vous que c'est une fracture?]\n[Que pensez-vous de faire une IRM pour ma cheville?]\n[Est-ce que cela nécessitera une chirurgie?]"
+        },
+        {
+          "id": "c2",
+          "text": "Conseils spécifiques",
+          "content": "Immobilisation stricte. Radiographie urgente. Chirurgie selon résultats."
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour le patient standardisé",
+      "nom": "Mme Luisa Landro",
+      "age": "27 ans",
+      "contexte": "Service d'urgences",
+      "motifConsultation": {
+        "plaintePrincipale": "douleur à la cheville",
+        "autreChose": "Torsion cheville droite il y a 2h en patinant. Douleur continue, agonisante 9/10, localisée. Ne peut pas mettre poids sur pied, ne peut pas marcher."
+      },
+      "histoireActuelle": {
+        "symptomesPrincipaux": [
+          "Torsion cheville droite il y a 2h en patinant",
+          " Douleur continue, agonisante 9/10, localisée",
+          " Ne peut pas mettre poids sur pied, ne peut pas marcher"
+        ],
+        "antecedents": [
+          "Cheville rouge et gonflée",
+          " Amenée aux urgences par amis",
+          " DDR il y a 2 semaines"
+        ],
+        "contexteSocial": [
+          "Ingénieure électricienne",
+          " Boit socialement"
+        ]
+      },
+      "simulation": {
+        "attitude": [
+          "Très douloureuse",
+          "Anxieuse",
+          "Ne peut pas marcher"
+        ],
+        "durantExamen": [
+          "Sensibilité extrême cheville",
+          "Impossibilité mobilisation",
+          "Rouge sur cheville pour érythème"
+        ]
+      },
+      "inquietudes": {
+        "principales": [
+          "[Pensez-vous que c'est une fracture?]",
+          "[Que pensez-vous de faire une IRM pour ma cheville?]",
+          "[Est-ce que cela nécessitera une chirurgie?]"
+        ]
+      }
+    },
+    "informationsExpert": {
+      "titre": "Informations pour l'expert",
+      "pointsCles": [
+        "Cas musculosquelettique: Douleur à la cheville post-traumatique",
+        "Patient: Femme de 27 ans",
+        "Anamnèse complète de la douleur",
+        "Examen orthopédique systématique",
+        "Tests spéciaux appropriés"
+      ],
+      "pieges": [
+        "Ne pas appliquer critères Ottawa",
+        "Oublier examen neurovasculaire",
+        "Mobilisation excessive"
+      ]
+    }
+  }
+}

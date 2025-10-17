@@ -1,0 +1,504 @@
+{
+  "title": "BBN - Cancer du sein",
+  "context": {
+    "setting": "Cabinet d'oncologie, consultation de résultats",
+    "patient": "Mme Sophie Dubois, 45 ans, mère de deux enfants, enseignante, vient chercher les résultats de sa biopsie mammaire suite à une mammographie anormale",
+    "vitals": {
+      "ta": "142/88 mmHg",
+      "fc": "95 bpm",
+      "fr": "20/min",
+      "temperature": "36.8°C"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "title": "Environnement et Perception (EPICES)",
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Préparer l'environnement de consultation",
+          "details": [
+            "Cadre adapté [Bureau calme, pas d'interruptions]",
+            "Position assise [Face à face, même niveau]",
+            "Temps suffisant [Consultation non précipitée]",
+            "Accompagnant [Mari présent si souhaité]",
+            "Documents préparés [Résultats, imagerie disponibles]"
+          ],
+          "exemplesPhrases": [
+            "\"J'ai bloqué du temps pour pouvoir discuter tranquillement\"",
+            "\"Souhaitez-vous que votre mari nous rejoigne pour les résultats?\""
+          ]
+        },
+        {
+          "id": "a2",
+          "text": "Évaluer la perception de la patiente",
+          "details": [
+            "Attentes exprimées [Qu'attendez-vous des résultats?]",
+            "Appréhensions [J'ai très peur que ce soit grave]",
+            "Connaissances préalables [Je sais que la biopsie cherche des cellules cancéreuses]",
+            "Représentations [Le cancer, c'est la mort]",
+            "État émotionnel [Très anxieuse depuis 8 jours]"
+          ],
+          "patientComment": "J'ai très peur... j'ai mal dormi depuis la biopsie",
+          "exemplesPhrases": [
+            "\"Qu'est-ce que vous imaginez concernant ces résultats?\"",
+            "\"Comment avez-vous vécu cette attente?\""
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Évaluer l'invitation à recevoir l'information",
+          "details": [
+            "Désir d'information [Voulez-vous connaître tous les détails?]",
+            "Niveau souhaité [Information complète ou générale?]",
+            "Moment approprié [Êtes-vous prête maintenant?]",
+            "Modalités préférées [Explication simple d'abord]",
+            "Soutien souhaité [Avec qui voulez-vous partager?]"
+          ],
+          "exemplesPhrases": [
+            "\"Souhaitez-vous que je vous explique en détail?\"",
+            "\"Préférez-vous que je commence par l'essentiel?\""
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Identifier les ressources de soutien",
+          "details": [
+            "Soutien familial [Mari très présent]",
+            "Réseau social [Amies proches, collègues]",
+            "Ressources personnelles [Forte avant les épreuves]",
+            "Croyances spirituelles [Pratique religieuse modérée]",
+            "Expériences antérieures [Mère décédée d'un cancer]"
+          ],
+          "patientComment": "Mon mari me soutient beaucoup, mais j'ai peur pour mes enfants"
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "title": "Connaissances et Information médicale",
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Annoncer la nouvelle progressivement",
+          "details": [
+            "Phrase d'introduction [J'ai vos résultats de biopsie]",
+            "Signal d'alerte [Les nouvelles ne sont pas bonnes]",
+            "Annonce claire [La biopsie montre un cancer du sein]",
+            "Pause respectée [Laisser le temps d'encaisser]",
+            "Vérification compréhension [Avez-vous compris ce que je viens de dire?]"
+          ],
+          "exemplesPhrases": [
+            "\"J'aimerais vous parler des résultats de votre biopsie\"",
+            "\"Les cellules prélevées montrent la présence d'un cancer\""
+          ]
+        },
+        {
+          "id": "e2",
+          "text": "Donner les informations médicales essentielles",
+          "details": [
+            "Type de cancer [Carcinome canalaire invasif]",
+            "Taille [15 mm, relativement petit]",
+            "Grade [Grade II, intermédiaire]",
+            "Récepteurs hormonaux [Positifs aux œstrogènes]",
+            "Pronostic global [Cancers de bon pronostic avec traitement]"
+          ],
+          "ddSection": {
+            "title": "Caractéristiques du cancer - Éléments pronostiques",
+            "categories": [
+              {
+                "name": "Facteurs de bon pronostic",
+                "items": [
+                  {
+                    "text": "Taille limitée",
+                    "cause": "Arguments FAVORABLES:\n\t□ Tumeur de 15 mm\n\t□ Détection précoce\n\t□ Pas de masse palpable",
+                    "test": "→ Stadification complémentaire nécessaire"
+                  },
+                  {
+                    "text": "Récepteurs hormonaux positifs",
+                    "cause": "Arguments FAVORABLES:\n\t□ Sensible aux hormones\n\t□ Répond à l'hormonothérapie\n\t□ Évolution généralement plus lente",
+                    "test": "→ Options thérapeutiques ciblées"
+                  }
+                ]
+              },
+              {
+                "name": "Éléments à préciser",
+                "items": [
+                  {
+                    "text": "Extension ganglionnaire",
+                    "cause": "À déterminer:\n\t□ Scanner thoraco-abdominal\n\t□ Scintigraphie osseuse\n\t□ Examen clinique approfondi",
+                    "test": "→ Bilan d'extension complet"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "e3",
+          "text": "Expliquer les étapes suivantes",
+          "details": [
+            "Bilan d'extension [Scanner, scintigraphie osseuse]",
+            "Consultation multidisciplinaire [Équipe oncologique]",
+            "Options thérapeutiques [Chirurgie, chimiothérapie, radiothérapie]",
+            "Délais [Programmation dans les 2 semaines]",
+            "Accompagnement [Équipe soignante spécialisée]"
+          ],
+          "exemplesPhrases": [
+            "\"Nous allons maintenant faire des examens pour voir l'étendue\"",
+            "\"Une équipe complète va s'occuper de vous\""
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Adapter l'information au niveau de compréhension",
+          "details": [
+            "Langage accessible [Éviter jargon médical]",
+            "Métaphores simples [Si appropriées et aidantes]",
+            "Répétition [Informations clés répétées]",
+            "Vérification [Qu'avez-vous retenu?]",
+            "Support écrit [Remise de documentation]"
+          ],
+          "patientComment": "Je ne comprends pas tous ces termes médicaux"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "title": "Empathie et Stratégies de soutien",
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Manifester de l'empathie face aux émotions",
+          "details": [
+            "Reconnaissance émotions [Je vois que c'est un choc]",
+            "Légitimation [Il est normal d'avoir peur]",
+            "Présence [Silences respectés, proximité]",
+            "Reflet émotionnel [Vous semblez bouleversée]",
+            "Soutien [Nous allons vous accompagner]"
+          ],
+          "exemplesPhrases": [
+            "\"Je comprends que ce soit très difficile à entendre\"",
+            "\"Il est tout à fait normal d'être choquée par cette nouvelle\""
+          ]
+        },
+        {
+          "id": "m2",
+          "text": "Gérer les réactions émotionnelles initiales",
+          "details": [
+            "Sidération [Permettre le silence, laisser digérer]",
+            "Déni [C'est impossible, il doit y avoir erreur]",
+            "Colère [Pourquoi moi? Ce n'est pas juste!]",
+            "Peur [Je vais mourir? Et mes enfants?]",
+            "Désespoir [Ma vie est finie]"
+          ],
+          "patientComment": "Non... ce n'est pas possible... vous êtes sûr?",
+          "exemplesPhrases": [
+            "\"Prenez le temps qu'il vous faut\"",
+            "\"Nous allons traverser cette épreuve ensemble\""
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Fournir des stratégies de coping immédiates",
+          "details": [
+            "Respiration [Techniques de relaxation]",
+            "Soutien présent [Appeler le conjoint si souhaité]",
+            "Ressources [Contacts d'urgence, helpline]",
+            "Prochaines étapes [Plan concret immédiat]",
+            "Message d'espoir [Traitements efficaces disponibles]"
+          ],
+          "ddSection": {
+            "title": "Ressources de soutien immédiat",
+            "categories": [
+              {
+                "name": "Soutien psychologique",
+                "items": [
+                  {
+                    "text": "Accompagnement spécialisé",
+                    "cause": "Ressources disponibles:\n\t□ Psycho-oncologue dans l'équipe\n\t□ Groupes de parole\n\t□ Ligue contre le cancer",
+                    "test": "→ Mise en contact selon besoins"
+                  }
+                ]
+              },
+              {
+                "name": "Soutien pratique",
+                "items": [
+                  {
+                    "text": "Organisation familiale",
+                    "cause": "Aide concrète:\n\t□ Assistante sociale\n\t□ Associations locales\n\t□ Réseau familial et amical",
+                    "test": "→ Évaluation besoins personnalisée"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m4",
+          "text": "Planifier l'accompagnement à court terme",
+          "details": [
+            "Consultation rapprochée [Rendez-vous dans 48h]",
+            "Contact direct [Numéro pour questions urgentes]",
+            "Première étape [Bilan d'extension programmé]",
+            "Soutien familial [Rencontre avec conjoint]",
+            "Ressources écrites [Documentation remise]"
+          ]
+        },
+        {
+          "id": "m5",
+          "text": "Instiller un espoir réaliste",
+          "details": [
+            "Évolution médicale [Progrès considérables des traitements]",
+            "Pronostic adapté [Cancers détectés tôt, meilleur pronostic]",
+            "Équipe compétente [Centre expert en oncologie]",
+            "Témoignages [Beaucoup de femmes s'en sortent bien]",
+            "Perspectives [Retour à une vie normale possible]"
+          ],
+          "exemplesPhrases": [
+            "\"Les traitements ont beaucoup progressé ces dernières années\"",
+            "\"Nous avons de bonnes raisons d'être optimistes\""
+          ]
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Synthèse et vérification de la compréhension",
+          "content": "• Résumer les points essentiels annoncés\n• Vérifier ce que la patiente a retenu\n• Clarifier les malentendus éventuels\n• Confirmer les prochaines étapes prévues\n• Rassurer sur l'accompagnement continu",
+          "exemplesPhrases": [
+            "\"Qu'est-ce que vous retirez de notre discussion?\"",
+            "\"Y a-t-il des points que vous aimeriez que je reprenne?\""
+          ]
+        },
+        {
+          "id": "c2",
+          "text": "Questions difficiles de la patiente",
+          "content": "[Est-ce que je vais mourir?]\n[Combien de temps il me reste?]\n[Comment je vais annoncer ça à mes enfants?]\n[Vais-je perdre mes cheveux avec le traitement?]\n[Pourquoi ça m'arrive à moi?]",
+          "exemplesPhrases": [
+            "\"C'est une maladie grave mais que l'on sait soigner\"",
+            "\"Nous vous aiderons à trouver les mots pour vos enfants\"",
+            "\"Il est impossible de répondre au 'pourquoi moi'\""
+          ]
+        },
+        {
+          "id": "c3",
+          "text": "Plan de suivi immédiat et ressources",
+          "content": "• Rendez-vous de suivi dans 48h pour questions\n• Bilan d'extension programmé dans la semaine\n• Coordonnées de contact direct pour urgences\n• Documentation remise (guides patients)\n• Mise en contact avec psycho-oncologue si souhaité",
+          "exemplesPhrases": [
+            "\"Nous allons vous revoir très rapidement\"",
+            "\"Vous avez mes coordonnées pour toute question\"",
+            "\"Nous ne vous laissons pas seule face à cette épreuve\""
+          ]
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "images": [
+      {
+        "id": "epices_framework",
+        "title": "Framework EPICES pour l'annonce de mauvaise nouvelle",
+        "description": "Schéma du processus EPICES : Environnement, Perception, Invitation, Connaissances, Empathie, Stratégies",
+        "filename": "bbn/epices-framework.jpg"
+      },
+      {
+        "id": "reactions_emotionnelles",
+        "title": "Réactions émotionnelles à l'annonce de cancer",
+        "description": "Diagramme des différentes phases émotionnelles et stratégies d'accompagnement",
+        "filename": "bbn/reactions-emotionnelles-cancer.jpg"
+      },
+      {
+        "id": "ressources_soutien",
+        "title": "Ressources de soutien en oncologie",
+        "description": "Carte mentale des différentes ressources d'aide disponibles pour les patients",
+        "filename": "bbn/ressources-soutien-oncologie.jpg"
+      }
+    ],
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour la patiente standardisée",
+      "nom": "Mme Sophie Dubois",
+      "age": "45 ans",
+      "contexte": "Cabinet d'oncologie, consultation de résultats de biopsie",
+      "motifConsultation": {
+        "plaintePrincipale": "Venue chercher les résultats de biopsie mammaire",
+        "autreChose": "Très anxieuse depuis 8 jours, n'a pas dormi depuis l'examen"
+      },
+      "histoireActuelle": {
+        "evenementActuel": [
+          "Mammographie anormale il y a 2 semaines",
+          "Biopsie réalisée il y a 8 jours",
+          "Attente très difficile des résultats",
+          "Peur intense depuis la découverte de l'anomalie",
+          "Recherches anxiogènes sur internet"
+        ],
+        "representationMaladie": [
+          "Le cancer = mort certaine",
+          "Peur de souffrir physiquement",
+          "Inquiétude pour l'impact sur les enfants",
+          "Culpabilité possible (pourquoi moi?)",
+          "Image corporelle altérée"
+        ],
+        "contexteFamilial": [
+          "Mère décédée d'un cancer du poumon à 62 ans",
+          "Mari très soutenant mais inquiet",
+          "Deux enfants : Emma 15 ans, Thomas 12 ans",
+          "Pas d'antécédents familiaux mammaires connus",
+          "Entourage familial proche et présent"
+        ],
+        "impactProfessionnel": [
+          "Enseignante en école primaire",
+          "Très investie dans son travail",
+          "Inquiétude pour la continuité des cours",
+          "Collègues soutenantes",
+          "Anticipation congé maladie"
+        ]
+      },
+      "simulation": {
+        "attitude": [
+          "Très anxieuse en arrivant",
+          "Retient sa respiration pendant l'annonce",
+          "Choc initial avec possible sidération",
+          "Évolution vers questionnements pratiques",
+          "Recherche de réassurance"
+        ],
+        "durantAnnonce": [
+          "Se figer au moment de l'annonce",
+          "Demander confirmation (\"Vous êtes sûr?\")",
+          "Possible déni initial (\"Ce n'est pas possible\")",
+          "Émotion croissante progressivement",
+          "Questions sur les enfants et l'avenir"
+        ],
+        "phrasesTypes": [
+          "\"J'ai très peur... j'ai mal dormi depuis la biopsie\"",
+          "\"Non... ce n'est pas possible... vous êtes sûr?\"",
+          "\"Est-ce que je vais mourir?\"",
+          "\"Comment je vais annoncer ça à mes enfants?\"",
+          "\"Ma mère est morte du cancer...\"",
+          "\"Qu'est-ce qui va m'arriver maintenant?\"",
+          "\"Je ne comprends pas tous ces termes médicaux\"",
+          "\"Mon mari va être effondré\""
+        ]
+      },
+      "anamneseSystemes": {
+        "generale": ["Fatigue récente", "Stress majeur", "Perte d'appétit"],
+        "mammaire": ["Nodule découvert à la palpation", "Pas de douleurs", "Pas d'écoulement"],
+        "psychologique": ["Anxiété majeure", "Troubles du sommeil", "Pensées catastrophiques"],
+        "familiale": ["Mari Paul 47 ans", "Emma 15 ans", "Thomas 12 ans"]
+      },
+      "habitudes": {
+        "profession": "Enseignante école primaire depuis 20 ans",
+        "activite": "Sport modéré, yoga occasionnel",
+        "alimentation": "Équilibrée, attention à la santé",
+        "alcool": "Occasionnel, social",
+        "tabac": "Non-fumeuse",
+        "stress": "Professionnel modéré, familial actuel majeur"
+      },
+      "inquietudes": {
+        "principales": [
+          "Peur de mourir comme sa mère",
+          "Impact sur les enfants adolescents",
+          "Changements corporels liés aux traitements",
+          "Capacité à continuer son travail",
+          "Charge émotionnelle pour son mari"
+        ],
+        "questions": [
+          "Combien de temps il me reste?",
+          "Vais-je perdre mes cheveux?",
+          "Mes enfants ont-ils plus de risques?",
+          "Comment annoncer à mes élèves?",
+          "Pourquoi ça m'arrive?"
+        ]
+      }
+    },
+    "informationsExpert": {
+      "titre": "Points clés pour l'expert évaluateur",
+      "pointsCles": [
+        "Évaluer l'application du framework EPICES de manière structurée",
+        "Observer la préparation de l'environnement de consultation",
+        "Noter l'évaluation de la perception et des attentes de la patiente",
+        "Vérifier l'annonce progressive et claire de la mauvaise nouvelle",
+        "Évaluer la manifestation d'empathie face aux émotions",
+        "Observer la gestion des réactions émotionnelles immédiates",
+        "Noter la fourniture d'informations adaptées au niveau de compréhension",
+        "Vérifier la planification de l'accompagnement et du soutien"
+      ],
+      "pieges": [
+        "Annoncer la nouvelle de manière trop abrupte",
+        "Donner trop d'informations techniques d'emblée",
+        "Minimiser ou ignorer les réactions émotionnelles",
+        "Donner de faux espoirs ou être trop pessimiste",
+        "Ne pas laisser de temps pour les questions",
+        "Utiliser un jargon médical incompréhensible",
+        "Éviter les silences et combler par du discours",
+        "Ne pas prévoir d'accompagnement immédiat"
+      ],
+      "criteresBonnePerformance": [
+        "Préparation soigneuse de l'environnement de consultation",
+        "Évaluation empathique des attentes et appréhensions",
+        "Annonce claire et progressive de la mauvaise nouvelle",
+        "Reconnaissance et accompagnement des émotions",
+        "Information médicale adaptée et compréhensible",
+        "Fourniture de stratégies de soutien immédiates",
+        "Planification d'un accompagnement personnalisé",
+        "Maintien d'un espoir réaliste et adapté"
+      ]
+    },
+    "theoriePratique": {
+      "titre": "Annonce de mauvaise nouvelle selon EPICES",
+      "sections": [
+        {
+          "titre": "Le framework EPICES",
+          "points": [
+            "E - Environnement: Cadre approprié, temps suffisant, intimité",
+            "P - Perception: Évaluer attentes, connaissances, émotions du patient",
+            "I - Invitation: Niveau d'information souhaité par le patient",
+            "C - Connaissances: Information médicale claire et adaptée",
+            "E - Empathie: Reconnaissance et accompagnement des émotions",
+            "S - Stratégies: Plan de soutien et accompagnement personnalisé"
+          ]
+        },
+        {
+          "titre": "Phases de réaction psychologique",
+          "points": [
+            "Choc initial: Sidération, déni, incrédulité",
+            "Réaction émotionnelle: Peur, colère, tristesse, culpabilité",
+            "Questionnement: Recherche d'informations, négociation",
+            "Acceptation progressive: Adaptation, mobilisation des ressources",
+            "Réorganisation: Intégration dans le projet de vie"
+          ]
+        },
+        {
+          "titre": "Principes de communication empathique",
+          "points": [
+            "Reconnaissance des émotions sans jugement",
+            "Légitimation des réactions exprimées",
+            "Présence authentique et bienveillante",
+            "Respect du rythme d'intégration du patient",
+            "Adaptation du langage au niveau de compréhension",
+            "Utilisation des silences de manière thérapeutique"
+          ]
+        }
+      ],
+      "rappelsTherapeutiques": [
+        "Préparer soigneusement l'environnement de l'annonce",
+        "Évaluer systématiquement les attentes et représentations",
+        "Annoncer de manière claire mais progressive",
+        "Laisser du temps pour l'intégration émotionnelle",
+        "Manifester une empathie authentique et soutenante",
+        "Planifier un accompagnement personnalisé immédiat"
+      ],
+      "examensComplementaires": [
+        "Bilan d'extension: Scanner thoraco-abdominal",
+        "Scintigraphie osseuse: Recherche métastases",
+        "IRM mammaire: Évaluation controlatérale",
+        "Consultation génétique: Si antécédents familiaux",
+        "Évaluation cardiologique: Avant chimiothérapie"
+      ]
+    }
+  }
+}

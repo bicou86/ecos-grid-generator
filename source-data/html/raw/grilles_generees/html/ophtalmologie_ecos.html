@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau des Pathologies Ophtalmologiques</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #00B4D8 0%, #0077B6 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, #03045E 0%, #0077B6 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::before {
+            content: "👁️";
+            position: absolute;
+            font-size: 200px;
+            opacity: 0.1;
+            top: -50px;
+            right: 50px;
+            animation: float 20s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(10deg); }
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            position: relative;
+            z-index: 1;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            opacity: 0.95;
+            position: relative;
+            z-index: 1;
+        }
+
+        nav {
+            background: linear-gradient(to right, #CAF0F8, #90E0EF);
+            padding: 20px 40px;
+            border-bottom: 3px solid #00B4D8;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .nav-title {
+            font-size: 1.1em;
+            font-weight: 600;
+            color: #03045E;
+            margin-bottom: 15px;
+        }
+
+        .nav-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 10px;
+        }
+
+        .nav-link {
+            display: inline-block;
+            padding: 10px 15px;
+            background: linear-gradient(135deg, #0077B6 0%, #03045E 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            text-align: center;
+            font-weight: 500;
+            font-size: 0.9em;
+        }
+
+        .nav-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 119, 182, 0.4);
+            background: linear-gradient(135deg, #00B4D8 0%, #0077B6 100%);
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        .section {
+            margin-bottom: 60px;
+            animation: fadeInUp 0.6s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h2 {
+            color: #03045E;
+            font-size: 2em;
+            margin-bottom: 25px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #00B4D8;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .section-icon {
+            font-size: 1.5em;
+        }
+
+        .section-number {
+            background: linear-gradient(135deg, #0077B6 0%, #03045E 100%);
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        .table-wrapper {
+            overflow-x: auto;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            background: white;
+        }
+
+        thead {
+            background: linear-gradient(135deg, #0077B6 0%, #03045E 100%);
+            color: white;
+        }
+
+        th {
+            padding: 15px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 0.95em;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            white-space: nowrap;
+        }
+
+        th:first-child {
+            border-top-left-radius: 10px;
+        }
+
+        th:last-child {
+            border-top-right-radius: 10px;
+        }
+
+        td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #e9ecef;
+            font-size: 0.9em;
+            line-height: 1.6;
+            vertical-align: top;
+        }
+
+        tr:hover {
+            background: linear-gradient(90deg, rgba(0,180,216,0.05) 0%, rgba(0,119,182,0.05) 100%);
+        }
+
+        td:first-child {
+            font-weight: 600;
+            color: #0077B6;
+            background: rgba(202,240,248,0.3);
+            position: sticky;
+            left: 0;
+            z-index: 5;
+            min-width: 200px;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        tr:last-child td:first-child {
+            border-bottom-left-radius: 10px;
+        }
+
+        tr:last-child td:last-child {
+            border-bottom-right-radius: 10px;
+        }
+
+        .note-box {
+            background: linear-gradient(135deg, #CAF0F8 0%, #ADE8F4 100%);
+            border-left: 4px solid #0077B6;
+            padding: 20px;
+            margin: 40px 0;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+
+        .note-title {
+            font-weight: bold;
+            color: #03045E;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+
+        .note-content {
+            color: #023047;
+            line-height: 1.6;
+        }
+
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, #0077B6 0%, #03045E 100%);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+            transition: all 0.3s ease;
+            z-index: 1000;
+            font-size: 1.5em;
+        }
+
+        .back-to-top:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+        }
+
+        footer {
+            background: linear-gradient(135deg, #03045E 0%, #023047 100%);
+            color: white;
+            text-align: center;
+            padding: 30px;
+            margin-top: 60px;
+        }
+
+        .search-box {
+            position: fixed;
+            top: 20px;
+            right: 100px;
+            z-index: 1001;
+            background: white;
+            padding: 10px;
+            border-radius: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        }
+
+        .search-input {
+            padding: 8px 15px;
+            border: 2px solid #0077B6;
+            border-radius: 15px;
+            width: 200px;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+
+        .search-input:focus {
+            border-color: #03045E;
+            box-shadow: 0 0 5px rgba(0,119,182,0.3);
+        }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 1.8em; }
+            h2 { font-size: 1.5em; }
+            .nav-grid { grid-template-columns: 1fr; }
+            th, td { padding: 8px; font-size: 0.85em; }
+            .content { padding: 20px; }
+            .search-box { position: relative; top: auto; right: auto; margin-bottom: 20px; }
+            td:first-child { min-width: 150px; }
+        }
+
+        @media print {
+            body { background: white; }
+            .container { box-shadow: none; }
+            nav, .back-to-top, .search-box { display: none; }
+            .section { page-break-inside: avoid; }
+            table { page-break-inside: auto; }
+            tr { page-break-inside: avoid; }
+        }
+
+        .highlight {
+            background-color: rgba(0, 180, 216, 0.2);
+            animation: highlight 0.5s ease;
+        }
+
+        @keyframes highlight {
+            0% { background-color: rgba(0, 180, 216, 0.5); }
+            100% { background-color: rgba(0, 180, 216, 0.2); }
+        }
+    </style>
+</head>
+<body>
+    <div class="search-box">
+        <input type="text" class="search-input" placeholder="Rechercher..." id="searchInput">
+    </div>
+
+    <div class="container">
+        <header>
+            <h1>👁️ Tableau des Pathologies Ophtalmologiques</h1>
+            <p class="subtitle">Guide complet des pathologies ophtalmologiques avec anamnèse, examen clinique, procédures, thérapie et commentaires</p>
+        </header>
+
+        <nav>
+            <div class="nav-title">Navigation rapide par section</div>
+            <div class="nav-grid">
+                <a href="#section-1" class="nav-link">Surface oculaire et conjonctive</a>
+                <a href="#section-2" class="nav-link">Pathologies de la cornée</a>
+                <a href="#section-3" class="nav-link">Cristallin et strabisme</a>
+                <a href="#section-4" class="nav-link">Pathologies rétiniennes</a>
+                <a href="#section-5" class="nav-link">Glaucome</a>
+                <a href="#section-6" class="nav-link">Pathologies vasculaires</a>
+                <a href="#section-7" class="nav-link">Pathologies orbitaires</a>
+                <a href="#section-8" class="nav-link">Traumatismes et urgences</a>
+                <a href="#section-9" class="nav-link">Pathologies palpébrales</a>
+                <a href="#section-10" class="nav-link">Anomalies réfractives</a>
+                <a href="#section-11" class="nav-link">Tumeurs oculaires</a>
+            </div>
+        </nav>
+
+        <div class="content">
+            <section id="section-1" class="section">
+                <h2><span class="section-number">1</span> <span class="section-icon">🔬</span> Pathologies de la surface oculaire et conjonctive</h2>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Maladie</th>
+                                <th>Anamnèse</th>
+                                <th>Examen</th>
+                                <th>Procédure/Bilan</th>
+                                <th>Thérapie</th>
+                                <th>Commentaire</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Conjonctivite allergique</td><td>Printemps, sensation de corps étranger, sécrétions aqueuses (rarement visqueuses), rougeur, prurit, tuméfaction, rhinorrhée, asthme, toux, éventuellement baisse d'acuité visuelle, exposition aux allergènes, asthme, rhinite</td><td>Inspection (injection conjonctivale), éversion des paupières, segment antérieur, acuité visuelle, ganglions lymphatiques</td><td>Bilan allergologique (désensibilisation)</td><td>Antihistaminiques locaux (si asthme : traitement systémique), corticoïdes en gouttes, éviter l'exposition</td><td>Applicable à toutes les conjonctivites : jamais de corticoïdes ! Généralement bilatérale, acuité visuelle conservée. Souvent printemps (poussière de maison pérenne)</td></tr>
+                            <tr><td>Syndrome sec (Kératoconjonctivite sèche)</td><td>Femmes post-ménopausées, rougeur, sensation de corps étranger, aggravation le soir/PC/vent/hiver, éventuellement baisse d'acuité visuelle. Bouche sèche (syndrome de Sjögren), rhumatisme, ménopause</td><td>Inspection, éversion des paupières, segment antérieur, acuité visuelle, test de Schirmer (<5mm par 5min), ganglions lymphatiques, éventuellement gynécologie</td><td></td><td>Substituts lacrymaux : larmes artificielles (gouttes), bouchons</td><td>Processus chronique, penser au syndrome de Sjögren</td></tr>
+                            <tr><td>Conjonctivite bactérienne</td><td>Rougeur, sécrétions muco-purulentes, paupières collées, croûtes, tuméfaction, sensation de corps étranger, éventuellement saignement, dépôts/membranes, follicules/papules, éventuellement baisse d'acuité visuelle, généralement bilatérale, état général conservé. Rechercher écoulements vaginaux (chlamydia !!)</td><td>Inspection (injection conjonctivale), éversion des paupières, segment antérieur (ex: infiltrats cornéens), acuité visuelle, ganglions lymphatiques (préauriculaires + sous-mandibulaires), prélèvement (si conjonctivite chronique/>3 semaines, nouveau-né)</td><td></td><td>Conjonctivite aiguë : pas d'antibiotiques. Conjonctivite chronique + nouveau-né : antibiotiques (gouttes/pommade)</td><td>Lors d'infection à chlamydia, faire un prélèvement sanguin car les germes sont intracellulaires</td></tr>
+                            <tr><td>Conjonctivite virale</td><td>Rougeur, larmoiement (aqueux), tuméfaction, 1 œil d'abord, sensation de corps étranger, éventuellement baisse d'acuité visuelle, prodromes grippaux, entourage, d'abord unilatérale puis souvent bilatérale. Conjonctivite épidémique : débute souvent nasale, entourage</td><td>Inspection (injection conjonctivale), éversion des paupières, segment antérieur (ex: infiltrats cornéens), acuité visuelle, ganglions lymphatiques (ganglions préauriculaires tuméfiés), éventuellement prélèvement</td><td></td><td>Pas de traitement spécifique, gouttes décongestionnantes. En cas de suspicion de conjonctivite épidémique : arrêt de travail 2 semaines ! Hygiène !</td><td>Pas de pus, anamnèse d'entourage souvent positive ! Contagieux ! Conjonctivite infectieuse la plus fréquente, adénovirus</td></tr>
+                            <tr><td>Blépharite</td><td>Bord palpébral collé, flou, enflammé, desquamatif</td><td>Inspection, éversion des paupières, segment antérieur, acuité visuelle, test de Schirmer, ganglions lymphatiques, éventuellement prélèvement</td><td></td><td>Éventuellement antibiotiques</td><td></td></tr>
+                            <tr><td>Pinguecula/Ptérygion</td><td>Début, croissance, gênant ? Récidive ?</td><td>Inspection, éversion des paupières, segment antérieur, acuité visuelle, test de Schirmer, ganglions lymphatiques</td><td></td><td>Pinguecula : aucun traitement. Ptérygion : chirurgie si gênant</td><td>Ptérygion : bulbe-cornée. Pinguecula : bulbe-bulbe</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section id="section-2" class="section">
+                <h2><span class="section-number">2</span> <span class="section-icon">🔍</span> Pathologies de la cornée</h2>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Maladie</th>
+                                <th>Anamnèse</th>
+                                <th>Examen</th>
+                                <th>Procédure/Bilan</th>
+                                <th>Thérapie</th>
+                                <th>Commentaire</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Kératite bactérienne</td><td>Douleurs, œil rouge, éventuellement pus, éventuellement baisse d'acuité visuelle, photophobie, souvent bilatérale. Facteurs de risque : lentilles, érosion, immunodépression, corticoïdes, fièvre</td><td>Inspection (injection, éventuellement hypopion), éversion des paupières, segment antérieur incluant fluorescéine (trouble, infiltrat, ulcère éventuellement), réflexe cornéen, acuité visuelle, champ visuel, prélèvement cornéen, éventuellement hospitalisation</td><td></td><td>Antibiotiques en gouttes empiriques, arrêt des lentilles de contact (minimum 14 jours), instructions d'hygiène, si cicatrice centrale : kératoplastie (greffe)</td><td>Avec les lentilles généralement Pseudomonas ou Acanthamoeba. Peut conduire à la perte de l'œil si perforation cornéenne → endophtalmie !</td></tr>
+                            <tr><td>Kératite herpétique</td><td>Douleurs, œil rouge, baisse d'acuité visuelle, primo-infection (vésicules) sur la paupière ou conjonctivite ou blépharite, unilatérale</td><td>Inspection, éversion des paupières, segment antérieur incluant fluorescéine (figure dendritique), réflexe cornéen (sensibilité ↓ !), acuité visuelle, champ visuel, prélèvement</td><td></td><td>Pommade Zovirax (si atteinte épithéliale), corticoïdes locaux (seulement si atteinte stromale, contre-indication avec figure dendritique !), éventuellement antiviraux systémiques</td><td>Zovirax n'est jamais faux. Pronostic généralement bon, mais récidives avec cicatrices</td></tr>
+                            <tr><td>Kératite zona-herpès</td><td>Éruption cutanée unilatérale dans le dermatome, immunosuppression, corticoïdes, conjonctivite, kératite, sclérite, uvéite, maladie de type grippal (fièvre, céphalées, état général altéré), prurit, brûlures, névralgie</td><td>Inspection (vésicules, signe de Hutchinson → souvent atteinte oculaire), éversion des paupières, segment antérieur incluant fluorescéine, réflexe cornéen (sensibilité ↓), acuité visuelle, champ visuel, déficit pupillaire afférent relatif (RAPD), nerfs crâniens, ganglions lymphatiques, prélèvement</td><td></td><td>Valtrex (valaciclovir), corticoïdes topiques, Zovirax, gabapentine si névralgie</td><td>Récidive d'une infection varicelleuse. Diagnostic différentiel zona otique : atteinte nerf vestibulo-cochléaire</td></tr>
+                            <tr><td>Corps étranger/Érosion cornéenne</td><td>Corps étranger ou seulement anneau de rouille, douleurs, larmoiement, œil rouge, acuité visuelle ↓</td><td>Inspection, éversion des paupières, segment antérieur incluant fluorescéine, réflexe cornéen, acuité visuelle</td><td>Corps étranger périphérique : médecin généraliste. Corps étranger central : ophtalmologue → enlever corps étranger avec pince/coton-tige, enlever anneau de rouille par forage. Éventuellement scanner (corps étranger intraoculaire)</td><td>Antibiotiques (pommade), pansement occlusif (serré), tétanos éventuellement</td><td>Si corps étranger intraoculaire → fermeture rapide cornée/sclère → prise en charge rétine. Érosion : souvent ongle ou branche. Généralement guérison sans séquelles. « Corps étranger peut aussi être enlevé le lendemain sauf bois + cuivre et autres : enlever rapidement ! »</td></tr>
+                            <tr><td>Brûlure chimique</td><td>Douleurs ! Baisse d'acuité visuelle, blépharospasme, œil rouge ou pâle (ischémie)</td><td>Inspection (cicatrices, cornée trouble, si grave pas de vaisseaux conjonctivaux visibles, sinon conjonctivite), acuité visuelle, segment antérieur (incluant fluorescéine → érosion)</td><td>Rincer, rincer, rincer, transfert clinique ophtalmologique (généralement hospitalisation)</td><td>Surmonter le blépharospasme → anesthésiques, RINCER (NaCl), enlèvement corps étranger (éversion), acide ascorbique/vitamine C (haute dose), débridement, éventuellement corticoïdes topiques</td><td>Après quelques jours signes inflammatoires (ganglions lymphatiques, uvéite antérieure, fonte tissulaire, ulcère, perforation). Complications : cataracte, glaucome, néovascularisation, etc. Généralement : mauvais pronostic</td></tr>
+                            <tr><td>Kératite photoélectrique/Coup d'arc</td><td>Douleurs intenses, blépharospasme (examen difficile), perte d'acuité visuelle soudaine (pensent devenir aveugles)</td><td>Inspection, éversion des paupières, segment antérieur incluant fluorescéine (positif !), réflexe cornéen, acuité visuelle</td><td></td><td>Antibiotiques (pommade), antalgiques systémiques, NE PAS donner d'anesthésiques locaux !!!!</td><td>Pas d'anesthésiques locaux ! Guérison sans séquelles. Cause : UV (soleil+neige par ex.), soudure)</td></tr>
+                            <tr><td>Kératocône</td><td>Amincissement et déformation cornéenne, début vers 15-20 ans progressif jusqu'à 40 ans, cicatrices, patients deviennent de plus en plus myopes</td><td>Inspection, réflexe cornéen lumineux, éversion des paupières, segment antérieur, acuité visuelle (myopie)</td><td></td><td>Correction : lunettes/lentilles de contact, réticulation UV avec riboflavine + lumière UV, éventuellement kératoplastie</td><td></td></tr>
+                            <tr><td>Dystrophie endothéliale (Fuchs)</td><td>Souvent œil rouge, cicatrices (processus chronique), baisse d'acuité visuelle (presque jusqu'à la cécité), aggravation matinale</td><td>Inspection (bulles sur cornée, cornée trouble, éventuellement cicatrices), réflexe cornéen lumineux, éversion des paupières, segment antérieur, acuité visuelle (myopie), fond d'œil (trouble)</td><td></td><td>Kératoplastie ou transplantation endothéliale (→ immunosuppression + corticoïdes)</td><td>Nombre de cellules endothéliales cornéennes ↓</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section id="section-3" class="section">
+                <h2><span class="section-number">3</span> <span class="section-icon">🔮</span> Pathologies du cristallin et strabisme</h2>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Maladie</th>
+                                <th>Anamnèse</th>
+                                <th>Examen</th>
+                                <th>Procédure/Bilan</th>
+                                <th>Thérapie</th>
+                                <th>Commentaire</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Cataracte</td><td>Baisse d'acuité visuelle lente, pas de douleurs, souvent bilatérale, vision voilée, œil jaune-trouble, tout jaunâtre (perception des couleurs), éventuellement vie sans lunettes à nouveau possible. Immunosuppression/corticoïdes !</td><td>Inspection, acuité visuelle, segment antérieur (cristallin trouble + plus épais, réflexe du fond d'œil ↓ + tacheté), fond d'œil (fond difficilement visible)</td><td></td><td>Chez l'enfant + glaucome à angle fermé (complication cataracte) toujours opération, chez l'adulte selon le souhait. Éventuellement lunettes (corrige myopie dans le cadre de la cataracte), chirurgie : implant intraoculaire (IOL)</td><td>Primaire : âge. Secondaire : immunosuppression/corticoïdes, postopératoire, traumatisme, radiothérapie. Congénitale : opération d'urgence (lentectomie), nouvel IOL seulement possible à partir de 1 an</td></tr>
+                            <tr><td>Strabisme</td><td>Diplopie, toujours binoculaire, remarqué soi-même, toujours/manifeste ou seulement latent (alcool, fatigue, stress), déjà dans l'enfance ? (pas de diplopie). Dépendant de la direction du regard ? Traumatisme ? (fracture du plancher orbitaire)</td><td>Inspection : position oculaire, reflet cornéen, motilité (6 mouvements de duction → strabisme concomitant (dans toutes les directions identique) ou non concomitant), test de Bagolini, consultation strabisme, test de cover-prisme (quantification)</td><td>Test de cover-découverte, test de cover alterné, prisme-cover-test → manifeste ou latent, prisme-cover-test), acuité visuelle, segment antérieur (si diplopie monoculaire), réaction pupillaire (paralysie du III) incluant convergence, examen neurologique : nerfs crâniens</td><td>Strabisme latent : correction de l'amétropie, verres prismatiques œil malade, chirurgie. Strabisme manifeste : verres prismatiques ? Occlusion œil sain, chirurgie</td><td>Concomitant (strabisme manifeste) vs. non concomitant (strabisme latent). Si diplopie monoculaire → examiner segment antérieur (problème des milieux réfringents)</td></tr>
+                            <tr><td>Paralysie de l'abducens</td><td>Œil regarde vers l'intérieur (ésotropie), diplopie lors du regard latéral</td><td></td><td></td><td></td><td></td></tr>
+                            <tr><td>Paralysie du trochléaire</td><td>Œil atteint se place plus haut + latéral + en rotation externe, tête inclinée vers le côté opposé. Diplopie lors du regard vers le bas + médial + lors de l'inclinaison de la tête vers le côté atteint</td><td></td><td></td><td></td><td></td></tr>
+                            <tr><td>Paralysie de l'oculomoteur</td><td>Œil regarde vers l'extérieur et le bas, ptosis, mydriase, réaction pupillaire perturbée. Si seulement paralysie externe, réaction pupillaire intacte</td><td></td><td></td><td></td><td></td></tr>
+                            <tr><td>Paralysie faciale</td><td>Fermeture oculaire défaillante, coin palpébral tombant, sensation de brûlure, œil sec, éventuellement ulcères, éventuellement perte d'acuité visuelle = kératite stérile</td><td>Acuité visuelle, inspection, segment antérieur, neurologie (facial/dermatomes/nerfs crâniens/sensibilité), ganglions lymphatiques, RAPD</td><td>Sérologie (borréliose), bilan sanguin, éventuellement IRM si déficits neurologiques</td><td>Corticoïdes, valacyclovir, pansement, gouttes</td><td>Souvent idiopathique ou dans le cadre d'un diabète ou infectieux (zona-herpès, herpès simplex, borréliose, etc.). Paralysie centrale (peut encore froncer le front) vs. paralysie périphérique (ne peut plus froncer le front)</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section id="section-4" class="section">
+                <h2><span class="section-number">4</span> <span class="section-icon">🌐</span> Pathologies rétiniennes</h2>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Maladie</th>
+                                <th>Anamnèse</th>
+                                <th>Examen</th>
+                                <th>Procédure/Bilan</th>
+                                <th>Thérapie</th>
+                                <th>Commentaire</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Décollement rétinien/Amotio</td><td>Perte d'acuité visuelle soudaine sans douleur (si décollement périphérique souvent pas remarqué immédiatement, mais seulement lors de certains regards : scotomes + voile, acuité visuelle assez conservée), éclairs, scintillements, pluie de suie/mouches volantes, rideau, ombre, déficits du champ visuel</td><td>Inspection, acuité visuelle, champ visuel, segment antérieur, fond d'œil, réflexe du fond d'œil, OCT</td><td></td><td>Fermer le trou (laser, cryothérapie ; surtout traiter les déchirures en fer à cheval !!!), chirurgie : élimination traction (éventuellement vitrectomie), rapprochement sclère du trou (indentations), cerclage ou endotamponnade</td><td>Décollements périphériques : traiter rapidement, centraux : de toute façon trop tard. Plus la durée du décollement est courte + plus il est périphérique, meilleur est le pronostic, récupération environ après 1 an</td></tr>
+                            <tr><td>Hémorragie vitréenne</td><td>Perte d'acuité visuelle soudaine sans douleur</td><td>Acuité visuelle, champ visuel, segment antérieur, fond d'œil (rien de visible !!)</td><td></td><td>Vitrectomie</td><td>Causes : néovascularisation (diabète, occlusions vasculaires), traumatisme, décollement</td></tr>
+                            <tr><td>Maculopathie</td><td>Baisse d'acuité visuelle (lecture + TV plus possible), scotomes centraux, parfois cécité, métamorphopsies (surtout avec choriorétinopathie séreuse centrale + membranes épirétiniennes)</td><td>Inspection, segments antérieurs, acuité visuelle, champ visuel, fond d'œil, OCT, autofluorescence, angiographie fluorescéinique</td><td></td><td>DMLA : forme sèche pas de traitement ; forme humide : laser, anti-VEGF intravitréen (Lucentis, Avastin), opératoire, éventuellement thérapie photodynamique (irradiation avec lumière). Trou maculaire : vitrectomie, enlèvement membranes + membrane limitante interne, endotamponnade. Membranes épirétiniennes : analogue trou maculaire, mais seulement si souhaité. Choriorétinopathie séreuse centrale : aigu pas nécessaire, chronique : laser</td><td></td></tr>
+                            <tr><td>Rétinopathie diabétique</td><td>Baisse d'acuité visuelle (maculopathie), déficits du champ visuel (néovascularisation). Facteurs de risque : diabète + hypertension ! entre autres</td><td>Acuité visuelle, champ visuel, fond d'œil (fuites → exsudats, raréfaction capillaire, hémorragies, néovascularisation en région papillaire, microanévrismes), angiographie fluorescéinique (fuite produit de contraste des fuites)</td><td></td><td>1. Photocoagulation laser (modérée en cas de forme non proliférante sévère, panrétinienne en cas de forme proliférante) 2. Vitrectomie+laser si rétinopathie proliférante très sévère (mauvais) 3. Traiter ou équilibrer diabète + tension artérielle 4. Contrôles annuels (ophtalmologue, diabétologue, rein, podologue)</td><td>Rétinopathie diabétique non proliférante légère : seulement points 3 + 4. Rétinopathie diabétique non proliférante (pas de néovascularisation !) vs. proliférante (néovascularisation + hémorragies vitréennes, décollements rétiniens tractionnels, clinique à peu près identique pour les deux. Œdème maculaire diabétique : atteinte maculaire (œdème/exsudats, ischémie) dans le cadre d'une rétinopathie diabétique proliférante. Traitement : laser, de plus en plus anti-VEGF, contrôler diabète + tension artérielle, contrôles. Si œdème maculaire diabétique diffus pas de traitement efficace → anti-VEGF</td></tr>
+                            <tr><td>Pathologies rétiniennes héréditaires</td><td>Dystrophies cônes : vision couleurs ↓, scotome central, acuité visuelle ↓ (lecture), photophobie, éventuellement cécité → ERG multifocal, OCT, pas de traitement curatif, verres très teintés + myotiques. Dystrophies bâtonnets (rétinite pigmentaire par ex.) : vision crépusculaire + nocturne ↓, déficits champ visuel périphériques → ERG plein champ. Maladie de Stargardt : diminution acuité visuelle bilatérale, vision couleurs ↓, déficits champ visuel centraux + paracentrals → EOG + ERG multifocal. Maladie de Best : acuité visuelle normale ou diminuée, métamorphopsies, vision floue, champ visuel + vision couleurs généralement ok → EOG + ERG multifocal</td><td>Acuité visuelle, champ visuel, segment antérieur, RAPD, fond d'œil (ne voit généralement rien) → examens spécialisés nécessaires</td><td></td><td>Important : pour tous analyse génétique + analyse familiale, aides visuelles grossissantes, contrôles évolutifs, pas de traitement causal</td><td>Maladie de Stargardt : gène ABCA4, dystrophie la plus fréquente, souvent dès l'enfance. Maladie de Best : gène VMD2, plus modérée, meilleur pronostic</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section id="section-5" class="section">
+                <h2><span class="section-number">5</span> <span class="section-icon">💧</span> Glaucome</h2>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Maladie</th>
+                                <th>Anamnèse</th>
+                                <th>Examen</th>
+                                <th>Procédure/Bilan</th>
+                                <th>Thérapie</th>
+                                <th>Commentaire</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Glaucome</td><td>Souvent longtemps aucun symptôme, si avancé déficits du champ visuel (périphérie moyenne, puis extérieur, enfin central, arciforme, insulaire) dans le cadre d'une atrophie optique (excavation papille), cécité progressive, vision des couleurs + acuité visuelle chute en premier</td><td>Acuité visuelle, champ visuel, pression oculaire, segment antérieur*, fond d'œil (papille : vaisseaux non déplacés nasalement, excavation plus profonde + plus grande), vision des couleurs, gonioscopie (angle irido-cornéen), tonométrie (courbes de pression évolution journalière), périmétrie (champ visuel), diagnostic couche fibres nerveuses (papille), recherche causes secondaires, sinon ce serait un glaucome secondaire à angle ouvert</td><td></td><td>1. Baisser la pression (médicaments : inhibiteurs anhydrase carbonique, bêta-bloquants, mannitol), laser (en cas de glaucome à angle fermé), chirurgie (trabéculoplastie en cas de glaucome à angle ouvert → écoulement ↑, trabéculectomie, drainage, etc.) 2. Rechercher la cause (seulement en cas de glaucome primitif à angle ouvert pas de cause) 3. Contrôles annuels</td><td>Glaucome est une maladie chronique, non guérissable, mais contrôlable. *ne voit rien sauf si glaucome à angle fermé. Glaucome primitif à angle ouvert : glaucome classique, surtout à partir de 40-60 ans. Diagnostic fortuit ou si avancé. Cause inconnue. À partir de 40 ans : contrôles annuels !</td></tr>
+                            <tr><td>Crise de glaucome</td><td>Douleurs soudaines par crises + baisse d'acuité visuelle lentement progressive + couleurs arc-en-ciel autour des sources lumineuses ! (halos) Œil rouge, état général altéré, céphalées, vomissements, photophobie, unilatéral. Déclencheur : nuit, sympathique (film d'horreur), hypermétropes (œil trop court)/Asiatiques + âgés</td><td>Acuité visuelle, pression oculaire, segment antérieur (fente : chambre antérieure étroite/mince, iris bombé, cornée légèrement trouble, pupilles de taille moyenne), éventuellement champ visuel + fond d'œil (ne voit rien de spécial)</td><td>Urgence ! Éventuellement avec gonioscopie mesurer angle irido-cornéen (sans traitement : cécité)</td><td>1. Traiter la crise : Diamox (inhibiteur anhydrase carbonique) per os ou IV, mannitol IV, bêta-bloquants 2. Pilocarpine (→ myosis) 3. Iridotomie laser ou iridectomie chirurgicale</td><td>Inhibiteurs anhydrase carbonique : production d'humeur aqueuse ↓. Mannitol : diurétique. Bêta-bloquants : contre-indication si asthme (bronchoconstriction). Patient ne peut rentrer chez lui qu'après iridotomie effectuée aussi sur l'autre œil !</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section id="section-6" class="section">
+                <h2><span class="section-number">6</span> <span class="section-icon">❤️</span> Pathologies vasculaires</h2>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Maladie</th>
+                                <th>Anamnèse</th>
+                                <th>Examen</th>
+                                <th>Procédure/Bilan</th>
+                                <th>Thérapie</th>
+                                <th>Commentaire</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Occlusion artérielle</td><td>Perte d'acuité visuelle soudaine sans douleur, déficit du champ visuel, généralement unilatéral, souvent chez les âgés. Facteurs de risque cardiovasculaires : hypertension + tabac ! Artériosclérose, diabète, dyslipidémie, obésité</td><td>Acuité visuelle, champ visuel, pupilles (RAPD), fond d'œil (œdème rétinien → zone claire/jaune, car ne voit pas choroïde, tache rouge cerise (occlusion artère centrale rétine), artères à peine visibles), lampe à fente, OCT (œdème), angiographie fluorescéinique (pour tous problèmes vasculaires indiquée), recherche source embolique : doppler carotidien + échocardiographie transthoracique/transœsophagienne, ECG. En cas d'occlusion artère centrale exclure maladie de Horton ! (biopsie)</td><td></td><td>1. Pression de perfusion ↗ : → pression oculaire ↘ : inhibiteurs anhydrase carbonique (Diamox), paracentèse, massage du globe → pression artérielle ↗ : position allongée, perfusion 2. Fibrinolyse/héparine (rare) 3. Hémodilution (perfusion) 4. Traiter facteurs de risque</td><td>Amaurose fugace : si même symptomatologie mais amélioration rapidement → problème de circulation. Pronostic : généralement mauvais. Occlusion artère centrale rétine ou seulement occlusion de branche (seulement couches rétiniennes internes atteintes)</td></tr>
+                            <tr><td>Neuropathie optique ischémique antérieure</td><td>Baisse d'acuité visuelle, déficits du champ visuel horizontaux, RAPD</td><td>Acuité visuelle, champ visuel (déficits horizontaux si papille), pupilles (éventuellement RAPD donc swinging flash light test), fond d'œil (papille pâle/floue/gonflée dans le cadre d'ischémie), lampe à fente, OCT, angiographie fluorescéinique (fuite produit de contraste), profil fibres nerveuses (voit neurones morts), exclusion maladie de Horton via biopsie temporale</td><td></td><td>1. Perfusion ↗ : antagonistes calciques, massage du globe, baisse pression oculaire 2. Lyse/héparine incertain 3. Traiter facteurs de risque</td><td>Trouble de circulation artérielle aigu des artérioles papillaires → infarctus optique → mauvais pronostic</td></tr>
+                            <tr><td>Maladie de Horton</td><td>Baisse d'acuité visuelle, déficits du champ visuel (horizontaux), RAPD, céphalées (artère temporale), douleurs à la mastication, fièvre</td><td>Vitesse de sédimentation + CRP, biopsie artère temporale, lampe à fente, OCT, angiographie fluorescéinique (fuite produit de contraste), profil fibres nerveuses</td><td></td><td>1. Corticoïdes haute dose IV, réduction à dose d'entretien dès que CRP/VS normales, minimum 12 mois 2. Contrôles CRP/VS, puis dose d'entretien et sevrage</td><td>Dans 25% le 2e œil aussi atteint ! Risque élevé de cécité ! Formes : NOIA artéritique ou occlusion artère centrale rétine</td></tr>
+                            <tr><td>Occlusion veineuse</td><td>Lentement-subaiguë (contrairement à l'occlusion artérielle), baisse d'acuité visuelle, déficit du champ visuel. Facteurs de risque cardiovasculaires : artériosclérose, hypertension, dyslipidémie, glaucome, etc.</td><td>Acuité visuelle, champ visuel, pupilles, fond d'œil (veines dilatées, nombreuses petites hémorragies éventuellement, exsudats), lampe à fente, OCT, angiographie fluorescéinique (fuite produit de contraste)</td><td></td><td>1. Hémodilution 2. Photocoagulation laser (si occlusion veineuse centrale ischémique) 3. Anti-VEGF (en cas d'œdème maculaire) 4. Traiter facteurs de risque 5. Contrôles</td><td>Occlusion de branche veineuse vs. occlusion veineuse centrale → occlusion veineuse centrale : - Ischémique : mauvais pronostic pour acuité visuelle, néovascularisation (VEGF), œdème maculaire, rubeosis iridis, etc. - Non ischémique : bon pronostic</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section id="section-7" class="section">
+                <h2><span class="section-number">7</span> <span class="section-icon">🔬</span> Pathologies orbitaires et inflammatoires</h2>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Maladie</th>
+                                <th>Anamnèse</th>
+                                <th>Examen</th>
+                                <th>Procédure/Bilan</th>
+                                <th>Thérapie</th>
+                                <th>Commentaire</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Orbitopathie endocrinienne</td><td>Exophtalmie, sensation de pression dans l'orbite, conjonctivite, surtout le matin gonflement de la paupière supérieure, sensibilité à la lumière, strabisme → diplopie (myopathie restrictive), symptômes d'hyperthyroïdie (tremblement, transpiration, tachycardie, transpiration) à rechercher</td><td>Inspection (rétraction palpébrale, conjonctive, exophtalmie, regard perçant, paupière regarde vers le bas), acuité visuelle, vision des couleurs, champ visuel, motilité (strabisme non concomitant), réflexe cornéen lumineux, pupilles (RAPD éventuellement), exophtalmie (généralement asymétrique) mesurer, fond d'œil, palper thyroïde</td><td>Bilan sanguin (hormones thyroïdiennes + anticorps), exophtalmométrie, scanner/IRM orbite (muscles extraoculaires épaissis + rehaussés)</td><td>1. Corticoïdes systémiques 2. Éventuellement chirurgie (décompression orbitaire surtout si neuropathie optique) 3. Traitement hyperthyroïdie 4. Éventuellement radiothérapie</td><td>Généralement dans le cadre de la maladie de Basedow, éventuellement car antigènes à réaction croisée dans l'orbite, mise en évidence de récepteurs TSH dans l'orbite → inflammation graisse orbitaire/glandes lacrymales/muscles oculaires → épaississement, si chronique dégénération, compression atrophie optique → danger de cécité</td></tr>
+                            <tr><td>Phlegmon orbitaire</td><td>Douleurs orbite + globe lors des mouvements, paupières rouges gonflées, exophtalmie, trouble de la motilité, état général altéré (fièvre), perte d'acuité visuelle, vision des couleurs ↓</td><td>Inspection, acuité visuelle, vision des couleurs (perte couleurs), motilité (trouble motilité), pupilles (RAPD), fond d'œil</td><td>Scanner → exclusion abcès !, éventuellement consultation ORL (car souvent dans le cadre de sinusites)</td><td>Antibiotiques, éventuellement assainissement sinus, hospitalisation</td><td>Pronostic bon si traitement précoce. Phlegmon orbitaire postseptal plus dangereux que préseptal (alors patient état général relativement bon). Souvent sinusite propagée, sepsis</td></tr>
+                            <tr><td>Fracture blow-out</td><td>Douleurs, énophtalmie, strabisme/diplopie, hypoesthésie nerf maxillaire V2</td><td>Acuité visuelle, motilité (strabisme non concomitant), emphysème sous-cutané, déficit sensitif nerf infraorbitaire (examiner tout le trijumeau, éventuellement tous les nerfs crâniens)</td><td>Scanner (radiographie mauvaise)</td><td>Antibiotiques, interdiction se moucher (risque infectieux), chirurgie si trouble motilité oculaire + éventuellement révision plancher orbitaire (plaque)</td><td></td></tr>
+                            <tr><td>Uvéite</td><td>Œil rouge aigu, douleurs (entre autres lors accommodation), photophobie, éventuellement baisse d'acuité visuelle (hémorragie vitréenne ou œdème maculaire), rougeur, douleurs. Facteurs de risque : chat (toxoplasmose), médicaments, grossesse (auto-immun) ; maladie systémique (Bechterew, arthrite, maladie de Behçet, etc.). Souvent crise de glaucome comme conséquence (synéchies)</td><td>Acuité visuelle, pression oculaire (↓ si corps ciliaire ne fonctionne pas bien), segment antérieur (cellules inflammatoires dans chambre antérieure, "effet Tyndall", "précipités kératiques", éventuellement hypopion, éventuellement synéchies), fond d'œil</td><td>Dépistage syphilis - toxoplasmose, OCT (voit éventuel œdème maculaire si uvéite postérieure), angiographie fluorescéinique (troubles barrière, sténoses, etc.)</td><td>"Trouble humeur aqueuse par cellules inflammatoires". "Dépôts cellules inflammatoires sur face postérieure cornée" 1. Corticoïdes (uvéite antérieure : gouttes cortisone, uvéite moyenne + postérieure : injection cortisone péri- ou intraoculaire ou comprimés systémiques) 2. Immunosuppresseurs (azathioprine, méthotrexate → moins de corticoïdes) 3. Biothérapies (Remicade/infliximab, Humira) 4. Gouttes mydriatiques (surtout en cas d'iritis) 5. Traitement causal si cause claire</td><td>Cause dans 50% idiopathique, 40% maladie systémique, 10% infectieuse. Localisation inflammation : uvéite antérieure (entre iris + cornée), moyenne (surtout vitré) ou postérieure (choroïde). Généralement antérieure. Uvéite postérieure souvent due à toxoplasmose → congénitale ou acquise. Souvent récidives, danger complications</td></tr>
+                            <tr><td>Névrite rétrobulbaire</td><td>Baisse d'acuité visuelle, déficits du champ visuel, vision plus sombre, vision des contrastes mauvaise, trouble vision des couleurs, douleurs lors mouvements oculaires, souvent jeunes femmes, patient + médecin ne voient rien tous les deux, désaturation du rouge (trouble vision couleurs)</td><td>Acuité visuelle, champ visuel (scotome central), vision des couleurs (trouble), pupille (RAPD), motilité (douleurs), segment antérieur, fond d'œil (papille normale)</td><td>Ponction lombaire pour confirmation diagnostic, IRM (nerf optique prend le produit de contraste). IRM, car peut être 1er signe de sclérose en plaques</td><td>Corticoïdes haute dose IV</td><td>Papillite : similaire, seulement gonflement papillaire (fond d'œil). Souvent jeunes (<30) femmes, survient en heures à jours</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section id="section-8" class="section">
+                <h2><span class="section-number">8</span> <span class="section-icon">🚨</span> Traumatismes et urgences</h2>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Maladie</th>
+                                <th>Anamnèse</th>
+                                <th>Examen</th>
+                                <th>Procédure/Bilan</th>
+                                <th>Thérapie</th>
+                                <th>Commentaire</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Traumatisme</td><td>Douleurs, œil rouge, baisse d'acuité visuelle, éventuellement perforation, éventuellement pénétration, éventuellement rupture du globe, variable</td><td>Acuité visuelle, motilité, segment antérieur (hyphéma, signe de Seidel positif, érosion, perforation, iridodialyse, etc.), emphysème sous-cutané, sensibilité, fond d'œil (tout possible)</td><td>Scanner (position + nombre corps étrangers, type lésion), échographie</td><td>Suture rapide (avant scanner → enlèvement corps étranger possible le lendemain sauf bois/cuivre/fil métallique !), rappel tétanos, antibiotiques, prise en charge autres défauts rétiniens, en cas de suspicion rupture du globe → exploration chirurgicale, vitrectomie (après environ 10 jours), à jeun</td><td>Médecin généraliste : pas de pansement ou seulement pansement lâche, ne pas toucher l'œil. Signe de Seidel : si fluorescéine lavée car liquide sort du site de perforation/pénétration. Danger endophtalmie !</td></tr>
+                            <tr><td>Endophtalmie</td><td>Œil rouge, douleurs, baisse d'acuité visuelle</td><td>Inspection, acuité visuelle, champ visuel, segment antérieur (cornée trouble, cellules chambre antérieure, infiltration vitréenne, hypopion), fond d'œil, pression oculaire (diagnostic différentiel crise glaucome aiguë), réflexe pupillaire</td><td></td><td>Antibiotiques, hospitalisation</td><td>Infection œil/globe, généralement bactérienne, souvent post-corps étranger (bois, fil métallique) ou post-chirurgicale (ex: chirurgie cataracte). Pronostic très mauvais !</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section id="section-9" class="section">
+                <h2><span class="section-number">9</span> <span class="section-icon">👁️‍🗨️</span> Pathologies palpébrales et annexes</h2>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Maladie</th>
+                                <th>Anamnèse</th>
+                                <th>Examen</th>
+                                <th>Procédure/Bilan</th>
+                                <th>Thérapie</th>
+                                <th>Commentaire</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Pathologies palpébrales</td><td>Dermatochalasis (paupière pend), ptosis (muscle palpébral défaillant), xanthélasmas (dépôts cholestérol), distichiasis (deuxième rangée cils), poliosis (cils blancs), ectropion (vers l'extérieur), entropion (vers l'intérieur), meibomite, conjonctivite</td><td>Inspection (bord palpébral symétrique, iris 2mm recouvert, bords palpebraux temporaux plus hauts), éversion des paupières, distance réflexe bord palpébral (ptosis ?), fonction élévateur, pli palpébral (si aucun alors ptosis congénital), test snap avec paupière inférieure (muscle orbiculaire)</td><td>Si traumatisme scanner</td><td></td><td>Fonction élévateur : fixer sourcil, patient doit regarder vers le haut. Si fonction ok + ptosis → déhiscence élévateur, sinon congénital/paralysie/myopathie</td></tr>
+                            <tr><td>Tumeurs palpébrales</td><td>Chalazion (inflammation granulomateuse glande de Meibomius), orgelet (inflammation purulente glandes sébacées et paupière), molluscum contagiosum (parapoxvirus), kératoacanthome. Carcinome basocellulaire, carcinome épidermoïde, carcinome glandes sébacées, mélanome</td><td></td><td>Éventuellement biopsie</td><td></td><td></td></tr>
+                            <tr><td>Phlegmon palpébral</td><td>Douleurs-pression à la paupière, gonflement, rougeur, contrairement au phlegmon orbitaire motilité ok (pas de diplopie), intraoculaire sans irritation, acuité visuelle bonne, état général bon, éventuellement fièvre, souvent dans le cadre d'une sinusite</td><td>Acuité visuelle, motilité/diplopies, réaction pupillaire, segment antérieur, fond d'œil</td><td>Éventuellement scanner sinus-orbite, éventuellement consultation ORL, chez enfants éventuellement hospitalisation</td><td>Antibiotiques, compresses avec antiseptique</td><td></td></tr>
+                            <tr><td>Sténose voies lacrymales</td><td>Larmoiement, gonflement, douleurs, éventuellement abcès, croûtes, mucus, éventuellement rhinite, parfois pus</td><td></td><td></td><td>Irrigation, sondage, dilatation, éventuellement chirurgie</td><td>Chez enfants souvent persistance valve de Hasner cause (larmoiement) → attendre jusqu'à 1 an, car souvent guérison spontanée</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section id="section-10" class="section">
+                <h2><span class="section-number">10</span> <span class="section-icon">👓</span> Anomalies réfractives et diagnostics différentiels</h2>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Maladie</th>
+                                <th>Anamnèse</th>
+                                <th>Examen</th>
+                                <th>Procédure/Bilan</th>
+                                <th>Thérapie</th>
+                                <th>Commentaire</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Anomalies réfractives</td><td>Myopie : flou de loin. Hypermétropie : flou de près, troubles asthénopiques (céphalées), strabisme/diplopie due à accommodation cristallin. Presbytie (presbytie) : flou de près (lecture), troubles asthénopiques à la lecture</td><td>Acuité visuelle, segment antérieur, fond d'œil, champ visuel, pupilles, motilité oculaire</td><td>Déterminer réfraction subjective avec boîte d'essai, éventuellement méthodes modernes (skiascopie → réfraction objective) : sphère (myopie, hypermétropie), axe + puissance cylindre (astigmatisme)</td><td>Lunettes (verres de loin, de près, verres bifocaux, verres progressifs), lentilles de contact, implant intraoculaire, laser cornéen</td><td>Myopie : décollement rétinien, néovascularisation. Hypermétropie : glaucome à angle fermé. Astigmatisme : déformation cornéenne. Anisométropie : lors chirurgies cataracte parfois souhaité pour que lunettes pas nécessaires, danger amblyopie, aniséikonie</td></tr>
+                            <tr><td>Œil rouge</td><td>Diagnostic différentiel : Œil : conjonctivite, kératite, sclérite, uvéite, crise de glaucome en cas de glaucome à angle fermé, hémorragie sous-conjonctivale. Entourage : blépharite, phlegmon palpébral, allergie, orgelet, dacryoadénite, phlegmon orbitaire, thrombose sinus caverneux</td><td></td><td></td><td></td><td></td></tr>
+                            <tr><td>Perte de vision soudaine</td><td>Pathologie organique : crise de glaucome, occlusion artérielle, décollement rétinien, hémorragie vitréenne, protrusion du globe (ex: dans le cadre d'hématome ou tumeur), amaurose fugace (transitoire). Sans pathologie organique : accident vasculaire cérébral (hémianopsie homonyme), migraine (aura : anneaux colorés ondulants généralement bilatéraux, déficit champ visuel, bourdonnements, début central → migre vers périphérie), syncope, hypertension intracrânienne aiguë, hémorragie chiasmatique (hémianopsie bitemporale)</td><td></td><td></td><td></td><td></td></tr>
+                            <tr><td>Déficit champ visuel/Scotome</td><td>Uni- ou bilatéral, nasal ou temporal, central (DMLA ou dystrophie cônes) ou périphérique (glaucome ou dystrophie bâtonnets), déficits neurologiques, traumatisme, symptômes B</td><td>Acuité visuelle, vision couleurs, champ visuel, motilité, réaction pupillaire (RAPD) + convergence + swinging-flash-light, fond d'œil</td><td>Imagerie (AVC, traumatisme, facteurs de risque)</td><td></td><td>Papille (unilatéral, horizontal), nerf optique (scotome central), chiasma (hémianopsie bitemporale), tractus + voie optique + cortex visuel (hémianopsie homonyme, une fois nasal et une fois latéral). RAPD si lésion entre papille + avant thalamus</td></tr>
+                            <tr><td>Anisocorie</td><td>Acuité visuelle, champ visuel, motilité, traumatisme, AVC</td><td>Acuité visuelle, vision couleurs, champ visuel, motilité, réaction pupillaire (RAPD) + convergence + swinging-flash-light, fond d'œil</td><td></td><td>Trouble efférence (anisocorie, strabisme, paralysie nerfs crâniens)</td><td>Horner : anisocorie > plus grande dans l'obscurité (pas de réaction à la cocaïne). Adie : anisocorie plus grande dans la lumière (réaction à la pilocarpine)</td></tr>
+                            <tr><td>RAPD</td><td>Acuité visuelle, champ visuel, vision couleurs, traumatisme, AVC</td><td></td><td></td><td>Trouble afférence (acuité visuelle, champ visuel, RAPD)</td><td>Éclairage œil malade : pas de myosis bilatéral, éventuellement même légère mydriase. Éclairage œil sain : myosis bilatéral</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section id="section-11" class="section">
+                <h2><span class="section-number">11</span> <span class="section-icon">🔬</span> Tumeurs oculaires</h2>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Maladie</th>
+                                <th>Anamnèse</th>
+                                <th>Examen</th>
+                                <th>Procédure/Bilan</th>
+                                <th>Thérapie</th>
+                                <th>Commentaire</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Tumeurs de l'œil</td><td>Paupière : Hémangiome (disparaissent souvent spontanément, si tout l'œil fermé : bêta-bloquants pour qu'il n'y ait pas d'amblyopie), granulome pyogénique (prolifération vasculaire exophytique du groupe des hémangiomes), naevus (contrôles car rarement dégénérescence en mélanome), kératoacanthome (tissu kératinisant, ressemble à mamelon, excision car dégénérescence rarement possible), naevus viral, papillome. Mélanome, carcinome basocellulaire (cratériforme, dépression centrale, ulcères souvent, angles palpebraux nasaux souvent), carcinome épidermoïde, carcinome glandes de Meibomius (chalazion/orgelet résistant au traitement). Glandes lacrymales : adénome pléomorphe, carcinome glandes lacrymales. Conjonctive : ptérygion (atteint jusqu'à + avec cornée, souvent avec beaucoup de soleil, récidives, fait astigmatisme, plus fréquent en région méditerranéenne), pinguecula (seulement bulbe-bulbe), mélanose épithéliale (pigmentations brunes plates mobiles, si unilatéral chez personne à peau claire : biopsier), mélanose congénitale de l'œil (pigmentations bleuâtres plates mobiles, si aussi peau → naevus d'Ota), naevus (apparaît généralement dans les premières 2 décennies de vie). Carcinome épidermoïde (masse charnue vascularisée floue avec vaisseau nourricier, souvent rose), mélanome (surtout à partir de 60 ans, généralement nodule gris-noir avec vaisseau afférent, souvent fixé sur sclère, rarement amélanotique, souvent au limbe). Iris : nodules de Lisch (neurofibromatose I), mélanome (pupille souvent déformée, surélevé). Corps ciliaire : mélanome (souvent diagnostic trop tardif). Choroïde : naevus (nettement délimité, papille non infiltrée, pas de relief, homogène), mélanome (relief, flou, éventuellement décollement). Rétine : astrocytome, hémangiome, maladie de Hippel-Lindau. Rétinoblastome (leucocorie, tumeur des photorécepteurs, uni- ou bilatéral), maladie de Hippel-Lindau (associée au carcinome rénal), métastases (motif léopard). Orbite : phlegmon, kyste dermoïde, hémangiome, méningiome, gliome optique, MÉLANOME le plus fréquent !!!! Rhabdomyosarcome, lymphome, carcinome glandes lacrymales</td><td>Si Hippel-Lindau : IRM (car souvent tumeurs SNC + rein). Anamnèse : acuité visuelle →, déficit champ visuel, sensation corps étranger + pression, douleurs, symptômes B. Examen : inspection, acuité visuelle, champ visuel, pupille, segment antérieur, fond d'œil, ganglions lymphatiques, examen interniste</td><td>Bilans : biopsie, bilan sanguin (marqueurs tumoraux), échographie (entre autres échographie hépatique car souvent métastases), éventuellement scanner/IRM</td><td>Mélanome : cryothérapie, radiothérapie, excision, éventuellement énucléation. Rétinoblastome : cryothérapie, chimiothérapie, éventuellement curiethérapie, rarement énucléation. Thérapie : généralement 3 piliers 1. Chirurgie (incluant cryothérapie + laser) 2. Radiothérapie (incluant curiethérapie) 3. Chimiothérapie (gouttes, intravitréenne, systémique)</td><td></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <div class="note-box">
+                <div class="note-title">📝 Notes importantes sur l'anamnèse</div>
+                <div class="note-content">
+                    <strong>ANAMNÈSE :</strong> 6 dimensions ; antécédents personnels (lentilles, lunettes, opérations, problèmes visuels, strabisme), antécédents familiaux ; facteurs de risque (hypertension, diabète, tabac, alcool, lentilles, opérations œil ; médicaments) médicaments (corticoïdes, antibiotiques, quinolones, mydriatiques, anticoagulants oraux, tuberculostatiques etc.) ; allergies, symptômes B, organes ORL (oreille, nez, etc.)
+                </div>
+            </div>
+
+            <div class="note-box">
+                <div class="note-title">📝 Notes importantes sur l'examen</div>
+                <div class="note-content">
+                    Ganglions lymphatiques + parfois examen neurologique/sensibilité ne pas oublier
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 Guide Ophtalmologique - Tous droits réservés</p>
+            <p>Tableau des Pathologies Ophtalmologiques - Guide complet pour l'examen ECOS</p>
+        </footer>
+    </div>
+
+    <a href="#" class="back-to-top">↑</a>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Back to top button visibility
+        const backToTop = document.querySelector('.back-to-top');
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTop.style.opacity = '1';
+                backToTop.style.pointerEvents = 'auto';
+            } else {
+                backToTop.style.opacity = '0';
+                backToTop.style.pointerEvents = 'none';
+            }
+        });
+
+        // Search functionality
+        const searchInput = document.getElementById('searchInput');
+        searchInput.addEventListener('input', function(e) {
+            const searchTerm = e.target.value.toLowerCase();
+            const rows = document.querySelectorAll('tbody tr');
+            
+            rows.forEach(row => {
+                const text = row.textContent.toLowerCase();
+                if (text.includes(searchTerm)) {
+                    row.style.display = '';
+                    if (searchTerm) {
+                        row.classList.add('highlight');
+                    } else {
+                        row.classList.remove('highlight');
+                    }
+                } else {
+                    row.style.display = 'none';
+                    row.classList.remove('highlight');
+                }
+            });
+
+            // Highlight matching text
+            if (searchTerm) {
+                document.querySelectorAll('td').forEach(cell => {
+                    const text = cell.textContent;
+                    const regex = new RegExp(`(${searchTerm})`, 'gi');
+                    if (regex.test(text)) {
+                        cell.innerHTML = text.replace(regex, '<mark>$1</mark>');
+                    }
+                });
+            } else {
+                // Remove highlights
+                document.querySelectorAll('mark').forEach(mark => {
+                    const parent = mark.parentNode;
+                    parent.replaceChild(document.createTextNode(mark.textContent), mark);
+                    parent.normalize();
+                });
+            }
+        });
+
+        // Add keyboard shortcut for search (Ctrl+F or Cmd+F)
+        document.addEventListener('keydown', function(e) {
+            if ((e.ctrlKey || e.metaKey) && e.key === 'f') {
+                e.preventDefault();
+                searchInput.focus();
+            }
+        });
+    </script>
+</body>
+</html>

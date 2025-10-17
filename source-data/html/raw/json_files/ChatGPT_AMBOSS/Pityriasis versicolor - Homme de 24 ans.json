@@ -1,0 +1,743 @@
+{
+  "title": "Pityriasis versicolor - Homme de 24 ans",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Homme de 24 ans, étudiant en droit, consultant pour des taches claires sur le haut du torse apparues progressivement après des vacances en Espagne"
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Motif de consultation principal",
+          "binaryOnly": true,
+          "patientComment": "Depuis que je suis rentré de vacances, j'ai remarqué des plaques blanches sur mon torse"
+        },
+        {
+          "id": "a2",
+          "text": "Caractérisation des lésions cutanées",
+          "details": [
+            "Aspect des taches [ovales, hypopigmentées]",
+            "Texture [légèrement squameuses]",
+            "Prurit [non, aucune démangeaison]",
+            "Douleur [non, aucune douleur]",
+            "Localisation [poitrine, épaules, haut du dos]",
+            "Extension progressive [oui, apparues progressivement]"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Chronologie et facteurs déclenchants",
+          "details": [
+            "Moment d'apparition [après retour de vacances]",
+            "Durée depuis l'apparition [à préciser]",
+            "Exposition solaire récente [oui, importante en Espagne]",
+            "Bronzage récent [oui]",
+            "Première occurrence [oui, jamais eu cela auparavant]"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Facteurs favorisants potentiels",
+          "details": [
+            "Usage de crèmes solaires [à préciser]",
+            "Usage d'huiles bronzantes [à rechercher]",
+            "Transpiration excessive [climat chaud en vacances]",
+            "Sports/activités physiques [à évaluer]",
+            "Vêtements synthétiques serrés [à rechercher]"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Symptômes associés",
+          "details": [
+            "Fièvre [non]",
+            "Symptômes généraux [aucun]",
+            "Autres lésions cutanées [non]",
+            "Atteinte du cuir chevelu [à vérifier]",
+            "Atteinte des ongles [non]"
+          ]
+        },
+        {
+          "id": "a6",
+          "text": "Antécédents dermatologiques",
+          "details": [
+            "Épisodes similaires antérieurs [jamais]",
+            "Antécédents familiaux de taches cutanées [à rechercher]",
+            "Eczéma/dermatite séborrhéique [à rechercher]",
+            "Psoriasis [à rechercher]",
+            "Vitiligo familial [à exclure]"
+          ]
+        },
+        {
+          "id": "a7",
+          "text": "Facteurs d'immunosuppression",
+          "details": [
+            "Prise de corticoïdes [non]",
+            "Immunosuppresseurs [non]",
+            "Diabète [non]",
+            "VIH ou immunodéficience [non]",
+            "Chimiothérapie récente [non]"
+          ]
+        },
+        {
+          "id": "a8",
+          "text": "Mode de vie et hygiène",
+          "details": [
+            "Fréquence des douches [à évaluer]",
+            "Type de savons utilisés [à préciser]",
+            "Partage de serviettes/vêtements [non]",
+            "Fréquentation de piscines/saunas [à rechercher]"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Remarque: Pas d'examen physique requis dans cette station",
+          "binaryOnly": true,
+          "scoringRule": "Ce critère est automatiquement validé si le candidat reconnaît qu'aucun examen physique n'est nécessaire"
+        },
+        {
+          "id": "e2",
+          "text": "Description clinique théorique des lésions",
+          "details": [
+            "Macules hypopigmentées bien délimitées",
+            "Fine desquamation superficielle",
+            "Distribution typique sur zones séborrhéiques",
+            "Absence de signes inflammatoires",
+            "Fluorescence jaune-vert à la lampe de Wood"
+          ]
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Proposer le diagnostic probable",
+          "patientComment": "Ce n'est pas du vitiligo. Ces taches sont causées par un champignon naturellement présent sur la peau. Ce n'est ni grave ni contagieux",
+          "ddSection": {
+            "title": "Diagnostics différentiels à considérer",
+            "categories": [
+              {
+                "name": "Infections fongiques superficielles",
+                "items": [
+                  {
+                    "text": "Pityriasis versicolor",
+                    "cause": "Arguments POUR:\n\t□ Taches ovales hypopigmentées\n\t□ Légèrement squameuses\n\t□ Distribution sur haut du tronc\n\t□ Apparition après exposition solaire\n\t□ Non prurigineuses",
+                    "test": "→ Examen KOH: aspect \"spaghetti and meatballs\""
+                  }
+                ]
+              },
+              {
+                "name": "Autres dermatoses hypopigmentantes",
+                "items": [
+                  {
+                    "text": "Vitiligo",
+                    "cause": "Arguments CONTRE:\n\t□ Dépigmentation complète (pas hypopigmentation)\n\t□ Pas de desquamation\n\t□ Bordures bien nettes\n\t□ Distribution différente",
+                    "test": "→ Lampe de Wood: blanc brillant"
+                  },
+                  {
+                    "text": "Pityriasis alba",
+                    "cause": "Arguments CONTRE:\n\t□ Surtout chez enfants\n\t□ Visage principalement\n\t□ Lésions mal délimitées",
+                    "test": "→ Diagnostic clinique"
+                  },
+                  {
+                    "text": "Hypopigmentation post-inflammatoire",
+                    "cause": "Arguments CONTRE:\n\t□ Antécédent d'inflammation nécessaire\n\t□ Pas de desquamation active",
+                    "test": "→ Anamnèse d'inflammation préalable"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Examens complémentaires",
+          "details": [
+            "Examen à la lampe de Wood [fluorescence jaune-vert caractéristique]",
+            "Examen direct au KOH [levures et filaments courts - aspect \"spaghetti and meatballs\"]",
+            "Scotch test si besoin [alternative au KOH]",
+            "Culture généralement non nécessaire [Malassezia difficile à cultiver]"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Traitement de première intention (forme localisée)",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Traitement topique antifongique",
+                "items": [
+                  {
+                    "treatment": "Kétoconazole 2%",
+                    "details": "Shampooing ou crème, application quotidienne",
+                    "duration": "1-2 semaines"
+                  },
+                  {
+                    "treatment": "Sulfure de sélénium 2.5%",
+                    "details": "Shampooing, laisser agir 10 minutes",
+                    "duration": "1-2 semaines"
+                  },
+                  {
+                    "treatment": "Alternatives topiques",
+                    "details": "Clotrimazole, terbinafine, zinc pyrithione",
+                    "duration": "2 semaines"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m4",
+          "text": "Traitement des formes étendues ou résistantes",
+          "details": [
+            "Fluconazole 400mg dose unique ou 200mg/j pendant 7 jours",
+            "Itraconazole 200mg/j pendant 5-7 jours",
+            "Éviter griséofulvine et terbinafine orale [inefficaces]",
+            "Association possible topique + systémique"
+          ]
+        },
+        {
+          "id": "m5",
+          "text": "Mode d'application du traitement topique",
+          "details": [
+            "Appliquer sur peau sèche",
+            "Couvrir largement au-delà des lésions visibles",
+            "Laisser agir selon les recommandations (5-10 minutes pour shampooings)",
+            "Rincer abondamment",
+            "Application quotidienne initialement"
+          ]
+        },
+        {
+          "id": "m6",
+          "text": "Mesures préventives et hygiène",
+          "details": [
+            "Éviter l'humidité prolongée sur la peau",
+            "Porter des vêtements en coton respirants",
+            "Éviter les huiles bronzantes grasses",
+            "Sécher soigneusement après la douche",
+            "Traitement prophylactique mensuel si récidives fréquentes"
+          ]
+        },
+        {
+          "id": "m7",
+          "text": "Suivi et pronostic",
+          "details": [
+            "Contrôle après 2-4 semaines de traitement",
+            "Disparition des squames = signe d'efficacité",
+            "Repigmentation peut prendre plusieurs mois",
+            "Risque de récidive élevé (60-80% à 2 ans)",
+            "Prophylaxie si récidives fréquentes"
+          ]
+        },
+        {
+          "id": "m8",
+          "text": "Information sur la contagiosité",
+          "binaryOnly": true,
+          "patientComment": "Ce n'est pas contagieux. Le champignon Malassezia fait partie de la flore normale de la peau de tout le monde"
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Répondre aux préoccupations du patient",
+          "details": [
+            "Question: [Est-ce que c'est une sorte de vitiligo?]",
+            "Réponse type: \"Non, ce n'est pas du vitiligo. C'est une infection fongique superficielle bénigne appelée pityriasis versicolor, très différente du vitiligo.\"",
+            "Question: [Est-ce que c'est dangereux?]",
+            "Réponse type: \"Non, c'est une affection bénigne. Elle est fréquente, surtout dans les climats chauds. Le traitement est simple.\"",
+            "Question: [Ça va revenir à la normale?]",
+            "Réponse type: \"Oui, les lésions vont guérir, mais la décoloration peut persister quelques mois après traitement. Il est aussi possible que cela réapparaisse, surtout en été.\""
+          ]
+        },
+        {
+          "id": "c2",
+          "text": "Conseils pratiques",
+          "details": [
+            "Continuer le traitement même si amélioration rapide",
+            "Traiter toute la zone du tronc, pas seulement les taches visibles",
+            "Laver les vêtements et serviettes à haute température",
+            "Éviter le partage de serviettes",
+            "Protection solaire jusqu'à repigmentation complète"
+          ]
+        },
+        {
+          "id": "c3",
+          "text": "Clôture de la consultation",
+          "exemplesPhrases": [
+            "\"Je vais vous prescrire un shampooing antifongique à appliquer sur tout le tronc pendant 2 semaines.\"",
+            "\"Les taches vont disparaître progressivement, mais la couleur normale peut mettre quelques mois à revenir complètement.\"",
+            "\"Si les lésions persistent après le traitement ou si elles s'étendent, revenez me voir pour envisager un traitement oral.\""
+          ]
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour le patient standardisé",
+      "nom": "Nicolas Duval",
+      "age": "24 ans",
+      "profession": "Étudiant en droit",
+      "contexte": "Cabinet de médecine générale",
+      "phraseOuverture": "Depuis que je suis rentré de vacances, j'ai remarqué des plaques blanches sur mon torse.",
+      "histoireActuelle": {
+        "symptomesPrincipaux": [
+          "Taches ovales hypopigmentées sur le torse",
+          "Légèrement squameuses au toucher",
+          "Non prurigineuses, non douloureuses",
+          "Localisation: poitrine, épaules, haut du dos",
+          "Apparition progressive après retour d'Espagne",
+          "Exposition solaire importante pendant les vacances"
+        ],
+        "symptomesAbsents": [
+          "Pas de démangeaisons",
+          "Pas de douleur",
+          "Pas de fièvre",
+          "Pas d'autres symptômes généraux",
+          "Jamais eu cela auparavant"
+        ]
+      },
+      "antecedents": {
+        "medicaux": "Aucun",
+        "dermatologiques": "Aucun épisode similaire",
+        "familiaux": "Pas de vitiligo familial",
+        "medicaments": "Aucun traitement en cours"
+      },
+      "modeDeVie": {
+        "vacances": "Récent séjour de 2 semaines en Espagne",
+        "exposition": "Beaucoup de plage et de soleil",
+        "hygiene": "Douches régulières",
+        "sport": "Pratique occasionnelle"
+      },
+      "simulation": {
+        "attitude": [
+          "Inquiet de l'aspect esthétique",
+          "Craint que ce soit du vitiligo",
+          "Soulagé d'apprendre que c'est bénin",
+          "Coopératif pour le traitement"
+        ],
+        "durantEntretien": [
+          "Montrez les zones atteintes (sans vraiment montrer)",
+          "Exprimez votre inquiétude sur l'aspect définitif",
+          "Demandez si c'est contagieux",
+          "Interrogez sur les risques de récidive"
+        ]
+      },
+      "inquietudes": {
+        "principales": [
+          "Est-ce que c'est une sorte de vitiligo?",
+          "Est-ce que c'est dangereux?",
+          "Ça va revenir à la normale?",
+          "Est-ce contagieux pour ma copine?",
+          "Pourquoi ça m'arrive maintenant?"
+        ]
+      }
+    },
+    "informationsExpert": {
+      "titre": "Informations pour l'expert évaluateur",
+      "pointsCles": [
+        "Reconnaissance du tableau typique de pityriasis versicolor",
+        "Différenciation avec le vitiligo (préoccupation majeure du patient)",
+        "Explication du mécanisme (prolifération de Malassezia)",
+        "Plan de traitement adapté à l'étendue des lésions",
+        "Information sur le risque de récidive et la prévention"
+      ],
+      "pieges": [
+        "Confondre avec un vitiligo débutant",
+        "Oublier d'expliquer le délai de repigmentation",
+        "Ne pas mentionner le risque élevé de récidive",
+        "Prescrire un antifongique oral d'emblée pour forme localisée",
+        "Oublier les conseils de prévention"
+      ],
+      "criteresDEvaluation": [
+        "Anamnèse complète avec facteurs favorisants",
+        "Diagnostic différentiel approprié",
+        "Choix thérapeutique adapté (topique vs systémique)",
+        "Explication claire de la nature bénigne",
+        "Conseils de prévention des récidives"
+      ]
+    },
+    "theoriePratique": {
+      "titre": "Points théoriques et pratiques",
+      "sections": [
+        {
+          "titre": "Physiopathologie du pityriasis versicolor",
+          "points": [
+            "Causé par Malassezia furfur/globosa (levure lipophile)",
+            "Fait partie de la flore cutanée normale",
+            "Prolifération favorisée par: chaleur, humidité, séborrhée",
+            "Production d'acide azélaïque inhibant la mélanogenèse",
+            "D'où l'hypopigmentation après exposition solaire"
+          ]
+        },
+        {
+          "titre": "Facteurs favorisants",
+          "points": [
+            "Climats chauds et humides",
+            "Hypersudation",
+            "Peau grasse/séborrhéique",
+            "Immunosuppression",
+            "Malnutrition",
+            "Contraceptifs oraux",
+            "Application d'huiles sur la peau"
+          ]
+        },
+        {
+          "titre": "Signes diagnostiques",
+          "points": [
+            "Signe du copeau: desquamation fine au grattage",
+            "Fluorescence jaune-vert à la lampe de Wood (30% des cas)",
+            "KOH: levures rondes et filaments courts",
+            "Aspect \"spaghetti and meatballs\" caractéristique",
+            "Distribution sur zones riches en glandes sébacées"
+          ]
+        }
+      ],
+      "rappelsTherapeutiques": [
+        "Topiques première ligne: kétoconazole, sulfure de sélénium",
+        "Application sur peau sèche, temps de contact important",
+        "Traiter largement au-delà des lésions visibles",
+        "Systémique si échec ou forme étendue: fluconazole, itraconazole",
+        "Griséofulvine et terbinafine orales inefficaces",
+        "Prophylaxie: shampooing antifongique mensuel si récidives"
+      ],
+      "examensComplementaires": [
+        "Lampe de Wood: fluorescence jaune-vert (inconstante)",
+        "Examen direct KOH: diagnostic de certitude",
+        "Scotch test: alternative au prélèvement direct",
+        "Culture: difficile, rarement nécessaire",
+        "Biopsie: exceptionnelle, si doute diagnostique"
+      ]
+    },
+    "resume": {
+      "titre": "🌞 Pityriasis versicolor – Résumé ECOS",
+      "sections": [
+        {
+          "titre": "🔍 Anamnèse",
+          "subsections": [
+            {
+              "titre": "Symptômes principaux",
+              "points": [
+                "Macules hyperpigmentées, hypopigmentées ou érythémateuses",
+                "Évolution chronique, souvent récidivante",
+                "Souvent asymptomatique ou prurit léger",
+                "Apparition ou aggravation après exposition solaire"
+              ]
+            },
+            {
+              "titre": "Contexte",
+              "points": [
+                "Adolescents et jeunes adultes le plus souvent",
+                "Facteurs favorisants : chaleur, humidité, sudation excessive",
+                "Pas de contagiosité interhumaine significative",
+                "Pas de retentissement systémique"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "👀 Examen clinique",
+          "subsections": [
+            {
+              "titre": "Signes cutanés typiques",
+              "points": [
+                "Macules arrondies, bien limitées",
+                "Couleur variable : brun, rose ou blanc (hypopigmentation fréquente)",
+                "Squame fine au grattage (signe du copeau)",
+                "Localisation : tronc, cou, épaules, bras"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "🧪 Examens diagnostiques",
+          "subsections": [
+            {
+              "titre": "Diagnostic clinique",
+              "points": [
+                "Aspect typique souvent suffisant"
+              ]
+            },
+            {
+              "titre": "Examens complémentaires",
+              "points": [
+                "Examen direct KOH : hyphes + spores (« spaghetti and meatballs »)",
+                "Lampe de Wood : fluorescence jaune-vert",
+                "Culture fongique rarement nécessaire"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "⚙️ Prise en charge",
+          "subsections": [
+            {
+              "titre": "Traitement de première intention",
+              "points": [
+                "Antifongiques topiques (kétoconazole, clotrimazole, ciclopirox, terbinafine topique)",
+                "Sels de sulfure de sélénium (shampooing appliqué sur la peau)",
+                "Durée : 1–2 semaines"
+              ]
+            },
+            {
+              "titre": "Si formes étendues ou récidivantes",
+              "points": [
+                "Antifongiques systémiques (itraconazole, fluconazole, terbinafine orale)",
+                "Surveillance hépatique si traitement prolongé"
+              ]
+            },
+            {
+              "titre": "Mesures associées",
+              "points": [
+                "Expliquer caractère bénin et récidivant",
+                "Éviter excès de chaleur et transpiration",
+                "Prévenir récidives : traitements topiques intermittents"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "✅ Points clés ECOS",
+          "points": [
+            "Macules hypopigmentées ou hyperpigmentées, squame discrète",
+            "Non contagieux, bénin mais récidivant",
+            "Diagnostic clinique ± confirmé par KOH",
+            "Ttmt : antifongiques topiques en 1ère intention",
+            "Réassurer le patient, récidives fréquentes"
+          ]
+        },
+        {
+          "titre": "📋 Check-list rapide ECOS",
+          "subsections": [
+            {
+              "titre": "Questions à poser",
+              "points": [
+                "Depuis quand les lésions sont-elles présentes ?",
+                "Aggravation après exposition solaire ?",
+                "Prurit associé ?",
+                "ATCD d’épisodes similaires ?",
+                "Utilisation de produits topiques ou traitements antérieurs ?"
+              ]
+            },
+            {
+              "titre": "Examens à faire",
+              "points": [
+                "Inspection cutanée (tronc, cou, épaules)",
+                "Grattage cutané + KOH si doute",
+                "Lampe de Wood",
+                "Évaluer terrain favorisant (sudation, climat, immunodépression)"
+              ]
+            },
+            {
+              "titre": "PEC en 3 points",
+              "points": [
+                "Antifongique topique 1ère intention",
+                "Antifongique systémique si étendu/récidivant",
+                "Mesures préventives (hygiène, prophylaxie topique intermittente)"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "presentationPatient": {
+      "titre": "📑 Fiche ECOS – Cas : Pityriasis versicolor (homme 24 ans)",
+      "sections": [
+        {
+          "titre": "🧩 Checklist mentale (présentation systématisée)",
+          "points": [
+            "Intro → âge, motif (homme 24 ans, plaques blanches sur le torse après vacances au soleil)",
+            "Chronologie → apparition progressive après retour d’Espagne, première occurrence",
+            "Caractériser lésions → macules ovales hypopigmentées, fines squames, non prurigineuses, non douloureuses",
+            "Localisation → poitrine, épaules, haut du dos",
+            "Symptômes associés → aucun signe général, pas de fièvre, pas de prurit, pas d’atteinte muqueuse/ongles",
+            "Facteurs favorisants → chaleur, transpiration excessive, exposition solaire, huile solaire éventuelle",
+            "ATCD → aucun épisode similaire, pas de vitiligo familial",
+            "Examen clinique typique → macules hypopigmentées à squames fines, signe du copeau positif, lampe de Wood : fluorescence jaune-vert",
+            "Résumé + hypothèse principale : pityriasis versicolor ; DD = vitiligo, pityriasis alba, hypopigmentation post-inflammatoire",
+            "Examens complémentaires → grattage cutané + KOH (spaghetti and meatballs), lampe de Wood",
+            "Prise en charge → antifongique topique (kétoconazole, sulfure de sélénium), hygiène, suivi ; antifongique oral si forme étendue/récidivante"
+          ],
+          "mnemo": {
+            "titre": "👉 Mnémo rapide : COPAIN",
+            "elements": [
+              "C = Copeau (squame fine au grattage)",
+              "O = Ovales hypopigmentées",
+              "P = Pityrosporum (Malassezia, germe en cause)",
+              "A = Après soleil (exposition déclenchante)",
+              "I = Inconstant prurit (souvent absent)",
+              "N = Non contagieux"
+            ]
+          }
+        },
+        {
+          "titre": "🎤 Version longue (≈2-3 min)",
+          "contenu": "Il s’agit de Nicolas Duval, un homme de 24 ans, étudiant en droit, qui consulte pour l’apparition de taches blanches sur son torse. Les lésions sont apparues progressivement après son retour d’un séjour de deux semaines en Espagne, avec une forte exposition solaire. C’est la première fois qu’il présente ce type d’éruption.\n\nIl décrit des plaques claires, ovales, légèrement squameuses au toucher, localisées sur la poitrine, les épaules et le haut du dos. Elles ne grattent pas, ne font pas mal, et il n’a pas de fièvre ni d’autres symptômes associés. Il n’a pas d’antécédents dermatologiques notables, pas d’antécédents familiaux de vitiligo, et il ne prend pas de traitement médicamenteux. Il n’a pas de facteur d’immunosuppression connu.\n\nÀ l’examen clinique, on retrouve des macules hypopigmentées bien délimitées, recouvertes d’une fine squame. Le signe du copeau est positif (squame au grattage). La distribution est typique, sur les zones séborrhéiques du tronc. On n’observe aucun signe inflammatoire ni atteinte muqueuse. À la lampe de Wood, on peut retrouver une fluorescence jaune-vert caractéristique.\n\nEn résumé, il s’agit d’un homme jeune avec un tableau typique de pityriasis versicolor. Les diagnostics différentiels incluent un vitiligo (lésions dépigmentées franches, sans squames, fluorescentes blanc-bleu à la lampe de Wood), un pityriasis alba (chez l’enfant, lésions mal limitées, visage), et une hypopigmentation post-inflammatoire (qui nécessite un antécédent d’inflammation locale).\n\nLe diagnostic est essentiellement clinique, mais peut être confirmé par un examen direct au KOH montrant l’aspect caractéristique en « spaghetti and meatballs » (levures + filaments courts).\n\nLa prise en charge repose sur l’application topique d’un antifongique : shampooing au kétoconazole 2 % ou sulfure de sélénium 2,5 %, appliqué sur le tronc et laissé en place 5 à 10 minutes avant rinçage, pendant 1 à 2 semaines. En cas de lésions étendues ou récidivantes, on peut proposer un traitement systémique par fluconazole ou itraconazole. J’expliquerais au patient que la guérison est complète mais que la repigmentation normale peut prendre plusieurs mois après disparition du champignon. Le risque de récidive est élevé, notamment en été. Je conseillerais donc des mesures préventives : éviter les huiles solaires grasses, porter des vêtements respirants, sécher soigneusement la peau, et utiliser mensuellement un shampooing antifongique préventif si récidives fréquentes."
+        },
+        {
+          "titre": "⚡ Version express (SBAR, 30 sec)",
+          "contenu": "S (Situation) : Nicolas Duval, 24 ans, présente depuis son retour de vacances une éruption de macules hypopigmentées sur le torse, épaules et haut du dos.\n\nB (Background) : Pas d’antécédents médicaux ni dermatologiques, pas de vitiligo familial. Première occurrence.\n\nA (Assessment) : Pityriasis versicolor probable. DD : vitiligo, pityriasis alba, hypopigmentation post-inflammatoire.\n\nR (Recommendation) : Antifongique topique (kétoconazole/sulfure de sélénium) 1-2 semaines, hygiène adaptée, suivi à 4 semaines. Expliquer que non contagieux, bénin mais récidivant."
+        },
+        {
+          "titre": "🎲 Touches ludiques / mnémos",
+          "subsections": [
+            {
+              "titre": "👉 Signes diagnostiques utiles",
+              "points": [
+                "Signe du copeau = squame au grattage",
+                "Lampe de Wood = fluorescence jaune-vert",
+                "KOH = hyphes + spores (« spaghetti and meatballs »)"
+              ]
+            },
+            {
+              "titre": "👉 Facteurs favorisants",
+              "points": [
+                "Chaleur et humidité",
+                "Excès de transpiration",
+                "Peau grasse/séborrhéique",
+                "Huiles bronzantes",
+                "Immunosuppression"
+              ]
+            },
+            {
+              "titre": "👉 Traitement simplifié",
+              "points": [
+                "Topiques = kétoconazole, sulfure de sélénium, clotrimazole",
+                "Systémiques si étendu/récidivant = fluconazole, itraconazole",
+                "Prévention : shampooing antifongique mensuel si récidives"
+              ]
+            },
+            {
+              "titre": "⚠️ Pièges ECOS",
+              "points": [
+                "Confondre avec vitiligo (pas de squames dans vitiligo)",
+                "Oublier d’expliquer délai de repigmentation (mois)",
+                "Ne pas mentionner risque élevé de récidive",
+                "Prescrire antifongique oral d’emblée alors que topique suffit"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "❓ Questions probables de l'examinateur (avec réponses orales)",
+          "subsections": [
+            {
+              "titre": "1. Arguments pour et contre chaque hypothèse",
+              "questions": [
+                {
+                  "question": "Pityriasis versicolor",
+                  "reponse": {
+                    "pour": [
+                      "Macules hypopigmentées ovales",
+                      "Légèrement squameuses",
+                      "Distribution sur tronc/épaules",
+                      "Début après exposition solaire",
+                      "Non prurigineuses"
+                    ],
+                    "contre": [
+                      "Pas d’arguments significatifs contre"
+                    ]
+                  }
+                },
+                {
+                  "question": "Vitiligo",
+                  "reponse": {
+                    "pour": [
+                      "Macules blanches"
+                    ],
+                    "contre": [
+                      "Décoloration complète (pas hypopigmentation)",
+                      "Pas de squames",
+                      "Lampe de Wood blanche brillante",
+                      "Localisation différente"
+                    ]
+                  }
+                },
+                {
+                  "question": "Pityriasis alba",
+                  "reponse": {
+                    "contre": [
+                      "Survient chez enfants/adolescents",
+                      "Localisation visage",
+                      "Plaques mal limitées"
+                    ]
+                  }
+                },
+                {
+                  "question": "Hypopigmentation post-inflammatoire",
+                  "reponse": {
+                    "contre": [
+                      "Nécessite antécédent d’inflammation cutanée",
+                      "Pas de squame active"
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "titre": "2. Examens complémentaires immédiats",
+              "questions": [
+                {
+                  "question": "Quels examens demanderiez-vous ?",
+                  "reponse": [
+                    "Lampe de Wood : fluorescence jaune-vert",
+                    "Examen direct KOH : levures + filaments courts (spaghetti and meatballs)",
+                    "Scotch test si besoin",
+                    "Pas de culture nécessaire"
+                  ]
+                }
+              ]
+            },
+            {
+              "titre": "3. Diagnostic définitif, traitement, suivi",
+              "questions": [
+                {
+                  "question": "Diagnostic",
+                  "reponse": "Pityriasis versicolor"
+                },
+                {
+                  "question": "Traitement",
+                  "reponse": {
+                    "immediat": [
+                      "Antifongiques topiques (kétoconazole, sulfure de sélénium, clotrimazole)",
+                      "Application large sur le tronc, 1-2 semaines"
+                    ],
+                    "siEtendu": [
+                      "Fluconazole ou itraconazole per os"
+                    ],
+                    "support": [
+                      "Éducation : non contagieux, bénin",
+                      "Explication délai repigmentation (mois)"
+                    ]
+                  }
+                },
+                {
+                  "question": "Suivi",
+                  "reponse": [
+                    "Contrôle clinique après 2-4 semaines",
+                    "Évaluer disparition squames (critère d’efficacité)",
+                    "Prévenir récidives : hygiène, vêtements coton, prophylaxie mensuelle shampooing antifongique",
+                    "Rassurer sur benignité"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

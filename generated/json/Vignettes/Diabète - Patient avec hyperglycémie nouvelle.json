@@ -1,0 +1,335 @@
+{
+  "title": "Diabète - Patient avec hyperglycémie nouvelle",
+  "type": "ECOS",
+  "context": {
+    "setting": "Cabinet de médecine interne",
+    "patient": "Homme de 52 ans consultant pour découverte d'une hyperglycémie",
+    "vitals": {
+      "ta": "145/92 mmHg",
+      "fc": "78 bpm",
+      "temperature": "36.8°C"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Motif de consultation",
+          "binaryOnly": true,
+          "patientComment": "[Mon médecin traitant m'envoie car ma glycémie est élevée]"
+        },
+        {
+          "id": "a2",
+          "text": "Circonstances de découverte",
+          "details": [
+            "Contexte [Bilan de santé annuel en entreprise]",
+            "Valeur de glycémie [1.8 g/L à jeun, confirmée à 1.9 g/L]",
+            "Délai depuis découverte [Il y a 2 semaines]",
+            "Symptômes avant découverte [Non, découverte fortuite]"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Symptômes cardinaux du diabète",
+          "details": [
+            "Polyurie [Oui, je me lève 2-3 fois la nuit depuis 3 mois]",
+            "Polydipsie [Oui, je bois environ 3-4 litres par jour]",
+            "Polyphagie [Non, appétit normal]",
+            "Amaigrissement [Perte de 4 kg en 6 mois sans régime]"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Signes de complications",
+          "details": [
+            "Troubles visuels [Vision un peu floue parfois]",
+            "Paresthésies [Fourmillements dans les pieds le soir]",
+            "Infections récurrentes [Une mycose génitale il y a 2 mois]",
+            "Cicatrisation [Normale]",
+            "Douleurs thoraciques [Non]",
+            "Dyspnée d'effort [Non]",
+            "Claudication intermittente [Non]"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Facteurs de risque cardiovasculaire",
+          "details": [
+            "Hypertension artérielle [Connue depuis 5 ans, traitée]",
+            "Dyslipidémie [Cholestérol limite élevé, non traité]",
+            "Tabagisme [Ex-fumeur, arrêt il y a 3 ans, 20 PA]",
+            "Sédentarité [Travail de bureau, peu d'activité physique]",
+            "Stress [Important au travail]"
+          ]
+        },
+        {
+          "id": "a6",
+          "text": "Antécédents familiaux",
+          "details": [
+            "Diabète [Mère diabétique type 2 depuis 60 ans]",
+            "Maladies cardiovasculaires [Père décédé d'infarctus à 65 ans]",
+            "HTA [Frère hypertendu]",
+            "Obésité [Sœur obèse]"
+          ]
+        },
+        {
+          "id": "a7",
+          "text": "Mode de vie",
+          "details": [
+            "Alimentation [Repas irréguliers, fast-food fréquent]",
+            "Boissons sucrées [2-3 sodas par jour]",
+            "Alcool [2-3 verres de vin par jour]",
+            "Activité physique [Marche 10 minutes jusqu'au travail]",
+            "Sommeil [6h par nuit, ronfle]"
+          ]
+        },
+        {
+          "id": "a8",
+          "text": "Médicaments actuels",
+          "details": [
+            "Antihypertenseur [Amlodipine 5mg/jour]",
+            "Autres [Aucun]",
+            "Allergies médicamenteuses [Aucune]",
+            "Observance [Bonne]"
+          ]
+        },
+        {
+          "id": "a9",
+          "text": "Données anthropométriques",
+          "details": [
+            "Poids actuel [95 kg]",
+            "Taille [175 cm]",
+            "IMC calculé [31 kg/m²]",
+            "Tour de taille [108 cm]",
+            "Poids maximal [98 kg il y a 1 an]"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "État général",
+          "details": [
+            "Aspect général [Surpoids abdominal visible]",
+            "État d'hydratation [Normal]",
+            "Coloration [Normale]"
+          ]
+        },
+        {
+          "id": "e2",
+          "text": "Signes vitaux",
+          "details": [
+            "Tension artérielle [145/92 mmHg]",
+            "Fréquence cardiaque [78 bpm régulier]",
+            "Température [36.8°C]",
+            "IMC [31 kg/m²]"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Examen cardiovasculaire",
+          "details": [
+            "Bruits du cœur [Réguliers, pas de souffle]",
+            "Pouls périphériques [Tous présents et symétriques]",
+            "Œdèmes des membres inférieurs [Absents]",
+            "Signes d'insuffisance cardiaque [Absents]"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Examen neurologique ciblé",
+          "details": [
+            "Sensibilité superficielle pieds [Légèrement diminuée]",
+            "Sensibilité vibratoire [Diminuée aux orteils]",
+            "Réflexes achilléens [Présents mais diminués]",
+            "Test au monofilament [7/10 points perçus]"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Examen des pieds",
+          "details": [
+            "Inspection [Peau sèche, hyperkératose talons]",
+            "Déformations [Absentes]",
+            "Plaies [Absentes]",
+            "Ongles [Normaux]",
+            "Espaces interdigitaux [Secs, pas de mycose]"
+          ]
+        },
+        {
+          "id": "e6",
+          "text": "Examen ophtalmologique de dépistage",
+          "details": [
+            "Acuité visuelle [Non testée en cabinet]",
+            "Fond d'œil [À prévoir chez l'ophtalmologue]"
+          ]
+        },
+        {
+          "id": "e7",
+          "text": "Examen cutané",
+          "details": [
+            "Acanthosis nigricans [Présent au niveau du cou]",
+            "Xanthélasma [Absent]",
+            "Infections cutanées [Absentes]"
+          ]
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic et classification",
+          "ddSection": {
+            "title": "Diagnostic et type de diabète",
+            "categories": [
+              {
+                "name": "Diagnostic principal",
+                "items": [
+                  {
+                    "text": "Diabète de type 2",
+                    "cause": "Arguments POUR:\n\t□ Âge > 40 ans\n\t□ Surpoids/obésité\n\t□ Antécédents familiaux\n\t□ HTA associée\n\t□ Acanthosis nigricans\n\t□ Début insidieux",
+                    "test": "→ HbA1c, bilan métabolique complet"
+                  }
+                ]
+              },
+              {
+                "name": "Diagnostics différentiels à éliminer",
+                "items": [
+                  {
+                    "text": "Diabète de type 1 tardif (LADA)",
+                    "cause": "Arguments CONTRE:\n\t□ Obésité\n\t□ Pas de cétonurie\n\t□ Progression lente",
+                    "test": "→ Anticorps anti-GAD si doute"
+                  },
+                  {
+                    "text": "Diabète secondaire",
+                    "cause": "À rechercher:\n\t□ Pancréatite chronique\n\t□ Hémochromatose\n\t□ Syndrome de Cushing",
+                    "test": "→ Lipase, ferritine, cortisol si indiqué"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Bilan initial du diabète",
+          "details": [
+            "HbA1c pour évaluer l'équilibre sur 3 mois",
+            "Bilan lipidique complet (CT, HDL, LDL, TG)",
+            "Fonction rénale (créatinine, DFG, microalbuminurie)",
+            "Bilan hépatique (ASAT, ALAT, GGT)",
+            "TSH (dépistage dysthyroïdie associée)",
+            "ECG de repos",
+            "Fond d'œil par ophtalmologue"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Objectifs thérapeutiques",
+          "details": [
+            "HbA1c < 7% (objectif personnalisé)",
+            "TA < 140/90 mmHg",
+            "LDL < 1.0 g/L (patient à haut risque CV)",
+            "Perte de poids 5-10% du poids initial",
+            "Arrêt complet du tabac maintenu"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Traitement initial",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Mesures hygiéno-diététiques (3 mois)",
+                "content": "Régime hypocalorique équilibré\nRéduction des glucides simples\nAugmentation des fibres\nActivité physique 150 min/semaine\nPerte de poids progressive"
+              },
+              {
+                "title": "Traitement médicamenteux",
+                "content": "Metformine 500mg x 2/jour en début\nAugmentation progressive jusqu'à 2g/jour\nSurveillance de la tolérance digestive\nContre-indications à vérifier (IRC)"
+              },
+              {
+                "title": "Adaptation du traitement HTA",
+                "content": "Privilégier IEC ou ARA2 (néphroprotection)\nObjectif TA < 140/90 mmHg\nSurveillance kaliémie et créatinine"
+              },
+              {
+                "title": "Prévention cardiovasculaire",
+                "content": "Statine indiquée (haut risque CV)\nAspirine à discuter selon risque\nArrêt tabac confirmé"
+              }
+            ]
+          }
+        },
+        {
+          "id": "m5",
+          "text": "Éducation thérapeutique",
+          "details": [
+            "Explication de la maladie et ses complications",
+            "Importance de l'observance thérapeutique",
+            "Auto-surveillance glycémique si insuline future",
+            "Soins des pieds quotidiens",
+            "Reconnaissance des hypoglycémies",
+            "Carte de diabétique"
+          ]
+        },
+        {
+          "id": "m6",
+          "text": "Surveillance et suivi",
+          "details": [
+            "HbA1c tous les 3 mois jusqu'à équilibre",
+            "Bilan rénal annuel",
+            "Fond d'œil annuel",
+            "Examen des pieds à chaque consultation",
+            "ECG annuel",
+            "Bilan lipidique annuel",
+            "Vaccination antigrippale et antipneumococcique"
+          ]
+        },
+        {
+          "id": "m7",
+          "text": "Orientation et réseau de soins",
+          "details": [
+            "Diététicienne pour plan alimentaire",
+            "Podologue pour soins préventifs",
+            "Ophtalmologue pour fond d'œil initial",
+            "Programme d'éducation thérapeutique",
+            "Association de patients diabétiques"
+          ]
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Annonce du diagnostic",
+          "exemplesPhrases": [
+            "Vous avez effectivement un diabète de type 2. C'est une maladie chronique mais qui se soigne très bien avec un traitement adapté et des changements dans votre mode de vie.",
+            "Le diabète est une maladie sérieuse mais vous pouvez vivre normalement en suivant bien votre traitement et en adoptant une hygiène de vie saine."
+          ]
+        },
+        {
+          "id": "c2",
+          "text": "Questions du patient",
+          "content": "[Est-ce que c'est grave?] [Vais-je devoir faire des piqûres d'insuline?] [Est-ce héréditaire?] [Puis-je guérir?]"
+        },
+        {
+          "id": "c3",
+          "text": "Réponses adaptées",
+          "exemplesPhrases": [
+            "Le diabète est une maladie sérieuse mais bien contrôlée, elle permet une vie normale. L'important est de bien suivre le traitement pour éviter les complications.",
+            "On commence toujours par des comprimés et des changements de mode de vie. L'insuline n'est nécessaire que si ces mesures ne suffisent pas.",
+            "Il y a effectivement une composante héréditaire, mais le mode de vie joue un rôle majeur. Vos enfants peuvent réduire leur risque par une bonne hygiène de vie.",
+            "Le diabète de type 2 ne se guérit pas mais peut être très bien contrôlé, voire mis en rémission avec une perte de poids importante."
+          ]
+        }
+      ]
+    }
+  }
+}

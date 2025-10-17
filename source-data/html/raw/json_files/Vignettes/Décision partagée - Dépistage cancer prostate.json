@@ -1,0 +1,483 @@
+{
+  "title": "Décision partagée - Dépistage cancer prostate",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Homme de 55 ans, mécanicien, consulte pour contrôle et demande s'il doit faire l'examen de la prostate",
+    "vitals": {
+      "ta": "138/85 mmHg",
+      "fc": "74 bpm",
+      "fr": "16/min",
+      "temperature": "36.7°C"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Explorer les connaissances et représentations",
+          "details": [
+            "Connaissances PSA [J'ai entendu parler d'une prise de sang]",
+            "Représentations cancer prostate [C'est fréquent chez les hommes]",
+            "Sources d'information [Amis, discussions café]",
+            "Expériences entourage [Un copain a eu des problèmes]",
+            "Appréhensions [Peur du toucher rectal]"
+          ],
+          "exemplesPhrases": [
+            "\"Qu'est-ce que vous savez sur le dépistage du cancer de la prostate?\"",
+            "\"Qu'est-ce qui vous amène à vous poser cette question?\""
+          ]
+        },
+        {
+          "id": "a2",
+          "text": "Évaluer les facteurs de risque personnels",
+          "details": [
+            "Âge [55 ans, tranche d'interrogation]",
+            "Antécédents familiaux [Pas d'antécédents connus]",
+            "Origine ethnique [Caucasien, risque standard]",
+            "Symptômes urinaires [Parfois jets moins forts]",
+            "État général [Bonne forme globale]"
+          ],
+          "patientComment": "Parfois j'ai l'impression que ça met plus de temps pour uriner, mais bon..."
+        },
+        {
+          "id": "a3",
+          "text": "Explorer les préoccupations principales",
+          "details": [
+            "Peur du cancer [C'est ce qui m'inquiète le plus]",
+            "Impact sur virilité [Questions sur érection]",
+            "Appréhensions examens [Toucher rectal embarrassant]",
+            "Conséquences traitement [Peur incontinence]",
+            "Aspects familiaux [Épouse pousse au dépistage]"
+          ],
+          "exemplesPhrases": [
+            "\"Qu'est-ce qui vous préoccupe le plus concernant le cancer de la prostate?\"",
+            "\"Qu'attendez-vous du dépistage?\""
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Identifier valeurs et priorités personnelles",
+          "details": [
+            "Rapport au risque [Préfère savoir que ne pas savoir]",
+            "Qualité de vie [Priorité sur longévité]",
+            "Autonomie décision [Aime comprendre avant choisir]",
+            "Vie professionnelle [Contraintes mécanicien]",
+            "Soutien familial [Épouse très inquiète]"
+          ],
+          "patientComment": "Ma femme s'inquiète beaucoup, elle dit qu'il faut que je fasse des examens"
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Présenter les enjeux du dépistage prostatique",
+          "details": [
+            "Fréquence cancer prostate [1/7 hommes au cours vie]",
+            "Évolution souvent lente [Beaucoup ne nécessitent pas traitement]",
+            "Objectif dépistage [Détecter cancers significatifs]",
+            "Controverse actuelle [Bénéfices vs risques débattus]",
+            "Absence de consensus [Recommandations variables]"
+          ],
+          "exemplesPhrases": [
+            "\"Le cancer de la prostate est fréquent mais souvent peu agressif\"",
+            "\"Le dépistage systématique fait débat dans la communauté médicale\""
+          ]
+        },
+        {
+          "id": "e2",
+          "text": "Expliquer le dosage PSA et ses limites",
+          "details": [
+            "Principe PSA [Protéine produite par prostate]",
+            "Valeurs normales [< 4 ng/ml généralement]",
+            "Facteurs influençant [Âge, volume prostate, inflammation]",
+            "Sensibilité limitée [20% cancers PSA normal]",
+            "Spécificité faible [Faux positifs fréquents]"
+          ],
+          "ddSection": {
+            "title": "PSA - Performances diagnostiques",
+            "categories": [
+              {
+                "name": "Limites du test PSA",
+                "items": [
+                  {
+                    "text": "Faux positifs",
+                    "cause": "Arguments CONTRE:\n\t□ HBP augmente PSA\n\t□ Prostatite élève PSA\n\t□ Exercice peut modifier\n\t□ Éjaculation récente",
+                    "test": "→ 70% biopsies négatives"
+                  },
+                  {
+                    "text": "Faux négatifs",
+                    "cause": "Arguments CONTRE:\n\t□ 20% cancers PSA < 4\n\t□ Cancers agressifs parfois PSA bas\n\t□ Médicaments masquent élévation",
+                    "test": "→ Retard diagnostic possible"
+                  }
+                ]
+              },
+              {
+                "name": "Conséquences PSA élevé",
+                "items": [
+                  {
+                    "text": "Cascade diagnostique",
+                    "cause": "Enchaînement:\n\t□ PSA élevé → Biopsies\n\t□ Anxiété patient\n\t□ Risques biopsies\n\t□ Surdiagnostic possible",
+                    "test": "→ Biopsies transrectales guidées"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "e3",
+          "text": "Discuter les biopsies prostatiques",
+          "details": [
+            "Indication [PSA élevé ou toucher anormal]",
+            "Procédure [12 prélèvements transrectaux]",
+            "Complications [Infection 1-3%, hémorragie]",
+            "Résultats possibles [Négatif, cancer, lésions précancéreuses]",
+            "Score de Gleason [Grade agressivité cancer]"
+          ],
+          "patientComment": "Les biopsies, ça a l'air douloureux et risqué"
+        },
+        {
+          "id": "e4",
+          "text": "Aborder le concept de surdiagnostic",
+          "details": [
+            "Définition [Cancers non cliniquement significatifs]",
+            "Fréquence [Estimée 20-50% cancers dépistés]",
+            "Conséquences [Traitements inutiles]",
+            "Surveillance active [Alternative aux traitements]",
+            "Enjeu psychologique [Vivre avec diagnostic cancer]"
+          ],
+          "exemplesPhrases": [
+            "\"Tous les cancers détectés ne nécessitent pas forcément de traitement\"",
+            "\"Certains cancers n'auraient jamais causé de problème\""
+          ]
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Appliquer la démarche de décision partagée",
+          "details": [
+            "Présenter enjeu [Dépistage controversé, choix personnel]",
+            "Options disponibles [Dépistage PSA vs Surveillance attentive]",
+            "Évaluer préférences [Priorités qualité vs longévité vie]",
+            "Prendre décision [Choix éclairé respectant valeurs]",
+            "Planifier suivi [Selon décision prise]"
+          ],
+          "exemplesPhrases": [
+            "\"Il n'y a pas une bonne réponse, cela dépend de vos priorités\"",
+            "\"Qu'est-ce qui est le plus important pour vous?\""
+          ]
+        },
+        {
+          "id": "m2",
+          "text": "Explorer les préférences personnelles",
+          "details": [
+            "Attitude face incertitude [Préfère savoir ou pas?]",
+            "Qualité vs quantité vie [Priorité fonctions vs survie]",
+            "Tolérance aux examens [Accepte biopsies si nécessaire?]",
+            "Impact psychologique [Supporte vivre avec incertitude?]",
+            "Influence entourage [Pression familiale importante?]"
+          ],
+          "patientComment": "J'aimerais être tranquille, mais si on peut détecter quelque chose..."
+        },
+        {
+          "id": "m3",
+          "text": "Utiliser des outils d'aide à la décision",
+          "details": [
+            "Données de survie [Mortalité cancer prostate vs autres causes]",
+            "Représentation risques [Pictogrammes fréquences]",
+            "Scénarios comparatifs [Avec vs sans dépistage]",
+            "Échelle valeurs [Importance différents aspects 1-10]",
+            "Questions hypothétiques [Si cancer détecté, que feriez-vous?]"
+          ],
+          "ddSection": {
+            "title": "Aide à la décision - Données comparatives",
+            "categories": [
+              {
+                "name": "Bénéfices potentiels dépistage",
+                "items": [
+                  {
+                    "text": "Détection précoce",
+                    "cause": "Arguments POUR:\n\t□ Cancers curables si précoces\n\t□ Traitements moins lourds\n\t□ Meilleur pronostic",
+                    "test": "→ Réduction mortalité débattue"
+                  }
+                ]
+              },
+              {
+                "name": "Risques du dépistage",
+                "items": [
+                  {
+                    "text": "Surdiagnostic",
+                    "cause": "Arguments CONTRE:\n\t□ Traitements inutiles 20-50%\n\t□ Effets secondaires évitables\n\t□ Anxiété diagnostic cancer",
+                    "test": "→ Impact qualité de vie"
+                  },
+                  {
+                    "text": "Faux positifs",
+                    "cause": "Arguments CONTRE:\n\t□ Biopsies inutiles 70%\n\t□ Complications biopsies\n\t□ Stress et anxiété",
+                    "test": "→ Cascade d'examens"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m4",
+          "text": "Respecter l'autonomie du patient",
+          "details": [
+            "Choix personnel [Décision appartient au patient]",
+            "Temps réflexion [Pas de pression décision immédiate]",
+            "Droit refus [Option légitime de ne pas dépister]",
+            "Réversibilité [Possibilité changer avis ultérieurement]",
+            "Information continue [Évolution connaissances scientifiques]"
+          ]
+        },
+        {
+          "id": "m5",
+          "text": "Planifier selon la décision prise",
+          "details": [
+            "Si choix dépistage [PSA annuel, toucher rectal]",
+            "Si refus dépistage [Surveillance symptômes]",
+            "Information signes alarme [Troubles urinaires nouveaux]",
+            "Réévaluation périodique [Choix peut évoluer]",
+            "Ressources information [Matériel éducatif complémentaire]"
+          ]
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Consolidation de la décision",
+          "content": "• Résumer le choix du patient et ses motivations\n• Confirmer sa compréhension des enjeux\n• Son choix: \"Je préfère faire le PSA pour être tranquille\"\n• Ses raisons: \"Ma femme s'inquiète et moi aussi maintenant\"\n• Sa compréhension: \"Si c'est élevé, il faudra des biopsies\"\n• Son acceptation: \"Je sais que ça peut détecter des choses pas graves\"",
+          "exemplesPhrases": [
+            "\"Vous avez bien pesé le pour et le contre\"",
+            "\"C'est un choix personnel qui vous correspond\""
+          ]
+        },
+        {
+          "id": "c2",
+          "text": "Questions difficiles du patient",
+          "content": "[Est-ce que je prends un risque en faisant ce test?]\n[Et si on trouve quelque chose qu'il ne fallait pas traiter?]\n[Comment je saurai si le cancer est vraiment dangereux?]\n[Ma femme va s'inquiéter si je ne fais rien, que faire?]",
+          "exemplesPhrases": [
+            "\"Chaque option a ses avantages et ses risques\"",
+            "\"Les médecins spécialistes vous aideront à évaluer la gravité\"",
+            "\"L'important c'est que la décision vous convienne à vous\""
+          ]
+        },
+        {
+          "id": "c3",
+          "text": "Plan de suivi adapté",
+          "content": "• Programmer prise de sang PSA si choix dépistage\n• Expliquer délai et modalités résultats\n• Informer sur signes urinaires à surveiller\n• Possibilité reconsidérer choix lors prochaines consultations\n• Ressources information complémentaires",
+          "exemplesPhrases": [
+            "\"On fera le PSA la semaine prochaine\"",
+            "\"Vous pouvez toujours changer d'avis à l'avenir\"",
+            "\"Prévenez-moi si vous avez des troubles urinaires nouveaux\""
+          ]
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "images": [
+      {
+        "id": "anatomie_prostate",
+        "title": "Anatomie de la prostate",
+        "description": "Schéma anatomique montrant la localisation de la prostate et sa relation avec l'urètre et les autres structures pelviennes",
+        "filename": "decision-partagee/anatomie-prostate.jpg"
+      },
+      {
+        "id": "statistiques_depistage_prostate",
+        "title": "Impact du dépistage prostatique - Données statistiques",
+        "description": "Pictogrammes comparant l'évolution sur 16 ans avec et sans dépistage régulier du cancer de la prostate",
+        "filename": "decision-partagee/statistiques-depistage-prostate.jpg"
+      },
+      {
+        "id": "benefices_inconvenients_prostate",
+        "title": "Bénéfices et inconvénients du dépistage prostatique",
+        "description": "Tableau comparatif détaillé des avantages et des risques du dépistage par PSA",
+        "filename": "decision-partagee/benefices-inconvenients-prostate.jpg"
+      }
+    ],
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour le patient standardisé",
+      "nom": "M. André Lecomte",
+      "age": "55 ans",
+      "contexte": "Cabinet de médecine générale, contrôle annuel",
+      "motifConsultation": {
+        "plaintePrincipale": "Contrôle de routine, questions sur dépistage prostate",
+        "autreChose": "Discussions avec amis sur examens de la prostate"
+      },
+      "histoireActuelle": {
+        "questionnementActuel": [
+          "Discussions au travail: \"Les copains parlent de l'examen de la prostate\"",
+          "Âge 55 ans: \"Je me dis qu'il faut peut-être que je fasse quelque chose\"",
+          "Symptômes légers: \"Parfois j'ai l'impression que ça met plus de temps\"",
+          "Pression familiale: \"Ma femme dit qu'il faut que je fasse des examens\"",
+          "Appréhensions: \"J'ai entendu parler du toucher rectal, ça m'embête\""
+        ],
+        "connaissances": [
+          "Sait qu'il existe \"un examen de la prostate\"",
+          "A entendu parler de prise de sang",
+          "Pense au toucher rectal (appréhension)",
+          "Sait que c'est lié au cancer",
+          "Ignore les controverses du dépistage"
+        ],
+        "preoccupations": [
+          "Peur du cancer en général",
+          "Appréhensions toucher rectal",
+          "Inquiétude impact sur virilité",
+          "Pression de l'épouse",
+          "Symptômes urinaires légers"
+        ],
+        "valeurs": [
+          "Préfère généralement savoir que ne pas savoir",
+          "Qualité de vie importante",
+          "Évite les examens inutiles",
+          "Écoute sa femme",
+          "Pragmatique dans ses choix"
+        ]
+      },
+      "simulation": {
+        "attitude": [
+          "Curieux mais légèrement embarrassé",
+          "Ouvert aux explications",
+          "Influencé par l'entourage",
+          "Prudent mais pas anxieux",
+          "Pratico-pratique"
+        ],
+        "durantEntretien": [
+          "Évoquer discussions entre hommes",
+          "Mentionner pression de l'épouse",
+          "Exprimer gêne toucher rectal",
+          "Poser questions pratiques",
+          "Évoluer vers décision réfléchie"
+        ],
+        "phrasesTypes": [
+          "\"Les copains au boulot parlent de l'examen de la prostate\"",
+          "\"Ma femme s'inquiète, elle dit qu'il faut que je fasse des examens\"",
+          "\"Parfois j'ai l'impression que ça met plus de temps pour uriner\"",
+          "\"Le toucher rectal, ça m'embête un peu\"",
+          "\"Il y a une prise de sang aussi, non?\"",
+          "\"Qu'est-ce que vous me conseillez?\"",
+          "\"Si on trouve quelque chose, qu'est-ce qui se passe?\"",
+          "\"J'aimerais être tranquille pour ma femme\""
+        ]
+      },
+      "anamneseSystemes": {
+        "urinaire": [
+          "Jet parfois moins fort",
+          "Pas de nycturie marquée",
+          "Pas de douleurs",
+          "Pas d'hématurie"
+        ],
+        "generale": ["Forme correcte", "Pas d'amaigrissement", "Énergie normale"],
+        "familiale": ["Pas d'antécédents prostatiques connus", "Père décédé accident"]
+      },
+      "habitudes": {
+        "profession": "Mécanicien depuis 30 ans",
+        "activite": "Modérément actif, bricolage",
+        "alimentation": "Traditionnelle, pas de régime particulier",
+        "alcool": "Modéré, bières week-end",
+        "tabac": "Ex-fumeur depuis 10 ans"
+      },
+      "informationsPersonnelles": {
+        "etatCivil": "Marié depuis 25 ans",
+        "enfants": "Deux enfants adultes",
+        "preoccupations": "Santé, famille, retraite proche",
+        "hobbies": "Bricolage, pêche, jardinage"
+      }
+    },
+    "informationsExpert": {
+      "titre": "Points clés pour l'expert évaluateur",
+      "pointsCles": [
+        "Évaluer l'exploration des connaissances préalables sur le dépistage",
+        "Observer la présentation équilibrée des enjeux du PSA",
+        "Vérifier l'explication du concept de surdiagnostic",
+        "Noter l'exploration des valeurs personnelles du patient",
+        "Évaluer l'application du processus de décision partagée",
+        "Observer le respect de l'autonomie face à la controverse",
+        "Vérifier l'adaptation du plan selon la décision prise"
+      ],
+      "pieges": [
+        "Orienter vers le dépistage sans présenter les controverses",
+        "Minimiser les risques du surdiagnostic",
+        "Négliger l'impact psychologique du diagnostic",
+        "Imposer une décision basée sur l'âge seul",
+        "Ignorer la pression familiale sur la décision",
+        "Donner trop d'informations techniques d'emblée",
+        "Ne pas respecter le choix de ne pas dépister"
+      ],
+      "criteresBonnePerformance": [
+        "Exploration non-directive des préoccupations",
+        "Présentation équilibrée bénéfices/risques",
+        "Explication claire du concept de surdiagnostic",
+        "Questions ouvertes sur les valeurs personnelles",
+        "Respect de la controverse scientifique",
+        "Plan adapté à la décision du patient"
+      ]
+    },
+    "theoriePratique": {
+      "titre": "Décision partagée et dépistage cancer prostate",
+      "sections": [
+        {
+          "titre": "Controverse du dépistage PSA",
+          "points": [
+            "Recommandations variables selon sociétés savantes",
+            "Bénéfice mortalité: réduction relative 20% débattue",
+            "Surdiagnostic estimé: 20-50% des cancers détectés",
+            "Nombre needed to screen: 1000 pour éviter 1 décès",
+            "Effets indésirables: surtraitement, complications biopsies"
+          ]
+        },
+        {
+          "titre": "Concept de surdiagnostic",
+          "points": [
+            "Définition: cancers qui n'auraient jamais causé de symptômes",
+            "Cancers indolents: évolution très lente, non cliniquement significatifs",
+            "Conséquences: traitements inutiles, effets secondaires évitables",
+            "Surveillance active: alternative au traitement immédiat",
+            "Impact psychologique: vivre avec diagnostic de cancer"
+          ]
+        },
+        {
+          "titre": "Facteurs de décision personnels",
+          "points": [
+            "Tolérance à l'incertitude: accepter de ne pas savoir",
+            "Valeurs qualité vs quantité de vie",
+            "Acceptabilité des examens invasifs",
+            "Influence de l'entourage familial",
+            "Compréhension des limites du test PSA",
+            "Capacité à gérer le stress d'un résultat anormal"
+          ]
+        }
+      ],
+      "rappelsTherapeutiques": [
+        "Présenter la controverse scientifique honnêtement",
+        "Expliquer clairement le concept de surdiagnostic",
+        "Explorer les valeurs personnelles avant de conseiller",
+        "Respecter le choix de ne pas dépister",
+        "Utiliser des outils visuels pour les statistiques",
+        "Laisser du temps pour la réflexion"
+      ],
+      "examensComplementaires": [
+        "PSA total: dosage standard, limites importantes",
+        "PSA libre/total: améliore spécificité",
+        "Toucher rectal: complément au PSA",
+        "IRM prostatique: avant biopsies dans certains centres",
+        "Biopsies prostatiques: 12 prélèvements transrectaux",
+        "Score de Gleason: évaluation agressivité histologique"
+      ]
+    }
+  }
+}

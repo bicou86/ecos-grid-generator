@@ -1,0 +1,785 @@
+{
+  "title": "Choc anaphylactique - Femme de 28 ans",
+  "context": {
+    "setting": "Service des urgences",
+    "patient": "Femme de 28 ans amenée 20 minutes après ingestion de crevettes",
+    "vitals": {
+      "ta": "80/50 mmHg",
+      "satO2": "89% à l'air ambiant"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Reconnaissance immédiate de l'urgence",
+          "binaryOnly": true,
+          "patientComment": "J'ai mangé des crevettes il y a 20 minutes et je ne me sens pas bien"
+        },
+        {
+          "id": "a2",
+          "text": "Circonstances de survenue",
+          "details": [
+            "Ingestion récente [crevettes au restaurant]",
+            "Délai d'apparition [20 minutes]",
+            "Quantité ingérée",
+            "Premiers symptômes ressentis",
+            "Rapidité de progression"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Symptômes actuels",
+          "details": [
+            "Éruption cutanée [urticaire thoracique étendue]",
+            "Difficultés respiratoires [progressives]",
+            "Sensation d'oppression thoracique",
+            "Œdème facial ou laryngé",
+            "Vertiges, malaise",
+            "Symptômes digestifs [nausées, vomissements]"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Antécédents allergiques",
+          "details": [
+            "Allergies alimentaires connues [indéterminée dans l'enfance]",
+            "Allergies médicamenteuses",
+            "Réactions antérieures aux fruits de mer",
+            "Atopie familiale",
+            "Tests allergologiques antérieurs"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Antécédents médicaux",
+          "details": [
+            "Asthme [oui, facteur de gravité]",
+            "Traitement de fond de l'asthme",
+            "Eczéma ou rhinite allergique",
+            "Autres pathologies chroniques"
+          ]
+        },
+        {
+          "id": "a6",
+          "text": "Médicaments et traitements",
+          "details": [
+            "Bronchodilatateurs",
+            "Corticostéroïdes inhalés",
+            "Antihistaminiques",
+            "Bêtabloquants [contre-indication relative]",
+            "IEC [facteur aggravant]"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Évaluation des voies aériennes",
+          "details": [
+            "Œdème labial ou lingual",
+            "Œdème laryngé (stridor)",
+            "Dysphonie",
+            "Dysphagie",
+            "Sensation de gorge serrée"
+          ]
+        },
+        {
+          "id": "e2",
+          "text": "Évaluation respiratoire",
+          "details": [
+            "Dyspnée [oui, progressive]",
+            "Désaturation [89% air ambiant]",
+            "Wheezing/bronchospasme",
+            "Tachypnée",
+            "Signes de détresse respiratoire"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Évaluation cardiovasculaire",
+          "details": [
+            "Hypotension [TA 80/50 mmHg]",
+            "Tachycardie compensatrice",
+            "Pouls filant",
+            "Temps de recoloration capillaire",
+            "Signes de choc"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Évaluation cutanée",
+          "details": [
+            "Urticaire [thoracique étendue]",
+            "Érythème généralisé",
+            "Prurit",
+            "Œdème de Quincke",
+            "Extension de l'éruption"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Évaluation neurologique",
+          "details": [
+            "État de conscience",
+            "Anxiété, agitation",
+            "Sensation de mort imminente",
+            "Confusion"
+          ]
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic clinique immédiat",
+          "ddSection": {
+            "title": "Critères diagnostiques du choc anaphylactique",
+            "categories": [
+              {
+                "name": "Diagnostic confirmé",
+                "items": [
+                  {
+                    "text": "Choc anaphylactique aux crevettes",
+                    "cause": "Arguments POUR:\n\t□ Exposition récente à allergène probable (crevettes)\n\t□ Atteinte multisystémique rapide\n\t□ Urticaire + détresse respiratoire + hypotension\n\t□ Antécédent d'allergie alimentaire\n\t□ Asthme (facteur de gravité)",
+                    "test": "→ Traitement immédiat, pas de test préalable"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Traitement immédiat - Adrénaline",
+          "details": [
+            "Adrénaline IM 0.5mg (1:1000) [première ligne absolue]",
+            "Injection face antérolatérale de cuisse",
+            "Répéter toutes les 5-15 min si inefficacité",
+            "Pas de contre-indication en urgence vitale",
+            "Surveillance ECG continue"
+          ],
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Traitement d'urgence",
+                "items": [
+                  {
+                    "treatment": "Adrénaline IM",
+                    "details": "0.5mg (0.3mg si <50kg) dans la cuisse",
+                    "duration": "Répéter toutes les 5-15 min si besoin"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m3",
+          "text": "Mesures de support immédiat",
+          "details": [
+            "Oxygène haut débit [cible SatO2 ≥94%]",
+            "Position allongée jambes surélevées",
+            "Voies veineuses larges x2",
+            "Remplissage cristalloïdes [1-2L rapide]",
+            "Monitoring cardio-respiratoire continu"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Traitements adjuvants",
+          "details": [
+            "Antihistaminique H1 [chlorphénamine 10mg IV]",
+            "Corticoïdes [méthylprednisolone 125mg IV]",
+            "Anti-H2 [ranitidine 50mg IV]",
+            "Bronchodilatateurs nébulisés [si bronchospasme]",
+            "Adrénaline IV continue [si choc réfractaire]"
+          ]
+        },
+        {
+          "id": "m5",
+          "text": "Surveillance et monitoring",
+          "details": [
+            "Surveillance minimale 6 heures",
+            "24 heures si forme sévère",
+            "Risque de réaction biphasique (4-12h)",
+            "ECG continu (arythmies adrénaline)",
+            "TA, FC, SatO2, conscience"
+          ],
+          "redflagsSection": {
+            "title": "Critères de transfert en réanimation",
+            "items": [
+              {
+                "text": "Choc réfractaire",
+                "description": "Nécessité adrénaline IV continue"
+              },
+              {
+                "text": "Détresse respiratoire sévère",
+                "description": "Intubation nécessaire"
+              },
+              {
+                "text": "Arrêt cardio-respiratoire",
+                "description": "Réanimation cardio-pulmonaire"
+              }
+            ]
+          }
+        },
+        {
+          "id": "m6",
+          "text": "Examens complémentaires",
+          "details": [
+            "Tryptase sérique [pic 1-2h, contrôle à 24h]",
+            "IgE spécifiques crevettes (différé)",
+            "Gazométrie artérielle",
+            "Ionogramme, fonction rénale",
+            "ECG",
+            "Radiographie thoracique si dyspnée persistante"
+          ]
+        },
+        {
+          "id": "m7",
+          "text": "Prévention secondaire",
+          "details": [
+            "Prescription stylo auto-injecteur adrénaline x2",
+            "Éducation à l'utilisation du stylo",
+            "Éviction stricte fruits de mer",
+            "Carte d'allergie à porter",
+            "Consultation allergologie programmée",
+            "Plan d'action écrit personnalisé"
+          ],
+          "exemplesPhrases": [
+            "Vous devez absolument éviter les crevettes et tous les fruits de mer",
+            "Je vous prescris un stylo d'adrénaline à toujours avoir sur vous",
+            "Une récidive est possible dans les 24 heures"
+          ]
+        },
+        {
+          "id": "m8",
+          "text": "Information et éducation",
+          "details": [
+            "Explication du choc anaphylactique",
+            "Gravité de la réaction",
+            "Importance éviction allergène",
+            "Lecture étiquettes alimentaires",
+            "Allergie croisée fruits de mer",
+            "Conduite en cas de nouvelle exposition"
+          ],
+          "exemplesPhrases": [
+            "C'est un choc anaphylactique, une urgence vitale",
+            "Nous avons agi très vite, ce qui est essentiel",
+            "Votre asthme est un facteur de risque de réaction plus sévère"
+          ]
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Clôture et suivi",
+          "content": "Vous avez fait un choc anaphylactique aux crevettes. Le traitement a été efficace mais vous devez rester en surveillance. Je vous prescris un stylo d'adrénaline et vous oriente vers un allergologue.",
+          "exemplesPhrases": [
+            "Le traitement par adrénaline a bien fonctionné",
+            "Vous devez éviter strictement tous les fruits de mer",
+            "Je vous montre comment utiliser le stylo auto-injecteur",
+            "Un bilan allergologique complet sera nécessaire"
+          ]
+        },
+        {
+          "id": "c2",
+          "text": "Questions de la patiente",
+          "content": "[Est-ce que c'est une allergie grave ?] [Je dois éviter les fruits de mer maintenant ?] [Est-ce que ça peut revenir ?] [C'est à cause de mon asthme ?]"
+        },
+        {
+          "id": "c3",
+          "text": "Réponses types aux questions",
+          "exemplesPhrases": [
+            "Oui, c'est ce qu'on appelle un choc anaphylactique, une urgence vitale",
+            "Oui absolument, jusqu'au bilan allergologique vous devez éviter tous les fruits de mer",
+            "Oui, une récidive est possible dans les 24 heures",
+            "Votre asthme augmente le risque de réaction sévère mais l'allergie est spécifique"
+          ]
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour la patiente standardisée",
+      "nom": "Patiente",
+      "age": "28 ans",
+      "contexte": "Urgences - Choc anaphylactique",
+      "motifConsultation": {
+        "plaintePrincipale": "Difficultés respiratoires et éruption après avoir mangé des crevettes",
+        "autreChose": "Sensation d'oppression et malaise général"
+      },
+      "histoireActuelle": {
+        "deroulementSymptomes": [
+          "Repas au restaurant il y a 20 minutes",
+          "Crevettes en entrée",
+          "Premiers picotements dans la bouche",
+          "Éruption thoracique apparue rapidement",
+          "Difficultés respiratoires progressives",
+          "Sensation de malaise croissant"
+        ],
+        "symptomesActuels": [
+          "Urticaire thoracique étendue",
+          "Dyspnée importante",
+          "Sensation de gorge qui se serre",
+          "Vertiges, faiblesse",
+          "Anxiété majeure"
+        ]
+      },
+      "simulation": {
+        "attitude": [
+          "Femme anxieuse et dyspnéique",
+          "Inquiète de ce qui lui arrive",
+          "Se gratte le thorax (urticaire)",
+          "Difficultés à parler (dyspnée)"
+        ],
+        "durantExamen": [
+          "Éruption urticarienne visible",
+          "Respiration sifflante",
+          "Hypotension confirmée",
+          "Tachycardie"
+        ]
+      },
+      "antecedents": {
+        "medicaux": [
+          "Asthme depuis l'enfance",
+          "Allergie alimentaire indéterminée dans l'enfance",
+          "Jamais de réaction aussi sévère"
+        ],
+        "medicaments": "Ventoline au besoin",
+        "allergies": "Allergie alimentaire non précisée"
+      },
+      "inquietudes": {
+        "principales": [
+          "Peur de mourir",
+          "Gravité de la réaction",
+          "Récidive possible",
+          "Impact sur la vie future",
+          "Éviction alimentaire"
+        ],
+        "questions": [
+          "Est-ce que c'est une allergie grave ?",
+          "Je dois éviter les fruits de mer maintenant ?",
+          "Est-ce que ça peut revenir ?",
+          "C'est à cause de mon asthme ?",
+          "Comment éviter que ça se reproduise ?"
+        ]
+      }
+    },
+    "informationsExpert": {
+      "titre": "Points clés pour l'expert évaluateur",
+      "pointsCles": [
+        "Reconnaissance immédiate du choc anaphylactique",
+        "Administration adrénaline IM en première intention",
+        "Pas d'attente de confirmation biologique",
+        "Position allongée et oxygénothérapie",
+        "Remplissage vasculaire rapide",
+        "Traitements adjuvants après adrénaline",
+        "Surveillance prolongée (réaction biphasique)",
+        "Prescription stylo auto-injecteur"
+      ],
+      "pieges": [
+        "Retarder l'adrénaline",
+        "Utiliser antihistaminiques/corticoïdes seuls",
+        "Voie sous-cutanée pour l'adrénaline",
+        "Ne pas répéter l'adrénaline si inefficace",
+        "Oublier le risque de réaction biphasique",
+        "Sortie trop précoce",
+        "Ne pas prescrire de stylo auto-injecteur",
+        "Ne pas programmer de bilan allergologique"
+      ]
+    },
+    "theoriePratique": {
+      "titre": "Rappels théoriques sur l'anaphylaxie",
+      "sections": [
+        {
+          "titre": "Physiopathologie",
+          "points": [
+            "Réaction IgE-médiée (type I)",
+            "Dégranulation mastocytaire massive",
+            "Libération histamine, tryptase, leucotriènes",
+            "Vasodilatation et fuite capillaire",
+            "Bronchospasme et œdème laryngé",
+            "Délai : minutes à 2 heures"
+          ]
+        },
+        {
+          "titre": "Critères diagnostiques",
+          "points": [
+            "Début aigu après exposition allergène",
+            "Atteinte ≥2 systèmes (cutané, respiratoire, CV, digestif)",
+            "Ou hypotension isolée après allergène connu",
+            "Diagnostic clinique, pas de test préalable",
+            "Tryptase : confirmation a posteriori"
+          ]
+        },
+        {
+          "titre": "Facteurs de gravité",
+          "points": [
+            "Asthme (principal facteur)",
+            "Âge avancé",
+            "Maladies cardiovasculaires",
+            "Traitement par bêtabloquants ou IEC",
+            "Mastocytose",
+            "Retard à l'adrénaline"
+          ]
+        },
+        {
+          "titre": "Allergènes alimentaires fréquents",
+          "points": [
+            "Enfants : lait, œuf, arachide, fruits à coque",
+            "Adultes : fruits de mer, poisson, arachide",
+            "Allergies croisées fruits de mer (tropomyosine)",
+            "Cofacteurs : effort, alcool, AINS"
+          ]
+        }
+      ],
+      "rappelsTherapeutiques": [
+        "Adrénaline IM = traitement de première ligne",
+        "Dose adulte : 0.5mg (0.3mg si <50kg)",
+        "Site : face antérolatérale cuisse",
+        "Répétition toutes les 5-15 minutes",
+        "Pas de contre-indication en urgence vitale",
+        "Antihistaminiques et corticoïdes = adjuvants seulement"
+      ],
+      "examensComplementaires": [
+        "Tryptase : pic 1-2h, normalisation 24h",
+        "IgE spécifiques : bilan allergologique différé",
+        "Tests cutanés : à distance (4-6 semaines)",
+        "Test de provocation orale : centre spécialisé",
+        "Recherche allergies croisées"
+      ]
+    },
+    "resume": {
+      "titre": "⚡️ Choc anaphylactique – Résumé ECOS",
+      "sections": [
+        {
+          "titre": "🔍 Anamnèse",
+          "subsections": [
+            {
+              "titre": "Contexte déclencheur",
+              "points": [
+                "Exposition récente à un allergène : médicament (pénicilline, AINS, anesthésiques), piqûre d’insecte, aliment, produit de contraste",
+                "Antécédents d’allergie ou de réaction anaphylactique",
+                "Délai court entre exposition et symptômes (minutes à heures)"
+              ]
+            },
+            {
+              "titre": "Symptomatologie rapportée",
+              "points": [
+                "Sensation de malaise, anxiété, vertiges",
+                "Prurit, urticaire, angio-œdème",
+                "Oppression thoracique, dyspnée, wheezing",
+                "Douleurs abdominales, nausées, vomissements"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "👀 Examen clinique",
+          "subsections": [
+            {
+              "titre": "Signes vitaux",
+              "points": [
+                "Hypotension artérielle",
+                "Tachycardie",
+                "Tachypnée, désaturation O₂",
+                "Fièvre absente (≠ sepsis)"
+              ]
+            },
+            {
+              "titre": "Signes cutanés",
+              "points": [
+                "Urticaire généralisée",
+                "Angio-œdème (lèvres, langue, glotte)"
+              ]
+            },
+            {
+              "titre": "Signes respiratoires",
+              "points": [
+                "Stridor, wheezing, bronchospasme",
+                "Dyspnée avec tirage"
+              ]
+            },
+            {
+              "titre": "Signes digestifs",
+              "points": [
+                "Vomissements, diarrhée, douleurs abdominales"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "🧪 Examens diagnostiques",
+          "subsections": [
+            {
+              "titre": "En urgence",
+              "points": [
+                "Diagnostic clinique → PEC immédiate",
+                "Pas d’attente d’examen complémentaire pour traiter"
+              ]
+            },
+            {
+              "titre": "Examens différés",
+              "points": [
+                "Dosage tryptase plasmatique (confi rmation rétrospective)",
+                "Bilan allergologique secondaire"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "⚙️ Prise en charge",
+          "subsections": [
+            {
+              "titre": "Mesures initiales",
+              "points": [
+                "Arrêt de l’exposition à l’allergène",
+                "Appeler aide/SMUR",
+                "Surveillance monitorée"
+              ]
+            },
+            {
+              "titre": "Traitement spécifique",
+              "points": [
+                "Adrénaline IM 0,5 mg (adulte) dans la face antéro-latérale de la cuisse, répéter toutes les 5–15 min si nécessaire",
+                "Oxygénothérapie haute concentration",
+                "Remplissage vasculaire par cristalloïdes si hypotension persistante"
+              ]
+            },
+            {
+              "titre": "Traitement adjuvant (après adrénaline)",
+              "points": [
+                "Antihistaminiques H1 ± H2",
+                "Corticostéroïdes IV (prévention rechute)",
+                "Bronchodilatateurs (salbutamol) si bronchospasme"
+              ]
+            },
+            {
+              "titre": "Formes réfractaires",
+              "points": [
+                "Perfusion IV d’adrénaline titrée",
+                "Glucagon si patient sous bêtabloquants",
+                "Autres vasopresseurs si besoin (noradrénaline, vasopressine)"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "✅ Points clés ECOS",
+          "points": [
+            "Diagnostic clinique : exposition + signes cutanés/respiratoires/hémodynamiques",
+            "Adrénaline IM = traitement de première intention, à administrer sans délai",
+            "Ne jamais retarder l’adrénaline pour donner des antihistaminiques ou corticoïdes",
+            "Surveillance rapprochée : risque de biphasicité",
+            "Prévenir l’allergologue pour investigation secondaire"
+          ]
+        },
+        {
+          "titre": "📋 Check-list rapide ECOS",
+          "subsections": [
+            {
+              "titre": "Questions à poser",
+              "points": [
+                "Exposition récente (médicament, aliment, piqûre, produit de contraste) ?",
+                "Antécédents allergiques connus ?",
+                "Symptômes inauguraux : prurit, urticaire, dyspnée, malaise ?",
+                "Prise de bêtabloquants ou autres traitements interférant avec adrénaline ?"
+              ]
+            },
+            {
+              "titre": "Examens à faire",
+              "points": [
+                "Constantes vitales (TA, FC, FR, SpO₂)",
+                "Surveillance ECG",
+                "Tryptase plasmatique (après PEC, confirmation)",
+                "Bilan allergologique différé"
+              ]
+            },
+            {
+              "titre": "PEC en 3 points",
+              "points": [
+                "Adrénaline IM immédiate et répétée si besoin",
+                "Oxygénation + remplissage vasculaire",
+                "Antihistaminiques/corticoïdes en seconde ligne + surveillance"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "presentationPatient": {
+      "titre": "📑 Fiche ECOS – Cas : Choc anaphylactique (Femme de 28 ans, allergie fruits de mer)",
+      "sections": [
+        {
+          "titre": "🧩 Checklist mentale (présentation systématisée)",
+          "points": [
+            "Intro → âge, contexte (post-ingestion crevettes, 20 min après repas, urgences)",
+            "Symptômes actuels → urticaire thoracique, dyspnée, oppression, hypotension 80/50, SpO₂ 89%",
+            "ATCD → asthme (facteur de gravité), allergie alimentaire dans l’enfance",
+            "Examen → voies aériennes (œdème, stridor ?), respiration (dyspnée, sibilants), circulation (choc), peau (urticaire, œdème), conscience (anxiété, malaise)",
+            "Diagnostic → choc anaphylactique aux crevettes",
+            "Diagnostics différentiels → choc septique, embolie pulmonaire, œdème de Quincke isolé",
+            "PEC immédiate → adrénaline IM 0,5 mg cuisse, répéter si besoin, O₂ haut débit, remplissage 1-2 L, position allongée jambes surélevées",
+            "PEC adjuvante → antihistaminique, corticoïdes, bronchodilatateurs si bronchospasme",
+            "Surveillance → min 6 h, 24 h si sévère, monitorage continu",
+            "Prévention secondaire → stylo adrénaline x2, éducation, éviction stricte fruits de mer, consultation allergologue"
+          ],
+          "mnemo": {
+            "titre": "👉 Mnémo rapide : ADRÉNALINE",
+            "elements": [
+              "A = Adrénaline IM immédiate",
+              "D = Deuxième dose si inefficacité",
+              "R = Remplissage vasculaire",
+              "É = Évaluer voies aériennes",
+              "N = Nébulisations β2 si bronchospasme",
+              "A = Antihistaminiques",
+              "L = Lombes allongé jambes surélevées",
+              "I = Informer + stylo auto-injecteur",
+              "N = Noter surveillance biphasique",
+              "E = Éducation + allergologue"
+            ]
+          }
+        },
+        {
+          "titre": "🎤 Version longue (≈2-3 min)",
+          "contenu": "Il s’agit de Mme B., 28 ans, amenée aux urgences 20 minutes après avoir mangé des crevettes. Elle décrit rapidement des picotements buccaux, suivis d’une éruption urticarienne thoracique, de difficultés respiratoires croissantes, d’une oppression thoracique et d’un malaise avec vertiges. Elle est très anxieuse et dit sentir sa gorge se serrer.\n\nSes antécédents notables sont un asthme depuis l’enfance, bien contrôlé par bronchodilatateurs de secours, et une allergie alimentaire indéterminée dans l’enfance. Pas d’allergie médicamenteuse connue.\n\nÀ l’examen, elle présente une TA effondrée à 80/50, une SpO₂ de 89% à l’air ambiant, une tachycardie, une polypnée avec sibilants, une urticaire thoracique étendue et un œdème facial débutant. Elle est consciente mais agitée, avec une impression de mort imminente. C’est donc un tableau typique de choc anaphylactique.\n\nLes diagnostics différentiels seraient un choc septique ou cardiogénique, une embolie pulmonaire, ou un œdème de Quincke isolé, mais l’association allergène identifié + atteinte cutanée + respiratoire + hémodynamique rend le diagnostic évident.\n\nLa prise en charge doit être immédiate : injection d’adrénaline IM 0,5 mg dans la cuisse, à répéter toutes les 5–15 minutes si nécessaire. Mise sous oxygène à haut débit, deux VVP de gros calibre, remplissage par cristalloïdes 1–2 litres, position allongée jambes surélevées. Les traitements adjuvants sont un antihistaminique H1 IV, un corticoïde IV, un bronchodilatateur inhalé si bronchospasme persistant. Si le choc est réfractaire, une perfusion d’adrénaline IV titrée en réanimation est indiquée.\n\nElle doit rester sous surveillance monitorée pendant au moins 6 heures, voire 24 heures compte tenu de la gravité, à cause du risque de réaction biphasique.\n\nEn prévention secondaire, il faudra prescrire deux stylos auto-injecteurs d’adrénaline, l’éduquer à leur utilisation, insister sur l’éviction stricte des fruits de mer, et organiser une consultation allergologique avec dosage des IgE spécifiques et tests cutanés différés."
+        },
+        {
+          "titre": "⚡ Version express (SBAR, 30 sec)",
+          "contenu": "S (Situation) : Mme B., 28 ans, choc anaphylactique 20 min après ingestion de crevettes.\n\nB (Background) : ATCD asthme, allergie alimentaire non précisée. Pas d’allergie médicamenteuse connue.\n\nA (Assessment) : Hypotension 80/50, SpO₂ 89%, urticaire, œdème facial, dyspnée sifflante → choc anaphylactique. DD : choc septique, EP, œdème de Quincke.\n\nR (Recommendation) : Adrénaline IM immédiate, O₂ haut débit, 2 VVP + remplissage, antihistaminique + corticoïdes en adjuvant, surveillance ≥6h, stylo adrénaline + consultation allergologie."
+        },
+        {
+          "titre": "🎲 Touches ludiques / mnémos",
+          "subsections": [
+            {
+              "titre": "👉 Diagnostic rapide d’anaphylaxie",
+              "points": [
+                "Début brutal après exposition allergène",
+                "Atteinte ≥2 systèmes : cutané, respiratoire, hémodynamique, digestif",
+                "Hypotension isolée possible si allergène connu"
+              ]
+            },
+            {
+              "titre": "👉 PEC d’urgence – 3A",
+              "points": [
+                "Adrénaline IM immédiate",
+                "Air : oxygène haut débit, voie aérienne sécurisée",
+                "Accès veineux : remplissage rapide"
+              ]
+            },
+            {
+              "titre": "👉 Facteurs de gravité",
+              "points": [
+                "Asthme",
+                "Retard à l’adrénaline",
+                "Prise bêtabloquants ou IEC",
+                "Âge avancé",
+                "Mastocytose"
+              ]
+            },
+            {
+              "titre": "⚠️ Pièges ECOS",
+              "points": [
+                "Retarder l’adrénaline pour donner antihistaminiques/corticoïdes",
+                "Administrer adrénaline SC (moins efficace)",
+                "Oublier risque biphasique",
+                "Sortir la patiente trop tôt",
+                "Oublier prescription stylo adrénaline"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "❓ Questions probables de l'examinateur (avec réponses orales)",
+          "subsections": [
+            {
+              "titre": "1. Diagnostic",
+              "questions": [
+                {
+                  "question": "Quels sont les critères diagnostiques d’un choc anaphylactique ?",
+                  "reponse": [
+                    "Exposition à un allergène probable (crevettes)",
+                    "Début aigu",
+                    "Atteinte cutanée (urticaire, œdème)",
+                    "Atteinte respiratoire (dyspnée, sibilants, stridor)",
+                    "Atteinte circulatoire (hypotension, malaise)"
+                  ]
+                }
+              ]
+            },
+            {
+              "titre": "2. Prise en charge immédiate",
+              "questions": [
+                {
+                  "question": "Quel est le traitement de première intention ?",
+                  "reponse": "Adrénaline IM 0,5 mg dans la cuisse, à répéter toutes les 5–15 minutes si inefficace"
+                },
+                {
+                  "question": "Quels traitements adjuvants associer ?",
+                  "reponse": [
+                    "Antihistaminiques H1 ± H2",
+                    "Corticoïdes IV",
+                    "Bronchodilatateurs inhalés si bronchospasme"
+                  ]
+                }
+              ]
+            },
+            {
+              "titre": "3. Examens complémentaires",
+              "questions": [
+                {
+                  "question": "Quels examens complémentaires demandez-vous ?",
+                  "reponse": [
+                    "Tryptase sérique (pic 1-2h, confirmation)",
+                    "IgE spécifiques fruits de mer (différé)",
+                    "Bilan allergologique (tests cutanés à distance)"
+                  ]
+                }
+              ]
+            },
+            {
+              "titre": "4. Prévention secondaire",
+              "questions": [
+                {
+                  "question": "Que prescrivez-vous à la sortie ?",
+                  "reponse": [
+                    "2 stylos auto-injecteurs d’adrénaline",
+                    "Éducation à l’utilisation",
+                    "Carte d’allergie",
+                    "Éviction stricte fruits de mer",
+                    "Consultation allergologie"
+                  ]
+                }
+              ]
+            },
+            {
+              "titre": "5. Pronostic et suivi",
+              "questions": [
+                {
+                  "question": "Quel est le risque principal après amélioration ?",
+                  "reponse": [
+                    "Réaction biphasique dans les 4–12h",
+                    "Risque vital si adrénaline non utilisée"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

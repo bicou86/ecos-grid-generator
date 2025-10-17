@@ -1,0 +1,230 @@
+{
+  "title": "Thieme Gynéco 25 - Bouffées de chaleur - Femme de 52 ans",
+  "category": "Thieme Gynécologie-Obstétrique",
+  "subcategory": "Bouffées de chaleur",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Femme de 52 ans, Mme Carolina Williams, consultant pour bouffées de chaleur",
+    "vitals": {
+      "temperature": "36.7°C",
+      "fc": "90 bpm",
+      "fr": "16/min",
+      "ta": "120/80 mmHg"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Motif principal de consultation",
+          "binaryOnly": true,
+          "patientComment": "bouffées de chaleur"
+        },
+        {
+          "id": "a2",
+          "text": "Analyse de la plainte principale (ABCDE)",
+          "details": [
+            "Fréquence [4-5×/jour]",
+            "Durée [quelques minutes]",
+            "Symptômes associés [palpitations, transpiration]",
+            "Impact sur sommeil",
+            "Dyspareunie"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Antécédents gynécologiques et obstétricaux",
+          "details": [
+            "DDR il y a 3 mois, règles moins fréquentes depuis 6 mois",
+            "G2P2, accouchements normaux"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Histoire sociale et habitudes de vie",
+          "details": [
+            "HTA sous propranolol 10mg/j",
+            "Cholécystectomie laparoscopique",
+            "Mère décédée cancer sein",
+            "Fume 5 cigarettes/jour",
+            "Alcool social",
+            "Monogame avec mari"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Revue des systèmes",
+          "details": [
+            "Symptômes de ménopause",
+            "Système ostéo-articulaire"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Signes vitaux et apparence générale",
+          "binaryOnly": true
+        },
+        {
+          "id": "e2",
+          "text": "Examen de la tête et du cou",
+          "details": [
+            "PERRLA",
+            "Recherche pâleur ou cyanose",
+            "Examen gorge",
+            "Palpation thyroïde et ganglions"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Examen cardio-pulmonaire",
+          "details": [
+            "Auscultation cardiaque [S1 et S2 normaux]",
+            "Auscultation pulmonaire bilatérale"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Examen abdominal complet",
+          "details": [
+            "Inspection (cicatrices, distension)",
+            "Auscultation (bruits intestinaux)",
+            "Palpation superficielle et profonde"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Examens spécifiques selon le cas",
+          "details": [
+            "Examen neurologique bref"
+          ]
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostics différentiels à évoquer",
+          "ddSection": {
+            "title": "Hypothèses diagnostiques gynécologiques",
+            "categories": [
+              {
+                "name": "Diagnostics prioritaires",
+                "items": [
+                  {
+                    "text": "Ménopause",
+                    "cause": "Arguments POUR:\n\t□ Âge 52 ans, DDR il y a 3 mois, bouffées chaleur, dyspareunie",
+                    "test": "→ FSH, TSH, densitométrie osseuse"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Examens complémentaires pertinents",
+          "details": [
+            "Examen vaginal",
+            "TSH, T3, FSH",
+            "Mammographie dépistage",
+            "US pelvienne"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Plan de prise en charge",
+          "details": [
+            "Options thérapeutiques (THS)",
+            "Calcium et vitamine D",
+            "Exercice régulier"
+          ]
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Questions difficiles de la patiente",
+          "content": "Qu'est-ce que le traitement hormonal substitutif (THS)?"
+        },
+        {
+          "id": "c2",
+          "text": "Conseils spécifiques",
+          "content": "Arrêt tabac. Exercice régulier. Calcium et vitamine D. Mammographie."
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour la patiente standardisée",
+      "nom": "Mme Carolina Williams",
+      "age": "52 ans",
+      "contexte": "Cabinet de médecine générale",
+      "motifConsultation": {
+        "plaintePrincipale": "bouffées de chaleur",
+        "autreChose": "Bouffées de chaleur depuis 3 mois, 4-5×/jour, sans avertissement. Durent quelques minutes avec palpitations et transpiration. Perturbent sommeil."
+      },
+      "histoireActuelle": {
+        "symptomesPrincipaux": [
+          "Bouffées de chaleur depuis 3 mois, 4-5×/jour, sans avertissement",
+          " Durent quelques minutes avec palpitations et transpiration",
+          " Perturbent sommeil"
+        ],
+        "antecedentsGynecologiques": [
+          "Dyspareunie récente",
+          " DDR il y a 3 mois, règles moins fréquentes depuis 6 mois",
+          " Ménarche à 13 ans",
+          " G2P2, accouchements normaux"
+        ],
+        "contextePsychosocial": [
+          "HTA sous propranolol 10mg/j",
+          " Cholécystectomie laparoscopique",
+          " Mère décédée cancer sein",
+          " Fume 5 cigarettes/jour",
+          " Alcool social",
+          " Monogame avec mari"
+        ]
+      },
+      "simulation": {
+        "attitude": [
+          "Fatiguée",
+          "Préoccupée par symptômes"
+        ],
+        "durantExamen": [
+          "Examen normal"
+        ]
+      },
+      "inquietudes": {
+        "principales": [
+          "Qu'est-ce que le traitement hormonal substitutif (THS)?"
+        ]
+      }
+    },
+    "informationsExpert": {
+      "titre": "Informations pour l'expert",
+      "pointsCles": [
+        "Cas de Bouffées de chaleur",
+        "Patiente: Femme de 52 ans",
+        "Anamnèse gynécologique complète",
+        "Examen abdominal et pelvien appropriés",
+        "Diagnostic différentiel ciblé"
+      ],
+      "pieges": [
+        "Prescrire THS sans bilan complet",
+        "Oublier ATCD cancer sein"
+      ]
+    }
+  }
+}

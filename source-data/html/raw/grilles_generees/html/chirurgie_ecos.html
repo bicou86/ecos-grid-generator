@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guide Chirurgie ECOS</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, #c0392b 0%, #8e1a0e 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::before {
+            content: "⚕️";
+            position: absolute;
+            font-size: 200px;
+            opacity: 0.1;
+            top: -50px;
+            right: 50px;
+            animation: float 20s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(10deg); }
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+            position: relative;
+            z-index: 1;
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            opacity: 0.95;
+            position: relative;
+            z-index: 1;
+        }
+
+        .navigation {
+            background: #f8f9fa;
+            padding: 20px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .nav-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            list-style: none;
+        }
+
+        .nav-list li {
+            background: linear-gradient(135deg, #e74c3c, #c0392b);
+            border-radius: 25px;
+            overflow: hidden;
+        }
+
+        .nav-list a {
+            display: block;
+            padding: 10px 20px;
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+
+        .nav-list a:hover {
+            background: rgba(255,255,255,0.2);
+            transform: translateY(-2px);
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        .section {
+            margin-bottom: 50px;
+            opacity: 0;
+            animation: fadeIn 0.6s forwards;
+        }
+
+        @keyframes fadeIn {
+            to { opacity: 1; }
+        }
+
+        .section-header {
+            background: linear-gradient(135deg, #e74c3c20, #c0392b20);
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            border-left: 5px solid #c0392b;
+        }
+
+        .section-header h2 {
+            color: #c0392b;
+            font-size: 1.8em;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .badge {
+            background: linear-gradient(135deg, #e74c3c, #c0392b);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.8em;
+            font-weight: bold;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        thead {
+            background: linear-gradient(135deg, #c0392b, #8e1a0e);
+            color: white;
+        }
+
+        th {
+            padding: 15px;
+            text-align: left;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.9em;
+            letter-spacing: 0.5px;
+            position: sticky;
+            top: 80px;
+            background: inherit;
+            z-index: 10;
+        }
+
+        tbody tr {
+            transition: all 0.3s;
+        }
+
+        tbody tr:hover {
+            background-color: #fff5f4;
+            transform: scale(1.01);
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #fafafa;
+        }
+
+        td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #eee;
+            vertical-align: top;
+        }
+
+        td:first-child {
+            font-weight: 600;
+            color: #c0392b;
+            position: sticky;
+            left: 0;
+            background: inherit;
+            z-index: 5;
+            border-right: 2px solid #f0f0f0;
+        }
+
+        tbody tr:hover td:first-child {
+            background-color: #fff5f4;
+        }
+
+        tbody tr:nth-child(even) td:first-child {
+            background-color: #fafafa;
+        }
+
+        .search-container {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .search-box {
+            padding: 12px 30px;
+            font-size: 1em;
+            border: 2px solid #e74c3c;
+            border-radius: 30px;
+            width: 100%;
+            max-width: 500px;
+            outline: none;
+            transition: all 0.3s;
+        }
+
+        .search-box:focus {
+            border-color: #c0392b;
+            box-shadow: 0 0 0 3px rgba(192, 57, 43, 0.1);
+        }
+
+        .note-box {
+            background: linear-gradient(135deg, #fff5f4, #ffebe9);
+            border-left: 4px solid #c0392b;
+            padding: 20px;
+            margin: 30px 0;
+            border-radius: 10px;
+            font-weight: 500;
+            color: #c0392b;
+        }
+
+        .note-box::before {
+            content: "📌 ";
+            font-size: 1.2em;
+            margin-right: 10px;
+        }
+
+        .important-box {
+            background: #2c3e50;
+            color: white;
+            padding: 20px;
+            margin: 30px 0;
+            border-radius: 10px;
+            font-weight: 500;
+        }
+
+        .important-box::before {
+            content: "⚠️ ";
+            font-size: 1.2em;
+            margin-right: 10px;
+        }
+
+        .scroll-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: linear-gradient(135deg, #e74c3c, #c0392b);
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(231, 76, 60, 0.4);
+            transition: all 0.3s;
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .scroll-top.visible {
+            opacity: 1;
+            pointer-events: all;
+        }
+
+        .scroll-top:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 20px rgba(231, 76, 60, 0.5);
+        }
+
+        .icon {
+            display: inline-block;
+            margin-right: 8px;
+        }
+
+        .highlight {
+            background-color: yellow;
+            font-weight: bold;
+        }
+
+        @media print {
+            body {
+                background: white;
+            }
+            .navigation, .search-container, .scroll-top {
+                display: none;
+            }
+            .section {
+                page-break-inside: avoid;
+            }
+            table {
+                page-break-inside: auto;
+            }
+            tr {
+                page-break-inside: avoid;
+            }
+        }
+
+        @media (max-width: 768px) {
+            table {
+                font-size: 0.85em;
+            }
+            td, th {
+                padding: 8px;
+            }
+            td:first-child {
+                position: static;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Guide Chirurgie ECOS</h1>
+            <p class="subtitle">Terminologie Française - Guide de Référence Clinique</p>
+        </header>
+
+        <nav class="navigation">
+            <ul class="nav-list">
+                <li><a href="#section-1">Traumatologie</a></li>
+                <li><a href="#section-2">Thyroïde</a></li>
+                <li><a href="#section-3">Digestif</a></li>
+                <li><a href="#section-4">Urologie</a></li>
+                <li><a href="#section-5">Chirurgie Digestive</a></li>
+                <li><a href="#section-6">MICI</a></li>
+                <li><a href="#section-7">Traumatisme Crânien</a></li>
+                <li><a href="#section-8">Vertébral</a></li>
+                <li><a href="#section-9">Respiratoire</a></li>
+                <li><a href="#section-10">Cardiovasculaire</a></li>
+                <li><a href="#section-11">Vasculaire</a></li>
+                <li><a href="#section-12">Œsophage</a></li>
+                <li><a href="#section-13">Abdomen Aigu</a></li>
+                <li><a href="#section-14">Gastro-Duodénal</a></li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <div class="search-container">
+                <input type="text" class="search-box" id="searchBox" placeholder="🔍 Rechercher une pathologie...">
+            </div>
+
+            <div class="note-box">
+                <strong>Note :</strong> Toujours demander : selles, urines, gaz, alimentation, nausées, vomissements, douleurs, fièvre, etc.
+            </div>
+
+            <div class="important-box">
+                <strong>ANAMNÈSE :</strong> 6 dimensions ; antécédents personnels, antécédents familiaux ; facteurs de risque (hypertension, diabète, tabac, alcool, obésité, dyslipidémie, antécédents familiaux), médicaments ; allergies, symptômes B, ganglions lymphatiques
+            </div>
+
+            <div class="section" id="section-1">
+                <div class="section-header">
+                    <h2><span class="icon">🚑</span>1. Traumatologie et Urgences <span class="badge">3 pathologies</span></h2>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Pathologie</th>
+                            <th>Anamnèse</th>
+                            <th>Examen Physique</th>
+                            <th>Procédures/Examens</th>
+                            <th>Thérapie</th>
+                            <th>Commentaires</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Soins de plaie</td>
+                            <td>Morsure ? Tétanos ?</td>
+                            <td>Inspection, motricité, sensibilité, circulation</td>
+                            <td>Vaccination antitétanique (si doute), éventuellement rage, soins de plaie : anesthésie locale possible, désinfection/nettoyage + retirer corps étrangers, débridement/irrigation, suture (monofilament, non résorbable)</td>
+                            <td>Suture seulement si plaie <8h ! >8h > soins ouverts</td>
+                            <td>Contre-indications suture : morsure, plaie infectée, objets souillés (couteau de boucher)</td>
+                        </tr>
+                        <tr>
+                            <td>Fracture</td>
+                            <td>Mécanisme accidentel</td>
+                            <td>Inspection, motricité, sensibilité, circulation</td>
+                            <td>Échographie (tendons, ligaments), radiographie, scanner (si face/crâne/bassin)</td>
+                            <td>Selon fracture : conservateur (plâtre, attelle) ou chirurgical (ostéosynthèse)</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Bilan préopératoire</td>
+                            <td>Explication déroulement, information/consentement chirurgical, questions/anxiétés. Récemment ou actuellement malade ? Assurance maladie</td>
+                            <td>Examen interniste : cœur, poumons, abdomen, reins, neurologique, ORL éventuellement, ganglions lymphatiques</td>
+                            <td>Bilan biologique (TP, hématologie, CRP, leucocytes, créatinine + selon intervention), examen cytobactériologique urines, ECG, radiographie thorax, examens spécialisés (ex : écho-Doppler veineux pour pontage aorto-coronaire), anesthésie (consultation prémédication), chirurgien éventuellement</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="section" id="section-2">
+                <div class="section-header">
+                    <h2><span class="icon">🦋</span>2. Pathologies Thyroïdiennes <span class="badge">1 pathologie</span></h2>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Pathologie</th>
+                            <th>Anamnèse</th>
+                            <th>Examen Physique</th>
+                            <th>Procédures/Examens</th>
+                            <th>Thérapie</th>
+                            <th>Commentaires</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Pathologie thyroïdienne</td>
+                            <td>Nodules ? Signes hyper- et hypothyroïdie, douleurs, troubles déglutition, enrouement, sensation corps étranger, fièvre, symptômes B, médicaments</td>
+                            <td>Examen interniste, palpation thyroïde + déglutition à vide, cou, ganglions lymphatiques, yeux (exophtalmie)</td>
+                            <td>Bilan biologique (CRP, leucocytes, TSH, fT3/4, anticorps), échographie (kyste ?), scintigraphie (si nodule >1cm et TSH <0,6 > froid ou chaud), cytoponction (nodule hyperplasique, autonomie ou néoplasie ou inflammation)</td>
+                            <td>Kyste : chirurgie éventuelle ou drainage ou surveillance. Autonomie : analogue Basedow. Hashimoto : hormonothérapie substitutive. Basedow : antithyroïdiens de synthèse, iodothérapie, rarement chirurgie. De Quervain : analgésie. Néoplasie carcinome papillaire thyroïdien : hémi-thyroïdectomie, si néoplasie folliculaire > examen extemporané puis hémi- (adénome folliculaire) ou thyroïdectomie totale</td>
+                            <td>Si échographie évoque kyste > cytoponction. Si échographie + biologie évoquent autonomie ou thyroïdite (Hashimoto/Basedow) > thérapie. Si suspicion néoplasie > scintigraphie + cytoponction. Pour tumeurs thyroïdiennes bénignes (nodule hyperplasique, thyroïdite auto-immune, kyste, adénome folliculaire...), surveillance évolutive possible</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="section" id="section-3">
+                <div class="section-header">
+                    <h2><span class="icon">🏥</span>3. Pathologies Digestives <span class="badge">4 pathologies</span></h2>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Pathologie</th>
+                            <th>Anamnèse</th>
+                            <th>Examen Physique</th>
+                            <th>Procédures/Examens</th>
+                            <th>Thérapie</th>
+                            <th>Commentaires</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Lithiase vésiculaire/Cholédocholithiase</td>
+                            <td>Coliques (épigastriques, irradiation épaule droite + éventuellement en ceinture), fièvre éventuelle. Facteurs déclenchants alimentaires, 6 F (female, blonde, forty, fat, fertile...)</td>
+                            <td>Inspection, auscultation, palpation : signe de Murphy, signe de Courvoisier, défense abdominale</td>
+                            <td>Bilan biologique : leucocytes, CRP, bilirubine, ALAT, ASAT, γ-GT, phosphatases alcalines. Échographie abdomen supérieur, radiographie abdomen. Si calculs voies biliaires : CPRE (diagnostic + thérapeutique simultanés) ou cholangio-IRM (diagnostic seul)</td>
+                            <td>Lithiase vésiculaire : cholécystectomie laparoscopique, rarement chirurgie ouverte. Mais : thérapie seulement si calculs symptomatiques ! Calcul dans voie biliaire : toujours traitement > CPRE ou chirurgie</td>
+                            <td>Diagnostic différentiel : cholécystite aiguë (inflammation par calcul généralement > cholécystectomie en urgence). Murphy : patient doit inspirer profondément > palper sous rebord costal droit > douleur si cholécystite. Courvoisier : vésicule palpable tendue-élastique (souvent tumeur, aussi calcul)</td>
+                        </tr>
+                        <tr>
+                            <td>Lithiase rénale</td>
+                            <td>Colique néphrétique (irradiation aine), fièvre éventuelle, hématurie éventuelle. Facteurs déclenchants : déshydratation, alimentation</td>
+                            <td>Examen abdominal (inspection, auscultation, palpation, attention particulière loges rénales, toucher rectal), examen cytobactériologique urines (hématurie, sédiment)</td>
+                            <td>Échographie (calcul/ombre acoustique, bassinet dilaté), scanner, bilan biologique éventuel</td>
+                            <td>Petits calculs (<6mm) : expectative. Dissolution médicamenteuse (certains types calculs). Lithotritie extracorporelle (>6mm), aussi endoscopique ou par incision cutanée</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Pancréatite aiguë</td>
+                            <td>Douleurs soudaines très violentes, continues, intenses, en ceinture diffuses parfois, nausées, vomissements, météorisme, fièvre, signes choc, érythème facial. Facteurs déclenchants : alcool, lithiase biliaire, médicaments</td>
+                            <td>Abdomen (météorisme, ascite éventuelle, tendu-élastique, douleurs pression diffuses, péritonite éventuelle, signe de Cullen), aine, loges rénales</td>
+                            <td>Paramètres vitaux, voie veineuse périphérique. Bilan biologique (amylase, lipase, élastase, CRP, leucocytes, LDH, bilan hépatique, hémogramme, créatinine), examen urines (lipase élevée), échographie, radiographie abdomen/thorax, scanner, cholangio-IRM/CPRE (si suspicion origine biliaire), cytoponction éventuelle</td>
+                            <td>Conservateur : réanimation > O₂, analgésie, IPP (contre ulcère stress), expansion volémique, monitoring, jeûne, prophylaxie thromboembolique, sonde gastrique, sonde vésicale, antibiotiques. Chirurgie/intervention : CPRE si obstruction, cholécystectomie si pancréatite biliaire, nécrosectomie si nécroses</td>
+                            <td>Signe de Cullen : taches bleu-verdâtres périombilicales</td>
+                        </tr>
+                        <tr>
+                            <td>Diverticulite</td>
+                            <td>Douleurs abdomen inférieur gauche (rarement médian), par poussées, progressives</td>
+                            <td>Examiner abdomen (inspection, palpation 4 quadrants > douleurs pression + défense éventuelle, rate, foie, rein, auscultation), loges rénales, ganglions lymphatiques</td>
+                            <td>Diagnostic clinique. Bilan biologique : leucocytes, CRP, hématocrite. Imagerie : radiographie abdomen sans préparation (debout), transit gastro-intestinal (Gastrografin) ou lavement (côlon), scanner abdominal éventuel, coloscopie éventuelle, endoscopie proximale éventuelle, radiographie thorax éventuelle</td>
+                            <td>Conservateur : fibres alimentaires, drainage si abcès. Chirurgical : résection diverticulaire laparoscopique ou ouverte, résection sigmoïdienne éventuelle (si localisé là + multiple, laparoscopique)</td>
+                            <td>Généralement diverticulite sigmoïdienne. Diverticulite = inflammation diverticules. Peut aussi survenir estomac, duodénum, etc.! Diverticule de Meckel (généralement asymptomatique intestin grêle, origine embryonnaire)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="section" id="section-4">
+                <div class="section-header">
+                    <h2><span class="icon">🔬</span>4. Urgences Urologiques <span class="badge">1 pathologie</span></h2>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Pathologie</th>
+                            <th>Anamnèse</th>
+                            <th>Examen Physique</th>
+                            <th>Procédures/Examens</th>
+                            <th>Thérapie</th>
+                            <th>Commentaires</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Torsion testiculaire/ovarienne</td>
+                            <td>Douleurs très intenses d'apparition soudaine, souvent aussi nocturne</td>
+                            <td>Inspection : testicule gonflé + rouge. Palpation : signe de Prehn négatif*, ganglions lymphatiques</td>
+                            <td>Bilan sanguin, échographie, si doute exploration chirurgicale testicule</td>
+                            <td>Chirurgie (détorsion + orchidopexie). Chez femmes : laparoscopie</td>
+                            <td>Signe de Prehn positif (soulèvement testicule apporte soulagement > suspicion épididymite)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="section" id="section-5">
+                <div class="section-header">
+                    <h2><span class="icon">🔪</span>5. Chirurgie Digestive <span class="badge">2 pathologies</span></h2>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Pathologie</th>
+                            <th>Anamnèse</th>
+                            <th>Examen Physique</th>
+                            <th>Procédures/Examens</th>
+                            <th>Thérapie</th>
+                            <th>Commentaires</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Appendicite</td>
+                            <td>Douleurs abdomen supérieur (épigastriques, mal localisées, sourdes) > migration abdomen inférieur droit (bien localisées, aiguës), vomissements/nausées, fièvre, selles/gaz/urines</td>
+                            <td>Inspection (jambes fléchies/position antalgique), palpation : 4 quadrants (commencer gauche), McBurney, point de Lanz, douleur décompression/décompression controlatérale, défense abdominale ou défense musculaire*, signe du psoas, auscultation, ganglions lymphatiques, toucher rectal (douleur ?), chez femmes : examen gynécologique, prise température</td>
+                            <td>Bilan biologique : leucocytes, CRP, hématocrite. Examen cytobactériologique urines. Échographie (appendice épaissi, œdème/inflammation). Scanner abdominal éventuel</td>
+                            <td>Diagnostic incertain : attendre + observer, purger, diagnostic complémentaire (scanner). Appendicectomie laparoscopique, rarement ouverte, si pas de chirurgie possible : antibiotiques</td>
+                            <td>McBurney : douleur pression entre 2/3 externes ligne reliant épine iliaque droite + ombilic. Lanz : douleur pression 5 cm médial épine droite (ligne reliant deux épines). Décompression controlatérale : douleur région appendiculaire lors décompression côté sain. Signe psoas : douleur abdomen inférieur droit lors flexion jambe droite hanche contre résistance. Défense musculaire : contraction réflexe musculature lors palpation (non volontaire), protection péritoine/éviter déclenchement douleur > signe péritonite. Défense abdominale : patient voit palpation venir > pas signe péritonéal</td>
+                        </tr>
+                        <tr>
+                            <td>Iléus</td>
+                            <td>Douleurs abdominales coliques, vomissements, nausées, péristaltisme intense, abdomen distendu, arrêt matières + gaz, urines. Facteurs déclenchants : antécédents chirurgicaux, adhérences, brides, hernies, tumeur, corps étranger, lithiase biliaire, médicaments</td>
+                            <td>Inspection : turgor (peau, muqueuses), cicatrices, hernies. Auscultation (mécanique : péristaltisme métallique, paralytique : silence complet). Palpation (distension). Toucher rectal</td>
+                            <td>Bilan biologique (CRP, leucocytes, hématocrite, créatinine, urée, électrolytes, équilibre acido-basique, protéines), échographie (péristaltisme, intestin dilaté), radiographie abdomen sans préparation (debout ou décubitus latéral gauche > anses dilatées, niveaux hydro-aériques, air intestin grêle), test Gastrografin, scanner</td>
+                            <td>Conservateur (surtout iléus paralytique) : sonde gastrique, nutrition parentérale, cathéter veineux central, sonde vésicale, stimulation activité intestinale. Chirurgical (surtout iléus mécanique) : lever obstacle mécanique</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="section" id="section-6">
+                <div class="section-header">
+                    <h2><span class="icon">🦠</span>6. Maladies Inflammatoires Intestinales <span class="badge">1 pathologie</span></h2>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Pathologie</th>
+                            <th>Anamnèse</th>
+                            <th>Examen Physique</th>
+                            <th>Procédures/Examens</th>
+                            <th>Thérapie</th>
+                            <th>Commentaires</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>MICI/Maladies inflammatoires chroniques intestinales</td>
+                            <td>RCH : diarrhée sanglante-muqueuse, arthralgies, symptômes oculaires (uvéite, sclérite), subfébrilité, mauvais état nutritionnel, douleurs, perte poids, arthrite réactionnelle parfois. Crohn : douleurs abdominales (>droite), diarrhée sanglante-muqueuse (généralement sans sang), flatulences, crampes, perte poids, subfébrilité</td>
+                            <td>Abdomen, ganglions lymphatiques, cœur, poumons, toucher rectal</td>
+                            <td>Bilan biologique (CRP, leucocytes, hémogramme, VS), test Hemoccult éventuel, coproculture (calprotectine, parasites), coloscopie-iléoscopie avec biopsies (minimum 5 à différents segments), échographie, lavement baryté double contraste</td>
+                            <td>Crohn : supplémentation fer/B12/vitamines si carences, arrêt tabac, corticoïdes topiques ou systémiques/budésonide, immunosuppresseurs/azathioprine, biothérapies/infliximab, prise en charge psychologique. RCH : supplémentation carences, arrêt tabac, acide 5-aminosalicylique, corticoïdes systémiques/prednisolone, immunosuppresseurs/azathioprine, prise en charge psychologique</td>
+                            <td>Crohn : tout tractus gastro-intestinal, transmural, granulomes, atteinte segmentaire, incurable. RCH : côlon (distal prédominant), superficiel, diffus tout côlon, curable. Chirurgie/endoscopie : RCH : proctocolectomie (anastomose iléo-anale). Crohn : chirurgie minimale (abcès, sténoses, fistules, hémorragie, perforation)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="section" id="section-7">
+                <div class="section-header">
+                    <h2><span class="icon">🧠</span>7. Traumatisme Crânien <span class="badge">1 pathologie</span></h2>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Pathologie</th>
+                            <th>Anamnèse</th>
+                            <th>Examen Physique</th>
+                            <th>Procédures/Examens</th>
+                            <th>Thérapie</th>
+                            <th>Commentaires</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Traumatisme crânien</td>
+                            <td>Vomissements, céphalées, amnésie, déficits neurologiques, hématome, perte conscience, paralysie, émission involontaire urines/selles</td>
+                            <td>Examen neurologique (Glasgow, pupilles, nerfs crâniens, motricité, sensibilité, force). Signes hypertension intracrânienne : agitation motrice, altération conscience, tension systolique élevée, pupilles aréactives, bradycardie, vomissements en jet</td>
+                            <td>Voie veineuse périphérique, analgésie, antiémétiques éventuels. Scanner (crâne + rachis éventuel), IRM éventuelle</td>
+                            <td>Repos au lit + surveillance, soins plaie, analgésie. Selon étiologie : hématome sous-dural/épidural/intracérébral : trépanation, craniotomie, hydrocéphalie : dérivation, etc.</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="section" id="section-8">
+                <div class="section-header">
+                    <h2><span class="icon">🦴</span>8. Pathologies Vertébrales <span class="badge">2 pathologies</span></h2>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Pathologie</th>
+                            <th>Anamnèse</th>
+                            <th>Examen Physique</th>
+                            <th>Procédures/Examens</th>
+                            <th>Thérapie</th>
+                            <th>Commentaires</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Sténose canal rachidien</td>
+                            <td>Douleurs claudication, raccourcissement distance marche, uni- ou bilatéral</td>
+                            <td>Examen neurologique (sensibilité/dermatomes, force, tonus, réflexes), examen rachis (marche, mobilité)</td>
+                            <td>IRM</td>
+                            <td>Décompression/libération</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Hernie discale/Syndrome radiculaire</td>
+                            <td>Lombaire ou cervical, douleurs (souvent mouvements brusques ou port charges lourdes), douleurs repos, nocturnes, état général, fièvre, raideur, flexion aggrave généralement, parfois déficits paralytiques importants (vessie + rectum, sensibilité, parésies), lumbago, déficits neurologiques importants, symptômes B, traumatisme</td>
+                            <td>Examen neurologique : dermatomes/sensibilité, réflexes, force, tonus, Lasègue. Examen rachis (inspection, distance doigts-sol, Schober/Ott, obliquité bassin, trophicité, mouvements, palpation, Lasègue, sensibilité), loges rénales</td>
+                            <td>Radiographie, myélographie, scanner ou IRM</td>
+                            <td>Conservateur : repos strict + antalgiques/AINS quelques jours (si crise), myorelaxants, collier cervical, thermothérapie, kinésithérapie, thérapie points gâchettes, instruction comportement/flexion/port charges. Chirurgical : prothèse discale, décompression</td>
+                            <td>Lasègue : flexion jambe tendue hanche > irrite racines nerveuses comprimées nerf sciatique, généralement positif hernie discale lombaire. Regarder dermatomes + réflexes !</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="section" id="section-9">
+                <div class="section-header">
+                    <h2><span class="icon">🫁</span>9. Pathologies Respiratoires <span class="badge">1 pathologie</span></h2>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Pathologie</th>
+                            <th>Anamnèse</th>
+                            <th>Examen Physique</th>
+                            <th>Procédures/Examens</th>
+                            <th>Thérapie</th>
+                            <th>Commentaires</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Pneumothorax</td>
+                            <td>Asymptomatique ou douleur piquante paroi thoracique, tachycardie, chute tension artérielle, dyspnée soudaine, cyanose. Facteurs déclenchants : spontané, traumatisme, maladie pulmonaire, iatrogène (cathéter veineux central)</td>
+                            <td>Inspection : fréquence respiratoire, symétrie mouvements thoraciques, cyanose, plaie. Auscultation (murmure vésiculaire diminué), percussion (hypersonorité)</td>
+                            <td>Radiographie thorax, rarement scanner. Si suspicion pneumothorax compressif : pas diagnostic > drainage immédiat !</td>
+                            <td>Drainage thoracique (air doit sortir)</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="section" id="section-10">
+                <div class="section-header">
+                    <h2><span class="icon">❤️</span>10. Pathologies Cardiovasculaires <span class="badge">1 pathologie</span></h2>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Pathologie</th>
+                            <th>Anamnèse</th>
+                            <th>Examen Physique</th>
+                            <th>Procédures/Examens</th>
+                            <th>Thérapie</th>
+                            <th>Commentaires</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Coronaropathie : Angor/Infarctus</td>
+                            <td>Symptômes angineux, oppression/tiraillement/piqûre rétrosternale, irradiation bras gauche/épaule/cou, repos ou effort, trinitrine efficace ? Suspicion infarctus : douleur destruction, sueurs froides, trinitrine inefficace, facteurs risque, faiblesse, angoisse, signes végétatifs (sueurs, nausées, vomissements). Facteurs risque + déclenchants : hypertension, diabète, dyslipidémie, obésité, alcool, tabac, antécédents familiaux, froid, post-prandial, stress/psychisme</td>
+                            <td>Angor : examen cardiaque. Suspicion infarctus : diagnostic immédiat ! Parallèlement examen cardiaque + neurologique bref</td>
+                            <td>Angor : trinitrine sublinguale, ECG, enzymes cardiaques, coronarographie, ergométrie effort, Holter ECG, scintigraphie perfusion myocardique, TEP, scanner. Suspicion infarctus : monitoring, O₂, trinitrine, héparine, aspirine, voie veineuse + bilan sanguin (CRP, glycémie, hémogramme, troponine I et T, CK-MB), ECG (sus-décalage ST, nouvelles ondes Q), coronarographie, échographie, IRM rarement</td>
+                            <td><span class="highlight">MONA !!!!</span> (Morphine, O₂, Nitroglycérine, Aspirine). Angor stable : traitement facteurs risque, trinitrine (sublinguale), aspirine + β-bloquants éventuels + statine éventuelle. Angor instable : tests ischémie (ECG effort, scintigraphie myocardique...) > si positif > coronarographie + angioplastie élective ou pontage. STEMI : thrombolyse (streptokinase) ou coronarographie > angioplastie/pontage. NSTEMI : coronarographie > angioplastie/pontage</td>
+                            <td>Classification angor > CCS : 0 activité physique non limitée, 1 légère, 2 nette (déjà 1-2 étages), 3 effort léger ou repos, 4 tout effort ou repos. Classification insuffisance cardiaque > NYHA : I aucune limitation, II effort important, III effort léger, IV repos. Angor instable : angor s'aggrave ou tout nouvel angor. NSTEMI : pas sus-décalage ST, mais sous-décalage, modifications enzymatiques. STEMI : sus-décalage ST avec modifications enzymatiques (troponine) > infarctus myocarde classique</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="section" id="section-11">
+                <div class="section-header">
+                    <h2><span class="icon">🩸</span>11. Pathologies Vasculaires <span class="badge">2 pathologies</span></h2>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Pathologie</th>
+                            <th>Anamnèse</th>
+                            <th>Examen Physique</th>
+                            <th>Procédures/Examens</th>
+                            <th>Thérapie</th>
+                            <th>Commentaires</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Artériopathie oblitérante membres inférieurs</td>
+                            <td>Claudication intermittente/douleurs (mollets, cuisses), raccourcissement distance marche. Facteurs risque : hypertension, diabète, dyslipidémie, obésité, alcool, tabac, antécédents familiaux</td>
+                            <td>Inspection (trophicité, nécroses, gangrène, couleur), palpation (différence température, pouls, recoloration), auscultation, examen cardiaque</td>
+                            <td>Mesure artérielle/Doppler (flux sonore), écho-Doppler (flux coloré), IPS (index pression systolique), test Ratschow (jambes), test Allen (bras), angiographie éventuelle (intra-artérielle ou IRM/scanner), écho-Doppler carotidien éventuel</td>
+                            <td>Stades I-IIa : traitement facteurs risque, aspirine, clopidogrel, bonnes chaussures + entraînement marche. IIb-IV : angioplastie + stent (endovasculaire) ou pontage chirurgical, aspirine, clopidogrel</td>
+                            <td>Classification Leriche-Fontaine : I asymptomatique, IIa >200m, IIb <200m, III douleurs repos, IV nécrose/gangrène. Test Ratschow : patient active muscles mollets par mouvements rapides pieds en décubitus > s'asseoir rapidement + laisser pendre jambes > normalement reperfusion après 10-20s</td>
+                        </tr>
+                        <tr>
+                            <td>Varices</td>
+                            <td>Thrombose veineuse profonde ? Troubles circulatoires ? Hypertension, insuffisance veineuse, famille, station debout/assise prolongée. Facteurs risque : hypertension, diabète, dyslipidémie, obésité, alcool, tabac, antécédents familiaux</td>
+                            <td>Inspection : examiner debout ! Varices tronculaires, collatérales, veines réticulaires, télangiectasies (bleues ou rouges). Signes insuffisance veineuse chronique : eczéma stase, œdèmes, corona phlebectatica, hypodermite/pseudo-érysipèle, purpura stase, hyperpigmentation, dermato-lipo-fascio-sclérose, atrophie blanche, ulcère ou cicatrisé. Insuffisance système veineux profond. Signes syndrome post-thrombotique (mauvaise microcirculation), examen artériel (exclure problème artériel type AOMI), examen neurologique (polyneuropathie, diabète)</td>
+                            <td>Bilan sanguin (facteurs risque), écho-Doppler veineux/cartographie éventuellement avec Doppler couleur</td>
+                            <td>1. Prophylaxie : pompe musculaire/mouvement, surélévation, bas compression* classe I-II suffisant, douche froide 2. Traitement facteurs risque : perte poids, sport, arrêt tabac, traitement hypertension, réduire station debout/assise 3. Médicaments (retour veineux), daflon, aspirine, prostaglandines E 4. Chirurgie varices : crossectomie, stripping, mini-phlébectomie (veines collatérales + réticulaires), sclérothérapie/laser (télangiectasies)</td>
+                            <td>Veines réticulaires : <3mm, sous-cutanées, bleuâtres, réticulaires (esthétique). Télangiectasies : <1mm bleues, <0,4mm rouges. Crossectomie : si insuffisance 1ère valve aine où abouchement système veineux profond. Stripping : varices tronculaires. Ulcère jambe voir scénarios dermatologie</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="section" id="section-12">
+                <div class="section-header">
+                    <h2><span class="icon">🍽️</span>12. Pathologies Œsophago-Gastriques <span class="badge">2 pathologies</span></h2>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Pathologie</th>
+                            <th>Anamnèse</th>
+                            <th>Examen Physique</th>
+                            <th>Procédures/Examens</th>
+                            <th>Thérapie</th>
+                            <th>Commentaires</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Hernie hiatale</td>
+                            <td>Pyrosis, brûlures rétrosternales, brûlures gastriques, dysphagie, éructations, hypersialorrhée, sensation corps étranger, douleurs épigastriques. Facteurs déclenchants : obésité, vomissements, port charges lourdes, grossesse, traumatisme, congénital, iatrogène/chirurgie</td>
+                            <td>Abdomen, bouche/pharynx, laryngoscopie, examen cardiaque, examen pulmonaire</td>
+                            <td>Transit baryté (radiographie), endoscopie, pH-métrie (exclure/confirmer RGO)</td>
+                            <td>Attendre si pas symptômes, si RGO > IPP, si symptomatologie importante : chirurgie</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Pathologies œsophagiennes</td>
+                            <td>Pyrosis, brûlures rétrosternales, brûlures gastriques, dysphagie, éructations, hypersialorrhée, sensation corps étranger, douleurs, aggravation décubitus généralement, dyspnée éventuelle, hoquet, toux, enrouement, maux gorge, odynophagie, météorisme, flatulences, symptômes B. Facteurs déclenchants : obésité, vomissements, port charges/poussée/flexion/décubitus, effort/sport, grossesse, traumatisme, congénital, iatrogène/chirurgie, alimentation (graisses, alcool, café)</td>
+                            <td>Abdomen, bouche/pharynx, laryngoscopie, examen cardiaque, examen pulmonaire</td>
+                            <td>Endoscopie (biopsie éventuelle, prélèvement*), transit baryté, écho-endoscopie, scanner. Fonctionnel : pH-métrie (RGO), manométrie (motricité), mesure reflux biliaire (reflux duodénal), tests allergie (œsophagite éosinophile). *Œsophagite infectieuse</td>
+                            <td>Troubles motricité (achalasie, spasmes, casse-noisette, anneau A (musculaire), anneau Schatzki (muqueuse)) : RGO, trinitrine, antidépresseurs, toxine botulique, inhibiteurs calciques, myorelaxants, dilatation, myotomie. Sténoses : dilatation/ballonnet, stent, laser. RGO : traitement facteurs risque (graisses, alcool, café, nicotine, obésité), mesures conservatrices (petits repas, relever tête lit, décubitus latéral droit), IPP/ésoméprazole, anti-H2/ranitidine ou antacides/Rennie éventuels, rarement endoscopique ou chirurgie anti-reflux. Barrett : résection endoscopique ou chirurgicale. Tumeurs : chirurgie, palliatif éventuel. Diverticules (Zenker (pseudo-diverticule), traction (vrai diverticule)) : si symptomatique > section endoscopique, myotomie chirurgicale. Corps étranger : extraction endoscopique. Œsophagite : antibiotiques, antifongiques (champignon), antiviraux (CMV HIV, HSV si immunosuppression sinon pas traitement), antihistaminiques, corticoïdes inhalés à avaler (œsophagite éosinophile). Hémorragie : stabilisation hémodynamique, hémostase endoscopique > sclérothérapie, épinéphrine, électrocoagulation. Varices œsophagiennes : stabilisation, octréotide ou vasopressine, ligature ou sclérothérapie</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="section" id="section-13">
+                <div class="section-header">
+                    <h2><span class="icon">🚨</span>13. Abdomen Aigu <span class="badge">1 pathologie</span></h2>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Pathologie</th>
+                            <th>Anamnèse</th>
+                            <th>Examen Physique</th>
+                            <th>Procédures/Examens</th>
+                            <th>Thérapie</th>
+                            <th>Commentaires</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Abdomen aigu</td>
+                            <td>Douleurs abdominales aiguës, douleurs destruction, ventre planche, symptomatologie péritonéale (paroi abdominale sensible pression + vibrations). Questions : début (aigu ou insidieux), type (colique, sourd, continu), intensité, localisation, irradiation, aggravation, amélioration, signes accompagnement, fièvre, diarrhée, vomissements, alimentation, où ont commencé douleurs, modification, coliques, diffuses ou localisables, anamnèse gynécologique, ulcère, lithiase biliaire</td>
+                            <td>Inspection (agitation, position antalgique, coloration, respiration, expression, cicatrices, orifices herniaires), palpation (4 quadrants, douleurs percussion + décompression, météorisme, résistances, orifices herniaires, défense abdominale, points pression spécifiques appendice/vésicule biliaire, foie, rate, reins), auscultation, loges rénales, ganglions lymphatiques, cœur + poumons, toucher rectal + examen gynécologique, prise température</td>
+                            <td>Paramètres vitaux, voie veineuse + bilan biologique (hémogramme, CRP, leucocytes, électrolytes, amylase + lipase pancréatiques, bilirubine, phosphatases alcalines, γ-GT, créatinine, troponine, CK-MB), glycémie, test grossesse (femmes), examen cytobactériologique urines. Imagerie : échographie, ECG, radiographie sans préparation (debout ou décubitus latéral gauche), radiographie thorax (face debout), scanner, imagerie complémentaire*</td>
+                            <td>Mesures jusqu'à diagnostic clair/décision thérapeutique/chirurgie : O₂, analgésie, IPP (contre ulcère stress), expansion volémique, monitoring, jeûne, prophylaxie thromboembolique, sonde gastrique éventuelle, sonde vésicale éventuelle, antibiotiques éventuels. Thérapie : Abdomen sur-aigu : douleurs abdominales + choc > chirurgie immédiate car probablement grossesse extra-utérine/hémorragie/anévrisme. Abdomen aigu : douleurs abdominales + péritonite généralisée > chirurgie dans 6h (appendicite perforée, diverticulite, perforation côlon, colite AINS). Péritonite localisée (généralement cholécystite, appendicite + diverticulite) : traitement conservateur éventuel (analgésie, antibiotiques) + surveillance ou chirurgie (>6h possible)</td>
+                            <td>*Transit Gastrografin ou lavement côlon (suspicion trouble motricité, sténose/obstruction), scanner (pancréatite, anévrisme, liquide libre, lésions, fractures, tumeurs, abcès), angiographie (suspicion hémorragie, sténose, infarctus), endoscopie (suspicion ulcère, varices), laparoscopie (confirmation diagnostic + thérapie simultanée > appendicectomie, cholécystectomie). Douleur viscérale/organique : diffuse, sourde, souvent épigastrique, aggravée palpation, symptômes accompagnement (nausées, sueurs, agitation). Douleur pariétale/péritonite pariétale : bien localisée, aiguë, signes péritonéaux (défense, décompression). Diagnostics différentiels : infarctus myocarde, appendicite, diverticulite, cholécystite/lithiase vésiculaire, lithiase urinaire, iléus, gastro-entérite aiguë, pancréatite, annexite, torsion ovaire/testicule, grossesse extra-utérine, douleurs ovulation, maladie Crohn, rectocolite hémorragique, endométriose, rupture anévrisme aorte. Iléus : images miroir intestin grêle + gros intestin ou anses statiques. Perforation : air extérieur intestin (intestin grêle contient pratiquement pas air !)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="section" id="section-14">
+                <div class="section-header">
+                    <h2><span class="icon">🩺</span>14. Pathologies Gastro-Duodénales <span class="badge">2 pathologies</span></h2>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Pathologie</th>
+                            <th>Anamnèse</th>
+                            <th>Examen Physique</th>
+                            <th>Procédures/Examens</th>
+                            <th>Thérapie</th>
+                            <th>Commentaires</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Ulcère gastro-duodénal</td>
+                            <td>Douleurs épigastriques (milieu abdomen supérieur généralement), surtout à jeun + nocturnes, nausées, vomissements, chronique, prise alimentaire soulage, hématémèse éventuelle. Facteurs déclenchants : acidité, stress, tabac, alcool, médicaments/AINS, H. pylori</td>
+                            <td></td>
+                            <td>Gastro-duodénoscopie avec biopsies (exclusion tumeur maligne, précancérose), test H. pylori (test respiratoire ou recherche selles)</td>
+                            <td>Conservateur : arrêt tabac + réduction facteurs déclenchants, éradication H. pylori avec trithérapie, IPP/ésoméprazole. Chirurgical : si suspicion tumeur maligne ou complication (perforation, hémorragie), exérèse ou résection partielle ou vagotomie (diminue production acide)</td>
+                            <td>Diagnostic différentiel : perforation. Trithérapie : IPP + 2 antibiotiques 7 jours</td>
+                        </tr>
+                        <tr>
+                            <td>Hernie inguinale</td>
+                            <td>Douleurs persistantes région herniaire, arrêt matières éventuel, tuméfaction/bombement, aggravation effort/sport/poussée/toux, amélioration décubitus/repos. Diagnostic différentiel : lithiase rénale</td>
+                            <td>Palpation trans-scrotale orifice inguinal externe lors poussée ou toux (comparaison latérale), examen abdomen (inspection, palpation, auscultation). Hernie directe à pulpe doigt, indirecte à pointe doigt</td>
+                            <td>Échographie, diaphanoscopie si hernie scrotale</td>
+                            <td>Réduction chirurgicale + mise en place filet</td>
+                            <td>Évaluer orifice herniaire, sac herniaire + contenu herniaire. Hernie inguinale directe/médiale : pénètre médialement vaisseaux épigastriques par orifice inguinal externe paroi abdominale. Hernie inguinale indirecte/latérale : latéralement vaisseaux épigastriques, pénètre suivant canal inguinal obliquement paroi abdominale. Hernie scrotale : contenu herniaire migre jusqu'à bourse. Hernie fémorale : sac herniaire sort par lacune vasculaire médialement vaisseaux fémoraux sous ligament inguinal > plus bas que hernie inguinale</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="scroll-top" id="scrollTop">
+            ↑
+        </div>
+    </div>
+
+    <script>
+        // Search functionality with highlighting
+        const searchBox = document.getElementById('searchBox');
+        const tables = document.querySelectorAll('table');
+
+        function removeHighlights() {
+            document.querySelectorAll('.highlight').forEach(el => {
+                el.outerHTML = el.innerHTML;
+            });
+        }
+
+        searchBox.addEventListener('input', function() {
+            const searchTerm = this.value.toLowerCase();
+            removeHighlights();
+            
+            tables.forEach(table => {
+                const rows = table.querySelectorAll('tbody tr');
+                rows.forEach(row => {
+                    const text = row.textContent.toLowerCase();
+                    if (text.includes(searchTerm)) {
+                        row.style.display = '';
+                        if (searchTerm) {
+                            // Highlight search term
+                            row.querySelectorAll('td').forEach(cell => {
+                                const content = cell.innerHTML;
+                                const regex = new RegExp(`(${searchTerm})`, 'gi');
+                                cell.innerHTML = content.replace(regex, '<span class="highlight">$1</span>');
+                            });
+                        }
+                    } else {
+                        row.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Smooth scrolling for navigation
+        document.querySelectorAll('.nav-list a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Scroll to top button
+        const scrollTop = document.getElementById('scrollTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                scrollTop.classList.add('visible');
+            } else {
+                scrollTop.classList.remove('visible');
+            }
+        });
+
+        scrollTop.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Animate sections on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry, index) => {
+                if (entry.isIntersecting) {
+                    setTimeout(() => {
+                        entry.target.style.animationDelay = `${index * 0.1}s`;
+                    }, 100);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.section').forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>

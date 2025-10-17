@@ -1,0 +1,816 @@
+{
+  "title": "Lésion de la coiffe des rotateurs",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Monsieur B., 62 ans, retraité et ancien peintre en bâtiment, consulte pour une douleur chronique de l'épaule droite suite à une chute récente"
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Motif principal de consultation",
+          "binaryOnly": true,
+          "patientComment": "Douleur à l'épaule droite depuis la chute et difficultés dans les gestes quotidiens"
+        },
+        {
+          "id": "a2",
+          "text": "Caractérisation de la douleur",
+          "details": [
+            "Localisation [Épaule droite, postéro-supérieure]",
+            "Irradiation [Descend dans le bras]",
+            "Type [Douleur sourde, parfois aiguë lors des mouvements]",
+            "Intensité [7/10, pire la nuit]",
+            "Horaire [Nocturne, me réveille]"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Circonstances de survenue",
+          "details": [
+            "Traumatisme récent [Chute sur le bras droit il y a 3 semaines]",
+            "Mode d'installation [Douleur présente avant mais aggravée depuis la chute]",
+            "Évolution [Progressive avant la chute, brutalement pire après]"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Limitations fonctionnelles",
+          "details": [
+            "Élévation du bras [Impossible de lever le bras au-dessus de la tête]",
+            "Force [Faiblesse importante, lâche les objets]",
+            "Gestes quotidiens [Difficile de m'habiller, me peigner]",
+            "Position de sommeil [Ne peux plus dormir sur le côté droit]"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Facteurs aggravants et soulageants",
+          "details": [
+            "Aggravants [Mouvements d'élévation, porter des charges]",
+            "Soulageants [Repos, bras le long du corps]",
+            "Effet des antalgiques [Paracétamol soulage peu]"
+          ]
+        },
+        {
+          "id": "a6",
+          "text": "Antécédents professionnels",
+          "details": [
+            "Métier exercé [Peintre en bâtiment pendant 40 ans]",
+            "Mouvements répétitifs [Travail bras levés toute la journée]",
+            "Port de charges [Oui, échelles et matériel]",
+            "Retraite [Depuis 2 ans]"
+          ]
+        },
+        {
+          "id": "a7",
+          "text": "Antécédents médicaux",
+          "details": [
+            "Problèmes d'épaule antérieurs [Douleurs occasionnelles depuis plusieurs années]",
+            "Autres articulations [Lombalgies chroniques]",
+            "Diabète [Non]",
+            "Maladies rhumatismales [Non]"
+          ]
+        },
+        {
+          "id": "a8",
+          "text": "Traitements et allergies",
+          "details": [
+            "Médicaments actuels [Paracétamol occasionnel]",
+            "Traitements essayés [Anti-inflammatoires il y a 6 mois, peu efficaces]",
+            "Kinésithérapie antérieure [Non, jamais fait]",
+            "Allergies [Aucune connue]"
+          ]
+        },
+        {
+          "id": "a9",
+          "text": "Habitudes de vie",
+          "details": [
+            "Activités physiques actuelles [Jardinage, bricolage léger]",
+            "Sports pratiqués [Non, jamais été sportif]",
+            "Main dominante [Droitier]",
+            "Tabac [Ancien fumeur, arrêt il y a 10 ans]"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Inspection de l'épaule",
+          "details": [
+            "Asymétrie [Épaule droite légèrement abaissée]",
+            "Atrophie musculaire [Légère atrophie de la fosse sus-épineuse]",
+            "Déformation [Pas de déformation visible]",
+            "Signes inflammatoires [Pas de rougeur ni œdème]"
+          ]
+        },
+        {
+          "id": "e2",
+          "text": "Palpation",
+          "details": [
+            "Points douloureux [Douleur à la palpation du tubercule majeur]",
+            "Tendon du long biceps [Sensible dans la gouttière bicipitale]",
+            "Articulation acromio-claviculaire [Non douloureuse]",
+            "Contractures musculaires [Trapèze contracté]"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Mobilité passive",
+          "details": [
+            "Flexion [Complète mais douloureuse en fin d'amplitude]",
+            "Abduction [Complète]",
+            "Rotation externe [Conservée]",
+            "Rotation interne [Légèrement limitée]"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Mobilité active et arc douloureux",
+          "details": [
+            "Flexion active [Limitée à 90°]",
+            "Abduction active [Limitée à 70°]",
+            "Arc douloureux [Douleur entre 60° et 120° d'abduction]",
+            "Signe du salut [Difficile]"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Tests spécifiques de la coiffe",
+          "details": [
+            "Test de Jobe (empty can) [Positif - faiblesse et douleur]",
+            "Test du bras tombant (drop arm) [Positif - ne peut maintenir à 90°]",
+            "Test de Patte [Faiblesse en rotation externe]",
+            "Test du lift-off [Impossible à réaliser]"
+          ]
+        },
+        {
+          "id": "e6",
+          "text": "Tests complémentaires",
+          "details": [
+            "Test de Palm-up (biceps) [Douleur modérée]",
+            "Test de Neer (conflit) [Positif]",
+            "Test de Hawkins [Positif]",
+            "Force musculaire [3/5 en abduction, 3/5 en rotation externe]"
+          ]
+        },
+        {
+          "id": "e7",
+          "text": "Examen neurologique",
+          "details": [
+            "Sensibilité [Normale dans tout le membre]",
+            "Réflexes [Présents et symétriques]",
+            "Signes de compression nerveuse [Absents]"
+          ]
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic et explications",
+          "patientComment": "Vous présentez très probablement une rupture de la coiffe des rotateurs, aggravée par votre chute récente",
+          "ddSection": {
+            "title": "Diagnostics différentiels à considérer",
+            "categories": [
+              {
+                "name": "Diagnostic principal",
+                "items": [
+                  {
+                    "text": "Rupture de la coiffe des rotateurs (probable rupture complète)",
+                    "cause": "Arguments POUR:\n\t□ Antécédents professionnels à risque\n\t□ Aggravation brutale post-traumatique\n\t□ Test du bras tombant positif\n\t□ Faiblesse majeure en abduction\n\t□ Arc douloureux caractéristique",
+                    "test": "→ IRM ou échographie de l'épaule"
+                  }
+                ]
+              },
+              {
+                "name": "Autres pathologies à éliminer",
+                "items": [
+                  {
+                    "text": "Tendinopathie simple de la coiffe",
+                    "cause": "Arguments CONTRE:\n\t□ Faiblesse trop importante\n\t□ Test du bras tombant positif",
+                    "test": "→ Échographie montrerait tendon intact"
+                  },
+                  {
+                    "text": "Capsulite rétractile",
+                    "cause": "Arguments CONTRE:\n\t□ Mobilité passive conservée\n\t□ Pas de limitation en rotation externe passive",
+                    "test": "→ Arthrographie si doute"
+                  },
+                  {
+                    "text": "Arthrose gléno-humérale",
+                    "cause": "Arguments CONTRE:\n\t□ Mobilité passive conservée\n\t□ Aggravation brutale post-trauma",
+                    "test": "→ Radiographie standard"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Examens complémentaires",
+          "details": [
+            "Radiographie de l'épaule [Face, profil, défilé sous-acromial]",
+            "Échographie de l'épaule [Visualisation directe des tendons]",
+            "IRM si échographie non conclusive [Gold standard pour la coiffe]",
+            "Bilan pré-opératoire si chirurgie envisagée [NFS, coagulation]"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Traitement conservateur initial",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Traitement médicamenteux",
+                "items": [
+                  {
+                    "treatment": "AINS",
+                    "details": "Diclofénac 50mg x 2/jour",
+                    "duration": "7-10 jours avec protection gastrique"
+                  },
+                  {
+                    "treatment": "Antalgiques",
+                    "details": "Paracétamol 1g x 4/jour + tramadol si besoin",
+                    "duration": "Selon douleur"
+                  },
+                  {
+                    "treatment": "Infiltration sous-acromiale",
+                    "details": "Corticoïdes si échec AINS",
+                    "duration": "Maximum 2-3 infiltrations/an"
+                  }
+                ]
+              },
+              {
+                "title": "Traitement fonctionnel",
+                "items": [
+                  {
+                    "treatment": "Repos relatif",
+                    "details": "Éviter les mouvements douloureux",
+                    "duration": "2-3 semaines"
+                  },
+                  {
+                    "treatment": "Kinésithérapie",
+                    "details": "Renforcement progressif, proprioception",
+                    "duration": "3-6 mois minimum"
+                  },
+                  {
+                    "treatment": "Cryothérapie",
+                    "details": "Glace 15-20 min x 3-4/jour",
+                    "duration": "Phase aiguë"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m4",
+          "text": "Information sur la pathologie",
+          "patientComment": "Les tendons de votre épaule sont probablement déchirés, ce qui explique votre faiblesse et vos douleurs",
+          "details": [
+            "Mécanisme [Usure progressive + traumatisme récent]",
+            "Évolution naturelle [Peut s'aggraver sans traitement]",
+            "Pronostic [Variable selon l'étendue de la rupture]",
+            "Facteurs favorisants [Âge, mouvements répétitifs professionnels]"
+          ]
+        },
+        {
+          "id": "m5",
+          "text": "Indications chirurgicales",
+          "details": [
+            "Rupture complète chez patient actif [À discuter vu votre âge]",
+            "Échec du traitement conservateur [Après 3-6 mois]",
+            "Rupture traumatique récente [Dans votre cas, à évaluer]",
+            "Perte fonctionnelle majeure [Si handicap important persistant]"
+          ],
+          "redflagsSection": {
+            "title": "Critères d'orientation rapide",
+            "items": [
+              {
+                "text": "Rupture massive avec pseudoparalysie",
+                "description": "Consultation orthopédique urgente"
+              },
+              {
+                "text": "Atrophie musculaire progressive",
+                "description": "Risque de dégénérescence graisseuse irréversible"
+              },
+              {
+                "text": "Échec complet de la rééducation",
+                "description": "Réévaluation chirurgicale nécessaire"
+              }
+            ]
+          }
+        },
+        {
+          "id": "m6",
+          "text": "Conseils et adaptations",
+          "details": [
+            "Éviter les mouvements au-dessus de la tête [Temporairement]",
+            "Aménagement du domicile [Objets usuels à hauteur accessible]",
+            "Position de sommeil [Sur le dos ou côté sain]",
+            "Utilisation d'aides techniques [Enfile-chaussettes, pince de préhension]"
+          ]
+        },
+        {
+          "id": "m7",
+          "text": "Planification du suivi",
+          "details": [
+            "Imagerie dans les 2 semaines [Échographie ou IRM]",
+            "Début kinésithérapie [Dès que possible]",
+            "Réévaluation clinique [Dans 4-6 semaines]",
+            "Consultation orthopédique [Si rupture complète confirmée ou échec traitement]"
+          ]
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Clôture de la consultation",
+          "content": "Synthèse et plan de traitement",
+          "exemplesPhrases": [
+            "Nous allons débuter par un traitement médical avec anti-inflammatoires et kinésithérapie. L'imagerie nous confirmera l'étendue de la lésion.",
+            "Je vous revois dans un mois avec les résultats de l'échographie. Si la rééducation n'améliore pas suffisamment votre état, nous discuterons d'une consultation en orthopédie."
+          ]
+        },
+        {
+          "id": "c2",
+          "text": "Questions du patient",
+          "content": "[Est-ce que c'est une tendinite ?] [Est-ce que ça va guérir tout seul ?] [Est-ce que je vais pouvoir rebouger mon bras normalement ?] [Faut-il opérer ?]"
+        },
+        {
+          "id": "c3",
+          "text": "Réponses aux questions",
+          "exemplesPhrases": [
+            "C'est plus qu'une simple tendinite, il s'agit probablement d'une rupture partielle ou complète d'un tendon de l'épaule.",
+            "Sans traitement adapté, cela ne guérira pas spontanément. La kinésithérapie est essentielle pour stabiliser et renforcer votre épaule.",
+            "Avec un traitement bien conduit, beaucoup de patients récupèrent une fonction satisfaisante, même sans chirurgie.",
+            "La chirurgie sera discutée selon l'évolution avec la rééducation et l'importance de la rupture sur l'imagerie."
+          ]
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour le patient standardisé - Lésion de la coiffe des rotateurs",
+      "nom": "Monsieur B.",
+      "age": "62 ans",
+      "contexte": "Cabinet de médecine générale, consultation pour douleur chronique d'épaule aggravée après chute",
+      "motifConsultation": {
+        "plaintePrincipale": "Douleur à l'épaule droite et impossibilité de lever le bras depuis ma chute",
+        "autreChose": "Inquiet car ne peut plus faire ses activités habituelles"
+      },
+      "histoireActuelle": {
+        "symptomesPrincipaux": [
+          "Douleur épaule droite depuis plusieurs années",
+          "Aggravation brutale après chute il y a 3 semaines",
+          "Chute sur le bras tendu en glissant dans le jardin",
+          "Douleur nocturne qui réveille",
+          "Ne peut plus lever le bras pour se peigner ou s'habiller"
+        ],
+        "antecedentsProfessionnels": [
+          "Peintre en bâtiment pendant 40 ans",
+          "Travaillait constamment les bras levés",
+          "Portait des charges lourdes (échelles, pots de peinture)",
+          "Retraité depuis 2 ans",
+          "Continue le bricolage et jardinage"
+        ]
+      },
+      "simulation": {
+        "attitude": [
+          "Patient fatigué par les douleurs nocturnes",
+          "Inquiet pour son autonomie",
+          "Craint de ne plus pouvoir bricoler",
+          "Coopératif mais appréhende l'examen"
+        ],
+        "durantExamen": [
+          "Protège son épaule droite",
+          "Grimace lors des mouvements",
+          "Ne peut pas maintenir le bras levé",
+          "Signale immédiatement quand douloureux"
+        ]
+      },
+      "habitudes": {
+        "activites": "Jardinage, bricolage, entretien de la maison",
+        "sports": "N'a jamais été sportif",
+        "medicaments": "Paracétamol occasionnel, peu efficace",
+        "tabac": "Ancien fumeur, arrêt il y a 10 ans",
+        "alcool": "Un verre de vin aux repas"
+      },
+      "antecedents": {
+        "medicaux": "Lombalgies chroniques, HTA bien contrôlée",
+        "chirurgicaux": "Hernie inguinale opérée il y a 5 ans",
+        "familiaux": "Père arthrosique, mère diabétique"
+      },
+      "inquietudes": {
+        "principales": [
+          "Va-t-il retrouver l'usage normal de son bras ?",
+          "Pourra-t-il continuer ses activités de retraite ?",
+          "La chirurgie est-elle inévitable ?"
+        ],
+        "questions": [
+          "Est-ce que c'est grave docteur ?",
+          "Combien de temps va durer la rééducation ?",
+          "Est-ce que c'est à cause de mon ancien métier ?",
+          "À mon âge, est-ce que ça vaut le coup d'opérer ?"
+        ]
+      }
+    },
+    "informationsExpert": {
+      "titre": "Points clés pour l'évaluateur - Lésion de la coiffe des rotateurs",
+      "pointsCles": [
+        "Identifier les facteurs de risque professionnels (mouvements répétitifs)",
+        "Réaliser les tests spécifiques de la coiffe (Jobe, drop arm)",
+        "Différencier rupture complète et tendinopathie",
+        "Proposer une prise en charge conservatrice en première intention",
+        "Expliquer l'importance de la kinésithérapie",
+        "Savoir quand orienter vers la chirurgie"
+      ],
+      "pieges": [
+        "Ne pas rechercher le traumatisme récent",
+        "Oublier de tester la mobilité passive",
+        "Ne pas faire le test du bras tombant",
+        "Proposer la chirurgie trop rapidement",
+        "Négliger l'importance de la rééducation",
+        "Ne pas rechercher une atrophie musculaire"
+      ]
+    },
+    "theoriePratique": {
+      "titre": "Rappels théoriques - Coiffe des rotateurs",
+      "sections": [
+        {
+          "titre": "Anatomie de la coiffe",
+          "points": [
+            "4 muscles : supraspinatus, infraspinatus, subscapularis, teres minor",
+            "Supraspinatus : le plus souvent atteint (initiation abduction)",
+            "Infraspinatus et teres minor : rotation externe",
+            "Subscapularis : rotation interne"
+          ]
+        },
+        {
+          "titre": "Physiopathologie",
+          "points": [
+            "Conflit sous-acromial : compression répétée de la coiffe",
+            "Dégénérescence tendineuse liée à l'âge",
+            "Hypovascularisation de la zone critique (1cm de l'insertion)",
+            "Évolution : tendinopathie → rupture partielle → rupture complète"
+          ]
+        },
+        {
+          "titre": "Classification des ruptures",
+          "points": [
+            "Rupture partielle : < 50% de l'épaisseur du tendon",
+            "Rupture transfixiante : toute l'épaisseur sur une partie du tendon",
+            "Rupture complète rétractée : tout le tendon avec rétraction",
+            "Rupture massive : ≥ 2 tendons ou > 5cm"
+          ]
+        }
+      ],
+      "rappelsTherapeutiques": [
+        "Phase 1 (0-6 sem) : contrôle douleur, mobilisation passive douce",
+        "Phase 2 (6-12 sem) : récupération amplitudes, début renforcement",
+        "Phase 3 (3-6 mois) : renforcement progressif, proprioception",
+        "Infiltration : max 3/an, éviter si rupture complète jeune",
+        "Chirurgie : réparation arthroscopique ou ciel ouvert selon lésion"
+      ],
+      "examensComplementaires": [
+        "Radiographie : recherche calcifications, arthrose, acromion agressif",
+        "Échographie : sensibilité 95% pour ruptures complètes, opérateur-dépendant",
+        "IRM : gold standard, évalue trophicité musculaire et dégénérescence graisseuse",
+        "Arthro-scanner : si contre-indication IRM",
+        "EMG : si suspicion atteinte neurologique associée"
+      ]
+    },
+    "resume": {
+      "titre": "🦾 Lésions de la coiffe des rotateurs – Résumé ECOS",
+      "sections": [
+        {
+          "titre": "🔍 Anamnèse",
+          "subsections": [
+            {
+              "titre": "Symptômes principaux",
+              "points": [
+                "Douleur de l’épaule, souvent nocturne, réveillant le patient",
+                "Douleur lors des mouvements d’élévation ou d’abduction",
+                "Raideur ou faiblesse de l’épaule",
+                "Gêne fonctionnelle (habillage, coiffure, gestes au-dessus de la tête)"
+              ]
+            },
+            {
+              "titre": "Circonstances",
+              "points": [
+                "Évolution chronique (usure tendineuse, dégénérescence)",
+                "Ou traumatique (chute, effort violent, luxation)",
+                "Douleur progressive aggravée par certains mouvements"
+              ]
+            },
+            {
+              "titre": "Facteurs de risque",
+              "points": [
+                "Âge > 50 ans (lésions dégénératives)",
+                "Activité professionnelle ou sportive sollicitant l’épaule (mouvements répétés au-dessus de la tête)",
+                "ATCD d’épaule douloureuse ou de tendinopathie"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "👀 Examen clinique",
+          "subsections": [
+            {
+              "titre": "Inspection",
+              "points": [
+                "Atrophie musculaire possible (sus-épineux, sous-épineux)",
+                "Mobilité active limitée (déficit) contrastant avec une mobilité passive conservée"
+              ]
+            },
+            {
+              "titre": "Palpation",
+              "points": [
+                "Douleur à la palpation du trochiter ou du sillon bicipital"
+              ]
+            },
+            {
+              "titre": "Tests spécifiques",
+              "points": [
+                "Jobe (sus-épineux) : douleur ou faiblesse",
+                "Patte (infraspinatus) : rotation externe contrariée douloureuse",
+                "Lift-off (sous-scapulaire) : impossibilité de décoller la main du dos",
+                "Test de Palm-up (long biceps) : douleur en flexion contrariée",
+                "Arc douloureux entre 60° et 120° d’abduction"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "🧪 Examens diagnostiques",
+          "subsections": [
+            {
+              "titre": "Imagerie",
+              "points": [
+                "Radiographies de l’épaule : recherche d’anomalies osseuses (calcifications, pincement sous-acromial)",
+                "Échographie : exploration dynamique, détection de rupture tendineuse",
+                "IRM (référence) : bilan complet des tendons de la coiffe et des lésions associées"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "⚙️ Prise en charge",
+          "subsections": [
+            {
+              "titre": "Traitement médical",
+              "points": [
+                "Repos relatif, éviter gestes aggravants",
+                "Antalgiques ± AINS",
+                "Infiltrations cortisonées sous-acromiales en cas de douleurs rebelles",
+                "Rééducation (renforcement muscles péri-scapulaires, recentrage tête humérale)"
+              ]
+            },
+            {
+              "titre": "Traitement chirurgical",
+              "points": [
+                "Indiqué si rupture complète, douleur persistante ou perte fonctionnelle majeure",
+                "Réparation arthroscopique ou à ciel ouvert des tendons rompus",
+                "Prothèse inversée de l’épaule dans cas de coiffe non réparable avec arthropathie"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "✅ Points clés ECOS",
+          "points": [
+            "Douleur nocturne + douleur à l’élévation du bras = suspicion forte",
+            "Mobilité passive conservée = orientation vers atteinte tendineuse",
+            "Tests spécifiques (Jobe, Patte, Lift-off) = essentiels",
+            "IRM = examen de référence pour confirmer et cartographier la lésion",
+            "PEC initiale médicale, chirurgie si échec ou rupture complète"
+          ]
+        },
+        {
+          "titre": "📋 Check-list rapide ECOS",
+          "subsections": [
+            {
+              "titre": "Questions à poser",
+              "points": [
+                "Douleur nocturne ?",
+                "Gêne pour lever le bras, s’habiller, se coiffer ?",
+                "Début progressif ou suite à un traumatisme ?",
+                "ATCD sportifs ou professionnels sollicitant l’épaule ?",
+                "Perte de force ressentie ?"
+              ]
+            },
+            {
+              "titre": "Examens à faire",
+              "points": [
+                "Inspection musculaire (atrophie sus-épineux/sous-épineux)",
+                "Mobilité passive vs active",
+                "Tests : Jobe, Patte, Lift-off, Palm-up",
+                "Échographie ou IRM selon contexte"
+              ]
+            },
+            {
+              "titre": "PEC en 3 points",
+              "points": [
+                "Antalgiques, AINS, repos relatif + kinésithérapie",
+                "Infiltration cortisonée si douleurs rebelles",
+                "Chirurgie si rupture complète ou échec traitement médical"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "presentationPatient": {
+      "titre": "📑 Fiche ECOS – Cas : Douleur chronique épaule (Lésion de la coiffe des rotateurs)",
+      "sections": [
+        {
+          "titre": "🧩 Checklist mentale (présentation systématisée)",
+          "points": [
+            "Intro → âge, profession, motif (douleur chronique épaule aggravée post-chute)",
+            "Caractériser douleur → localisation (épaule droite), irradiation, intensité, type, horaire (nocturne)",
+            "Circonstances → chute récente, aggravation sur fond de douleurs chroniques",
+            "Limitations fonctionnelles → élévation impossible, perte de force, gestes quotidiens perturbés",
+            "Facteurs aggravants/soulageants → mouvements bras levés, charges, repos",
+            "ATCD pro → peintre bâtiment, gestes bras levés répétés",
+            "Examen clinique → inspection, palpation, mobilité active/passive, tests spécifiques coiffe (Jobe, drop arm, Patte, lift-off)",
+            "Résumé + hypothèse principale + diagnostics différentiels",
+            "Examens complémentaires → radio, écho, IRM (gold standard)",
+            "Prise en charge → antalgiques, AINS, kiné, infiltration, chirurgie si échec"
+          ],
+          "mnemo": {
+            "titre": "👉 Mnémo rapide : COIFFE",
+            "elements": [
+              "C = Chronicité + Chute aggravante",
+              "O = Ostéotendineux (sus-épineux ++)",
+              "I = Incapacité gestes quotidiens",
+              "F = Force diminuée",
+              "F = Flexion/abduction limitée",
+              "E = Examen : Jobe, drop arm, Patte, lift-off"
+            ]
+          }
+        },
+        {
+          "titre": "🎤 Version longue (≈2-3 min)",
+          "contenu": "Il s’agit de Monsieur B., un homme de 62 ans, retraité, ancien peintre en bâtiment, qui consulte pour une douleur chronique de l’épaule droite aggravée par une chute récente.\n\nIl rapporte des douleurs d’épaule depuis plusieurs années, surtout la nuit, mais elles se sont nettement aggravées depuis une chute sur son bras droit il y a 3 semaines. Depuis, il ne peut plus lever son bras au-dessus de la tête, se plaindre d’une faiblesse importante et de la perte d’objets, et ne parvient plus à s’habiller ni à se coiffer normalement. La douleur est sourde, parfois aiguë lors des mouvements, évaluée à 7/10, prédominante la nuit et le réveille régulièrement.\n\nSes antécédents sont marqués par une carrière de peintre en bâtiment, avec des mouvements répétés bras levés et port de charges lourdes pendant 40 ans. Pas de diabète ni de maladie rhumatismale, pas d’allergies connues. Il prend seulement du paracétamol qui le soulage peu.\n\nÀ l’examen, l’épaule droite apparaît légèrement abaissée, avec une atrophie de la fosse sus-épineuse. La palpation retrouve une douleur sur le tubercule majeur et dans la gouttière bicipitale. La mobilité passive est globalement conservée, mais la mobilité active est très limitée : flexion à 90°, abduction à 70°, avec un arc douloureux entre 60 et 120°. Le test de Jobe est positif avec douleur et faiblesse, le test du bras tombant est également positif, le test de Patte retrouve une faiblesse en rotation externe, et le lift-off est impossible. Les tests de conflit (Neer, Hawkins) sont positifs. Pas de déficit sensitif ni de signe neurologique.\n\nEn résumé, il s’agit d’un homme de 62 ans, avec douleur chronique épaule droite, aggravée brutalement après une chute, faiblesse et impotence fonctionnelle, tests de coiffe très positifs. Mon hypothèse principale est une rupture de la coiffe des rotateurs, probablement complète. Les diagnostics différentiels incluent une tendinopathie simple, une capsulite rétractile (mais mobilité passive conservée), et une arthrose gléno-humérale (mais absence de limitation passive).\n\nComme examens complémentaires, je demanderais une radiographie standard (face, profil, défilé), une échographie de l’épaule et, en cas de doute, une IRM qui est le gold standard. Selon le résultat, une discussion chirurgicale pourrait être envisagée.\n\nLa prise en charge initiale repose sur un traitement conservateur : antalgiques, AINS, repos relatif, kinésithérapie de renforcement, cryothérapie. Une infiltration sous-acromiale peut être proposée si douleur rebelle. En cas d’échec après 3-6 mois ou si perte fonctionnelle majeure, on discutera une réparation chirurgicale arthroscopique."
+        },
+        {
+          "titre": "⚡ Version express (SBAR, 30 sec)",
+          "contenu": "S (Situation) : M. B., 62 ans, ancien peintre, présente douleur chronique de l’épaule droite aggravée par une chute, impotence fonctionnelle marquée.\n\nB (Background) : Douleurs nocturnes anciennes, aggravation brutale post-traumatique, paracétamol inefficace. ATCD : travail bras levés répétés.\n\nA (Assessment) : Suspicion forte rupture coiffe des rotateurs (tests Jobe, drop arm, Patte, lift-off positifs). DD : tendinopathie simple, capsulite, arthrose.\n\nR (Recommendation) : Radio, écho ± IRM. PEC : antalgiques, AINS, kiné, infiltration. Chirurgie si rupture complète et gêne persistante."
+        },
+        {
+          "titre": "🎲 Touches ludiques / mnémos",
+          "subsections": [
+            {
+              "titre": "👉 Tests clés",
+              "points": [
+                "Jobe (empty can) : sus-épineux",
+                "Drop arm : rupture complète suspectée",
+                "Patte : rotation externe (infra/teres minor)",
+                "Lift-off : sous-scapulaire",
+                "Neer/Hawkins : conflit sous-acromial"
+              ]
+            },
+            {
+              "titre": "👉 Différencier rapidement",
+              "points": [
+                "Tendinopathie : douleur mais force conservée",
+                "Capsulite : limitation active ET passive",
+                "Arthrose gléno-humérale : mobilité passive limitée, radio anormale"
+              ]
+            },
+            {
+              "titre": "⚠️ Pièges ECOS",
+              "points": [
+                "Ne pas rechercher traumatisme déclenchant",
+                "Oublier comparaison mobilité active/passive",
+                "Ignorer atrophie musculaire",
+                "Proposer chirurgie d’emblée sans essai conservateur"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "❓ Questions probables de l'examinateur (avec réponses orales)",
+          "subsections": [
+            {
+              "titre": "1. Arguments pour et contre chaque hypothèse",
+              "questions": [
+                {
+                  "question": "Rupture de la coiffe des rotateurs",
+                  "reponse": {
+                    "pour": [
+                      "Douleur nocturne chronique",
+                      "Aggravation post-traumatique",
+                      "Faiblesse importante",
+                      "Jobe, drop arm, Patte, lift-off positifs",
+                      "Mobilité passive conservée"
+                    ],
+                    "contre": [
+                      "Pas de confirmation encore par imagerie"
+                    ]
+                  }
+                },
+                {
+                  "question": "Tendinopathie simple",
+                  "reponse": {
+                    "pour": [
+                      "Douleur épaule",
+                      "Arc douloureux"
+                    ],
+                    "contre": [
+                      "Faiblesse trop importante",
+                      "Drop arm positif"
+                    ]
+                  }
+                },
+                {
+                  "question": "Capsulite rétractile",
+                  "reponse": {
+                    "pour": [
+                      "Douleur épaule chronique"
+                    ],
+                    "contre": [
+                      "Mobilité passive conservée",
+                      "Aggravation post-traumatique atypique"
+                    ]
+                  }
+                },
+                {
+                  "question": "Arthrose gléno-humérale",
+                  "reponse": {
+                    "pour": [
+                      "Douleur épaule possible"
+                    ],
+                    "contre": [
+                      "Mobilité passive conservée",
+                      "Pas de déformation articulaire"
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "titre": "2. Examens complémentaires immédiats",
+              "questions": [
+                {
+                  "question": "Quels examens demanderiez-vous ?",
+                  "reponse": [
+                    "Radiographie standard (face, profil, défilé sous-acromial)",
+                    "Échographie de l’épaule",
+                    "IRM si doute ou bilan chirurgical",
+                    "Bilan pré-opératoire si chirurgie discutée"
+                  ]
+                }
+              ]
+            },
+            {
+              "titre": "3. Diagnostic définitif, traitement, suivi",
+              "questions": [
+                {
+                  "question": "Diagnostic",
+                  "reponse": "Rupture de la coiffe des rotateurs (probablement complète) confirmée à l’imagerie"
+                },
+                {
+                  "question": "Traitement",
+                  "reponse": {
+                    "immediat": [
+                      "Antalgiques (paracétamol ± tramadol)",
+                      "AINS (cures courtes)",
+                      "Repos relatif",
+                      "Cryothérapie",
+                      "Kinésithérapie progressive"
+                    ],
+                    "siEchec": [
+                      "Infiltrations cortisonées sous-acromiales",
+                      "Chirurgie de réparation si persistance handicap"
+                    ]
+                  }
+                },
+                {
+                  "question": "Suivi",
+                  "reponse": [
+                    "Réévaluation clinique 4-6 semaines",
+                    "Imagerie complémentaire selon évolution",
+                    "Suivi kiné sur plusieurs mois",
+                    "Consultation ortho si pas d’amélioration ou rupture massive"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

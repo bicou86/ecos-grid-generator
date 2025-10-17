@@ -1,0 +1,194 @@
+{
+  "title": "Thieme Thorax 8 - Hémoptysie - Homme de 65 ans",
+  "category": "Thieme Thorax",
+  "subcategory": "Hémoptysie",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Homme de 65 ans, M. Kenneth King, consultant pour crache du sang",
+    "vitals": {
+      "temperature": "37°C",
+      "fc": "90 bpm",
+      "ta": "120/80 mmHg",
+      "fr": "16/min"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Motif principal de consultation",
+          "binaryOnly": true,
+          "patientComment": "crache du sang"
+        },
+        {
+          "id": "a2",
+          "text": "Analyse de la plainte principale",
+          "details": [
+            "Début et évolution [Expectorations couleur rouille depuis 3 mois]",
+            "Localisation et irradiation de la douleur",
+            "Caractéristiques et intensité",
+            "Facteurs aggravants et soulageants",
+            "Symptômes associés"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Antécédents médicaux et chirurgicaux",
+          "details": [
+            "Dyspnée chronique",
+            "Toux productive jaune-vert",
+            "Douleur thoracique droite 4/10",
+            "Orthopnée (2 oreillers)",
+            "Perte 10 lb/6 mois"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Histoire sociale et habitudes de vie",
+          "details": [
+            "Ex-fumeur (2 pqt/j × 25 ans, arrêt il y a 5 ans)",
+            "Retraité industrie sidérurgique",
+            "Père décédé cancer poumon"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Signes vitaux",
+          "binaryOnly": true
+        },
+        {
+          "id": "e2",
+          "text": "Examen de la tête et du cou",
+          "details": [
+            "PERRLA",
+            "Examen ORL complet",
+            "Palpation thyroïde",
+            "Recherche ganglions lymphatiques"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Examen cardio-pulmonaire",
+          "details": [
+            "Auscultation cardiaque [S1 et S2 normaux]",
+            "Recherche de souffles ou galop",
+            "Auscultation pulmonaire bilatérale",
+            "Recherche de râles ou sibilances"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Examen abdominal si pertinent",
+          "details": []
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostics différentiels à évoquer",
+          "ddSection": {
+            "title": "Hypothèses diagnostiques",
+            "categories": [
+              {
+                "name": "Diagnostics principaux",
+                "items": [
+                  {
+                    "text": "BPCO",
+                    "cause": "Arguments POUR:\n\t□ Tabagisme lourd, dyspnée chronique, toux productive",
+                    "test": "→ Spirométrie, radiographie thoracique"
+                  },
+                  {
+                    "text": "Cancer du poumon",
+                    "cause": "Arguments POUR:\n\t□ Hémoptysie, perte poids, tabagisme, ATCD familial",
+                    "test": "→ CT thoracique, bronchoscopie"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Examens complémentaires pertinents",
+          "details": [
+            "NFS",
+            "Culture expectoration",
+            "BAAR",
+            "Test tuberculinique",
+            "Radiographie thoracique",
+            "CT thoracique"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Plan de prise en charge",
+          "details": [
+            "Investigations ambulatoires",
+            "Traitement symptomatique si approprié",
+            "Suivi après résultats"
+          ]
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour le patient standardisé",
+      "nom": "M. Kenneth King",
+      "age": "65 ans",
+      "contexte": "Cabinet de médecine générale",
+      "motifConsultation": {
+        "plaintePrincipale": "crache du sang",
+        "autreChose": "Expectorations couleur rouille depuis 3 mois. Hier, craché 1/2 tasse sang rouge vif."
+      },
+      "histoireActuelle": {
+        "symptomesPrincipaux": [
+          "Expectorations couleur rouille depuis 3 mois",
+          " Hier, craché 1/2 tasse sang rouge vif"
+        ],
+        "contextePsychosocial": [
+          "Ex-fumeur (2 pqt/j × 25 ans, arrêt il y a 5 ans)",
+          " Retraité industrie sidérurgique",
+          " Père décédé cancer poumon"
+        ]
+      },
+      "simulation": {
+        "attitude": [
+          "Inquiet",
+          "Fatigué"
+        ],
+        "durantExamen": [
+          "Sensibilité côté droit poitrine"
+        ]
+      },
+      "inquietudes": {
+        "principales": [
+          "Ai-je un cancer du poumon comme mon père?"
+        ]
+      }
+    },
+    "informationsExpert": {
+      "titre": "Informations pour l'expert",
+      "pointsCles": [
+        "Cas de Hémoptysie",
+        "Patient: Homme de 65 ans",
+        "Évaluation de l'anamnèse ciblée",
+        "Examen physique pertinent",
+        "Diagnostic différentiel approprié"
+      ],
+      "pieges": [
+        "Ne pas évoquer le cancer devant hémoptysie et tabagisme"
+      ]
+    }
+  }
+}

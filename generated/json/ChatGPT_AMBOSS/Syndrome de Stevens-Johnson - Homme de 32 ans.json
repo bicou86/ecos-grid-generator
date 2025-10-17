@@ -1,0 +1,721 @@
+{
+  "title": "Syndrome de Stevens-Johnson - Homme de 32 ans",
+  "context": {
+    "setting": "Service des urgences",
+    "patient": "Homme de 32 ans, électricien, se présentant avec une éruption cutanée rapidement progressive, des ulcères buccaux et de la fièvre",
+    "vitals": {
+      "temperature": "38.5°C"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Motif de consultation principal",
+          "binaryOnly": true,
+          "patientComment": "Ma bouche est pleine de plaies et ma peau brûle partout!"
+        },
+        {
+          "id": "a2",
+          "text": "Chronologie et progression des symptômes",
+          "details": [
+            "Début des symptômes [il y a 2 jours]",
+            "Fièvre [oui, depuis 2 jours]",
+            "Malaise général [oui]",
+            "Céphalées [oui]",
+            "Éruption cutanée rouge douloureuse [d'abord sur le thorax et le visage, maintenant sur le tronc et les bras]",
+            "Formation de bulles [oui, depuis ce matin]",
+            "Décollement cutané [oui, a commencé ce matin]"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Atteinte des muqueuses",
+          "details": [
+            "Ulcères buccaux [oui, douloureux]",
+            "Difficulté à avaler [oui]",
+            "Atteinte oculaire [yeux rouges, sensation de grains de sable, larmoiement]",
+            "Atteinte génitale [à évaluer]"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Historique médicamenteux récent",
+          "binaryOnly": true,
+          "patientComment": "J'ai commencé la lamotrigine il y a 10 jours pour mes nouvelles crises d'épilepsie"
+        },
+        {
+          "id": "a5",
+          "text": "Recherche d'autres médicaments à risque",
+          "details": [
+            "Antibiotiques sulfamidés [non]",
+            "AINS [non]",
+            "Allopurinol [non]",
+            "Autres anticonvulsivants [non, seulement lamotrigine]"
+          ]
+        },
+        {
+          "id": "a6",
+          "text": "Antécédents médicaux",
+          "details": [
+            "Épilepsie [nouveau diagnostic récent]",
+            "Allergies connues [aucune]",
+            "Éruptions cutanées antérieures similaires [jamais]"
+          ]
+        },
+        {
+          "id": "a7",
+          "text": "Infections récentes",
+          "details": [
+            "Mycoplasme [non]",
+            "Herpès simplex [non]",
+            "Autres infections [non]"
+          ]
+        },
+        {
+          "id": "a8",
+          "text": "Description de l'état cutané actuel",
+          "patientComment": "Macules sombres avec bulles et décollement cutané"
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Évaluation de l'état général",
+          "details": [
+            "État fébrile [38.5°C]",
+            "Signes de déshydratation",
+            "État hémodynamique"
+          ]
+        },
+        {
+          "id": "e2",
+          "text": "Examen cutané détaillé",
+          "details": [
+            "Distribution de l'éruption [thorax, visage, tronc, bras]",
+            "Type de lésions [macules érythémateuses confluentes, bulles]",
+            "Décollement épidermique [présent]",
+            "Signe de Nikolsky [à rechercher]",
+            "Pourcentage de surface corporelle atteinte [à estimer]"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Examen des muqueuses",
+          "details": [
+            "Cavité buccale [ulcères multiples]",
+            "Conjonctives [hyperhémie, sécrétions]",
+            "Muqueuse génitale [à examiner]"
+          ]
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Expliquer le diagnostic probable",
+          "patientComment": "Vous avez probablement une réaction grave appelée syndrome de Stevens-Johnson, qui provoque des bulles et un décollement de la peau et des muqueuses. Elle peut être déclenchée par certains médicaments, notamment celui que vous avez récemment commencé",
+          "ddSection": {
+            "title": "Diagnostics différentiels à considérer",
+            "categories": [
+              {
+                "name": "Réactions cutanées sévères médicamenteuses",
+                "items": [
+                  {
+                    "text": "Syndrome de Stevens-Johnson (SSJ)",
+                    "cause": "Arguments POUR:\n\t□ Décollement épidermique <10% de la surface corporelle\n\t□ Atteinte muqueuse (≥2 sites)\n\t□ Début 1-3 semaines après nouveau médicament\n\t□ Lamotrigine = agent causal fréquent",
+                    "test": "→ Biopsie cutanée: nécrose épidermique sur toute l'épaisseur"
+                  },
+                  {
+                    "text": "Nécrolyse épidermique toxique (NET)",
+                    "cause": "Arguments POUR:\n\t□ Décollement épidermique >30% de la surface corporelle\n\t□ Forme plus sévère du SSJ\n\t□ Même mécanisme physiopathologique",
+                    "test": "→ Biopsie cutanée similaire au SSJ"
+                  },
+                  {
+                    "text": "Chevauchement SSJ/NET",
+                    "cause": "Arguments POUR:\n\t□ Décollement épidermique 10-30%\n\t□ Forme intermédiaire",
+                    "test": "→ Diagnostic clinique"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Arrêt immédiat du médicament causal",
+          "binaryOnly": true,
+          "patientComment": "Nous devons arrêter immédiatement la lamotrigine"
+        },
+        {
+          "id": "m3",
+          "text": "Examens complémentaires urgents",
+          "details": [
+            "NFS [lymphopénie, neutropénie possibles]",
+            "Ionogramme sanguin [déséquilibres électrolytiques]",
+            "Fonction rénale [urée, créatinine augmentées possibles]",
+            "Bilan hépatique [transaminases élevées possibles]",
+            "Hémocultures [pour exclure une septicémie]",
+            "Cultures cutanées et urinaires [surveillance infectieuse]"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Prise en charge hospitalière urgente",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Admission en unité de soins intensifs ou unité des grands brûlés",
+                "items": [
+                  {
+                    "treatment": "Réanimation hydroélectrolytique",
+                    "details": "Remplacement des pertes liquidiennes importantes"
+                  },
+                  {
+                    "treatment": "Soins des plaies",
+                    "details": "Pansements stériles non-adhésifs"
+                  },
+                  {
+                    "treatment": "Analgésie",
+                    "details": "Contrôle de la douleur importante"
+                  },
+                  {
+                    "treatment": "Support nutritionnel",
+                    "details": "Besoins caloriques augmentés"
+                  },
+                  {
+                    "treatment": "Consultation ophtalmologique urgente",
+                    "details": "Prévention des séquelles oculaires"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m5",
+          "text": "Traitements spécifiques controversés",
+          "details": [
+            "Immunoglobulines IV (IgIV) [efficacité débattue]",
+            "Ciclosporine [parfois utilisée]",
+            "Éviter les corticoïdes systémiques [sauf cas précoces spécifiques]"
+          ]
+        },
+        {
+          "id": "m6",
+          "text": "Prévention et surveillance des complications",
+          "redflagsSection": {
+            "title": "Complications à surveiller",
+            "items": [
+              {
+                "text": "Septicémie",
+                "description": "Principale cause de mortalité"
+              },
+              {
+                "text": "Déshydratation sévère",
+                "description": "Pertes liquidiennes massives par la peau"
+              },
+              {
+                "text": "Insuffisance rénale aiguë",
+                "description": "Hypovolémie et toxicité médicamenteuse"
+              },
+              {
+                "text": "Atteinte respiratoire",
+                "description": "Décollement muqueux bronchique"
+              },
+              {
+                "text": "Séquelles oculaires",
+                "description": "Synéchies, kératite, cécité"
+              }
+            ]
+          }
+        },
+        {
+          "id": "m7",
+          "text": "Communication de l'urgence et de l'admission",
+          "binaryOnly": true,
+          "exemplesPhrases": [
+            "\"Votre état nécessite une hospitalisation immédiate en unité spécialisée pour surveiller et traiter cette réaction grave.\"",
+            "\"Sans traitement approprié, cette condition peut mettre votre vie en danger. Nous devons agir rapidement.\""
+          ]
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Répondre aux inquiétudes du patient",
+          "details": [
+            "Question: [Qu'est-ce qui arrive à ma peau?]",
+            "Réponse type: \"C'est une réaction grave à votre médicament antiépileptique. Votre système immunitaire attaque votre peau et vos muqueuses.\"",
+            "Question: [Est-ce dangereux?]",
+            "Réponse type: \"Cela peut être mortel sans traitement. Nous devons vous admettre d'urgence pour fournir des soins spécialisés et arrêter la cause.\"",
+            "Question: [Aurai-je des cicatrices?]",
+            "Réponse type: \"Il peut y avoir des cicatrices dans les cas graves, surtout au niveau des yeux ou des organes génitaux, mais notre objectif est d'arrêter rapidement la réaction et de prévenir les complications.\""
+          ]
+        },
+        {
+          "id": "c2",
+          "text": "Plan de suivi à long terme",
+          "details": [
+            "Documentation du médicament responsable dans le dossier médical",
+            "Inscription sur la liste des allergies",
+            "Suivi dermatologique post-récupération",
+            "Consultation allergologie/immunologie",
+            "Tests génétiques (HLA-B*1502) avant reprise d'anticonvulsivants chez certaines ethnies",
+            "Carte d'allergie médicamenteuse à porter en permanence"
+          ]
+        },
+        {
+          "id": "c3",
+          "text": "Annonce d’un plan d’action clair en fin d’entretien",
+          "content": "« Nous allons vous hospitaliser immédiatement dans une unité spécialisée pour surveiller votre état de près. Nous allons arrêter le médicament responsable, protéger votre peau, soulager la douleur et prévenir les complications. Vous serez vu par un ophtalmologue très rapidement pour vos yeux. Nous commencerons aussi les bilans sanguins et les soins de support dès votre arrivée. »"
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour le patient standardisé",
+      "nom": "M. Jacob Reed",
+      "age": "32 ans",
+      "profession": "Électricien",
+      "contexte": "Service des urgences",
+      "phraseOuverture": "Ma bouche est pleine de plaies et ma peau brûle partout!",
+      "histoireActuelle": {
+        "symptomesPrincipaux": [
+          "Depuis 2 jours: fièvre, malaise, maux de tête",
+          "Éruption cutanée rouge douloureuse sur le thorax et le visage",
+          "Extension maintenant au tronc et aux bras",
+          "Formation de bulles et décollement cutané depuis ce matin",
+          "Difficulté à avaler",
+          "Yeux douloureux"
+        ],
+        "medicationRecente": "A commencé la lamotrigine il y a 10 jours pour des crises d'épilepsie nouvellement diagnostiquées"
+      },
+      "antecedents": {
+        "medicaux": [
+          "Épilepsie (nouveau diagnostic)"
+        ],
+        "allergies": "Aucune allergie connue",
+        "eruptionsSimilaires": "Jamais eu d'éruption similaire auparavant"
+      },
+      "examenPhysique": {
+        "muqueuseBuccale": "Ulcères multiples",
+        "yeux": "Rouges, sensation de grains de sable, larmoiement",
+        "peau": "Macules sombres avec bulles et décollement cutané"
+      },
+      "simulation": {
+        "attitude": [
+          "Très anxieux et souffrant",
+          "Inquiet de l'apparence de sa peau",
+          "Effrayé par la rapidité de progression"
+        ],
+        "durantEntretien": [
+          "Montrez de la douleur en parlant (ulcères buccaux)",
+          "Exprimez votre inquiétude sur la gravité",
+          "Demandez si vous allez guérir complètement"
+        ]
+      },
+      "inquietudes": {
+        "principales": [
+          "Qu'est-ce qui arrive à ma peau?",
+          "Est-ce dangereux?",
+          "Aurai-je des cicatrices?",
+          "Pourrai-je retourner au travail?"
+        ]
+      }
+    },
+    "informationsExpert": {
+      "titre": "Informations pour l'expert évaluateur",
+      "pointsCles": [
+        "Reconnaissance rapide du syndrome de Stevens-Johnson",
+        "Identification du médicament causal (lamotrigine)",
+        "Arrêt immédiat du médicament responsable",
+        "Communication de l'urgence et nécessité d'admission",
+        "Explication claire du diagnostic et du pronostic au patient"
+      ],
+      "pieges": [
+        "Ne pas reconnaître la gravité de la situation",
+        "Retarder l'arrêt du médicament",
+        "Ne pas admettre en unité spécialisée",
+        "Prescrire des corticoïdes systémiques de routine",
+        "Oublier la consultation ophtalmologique urgente"
+      ],
+      "criteresDEvaluation": [
+        "Anamnèse médicamenteuse détaillée",
+        "Reconnaissance de l'atteinte muqueuse multiple",
+        "Arrêt immédiat de la lamotrigine",
+        "Organisation de l'admission urgente",
+        "Communication empathique sur la gravité"
+      ]
+    },
+    "theoriePratique": {
+      "titre": "Points théoriques et pratiques",
+      "sections": [
+        {
+          "titre": "Physiopathologie du SSJ",
+          "points": [
+            "Réaction d'hypersensibilité retardée de type IV",
+            "Apoptose kératinocytaire médiée par les lymphocytes T",
+            "Rôle des molécules Fas-FasL et granulysin",
+            "Prédisposition génétique (HLA-B*1502 pour carbamazépine chez les Asiatiques)"
+          ]
+        },
+        {
+          "titre": "Médicaments à haut risque",
+          "points": [
+            "Anticonvulsivants: lamotrigine, carbamazépine, phénytoïne",
+            "Antibiotiques: sulfamidés, pénicillines",
+            "AINS: oxicams",
+            "Allopurinol",
+            "Névirapine"
+          ]
+        },
+        {
+          "titre": "Score SCORTEN de gravité",
+          "points": [
+            "Âge >40 ans",
+            "FC >120/min",
+            "Cancer ou hémopathie maligne",
+            "Surface corporelle atteinte >10%",
+            "Urée >10 mmol/L",
+            "Bicarbonates <20 mmol/L",
+            "Glucose >14 mmol/L"
+          ]
+        }
+      ],
+      "rappelsTherapeutiques": [
+        "Arrêt immédiat et définitif du médicament causal",
+        "Soins de support en unité spécialisée (USI/grands brûlés)",
+        "IgIV 2-3 g/kg sur 3-5 jours (controversé)",
+        "Ciclosporine 3-5 mg/kg/j (option thérapeutique)",
+        "Éviter les corticoïdes systémiques (augmentent mortalité)",
+        "Soins oculaires précoces et intensifs"
+      ],
+      "examensComplementaires": [
+        "Biopsie cutanée: nécrose épidermique sur toute l'épaisseur, infiltrat lymphocytaire",
+        "NFS: lymphopénie, neutropénie, éosinophilie possible",
+        "Ionogramme: surveillance des déséquilibres",
+        "Fonction rénale: surveillance de l'insuffisance rénale aiguë",
+        "Bilan hépatique: cytolyse possible",
+        "Hémocultures: surveillance du risque septique"
+      ]
+    },
+    "resume": {
+      "titre": "⚠️ Syndrome de Stevens-Johnson – Résumé ECOS",
+      "sections": [
+        {
+          "titre": "🔍 Anamnèse",
+          "subsections": [
+            {
+              "titre": "Début et symptômes",
+              "points": [
+                "Début brutal avec fièvre élevée, malaise, myalgies",
+                "Prodromes pseudo-grippaux : toux, arthralgies",
+                "Survenue après prise médicamenteuse récente (ATB, antiépileptiques, AINS, allopurinol)"
+              ]
+            },
+            {
+              "titre": "Facteurs de risque",
+              "points": [
+                "Médicaments : sulfamides, anticonvulsivants, allopurinol, AINS",
+                "Infections (Mycoplasma pneumoniae, VIH)",
+                "Terrain génétique (HLA-B*1502 chez sujets asiatiques et carbamazépine)"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "👀 Examen clinique",
+          "subsections": [
+            {
+              "titre": "Signes cutanés et muqueux",
+              "points": [
+                "Érythème maculeux, rapidement confluant",
+                "Bulles flasques, décollement cutané (Nikolsky +)",
+                "Atteinte <10 % surface corporelle (SJS, si >30 % → TEN)",
+                "Atteinte muqueuse sévère : orale, conjonctivale, génitale"
+              ]
+            },
+            {
+              "titre": "Signes systémiques",
+              "points": [
+                "Fièvre, asthénie majeure",
+                "Déshydratation, risque de choc hypovolémique",
+                "Atteinte respiratoire : toux, dyspnée, atteinte bronchique"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "🧪 Examens diagnostiques",
+          "subsections": [
+            {
+              "titre": "Diagnostic clinique",
+              "points": [
+                "Éruption bulleuse + atteinte muqueuse après médicament",
+                "Score SCORTEN pour la sévérité"
+              ]
+            },
+            {
+              "titre": "Examens complémentaires",
+              "points": [
+                "Biopsie cutanée : nécrose kératinocytaire étendue",
+                "Bilan biologique : NFS, ionogramme, fonction rénale/hépatique",
+                "Prélèvements cutanés pour recherche surinfection"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "⚙️ Prise en charge",
+          "subsections": [
+            {
+              "titre": "Mesures générales",
+              "points": [
+                "Arrêt immédiat du médicament suspect",
+                "Hospitalisation en soins intensifs ou centre de brûlés",
+                "Surveillance hémodynamique et hydro-électrolytique",
+                "Précautions d’isolement, prévention infection nosocomiale"
+              ]
+            },
+            {
+              "titre": "Traitements spécifiques",
+              "points": [
+                "Soins locaux : antiseptiques doux, pansements stériles",
+                "Réhydratation IV, supplémentation électrolytique",
+                "Antalgiques et soins de confort",
+                "± Immunomodulation (corticoïdes, ciclosporine, IVIG selon gravité et protocoles)"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "✅ Points clés ECOS",
+          "points": [
+            "Éruption bulleuse + atteinte muqueuse = suspecter SJS/TEN",
+            "ATCD médicamenteux récent doit toujours être recherché",
+            "PEC = arrêt immédiat du médicament + soins intensifs",
+            "Complications : déshydratation, surinfection, atteinte respiratoire, séquelles oculaires",
+            "Urgence vitale → transfert en centre spécialisé"
+          ]
+        },
+        {
+          "titre": "📋 Check-list rapide ECOS",
+          "subsections": [
+            {
+              "titre": "Questions à poser",
+              "points": [
+                "Prise médicamenteuse récente (ATB, antiépileptiques, allopurinol, AINS) ?",
+                "Fièvre, malaise, signes pseudo-grippaux ?",
+                "Atteinte muqueuse (bouche, yeux, organes génitaux) ?",
+                "ATCD d’allergie médicamenteuse ?"
+              ]
+            },
+            {
+              "titre": "Examens à faire",
+              "points": [
+                "Constantes vitales (TA, FC, FR, SpO₂, T°)",
+                "Inspection cutanée (surface corporelle atteinte, bulles, nécrose)",
+                "Évaluation muqueuse (buccale, oculaire, génitale)",
+                "Bilan biologique complet (NFS, iono, créat, bilan hépatique)",
+                "Biopsie cutanée si doute"
+              ]
+            },
+            {
+              "titre": "PEC en 3 points",
+              "points": [
+                "Arrêt immédiat du médicament suspect",
+                "Hospitalisation urgente en soins intensifs/centre de brûlés",
+                "Réhydratation, soins cutanés, prévention infection"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "presentationPatient": {
+      "titre": "📑 Fiche ECOS – Cas : Syndrome de Stevens-Johnson (SSJ) déclenché par lamotrigine",
+      "sections": [
+        {
+          "titre": "🧩 Checklist mentale (présentation systématisée)",
+          "points": [
+            "Intro → âge, profession, motif (homme 32 ans, éruption cutanée douloureuse, bulles, fièvre, muqueuses atteintes)",
+            "Chronologie → début 2 jours, progression rapide, bulles et décollement cutané apparus ce matin",
+            "Symptômes associés → fièvre 38,5 °C, malaise, céphalées, douleur cutanée, ulcères buccaux, dysphagie, atteinte oculaire",
+            "ATCD médicaux → épilepsie récente",
+            "Traitement récent → lamotrigine (débutée il y a 10 jours, facteur causal probable)",
+            "Allergies connues → aucune",
+            "Examen cutané → macules sombres, bulles, décollement épidermique, atteinte muqueuse ≥2 sites, à quantifier (% surface corporelle)",
+            "Examens complémentaires → NFS, ionogramme, créatinine, bilan hépatique, hémocultures, biopsie cutanée si doute",
+            "Résumé + hypothèse principale : Syndrome de Stevens-Johnson ; DD : nécrolyse épidermique toxique (NET), chevauchement SSJ/NET, autres toxidermies sévères",
+            "Prise en charge → arrêt immédiat lamotrigine, hospitalisation urgente (USI/centre brûlés), réhydratation IV, pansements stériles, antalgiques, consultation ophtalmologique, surveillance complications (sepsis, IR, atteinte oculaire)"
+          ],
+          "mnemo": {
+            "titre": "👉 Mnémo rapide SJS = RED",
+            "elements": [
+              "R = Réaction médicamenteuse grave",
+              "E = Éruption bulleuse avec atteinte Épithéliums (peau + muqueuses)",
+              "D = Danger vital (urgence, hospitalisation spécialisée)"
+            ]
+          }
+        },
+        {
+          "titre": "🎤 Version longue (≈2-3 min)",
+          "contenu": "Il s’agit de M. Jacob Reed, un homme de 32 ans, électricien, qui se présente aux urgences pour une éruption cutanée douloureuse et rapidement progressive. Les symptômes ont débuté il y a 2 jours avec une fièvre à 38,5 °C, un malaise général et des céphalées. Hier sont apparues des lésions rouges douloureuses sur le thorax et le visage, qui se sont étendues aujourd’hui au tronc et aux bras. Ce matin, il a constaté l’apparition de bulles et d’un décollement cutané. \n\nLe patient rapporte aussi des ulcères buccaux douloureux avec difficulté à avaler, une atteinte oculaire avec yeux rouges, larmoiement et sensation de grains de sable. Une atteinte génitale est à rechercher. Il est très inquiet et décrit une sensation de brûlure cutanée intense.\n\nSes antécédents incluent une épilepsie récemment diagnostiquée. Il a débuté un traitement par lamotrigine il y a 10 jours. Pas d’allergies connues, pas d’autres médicaments à risque. Pas d’infection récente connue.\n\nÀ l’examen, on observe un état fébrile, lésion cutanée étendue faite de macules érythémateuses confluentes, bulles flasques avec décollement épidermique. Les muqueuses buccales sont couvertes d’ulcères, les conjonctives sont inflammatoires, la muqueuse génitale doit être examinée. La surface corporelle atteinte est à estimer et un signe de Nikolsky doit être recherché.\n\nEn résumé, il s’agit d’un homme jeune, épileptique, avec une éruption bulleuse douloureuse, décollement cutané <10 %, atteinte muqueuse multiple, survenue 10 jours après initiation lamotrigine, ce qui évoque un syndrome de Stevens-Johnson. Les diagnostics différentiels incluent la nécrolyse épidermique toxique (>30 % de surface atteinte), le chevauchement SSJ/NET (10-30 %), et d’autres toxidermies sévères.\n\nLa prise en charge est une urgence vitale. Elle repose sur l’arrêt immédiat du médicament causal, l’hospitalisation en soins intensifs ou centre de brûlés, une réanimation hydroélectrolytique, des pansements stériles non adhésifs, un traitement antalgique adapté, un support nutritionnel, et une consultation ophtalmologique urgente pour prévenir les séquelles. Un bilan biologique est nécessaire (NFS, ionogramme, créatinine, bilan hépatique, hémocultures) ainsi qu’un suivi rapproché des complications infectieuses, rénales, respiratoires et oculaires."
+        },
+        {
+          "titre": "⚡ Version express (SBAR, 30 sec)",
+          "contenu": "S (Situation) : M. Reed, 32 ans, présente depuis 2 jours une éruption bulleuse douloureuse avec atteinte muqueuse et fièvre.\n\nB (Background) : Épilepsie récente, lamotrigine débutée il y a 10 jours, pas d’allergies connues.\n\nA (Assessment) : Suspicion de syndrome de Stevens-Johnson (décollement cutané <10 %, atteinte muqueuse multiple). DD : NET, chevauchement SSJ/NET.\n\nR (Recommendation) : Arrêt immédiat lamotrigine, hospitalisation USI/centre brûlés, bilan biologique complet, soins de support (hydratation, pansements stériles, antalgiques), consultation ophtalmologique, surveillance complications."
+        },
+        {
+          "titre": "🎲 Touches ludiques / mnémos",
+          "subsections": [
+            {
+              "titre": "👉 SSJ vs NET",
+              "points": [
+                "SSJ : décollement <10 % surface corporelle",
+                "NET : >30 %",
+                "Chevauchement : 10-30 %"
+              ]
+            },
+            {
+              "titre": "👉 Médicaments à risque (LAMPS)",
+              "points": [
+                "L = Lamotrigine",
+                "A = Allopurinol",
+                "M = Mycophénolate et autres antiépileptiques (carbamazépine, phénytoïne)",
+                "P = Piroxicam (AINS oxicam)",
+                "S = Sulfamides"
+              ]
+            },
+            {
+              "titre": "👉 Complications à craindre",
+              "points": [
+                "Septicémie",
+                "Déshydratation sévère",
+                "Insuffisance rénale aiguë",
+                "Atteinte respiratoire (détresse, muqueuse bronchique)",
+                "Séquelles oculaires (kératite, synéchies, cécité)"
+              ]
+            },
+            {
+              "titre": "⚠️ Pièges ECOS",
+              "points": [
+                "Ne pas retarder l’arrêt du médicament causal",
+                "Ne pas sous-estimer la gravité → urgence vitale",
+                "Éviter prescription systématique de corticoïdes (risque ↑ mortalité)",
+                "Ne pas oublier l’examen oculaire et génital",
+                "Toujours expliquer clairement au patient la gravité et la nécessité d’une hospitalisation immédiate"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "❓ Questions probables de l'examinateur (avec réponses orales)",
+          "subsections": [
+            {
+              "titre": "1. Arguments pour et contre chaque hypothèse",
+              "questions": [
+                {
+                  "question": "Syndrome de Stevens-Johnson",
+                  "reponse": {
+                    "pour": [
+                      "Décollement cutané <10 %",
+                      "Atteinte muqueuse multiple (bouche, yeux, ± génital)",
+                      "Survenue 1-3 semaines après nouveau médicament",
+                      "Lamotrigine = agent causal fréquent"
+                    ],
+                    "contre": [
+                      "Atteinte >10 % → orienterait vers chevauchement ou NET"
+                    ]
+                  }
+                },
+                {
+                  "question": "Nécrolyse épidermique toxique (NET)",
+                  "reponse": {
+                    "pour": [
+                      "Même mécanisme, formes graves"
+                    ],
+                    "contre": [
+                      "Décollement <10 % donc moins probable"
+                    ]
+                  }
+                },
+                {
+                  "question": "Chevauchement SSJ/NET",
+                  "reponse": {
+                    "contre": [
+                      "Décollement <10 %",
+                      "Clinique plus compatible SSJ"
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "titre": "2. Examens complémentaires immédiats",
+              "questions": [
+                {
+                  "question": "Quels examens demanderiez-vous ?",
+                  "reponse": [
+                    "NFS (lymphopénie, neutropénie possibles)",
+                    "Ionogramme sanguin",
+                    "Créatinine, urée",
+                    "Bilan hépatique (transaminases)",
+                    "Hémocultures, cultures cutanées",
+                    "Biopsie cutanée si doute diagnostique"
+                  ]
+                }
+              ]
+            },
+            {
+              "titre": "3. Diagnostic définitif, traitement, suivi",
+              "questions": [
+                {
+                  "question": "Diagnostic",
+                  "reponse": "Syndrome de Stevens-Johnson déclenché par lamotrigine"
+                },
+                {
+                  "question": "Traitement",
+                  "reponse": {
+                    "immediat": [
+                      "Arrêt immédiat lamotrigine",
+                      "Hospitalisation USI/centre brûlés",
+                      "Réhydratation IV, pansements stériles, antalgiques",
+                      "Support nutritionnel, soins oculaires urgents"
+                    ],
+                    "specifique": [
+                      "Immunoglobulines IV ou ciclosporine selon centre",
+                      "Éviter corticoïdes systémiques de routine"
+                    ]
+                  }
+                },
+                {
+                  "question": "Suivi",
+                  "reponse": [
+                    "Surveillance complications (sepsis, déshydratation, IR, atteinte respiratoire, oculaire)",
+                    "Documenter allergie à la lamotrigine",
+                    "Suivi dermatologique et ophtalmologique",
+                    "Carte d’allergie médicamenteuse",
+                    "Éducation patient sur éviction définitive du médicament causal"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

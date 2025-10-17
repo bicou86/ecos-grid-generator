@@ -1,0 +1,214 @@
+{
+  "title": "Thieme Abdomen 21 - Urine foncée - Homme de 60 ans",
+  "category": "Thieme Abdomen",
+  "subcategory": "Urine foncée",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Homme de 60 ans, M. Adam Smith, consultant pour urine foncée",
+    "vitals": {
+      "temperature": "37°C",
+      "ta": "110/70 mmHg",
+      "fc": "90 bpm",
+      "fr": "18/min"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Motif principal de consultation",
+          "binaryOnly": true,
+          "patientComment": "urine foncée"
+        },
+        {
+          "id": "a2",
+          "text": "Analyse de la plainte principale (ABCDE)",
+          "details": [
+            "Apparition et durée [Hématurie intermittente depuis 3 mois]",
+            "Bilan (localisation, irradiation)",
+            "Caractère et qualité de la douleur",
+            "Degré d'intensité (échelle 1-10)",
+            "Éléments associés et facteurs modifiants"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Symptômes associés et antécédents",
+          "details": [
+            "Pas de douleur",
+            "Perte 10 lb/3 mois",
+            "Ex-fumeur (30 paquets-années)"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Histoire sociale et habitudes de vie",
+          "details": [
+            "Ingénieur retraité",
+            "Arrêt tabac il y a 5 ans",
+            "Alcool social",
+            "Marié"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Revue des systèmes",
+          "details": [
+            "Système urinaire",
+            "Symptômes constitutionnels"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Signes vitaux et apparence générale",
+          "binaryOnly": true
+        },
+        {
+          "id": "e2",
+          "text": "Examen de la tête et du cou",
+          "details": [
+            "Recherche pâleur, ictère",
+            "Examen ORL avec abaisse-langue",
+            "Palpation ganglions lymphatiques",
+            "Examen thyroïde"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Examen cardio-pulmonaire",
+          "details": [
+            "Auscultation cardiaque [S1 et S2 normaux]",
+            "Auscultation pulmonaire bilatérale"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Examen abdominal complet",
+          "details": [
+            "Inspection (cicatrices, distension)",
+            "Auscultation (bruits intestinaux)",
+            "Percussion (matité, tympanisme)",
+            "Palpation superficielle et profonde"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Examens spécifiques selon le cas",
+          "details": [
+            "Toucher rectal",
+            "Examen génital"
+          ]
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostics différentiels à évoquer",
+          "ddSection": {
+            "title": "Hypothèses diagnostiques",
+            "categories": [
+              {
+                "name": "Diagnostics prioritaires",
+                "items": [
+                  {
+                    "text": "Hyperplasie bénigne de la prostate",
+                    "cause": "Arguments POUR:\n\t□ Symptômes obstructifs, âge",
+                    "test": "→ Selon orientation clinique"
+                  },
+                  {
+                    "text": "Cancer de la prostate",
+                    "cause": "Arguments POUR:\n\t□ Selon présentation clinique",
+                    "test": "→ Selon orientation clinique"
+                  },
+                  {
+                    "text": "Cancer de la vessie",
+                    "cause": "Arguments POUR:\n\t□ Hématurie, tabagisme, âge",
+                    "test": "→ Cystoscopie, cytologie urinaire"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Examens complémentaires pertinents",
+          "details": [
+            "Toucher rectal",
+            "Examen génital",
+            "ECBU, PSA",
+            "US rénale et vésicale",
+            "CT abdomen",
+            "Cystoscopie"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Plan de prise en charge immédiate",
+          "details": [
+            "Investigations ambulatoires",
+            "Traitement symptomatique",
+            "Suivi après résultats"
+          ]
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour le patient standardisé",
+      "nom": "M. Adam Smith",
+      "age": "60 ans",
+      "contexte": "Cabinet de médecine générale",
+      "motifConsultation": {
+        "plaintePrincipale": "urine foncée",
+        "autreChose": "Hématurie intermittente depuis 3 mois. Jet faible, nycturie, urgences mictionnelles."
+      },
+      "histoireActuelle": {
+        "symptomesPrincipaux": [
+          "Hématurie intermittente depuis 3 mois",
+          " Jet faible, nycturie, urgences mictionnelles"
+        ],
+        "contextePsychosocial": [
+          "Ingénieur retraité",
+          " Arrêt tabac il y a 5 ans",
+          " Alcool social",
+          " Marié"
+        ]
+      },
+      "simulation": {
+        "attitude": [
+          "Coopératif"
+        ],
+        "durantExamen": []
+      },
+      "inquietudes": {
+        "principales": []
+      }
+    },
+    "informationsExpert": {
+      "titre": "Informations pour l'expert",
+      "pointsCles": [
+        "Cas de Urine foncée",
+        "Patient: Homme de 60 ans",
+        "Anamnèse complète avec ABCDE",
+        "Examen abdominal détaillé",
+        "Diagnostic différentiel approprié"
+      ],
+      "pieges": [
+        "Minimiser hématurie",
+        "Ne pas faire cystoscopie"
+      ]
+    }
+  }
+}

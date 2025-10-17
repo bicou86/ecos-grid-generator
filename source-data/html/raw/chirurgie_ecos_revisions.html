@@ -1,0 +1,1145 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🏥 Guide Chirurgie ECOS - Révisions Interactives</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #4a90e2, #7b68ee);
+            color: white;
+            padding: 30px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            bottom: -50%;
+            left: -50%;
+            background: linear-gradient(45deg, transparent, rgba(255,255,255,0.1), transparent);
+            transform: rotate(45deg);
+            animation: shimmer 3s infinite;
+        }
+
+        @keyframes shimmer {
+            0% { transform: translateX(-100%) rotate(45deg); }
+            100% { transform: translateX(100%) rotate(45deg); }
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+            position: relative;
+            z-index: 1;
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            opacity: 0.95;
+            position: relative;
+            z-index: 1;
+        }
+
+        .controls {
+            background: #f8f9fa;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            align-items: center;
+            border-bottom: 3px solid #e9ecef;
+        }
+
+        .search-box {
+            flex: 1;
+            min-width: 300px;
+            position: relative;
+        }
+
+        .search-box input {
+            width: 100%;
+            padding: 12px 45px 12px 15px;
+            border: 2px solid #e0e0e0;
+            border-radius: 25px;
+            font-size: 16px;
+            transition: all 0.3s;
+        }
+
+        .search-box input:focus {
+            outline: none;
+            border-color: #7b68ee;
+            box-shadow: 0 0 0 3px rgba(123, 104, 238, 0.1);
+        }
+
+        .search-icon {
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #999;
+        }
+
+        .filter-buttons {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            padding: 10px 20px;
+            border: 2px solid #e0e0e0;
+            background: white;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .filter-btn:hover {
+            background: #f8f9fa;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .filter-btn.active {
+            background: linear-gradient(135deg, #7b68ee, #9b59b6);
+            color: white;
+            border-color: transparent;
+        }
+
+        .mode-toggle {
+            display: flex;
+            gap: 10px;
+            margin-left: auto;
+        }
+
+        .mode-btn {
+            padding: 10px 20px;
+            border: none;
+            background: linear-gradient(135deg, #00d2ff, #3a7bd5);
+            color: white;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-weight: 600;
+        }
+
+        .mode-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 20px rgba(58, 123, 213, 0.4);
+        }
+
+        .mode-btn.quiz-mode {
+            background: linear-gradient(135deg, #f093fb, #f5576c);
+        }
+
+        .stats {
+            background: #fff3cd;
+            padding: 15px;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .stat-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .stat-icon {
+            font-size: 24px;
+        }
+
+        .stat-value {
+            font-size: 20px;
+            font-weight: bold;
+            color: #6c5ce7;
+        }
+
+        .content {
+            padding: 30px;
+        }
+
+        .section {
+            margin-bottom: 30px;
+            background: #f8f9fa;
+            border-radius: 15px;
+            overflow: hidden;
+            transition: all 0.3s;
+            border: 2px solid transparent;
+        }
+
+        .section:hover {
+            border-color: #7b68ee;
+            box-shadow: 0 10px 30px rgba(123, 104, 238, 0.1);
+        }
+
+        .section-header {
+            background: linear-gradient(135deg, #6c5ce7, #a29bfe);
+            color: white;
+            padding: 20px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: all 0.3s;
+        }
+
+        .section-header:hover {
+            background: linear-gradient(135deg, #5f3dc4, #9775fa);
+        }
+
+        .section-title {
+            font-size: 1.4em;
+            font-weight: 600;
+        }
+
+        .section-count {
+            background: rgba(255,255,255,0.2);
+            padding: 5px 15px;
+            border-radius: 15px;
+            font-weight: 500;
+        }
+
+        .section-content {
+            padding: 0;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease;
+        }
+
+        .section.active .section-content {
+            max-height: 5000px;
+            padding: 20px;
+        }
+
+        .pathology-card {
+            background: white;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            transition: all 0.3s;
+        }
+
+        .pathology-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+
+        .pathology-header {
+            background: linear-gradient(135deg, #48c9b0, #45b7aa);
+            color: white;
+            padding: 15px 20px;
+            font-size: 1.2em;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .pathology-content {
+            padding: 20px;
+            display: none;
+        }
+
+        .pathology-card.expanded .pathology-content {
+            display: block;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 15px;
+        }
+
+        .info-item {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 15px;
+            border-left: 4px solid #7b68ee;
+        }
+
+        .info-label {
+            font-weight: 600;
+            color: #6c5ce7;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .info-text {
+            color: #495057;
+            line-height: 1.6;
+        }
+
+        .quiz-mode-content {
+            display: none;
+            padding: 30px;
+        }
+
+        .quiz-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+
+        .quiz-question {
+            font-size: 1.3em;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            padding: 20px;
+            background: #ecf0f1;
+            border-radius: 10px;
+            border-left: 5px solid #3498db;
+        }
+
+        .quiz-options {
+            display: grid;
+            gap: 15px;
+        }
+
+        .quiz-option {
+            padding: 15px 20px;
+            background: #f8f9fa;
+            border: 2px solid #dee2e6;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .quiz-option:hover {
+            background: #e3f2fd;
+            border-color: #2196f3;
+            transform: translateX(5px);
+        }
+
+        .quiz-option.correct {
+            background: #d4edda;
+            border-color: #28a745;
+            animation: correctPulse 0.5s;
+        }
+
+        .quiz-option.incorrect {
+            background: #f8d7da;
+            border-color: #dc3545;
+            animation: shake 0.5s;
+        }
+
+        @keyframes correctPulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            25% { transform: translateX(-5px); }
+            75% { transform: translateX(5px); }
+        }
+
+        .expand-icon {
+            transition: transform 0.3s;
+        }
+
+        .pathology-card.expanded .expand-icon {
+            transform: rotate(180deg);
+        }
+
+        .highlight {
+            background-color: #fff3cd;
+            padding: 2px 4px;
+            border-radius: 3px;
+            font-weight: 600;
+        }
+
+        .floating-btn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            font-size: 24px;
+            cursor: pointer;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            transition: all 0.3s;
+            z-index: 1000;
+        }
+
+        .floating-btn:hover {
+            transform: scale(1.1) rotate(90deg);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+        }
+
+        .progress-bar {
+            height: 5px;
+            background: #e9ecef;
+            border-radius: 5px;
+            overflow: hidden;
+            margin: 20px 0;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            width: 0%;
+            transition: width 0.5s ease;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                border-radius: 0;
+            }
+            
+            h1 {
+                font-size: 1.8em;
+            }
+            
+            .controls {
+                flex-direction: column;
+            }
+            
+            .search-box {
+                width: 100%;
+            }
+            
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media print {
+            body {
+                background: white;
+            }
+            
+            .controls, .floating-btn, .mode-toggle {
+                display: none;
+            }
+            
+            .section-content {
+                max-height: none !important;
+                padding: 20px !important;
+            }
+            
+            .pathology-content {
+                display: block !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🏥 Guide Chirurgie ECOS</h1>
+            <p class="subtitle">Révisions Interactives - Terminologie Française</p>
+        </div>
+
+        <div class="controls">
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="🔍 Rechercher une pathologie, un symptôme, un traitement...">
+                <span class="search-icon">🔎</span>
+            </div>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Tout</button>
+                <button class="filter-btn" data-filter="urgences">Urgences</button>
+                <button class="filter-btn" data-filter="digestif">Digestif</button>
+                <button class="filter-btn" data-filter="vasculaire">Vasculaire</button>
+                <button class="filter-btn" data-filter="trauma">Trauma</button>
+            </div>
+            <div class="mode-toggle">
+                <button class="mode-btn" id="studyBtn">📚 Mode Étude</button>
+                <button class="mode-btn quiz-mode" id="quizBtn">🎯 Mode Quiz</button>
+            </div>
+        </div>
+
+        <div class="stats">
+            <div class="stat-item">
+                <span class="stat-icon">📋</span>
+                <div>
+                    <div class="stat-value" id="totalPathologies">0</div>
+                    <div>Pathologies</div>
+                </div>
+            </div>
+            <div class="stat-item">
+                <span class="stat-icon">✅</span>
+                <div>
+                    <div class="stat-value" id="studiedCount">0</div>
+                    <div>Étudiées</div>
+                </div>
+            </div>
+            <div class="stat-item">
+                <span class="stat-icon">📊</span>
+                <div>
+                    <div class="stat-value" id="progressPercent">0%</div>
+                    <div>Progression</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="progress-bar">
+            <div class="progress-fill" id="progressBar"></div>
+        </div>
+
+        <div class="content" id="studyContent">
+            <!-- Les sections seront générées par JavaScript -->
+        </div>
+
+        <div class="quiz-mode-content" id="quizContent">
+            <div class="quiz-card">
+                <h2>🎯 Mode Quiz - Test tes connaissances!</h2>
+                <p>Clique sur "Commencer le Quiz" pour tester tes connaissances en chirurgie ECOS.</p>
+                <button class="mode-btn" onclick="startQuiz()">Commencer le Quiz</button>
+            </div>
+        </div>
+    </div>
+
+    <button class="floating-btn" onclick="scrollToTop()">⬆️</button>
+
+    <script>
+        // Données du guide chirurgie ECOS
+        const chirurgieData = {
+            "title": "Guide Chirurgie ECOS - Terminologie Française",
+            "sections": [
+                {
+                    "title": "1. Traumatologie et Urgences",
+                    "category": "urgences",
+                    "data": [
+                        {
+                            "Pathologie": "Soins de plaie",
+                            "Anamnèse": "Morsure ? Tétanos ?",
+                            "Examen Physique": "Inspection, motricité, sensibilité, circulation",
+                            "Procédures/Examens": "Vaccination antitétanique (si doute), éventuellement rage, soins de plaie : anesthésie locale possible, désinfection/nettoyage + retirer corps étrangers, débridement/irrigation, suture (monofilament, non résorbable)",
+                            "Thérapie": "Suture seulement si plaie <8h ! >8h > soins ouverts",
+                            "Commentaires": "Contre-indications suture : morsure, plaie infectée, objets souillés (couteau de boucher)"
+                        },
+                        {
+                            "Pathologie": "Fracture",
+                            "Anamnèse": "Mécanisme accidentel",
+                            "Examen Physique": "Inspection, motricité, sensibilité, circulation",
+                            "Procédures/Examens": "Échographie (tendons, ligaments), radiographie, scanner (si face/crâne/bassin)",
+                            "Thérapie": "Selon fracture : conservateur (plâtre, attelle) ou chirurgical (ostéosynthèse)",
+                            "Commentaires": ""
+                        },
+                        {
+                            "Pathologie": "Bilan préopératoire",
+                            "Anamnèse": "Explication déroulement, information/consentement chirurgical, questions/anxiétés. Récemment ou actuellement malade ? Assurance maladie",
+                            "Examen Physique": "Examen interniste : cœur, poumons, abdomen, reins, neurologique, ORL éventuellement, ganglions lymphatiques",
+                            "Procédures/Examens": "Bilan biologique (TP, hématologie, CRP, leucocytes, créatinine + selon intervention), examen cytobactériologique urines, ECG, radiographie thorax, examens spécialisés (ex : écho-Doppler veineux pour pontage aorto-coronaire), anesthésie (consultation prémédication), chirurgien éventuellement",
+                            "Thérapie": "",
+                            "Commentaires": ""
+                        }
+                    ]
+                },
+                {
+                    "title": "2. Pathologies Thyroïdiennes",
+                    "category": "endocrine",
+                    "data": [
+                        {
+                            "Pathologie": "Pathologie thyroïdienne",
+                            "Anamnèse": "Nodules ? Signes hyper- et hypothyroïdie, douleurs, troubles déglutition, enrouement, sensation corps étranger, fièvre, symptômes B, médicaments",
+                            "Examen Physique": "Examen interniste, palpation thyroïde + déglutition à vide, cou, ganglions lymphatiques, yeux (exophtalmie)",
+                            "Procédures/Examens": "Bilan biologique (CRP, leucocytes, TSH, fT3/4, anticorps), échographie (kyste ?), scintigraphie (si nodule >1cm et TSH <0,6 > froid ou chaud), cytoponction (nodule hyperplasique, autonomie ou néoplasie ou inflammation)",
+                            "Thérapie": "Kyste : chirurgie éventuelle ou drainage ou surveillance. Autonomie : analogue Basedow. Hashimoto : hormonothérapie substitutive. Basedow : antithyroïdiens de synthèse, iodothérapie, rarement chirurgie. De Quervain : analgésie. Néoplasie carcinome papillaire thyroïdien : hémi-thyroïdectomie, si néoplasie folliculaire > examen extemporané puis hémi- (adénome folliculaire) ou thyroïdectomie totale",
+                            "Commentaires": "Si échographie évoque kyste > cytoponction. Si échographie + biologie évoquent autonomie ou thyroïdite (Hashimoto/Basedow) > thérapie. Si suspicion néoplasie > scintigraphie + cytoponction. Pour tumeurs thyroïdiennes bénignes (nodule hyperplasique, thyroïdite auto-immune, kyste, adénome folliculaire...), surveillance évolutive possible"
+                        }
+                    ]
+                },
+                {
+                    "title": "3. Pathologies Digestives",
+                    "category": "digestif",
+                    "data": [
+                        {
+                            "Pathologie": "Lithiase vésiculaire/Cholédocholithiase",
+                            "Anamnèse": "Coliques (épigastriques, irradiation épaule droite + éventuellement en ceinture), fièvre éventuelle. Facteurs déclenchants alimentaires, 6 F (female, blonde, forty, fat, fertile...)",
+                            "Examen Physique": "Inspection, auscultation, palpation : signe de Murphy, signe de Courvoisier, défense abdominale",
+                            "Procédures/Examens": "Bilan biologique : leucocytes, CRP, bilirubine, ALAT, ASAT, γ-GT, phosphatases alcalines. Échographie abdomen supérieur, radiographie abdomen. Si calculs voies biliaires : CPRE (diagnostic + thérapeutique simultanés) ou cholangio-IRM (diagnostic seul)",
+                            "Thérapie": "Lithiase vésiculaire : cholécystectomie laparoscopique, rarement chirurgie ouverte. Mais : thérapie seulement si calculs symptomatiques ! Calcul dans voie biliaire : toujours traitement > CPRE ou chirurgie",
+                            "Commentaires": "Diagnostic différentiel : cholécystite aiguë (inflammation par calcul généralement > cholécystectomie en urgence). Murphy : patient doit inspirer profondément > palper sous rebord costal droit > douleur si cholécystite. Courvoisier : vésicule palpable tendue-élastique (souvent tumeur, aussi calcul)"
+                        },
+                        {
+                            "Pathologie": "Lithiase rénale",
+                            "Anamnèse": "Colique néphrétique (irradiation aine), fièvre éventuelle, hématurie éventuelle. Facteurs déclenchants : déshydratation, alimentation",
+                            "Examen Physique": "Examen abdominal (inspection, auscultation, palpation, attention particulière loges rénales, toucher rectal), examen cytobactériologique urines (hématurie, sédiment)",
+                            "Procédures/Examens": "Échographie (calcul/ombre acoustique, bassinet dilaté), scanner, bilan biologique éventuel",
+                            "Thérapie": "Petits calculs (<6mm) : expectative. Dissolution médicamenteuse (certains types calculs). Lithotritie extracorporelle (>6mm), aussi endoscopique ou par incision cutanée",
+                            "Commentaires": ""
+                        },
+                        {
+                            "Pathologie": "Pancréatite aiguë",
+                            "Anamnèse": "Douleurs soudaines très violentes, continues, intenses, en ceinture diffuses parfois, nausées, vomissements, météorisme, fièvre, signes choc, érythème facial. Facteurs déclenchants : alcool, lithiase biliaire, médicaments",
+                            "Examen Physique": "Abdomen (météorisme, ascite éventuelle, tendu-élastique, douleurs pression diffuses, péritonite éventuelle, signe de Cullen), aine, loges rénales",
+                            "Procédures/Examens": "Paramètres vitaux, voie veineuse périphérique. Bilan biologique (amylase, lipase, élastase, CRP, leucocytes, LDH, bilan hépatique, hémogramme, créatinine), examen urines (lipase élevée), échographie, radiographie abdomen/thorax, scanner, cholangio-IRM/CPRE (si suspicion origine biliaire), cytoponction éventuelle",
+                            "Thérapie": "Conservateur : réanimation > O₂, analgésie, IPP (contre ulcère stress), expansion volémique, monitoring, jeûne, prophylaxie thromboembolique, sonde gastrique, sonde vésicale, antibiotiques. Chirurgie/intervention : CPRE si obstruction, cholécystectomie si pancréatite biliaire, nécrosectomie si nécroses",
+                            "Commentaires": "Signe de Cullen : taches bleu-verdâtres périombilicales"
+                        },
+                        {
+                            "Pathologie": "Diverticulite",
+                            "Anamnèse": "Douleurs abdomen inférieur gauche (rarement médian), par poussées, progressives",
+                            "Examen Physique": "Examiner abdomen (inspection, palpation 4 quadrants > douleurs pression + défense éventuelle, rate, foie, rein, auscultation), loges rénales, ganglions lymphatiques",
+                            "Procédures/Examens": "Diagnostic clinique. Bilan biologique : leucocytes, CRP, hématocrite. Imagerie : radiographie abdomen sans préparation (debout), transit gastro-intestinal (Gastrografin) ou lavement (côlon), scanner abdominal éventuel, coloscopie éventuelle, endoscopie proximale éventuelle, radiographie thorax éventuelle",
+                            "Thérapie": "Conservateur : fibres alimentaires, drainage si abcès. Chirurgical : résection diverticulaire laparoscopique ou ouverte, résection sigmoïdienne éventuelle (si localisé là + multiple, laparoscopique)",
+                            "Commentaires": "Généralement diverticulite sigmoïdienne. Diverticulite = inflammation diverticules. Peut aussi survenir estomac, duodénum, etc.! Diverticule de Meckel (généralement asymptomatique intestin grêle, origine embryonnaire)"
+                        }
+                    ]
+                },
+                {
+                    "title": "4. Urgences Urologiques",
+                    "category": "urgences",
+                    "data": [
+                        {
+                            "Pathologie": "Torsion testiculaire/ovarienne",
+                            "Anamnèse": "Douleurs très intenses d'apparition soudaine, souvent aussi nocturne",
+                            "Examen Physique": "Inspection : testicule gonflé + rouge. Palpation : signe de Prehn négatif*, ganglions lymphatiques",
+                            "Procédures/Examens": "Bilan sanguin, échographie, si doute exploration chirurgicale testicule",
+                            "Thérapie": "Chirurgie (détorsion + orchidopexie). Chez femmes : laparoscopie",
+                            "Commentaires": "Signe de Prehn positif (soulèvement testicule apporte soulagement > suspicion épididymite)"
+                        }
+                    ]
+                },
+                {
+                    "title": "5. Chirurgie Digestive",
+                    "category": "digestif",
+                    "data": [
+                        {
+                            "Pathologie": "Appendicite",
+                            "Anamnèse": "Douleurs abdomen supérieur (épigastriques, mal localisées, sourdes) > migration abdomen inférieur droit (bien localisées, aiguës), vomissements/nausées, fièvre, selles/gaz/urines",
+                            "Examen Physique": "Inspection (jambes fléchies/position antalgique), palpation : 4 quadrants (commencer gauche), McBurney, point de Lanz, douleur décompression/décompression controlatérale, défense abdominale ou défense musculaire*, signe du psoas, auscultation, ganglions lymphatiques, toucher rectal (douleur ?), chez femmes : examen gynécologique, prise température",
+                            "Procédures/Examens": "Bilan biologique : leucocytes, CRP, hématocrite. Examen cytobactériologique urines. Échographie (appendice épaissi, œdème/inflammation). Scanner abdominal éventuel",
+                            "Thérapie": "Diagnostic incertain : attendre + observer, purger, diagnostic complémentaire (scanner). Appendicectomie laparoscopique, rarement ouverte, si pas de chirurgie possible : antibiotiques",
+                            "Commentaires": "McBurney : douleur pression entre 2/3 externes ligne reliant épine iliaque droite + ombilic. Lanz : douleur pression 5 cm médial épine droite (ligne reliant deux épines). Décompression controlatérale : douleur région appendiculaire lors décompression côté sain. Signe psoas : douleur abdomen inférieur droit lors flexion jambe droite hanche contre résistance. Défense musculaire : contraction réflexe musculature lors palpation (non volontaire), protection péritoine/éviter déclenchement douleur > signe péritonite. Défense abdominale : patient voit palpation venir > pas signe péritonéal"
+                        },
+                        {
+                            "Pathologie": "Iléus",
+                            "Anamnèse": "Douleurs abdominales coliques, vomissements, nausées, péristaltisme intense, abdomen distendu, arrêt matières + gaz, urines. Facteurs déclenchants : antécédents chirurgicaux, adhérences, brides, hernies, tumeur, corps étranger, lithiase biliaire, médicaments",
+                            "Examen Physique": "Inspection : turgor (peau, muqueuses), cicatrices, hernies. Auscultation (mécanique : péristaltisme métallique, paralytique : silence complet). Palpation (distension). Toucher rectal",
+                            "Procédures/Examens": "Bilan biologique (CRP, leucocytes, hématocrite, créatinine, urée, électrolytes, équilibre acido-basique, protéines), échographie (péristaltisme, intestin dilaté), radiographie abdomen sans préparation (debout ou décubitus latéral gauche > anses dilatées, niveaux hydro-aériques, air intestin grêle), test Gastrografin, scanner",
+                            "Thérapie": "Conservateur (surtout iléus paralytique) : sonde gastrique, nutrition parentérale, cathéter veineux central, sonde vésicale, stimulation activité intestinale. Chirurgical (surtout iléus mécanique) : lever obstacle mécanique",
+                            "Commentaires": ""
+                        }
+                    ]
+                },
+                {
+                    "title": "6. Maladies Inflammatoires Intestinales",
+                    "category": "digestif",
+                    "data": [
+                        {
+                            "Pathologie": "MICI/Maladies inflammatoires chroniques intestinales",
+                            "Anamnèse": "RCH : diarrhée sanglante-muqueuse, arthralgies, symptômes oculaires (uvéite, sclérite), subfébrilité, mauvais état nutritionnel, douleurs, perte poids, arthrite réactionnelle parfois. Crohn : douleurs abdominales (>droite), diarrhée sanglante-muqueuse (généralement sans sang), flatulences, crampes, perte poids, subfébrilité",
+                            "Examen Physique": "Abdomen, ganglions lymphatiques, cœur, poumons, toucher rectal",
+                            "Procédures/Examens": "Bilan biologique (CRP, leucocytes, hémogramme, VS), test Hemoccult éventuel, coproculture (calprotectine, parasites), coloscopie-iléoscopie avec biopsies (minimum 5 à différents segments), échographie, lavement baryté double contraste",
+                            "Thérapie": "Crohn : supplémentation fer/B12/vitamines si carences, arrêt tabac, corticoïdes topiques ou systémiques/budésonide, immunosuppresseurs/azathioprine, biothérapies/infliximab, prise en charge psychologique. RCH : supplémentation carences, arrêt tabac, acide 5-aminosalicylique, corticoïdes systémiques/prednisolone, immunosuppresseurs/azathioprine, prise en charge psychologique",
+                            "Commentaires": "Crohn : tout tractus gastro-intestinal, transmural, granulomes, atteinte segmentaire, incurable. RCH : côlon (distal prédominant), superficiel, diffus tout côlon, curable. Chirurgie/endoscopie : RCH : proctocolectomie (anastomose iléo-anale). Crohn : chirurgie minimale (abcès, sténoses, fistules, hémorragie, perforation)"
+                        }
+                    ]
+                },
+                {
+                    "title": "7. Traumatisme Crânien",
+                    "category": "trauma",
+                    "data": [
+                        {
+                            "Pathologie": "Traumatisme crânien",
+                            "Anamnèse": "Vomissements, céphalées, amnésie, déficits neurologiques, hématome, perte conscience, paralysie, émission involontaire urines/selles",
+                            "Examen Physique": "Examen neurologique (Glasgow, pupilles, nerfs crâniens, motricité, sensibilité, force). Signes hypertension intracrânienne : agitation motrice, altération conscience, tension systolique élevée, pupilles aréactives, bradycardie, vomissements en jet",
+                            "Procédures/Examens": "Voie veineuse périphérique, analgésie, antiémétiques éventuels. Scanner (crâne + rachis éventuel), IRM éventuelle",
+                            "Thérapie": "Repos au lit + surveillance, soins plaie, analgésie. Selon étiologie : hématome sous-dural/épidural/intracérébral : trépanation, craniotomie, hydrocéphalie : dérivation, etc.",
+                            "Commentaires": ""
+                        }
+                    ]
+                },
+                {
+                    "title": "8. Pathologies Vertébrales",
+                    "category": "trauma",
+                    "data": [
+                        {
+                            "Pathologie": "Sténose canal rachidien",
+                            "Anamnèse": "Douleurs claudication, raccourcissement distance marche, uni- ou bilatéral",
+                            "Examen Physique": "Examen neurologique (sensibilité/dermatomes, force, tonus, réflexes), examen rachis (marche, mobilité)",
+                            "Procédures/Examens": "IRM",
+                            "Thérapie": "Décompression/libération",
+                            "Commentaires": ""
+                        },
+                        {
+                            "Pathologie": "Hernie discale/Syndrome radiculaire",
+                            "Anamnèse": "Lombaire ou cervical, douleurs (souvent mouvements brusques ou port charges lourdes), douleurs repos, nocturnes, état général, fièvre, raideur, flexion aggrave généralement, parfois déficits paralytiques importants (vessie + rectum, sensibilité, parésies), lumbago, déficits neurologiques importants, symptômes B, traumatisme",
+                            "Examen Physique": "Examen neurologique : dermatomes/sensibilité, réflexes, force, tonus, Lasègue. Examen rachis (inspection, distance doigts-sol, Schober/Ott, obliquité bassin, trophicité, mouvements, palpation, Lasègue, sensibilité), loges rénales",
+                            "Procédures/Examens": "Radiographie, myélographie, scanner ou IRM",
+                            "Thérapie": "Conservateur : repos strict + antalgiques/AINS quelques jours (si crise), myorelaxants, collier cervical, thermothérapie, kinésithérapie, thérapie points gâchettes, instruction comportement/flexion/port charges. Chirurgical : prothèse discale, décompression",
+                            "Commentaires": "Lasègue : flexion jambe tendue hanche > irrite racines nerveuses comprimées nerf sciatique, généralement positif hernie discale lombaire. Regarder dermatomes + réflexes !"
+                        }
+                    ]
+                },
+                {
+                    "title": "9. Pathologies Respiratoires",
+                    "category": "urgences",
+                    "data": [
+                        {
+                            "Pathologie": "Pneumothorax",
+                            "Anamnèse": "Asymptomatique ou douleur piquante paroi thoracique, tachycardie, chute tension artérielle, dyspnée soudaine, cyanose. Facteurs déclenchants : spontané, traumatisme, maladie pulmonaire, iatrogène (cathéter veineux central)",
+                            "Examen Physique": "Inspection : fréquence respiratoire, symétrie mouvements thoraciques, cyanose, plaie. Auscultation (murmure vésiculaire diminué), percussion (hypersonorité)",
+                            "Procédures/Examens": "Radiographie thorax, rarement scanner. Si suspicion pneumothorax compressif : pas diagnostic > drainage immédiat !",
+                            "Thérapie": "Drainage thoracique (air doit sortir)",
+                            "Commentaires": ""
+                        }
+                    ]
+                },
+                {
+                    "title": "10. Pathologies Cardiovasculaires",
+                    "category": "vasculaire",
+                    "data": [
+                        {
+                            "Pathologie": "Coronaropathie : Angor/Infarctus",
+                            "Anamnèse": "Symptômes angineux, oppression/tiraillement/piqûre rétrosternale, irradiation bras gauche/épaule/cou, repos ou effort, trinitrine efficace ? Suspicion infarctus : douleur destruction, sueurs froides, trinitrine inefficace, facteurs risque, faiblesse, angoisse, signes végétatifs (sueurs, nausées, vomissements). Facteurs risque + déclenchants : hypertension, diabète, dyslipidémie, obésité, alcool, tabac, antécédents familiaux, froid, post-prandial, stress/psychisme",
+                            "Examen Physique": "Angor : examen cardiaque. Suspicion infarctus : diagnostic immédiat ! Parallèlement examen cardiaque + neurologique bref",
+                            "Procédures/Examens": "Angor : trinitrine sublinguale, ECG, enzymes cardiaques, coronarographie, ergométrie effort, Holter ECG, scintigraphie perfusion myocardique, TEP, scanner. Suspicion infarctus : monitoring, O₂, trinitrine, héparine, aspirine, voie veineuse + bilan sanguin (CRP, glycémie, hémogramme, troponine I et T, CK-MB), ECG (sus-décalage ST, nouvelles ondes Q), coronarographie, échographie, IRM rarement",
+                            "Thérapie": "MONA !!!! (Morphine, O₂, Nitroglycérine, Aspirine). Angor stable : traitement facteurs risque, trinitrine (sublinguale), aspirine + β-bloquants éventuels + statine éventuelle. Angor instable : tests ischémie (ECG effort, scintigraphie myocardique...) > si positif > coronarographie + angioplastie élective ou pontage. STEMI : thrombolyse (streptokinase) ou coronarographie > angioplastie/pontage. NSTEMI : coronarographie > angioplastie/pontage",
+                            "Commentaires": "Classification angor > CCS : 0 activité physique non limitée, 1 légère, 2 nette (déjà 1-2 étages), 3 effort léger ou repos, 4 tout effort ou repos. Classification insuffisance cardiaque > NYHA : I aucune limitation, II effort important, III effort léger, IV repos. Angor instable : angor s'aggrave ou tout nouvel angor. NSTEMI : pas sus-décalage ST, mais sous-décalage, modifications enzymatiques. STEMI : sus-décalage ST avec modifications enzymatiques (troponine) > infarctus myocarde classique"
+                        }
+                    ]
+                },
+                {
+                    "title": "11. Pathologies Vasculaires",
+                    "category": "vasculaire",
+                    "data": [
+                        {
+                            "Pathologie": "Artériopathie oblitérante membres inférieurs",
+                            "Anamnèse": "Claudication intermittente/douleurs (mollets, cuisses), raccourcissement distance marche. Facteurs risque : hypertension, diabète, dyslipidémie, obésité, alcool, tabac, antécédents familiaux",
+                            "Examen Physique": "Inspection (trophicité, nécroses, gangrène, couleur), palpation (différence température, pouls, recoloration), auscultation, examen cardiaque",
+                            "Procédures/Examens": "Mesure artérielle/Doppler (flux sonore), écho-Doppler (flux coloré), IPS (index pression systolique), test Ratschow (jambes), test Allen (bras), angiographie éventuelle (intra-artérielle ou IRM/scanner), écho-Doppler carotidien éventuel",
+                            "Thérapie": "Stades I-IIa : traitement facteurs risque, aspirine, clopidogrel, bonnes chaussures + entraînement marche. IIb-IV : angioplastie + stent (endovasculaire) ou pontage chirurgical, aspirine, clopidogrel",
+                            "Commentaires": "Classification Leriche-Fontaine : I asymptomatique, IIa >200m, IIb <200m, III douleurs repos, IV nécrose/gangrène. Test Ratschow : patient active muscles mollets par mouvements rapides pieds en décubitus > s'asseoir rapidement + laisser pendre jambes > normalement reperfusion après 10-20s"
+                        },
+                        {
+                            "Pathologie": "Varices",
+                            "Anamnèse": "Thrombose veineuse profonde ? Troubles circulatoires ? Hypertension, insuffisance veineuse, famille, station debout/assise prolongée. Facteurs risque : hypertension, diabète, dyslipidémie, obésité, alcool, tabac, antécédents familiaux",
+                            "Examen Physique": "Inspection : examiner debout ! Varices tronculaires, collatérales, veines réticulaires, télangiectasies (bleues ou rouges). Signes insuffisance veineuse chronique : eczéma stase, œdèmes, corona phlebectatica, hypodermite/pseudo-érysipèle, purpura stase, hyperpigmentation, dermato-lipo-fascio-sclérose, atrophie blanche, ulcère ou cicatrisé. Insuffisance système veineux profond. Signes syndrome post-thrombotique (mauvaise microcirculation), examen artériel (exclure problème artériel type AOMI), examen neurologique (polyneuropathie, diabète)",
+                            "Procédures/Examens": "Bilan sanguin (facteurs risque), écho-Doppler veineux/cartographie éventuellement avec Doppler couleur",
+                            "Thérapie": "1. Prophylaxie : pompe musculaire/mouvement, surélévation, bas compression* classe I-II suffisant, douche froide 2. Traitement facteurs risque : perte poids, sport, arrêt tabac, traitement hypertension, réduire station debout/assise 3. Médicaments (retour veineux), daflon, aspirine, prostaglandines E 4. Chirurgie varices : crossectomie, stripping, mini-phlébectomie (veines collatérales + réticulaires), sclérothérapie/laser (télangiectasies)",
+                            "Commentaires": "Veines réticulaires : <3mm, sous-cutanées, bleuâtres, réticulaires (esthétique). Télangiectasies : <1mm bleues, <0,4mm rouges. Crossectomie : si insuffisance 1ère valve aine où abouchement système veineux profond. Stripping : varices tronculaires. Ulcère jambe voir scénarios dermatologie"
+                        }
+                    ]
+                },
+                {
+                    "title": "12. Pathologies Œsophago-Gastriques",
+                    "category": "digestif",
+                    "data": [
+                        {
+                            "Pathologie": "Hernie hiatale",
+                            "Anamnèse": "Pyrosis, brûlures rétrosternales, brûlures gastriques, dysphagie, éructations, hypersialorrhée, sensation corps étranger, douleurs épigastriques. Facteurs déclenchants : obésité, vomissements, port charges lourdes, grossesse, traumatisme, congénital, iatrogène/chirurgie",
+                            "Examen Physique": "Abdomen, bouche/pharynx, laryngoscopie, examen cardiaque, examen pulmonaire",
+                            "Procédures/Examens": "Transit baryté (radiographie), endoscopie, pH-métrie (exclure/confirmer RGO)",
+                            "Thérapie": "Attendre si pas symptômes, si RGO > IPP, si symptomatologie importante : chirurgie",
+                            "Commentaires": ""
+                        },
+                        {
+                            "Pathologie": "Pathologies œsophagiennes",
+                            "Anamnèse": "Pyrosis, brûlures rétrosternales, brûlures gastriques, dysphagie, éructations, hypersialorrhée, sensation corps étranger, douleurs, aggravation décubitus généralement, dyspnée éventuelle, hoquet, toux, enrouement, maux gorge, odynophagie, météorisme, flatulences, symptômes B. Facteurs déclenchants : obésité, vomissements, port charges/poussée/flexion/décubitus, effort/sport, grossesse, traumatisme, congénital, iatrogène/chirurgie, alimentation (graisses, alcool, café)",
+                            "Examen Physique": "Abdomen, bouche/pharynx, laryngoscopie, examen cardiaque, examen pulmonaire",
+                            "Procédures/Examens": "Endoscopie (biopsie éventuelle, prélèvement*), transit baryté, écho-endoscopie, scanner. Fonctionnel : pH-métrie (RGO), manométrie (motricité), mesure reflux biliaire (reflux duodénal), tests allergie (œsophagite éosinophile). *Œsophagite infectieuse",
+                            "Thérapie": "Troubles motricité (achalasie, spasmes, casse-noisette, anneau A (musculaire), anneau Schatzki (muqueuse)) : RGO, trinitrine, antidépresseurs, toxine botulique, inhibiteurs calciques, myorelaxants, dilatation, myotomie. Sténoses : dilatation/ballonnet, stent, laser. RGO : traitement facteurs risque (graisses, alcool, café, nicotine, obésité), mesures conservatrices (petits repas, relever tête lit, décubitus latéral droit), IPP/ésoméprazole, anti-H2/ranitidine ou antacides/Rennie éventuels, rarement endoscopique ou chirurgie anti-reflux. Barrett : résection endoscopique ou chirurgicale. Tumeurs : chirurgie, palliatif éventuel. Diverticules (Zenker (pseudo-diverticule), traction (vrai diverticule)) : si symptomatique > section endoscopique, myotomie chirurgicale. Corps étranger : extraction endoscopique. Œsophagite : antibiotiques, antifongiques (champignon), antiviraux (CMV HIV, HSV si immunosuppression sinon pas traitement), antihistaminiques, corticoïdes inhalés à avaler (œsophagite éosinophile). Hémorragie : stabilisation hémodynamique, hémostase endoscopique > sclérothérapie, épinéphrine, électrocoagulation. Varices œsophagiennes : stabilisation, octréotide ou vasopressine, ligature ou sclérothérapie",
+                            "Commentaires": ""
+                        }
+                    ]
+                },
+                {
+                    "title": "13. Abdomen Aigu",
+                    "category": "urgences",
+                    "data": [
+                        {
+                            "Pathologie": "Abdomen aigu",
+                            "Anamnèse": "Douleurs abdominales aiguës, douleurs destruction, ventre planche, symptomatologie péritonéale (paroi abdominale sensible pression + vibrations). Questions : début (aigu ou insidieux), type (colique, sourd, continu), intensité, localisation, irradiation, aggravation, amélioration, signes accompagnement, fièvre, diarrhée, vomissements, alimentation, où ont commencé douleurs, modification, coliques, diffuses ou localisables, anamnèse gynécologique, ulcère, lithiase biliaire",
+                            "Examen Physique": "Inspection (agitation, position antalgique, coloration, respiration, expression, cicatrices, orifices herniaires), palpation (4 quadrants, douleurs percussion + décompression, météorisme, résistances, orifices herniaires, défense abdominale, points pression spécifiques appendice/vésicule biliaire, foie, rate, reins), auscultation, loges rénales, ganglions lymphatiques, cœur + poumons, toucher rectal + examen gynécologique, prise température",
+                            "Procédures/Examens": "Paramètres vitaux, voie veineuse + bilan biologique (hémogramme, CRP, leucocytes, électrolytes, amylase + lipase pancréatiques, bilirubine, phosphatases alcalines, γ-GT, créatinine, troponine, CK-MB), glycémie, test grossesse (femmes), examen cytobactériologique urines. Imagerie : échographie, ECG, radiographie sans préparation (debout ou décubitus latéral gauche), radiographie thorax (face debout), scanner, imagerie complémentaire*",
+                            "Thérapie": "Mesures jusqu'à diagnostic clair/décision thérapeutique/chirurgie : O₂, analgésie, IPP (contre ulcère stress), expansion volémique, monitoring, jeûne, prophylaxie thromboembolique, sonde gastrique éventuelle, sonde vésicale éventuelle, antibiotiques éventuels. Thérapie : Abdomen sur-aigu : douleurs abdominales + choc > chirurgie immédiate car probablement grossesse extra-utérine/hémorragie/anévrisme. Abdomen aigu : douleurs abdominales + péritonite généralisée > chirurgie dans 6h (appendicite perforée, diverticulite, perforation côlon, colite AINS). Péritonite localisée (généralement cholécystite, appendicite + diverticulite) : traitement conservateur éventuel (analgésie, antibiotiques) + surveillance ou chirurgie (>6h possible)",
+                            "Commentaires": "*Transit Gastrografin ou lavement côlon (suspicion trouble motricité, sténose/obstruction), scanner (pancréatite, anévrisme, liquide libre, lésions, fractures, tumeurs, abcès), angiographie (suspicion hémorragie, sténose, infarctus), endoscopie (suspicion ulcère, varices), laparoscopie (confirmation diagnostic + thérapie simultanée > appendicectomie, cholécystectomie). Douleur viscérale/organique : diffuse, sourde, souvent épigastrique, aggravée palpation, symptômes accompagnement (nausées, sueurs, agitation). Douleur pariétale/péritonite pariétale : bien localisée, aiguë, signes péritonéaux (défense, décompression). Diagnostics différentiels : infarctus myocarde, appendicite, diverticulite, cholécystite/lithiase vésiculaire, lithiase urinaire, iléus, gastro-entérite aiguë, pancréatite, annexite, torsion ovaire/testicule, grossesse extra-utérine, douleurs ovulation, maladie Crohn, rectocolite hémorragique, endométriose, rupture anévrisme aorte. Iléus : images miroir intestin grêle + gros intestin ou anses statiques. Perforation : air extérieur intestin (intestin grêle contient pratiquement pas air !)"
+                        }
+                    ]
+                },
+                {
+                    "title": "14. Pathologies Gastro-Duodénales",
+                    "category": "digestif",
+                    "data": [
+                        {
+                            "Pathologie": "Ulcère gastro-duodénal",
+                            "Anamnèse": "Douleurs épigastriques (milieu abdomen supérieur généralement), surtout à jeun + nocturnes, nausées, vomissements, chronique, prise alimentaire soulage, hématémèse éventuelle. Facteurs déclenchants : acidité, stress, tabac, alcool, médicaments/AINS, H. pylori",
+                            "Examen Physique": "",
+                            "Procédures/Examens": "Gastro-duodénoscopie avec biopsies (exclusion tumeur maligne, précancérose), test H. pylori (test respiratoire ou recherche selles)",
+                            "Thérapie": "Conservateur : arrêt tabac + réduction facteurs déclenchants, éradication H. pylori avec trithérapie, IPP/ésoméprazole. Chirurgical : si suspicion tumeur maligne ou complication (perforation, hémorragie), exérèse ou résection partielle ou vagotomie (diminue production acide)",
+                            "Commentaires": "Diagnostic différentiel : perforation. Trithérapie : IPP + 2 antibiotiques 7 jours"
+                        },
+                        {
+                            "Pathologie": "Hernie inguinale",
+                            "Anamnèse": "Douleurs persistantes région herniaire, arrêt matières éventuel, tuméfaction/bombement, aggravation effort/sport/poussée/toux, amélioration décubitus/repos. Diagnostic différentiel : lithiase rénale",
+                            "Examen Physique": "Palpation trans-scrotale orifice inguinal externe lors poussée ou toux (comparaison latérale), examen abdomen (inspection, palpation, auscultation). Hernie directe à pulpe doigt, indirecte à pointe doigt",
+                            "Procédures/Examens": "Échographie, diaphanoscopie si hernie scrotale",
+                            "Thérapie": "Réduction chirurgicale + mise en place filet",
+                            "Commentaires": "Évaluer orifice herniaire, sac herniaire + contenu herniaire. Hernie inguinale directe/médiale : pénètre médialement vaisseaux épigastriques par orifice inguinal externe paroi abdominale. Hernie inguinale indirecte/latérale : latéralement vaisseaux épigastriques, pénètre suivant canal inguinal obliquement paroi abdominale. Hernie scrotale : contenu herniaire migre jusqu'à bourse. Hernie fémorale : sac herniaire sort par lacune vasculaire médialement vaisseaux fémoraux sous ligament inguinal > plus bas que hernie inguinale"
+                        }
+                    ]
+                }
+            ]
+        };
+
+        // Variables globales
+        let studiedCards = new Set();
+        let currentFilter = 'all';
+        let quizQuestions = [];
+        let currentQuestionIndex = 0;
+
+        // Initialisation
+        document.addEventListener('DOMContentLoaded', function() {
+            renderSections();
+            updateStats();
+            setupEventListeners();
+        });
+
+        // Rendu des sections
+        function renderSections() {
+            const container = document.getElementById('studyContent');
+            container.innerHTML = '';
+
+            chirurgieData.sections.forEach((section, sectionIndex) => {
+                const sectionDiv = document.createElement('div');
+                sectionDiv.className = 'section';
+                sectionDiv.dataset.category = section.category || 'general';
+                
+                const sectionHeader = document.createElement('div');
+                sectionHeader.className = 'section-header';
+                sectionHeader.innerHTML = `
+                    <span class="section-title">${section.title}</span>
+                    <span class="section-count">${section.data.length} pathologies</span>
+                `;
+                sectionHeader.onclick = () => toggleSection(sectionDiv);
+                
+                const sectionContent = document.createElement('div');
+                sectionContent.className = 'section-content';
+                
+                section.data.forEach((pathology, index) => {
+                    const card = createPathologyCard(pathology, `${sectionIndex}-${index}`);
+                    sectionContent.appendChild(card);
+                });
+                
+                sectionDiv.appendChild(sectionHeader);
+                sectionDiv.appendChild(sectionContent);
+                container.appendChild(sectionDiv);
+            });
+        }
+
+        // Créer une carte de pathologie
+        function createPathologyCard(pathology, id) {
+            const card = document.createElement('div');
+            card.className = 'pathology-card';
+            card.dataset.id = id;
+            card.dataset.pathology = pathology.Pathologie.toLowerCase();
+            
+            const header = document.createElement('div');
+            header.className = 'pathology-header';
+            header.innerHTML = `
+                <span>${pathology.Pathologie}</span>
+                <span class="expand-icon">▼</span>
+            `;
+            header.onclick = () => toggleCard(card, id);
+            
+            const content = document.createElement('div');
+            content.className = 'pathology-content';
+            content.innerHTML = `
+                <div class="info-grid">
+                    ${pathology.Anamnèse ? `
+                        <div class="info-item">
+                            <div class="info-label">📋 Anamnèse</div>
+                            <div class="info-text">${formatText(pathology.Anamnèse)}</div>
+                        </div>
+                    ` : ''}
+                    ${pathology['Examen Physique'] ? `
+                        <div class="info-item">
+                            <div class="info-label">🩺 Examen Physique</div>
+                            <div class="info-text">${formatText(pathology['Examen Physique'])}</div>
+                        </div>
+                    ` : ''}
+                    ${pathology['Procédures/Examens'] ? `
+                        <div class="info-item">
+                            <div class="info-label">🔬 Procédures/Examens</div>
+                            <div class="info-text">${formatText(pathology['Procédures/Examens'])}</div>
+                        </div>
+                    ` : ''}
+                    ${pathology.Thérapie ? `
+                        <div class="info-item">
+                            <div class="info-label">💊 Thérapie</div>
+                            <div class="info-text">${formatText(pathology.Thérapie)}</div>
+                        </div>
+                    ` : ''}
+                    ${pathology.Commentaires ? `
+                        <div class="info-item">
+                            <div class="info-label">💡 Commentaires</div>
+                            <div class="info-text">${formatText(pathology.Commentaires)}</div>
+                        </div>
+                    ` : ''}
+                </div>
+            `;
+            
+            card.appendChild(header);
+            card.appendChild(content);
+            return card;
+        }
+
+        // Formatage du texte avec mise en évidence
+        function formatText(text) {
+            if (!text) return '';
+            return text
+                .replace(/>/g, '→')
+                .replace(/</g, '&lt;')
+                .replace(/(\d+[°℃]C?)/g, '<span class="highlight">$1</span>')
+                .replace(/(\d+\s?mg)/g, '<span class="highlight">$1</span>')
+                .replace(/(\d+\s?mm)/g, '<span class="highlight">$1</span>');
+        }
+
+        // Toggle section
+        function toggleSection(section) {
+            section.classList.toggle('active');
+        }
+
+        // Toggle carte
+        function toggleCard(card, id) {
+            card.classList.toggle('expanded');
+            if (card.classList.contains('expanded')) {
+                studiedCards.add(id);
+                updateStats();
+            }
+        }
+
+        // Configuration des event listeners
+        function setupEventListeners() {
+            // Recherche
+            document.getElementById('searchInput').addEventListener('input', function(e) {
+                filterContent(e.target.value.toLowerCase());
+            });
+
+            // Filtres
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                    currentFilter = this.dataset.filter;
+                    applyFilter();
+                });
+            });
+
+            // Mode boutons
+            document.getElementById('studyBtn').addEventListener('click', showStudyMode);
+            document.getElementById('quizBtn').addEventListener('click', showQuizMode);
+        }
+
+        // Filtrage du contenu
+        function filterContent(searchTerm) {
+            const cards = document.querySelectorAll('.pathology-card');
+            cards.forEach(card => {
+                const text = card.textContent.toLowerCase();
+                if (text.includes(searchTerm)) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        // Appliquer le filtre de catégorie
+        function applyFilter() {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => {
+                if (currentFilter === 'all' || section.dataset.category === currentFilter) {
+                    section.style.display = 'block';
+                } else {
+                    section.style.display = 'none';
+                }
+            });
+        }
+
+        // Mode étude
+        function showStudyMode() {
+            document.getElementById('studyContent').style.display = 'block';
+            document.getElementById('quizContent').style.display = 'none';
+        }
+
+        // Mode quiz
+        function showQuizMode() {
+            document.getElementById('studyContent').style.display = 'none';
+            document.getElementById('quizContent').style.display = 'block';
+        }
+
+        // Démarrer le quiz
+        function startQuiz() {
+            generateQuizQuestions();
+            currentQuestionIndex = 0;
+            showQuestion();
+        }
+
+        // Générer les questions du quiz
+        function generateQuizQuestions() {
+            quizQuestions = [];
+            chirurgieData.sections.forEach(section => {
+                section.data.forEach(pathology => {
+                    // Question sur l'anamnèse
+                    if (pathology.Anamnèse) {
+                        quizQuestions.push({
+                            question: `Quelle est l'anamnèse typique pour ${pathology.Pathologie} ?`,
+                            correct: pathology.Anamnèse,
+                            options: generateOptions(pathology.Anamnèse, 'anamnese')
+                        });
+                    }
+                    // Question sur la thérapie
+                    if (pathology.Thérapie) {
+                        quizQuestions.push({
+                            question: `Quel est le traitement pour ${pathology.Pathologie} ?`,
+                            correct: pathology.Thérapie,
+                            options: generateOptions(pathology.Thérapie, 'therapie')
+                        });
+                    }
+                });
+            });
+            // Mélanger les questions
+            quizQuestions.sort(() => Math.random() - 0.5);
+        }
+
+        // Générer des options pour le quiz
+        function generateOptions(correct, type) {
+            const options = [correct];
+            // Ajouter 3 options incorrectes (simplifiées pour cet exemple)
+            const fakeOptions = [
+                'Traitement conservateur avec surveillance',
+                'Chirurgie en urgence',
+                'Antibiothérapie large spectre'
+            ];
+            fakeOptions.forEach(opt => {
+                if (options.length < 4 && !options.includes(opt)) {
+                    options.push(opt);
+                }
+            });
+            return options.sort(() => Math.random() - 0.5);
+        }
+
+        // Afficher une question
+        function showQuestion() {
+            if (currentQuestionIndex >= quizQuestions.length) {
+                showQuizResults();
+                return;
+            }
+
+            const question = quizQuestions[currentQuestionIndex];
+            const quizContent = document.getElementById('quizContent');
+            quizContent.innerHTML = `
+                <div class="quiz-card">
+                    <div class="quiz-question">
+                        Question ${currentQuestionIndex + 1}/${quizQuestions.length}<br><br>
+                        ${question.question}
+                    </div>
+                    <div class="quiz-options">
+                        ${question.options.map((opt, i) => `
+                            <div class="quiz-option" onclick="checkAnswer(${i}, '${encodeURIComponent(question.correct)}')">
+                                ${opt}
+                            </div>
+                        `).join('')}
+                    </div>
+                </div>
+            `;
+        }
+
+        // Vérifier la réponse
+        function checkAnswer(index, correctEncoded) {
+            const correct = decodeURIComponent(correctEncoded);
+            const options = document.querySelectorAll('.quiz-option');
+            const selected = options[index];
+            
+            if (selected.textContent.trim() === correct) {
+                selected.classList.add('correct');
+            } else {
+                selected.classList.add('incorrect');
+                options.forEach(opt => {
+                    if (opt.textContent.trim() === correct) {
+                        opt.classList.add('correct');
+                    }
+                });
+            }
+
+            setTimeout(() => {
+                currentQuestionIndex++;
+                showQuestion();
+            }, 2000);
+        }
+
+        // Afficher les résultats du quiz
+        function showQuizResults() {
+            const quizContent = document.getElementById('quizContent');
+            quizContent.innerHTML = `
+                <div class="quiz-card">
+                    <h2>🎉 Quiz terminé !</h2>
+                    <p>Tu as complété toutes les questions.</p>
+                    <button class="mode-btn" onclick="startQuiz()">Recommencer le Quiz</button>
+                    <button class="mode-btn" onclick="showStudyMode()">Retour au Mode Étude</button>
+                </div>
+            `;
+        }
+
+        // Mise à jour des statistiques
+        function updateStats() {
+            let totalPathologies = 0;
+            chirurgieData.sections.forEach(section => {
+                totalPathologies += section.data.length;
+            });
+
+            const studied = studiedCards.size;
+            const percentage = Math.round((studied / totalPathologies) * 100);
+
+            document.getElementById('totalPathologies').textContent = totalPathologies;
+            document.getElementById('studiedCount').textContent = studied;
+            document.getElementById('progressPercent').textContent = percentage + '%';
+            document.getElementById('progressBar').style.width = percentage + '%';
+        }
+
+        // Scroll vers le haut
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>

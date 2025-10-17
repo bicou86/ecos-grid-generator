@@ -1,0 +1,643 @@
+{
+  "title": "SMIG-4 - Fièvre prolongée et amaigrissement - Tuberculose",
+  "context": {
+    "setting": "Service de médecine interne",
+    "patient": "Monsieur A., 36 ans, d'origine arménienne en Suisse depuis 2 ans, consultant pour fièvre persistante depuis 3 semaines, avec perte de poids de 8 kg en 2 mois et toux productive",
+    "vitals": {
+      "ta": "110/70 mmHg",
+      "fc": "92 bpm",
+      "fr": "22/min",
+      "temperature": "38.3°C",
+      "sao2": "96% air ambiant"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Motif de consultation et symptômes principaux",
+          "binaryOnly": true,
+          "patientComment": "[Fièvre depuis 3 semaines et perte de poids importante]"
+        },
+        {
+          "id": "a2",
+          "text": "Caractérisation de la fièvre",
+          "details": [
+            "Début [Il y a 3 semaines]",
+            "Évolution [Quotidienne, prédominance vespérale]",
+            "Intensité maximale [38.5-39°C le soir]",
+            "Sueurs nocturnes [Profuses, nécessitant changement de vêtements]",
+            "Frissons [Occasionnels]",
+            "Réponse aux antipyrétiques [Partielle]"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Symptômes respiratoires",
+          "details": [
+            "Toux [Productive depuis 2 semaines]",
+            "Expectoration [Jaunâtre, parfois striée de sang]",
+            "Hémoptysie [Filets de sang occasionnels]",
+            "Dyspnée [Légère à l'effort]",
+            "Douleur thoracique [Non]",
+            "Sifflements [Non]"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Symptômes généraux",
+          "details": [
+            "Perte de poids [8 kg en 2 mois]",
+            "Appétit [Très diminué]",
+            "Asthénie [Importante, progressive]",
+            "Myalgies [Diffuses]",
+            "Arthralgies [Non]",
+            "Céphalées [Occasionnelles]"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Facteurs de risque de tuberculose",
+          "details": [
+            "Origine géographique [Arménie - zone endémique]",
+            "Conditions de vie en Arménie [Urbaines, densité élevée]",
+            "Voyage récent en zone endémique [Retour en Arménie il y a 4 mois]",
+            "Contact tuberculeux [Oncle traité pour tuberculose il y a 5 ans]",
+            "Conditions socio-économiques [Précaires à l'arrivée en Suisse]",
+            "Promiscuité [Vit en foyer d'accueil]"
+          ],
+          "scoringRule": "2 points si recherche complète des facteurs de risque"
+        },
+        {
+          "id": "a6",
+          "text": "Antécédents médicaux et vaccination",
+          "details": [
+            "BCG [Vacciné dans l'enfance - cicatrice visible]",
+            "Test tuberculinique antérieur [Jamais réalisé]",
+            "Radiographie thoracique antérieure [Normale il y a 2 ans à l'arrivée]",
+            "VIH [Test négatif il y a 1 an]",
+            "Diabète [Non]",
+            "Immunosuppression [Non]"
+          ]
+        },
+        {
+          "id": "a7",
+          "text": "Habitudes et expositions",
+          "details": [
+            "Tabac [Non-fumeur]",
+            "Alcool [Occasionnel]",
+            "Toxicomanie IV [Nie]",
+            "Profession [Ouvrier dans le bâtiment]",
+            "Exposition professionnelle poussières [Oui]",
+            "Animaux [Contact avec volailles au pays]"
+          ]
+        },
+        {
+          "id": "a8",
+          "text": "Contexte social et migratoire",
+          "details": [
+            "Statut en Suisse [Permis B depuis 6 mois]",
+            "Logement [Foyer avec 3 autres personnes]",
+            "Famille [Épouse et 2 enfants (4 et 7 ans)]",
+            "Assurance maladie [LAMal de base]",
+            "Barrière linguistique [Parle peu français]",
+            "Suivi médical [Irrégulier]"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "État général et paramètres vitaux",
+          "details": [
+            "État général [Altéré, amaigri]",
+            "IMC [19 kg/m² (était 22 il y a 2 mois)]",
+            "Température [38.3°C]",
+            "TA [110/70 mmHg]",
+            "FC [92 bpm, régulier]",
+            "FR [22/min]",
+            "SpO2 [96% air ambiant]"
+          ],
+          "binaryOnly": true
+        },
+        {
+          "id": "e2",
+          "text": "Examen ORL et ganglionnaire",
+          "details": [
+            "Cavité buccale [Muguet absent]",
+            "Pharynx [Légèrement érythémateux]",
+            "Adénopathies cervicales [Multiples, centimétriques, fermes, indolores]",
+            "Adénopathies sus-claviculaires [Gauche palpable]",
+            "Adénopathies axillaires [Bilatérales, mobiles]",
+            "Adénopathies inguinales [Absentes]"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Examen pulmonaire",
+          "details": [
+            "Inspection [Thorax symétrique]",
+            "Palpation [Vibrations vocales augmentées apex droit]",
+            "Percussion [Matité relative apex droit]",
+            "Auscultation base droite [Râles crépitants]",
+            "Auscultation apex droit [Souffle tubaire]",
+            "Auscultation gauche [Normal]"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Examen cardiovasculaire",
+          "details": [
+            "Bruits du cœur [Réguliers, pas de souffle]",
+            "Signes d'insuffisance cardiaque [Absents]",
+            "Pouls périphériques [Perçus, symétriques]",
+            "Pression veineuse jugulaire [Normale]",
+            "Œdèmes [Absents]"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Examen abdominal",
+          "details": [
+            "Inspection [Plat, pas de circulation collatérale]",
+            "Palpation [Souple, indolore]",
+            "Hépatomégalie [Absente]",
+            "Splénomégalie [Rate palpable, débord 2 cm]",
+            "Ascite [Absente]",
+            "Transit [Normal]"
+          ]
+        },
+        {
+          "id": "e6",
+          "text": "Examen cutané et neurologique",
+          "details": [
+            "Cicatrice BCG [Présente bras gauche]",
+            "Lésions cutanées [Absentes]",
+            "Signes méningés [Absents]",
+            "Déficit focal [Absent]",
+            "Réflexes [Normaux, symétriques]",
+            "Sensibilité [Normale]"
+          ]
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic différentiel initial",
+          "description": "Fièvre prolongée avec syndrome inflammatoire",
+          "ddSection": {
+            "title": "Diagnostics différentiels d'une fièvre prolongée avec altération de l'état général",
+            "categories": [
+              {
+                "name": "Causes infectieuses prioritaires",
+                "items": [
+                  {
+                    "text": "Tuberculose pulmonaire",
+                    "cause": "Arguments POUR:\n\t□ Origine zone endémique (Arménie)\n\t□ Contact tuberculeux familial\n\t□ Fièvre vespérale + sueurs nocturnes\n\t□ Perte de poids importante\n\t□ Toux productive avec hémoptysie\n\t□ Signes pulmonaires focalisés (apex)",
+                    "test": "→ Radiographie thoracique, BAAR crachats, PCR TB, QuantiFERON"
+                  },
+                  {
+                    "text": "Endocardite subaiguë",
+                    "cause": "Arguments POUR:\n\t□ Fièvre prolongée\n\t□ Splénomégalie\nArguments CONTRE:\n\t□ Pas de souffle cardiaque\n\t□ Pas de stigmates périphériques",
+                    "test": "→ Hémocultures répétées, échocardiographie"
+                  },
+                  {
+                    "text": "Infection VIH avec infection opportuniste",
+                    "cause": "Arguments POUR:\n\t□ Groupe à risque (migrant)\n\t□ Symptômes B\nArguments CONTRE:\n\t□ Test VIH négatif il y a 1 an",
+                    "test": "→ Sérologie VIH de contrôle, CD4 si positif"
+                  }
+                ]
+              },
+              {
+                "name": "Causes néoplasiques",
+                "items": [
+                  {
+                    "text": "Lymphome",
+                    "cause": "Arguments POUR:\n\t□ Adénopathies multiples\n\t□ Splénomégalie\n\t□ Symptômes B\nArguments CONTRE:\n\t□ Signes pulmonaires prédominants",
+                    "test": "→ Biopsie ganglionnaire, CT TAP, LDH"
+                  },
+                  {
+                    "text": "Cancer pulmonaire",
+                    "cause": "Arguments POUR:\n\t□ Hémoptysie\n\t□ Perte de poids\nArguments CONTRE:\n\t□ Non-fumeur\n\t□ Âge jeune",
+                    "test": "→ CT thoracique, bronchoscopie si masse"
+                  }
+                ]
+              },
+              {
+                "name": "Causes auto-immunes",
+                "items": [
+                  {
+                    "text": "Maladie de Still",
+                    "cause": "Arguments CONTRE:\n\t□ Pas d'éruption\n\t□ Pas d'arthralgies\n\t□ Tableau trop prolongé",
+                    "test": "→ Ferritine, facteur rhumatoïde"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Examens paracliniques de première intention",
+          "details": [
+            "NFS [Hb 10.5 g/dL, leucocytes 11 G/L, lymphopénie]",
+            "VS/CRP [VS 80 mm/h, CRP 85 mg/L]",
+            "Fonction hépatique [ASAT/ALAT normales, PAL légèrement élevées]",
+            "Fonction rénale [Créatinine normale]",
+            "Ionogramme [Hyponatrémie à 132 mmol/L]",
+            "Protéines totales [Hyperprotidémie, hypergammaglobulinémie polyclonale]"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Radiographie thoracique",
+          "details": [
+            "Infiltrat apex droit [Présent avec cavitation]",
+            "Infiltrats bilatéraux [Micronodules diffus prédominant aux apex]",
+            "Adénopathies hilaires [Droites visibles]",
+            "Épanchement pleural [Absent]",
+            "Aspect miliaire [Possible, à confirmer au CT]",
+            "Conclusion [Hautement suspect de tuberculose pulmonaire active]"
+          ],
+          "binaryOnly": true,
+          "scoringRule": "2 points si tuberculose évoquée devant la radiographie"
+        },
+        {
+          "id": "m4",
+          "text": "Diagnostic microbiologique de la tuberculose",
+          "details": [
+            "Examen direct crachats (Ziehl-Neelsen) [BAAR positifs 2/3 échantillons]",
+            "PCR Xpert MTB/RIF [M. tuberculosis détecté, pas de résistance rifampicine]",
+            "Culture sur Lowenstein [En attente (4-6 semaines)]",
+            "Antibiogramme [En attente]",
+            "QuantiFERON-Gold [Positif]",
+            "IDR tuberculine [Non réalisée car QuantiFERON fait]"
+          ],
+          "scoringRule": "2 points si PCR rapide demandée"
+        },
+        {
+          "id": "m5",
+          "text": "Bilan d'extension et recherche de complications",
+          "details": [
+            "CT thoracique [Caverne apex droit, nodules diffus, adénopathies médiastinales]",
+            "Recherche BK urines [Négative]",
+            "Ponction lombaire [Non indiquée (pas de signes méningés)]",
+            "Fond d'œil [Normal (recherche tuberculomes)]",
+            "ECG [Normal]",
+            "Test VIH [Négatif (recontrôlé)]"
+          ]
+        },
+        {
+          "id": "m6",
+          "text": "Mesures d'isolement et déclaration",
+          "details": [
+            "Isolement respiratoire [Immédiat, chambre individuelle pression négative]",
+            "Masque FFP2 [Pour le personnel soignant]",
+            "Masque chirurgical [Pour le patient si déplacement]",
+            "Durée isolement [Minimum 2 semaines de traitement + 3 BAAR négatifs]",
+            "Déclaration obligatoire [Dans les 24h au médecin cantonal]",
+            "Information patient [Sur la contagiosité et les mesures]"
+          ],
+          "binaryOnly": true,
+          "scoringRule": "2 points si mesures d'isolement appropriées"
+        },
+        {
+          "id": "m7",
+          "text": "Traitement antituberculeux - Phase initiale",
+          "description": "Quadrithérapie pendant 2 mois",
+          "details": [
+            "Isoniazide (INH) [5 mg/kg/j = 300 mg/j]",
+            "Rifampicine (RIF) [10 mg/kg/j = 600 mg/j]",
+            "Pyrazinamide (PZA) [25 mg/kg/j = 1500 mg/j]",
+            "Éthambutol (EMB) [15 mg/kg/j = 1000 mg/j]",
+            "Pyridoxine (Vit B6) [25-50 mg/j prévention neuropathie]",
+            "Administration [À jeun, prise unique quotidienne]"
+          ],
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Protocole de traitement standard (2HRZE/4HR)",
+                "content": "PHASE INTENSIVE (2 mois):\n- Isoniazide 300 mg/j\n- Rifampicine 600 mg/j\n- Pyrazinamide 1500 mg/j\n- Éthambutol 1000 mg/j\n- Vitamine B6 25-50 mg/j\n\nPHASE DE CONTINUATION (4 mois):\n- Isoniazide 300 mg/j\n- Rifampicine 600 mg/j\n- Vitamine B6 25-50 mg/j\n\nDOTS (Directly Observed Treatment):\n- Supervision directe de la prise\n- Améliore l'observance à >90%\n- Réduit les résistances"
+              }
+            ]
+          }
+        },
+        {
+          "id": "m8",
+          "text": "Surveillance du traitement",
+          "details": [
+            "Clinique [Poids, température, symptômes hebdomadaires]",
+            "BAAR crachats [Toutes les 2 semaines jusqu'à négativation]",
+            "Fonction hépatique [ASAT/ALAT avant traitement puis mensuel]",
+            "Fonction rénale [Créatinine, urée mensuelles]",
+            "Acide urique [Mensuel sous pyrazinamide]",
+            "Vision des couleurs [Avant éthambutol puis mensuel]",
+            "Observance [DOTS, pilulier, comptage comprimés]"
+          ],
+          "redflagsSection": {
+            "title": "Effets secondaires à surveiller",
+            "items": [
+              {
+                "text": "Hépatite médicamenteuse",
+                "description": "ASAT/ALAT > 5N ou > 3N avec symptômes → arrêt traitement"
+              },
+              {
+                "text": "Névrite optique",
+                "description": "Troubles vision des couleurs sous éthambutol → arrêt immédiat"
+              },
+              {
+                "text": "Neuropathie périphérique",
+                "description": "Paresthésies sous isoniazide → augmenter vitamine B6"
+              },
+              {
+                "text": "Hyperuricémie symptomatique",
+                "description": "Crise de goutte sous pyrazinamide → traitement symptomatique"
+              },
+              {
+                "text": "Réaction d'hypersensibilité",
+                "description": "Éruption, fièvre → évaluation allergologique"
+              }
+            ]
+          }
+        },
+        {
+          "id": "m9",
+          "text": "Enquête d'entourage et prévention",
+          "details": [
+            "Identification des contacts [Famille, collègues, foyer]",
+            "Dépistage famille [Épouse et enfants prioritaires]",
+            "Dépistage foyer [Tous les résidents]",
+            "Test de dépistage [QuantiFERON ou IDR + radiographie]",
+            "Prophylaxie enfants < 5 ans [Isoniazide 10 mg/kg/j × 3-6 mois]",
+            "Prophylaxie contacts positifs [Selon évaluation individuelle]",
+            "Suivi contacts [Surveillance clinique 2 ans]"
+          ],
+          "scoringRule": "2 points si enquête d'entourage mentionnée"
+        },
+        {
+          "id": "m10",
+          "text": "Aspects sociaux et suivi",
+          "details": [
+            "Aide sociale [Évaluation des besoins, aide financière si arrêt travail]",
+            "Interprète [Nécessaire pour éducation thérapeutique]",
+            "DOTS [Organisation avec infirmière à domicile ou pharmacie]",
+            "Arrêt de travail [Minimum 2-3 semaines, jusqu'à non-contagiosité]",
+            "Logement [Évaluation conditions, chambre individuelle si possible]",
+            "Suivi spécialisé [Pneumologie/infectiologie mensuel]"
+          ]
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Communication du diagnostic",
+          "content": "Monsieur A., les examens confirment que vous avez une tuberculose pulmonaire. C'est une infection bactérienne qui se soigne très bien avec des antibiotiques spécifiques. Le traitement dure 6 mois au total et nécessite de prendre plusieurs médicaments chaque jour. Vous êtes actuellement contagieux, donc nous devons vous garder en isolement environ 2 semaines. Nous allons aussi examiner votre famille pour s'assurer qu'ils ne sont pas infectés."
+        },
+        {
+          "id": "c2",
+          "text": "Questions du patient",
+          "content": "[Est-ce que c'est grave ?]\n[Ma famille est en danger ?]\n[Combien de temps je dois rester à l'hôpital ?]\n[Je vais guérir complètement ?]\n[Je peux continuer à travailler ?]"
+        },
+        {
+          "id": "c3",
+          "text": "Réponses adaptées",
+          "exemplesPhrases": [
+            "La tuberculose est une maladie sérieuse mais qui se guérit dans plus de 95% des cas avec un traitement bien suivi.",
+            "Votre famille doit être dépistée rapidement. Les enfants de moins de 5 ans recevront un traitement préventif par précaution.",
+            "L'hospitalisation dure généralement 2-3 semaines, jusqu'à ce que vous ne soyez plus contagieux.",
+            "Avec un traitement complet de 6 mois, vous guérirez complètement sans séquelles dans la grande majorité des cas.",
+            "Vous devrez arrêter de travailler au moins 2-3 semaines. La reprise dépendra de votre état et du type de travail."
+          ]
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "images": [
+      {
+        "title": "Radiographie thoracique - Tuberculose cavitaire",
+        "description": "Radiographie montrant une caverne à l'apex droit avec infiltrats bilatéraux",
+        "data": "grilles_generees/html/images/SMIG/SMIG-4-img1-Radiographie thoracique tuberculose.jpg"
+      },
+      {
+        "title": "Radiographie thoracique - Vue latérale",
+        "description": "Vue latérale montrant les lésions apicales et la cavitation",
+        "data": "grilles_generees/html/images/SMIG/SMIG-4-img2-Radiographie laterale tuberculose.jpg"
+      }
+    ],
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour le patient standardisé - M. A., tuberculose",
+      "nom": "Monsieur A.",
+      "age": "36 ans",
+      "contexte": "Service de médecine interne",
+      "motifConsultation": {
+        "plaintePrincipale": "J'ai de la fièvre depuis 3 semaines et j'ai perdu beaucoup de poids",
+        "autreChose": "Je tousse et parfois il y a du sang dans mes crachats"
+      },
+      "histoireActuelle": {
+        "symptomesPrincipaux": [
+          "Fièvre quotidienne, surtout le soir",
+          "Sueurs nocturnes profuses",
+          "Perte de 8 kg en 2 mois",
+          "Toux productive avec expectorations jaunâtres",
+          "Quelques filets de sang dans les crachats",
+          "Fatigue intense progressive"
+        ],
+        "contexteMigratoire": [
+          "Originaire d'Arménie",
+          "En Suisse depuis 2 ans",
+          "Retour en Arménie il y a 4 mois pour voir la famille",
+          "Oncle traité pour tuberculose il y a 5 ans",
+          "Vit dans un foyer avec 3 autres personnes"
+        ]
+      },
+      "simulation": {
+        "attitude": [
+          "Fatigué, amaigri",
+          "Inquiet pour sa famille",
+          "Difficulté à s'exprimer en français",
+          "Tousse régulièrement pendant l'entretien",
+          "Se couvre la bouche en toussant"
+        ],
+        "durantExamen": [
+          "Température à 38.3°C",
+          "Légèrement tachypnéique",
+          "Ganglions palpables au cou",
+          "Coopératif malgré la fatigue"
+        ]
+      },
+      "antecedents": {
+        "medicaux": "Aucun antécédent particulier",
+        "vaccination": "BCG dans l'enfance (montre la cicatrice)",
+        "famille": "Oncle traité pour tuberculose",
+        "test_VIH": "Négatif il y a 1 an"
+      },
+      "habitudes": {
+        "tabac": "Non-fumeur",
+        "alcool": "Occasionnel",
+        "profession": "Ouvrier dans le bâtiment",
+        "logement": "Foyer d'accueil, chambre partagée"
+      },
+      "famille": {
+        "épouse": "32 ans, en bonne santé apparente",
+        "enfants": "Deux enfants de 4 et 7 ans",
+        "contacts": "Vivent ensemble dans 2 pièces"
+      },
+      "inquietudes": {
+        "principales": [
+          "Peur d'avoir contaminé sa famille",
+          "Inquiétude sur la gravité de la maladie",
+          "Crainte de perdre son travail",
+          "Peur d'être expulsé de Suisse",
+          "Coût du traitement"
+        ],
+        "questions": [
+          "Ma famille est-elle en danger ?",
+          "C'est contagieux ?",
+          "Je vais mourir ?",
+          "Combien ça va coûter ?",
+          "Je peux garder mon permis de séjour ?"
+        ]
+      }
+    },
+    "informationsExpert": {
+      "titre": "Guide pour l'expert évaluateur - Tuberculose",
+      "dossierMedical": "Patient de 36 ans, origine arménienne, tuberculose pulmonaire cavitaire confirmée par BAAR et PCR",
+      "pointsCles": [
+        "Identification des facteurs de risque (origine endémique, contact, conditions sociales)",
+        "Reconnaissance du tableau clinique typique (fièvre vespérale, sueurs, perte de poids)",
+        "Demande appropriée d'examens diagnostiques (BAAR, PCR, culture)",
+        "Mise en place immédiate des mesures d'isolement",
+        "Déclaration obligatoire au médecin cantonal",
+        "Organisation de l'enquête d'entourage",
+        "Traitement standardisé 2HRZE/4HR avec DOTS",
+        "Prise en compte des aspects sociaux et migratoires"
+      ],
+      "pieges": [
+        "Oublier les mesures d'isolement respiratoire",
+        "Ne pas déclarer le cas aux autorités",
+        "Omettre l'enquête d'entourage",
+        "Ne pas prescrire la vitamine B6 avec l'isoniazide",
+        "Oublier le dépistage VIH",
+        "Négliger les aspects sociaux (logement, travail)",
+        "Ne pas organiser le DOTS",
+        "Sous-estimer la durée du traitement (6 mois)"
+      ],
+      "rolesInterventions": [
+        "Montrer des signes de fatigue et d'amaigrissement",
+        "Tousser pendant l'entretien (dans un mouchoir)",
+        "Exprimer l'inquiétude pour la famille",
+        "Mentionner les difficultés linguistiques",
+        "Évoquer les conditions de logement précaires",
+        "Demander sur les coûts et la durée du traitement"
+      ]
+    },
+    "theoriePratique": {
+      "titre": "Rappels théoriques - Tuberculose",
+      "sections": [
+        {
+          "titre": "Épidémiologie et transmission",
+          "contenu": "La tuberculose reste un problème majeur de santé publique mondiale avec 10 millions de nouveaux cas par an.",
+          "points": [
+            "Agent : Mycobacterium tuberculosis (bacille de Koch)",
+            "Transmission : aérienne par gouttelettes (toux, éternuements)",
+            "Contagiosité : surtout si BAAR+ dans crachats",
+            "Risque infection après contact : 30% si contact étroit",
+            "Progression vers maladie : 5-10% dans les 2 ans",
+            "Facteurs de risque : VIH, diabète, malnutrition, tabac, alcool"
+          ]
+        },
+        {
+          "titre": "Formes cliniques",
+          "contenu": "La tuberculose peut toucher tous les organes, mais l'atteinte pulmonaire est la plus fréquente (70%).",
+          "points": [
+            "TB pulmonaire : toux > 2 semaines, hémoptysie, cavernes",
+            "TB ganglionnaire : adénopathies froides, fistulisation",
+            "TB pleurale : pleurésie exsudative lymphocytaire",
+            "TB miliaire : dissémination hématogène, pronostic sévère",
+            "TB méningée : urgence, séquelles neurologiques fréquentes",
+            "TB osseuse : mal de Pott, arthrites tuberculeuses"
+          ]
+        },
+        {
+          "titre": "Diagnostic microbiologique",
+          "contenu": "Le diagnostic de certitude repose sur la mise en évidence du bacille tuberculeux.",
+          "points": [
+            "Examen direct (Ziehl-Neelsen) : sensibilité 50-70%, résultat en 24h",
+            "PCR (Xpert MTB/RIF) : sensibilité 88%, détecte résistance RIF en 2h",
+            "Culture (Lowenstein) : gold standard, sensibilité 80-90%, 4-6 semaines",
+            "Antibiogramme : indispensable, résultats en 2-3 semaines après culture",
+            "QuantiFERON/T-SPOT : tests IGRA, ne distinguent pas infection/maladie",
+            "IDR tuberculine : moins spécifique, interférence BCG"
+          ]
+        },
+        {
+          "titre": "Traitement standard",
+          "contenu": "Le traitement antituberculeux doit être prolongé pour éviter les rechutes et l'émergence de résistances.",
+          "points": [
+            "Phase intensive (2 mois) : HRZE quadrithérapie quotidienne",
+            "Phase de continuation (4 mois) : HR bithérapie",
+            "DOTS : supervision directe améliore observance > 90%",
+            "Durée totale : 6 mois minimum (9-12 mois si méningée/osseuse)",
+            "Pyridoxine : prévention neuropathie par isoniazide",
+            "Corticoïdes : si méningite, péricardite, forme sévère"
+          ]
+        },
+        {
+          "titre": "Résistances et cas particuliers",
+          "contenu": "L'émergence de souches résistantes complique la prise en charge.",
+          "points": [
+            "MDR-TB : résistance INH + RIF, traitement 18-24 mois",
+            "XDR-TB : MDR + résistance fluoroquinolones + injectables",
+            "TB-VIH : interactions médicamenteuses, IRIS possible",
+            "TB pédiatrique : dosages adaptés au poids, formes sévères",
+            "TB grossesse : pas de streptomycine, surveillance rapprochée",
+            "Pentathérapie : si suspicion résistance (ajout fluoroquinolone)"
+          ]
+        },
+        {
+          "titre": "Prévention et santé publique",
+          "contenu": "La lutte contre la tuberculose nécessite une approche globale.",
+          "points": [
+            "Déclaration obligatoire : dans les 24h au médecin cantonal",
+            "Enquête entourage : dépistage systématique des contacts",
+            "Prophylaxie : INH 6-9 mois si infection latente",
+            "BCG : protection limitée adulte, efficace formes graves enfant",
+            "Isolement : minimum 2 semaines traitement + 3 BAAR négatifs",
+            "Facteurs sociaux : logement, nutrition, accès aux soins"
+          ]
+        }
+      ],
+      "rappelsTherapeutiques": [
+        "TRAITEMENT STANDARD (2HRZE/4HR) : Isoniazide 5 mg/kg, Rifampicine 10 mg/kg, Pyrazinamide 25 mg/kg, Éthambutol 15 mg/kg",
+        "VITAMINE B6 : 25-50 mg/j systématique avec isoniazide",
+        "SURVEILLANCE : Transaminases mensuelles, vision des couleurs (éthambutol), créatinine, uricémie",
+        "HÉPATITE MÉDICAMENTEUSE : Arrêt si ALAT > 5N ou > 3N + symptômes",
+        "PROPHYLAXIE CONTACTS : INH 10 mg/kg/j × 6-9 mois si IGRA+",
+        "ENFANTS < 5 ANS : Prophylaxie systématique même si tests négatifs",
+        "DOTS : Directement observé, réduit échecs et résistances"
+      ],
+      "examensComplementaires": [
+        "BAAR crachats : 3 échantillons, sensibilité 50-70% si caverne",
+        "PCR Xpert MTB/RIF : résultat en 2h, détecte résistance rifampicine",
+        "Culture Lowenstein : gold standard, antibiogramme, 4-6 semaines",
+        "Radiographie thoracique : infiltrats apex, cavernes, miliaire",
+        "CT thoracique : précise lésions, recherche complications",
+        "QuantiFERON-Gold : test IGRA, pas d'interférence BCG",
+        "Bronchoscopie + LBA : si crachats négatifs et forte suspicion",
+        "Biopsie ganglionnaire : si adénopathies, culture + anatomopathologie"
+      ]
+    }
+  }
+}

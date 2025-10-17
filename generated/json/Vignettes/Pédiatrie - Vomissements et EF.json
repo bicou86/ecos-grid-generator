@@ -1,0 +1,620 @@
+{
+  "title": "Pédiatrie - Vomissements et état fébrile - Méningite bactérienne",
+  "context": {
+    "setting": "Service d'urgences pédiatriques",
+    "patient": "Linda, fillette de 11 mois, amenée par sa maman pour vomissements, irritabilité inhabituelle et état fébrile",
+    "vitals": {
+      "temperature": "39.0°C",
+      "fc": "182 bpm",
+      "fr": "52/min",
+      "ta": "75/50 mmHg",
+      "sao2": "97%"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Motif de consultation et degré d'urgence",
+          "binaryOnly": true,
+          "patientComment": "Vomissements, irritabilité et fièvre",
+          "description": "Urgence pédiatrique: < 1 an + fièvre élevée + altération état général"
+        },
+        {
+          "id": "a2",
+          "text": "Histoire de la maladie actuelle",
+          "details": [
+            "Début des symptômes [réveil à 1h du matin en pleurant]",
+            "Pleurs persistants [toute la nuit et matinée]",
+            "Calmée seulement [au biberon]",
+            "Température initiale [39°C à 3h du matin]",
+            "Traitement donné [suppositoire de paracétamol]",
+            "Température après traitement [37.5°C à 7h]",
+            "Vomissements [4-5 épisodes après le biberon du matin]",
+            "État de conscience [peu intéressée, refuse de jouer, regard peu présent]",
+            "Irritabilité [pleurs inconsolables par moments]"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Antécédents récents",
+          "details": [
+            "État de santé précédent [petit rhume depuis 1 semaine]",
+            "Alimentation récente [biberon bu sans problème ce matin]",
+            "Hydratation [à évaluer]",
+            "Changements comportementaux [irritabilité inhabituelle]"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Antécédents médicaux personnels",
+          "details": [
+            "Santé générale [excellente santé habituelle]",
+            "Épisode d'otite [à 4 mois]",
+            "Bronchiolite [à 6 mois, peu sévère]",
+            "Croissance staturo-pondérale [bonne]",
+            "Développement psychomoteur [normal]",
+            "Sommeil habituel [bon]"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Statut vaccinal",
+          "details": [
+            "DTaP-IPV-Hib [à 2 et 4 mois]",
+            "PCV-13 (Prevenar) [à 2 et 4 mois]",
+            "Rotavirus [à 2 et 4 mois]",
+            "Méningocoque B [à 3 et 5 mois]",
+            "Vaccins à jour [selon calendrier suisse]"
+          ]
+        },
+        {
+          "id": "a6",
+          "text": "Contexte familial et environnemental",
+          "details": [
+            "Fratrie [frère de 3 ans en bonne santé]",
+            "Parents [en bonne santé]",
+            "Contacts malades [aucun dans la famille]",
+            "Mode de garde [crèche depuis l'âge de 6 mois]",
+            "Épidémie en crèche [à rechercher]"
+          ]
+        },
+        {
+          "id": "a7",
+          "text": "Évaluation ABC (Airways, Breathing, Circulation)",
+          "binaryOnly": true,
+          "details": [
+            "Airways [voies aériennes dégagées]",
+            "Breathing [FR 52/min, pas de tirage, SpO2 97%]",
+            "Circulation [FC 182/min, TA 75/50 mmHg, TRC 4 sec]",
+            "Conclusion [état de choc compensé]"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "État général et signes vitaux",
+          "binaryOnly": true,
+          "patientComment": "État général altéré, T: 39°C, FC: 182-192 bpm, FR: 52/min, TA: 75/50 mmHg, TRC: 4 sec, SpO2: 97%"
+        },
+        {
+          "id": "e2",
+          "text": "Examen cutanéo-muqueux et hydratation",
+          "details": [
+            "Muqueuses [sèches]",
+            "Larmes [peu présentes]",
+            "Déshydratation estimée [environ 7%]",
+            "Coloration cutanée [marbrée]",
+            "Recherche de pétéchies [absentes]",
+            "Temps de recoloration capillaire [4 secondes]"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Examen ORL",
+          "details": [
+            "Pharynx [piliers antérieurs rouges]",
+            "Écoulement nasal [muqueux]",
+            "Écoulement postérieur [muqueux]",
+            "Ganglions [petits sous-angulo-mandibulaires]",
+            "Tympan droit [calme]",
+            "Tympan gauche [non visualisé - cérumen]"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Examen cardiovasculaire",
+          "details": [
+            "Fréquence cardiaque [192/min pendant les pleurs]",
+            "Tension artérielle [75/50 mmHg - basse pour l'âge]",
+            "Temps de recoloration capillaire [4 secondes - allongé]",
+            "Pouls périphériques [à évaluer]",
+            "Bruits du cœur [à préciser]"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Examen respiratoire",
+          "details": [
+            "Fréquence respiratoire [52/min - tachypnée]",
+            "Auscultation [symétrique]",
+            "Saturation O2 [97%]",
+            "Signes de détresse [pas de tirage]",
+            "Murmure vésiculaire [à préciser]"
+          ]
+        },
+        {
+          "id": "e6",
+          "text": "Examen abdominal",
+          "details": [
+            "Palpation [difficile car pleurs, abdomen déprimable]",
+            "Foie [1-2 cm du rebord costal]",
+            "Rate [non palpable]",
+            "Bruits abdominaux [rares]",
+            "Masses [absentes]",
+            "Défense [absente]"
+          ]
+        },
+        {
+          "id": "e7",
+          "text": "Examen neurologique et signes méningés",
+          "details": [
+            "État de conscience [alternance irritabilité/léthargie]",
+            "Position assise [n'apprécie pas]",
+            "Mobilisation de la tête [douloureuse]",
+            "Raideur de nuque [discrète en fin de flexion]",
+            "Test de la lampe sur sternum [essaie de fléchir la nuque mais pleure]",
+            "Fontanelle antérieure [petite taille, non évaluable]",
+            "Tonus [à évaluer]",
+            "Réflexes [normaux pour l'âge]",
+            "Pupilles [à évaluer]"
+          ]
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostics différentiels",
+          "ddSection": {
+            "title": "Diagnostics différentiels des vomissements fébriles du nourrisson",
+            "categories": [
+              {
+                "name": "Causes infectieuses prioritaires",
+                "items": [
+                  {
+                    "text": "Méningite bactérienne",
+                    "cause": "Arguments POUR:\n\t□ Fièvre élevée\n\t□ Altération de l'état de conscience\n\t□ Irritabilité/léthargie\n\t□ Signes méningés présents\n\t□ Vomissements\n\t□ État de choc compensé",
+                    "test": "→ Ponction lombaire urgente, hémocultures, PCT, CRP"
+                  },
+                  {
+                    "text": "Méningite virale",
+                    "cause": "Arguments POSSIBLES:\n\t□ Contexte viral (rhume)\n\t□ Mais état général très altéré",
+                    "test": "→ PL, PCR virales (entérovirus, herpès)"
+                  },
+                  {
+                    "text": "Gastro-entérite aiguë",
+                    "cause": "Arguments MIXTES:\n\t□ POUR: Vomissements\n\t□ CONTRE: Pas de diarrhée, signes neurologiques",
+                    "test": "→ Ionogramme, coproculture si diarrhée"
+                  },
+                  {
+                    "text": "Infection urinaire",
+                    "cause": "Arguments À RECHERCHER:\n\t□ Fièvre élevée chez nourrisson\n\t□ Vomissements possibles",
+                    "test": "→ Stix urinaire, ECBU"
+                  }
+                ]
+              },
+              {
+                "name": "Causes chirurgicales",
+                "items": [
+                  {
+                    "text": "Invagination intestinale",
+                    "cause": "Arguments CONTRE:\n\t□ Pas de douleurs paroxystiques\n\t□ Pas de rectorragies\n\t□ Abdomen souple",
+                    "test": "→ Échographie abdominale si suspicion"
+                  },
+                  {
+                    "text": "Volvulus",
+                    "cause": "Arguments CONTRE:\n\t□ Abdomen non distendu\n\t□ Pas de bile dans vomissements",
+                    "test": "→ Radiographie abdominale si doute"
+                  },
+                  {
+                    "text": "Sténose du pylore",
+                    "cause": "Arguments CONTRE:\n\t□ Âge (trop tardif, pic 3-6 semaines)\n\t□ Pas de vomissements en jet",
+                    "test": "→ Échographie pylorique si suspicion"
+                  }
+                ]
+              },
+              {
+                "name": "Autres causes",
+                "items": [
+                  {
+                    "text": "Hypertension intracrânienne",
+                    "cause": "Arguments À CONSIDÉRER:\n\t□ Vomissements\n\t□ Altération conscience\n\t□ Mais contexte fébrile oriente vers infectieux",
+                    "test": "→ Fond d'œil, imagerie cérébrale"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Examens complémentaires urgents - Résultats",
+          "details": [
+            "FSC [GB 29.1 G/l, NS 67%, NNS 7%, lymphos 19%]",
+            "Plaquettes [366'000/mm³]",
+            "CRP [200 mg/L - très élevée]",
+            "Procalcitonine [5.2 µg/L - élevée]",
+            "Ionogramme [normal]",
+            "Protéines totales [61 g/l]",
+            "Glycémie [6.3 mmol/l]",
+            "Stix urinaire [traces de GB, culture en cours]"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Ponction lombaire - Résultats",
+          "details": [
+            "Cellularité [GB 1200/mm³]",
+            "Formule [NS 88%, NNS 10%, lymphos 2%]",
+            "Protéinorachie [0.98 g/l - élevée]",
+            "Glycorachie [2.1 mmol/l]",
+            "Rapport glucose LCR/sang [< 50%]",
+            "Coloration de Gram [Diplocoques Gram positif]",
+            "Culture LCR [en cours]",
+            "Diagnostic [Méningite bactérienne à pneumocoque probable]"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Résultats microbiologiques à 36h",
+          "details": [
+            "Hémoculture [S. pneumoniae sérotype 38]",
+            "Antibiogramme [sensible à la pénicilline]",
+            "Culture LCR [S. pneumoniae sérotype 38]",
+            "Sensibilité [sensible à la pénicilline]",
+            "Diagnostic final [Méningite à pneumocoque confirmée]",
+            "Note [Sérotype 38 non couvert par vaccin PCV-13]"
+          ]
+        },
+        {
+          "id": "m5",
+          "text": "Traitement d'urgence de la méningite",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Stabilisation initiale",
+                "items": [
+                  {
+                    "treatment": "Voie veineuse",
+                    "details": "Pose immédiate pour réanimation et antibiotiques",
+                    "duration": "Immédiat"
+                  },
+                  {
+                    "treatment": "Remplissage vasculaire",
+                    "details": "NaCl 0.9% 20 ml/kg en 20 min",
+                    "duration": "Si choc persistant, répéter"
+                  },
+                  {
+                    "treatment": "Oxygénothérapie",
+                    "details": "Si SpO2 < 94%",
+                    "duration": "Selon saturation"
+                  }
+                ]
+              },
+              {
+                "title": "Corticothérapie",
+                "items": [
+                  {
+                    "treatment": "Dexaméthasone IV",
+                    "details": "0.15 mg/kg/dose toutes les 6h",
+                    "duration": "4 jours"
+                  }
+                ]
+              },
+              {
+                "title": "Antibiothérapie empirique",
+                "items": [
+                  {
+                    "treatment": "Ceftriaxone IV",
+                    "details": "100 mg/kg/j en 1 dose (max 4g/j)",
+                    "duration": "10-14 jours selon évolution"
+                  },
+                  {
+                    "treatment": "Vancomycine IV",
+                    "details": "60 mg/kg/j divisé en 4 doses",
+                    "duration": "Si Gram+ et région endémique pneumocoque résistant, jusqu'à antibiogramme"
+                  }
+                ]
+              },
+              {
+                "title": "Traitement symptomatique",
+                "items": [
+                  {
+                    "treatment": "Antipyrétique",
+                    "details": "Paracétamol 15 mg/kg/dose toutes les 6h",
+                    "duration": "Selon fièvre"
+                  },
+                  {
+                    "treatment": "Hydratation",
+                    "details": "Besoins de base + pertes + déficit",
+                    "duration": "Adaptation selon bilan"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m6",
+          "text": "Surveillance en hospitalisation",
+          "details": [
+            "Monitoring vital [FC, FR, TA, SpO2 en continu]",
+            "État neurologique [conscience, pupilles, tonus]",
+            "Périmètre crânien [1x/jour]",
+            "Recherche de pétéchies [surveillance cutanée]",
+            "Bilan hydrique [entrées/sorties, diurèse]",
+            "Poids [1x/jour]",
+            "Signes d'HTIC [vomissements, bradycardie, HTA]",
+            "Convulsions [surveillance continue]"
+          ]
+        },
+        {
+          "id": "m7",
+          "text": "Prophylaxie et mesures de santé publique",
+          "details": [
+            "Prophylaxie entourage [NON nécessaire pour pneumocoque]",
+            "Si méningocoque [rifampicine ou ciprofloxacine dans les 48h]",
+            "Déclaration obligatoire [NON pour pneumocoque]",
+            "Obligatoire si [méningocoque, Hib, tuberculose]",
+            "Isolement [gouttelettes pendant 24h d'antibiotiques]",
+            "Vaccination de rattrapage [selon sérotype et statut vaccinal]"
+          ]
+        },
+        {
+          "id": "m8",
+          "text": "Complications et suivi",
+          "redflagsSection": {
+            "title": "Complications des méningites bactériennes",
+            "items": [
+              {
+                "text": "Surdité",
+                "description": "4-10% des cas, dépistage par PEA à 1 mois"
+              },
+              {
+                "text": "Hydrocéphalie",
+                "description": "Surveillance périmètre crânien, échographie transfontanellaire"
+              },
+              {
+                "text": "SIADH",
+                "description": "Syndrome de sécrétion inappropriée d'ADH, surveillance natrémie"
+              },
+              {
+                "text": "Convulsions",
+                "description": "Aiguës ou séquellaires, EEG si nécessaire"
+              },
+              {
+                "text": "Déficits neurologiques",
+                "description": "Moteurs, cognitifs, suivi neuropédiatrique"
+              },
+              {
+                "text": "Abcès/empyème",
+                "description": "Si évolution défavorable, imagerie cérébrale"
+              }
+            ]
+          }
+        },
+        {
+          "id": "m9",
+          "text": "Évolution et pronostic",
+          "details": [
+            "Évolution immédiate [satisfaisante dans ce cas]",
+            "Persistance fièvre [48h sous traitement]",
+            "Persistance vomissements [48h]",
+            "Durée hospitalisation [10-14 jours]",
+            "Suivi ORL [PEA à 1 mois obligatoire]",
+            "Suivi infectiologie [consultation à 1 mois]",
+            "Suivi neuropédiatrique [si séquelles]",
+            "Immunologie [dépistage déficit si méningite bactérienne]"
+          ]
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Clôture type",
+          "content": "Madame, Linda présente une méningite bactérienne à pneumocoque. C'est une infection grave de l'enveloppe du cerveau qui nécessite une hospitalisation immédiate et un traitement antibiotique intraveineux. Nous avons débuté les antibiotiques et la cortisone pour limiter l'inflammation. L'évolution devrait être favorable avec le traitement, mais nous devrons surveiller étroitement Linda et faire un suivi ORL pour dépister une éventuelle surdité. Le pneumocoque responsable n'est pas couvert par le vaccin qu'elle a reçu."
+        },
+        {
+          "id": "c2",
+          "text": "Questions difficiles des parents",
+          "content": "[Est-ce que c'est de notre faute ?]\n[Va-t-elle garder des séquelles ?]\n[Pourquoi le vaccin n'a pas protégé ?]\n[Son frère est-il à risque ?]\n[Comment a-t-elle attrapé ça ?]\n[Aurait-on dû consulter plus tôt ?]"
+        },
+        {
+          "id": "c3",
+          "text": "Réponse type du candidat",
+          "exemplesPhrases": [
+            "\"Non, ce n'est pas votre faute. Les méningites peuvent évoluer très rapidement chez les jeunes enfants.\"",
+            "\"Avec le traitement précoce, la majorité des enfants récupèrent bien. Nous ferons un suivi rapproché pour dépister d'éventuelles complications, notamment auditives.\"",
+            "\"Le vaccin protège contre 13 sérotypes de pneumocoque, mais il en existe plus de 90. Linda a été infectée par un sérotype non couvert par le vaccin.\"",
+            "\"Le pneumocoque ne nécessite pas de prophylaxie pour l'entourage. Votre fils n'est pas à risque particulier.\"",
+            "\"Le pneumocoque est présent dans le nez et la gorge de nombreuses personnes. Parfois, il peut passer dans le sang et causer une méningite.\"",
+            "\"Vous avez bien réagi en consultant rapidement devant ces symptômes inquiétants. C'était la bonne décision.\""
+          ]
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "images": [
+      {
+        "id": "img1",
+        "title": "Algorithme de prise en charge de la méningite",
+        "filename": "grilles_generees/html/images/Méningite-Algorithme.jpg",
+        "description": "Arbre décisionnel pour l'évaluation et le traitement des méningites pédiatriques"
+      }
+    ],
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour le parent standardisé",
+      "nom": "Maman de Linda",
+      "contexte": "Urgences pédiatriques",
+      "motifConsultation": {
+        "plaintePrincipale": "Ma fille vomit et elle a de la fièvre",
+        "autreChose": "Elle n'est pas comme d'habitude, je suis très inquiète"
+      },
+      "histoireActuelle": {
+        "nuit": [
+          "Elle s'est réveillée à 1h du matin en pleurant",
+          "Elle a pleuré toute la nuit",
+          "Elle se calmait seulement quand je lui donnais le biberon",
+          "J'ai pris sa température à 3h, elle avait 39°C",
+          "Je lui ai donné un suppositoire de paracétamol",
+          "À 7h elle avait 37.5°C"
+        ],
+        "matin": [
+          "Ce matin elle a bu son biberon normalement",
+          "Puis elle a vomi 4 ou 5 fois",
+          "Depuis elle ne veut plus jouer",
+          "Elle a le regard vide",
+          "Par moments elle pleure et je n'arrive pas à la consoler"
+        ],
+        "inquietudes": [
+          "Ce n'est pas normal, elle n'est jamais comme ça",
+          "J'ai peur que ce soit grave",
+          "Elle avait juste un petit rhume cette semaine"
+        ]
+      },
+      "antecedents": {
+        "sante": [
+          "Elle va très bien d'habitude",
+          "Elle a eu une otite à 4 mois",
+          "Une bronchiolite à 6 mois mais pas grave",
+          "Elle grandit bien, mange bien, dort bien"
+        ],
+        "vaccins": [
+          "Elle a eu tous ses vaccins",
+          "Les vaccins habituels pour son âge",
+          "Je ne me souviens plus exactement lesquels"
+        ],
+        "environnement": [
+          "Son frère de 3 ans va bien",
+          "Personne n'est malade à la maison",
+          "Elle va à la crèche depuis ses 6 mois"
+        ]
+      },
+      "simulation": {
+        "attitude": [
+          "Mère très inquiète mais collaborative",
+          "Répond précisément aux questions",
+          "Demande ce qui se passe",
+          "Pleure par moments d'inquiétude"
+        ],
+        "comportementEnfant": [
+          "Linda pleure beaucoup",
+          "Alternance irritabilité/somnolence",
+          "Se calme difficilement dans les bras",
+          "Gémit quand on la manipule"
+        ]
+      }
+    },
+    "informationsExpert": {
+      "titre": "Points clés pour l'évaluateur",
+      "pointsCles": [
+        "Reconnaître l'urgence pédiatrique (< 1 an + fièvre + altération état général)",
+        "Évaluation ABC systématique avant anamnèse complète",
+        "Identifier l'état de choc compensé (tachycardie, hypotension, TRC allongé)",
+        "Rechercher les signes méningés adaptés à l'âge (raideur nuque, douleur mobilisation)",
+        "Demander PL urgente devant suspicion de méningite",
+        "Débuter antibiotiques et corticoïdes avant résultats si forte suspicion",
+        "Adapter antibiothérapie selon Gram et antibiogramme"
+      ],
+      "pieges": [
+        "Ne pas reconnaître l'urgence vitale",
+        "Retarder la PL ou les antibiotiques",
+        "Oublier les corticoïdes (à donner avant ou avec antibiotiques)",
+        "Ne pas reconnaître l'état de choc compensé",
+        "Oublier la vancomycine si pneumocoque résistant possible",
+        "Ne pas planifier le suivi ORL systématique",
+        "Confondre prophylaxie pneumocoque (non nécessaire) et méningocoque (obligatoire)"
+      ]
+    },
+    "theoriePratique": {
+      "titre": "Rappels théoriques - Méningites pédiatriques",
+      "sections": [
+        {
+          "titre": "Épidémiologie et agents",
+          "points": [
+            "< 3 mois: Streptocoque B, E. coli, Listeria",
+            "3 mois - 5 ans: Pneumocoque, Méningocoque, Hib (si non vacciné)",
+            "> 5 ans: Pneumocoque, Méningocoque",
+            "Virales: Entérovirus (80%), Herpès, VZV",
+            "Impact vaccinal: diminution > 90% Hib et pneumocoque invasif",
+            "Sérotypes non vaccinaux: émergence relative"
+          ]
+        },
+        {
+          "titre": "Indications de ponction lombaire selon l'âge",
+          "points": [
+            "< 1 mois: tout état infectieux",
+            "1-3 mois: si toxique ou PCT ≥ 0.5, PN > 10 G/l, CRP > 20",
+            "3-9 mois: infection + signes neurologiques",
+            "> 9 mois: infection + signes méningés",
+            "Contre-indications: instabilité hémodynamique, HTIC, coagulopathie",
+            "Imagerie préalable si: signes focaux, coma, convulsions focales"
+          ]
+        },
+        {
+          "titre": "Caractéristiques du LCR",
+          "points": [
+            "Normal: < 5 GB/mm³, protéines < 0.4 g/l, glucose > 60% glycémie",
+            "Bactérien: > 1000 GB (PN > 80%), protéines > 1 g/l, glucose < 50%",
+            "Viral: 10-500 GB (lymphocytes), protéines 0.1-1 g/l, glucose normal",
+            "Dissociation albumino-cytologique: protéines élevées sans cellules",
+            "PL traumatique: 1 GB pour 500-1000 GR",
+            "PCR multiplex: diagnostic rapide bactérien et viral"
+          ]
+        },
+        {
+          "titre": "Complications et séquelles",
+          "points": [
+            "Mortalité: 5-10% méningite bactérienne",
+            "Surdité: 4-10%, dépistage PEA obligatoire",
+            "Épilepsie: 5-10% après méningite bactérienne",
+            "Déficit cognitif: 10-20% selon germe et délai",
+            "Hydrocéphalie: surveillance périmètre crânien",
+            "Facteurs de mauvais pronostic: < 1 an, coma, choc, retard traitement"
+          ]
+        }
+      ],
+      "rappelsTherapeutiques": [
+        "Stabilisation ABC prioritaire si choc",
+        "Corticoïdes AVANT ou AVEC antibiotiques (max 4h après)",
+        "Dexaméthasone 0.15 mg/kg/dose toutes les 6h x 4 jours",
+        "< 3 mois: Ceftriaxone + Amoxicilline (Listeria)",
+        "> 3 mois: Ceftriaxone ± Vancomycine si Gram+ résistant",
+        "Durée: 7-10 jours méningocoque/Hib, 10-14 jours pneumocoque",
+        "Aciclovir si suspicion herpès jusqu'à PCR négative"
+      ],
+      "examensComplementaires": [
+        "FSC, CRP, PCT: orientation bactérienne si élevés",
+        "Ionogramme: SIADH fréquent en méningite",
+        "Hémocultures avant antibiotiques si possible",
+        "PL: cytologie, biochimie, Gram, culture, PCR",
+        "PCR multiplex: diagnostic rapide, guide thérapeutique",
+        "Imagerie: si signes focaux ou évolution défavorable",
+        "EEG: si convulsions ou troubles conscience persistants"
+      ]
+    }
+  }
+}

@@ -1,0 +1,735 @@
+{
+  "title": "Érythème cutané avec douleur - Homme de 56 ans",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Homme de 56 ans, ancien facteur à la retraite, se présentant pour rougeur et gonflement de la jambe gauche"
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Motif de consultation principal",
+          "binaryOnly": true,
+          "patientComment": "Ma jambe est rouge et douloureuse — je pense qu'elle pourrait être infectée"
+        },
+        {
+          "id": "a2",
+          "text": "Caractérisation des symptômes",
+          "details": [
+            "Début et progression [depuis 3 jours]",
+            "Localisation précise [partie inférieure de la jambe gauche]",
+            "Description de la rougeur [rouge, chaude, gonflée]",
+            "Douleur associée [oui, douloureuse]",
+            "Recherche de traumatisme [aucun traumatisme]",
+            "Écoulement purulent ou abcès [pas d'écoulement purulent ni d'abcès]"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Symptômes systémiques",
+          "details": [
+            "Fièvre [légère fièvre]",
+            "Frissons [pas de frissons]",
+            "Fatigue [oui, fatigue]",
+            "Nausées [pas de nausées]"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Épisodes similaires antérieurs",
+          "patientComment": "Épisode similaire il y a 6 mois sur la même jambe"
+        },
+        {
+          "id": "a5",
+          "text": "Facteurs de risque d'infection cutanée",
+          "details": [
+            "Plaies cutanées ou ulcères [pas de plaies signalées]",
+            "Tinea pedis (mycose des pieds) [porte des chaussures sans chaussettes]",
+            "Œdème chronique [non mentionné]",
+            "Piqûres d'insectes récentes [non mentionné]",
+            "Chirurgie récente [non]"
+          ]
+        },
+        {
+          "id": "a6",
+          "text": "Antécédents médicaux",
+          "details": [
+            "Diabète de type 2 [oui, mal contrôlé]",
+            "Hypertension artérielle [oui]",
+            "Immunosuppression [pas de traitement immunosuppresseur]"
+          ]
+        },
+        {
+          "id": "a7",
+          "text": "Médicaments actuels",
+          "patientComment": "Metformine, lisinopril"
+        },
+        {
+          "id": "a8",
+          "text": "Allergies médicamenteuses",
+          "patientComment": "Aucune allergie connue"
+        },
+        {
+          "id": "a9",
+          "text": "Habitudes de vie",
+          "details": [
+            "Tabagisme [fumeur, 20 paquets-années]",
+            "Alcool [non mentionné]",
+            "Activité physique [marche quotidienne avec une canne]"
+          ]
+        },
+        {
+          "id": "a10",
+          "text": "Contexte social",
+          "details": [
+            "Situation de vie [vit seul]",
+            "Profession [facteur à la retraite]"
+          ]
+        },
+        {
+          "id": "a11",
+          "text": "Facteurs d'exposition",
+          "details": [
+            "Voyage récent [pas de voyage à l'étranger]",
+            "Morsures d'animaux [pas de morsures d'animaux]"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Remarque: Pas d'examen physique requis dans cette station",
+          "binaryOnly": true,
+          "scoringRule": "Ce critère est automatiquement validé si le candidat reconnaît qu'aucun examen physique n'est nécessaire"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Expliquer le diagnostic probable",
+          "patientComment": "Vous avez probablement une infection cutanée appelée cellulite. C'est courant et traitable, mais il est important d'agir rapidement pour éviter qu'elle ne se propage",
+          "ddSection": {
+            "title": "Diagnostics différentiels à considérer",
+            "categories": [
+              {
+                "name": "Infections cutanées",
+                "items": [
+                  {
+                    "text": "Cellulite",
+                    "cause": "Arguments POUR:\n\t□ Érythème mal délimité\n\t□ Zone indurée et chaude\n\t□ Infection dermique/sous-cutanée profonde\n\t□ Facteur de risque: diabète",
+                    "test": "→ Diagnostic clinique"
+                  },
+                  {
+                    "text": "Érysipèle",
+                    "cause": "Arguments POUR:\n\t□ Infection superficielle (derme supérieur)\n\t□ Lésion surélevée, rouge vif\n\t□ Bords bien délimités",
+                    "test": "→ Diagnostic clinique"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Examens complémentaires",
+          "details": [
+            "NFS si signes systémiques [leucocytose possible]",
+            "CRP [marqueur d'inflammation]",
+            "Fonction rénale [avant antibiothérapie]",
+            "Hémocultures [seulement si fièvre ou immunodéprimé]",
+            "Culture [non nécessaire sauf cas récurrents/sévères]"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Traitement antibiotique empirique",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Cellulite légère à modérée (ambulatoire)",
+                "items": [
+                  {
+                    "treatment": "Céfalexine PO",
+                    "details": "Première ligne pour streptocoques et SASM",
+                    "duration": "7-10 jours"
+                  },
+                  {
+                    "treatment": "Amoxicilline-clavulanate PO",
+                    "details": "Alternative efficace",
+                    "duration": "7-10 jours"
+                  },
+                  {
+                    "treatment": "Clindamycine PO",
+                    "details": "Si allergie à la pénicilline",
+                    "duration": "7-10 jours"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m4",
+          "text": "Mesures de soutien",
+          "details": [
+            "Tracer au stylo la limite de la rougeur pour surveiller l’évolution",
+            "Surélévation de la jambe affectée",
+            "Analgésie (paracétamol)",
+            "Repos et hydratation",
+            "Traiter la cause sous-jacente (tinea pedis si présente)"
+          ]
+        },
+        {
+          "id": "m5",
+          "text": "Critères d'hospitalisation",
+          "redflagsSection": {
+            "title": "Signes de gravité nécessitant une hospitalisation",
+            "items": [
+              {
+                "text": "Signes systémiques",
+                "description": "Fièvre élevée, hypotension"
+              },
+              {
+                "text": "Progression rapide",
+                "description": "Extension de l'érythème malgré traitement"
+              },
+              {
+                "text": "Immunosuppression",
+                "description": "Patient immunodéprimé"
+              },
+              {
+                "text": "Échec du traitement oral",
+                "description": "Pas d'amélioration après 48-72h"
+              },
+              {
+                "text": "Suspicion d'infection profonde",
+                "description": "Fasciite nécrosante"
+              }
+            ]
+          }
+        },
+        {
+          "id": "m6",
+          "text": "Plan de suivi",
+          "details": [
+            "Réévaluation dans 48-72 heures",
+            "Surveillance des signes d'aggravation",
+            "Si amélioration, compléter 7-10 jours d'antibiotiques",
+            "Éducation sur l'hygiène cutanée et port de chaussures appropriées"
+          ]
+        },
+        {
+          "id": "m7",
+          "text": "Prévention des récidives",
+          "details": [
+            "Contrôle optimal du diabète",
+            "Soins des pieds appropriés",
+            "Traitement des mycoses interdigitales",
+            "Port de chaussettes avec les chaussures",
+            "Hydratation cutanée régulière"
+          ]
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Répondre aux inquiétudes du patient",
+          "details": [
+            "Question: [Est-ce quelque chose de grave?]",
+            "Réponse type: \"C'est une infection traitable qui nécessite des antibiotiques. Avec le traitement approprié, vous devriez voir une amélioration dans 2-3 jours.\"",
+            "Question: [Dois-je aller à l'hôpital?]",
+            "Réponse type: \"Pour l'instant, votre infection semble légère et vous êtes stable. Nous pouvons commencer avec des antibiotiques à domicile, mais si les choses s'aggravent ou si vous développez une forte fièvre ou de la confusion, nous devrons peut-être vous hospitaliser.\"",
+            "Question: [Pourquoi cela revient-il?]",
+            "Réponse type: \"La cellulite récurrente peut survenir, surtout avec le diabète ou des problèmes de peau comme les mycoses. Nous devrons aussi gérer ces facteurs de risque.\""
+          ]
+        },
+        {
+          "id": "c2",
+          "text": "Clôture de la consultation",
+          "exemplesPhrases": [
+            "\"Je vais vous prescrire des antibiotiques pour traiter cette infection cutanée. Il est important de les prendre régulièrement pendant toute la durée prescrite.\"",
+            "\"Revenez me voir dans 2-3 jours pour que je puisse vérifier l'évolution. Si vous constatez une aggravation avant, n'hésitez pas à revenir plus tôt ou à vous rendre aux urgences.\"",
+            "\"Nous allons aussi travailler sur le contrôle de votre diabète et les soins de vos pieds pour éviter que cela ne se reproduise.\""
+          ]
+        },
+        {
+          "id": "c3",
+          "text": "Proposition de plan d'action à la fin",
+          "content": "« Je vous prescris un antibiotique adapté et des mesures de soutien comme surélever la jambe et vous reposer. Je vous revois dans 2 à 3 jours pour évaluer l'évolution. Si la rougeur progresse ou si vous avez de la fièvre importante, revenez plus tôt ou allez aux urgences. Nous en profiterons aussi pour revoir ensemble le suivi de votre diabète. »"
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour le patient standardisé",
+      "nom": "M. Alan Foster",
+      "age": "56 ans",
+      "profession": "Facteur à la retraite",
+      "contexte": "Cabinet de médecine générale",
+      "phraseOuverture": "Ma jambe est rouge et douloureuse — je pense qu'elle pourrait être infectée.",
+      "histoireActuelle": {
+        "symptomesPrincipaux": [
+          "Gonflement rouge et douloureux de la partie inférieure de la jambe gauche depuis 3 jours",
+          "La zone est chaude au toucher",
+          "Légère fièvre et fatigue",
+          "Pas d'écoulement purulent ni d'abcès visible",
+          "Aucun traumatisme récent dont vous vous souvenez"
+        ],
+        "episodesPrecedents": [
+          "Épisode similaire il y a 6 mois sur la même jambe",
+          "A été traité avec des antibiotiques à l'époque"
+        ]
+      },
+      "antecedents": {
+        "medicaux": [
+          "Diabète de type 2 (mal contrôlé)",
+          "Hypertension artérielle"
+        ],
+        "chirurgicaux": "Aucun",
+        "allergies": "Aucune allergie médicamenteuse connue"
+      },
+      "medicaments": {
+        "actuels": [
+          "Metformine",
+          "Lisinopril"
+        ]
+      },
+      "habitudes": {
+        "tabac": "Fumeur, 20 paquets-années",
+        "alcool": "Non mentionné",
+        "activite": "Marche quotidienne avec une canne",
+        "particularites": "Porte des chaussures sans chaussettes"
+      },
+      "contexteSocial": {
+        "situation": "Vit seul",
+        "profession": "Facteur à la retraite"
+      },
+      "informationsSupplementaires": {
+        "siDemande": [
+          "Pas de voyage à l'étranger récent",
+          "Pas de morsures d'animaux",
+          "Pas de traitement immunosuppresseur"
+        ]
+      },
+      "simulation": {
+        "attitude": [
+          "Inquiet mais coopératif",
+          "Cherche à comprendre la gravité de sa condition",
+          "Préoccupé par les récidives"
+        ],
+        "durantEntretien": [
+          "Répondez directement aux questions",
+          "Montrez de l'inquiétude quant à la possibilité d'une hospitalisation",
+          "Demandez pourquoi cela revient"
+        ]
+      },
+      "inquietudes": {
+        "principales": [
+          "Est-ce que c'est grave?",
+          "Vais-je devoir aller à l'hôpital?",
+          "Pourquoi cela revient-il?"
+        ]
+      }
+    },
+    "informationsExpert": {
+      "titre": "Informations pour l'expert évaluateur",
+      "pointsCles": [
+        "Reconnaître les signes cliniques de cellulite vs érysipèle",
+        "Identifier les facteurs de risque (diabète mal contrôlé, hygiène des pieds)",
+        "Oublier d’évaluer l’observance du traitement antidiabétique et son lien avec la récidive",
+        "Évaluer la sévérité et décider du traitement ambulatoire vs hospitalier",
+        "Proposer une antibiothérapie empirique appropriée",
+        "Planifier le suivi et la prévention des récidives"
+      ],
+      "pieges": [
+        "Ne pas oublier de rechercher les facteurs de risque modifiables",
+        "Ne pas sous-estimer l'importance du contrôle glycémique",
+        "Penser à la fasciite nécrosante si progression rapide",
+        "Ne pas oublier l'éducation sur les soins des pieds"
+      ],
+      "criteresDEvaluation": [
+        "Anamnèse complète incluant facteurs de risque",
+        "Diagnostic différentiel approprié",
+        "Plan de traitement adapté à la sévérité",
+        "Communication claire sur le plan de suivi",
+        "Mesures préventives pour éviter les récidives"
+      ]
+    },
+    "theoriePratique": {
+      "titre": "Points théoriques et pratiques",
+      "sections": [
+        {
+          "titre": "Cellulite vs Érysipèle",
+          "points": [
+            "Cellulite: infection dermique et sous-cutanée profonde, bords mal délimités",
+            "Érysipèle: infection superficielle du derme supérieur, bords bien délimités et surélevés",
+            "Les deux sont généralement causés par Streptococcus pyogenes ou Staphylococcus aureus"
+          ]
+        },
+        {
+          "titre": "Facteurs de risque de cellulite récurrente",
+          "points": [
+            "Diabète mal contrôlé",
+            "Insuffisance veineuse chronique",
+            "Lymphœdème",
+            "Obésité",
+            "Tinea pedis non traitée",
+            "Immunosuppression"
+          ]
+        }
+      ],
+      "rappelsTherapeutiques": [
+        "Antibiothérapie empirique: céfalexine ou amoxicilline-clavulanate pendant 7-10 jours",
+        "Clindamycine en cas d'allergie à la pénicilline",
+        "Vancomycine IV si suspicion de SARM ou infection sévère",
+        "Mesures adjuvantes: surélévation, repos, analgésie"
+      ],
+      "examensComplementaires": [
+        "NFS: recherche de leucocytose en cas de signes systémiques",
+        "CRP: marqueur inflammatoire, aide au suivi",
+        "Hémocultures: seulement si fièvre importante ou immunodépression",
+        "Culture de plaie: rarement nécessaire sauf cas récurrents ou atypiques",
+        "US Doppler: si suspicion de thrombose veineuse profonde associée"
+      ]
+    },
+    "resume": {
+      "titre": "🦠 Infections des tissus mous non nécrosantes (Érysipèle, Cellulite) – Résumé ECOS",
+      "sections": [
+        {
+          "titre": "🔍 Anamnèse",
+          "subsections": [
+            {
+              "titre": "Symptômes principaux",
+              "points": [
+                "Début aigu avec douleur, rougeur et chaleur locale",
+                "Fièvre souvent associée, frissons possibles",
+                "Progression rapide de l’inflammation cutanée",
+                "ATCD de plaie cutanée, intertrigo, ulcère, piqûre d’insecte"
+              ]
+            },
+            {
+              "titre": "Facteurs de risque",
+              "points": [
+                "Diabète, immunodépression",
+                "Insuffisance veineuse chronique, lymphœdème",
+                "Dermatophytie interdigitale (porte d’entrée)",
+                "ATCD d’érysipèle ou cellulite"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "👀 Examen clinique",
+          "subsections": [
+            {
+              "titre": "Signes locaux",
+              "points": [
+                "Érythème chaud, douloureux, tuméfié",
+                "Érysipèle : rougeur **systématisée, bien limitée** à bordure nette",
+                "Cellulite : atteinte **plus profonde, mal limitée**",
+                "Peau tendue, parfois bulles ou hémorragies (formes sévères)"
+              ]
+            },
+            {
+              "titre": "Signes systémiques",
+              "points": [
+                "Fièvre, frissons, malaise général",
+                "Adénopathies satellites",
+                "Signes de gravité : tachycardie, hypotension, confusion"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "🧪 Examens diagnostiques",
+          "subsections": [
+            {
+              "titre": "Examens de première intention",
+              "points": [
+                "Diagnostic clinique (signe cardinal = érythème douloureux fébrile)",
+                "NFS, CRP, VS : syndrome inflammatoire",
+                "Recherche porte d’entrée cutanée"
+              ]
+            },
+            {
+              "titre": "Examens complémentaires",
+              "points": [
+                "Hémocultures si fièvre élevée ou terrain fragile",
+                "Échographie si doute (abcès profond)",
+                "Différentiels : thrombophlébite, dermatite de stase, réaction allergique"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "⚙️ Prise en charge",
+          "subsections": [
+            {
+              "titre": "Mesures générales",
+              "points": [
+                "Repos, mise au repos du membre atteint",
+                "Élévation du membre si atteinte des MI",
+                "Antalgie et antipyrétiques",
+                "Surveillance de l’extension (marquer au stylo la limite cutanée)"
+              ]
+            },
+            {
+              "titre": "Antibiothérapie",
+              "points": [
+                "Érysipèle non compliqué : Pénicilline V per os (7–10 j)",
+                "Formes sévères : Pénicilline G IV ± flucloxacilline ou céphalosporine",
+                "Allergie : clindamycine ou macrolide",
+                "Toujours traiter la porte d’entrée (mycose, plaie cutanée)"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "✅ Points clés ECOS",
+          "points": [
+            "Érysipèle = érythème bien limité, cellulite = mal limitée",
+            "Diagnostic clinique, biologie utile pour évaluer la sévérité",
+            "Recherche systématique porte d’entrée cutanée",
+            "Antibiothérapie systématique, jamais corticoïdes seuls",
+            "Surveillance des signes de gravité → hospitalisation si suspicion complication"
+          ]
+        },
+        {
+          "titre": "📋 Check-list rapide ECOS",
+          "subsections": [
+            {
+              "titre": "Questions à poser",
+              "points": [
+                "Depuis quand la lésion est apparue ?",
+                "Fièvre, frissons, malaise général ?",
+                "ATCD d’érysipèle, diabète, immunodépression ?",
+                "Plaie cutanée, mycose interdigitale, piqûre récente ?"
+              ]
+            },
+            {
+              "titre": "Examens à faire",
+              "points": [
+                "Constantes vitales (TA, FC, T°, SpO₂)",
+                "Inspection cutanée complète",
+                "NFS, CRP, hémocultures si fièvre",
+                "Échographie si suspicion d’abcès profond",
+                "Recherche porte d’entrée"
+              ]
+            },
+            {
+              "titre": "PEC en 3 points",
+              "points": [
+                "Repos + élévation membre atteint",
+                "Antibiothérapie adaptée (pénicilline/clindamycine)",
+                "Surveillance évolution clinique (limites marquées)"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "presentationPatient": {
+      "titre": "📑 Fiche ECOS – Cas : Érythème cutané douloureux du membre inférieur (suspicion cellulite chez diabétique)",
+      "sections": [
+        {
+          "titre": "🧩 Checklist mentale (présentation systématisée)",
+          "points": [
+            "Intro → âge, profession, motif (homme 56 ans, jambe rouge et douloureuse, contexte diabète)",
+            "Caractériser l’érythème → début 3 jours, progression, localisation jambe gauche, rougeur chaude, gonflement, douleur, pas de pus ni d’abcès",
+            "Symptômes associés → fièvre légère, fatigue, pas de frissons, pas de nausées",
+            "ATCD médicaux → diabète type 2 mal contrôlé, HTA",
+            "ATCD chirurgicaux → aucun",
+            "Allergies → aucune connue",
+            "Traitements → metformine, lisinopril",
+            "Habitudes de vie → tabac 20 PA, pas d’alcool mentionné, marche avec canne, chaussures sans chaussettes",
+            "Contexte social → vit seul, retraité facteur",
+            "Examen clinique → érythème chaud, tuméfié, douloureux, fébricule, pas de pus ni porte d’entrée évidente, pas de signes de sepsis sévère",
+            "Résumé + hypothèse principale : Cellulite (infection profonde derme/sous-cutané, bords mal limités) ; DD : érysipèle (bords nets, superficiel), thrombophlébite, dermatite de stase, réaction allergique",
+            "Examens complémentaires → NFS, CRP, fonction rénale avant ATB, ± hémocultures si fièvre élevée ou immunodépression",
+            "Prise en charge → antibiothérapie PO (céfalexine ou amox-clav 7-10j ; clindamycine si allergie), repos, élévation jambe, marquer contour, antalgiques, hydratation, traiter facteurs de risque (tinea pedis, diabète)",
+            "Suivi → contrôle 48-72h, hospitalisation si aggravation, surveillance récidives"
+          ],
+          "mnemo": {
+            "titre": "👉 Mnémo rapide CELLU",
+            "elements": [
+              "C = Chaleur locale",
+              "E = Érythème mal limité",
+              "L = Lésion douloureuse",
+              "L = Lymphangite possible",
+              "U = Urgence relative (risque progression)"
+            ]
+          }
+        },
+        {
+          "titre": "🎤 Version longue (≈2-3 min)",
+          "contenu": "Il s’agit de M. Alan Foster, un homme de 56 ans, ancien facteur aujourd’hui à la retraite, qui consulte pour une jambe rouge et douloureuse depuis 3 jours. L’érythème est localisé à la partie inférieure de la jambe gauche. Le patient décrit une rougeur qui s’est progressivement étendue, associée à un gonflement et une douleur locale. La zone est chaude au toucher. Il n’a pas remarqué de pus ni d’abcès. Il n’y a pas eu de traumatisme récent.\n\nDepuis le début de l’épisode, il présente une fatigue et une fièvre légère, sans frissons ni nausées. Il a déjà eu un épisode similaire il y a 6 mois sur la même jambe, traité par antibiotiques.\n\nSes antécédents médicaux incluent un diabète de type 2 mal contrôlé et une hypertension artérielle. Pas d’antécédents chirurgicaux. Il ne rapporte aucune allergie médicamenteuse. Ses traitements sont la metformine et le lisinopril. Il fume depuis longtemps, environ 20 paquets-années, ne consomme pas d’alcool, marche avec une canne et a tendance à porter des chaussures sans chaussettes. Il vit seul.\n\nÀ l’examen, on observe une jambe gauche tuméfiée, chaude, érythémateuse et douloureuse. L’érythème est mal limité, sans collection apparente. Le patient est fébrile à 38 °C mais hémodynamiquement stable. Pas de signes de sepsis sévère.\n\nEn résumé, il s’agit d’un homme de 56 ans, diabétique, présentant un érythème chaud, douloureux, fébrile, mal limité de la jambe gauche, évoquant une cellulite cutanée. Les diagnostics différentiels incluent un érysipèle (plus superficiel, bien limité), une thrombophlébite, une dermatite de stase ou une réaction allergique.\n\nComme examens complémentaires, je demanderais une NFS, une CRP, une créatinine avant antibiothérapie, et des hémocultures uniquement en cas de fièvre élevée ou immunodépression. Pas d’imagerie de première intention sauf suspicion d’abcès profond ou de thrombose.\n\nLa prise en charge repose sur un traitement ambulatoire par antibiothérapie orale adaptée (céfalexine ou amoxicilline-clavulanate 7 à 10 jours, clindamycine si allergie). J’associe des mesures adjuvantes : repos, surélévation de la jambe, traçage au stylo de la zone pour surveiller l’évolution, analgésie par paracétamol, hydratation, et traitement des portes d’entrée éventuelles (tinea pedis). Le suivi doit être rapproché : réévaluation dans 48 à 72h, hospitalisation si aggravation ou absence d’amélioration. Enfin, la prévention repose sur le contrôle optimal du diabète, des soins de pieds appropriés, et le port de chaussettes pour éviter la macération."
+        },
+        {
+          "titre": "⚡ Version express (SBAR, 30 sec)",
+          "contenu": "S (Situation) : M. Foster, 56 ans, jambe gauche rouge, chaude et douloureuse depuis 3 jours.\n\nB (Background) : Diabète type 2 mal contrôlé, HTA, fumeur, épisode similaire il y a 6 mois. Pas d’allergie connue. Médicaments : metformine, lisinopril.\n\nA (Assessment) : Suspicion de cellulite cutanée. DD : érysipèle, thrombophlébite, dermatite de stase, réaction allergique.\n\nR (Recommendation) : NFS, CRP, créatinine, ATB PO (céfalexine ou amox-clav 7-10j), mesures de soutien (repos, élévation jambe, marquer érythème, paracétamol), suivi rapproché 48-72h, hospitalisation si aggravation."
+        },
+        {
+          "titre": "🎲 Touches ludiques / mnémos",
+          "subsections": [
+            {
+              "titre": "👉 Cellulite vs Érysipèle",
+              "points": [
+                "Cellulite = profonde, mal limitée, rougeur diffuse",
+                "Érysipèle = superficiel, bien limité, surélevé"
+              ]
+            },
+            {
+              "titre": "👉 Facteurs de risque de récidive",
+              "points": [
+                "Diabète mal contrôlé",
+                "Obésité",
+                "Lymphœdème",
+                "Insuffisance veineuse",
+                "Tinea pedis"
+              ]
+            },
+            {
+              "titre": "👉 PEC pratique (3 piliers)",
+              "points": [
+                "Antibiothérapie empirique 7-10 jours",
+                "Mesures de soutien (repos, élévation, traçage érythème, analgésie)",
+                "Prévention récidives (contrôle diabète, soins de pieds)"
+              ]
+            },
+            {
+              "titre": "⚠️ Pièges ECOS",
+              "points": [
+                "Ne pas oublier de rechercher porte d’entrée (mycose interdigitales)",
+                "Ne pas sous-estimer rôle du diabète",
+                "Bien différencier cellulite vs érysipèle",
+                "Hospitaliser si progression rapide ou sepsis"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "❓ Questions probables de l'examinateur (avec réponses orales)",
+          "subsections": [
+            {
+              "titre": "1. Arguments pour et contre chaque hypothèse",
+              "questions": [
+                {
+                  "question": "Cellulite",
+                  "reponse": {
+                    "pour": [
+                      "Érythème chaud, douloureux, tuméfié",
+                      "Bords mal limités",
+                      "Fièvre légère",
+                      "Facteur de risque : diabète"
+                    ],
+                    "contre": [
+                      "Pas de pus ni nécrose visible"
+                    ]
+                  }
+                },
+                {
+                  "question": "Érysipèle",
+                  "reponse": {
+                    "pour": [
+                      "Rougeur aiguë, douloureuse"
+                    ],
+                    "contre": [
+                      "Pas de bords nets ni surélévation",
+                      "Atteinte profonde plus compatible avec cellulite"
+                    ]
+                  }
+                },
+                {
+                  "question": "Thrombophlébite",
+                  "reponse": {
+                    "contre": [
+                      "Pas de cordon veineux palpable",
+                      "Pas de facteur déclenchant (chirurgie, immobilisation)"
+                    ]
+                  }
+                },
+                {
+                  "question": "Dermatite de stase",
+                  "reponse": {
+                    "contre": [
+                      "Pas d’atteinte bilatérale chronique",
+                      "Évolution aiguë et fébrile incompatible"
+                    ]
+                  }
+                },
+                {
+                  "question": "Réaction allergique",
+                  "reponse": {
+                    "contre": [
+                      "Rougeur non prurigineuse",
+                      "Contexte fébrile"
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "titre": "2. Examens complémentaires immédiats",
+              "questions": [
+                {
+                  "question": "Quels examens demanderiez-vous ?",
+                  "reponse": [
+                    "NFS, CRP",
+                    "Créatinine avant antibiothérapie",
+                    "Hémocultures si fièvre élevée",
+                    "Échographie si suspicion d’abcès ou de thrombose"
+                  ]
+                }
+              ]
+            },
+            {
+              "titre": "3. Diagnostic définitif, traitement, suivi",
+              "questions": [
+                {
+                  "question": "Diagnostic",
+                  "reponse": "Cellulite cutanée de la jambe gauche chez un diabétique"
+                },
+                {
+                  "question": "Traitement",
+                  "reponse": {
+                    "immediat": [
+                      "Antibiothérapie PO : céfalexine ou amox-clav 7-10j",
+                      "Clindamycine si allergie"
+                    ],
+                    "adjuvant": [
+                      "Repos, élévation jambe",
+                      "Marquer limites érythème",
+                      "Antalgie par paracétamol",
+                      "Hydratation cutanée"
+                    ]
+                  }
+                },
+                {
+                  "question": "Suivi",
+                  "reponse": [
+                    "Contrôle clinique à 48-72h",
+                    "Hospitalisation si aggravation",
+                    "Surveillance récidives",
+                    "Prévention : contrôle diabète, soins pieds, port de chaussettes"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

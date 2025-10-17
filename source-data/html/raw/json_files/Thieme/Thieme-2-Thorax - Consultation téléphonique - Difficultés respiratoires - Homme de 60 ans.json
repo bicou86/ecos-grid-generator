@@ -1,0 +1,184 @@
+{
+  "title": "Thieme Thorax 2 - Consultation téléphonique - Difficultés respiratoires - Homme de 60 ans",
+  "category": "Thieme Thorax",
+  "subcategory": "Consultation téléphonique - Difficultés respiratoires",
+  "context": {
+    "setting": "Consultation téléphonique",
+    "patient": "Homme de 60 ans, Père de Mlle Baldwin, consultant pour difficultés respiratoires"
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Motif principal de consultation",
+          "binaryOnly": true,
+          "patientComment": "difficultés respiratoires"
+        },
+        {
+          "id": "a2",
+          "text": "Analyse de la plainte principale",
+          "details": [
+            "Début et évolution [Essoufflement aigu il y a 15 minutes, progressif]",
+            "Localisation et irradiation de la douleur",
+            "Caractéristiques et intensité",
+            "Facteurs aggravants et soulageants",
+            "Symptômes associés"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Antécédents médicaux et chirurgicaux",
+          "details": [
+            "Alité depuis prothèse totale de hanche il y a 2 semaines",
+            "Sorti de l'hôpital il y a 3 jours",
+            "Épisode similaire l'année dernière (EP)"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Histoire sociale et habitudes de vie",
+          "details": [
+            "Ex-fumeur (2 pqt/j × 25 ans)",
+            "Vit avec sa fille"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Signes vitaux",
+          "binaryOnly": true
+        },
+        {
+          "id": "e2",
+          "text": "Examen de la tête et du cou",
+          "details": [
+            "PERRLA",
+            "Examen ORL complet",
+            "Palpation thyroïde",
+            "Recherche ganglions lymphatiques"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Examen cardio-pulmonaire",
+          "details": [
+            "Auscultation cardiaque [S1 et S2 normaux]",
+            "Recherche de souffles ou galop",
+            "Auscultation pulmonaire bilatérale",
+            "Recherche de râles ou sibilances"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Examen abdominal si pertinent",
+          "details": []
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostics différentiels à évoquer",
+          "ddSection": {
+            "title": "Hypothèses diagnostiques",
+            "categories": [
+              {
+                "name": "Diagnostics principaux",
+                "items": [
+                  {
+                    "text": "Embolie pulmonaire",
+                    "cause": "Arguments POUR:\n\t□ Dyspnée aiguë, alitement prolongé, chirurgie récente, ATCD EP",
+                    "test": "→ D-dimères, angioscanner"
+                  },
+                  {
+                    "text": "Infarctus du myocarde aigu",
+                    "cause": "Arguments POUR:\n\t□ Douleur thoracique écrasante, irradiation, facteurs de risque CV",
+                    "test": "→ ECG, troponines"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Examens complémentaires pertinents",
+          "details": [
+            "GSA",
+            "D-dimères",
+            "Enzymes cardiaques",
+            "Angioscanner",
+            "ECG"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Plan de prise en charge",
+          "details": [
+            "Urgence - Appel 911 immédiat",
+            "Traitement symptomatique si approprié",
+            "Suivi après résultats"
+          ]
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour le patient standardisé",
+      "nom": "Père de Mlle Baldwin",
+      "age": "60 ans",
+      "contexte": "Consultation téléphonique",
+      "motifConsultation": {
+        "plaintePrincipale": "difficultés respiratoires",
+        "autreChose": "Essoufflement aigu il y a 15 minutes, progressif. Douleur thoracique sévère 8/10 côté droit. Palpitations."
+      },
+      "histoireActuelle": {
+        "symptomesPrincipaux": [
+          "Essoufflement aigu il y a 15 minutes, progressif",
+          " Douleur thoracique sévère 8/10 côté droit",
+          " Palpitations"
+        ],
+        "contextePsychosocial": [
+          "Ex-fumeur (2 pqt/j × 25 ans)",
+          " Vit avec sa fille"
+        ]
+      },
+      "simulation": {
+        "attitude": [
+          "Très inquiète pour votre père",
+          "Urgence dans la voix"
+        ],
+        "durantExamen": []
+      },
+      "inquietudes": {
+        "principales": [
+          "Pourrait-ce être un autre caillot de sang?",
+          "Pouvez-vous prescrire des médicaments?"
+        ]
+      }
+    },
+    "informationsExpert": {
+      "titre": "Informations pour l'expert",
+      "pointsCles": [
+        "Cas de Consultation téléphonique - Difficultés respiratoires",
+        "Patient: Homme de 60 ans",
+        "Évaluation de l'anamnèse ciblée",
+        "Examen physique pertinent",
+        "Diagnostic différentiel approprié"
+      ],
+      "pieges": [
+        "Ne pas reconnaître l'urgence",
+        "Ne pas insister sur le 911"
+      ]
+    }
+  }
+}

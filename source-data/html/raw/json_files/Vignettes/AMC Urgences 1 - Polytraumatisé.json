@@ -1,0 +1,410 @@
+{
+  "title": "AMC Urgences 1 - Polytraumatisé",
+  "type": "ecos-urgence",
+  "context": {
+    "setting": "Service d'urgences",
+    "patient": "Homme de 28 ans, amené par les secours suite à une chute du 3ème étage il y a 20 minutes. Patient inconscient à l'arrivée",
+    "vitals": {
+      "ta": "75/? mmHg",
+      "fc": "140 bpm",
+      "fr": "32/min",
+      "sao2": "65% (air ambiant)",
+      "glasgow": "GCS 5 (E1V1M3)"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "title": "Anamnèse et circonstances",
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Mécanisme du traumatisme",
+          "details": [
+            "Circonstances de la chute [Chute du 3ème étage, environ 10 mètres]",
+            "Heure de l'accident [Il y a 20 minutes]",
+            "Mécanisme [Impact direct, décélération brutale]",
+            "Témoins [Voisins ont appelé les secours]"
+          ]
+        },
+        {
+          "id": "a2",
+          "text": "État initial sur place",
+          "details": [
+            "État de conscience [Patient inconscient à l'arrivée des secours]",
+            "Glasgow initial [GCS 5]",
+            "Signes vitaux initiaux [Détresse respiratoire évidente]",
+            "Mobilisation [Immobilisation cervicale mise en place]"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Antécédents (si disponibles)",
+          "details": [
+            "Antécédents médicaux [À rechercher auprès des proches]",
+            "Médicaments [Information non disponible]",
+            "Allergies [À vérifier]",
+            "Dernière prise alimentaire [Inconnue]"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "title": "Examen primaire ABCDE",
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "A - Airway (Voies aériennes)",
+          "binaryOnly": true,
+          "details": [
+            "Protection cervicale [Collier cervical en place]",
+            "Perméabilité des voies aériennes [Obstruction partielle, sécrétions]",
+            "Nécessité d'intubation [Indication urgente vu le GCS < 8]",
+            "Stabilisation du rachis [Maintien en rectitude]"
+          ]
+        },
+        {
+          "id": "e2",
+          "text": "B - Breathing (Respiration)",
+          "binaryOnly": true,
+          "details": [
+            "Fréquence respiratoire [32/min, tachypnée]",
+            "Saturation [65% en air ambiant - hypoxémie sévère]",
+            "Auscultation [Asymétrie, diminution MV à gauche]",
+            "Signes de pneumothorax [Suspicion forte côté gauche]",
+            "Signes de volet costal [Respiration paradoxale visible]"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "C - Circulation",
+          "binaryOnly": true,
+          "details": [
+            "Pouls [140 bpm, filant]",
+            "Tension artérielle [75/? mmHg - choc hémorragique]",
+            "Recherche hémorragie externe [Pas de saignement extériorisé majeur]",
+            "Recherche hémorragie interne [Abdomen distendu, FAST à faire]",
+            "Remplissage cutané [Temps de recoloration > 3 secondes]",
+            "Accès veineux [2 voies périphériques de gros calibre]"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "D - Disability (Neurologique)",
+          "binaryOnly": true,
+          "details": [
+            "Glasgow [E1V1M3 = 5]",
+            "Pupilles [Anisocorie, mydriase droite]",
+            "Déficit focal [Hémiparésie gauche]",
+            "Mouvements anormaux [Décérébration]"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "E - Exposure",
+          "binaryOnly": true,
+          "details": [
+            "Déshabillage complet [Recherche lésions cachées]",
+            "Examen du dos [Log-roll avec maintien cervical]",
+            "Température [Prévention hypothermie]",
+            "Lésions visibles [Contusions multiples, déformation membre inférieur gauche]"
+          ]
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "title": "Management et réanimation",
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Prise en charge immédiate des détresses vitales",
+          "binaryOnly": true,
+          "details": [
+            "Intubation orotrachéale en séquence rapide",
+            "Ventilation mécanique protectrice",
+            "Drainage thoracique gauche en urgence",
+            "Remplissage vasculaire massif (cristalloïdes + sang)",
+            "Transfusion selon protocole de transfusion massive"
+          ]
+        },
+        {
+          "id": "m2",
+          "text": "Diagnostic et classification du choc",
+          "ddSection": {
+            "title": "Classification du choc hémorragique",
+            "categories": [
+              {
+                "name": "Classe IV - Choc hémorragique sévère",
+                "items": [
+                  {
+                    "text": "Perte sanguine > 40% (> 2000 mL)",
+                    "cause": "Arguments POUR:\n\t□ FC > 140 bpm\n\t□ PA systolique < 90 mmHg\n\t□ FR > 35/min\n\t□ État de conscience altéré (GCS 5)\n\t□ Anurie probable",
+                    "test": "→ Transfusion massive immédiate, damage control surgery"
+                  }
+                ]
+              },
+              {
+                "name": "Sources hémorragiques à identifier",
+                "items": [
+                  {
+                    "text": "Hémorragie intrapéritonéale",
+                    "cause": "Arguments POUR:\n\t□ Abdomen distendu\n\t□ Choc non expliqué par lésions externes",
+                    "test": "→ FAST échographie, CT si stable"
+                  },
+                  {
+                    "text": "Hémothorax",
+                    "cause": "Arguments POUR:\n\t□ Asymétrie auscultatoire\n\t□ Détresse respiratoire",
+                    "test": "→ Radiographie thorax, drainage"
+                  },
+                  {
+                    "text": "Hémorragie rétropéritonéale",
+                    "cause": "Arguments POSSIBLES:\n\t□ Fracture bassin probable\n\t□ Choc persistant",
+                    "test": "→ CT avec injection si stabilisé"
+                  },
+                  {
+                    "text": "Hématome intracrânien",
+                    "cause": "Arguments POUR:\n\t□ Anisocorie\n\t□ GCS bas\n\t□ Signes de localisation",
+                    "test": "→ CT cérébral urgent"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m3",
+          "text": "Examens complémentaires urgents",
+          "details": [
+            "FAST échographie au lit du patient",
+            "Radiographie thorax au lit",
+            "Radiographie bassin",
+            "Gazométrie artérielle",
+            "Bilan biologique : NFS, coagulation, groupe sanguin, crossmatch",
+            "Lactates artériels",
+            "CT body-scan dès stabilisation"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Stratégie thérapeutique - Damage Control",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Réanimation - Damage Control Resuscitation",
+                "items": [
+                  {
+                    "treatment": "Contrôle hémorragique",
+                    "details": "Chirurgie de sauvetage immédiate, hémostase temporaire"
+                  },
+                  {
+                    "treatment": "Transfusion 1:1:1",
+                    "details": "CGR:PFC:Plaquettes en ratio équilibré"
+                  },
+                  {
+                    "treatment": "Acide tranexamique",
+                    "details": "1g en bolus puis 1g sur 8h dans les 3 premières heures"
+                  },
+                  {
+                    "treatment": "Permissive hypotension",
+                    "details": "PAS cible 80-90 mmHg jusqu'au contrôle chirurgical"
+                  }
+                ]
+              },
+              {
+                "title": "Prévention de la triade létale",
+                "items": [
+                  {
+                    "treatment": "Prévention hypothermie",
+                    "details": "Réchauffement actif, fluides chauffés, couvertures"
+                  },
+                  {
+                    "treatment": "Correction acidose",
+                    "details": "Optimisation perfusion tissulaire, ventilation adaptée"
+                  },
+                  {
+                    "treatment": "Correction coagulopathie",
+                    "details": "Transfusion précoce PFC et plaquettes, fibrinogène si < 1.5 g/L"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m5",
+          "text": "Red flags et complications",
+          "redflagsSection": {
+            "title": "Signes d'alarme nécessitant une action immédiate",
+            "items": [
+              {
+                "text": "Arrêt cardiaque imminent",
+                "description": "Bradycardie, gasps agoniques → Réanimation cardio-pulmonaire"
+              },
+              {
+                "text": "Engagement cérébral",
+                "description": "Anisocorie, décérébration → Mannitol/SSH, neurochirurgie urgente"
+              },
+              {
+                "text": "Pneumothorax sous tension",
+                "description": "Détresse respiratoire aiguë, déviation trachéale → Exsufflation à l'aiguille"
+              },
+              {
+                "text": "Tamponnade",
+                "description": "Pouls paradoxal, turgescence jugulaire → Péricardiocentèse"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "title": "Communication et décisions",
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Communication avec l'équipe",
+          "content": "Activation du protocole de transfusion massive. Patient en choc hémorragique classe IV avec traumatisme crânien grave. Nécessité d'une prise en charge multidisciplinaire immédiate : anesthésie, chirurgie trauma, neurochirurgie.",
+          "exemplesPhrases": [
+            "\"Code rouge traumatologie, nous avons besoin de l'équipe complète en salle de déchocage.\"",
+            "\"Préparez le bloc pour un damage control surgery, le patient est en choc hémorragique sévère.\"",
+            "\"Contactez la banque du sang pour le protocole de transfusion massive.\""
+          ]
+        },
+        {
+          "id": "c2",
+          "text": "Information à la famille",
+          "content": "[La famille arrive paniquée] \"Votre proche est dans un état très grave suite à sa chute. Nous faisons tout notre possible pour le stabiliser. L'équipe médicale complète est mobilisée.\"",
+          "exemplesPhrases": [
+            "\"Il présente des blessures multiples qui engagent son pronostic vital.\"",
+            "\"Nous devons l'opérer en urgence pour contrôler les hémorragies internes.\"",
+            "\"Je vous tiendrai informés régulièrement de l'évolution.\""
+          ]
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "images": [
+      {
+        "title": "Radiographie du thorax",
+        "description": "Radiographie thoracique montrant des contusions pulmonaires bilatérales et un pneumothorax gauche",
+        "data": "grilles_generees/html/images/AMC-Urgences-Medecine-Intensive-1/1-Radiographie du thorax.jpg"
+      },
+      {
+        "title": "Radiographie du bassin",
+        "description": "Radiographie du bassin montrant une fracture instable avec disjonction symphysaire",
+        "data": "grilles_generees/html/images/AMC-Urgences-Medecine-Intensive-1/2-Radiographie du bassin.jpg"
+      },
+      {
+        "title": "Échographie E-FAST - Vue 1",
+        "description": "Échographie E-FAST montrant du liquide libre intrapéritonéal dans le quadrant supérieur droit",
+        "data": "grilles_generees/html/images/AMC-Urgences-Medecine-Intensive-1/3-Echographie E-FAST.jpg"
+      },
+      {
+        "title": "Échographie E-FAST - Vue 2",
+        "description": "Échographie E-FAST montrant l'épanchement péricardique et l'hémothorax gauche",
+        "data": "grilles_generees/html/images/AMC-Urgences-Medecine-Intensive-1/4-Echographie E-FAST.jpg"
+      }
+    ],
+    "scenarioPatienteStandardisee": {
+      "titre": "Scénario pour la simulation - Polytraumatisé",
+      "nom": "Patient inconscient",
+      "age": "28 ans",
+      "contexte": "Arrivée aux urgences 20 minutes après chute du 3ème étage",
+      "simulation": {
+        "attitude": [
+          "Patient inconscient, GCS 5",
+          "Respiration laborieuse et rapide",
+          "Pas de réponse verbale",
+          "Réaction de décérébration à la stimulation douloureuse"
+        ],
+        "durantExamen": [
+          "Anisocorie avec mydriase droite",
+          "Respiration paradoxale (volet costal)",
+          "Abdomen distendu",
+          "Déformation évidente du membre inférieur gauche",
+          "Marbrures cutanées",
+          "Extrémités froides"
+        ]
+      }
+    },
+    "informationsExpert": {
+      "titre": "Points clés pour l'évaluation ATLS",
+      "pointsCles": [
+        "Application stricte de la séquence ABCDE",
+        "Identification rapide du choc hémorragique classe IV",
+        "Reconnaissance des signes d'engagement cérébral",
+        "Décision de damage control surgery",
+        "Activation des protocoles de transfusion massive",
+        "Gestion de la triade létale (hypothermie, acidose, coagulopathie)"
+      ],
+      "pieges": [
+        "Ne pas reconnaître la gravité du choc",
+        "Retarder l'intubation malgré le GCS < 8",
+        "Oublier la protection cervicale",
+        "Ne pas drainer un pneumothorax sous tension",
+        "Perdre du temps en examens avant stabilisation",
+        "Transfusion insuffisante ou déséquilibrée"
+      ]
+    },
+    "theoriePratique": {
+      "titre": "Concepts théoriques du polytraumatisme",
+      "sections": [
+        {
+          "titre": "Golden Hour",
+          "points": [
+            "Première heure critique pour la survie",
+            "Mortalité triplée après 60 minutes",
+            "Importance du triage et du transport rapide",
+            "Décisions rapides basées sur l'ABCDE"
+          ]
+        },
+        {
+          "titre": "Damage Control Surgery",
+          "points": [
+            "Chirurgie en 3 temps : contrôle hémorragique, réanimation en USI, chirurgie définitive",
+            "Priorité à l'hémostase sur la reconstruction",
+            "Laparotomie écourtée (< 90 minutes)",
+            "Packing abdominal si nécessaire"
+          ]
+        },
+        {
+          "titre": "Triade létale",
+          "points": [
+            "Hypothermie < 35°C : altère la coagulation",
+            "Acidose pH < 7.2 : dysfonction myocardique",
+            "Coagulopathie : consommation des facteurs",
+            "Cercle vicieux auto-entretenu"
+          ]
+        },
+        {
+          "titre": "NEXUS Criteria (rachis cervical)",
+          "points": [
+            "Pas de douleur cervicale médiane",
+            "Pas de déficit neurologique focal",
+            "État de conscience normal",
+            "Pas d'intoxication",
+            "Pas de douleur distractive"
+          ]
+        }
+      ],
+      "rappelsTherapeutiques": [
+        "Transfusion massive : ratio 1:1:1 (CGR:PFC:Plaquettes)",
+        "Acide tranexamique : 1g bolus + 1g/8h dans les 3 premières heures",
+        "Permissive hypotension : PAS 80-90 mmHg avant contrôle chirurgical",
+        "Ventilation protectrice : Vt 6-8 mL/kg, PEEP adaptée",
+        "Objectifs : Hb > 7-9 g/dL, plaquettes > 50 000, INR < 1.5, fibrinogène > 1.5 g/L"
+      ],
+      "examensComplementaires": [
+        "FAST : Sensibilité 73-99% pour liquide libre > 400 mL",
+        "CT body-scan : Gold standard si patient stable, 97% sensibilité",
+        "Radiographie thorax : Pneumothorax, hémothorax, contusions",
+        "Radiographie bassin : Fractures instables nécessitant ceinture pelvienne",
+        "Lactates : Marqueur de perfusion tissulaire, objectif < 2 mmol/L"
+      ]
+    }
+  }
+}

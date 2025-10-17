@@ -1,0 +1,397 @@
+{
+  "title": "Pédiatrie - Nouveau-né en détresse respiratoire",
+  "type": "ECOS",
+  "context": {
+    "setting": "Salle d'accouchement puis service de néonatologie",
+    "patient": "Nouveau-né masculin, accouchement précipité, détresse respiratoire à la naissance",
+    "vitals": {
+      "fc": "60 bpm puis 170 bpm",
+      "fr": "76/min",
+      "Apgar": "3 à 1 min, 7 à 5 min, 9 à 10 min"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Circonstances de l'accouchement",
+          "details": [
+            "Urgence obstétricale [Contractions fréquentes, tête à la vulve]",
+            "Lieu [En route vers la maternité]",
+            "Terme [À préciser]",
+            "Présentation [Céphalique]",
+            "Durée du travail [Précipité]"
+          ]
+        },
+        {
+          "id": "a2",
+          "text": "État à la naissance",
+          "details": [
+            "Cri initial [Absent]",
+            "Tonus [Flasque]",
+            "Coloration [Mal coloré, gris]",
+            "Efforts respiratoires [Aucun]",
+            "Fréquence cardiaque [60/min]"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Anamnèse maternelle",
+          "details": [
+            "Âge et parité [G3P2]",
+            "Suivi de grossesse [De passage à Genève]",
+            "Pathologies pendant grossesse [À préciser]",
+            "Sérologies [À vérifier]",
+            "Groupe sanguin maternel [À déterminer]"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Facteurs de risque infectieux",
+          "details": [
+            "Rupture des membranes [Perdue les eaux avant-hier]",
+            "Durée de rupture [>48h]",
+            "Fièvre maternelle [Légèrement fébrile ce matin]",
+            "Infection urinaire [Douleurs mictionnelles il y a une semaine]",
+            "Prélèvement vaginal [Non fait, urgence]",
+            "Antibioprophylaxie [Non administrée]"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Évolution post-natale",
+          "details": [
+            "Réanimation initiale [Ventilation au masque]",
+            "Récupération [Respiration spontanée à 2 min]",
+            "Intervalle libre [Bien jusqu'à quelques heures de vie]",
+            "Détérioration secondaire [Détresse respiratoire, gémissements]"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Examen initial en salle d'accouchement",
+          "details": [
+            "État général [Nouveau-né en asphyxie]",
+            "Score d'Apgar 1 min [3: FC=1, Resp=0, Tonus=0, Réactivité=1, Couleur=1]",
+            "Score d'Apgar 5 min [7: FC=2, Resp=2, Tonus=1, Réactivité=1, Couleur=1]",
+            "Score d'Apgar 10 min [9: FC=2, Resp=2, Tonus=2, Réactivité=2, Couleur=1]"
+          ]
+        },
+        {
+          "id": "e2",
+          "text": "Examen après stabilisation initiale",
+          "details": [
+            "Poids [3570g]",
+            "Taille [51 cm]",
+            "Aspect [À terme]",
+            "Examen somatique [Normal]",
+            "Examen neurologique [Normal après récupération]"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Examen lors de la détérioration",
+          "details": [
+            "État général [Hypotone, peu réactif]",
+            "Coloration [Teint gris, langue violacée]",
+            "Respiration [Irrégulière, 76/min]",
+            "Tirage [Rétraction sternale]",
+            "Pauses respiratoires [Plusieurs secondes]",
+            "Gémissement expiratoire [Présent]"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Examen cardiovasculaire",
+          "details": [
+            "Fréquence cardiaque [170/min]",
+            "Pouls fémoraux [Faibles]",
+            "Souffle cardiaque [Absent]",
+            "Temps de recoloration [4 secondes]",
+            "Tension artérielle [À mesurer]"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Examen pulmonaire",
+          "details": [
+            "Murmure vésiculaire [Mal audible]",
+            "Râles [À préciser]",
+            "Symétrie [À vérifier]",
+            "Grunting [Présent]"
+          ]
+        },
+        {
+          "id": "e6",
+          "text": "Examen neurologique",
+          "details": [
+            "Tonus [Hypotonie]",
+            "Réactivité [Diminuée]",
+            "Réflexes archaïques [À tester]",
+            "Fontanelle [À examiner]"
+          ]
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Réanimation néonatale initiale",
+          "details": [
+            "Installation sous lampe chauffante",
+            "Séchage et stimulation",
+            "Aspiration nez et bouche",
+            "Stimulation plantaire",
+            "Ventilation au masque (40/min)",
+            "PEEP après récupération"
+          ],
+          "scoringRule": "Algorithme ABC de réanimation"
+        },
+        {
+          "id": "m2",
+          "text": "Diagnostic différentiel de la détresse respiratoire",
+          "ddSection": {
+            "title": "Causes de détresse respiratoire néonatale",
+            "categories": [
+              {
+                "name": "Diagnostic le plus probable",
+                "items": [
+                  {
+                    "text": "Sepsis néonatal précoce à Streptocoque B",
+                    "cause": "Arguments POUR:\n\t□ Rupture membranes >48h\n\t□ Fièvre maternelle\n\t□ Infection urinaire maternelle\n\t□ Intervalle libre puis détérioration\n\t□ Signes systémiques",
+                    "test": "→ NFS, CRP, hémocultures, PL"
+                  }
+                ]
+              },
+              {
+                "name": "Autres causes infectieuses",
+                "items": [
+                  {
+                    "text": "Pneumonie congénitale",
+                    "cause": "Arguments:\n\t□ Détresse respiratoire\n\t□ Facteurs de risque infectieux",
+                    "test": "→ Radiographie thorax"
+                  },
+                  {
+                    "text": "Chorioamniotite",
+                    "cause": "Arguments:\n\t□ Rupture prolongée\n\t□ Fièvre maternelle",
+                    "test": "→ Examen placenta"
+                  }
+                ]
+              },
+              {
+                "name": "Causes non infectieuses",
+                "items": [
+                  {
+                    "text": "Tachypnée transitoire",
+                    "cause": "Arguments CONTRE:\n\t□ Gémissements\n\t□ Signes systémiques",
+                    "test": "→ Radio: hyperinflation"
+                  },
+                  {
+                    "text": "Maladie des membranes hyalines",
+                    "cause": "Arguments CONTRE:\n\t□ Nouveau-né à terme\n\t□ Intervalle libre",
+                    "test": "→ Radio: syndrome alvéolaire"
+                  },
+                  {
+                    "text": "Aspiration méconiale",
+                    "cause": "Arguments CONTRE:\n\t□ Pas de méconium signalé",
+                    "test": "→ Radio: infiltrats hétérogènes"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m3",
+          "text": "Mesures immédiates lors de la détérioration",
+          "details": [
+            "Monitoring cardio-respiratoire",
+            "Oxygénothérapie selon saturation",
+            "Voie veineuse périphérique",
+            "Prélèvements avant antibiotiques",
+            "Glycémie capillaire",
+            "Gazométrie si nécessaire"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Examens complémentaires",
+          "details": [
+            "NFS: GB 2800/mm³, neutrophiles 49%, thrombocytes 85000/mm³",
+            "CRP: 84 mg/L",
+            "Hémocultures avant antibiotiques",
+            "Ponction lombaire si état stable",
+            "Radiographie thorax",
+            "Glycémie, ionogramme, calcémie"
+          ]
+        },
+        {
+          "id": "m5",
+          "text": "Traitement antibiotique empirique",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Antibiothérapie probabiliste",
+                "content": "Ampicilline 100mg/kg x 2/jour IV\n+\nGentamicine 4mg/kg/jour IV\n\nDébuter immédiatement après prélèvements\nAdapter selon antibiogramme\nDurée: 7-10 jours si sepsis confirmé"
+              },
+              {
+                "title": "Traitements de support",
+                "content": "Support respiratoire selon besoins (O2, CPAP, ventilation)\nMaintien homéostasie (T°, glycémie)\nNutrition entérale/parentérale\nSurveillance neurologique"
+              }
+            ]
+          }
+        },
+        {
+          "id": "m6",
+          "text": "Surveillance et évolution",
+          "details": [
+            "Monitoring continu FC, FR, SaO2",
+            "Bilans biologiques quotidiens",
+            "Contrôle CRP à 48h",
+            "Hémocultures de contrôle",
+            "Évaluation neurologique quotidienne",
+            "Dépistage complications (méningite, arthrite)"
+          ]
+        },
+        {
+          "id": "m7",
+          "text": "Information aux parents",
+          "details": [
+            "Explication de la situation",
+            "Pronostic selon évolution",
+            "Risque de séquelles neurologiques",
+            "Durée d'hospitalisation prévue",
+            "Participation aux soins",
+            "Soutien psychologique"
+          ]
+        },
+        {
+          "id": "m8",
+          "text": "Complications à surveiller",
+          "redflagsSection": {
+            "title": "Complications du sepsis néonatal",
+            "items": [
+              {
+                "text": "Choc septique",
+                "description": "Hypotension, mauvaise perfusion, acidose"
+              },
+              {
+                "text": "Méningite",
+                "description": "Convulsions, bombement fontanelle, hypotonie"
+              },
+              {
+                "text": "CIVD",
+                "description": "Saignements, pétéchies, thrombopénie"
+              },
+              {
+                "text": "Défaillance multi-organique",
+                "description": "Oligurie, élévation transaminases"
+              },
+              {
+                "text": "Séquelles neurologiques",
+                "description": "Convulsions, anomalies EEG, retard développement"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Communication avec les parents",
+          "exemplesPhrases": [
+            "Votre enfant présente une infection néonatale probable liée à la rupture prolongée des membranes. Nous avons débuté les antibiotiques.",
+            "La réanimation à la naissance s'est bien passée et il a récupéré rapidement. C'est l'infection secondaire qui cause ses difficultés actuelles.",
+            "Avec le traitement antibiotique adapté, la plupart des nouveau-nés récupèrent complètement."
+          ]
+        },
+        {
+          "id": "c2",
+          "text": "Questions des parents",
+          "content": "[Aura-t-il des séquelles neurologiques?] [Combien de temps restera-t-il hospitalisé?] [Aurions-nous pu éviter cela?] [Pourra-t-il être allaité?]"
+        },
+        {
+          "id": "c3",
+          "text": "Réponses adaptées sur le pronostic",
+          "exemplesPhrases": [
+            "Le score d'Apgar bas isolé n'est pas prédictif de séquelles. C'est l'évolution neurologique des prochains jours qui nous orientera.",
+            "La durée d'hospitalisation dépendra de sa réponse au traitement, généralement 10-14 jours pour un sepsis.",
+            "La rupture prolongée des membranes est un facteur de risque connu. L'antibioprophylaxie n'était pas possible vu l'urgence.",
+            "L'allaitement pourra être repris dès que son état respiratoire le permettra. En attendant, nous pouvons conserver votre lait."
+          ]
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "informationsExpert": {
+      "titre": "Points clés pour l'évaluation",
+      "pointsCles": [
+        "Reconnaissance et prise en charge de l'asphyxie néonatale",
+        "Application correcte de l'algorithme de réanimation",
+        "Identification des facteurs de risque infectieux",
+        "Diagnostic du syndrome de détresse respiratoire",
+        "Initiation rapide de l'antibiothérapie empirique",
+        "Communication appropriée avec les parents"
+      ],
+      "pieges": [
+        "Retarder l'antibiothérapie pour attendre les résultats",
+        "Négliger l'anamnèse maternelle infectieuse",
+        "Confondre corrélation Apgar/séquelles",
+        "Omettre la ponction lombaire si indiquée",
+        "Sous-estimer la gravité du sepsis néonatal"
+      ]
+    },
+    "theoriePratique": {
+      "titre": "Aspects théoriques",
+      "sections": [
+        {
+          "titre": "Physiopathologie de l'adaptation néonatale",
+          "points": [
+            "Transition de la circulation fœtale à néonatale",
+            "Résorption du liquide alvéolaire",
+            "Mise en place de la CRF (capacité résiduelle fonctionnelle)",
+            "Rôle du surfactant",
+            "Vasodilatation pulmonaire post-natale"
+          ]
+        },
+        {
+          "titre": "Sepsis néonatal précoce",
+          "points": [
+            "Incidence: 0.5-1/1000 naissances vivantes",
+            "Streptocoque B: première cause (40-50%)",
+            "E. coli: deuxième cause (20%)",
+            "Mortalité: 10-15% si traité",
+            "Facteurs de risque: RPM >18h, fièvre maternelle, prématurité"
+          ]
+        }
+      ],
+      "rappelsTherapeutiques": [
+        "Réanimation: Séchage → Stimulation → Ventilation → Compression si FC<60",
+        "Antibiothérapie empirique: Ampicilline + Gentamicine",
+        "Durée traitement: 7-10j si sepsis, 14-21j si méningite",
+        "Support respiratoire adapté aux besoins",
+        "Surveillance neurologique étroite"
+      ],
+      "examensComplementaires": [
+        "NFS avec formule: leucopénie ou leucocytose, I/T ratio >0.2",
+        "CRP: élévation après 6-12h, pic à 48h",
+        "Hémocultures: gold standard, sensibilité 50-80%",
+        "PL: si sepsis confirmé ou signes méningés",
+        "Radio thorax: infiltrats si pneumonie associée"
+      ]
+    }
+  }
+}

@@ -1,0 +1,564 @@
+{
+  "title": "AMC Urgences 3C - Douleur thoracique aiguë - Dissection aortique",
+  "context": {
+    "setting": "Service d'urgences",
+    "patient": "Homme de 62 ans se plaignant de douleur thoracique déchirante brutale apparue il y a 30 minutes lors d'un effort de jardinage. La douleur migre vers le dos et l'abdomen",
+    "vitals": {
+      "ta": "180/110 mmHg (bras droit), 150/90 mmHg (bras gauche)",
+      "fc": "105 bpm",
+      "fr": "24/min",
+      "temperature": "36.8°C"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Motif principal",
+          "details": [
+            "Douleur thoracique [Oui, brutale il y a 30 minutes]"
+          ],
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Caractérisation de la douleur thoracique",
+          "details": [
+            "Début [Brutal, en coup de poignard]",
+            "Localisation [Rétrosternale initialement]",
+            "Type [Déchirante, transfixiante]",
+            "Intensité [10/10, maximale d'emblée]",
+            "Irradiation [Dos, entre les omoplates, puis région lombaire]",
+            "Migration [Oui, du thorax vers l'abdomen]",
+            "Facteurs déclenchants [Effort de jardinage]",
+            "Facteurs soulageants [Aucun]"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Symptômes associés",
+          "details": [
+            "Dyspnée [Oui, modérée]",
+            "Syncope [Non, mais sensation de malaise]",
+            "Sueurs profuses [Oui]",
+            "Nausées [Oui]",
+            "Symptômes neurologiques [Non pour l'instant]",
+            "Douleur abdominale [Oui, récente]",
+            "Faiblesse des membres [Non]"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Antécédents cardiovasculaires",
+          "details": [
+            "Hypertension artérielle [Oui, mal contrôlée]",
+            "Tabagisme [Actif, 40 paquets-années]",
+            "Athérosclérose connue [Non documentée]",
+            "Anévrisme connu [Non]",
+            "Antécédents familiaux d'anévrisme [Frère opéré d'un AAA]",
+            "Maladie du tissu conjonctif [Non connue]"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Facteurs de risque de dissection",
+          "details": [
+            "HTA chronique [Oui, principale facteur]",
+            "Âge > 60 ans [Oui, 62 ans]",
+            "Sexe masculin [Oui]",
+            "Cocaïne/amphétamines [Non]",
+            "Traumatisme récent [Non]",
+            "Grossesse [Non applicable]",
+            "Iatrogène (cathétérisme) [Non]"
+          ]
+        },
+        {
+          "id": "a6",
+          "text": "Médicaments et allergies",
+          "details": [
+            "Antihypertenseurs [Amlodipine, observance irrégulière]",
+            "Autres médicaments [Aucun]",
+            "Allergies [Aucune connue]"
+          ]
+        },
+        {
+          "id": "a7",
+          "text": "Contexte de survenue",
+          "details": [
+            "Activité lors de la douleur [Effort de jardinage, soulevait des sacs]",
+            "Effort physique [Oui, inhabituel]",
+            "Stress émotionnel [Non]"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Évaluation initiale ABC",
+          "details": [
+            "Voies aériennes [Libres]",
+            "Respiration [Spontanée, FR 24/min]",
+            "Circulation [TA asymétrique, FC 105 bpm]",
+            "État de conscience [Conscient, très algique]"
+          ],
+          "binaryOnly": true
+        },
+        {
+          "id": "e2",
+          "text": "Aspect général et signes vitaux",
+          "details": [
+            "État général [Agité, en détresse]",
+            "Pâleur [Oui, marquée]",
+            "Diaphorèse [Profuse]",
+            "Asymétrie tensionnelle [30 mmHg de différence]",
+            "Pouls radial [Asymétrique, plus faible à gauche]"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Examen cardiovasculaire spécifique",
+          "details": [
+            "Auscultation cardiaque [Souffle diastolique 3/6 au foyer aortique]",
+            "Souffle d'insuffisance aortique [Présent, nouveau]",
+            "Frottement péricardique [Absent]",
+            "Pouls carotidiens [Asymétriques]",
+            "Pouls fémoraux [Absent à gauche, présent à droite]",
+            "Turgescence jugulaire [Légère]"
+          ],
+          "binaryOnly": true
+        },
+        {
+          "id": "e4",
+          "text": "Examen vasculaire périphérique",
+          "details": [
+            "Pouls radiaux [Asymétriques]",
+            "Pouls fémoraux [Absent à gauche]",
+            "Pouls pédieux [Absent à gauche]",
+            "Pouls poplités [Absent à gauche]",
+            "Température cutanée [Membre inférieur gauche froid]",
+            "Remplissage capillaire [Ralenti à gauche]"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Examen neurologique",
+          "details": [
+            "Déficit moteur [Non pour l'instant]",
+            "Déficit sensitif [Non]",
+            "Syndrome de Claude Bernard-Horner [Non]",
+            "Signes d'AVC [Non]",
+            "État de conscience [Normale mais anxieux]"
+          ]
+        },
+        {
+          "id": "e6",
+          "text": "Examen abdominal",
+          "details": [
+            "Douleur abdominale [Diffuse, récente]",
+            "Masse pulsatile [Non palpable]",
+            "Défense [Non]",
+            "Bruits intestinaux [Présents]"
+          ]
+        },
+        {
+          "id": "e7",
+          "text": "ECG 12 dérivations",
+          "details": [
+            "Rythme sinusal [Oui]",
+            "Tachycardie sinusale [105 bpm]",
+            "HVG [Critères de voltage]",
+            "Pas de sus-décalage ST [Normal]",
+            "Pas de signe d'ischémie aiguë"
+          ]
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Mesures immédiates d'urgence",
+          "details": [
+            "Installation en salle de déchocage",
+            "2 voies veineuses de gros calibre",
+            "Monitoring continu (TA aux 2 bras)",
+            "Oxygénothérapie si besoin",
+            "Commande de sang (6 CGR, PFC)",
+            "Alerte équipe chirurgicale"
+          ],
+          "binaryOnly": true
+        },
+        {
+          "id": "m2",
+          "text": "Contrôle tensionnel et fréquence cardiaque",
+          "details": [
+            "Objectif: PAS 100-120 mmHg, FC < 60 bpm",
+            "Bêtabloquants IV (Esmolol ou Labétalol)",
+            "Éviter la vasodilatation isolée",
+            "Nicardipine IV si contre-indication aux BB",
+            "Surveillance TA toutes les 5 minutes"
+          ],
+          "binaryOnly": true
+        },
+        {
+          "id": "m3",
+          "text": "Analgésie",
+          "details": [
+            "Morphine IV titrée",
+            "Objectif EVA < 4",
+            "Éviter l'agitation et l'hypertension réactionnelle",
+            "Anxiolytiques si besoin"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Imagerie diagnostique urgente",
+          "details": [
+            "Angio-CT thoraco-abdomino-pelvien EN URGENCE",
+            "Alternative: ETT puis ETO si instable",
+            "Radiographie thoracique (élargissement médiastin)",
+            "Éviter tout retard diagnostique"
+          ],
+          "binaryOnly": true
+        },
+        {
+          "id": "m5",
+          "text": "Classification et stratégie thérapeutique",
+          "details": [
+            "Classification de Stanford (A ou B)",
+            "Type A: chirurgie urgente",
+            "Type B: traitement médical sauf complications",
+            "Évaluation malperfusion d'organes",
+            "Contact immédiat avec chirurgie cardiaque/vasculaire"
+          ]
+        },
+        {
+          "id": "m6",
+          "text": "Diagnostics différentiels",
+          "ddSection": {
+            "title": "Diagnostics différentiels de la dissection aortique",
+            "categories": [
+              {
+                "name": "Urgence vasculaire confirmée",
+                "items": [
+                  {
+                    "text": "Dissection aortique",
+                    "cause": "Arguments POUR:\n\t□ Douleur déchirante maximale d'emblée\n\t□ Migration thoraco-abdominale\n\t□ Asymétrie tensionnelle (30 mmHg)\n\t□ Pouls fémoral absent à gauche\n\t□ Souffle d'insuffisance aortique nouveau\n\t□ HTA mal contrôlée",
+                    "test": "→ Angio-CT thoraco-abdomino-pelvien URGENT"
+                  }
+                ]
+              },
+              {
+                "name": "Autres urgences cardiovasculaires",
+                "items": [
+                  {
+                    "text": "Syndrome coronarien aigu",
+                    "cause": "Arguments CONTRE:\n\t□ Douleur non constrictive\n\t□ ECG normal\n\t□ Douleur migratrice atypique",
+                    "test": "→ Troponines, ECG sériés"
+                  },
+                  {
+                    "text": "Embolie pulmonaire",
+                    "cause": "Arguments CONTRE:\n\t□ Pas de facteurs de risque thromboembolique\n\t□ Douleur non pleurale\n\t□ Asymétrie vasculaire expliquée par dissection",
+                    "test": "→ D-dimères, angio-CT pulmonaire si doute"
+                  },
+                  {
+                    "text": "Péricardite avec tamponnade",
+                    "cause": "Arguments CONTRE:\n\t□ Pas de frottement péricardique\n\t□ Asymétrie tensionnelle (non compatible)\n\t□ Pas de pouls paradoxal",
+                    "test": "→ Échocardiographie"
+                  }
+                ]
+              },
+              {
+                "name": "Pathologies abdominales",
+                "items": [
+                  {
+                    "text": "Rupture d'anévrisme abdominal",
+                    "cause": "Arguments possibles:\n\t□ Douleur abdominale\n\t□ Antécédent familial AAA\n\t□ Mais douleur thoracique initiale",
+                    "test": "→ CT abdominal (inclus dans angio-CT)"
+                  },
+                  {
+                    "text": "Colique néphrétique",
+                    "cause": "Arguments CONTRE:\n\t□ Douleur thoracique prédominante\n\t□ Signes cardiovasculaires majeurs",
+                    "test": "→ BU, échographie rénale"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m7",
+          "text": "Surveillance des complications",
+          "details": [
+            "Malperfusion coronaire (ECG, troponines)",
+            "Malperfusion cérébrale (examen neurologique)",
+            "Malperfusion rénale (diurèse, créatinine)",
+            "Malperfusion mésentérique (lactates, douleur)",
+            "Malperfusion des membres (pouls, couleur)",
+            "Tamponnade (échographie)",
+            "Rupture aortique (état de choc)"
+          ]
+        },
+        {
+          "id": "m8",
+          "text": "Examens biologiques",
+          "details": [
+            "NFS, groupe sanguin, RAI",
+            "Ionogramme, urée, créatinine",
+            "Bilan de coagulation complet",
+            "Troponines (malperfusion coronaire)",
+            "Lactates (malperfusion mésentérique)",
+            "D-dimères (élevés dans dissection)",
+            "Gazométrie artérielle"
+          ]
+        },
+        {
+          "id": "m9",
+          "text": "Préparation chirurgicale si type A",
+          "details": [
+            "Consentement éclairé urgent",
+            "Bilan pré-opératoire",
+            "Antibioprophylaxie",
+            "Préparation cutanée",
+            "Information famille",
+            "Transfert rapide au bloc"
+          ]
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Synthèse pour le patient",
+          "content": "Monsieur, vous présentez très probablement une dissection de l'aorte, c'est-à-dire une déchirure dans la paroi de la plus grosse artère de votre corps. C'est une urgence vitale. Nous devons faire un scanner en urgence pour confirmer et localiser précisément le problème. Selon les résultats, vous pourriez avoir besoin d'une opération en urgence. En attendant, nous allons contrôler votre tension et votre douleur. L'équipe chirurgicale est déjà prévenue."
+        },
+        {
+          "id": "c2",
+          "text": "Questions difficiles du patient",
+          "content": "[Est-ce que je vais mourir?] [Pourquoi ça m'arrive maintenant?] [Est-ce que l'opération est risquée?] [Combien de temps vais-je rester à l'hôpital?]"
+        },
+        {
+          "id": "c3",
+          "text": "Réponses types aux questions difficiles",
+          "exemplesPhrases": [
+            "C'est effectivement grave, mais nous faisons tout pour vous soigner. La prise en charge rapide améliore considérablement le pronostic.",
+            "Votre hypertension mal contrôlée et l'effort physique ont probablement contribué. C'est une urgence imprévisible.",
+            "L'opération comporte des risques, mais ne pas opérer serait plus dangereux si la dissection touche la partie ascendante de l'aorte.",
+            "Si tout se passe bien, comptez 2-3 semaines d'hospitalisation dont plusieurs jours en réanimation, puis une convalescence de plusieurs mois."
+          ]
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "images": [
+      {
+        "title": "Radiographie du thorax - Dissection aortique",
+        "description": "Radiographie thoracique montrant un élargissement du médiastin, déviation de la trachée et épanchement pleural gauche",
+        "data": "grilles_generees/html/images/AMC-Urgences-Medecine-Intensive-3/C1-Radiographie du thorax.jpg"
+      }
+    ],
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour le patient standardisé - Dissection aortique",
+      "nom": "Monsieur Leroy",
+      "age": "62 ans",
+      "contexte": "Vous étiez en train de jardiner quand une douleur terrible vous a frappé dans la poitrine il y a 30 minutes. Votre épouse vous a amené en urgence.",
+      "motifConsultation": {
+        "plaintePrincipale": "J'ai une douleur atroce dans la poitrine qui descend dans le dos",
+        "autreChose": "C'est la pire douleur de ma vie, j'ai cru que j'allais mourir"
+      },
+      "histoireActuelle": {
+        "symptomesPrincipaux": [
+          "Douleur brutale comme un coup de poignard dans la poitrine",
+          "La douleur déchire, comme si on me coupait en deux",
+          "Elle est partie de la poitrine puis est descendue dans le dos",
+          "Maintenant elle arrive dans le ventre",
+          "Intensité 10/10, insupportable",
+          "J'ai des nausées et je transpire beaucoup",
+          "Ma jambe gauche me semble bizarre, engourdie"
+        ],
+        "circonstances": [
+          "Je soulevais des sacs de terreau (20 kg)",
+          "La douleur est apparue d'un coup, sans prévenir",
+          "J'ai dû m'asseoir immédiatement",
+          "Rien ne soulage la douleur"
+        ]
+      },
+      "simulation": {
+        "attitude": [
+          "Extrêmement algique, se tenir le thorax",
+          "Agité, ne pas trouver de position confortable",
+          "Transpirer abondamment",
+          "Respirer rapidement mais pas hyperventiler",
+          "Exprimer une angoisse de mort imminente",
+          "Demander constamment quelque chose pour la douleur"
+        ],
+        "durantExamen": [
+          "Grimacer fortement à la palpation",
+          "Signaler que la jambe gauche est froide",
+          "Rester très anxieux malgré les explications",
+          "Insister sur le caractère insupportable de la douleur"
+        ]
+      },
+      "antecedents": {
+        "medicaux": [
+          "Hypertension depuis 15 ans, mal suivie",
+          "Je prends mes médicaments quand j'y pense",
+          "Pas de diabète",
+          "Pas de problème cardiaque connu"
+        ],
+        "chirurgicaux": [
+          "Hernie inguinale opérée il y a 5 ans"
+        ],
+        "familiaux": [
+          "Mon frère a été opéré de l'aorte abdominale à 65 ans",
+          "Mon père est mort subitement à 58 ans",
+          "Ma mère est hypertendue"
+        ]
+      },
+      "habitudes": {
+        "tabac": "Je fume depuis 40 ans, 1 paquet par jour",
+        "alcool": "2-3 bières par jour",
+        "activite": "Jardinage, bricolage",
+        "medicaments": "Amlodipine pour la tension, mais j'oublie souvent"
+      }
+    },
+    "informationsExpert": {
+      "titre": "Points clés pour l'évaluateur - Dissection aortique",
+      "pointsCles": [
+        "Reconnaissance clinique immédiate (douleur déchirante, migration)",
+        "Recherche systématique de l'asymétrie tensionnelle et des pouls",
+        "Auscultation cardiaque (souffle d'IA nouveau)",
+        "Contrôle tensionnel urgent (PAS 100-120, FC < 60)",
+        "Imagerie urgente (angio-CT)",
+        "Alerte précoce de l'équipe chirurgicale"
+      ],
+      "pieges": [
+        "Confondre avec un SCA et donner des antiagrégants",
+        "Oublier de prendre la TA aux deux bras",
+        "Ne pas examiner tous les pouls périphériques",
+        "Retarder l'imagerie",
+        "Utiliser des vasodilatateurs seuls sans bêtabloquants",
+        "Oublier de commander du sang",
+        "Ne pas reconnaître l'urgence chirurgicale du type A"
+      ],
+      "rolesInterventions": [
+        "L'examinateur peut signaler l'arrivée des résultats du CT",
+        "Confirmer le type A de Stanford si demandé",
+        "Jouer le rôle du chirurgien cardiaque si contacté",
+        "Évaluer la gestion de l'urgence vitale"
+      ]
+    },
+    "theoriePratique": {
+      "titre": "Rappels théoriques - Dissection aortique aiguë",
+      "sections": [
+        {
+          "titre": "Classification de Stanford",
+          "points": [
+            "Type A: Atteinte de l'aorte ascendante (60% des cas)",
+            "Type B: Dissection débutant après l'artère sous-clavière gauche (40%)",
+            "Type A = chirurgie urgente (mortalité 1-2%/heure)",
+            "Type B = traitement médical sauf complications",
+            "Complications: malperfusion, rupture, progression"
+          ]
+        },
+        {
+          "titre": "Classification de DeBakey",
+          "points": [
+            "Type I: Aorte ascendante + descendante (équivalent Stanford A)",
+            "Type II: Aorte ascendante seule (équivalent Stanford A)",
+            "Type III: Aorte descendante seule (équivalent Stanford B)",
+            "IIIa: limitée au thorax",
+            "IIIb: extension abdominale"
+          ]
+        },
+        {
+          "titre": "Physiopathologie",
+          "points": [
+            "Déchirure intimale créant une porte d'entrée",
+            "Propagation du sang dans la média (faux chenal)",
+            "Extension antérograde ou rétrograde",
+            "Compression du vrai chenal → malperfusion",
+            "Risque de rupture externe → tamponnade ou hémothorax"
+          ]
+        },
+        {
+          "titre": "Syndromes de malperfusion",
+          "points": [
+            "Coronaire: IDM (1-2% ostium coronaire droit)",
+            "Cérébrale: AVC, confusion (5-10%)",
+            "Médullaire: paraplégie (rare)",
+            "Rénale: IRA, HTA réfractaire",
+            "Mésentérique: ischémie intestinale (3-5%)",
+            "Membres: ischémie aiguë (10-20%)"
+          ]
+        }
+      ],
+      "rappelsTherapeutiques": [
+        "Contrôle TA: objectif PAS 100-120 mmHg en 5-10 minutes",
+        "Bêtabloquants IV première ligne: Esmolol (50-300 μg/kg/min) ou Labétalol",
+        "Si CI aux BB: Diltiazem ou Vérapamil IV",
+        "Vasodilatateurs après BB: Nicardipine, Nitroprussiate",
+        "JAMAIS de vasodilatateurs seuls (risque d'augmentation du shear stress)",
+        "Analgésie morphinique généreuse",
+        "Éviter anticoagulation et thrombolyse",
+        "Type A: chirurgie urgente (remplacement aorte ascendante ± valve)",
+        "Type B non compliqué: traitement médical + surveillance USC",
+        "Type B compliqué: TEVAR (endoprothèse) ou chirurgie"
+      ],
+      "examensComplementaires": [
+        "Angio-CT thoraco-abdomino-pelvien: Gold standard, sensibilité/spécificité > 95%",
+        "ETT: rapide au lit, visualise aorte ascendante, IA, épanchement péricardique",
+        "ETO: excellente pour aorte thoracique, peut se faire au bloc",
+        "IRM: excellente mais trop longue en urgence",
+        "Radiographie thorax: élargissement médiastin (60-90%), double contour aortique",
+        "ECG: généralement normal, parfois signes d'HVG ou ischémie si malperfusion coronaire",
+        "Biologie: D-dimères élevés (< 500 ng/mL exclut quasi dissection)",
+        "Troponines: si suspicion malperfusion coronaire",
+        "Lactates: surveillance malperfusion mésentérique",
+        "Fonction rénale: baseline avant injection iode et chirurgie"
+      ]
+    },
+    "redflagsSection": {
+      "title": "Red Flags - Dissection aortique",
+      "items": [
+        {
+          "text": "Douleur maximale d'emblée",
+          "description": "Caractéristique majeure, différente de l'IDM progressif"
+        },
+        {
+          "text": "Migration de la douleur",
+          "description": "Suit la progression de la dissection"
+        },
+        {
+          "text": "Asymétrie tensionnelle > 20 mmHg",
+          "description": "Signe de dissection avec atteinte des troncs supra-aortiques"
+        },
+        {
+          "text": "Déficit de pouls",
+          "description": "Malperfusion par compression du vrai chenal"
+        },
+        {
+          "text": "Souffle d'IA nouveau",
+          "description": "Extension rétrograde vers la valve aortique"
+        },
+        {
+          "text": "Déficit neurologique",
+          "description": "Malperfusion cérébrale ou médullaire"
+        },
+        {
+          "text": "Choc/tamponnade",
+          "description": "Rupture dans le péricarde = urgence chirurgicale absolue"
+        }
+      ]
+    }
+  }
+}

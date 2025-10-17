@@ -1,0 +1,223 @@
+{
+  "title": "Thieme Abdomen 19 - Fuites urinaires - Femme de 55 ans",
+  "category": "Thieme Abdomen",
+  "subcategory": "Fuites urinaires",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Femme de 55 ans, Mme Gloria Peter, consultant pour fuites urinaires",
+    "vitals": {
+      "temperature": "37°C",
+      "ta": "110/70 mmHg",
+      "fc": "96 bpm",
+      "fr": "16/min"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Motif principal de consultation",
+          "binaryOnly": true,
+          "patientComment": "fuites urinaires"
+        },
+        {
+          "id": "a2",
+          "text": "Analyse de la plainte principale (ABCDE)",
+          "details": [
+            "Apparition et durée [Incontinence urinaire depuis 1 an, aggravée]",
+            "Bilan (localisation, irradiation)",
+            "Caractère et qualité de la douleur",
+            "Degré d'intensité (échelle 1-10)",
+            "Éléments associés et facteurs modifiants"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Symptômes associés et antécédents",
+          "details": [
+            "4 grossesses, 4 accouchements vaginaux",
+            "Ménopause il y a 5 ans",
+            "Pas d'HTS"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Histoire sociale et habitudes de vie",
+          "details": [
+            "Femme au foyer",
+            "Ne fume pas",
+            "Pas d'alcool",
+            "Mariée"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Revue des systèmes",
+          "details": [
+            "Système urinaire",
+            "Système gynécologique"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Signes vitaux et apparence générale",
+          "binaryOnly": true
+        },
+        {
+          "id": "e2",
+          "text": "Examen de la tête et du cou",
+          "details": [
+            "Recherche pâleur, ictère",
+            "Examen ORL avec abaisse-langue",
+            "Palpation ganglions lymphatiques",
+            "Examen thyroïde"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Examen cardio-pulmonaire",
+          "details": [
+            "Auscultation cardiaque [S1 et S2 normaux]",
+            "Auscultation pulmonaire bilatérale"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Examen abdominal complet",
+          "details": [
+            "Inspection (cicatrices, distension)",
+            "Auscultation (bruits intestinaux)",
+            "Percussion (matité, tympanisme)",
+            "Palpation superficielle et profonde"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Examens spécifiques selon le cas",
+          "details": [
+            "Examen pelvien avec test d'effort"
+          ]
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostics différentiels à évoquer",
+          "ddSection": {
+            "title": "Hypothèses diagnostiques",
+            "categories": [
+              {
+                "name": "Diagnostics prioritaires",
+                "items": [
+                  {
+                    "text": "Incontinence urinaire d'effort",
+                    "cause": "Arguments POUR:\n\t□ Fuites à l'effort, multiparité, ménopause",
+                    "test": "→ Test d'effort, urodynamique"
+                  },
+                  {
+                    "text": "Incontinence urinaire d'urgence",
+                    "cause": "Arguments POUR:\n\t□ Selon présentation clinique",
+                    "test": "→ Selon orientation clinique"
+                  },
+                  {
+                    "text": "Incontinence urinaire mixte",
+                    "cause": "Arguments POUR:\n\t□ Selon présentation clinique",
+                    "test": "→ Selon orientation clinique"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Examens complémentaires pertinents",
+          "details": [
+            "Examen pelvien",
+            "Test d'effort",
+            "ECBU avec culture",
+            "Cystogramme"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Plan de prise en charge immédiate",
+          "details": [
+            "Investigations ambulatoires",
+            "Traitement symptomatique",
+            "Suivi après résultats"
+          ]
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Questions difficiles du patient",
+          "content": "Y a-t-il des exercices pour améliorer cela?"
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour le patient standardisé",
+      "nom": "Mme Gloria Peter",
+      "age": "55 ans",
+      "contexte": "Cabinet de médecine générale",
+      "motifConsultation": {
+        "plaintePrincipale": "fuites urinaires",
+        "autreChose": "Incontinence urinaire depuis 1 an, aggravée. Fuites lors toux, éternuements, exercice."
+      },
+      "histoireActuelle": {
+        "symptomesPrincipaux": [
+          "Incontinence urinaire depuis 1 an, aggravée",
+          " Fuites lors toux, éternuements, exercice"
+        ],
+        "contextePsychosocial": [
+          "Femme au foyer",
+          " Ne fume pas",
+          " Pas d'alcool",
+          " Mariée"
+        ]
+      },
+      "simulation": {
+        "attitude": [
+          "Gênée par le problème"
+        ],
+        "durantExamen": []
+      },
+      "inquietudes": {
+        "principales": [
+          "Y a-t-il des exercices pour améliorer cela?"
+        ]
+      }
+    },
+    "informationsExpert": {
+      "titre": "Informations pour l'expert",
+      "pointsCles": [
+        "Cas de Fuites urinaires",
+        "Patient: Femme de 55 ans",
+        "Anamnèse complète avec ABCDE",
+        "Examen abdominal détaillé",
+        "Diagnostic différentiel approprié"
+      ],
+      "pieges": [
+        "Ne pas examiner prolapsus",
+        "Oublier test d'effort"
+      ]
+    }
+  }
+}

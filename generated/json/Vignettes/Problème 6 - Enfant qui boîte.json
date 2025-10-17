@@ -1,0 +1,848 @@
+{
+  "title": "Enfant qui boîte - Synovite aiguë transitoire de la hanche",
+  "context": {
+    "setting": "Cabinet médical - Consultation téléphonique puis en présentiel",
+    "patient": "Guillaume, garçon de 5 ans et demi, refuse de marcher sur son membre inférieur gauche depuis ce matin",
+    "vitals": {
+      "temperature": "37.2°C (veille 38.5°C)",
+      "Poids": "20 kg",
+      "Taille": "110 cm"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Anamnèse téléphonique initiale",
+          "binaryOnly": true,
+          "details": [
+            "Problème principal [mal à quelque part - oui]",
+            "Localisation [au niveau de la cuisse et du genou droits]",
+            "Capacité de marche [difficilement, en boitant de façon importante du côté droit]",
+            "Traumatisme récent [non]",
+            "Fièvre actuelle [non]",
+            "Fièvre la veille [oui, 38.5°C]",
+            "Traitement donné [paracétamol 250 mg]",
+            "État général [en bonne santé ces derniers temps]"
+          ]
+        },
+        {
+          "id": "a2",
+          "text": "Anamnèse approfondie au cabinet",
+          "details": [
+            "Début de la boiterie [après beaucoup d'activité physique - trampoline]",
+            "Moment d'endormissement [a eu de la peine à s'endormir puis bon sommeil]",
+            "Boiterie antérieure [non]",
+            "Problèmes familiaux [hanche ou rhumatisme - non]",
+            "Douleur spontanée à l'examen [oui au niveau du genou]"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Caractérisation de la douleur",
+          "details": [
+            "Type de douleur [chronique ancienne ou aiguë récente]",
+            "Douleur mécanique ou inflammatoire [nocturne ?]",
+            "Intensité [cotation 0 à 10]",
+            "Présence de fièvre [actuellement non, hier soir oui]"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Antécédents et contexte",
+          "details": [
+            "Antécédents pathologiques [depuis la naissance]",
+            "Antécédents familiaux [pathologies de hanche]",
+            "Mode d'installation [de la boiterie]",
+            "Traumatismes répétés [surmenage sportif]",
+            "Infections récentes [rechercher Kingella kingae]"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Observation de la marche et état général",
+          "binaryOnly": true,
+          "patientComment": "Boiterie importante, appui partiel pied au sol, flessum genou et hanche à droite"
+        },
+        {
+          "id": "e2",
+          "text": "Examen de la mobilité articulaire",
+          "details": [
+            "Hanche droite flexion/extension [110/10/0]",
+            "Abduction/adduction [20/0/30]",
+            "Rotation interne/externe [10/0/30]",
+            "Hanche gauche flexion/extension [130/0/10]",
+            "Abduction/adduction [50/0/30]",
+            "Rotation interne/externe [45/0/45]",
+            "Genoux [bien mobiles]",
+            "Chevilles [bien mobiles]"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Palpation et recherche de douleurs",
+          "details": [
+            "Palpation des reliefs osseux [absence de douleurs osseuses]",
+            "Test de tuméfaction [pas de rougeur ni chaleur]",
+            "Adénopathies [pas d'adénopathie]",
+            "Inégalité de longueur [pas d'inégalité des MI]"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "État musculaire et neurologique",
+          "details": [
+            "Force musculaire [normale, pas d'amyotrophie du quadriceps]",
+            "Réflexes [sensibilité + réflexes en ordre]",
+            "Examen rachis [force et sensibilité normales]",
+            "Status neurologique [normal]"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Conclusion clinique",
+          "details": [
+            "Douleur [boiterie et raideur de hanche droite aiguë - 24 heures]",
+            "Absence de fièvre [mais épisode fébrile la veille]",
+            "Absence d'anomalies cliniques autres"
+          ]
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostics différentiels de la boiterie",
+          "ddSection": {
+            "title": "Diagnostics différentiels d'une boiterie chez l'enfant",
+            "categories": [
+              {
+                "name": "Diagnostic le plus probable",
+                "items": [
+                  {
+                    "text": "Synovite aiguë transitoire de la hanche (rhume de hanche)",
+                    "cause": "Arguments POUR:\n\t□ Âge typique (3-8 ans)\n\t□ Garçon > fille\n\t□ Début aigu après activité physique\n\t□ Épisode fébrile récent\n\t□ Limitation mobilité hanche\n\t□ Pas de signes inflammatoires locaux",
+                    "test": "→ Échographie: épanchement intra-articulaire 7mm"
+                  }
+                ]
+              },
+              {
+                "name": "Autres causes à considérer",
+                "items": [
+                  {
+                    "text": "Arthrite septique",
+                    "cause": "Arguments CONTRE:\n\t□ Pas de fièvre actuelle\n\t□ CRP normale (20 mg/l)\n\t□ Pas de signes inflammatoires locaux\n\t□ Mobilité partiellement conservée",
+                    "test": "→ Ponction articulaire si doute"
+                  },
+                  {
+                    "text": "Ostéochondrite (Maladie de Perthes)",
+                    "cause": "Arguments CONTRE:\n\t□ Début trop aigu\n\t□ Âge limite (pic 4-8 ans)\n\t□ Évolution habituellement progressive",
+                    "test": "→ Radiographie puis IRM si suspicion"
+                  },
+                  {
+                    "text": "Épiphysiolyse",
+                    "cause": "Arguments CONTRE:\n\t□ Trop jeune (pic 10-15 ans)\n\t□ Pas de surpoids\n\t□ Début brutal",
+                    "test": "→ Radiographie bassin face + profil"
+                  },
+                  {
+                    "text": "Arthrite juvénile idiopathique",
+                    "cause": "Arguments CONTRE:\n\t□ Pas d'antécédents\n\t□ Début très aigu\n\t□ Pas de raideur matinale",
+                    "test": "→ Bilan inflammatoire et auto-immunité"
+                  }
+                ]
+              },
+              {
+                "name": "Causes traumatiques/mécaniques",
+                "items": [
+                  {
+                    "text": "Traumatisme mineur",
+                    "cause": "Arguments POSSIBLES:\n\t□ Activité physique intense (trampoline)\n\t□ Mais pas de traumatisme identifié",
+                    "test": "→ Radiographie si suspicion fracture"
+                  },
+                  {
+                    "text": "Corps étranger/chaussage inadapté",
+                    "cause": "Arguments CONTRE:\n\t□ Douleur articulaire\n\t□ Limitation mobilité hanche",
+                    "test": "→ Examen pied et chaussures"
+                  }
+                ]
+              },
+              {
+                "name": "Diagnostics peu probables",
+                "items": [
+                  {
+                    "text": "Tumeur osseuse",
+                    "cause": "Arguments CONTRE:\n\t□ Début très aigu\n\t□ Pas de douleurs nocturnes\n\t□ Bon état général",
+                    "test": "→ Radiographie + IRM si suspicion"
+                  },
+                  {
+                    "text": "Ostéomyélite",
+                    "cause": "Arguments CONTRE:\n\t□ Pas de fièvre\n\t□ CRP normale\n\t□ Pas de douleur osseuse",
+                    "test": "→ Scintigraphie osseuse si doute"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Examens paracliniques réalisés",
+          "details": [
+            "FSC [Hb 13.2, Ht 31%, GB 8000 - normal]",
+            "VS [14/29 - normal]",
+            "CRP [20 mg/l - normale]",
+            "Frottis de gorge - PCR [suspicion Kingella kingae si < 4 ans]",
+            "Hémocultures [si fièvre]",
+            "Radiographie bassin face + profil [normales]",
+            "Échographie hanche [épanchement intra-articulaire 7mm non échogène]"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Examens complémentaires selon nécessité",
+          "details": [
+            "Bilan rhumatologique [si récidive ou bilatéral]",
+            "Bilan Rx étendu [si suspicion autre localisation]",
+            "IRM [si évolution défavorable ou suspicion Perthes]",
+            "Scintigraphie osseuse [si recherche foyer infectieux]",
+            "Ponction articulaire [si suspicion arthrite septique]"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Traitement de la synovite aiguë transitoire",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Traitement symptomatique",
+                "items": [
+                  {
+                    "treatment": "Repos relatif",
+                    "details": "Éviter activités sportives, marche selon tolérance",
+                    "duration": "7-10 jours"
+                  },
+                  {
+                    "treatment": "Antalgiques",
+                    "details": "Paracétamol 15 mg/kg/dose toutes les 6h",
+                    "duration": "Selon douleur"
+                  },
+                  {
+                    "treatment": "AINS",
+                    "details": "Ibuprofène 10 mg/kg/dose x3/j si douleur importante",
+                    "duration": "3-5 jours maximum"
+                  }
+                ]
+              },
+              {
+                "title": "Surveillance",
+                "items": [
+                  {
+                    "treatment": "Contrôle clinique",
+                    "details": "À 48-72h puis à 1 semaine",
+                    "duration": "Jusqu'à résolution complète"
+                  },
+                  {
+                    "treatment": "Échographie contrôle",
+                    "details": "Si persistance symptômes > 1 semaine",
+                    "duration": "Selon évolution"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m5",
+          "text": "Critères de diagnostic de la synovite transitoire",
+          "details": [
+            "Critères de Kocher modifiés [pour différencier arthrite septique]",
+            "Fièvre > 38.5°C [1 point]",
+            "Refus d'appui [1 point]",
+            "VS > 40 mm/h [1 point]",
+            "GB > 12000/mm³ [1 point]",
+            "Score 0-1 [probabilité arthrite septique < 3%]",
+            "Score 2 [probabilité 40%]",
+            "Score 3-4 [probabilité > 90%]"
+          ]
+        },
+        {
+          "id": "m6",
+          "text": "Évolution et pronostic",
+          "details": [
+            "Résolution spontanée [7-10 jours dans 95% cas]",
+            "Récidive possible [10-15% des cas]",
+            "Complications rares [< 1%]",
+            "Pas de séquelles à long terme [contrairement à Perthes]",
+            "Surveillance si récidives [rechercher autre pathologie]"
+          ]
+        },
+        {
+          "id": "m7",
+          "text": "Information aux parents",
+          "details": [
+            "Nature bénigne [rhume de hanche]",
+            "Évolution favorable [guérison spontanée]",
+            "Repos relatif [pas d'immobilisation stricte]",
+            "Antalgiques [selon douleur]",
+            "Signes d'alerte [fièvre, aggravation, persistance > 10j]",
+            "Consultation urgente si [douleur intense, fièvre, refus total appui]",
+            "Activités sportives [reprise progressive après guérison]"
+          ]
+        },
+        {
+          "id": "m8",
+          "text": "Red flags nécessitant réévaluation",
+          "redflagsSection": {
+            "title": "Signes d'alerte pour reconsidérer le diagnostic",
+            "items": [
+              {
+                "text": "Fièvre persistante ou récurrente",
+                "description": "Rechercher arthrite septique ou ostéomyélite"
+              },
+              {
+                "text": "Aggravation de la douleur",
+                "description": "Ponction articulaire urgente si suspicion infection"
+              },
+              {
+                "text": "Persistance > 10 jours",
+                "description": "IRM pour exclure ostéochondrite ou autre pathologie"
+              },
+              {
+                "text": "Récidives multiples",
+                "description": "Bilan rhumatologique complet"
+              },
+              {
+                "text": "Atteinte bilatérale",
+                "description": "Rechercher pathologie systémique"
+              },
+              {
+                "text": "Altération état général",
+                "description": "Rechercher pathologie tumorale ou infectieuse"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Clôture type",
+          "content": "Guillaume présente ce qu'on appelle communément un 'rhume de hanche' ou synovite aiguë transitoire. C'est une inflammation bénigne de la hanche qui survient souvent après une activité physique intense ou un épisode viral. L'échographie montre un petit épanchement qui va se résorber spontanément. Avec du repos relatif et des antalgiques si besoin, cela devrait s'améliorer en 7-10 jours. C'est très fréquent chez les enfants de son âge et cela ne laisse aucune séquelle."
+        },
+        {
+          "id": "c2",
+          "text": "Questions fréquentes des parents",
+          "content": "[Est-ce grave docteur ?]\n[Faut-il l'immobiliser complètement ?]\n[Peut-il aller à l'école ?]\n[Quand pourra-t-il refaire du sport ?]\n[Est-ce que ça peut revenir ?]\n[Faut-il faire d'autres examens ?]"
+        },
+        {
+          "id": "c3",
+          "text": "Réponse type du candidat",
+          "exemplesPhrases": [
+            "\"Non, ce n'est pas grave. C'est une inflammation bénigne qui guérit toute seule en une semaine environ.\"",
+            "\"Non, pas d'immobilisation. Il peut marcher selon sa tolérance, mais éviter le sport pendant quelques jours.\"",
+            "\"Oui, il peut aller à l'école s'il n'a pas trop mal. Prévenez l'enseignant qu'il ne fera pas de gymnastique.\"",
+            "\"Il pourra reprendre progressivement le sport quand il n'aura plus de douleur, généralement dans 10-15 jours.\"",
+            "\"Oui, cela peut récidiver dans 10-15% des cas, mais c'est sans gravité. Si cela revient souvent, on fera d'autres examens.\"",
+            "\"Pour l'instant non. Si les symptômes persistent plus de 10 jours ou s'aggravent, on reconsidérera.\""
+          ]
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour le parent standardisé",
+      "nom": "Parent de Guillaume",
+      "contexte": "D'abord appel téléphonique puis consultation au cabinet",
+      "motifConsultation": {
+        "telephonique": "Mon fils refuse de marcher sur sa jambe gauche depuis ce matin",
+        "cabinet": "Il boite beaucoup et se plaint du genou"
+      },
+      "histoireActuelle": {
+        "veille": [
+          "Il a beaucoup joué au trampoline hier",
+          "Il a eu du mal à s'endormir",
+          "Il avait 38.5°C hier soir",
+          "Je lui ai donné du paracétamol"
+        ],
+        "matin": [
+          "Ce matin il refuse de poser le pied",
+          "Il dit avoir mal au genou",
+          "Il n'a plus de fièvre",
+          "Il était bien ces derniers temps"
+        ]
+      },
+      "inquietudes": {
+        "principales": [
+          "Est-ce qu'il s'est cassé quelque chose ?",
+          "C'est peut-être une infection ?",
+          "Il a eu de la fièvre hier"
+        ],
+        "questions": [
+          "Faut-il faire une radio ?",
+          "Combien de temps ça va durer ?",
+          "Peut-il aller à l'école ?"
+        ]
+      },
+      "simulation": {
+        "attitude": [
+          "Parent inquiet mais rationnel",
+          "Collaborant",
+          "Pose des questions pertinentes",
+          "Soulagé par les explications rassurantes"
+        ],
+        "comportementEnfant": [
+          "Boiterie importante",
+          "Appui partiel sur le pied",
+          "Se plaint quand on mobilise la hanche",
+          "Sinon en bon état général"
+        ]
+      }
+    },
+    "informationsExpert": {
+      "titre": "Points clés pour l'évaluateur",
+      "pointsCles": [
+        "Reconnaître la présentation typique de la synovite transitoire",
+        "Examen complet de tout le membre inférieur (hanche au pied)",
+        "Rechercher les signes différenciant arthrite septique",
+        "Utiliser les critères de Kocher pour stratifier le risque",
+        "Échographie est l'examen de choix en première intention",
+        "Savoir que la douleur de hanche peut être projetée au genou",
+        "Rassurer sur le caractère bénin et transitoire"
+      ],
+      "pieges": [
+        "Se focaliser uniquement sur le genou (douleur projetée)",
+        "Oublier d'examiner la hanche",
+        "Ne pas rechercher une infection si CRP élevée",
+        "Prescrire trop d'examens d'emblée",
+        "Immobilisation stricte non nécessaire",
+        "Ne pas expliquer les signes d'alerte aux parents",
+        "Confondre avec début de maladie de Perthes"
+      ]
+    },
+    "theoriePratique": {
+      "titre": "Rappels théoriques - Boiterie de l'enfant",
+      "sections": [
+        {
+          "titre": "Synovite aiguë transitoire (rhume de hanche)",
+          "points": [
+            "Cause la plus fréquente de boiterie entre 3-8 ans",
+            "Garçons > filles (2:1)",
+            "Souvent post-viral ou post-traumatique mineur",
+            "Épanchement articulaire stérile",
+            "Diagnostic d'exclusion (éliminer arthrite septique)",
+            "Résolution spontanée en 7-10 jours",
+            "Récidive 10-15%, pas de séquelles"
+          ]
+        },
+        {
+          "titre": "Diagnostic différentiel selon l'âge",
+          "points": [
+            "0-3 ans: arthrite septique, ostéomyélite, fracture",
+            "3-8 ans: synovite transitoire, Perthes, arthrite",
+            "8-12 ans: Perthes, ostéochondrite, trauma",
+            "12-16 ans: épiphysiolyse, ostéochondrite, trauma",
+            "Tout âge: tumeur, infection, arthrite juvénile"
+          ]
+        },
+        {
+          "titre": "Maladie de Legg-Perthes-Calvé",
+          "points": [
+            "Ostéonécrose aseptique tête fémorale",
+            "Pic 4-8 ans, garçons 4:1",
+            "Début insidieux, évolution sur mois/années",
+            "Limitation rotation interne et abduction",
+            "Radiographie: densification, fragmentation, reconstruction",
+            "Pronostic selon âge début et étendue nécrose",
+            "Traitement: décharge, orthèse, parfois chirurgie"
+          ]
+        },
+        {
+          "titre": "Critères de Kocher pour arthrite septique",
+          "points": [
+            "Fièvre > 38.5°C",
+            "Refus d'appui",
+            "VS > 40 mm/h",
+            "GB > 12000/mm³",
+            "0-1 critère: < 3% probabilité",
+            "2 critères: 40% probabilité",
+            "3-4 critères: > 90% probabilité"
+          ]
+        }
+      ],
+      "rappelsTherapeutiques": [
+        "Repos relatif, pas d'immobilisation stricte",
+        "Antalgiques simples: paracétamol 60 mg/kg/j",
+        "AINS si douleur importante: ibuprofène 30 mg/kg/j",
+        "Pas d'antibiotiques sauf infection prouvée",
+        "Kinésithérapie rarement nécessaire",
+        "Reprise progressive activités après résolution",
+        "Surveillance clinique à 48-72h puis 1 semaine"
+      ],
+      "examensComplementaires": [
+        "Biologie: NFS, VS, CRP pour exclure infection",
+        "Radiographie: normale dans synovite, utile pour différentiel",
+        "Échographie: épanchement, épaississement synovial",
+        "IRM: si évolution défavorable ou suspicion Perthes",
+        "Ponction articulaire: si suspicion arthrite septique",
+        "Scintigraphie: rarement, si recherche foyer infectieux",
+        "Bilan rhumatologique: si récidives ou atteinte multiple"
+      ]
+    },
+    "resume": {
+      "titre": "🦵 Synovite aiguë transitoire de la hanche (Rhume de hanche) – Résumé ECOS",
+      "sections": [
+        {
+          "titre": "🔍 Anamnèse",
+          "subsections": [
+            {
+              "titre": "Contexte",
+              "points": [
+                "Enfant 3–8 ans, garçon > fille",
+                "Début aigu, sans traumatisme",
+                "Douleur hanche/aine ± genou",
+                "Boiterie ou refus de marcher",
+                "ATCD récent d’infection virale (ORL, respiratoire)"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "👀 Examen clinique",
+          "subsections": [
+            {
+              "titre": "Signes typiques",
+              "points": [
+                "Boiterie antalgique (boiterie de Trendelenburg possible)",
+                "Amplitude de la hanche limitée, surtout rotation interne et abduction",
+                "Douleur à la mobilisation passive de la hanche",
+                "Pas de fièvre ou fièvre faible (≠ arthrite septique)"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "🧪 Examens diagnostiques",
+          "subsections": [
+            {
+              "titre": "Examens utiles",
+              "points": [
+                "Échographie hanche : épanchement articulaire (non spécifique)",
+                "Biologie : NFS, CRP ± VS (souvent normales)",
+                "Toujours exclure arthrite septique si fièvre, CRP élevée, altération état général"
+              ]
+            },
+            {
+              "titre": "Différentiels à éliminer",
+              "points": [
+                "Arthrite septique (urgence absolue)",
+                "Maladie de Legg-Calvé-Perthes",
+                "Lyme, traumatisme"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "⚙️ Prise en charge",
+          "subsections": [
+            {
+              "titre": "Mesures",
+              "points": [
+                "Repos strict (souvent alité)",
+                "AINS (ibuprofène, naproxène) pour douleur et inflammation",
+                "Réévaluation à 24–48h : amélioration attendue",
+                "Hospitalisation si diagnostic incertain ou doute infectieux"
+              ]
+            },
+            {
+              "titre": "Évolution",
+              "points": [
+                "Amélioration en 24h",
+                "Résolution en 1–2 semaines",
+                "Pas de séquelles"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "✅ Points clés ECOS",
+          "points": [
+            "Enfant avec boiterie douloureuse sans fièvre → penser synovite transitoire",
+            "Toujours exclure arthrite septique (urgence vitale et fonctionnelle)",
+            "Échographie : épanchement non spécifique",
+            "Traitement = repos + AINS",
+            "Pronostic bénin, évolution favorable en 1–2 semaines"
+          ]
+        },
+        {
+          "titre": "📋 Check-list rapide ECOS",
+          "subsections": [
+            {
+              "titre": "Questions à poser",
+              "points": [
+                "Âge de l’enfant, début des symptômes ?",
+                "Douleur hanche/genou ? Refus de marcher ?",
+                "Fièvre ?",
+                "ATCD récents d’infection virale ?",
+                "Traumatisme récent ?"
+              ]
+            },
+            {
+              "titre": "Examens à faire",
+              "points": [
+                "Examen clinique hanche (mobilité, douleur)",
+                "Température corporelle",
+                "Échographie hanche",
+                "Biologie (NFS, CRP) si doute infectieux"
+              ]
+            },
+            {
+              "titre": "PEC en 3 points",
+              "points": [
+                "Repos + AINS",
+                "Exclure arthrite septique si fièvre/CRP élevée",
+                "Surveillance avec réévaluation rapide"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "✅ Points clés 🚶‍♂️ Boiterie de l’enfant",
+          "points": [
+            "Âge = élément clé pour orienter diagnostic",
+            "Arthrite septique = diagnostic à éliminer en premier (urgence absolue)",
+            "Synovite transitoire = cause bénigne la plus fréquente (3–8 ans)",
+            "SCFE = à ne pas manquer chez l’ado en surpoids",
+            "Tout enfant fébrile avec boiterie = hospitalisation immédiate"
+          ],
+          "tableau_comparatif": {
+            "colonnes": ["Âge", "Diagnostic principal", "Symptômes clés", "Points d’alerte", "Conduite rapide ECOS"],
+            "lignes": [
+              {
+                "Âge": "0–3 ans",
+                "Diagnostic principal": "Arthrite septique, ostéomyélite",
+                "Symptômes clés": "Fièvre, AEG, boiterie brutale, impotence fonctionnelle",
+                "Points d’alerte": "Risque vital et fonctionnel",
+                "Conduite rapide ECOS": "Hospitaliser en urgence, NFS/CRP/VS, imagerie, ponction articulaire, ATB IV"
+              },
+              {
+                "Âge": "3–8 ans",
+                "Diagnostic principal": "Synovite transitoire, Legg-Calvé-Perthes",
+                "Symptômes clés": "Boiterie ± douleur hanche/genou, contexte viral récent, pas ou peu de fièvre",
+                "Points d’alerte": "Fièvre élevée, CRP ↑ → suspecter arthrite septique",
+                "Conduite rapide ECOS": "Échographie hanche, repos + AINS, surveillance rapprochée"
+              },
+              {
+                "Âge": "9–15 ans",
+                "Diagnostic principal": "Épiphysiolyse fémorale supérieure (SCFE), tumeurs osseuses",
+                "Symptômes clés": "Ado en surpoids, douleur hanche/genou, boiterie progressive",
+                "Points d’alerte": "Impotence brutale, AEG, douleur nocturne",
+                "Conduite rapide ECOS": "IRM/radio bassin, hospitalisation si SCFE, avis ortho rapide"
+              },
+              {
+                "Âge": "Tout âge",
+                "Diagnostic principal": "Traumatisme, tumeurs, AIJ",
+                "Symptômes clés": "Douleur localisée, parfois nocturne, tuméfaction",
+                "Points d’alerte": "Fièvre persistante, masse, AEG",
+                "Conduite rapide ECOS": "Imagerie ciblée, hospitalisation si doute néoplasique ou infectieux"
+              }
+            ]
+          }
+        },
+        {
+          "titre": "📋 Check-list rapide ECOS 🚶‍♂️ Boiterie de l’enfant",
+          "subsections": [
+            {
+              "titre": "Questions à poser",
+              "points": [
+                "Âge et début de la boiterie ?",
+                "Douleur localisée où ? Irradie vers genou ?",
+                "Fièvre ou AEG ?",
+                "ATCD trauma récent ?",
+                "ATCD infectieux ou viraux récents ?"
+              ]
+            },
+            {
+              "titre": "Examens à faire",
+              "points": [
+                "Examen hanche/genou/pied bilatéral",
+                "Mobilité hanche (rotation interne)",
+                "Radiographies ciblées",
+                "Échographie hanche",
+                "Biologie (NFS, CRP, VS) si doute infectieux"
+              ]
+            },
+            {
+              "titre": "PEC en 3 points",
+              "points": [
+                "Éliminer arthrite septique (urgence)",
+                "Adapter examens selon âge et contexte",
+                "Hospitaliser si doute diagnostic ou signes de gravité"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "presentationPatient": {
+      "titre": "📑 Fiche ECOS – Cas : Enfant qui boîte (Synovite aiguë transitoire de la hanche)",
+      "sections": [
+        {
+          "titre": "🧩 Checklist mentale (présentation systématisée)",
+          "points": [
+            "Intro → âge, motif (refus de marcher, boiterie depuis ce matin), fièvre la veille",
+            "Caractériser la douleur → localisation hanche/genou droit, irradiation possible, intensité",
+            "Symptômes associés → fièvre antérieure, pas de fièvre actuelle, pas de traumatisme",
+            "ATCD médicaux/familiaux → rien de notable",
+            "Mode d’installation → aigu après trampoline, contexte viral",
+            "Examen clinique → boiterie importante, limitation mobilité hanche droite, flessum, douleur rotation interne",
+            "Examens → échographie hanche (épanchement), biologie (NFS, CRP, VS), radio normale",
+            "Hypothèse principale → synovite transitoire (rhume de hanche)",
+            "Diagnostics différentiels → arthrite septique, Perthes, épiphysiolyse, AJI, tumeur, ostéomyélite",
+            "PEC → repos relatif, antalgiques ± AINS, surveillance rapprochée, explications aux parents"
+          ],
+          "mnemo": {
+            "titre": "👉 Mnémo rapide : BOITER",
+            "elements": [
+              "B = Bien examiner hanche (même si plainte genou)",
+              "O = Observer marche et appui",
+              "I = Infection ? (arthrite septique à exclure)",
+              "T = Traumatisme récent ?",
+              "E = Examens : écho hanche, biologie ± radio",
+              "R = Repos relatif + réévaluation"
+            ]
+          }
+        },
+        {
+          "titre": "🎤 Version longue (≈2-3 min)",
+          "contenu": "Il s’agit de Guillaume, un garçon de 5 ans et demi, amené en consultation car il refuse de marcher depuis ce matin et boîte de manière importante du côté droit. Les parents rapportent qu’il a beaucoup joué au trampoline hier, et qu’il a eu de la peine à s’endormir le soir. Il a présenté de la fièvre à 38.5°C hier soir, pour laquelle ils lui ont donné du paracétamol. Ce matin, il n’a plus de fièvre mais il se plaint de douleurs au niveau du genou droit et refuse d’appuyer complètement sur sa jambe.\n\nIl n’a pas d’antécédents médicaux ou familiaux notables, pas de traumatisme identifié, pas de problème de santé particulier jusqu’ici. Pas de douleurs nocturnes, pas de perte de poids, pas de symptômes ORL actuellement. \n\nÀ l’examen, on observe une boiterie importante avec appui partiel, hanche et genou droits en flessum. La hanche droite présente une mobilité réduite : flexion limitée à 110°, abduction réduite à 20°, rotation interne très limitée et douloureuse à 10°. Le genou et la cheville sont libres. Il n’y a pas de tuméfaction, pas de rougeur ni chaleur, pas d’adénopathie, pas d’inégalité de longueur. L’état général est bon, sans altération neurologique ni musculaire. \n\nLes examens complémentaires montrent une biologie normale (GB 8000, CRP 20 mg/l, VS normale), une radiographie du bassin normale, et une échographie de la hanche droite révélant un épanchement intra-articulaire de 7 mm. \n\nEn résumé, il s’agit d’un garçon de 5 ans et demi, avec boiterie aiguë, fièvre la veille, épanchement échographique, sans syndrome infectieux biologique, ce qui oriente vers une synovite aiguë transitoire de la hanche ou « rhume de hanche ». Les diagnostics différentiels incluent surtout une arthrite septique (mais CRP normale, pas de fièvre actuelle, mobilité partiellement conservée), une maladie de Perthes (mais évolution habituellement progressive), une épiphysiolyse (âge trop jeune), une arthrite juvénile idiopathique, un traumatisme non identifié ou plus rarement une tumeur osseuse.\n\nLa prise en charge repose sur un traitement symptomatique avec repos relatif (arrêt des activités physiques, marche selon tolérance), antalgiques type paracétamol, éventuellement AINS quelques jours. La surveillance est essentielle avec contrôle à 48–72h puis à 1 semaine. Les parents doivent être informés du caractère bénin et transitoire, de l’évolution spontanément favorable en 7–10 jours, et des signes d’alerte nécessitant une réévaluation (fièvre persistante, aggravation, persistance > 10 jours, récidives, altération état général)."
+        },
+        {
+          "titre": "⚡ Version express (SBAR, 30 sec)",
+          "contenu": "S (Situation) : Guillaume, garçon de 5 ans, boiterie aiguë jambe droite, refus d’appui depuis ce matin.\n\nB (Background) : Fièvre 38.5°C hier soir, pas de traumatisme, pas d’ATCD notables. Bon état général.\n\nA (Assessment) : Suspicion de synovite transitoire de la hanche droite. DD : arthrite septique, Perthes, traumatisme, épiphysiolyse.\n\nR (Recommendation) : Écho hanche + biologie (déjà faits : épanchement, CRP normale). PEC = repos relatif, antalgiques, surveillance rapprochée et information aux parents."
+        },
+        {
+          "titre": "🎲 Touches ludiques / mnémos",
+          "subsections": [
+            {
+              "titre": "👉 Critères de Kocher (arthrite septique)",
+              "points": [
+                "Fièvre > 38.5°C",
+                "Refus d’appui",
+                "VS > 40 mm/h",
+                "GB > 12000/mm³",
+                "0-1 critère = très faible risque",
+                "3-4 critères = haut risque"
+              ]
+            },
+            {
+              "titre": "👉 Diagnostic différentiel boiterie enfant",
+              "points": [
+                "0-3 ans : arthrite septique, ostéomyélite, fracture",
+                "3-8 ans : synovite transitoire, Perthes",
+                "8-12 ans : Perthes, traumatisme",
+                "12-16 ans : épiphysiolyse, ostéochondrite"
+              ]
+            },
+            {
+              "titre": "👉 Synovite transitoire (points clés)",
+              "points": [
+                "Épanchement articulaire bénin",
+                "Garçon 3-8 ans, contexte viral/trauma",
+                "Résolution 7-10 jours",
+                "Récidive possible (10-15%)",
+                "Pas de séquelles"
+              ]
+            },
+            {
+              "titre": "⚠️ Pièges ECOS",
+              "points": [
+                "Se focaliser uniquement sur le genou → toujours examiner la hanche",
+                "Oublier d’exclure arthrite septique (urgence)",
+                "Prescrire trop d’examens inutiles",
+                "Immobiliser inutilement l’enfant",
+                "Ne pas expliquer signes d’alerte aux parents"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "❓ Questions probables de l'examinateur (avec réponses orales)",
+          "subsections": [
+            {
+              "titre": "1. Diagnostic différentiel",
+              "questions": [
+                {
+                  "question": "Quels diagnostics évoquez-vous chez cet enfant qui boîte ?",
+                  "reponse": [
+                    "Synovite aiguë transitoire (probable)",
+                    "Arthrite septique (à exclure en urgence)",
+                    "Maladie de Perthes",
+                    "Épiphysiolyse (moins probable vu l’âge)",
+                    "Traumatisme occulte",
+                    "Arthrite juvénile idiopathique",
+                    "Tumeur osseuse ou ostéomyélite (plus rares)"
+                  ]
+                }
+              ]
+            },
+            {
+              "titre": "2. Examens complémentaires",
+              "questions": [
+                {
+                  "question": "Quels examens demanderiez-vous ?",
+                  "reponse": [
+                    "Échographie hanche (épanchement intra-articulaire)",
+                    "Biologie : NFS, CRP, VS pour exclure infection",
+                    "Radiographie bassin face + profil",
+                    "IRM si suspicion Perthes ou évolution défavorable",
+                    "Ponction articulaire si suspicion d’arthrite septique"
+                  ]
+                }
+              ]
+            },
+            {
+              "titre": "3. Prise en charge",
+              "questions": [
+                {
+                  "question": "Quel traitement proposez-vous ?",
+                  "reponse": [
+                    "Repos relatif (arrêt sport, marche selon tolérance)",
+                    "Paracétamol ± ibuprofène si douleur importante",
+                    "Surveillance rapprochée (contrôle à 48-72h et 1 semaine)",
+                    "Information aux parents sur signes d’alerte"
+                  ]
+                }
+              ]
+            },
+            {
+              "titre": "4. Pronostic et suivi",
+              "questions": [
+                {
+                  "question": "Quel est le pronostic de cette pathologie ?",
+                  "reponse": [
+                    "Évolution spontanément favorable en 7-10 jours",
+                    "Récidives possibles (10-15%) mais sans séquelles",
+                    "Surveillance nécessaire pour ne pas méconnaître une autre pathologie (Perthes, arthrite septique)"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

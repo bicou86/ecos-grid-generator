@@ -1,0 +1,321 @@
+{
+  "title": "Dyspnée aigue",
+  "context": {
+    "setting": "Service d'urgences",
+    "patient": "Patient de 80 ans arrivé seul à l'entrée des urgences et s'effondre au sol, présentant une détresse respiratoire aiguë",
+    "vitals": {
+      "ta": "178/112 mmHg",
+      "fc": "125/min irrégulier",
+      "fr": "36/min",
+      "temperature": "35.7°C",
+      "sao2": "89% sous FiO2 100%"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Évaluation primaire ABCDE",
+          "details": [
+            "Airways - Voies aériennes [Perméables mais dyspnéique]",
+            "Breathing - Respiration [Tachypnée 36/min, cyanose]",
+            "Circulation - État hémodynamique [TA 178/112, FC 125 irrégulier]",
+            "Disability - État neurologique [GCS 14, n'ouvre pas les yeux spontanément]",
+            "Exposure - Environnement [T° 35.7°C]"
+          ]
+        },
+        {
+          "id": "a2",
+          "text": "Signes de gravité et d'alarme",
+          "details": [
+            "Patient assis ne tenant plus assis [Oui]",
+            "Tirage intercostal [Présent ++]",
+            "Incapacité de parler [Peut à peine parler]",
+            "Sudations profuses [Importantes]",
+            "Cyanose [Présente ++]",
+            "Hypotension [Non, HTA]",
+            "Troubles de conscience [GCS 14]"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Circonstances de survenue et évolution",
+          "details": [
+            "Mode d'installation [Progressive depuis 2 semaines]",
+            "Aggravation récente [Rapide ces dernières heures]",
+            "Facteurs déclenchants",
+            "Position préférentielle [Assis]",
+            "Orthopnée [Présente]"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Symptômes associés",
+          "details": [
+            "Douleurs thoraciques [Respiro-dépendantes latéro-thoraciques G]",
+            "Palpitations [Présentes avec FA]",
+            "Toux [Productive]",
+            "Expectorations [Présentes]",
+            "Hémoptysie [Non]",
+            "Fièvre [Non, hypotherme]",
+            "OMI [Périmalléolaires bilatéraux]"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Antécédents cardio-pulmonaires",
+          "details": [
+            "FA chronique [Connue]",
+            "Insuffisance cardiaque",
+            "BPCO",
+            "Pneumonie récente",
+            "Embolie pulmonaire"
+          ]
+        },
+        {
+          "id": "a6",
+          "text": "Médicaments et allergies",
+          "details": [
+            "Traitement anticoagulant [Sintrom]",
+            "Autres médicaments cardiaques",
+            "Diurétiques [Lasix]",
+            "Bronchodilatateurs",
+            "Allergies médicamenteuses"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Évaluation hémodynamique",
+          "details": [
+            "TA élevée [178/112 mmHg]",
+            "FC irrégulière [125/min, FA]",
+            "Temps de recoloration capillaire [3.3 secondes, allongé]",
+            "Pouls périphériques [Présents]",
+            "Signes de choc [Sudations profuses]"
+          ]
+        },
+        {
+          "id": "e2",
+          "text": "Examen respiratoire",
+          "details": [
+            "Fréquence respiratoire [36/min]",
+            "Mécanique ventilatoire [Tirage ++]",
+            "Auscultation pulmonaire [Souffle systolique 3/6 max foyer aortique]",
+            "Râles crépitants [Bases > G]",
+            "Sibilances [À évaluer]",
+            "Hypoventilation base G [Présente]"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Examen cardiaque",
+          "details": [
+            "Rythme [Irrégulier - FA rapide]",
+            "Souffle cardiaque [Systolique 3/6 foyer aortique]",
+            "B3/B4 [À rechercher]",
+            "Turgescence jugulaire [TJ présente]",
+            "Reflux hépato-jugulaire"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Signes de surcharge",
+          "details": [
+            "OMI périmalléolaires bilatéraux [Présents]",
+            "Râles crépitants bases pulmonaires [Présents]",
+            "Turgescence jugulaire [Présente]",
+            "Hépatomégalie [À palper]",
+            "Prise de poids récente"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Examen neurologique sommaire",
+          "details": [
+            "Glasgow Coma Scale [14/15]",
+            "Ouverture des yeux [Non spontanée]",
+            "Réponse verbale [Ralentie]",
+            "Réponse motrice [Normale]",
+            "Déficit focal [Absent]"
+          ]
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic différentiel urgent",
+          "ddSection": {
+            "title": "Diagnostics différentiels par ordre de probabilité",
+            "categories": [
+              {
+                "name": "Diagnostic le plus probable",
+                "items": [
+                  {
+                    "text": "Œdème aigu du poumon (OAP) cardiogénique",
+                    "cause": "Arguments POUR:\n\t□ Installation progressive\n\t□ Orthopnée, position assise\n\t□ FA rapide connue\n\t□ Râles crépitants bilatéraux\n\t□ OMI bilatéraux\n\t□ Turgescence jugulaire\n\t□ HTA (poussée hypertensive)",
+                    "test": "→ Pro-BNP, Rx thorax, ECG, Echo-cœur"
+                  }
+                ]
+              },
+              {
+                "name": "Diagnostics à exclure en urgence",
+                "items": [
+                  {
+                    "text": "Pneumothorax sous tension",
+                    "cause": "Arguments CONTRE initialement:\n\t□ Pas d'asymétrie auscultatoire franche\n\t□ Pas de déviation trachéale\n\nMais ATTENTION:\n\t□ Aggravation brutale sous VNI\n\t□ Devient le diagnostic final!",
+                    "test": "→ Diagnostic clinique, décompression urgente"
+                  },
+                  {
+                    "text": "Embolie pulmonaire",
+                    "cause": "Arguments À CONSIDÉRER:\n\t□ Douleurs thoraciques respiro-dépendantes\n\t□ FA (risque embolique)\n\t□ Sous anticoagulation (compliance?)",
+                    "test": "→ D-dimères, angio-CT si stable"
+                  },
+                  {
+                    "text": "Décompensation BPCO",
+                    "cause": "Arguments POSSIBLES:\n\t□ Toux productive\n\t□ Possible composante obstructive\n\t□ Sibilances à rechercher",
+                    "test": "→ Gazométrie, Rx thorax"
+                  },
+                  {
+                    "text": "Pneumonie",
+                    "cause": "Arguments CONTRE:\n\t□ Pas de fièvre (hypothermie)\n\t□ Mais foyer base G possible",
+                    "test": "→ Rx thorax, Pro-calcitonine, hémocultures"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Examens complémentaires urgents",
+          "details": [
+            "Gazométrie artérielle [pH 7.38, pO2 69mmHg, pCO2 45mmHg, Lactates 3.4]",
+            "ECG [FA rapide 125/min]",
+            "Rx thorax [Opacité basale G, hyperclarté apicale G]",
+            "Pro-BNP [Élevé si IC]",
+            "Troponines [Si suspicion SCA]",
+            "D-dimères [Si suspicion EP]",
+            "NFS, ionogramme, fonction rénale",
+            "Hémoglobine [104 g/l - anémie]"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Prise en charge thérapeutique immédiate",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Oxygénothérapie",
+                "content": "• FiO2 100% initialement\n• Objectif SpO2 94-98%\n• Ne pas interrompre brutalement\n• Adapter selon gazométrie\n• Si BPCO: cible 88-92%"
+              },
+              {
+                "title": "Traitement symptomatique OAP",
+                "content": "• Furosémide (Lasix) IV 40mg\n• Nitroglycérine (Isoket) 2mg/h IV si TA > 100mmHg\n• Morphine 2mg IV (prudence drive respiratoire)\n• Position assise/semi-assise\n• Ventolin nébulisé si sibilances"
+              },
+              {
+                "title": "Support ventilatoire",
+                "content": "• VNI (Ventilation Non Invasive) première intention\n• CPAP ou BiPAP selon tolérance\n• Surveillance étroite\n• ATTENTION: Risque de pneumothorax sous VNI!\n• Intubation si échec VNI ou troubles conscience"
+              }
+            ]
+          }
+        },
+        {
+          "id": "m4",
+          "text": "Évolution - Pneumothorax sous tension",
+          "details": [
+            "Péjoration brutale sous VNI",
+            "Cyanose sous 100% O2",
+            "Hypotension + turgescence jugulaire",
+            "Diagnostic clinique urgent",
+            "Ne pas attendre la radiographie!"
+          ]
+        },
+        {
+          "id": "m5",
+          "text": "Décompression urgente du pneumothorax",
+          "details": [
+            "Aiguille 14G minimum",
+            "2ème espace intercostal",
+            "Ligne médio-claviculaire",
+            "Bord supérieur de la côte",
+            "Amélioration immédiate attendue",
+            "Puis drain thoracique définitif"
+          ]
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Messages clés",
+          "content": "• La prise en charge initiale selon l'ABCDE permet de ne pas rater une pathologie menaçant immédiatement le pronostic vital\n• Les traitements d'urgence doivent être administrés dès que les données cliniques le permettent\n• L'ABCDE doit être répété régulièrement, notamment en cas de péjoration\n• L'évaluation initiale repose sur l'anamnèse et le status ciblés\n• Administration d'oxygène car l'hypoxémie tue, pas l'hypercapnie\n• La VNI est un traitement d'urgence très efficace mais peut révéler des complications (pneumothorax)\n• En cas de suspicion de pneumothorax sous tension, ne pas attendre la radiographie pour exsuffler!\n• L'ECG, la Rx thorax et la gazométrie sont les examens de base permettant une orientation diagnostique et thérapeutique rapide"
+        },
+        {
+          "id": "c2",
+          "text": "Évolution du cas",
+          "content": "Ce patient présentait initialement un OAP sur FA rapide avec composante de pneumonie basale G. La mise sous VNI a provoqué la décompensation d'un petit pneumothorax préexistant en pneumothorax sous tension, nécessitant une décompression urgente à l'aiguille. Après drainage thoracique et traitement de l'OAP, l'état du patient s'est amélioré."
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "theoriePratique": {
+      "titre": "Approche de la dyspnée aiguë aux urgences",
+      "sections": [
+        {
+          "titre": "Causes principales de dyspnée aiguë (75%)",
+          "points": [
+            "Asthme",
+            "BPCO décompensée",
+            "Insuffisance cardiaque / OAP",
+            "Pneumonie",
+            "Embolie pulmonaire"
+          ]
+        },
+        {
+          "titre": "Signes de gravité à rechercher",
+          "contenu": "Les signes sympathiques (sudation, tachypnée/tachycardie) indiquent un stress de l'organisme avec risque de péjoration rapide. Les signes d'épuisement (fatigue, tirage ++, silence auscultatoire) sont des signes d'alarme précédant l'arrêt cardio-respiratoire."
+        },
+        {
+          "titre": "Pièges diagnostiques",
+          "points": [
+            "Un pneumothorax peut être masqué initialement",
+            "La VNI peut révéler/aggraver un pneumothorax",
+            "L'hyperclarté unilatérale doit faire évoquer un pneumothorax",
+            "La déviation trachéale est un signe tardif",
+            "Ne jamais attendre la radio si suspicion clinique de pneumothorax sous tension"
+          ]
+        }
+      ],
+      "rappelsTherapeutiques": [
+        "Oxygène haute concentration si détresse (cible 94-98%, sauf BPCO 88-92%)",
+        "Position assise respectée si conscient",
+        "VNI efficace dans OAP et BPCO",
+        "Furosémide IV dans l'OAP",
+        "Vasodilatateurs (Isoket) si TA permet",
+        "Morphine avec prudence (dépression respiratoire)",
+        "Décompression urgente si pneumothorax sous tension"
+      ],
+      "examensComplementaires": [
+        "Gazométrie: évaluation rapide des échanges gazeux",
+        "ECG: trouble du rythme, ischémie",
+        "Rx thorax: pneumothorax, OAP, pneumonie",
+        "Pro-BNP: marqueur d'insuffisance cardiaque",
+        "D-dimères: exclusion EP si probabilité faible",
+        "CT thoracique: si patient stable et diagnostic incertain"
+      ]
+    }
+  }
+}

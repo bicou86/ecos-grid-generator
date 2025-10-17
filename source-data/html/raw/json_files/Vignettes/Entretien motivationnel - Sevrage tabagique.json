@@ -1,0 +1,400 @@
+{
+  "title": "Entretien motivationnel - Sevrage tabagique",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Homme de 48 ans, commercial, consultant pour toux chronique matinale et essoufflement à l'effort",
+    "vitals": {
+      "ta": "138/85 mmHg",
+      "fc": "78 bpm",
+      "fr": "16/min",
+      "temperature": "36.9°C"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Identifier le tabagisme (ASK)",
+          "details": [
+            "Statut tabagique actuel [Oui, je fume]",
+            "Quantité [20 cigarettes/jour]",
+            "Durée [Depuis 25 ans]",
+            "Âge de début [23 ans]",
+            "Tentatives d'arrêt antérieures [2 fois, rechute après 3 mois]"
+          ],
+          "exemplesPhrases": [
+            "\"Êtes-vous fumeur?\"",
+            "\"Combien de cigarettes fumez-vous par jour?\"",
+            "\"Depuis combien de temps fumez-vous?\""
+          ]
+        },
+        {
+          "id": "a2",
+          "text": "Évaluer la dépendance nicotinique (ASSESS)",
+          "details": [
+            "Délai première cigarette [Dans les 30 minutes du réveil]",
+            "Cigarette la plus importante [Celle du matin]",
+            "Difficultés sans fumer [Réunions, avion]",
+            "Fumer même malade [Oui]",
+            "Score de Fagerström [6/10 - dépendance forte]"
+          ],
+          "patientComment": "Je ne peux pas commencer ma journée sans ma cigarette du matin"
+        },
+        {
+          "id": "a3",
+          "text": "Évaluer la motivation à arrêter",
+          "details": [
+            "Intention d'arrêter [Ambivalent]",
+            "Importance sur 10 [6/10]",
+            "Confiance sur 10 [4/10]",
+            "Moment adéquat [Pas sûr]",
+            "Stade motivationnel [Contemplation]"
+          ],
+          "exemplesPhrases": [
+            "\"Avez-vous l'intention d'arrêter de fumer?\"",
+            "\"Sur une échelle de 0 à 10, quelle importance accordez-vous à l'arrêt du tabac?\"",
+            "\"Quelle confiance avez-vous dans votre capacité à arrêter?\""
+          ],
+          "patientComment": "J'y pense depuis que j'ai cette toux, mais c'est difficile avec mon travail stressant"
+        },
+        {
+          "id": "a4",
+          "text": "Explorer l'ambivalence",
+          "details": [
+            "Avantages du tabac [Gestion stress, pauses, convivialité]",
+            "Inconvénients perçus [Toux, essoufflement, coût, odeur]",
+            "Peurs liées à l'arrêt [Prise de poids, irritabilité]",
+            "Motivations au changement [Santé, enfants, sport]",
+            "Résumer l'ambivalence"
+          ],
+          "exemplesPhrases": [
+            "\"Qu'est-ce que le tabac vous apporte de positif?\"",
+            "\"Quels sont les aspects moins bons de votre consommation?\"",
+            "\"Qu'est-ce qui vous inquiète dans l'idée d'arrêter?\""
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Contexte psychosocial et habitudes",
+          "details": [
+            "Situation familiale [Marié, 2 adolescents]",
+            "Profession [Commercial, stress élevé]",
+            "Moments de consommation [Pauses, voiture, après repas]",
+            "Entourage fumeur [Collègues fumeurs]",
+            "Activité physique [Peu, essoufflement]"
+          ],
+          "patientComment": "Ma femme me pousse à arrêter, mes enfants aussi s'inquiètent"
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Recommander clairement l'arrêt (ADVISE)",
+          "details": [
+            "Message clair et personnalisé",
+            "Lien avec symptômes actuels [Toux, essoufflement]",
+            "Bénéfices spécifiques attendus",
+            "Sans jugement ni culpabilisation",
+            "Respecter l'autonomie"
+          ],
+          "exemplesPhrases": [
+            "\"En tant que médecin, je vous recommande d'arrêter de fumer pour améliorer votre santé\"",
+            "\"Votre toux et votre essoufflement sont directement liés au tabac\"",
+            "\"L'arrêt pourrait rapidement améliorer vos symptômes respiratoires\""
+          ]
+        },
+        {
+          "id": "e2",
+          "text": "Développer la divergence",
+          "details": [
+            "Entre valeurs et comportement [Santé vs tabac]",
+            "Entre désirs et actions [Vouloir être sportif]",
+            "Entre rôle parental et modèle [Père fumeur]",
+            "Souligner les contradictions",
+            "Sans confrontation"
+          ],
+          "exemplesPhrases": [
+            "\"D'un côté vous voulez être en forme pour vos enfants, de l'autre le tabac vous essouffle\"",
+            "\"Vous dites vouloir reprendre le sport mais le tabac vous en empêche\"",
+            "\"Comment conciliez-vous votre souci de santé avec le fait de fumer?\""
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Susciter le discours-changement",
+          "details": [
+            "Désirs de changement [Je voudrais arrêter]",
+            "Raisons [Pour ma santé, mes enfants]",
+            "Besoins [Il faut que j'arrête cette toux]",
+            "Capacités [J'ai déjà réussi 3 mois]",
+            "Valoriser chaque élément positif"
+          ],
+          "patientComment": "C'est vrai que j'ai déjà réussi à arrêter 3 mois, je pourrais refaire mieux"
+        },
+        {
+          "id": "e4",
+          "text": "Explorer les ressources et succès passés",
+          "details": [
+            "Stratégies utilisées précédemment",
+            "Ce qui a fonctionné",
+            "Circonstances de rechute",
+            "Apprentissages tirés",
+            "Forces identifiées"
+          ],
+          "exemplesPhrases": [
+            "\"Qu'est-ce qui vous avait aidé lors de votre arrêt de 3 mois?\"",
+            "\"Qu'avez-vous appris de cette expérience?\"",
+            "\"Sur quoi pouvez-vous vous appuyer cette fois?\""
+          ]
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Assister selon le stade motivationnel (ASSIST)",
+          "details": [
+            "Entretien motivationnel si ambivalent",
+            "Balance décisionnelle pour/contre",
+            "Présenter les méthodes efficaces",
+            "Laisser le patient décider",
+            "Proposer documentation adaptée"
+          ],
+          "exemplesPhrases": [
+            "\"Voulez-vous qu'on explore ensemble les pour et les contre?\"",
+            "\"Il existe plusieurs méthodes efficaces, laquelle vous conviendrait?\"",
+            "\"Voici une brochure 'J'envisage d'arrêter de fumer'\""
+          ]
+        },
+        {
+          "id": "m2",
+          "text": "Plan d'action personnalisé",
+          "details": [
+            "Arrêt progressif vs brutal [Selon préférence]",
+            "Date d'arrêt si prêt",
+            "Stratégies pour situations difficiles",
+            "Gestion du stress sans tabac",
+            "Alternatives aux pauses cigarette"
+          ],
+          "patientComment": "Je préférerais diminuer progressivement, l'arrêt brutal me fait peur"
+        },
+        {
+          "id": "m3",
+          "text": "Traitement pharmacologique adapté",
+          "details": [
+            "Substituts nicotiniques [Patch + formes orales]",
+            "Varénicline si motivation élevée",
+            "Bupropion si contre-indications",
+            "Combinaisons possibles",
+            "Adapter au degré de dépendance"
+          ],
+          "exemplesPhrases": [
+            "\"Avec votre niveau de dépendance, les substituts nicotiniques seraient très utiles\"",
+            "\"On peut combiner patch et gommes pour les envies ponctuelles\"",
+            "\"Qu'est-ce qui vous conviendrait le mieux?\""
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Prévention de la rechute",
+          "details": [
+            "Identifier situations à risque [Stress, alcool, café]",
+            "Stratégies de coping",
+            "Plan B si craving intense",
+            "Normaliser les difficultés",
+            "Apprentissage des rechutes passées"
+          ],
+          "exemplesPhrases": [
+            "\"Quelles situations risquent d'être difficiles?\"",
+            "\"Comment pourriez-vous gérer les envies intenses?\"",
+            "\"La rechute n'est pas un échec mais une étape d'apprentissage\""
+          ]
+        },
+        {
+          "id": "m5",
+          "text": "Organiser le suivi (ARRANGE)",
+          "details": [
+            "Prochain RDV dans 2-4 semaines",
+            "Disponibilité entre les RDV",
+            "Suivi téléphonique possible",
+            "Ajuster selon évolution",
+            "Soutien continu"
+          ],
+          "exemplesPhrases": [
+            "\"On se revoit dans 2 semaines pour voir comment ça se passe?\"",
+            "\"N'hésitez pas à m'appeler si vous avez des difficultés\"",
+            "\"Le suivi régulier double les chances de succès\""
+          ]
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Techniques OARS appliquées au tabac",
+          "content": "• Questions Ouvertes: Explorer le vécu du fumeur sans jugement\n• Affirmations: \"Vous avez déjà réussi 3 mois, c'est une force\"\n• Reflets: \"Vous êtes partagé entre le désir d'arrêter et la peur de ne pas y arriver\"\n• Résumés: Consolider l'ambivalence et les motivations",
+          "exemplesPhrases": [
+            "\"C'est courageux de vouloir affronter cette dépendance\"",
+            "\"Vous avez identifié de bonnes raisons d'arrêter\"",
+            "\"Votre expérience passée est un atout\""
+          ]
+        },
+        {
+          "id": "c2",
+          "text": "Questions difficiles du patient",
+          "content": "[Vais-je prendre du poids?]\n[Et si je n'y arrive pas?]\n[Les substituts ne sont-ils pas dangereux?]\n[Puis-je juste réduire au lieu d'arrêter?]\n[Combien de temps durent les symptômes de sevrage?]",
+          "exemplesPhrases": [
+            "\"La prise de poids moyenne est de 3-4 kg, on peut la prévenir ensemble\"",
+            "\"Chaque tentative vous rapproche du succès\"",
+            "\"Les substituts sont beaucoup moins dangereux que la cigarette\"",
+            "\"La réduction est un premier pas vers l'arrêt\""
+          ]
+        },
+        {
+          "id": "c3",
+          "text": "Message de clôture motivant",
+          "content": "• Résumer les forces du patient\n• Rappeler les motivations identifiées\n• Proposer un accompagnement sans pression\n• Laisser la décision au patient\n• Porte ouverte pour revenir",
+          "exemplesPhrases": [
+            "\"Vous avez de bonnes raisons d'arrêter et des atouts pour réussir\"",
+            "\"Je serai là pour vous accompagner à votre rythme\"",
+            "\"C'est vous qui décidez quand vous êtes prêt\"",
+            "\"On avance ensemble, étape par étape\""
+          ]
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour le patient standardisé",
+      "nom": "M. Pierre Durand",
+      "age": "48 ans",
+      "contexte": "Cabinet médical, consultation pour toux chronique",
+      "motifConsultation": {
+        "plaintePrincipale": "Toux matinale depuis 6 mois",
+        "autreChose": "Essoufflement à l'effort depuis 3 mois"
+      },
+      "histoireActuelle": {
+        "tabagisme": [
+          "Fume 1 paquet/jour depuis 25 ans",
+          "Première cigarette 30 min après réveil",
+          "Deux tentatives d'arrêt (durée max 3 mois)",
+          "Rechute lors de période de stress professionnel",
+          "Entourage pousse à arrêter"
+        ],
+        "ambivalence": [
+          "Inquiet pour sa santé (toux, essoufflement)",
+          "Mais cigarette aide à gérer le stress",
+          "Peur de prendre du poids",
+          "Peur d'être irritable avec famille",
+          "Moments conviviaux avec collègues fumeurs"
+        ],
+        "motivations": [
+          "Santé qui se dégrade",
+          "Pression familiale positive",
+          "Veut reprendre le sport",
+          "Coût financier important",
+          "Être un modèle pour ses ados"
+        ]
+      },
+      "simulation": {
+        "attitude": [
+          "Initialement sur la défensive",
+          "S'ouvre progressivement si pas de jugement",
+          "Ambivalent mais pas hostile",
+          "Devient plus réceptif avec empathie",
+          "Finit par envisager des solutions"
+        ],
+        "phrasesTypes": [
+          "\"Je sais que je devrais arrêter mais...\"",
+          "\"C'est mon seul plaisir dans la journée\"",
+          "\"Avec le stress du boulot, impossible d'arrêter maintenant\"",
+          "\"J'ai déjà essayé, ça n'a pas marché\"",
+          "\"Ma femme n'arrête pas de me harceler avec ça\"",
+          "\"C'est vrai que cette toux m'inquiète\"",
+          "\"Peut-être que je pourrais réessayer...\""
+        ]
+      },
+      "habitudes": {
+        "tabac": "20 cigarettes/jour",
+        "alcool": "Occasionnel, augmente envie de fumer",
+        "cafe": "4-5 cafés/jour, associés cigarette",
+        "activite": "Sédentaire, veut reprendre sport",
+        "alimentation": "Déséquilibrée, repas d'affaires"
+      }
+    },
+    "informationsExpert": {
+      "titre": "Points d'évaluation pour l'expert",
+      "pointsCles": [
+        "Application des 5 A: Ask, Assess, Advise, Assist, Arrange",
+        "Évaluation correcte de la dépendance (Fagerström)",
+        "Identification du stade motivationnel",
+        "Approche adaptée au stade (contemplation)",
+        "Utilisation des techniques motivationnelles",
+        "Absence de confrontation ou jugement",
+        "Respect de l'autonomie du patient"
+      ],
+      "pieges": [
+        "Insister si patient non prêt",
+        "Utiliser la peur comme motivation",
+        "Minimiser les difficultés du sevrage",
+        "Imposer une méthode d'arrêt",
+        "Culpabiliser sur les échecs passés",
+        "Négliger l'évaluation de la dépendance",
+        "Oublier de programmer le suivi"
+      ]
+    },
+    "theoriePratique": {
+      "titre": "Sevrage tabagique et entretien motivationnel",
+      "sections": [
+        {
+          "titre": "Les 5 A du sevrage",
+          "points": [
+            "ASK: Identifier systématiquement",
+            "ASSESS: Évaluer dépendance et motivation",
+            "ADVISE: Recommander clairement",
+            "ASSIST: Aider selon le stade",
+            "ARRANGE: Organiser le suivi"
+          ]
+        },
+        {
+          "titre": "Test de Fagerström",
+          "points": [
+            "0-2: Pas de dépendance",
+            "3-4: Dépendance faible",
+            "5-6: Dépendance moyenne",
+            "7-10: Dépendance forte"
+          ]
+        },
+        {
+          "titre": "Bénéfices de l'arrêt",
+          "contenu": "• 20 min: Normalisation TA et pouls\n• 8h: Normalisation CO et O2\n• 24h: Diminution risque infarctus\n• 48h: Amélioration goût/odorat\n• 72h: Respiration plus facile\n• 2-12 sem: Amélioration circulation\n• 1-9 mois: Diminution toux et dyspnée\n• 1 an: Risque coronarien divisé par 2\n• 5 ans: Risque AVC = non-fumeur\n• 10 ans: Risque cancer poumon divisé par 2"
+        }
+      ],
+      "rappelsTherapeutiques": [
+        "Substituts nicotiniques: 1ère ligne, doubler doses si forte dépendance",
+        "Varénicline: Efficace, attention effets psychiatriques",
+        "Bupropion: Si contre-indication ou échec substituts",
+        "Combinaisons patch + formes orales efficaces",
+        "Cigarette électronique: Réduction des risques",
+        "Support comportemental double les chances"
+      ],
+      "examensComplementaires": [
+        "Mesure CO expiré si disponible",
+        "Spirométrie si symptômes respiratoires",
+        "Rx thorax si toux chronique",
+        "Bilan cardiovasculaire si facteurs de risque",
+        "Cotinine urinaire pour suivi objectif"
+      ]
+    }
+  }
+}

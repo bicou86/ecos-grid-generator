@@ -1,0 +1,220 @@
+{
+  "title": "Thieme Abdomen 20 - Dysfonction érectile - Homme de 62 ans",
+  "category": "Thieme Abdomen",
+  "subcategory": "Dysfonction érectile",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Homme de 62 ans, M. Richard, consultant pour érection pénienne faible",
+    "vitals": {
+      "temperature": "37°C",
+      "ta": "170/110 mmHg",
+      "fc": "96 bpm",
+      "fr": "16/min"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Motif principal de consultation",
+          "binaryOnly": true,
+          "patientComment": "érection pénienne faible"
+        },
+        {
+          "id": "a2",
+          "text": "Analyse de la plainte principale (ABCDE)",
+          "details": [
+            "Apparition et durée [Dysfonction érectile progressive depuis 2 ans]",
+            "Bilan (localisation, irradiation)",
+            "Caractère et qualité de la douleur",
+            "Degré d'intensité (échelle 1-10)",
+            "Éléments associés et facteurs modifiants"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Symptômes associés et antécédents",
+          "details": [
+            "HTA et diabète depuis 20 ans",
+            "Prend métoprolol, metformine",
+            "Pas d'érections matinales"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Histoire sociale et habitudes de vie",
+          "details": [
+            "Comptable",
+            "Ex-fumeur",
+            "Alcool modéré",
+            "Marié depuis 30 ans"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Revue des systèmes",
+          "details": [
+            "Système cardiovasculaire",
+            "Système endocrinien",
+            "Système neurologique"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Signes vitaux et apparence générale",
+          "binaryOnly": true
+        },
+        {
+          "id": "e2",
+          "text": "Examen de la tête et du cou",
+          "details": [
+            "Recherche pâleur, ictère",
+            "Examen ORL avec abaisse-langue",
+            "Palpation ganglions lymphatiques",
+            "Examen thyroïde"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Examen cardio-pulmonaire",
+          "details": [
+            "Auscultation cardiaque [S1 et S2 normaux]",
+            "Auscultation pulmonaire bilatérale"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Examen abdominal complet",
+          "details": [
+            "Inspection (cicatrices, distension)",
+            "Auscultation (bruits intestinaux)",
+            "Percussion (matité, tympanisme)",
+            "Palpation superficielle et profonde"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Examens spécifiques selon le cas",
+          "details": [
+            "Examen génital et pénien"
+          ]
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostics différentiels à évoquer",
+          "ddSection": {
+            "title": "Hypothèses diagnostiques",
+            "categories": [
+              {
+                "name": "Diagnostics prioritaires",
+                "items": [
+                  {
+                    "text": "Dysfonction érectile organique (vasculaire/neurogène)",
+                    "cause": "Arguments POUR:\n\t□ Selon présentation clinique",
+                    "test": "→ Selon orientation clinique"
+                  },
+                  {
+                    "text": "DE induite par les médicaments",
+                    "cause": "Arguments POUR:\n\t□ Selon présentation clinique",
+                    "test": "→ Selon orientation clinique"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Examens complémentaires pertinents",
+          "details": [
+            "Examen pelvien et pénien",
+            "Glycémie, HbA1c",
+            "Tumescence pénienne nocturne",
+            "Doppler pénien"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Plan de prise en charge immédiate",
+          "details": [
+            "Investigations ambulatoires",
+            "Traitement symptomatique",
+            "Suivi après résultats"
+          ]
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Questions difficiles du patient",
+          "content": "Les médicaments peuvent-ils causer ce problème?"
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour le patient standardisé",
+      "nom": "M. Richard",
+      "age": "62 ans",
+      "contexte": "Cabinet de médecine générale",
+      "motifConsultation": {
+        "plaintePrincipale": "érection pénienne faible",
+        "autreChose": "Dysfonction érectile progressive depuis 2 ans. Érections partielles, perte pendant rapport."
+      },
+      "histoireActuelle": {
+        "symptomesPrincipaux": [
+          "Dysfonction érectile progressive depuis 2 ans",
+          " Érections partielles, perte pendant rapport"
+        ],
+        "contextePsychosocial": [
+          "Comptable",
+          " Ex-fumeur",
+          " Alcool modéré",
+          " Marié depuis 30 ans"
+        ]
+      },
+      "simulation": {
+        "attitude": [
+          "Embarrassé",
+          "Préoccupé"
+        ],
+        "durantExamen": []
+      },
+      "inquietudes": {
+        "principales": [
+          "Les médicaments peuvent-ils causer ce problème?"
+        ]
+      }
+    },
+    "informationsExpert": {
+      "titre": "Informations pour l'expert",
+      "pointsCles": [
+        "Cas de Dysfonction érectile",
+        "Patient: Homme de 62 ans",
+        "Anamnèse complète avec ABCDE",
+        "Examen abdominal détaillé",
+        "Diagnostic différentiel approprié"
+      ],
+      "pieges": [
+        "Ne pas explorer causes organiques",
+        "Oublier impact couple"
+      ]
+    }
+  }
+}

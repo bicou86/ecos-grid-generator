@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guide Pédiatrique ECOS - Terminologie Française</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        
+        .content {
+            padding: 30px;
+        }
+        
+        .section {
+            margin-bottom: 40px;
+        }
+        
+        h2 {
+            color: #667eea;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+            position: relative;
+        }
+        
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: -3px;
+            left: 0;
+            width: 100px;
+            height: 3px;
+            background: linear-gradient(90deg, #764ba2, transparent);
+        }
+        
+        .table-wrapper {
+            overflow-x: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            margin-bottom: 20px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 800px;
+        }
+        
+        thead {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        
+        th {
+            padding: 15px;
+            text-align: left;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            white-space: nowrap;
+        }
+        
+        td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #e8e8e8;
+            vertical-align: top;
+        }
+        
+        tbody tr {
+            transition: all 0.3s ease;
+        }
+        
+        tbody tr:hover {
+            background-color: #f8f9ff;
+            transform: scale(1.01);
+            box-shadow: 0 2px 8px rgba(102, 126, 234, 0.1);
+        }
+        
+        tbody tr:nth-child(even) {
+            background-color: #fafbff;
+        }
+        
+        /* Colonnes spécifiques */
+        td:first-child, th:first-child {
+            font-weight: 600;
+            color: #764ba2;
+            background-color: rgba(118, 75, 162, 0.05);
+            position: sticky;
+            left: 0;
+            z-index: 1;
+        }
+        
+        th:first-child {
+            background: linear-gradient(135deg, #764ba2 0%, #8b5cb8 100%);
+        }
+        
+        /* Style pour les cellules importantes */
+        td:nth-child(5) { /* Colonne Thérapie */
+            background-color: rgba(76, 175, 80, 0.05);
+        }
+        
+        td:nth-child(6) { /* Colonne Commentaires */
+            background-color: rgba(255, 193, 7, 0.05);
+            font-style: italic;
+            font-size: 0.95em;
+        }
+        
+        /* Note finale */
+        .note {
+            background: linear-gradient(135deg, #ffeaa7 0%, #fdcb6e 100%);
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 30px;
+            box-shadow: 0 4px 15px rgba(253, 203, 110, 0.3);
+        }
+        
+        .note h3 {
+            color: #2d3436;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .note h3::before {
+            content: "⚠️";
+            margin-right: 10px;
+            font-size: 1.2em;
+        }
+        
+        .note p {
+            color: #2d3436;
+            line-height: 1.8;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            
+            h1 {
+                font-size: 1.8em;
+            }
+            
+            h2 {
+                font-size: 1.4em;
+            }
+            
+            .content {
+                padding: 15px;
+            }
+            
+            table {
+                font-size: 0.85em;
+            }
+            
+            th, td {
+                padding: 8px;
+            }
+        }
+        
+        /* Effet de chargement */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .section {
+            animation: fadeIn 0.6s ease-out;
+        }
+        
+        /* Badges pour les conditions */
+        .condition-badge {
+            display: inline-block;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            font-weight: 600;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            margin-right: 5px;
+        }
+        
+        /* Scrollbar personnalisée */
+        .table-wrapper::-webkit-scrollbar {
+            height: 10px;
+        }
+        
+        .table-wrapper::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 10px;
+        }
+        
+        .table-wrapper::-webkit-scrollbar-thumb {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 10px;
+        }
+        
+        .table-wrapper::-webkit-scrollbar-thumb:hover {
+            background: linear-gradient(135deg, #5a67d8 0%, #6b4299 100%);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📚 Guide Pédiatrique ECOS</h1>
+            <p style="font-size: 1.2em; opacity: 0.95;">Terminologie Française - Guide de Référence</p>
+        </header>
+        
+        <div class="content">
+            <!-- Section 1: Anamnèse Vaccinale et Maladies Infantiles -->
+            <div class="section">
+                <h2>1. Anamnèse Vaccinale et Maladies Infantiles</h2>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Maladie</th>
+                                <th>Anamnèse</th>
+                                <th>Examen Physique</th>
+                                <th>Procédures/Examens</th>
+                                <th>Thérapie</th>
+                                <th>Commentaires</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Anamnèse vaccinale</td>
+                                <td>Vaccinations effectuées + quand, lesquelles, maladies infantiles, attitude des parents, réduction de l'anxiété</td>
+                                <td>Ganglions lymphatiques, peau (exanthème), bouche (langue, amygdales, pharynx), poumons, cœur, abdomen</td>
+                                <td>Recommander vaccinations : Dès 2 mois : diphtérie/tétanos/polio, H. influenzae, hépatite B, pneumocoques, coqueluche. Dès 12 mois : ROR, méningocoques C. 11-15 ans : varicelle*</td>
+                                <td>Maladies infantiles (rougeole, oreillons, rubéole, varicelle, coqueluche, diphtérie, scarlatine, exanthème subit)</td>
+                                <td>Vaccinations : ROR, varicelle, tétanos/polio/diphtérie, coqueluche, H. influenzae type B (grippe), pneumocoques, méningocoques C. *Car presque tous les enfants contractent la varicelle + relativement bénigne > vaccination à 11-15 ans seulement pour les séronégatifs</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+            <!-- Section 2: Nouveau-né et Prématurité -->
+            <div class="section">
+                <h2>2. Nouveau-né et Prématurité</h2>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Condition</th>
+                                <th>Anamnèse</th>
+                                <th>Examen Physique</th>
+                                <th>Procédures/Examens</th>
+                                <th>Thérapie</th>
+                                <th>Commentaires</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Examen du nouveau-né (APGAR)</td>
+                                <td>Précautions : lit chauffant avec lampe chauffante, O₂, linges, etc.</td>
+                                <td>Immédiatement après naissance : envelopper dans linge chaud + sécher, lit/lampe chauffante, APGAR, pouls + temps de recoloration, précordium, cœur-poumons, abdomen avec bruits intestinaux</td>
+                                <td>Gaz du sang, équilibre acido-basique (pH ombilical, gaz sanguins)</td>
+                                <td>Donner aux parents, noter l'heure de naissance</td>
+                                <td>Signes de maturité : duvet seulement sur épaules + bras, graisse sous-cutanée, ongles dépassant bout des doigts, plantes ridées, grandes lèvres recouvrant les petites, descente testiculaire, >48 cm, >2500g, cartilage nasal + auriculaire</td>
+                            </tr>
+                            <tr>
+                                <td>Examen nouveau-né/post-partum (3ème jour)</td>
+                                <td>État général, comportement (pleurs, jeu, cris, boire, manger, élimination, apathie, somnolence), symptômes B. Anamnèse grossesse, anamnèse accouchement, alimentation/allaitement, vaccinations</td>
+                                <td>Percentiles (PC, poids, taille), inspection (signes maturité, cyanose, signes dysmorphiques, peau), cœur (précordium, frémissement, auscultation avec carotides, pouls inguinal + brachial, recoloration), poumons (signes dyspnée, auscultation), abdomen (palpation, bruits intestinaux, rate, foie), neurologique (réflexes nouveau-né encore présents ? tonus musculaire, sensibilité, réflexes bicipital/rotulien), système locomoteur (tonus, mobilité articulaire), tête (fontanelles, oreilles, yeux avec fond d'œil), organes génitaux (descente testiculaire), décubitus ventral (reins, colonne vertébrale)</td>
+                                <td>Échographie crânienne + bassin, bilan sanguin/dépistage Guthrie</td>
+                                <td>Vitamine D + vitamine K, proposer conseil allaitement, organiser pédiatre</td>
+                                <td>Signes détresse respiratoire : tirages, tachypnée, battement ailes du nez, gémissements, stridor, sifflements, cyanose</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+            <!-- Section 3: Pathologies Infectieuses -->
+            <div class="section">
+                <h2>3. Pathologies Infectieuses</h2>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Condition</th>
+                                <th>Anamnèse</th>
+                                <th>Examen Physique</th>
+                                <th>Procédures/Examens</th>
+                                <th>Thérapie</th>
+                                <th>Commentaires</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Fièvre</td>
+                                <td>Tachycardie, toux, mal de gorge, rhinorrhée, céphalées, douleurs abdominales, vomissements, diarrhée, dysurie, otalgie, arthrite, variations nycthémérales, méthode mesure, exanthème, prurit, état général/comportement, sommeil, malades famille/entourage, urines/selles, appétit, médicaments, maladies infantiles</td>
+                                <td>Neurologique : vérifier méningisme (raideur nuque, signes Kernig/Lasègue), pupilles, sensibilité, nerfs crâniens. État général : périphérie chaude ? couleur, turgor/muqueuses, comportement. ORL (cavité buccale, pharynx, oreille), poumons, peau (exanthème), tractus gastro-intestinal/abdomen, loges rénales, ganglions lymphatiques, articulations</td>
+                                <td>Paramètres vitaux (pouls, tension artérielle, périphérie), prise température. Examen cytobactériologique urines + uroculture (si infection urinaire + organes abdominaux), prélèvement nasopharyngé, prélèvement gorge, test streptocoque pour infection voies aériennes supérieures. Bilan sanguin (CRP, leucocytes + selon suspicion), ponction lombaire si suspicion méningite. Imagerie (échographie organes internes, scanner si mastoïdite, radiographie si pneumonie, scintigraphie si ostéomyélite)</td>
+                                <td>Antipyrétiques, traitement selon étiologie, assurer hydratation suffisante</td>
+                                <td>Bilan sepsis si : fièvre élevée aiguë + pas de foyer infectieux + état général altéré > bilan sanguin (CRP, numération), hémocultures, radiographie thorax*, examen urines, ponction lombaire*. *Seulement si état général altéré. Diagnostics différentiels : infection voies aériennes supérieures, convulsion fébrile, maladies infantiles, exanthème subit, pneumonie, gastro-entérite/GIT, infection urinaire, otite moyenne/mastoïdite, ostéomyélite, méningitis, sepsis</td>
+                            </tr>
+                            <tr>
+                                <td>Maladies infectieuses infantiles</td>
+                                <td>Vaccinations, quelles maladies contractées ? fièvre, exanthème (détails), prurit, état général, alimentation/appétit, diarrhée, vomissements, céphalées, arthralgies, douleurs abdominales</td>
+                                <td>Peau + muqueuses + tête/visage, ganglions lymphatiques, abdomen, bouche/pharynx/amygdales, articulations</td>
+                                <td>Diagnostic généralement clinique ! Rarement sérologie</td>
+                                <td>Traitement spécifique selon pathogène</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Rougeole</td>
+                                <td>Prodromes (fièvre, toux, rhinorrhée, éventuellement signe de Köplik), puis exanthème maculo-papuleux (confluent, début visage, évolution distale), complications SNC, pneumonie</td>
+                                <td>Signe de Köplik : points rougeâtres face interne joues</td>
+                                <td>Sérologie (IgM), prélèvement nasopharyngé, prélèvement gorge</td>
+                                <td>Symptomatique > vitamine A si carence, ribavirine si complications SNC</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Rubéole</td>
+                                <td>Prodromes légers possibles, exanthème (initial visage puis distal, finement maculeux, prurit possible), ganglions, arthralgies. Complications seulement si congénitale/grossesse</td>
+                                <td></td>
+                                <td>Sérologie (IgM)</td>
+                                <td>Symptomatique</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Mégalérythème épidémique</td>
+                                <td>Exanthème (visage souffleté + surtout extrémités, en guirlandes/réticulaire, accentué par stress/sport/émotion/chaleur), arthralgies. Complications si primo-infection pendant grossesse</td>
+                                <td></td>
+                                <td>Sérologie, PCR</td>
+                                <td>Symptomatique</td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+            <!-- Section 4: Pathologies Respiratoires -->
+            <div class="section">
+                <h2>4. Pathologies Respiratoires</h2>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Condition</th>
+                                <th>Anamnèse</th>
+                                <th>Examen Physique</th>
+                                <th>Procédures/Examens</th>
+                                <th>Thérapie</th>
+                                <th>Commentaires</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Asthme bronchique</td>
+                                <td>Crises, toux, dyspnée, sifflements/sibilants, douleurs, sécrétions, à l'effort, saisonnier/printemps ou perannuel, terrain atopique (allergies, conjonctivite, rhinosinusite, dermatite atopique), antécédents familiaux. Déclencheurs : effort, infections, allergies, médicaments, substances toxiques, air froid</td>
+                                <td>Poumons (auscultation > expiration prolongée/sibilants, éventuellement râles secs, percussion > hypersonorité, signes détresse respiratoire, fréquence). Cœur (tachycardie, pouls paradoxal), ORL, ganglions lymphatiques</td>
+                                <td>Explorations fonctionnelles respiratoires (VEMS + CV diminués), bilan biologique (éosinophilie), instruction : technique inhalation, débit de pointe</td>
+                                <td>1. Protocole débit de pointe 2. Tests allergiques/éviction 3. Ventoline pour crises 4. Symbicort (corticoïde + β2-mimétique comme traitement de fond) 5. Si infections respiratoires récidivantes : vaccinations (pneumocoques + H. influenzae) + Bronchovaxom</td>
+                                <td>Aborder allergies si suspicion</td>
+                            </tr>
+                            <tr>
+                                <td>Laryngite/Épiglottite</td>
+                                <td>Épiglottite : maux de gorge, fièvre, pas de toux généralement, stertor, dyspnée, hypersialorrhée, voix étouffée. Syndrome croup : dyspnée, stridor inspiratoire, enrouement, toux aboyante, fièvre possible, signes rhinopharyngite possible</td>
+                                <td>Signes détresse respiratoire : tirages, tachypnée, battement ailes du nez, gémissements, stridor, cyanose. Signes obstruction : inspiration prolongée, stridor, tachycardie, hypertension, sueurs, agitation, pouls paradoxal. Danger vital : cyanose, convulsions, troubles conscience, bradypnée, bradycardie, silence auscultatoire</td>
+                                <td>Premiers secours dyspnée aiguë : soins attentionnés, O₂, aspiration, ventilation au masque, intubation possible, laryngoscopie (sous sédation !), antibiotiques possibles</td>
+                                <td>Épiglottite : inspection pharyngée sous anesthésie par inhalation, intubation + humidification, antibiotiques. Pseudo-croup : 1. Inhalation adrénaline, corticoïdes, rarement intubation, antibiotiques (si laryngotrachéite bactérienne)</td>
+                                <td>Vrai croup : diphtérie, rare. Pseudo-croup : viral (signes rhume), allergique/spasmodique (dramatique, souvent nocturne à partir de santé parfaite), laryngotrachéite bactérienne (rhume avec surinfection bactérienne, fièvre élevée)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+            <!-- Section 5: Pathologies Gastro-intestinales -->
+            <div class="section">
+                <h2>5. Pathologies Gastro-intestinales</h2>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Condition</th>
+                                <th>Anamnèse</th>
+                                <th>Examen Physique</th>
+                                <th>Procédures/Examens</th>
+                                <th>Thérapie</th>
+                                <th>Commentaires</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Douleurs abdominales/abdomen aigu</td>
+                                <td>Douleurs (7 dimensions précises, douleur/soulagement à la défécation), état général, attitude antalgique, sommeil, fièvre, dyspnée, nausées, vomissements, diarrhée, gaz, ballonnements, selles + urines, pertes sanguines, appétit, alimentation, céphalées, vertiges, arthrite, perte de poids, réveils nocturnes, symptômes B, retard croissance. Déclencheurs : traumatisme, médicaments, maladies infantiles, entourage malade, psychisme/social/école, aliments avariés</td>
+                                <td>Inspection (coloration, ictère, pâleur, turgor) + peau + état général + état nutritionnel, percentiles. Abdomen (quadrants, auscultation, douleur décompression, météorisme, résistances, orifices herniaires, défense abdominale Lanz/McBurney, Courvoisier/Murphy, foie, rate, reins), cœur/poumons, reins, bouche, ganglions lymphatiques, inspection anale, échelle douleur (smileys)</td>
+                                <td>Voie veineuse périphérique + bilan (hématologie, CRP, leucocytes, hématocrite, amylase + lipase pancréatiques, bilirubine, PAL, γ-GT, créatinine, troponine, CK-MB), échographie, ECG, radiographie abdomen sans préparation (debout ou décubitus latéral), thorax (face debout), scanner possible</td>
+                                <td>Coliques nourrisson : information caractère bénin, pause possible, massage abdominal, tisane fenouil. Étiologie non claire : surveillance évolutive + carnet douleur, conseil nutritionnel possible</td>
+                                <td>80% des douleurs abdominales chez enfant sont fonctionnelles !!! Coliques 3 mois (>3h/j >3j/semaine + minimum 3 semaines, bénignes, disparaissent après 3ème mois généralement). Diagnostics différentiels : invagination, RGO, hernie, corps étranger, maladie cœliaque, constipation, appendicite, maladie de Crohn, etc.</td>
+                            </tr>
+                            <tr>
+                                <td>Gastro-entérite</td>
+                                <td>Douleurs, nausées, vomissements, diarrhée (sang, mucus, couleur, quantité, consistance, fréquence), fièvre, céphalées, état général, conscience, crampes, alimentation/boisson, selles + urines, entourage, aliments avariés, voyages étranger. *Pertes subies (remplacer en 4h avec solution réhydratation orale), pertes courantes + besoins maintenance !</td>
+                                <td>Inspection (coloration, ictère, pâleur, turgor/muqueuses/fontanelles, conscience), abdomen (quadrants, auscultation, douleur décompression, météorisme, résistances), ganglions lymphatiques, cœur/poumons, reins, bouche, monitoring : respiration, tension artérielle, pouls, conscience. Examiner urines/selles dans couches, mesurer fièvre + poids</td>
+                                <td>Gastro-entérite sévère persistante : bilan (électrolytes, glucose, lactate, numération, CRP), examen urines. Diagnostic étiologique (coprocultures, sérologies)</td>
+                                <td>1. *Hydratation (thé + sirop petites quantités), électrolytes oraux/solution réhydratation (4h) 2. Régime léger bref, reprendre rapidement alimentation normale ! 3. Antiémétique/Motilium 4. Lopéramide (seulement si urgence > voyages, travail) 5. Buscopan (si crampes) 6. Probiotiques après gastro-entérite</td>
+                                <td>Si déshydratation/état général très altéré > hospitalisation + NaCl IV. Généralement pas d'indication antibiotiques sauf : diarrhée sanglante (suspicion Shigella), fièvre élevée, nourrisson, personnes âgées > ciprofloxacine. Signaler si problème hydratation ! Dure 5-7 jours, très contagieux souvent. Pas de régime prolongé ! Solution réhydratation orale : H₂O + électrolytes + glucose, seulement premières heures, puis reprise alimentation normale ! Ne pas interrompre allaitement !</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+            <!-- Section 6: Pathologies Neurologiques -->
+            <div class="section">
+                <h2>6. Pathologies Neurologiques</h2>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Condition</th>
+                                <th>Anamnèse</th>
+                                <th>Examen Physique</th>
+                                <th>Procédures/Examens</th>
+                                <th>Thérapie</th>
+                                <th>Commentaires</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Épilepsie/Convulsion fébrile</td>
+                                <td>Épilepsie classique : quand 1ère crise, durée, morsure langue, miction/défécation involontaire, convulsions (toutes extrémités ?), perte conscience, yeux, phase post-critique, antécédents familiaux, médicaments. Convulsion fébrile : fièvre, céphalées, infection. Spasmes affectifs : douleur/colère/opposition > cris, cyanose, apnée, puis position tonique ou relâchée. Spasmes blancs : douleur ou sensation désagréable > généralement pas de cris > pâleur, raideur, clonies, asystolie, miction possible. Syndrome BNS : chronique > éclairs, hochements, salutations, souvent au réveil, puis pleurs, régression développement. Absences : enfant soudain comme absent, yeux révulsés possibles</td>
+                                <td>Inspection, état général, examen neurologique. Si cause épilepsie pas claire : traiter comme épilepsie classique puis chercher cause : anamnèse parents (déclencheurs, infection, maladie chronique...), mesure fièvre, bilan sanguin (paramètres infectieux, électrolytes), glucose, ponction lombaire possible, scanner (si troubles conscience persistants), rarement EEG (BNS)</td>
+                                <td>ABC ! Donner O₂ + mesurer fièvre : si >38° > convulsion fébrile ou méningite, sinon épilepsie, monitoring, position latérale ou ventrale (aspiration)</td>
+                                <td>Épilepsie classique (sans fièvre) ou état de mal épileptique : immédiatement benzodiazépines (rectal) + O₂, midazolam (oral) possible, voie veineuse (Ringer ou NaCl + temesta) + bilan sanguin (Na, Ca, Mg), glucose. Si convulsion persiste ou récidive : phénytoïne ou phénobarbital. Convulsion fébrile (DD méningite) : bilan sanguin (électrolytes), glucose, si 1ère fois pas de traitement anticonvulsivant nécessaire (donner réserve), sinon diazépam (rectal), antipyrétiques possibles > chercher foyer fébrile > ponction lombaire (si fièvre + pas de foyer infectieux ou état général altéré pour exclure méningite). Spasmes affectifs : O₂, pas d'anticonvulsivants > supplémentation fer, éliminer déclencheurs. Spasmes blancs : ECG, stabiliser circulation, O₂, adrénaline possible. BNS : EEG, vitamine B6, vigabatrine, ACTH ou antiépileptiques possibles, IRM crânienne, dépistage métabolique</td>
+                                <td>Convulsion fébrile : épilepsie lors infection avec fièvre en dehors SNC. Traitement anticonvulsivant après convulsion fébrile unique non indiqué. Donner réserve (suppositoires + antipyrétiques). Spasmes affectifs ne sont pas épilepsie, déclenchés par douleur/colère/opposition. Spasmes blancs : douleur ou sensation désagréable comme déclencheur dysrégulation vagale. Épilepsie BNS : généralement dans cadre troubles neurologiques symptomatiques, maladies chroniques, malformations. EEG (pas en phase aiguë sauf suspicion BNS)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+            <!-- Section 7: Troubles de la Croissance -->
+            <div class="section">
+                <h2>7. Troubles de la Croissance</h2>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Condition</th>
+                                <th>Anamnèse</th>
+                                <th>Examen Physique</th>
+                                <th>Procédures/Examens</th>
+                                <th>Thérapie</th>
+                                <th>Commentaires</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Retard staturo-pondéral</td>
+                                <td>Anamnèses grossesse + accouchement, développement, sport, école, anamnèse nutritionnelle, appétit, toux, perte de poids, symptômes B, douleurs, digestion, taille parents, adopté/biologique, maladies génétiques famille, médicaments/corticoïdes, problèmes thyroïde, taille naissance, maladies chroniques, maladie cœliaque, psycho-social. Mucoviscidose : toux chronique, sinusite, sibilants, polypes, détresse respiratoire du nouveau-né, infections respiratoires, problèmes digestifs, retard croissance, diabète, troubles sommeil, douleurs abdominales</td>
+                                <td>Percentiles (critères : sous 3ème percentile ou au-dessus 97ème percentile ou déviation minimum 2 écarts-types de taille cible), examen interniste (sibilants, signes détresse respiratoire, bruits pulmonaires possibles, hippocratisme digital, abdomen ballonné, polypose nasale, problèmes cutanés), signes dysmorphiques</td>
+                                <td>Bilan sanguin (hémogramme, hormones thyroïdiennes, cortisol, glucose, calcium, phosphore, hématologie, valeurs pancréatiques, protéines, fer, folates, B12), examen urines, analyse génétique possible, bilan stéatorrhée (selles 72h) possible, tests fonctionnels/neurologie/psychiatrie. Mucoviscidose : test sueur, EFR, dosage élastase (selles > insuffisance pancréatique), taux vitaminiques</td>
+                                <td>Mucoviscidose : substitution enzymes pancréatiques, vitamines, calories + protéines, chlorure de sodium, acide ursodésoxycholique, β2-mimétiques, oxygénothérapie, inhalations, kinésithérapie/exercices respiratoires, vaccinations, antibiotiques, corticoïdes oraux, ibuprofène, ATP + UPT inhalatifs, résection pulmonaire, polypectomie, transplantation hépatique</td>
+                                <td>Toux + retard staturo-pondéral : mucoviscidose. Problèmes mucoviscidose : pancréas, poumons, tractus gastro-intestinal. Étiologies : mucoviscidose, syndrome Ehlers-Danlos, syndrome Marfan, chondrodysplasie, rachitisme, syndromes/génétique, marasme, kwashiorkor, psycho-social, maladie cœliaque, insuffisance pancréatique, constitutionnel, endocrinopathie, tumeur maligne, besoins énergétiques augmentés, maladie inflammatoire intestinale, négligence/maltraitance</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+            <!-- Note finale -->
+            <div class="note">
+                <h3>Note importante</h3>
+                <p>Il ne faut pas oublier : antécédents personnels (anamnèses grossesse + accouchement), antécédents familiaux, médicaments, allergies, social/développement. Examen clinique + anamnèse détaillés voir cours de pédiatrie générale.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

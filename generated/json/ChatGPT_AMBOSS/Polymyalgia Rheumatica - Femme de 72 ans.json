@@ -1,0 +1,764 @@
+{
+  "id": "polymyalgia-rheumatica",
+  "title": "Polymyalgia Rheumatica - Femme de 72 ans",
+  "specialite": "Rhumatologie",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Madame G., 72 ans, consulte pour des douleurs diffuses aux épaules et aux hanches depuis 3 semaines",
+    "complaint": "Douleurs diffuses avec raideur matinale importante",
+    "consultationType": "Consultation programmée"
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Motif de consultation principal",
+          "binaryOnly": true,
+          "patientComment": "J'ai des douleurs terribles aux épaules et aux hanches depuis 3 semaines"
+        },
+        {
+          "id": "a2",
+          "text": "Caractérisation de la douleur",
+          "details": [
+            "Localisation [Épaules et hanches, bilatérale]",
+            "Intensité [Très intense, surtout au réveil]",
+            "Type de douleur [Douleur profonde, continue]",
+            "Facteurs aggravants [Repos prolongé, immobilité nocturne]",
+            "Facteurs soulageants [Mobilisation progressive, chaleur]"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Raideur matinale",
+          "binaryOnly": true,
+          "patientComment": "Je suis complètement raide le matin, ça dure plus d'une heure avant que je puisse bouger normalement"
+        },
+        {
+          "id": "a4",
+          "text": "Début et évolution",
+          "details": [
+            "Mode d'installation [Progressif sur quelques jours]",
+            "Évolution [S'aggrave progressivement]",
+            "Horaire [Prédominance matinale marquée]"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Symptômes systémiques",
+          "details": [
+            "Fatigue [Oui, je suis épuisée]",
+            "Perte d'appétit [Oui, je n'ai plus faim]",
+            "Perte de poids [J'ai perdu 2-3 kg]",
+            "Fièvre [Non, pas de fièvre]",
+            "Sueurs nocturnes [Non]"
+          ]
+        },
+        {
+          "id": "a6",
+          "text": "Recherche de signes d'artérite à cellules géantes",
+          "details": [
+            "Céphalées temporales [Non]",
+            "Douleur à la mastication [Non]",
+            "Troubles visuels [Non]",
+            "Hyperesthésie du cuir chevelu [Non]",
+            "Douleur à la palpation temporale [Non]"
+          ]
+        },
+        {
+          "id": "a7",
+          "text": "Antécédents médicaux",
+          "details": [
+            "Maladies rhumatologiques [Aucune]",
+            "Maladies auto-immunes [Non]",
+            "Infections récentes [Non]",
+            "Cancers [Non]"
+          ]
+        },
+        {
+          "id": "a8",
+          "text": "Médicaments actuels",
+          "patientComment": "Je prends seulement du paracétamol, mais ça ne soulage pas beaucoup"
+        },
+        {
+          "id": "a9",
+          "text": "Allergies médicamenteuses",
+          "patientComment": "Aucune allergie connue"
+        },
+        {
+          "id": "a10",
+          "text": "Antécédents familiaux",
+          "details": [
+            "Maladies rhumatologiques [Non]",
+            "Maladies auto-immunes [Ma sœur a fait une thyroïdite]"
+          ]
+        },
+        {
+          "id": "a11",
+          "text": "Impact fonctionnel",
+          "details": [
+            "Activités quotidiennes [Très limitée, j'ai du mal à m'habiller]",
+            "Sommeil [Réveils nocturnes dus à la douleur]",
+            "Autonomie [Je dois demander de l'aide pour certaines tâches]"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Signes vitaux",
+          "binaryOnly": true,
+          "patientComment": "TA 135/80 mmHg, FC 78 bpm, température 37.2°C"
+        },
+        {
+          "id": "e2",
+          "text": "État général",
+          "patientComment": "Patiente fatiguée mais bien orientée"
+        },
+        {
+          "id": "e3",
+          "text": "Examen des épaules",
+          "details": [
+            "Mobilité active [Réduite bilatéralement]",
+            "Mobilité passive [Moins limitée que l'active]",
+            "Palpation musculaire [Sensibilité diffuse]",
+            "Gonflement articulaire [Absent]"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Examen des hanches",
+          "details": [
+            "Mobilité active [Réduite, surtout en flexion]",
+            "Mobilité passive [Relativement préservée]",
+            "Palpation [Sensibilité péri-articulaire]"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Examen du rachis cervical",
+          "details": [
+            "Mobilité [Légèrement réduite]",
+            "Palpation [Sensibilité musculaire paracervicale]"
+          ]
+        },
+        {
+          "id": "e6",
+          "text": "Examen neurologique",
+          "details": [
+            "Force musculaire [Normale (5/5) mais douloureuse]",
+            "Réflexes [Normaux et symétriques]",
+            "Sensibilité [Normale]"
+          ]
+        },
+        {
+          "id": "e7",
+          "text": "Recherche de signes d'artérite temporale",
+          "details": [
+            "Palpation des artères temporales [Battements normaux, non indurées]",
+            "Recherche d'un souffle temporal [Absent]",
+            "Examen ophtalmologique sommaire [Pas de déficit visuel]"
+          ]
+        },
+        {
+          "id": "e8",
+          "text": "Examen des autres articulations",
+          "details": [
+            "Mains et poignets [Normaux, pas d'arthrite]",
+            "Genoux [Normaux]",
+            "Chevilles et pieds [Normaux]"
+          ]
+        },
+        {
+          "id": "e9",
+          "text": "Examen cutané",
+          "patientComment": "Pas d'éruption, pas de nodules"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Expliquer le diagnostic suspecté",
+          "patientComment": "Alors c'est quoi docteur? C'est de l'arthrose?",
+          "exemplesPhrases": [
+            "Madame, vos symptômes évoquent fortement une pseudopolyarthrite rhizomélique, c'est une inflammation des tissus autour des articulations",
+            "Ce n'est pas de l'arthrose mais une maladie inflammatoire qui touche souvent les personnes de votre âge",
+            "C'est une pathologie bénigne qui se traite très bien avec des corticoïdes"
+          ]
+        },
+        {
+          "id": "m2",
+          "text": "Examens complémentaires à prescrire",
+          "details": [
+            "VS et CRP [Pour confirmer l'inflammation]",
+            "NFS, ionogramme, créatinine",
+            "CK [Pour éliminer une myopathie]",
+            "TSH [Diagnostic différentiel]",
+            "Facteur rhumatoïde et anticorps anti-CCP [Si doute avec polyarthrite rhumatoïde]"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Diagnostic différentiel",
+          "ddSection": {
+            "title": "Diagnostics différentiels à considérer",
+            "categories": [
+              {
+                "name": "Pathologies rhumatologiques",
+                "items": [
+                  {
+                    "text": "Pseudopolyarthrite rhizomélique (PMR)",
+                    "cause": "Arguments POUR:\n\t□ Âge > 50 ans\n\t□ Raideur matinale > 1h\n\t□ Atteinte bilatérale épaules/hanches\n\t□ Syndrome inflammatoire attendu",
+                    "test": "→ VS/CRP élevées, CK normale"
+                  },
+                  {
+                    "text": "Polyarthrite rhumatoïde à début tardif",
+                    "cause": "Arguments CONTRE:\n\t□ Pas d'atteinte des petites articulations\n\t□ Pas de gonflement articulaire",
+                    "test": "→ FR et anti-CCP négatifs attendus"
+                  },
+                  {
+                    "text": "Myopathie inflammatoire",
+                    "cause": "Arguments CONTRE:\n\t□ Force musculaire conservée\n\t□ Pas de déficit neurologique",
+                    "test": "→ CK normale attendue"
+                  }
+                ]
+              },
+              {
+                "name": "Complications à surveiller",
+                "items": [
+                  {
+                    "text": "Artérite à cellules géantes",
+                    "cause": "Arguments CONTRE actuellement:\n\t□ Pas de céphalées temporales\n\t□ Pas de claudication mandibulaire\n\t□ Pas de troubles visuels",
+                    "test": "→ Surveillance clinique étroite"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m4",
+          "text": "Traitement proposé",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Corticothérapie",
+                "items": [
+                  {
+                    "treatment": "Prednisone 15-20 mg/jour per os",
+                    "details": "Dose initiale, en une prise le matin",
+                    "duration": "Réponse attendue en 24-72h"
+                  }
+                ]
+              },
+              {
+                "title": "Mesures associées",
+                "items": [
+                  {
+                    "treatment": "Calcium 1000 mg/jour + Vitamine D 800 UI/jour",
+                    "details": "Prévention de l'ostéoporose cortico-induite"
+                  },
+                  {
+                    "treatment": "IPP (oméprazole 20 mg/jour)",
+                    "details": "Protection gastrique si facteurs de risque"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m5",
+          "text": "Plan de sevrage de la corticothérapie",
+          "exemplesPhrases": [
+            "On va diminuer très progressivement sur 12 à 18 mois",
+            "La décroissance sera guidée par vos symptômes et les analyses",
+            "Il ne faut surtout pas arrêter brutalement"
+          ]
+        },
+        {
+          "id": "m6",
+          "text": "Surveillance proposée",
+          "details": [
+            "Contrôle clinique à J3-J7 [Vérifier la réponse au traitement]",
+            "VS/CRP mensuelle au début",
+            "Surveillance TA, glycémie, densitométrie osseuse",
+            "Éducation sur les signes d'artérite temporale"
+          ]
+        },
+        {
+          "id": "m7",
+          "text": "Red flags à expliquer",
+          "redflagsSection": {
+            "title": "Signes d'alerte nécessitant une consultation urgente",
+            "items": [
+              {
+                "text": "Céphalées temporales nouvelles",
+                "description": "Risque d'artérite temporale"
+              },
+              {
+                "text": "Troubles visuels soudains",
+                "description": "Urgence absolue - risque de cécité"
+              },
+              {
+                "text": "Douleur à la mastication",
+                "description": "Claudication mandibulaire - signe d'artérite"
+              },
+              {
+                "text": "Aggravation malgré traitement",
+                "description": "Remise en question du diagnostic"
+              }
+            ]
+          }
+        },
+        {
+          "id": "m8",
+          "text": "Conseils et mesures non médicamenteuses",
+          "details": [
+            "Maintien d'une activité physique adaptée",
+            "Kinésithérapie douce pour maintenir la mobilité",
+            "Application de chaleur locale",
+            "Adaptation temporaire des activités quotidiennes"
+          ]
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Questions de la patiente",
+          "content": "Est-ce que c'est grave? [Non, c'est bénin si bien traité mais il faut surveiller]\nCombien de temps pour guérir? [12-18 mois de traitement en moyenne]\nY a-t-il un risque de rechute? [Oui, environ 30% de rechute possible]\nPuis-je continuer mes activités? [Oui, adaptées à votre tolérance]"
+        },
+        {
+          "id": "c2",
+          "text": "Clôture de consultation",
+          "exemplesPhrases": [
+            "Je vais vous prescrire le traitement et les examens. On se revoit dans une semaine pour voir si le traitement est efficace",
+            "N'hésitez pas à me contacter si vous avez des maux de tête intenses ou des troubles de la vue",
+            "Avec le traitement, vous devriez vous sentir beaucoup mieux d'ici 2-3 jours"
+          ]
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour la patiente standardisée - PMR",
+      "nom": "Madame G.",
+      "age": "72 ans",
+      "contexte": "Consultation en médecine générale pour douleurs diffuses",
+      "motifConsultation": {
+        "plaintePrincipale": "J'ai des douleurs terribles aux épaules et aux hanches depuis 3 semaines",
+        "autreChose": "Je suis complètement raide le matin, c'est horrible"
+      },
+      "histoireActuelle": {
+        "symptomesPrincipaux": [
+          "Douleurs bilatérales aux épaules et hanches",
+          "Raideur matinale de plus d'une heure",
+          "Fatigue importante",
+          "Perte d'appétit"
+        ],
+        "evolution": "Début progressif il y a 3 semaines, aggravation constante",
+        "traitements": "Paracétamol sans grande efficacité",
+        "impact": "Difficultés pour s'habiller, se coiffer, sortir du lit"
+      },
+      "simulation": {
+        "attitude": [
+          "Patiente inquiète mais coopérante",
+          "Exprime sa frustration face à la limitation fonctionnelle",
+          "Demande si c'est de l'arthrose"
+        ],
+        "durantExamen": [
+          "Montre une limitation douloureuse des mouvements actifs",
+          "Moins de douleur en mobilisation passive",
+          "Pas de gonflement articulaire visible"
+        ]
+      },
+      "questionsFrequentes": {
+        "diagnostic": "Est-ce de l'arthrose? Est-ce que c'est grave?",
+        "traitement": "Combien de temps dois-je prendre les médicaments?",
+        "pronostic": "Est-ce que je vais guérir complètement?"
+      }
+    },
+    "informationsExpert": {
+      "titre": "Guide pour l'expert évaluateur - PMR",
+      "pointsCles": [
+        "Vérifier la recherche systématique de signes d'artérite temporale",
+        "S'assurer que le candidat explique la nature inflammatoire vs mécanique",
+        "Évaluer la prescription appropriée de corticoïdes (dose correcte)",
+        "Vérifier les mesures de prévention de l'ostéoporose cortico-induite"
+      ],
+      "pieges": [
+        "Ne pas rechercher les signes d'artérite temporale",
+        "Confondre avec l'arthrose",
+        "Prescrire une dose insuffisante de corticoïdes",
+        "Oublier la prévention de l'ostéoporose"
+      ],
+      "questionsPostStation": [
+        "Quelle est la dose initiale de prednisone recommandée?",
+        "Quels examens biologiques sont typiques de la PMR?",
+        "Quelle complication doit être surveillée en priorité?",
+        "Quelle est la durée habituelle du traitement?"
+      ]
+    },
+    "theoriePratique": {
+      "titre": "Rappels théoriques - Pseudopolyarthrite rhizomélique",
+      "sections": [
+        {
+          "titre": "Critères diagnostiques",
+          "points": [
+            "Âge > 50 ans (critère obligatoire)",
+            "Raideur matinale > 45-60 minutes",
+            "Atteinte bilatérale épaules et/ou hanches",
+            "VS/CRP élevées (souvent > 40-50 mm/h)",
+            "Absence d'autre diagnostic"
+          ]
+        },
+        {
+          "titre": "Association avec l'artérite temporale",
+          "points": [
+            "15-20% des PMR développent une artérite temporale",
+            "50% des artérites temporales ont une PMR",
+            "Surveillance clinique étroite indispensable",
+            "Traitement urgent si suspicion (40-60 mg prednisone)"
+          ]
+        }
+      ],
+      "rappelsTherapeutiques": [
+        "Prednisone 12,5-25 mg/jour (15-20 mg dose habituelle)",
+        "Réponse spectaculaire en 24-72h (critère diagnostique)",
+        "Décroissance très progressive sur 12-18 mois",
+        "Calcium + Vitamine D systématiques",
+        "Densitométrie osseuse de référence"
+      ],
+      "examensComplementaires": [
+        "VS/CRP: très élevées (> 40 mm/h)",
+        "CK: normale (différencie des myopathies)",
+        "FR/anti-CCP: négatifs",
+        "Échographie: peut montrer bursite/ténosynovite",
+        "Biopsie temporale: si suspicion d'artérite"
+      ]
+    },
+    "resume": {
+      "titre": "💢 Polymyalgia Rheumatica (PMR) – Résumé ECOS",
+      "sections": [
+        {
+          "titre": "🔍 Anamnèse",
+          "subsections": [
+            {
+              "titre": "Symptômes principaux",
+              "points": [
+                "Douleurs et raideurs bilatérales des ceintures scapulaires et pelviennes",
+                "Raideur matinale prolongée (> 45 minutes)",
+                "Début souvent subaigu (semaines à quelques mois)",
+                "Gêne fonctionnelle (difficultés pour se lever, s’habiller, se coiffer)"
+              ]
+            },
+            {
+              "titre": "Contexte",
+              "points": [
+                "Sujet > 50 ans",
+                "Plus fréquent chez la femme",
+                "Associé parfois à des symptômes systémiques : fatigue, anorexie, perte de poids, fébricule"
+              ]
+            },
+            {
+              "titre": "Signes d’alerte",
+              "points": [
+                "Céphalées temporales, claudication mandibulaire, troubles visuels (suspicion d’artérite à cellules géantes associée)",
+                "Altération rapide de l’état général",
+                "Fièvre persistante inexpliquée"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "👀 Examen clinique",
+          "subsections": [
+            {
+              "titre": "Signes articulaires et musculaires",
+              "points": [
+                "Mobilité réduite et douloureuse des épaules et hanches",
+                "Douleur à la palpation des masses musculaires proximales",
+                "Pas de véritable déficit moteur (douleur limitante)"
+              ]
+            },
+            {
+              "titre": "Examen général",
+              "points": [
+                "Syndrome inflammatoire général (fièvre, asthénie, amaigrissement)",
+                "Absence d’arthrite franche ou de synovite marquée (≠ PR)"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "🧪 Examens diagnostiques",
+          "subsections": [
+            {
+              "titre": "Biologie",
+              "points": [
+                "Syndrome inflammatoire franc : VS très élevée, CRP élevée",
+                "NFS souvent normale (exclure anémie inflammatoire modérée)",
+                "Absence d’auto-anticorps spécifiques (FR, anti-CCP négatifs)"
+              ]
+            },
+            {
+              "titre": "Imagerie",
+              "points": [
+                "Échographie ou IRM des épaules et hanches : bursites, synovites discrètes, ténosynovites",
+                "Imagerie utilisée pour différencier d’autres causes de douleurs proximales"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "⚙️ Prise en charge",
+          "subsections": [
+            {
+              "titre": "Traitement de fond",
+              "points": [
+                "Corticothérapie systémique faible dose (prednisone 15–20 mg/j)",
+                "Amélioration spectaculaire en 48–72 h (élément diagnostique)",
+                "Réduction progressive de la dose sur 12–24 mois"
+              ]
+            },
+            {
+              "titre": "Surveillance",
+              "points": [
+                "Surveillance clinique (douleurs, raideurs, AEG)",
+                "Surveillance biologique (VS, CRP)",
+                "Prévention complications corticoïdes : calcium, vitamine D, biphosphonates si risque ostéoporose"
+              ]
+            },
+            {
+              "titre": "Lien avec artérite à cellules géantes (Horton)",
+              "points": [
+                "Recherche systématique de céphalées, claudication mandibulaire, troubles visuels",
+                "Si suspicion : corticothérapie forte dose immédiate (prednisone 1 mg/kg/j)",
+                "Biopsie de l’artère temporale confirmative"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "✅ Points clés ECOS",
+          "points": [
+            "Sujet > 50 ans avec douleurs et raideurs proximales bilatérales + VS/CRP élevées = évoquer PMR",
+            "Réponse spectaculaire aux corticoïdes faible dose = critère diagnostique",
+            "Toujours rechercher signes d’artérite temporale associée (urgence ophtalmologique)",
+            "PEC = prednisone faible dose + sevrage progressif",
+            "Prévention ostéoporose sous corticoïdes obligatoire"
+          ]
+        },
+        {
+          "titre": "📋 Check-list rapide ECOS",
+          "subsections": [
+            {
+              "titre": "Questions à poser",
+              "points": [
+                "Depuis quand douleurs et raideurs des épaules/hanches ?",
+                "Raideur matinale prolongée ?",
+                "Fatigue, perte de poids, fièvre ?",
+                "Céphalées temporales, douleurs à la mastication, troubles visuels ?",
+                "ATCD personnels/familiaux (PR, maladies inflammatoires) ?"
+              ]
+            },
+            {
+              "titre": "Examens à faire",
+              "points": [
+                "VS et CRP",
+                "NFS pour éliminer cytopénie",
+                "Échographie/IRM épaules et hanches",
+                "Examen artères temporales si suspicion Horton"
+              ]
+            },
+            {
+              "titre": "PEC en 3 points",
+              "points": [
+                "Corticothérapie faible dose (prednisone 15–20 mg/j)",
+                "Surveillance clinique et biologique régulière",
+                "Prévention ostéoporose + dépistage artérite temporale"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "presentationPatient": {
+      "titre": "📑 Fiche ECOS – Cas : Douleurs musculaires proximales et raideur matinale (Polymyalgia Rheumatica)",
+      "sections": [
+        {
+          "titre": "🧩 Checklist mentale (présentation systématisée)",
+          "points": [
+            "Intro → âge, motif (douleurs diffuses ceintures scapulaire et pelvienne, raideur matinale > 1h)",
+            "Caractériser douleurs → début subaigu, bilatérales, proximal, prédominant le matin",
+            "Symptômes associés → fatigue, perte d’appétit, amaigrissement possible",
+            "Rechercher céphalées temporales, claudication mâchoire, troubles visuels (penser Horton !)",
+            "ATCD → HTA, autres pathologies chroniques ?",
+            "Examen clinique → douleurs et limitation active des épaules/hanche, force conservée (pas de déficit moteur), pas de synovite objective",
+            "Résumé + hypothèse principale (polymyalgia rheumatica) + DD : myopathie, polyarthrite rhumatoïde débutante, hypothyroïdie, myosite, métastases osseuses",
+            "Examens complémentaires → VS/CRP élevées, NFS, TSH, CK, imagerie (IRM/écho épaules-hanches si doute), biopsie artère temporale si Horton associé",
+            "Prise en charge → corticothérapie faible dose (prednisone 15–20 mg/j), surveillance clinique/biologique, prévention ostéoporose, suivi régulier"
+          ],
+          "mnemo": {
+            "titre": "👉 Mnémo rapide : PMR = AGE",
+            "elements": [
+              "A = Âge > 50 ans",
+              "G = Grandes ceintures (épaules, hanches)",
+              "E = Élévation VS/CRP"
+            ]
+          }
+        },
+        {
+          "titre": "🎤 Version longue (≈2-3 min)",
+          "contenu": "Il s’agit de Mme X, une femme de 72 ans, qui consulte pour des douleurs diffuses depuis environ deux mois. Les douleurs sont bilatérales, intéressent surtout les épaules et les hanches, et s’accompagnent d’une raideur matinale prolongée, d’une durée supérieure à une heure. Elle dit qu’elle se sent 'rouillée' le matin et qu’il lui faut du temps pour retrouver de la mobilité. Les douleurs s’améliorent légèrement au cours de la journée.\n\nElles sont apparues progressivement, sans facteur déclenchant particulier. La patiente rapporte également une fatigue générale, une baisse d’appétit, et un amaigrissement de 2 kilos. Pas de fièvre. Elle ne rapporte pas de céphalées temporales, pas de claudication de la mâchoire, ni de troubles visuels à ce stade.\n\nDans ses antécédents, on note une hypertension artérielle traitée de façon régulière. Pas d’antécédents chirurgicaux ni de pathologie inflammatoire connue. Pas d’allergies. Pas de prise médicamenteuse particulière en dehors de son antihypertenseur.\n\nÀ l’examen, Mme X est en bon état général, mais elle présente une limitation douloureuse active des mouvements des épaules et des hanches. La mobilité passive est mieux conservée. Il n’y a pas de déficit moteur objectif ni de synovite articulaire palpable. Pas d’arthrite périphérique, pas de rash cutané. Le reste de l’examen est normal.\n\nEn résumé, il s’agit d’une femme de 72 ans présentant des douleurs diffuses proximales avec raideur matinale, un syndrome inflammatoire probable, sans déficit moteur, dans un contexte subaigu. Mon hypothèse principale est une polymyalgia rheumatica. Les diagnostics différentiels incluent une polyarthrite rhumatoïde débutante, une myopathie (métabolique, endocrinienne), une myosite, une hypothyroïdie ou des métastases osseuses diffuses.\n\nLes examens complémentaires incluent une NFS, une VS et une CRP (attendues élevées), un dosage de la TSH, des CK pour éliminer une myopathie, et éventuellement une imagerie (échographie ou IRM des ceintures scapulaire et pelvienne). Il faut toujours rechercher des signes de maladie de Horton associée (céphalées temporales, claudication de la mâchoire, troubles visuels), et si suspicion, réaliser une biopsie de l’artère temporale.\n\nEn termes de prise en charge, le traitement repose sur une corticothérapie à faible dose, typiquement prednisone 15 à 20 mg/j, avec amélioration spectaculaire attendue en 48–72 heures. Un suivi clinique et biologique régulier est nécessaire pour adapter la dose. On associe une prévention de l’ostéoporose (supplémentation calcium/vitamine D, bisphosphonates si risque) et une prise en charge des comorbidités cardiovasculaires."
+        },
+        {
+          "titre": "⚡ Version express (SBAR, 30 sec)",
+          "contenu": "S (Situation) : Mme X, 72 ans, douleurs proximales (épaules, hanches) avec raideur matinale > 1h.\n\nB (Background) : Apparition progressive depuis 2 mois, fatigue, perte de poids, HTA connue.\n\nA (Assessment) : Suspicion polymyalgia rheumatica. DD : polyarthrite rhumatoïde, myopathie, myosite, hypothyroïdie, métastases osseuses.\n\nR (Recommendation) : Bilan inflammatoire (VS, CRP), TSH, CK, NFS ; corticothérapie faible dose (prednisone 15–20 mg/j) avec surveillance étroite."
+        },
+        {
+          "titre": "🎲 Touches ludiques / mnémos",
+          "subsections": [
+            {
+              "titre": "👉 PMR typique = 3R",
+              "points": [
+                "Raideur matinale prolongée",
+                "Régions proximales (épaules, hanches)",
+                "Réponse rapide aux corticoïdes"
+              ]
+            },
+            {
+              "titre": "👉 Horton associé = 3C",
+              "points": [
+                "Céphalées temporales",
+                "Claudication mâchoire",
+                "Cécité (risque complication sévère)"
+              ]
+            },
+            {
+              "titre": "⚠️ Pièges ECOS",
+              "points": [
+                "Confondre faiblesse musculaire (myopathie) avec douleurs",
+                "Oublier recherche signes de Horton",
+                "Ne pas proposer prévention ostéoporose",
+                "Oublier suivi régulier (risque rechute)"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "❓ Questions probables de l'examinateur (avec réponses orales)",
+          "subsections": [
+            {
+              "titre": "1. Arguments pour et contre chaque hypothèse",
+              "questions": [
+                {
+                  "question": "Polymyalgia rheumatica",
+                  "reponse": {
+                    "pour": [
+                      "Douleurs proximales bilatérales",
+                      "Raideur matinale >1h",
+                      "Âge > 50 ans",
+                      "Fatigue, perte d’appétit",
+                      "Inflammation biologique attendue"
+                    ],
+                    "contre": [
+                      "Pas de déficit moteur",
+                      "Pas de synovite objective"
+                    ]
+                  }
+                },
+                {
+                  "question": "Polyarthrite rhumatoïde",
+                  "reponse": {
+                    "pour": [
+                      "Douleurs inflammatoires",
+                      "Raideur matinale"
+                    ],
+                    "contre": [
+                      "Pas d’atteinte petites articulations",
+                      "Pas de synovite palpée"
+                    ]
+                  }
+                },
+                {
+                  "question": "Myopathie / myosite",
+                  "reponse": {
+                    "pour": [
+                      "Douleurs et faiblesse musculaire possibles"
+                    ],
+                    "contre": [
+                      "CK normales attendues",
+                      "Pas de déficit moteur objectif"
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "titre": "2. Examens complémentaires immédiats",
+              "questions": [
+                {
+                  "question": "Quels examens demanderiez-vous ?",
+                  "reponse": [
+                    "NFS",
+                    "VS, CRP",
+                    "TSH",
+                    "CK",
+                    "Échographie ou IRM des ceintures",
+                    "Biopsie artère temporale si suspicion Horton"
+                  ]
+                }
+              ]
+            },
+            {
+              "titre": "3. Diagnostic définitif, traitement, suivi",
+              "questions": [
+                {
+                  "question": "Diagnostic",
+                  "reponse": "Polymyalgia rheumatica (à confirmer biologiquement, éliminer autres causes)"
+                },
+                {
+                  "question": "Traitement",
+                  "reponse": {
+                    "immediat": [
+                      "Prednisone 15–20 mg/j",
+                      "Réponse attendue en 48–72h",
+                      "Antalgiques simples si besoin"
+                    ],
+                    "prevention": [
+                      "Calcium + Vitamine D",
+                      "Bisphosphonates si ostéoporose",
+                      "PEC comorbidités CV"
+                    ]
+                  }
+                },
+                {
+                  "question": "Suivi",
+                  "reponse": [
+                    "Contrôle clinique et biologique à 2–4 semaines",
+                    "Adaptation progressive dose corticoïdes",
+                    "Surveillance rechutes",
+                    "Dépistage Horton systématique",
+                    "Suivi long terme par rhumatologue/médecin traitant"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

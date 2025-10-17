@@ -1,0 +1,52 @@
+{
+  "title": "Test Mnémo",
+  "context": {
+    "setting": "Test",
+    "patient": "Test patient"
+  },
+  "sections": {},
+  "annexes": {
+    "presentationPatient": {
+      "titre": "Test Présentation",
+      "sections": [
+        {
+          "titre": "Section Test",
+          "subsections": [
+            {
+              "titre": "Questions Test",
+              "questions": [
+                {
+                  "question": "Question avec mnémo simple (chaîne) ?",
+                  "reponse": {
+                    "mesuresGenerales": [
+                      "Test 1",
+                      "Test 2"
+                    ],
+                    "mnemo": "💡 MONA modifié : Morphine, Oxygène, Nitrés, Aspirine — mais 🚫 bêta-bloquants si cocaïne"
+                  }
+                },
+                {
+                  "question": "Question avec mnémo objet ?",
+                  "reponse": {
+                    "immediat": [
+                      "Action urgente 1",
+                      "Action urgente 2"
+                    ],
+                    "mnemo": {
+                      "titre": "Mnémo ABC",
+                      "items": [
+                        "A : Airway",
+                        "B : Breathing",
+                        "C : Circulation"
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,585 @@
+{
+  "title": "AMC Urgences 3B - Douleur thoracique aiguë - NSTEMI",
+  "context": {
+    "setting": "Service d'urgences",
+    "patient": "Femme de 68 ans se plaignant de douleurs thoraciques oppressives depuis 3 heures avec dyspnée importante. Antécédents d'HTA et diabète type 2",
+    "vitals": {
+      "ta": "160/95 mmHg",
+      "fc": "110 bpm",
+      "fr": "28/min",
+      "temperature": "37.0°C"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Motif principal",
+          "details": [
+            "Douleur thoracique [Oui, depuis 3 heures]"
+          ],
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Caractérisation de la douleur thoracique",
+          "details": [
+            "Localisation [Rétrosternale]",
+            "Type de douleur [Oppressive, pesanteur]",
+            "Intensité [7/10]",
+            "Irradiation [Cou et épaules]",
+            "Facteurs déclenchants [Effort léger, émotion]",
+            "Facteurs soulageants [Repos partiel]",
+            "Évolution [Progressive sur 3 heures]"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Symptômes associés",
+          "details": [
+            "Dyspnée [Oui, importante]",
+            "Orthopnée [Oui, 2-3 oreillers]",
+            "Paroxysmes nocturnes [Oui, depuis 1 semaine]",
+            "Œdèmes des membres inférieurs [Oui, bilatéraux]",
+            "Palpitations [Non]",
+            "Fatigue [Oui, progressive]",
+            "Toux [Légère, sèche]"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Antécédents cardiovasculaires",
+          "details": [
+            "Hypertension artérielle [Oui, depuis 10 ans]",
+            "Diabète de type 2 [Oui, depuis 8 ans]",
+            "Dyslipidémie [Oui, traitée]",
+            "Insuffisance cardiaque [Suspectée, non confirmée]",
+            "Cardiopathie ischémique [Non connue]",
+            "Fibrillation auriculaire [Non]"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Facteurs de risque cardiovasculaire",
+          "details": [
+            "Âge et sexe [68 ans, femme ménopausée]",
+            "Tabagisme [Non fumeuse]",
+            "Antécédents familiaux [Mère décédée d'AVC]",
+            "Obésité [IMC 32 kg/m²]",
+            "Sédentarité [Oui, marquée]"
+          ]
+        },
+        {
+          "id": "a6",
+          "text": "Médicaments actuels",
+          "details": [
+            "Antihypertenseurs [IEC + diurétique]",
+            "Antidiabétiques [Metformine + gliclazide]",
+            "Statine [Atorvastatine 20 mg]",
+            "Aspirine [Non]",
+            "Observance [Variable]"
+          ]
+        },
+        {
+          "id": "a7",
+          "text": "Allergies et intolérances",
+          "details": [
+            "Allergies médicamenteuses [Pénicilline - urticaire]",
+            "Intolérances [AINS - gastralgies]"
+          ]
+        },
+        {
+          "id": "a8",
+          "text": "Contexte psychosocial",
+          "details": [
+            "Stress récent [Décès du conjoint il y a 2 mois]",
+            "Isolement social [Vit seule]",
+            "Autonomie [Réduite récemment]"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Évaluation initiale ABC",
+          "details": [
+            "Voies aériennes [Libres]",
+            "Respiration [Tachypnée, FR 28/min]",
+            "Circulation [TA 160/95, FC 110 bpm régulier]",
+            "État de conscience [Consciente, anxieuse]"
+          ],
+          "binaryOnly": true
+        },
+        {
+          "id": "e2",
+          "text": "Aspect général",
+          "details": [
+            "Position [Semi-assise préférée]",
+            "Coloration [Légère cyanose périphérique]",
+            "Diaphorèse [Modérée]",
+            "Détresse respiratoire [Évidente]",
+            "Obésité [Visible, abdominale]"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Examen cardiovasculaire",
+          "details": [
+            "Auscultation cardiaque [B3 audible - galop]",
+            "Rythme cardiaque [Régulier, tachycarde]",
+            "Souffles [Souffle systolique 2/6 mitral]",
+            "Turgescence jugulaire [Présente à 45°]",
+            "Reflux hépato-jugulaire [Positif]",
+            "Pouls périphériques [Présents, symétriques]"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Examen pulmonaire",
+          "details": [
+            "Auscultation [Râles crépitants bilatéraux jusqu'à mi-champs]",
+            "Percussion [Matité des bases]",
+            "Signes d'épanchement [Possibles aux bases]",
+            "SpO2 [92% en air ambiant]"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Examen abdominal",
+          "details": [
+            "Hépatomégalie [Oui, bord inférieur à 3 cm]",
+            "Douleur hépatique [Légère à la palpation]",
+            "Ascite [Non détectable]",
+            "Obésité abdominale [Importante]"
+          ]
+        },
+        {
+          "id": "e6",
+          "text": "Examen des membres",
+          "details": [
+            "Œdèmes membres inférieurs [Bilatéraux, prenant le godet, jusqu'aux genoux]",
+            "Signes de TVP [Absents]",
+            "Température cutanée [Fraîche aux extrémités]"
+          ]
+        },
+        {
+          "id": "e7",
+          "text": "ECG 12 dérivations",
+          "details": [
+            "Rythme [Sinusal]",
+            "Fréquence [110 bpm]",
+            "Sous-décalage ST [V4-V6, I, aVL de 1-2 mm]",
+            "Ondes T [Inversées en V4-V6]",
+            "HVG [Critères de voltage présents]",
+            "Pas de sus-décalage ST"
+          ],
+          "binaryOnly": true
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Mesures immédiates",
+          "details": [
+            "Installation en UHCD/USC",
+            "Monitoring cardiaque continu",
+            "Voie veineuse périphérique",
+            "Oxygénothérapie pour SpO2 > 94%",
+            "Position semi-assise",
+            "Restriction hydrique"
+          ],
+          "binaryOnly": true
+        },
+        {
+          "id": "m2",
+          "text": "Traitement médical initial",
+          "details": [
+            "Aspirine 250 mg à croquer",
+            "Clopidogrel 300 mg PO",
+            "Héparine HBPM dose curative",
+            "Dérivés nitrés IV si TA le permet",
+            "Furosémide 40 mg IV",
+            "Morphine si douleur persistante"
+          ],
+          "binaryOnly": true
+        },
+        {
+          "id": "m3",
+          "text": "Traitement de l'insuffisance cardiaque aiguë",
+          "details": [
+            "Diurétiques de l'anse IV (Furosémide 40-80 mg)",
+            "Vasodilatateurs (nitrés IV) si TA > 110 mmHg",
+            "VNI (CPAP/BiPAP) si détresse respiratoire",
+            "Surveillance diurèse horaire",
+            "Bilan entrées-sorties strict"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Stratification du risque",
+          "details": [
+            "Score GRACE pour NSTEMI",
+            "Score TIMI pour SCA",
+            "Évaluation Killip (classe III)",
+            "Stratégie invasive dans les 24-72h",
+            "Pas d'indication de coronarographie immédiate"
+          ]
+        },
+        {
+          "id": "m5",
+          "text": "Examens complémentaires",
+          "details": [
+            "Troponines HS à T0 et T3h",
+            "BNP ou NT-proBNP",
+            "NFS, ionogramme, urée, créatinine",
+            "Bilan hépatique",
+            "HbA1c",
+            "Gazométrie artérielle si hypoxie",
+            "Radiographie thoracique",
+            "Échocardiographie dans les 24h"
+          ]
+        },
+        {
+          "id": "m6",
+          "text": "Diagnostics différentiels",
+          "ddSection": {
+            "title": "Diagnostics différentiels du NSTEMI avec insuffisance cardiaque",
+            "categories": [
+              {
+                "name": "Syndromes coronariens aigus",
+                "items": [
+                  {
+                    "text": "NSTEMI",
+                    "cause": "Arguments POUR:\n\t□ Douleur thoracique typique\n\t□ Facteurs de risque multiples\n\t□ Sous-décalage ST et ondes T négatives\n\t□ Contexte de stress émotionnel",
+                    "test": "→ Troponines HS, coronarographie dans 24-72h"
+                  },
+                  {
+                    "text": "Angor instable",
+                    "cause": "Arguments possibles:\n\t□ Douleur d'effort\n\t□ Modifications ECG\n\t□ Troponines négatives possibles",
+                    "test": "→ Troponines sériées, test d'effort"
+                  }
+                ]
+              },
+              {
+                "name": "Insuffisance cardiaque aiguë",
+                "items": [
+                  {
+                    "text": "OAP cardiogénique",
+                    "cause": "Arguments POUR:\n\t□ Dyspnée importante\n\t□ Orthopnée\n\t□ Râles crépitants bilatéraux\n\t□ B3 audible\n\t□ Œdèmes périphériques",
+                    "test": "→ BNP/NT-proBNP, échocardiographie"
+                  },
+                  {
+                    "text": "Cardiomyopathie de stress (Takotsubo)",
+                    "cause": "Arguments possibles:\n\t□ Stress émotionnel récent (deuil)\n\t□ Femme ménopausée\n\t□ Modifications ECG",
+                    "test": "→ Coronarographie, ventriculographie"
+                  }
+                ]
+              },
+              {
+                "name": "Autres causes",
+                "items": [
+                  {
+                    "text": "Embolie pulmonaire",
+                    "cause": "Arguments CONTRE:\n\t□ Pas de facteurs de risque thromboembolique\n\t□ ECG non évocateur\n\t□ Signes d'IC gauche prédominants",
+                    "test": "→ D-dimères si doute, angio-CT pulmonaire"
+                  },
+                  {
+                    "text": "Pneumopathie",
+                    "cause": "Arguments CONTRE:\n\t□ Pas de fièvre\n\t□ Pas de syndrome infectieux\n\t□ Râles bilatéraux symétriques",
+                    "test": "→ Radiographie thoracique, CRP"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m7",
+          "text": "Optimisation thérapeutique",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Traitement anti-ischémique",
+                "items": [
+                  {
+                    "treatment": "Bêtabloquants",
+                    "details": "Bisoprolol 2.5 mg, titration progressive",
+                    "duration": "À vie"
+                  },
+                  {
+                    "treatment": "IEC/ARA2",
+                    "details": "Ramipril 2.5 mg, augmentation progressive",
+                    "duration": "À vie"
+                  },
+                  {
+                    "treatment": "Anti-aldostérone",
+                    "details": "Spironolactone 25 mg si FEVG < 35%",
+                    "duration": "Selon FEVG"
+                  }
+                ]
+              },
+              {
+                "title": "Contrôle des facteurs de risque",
+                "items": [
+                  {
+                    "treatment": "Statine haute intensité",
+                    "details": "Atorvastatine 80 mg",
+                    "duration": "À vie"
+                  },
+                  {
+                    "treatment": "Équilibre glycémique",
+                    "details": "Optimisation antidiabétiques, HbA1c < 7%",
+                    "duration": "Permanent"
+                  },
+                  {
+                    "treatment": "Contrôle tensionnel",
+                    "details": "Objectif < 130/80 mmHg",
+                    "duration": "Permanent"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m8",
+          "text": "Surveillance et suivi",
+          "details": [
+            "Monitoring continu en USC 24-48h",
+            "Troponines de contrôle",
+            "Surveillance fonction rénale",
+            "Poids quotidien",
+            "Bilan entrées-sorties",
+            "Échocardiographie avant sortie",
+            "Coronarographie programmée"
+          ]
+        },
+        {
+          "id": "m9",
+          "text": "Information et éducation",
+          "details": [
+            "Explication du diagnostic (NSTEMI + IC)",
+            "Importance de l'observance thérapeutique",
+            "Signes d'alarme à surveiller",
+            "Régime hyposodé",
+            "Restriction hydrique",
+            "Réadaptation cardiaque programmée"
+          ]
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Synthèse pour la patiente",
+          "content": "Madame, vous présentez ce qu'on appelle un syndrome coronarien aigu, une forme de crise cardiaque, compliqué d'une insuffisance cardiaque. Votre cœur manque d'oxygène et a du mal à pomper efficacement. Les médicaments que nous avons débutés vont soulager votre cœur et améliorer votre respiration. Nous allons vous surveiller étroitement et probablement faire une coronarographie dans les prochains jours pour voir l'état de vos artères coronaires."
+        },
+        {
+          "id": "c2",
+          "text": "Questions difficiles de la patiente",
+          "content": "[Est-ce que c'est à cause du décès de mon mari?] [Vais-je devoir rester longtemps à l'hôpital?] [Est-ce que je vais pouvoir vivre seule après?] [Mon cœur est-il très abîmé?]"
+        },
+        {
+          "id": "c3",
+          "text": "Réponses types aux questions difficiles",
+          "exemplesPhrases": [
+            "Le stress émotionnel peut effectivement déclencher des problèmes cardiaques, surtout avec vos facteurs de risque. Nous allons prendre soin de vous.",
+            "L'hospitalisation durera probablement 5 à 7 jours, le temps de stabiliser votre état et d'explorer vos artères coronaires.",
+            "Nous évaluerons votre autonomie avant la sortie. Un soutien à domicile ou une réadaptation peuvent être organisés si nécessaire.",
+            "L'échocardiographie nous dira précisément comment fonctionne votre cœur. Avec un bon traitement, beaucoup de patients récupèrent bien."
+          ]
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "images": [
+      {
+        "title": "ECG 12 dérivations - NSTEMI",
+        "description": "ECG montrant un sous-décalage ST en V4-V6, I et aVL avec ondes T négatives profondes, signes d'HVG",
+        "data": "grilles_generees/html/images/AMC-Urgences-Medecine-Intensive-3/B1-ECG.jpg"
+      },
+      {
+        "title": "Protocole de prise en charge des SCA aux urgences HUG",
+        "description": "Algorithme décisionnel pour la prise en charge des syndromes coronariens aigus au service des urgences",
+        "data": "grilles_generees/html/images/AMC-Urgences-Medecine-Intensive-3/B2-Protocole de prise en charge des SCA au service des urgences HUG.jpg"
+      },
+      {
+        "title": "Stratégie de stratification du risque dans les NSTEMI/angor instable - Partie 1",
+        "description": "Scores de risque GRACE et TIMI pour l'évaluation pronostique et décision thérapeutique",
+        "data": "grilles_generees/html/images/AMC-Urgences-Medecine-Intensive-3/B3-Stratégie de stratification du risque dans les NSTEMI:angor instable.jpg"
+      },
+      {
+        "title": "Stratégie de stratification du risque dans les NSTEMI/angor instable - Partie 2",
+        "description": "Critères de haut risque et indications de coronarographie précoce",
+        "data": "grilles_generees/html/images/AMC-Urgences-Medecine-Intensive-3/B4-Stratégie de stratification du risque dans les NSTEMI:angor instable.jpg"
+      },
+      {
+        "title": "Causes d'élévation des troponines",
+        "description": "Tableau listant les causes cardiaques et non cardiaques d'élévation des troponines",
+        "data": "grilles_generees/html/images/AMC-Urgences-Medecine-Intensive-3/B5-Causes d'élévation des troponines.jpg"
+      }
+    ],
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour la patiente standardisée - NSTEMI avec IC",
+      "nom": "Madame Dubois",
+      "age": "68 ans",
+      "contexte": "Vous êtes aux urgences, amenée par votre fille car vous êtes de plus en plus essoufflée depuis quelques jours.",
+      "motifConsultation": {
+        "plaintePrincipale": "J'ai mal dans la poitrine et je n'arrive plus à respirer correctement",
+        "autreChose": "Je suis très fatiguée et mes jambes sont très gonflées"
+      },
+      "histoireActuelle": {
+        "symptomesPrincipaux": [
+          "Douleur thoracique oppressive, comme un poids sur la poitrine",
+          "La douleur remonte dans mon cou et mes épaules",
+          "Je suis très essoufflée, surtout allongée",
+          "Je dors avec 3 oreillers depuis une semaine",
+          "Je me réveille la nuit en manque d'air",
+          "Mes jambes sont gonflées jusqu'aux genoux",
+          "Je suis épuisée depuis le décès de mon mari"
+        ],
+        "evolution": [
+          "Ça s'aggrave depuis 3 jours",
+          "La douleur est apparue ce matin après une émotion",
+          "L'essoufflement empire progressivement"
+        ]
+      },
+      "simulation": {
+        "attitude": [
+          "Paraître essoufflée, parler par phrases courtes",
+          "Se tenir légèrement penchée en avant",
+          "Montrer de l'anxiété mais aussi de la tristesse",
+          "Évoquer spontanément le décès récent du conjoint",
+          "Se plaindre du gonflement des jambes"
+        ],
+        "durantExamen": [
+          "Préférer la position semi-assise",
+          "Tousser légèrement de temps en temps",
+          "Montrer les œdèmes des jambes",
+          "Exprimer de l'inquiétude sur l'autonomie future"
+        ]
+      },
+      "antecedents": {
+        "medicaux": [
+          "Hypertension depuis 10 ans",
+          "Diabète type 2 depuis 8 ans",
+          "Cholestérol élevé",
+          "Un peu d'insuffisance cardiaque d'après mon médecin"
+        ],
+        "chirurgicaux": [
+          "Cholécystectomie il y a 15 ans",
+          "Prothèse de hanche droite il y a 3 ans"
+        ],
+        "familiaux": [
+          "Mère décédée d'un AVC à 72 ans",
+          "Père diabétique, décédé à 78 ans",
+          "Un frère avec un infarctus à 60 ans"
+        ]
+      },
+      "habitudes": {
+        "tabac": "Jamais fumé",
+        "alcool": "Jamais",
+        "activite": "Très sédentaire depuis le décès de mon mari",
+        "medicaments": "Pour la tension, le diabète et le cholestérol, mais j'oublie parfois",
+        "alimentation": "Mange peu depuis 2 mois, plutôt salé"
+      },
+      "contextePsychosocial": {
+        "deuil": "Mari décédé il y a 2 mois d'un cancer",
+        "isolement": "Vit seule, fille habite loin",
+        "autonomie": "Difficultés croissantes pour les courses et le ménage"
+      }
+    },
+    "informationsExpert": {
+      "titre": "Points clés pour l'évaluateur - NSTEMI avec IC aiguë",
+      "pointsCles": [
+        "Reconnaissance du NSTEMI sur l'ECG (sous-décalage ST)",
+        "Identification de l'insuffisance cardiaque aiguë (Killip III)",
+        "Double antiagrégation malgré l'absence de STEMI",
+        "Traitement combiné SCA + IC aiguë",
+        "Stratification du risque (GRACE/TIMI)",
+        "Prise en compte du contexte psychosocial (deuil récent)"
+      ],
+      "pieges": [
+        "Se focaliser uniquement sur le SCA et négliger l'IC",
+        "Oublier la double antiagrégation dans le NSTEMI",
+        "Ne pas traiter l'insuffisance cardiaque aiguë",
+        "Omettre la stratification du risque",
+        "Négliger l'aspect psychosocial et le deuil",
+        "Oublier d'optimiser le traitement du diabète et de l'HTA"
+      ],
+      "rolesInterventions": [
+        "L'examinateur peut jouer le rôle de l'infirmière",
+        "Fournir les résultats biologiques sur demande",
+        "Insister sur la dyspnée si le candidat l'oublie",
+        "Évaluer la prise en charge globale (bio-psycho-sociale)"
+      ]
+    },
+    "theoriePratique": {
+      "titre": "Rappels théoriques - NSTEMI et insuffisance cardiaque aiguë",
+      "sections": [
+        {
+          "titre": "Classification Killip de l'insuffisance cardiaque dans l'IDM",
+          "points": [
+            "Killip I: Pas de signes d'IC (mortalité 6%)",
+            "Killip II: Râles < 50% champs pulmonaires, B3, TJ (mortalité 17%)",
+            "Killip III: OAP franc, râles > 50% champs (mortalité 38%)",
+            "Killip IV: Choc cardiogénique (mortalité 81%)"
+          ]
+        },
+        {
+          "titre": "Score GRACE pour stratification du risque",
+          "points": [
+            "Âge",
+            "Fréquence cardiaque",
+            "Pression artérielle systolique",
+            "Créatinine",
+            "Classe Killip",
+            "Arrêt cardiaque à l'admission",
+            "Élévation des marqueurs cardiaques",
+            "Déviation du segment ST"
+          ]
+        },
+        {
+          "titre": "Critères de Framingham pour l'IC",
+          "points": [
+            "Critères majeurs: DPN, TJ, râles, cardiomégalie, OAP, B3, RHJ",
+            "Critères mineurs: œdèmes, toux nocturne, dyspnée d'effort, hépatomégalie, épanchement pleural, tachycardie",
+            "Diagnostic: 2 majeurs ou 1 majeur + 2 mineurs"
+          ]
+        }
+      ],
+      "rappelsTherapeutiques": [
+        "NSTEMI: Aspirine + Clopidogrel/Ticagrelor + Anticoagulation",
+        "IC aiguë: Diurétiques de l'anse IV (Furosémide 40-80 mg)",
+        "Vasodilatateurs (Nitrés IV) si PAS > 110 mmHg",
+        "VNI (CPAP 5-10 cmH2O) si détresse respiratoire",
+        "Bêtabloquants après stabilisation (commencer bas, augmenter lentement)",
+        "IEC/ARA2 dès que possible si TA stable",
+        "ARM si FEVG < 35% et créat < 2.5 mg/dL",
+        "Éviter AINS, antiarythmiques classe I et III",
+        "Restriction sodée < 2g/j, restriction hydrique 1.5L/j"
+      ],
+      "examensComplementaires": [
+        "Troponines HS: cinétique sur 3-6h, pic plus précoce que troponines standard",
+        "BNP > 100 pg/mL ou NT-proBNP > 300 pg/mL: IC probable",
+        "Échocardiographie: FEVG, cinétique segmentaire, valvulopathies, pressions de remplissage",
+        "Radiographie thoracique: index cardio-thoracique, redistribution vasculaire, lignes de Kerley",
+        "Coronarographie: dans les 24-72h pour NSTEMI à risque intermédiaire-élevé",
+        "Fonction rénale: surveillance quotidienne sous diurétiques",
+        "Ionogramme: hyponatrémie de dilution, hypokaliémie sous diurétiques",
+        "Gazométrie: si SpO2 < 92% ou signes d'hypercapnie"
+      ]
+    }
+  }
+}

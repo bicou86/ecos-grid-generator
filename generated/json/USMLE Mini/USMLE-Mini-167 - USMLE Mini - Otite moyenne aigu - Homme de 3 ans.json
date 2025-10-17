@@ -1,0 +1,112 @@
+{
+  "title": "USMLE Mini - Otite moyenne aiguë - Homme de 3 ans",
+  "category": "USMLE Mini-Cas",
+  "originalCategory": "ENFANT AVEC FIÈVRE",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Homme de 3 ans consultant pour des antécédents de 2 jours de fièvre et tire sur son oreille droite. Il est par ailleurs en bonne santé et ses vaccinations sont à jour. Sa sœur aînée a récemment eu un rhume. L'enfant fréquente une garderie."
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Motif principal de consultation",
+          "binaryOnly": true,
+          "patientComment": "des antécédents de 2 jours de fièvre et tire sur son oreille droite. Il est par ailleurs en bonne santé et ses vaccinations sont à jour. Sa sœur aînée a récemment eu un rhume. L'enfant fréquente une garderie."
+        },
+        {
+          "id": "a2",
+          "text": "Éléments clés de l'anamnèse à explorer",
+          "details": [
+            "Sévérité, durée",
+            "symptômes localisateurs associés tels qu'éruption cutanée, sifflement, toux et écoulement auriculaire",
+            "mauvais appétit, convulsions, léthargie, somnolence",
+            "contacts malades, garderie, vaccinations."
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Éléments clés de l'examen physique",
+          "details": [
+            "Signes vitaux",
+            "examens ORL, cou, cœur, poumons, abdominal et cutané."
+          ]
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostics différentiels à considérer",
+          "ddSection": {
+            "title": "Diagnostics différentiels",
+            "categories": [
+              {
+                "name": "Hypothèses diagnostiques",
+                "items": [
+                  {
+                    "text": "Otite moyenne aiguë",
+                    "cause": "À évaluer selon l'anamnèse et l'examen clinique",
+                    "test": "→ Examen physique (y compris otoscopie pneumatique)"
+                  },
+                  {
+                    "text": "Infection des voies respiratoires supérieures",
+                    "cause": "À évaluer selon l'anamnèse et l'examen clinique",
+                    "test": "→ NFS"
+                  },
+                  {
+                    "text": "Méningite",
+                    "cause": "À évaluer selon l'anamnèse et l'examen clinique",
+                    "test": "→ Hémoculture"
+                  },
+                  {
+                    "text": "Pyélonéphrite",
+                    "cause": "À évaluer selon l'anamnèse et l'examen clinique",
+                    "test": "→ Culture de tympanocentèse"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Examens complémentaires pertinents",
+          "details": [
+            "Examen physique (y compris otoscopie pneumatique)",
+            "NFS",
+            "Hémoculture",
+            "Culture de tympanocentèse",
+            "PL - analyse du LCR",
+            "Analyse d'urine, culture d'urine"
+          ]
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "informationsExpert": {
+      "titre": "Informations pour l'expert",
+      "pointsCles": [
+        "Cas de enfant avec fièvre",
+        "Patient: Homme de 3 ans",
+        "Évaluation de la démarche diagnostique",
+        "Choix approprié des examens complémentaires"
+      ],
+      "pieges": [
+        "Ne pas explorer systématiquement tous les éléments de l'anamnèse",
+        "Oublier certains diagnostics différentiels importants",
+        "Demander des examens non pertinents ou excessifs"
+      ]
+    }
+  }
+}

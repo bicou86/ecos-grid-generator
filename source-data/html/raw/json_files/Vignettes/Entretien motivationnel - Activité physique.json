@@ -1,0 +1,410 @@
+{
+  "title": "Entretien motivationnel - Activité physique",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Femme de 45 ans, employée de bureau, consulte pour fatigue et souhaite reprendre une activité physique",
+    "vitals": {
+      "ta": "132/85 mmHg",
+      "fc": "82 bpm",
+      "fr": "16/min",
+      "temperature": "36.7°C"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Explorer l'histoire de l'activité physique",
+          "details": [
+            "Activité actuelle [Presque rien, juste marcher au bureau]",
+            "Activité passée [Faisais de la natation avant les enfants]",
+            "Expériences positives [J'adorais nager, ça me détendait]",
+            "Expériences négatives [Course à pied, trop dur pour moi]",
+            "Raisons arrêt [Manque de temps avec le travail et les enfants]"
+          ],
+          "exemplesPhrases": [
+            "\"Parlez-moi de votre relation avec l'activité physique\"",
+            "\"Qu'est-ce qui vous a plu dans le sport par le passé?\""
+          ]
+        },
+        {
+          "id": "a2",
+          "text": "Identifier l'ambivalence actuelle",
+          "details": [
+            "Désir de bouger [J'aimerais bien m'y remettre]",
+            "Barrières perçues [Pas le temps, trop fatiguée]",
+            "Bénéfices attendus [Retrouver l'énergie, me sentir mieux]",
+            "Appréhensions [Peur de ne pas y arriver, de me blesser]",
+            "Contradiction [Besoin d'énergie mais trop fatiguée pour commencer]"
+          ],
+          "patientComment": "J'aimerais bien faire du sport, mais je suis déjà tellement fatiguée le soir"
+        },
+        {
+          "id": "a3",
+          "text": "Explorer les motivations personnelles",
+          "details": [
+            "Objectifs santé [Perdre du poids, améliorer condition]",
+            "Objectifs bien-être [Évacuer stress, se sentir mieux]",
+            "Valeurs importantes [Être en forme pour mes enfants]",
+            "Modèle familial [Montrer l'exemple aux enfants]",
+            "Projets futurs [Faire des randonnées en famille]"
+          ],
+          "exemplesPhrases": [
+            "\"Qu'est-ce qui vous motive le plus dans l'idée de reprendre le sport?\"",
+            "\"Comment voyez-vous les bénéfices pour votre vie quotidienne?\""
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Évaluer le contexte de vie",
+          "details": [
+            "Situation familiale [Mariée, deux enfants 8 et 12 ans]",
+            "Travail [Employée bureau, 8h/jour, assise]",
+            "Organisation quotidienne [Lever 6h30, coucher 23h]",
+            "Temps libre [Principalement week-end]",
+            "Soutien entourage [Mari sportif, comprend l'importance]"
+          ],
+          "patientComment": "Entre le boulot, les enfants, la maison... difficile de caser du sport"
+        },
+        {
+          "id": "a5",
+          "text": "Antécédents médicaux et contre-indications",
+          "details": [
+            "État de santé général [Bonne santé globale]",
+            "Surpoids modéré [IMC 28, +10kg depuis grossesses]",
+            "Tension légèrement élevée [Limite hypertension]",
+            "Troubles ostéoarticulaires [Mal de dos occasionnel]",
+            "Médicaments [Aucun traitement régulier]"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Focaliser sur les bénéfices recherchés",
+          "details": [
+            "Énergie et vitalité [Moins fatiguée au quotidien]",
+            "Gestion du stress [Évacuation tensions travail]",
+            "Confiance en soi [Retrouver estime corporelle]",
+            "Santé cardiovasculaire [Prévention, tension]",
+            "Qualité sommeil [Dormir mieux]"
+          ],
+          "exemplesPhrases": [
+            "\"Vous aimeriez vous sentir moins fatiguée au quotidien\"",
+            "\"Cette énergie que vous cherchez, comment l'imaginez-vous?\""
+          ]
+        },
+        {
+          "id": "e2",
+          "text": "Susciter l'évocation du changement",
+          "details": [
+            "Désirs exprimés [Retrouver la forme d'avant]",
+            "Capacités perçues [Si j'y vais progressivement]",
+            "Raisons personnelles [Pour mes enfants, ma santé]",
+            "Besoins identifiés [Activité plaisante, pas contraignante]",
+            "Engagement progressif [Commencer petit et voir]"
+          ],
+          "patientComment": "Il faudrait que je trouve quelque chose qui me plaise et qui rentre dans mon planning"
+        },
+        {
+          "id": "e3",
+          "text": "Explorer les ressources disponibles",
+          "details": [
+            "Expérience passée positive [Natation appréciée]",
+            "Soutien familial [Mari encourage, peut garder enfants]",
+            "Installations proches [Piscine municipale, salle sport]",
+            "Créneaux possibles [Midi, soir après 20h, week-end]",
+            "Budget disponible [Abonnement raisonnable possible]"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Identifier les obstacles réalistes",
+          "details": [
+            "Contraintes temporelles [Horaires chargés]",
+            "Fatigue après travail [Pic vers 19h]",
+            "Organisation familiale [Garde enfants, repas]",
+            "Condition physique [Déconditionnement actuel]",
+            "Motivation variable [Dépend humeur, météo]"
+          ]
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Planification progressive et réaliste",
+          "details": [
+            "Objectif initial [2 séances/semaine, 30min]",
+            "Activité choisie [Natation: plaisir + faible impact]",
+            "Créneaux définis [Mardi midi, samedi matin]",
+            "Progression graduelle [Augmentation progressive durée]",
+            "Plan B [Marche active si piscine fermée]"
+          ],
+          "exemplesPhrases": [
+            "\"Comment voyez-vous les premiers pas?\"",
+            "\"Qu'est-ce qui vous semble le plus réalisable pour commencer?\""
+          ],
+          "patientComment": "Je pourrais essayer la piscine le midi, c'est proche du bureau"
+        },
+        {
+          "id": "m2",
+          "text": "Augmenter la confiance en l'auto-efficacité",
+          "details": [
+            "Valoriser expérience passée [Vous étiez bonne nageuse]",
+            "Souligner la motivation [Votre volonté est là]",
+            "Rappeler les ressources [Soutien mari, installations]",
+            "Normaliser les difficultés [Normal d'appréhender]",
+            "Encourager l'autonomie [Vous savez ce qui vous fait du bien]"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Stratégies de maintien motivation",
+          "details": [
+            "Plaisir avant performance [Privilégier sensation bien-être]",
+            "Variété activités [Alterner natation/marche/vélo]",
+            "Objectifs courts terme [Semaine par semaine]",
+            "Récompenses [Temps pour soi, plaisir]",
+            "Suivi progrès [Carnet, sensations]"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Anticipation des difficultés",
+          "details": [
+            "Manque de temps [Solutions alternatives courtes]",
+            "Démotivation [Rappel bénéfices, soutien entourage]",
+            "Fatigue [Adaptation intensité, écoute corps]",
+            "Contraintes familiales [Plan B, flexibilité]",
+            "Conditions météo [Activités intérieur/extérieur]"
+          ]
+        },
+        {
+          "id": "m5",
+          "text": "Techniques motivationnelles appliquées",
+          "details": [
+            "Questions ouvertes [Explorer sans diriger]",
+            "Affirmations [Valoriser capacités et volonté]",
+            "Reflets [Reformuler motivations]",
+            "Résumés [Consolider plan établi]",
+            "Respect autonomie [Laisser patient décider]"
+          ]
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Consolidation du discours-changement",
+          "content": "• Mettre en avant les motivations exprimées\n• Ses désirs: \"J'aimerais retrouver l'énergie d'avant\"\n• Ses raisons: \"Pour ma santé et être en forme pour mes enfants\"\n• Ses besoins: \"Quelque chose qui me plaise et qui rentre dans mon planning\"\n• Ses capacités: \"Si j'y vais progressivement, je peux y arriver\"\n• Ses engagements: \"Je vais essayer la piscine le midi\"",
+          "exemplesPhrases": [
+            "\"Vous avez envie de retrouver cette sensation de bien-être\"",
+            "\"C'est important pour vous d'être en forme pour votre famille\""
+          ]
+        },
+        {
+          "id": "c2",
+          "text": "Questions difficiles de la patiente",
+          "content": "[Est-ce que ça va vraiment m'aider à perdre du poids?]\n[Et si je n'y arrive pas comme la dernière fois?]\n[Combien de temps avant de voir des résultats?]\n[Est-ce que je ne suis pas trop vieille pour recommencer?]",
+          "exemplesPhrases": [
+            "\"Qu'est-ce qui serait différent cette fois-ci?\"",
+            "\"Comment définiriez-vous le succès pour vous?\"",
+            "\"Qu'est-ce qui vous ferait sentir que ça vaut la peine?\""
+          ]
+        },
+        {
+          "id": "c3",
+          "text": "Plan de suivi et encouragement",
+          "content": "• Résumer le plan établi ensemble\n• Valoriser la décision et la motivation\n• Proposer suivi dans 1 mois pour bilan\n• Encourager contact si difficultés\n• Respecter le rythme personnel",
+          "exemplesPhrases": [
+            "\"On se revoit dans un mois pour voir comment ça se passe\"",
+            "\"L'important c'est que vous fassiez quelque chose qui vous plaît\"",
+            "\"N'hésitez pas à adapter selon vos sensations\""
+          ]
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour la patiente standardisée",
+      "nom": "Mme Claire Dubois",
+      "age": "45 ans",
+      "contexte": "Cabinet de médecine générale, consultation prévention",
+      "motifConsultation": {
+        "plaintePrincipale": "Fatigue chronique, souhaite reprendre une activité physique",
+        "autreChose": "Prise de poids récente, stress au travail"
+      },
+      "histoireActuelle": {
+        "activitePhysique": [
+          "Activité actuelle quasi nulle: \"Juste marcher du parking au bureau\"",
+          "Ancienne nageuse: \"J'adorais la natation avant d'avoir les enfants\"",
+          "Arrêt progressif: \"Plus le temps avec le travail et les petits\"",
+          "Tentatives récentes: \"J'ai essayé la course mais c'est trop dur\"",
+          "Motivation actuelle: \"J'aimerais bien m'y remettre\""
+        ],
+        "ambivalence": [
+          "Désir sincère de reprendre",
+          "Mais contraintes réelles de temps",
+          "Fatigue paradoxale: besoin d'énergie mais épuisée",
+          "Peur de l'échec comme les fois précédentes",
+          "Culpabilité de prendre du temps pour soi"
+        ],
+        "contexteVie": [
+          "Employée de bureau, travail sédentaire",
+          "Mariée, deux enfants (8 et 12 ans)",
+          "Journées longues: 6h30-23h",
+          "Mari sportif, soutenant",
+          "Surpoids +10kg depuis grossesses"
+        ],
+        "motivations": [
+          "Retrouver l'énergie d'avant",
+          "Être en forme pour ses enfants",
+          "Gérer le stress du travail",
+          "Améliorer confiance en soi",
+          "Prévention santé (tension limite)"
+        ]
+      },
+      "simulation": {
+        "attitude": [
+          "Volontaire mais réaliste sur les contraintes",
+          "Pas défensive, reconnaît ses limites",
+          "Nostalgique de l'époque sportive",
+          "Progressivement plus confiante",
+          "Prête à essayer si plan réaliste"
+        ],
+        "durantEntretien": [
+          "Commencer par exprimer le désir mais les obstacles",
+          "Évoquer avec plaisir la période natation",
+          "Montrer ambivalence temps/bénéfices",
+          "S'enthousiasmer pour solutions pratiques",
+          "Finir par proposer des créneaux possibles"
+        ],
+        "phrasesTypes": [
+          "\"J'aimerais bien faire du sport, mais je suis déjà tellement fatiguée\"",
+          "\"Avant j'adorais nager, ça me détendait vraiment\"",
+          "\"Entre le boulot, les enfants... difficile de caser du sport\"",
+          "\"Il faudrait que je trouve quelque chose qui me plaise\"",
+          "\"J'aimerais retrouver l'énergie d'avant\"",
+          "\"Si j'y vais progressivement, peut-être que...\"",
+          "\"La piscine le midi, c'est une idée!\""
+        ]
+      },
+      "anamneseSystemes": {
+        "generale": ["Fatigue chronique", "Prise poids récente +5kg"],
+        "cardiovasculaire": ["Tension limite élevée", "Pas d'antécédents"],
+        "osteoArticulaire": ["Mal de dos bureau", "Pas de blessures"],
+        "psychiatrique": ["Stress travail", "Moral correct"]
+      },
+      "habitudes": {
+        "activite": "Quasi-sédentaire, bureau toute la journée",
+        "alimentation": "Correcte mais déjeuners rapides",
+        "sommeil": "7h/nuit, réveil 6h30",
+        "alcool": "Occasionnel week-end",
+        "tabac": "Non-fumeuse"
+      },
+      "informationsPersonnelles": {
+        "profession": "Employée de bureau, comptabilité",
+        "etatCivil": "Mariée, mari sportif (cyclisme)",
+        "enfants": "Deux enfants 8 et 12 ans, actifs",
+        "hobbies": "Lecture, cuisine, temps famille",
+        "projets": "Randonnées famille, voyages actifs"
+      }
+    },
+    "informationsExpert": {
+      "titre": "Points clés pour l'expert évaluateur",
+      "pointsCles": [
+        "Évaluer l'exploration non-directive des motivations",
+        "Observer l'identification des barrières réalistes",
+        "Vérifier l'adaptation du plan au contexte de vie",
+        "Noter la valorisation des expériences positives passées",
+        "Évaluer le respect du rythme et de l'autonomie",
+        "Observer la gestion de l'ambivalence temps/bénéfices",
+        "Vérifier la planification progressive et réaliste"
+      ],
+      "pieges": [
+        "Imposer un type d'activité sans explorer préférences",
+        "Minimiser les contraintes temporelles réelles",
+        "Fixer des objectifs trop ambitieux d'emblée",
+        "Négliger l'importance du plaisir vs performance",
+        "Culpabiliser sur la sédentarité actuelle",
+        "Ignorer les tentatives passées et leurs échecs",
+        "Prescrire plutôt que négocier"
+      ],
+      "criteresBonnePerformance": [
+        "Questions ouvertes sur l'histoire sportive",
+        "Exploration empathique des obstacles",
+        "Valorisation des motivations personnelles",
+        "Plan négocié et adapté aux contraintes",
+        "Encouragement de l'auto-efficacité",
+        "Suivi proposé sans contrainte"
+      ]
+    },
+    "theoriePratique": {
+      "titre": "Entretien motivationnel et activité physique",
+      "sections": [
+        {
+          "titre": "Modèle transthéorique appliqué à l'exercice",
+          "points": [
+            "Précontemplation: Pas d'intention de changement",
+            "Contemplation: Ambivalent sur bénéfices/contraintes",
+            "Préparation: Prêt à commencer dans le mois",
+            "Action: Pratique régulière <6 mois",
+            "Maintien: Pratique régulière >6 mois",
+            "Rechute: Arrêt temporaire, opportunité d'apprentissage"
+          ]
+        },
+        {
+          "titre": "Barrières fréquentes à l'activité physique",
+          "points": [
+            "Manque de temps (barrière #1)",
+            "Fatigue et manque d'énergie",
+            "Manque de motivation/volonté",
+            "Coût et accessibilité",
+            "Peur de se blesser",
+            "Manque de compétences/confiance",
+            "Absence de soutien social"
+          ]
+        },
+        {
+          "titre": "Stratégies d'adhésion à long terme",
+          "points": [
+            "Activité plaisante avant tout",
+            "Objectifs réalistes et progressifs",
+            "Intégration dans routine quotidienne",
+            "Soutien social et familial",
+            "Variété pour éviter monotonie",
+            "Flexibilité selon contraintes",
+            "Focus sur bénéfices immédiats"
+          ]
+        }
+      ],
+      "rappelsTherapeutiques": [
+        "Explorer d'abord, conseiller ensuite",
+        "Partir des motivations personnelles",
+        "Valoriser l'autonomie et les choix",
+        "Commencer petit et progresser",
+        "Normaliser les rechutes",
+        "Encourager le plaisir avant la performance"
+      ],
+      "examensComplementaires": [
+        "Bilan cardiovasculaire si >45 ans + facteurs risque",
+        "ECG d'effort si cardiopathie/symptômes",
+        "Évaluation ostéoarticulaire si douleurs",
+        "Questionnaire PAR-Q+ (dépistage contre-indications)",
+        "Test de condition physique initial",
+        "Suivi tension artérielle si hypertension"
+      ]
+    }
+  }
+}

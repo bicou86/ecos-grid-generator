@@ -1,0 +1,201 @@
+{
+  "title": "Thieme Mini-Cas 68 - Dysphagie - Homme de 60 ans",
+  "category": "Thieme Mini-Cas",
+  "subcategory": "Dysphagie",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Homme de 60 ans, Patient standardisé, consulte pour difficulté à avaler"
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Motif principal de consultation",
+          "binaryOnly": true,
+          "patientComment": "difficulté à avaler"
+        },
+        {
+          "id": "a2",
+          "text": "Analyse ciblée de la plainte",
+          "details": [
+            "Solides vs liquides",
+            "Régurgitation",
+            "Perte poids",
+            "Brûlures estomac"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Recherche des éléments clés",
+          "details": [
+            "Solides vs liquides",
+            "Progression",
+            "Perte de poids"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Antécédents pertinents",
+          "details": [
+            "Reflux",
+            "Chirurgies",
+            "Radiothérapie thoracique"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Revue des systèmes ciblée",
+          "details": [
+            "Digestif",
+            "ORL",
+            "Oncologique"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "État général et nutritionnel",
+          "binaryOnly": true
+        },
+        {
+          "id": "e2",
+          "text": "Examen ORL et cou"
+        },
+        {
+          "id": "e3",
+          "text": "Recherche adénopathies"
+        },
+        {
+          "id": "e4",
+          "text": "Examen abdominal"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostics différentiels",
+          "ddSection": {
+            "title": "Hypothèses diagnostiques à considérer",
+            "categories": [
+              {
+                "name": "Diagnostics prioritaires",
+                "items": [
+                  {
+                    "text": "Achalasie",
+                    "cause": "Arguments POUR:\n\t□ Jeune, liquides et solides, régurgitation",
+                    "test": "→ Manométrie œsophagienne, transit baryté"
+                  },
+                  {
+                    "text": "Cancer de l'œsophage",
+                    "cause": "Arguments POUR:\n\t□ Âge, progressif, perte poids, solides d'abord",
+                    "test": "→ Endoscopie avec biopsie, scanner TAP"
+                  },
+                  {
+                    "text": "Syndrome CREST",
+                    "cause": "Arguments POUR:\n\t□ Raynaud, sclérodermie, reflux",
+                    "test": "→ Examens selon orientation clinique"
+                  },
+                  {
+                    "text": "Sténose œsophagienne",
+                    "cause": "Arguments POUR:\n\t□ ATCD RGO, progressif, solides",
+                    "test": "→ Examens selon orientation clinique"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Examens complémentaires",
+          "details": [
+            "Transit baryté",
+            "Manométrie œsophagienne",
+            "Endoscopie digestive haute"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Plan de prise en charge",
+          "details": [
+            "Référence gastro-entérologie",
+            "Modification alimentation",
+            "IPP si RGO"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Conseils au patient",
+          "details": [
+            "Manger lentement",
+            "Petits repas",
+            "Éviter coucher après repas"
+          ]
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Explications au patient",
+          "content": "Trouble de la déglutition nécessitant des examens pour exclure une cause grave."
+        },
+        {
+          "id": "c2",
+          "text": "Questions du patient",
+          "content": "[C'est un cancer?]\n[Pourquoi je n'arrive plus à avaler?]"
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour le patient standardisé",
+      "nom": "Patient standardisé",
+      "age": "60 ans",
+      "contexte": "Cabinet de médecine générale",
+      "motifConsultation": {
+        "plaintePrincipale": "difficulté à avaler",
+        "contexte": "Dysphagie progressive"
+      },
+      "simulation": {
+        "attitude": [
+          "Peur du cancer",
+          "Amaigri"
+        ],
+        "signesPhysiques": [
+          "Amaigrissement",
+          "Halitose possible"
+        ],
+        "durantConsultation": [
+          "Difficultés déglutition démontrées",
+          "Inquiétude cancer"
+        ]
+      }
+    },
+    "informationsExpert": {
+      "titre": "Informations pour l'expert",
+      "pointsCles": [
+        "Mini-cas clinique: Dysphagie",
+        "Focus: Solides vs liquides, Progression, Perte de poids",
+        "Consultation ciblée de 10 minutes",
+        "Évaluation de l'approche diagnostique"
+      ],
+      "pieges": [
+        "Minimiser si cancer possible",
+        "Ne pas référer"
+      ]
+    }
+  }
+}

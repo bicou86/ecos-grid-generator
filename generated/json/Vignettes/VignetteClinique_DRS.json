@@ -1,0 +1,345 @@
+{
+  "title": "VignetteClinique_DRS - Douleur thoracique",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Monsieur R, 63 ans, enseignant, consultant pour douleur thoracique rétrosternale oppressive depuis 1 heure, irradiant vers le bras gauche et la mâchoire, accompagnée de sudation et de nausées",
+    "vitals": {
+      "ta": "145/85 mmHg",
+      "fc": "88 bpm",
+      "fr": "16/min",
+      "temperature": "36.8°C",
+      "sao2": "98% AA"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Caractérisation de la douleur thoracique",
+          "details": [
+            "Localisation [Rétrosternale, en barre]",
+            "Irradiation [Vers le bras gauche et la mâchoire]",
+            "Qualité [Oppressive, comme un étau]",
+            "Intensité [7/10]",
+            "Durée [Depuis 1 heure]",
+            "Facteurs déclenchants [Au repos, en regardant la télé]",
+            "Facteurs aggravants [Respiration profonde]",
+            "Facteurs soulageants [Aucun pour l'instant]"
+          ]
+        },
+        {
+          "id": "a2",
+          "text": "Symptômes associés",
+          "details": [
+            "Dyspnée [Légère difficulté à respirer]",
+            "Sudation [Oui, transpiration froide]",
+            "Nausées [Légères nausées]",
+            "Vertiges [Non]",
+            "Palpitations [Non]",
+            "Anxiété [Je suis inquiet]"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Antécédents cardiovasculaires",
+          "details": [
+            "Hypertension artérielle [Traitée depuis 5 ans]",
+            "Dyslipidémie [Cholestérol élevé, sous statine]",
+            "Diabète [Type 2 depuis 3 ans]",
+            "Antécédents coronariens [Non]",
+            "AVC/AIT [Non]",
+            "Artériopathie périphérique [Non]"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Facteurs de risque cardiovasculaire",
+          "details": [
+            "Tabagisme [Ex-fumeur, arrêt il y a 10 ans]",
+            "Antécédents familiaux [Père infarctus à 58 ans]",
+            "Sédentarité [Peu d'activité physique]",
+            "Stress [Beaucoup de stress au travail]",
+            "Obésité [IMC 28]"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Médicaments actuels",
+          "details": [
+            "Amlodipine 5mg [Pour l'hypertension]",
+            "Atorvastatine 20mg [Pour le cholestérol]",
+            "Metformine 850mg 2x/j [Pour le diabète]",
+            "Aspirine 100mg [En prévention]"
+          ]
+        },
+        {
+          "id": "a6",
+          "text": "Anamnèse systémique ciblée",
+          "details": [
+            "Symptômes d'embolie pulmonaire [Pas de voyage récent, pas d'immobilisation]",
+            "Symptômes de dissection aortique [Pas de douleur déchirante, migratrice]",
+            "Symptômes de péricardite [Pas de fièvre, pas de position antalgique]",
+            "Symptômes digestifs [Pas de reflux, pas de rapport avec les repas]"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "État général et signes vitaux",
+          "details": [
+            "Aspect général [Anxieux, en sueur]",
+            "État de conscience [Conscient, orienté]",
+            "Coloration [Pâleur cutanée]",
+            "Signes de détresse [Légère dyspnée]"
+          ]
+        },
+        {
+          "id": "e2",
+          "text": "Examen cardiovasculaire",
+          "details": [
+            "Auscultation cardiaque [Rythme régulier, pas de souffle]",
+            "Recherche de B3/B4 [Absents]",
+            "Pression veineuse jugulaire [Normale]",
+            "Pouls périphériques [Présents et symétriques]",
+            "Œdèmes des membres inférieurs [Absents]"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Examen pulmonaire",
+          "details": [
+            "Auscultation pulmonaire [Claire, pas de râles]",
+            "Fréquence respiratoire [16/min]",
+            "Saturation [98% en air ambiant]",
+            "Signes de surcharge [Absents]"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Examen abdominal",
+          "details": [
+            "Palpation abdominale [Souple, indolore]",
+            "Recherche d'anévrisme aortique [Non palpé]",
+            "Organomégalie [Absente]",
+            "Défense ou détente [Absentes]"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Examen neurologique sommaire",
+          "details": [
+            "Déficit focal [Absent]",
+            "Signes méningés [Absents]",
+            "État de conscience [GCS 15]",
+            "Pupilles [Symétriques, réactives]"
+          ]
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Stratification du risque et diagnostic différentiel",
+          "ddSection": {
+            "title": "Diagnostics différentiels selon probabilité clinique",
+            "categories": [
+              {
+                "name": "Haute probabilité - Urgences vitales",
+                "items": [
+                  {
+                    "text": "Syndrome coronarien aigu (SCA)",
+                    "cause": "Arguments POUR:\n\t□ Douleur rétrosternale oppressive typique\n\t□ Irradiation bras gauche et mâchoire\n\t□ Symptômes végétatifs (sudation, nausées)\n\t□ Multiples facteurs de risque CV\n\t□ Âge et sexe masculin",
+                    "test": "→ ECG immédiat, Troponine hs, monitoring"
+                  },
+                  {
+                    "text": "Angor instable",
+                    "cause": "Arguments POUR:\n\t□ Douleur de repos prolongée (>20 min)\n\t□ Caractère nouveau\n\t□ Facteurs de risque multiples\nArguments CONTRE:\n\t□ Pas d'angor crescendo\n\t□ Premier épisode",
+                    "test": "→ ECG sérié, Troponine hs à T0 et T1-3h"
+                  }
+                ]
+              },
+              {
+                "name": "Probabilité intermédiaire",
+                "items": [
+                  {
+                    "text": "Embolie pulmonaire",
+                    "cause": "Arguments POUR:\n\t□ Douleur thoracique\n\t□ Dyspnée\nArguments CONTRE:\n\t□ Pas de facteurs de risque thromboemboliques\n\t□ Douleur non pleuritique\n\t□ Saturation normale",
+                    "test": "→ Score de Wells/Geneva, D-dimères si probabilité faible"
+                  },
+                  {
+                    "text": "Dissection aortique",
+                    "cause": "Arguments CONTRE:\n\t□ Douleur non déchirante\n\t□ Pas de migration\n\t□ Pas d'asymétrie tensionnelle\n\t□ Pouls périphériques présents",
+                    "test": "→ Angio-CT thoracique si suspicion"
+                  }
+                ]
+              },
+              {
+                "name": "Probabilité faible",
+                "items": [
+                  {
+                    "text": "Anxiété/Trouble panique",
+                    "cause": "Arguments POUR:\n\t□ Stress important\n\t□ Composante anxieuse\nArguments CONTRE:\n\t□ Douleur très typique d'angor\n\t□ Facteurs de risque CV majeurs",
+                    "test": "→ Diagnostic d'exclusion après bilan cardiaque"
+                  },
+                  {
+                    "text": "Douleur pariétale",
+                    "cause": "Arguments CONTRE:\n\t□ Pas de reproduction à la palpation\n\t□ Pas de lien avec les mouvements\n\t□ Symptômes végétatifs présents",
+                    "test": "→ Examen clinique, radiographie thoracique"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Examens complémentaires urgents",
+          "details": [
+            "ECG 12 dérivations immédiat (< 10 minutes)",
+            "Troponine hs à T0",
+            "Troponine hs de contrôle à T1h ou T3h selon protocole",
+            "Radiographie thoracique",
+            "Bilan biologique: NFS, ionogramme, créatinine, glycémie",
+            "BNP/NT-proBNP si suspicion d'insuffisance cardiaque",
+            "D-dimères uniquement si probabilité faible d'EP"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Interprétation de la troponine selon probabilité pré-test",
+          "description": "Application du théorème de Bayes et nomogramme de Fagan",
+          "details": [
+            "Probabilité pré-test élevée (>60%): Troponine négative n'exclut pas le SCA",
+            "Probabilité pré-test intermédiaire (15-60%): Troponine guide la décision",
+            "Probabilité pré-test faible (<15%): Troponine négative très rassurante",
+            "Sensibilité troponine hs à 1h: 90%",
+            "Spécificité troponine hs: 91%",
+            "Likelihood ratio positif: 10",
+            "Likelihood ratio négatif: 0.11"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Prise en charge immédiate",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Mesures urgentes (MONA)",
+                "content": "• Monitoring cardiaque continu\n• Oxygène si SpO2 < 90%\n• Voie veineuse périphérique\n• Aspirine 300mg à croquer (si pas déjà sous aspirine)\n• Nitroglycérine sublinguale 0.4mg (si TA > 90 mmHg systolique)\n• Morphine 2-5mg IV si douleur persistante\n• Position semi-assise"
+              },
+              {
+                "title": "Selon résultats ECG",
+                "content": "Si STEMI:\n• Activation filière urgence coronarographie\n• Double antiagrégation (Ticagrelor 180mg ou Prasugrel 60mg)\n• Anticoagulation (Héparine)\n• Transfert immédiat en salle de cathétérisme\n\nSi NSTEMI/Angor instable:\n• Score GRACE pour stratification\n• Coronarographie dans les 24-72h selon risque\n• Traitement médical optimal"
+              },
+              {
+                "title": "Surveillance et réévaluation",
+                "content": "• ECG sériés toutes les 15-30 minutes\n• Troponine de contrôle selon protocole\n• Surveillance des signes vitaux\n• Évaluation de la douleur (EVA)\n• Recherche de complications (trouble du rythme, insuffisance cardiaque)"
+              }
+            ]
+          }
+        },
+        {
+          "id": "m5",
+          "text": "Application du score TOPIC",
+          "details": [
+            "T - Troponine: Résultat selon cinétique",
+            "O - Overdose risk factors: Diabète, HTA, dyslipidémie, tabagisme",
+            "P - Pain typique: Douleur rétrosternale oppressive avec irradiation",
+            "I - Individual presentation: Sudation, nausées",
+            "C - Comorbidities: Multiples facteurs de risque CV",
+            "Score élevé → Probabilité SCA élevée → Hospitalisation"
+          ]
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Communication du plan diagnostique",
+          "content": "Monsieur R, votre douleur thoracique avec vos facteurs de risque cardiovasculaires nécessite une évaluation urgente pour éliminer un problème cardiaque. Nous allons immédiatement faire un électrocardiogramme et des prises de sang incluant la troponine, un marqueur spécifique du cœur. Selon les résultats, nous déciderons si une hospitalisation est nécessaire. En attendant, je vous donne de l'aspirine et nous allons surveiller votre état de près. La rapidité de prise en charge est importante pour votre sécurité."
+        },
+        {
+          "id": "c2",
+          "text": "Questions difficiles du patient",
+          "content": "[Est-ce que je fais un infarctus?]\n[Je vais mourir?]\n[Pourquoi maintenant alors que je me sentais bien?]\n[C'est peut-être juste du stress?]\n[Combien de temps vais-je rester à l'hôpital?]"
+        },
+        {
+          "id": "c3",
+          "text": "Réponses type",
+          "exemplesPhrases": [
+            "Nous devons faire des examens pour le déterminer. L'ECG et la troponine nous donneront rapidement la réponse.",
+            "Nous faisons tout pour vous prendre en charge rapidement. La médecine moderne permet d'excellents résultats.",
+            "Les problèmes cardiaques peuvent survenir brutalement, même chez quelqu'un qui se sent bien.",
+            "Le stress peut aggraver, mais vos symptômes et facteurs de risque nécessitent d'exclure une cause cardiaque d'abord.",
+            "Cela dépendra des résultats. Si c'est cardiaque, comptez 2-3 jours minimum pour surveillance et traitement."
+          ]
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "images": [
+      {
+        "id": "ecg1",
+        "title": "ECG initial",
+        "filename": "grilles_generees/html/images/VignetteClinique_DRS-ECG1.jpg",
+        "description": "ECG 12 dérivations montrant les modifications initiales"
+      },
+      {
+        "id": "ecg2",
+        "title": "ECG de contrôle",
+        "filename": "grilles_generees/html/images/VignetteClinique_DRS-ECG2.jpg",
+        "description": "ECG de contrôle après 30 minutes montrant l'évolution"
+      }
+    ],
+    "theoriePratique": {
+      "titre": "Application du raisonnement clinique bayésien",
+      "sections": [
+        {
+          "titre": "Probabilité pré-test et troponine",
+          "contenu": "La probabilité pré-test d'un SCA chez ce patient est élevée (environ 60-70%) basée sur la présentation clinique typique et les multiples facteurs de risque. Avec une sensibilité de 90% et une spécificité de 91% pour la troponine hs, l'interprétation doit tenir compte de cette probabilité élevée. Un test négatif ne permet pas d'exclure formellement le diagnostic et nécessite une surveillance prolongée."
+        },
+        {
+          "titre": "Nomogramme de Fagan",
+          "points": [
+            "Probabilité pré-test: 60%",
+            "LR+ = 10 → Probabilité post-test si positive: 94%",
+            "LR- = 0.11 → Probabilité post-test si négative: 14%",
+            "Une troponine négative laisse encore 14% de risque résiduel",
+            "Nécessité de répéter le dosage et monitoring clinique"
+          ]
+        },
+        {
+          "titre": "Score TOPIC pour orientation",
+          "contenu": "Le score TOPIC (Troponin Overdose Pain Individual Comorbidities) permet une approche structurée:\n- Troponine: Marqueur biologique clé\n- Overdose factors: Facteurs de risque CV multiples\n- Pain: Caractéristiques typiques d'angor\n- Individual: Présentation avec symptômes végétatifs\n- Comorbidities: Diabète, HTA, dyslipidémie"
+        }
+      ],
+      "rappelsTherapeutiques": [
+        "MONA: Morphine, Oxygène (si hypoxie), Nitrés, Aspirine",
+        "Double antiagrégation plaquettaire si SCA confirmé",
+        "Anticoagulation selon protocole institutionnel",
+        "Bêtabloquants en absence de contre-indication",
+        "IEC/ARA2 si dysfonction VG ou diabète",
+        "Statines haute intensité systématiques"
+      ],
+      "examensComplementaires": [
+        "ECG: Recherche sus-décalage ST, sous-décalage ST, ondes T négatives",
+        "Troponine hs: Cinétique à T0, T1h ou T3h selon protocole 0/1h ou 0/3h",
+        "Échocardiographie: Si doute diagnostique ou complications",
+        "Coronarographie: Gold standard si SCA confirmé ou forte suspicion",
+        "Score GRACE: Stratification du risque dans NSTEMI",
+        "Test d'effort ou coroscanner: Si probabilité intermédiaire après bilan initial"
+      ]
+    }
+  }
+}

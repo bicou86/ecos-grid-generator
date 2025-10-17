@@ -1,0 +1,205 @@
+{
+  "title": "Thieme Thorax 1 - Mal de gorge - Homme de 35 ans",
+  "category": "Thieme Thorax",
+  "subcategory": "Mal de gorge",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Homme de 35 ans, M. Donald Mavic, consultant pour mal de gorge",
+    "vitals": {
+      "temperature": "38.3°C",
+      "fc": "84 bpm",
+      "ta": "120/80 mmHg",
+      "fr": "16/min"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Motif principal de consultation",
+          "binaryOnly": true,
+          "patientComment": "mal de gorge"
+        },
+        {
+          "id": "a2",
+          "text": "Analyse de la plainte principale",
+          "details": [
+            "Début et évolution [Mal de gorge et difficultés à avaler depuis 2 semaines]",
+            "Localisation et irradiation de la douleur",
+            "Caractéristiques et intensité",
+            "Facteurs aggravants et soulageants",
+            "Symptômes associés"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Antécédents médicaux et chirurgicaux",
+          "details": [
+            "Fatigue, appétit diminué",
+            "Colocataire malade",
+            "Appendicectomie il y a 20 ans",
+            "Allergie pénicilline",
+            "Écoulement urétral traité il y a 6 mois"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Histoire sociale et habitudes de vie",
+          "details": [
+            "Professeur de tennis",
+            "Fume 1 pqt/j × 10 ans",
+            "Alcool modéré",
+            "Partenaires sexuels multiples (H/F), utilisation occasionnelle du préservatif"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Signes vitaux",
+          "binaryOnly": true
+        },
+        {
+          "id": "e2",
+          "text": "Examen de la tête et du cou",
+          "details": [
+            "PERRLA",
+            "Examen ORL complet",
+            "Palpation thyroïde",
+            "Recherche ganglions lymphatiques"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Examen cardio-pulmonaire",
+          "details": [
+            "Auscultation cardiaque [S1 et S2 normaux]",
+            "Recherche de souffles ou galop",
+            "Auscultation pulmonaire bilatérale",
+            "Recherche de râles ou sibilances"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Examen abdominal si pertinent",
+          "details": [
+            "Palpation QSG [sensibilité]"
+          ]
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostics différentiels à évoquer",
+          "ddSection": {
+            "title": "Hypothèses diagnostiques",
+            "categories": [
+              {
+                "name": "Diagnostics principaux",
+                "items": [
+                  {
+                    "text": "Pharyngite virale",
+                    "cause": "Arguments POUR:\n\t□ Mal de gorge, fièvre, contact avec personne malade",
+                    "test": "→ Test rapide streptocoque"
+                  },
+                  {
+                    "text": "Mononucléose infectieuse",
+                    "cause": "Arguments POUR:\n\t□ Mal de gorge, fatigue, douleur QSG, contact malade",
+                    "test": "→ Test monospot, NFS"
+                  },
+                  {
+                    "text": "Infection VIH",
+                    "cause": "Arguments POUR:\n\t□ Partenaires multiples, pratiques à risque, symptômes constitutionnels",
+                    "test": "→ Test VIH, charge virale"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Examens complémentaires pertinents",
+          "details": [
+            "Test rapide streptocoque",
+            "Test monospot",
+            "Charge virale VIH",
+            "Numération CD4",
+            "US abdominale"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Plan de prise en charge",
+          "details": [
+            "Investigations ambulatoires",
+            "Traitement symptomatique si approprié",
+            "Suivi après résultats"
+          ]
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour le patient standardisé",
+      "nom": "M. Donald Mavic",
+      "age": "35 ans",
+      "contexte": "Cabinet de médecine générale",
+      "motifConsultation": {
+        "plaintePrincipale": "mal de gorge",
+        "autreChose": "Mal de gorge et difficultés à avaler depuis 2 semaines. Fièvre à 101°F. Douleur abdominale légère 3/10 au QSG."
+      },
+      "histoireActuelle": {
+        "symptomesPrincipaux": [
+          "Mal de gorge et difficultés à avaler depuis 2 semaines",
+          " Fièvre à 101°F",
+          " Douleur abdominale légère 3/10 au QSG"
+        ],
+        "contextePsychosocial": [
+          "Professeur de tennis",
+          " Fume 1 pqt/j × 10 ans",
+          " Alcool modéré",
+          " Partenaires sexuels multiples (H/F), utilisation occasionnelle du préservatif"
+        ]
+      },
+      "simulation": {
+        "attitude": [
+          "Paraître fatigué",
+          "Montrer de l'inquiétude"
+        ],
+        "durantExamen": [
+          "Sensibilité QSG à la palpation"
+        ]
+      },
+      "inquietudes": {
+        "principales": [
+          "Les symptômes sont-ils indicatifs du VIH?",
+          "Puis-je participer au tournoi de tennis?"
+        ]
+      }
+    },
+    "informationsExpert": {
+      "titre": "Informations pour l'expert",
+      "pointsCles": [
+        "Cas de Mal de gorge",
+        "Patient: Homme de 35 ans",
+        "Évaluation de l'anamnèse ciblée",
+        "Examen physique pertinent",
+        "Diagnostic différentiel approprié"
+      ],
+      "pieges": [
+        "Ne pas explorer les pratiques sexuelles à risque",
+        "Oublier la mononucléose"
+      ]
+    }
+  }
+}

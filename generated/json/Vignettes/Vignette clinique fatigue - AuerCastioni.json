@@ -1,0 +1,301 @@
+{
+  "title": "Vignette clinique fatigue - AuerCastioni",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Plusieurs cas cliniques de fatigue: 1) Homme 19 ans avec mononucléose, 2) Femme 72 ans insuffisance surrénalienne, 3) Femme 48 ans syndrome apnées du sommeil, 4) Femme 34 ans avec anémie, 5) Homme 54 ans avec hypothyroïdie, 6) Homme 72 ans avec néoplasie pulmonaire"
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Cas 1 - Homme 19 ans: Mononucléose infectieuse",
+          "details": [
+            "Fatigue importante [Motif principal]",
+            "Maux de gorge gauche [Depuis 1 semaine]",
+            "Pas d'état fébrile [Afébrile 37.1°C]",
+            "Pas de toux [Absence]",
+            "ATCD angine streptocoque [Il y a 1 an]"
+          ]
+        },
+        {
+          "id": "a2",
+          "text": "Cas 2 - Femme 72 ans: Insuffisance surrénalienne",
+          "details": [
+            "Fatigue importante [Aide pour marcher]",
+            "Faiblesse survenue rapidement",
+            "Inappétence et nausées [Sans vomissements]",
+            "Pas de douleur [Absence]",
+            "Pas de perte de poids",
+            "Polyarthrite rhumatoïde [Corticothérapie dégressive]"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Cas 3 - Femme 48 ans: Syndrome apnées sommeil",
+          "details": [
+            "Troubles du sommeil [Difficultés endormissement]",
+            "Réveil matinal précoce [Sans retour sommeil]",
+            "Pas reposée [Fatigue diurne]",
+            "Hypersomnolence diurne [Score Epworth 18/24]",
+            "Pas de ronflements rapportés [Par entourage]",
+            "BMI 30.4 kg/m² [Obésité]"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Cas 4 - Femme 34 ans: Maladie cœliaque probable",
+          "details": [
+            "Fatigue importante [Depuis 3 mois]",
+            "Perte pondérale [7 kg en 3 mois]",
+            "Inconfort abdominal [Avec diarrhées 1.5 mois]",
+            "Difficultés de couple [Après 3ème enfant]",
+            "Enfant avec maladie cœliaque [Régime sans gluten familial]",
+            "Éviction gluten stricte [Pour soutenir fils]"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Cas 5 - Homme 54 ans: Hypothyroïdie probable",
+          "details": [
+            "Fatigue progressive [Depuis 2 mois]",
+            "Douleurs main droite [Syndrome canal carpien?]",
+            "Prise de poids [5 kg récents]",
+            "Tabagisme actif [30 UPA]",
+            "Cauchemars et sueurs nocturnes [Atypique pour hypothyroïdie]"
+          ]
+        },
+        {
+          "id": "a6",
+          "text": "Cas 6 - Homme 72 ans: Néoplasie pulmonaire",
+          "details": [
+            "Fatigue [Symptôme principal]",
+            "Toux chronique non productive [Augmentation 3 semaines]",
+            "Hémoptysies [Depuis la veille]",
+            "Épistaxis récurrentes [2-3x/an, électrocoagulation]",
+            "Ex-fumeur [20 UPA]",
+            "Pas de fièvre ni frissons"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Examen Cas 1 - Mononucléose",
+          "details": [
+            "T° 37.1°C [Subfébrile]",
+            "TA 110/72, FC 77/min",
+            "Fond gorge érythémateux [Exsudat tonsillaire G]",
+            "Adénopathies sous-mandibulaires [>1cm bilatérales]",
+            "Pas d'autres adénopathies",
+            "Abdomen sans organomégalie"
+          ]
+        },
+        {
+          "id": "e2",
+          "text": "Examen Cas 2 - Insuffisance surrénalienne",
+          "details": [
+            "TA variable [Hypotension orthostatique?]",
+            "T° 36.5°C",
+            "Faiblesse musculaire importante",
+            "Reste examen normal",
+            "Pas d'hyperpigmentation [Forme secondaire]"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Examen Cas 3 - Syndrome apnées",
+          "details": [
+            "BMI 30.4 kg/m² [75kg/157cm]",
+            "Score Mallampati IV [Obstruction supraglottique]",
+            "TA 138/84, FC 84/min",
+            "Auscultation cardiopulmonaire normale"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Examen Cas 6 - Néoplasie",
+          "details": [
+            "T° 37.8°C [Subfébrile]",
+            "État général conservé",
+            "Auscultation pulmonaire [À préciser]",
+            "Pas de syndrome cave supérieur"
+          ]
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic et examens Cas 1 - Mononucléose",
+          "ddSection": {
+            "title": "Diagnostics différentiels angine fébrile jeune adulte",
+            "categories": [
+              {
+                "name": "Diagnostic probable",
+                "items": [
+                  {
+                    "text": "Mononucléose infectieuse",
+                    "cause": "Arguments POUR:\n\t□ Âge typique (19 ans)\n\t□ Fatigue intense\n\t□ Angine avec exsudat\n\t□ Adénopathies >1cm\n\t□ Transaminases élevées\n\t□ Lymphocytes 43% (4.8 G/L)",
+                    "test": "→ MNI test, sérologie EBV"
+                  }
+                ]
+              },
+              {
+                "name": "Autres causes",
+                "items": [
+                  {
+                    "text": "Angine streptococcique",
+                    "cause": "Score Centor/McIsaac:\n\t□ Exsudat: +1\n\t□ Adénopathies: +1\n\t□ Pas de toux: +1\n\t□ Fièvre: 0\n\t□ Âge <45: 0",
+                    "test": "→ Test streptocoque rapide"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Diagnostic Cas 2 - Insuffisance surrénalienne secondaire",
+          "details": [
+            "Sevrage corticoïdes [Cause principale]",
+            "Feedback négatif hypothalamo-hypophysaire",
+            "Pas de production CRF/ACTH",
+            "Test synacthène [Confirme diagnostic]",
+            "Cortisol bas le matin",
+            "ACTH bas [Forme secondaire]"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Diagnostic Cas 3 - Syndrome apnées obstructives",
+          "details": [
+            "Score Epworth >15 [Somnolence sévère]",
+            "Score NoSAS ≥8 [Indication polysomnographie]",
+            "Mallampati IV [Facteur de risque]",
+            "BMI >30 [Obésité]",
+            "Oxymétrie nocturne [1er temps]",
+            "Polysomnographie [Gold standard]"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Causes d'anémie selon profil biologique",
+          "details": [
+            "Cas a: MCV 99, ferritine 150 [Alcool - carence B12/toxicité]",
+            "Cas b: MCV 71, ferritine 5 [Ferriprive - hyperménorrhée]",
+            "Cas c: MCV 80, ferritine 96, CRP 55 [Inflammatoire - tumeur]",
+            "Cas d: MCV 75, ferritine 37, CRP 67 [Saignement + inflammation]",
+            "Cas e: MCV 88, ferritine 250, CRP 100 [PR ou maladie systémique]"
+          ]
+        },
+        {
+          "id": "m5",
+          "text": "Diagnostic Cas 6 - Néoplasie pulmonaire",
+          "details": [
+            "Rx thorax: 2 nodules + masse médiastinale",
+            "Pas de bronchogramme aérique [Exclut pneumonie]",
+            "Hémoptysies + épistaxis [Saignements multiples]",
+            "CRP 59 mg/L [Inflammation]",
+            "CT thorax indiqué [Bilan extension]",
+            "Bronchoscopie + biopsie [Diagnostic histologique]"
+          ]
+        },
+        {
+          "id": "m6",
+          "text": "Traitement selon étiologie",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Mononucléose",
+                "content": "• Repos\n• Antalgiques/antipyrétiques\n• Éviter amoxicilline (rash)\n• Éviter sports contact 1 mois\n• Surveillance rate"
+              },
+              {
+                "title": "Insuffisance surrénalienne",
+                "content": "• Hydrocortisone substitution\n• Augmentation doses si stress\n• Éducation patient\n• Carte insuffisance surrénalienne"
+              },
+              {
+                "title": "Syndrome apnées",
+                "content": "• CPAP nocturne\n• Perte de poids\n• Position latérale\n• Éviter alcool/sédatifs\n• Chirurgie si échec"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Messages clés - Fatigue chez le jeune",
+          "content": "• Mononucléose: triade fatigue + angine + adénopathies\n• Transaminases élevées orientent le diagnostic\n• Score Centor/McIsaac pour angine bactérienne\n• Éviter amoxicilline si suspicion MNI (rash)\n• Repos 4-6 semaines, éviter sports contact"
+        },
+        {
+          "id": "c2",
+          "text": "Messages clés - Insuffisance surrénalienne",
+          "content": "• Secondaire si corticothérapie prolongée\n• Sevrage progressif indispensable\n• Faiblesse + hypotension + hyponatrémie\n• Test synacthène confirme diagnostic\n• Substitution à vie parfois nécessaire\n• Augmenter doses si stress/maladie"
+        },
+        {
+          "id": "c3",
+          "text": "Messages clés - Diagnostic différentiel fatigue",
+          "content": "• Anémie: NFS + ferritine + CRP orientent\n• Hypothyroïdie: TSH systématique si fatigue\n• SAOS: Epworth + Mallampati + BMI\n• Cancer: red flags (amaigrissement, hémoptysies)\n• Approche systématique indispensable\n• Examens ciblés selon contexte"
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "theoriePratique": {
+      "titre": "Approche diagnostique de la fatigue",
+      "sections": [
+        {
+          "titre": "Score d'Epworth",
+          "points": [
+            "0-10: Somnolence normale",
+            "11-15: Somnolence légère à modérée",
+            "16-24: Somnolence sévère",
+            "Indication polysomnographie si >10 + symptômes"
+          ]
+        },
+        {
+          "titre": "Score Centor/McIsaac",
+          "points": [
+            "Fièvre >38°C: +1",
+            "Absence de toux: +1",
+            "Adénopathies cervicales sensibles: +1",
+            "Exsudat amygdalien: +1",
+            "Âge 3-14 ans: +1",
+            "Âge >45 ans: -1",
+            "Score ≥3: test streptocoque indiqué"
+          ]
+        },
+        {
+          "titre": "Types d'anémie selon VGM et ferritine",
+          "contenu": "• Microcytaire (VGM <80): ferriprive, thalassémie, inflammation chronique\n• Normocytaire (80-100): hémorragie aiguë, hémolyse, IRC, inflammation\n• Macrocytaire (>100): carence B12/folates, alcool, hypothyroïdie, médicaments"
+        }
+      ],
+      "rappelsTherapeutiques": [
+        "MNI: symptomatique, repos 4-6 semaines",
+        "Insuffisance surrénalienne: hydrocortisone 15-25mg/j",
+        "SAOS: CPAP première ligne si IAH >15",
+        "Anémie ferriprive: fer PO 100-200mg/j",
+        "Hypothyroïdie: lévothyroxine selon TSH",
+        "Néoplasie: selon histologie et stade"
+      ],
+      "examensComplementaires": [
+        "Fatigue: NFS, ferritine, TSH, créatinine, glycémie",
+        "MNI: MNI test, transaminases, NFS",
+        "SAOS: oxymétrie puis polysomnographie",
+        "Insuffisance surrénalienne: cortisol 8h, ACTH, synacthène",
+        "Anémie: ferritine, B12, folates, CRP, électrophorèse Hb",
+        "Suspicion cancer: imagerie adaptée, marqueurs tumoraux"
+      ]
+    }
+  }
+}

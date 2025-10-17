@@ -1,0 +1,505 @@
+{
+  "title": "Malaise chez l'enfant - Suspicion d'épilepsie-absences",
+  "context": {
+    "setting": "Cabinet du pédiatre",
+    "patient": "Annette, fille de 6 ans en bonne santé, consultation car l'enseignante de 1ère primaire s'est plainte qu'Annette n'écoutait pas toujours. Épisodes de déconnexion brefs observés par l'institutrice, enfant semble parfois être perdue dans ses rêveries avec un regard lointain"
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Anamnèse actuelle des malaises",
+          "binaryOnly": true,
+          "details": [
+            "Description des épisodes [reste immobile, regard perdu, ne répond pas aux sollicitations]",
+            "Caractère identique [oui, toujours similaires]",
+            "Durée [environ 10 secondes]",
+            "Fréquence [depuis 3 mois, plusieurs fois par jour]",
+            "Moment survenue [surtout le soir, lorsqu'elle est fatiguée ou s'ennuie]",
+            "Facteurs provocants [aucun identifié]",
+            "Observés à l'école [oui, remarqués par l'institutrice]"
+          ]
+        },
+        {
+          "id": "a2",
+          "text": "Caractérisation précise des épisodes",
+          "details": [
+            "Perte de conscience [elle ne répond pas aux sollicitations]",
+            "Activité motrice [reste immobile, regard fixe]",
+            "Durée précise [10 secondes environ]",
+            "Récupération [immédiate, sans confusion]",
+            "Amnésie de l'épisode [oui, ne se souvient de rien]",
+            "Circonstances [à table, en classe, activités calmes]",
+            "Évolution [stable depuis début]"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Recherche signes associés et contexte",
+          "details": [
+            "Antécédents traumatiques [non]",
+            "Maladies récentes [non]",
+            "Accidents [non]",
+            "Problèmes psychologiques [pas de conflits reconnus]",
+            "Performance scolaire [en 1ère P, très bonne élève]",
+            "Comportement général [normal entre les épisodes]",
+            "Fatigue [épisodes plus fréquents si fatiguée]"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Anamnèse familiale",
+          "details": [
+            "Épilepsie familiale [non, sauf petit frère convulsions fébriles]",
+            "Malaises similaires [aucune autre personne de la famille]",
+            "Antécédents neurologiques [aucun]",
+            "Convulsions [frère : 2 convulsions fébriles]",
+            "Troubles du développement [aucun]",
+            "Consanguinité [non]"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Conscience des épisodes",
+          "details": [
+            "Annette consciente [ne sait pas qu'elle 'perd le fil']",
+            "Ressenti personnel [aucun]",
+            "Aura [aucune sensation particulière]",
+            "Phase post-critique [aucune, reprise immédiate activité]",
+            "Impact fonctionnel [décrochage scolaire occasionnel]",
+            "Inquiétude enfant [non, inconsciente des épisodes]"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Examen général",
+          "binaryOnly": true,
+          "patientComment": "Enfant en bon état général, développement staturo-pondéral normal, coopérante"
+        },
+        {
+          "id": "e2",
+          "text": "Examen neurologique détaillé",
+          "details": [
+            "État de conscience [normal, vigilante]",
+            "Fonctions supérieures [langage, mémoire, attention normaux]",
+            "Nerfs crâniens [normaux]",
+            "Motricité [force, tonus, coordination normaux]",
+            "Réflexes [ostéo-tendineux vifs symétriques]",
+            "Sensibilité [normale]",
+            "Marche et équilibre [normaux]"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Recherche de signes neurologiques focaux",
+          "details": [
+            "Déficit moteur [aucun]",
+            "Déficit sensitif [aucun]",
+            "Troubles visuels [aucun]",
+            "Troubles du langage [aucun]",
+            "Troubles cognitifs [aucun]",
+            "Signes cérébelleux [aucun]",
+            "Signes méningés [aucun]"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Examen cardiovasculaire",
+          "details": [
+            "Fréquence cardiaque [normale pour l'âge]",
+            "Tension artérielle [normale]",
+            "Auscultation cardiaque [normale]",
+            "Pouls périphériques [présents, symétriques]",
+            "Signes d'insuffisance cardiaque [aucun]",
+            "Test orthostatique [normal]"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Recherche facteurs déclenchants",
+          "details": [
+            "Hyperpnée volontaire [à tester lors de l'EEG]",
+            "Stimulation lumineuse [photosensibilité à évaluer]",
+            "Fatigue [facteur favorisant rapporté]",
+            "Stress [environnement scolaire à évaluer]",
+            "Hypoglycémie [peu probable vu le contexte]",
+            "Hyperventilation [test à réaliser]"
+          ]
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic et diagnostics différentiels",
+          "ddSection": {
+            "title": "Diagnostics différentiels des pertes de connaissance brèves chez l'enfant",
+            "categories": [
+              {
+                "name": "Diagnostic principal",
+                "items": [
+                  {
+                    "text": "Épilepsie-absences typiques",
+                    "cause": "Arguments POUR:\n\t□ Âge typique (5-7 ans)\n\t□ Fille > garçon\n\t□ Épisodes brefs (10 secondes)\n\t□ Perte de conscience complète\n\t□ Regard fixe, immobilité\n\t□ Récupération immédiate\n\t□ Fréquence élevée (plusieurs/jour)\n\t□ Déclenchement par fatigue",
+                    "test": "→ EEG avec test d'hyperpnée: décharges 3 Hz généralisées"
+                  }
+                ]
+              },
+              {
+                "name": "Autres formes d'épilepsie",
+                "items": [
+                  {
+                    "text": "Épilepsie focale temporale",
+                    "cause": "Arguments CONTRE:\n\t□ Pas d'aura\n\t□ Pas d'automatismes\n\t□ Durée trop courte\n\t□ Récupération immédiate",
+                    "test": "→ EEG: foyer temporal si présent"
+                  },
+                  {
+                    "text": "Épilepsie myoclonique",
+                    "cause": "Arguments CONTRE:\n\t□ Pas de secousses musculaires\n\t□ Immobilité complète\n\t□ Pas de chute",
+                    "test": "→ EEG: décharges polypointes-ondes"
+                  }
+                ]
+              },
+              {
+                "name": "Causes non épileptiques",
+                "items": [
+                  {
+                    "text": "Syncope vasovagale",
+                    "cause": "Arguments CONTRE:\n\t□ Position assise/debout non requise\n\t□ Pas de prodromes\n\t□ Durée trop courte\n\t□ Fréquence trop élevée",
+                    "test": "→ Test orthostatique, ECG"
+                  },
+                  {
+                    "text": "Troubles du rythme cardiaque",
+                    "cause": "Arguments CONTRE:\n\t□ Examen cardiaque normal\n\t□ Contexte non évocateur\n\t□ Absence palpitations",
+                    "test": "→ ECG, Holter si doute"
+                  },
+                  {
+                    "text": "Hypoglycémie",
+                    "cause": "Arguments CONTRE:\n\t□ Pas de relation aux repas\n\t□ Récupération immédiate\n\t□ Pas de signes neuroglycopéniques",
+                    "test": "→ Glycémie capillaire lors d'un épisode"
+                  },
+                  {
+                    "text": "Trouble psychologique (rêveries)",
+                    "cause": "Arguments CONTRE:\n\t□ Impossible de interrompre épisode\n\t□ Regard vraiment fixe\n\t□ Amnésie complète\n\t□ Observé en classe",
+                    "test": "→ Observation comportementale, EEG"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Examens complémentaires",
+          "details": [
+            "EEG avec hyperpnée [examen clé pour diagnostic]",
+            "EEG standard [recherche activité de fond]",
+            "Test d'hyperpnée [déclenchement décharges 3 Hz]",
+            "Stimulation lumineuse [photosensibilité rare dans absences]",
+            "EEG de sommeil [si EEG veille normal]",
+            "Glycémie [éliminer hypoglycémie]",
+            "Ionogramme [recherche troubles métaboliques]"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "EEG et confirmation diagnostique",
+          "details": [
+            "Tracé de fond [normal pour l'âge]",
+            "Décharges généralisées [pointes-ondes 3 Hz typiques]",
+            "Déclenchement hyperpnée [test positif]",
+            "Durée décharges [corrélée aux absences cliniques]",
+            "Latéralisation [absente, décharges symétriques]",
+            "Photosensibilité [rare dans épilepsie-absences]",
+            "Confirmation diagnostic [EEG pathognomonique]"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Traitement des épilepsies-absences",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Traitement médicamenteux première ligne",
+                "items": [
+                  {
+                    "treatment": "Acide valproïque (Dépakine)",
+                    "details": "15-20 mg/kg/j en 2 prises, efficacité excellente",
+                    "duration": "Traitement au long cours"
+                  },
+                  {
+                    "treatment": "Éthosuximide (Zarontin)",
+                    "details": "15-30 mg/kg/j, spécifique des absences",
+                    "duration": "Alternative si intolérance valproate"
+                  }
+                ]
+              },
+              {
+                "title": "Surveillance traitement",
+                "items": [
+                  {
+                    "treatment": "Efficacité clinique",
+                    "details": "Disparition complète des absences attendue",
+                    "duration": "Évaluation à 2-4 semaines"
+                  },
+                  {
+                    "treatment": "Contrôle EEG",
+                    "details": "Normalisation attendue sous traitement",
+                    "duration": "À 3-6 mois"
+                  },
+                  {
+                    "treatment": "Dosages sanguins",
+                    "details": "Valproatémie, bilan hépatique",
+                    "duration": "Réguliers première année"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m5",
+          "text": "Mesures non médicamenteuses",
+          "details": [
+            "Information école [enseignants informés du diagnostic]",
+            "Éviter facteurs déclenchants [fatigue, stress]",
+            "Sommeil régulier [horaires fixes, durée suffisante]",
+            "Activités normales [pas de restriction sauf conduite]",
+            "Sport autorisé [surveillance natation]",
+            "Suivi psychologique [si retentissement scolaire]",
+            "Éducation famille [reconnaissance crises, observance]"
+          ]
+        },
+        {
+          "id": "m6",
+          "text": "Pronostic et évolution",
+          "details": [
+            "Évolution favorable [90% de rémission complète]",
+            "Âge d'amélioration [souvent vers 12-15 ans]",
+            "Arrêt traitement [possible après 2-3 ans sans crise]",
+            "Surveillance EEG [normalisation progressive]",
+            "Récidive [rare si arrêt progressif et tardif]",
+            "Développement normal [intellectuel et social]",
+            "Transformation [rare vers épilepsie généralisée]"
+          ]
+        },
+        {
+          "id": "m7",
+          "text": "Suivi et surveillance",
+          "redflagsSection": {
+            "title": "Signes d'alerte nécessitant réévaluation urgente",
+            "items": [
+              {
+                "text": "Changement type de crises",
+                "description": "Apparition crises tonico-cloniques généralisées"
+              },
+              {
+                "text": "Augmentation fréquence",
+                "description": "Récidive malgré traitement bien conduit"
+              },
+              {
+                "text": "État de mal d'absences",
+                "description": "Absences prolongées ou état confusionnel"
+              },
+              {
+                "text": "Effets secondaires médicaments",
+                "description": "Hépatotoxicité, troubles hématologiques"
+              },
+              {
+                "text": "Retentissement scolaire",
+                "description": "Difficultés d'apprentissage persistantes"
+              },
+              {
+                "text": "Troubles comportementaux",
+                "description": "Hyperactivité, troubles attentionnels"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Information parentale - Diagnostic",
+          "content": "Annette présente ce qu'on appelle une épilepsie-absences. Ce sont des épisodes brefs où elle décroche complètement, comme si elle était dans la lune. C'est une forme d'épilepsie bénigne, très fréquente chez les enfants de son âge. Avec un traitement adapté, ces absences vont disparaître complètement et elle pourra mener une vie tout à fait normale."
+        },
+        {
+          "id": "c2",
+          "text": "Information parentale - Traitement et pronostic",
+          "content": "Le traitement par médicaments antiépileptiques est très efficace dans ce type d'épilepsie. Dans 90% des cas, les enfants guérissent complètement à l'adolescence. Annette pourra faire toutes les activités normales pour son âge. Il faudra juste informer l'école et surveiller qu'elle ne soit pas trop fatiguée."
+        },
+        {
+          "id": "c3",
+          "text": "Questions fréquentes des parents",
+          "content": "[Est-ce grave docteur ?]\n[Va-t-elle guérir ?]\n[Faut-il qu'elle évite certaines activités ?]\n[Comment va réagir l'école ?]\n[Y a-t-il des effets secondaires au traitement ?]\n[Peut-elle transmettre ça à ses enfants ?]"
+        },
+        {
+          "id": "c4",
+          "text": "Réponse type du candidat",
+          "exemplesPhrases": [
+            "\"Non, c'est une forme bénigne d'épilepsie. Avec le traitement, elle aura une vie parfaitement normale.\"",
+            "\"Oui, dans 90% des cas, les enfants guérissent spontanément vers l'adolescence.\"",
+            "\"Elle peut faire du sport et toutes les activités normales. Juste faire attention à la piscine.\"",
+            "\"L'école doit être informée pour comprendre ces petits décrochages et adapter si nécessaire.\"",
+            "\"Les effets secondaires sont rares chez l'enfant. On surveillera avec des prises de sang.\"",
+            "\"Il y a un terrain familial mais ce n'est pas systématiquement héréditaire.\""
+          ]
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour la mère et l'enfant standardisées",
+      "nom": "Mère d'Annette et Annette (6 ans)",
+      "contexte": "Cabinet de pédiatrie",
+      "motifConsultation": {
+        "plaintePrincipale": "L'institutrice dit qu'Annette n'écoute pas toujours",
+        "autreChose": "Elle semble parfois dans la lune avec un regard vide"
+      },
+      "histoireActuelle": {
+        "observationsMere": [
+          "Je l'ai remarqué aussi à la maison",
+          "Elle s'arrête parfois de manger et fixe le vide",
+          "Ça dure une dizaine de secondes",
+          "Puis elle reprend comme si de rien n'était",
+          "Elle ne se souvient de rien quand je lui demande"
+        ],
+        "observationsEcole": [
+          "L'institutrice dit qu'elle décroche parfois",
+          "Elle ne répond pas quand on l'appelle",
+          "Ça arrive plusieurs fois par jour",
+          "Surtout en fin de journée quand elle est fatiguée"
+        ]
+      },
+      "inquietudes": {
+        "principales": [
+          "Est-ce normal à son âge ?",
+          "Est-ce qu'elle fait exprès ?",
+          "Y a-t-il un problème neurologique ?",
+          "Est-ce que ça va affecter sa scolarité ?"
+        ],
+        "questions": [
+          "Faut-il faire des examens ?",
+          "Est-ce grave ?",
+          "Comment aider à l'école ?"
+        ]
+      },
+      "simulation": {
+        "attitude": [
+          "Mère attentive et observatrice",
+          "Légèrement inquiète mais rationnelle",
+          "Bonne description des épisodes",
+          "Coopérante pour l'examen"
+        ],
+        "comportementEnfant": [
+          "Fillette vive et intelligente",
+          "Coopère bien à l'examen",
+          "Ne semble pas consciente du problème",
+          "Peut présenter un épisode durant la consultation"
+        ]
+      }
+    },
+    "informationsExpert": {
+      "titre": "Points clés pour l'évaluateur",
+      "pointsCles": [
+        "Reconnaître la présentation typique des absences épileptiques",
+        "Savoir différencier des rêveries ou troubles attentionnels",
+        "Connaître l'indication de l'EEG avec hyperpnée",
+        "Comprendre l'excellent pronostic de cette épilepsie",
+        "Savoir expliquer le diagnostic et rassurer les parents",
+        "Connaître les traitements de première ligne",
+        "Organiser le suivi et informer l'école"
+      ],
+      "pieges": [
+        "Banaliser comme des rêveries d'enfant",
+        "Omettre l'EEG avec test d'hyperpnée",
+        "Prescrire un traitement non adapté aux absences",
+        "Inquiéter inutilement sur le pronostic",
+        "Oublier d'informer l'école",
+        "Ne pas rechercher les facteurs déclenchants",
+        "Méconnaître l'évolution naturelle favorable"
+      ]
+    },
+    "theoriePratique": {
+      "titre": "Rappels théoriques - Épilepsie-absences de l'enfant",
+      "sections": [
+        {
+          "titre": "Épidémiologie et physiopathologie",
+          "points": [
+            "Incidence: 5-8/100,000 enfants par an",
+            "Âge: pic 5-7 ans, rare avant 4 ans et après 10 ans",
+            "Sexe: filles 2-3 fois plus fréquent",
+            "Hérédité: terrain familial fréquent (30%)",
+            "Mécanisme: décharges thalamo-corticales généralisées",
+            "Facteurs déclenchants: hyperpnée, fatigue, stress"
+          ]
+        },
+        {
+          "titre": "Sémiologie clinique",
+          "points": [
+            "Début brutal: arrêt activité en cours",
+            "Durée: 5-20 secondes (moyenne 10 secondes)",
+            "Conscience: abolition complète",
+            "Motricité: arrêt complet, regard fixe",
+            "Automatismes: rares (clignements, mastication)",
+            "Récupération: immédiate, amnésie complète",
+            "Fréquence: plusieurs par jour à centaines"
+          ]
+        },
+        {
+          "titre": "EEG et diagnostic",
+          "points": [
+            "Tracé de fond: normal entre les crises",
+            "Décharges: pointes-ondes 3 Hz généralisées",
+            "Hyperpnée: déclenchement en 1-3 minutes",
+            "Photostimulation: rarement photosensible",
+            "Corrélation clinique: décharge = absence",
+            "Évolution: normalisation sous traitement"
+          ]
+        },
+        {
+          "titre": "Traitement et pronostic",
+          "points": [
+            "Première ligne: acide valproïque ou éthosuximide",
+            "Efficacité: > 90% de contrôle complet",
+            "Durée: 2-4 ans en moyenne",
+            "Rémission: 90% à l'adolescence",
+            "Suivi: EEG, développement cognitif",
+            "Complications: très rares"
+          ]
+        }
+      ],
+      "rappelsTherapeutiques": [
+        "Acide valproïque: 15-20 mg/kg/j, très efficace",
+        "Éthosuximide: 15-30 mg/kg/j, spécifique absences",
+        "Lamotrigine: alternative si intolérance",
+        "À éviter: carbamazépine, phénytoïne (aggravation)",
+        "Surveillance: clinique, EEG, biologie",
+        "Arrêt: progressif après 2-3 ans sans crise",
+        "Mesures associées: sommeil, éviter fatigue"
+      ],
+      "examensComplementaires": [
+        "EEG standard: recherche décharges 3 Hz",
+        "EEG avec hyperpnée: déclenchement absences",
+        "EEG de sommeil: si EEG veille normal",
+        "IRM cérébrale: non indiquée sauf atypie",
+        "Biologie: ionogramme, glycémie",
+        "Dosages médicaments: valproatémie",
+        "Bilan hépatique: surveillance sous valproate"
+      ]
+    }
+  }
+}

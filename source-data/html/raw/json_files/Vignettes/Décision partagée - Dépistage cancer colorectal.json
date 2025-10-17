@@ -1,0 +1,491 @@
+{
+  "title": "Décision partagée - Dépistage cancer colorectal",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Homme de 52 ans, employé de banque, consulte pour contrôle et s'interroge sur le dépistage colorectal",
+    "vitals": {
+      "ta": "135/82 mmHg",
+      "fc": "72 bpm",
+      "fr": "16/min",
+      "temperature": "36.8°C"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Explorer les connaissances préalables du patient",
+          "details": [
+            "Connaissances générales [Un collègue m'a dit qu'il fallait faire quelque chose]",
+            "Expériences personnelles [Jamais fait de dépistage]",
+            "Entourage [Mon père a eu des polypes]",
+            "Sources d'information [Internet, discussions]",
+            "Appréhensions exprimées [J'ai entendu parler de coloscopie]"
+          ],
+          "exemplesPhrases": [
+            "\"Qu'est-ce que vous savez déjà sur le dépistage du cancer colorectal?\"",
+            "\"Qu'est-ce qui vous amène à vous poser cette question maintenant?\""
+          ]
+        },
+        {
+          "id": "a2",
+          "text": "Évaluer les facteurs de risque personnels",
+          "details": [
+            "Âge [52 ans, dans la tranche de dépistage]",
+            "Antécédents familiaux [Père: polypes à 60 ans]",
+            "Antécédents personnels [Aucun trouble digestif]",
+            "Habitudes de vie [Sédentarité, alimentation riche]",
+            "Symptômes actuels [Aucun symptôme digestif]"
+          ],
+          "patientComment": "Mon père a eu des polypes il y a quelques années, depuis je me pose des questions"
+        },
+        {
+          "id": "a3",
+          "text": "Explorer les préoccupations et attentes",
+          "details": [
+            "Préoccupations majeures [Peur du cancer, hérédité]",
+            "Attentes vis-à-vis du dépistage [Être rassuré]",
+            "Contraintes personnelles [Emploi du temps chargé]",
+            "Appréhensions procédures [Peur des examens invasifs]",
+            "Motivations [Prévention, santé famille]"
+          ],
+          "exemplesPhrases": [
+            "\"Qu'est-ce qui vous inquiète le plus concernant le cancer colorectal?\"",
+            "\"Qu'attendez-vous du dépistage?\""
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Identifier les valeurs et préférences personnelles",
+          "details": [
+            "Rapport au risque [Plutôt prudent en général]",
+            "Tolérance aux examens [Préfère éviter l'invasif]",
+            "Autonomie vs guidance [Aime comprendre avant décider]",
+            "Temps disponible [Contraintes professionnelles]",
+            "Soutien familial [Épouse encourage dépistage]"
+          ],
+          "patientComment": "J'aime bien comprendre les choses avant de me décider"
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Présenter les principes du dépistage",
+          "details": [
+            "Objectif principal [Détecter lésions précancéreuses]",
+            "Population cible [50-69 ans, risque standard]",
+            "Fréquence recommandée [Variable selon méthode]",
+            "Bénéfices attendus [Réduction mortalité 15-20%]",
+            "Concept de surdiagnostic [Lésions non évolutives]"
+          ],
+          "exemplesPhrases": [
+            "\"Le dépistage vise à détecter des lésions avant qu'elles deviennent cancéreuses\"",
+            "\"Il existe plusieurs méthodes, chacune avec ses avantages et inconvénients\""
+          ]
+        },
+        {
+          "id": "e2",
+          "text": "Expliquer l'option test FIT (immunologique)",
+          "details": [
+            "Principe [Recherche sang occulte dans selles]",
+            "Modalités pratiques [À domicile, échantillon selles]",
+            "Fréquence [Tous les 2 ans]",
+            "Sensibilité [85% pour cancers, 50% polypes]",
+            "Avantages [Simple, non invasif, peu coûteux]"
+          ],
+          "ddSection": {
+            "title": "Test FIT - Avantages et inconvénients",
+            "categories": [
+              {
+                "name": "Avantages",
+                "items": [
+                  {
+                    "text": "Simplicité",
+                    "cause": "Arguments POUR:\n\t□ Réalisable à domicile\n\t□ Pas de préparation\n\t□ Pas d'arrêt travail",
+                    "test": "→ Échantillon selles à analyser"
+                  },
+                  {
+                    "text": "Non invasif",
+                    "cause": "Arguments POUR:\n\t□ Aucun risque médical\n\t□ Pas d'anesthésie\n\t□ Confort optimal",
+                    "test": "→ Test à répéter tous les 2 ans"
+                  }
+                ]
+              },
+              {
+                "name": "Inconvénients",
+                "items": [
+                  {
+                    "text": "Sensibilité limitée",
+                    "cause": "Arguments CONTRE:\n\t□ Manque 50% des polypes\n\t□ Faux négatifs possibles\n\t□ Répétition nécessaire",
+                    "test": "→ Coloscopie si test positif"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "e3",
+          "text": "Expliquer l'option coloscopie de dépistage",
+          "details": [
+            "Principe [Visualisation directe côlon]",
+            "Modalités pratiques [Préparation, sédation, endoscopie]",
+            "Fréquence [Tous les 10 ans si normale]",
+            "Sensibilité [95% cancers et polypes]",
+            "Aspect thérapeutique [Ablation polypes directe]"
+          ],
+          "ddSection": {
+            "title": "Coloscopie - Avantages et inconvénients",
+            "categories": [
+              {
+                "name": "Avantages",
+                "items": [
+                  {
+                    "text": "Précision diagnostique",
+                    "cause": "Arguments POUR:\n\t□ Sensibilité 95%\n\t□ Détection et traitement simultanés\n\t□ Fréquence 10 ans",
+                    "test": "→ Examen de référence"
+                  }
+                ]
+              },
+              {
+                "name": "Inconvénients",
+                "items": [
+                  {
+                    "text": "Contraintes",
+                    "cause": "Arguments CONTRE:\n\t□ Préparation intestinale\n\t□ Arrêt travail nécessaire\n\t□ Accompagnement requis",
+                    "test": "→ Organisation complexe"
+                  },
+                  {
+                    "text": "Risques",
+                    "cause": "Arguments CONTRE:\n\t□ Perforation 1/1000\n\t□ Hémorragie 1/1000\n\t□ Risques anesthésie",
+                    "test": "→ Surveillance post-examen"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "e4",
+          "text": "Présenter les données probantes",
+          "details": [
+            "Réduction mortalité [15-20% population générale]",
+            "Incidence cancer colorectal [1/20 hommes]",
+            "Efficacité comparative [Coloscopie > FIT détection]",
+            "Données participation [FIT: 60%, Coloscopie: 20%]",
+            "Coût-efficacité [FIT plus efficient population]"
+          ]
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Appliquer le processus de décision partagée",
+          "details": [
+            "Étape 1: Introduction problème [Présenter enjeu dépistage]",
+            "Étape 2: Information options [FIT vs Coloscopie équilibrée]",
+            "Étape 3: Évaluation préférences [Explorer valeurs patient]",
+            "Étape 4: Prise décision [Choix éclairé ensemble]",
+            "Vérification compréhension [Reformulation patient]"
+          ],
+          "exemplesPhrases": [
+            "\"Il n'y a pas une seule bonne réponse, cela dépend de vos priorités\"",
+            "\"Qu'est-ce qui compte le plus pour vous dans ce choix?\""
+          ]
+        },
+        {
+          "id": "m2",
+          "text": "Explorer les préférences personnelles",
+          "details": [
+            "Tolérance au risque [Accepte-t-il risque manquer lésions?]",
+            "Contraintes pratiques [Temps, organisation professionnelle]",
+            "Valeurs personnelles [Préférence simplicité vs précision]",
+            "Expériences antérieures [Examens médicaux passés]",
+            "Soutien entourage [Famille, proches]"
+          ],
+          "patientComment": "Je préférerais éviter la coloscopie si possible, mais si c'est vraiment mieux..."
+        },
+        {
+          "id": "m3",
+          "text": "Utiliser des outils d'aide à la décision",
+          "details": [
+            "Tableau comparatif [FIT vs Coloscopie synthèse]",
+            "Représentation risques [Pictogrammes fréquences]",
+            "Échelle préférences [Important pour vous: 1-10]",
+            "Questions reflexives [Que feriez-vous si...]",
+            "Temps réflexion [Pas de pression décision immédiate]"
+          ],
+          "ddSection": {
+            "title": "Aide à la décision - Tableau comparatif",
+            "categories": [
+              {
+                "name": "Critères de comparaison",
+                "items": [
+                  {
+                    "text": "Facilité réalisation",
+                    "cause": "FIT: +++\nColoscopie: +",
+                    "test": "→ FIT à domicile vs Coloscopie hôpital"
+                  },
+                  {
+                    "text": "Précision détection",
+                    "cause": "FIT: ++\nColoscopie: +++",
+                    "test": "→ Coloscopie détecte plus de lésions"
+                  },
+                  {
+                    "text": "Fréquence répétition",
+                    "cause": "FIT: 2 ans\nColoscopie: 10 ans",
+                    "test": "→ Engagement à long terme différent"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m4",
+          "text": "Planifier la mise en œuvre de la décision",
+          "details": [
+            "Choix exprimé [Test FIT pour commencer]",
+            "Modalités pratiques [Prescription, explications]",
+            "Suivi planifié [Résultats, prochaines étapes]",
+            "Plan si test positif [Coloscopie complémentaire]",
+            "Réévaluation future [Possibilité changer option]"
+          ],
+          "patientComment": "Je pense commencer par le test simple, on verra selon les résultats"
+        },
+        {
+          "id": "m5",
+          "text": "Respecter l'autonomie et le droit de refus",
+          "details": [
+            "Option refus dépistage [Droit légitime du patient]",
+            "Décision réversible [Possibilité reconsidérer]",
+            "Respect temporalité [Pas de pression temporelle]",
+            "Information continue [Évolution recommandations]",
+            "Support décision [Ressources complémentaires]"
+          ]
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Consolidation de la décision prise",
+          "content": "• Résumer le choix du patient et ses motivations\n• Confirmer sa compréhension des options\n• Son choix: \"Je vais commencer par le test FIT\"\n• Ses raisons: \"C'est plus simple et moins invasif pour débuter\"\n• Sa compréhension: \"Si c'est positif, il faudra faire la coloscopie\"\n• Son engagement: \"Je ferai le test et reviendrai pour les résultats\"",
+          "exemplesPhrases": [
+            "\"Vous avez pris une décision réfléchie qui vous correspond\"",
+            "\"L'important c'est que vous vous sentiez à l'aise avec ce choix\""
+          ]
+        },
+        {
+          "id": "c2",
+          "text": "Questions difficiles du patient",
+          "content": "[Est-ce que je prends un risque en ne faisant pas directement la coloscopie?]\n[Et si le test FIT rate quelque chose d'important?]\n[Mes antécédents familiaux changent-ils la donne?]\n[Que se passe-t-il si je ne fais rien du tout?]",
+          "exemplesPhrases": [
+            "\"Chaque option a ses avantages, il n'y a pas de choix parfait\"",
+            "\"Vos antécédents sont un facteur, mais pas le seul à considérer\"",
+            "\"L'important c'est de faire un choix éclairé qui vous convient\""
+          ]
+        },
+        {
+          "id": "c3",
+          "text": "Plan de suivi et réévaluation",
+          "content": "• Programmer retour pour résultats (10 jours)\n• Expliquer conduite selon résultats\n• Possibilité reconsidérer choix ultérieurement\n• Ressources d'information complémentaires\n• Contact si questions entre temps",
+          "exemplesPhrases": [
+            "\"On se revoit dans 10 jours pour les résultats\"",
+            "\"Vous pouvez toujours reconsidérer votre choix si vous changez d'avis\"",
+            "\"N'hésitez pas à m'appeler si vous avez des questions\""
+          ]
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "images": [
+      {
+        "id": "tableau_comparatif_colon",
+        "title": "Tableau comparatif - Test FIT vs Coloscopie",
+        "description": "Comparaison détaillée des deux options de dépistage du cancer colorectal : test de recherche de sang occulte dans les selles (FIT) et coloscopie de dépistage",
+        "filename": "decision-partagee/depistage-colon-tableau-comparatif.jpg"
+      },
+      {
+        "id": "deroulement_depistage_colon",
+        "title": "Déroulement du dépistage colorectal",
+        "description": "Schéma de décision montrant les étapes du dépistage colorectal, de la consultation initiale aux résultats selon l'option choisie",
+        "filename": "decision-partagee/depistage-colon-deroulement.jpg"
+      }
+    ],
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour le patient standardisé",
+      "nom": "M. Philippe Martin",
+      "age": "52 ans",
+      "contexte": "Cabinet de médecine générale, consultation préventive",
+      "motifConsultation": {
+        "plaintePrincipale": "Contrôle de routine, s'interroge sur dépistage colorectal",
+        "autreChose": "Discussion avec collègue qui a fait une coloscopie"
+      },
+      "histoireActuelle": {
+        "preoccupationActuelle": [
+          "Collègue a eu une coloscopie: \"Il m'a dit que c'était important\"",
+          "Antécédent paternel: \"Mon père a eu des polypes il y a quelques années\"",
+          "Interrogation sur nécessité: \"Je ne sais pas si je dois faire quelque chose\"",
+          "Pas de symptômes: \"Je me sens bien, aucun problème digestif\"",
+          "Appréhension: \"J'ai entendu parler de coloscopie, ça fait peur\""
+        ],
+        "connaissancesPrealables": [
+          "Connaissances limitées du dépistage",
+          "A entendu parler de coloscopie seulement",
+          "Ignore existence test selles",
+          "Sait que ça concerne le cancer du côlon",
+          "Pense que c'est obligatoire à 50 ans"
+        ],
+        "apprehensions": [
+          "Peur des examens invasifs",
+          "Contraintes professionnelles",
+          "Risques anesthésie",
+          "Préparation intestinale",
+          "Découvrir quelque chose de grave"
+        ],
+        "valeursPrioritaires": [
+          "Préfère la simplicité quand c'est possible",
+          "Évite les risques inutiles",
+          "Aime comprendre avant décider",
+          "Responsable familial",
+          "Professionnel organisé"
+        ]
+      },
+      "simulation": {
+        "attitude": [
+          "Curieux mais prudent",
+          "Ouvert aux explications",
+          "Légèrement anxieux",
+          "Rationnel dans réflexion",
+          "Responsable face à sa santé"
+        ],
+        "durantEntretien": [
+          "Commencer par exprimer questionnement",
+          "Mentionner antécédent paternel",
+          "Exprimer appréhensions coloscopie",
+          "Poser questions pratiques",
+          "Évoluer vers choix réfléchi"
+        ],
+        "phrasesTypes": [
+          "\"Un collègue m'a dit qu'il fallait faire quelque chose à 50 ans\"",
+          "\"Mon père a eu des polypes, ça m'inquiète un peu\"",
+          "\"J'ai entendu parler de coloscopie, ça a l'air compliqué\"",
+          "\"Je préférerais éviter si c'est possible\"",
+          "\"J'aime bien comprendre avant de me décider\"",
+          "\"Qu'est-ce que vous me conseillez?\"",
+          "\"C'est vraiment nécessaire à mon âge?\"",
+          "\"Le test simple, ça marche aussi bien?\""
+        ]
+      },
+      "anamneseSystemes": {
+        "digestive": ["Aucun symptôme", "Transit normal", "Pas de saignements"],
+        "generale": ["Forme correcte", "Pas d'amaigrissement", "Énergie normale"],
+        "familiale": ["Père: polypes côlon 60 ans", "Mère: bonne santé 78 ans"]
+      },
+      "habitudes": {
+        "alimentation": "Plutôt riche, repas d'affaires fréquents",
+        "activite": "Sédentaire, travail bureau",
+        "alcool": "Modéré, social principalement",
+        "tabac": "Ex-fumeur depuis 5 ans",
+        "stress": "Professionnel modéré"
+      },
+      "informationsPersonnelles": {
+        "profession": "Employé de banque, responsable clientèle",
+        "etatCivil": "Marié, deux enfants adolescents",
+        "hobbies": "Lecture, randonnée week-end",
+        "preoccupations": "Santé famille, carrière stable"
+      }
+    },
+    "informationsExpert": {
+      "titre": "Points clés pour l'expert évaluateur",
+      "pointsCles": [
+        "Évaluer l'application du processus de décision partagée en 4 étapes",
+        "Observer la présentation équilibrée des options FIT et coloscopie",
+        "Vérifier l'exploration des préférences et valeurs personnelles",
+        "Noter l'utilisation d'outils d'aide à la décision",
+        "Évaluer le respect de l'autonomie du patient",
+        "Observer la gestion des appréhensions sans minimisation",
+        "Vérifier la planification du suivi selon la décision"
+      ],
+      "pieges": [
+        "Orienter vers une option plutôt qu'une autre",
+        "Minimiser les inconvénients de la coloscopie",
+        "Surestimer les risques du test FIT",
+        "Imposer une décision basée sur les antécédents familiaux",
+        "Négliger les contraintes personnelles du patient",
+        "Donner trop d'informations techniques sans vérifier compréhension",
+        "Presser pour une décision immédiate"
+      ],
+      "criteresBonnePerformance": [
+        "Exploration non-directive des connaissances préalables",
+        "Présentation factuelle et équilibrée des options",
+        "Questions ouvertes sur les préférences personnelles",
+        "Utilisation d'outils visuels d'aide à la décision",
+        "Respect du temps de réflexion du patient",
+        "Plan de suivi adapté à la décision prise"
+      ]
+    },
+    "theoriePratique": {
+      "titre": "Décision partagée en médecine préventive",
+      "sections": [
+        {
+          "titre": "Les 4 étapes de la décision partagée",
+          "points": [
+            "1. Introduction du problème: Présenter l'enjeu et la nécessité de choisir",
+            "2. Information sur les options: Présenter équitablement toutes les alternatives",
+            "3. Évaluation des préférences: Explorer valeurs et priorités du patient",
+            "4. Prise de décision: Aboutir à un choix éclairé et consensuel"
+          ]
+        },
+        {
+          "titre": "Dépistage cancer colorectal - Données actuelles",
+          "points": [
+            "Population cible: 50-69 ans, risque standard",
+            "Test FIT: Sensibilité 85% cancers, 50% polypes avancés",
+            "Coloscopie: Sensibilité 95%, examens tous les 10 ans",
+            "Réduction mortalité: 15-20% avec dépistage organisé",
+            "Participation: FIT 60%, Coloscopie dépistage 20%"
+          ]
+        },
+        {
+          "titre": "Facteurs influençant les préférences",
+          "points": [
+            "Tolérance au risque et à l'incertitude",
+            "Contraintes pratiques et professionnelles",
+            "Expériences médicales antérieures",
+            "Valeurs personnelles et familiales",
+            "Niveau de compréhension des informations",
+            "Soutien social et familial disponible"
+          ]
+        }
+      ],
+      "rappelsTherapeutiques": [
+        "Présenter les options de manière équilibrée sans orientation",
+        "Explorer les valeurs avant de donner des recommandations",
+        "Utiliser des supports visuels pour faciliter compréhension",
+        "Respecter le droit du patient à refuser le dépistage",
+        "Laisser du temps pour la réflexion si nécessaire",
+        "Planifier un suivi approprié quelle que soit la décision"
+      ],
+      "examensComplementaires": [
+        "Test FIT (immunologique): Recherche sang occulte selles",
+        "Coloscopie de dépistage: Visualisation directe côlon",
+        "Colosigmoïdoscopie: Alternative partielle moins utilisée",
+        "Test ADN selles: Nouvelle option en développement",
+        "Coloscopie virtuelle (CT): Option émergente certains pays"
+      ]
+    }
+  }
+}

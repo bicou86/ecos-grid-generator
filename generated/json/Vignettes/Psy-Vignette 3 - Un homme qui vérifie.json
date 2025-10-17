@@ -1,0 +1,238 @@
+{
+  "title": "Psy-Vignette 3 - Un homme qui vérifie",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Monsieur A, 32 ans, consultant pour des pensées obsédantes et comportements de vérification"
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Motif de consultation et début des symptômes",
+          "details": [
+            "Durée des symptômes [Depuis trois ans]",
+            "Évolution progressive [Les symptômes se sont aggravés progressivement]",
+            "Impact sur la vie quotidienne [Cela me prend beaucoup de temps]"
+          ]
+        },
+        {
+          "id": "a2",
+          "text": "Obsessions",
+          "details": [
+            "Pensées imposées désagréables [Des pensées qui s'imposent et qui sont désagréables]",
+            "Caractère absurde reconnu [Je sais que c'est absurde]",
+            "Doutes récurrents [Je doute constamment de ce que j'ai fait ou oublié]",
+            "Inquiétude excessive [L'inquiétude devient envahissante]"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Compulsions et rituels",
+          "details": [
+            "Vérification de la plaque de cuisinière [Je vérifie plusieurs fois la plaque]",
+            "Retours multiples au domicile [Je dois retourner vérifier]",
+            "Impossibilité de résister [Je ne peux pas m'empêcher]",
+            "Conscience de l'absurdité [Je sais que je l'ai éteinte mais je dois vérifier]"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Thèmes obsessionnels",
+          "details": [
+            "Risque de contamination",
+            "Risque d'accident",
+            "Risque lié à un oubli",
+            "Désordre et manque d'alignement"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Types de rituels",
+          "details": [
+            "Rituels de lavage",
+            "Rituels de vérification",
+            "Rituels de comptage",
+            "Organisation et répétition"
+          ]
+        },
+        {
+          "id": "a6",
+          "text": "Impact fonctionnel",
+          "details": [
+            "Retards au travail [J'arrive souvent en retard]",
+            "Ralentissement des activités [Tout me prend plus de temps]",
+            "Relations sociales [J'évite certaines situations]"
+          ]
+        },
+        {
+          "id": "a7",
+          "text": "Antécédents psychiatriques",
+          "patientComment": "Pas d'hospitalisation, pas de traitement antérieur"
+        },
+        {
+          "id": "a8",
+          "text": "Facteurs déclenchants",
+          "details": [
+            "Stress professionnel",
+            "Événements de vie",
+            "Changements majeurs"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "État mental actuel",
+          "details": [
+            "Anxiété visible",
+            "Tension psychique",
+            "Préoccupations obsessionnelles",
+            "Insight préservé"
+          ]
+        },
+        {
+          "id": "e2",
+          "text": "Évaluation des obsessions",
+          "details": [
+            "Caractère intrusif et répétitif",
+            "Résistance aux pensées",
+            "Détresse associée",
+            "Reconnaissance du caractère excessif"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Évaluation des compulsions",
+          "details": [
+            "Comportements répétitifs",
+            "But de réduire l'anxiété",
+            "Caractère irrésistible",
+            "Temps consacré aux rituels"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Exclusion d'autres troubles",
+          "details": [
+            "Absence de symptômes psychotiques [Non]",
+            "Absence de symptômes dépressifs majeurs [Non]",
+            "Pas de trouble anxieux généralisé [Non]",
+            "Pas de schizophrénie [Non]"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Évaluation du risque",
+          "details": [
+            "Risque suicidaire [Absent]",
+            "Risque hétéro-agressif [Absent]",
+            "Capacité de jugement [Préservée]"
+          ]
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic",
+          "ddSection": {
+            "title": "Diagnostics différentiels à considérer",
+            "categories": [
+              {
+                "name": "Diagnostic principal",
+                "items": [
+                  {
+                    "text": "Trouble obsessionnel compulsif (TOC)",
+                    "cause": "Arguments POUR:\n\t□ Obsessions récurrentes et intrusives\n\t□ Compulsions de vérification\n\t□ Rituels organisés et répétitifs\n\t□ Impact fonctionnel significatif\n\t□ Conscience du caractère excessif\n\t□ Durée > 1 heure par jour\n\t□ Détresse cliniquement significative",
+                    "test": "→ Échelle Y-BOCS pour évaluer la sévérité"
+                  }
+                ]
+              },
+              {
+                "name": "Diagnostics différentiels",
+                "items": [
+                  {
+                    "text": "Trouble anxieux généralisé",
+                    "cause": "Arguments CONTRE:\n\t□ Présence de compulsions spécifiques\n\t□ Obsessions bien définies",
+                    "test": "→ Échelle d'anxiété GAD-7"
+                  },
+                  {
+                    "text": "Dépression avec ruminations",
+                    "cause": "Arguments CONTRE:\n\t□ Pas de tristesse prédominante\n\t□ Pas d'anhédonie\n\t□ Rituels spécifiques présents",
+                    "test": "→ Échelle de dépression PHQ-9"
+                  },
+                  {
+                    "text": "Trouble de personnalité obsessionnelle",
+                    "cause": "Arguments CONTRE:\n\t□ Présence de vraies obsessions\n\t□ Compulsions égodystoniques\n\t□ Détresse associée",
+                    "test": "→ Évaluation de la personnalité"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Plan de traitement bio-psycho-social",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Traitement biologique",
+                "content": "Antidépresseurs ISRS en première ligne:\n- Sertraline, Fluoxétine ou Paroxétine\n- Doses souvent plus élevées que pour la dépression\n- Délai d'action 8-12 semaines\n- Durée minimale 12 mois après amélioration"
+              },
+              {
+                "title": "Traitement psychologique",
+                "content": "Thérapie cognitivo-comportementale (TCC) spécifique au TOC:\n- Exposition avec prévention de la réponse\n- Restructuration cognitive\n- Psychoéducation individuelle et familiale\n- Techniques de gestion de l'anxiété\n- 12-20 séances recommandées"
+              },
+              {
+                "title": "Approche sociale",
+                "content": "Examiner les conséquences sociales:\n- Impact sur le travail (ralentissement)\n- Relations familiales et sociales\n- Si sévère: case management pour favoriser l'exposition\n- Groupes de soutien pour TOC"
+              }
+            ]
+          }
+        },
+        {
+          "id": "m3",
+          "text": "Suivi et pronostic",
+          "details": [
+            "Suivi régulier en consultation",
+            "Évaluation de l'efficacité après 3 mois",
+            "Ajustement du traitement si nécessaire",
+            "Prévention des rechutes"
+          ]
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Clôture type",
+          "content": "Monsieur, les éléments que vous me rapportez me font penser que vous présentez un trouble obsessionnel compulsif. Il s'agit d'un trouble anxieux caractérisé par des pensées obsédantes et des rituels qui ont un impact important sur votre fonctionnement. Dans de telles situations, on propose habituellement d'exclure une cause liée à une maladie physique et ensuite on propose un traitement antidépresseur de type ISRS, une thérapie cognitivo-comportementale ciblée sur les symptômes, et il faut aussi qu'on examine les conséquences sociales pour voir si on peut vous aider pratiquement."
+        },
+        {
+          "id": "c2",
+          "text": "Questions difficiles du patient",
+          "content": "[Est-ce que je suis fou?]\n[Est-ce que ça va empirer?]\n[Combien de temps va durer le traitement?]"
+        },
+        {
+          "id": "c3",
+          "text": "Réponse type",
+          "exemplesPhrases": [
+            "Non, vous n'êtes pas fou. Le TOC est un trouble anxieux bien connu et traitable.",
+            "Avec un traitement approprié, la majorité des patients voient une amélioration significative.",
+            "Le traitement prend du temps, généralement plusieurs mois, mais les résultats sont encourageants."
+          ]
+        }
+      ]
+    }
+  }
+}

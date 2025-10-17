@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Démonstration - Sections Améliorées ECOS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .demo-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        
+        h1 {
+            text-align: center;
+            color: #667eea;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            text-align: center;
+            color: #999;
+            margin-bottom: 40px;
+        }
+        
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+        
+        .feature-card {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+        
+        .feature-card h3 {
+            color: #667eea;
+            margin-top: 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .feature-icon {
+            font-size: 1.5em;
+        }
+        
+        .feature-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .feature-list li {
+            padding: 8px 0;
+            position: relative;
+            padding-left: 25px;
+        }
+        
+        .feature-list li:before {
+            content: "✨";
+            position: absolute;
+            left: 0;
+        }
+        
+        .highlight-box {
+            background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 30px 0;
+        }
+        
+        .highlight-box h3 {
+            color: #fa709a;
+            margin-top: 0;
+        }
+        
+        .demo-section {
+            margin: 40px 0;
+            padding: 30px;
+            background: #f8f9fa;
+            border-radius: 15px;
+            border-left: 5px solid #667eea;
+        }
+        
+        .demo-section h2 {
+            color: #667eea;
+            margin-top: 0;
+        }
+        
+        .code-example {
+            background: #2d3436;
+            color: #74b9ff;
+            padding: 20px;
+            border-radius: 10px;
+            font-family: "Courier New", monospace;
+            overflow-x: auto;
+        }
+        
+        .badge {
+            display: inline-block;
+            padding: 5px 12px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 20px;
+            font-size: 0.9em;
+            margin: 0 5px;
+        }
+        
+        .improvement-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin: 30px 0;
+        }
+        
+        .before, .after {
+            padding: 20px;
+            border-radius: 10px;
+        }
+        
+        .before {
+            background: #ffebee;
+            border: 2px solid #ef5350;
+        }
+        
+        .after {
+            background: #e8f5e9;
+            border: 2px solid #4caf50;
+        }
+        
+        .before h4 {
+            color: #c62828;
+        }
+        
+        .after h4 {
+            color: #2e7d32;
+        }
+    </style>
+</head>
+<body>
+    <div class="demo-container">
+        <h1>🚀 Sections Améliorées pour Grilles ECOS</h1>
+        <p class="subtitle">Nouvelle mise en page optimisée pour les révisions médicales</p>
+        
+        <div class="highlight-box">
+            <h3>📋 Améliorations Principales</h3>
+            <p>Le générateur de grilles ECOS a été amélioré avec une mise en page moderne et intuitive pour les sections <strong>Resume</strong> et <strong>PresentationPatient</strong>, offrant une expérience de révision optimale.</p>
+        </div>
+        
+        <div class="feature-grid">
+            <div class="feature-card">
+                <h3><span class="feature-icon">🎨</span> Design Moderne</h3>
+                <ul class="feature-list">
+                    <li>Gradients colorés attractifs</li>
+                    <li>Ombres et effets de profondeur</li>
+                    <li>Animations subtiles au survol</li>
+                    <li>Icônes et emojis intégrés</li>
+                </ul>
+            </div>
+            
+            <div class="feature-card">
+                <h3><span class="feature-icon">📊</span> Hiérarchie Visuelle</h3>
+                <ul class="feature-list">
+                    <li>Sections clairement différenciées</li>
+                    <li>Codes couleur par type de contenu</li>
+                    <li>Mise en évidence des points clés</li>
+                    <li>Tables structurées et lisibles</li>
+                </ul>
+            </div>
+            
+            <div class="feature-card">
+                <h3><span class="feature-icon">🔍</span> Lisibilité Optimisée</h3>
+                <ul class="feature-list">
+                    <li>Typographie améliorée</li>
+                    <li>Espacement généreux</li>
+                    <li>Contraste optimal</li>
+                    <li>Responsive design</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="demo-section">
+            <h2>📚 Section Resume Améliorée</h2>
+            <p>La section Resume bénéficie maintenant de :</p>
+            <ul>
+                <li><span class="badge">Nouveau</span> Titre avec gradient violet et icône 📚</li>
+                <li><span class="badge">Nouveau</span> Sections avec couleurs thématiques (Anamnèse = bleu, Examen = vert, etc.)</li>
+                <li><span class="badge">Nouveau</span> Points avec puces stylisées et effets hover</li>
+                <li><span class="badge">Nouveau</span> Tables avec headers colorés et lignes alternées</li>
+                <li><span class="badge">Nouveau</span> Mnémoniques dans des boîtes vertes avec lettres cerclées</li>
+                <li><span class="badge">Nouveau</span> Mise en évidence automatique des pourcentages et ranges</li>
+            </ul>
+        </div>
+        
+        <div class="demo-section">
+            <h2>🎤 Section PresentationPatient Améliorée</h2>
+            <p>La section PresentationPatient propose désormais :</p>
+            <ul>
+                <li><span class="badge">Nouveau</span> Titre avec gradient orange-rose et icône 📋</li>
+                <li><span class="badge">Nouveau</span> Sections codées par couleur (Checklist, Version longue, Express, etc.)</li>
+                <li><span class="badge">Nouveau</span> Questions/Réponses avec design carte moderne</li>
+                <li><span class="badge">Nouveau</span> Arguments Pour/Contre avec icônes ✅/❌</li>
+                <li><span class="badge">Nouveau</span> Analyses avec icône ampoule 💡 et fond jaune</li>
+                <li><span class="badge">Nouveau</span> Mnémos ludiques avec mise en forme attractive</li>
+            </ul>
+        </div>
+        
+        <div class="improvement-grid">
+            <div class="before">
+                <h4>❌ Avant</h4>
+                <ul>
+                    <li>Mise en page basique</li>
+                    <li>Peu de différenciation visuelle</li>
+                    <li>Texte uniforme</li>
+                    <li>Pas d'icônes</li>
+                    <li>Tables simples</li>
+                </ul>
+            </div>
+            
+            <div class="after">
+                <h4>✅ Après</h4>
+                <ul>
+                    <li>Design moderne et coloré</li>
+                    <li>Hiérarchie visuelle claire</li>
+                    <li>Texte mis en évidence</li>
+                    <li>Icônes et emojis intégrés</li>
+                    <li>Tables stylisées avec gradients</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="highlight-box">
+            <h3>🎯 Cas de Test : RESCOS-10 - Céphalée (TVC)</h3>
+            <p>Le fichier <strong>RESCOS-10 - Céphalée.json</strong> a été enrichi avec les nouvelles sections structurées :</p>
+            <ul>
+                <li>✅ Section Resume avec 5 sous-sections sur la Thrombose Veineuse Cérébrale</li>
+                <li>✅ Section PresentationPatient avec checklist, versions longue/express, et Q&A</li>
+                <li>✅ Tables de données cliniques avec colonnes et lignes structurées</li>
+                <li>✅ Mnémoniques (HEADS, VEIN, CLOT) pour mémorisation</li>
+            </ul>
+        </div>
+        
+        <div class="demo-section">
+            <h2>💻 Comment Utiliser</h2>
+            <div class="code-example">
+                1. Ouvrir le générateur : Chablon/Generateur_de_Grilles_ECOS.html<br>
+                2. Charger un fichier JSON avec sections resume et presentationPatient<br>
+                3. Cliquer sur "Générer la grille"<br>
+                4. Les sections améliorées s'affichent automatiquement avec les nouveaux styles<br>
+                5. Utiliser le bouton "Imprimer en PDF" pour exporter
+            </div>
+        </div>
+        
+        <div class="highlight-box" style="background: linear-gradient(135deg, #a8e063 0%, #56ab2f 100%);">
+            <h3 style="color: white;">✨ Résultat</h3>
+            <p style="color: white;">Les grilles ECOS sont maintenant plus visuelles, plus engageantes et plus faciles à mémoriser grâce à une mise en page moderne et des éléments visuels distinctifs.</p>
+        </div>
+    </div>
+</body>
+</html>

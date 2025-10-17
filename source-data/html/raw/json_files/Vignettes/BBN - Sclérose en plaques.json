@@ -1,0 +1,512 @@
+{
+  "title": "BBN - Sclérose en plaques",
+  "context": {
+    "setting": "Cabinet de neurologie, consultation de résultats",
+    "patient": "M. Thomas Leroux, 28 ans, informaticien, vient chercher les résultats de son IRM cérébrale suite à des troubles visuels et sensitifs récents",
+    "vitals": {
+      "ta": "125/78 mmHg",
+      "fc": "88 bpm",
+      "fr": "16/min",
+      "temperature": "36.5°C"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "title": "Environnement et Perception (EPICES)",
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Préparer l'environnement de consultation",
+          "details": [
+            "Cadre professionnel [Cabinet neurologie, calme]",
+            "Temps approprié [Consultation non limitée]",
+            "Confidentialité [Porte fermée, sans interruption]",
+            "Support disponible [Compagne peut être présente]",
+            "Documentation prête [IRM, analyses disponibles]"
+          ],
+          "exemplesPhrases": [
+            "\"J'ai prévu suffisamment de temps pour discuter des résultats\"",
+            "\"Souhaitez-vous que votre compagne soit présente?\""
+          ]
+        },
+        {
+          "id": "a2",
+          "text": "Évaluer la perception et les attentes",
+          "details": [
+            "Hypothèses personnelles [J'espère que ce n'est rien de grave]",
+            "Connaissances antérieures [J'ai entendu parler de SEP]",
+            "Inquiétudes exprimées [Peur d'être paralysé]",
+            "Expériences entourage [Connaissance indirecte de la maladie]",
+            "Motivations consultation [Symptômes inquiétants persistants]"
+          ],
+          "patientComment": "J'espère que les troubles visuels vont passer... ce n'est sûrement rien",
+          "exemplesPhrases": [
+            "\"Qu'est-ce que vous imaginez qui pourrait expliquer vos symptômes?\"",
+            "\"Qu'avez-vous pensé quand j'ai prescrit cette IRM?\""
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Évaluer l'invitation à recevoir l'information",
+          "details": [
+            "Niveau d'information souhaité [Détails complets ou vue d'ensemble?]",
+            "Rythme préféré [Information progressive ou directe?]",
+            "Moment approprié [Prêt maintenant ou besoin de préparation?]",
+            "Soutien requis [Seul ou accompagné?]",
+            "Questions prioritaires [Qu'est-ce qui vous préoccupe le plus?]"
+          ],
+          "exemplesPhrases": [
+            "\"Comment préférez-vous que je vous explique les résultats?\"",
+            "\"Voulez-vous d'abord une vue d'ensemble?\""
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Identifier les ressources personnelles",
+          "details": [
+            "Soutien familial [Compagne très présente]",
+            "Situation professionnelle [Travail informatique adaptable]",
+            "Réseau social [Amis proches, collègues]",
+            "Personnalité [Plutôt optimiste et volontaire]",
+            "Expériences difficiles [Première vraie épreuve santé]"
+          ],
+          "patientComment": "Heureusement que ma copine me soutient, je ne sais pas ce que je ferais sans elle"
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "title": "Connaissances - Information médicale",
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Annoncer le diagnostic progressivement",
+          "details": [
+            "Introduction [L'IRM montre des anomalies]",
+            "Signal d'alerte [Ces lésions correspondent à une maladie neurologique]",
+            "Annonce claire [Il s'agit d'une sclérose en plaques]",
+            "Pause respectée [Temps d'intégration nécessaire]",
+            "Vérification [Connaissez-vous cette maladie?]"
+          ],
+          "exemplesPhrases": [
+            "\"L'IRM révèle des lésions dans le cerveau\"",
+            "\"Ces images sont caractéristiques de la sclérose en plaques\""
+          ]
+        },
+        {
+          "id": "e2",
+          "text": "Expliquer la maladie de manière compréhensible",
+          "details": [
+            "Mécanisme [Inflammation de la myéline]",
+            "Comparaison simple [Comme l'isolant des câbles électriques]",
+            "Évolution [Poussées et rémissions]",
+            "Symptômes [Variables selon localisation]",
+            "Pronostic [Très variable d'une personne à l'autre]"
+          ],
+          "ddSection": {
+            "title": "Sclérose en plaques - Mécanismes et évolution",
+            "categories": [
+              {
+                "name": "Mécanisme physiopathologique",
+                "items": [
+                  {
+                    "text": "Atteinte de la myéline",
+                    "cause": "Processus inflammatoire:\n\t□ Destruction gaines de myéline\n\t□ Ralentissement influx nerveux\n\t□ Symptômes variables selon localisation",
+                    "test": "→ IRM montre lésions caractéristiques"
+                  }
+                ]
+              },
+              {
+                "name": "Formes évolutives",
+                "items": [
+                  {
+                    "text": "SEP rémittente-récurrente",
+                    "cause": "Forme initiale la plus fréquente:\n\t□ Poussées suivies de rémissions\n\t□ 85% des patients au début\n\t□ Récupération possible entre poussées",
+                    "test": "→ Surveillance clinique et IRM"
+                  },
+                  {
+                    "text": "Évolution progressive",
+                    "cause": "Évolution possible:\n\t□ Forme secondairement progressive\n\t□ Accumulation progressive handicap\n\t□ Pronostic très variable",
+                    "test": "→ Suivi neurologique régulier"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "e3",
+          "text": "Aborder le pronostic avec nuance",
+          "details": [
+            "Variabilité importante [Chaque cas unique]",
+            "Évolution imprévisible [Impossible prédire l'avenir]",
+            "Formes bénignes [Certains patients peu affectés]",
+            "Progrès thérapeutiques [Traitements efficaces disponibles]",
+            "Qualité de vie [Maintien activités souvent possible]"
+          ],
+          "exemplesPhrases": [
+            "\"L'évolution est très variable d'une personne à l'autre\"",
+            "\"Nous avons aujourd'hui de bons traitements pour ralentir l'évolution\""
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Présenter les options thérapeutiques",
+          "details": [
+            "Traitements de fond [Immunomodulateurs disponibles]",
+            "Traitements symptomatiques [Selon symptômes présents]",
+            "Approche multidisciplinaire [Équipe spécialisée]",
+            "Adaptation [Modification progressive si nécessaire]",
+            "Recherche [Nouveaux traitements en développement]"
+          ],
+          "ddSection": {
+            "title": "Options thérapeutiques en SEP",
+            "categories": [
+              {
+                "name": "Traitements de première ligne",
+                "items": [
+                  {
+                    "text": "Immunomodulateurs",
+                    "cause": "Médicaments disponibles:\n\t□ Interférons bêta\n\t□ Acétate de glatiramère\n\t□ Réduction fréquence poussées",
+                    "test": "→ Choix selon profil patient"
+                  }
+                ]
+              },
+              {
+                "name": "Traitements de deuxième ligne",
+                "items": [
+                  {
+                    "text": "Thérapies plus puissantes",
+                    "cause": "Si échec première ligne:\n\t□ Natalizumab, fingolimod\n\t□ Efficacité supérieure\n\t□ Surveillance renforcée",
+                    "test": "→ Centre spécialisé SEP"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "title": "Empathie et Stratégies d'accompagnement",
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Manifester de l'empathie face au choc",
+          "details": [
+            "Reconnaissance émotions [C'est un choc, je comprends]",
+            "Légitimation réactions [Normal d'être bouleversé]",
+            "Présence empathique [Écoute attentive, silences]",
+            "Validation inquiétudes [Vos craintes sont compréhensibles]",
+            "Soutien [Nous allons vous accompagner]"
+          ],
+          "exemplesPhrases": [
+            "\"Je comprends que cette nouvelle soit difficile à entendre\"",
+            "\"Il est normal d'avoir peur face à l'inconnu\""
+          ]
+        },
+        {
+          "id": "m2",
+          "text": "Gérer les réactions et questionnements",
+          "details": [
+            "Choc initial [Silence, incrédulité]",
+            "Déni [Ce n'est pas possible à mon âge]",
+            "Peur du handicap [Je vais finir en fauteuil roulant?]",
+            "Inquiétude professionnelle [Puis-je continuer à travailler?]",
+            "Impact relationnel [Ma copine va-t-elle rester?]"
+          ],
+          "patientComment": "À 28 ans... ce n'est pas possible... ma vie est foutue",
+          "exemplesPhrases": [
+            "\"Beaucoup de personnes vivent normalement avec cette maladie\"",
+            "\"Prenons les choses une étape à la fois\""
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Fournir des stratégies d'adaptation immédiates",
+          "details": [
+            "Information rassurante [Maladie ne met pas en danger immédiat]",
+            "Ressources disponibles [Association SEP, groupes soutien]",
+            "Maintien activités [Continuer vie normale autant que possible]",
+            "Soutien professionnel [Possibilités d'aménagement travail]",
+            "Espoir réaliste [Traitements permettent vie de qualité]"
+          ],
+          "exemplesPhrases": [
+            "\"Vous pouvez continuer vos activités habituelles\"",
+            "\"Il existe de nombreuses ressources pour vous aider\""
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Aborder l'impact sur la vie quotidienne",
+          "details": [
+            "Vie professionnelle [Souvent maintien possible avec adaptations]",
+            "Relations personnelles [Communication importante avec proches]",
+            "Projets futurs [Adaptation mais maintien possible]",
+            "Parentalité [Grossesse possible avec suivi]",
+            "Activités [Sport adapté, voyages possibles]"
+          ],
+          "patientComment": "Est-ce que je pourrai encore avoir des enfants? Fonder une famille?"
+        },
+        {
+          "id": "m5",
+          "text": "Planifier l'accompagnement personnalisé",
+          "details": [
+            "Suivi neurologique [Consultation spécialisée régulière]",
+            "Équipe multidisciplinaire [Infirmière SEP, kinésithérapeute]",
+            "Soutien psychologique [Si souhaité, psychologue spécialisé]",
+            "Éducation thérapeutique [Programmes d'information]",
+            "Contact entre consultations [Numéro direct si questions]"
+          ]
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Synthèse et vérification compréhension",
+          "content": "• Résumer les points essentiels du diagnostic\n• Vérifier ce que le patient a retenu\n• Clarifier les idées fausses ou catastrophiques\n• Confirmer les prochaines étapes de prise en charge\n• Rassurer sur continuité et qualité de l'accompagnement",
+          "exemplesPhrases": [
+            "\"Qu'est-ce que vous retenez de notre discussion?\"",
+            "\"Quelles sont vos questions principales maintenant?\""
+          ]
+        },
+        {
+          "id": "c2",
+          "text": "Questions difficiles du patient",
+          "content": "[Vais-je finir en fauteuil roulant?]\n[Combien de temps avant d'être handicapé?]\n[Dois-je arrêter de travailler?]\n[Ma copine va-t-elle me quitter?]\n[Pourquoi moi si jeune?]\n[Puis-je encore avoir des enfants?]",
+          "exemplesPhrases": [
+            "\"L'évolution est imprévisible, beaucoup gardent leur autonomie\"",
+            "\"Chaque SEP est différente, il faut éviter les généralités\"",
+            "\"Beaucoup de couples traversent cette épreuve ensemble\""
+          ]
+        },
+        {
+          "id": "c3",
+          "text": "Plan de suivi et ressources",
+          "content": "• Consultation spécialisée SEP programmée (2 semaines)\n• Mise en contact avec infirmière coordinatrice SEP\n• Documentation remise (guides patients, association SEP)\n• Coordonnées pour questions urgentes\n• Possibilité soutien psychologique si souhaité",
+          "exemplesPhrases": [
+            "\"L'équipe spécialisée SEP va prendre le relais\"",
+            "\"Vous ne serez jamais seul face à cette maladie\"",
+            "\"L'association SEP peut vous mettre en contact avec d'autres patients\""
+          ]
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "images": [
+      {
+        "id": "irm_sep_lesions",
+        "title": "IRM cérébrale montrant des lésions de SEP",
+        "description": "Images IRM en séquence FLAIR montrant des hypersignaux de la substance blanche évocateurs de sclérose en plaques",
+        "filename": "bbn/irm-sep-lesions.jpg"
+      },
+      {
+        "id": "evolution_sep_formes",
+        "title": "Formes évolutives de la sclérose en plaques",
+        "description": "Schéma illustrant les différentes formes évolutives de SEP : rémittente-récurrente, progressive primaire, progressive secondaire",
+        "filename": "bbn/evolution-formes-sep.jpg"
+      },
+      {
+        "id": "ressources_sep_soutien",
+        "title": "Ressources de soutien pour la sclérose en plaques",
+        "description": "Carte des ressources disponibles : association SEP, centres spécialisés, soutien psychologique, aides sociales",
+        "filename": "bbn/ressources-sep-soutien.jpg"
+      }
+    ],
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour le patient standardisé",
+      "nom": "M. Thomas Leroux",
+      "age": "28 ans",
+      "contexte": "Cabinet de neurologie, consultation de résultats IRM",
+      "motifConsultation": {
+        "plaintePrincipale": "Résultats IRM suite à troubles visuels et sensitifs",
+        "autreChose": "Inquiétude grandissante depuis prescription IRM"
+      },
+      "histoireActuelle": {
+        "symptomesRecents": [
+          "Troubles visuels il y a 2 mois (vision floue œil droit)",
+          "Récupération partielle puis engourdissement main gauche",
+          "Fatigue inhabituelle depuis 3 mois",
+          "Consultation ophtalmologiste puis neurologue",
+          "IRM prescrite il y a 3 semaines"
+        ],
+        "representationMaladie": [
+          "Peur d'une tumeur cérébrale",
+          "Angoisse de paralysie progressive",
+          "Image SEP = fauteuil roulant",
+          "Inquiétude fin carrière jeune",
+          "Peur abandon par la compagne"
+        ],
+        "contexteProfessionnel": [
+          "Informaticien développeur depuis 5 ans",
+          "Travail créatif et intellectuel",
+          "Carrière prometteuse en cours",
+          "Collègues jeunes et solidaires",
+          "Possibilités télétravail"
+        ],
+        "viePersonnelle": [
+          "Relation stable avec Julie depuis 2 ans",
+          "Projets de vie commune récents",
+          "Famille parents et sœur très proches",
+          "Activités sportives régulières",
+          "Vie sociale riche"
+        ]
+      },
+      "simulation": {
+        "attitude": [
+          "Nerveux en arrivant",
+          "Attentif aux explications",
+          "Choc visible à l'annonce",
+          "Questions pratiques nombreuses",
+          "Recherche de réassurance"
+        ],
+        "durantAnnonce": [
+          "Écoute tendue des premiers mots",
+          "Figement à l'annonce du diagnostic",
+          "Questions immédiates sur pronostic",
+          "Inquiétude pour la compagne",
+          "Préoccupations professionnelles"
+        ],
+        "phrasesTypes": [
+          "\"J'espère que les troubles visuels vont passer...\"",
+          "\"À 28 ans... ce n'est pas possible... ma vie est foutue\"",
+          "\"Vais-je finir en fauteuil roulant?\"",
+          "\"Est-ce que je pourrai encore avoir des enfants?\"",
+          "\"Ma copine va-t-elle me quitter?\"",
+          "\"Dois-je arrêter de travailler?\"",
+          "\"Combien de temps avant d'être handicapé?\"",
+          "\"Heureusement que ma copine me soutient\""
+        ]
+      },
+      "anamneseSystemes": {
+        "neurologique": ["Troubles visuels transitoires", "Engourdissements", "Fatigue anormale"],
+        "generale": ["Stress récent", "Sommeil perturbé", "Appétit conservé"],
+        "psychologique": ["Anxiété anticipatoire", "Moral habituellement bon", "Projets d'avenir"],
+        "familiale": ["Parents en bonne santé", "Sœur aînée", "Pas d'antécédents neurologiques"]
+      },
+      "habitudes": {
+        "profession": "Développeur informatique, travail créatif",
+        "activite": "Sport régulier (course, VTT), sorties amis",
+        "alimentation": "Équilibrée, cuisine maison avec Julie",
+        "alcool": "Social modéré, sorties week-end",
+        "tabac": "Non-fumeur",
+        "stress": "Professionnel faible, personnel lié santé"
+      },
+      "informationsPersonnelles": {
+        "etatCivil": "En couple stable avec Julie",
+        "logement": "Appartement en location, centre-ville",
+        "projets": "Vie commune, voyages, peut-être mariage",
+        "loisirs": "Sport, jeux vidéo, cinéma, amis",
+        "preoccupations": "Carrière, relation, santé récemment"
+      },
+      "inquietudes": {
+        "principales": [
+          "Évolution vers handicap lourd",
+          "Impact sur relation amoureuse",
+          "Maintien activité professionnelle",
+          "Capacité à fonder famille",
+          "Charge pour les proches"
+        ],
+        "questions": [
+          "Dans combien de temps serai-je en fauteuil?",
+          "Puis-je encore faire du sport?",
+          "Faut-il arrêter de conduire?",
+          "Comment annoncer à ma famille?",
+          "Les traitements ont-ils des effets secondaires?"
+        ]
+      }
+    },
+    "informationsExpert": {
+      "titre": "Points clés pour l'expert évaluateur",
+      "pointsCles": [
+        "Évaluer l'application du framework EPICES pour maladie chronique",
+        "Observer l'annonce progressive du diagnostic neurologique",
+        "Noter l'explication accessible du mécanisme physiopathologique",
+        "Vérifier l'abord nuancé du pronostic (variabilité individuelle)",
+        "Évaluer la gestion empathique des peurs spécifiques (handicap, isolement)",
+        "Observer la présentation des options thérapeutiques actuelles",
+        "Noter l'adaptation des informations à l'âge et projets du patient",
+        "Vérifier la planification d'un accompagnement spécialisé"
+      ],
+      "pieges": [
+        "Donner un pronostic trop précis ou alarmiste",
+        "Minimiser l'impact sur la vie quotidienne",
+        "Utiliser un jargon médical incompréhensible",
+        "Ignorer les préoccupations relationnelles et professionnelles",
+        "Ne pas aborder les possibilités thérapeutiques",
+        "Éviter les questions sur la parentalité future",
+        "Manquer les aspects psychosociaux spécifiques au jeune adulte",
+        "Ne pas prévoir d'accompagnement spécialisé"
+      ],
+      "criteresBonnePerformance": [
+        "Annonce empathique adaptée à l'âge du patient",
+        "Explication claire et accessible de la pathologie",
+        "Présentation nuancée et réaliste du pronostic",
+        "Abord des préoccupations personnelles et professionnelles",
+        "Information sur les ressources thérapeutiques disponibles",
+        "Gestion empathique des émotions et peurs exprimées",
+        "Planification d'un suivi spécialisé multidisciplinaire",
+        "Maintien d'un espoir réaliste pour l'avenir"
+      ]
+    },
+    "theoriePratique": {
+      "titre": "Annonce de maladie chronique au jeune adulte",
+      "sections": [
+        {
+          "titre": "Spécificités de l'annonce chez le jeune adulte",
+          "points": [
+            "Impact sur projets de vie en construction",
+            "Questionnements sur parentalité future",
+            "Préoccupations professionnelles et financières",
+            "Enjeux relationnels et image de soi",
+            "Adaptation du discours à l'âge et aux priorités",
+            "Importance du maintien de l'autonomie"
+          ]
+        },
+        {
+          "titre": "Sclérose en plaques - Particularités diagnostiques",
+          "points": [
+            "Maladie des jeunes adultes (pic 20-40 ans)",
+            "Évolution imprévisible et très variable",
+            "Critères de McDonald pour diagnostic",
+            "Formes rémittente-récurrente initiales (85%)",
+            "Progrès thérapeutiques considérables dernières années",
+            "Qualité de vie souvent préservée avec traitements"
+          ]
+        },
+        {
+          "titre": "Accompagnement psychosocial adapté",
+          "points": [
+            "Soutien spécialisé en neurologie",
+            "Rôle de l'infirmière coordinatrice SEP",
+            "Éducation thérapeutique personnalisée",
+            "Groupes de jeunes patients si appropriés",
+            "Accompagnement professionnel (adaptation poste)",
+            "Soutien familial et conjugal"
+          ]
+        }
+      ],
+      "rappelsTherapeutiques": [
+        "Adapter l'annonce aux préoccupations spécifiques du jeune adulte",
+        "Présenter un pronostic nuancé évitant catastrophisme",
+        "Aborder concrètement l'impact sur projets de vie",
+        "Informer sur les possibilités thérapeutiques actuelles",
+        "Planifier un accompagnement spécialisé multidisciplinaire",
+        "Maintenir un espoir réaliste pour l'avenir"
+      ],
+      "examensComplementaires": [
+        "IRM cérébrale et médullaire: Suivi évolution lésions",
+        "Potentiels évoqués: Évaluation fonctions sensorielles",
+        "Ponction lombaire: Confirmation diagnostic si doute",
+        "Bilan immunologique: Recherche autres pathologies",
+        "Évaluation cognitive: Si troubles rapportés"
+      ]
+    }
+  }
+}

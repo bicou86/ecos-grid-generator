@@ -1,0 +1,239 @@
+{
+  "title": "Thieme Gynéco 23 - Douleur abdominale basse avec fièvre - Femme de 30 ans",
+  "category": "Thieme Gynécologie-Obstétrique",
+  "subcategory": "Douleur abdominale basse avec fièvre",
+  "context": {
+    "setting": "Service d'urgences",
+    "patient": "Femme de 30 ans, Mme Linda Brown, consultant pour douleur abdominale basse sévère",
+    "vitals": {
+      "temperature": "38.3°C",
+      "fc": "104 bpm",
+      "fr": "20/min",
+      "ta": "100/60 mmHg"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Motif principal de consultation",
+          "binaryOnly": true,
+          "patientComment": "douleur abdominale basse sévère"
+        },
+        {
+          "id": "a2",
+          "text": "Analyse de la plainte principale (ABCDE)",
+          "details": [
+            "Apparition [Il y a quelques heures]",
+            "Localisation [QIG] et irradiation [pelvis]",
+            "Intensité [8/10] et caractère [brûlant]",
+            "Facteurs aggravants [toux, mouvement]",
+            "Symptômes urinaires et pertes vaginales"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Antécédents gynécologiques et obstétricaux",
+          "details": [
+            "Pertes vaginales malodorantes blanc-verdâtre",
+            "DDR il y a 5 jours"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Histoire sociale et habitudes de vie",
+          "details": [
+            "Enseignante",
+            "Ne fume pas",
+            "Alcool social",
+            "Sexuellement active, multiples partenaires, pas de préservatifs",
+            "Contraceptifs oraux",
+            "Gonorrhée il y a 6 mois"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Revue des systèmes",
+          "details": [
+            "Système urinaire",
+            "Système gynécologique"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Signes vitaux et apparence générale",
+          "binaryOnly": true
+        },
+        {
+          "id": "e2",
+          "text": "Examen de la tête et du cou",
+          "details": [
+            "PERRLA",
+            "Recherche pâleur ou cyanose",
+            "Examen gorge",
+            "Palpation thyroïde et ganglions"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Examen cardio-pulmonaire",
+          "details": [
+            "Auscultation cardiaque [S1 et S2 normaux]",
+            "Auscultation pulmonaire bilatérale"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Examen abdominal complet",
+          "details": [
+            "Inspection (cicatrices, distension)",
+            "Auscultation (bruits intestinaux)",
+            "Palpation superficielle et profonde",
+            "Recherche défense [sensibilité QIG]"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Examens spécifiques selon le cas",
+          "details": [
+            "Demander examen pelvien",
+            "Sensibilité angle costo-vertébral"
+          ]
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostics différentiels à évoquer",
+          "ddSection": {
+            "title": "Hypothèses diagnostiques gynécologiques",
+            "categories": [
+              {
+                "name": "Diagnostics prioritaires",
+                "items": [
+                  {
+                    "text": "Maladie inflammatoire pelvienne",
+                    "cause": "Arguments POUR:\n\t□ Douleur QIG, fièvre, pertes vaginales, multiples partenaires, ATCD IST",
+                    "test": "→ Prélèvements, US pelvienne, CT si complications"
+                  },
+                  {
+                    "text": "Infection urinaire (pyélonéphrite)",
+                    "cause": "Arguments POUR:\n\t□ Douleur flanc, fièvre, dysurie, sensibilité ACV",
+                    "test": "→ ECBU, hémocultures, US rénale"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Examens complémentaires pertinents",
+          "details": [
+            "Examen pelvien",
+            "NFS, ECBU, culture urine",
+            "Frottis, prélèvement vaginal",
+            "Test grossesse",
+            "US abdomen et pelvis",
+            "CT abdomen et pelvis"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Plan de prise en charge",
+          "details": [
+            "Hospitalisation",
+            "Antibiothérapie IV",
+            "Analgésie"
+          ]
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Questions difficiles de la patiente",
+          "content": "Je ne peux pas manquer le travail. Donnez-moi juste des antalgiques."
+        },
+        {
+          "id": "c2",
+          "text": "Conseils spécifiques",
+          "content": "Précautions rapports sexuels protégés. Importance du traitement complet."
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour la patiente standardisée",
+      "nom": "Mme Linda Brown",
+      "age": "30 ans",
+      "contexte": "Service d'urgences",
+      "motifConsultation": {
+        "plaintePrincipale": "douleur abdominale basse sévère",
+        "autreChose": "Douleur abdominale brûlante sévère depuis quelques heures, 8/10 au QIG, irradiant vers pelvis. Constante, aggravée par toux et mouvement."
+      },
+      "histoireActuelle": {
+        "symptomesPrincipaux": [
+          "Douleur abdominale brûlante sévère depuis quelques heures, 8/10 au QIG, irradiant vers pelvis",
+          " Constante, aggravée par toux et mouvement"
+        ],
+        "antecedentsGynecologiques": [
+          "Dysurie avec sensation brûlure, pollakiurie",
+          " Pertes vaginales malodorantes blanc-verdâtre",
+          " Un épisode vomissement clair",
+          " DDR il y a 5 jours"
+        ],
+        "contextePsychosocial": [
+          "Enseignante",
+          " Ne fume pas",
+          " Alcool social",
+          " Sexuellement active, multiples partenaires, pas de préservatifs",
+          " Contraceptifs oraux",
+          " Gonorrhée il y a 6 mois"
+        ]
+      },
+      "simulation": {
+        "attitude": [
+          "Douleur sévère QIG",
+          "Résistante à l'hospitalisation"
+        ],
+        "durantExamen": [
+          "Sensibilité QIG avec défense",
+          "Sensibilité angle costo-vertébral gauche"
+        ]
+      },
+      "inquietudes": {
+        "principales": [
+          "Je ne peux pas manquer le travail. Donnez-moi juste des antalgiques."
+        ]
+      }
+    },
+    "informationsExpert": {
+      "titre": "Informations pour l'expert",
+      "pointsCles": [
+        "Cas de Douleur abdominale basse avec fièvre",
+        "Patiente: Femme de 30 ans",
+        "Anamnèse gynécologique complète",
+        "Examen abdominal et pelvien appropriés",
+        "Diagnostic différentiel ciblé"
+      ],
+      "pieges": [
+        "Manquer la MIP",
+        "Ne pas insister sur hospitalisation"
+      ]
+    }
+  }
+}

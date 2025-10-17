@@ -1,0 +1,245 @@
+{
+  "title": "Thieme Gynéco 24 - Aménorrhée avec test de grossesse positif - Femme de 24 ans",
+  "category": "Thieme Gynécologie-Obstétrique",
+  "subcategory": "Aménorrhée avec test de grossesse positif",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Femme de 24 ans, Mme Sally Smith, consultant pour test de grossesse positif à domicile",
+    "vitals": {
+      "temperature": "36.7°C",
+      "fc": "90 bpm",
+      "fr": "16/min",
+      "ta": "110/70 mmHg"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Motif principal de consultation",
+          "binaryOnly": true,
+          "patientComment": "test de grossesse positif à domicile"
+        },
+        {
+          "id": "a2",
+          "text": "Analyse de la plainte principale (ABCDE)",
+          "details": [
+            "Règles manquées [DDR il y a 5 semaines]",
+            "Test de grossesse positif",
+            "Nausées matinales",
+            "Sensibilité des seins",
+            "Mictions fréquentes"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Antécédents gynécologiques et obstétricaux",
+          "details": [
+            "Ménarche à 12 ans, règles régulières 28/5",
+            "G1P1, accouchement naturel il y a 5 ans",
+            "Dernier frottis il y a 2 ans normal"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Histoire sociale et habitudes de vie",
+          "details": [
+            "Technicienne laboratoire médical",
+            "Mariée depuis 6 ans",
+            "Fume 5 cigarettes/jour × 5 ans",
+            "Alcool social",
+            "Monogame avec mari, arrêt préservatifs récent"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Revue des systèmes",
+          "details": [
+            "Symptômes de grossesse précoce",
+            "Signes d'alerte"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Signes vitaux et apparence générale",
+          "binaryOnly": true
+        },
+        {
+          "id": "e2",
+          "text": "Examen de la tête et du cou",
+          "details": [
+            "PERRLA",
+            "Recherche pâleur ou cyanose",
+            "Examen gorge",
+            "Palpation thyroïde et ganglions"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Examen cardio-pulmonaire",
+          "details": [
+            "Auscultation cardiaque [S1 et S2 normaux]",
+            "Auscultation pulmonaire bilatérale"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Examen abdominal complet",
+          "details": [
+            "Inspection (cicatrices, distension)",
+            "Auscultation (bruits intestinaux)",
+            "Palpation superficielle et profonde"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Examens spécifiques selon le cas",
+          "details": [
+            "Examen général rapide"
+          ]
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostics différentiels à évoquer",
+          "ddSection": {
+            "title": "Hypothèses diagnostiques gynécologiques",
+            "categories": [
+              {
+                "name": "Diagnostics prioritaires",
+                "items": [
+                  {
+                    "text": "Grossesse normale",
+                    "cause": "Arguments POUR:\n\t□ DDR manquées, test positif, nausées matinales, seins sensibles",
+                    "test": "→ βhCG, US obstétricale, sérologies"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Examens complémentaires pertinents",
+          "details": [
+            "Examen pelvien",
+            "Test grossesse",
+            "NFS, facteur Rh",
+            "ECBU, culture urine",
+            "Sérologie (rougeole, varicelle, VDRL)"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Plan de prise en charge",
+          "details": [
+            "Suivi prénatal régulier",
+            "Conseils hygiéno-diététiques",
+            "Suppléments vitaminiques"
+          ]
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Questions difficiles de la patiente",
+          "content": "Puis-je faire de l'exercice?\nComment savoir s'il y a un problème avec ma grossesse?"
+        },
+        {
+          "id": "c2",
+          "text": "Conseils spécifiques",
+          "content": "Arrêt tabac et alcool. Exercice modéré autorisé. Signes d'alerte: saignements, douleurs sévères."
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour la patiente standardisée",
+      "nom": "Mme Sally Smith",
+      "age": "24 ans",
+      "contexte": "Cabinet de médecine générale",
+      "motifConsultation": {
+        "plaintePrincipale": "test de grossesse positif à domicile",
+        "autreChose": "DDR il y a 5 semaines, règles manquées. Test grossesse domicile positif. Nausées matinales, seins sensibles, mictions fréquentes depuis quelques jours."
+      },
+      "histoireActuelle": {
+        "symptomesPrincipaux": [
+          "DDR il y a 5 semaines, règles manquées",
+          " Test grossesse domicile positif",
+          " Nausées matinales, seins sensibles, mictions fréquentes depuis quelques jours"
+        ],
+        "antecedentsGynecologiques": [
+          "Ménarche à 12 ans, règles régulières 28/5",
+          " G1P1, accouchement naturel il y a 5 ans",
+          " Dernier frottis il y a 2 ans normal"
+        ],
+        "contextePsychosocial": [
+          "Technicienne laboratoire médical",
+          " Mariée depuis 6 ans",
+          " Fume 5 cigarettes/jour × 5 ans",
+          " Alcool social",
+          " Monogame avec mari, arrêt préservatifs récent"
+        ]
+      },
+      "simulation": {
+        "attitude": [
+          "Heureuse et souriante",
+          "Excitée par la grossesse"
+        ],
+        "durantExamen": [
+          "Examen normal"
+        ]
+      },
+      "inquietudes": {
+        "principales": [
+          "Puis-je faire de l'exercice?",
+          "Comment savoir s'il y a un problème avec ma grossesse?"
+        ]
+      }
+    },
+    "informationsExpert": {
+      "titre": "Informations pour l'expert",
+      "pointsCles": [
+        "Cas de Aménorrhée avec test de grossesse positif",
+        "Patiente: Femme de 24 ans",
+        "Anamnèse gynécologique complète",
+        "Examen abdominal et pelvien appropriés",
+        "Diagnostic différentiel ciblé"
+      ],
+      "pieges": [
+        "Ne pas donner conseils grossesse",
+        "Oublier suppléments"
+      ]
+    },
+    "theoriePratique": {
+      "titre": "Conseils pour la grossesse",
+      "sections": [
+        {
+          "titre": "Recommandations initiales",
+          "points": [
+            "Arrêt tabac et alcool",
+            "Exercice modéré régulier",
+            "Alimentation équilibrée",
+            "Suppléments acide folique",
+            "Suivi prénatal régulier"
+          ]
+        }
+      ]
+    }
+  }
+}

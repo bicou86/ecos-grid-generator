@@ -1,0 +1,559 @@
+{
+  "title": "AMC Urgences 5C - Méningite bactérienne avec sepsis",
+  "context": {
+    "setting": "Service d'urgences - Box d'isolement",
+    "patient": "Monsieur C., 20 ans, étudiant avec fièvre, céphalées et éruption cutanée depuis 12 heures",
+    "vitals": {
+      "ta": "85/50 mmHg",
+      "fc": "128 bpm",
+      "fr": "26/min",
+      "temperature": "39.8°C",
+      "sao2": "94% à l'air ambiant"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Motif de consultation et urgence",
+          "binaryOnly": true,
+          "patientComment": "[Fièvre élevée, céphalées intenses et taches sur la peau depuis ce matin]"
+        },
+        {
+          "id": "a2",
+          "text": "Histoire de la maladie actuelle",
+          "details": [
+            "Début [Brutal ce matin à 6h]",
+            "Prodromes [Rhume et fatigue depuis 3 jours]",
+            "Fièvre [39.8°C, frissons intenses]",
+            "Céphalées [Intenses, holocrâniennes, 9/10]",
+            "Photophobie [Très marquée]",
+            "Vomissements [3 épisodes en jet]",
+            "Éruption [Apparue il y a 2 heures, extension rapide]",
+            "Myalgies [Diffuses et intenses]"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Contexte épidémiologique",
+          "details": [
+            "Lieu de vie [Résidence universitaire]",
+            "Contacts malades [Colocataire grippal il y a 1 semaine]",
+            "Voyages récents [Négatif]",
+            "Activités à risque [Soirée étudiante il y a 4 jours]",
+            "Contacts intimes [Petite amie, vue hier]",
+            "Animaux [Négatif]"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Antécédents et terrain",
+          "details": [
+            "Diabète type 1 [Depuis l'âge de 12 ans]",
+            "Contrôle glycémique [HbA1c 7.8% dernier contrôle]",
+            "Splénectomie [Négative]",
+            "Immunodépression [Négative]",
+            "VIH [Statut inconnu, test il y a 1 an négatif]",
+            "Infections ORL récurrentes [Otites dans l'enfance]"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Vaccinations",
+          "details": [
+            "Calendrier vaccinal [À jour selon le patient]",
+            "Méningocoque C [Fait dans l'enfance]",
+            "Méningocoque ACWY [Non fait]",
+            "Méningocoque B [Non fait]",
+            "Pneumocoque [Non fait malgré le diabète]",
+            "Haemophilus [Vaccination infantile complète]"
+          ]
+        },
+        {
+          "id": "a6",
+          "text": "Traitement et allergies",
+          "details": [
+            "Insulinothérapie [Lantus 20U et NovoRapid selon glycémie]",
+            "Observance [Bonne habituellement]",
+            "Allergies médicamenteuses [Pénicilline - éruption dans l'enfance]",
+            "Automédication [Paracétamol 3g aujourd'hui]"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "État général et signes de sepsis",
+          "details": [
+            "Conscience [Confus, GCS 14 (E4 V4 M6)]",
+            "État hémodynamique [Choc avec marbrures]",
+            "Temps de recoloration cutanée [4 secondes]",
+            "Diurèse [Oligurie depuis 4h]",
+            "Lactates capillaires [4.2 mmol/L]"
+          ],
+          "binaryOnly": true
+        },
+        {
+          "id": "e2",
+          "text": "Examen cutané - Purpura",
+          "description": "Évaluation urgente du purpura",
+          "details": [
+            "Type [Purpura pétéchial et ecchymotique]",
+            "Distribution [Tronc, membres, rapidement extensif]",
+            "Caractère [Ne s'efface pas à la vitropression]",
+            "Éléments nécrotiques [Début de nécrose digitale]",
+            "Nombre [> 20 éléments]",
+            "Taille [Certains > 10 mm]"
+          ],
+          "scoringRule": "2 points si purpura fulminans reconnu"
+        },
+        {
+          "id": "e3",
+          "text": "Signes méningés",
+          "details": [
+            "Raideur de nuque [Franche, invincible]",
+            "Signe de Kernig [Positif bilatéral]",
+            "Signe de Brudzinski [Positif]",
+            "Photophobie [Intense]",
+            "Phonophobie [Présente]",
+            "Hyperesthésie cutanée [Diffuse]"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Examen neurologique",
+          "details": [
+            "Glasgow [14/15 (E4 V4 M6)]",
+            "Confusion [Désorientation temporo-spatiale]",
+            "Déficit focal [Absent]",
+            "Pupilles [Symétriques, réactives]",
+            "ROT [Vifs, symétriques]",
+            "Babinski [Négatif bilatéral]",
+            "Convulsions [Absentes]"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Recherche de porte d'entrée",
+          "details": [
+            "ORL [Rhinorrhée purulente]",
+            "Otoscopie [Tympans normaux]",
+            "Examen dentaire [Pas de foyer évident]",
+            "Pulmonaire [Auscultation normale]",
+            "Cutané [Pas de plaie infectée]",
+            "Urinaire [Pas de signes fonctionnels]"
+          ]
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Mesures immédiates et isolement",
+          "description": "Prise en charge dans la première heure",
+          "details": [
+            "Isolement respiratoire type gouttelettes",
+            "Masque chirurgical pour le patient",
+            "Protection du personnel (masque FFP2)",
+            "Voie veineuse de gros calibre x2",
+            "Monitorage continu",
+            "Prélèvements AVANT antibiotiques si possible"
+          ],
+          "binaryOnly": true
+        },
+        {
+          "id": "m2",
+          "text": "Antibiothérapie empirique URGENTE",
+          "description": "À débuter dans les 30 minutes, maximum 1 heure",
+          "details": [
+            "Ceftriaxone 2g IV [Alternative car allergie pénicilline]",
+            "OU Méropenem 2g IV [Si allergie vraie]",
+            "PLUS Vancomycine 15-20 mg/kg IV [Couverture pneumocoque résistant]",
+            "Timing [Idéalement < 30 min, vital si purpura]",
+            "Voie d'administration [IV directe, pas IM]"
+          ],
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Protocole antibiotique méningite",
+                "content": "ADULTE JEUNE (< 50 ans):\n- 1ère intention : Ceftriaxone 2g x2/j ou Céfotaxime 3g x4/j\n- Si allergie : Méropenem 2g x3/j ou Chloramphénicol\n- Ajouter Vancomycine si pneumocoque résistant suspecté\n\nDurée totale:\n- Méningocoque : 5-7 jours\n- Pneumocoque : 10-14 jours\n- Listeria : 21 jours\n\nNe pas retarder pour la PL si purpura fulminans!"
+              }
+            ]
+          },
+          "scoringRule": "2 points si antibiotiques dans l'heure mentionnée"
+        },
+        {
+          "id": "m3",
+          "text": "Corticothérapie adjuvante",
+          "details": [
+            "Dexaméthasone 10 mg IV",
+            "Timing [AVANT ou AVEC la première dose d'antibiotique]",
+            "Durée [4 jours, 10 mg x4/j]",
+            "Indication [Suspicion pneumocoque surtout]",
+            "Bénéfice [Réduction mortalité et séquelles neurologiques]"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Prélèvements microbiologiques",
+          "details": [
+            "Hémocultures x2 [AVANT antibiotiques si possible]",
+            "Biopsie cutanée du purpura [PCR méningocoque]",
+            "Prélèvement nasopharyngé [PCR multiplex]",
+            "ECBU [Si signes urinaires]",
+            "Ponction lombaire [Si pas de contre-indication]"
+          ]
+        },
+        {
+          "id": "m5",
+          "text": "Évaluation pré-ponction lombaire",
+          "details": [
+            "Contre-indications [HTIC, troubles hémostase, instabilité]",
+            "Purpura fulminans [PL différée possible, traiter d'abord]",
+            "Imagerie cérébrale [Si signes focaux ou troubles conscience]",
+            "Bilan coagulation [Si purpura étendu]",
+            "Position [Décubitus latéral ou assis]"
+          ]
+        },
+        {
+          "id": "m6",
+          "text": "Résultats et interprétation de la PL",
+          "patientComment": "[Liquide trouble, hyperpression]",
+          "details": [
+            "Aspect [Trouble, purulent]",
+            "Cellules [8500/mm³, 95% PNN]",
+            "Protéinorachie [3.2 g/L]",
+            "Glycorachie [0.1 mmol/L (glycémie 8 mmol/L)]",
+            "Rapport glycorachie/glycémie [< 0.4]",
+            "Lactates LCS [7.2 mmol/L]",
+            "Gram [Diplocoques Gram négatif]"
+          ],
+          "ddSection": {
+            "title": "Diagnostic différentiel des méningites",
+            "categories": [
+              {
+                "name": "Méningite bactérienne confirmée",
+                "items": [
+                  {
+                    "text": "Neisseria meningitidis",
+                    "cause": "Arguments POUR:\n\t□ Âge jeune (20 ans)\n\t□ Vie en collectivité\n\t□ Purpura fulminans\n\t□ Diplocoques Gram négatif\n\t□ Évolution rapide",
+                    "test": "→ PCR méningocoque, culture, sérogroupage"
+                  }
+                ]
+              },
+              {
+                "name": "Autres causes bactériennes",
+                "items": [
+                  {
+                    "text": "Streptococcus pneumoniae",
+                    "cause": "Arguments CONTRE:\n\t□ Diplocoques Gram positif habituellement\n\t□ Purpura moins fréquent\n\t□ Terrain : ORL, splénectomie",
+                    "test": "→ Antigène pneumocoque dans LCS"
+                  },
+                  {
+                    "text": "Listeria monocytogenes",
+                    "cause": "Arguments CONTRE:\n\t□ Âge > 50 ans habituellement\n\t□ Immunodépression\n\t□ Bacille Gram positif",
+                    "test": "→ Hémocultures répétées"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m7",
+          "text": "Prise en charge du choc septique",
+          "description": "Réanimation hémodynamique",
+          "details": [
+            "Remplissage vasculaire [Cristalloïdes 30 mL/kg en 1h]",
+            "Objectif TAM [≥ 65 mmHg]",
+            "Noradrénaline [Si hypotension persistante]",
+            "Surveillance diurèse [Sonde urinaire, objectif > 0.5 mL/kg/h]",
+            "Lactates sériés [Objectif clearance > 10%/2h]",
+            "ScvO2 si KT central [Objectif > 70%]"
+          ],
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Bundle sepsis 1ère heure",
+                "content": "1. Mesure des lactates\n2. Hémocultures avant antibiotiques\n3. Antibiotiques large spectre < 1h\n4. Remplissage 30 mL/kg si hypotension ou lactates ≥ 4\n5. Vasopresseurs si TAM < 65 après remplissage\n\nObjectifs:\n- TAM ≥ 65 mmHg\n- Diurèse > 0.5 mL/kg/h\n- Lactates < 2 mmol/L\n- ScvO2 > 70%"
+              }
+            ]
+          }
+        },
+        {
+          "id": "m8",
+          "text": "Complications à surveiller",
+          "redflagsSection": {
+            "title": "Complications du purpura fulminans",
+            "items": [
+              {
+                "text": "Syndrome de Waterhouse-Friderichsen",
+                "description": "Insuffisance surrénalienne aiguë par nécrose hémorragique"
+              },
+              {
+                "text": "CIVD",
+                "description": "Coagulopathie de consommation, thrombopénie < 50 000"
+              },
+              {
+                "text": "Nécrose cutanée extensive",
+                "description": "Risque d'amputation des extrémités"
+              },
+              {
+                "text": "Défaillance multi-organes",
+                "description": "Insuffisance rénale, SDRA, myocardite"
+              },
+              {
+                "text": "Complications neurologiques",
+                "description": "Œdème cérébral, hydrocéphalie, AVC, surdité"
+              }
+            ]
+          },
+          "details": [
+            "Monitoring neurologique horaire",
+            "Bilan CIVD [Plaquettes, TP, TCA, fibrinogène, D-dimères]",
+            "Fonction rénale [Créatinine, diurèse horaire]",
+            "Troponine [Myocardite septique]",
+            "Fond d'œil si possible [Œdème papillaire]",
+            "Audiométrie précoce [Avant sortie]"
+          ]
+        },
+        {
+          "id": "m9",
+          "text": "Prophylaxie des contacts",
+          "description": "Mesures de santé publique",
+          "details": [
+            "Déclaration obligatoire urgente à l'ARS",
+            "Identification des contacts proches [< 7 jours]",
+            "Antibioprophylaxie [Rifampicine 600 mg x2/j pendant 2j]",
+            "Alternative [Ciprofloxacine 500 mg dose unique]",
+            "Vaccination des contacts [Selon sérogroupe]",
+            "Information de la collectivité [Université]",
+            "Éviction [48h après début antibiotiques]"
+          ],
+          "scoringRule": "2 points si déclaration et prophylaxie mentionnées"
+        },
+        {
+          "id": "m10",
+          "text": "Évolution et pronostic",
+          "details": [
+            "Transfert en réanimation",
+            "Défervescence thermique [48-72h sous traitement]",
+            "Amélioration neurologique [Progressive sur 48h]",
+            "Risque de séquelles [10-20% : surdité, troubles cognitifs]",
+            "Mortalité méningocoque [5-10% si traité]",
+            "Suivi à distance [Audiométrie, bilan neuropsychologique]"
+          ]
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Communication avec le patient",
+          "content": "Monsieur C., vous avez une méningite grave, une infection des enveloppes du cerveau, probablement due au méningocoque. C'est une urgence vitale. Nous avons débuté les antibiotiques en urgence. Vous allez être transféré en réanimation pour une surveillance intensive. Le traitement est efficace mais les prochaines 48h sont critiques."
+        },
+        {
+          "id": "c2",
+          "text": "Questions du patient",
+          "content": "[Est-ce que je vais mourir ?]\n[Pourquoi j'ai des taches sur la peau ?]\n[Ma copine va-t-elle l'attraper ?]\n[Aurai-je des séquelles ?]"
+        },
+        {
+          "id": "c3",
+          "text": "Réponses adaptées",
+          "exemplesPhrases": [
+            "C'est une infection grave mais le traitement antibiotique est très efficace s'il est débuté rapidement. Nous faisons tout pour vous soigner.",
+            "Les taches sont dues à la bactérie qui atteint les vaisseaux sanguins. C'est un signe de gravité mais réversible sous traitement.",
+            "Votre amie et vos proches vont recevoir un traitement préventif. Le risque de transmission est faible avec la prophylaxie.",
+            "La majorité des patients guérissent sans séquelles. Nous surveillerons votre audition et vos fonctions neurologiques."
+          ]
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "images": [],
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour le patient standardisé - M. C., méningite",
+      "nom": "Monsieur C.",
+      "age": "20 ans",
+      "contexte": "Box d'isolement aux urgences",
+      "motifConsultation": {
+        "plaintePrincipale": "J'ai une fièvre terrible et mal à la tête depuis ce matin",
+        "autreChose": "J'ai des taches bizarres sur la peau qui s'étendent"
+      },
+      "histoireActuelle": {
+        "symptomesPrincipaux": [
+          "Céphalées intenses en casque",
+          "Fièvre à 39.8°C avec frissons",
+          "Vomissements en jet",
+          "Photophobie marquée",
+          "Éruption cutanée extensive"
+        ],
+        "contextePsychosocial": [
+          "Très inquiet de l'éruption qui s'étend",
+          "Difficultés à se concentrer",
+          "Peur de contaminer sa copine",
+          "Angoisse de mourir"
+        ]
+      },
+      "simulation": {
+        "attitude": [
+          "Position antalgique, tête dans les mains",
+          "Gémissements de douleur",
+          "Évite la lumière",
+          "Confusion débutante",
+          "Frissons visibles"
+        ],
+        "durantExamen": [
+          "Raideur de nuque très marquée",
+          "Douleur à la flexion de nuque",
+          "Kernig et Brudzinski positifs",
+          "Hyperesthésie cutanée",
+          "Montre les lésions purpuriques"
+        ]
+      },
+      "antecedents": {
+        "medicaux": [
+          "Diabète type 1 depuis 8 ans",
+          "Otites récurrentes dans l'enfance",
+          "Pas d'hospitalisation récente"
+        ],
+        "vaccinations": "À jour sauf méningocoques B et ACWY",
+        "allergie": "Pénicilline (éruption dans l'enfance)"
+      },
+      "habitudes": {
+        "logement": "Résidence universitaire, chambre partagée",
+        "social": "Soirée étudiante il y a 4 jours",
+        "toxiques": "Cannabis occasionnel, alcool social",
+        "medicaments": "Insuline Lantus et NovoRapid"
+      },
+      "inquietudes": {
+        "principales": [
+          "Peur de mourir",
+          "Crainte de contaminer les proches",
+          "Inquiétude sur les séquelles",
+          "Angoisse de la réanimation"
+        ],
+        "questions": [
+          "Est-ce que c'est contagieux ?",
+          "Vais-je garder des séquelles ?",
+          "Pourquoi moi ?",
+          "Combien de temps à l'hôpital ?"
+        ]
+      }
+    },
+    "informationsExpert": {
+      "titre": "Guide pour l'expert évaluateur - Méningite avec purpura",
+      "pointsCles": [
+        "Reconnaissance immédiate du purpura fulminans",
+        "Antibiothérapie dans l'heure (idéalement 30 min)",
+        "Pas de retard pour la PL si purpura",
+        "Corticoïdes AVANT ou AVEC antibiotiques",
+        "Prise en charge du choc septique",
+        "Mesures de santé publique (déclaration, prophylaxie)"
+      ],
+      "pieges": [
+        "Retarder les antibiotiques pour faire la PL",
+        "Oublier l'allergie à la pénicilline",
+        "Ne pas reconnaître le choc septique",
+        "Oublier les corticoïdes",
+        "Ne pas isoler le patient",
+        "Négliger la prophylaxie des contacts"
+      ],
+      "rolesInterventions": [
+        "Patient confus mais coopératif",
+        "Montrer l'extension du purpura",
+        "Insister sur la photophobie",
+        "Simuler les signes méningés",
+        "Poser des questions sur la contagion",
+        "Exprimer l'angoisse de mourir"
+      ]
+    },
+    "theoriePratique": {
+      "titre": "Rappels théoriques - Méningite bactérienne aiguë",
+      "sections": [
+        {
+          "titre": "Épidémiologie et agents pathogènes",
+          "contenu": "Incidence : 2-5/100 000/an. Pic hivernal. Transmission par gouttelettes.",
+          "points": [
+            "< 3 mois : Strep B, E. coli, Listeria",
+            "3 mois-5 ans : Pneumocoque, Méningocoque, Haemophilus",
+            "5-50 ans : Méningocoque, Pneumocoque",
+            "> 50 ans : Pneumocoque, Listeria, BGN",
+            "Méningocoque : sérogroupes B, C, W, Y en France"
+          ]
+        },
+        {
+          "titre": "Physiopathologie du purpura fulminans",
+          "contenu": "Syndrome de coagulation intravasculaire disséminée (CIVD) avec thromboses microvasculaires et hémorragies.",
+          "points": [
+            "Endotoxine (LPS) → activation coagulation",
+            "Consommation facteurs coagulation et plaquettes",
+            "Thromboses microvasculaires → nécrose cutanée",
+            "Hémorragies surrénaliennes (Waterhouse-Friderichsen)",
+            "Mortalité 20-30% malgré traitement"
+          ]
+        },
+        {
+          "titre": "Analyse du LCS",
+          "contenu": "BACTÉRIENNE : Cellules > 1000 (PNN), Protéines > 1 g/L, Glucose < 40% glycémie, Lactates > 3.5\nVIRALE : Cellules 10-1000 (Lymphocytes), Protéines 0.5-1 g/L, Glucose normal\nTUBERCULEUSE : Cellules 100-500 (Lymphocytes), Protéines > 1 g/L, Glucose bas",
+          "points": [
+            "Gram : sensibilité 60-90%, spécificité 97%",
+            "Culture : gold standard mais 48-72h",
+            "PCR : résultat en 2h, très sensible",
+            "Antigènes solubles : pneumocoque, méningocoque",
+            "Lactates LCS > 3.5 : VPP 96% pour bactérien"
+          ]
+        },
+        {
+          "titre": "Score de gravité (Hoen)",
+          "contenu": "Facteurs de mauvais pronostic à l'admission",
+          "points": [
+            "Purpura fulminans extensif",
+            "Score de Glasgow < 8",
+            "Signes focaux neurologiques",
+            "Choc septique",
+            "Leucocytes < 4000 ou > 20000",
+            "Mortalité si ≥ 3 critères : 50%"
+          ]
+        },
+        {
+          "titre": "Complications et séquelles",
+          "contenu": "Précoces : HTIC, hydrocéphalie, AVC, épilepsie\nTardives : surdité (10-30%), troubles cognitifs (20%), épilepsie (5%)",
+          "points": [
+            "Surdité : plus fréquente avec pneumocoque",
+            "Dépistage audiométrique systématique",
+            "Hydrocéphalie : 5-10% des cas",
+            "Séquelles cutanées : amputations si nécrose",
+            "Syndrome post-méningitique : fatigue, céphalées chroniques"
+          ]
+        }
+      ],
+      "rappelsTherapeutiques": [
+        "Ceftriaxone 2g x2/j ou Céfotaxime 3g x4/j : couverture méningocoque et pneumocoque",
+        "Vancomycine 15-20 mg/kg x2-3/j : si pneumocoque résistant suspecté",
+        "Dexaméthasone 10 mg x4/j pendant 4j : réduit mortalité et séquelles (NNT=20)",
+        "Amoxicilline 200 mg/kg/j si Listeria suspecté (> 50 ans, immunodéprimé)",
+        "Durée totale : Méningocoque 5-7j, Pneumocoque 10-14j, Listeria 21j",
+        "Prophylaxie contacts : Rifampicine 600 mg x2/j x2j ou Ciprofloxacine 500 mg dose unique"
+      ],
+      "examensComplementaires": [
+        "Hémocultures x2 : positives dans 50-80% avant antibiotiques",
+        "PL : contre-indiquée si HTIC, troubles hémostase, instabilité",
+        "CT cérébral : si signes focaux, troubles conscience, immunodépression",
+        "PCR multiplex méningite : résultat en 1-2h, identifie 95% des pathogènes",
+        "Biopsie cutanée purpura : PCR méningocoque si PL impossible",
+        "Bilan sepsis : NFS, CRP, PCT, lactates, coagulation, ionogramme, fonction rénale et hépatique"
+      ]
+    }
+  }
+}

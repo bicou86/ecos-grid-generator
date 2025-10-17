@@ -1,0 +1,624 @@
+{
+  "title": "Voyage à Madagascar - Père et enfant",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Monsieur Thomas Laurent, 38 ans, consultant avec son fils de 10 ans pour préparer un voyage à Madagascar"
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Motif principal de consultation",
+          "binaryOnly": true,
+          "patientComment": "Je viens pour préparer notre voyage à Madagascar avec mon fils, on part dans 5 semaines"
+        },
+        {
+          "id": "a2",
+          "text": "Détails du voyage",
+          "details": [
+            "Durée du séjour [3 semaines]",
+            "Date de départ [dans 5 semaines]",
+            "Type de voyage [itinérance]",
+            "Destinations [villes, villages, excursions nature]",
+            "Hébergements [simples, parfois en famille d'accueil]",
+            "Transit éventuel par pays endémiques"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Antécédents du père",
+          "details": [
+            "Antécédents médicaux [asthme léger]",
+            "Allergies médicamenteuses",
+            "Traitements en cours",
+            "Schéma vaccinal adulte",
+            "Voyages antérieurs [déjà voyagé en Afrique]",
+            "Hépatite B [déjà vacciné]"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Antécédents de l'enfant (10 ans)",
+          "details": [
+            "État de santé général [bon état général]",
+            "Vaccinations de base [DTP, ROR, hépatite B OK]",
+            "Allergies",
+            "Traitements en cours",
+            "Expérience de voyage [jamais sorti d'Europe]",
+            "Peur des piqûres [oui]"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Contexte familial",
+          "details": [
+            "Père célibataire [voyage seul avec l'enfant]",
+            "Autorisation parentale pour voyager",
+            "Contacts d'urgence",
+            "Organisation des soins sur place"
+          ]
+        },
+        {
+          "id": "a6",
+          "text": "Activités à risque prévues",
+          "details": [
+            "Contact avec animaux",
+            "Baignade en eau douce",
+            "Randonnées en zone rurale",
+            "Alimentation locale",
+            "Proximité avec population locale"
+          ]
+        },
+        {
+          "id": "a7",
+          "text": "Assurance et accès aux soins",
+          "details": [
+            "Assurance voyage santé",
+            "Rapatriement sanitaire",
+            "Centres médicaux sur place",
+            "Budget pour urgences médicales"
+          ]
+        },
+        {
+          "id": "a8",
+          "text": "Préoccupations parentales",
+          "details": [
+            "Risques pour l'enfant",
+            "Gestion de la peur des piqûres",
+            "Que faire si l'enfant tombe malade",
+            "Adaptation de l'enfant au voyage"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Examen du père",
+          "details": [
+            "État général",
+            "Auscultation pulmonaire (asthme)",
+            "Signes vitaux",
+            "État cutané"
+          ]
+        },
+        {
+          "id": "e2",
+          "text": "Examen de l'enfant",
+          "details": [
+            "Croissance staturo-pondérale",
+            "État général",
+            "Examen ORL",
+            "État nutritionnel"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Vérification des carnets de vaccination",
+          "details": [
+            "Carnet du père",
+            "Carnet de l'enfant [DTP, ROR, hépatite B confirmés]",
+            "Dates des derniers rappels",
+            "Vaccins manquants"
+          ]
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Vaccinations recommandées pour le père",
+          "details": [
+            "Vérifier DTP et ROR [rappel si nécessaire]",
+            "Hépatite A [oui, recommandé]",
+            "Hépatite B [déjà vacciné]",
+            "Fièvre typhoïde [oui]",
+            "Rage pré-exposition [recommandé en zones rurales]",
+            "Fièvre jaune [uniquement si transit par pays endémique]"
+          ]
+        },
+        {
+          "id": "m2",
+          "text": "Vaccinations recommandées pour l'enfant",
+          "details": [
+            "DTP et ROR [OK, à jour]",
+            "Hépatite A [oui, 2 doses]",
+            "Hépatite B [OK, déjà fait]",
+            "Fièvre typhoïde [oui, possible dès 2 ans]",
+            "Rage pré-exposition [fortement recommandé chez l'enfant]",
+            "Fièvre jaune [si transit par pays endémique]"
+          ],
+          "exemplesPhrases": [
+            "On peut essayer de regrouper les injections et utiliser des patchs anesthésiants",
+            "Les vaccins protègent contre des maladies graves présentes sur place"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Prophylaxie antipaludique",
+          "details": [
+            "Zone de transmission [toute l'île de Madagascar]",
+            "Atovaquone-proguanil père [1cp/jour adulte]",
+            "Atovaquone-proguanil enfant [dose adaptée au poids]",
+            "Début [1 jour avant le départ]",
+            "Durée [pendant séjour + 7 jours après]",
+            "Observance stricte importante"
+          ],
+          "exemplesPhrases": [
+            "Oui, le paludisme est surtout grave chez les enfants",
+            "Mais avec une bonne prophylaxie et les protections contre les moustiques, le risque est très réduit"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Protection anti-vectorielle",
+          "details": [
+            "Vêtements longs imprégnés",
+            "Moustiquaire imprégnée",
+            "Répulsifs DEET ≥30% pour adulte",
+            "Répulsifs DEET ≤30% pour enfant",
+            "Éviter sorties crépusculaires",
+            "Protection jour et nuit (différents moustiques)"
+          ]
+        },
+        {
+          "id": "m5",
+          "text": "Conseils hygiéno-diététiques",
+          "details": [
+            "Eau en bouteille uniquement [éviter l'eau du robinet]",
+            "Éviter glaçons, crudités, fruits non pelés",
+            "Lavage fréquent des mains",
+            "Gel hydroalcoolique",
+            "Aliments bien cuits",
+            "Éviter lait non pasteurisé"
+          ],
+          "exemplesPhrases": [
+            "Il faudra éviter l'eau du robinet",
+            "Buvez uniquement de l'eau en bouteille ou traitée",
+            "Idem pour les glaçons, crudités, fruits non pelés"
+          ]
+        },
+        {
+          "id": "m6",
+          "text": "Trousse médicale famille",
+          "details": [
+            "Antipaludiques (doses adulte et enfant)",
+            "Paracétamol adulte et pédiatrique",
+            "Solutions de réhydratation orale (SRO)",
+            "Probiotiques/antidiarrhéiques",
+            "Antibiotique de secours [azithromycine adulte + pédiatrique]",
+            "Thermomètre, antiseptique, pansements"
+          ]
+        },
+        {
+          "id": "m7",
+          "text": "Risques spécifiques et prévention",
+          "ddSection": {
+            "title": "Risques sanitaires à Madagascar",
+            "categories": [
+              {
+                "name": "Maladies vectorielles",
+                "items": [
+                  {
+                    "text": "Paludisme",
+                    "cause": "Transmission dans toute l'île, zones rurales et villes",
+                    "test": "→ Prophylaxie antipaludique obligatoire"
+                  },
+                  {
+                    "text": "Chikungunya/Dengue",
+                    "cause": "Présents, transmission par Aedes",
+                    "test": "→ Protection antimoustique jour et nuit"
+                  }
+                ]
+              },
+              {
+                "name": "Maladies entériques",
+                "items": [
+                  {
+                    "text": "Fièvre typhoïde",
+                    "cause": "Transmission féco-orale, hygiène précaire",
+                    "test": "→ Vaccination recommandée"
+                  },
+                  {
+                    "text": "Hépatite A",
+                    "cause": "Très fréquente, transmission alimentaire",
+                    "test": "→ Vaccination systématique"
+                  },
+                  {
+                    "text": "Diarrhée du voyageur",
+                    "cause": "Très fréquente chez les enfants",
+                    "test": "→ Mesures hygiéno-diététiques strictes"
+                  }
+                ]
+              },
+              {
+                "name": "Autres risques",
+                "items": [
+                  {
+                    "text": "Rage",
+                    "cause": "Chiens errants nombreux, risque élevé chez enfants",
+                    "test": "→ Vaccination pré-exposition fortement recommandée"
+                  },
+                  {
+                    "text": "Schistosomiase",
+                    "cause": "Baignade en eau douce",
+                    "test": "→ Éviter toute baignade en eau douce"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m8",
+          "text": "Conseils spécifiques père-enfant",
+          "details": [
+            "Ne jamais caresser d'animaux [risque rage]",
+            "Éviter baignade en eau douce [schistosomiase]",
+            "Surveillance constante de l'enfant",
+            "Hydratation régulière",
+            "Protection solaire",
+            "Adaptation progressive au climat"
+          ]
+        },
+        {
+          "id": "m9",
+          "text": "Documentation et urgences",
+          "details": [
+            "Assurance santé internationale obligatoire",
+            "Certificats vaccination internationaux",
+            "Consentement parent unique pour mineur",
+            "Centres médicaux fiables à Antananarivo",
+            "Numéros d'urgence locaux",
+            "Consulat français"
+          ],
+          "exemplesPhrases": [
+            "Je vous recommanderai une assurance voyage santé et une trousse de premiers soins",
+            "Je peux aussi vous indiquer les centres médicaux fiables à Antananarivo"
+          ]
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Clôture de la consultation",
+          "content": "Nous avons bien préparé votre voyage. Avec ces précautions, vous devriez passer un excellent séjour. Avez-vous d'autres questions concernant la santé de votre fils pendant le voyage ?",
+          "exemplesPhrases": [
+            "Voici les prescriptions pour les vaccins et la prophylaxie pour vous deux",
+            "Je vous prépare une fiche avec tous les conseils importants",
+            "N'hésitez pas à consulter rapidement sur place si fièvre ou diarrhée sévère",
+            "Profitez bien de ce voyage père-fils à Madagascar !"
+          ]
+        },
+        {
+          "id": "c2",
+          "text": "Questions difficiles du père",
+          "content": "[Le paludisme, c'est si grave que ça ?] [Mon fils a peur des piqûres, on peut éviter les vaccins ?] [Est-ce que l'eau est potable ?] [Que faire si l'un de nous est malade sur place ?]"
+        },
+        {
+          "id": "c3",
+          "text": "Réponses types aux questions difficiles",
+          "exemplesPhrases": [
+            "Oui, surtout chez les enfants. Mais avec une bonne prophylaxie, le risque est très réduit",
+            "On peut utiliser des patchs anesthésiants et regrouper les injections",
+            "Il faudra éviter l'eau du robinet, uniquement eau en bouteille",
+            "Je vous donnerai les coordonnées des centres médicaux fiables"
+          ]
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour le patient standardisé",
+      "nom": "Thomas Laurent",
+      "age": "38 ans",
+      "contexte": "Cabinet de médecine générale avec son fils de 10 ans",
+      "motifConsultation": {
+        "plaintePrincipale": "Préparer notre voyage à Madagascar dans 5 semaines",
+        "autreChose": "Je suis père célibataire et j'emmène mon fils pour la première fois hors d'Europe"
+      },
+      "histoireActuelle": {
+        "detailsVoyage": [
+          "Voyage de 3 semaines en itinérance",
+          "Villes, villages et excursions nature",
+          "Hébergements simples et familles d'accueil",
+          "Budget moyen mais suffisant",
+          "Départ dans 5 semaines"
+        ],
+        "experiencePere": [
+          "Déjà voyagé en Afrique seul",
+          "Asthme léger bien contrôlé",
+          "Vacciné hépatite B",
+          "Pas d'allergies médicamenteuses"
+        ],
+        "situationEnfant": [
+          "Fils de 10 ans en bonne santé",
+          "Vaccinations de base à jour (DTP, ROR, hépatite B)",
+          "Jamais sorti d'Europe",
+          "Très peur des piqûres",
+          "Excité mais un peu anxieux"
+        ]
+      },
+      "simulation": {
+        "attitude": [
+          "Père responsable et organisé",
+          "Soucieux de la santé de son fils",
+          "Veut bien préparer le voyage",
+          "Un peu stressé de voyager seul avec l'enfant"
+        ],
+        "durantEntretien": [
+          "Pose des questions sur les risques pour l'enfant",
+          "S'inquiète de la réaction aux piqûres",
+          "Demande des conseils pratiques",
+          "Veut connaître les urgences sur place",
+          "Prend des notes"
+        ]
+      },
+      "inquietudes": {
+        "principales": [
+          "Gravité du paludisme chez l'enfant",
+          "Gestion de la peur des piqûres",
+          "Qualité de l'eau et alimentation",
+          "Que faire si maladie sur place",
+          "Risque de la rage",
+          "Adaptation de l'enfant"
+        ],
+        "questions": [
+          "Le paludisme, c'est si grave que ça ?",
+          "Mon fils a peur des piqûres, on peut éviter les vaccins ?",
+          "Est-ce que l'eau est potable ?",
+          "Que faire si l'un de nous est malade sur place ?",
+          "Comment protéger mon fils de la rage ?",
+          "Les médicaments antipaludiques ont des effets secondaires ?"
+        ]
+      }
+    },
+    "informationsExpert": {
+      "titre": "Points clés pour l'expert évaluateur",
+      "pointsCles": [
+        "Évaluation des risques pour adulte ET enfant",
+        "Adaptation des recommandations à l'âge",
+        "Vaccinations complètes incluant rage",
+        "Prophylaxie antipaludique avec doses pédiatriques",
+        "Gestion de la peur des piqûres chez l'enfant",
+        "Conseils spécifiques voyage monoparental",
+        "Documentation légale pour mineur"
+      ],
+      "pieges": [
+        "Oublier la vaccination rage (important chez l'enfant)",
+        "Ne pas adapter les doses d'antipaludique à l'enfant",
+        "Négliger la schistosomiase (baignade eau douce)",
+        "Pas de conseils sur la diarrhée du voyageur pédiatrique",
+        "Oublier l'autorisation parentale pour voyager",
+        "Ne pas rassurer sur la peur des piqûres",
+        "Minimiser les risques pour l'enfant"
+      ]
+    },
+    "theoriePratique": {
+      "titre": "Rappels théoriques sur la médecine des voyages pédiatrique",
+      "sections": [
+        {
+          "titre": "Particularités pédiatriques",
+          "points": [
+            "Risque accru de formes graves (paludisme, dengue)",
+            "Déshydratation plus rapide en cas de diarrhée",
+            "Contact plus fréquent avec animaux (rage)",
+            "Vaccination rage très importante",
+            "Adaptation des doses médicamenteuses au poids"
+          ]
+        },
+        {
+          "titre": "Madagascar - Risques spécifiques",
+          "points": [
+            "Paludisme : transmission toute l'année, tout le pays",
+            "Peste : foyers sporadiques (hauts plateaux)",
+            "Rage : enzootique, nombreux chiens errants",
+            "Schistosomiase : eaux douces contaminées",
+            "Fièvre typhoïde : très fréquente"
+          ]
+        },
+        {
+          "titre": "Vaccinations voyage père-enfant",
+          "points": [
+            "Hépatite A : 2 doses, protection >95%",
+            "Typhoïde : possible dès 2 ans",
+            "Rage : 3 doses J0-J7-J21/28",
+            "Fièvre jaune : si transit Afrique de l'Est",
+            "Vérifier DTP-ROR à jour"
+          ]
+        },
+        {
+          "titre": "Prophylaxie antipaludique pédiatrique",
+          "points": [
+            "Atovaquone-proguanil : 5-8kg: 1/2cp pédiatrique",
+            "9-10kg: 3/4cp pédiatrique",
+            "11-20kg: 1cp pédiatrique",
+            "21-30kg: 2cp pédiatriques",
+            "31-40kg: 3cp pédiatriques",
+            ">40kg: dose adulte"
+          ]
+        }
+      ],
+      "rappelsTherapeutiques": [
+        "Débuter antipaludique 1 jour avant départ",
+        "Poursuivre 7 jours après retour (atovaquone-proguanil)",
+        "Vaccination rage pré-exposition simplifie la prise en charge post-exposition",
+        "SRO essentielles pour diarrhée pédiatrique",
+        "Azithromycine : 10mg/kg/jour pendant 3 jours si diarrhée sévère"
+      ],
+      "examensComplementaires": [
+        "Aucun bilan systématique nécessaire",
+        "Sérologies si statut vaccinal incertain",
+        "Consultation au retour si fièvre dans les 3 mois",
+        "Dépistage schistosomiase si baignade eau douce"
+      ]
+    },
+    "resume": {
+      "titre": "🌍 Médecine des voyages – Résumé ECOS",
+      "sections": [
+        {
+          "titre": "🔍 Anamnèse",
+          "subsections": [
+            {
+              "titre": "Points essentiels",
+              "points": [
+                "Destination (pays, zones rurales vs urbaines, climat, altitude)",
+                "Durée et conditions de séjour",
+                "Type de voyage (tourisme, mission humanitaire, expatriation, pèlerinage)",
+                "Vaccinations antérieures connues",
+                "Antécédents médicaux et traitements en cours (immunosuppression, grossesse, enfants)",
+                "Voyages précédents et incidents médicaux (paludisme, diarrhée du voyageur)"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "👀 Examen clinique",
+          "subsections": [
+            {
+              "titre": "Avant départ",
+              "points": [
+                "Évaluation du statut vaccinal",
+                "Évaluation des comorbidités (cardiaque, respiratoire, métabolique)",
+                "Recherche de CI aux vaccins vivants (grossesse, immunodépression)"
+              ]
+            },
+            {
+              "titre": "Au retour (fièvre au retour de voyageur)",
+              "points": [
+                "Recherche systématique d’un paludisme (urgence absolue)",
+                "Autres diagnostics : dengue, chikungunya, fièvre jaune, typhoïde",
+                "Évaluation cutanée (ulcères, piqûres, lésions)",
+                "Examen digestif si diarrhée persistante"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "🧪 Prévention et examens",
+          "subsections": [
+            {
+              "titre": "Vaccinations de routine et spécifiques",
+              "points": [
+                "Vaccins universels à jour : DTCaP, ROR, hépatite B, grippe",
+                "Vaccins recommandés selon destination : hépatite A, fièvre jaune, typhoïde, rage, méningocoque ACYW, encéphalite japonaise, polio",
+                "Certains obligatoires : fièvre jaune (Afrique, Amérique du Sud), méningocoque pour le Hajj"
+              ]
+            },
+            {
+              "titre": "Chimioprophylaxie",
+              "points": [
+                "Paludisme : atovaquone-proguanil, doxycycline ou méfloquine selon zone",
+                "Débuter avant départ et poursuivre après retour (selon molécule)"
+              ]
+            },
+            {
+              "titre": "Prévention non médicamenteuse",
+              "points": [
+                "Mesures anti-moustiques : moustiquaire imprégnée, répulsifs, vêtements longs",
+                "Précautions alimentaires : eau en bouteille, éviter glaçons, éviter crudités",
+                "Hygiène : lavage des mains fréquent",
+                "Prévention altitude : ascension progressive, acétazolamide si risque"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "⚙️ Prise en charge / conseils pratiques",
+          "subsections": [
+            {
+              "titre": "Kit du voyageur",
+              "points": [
+                "Antipyrétiques (paracétamol)",
+                "Antidiarrhéiques ± antibiotiques en automédication (ex. azithromycine)",
+                "Traitement prophylactique/curatif paludisme selon zone",
+                "Matériel de protection (répulsifs, moustiquaire)"
+              ]
+            },
+            {
+              "titre": "Au retour si symptômes",
+              "points": [
+                "Fièvre = urgence → paludisme à éliminer en priorité",
+                "Isoler et diagnostiquer rapidement maladies à déclaration obligatoire (fièvre jaune, dengue, chikungunya)",
+                "Surveillance des maladies incubées (hépatite, tuberculose, VIH)"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "✅ Points clés ECOS",
+          "points": [
+            "Toujours vérifier statut vaccinal et comorbidités avant départ",
+            "Fièvre au retour de zone endémique = paludisme jusqu’à preuve du contraire",
+            "Chimioprophylaxie antipaludique adaptée à la zone → expliquer observance",
+            "Prévention non médicamenteuse essentielle (moustiques, hygiène, eau)",
+            "Certaines vaccinations sont obligatoires pour entrer dans certains pays"
+          ]
+        },
+        {
+          "titre": "📋 Check-list rapide ECOS",
+          "subsections": [
+            {
+              "titre": "Questions à poser",
+              "points": [
+                "Destination précise et durée de séjour ?",
+                "Type de voyage (rural, urbain, professionnel, humanitaire) ?",
+                "Vaccinations antérieures connues ?",
+                "Prise de traitements chroniques (immunosuppresseurs, anticoagulants) ?",
+                "Grossesse ou projet de grossesse ?"
+              ]
+            },
+            {
+              "titre": "Examens/Préparation",
+              "points": [
+                "Mettre à jour vaccins de base",
+                "Vérifier vaccins spécifiques selon destination",
+                "Prescrire prophylaxie paludisme si nécessaire",
+                "Donner conseils prévention alimentaire et moustiques",
+                "Préparer kit médical personnalisé"
+              ]
+            },
+            {
+              "titre": "PEC en 3 points",
+              "points": [
+                "Anticiper et prescrire vaccins + prophylaxie selon destination",
+                "Informer sur mesures de prévention non médicamenteuses",
+                "Surveiller retour de voyageur fébrile = paludisme en premier"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

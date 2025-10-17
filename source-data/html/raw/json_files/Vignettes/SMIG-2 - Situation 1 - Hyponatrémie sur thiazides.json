@@ -1,0 +1,459 @@
+{
+  "title": "SMIG-2 - Situation 1 - Crise convulsive - Hyponatrémie sur thiazides",
+  "context": {
+    "setting": "Service d'urgences",
+    "patient": "Madame R., 71 ans, admise aux urgences pour crise convulsive généralisée survenue sur la voie publique. À l'arrivée, patiente consciente mais désorientée et ralentie. Glycémie normale dans l'ambulance",
+    "vitals": {
+      "ta": "140/85 mmHg",
+      "fc": "68 bpm",
+      "fr": "16/min",
+      "sao2": "96% air ambiant"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Circonstances et motif d'admission",
+          "binaryOnly": true,
+          "patientComment": "[Crise convulsive sur la voie publique, première fois]"
+        },
+        {
+          "id": "a2",
+          "text": "Caractérisation de l'état neurologique",
+          "details": [
+            "État de conscience [Consciente mais confuse]",
+            "Orientation [Désorientée dans le temps et l'espace]",
+            "Ralentissement psychomoteur [Présent]",
+            "Épisodes similaires [Non, première crise]",
+            "Perte de connaissance complète [Oui selon témoins]",
+            "Durée de la crise [Quelques minutes selon témoins]"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Recherche de symptômes neurologiques",
+          "details": [
+            "Céphalées [Légères, non spécifiques]",
+            "Nausées/vomissements [Légères nausées]",
+            "Troubles visuels [Non]",
+            "Déficit focal [Non]",
+            "Irritabilité [Présente]",
+            "Somnolence [Tendance]"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Antécédents médicaux et médicaments",
+          "details": [
+            "Hypertension artérielle [Traitée par thiazide]",
+            "Cardiopathie [Non connue]",
+            "Hépatopathie [Non]",
+            "Néphropathie [Non]",
+            "Épilepsie [Non]",
+            "Autres médicaments [Thiazide seul pour HTA]"
+          ],
+          "scoringRule": "2 points si thiazide identifié comme cause potentielle"
+        },
+        {
+          "id": "a5",
+          "text": "Recherche de causes d'hyponatrémie",
+          "details": [
+            "Diarrhées récentes [Non]",
+            "Vomissements récents [Non]",
+            "Prise hydrique excessive [Non, normale]",
+            "Début du thiazide [Il y a quelques semaines]",
+            "Modification récente du traitement [Oui, introduction récente]",
+            "Régime hyposodé [Non strict]"
+          ]
+        },
+        {
+          "id": "a6",
+          "text": "Évaluation de la vitesse d'installation",
+          "details": [
+            "Symptômes depuis [Quelques jours de fatigue]",
+            "Aggravation rapide [Oui, crise aujourd'hui]",
+            "Installation probable [Aiguë à subaiguë]",
+            "Signes d'alarme [Crise convulsive]"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "État général et paramètres vitaux",
+          "details": [
+            "État général [Altéré, confusion]",
+            "TA [140/85 mmHg, pas d'hypotension]",
+            "FC [68 bpm, régulier]",
+            "FR [16/min, normale]",
+            "SpO2 [96% air ambiant]",
+            "Température [Afébrile]"
+          ],
+          "binaryOnly": true
+        },
+        {
+          "id": "e2",
+          "text": "Examen neurologique",
+          "details": [
+            "Glasgow [14 - E4V4M6]",
+            "Nuque [Souple]",
+            "Signes méningés [Absents]",
+            "Déficit focal [Absent]",
+            "Réflexes [Normaux, symétriques]",
+            "Babinski [Négatif bilatéral]",
+            "État confusionnel [Présent]"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Évaluation de la volémie",
+          "details": [
+            "Test d'orthostatisme [Pas d'hypotension orthostatique]",
+            "Tachycardie [Absente]",
+            "Pli cutané [Normal]",
+            "Muqueuses [Normalement hydratées]",
+            "Turgescence jugulaire [Normale]",
+            "Œdèmes périphériques [Absents]"
+          ],
+          "scoringRule": "2 points si volémie évaluée comme normale (euvolémie)"
+        },
+        {
+          "id": "e4",
+          "text": "Examen cardiovasculaire",
+          "details": [
+            "Bruits du cœur [Normaux]",
+            "Souffle [Absent]",
+            "Signes d'insuffisance cardiaque [Absents]",
+            "Reflux hépato-jugulaire [Absent]"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Examen pulmonaire",
+          "details": [
+            "Auscultation [Claire, symétrique]",
+            "Râles de stase [Absents]",
+            "Signes de surcharge [Absents]"
+          ]
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Interprétation des examens biologiques",
+          "details": [
+            "Natrémie [104 mmol/L - hyponatrémie sévère]",
+            "Kaliémie [3.8 mmol/L - normale]",
+            "Osmolalité plasmatique [217 mOsm/kg - hypoosmolaire]",
+            "Urée [3.5 mmol/L - normale]",
+            "Créatinine [65 μmol/L - normale]",
+            "Glycémie [Normale - exclut hypoglycémie]"
+          ],
+          "binaryOnly": true
+        },
+        {
+          "id": "m2",
+          "text": "Analyse du spot urinaire",
+          "details": [
+            "Natriurèse [81 mmol/L - élevée]",
+            "Kaliurèse [25 mmol/L]",
+            "Chlorurèse [92 mmol/L]",
+            "Osmolalité urinaire [276 mOsm/kg - inadaptée]",
+            "Interprétation [Urines non diluées malgré hypoosmolalité]"
+          ],
+          "scoringRule": "2 points si hyponatrémie sur thiazide correctement identifiée"
+        },
+        {
+          "id": "m3",
+          "text": "Diagnostic différentiel de l'hyponatrémie",
+          "ddSection": {
+            "title": "Approche diagnostique d'une hyponatrémie",
+            "categories": [
+              {
+                "name": "Hyponatrémie hypoosmolaire",
+                "items": [
+                  {
+                    "text": "Hyponatrémie sur diurétiques thiazidiques",
+                    "cause": "Arguments POUR:\n\t□ Traitement thiazidique récent\n\t□ Euvolémie clinique\n\t□ Natriurèse > 40 mmol/L\n\t□ Osmolalité urinaire inadaptée\n\t□ Installation subaiguë typique",
+                    "test": "→ Arrêt du thiazide et surveillance"
+                  },
+                  {
+                    "text": "SIADH",
+                    "cause": "Arguments CONTRE:\n\t□ Contexte de thiazide\n\t□ Diagnostic d'exclusion\n\t□ Doit être reconsidéré si persistance après arrêt thiazide",
+                    "test": "→ Réévaluation après arrêt thiazide"
+                  },
+                  {
+                    "text": "Hypovolémie",
+                    "cause": "Arguments CONTRE:\n\t□ Pas de signes cliniques d'hypovolémie\n\t□ TA normale sans tachycardie\n\t□ Pas d'orthostatisme",
+                    "test": "→ Non retenu"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m4",
+          "text": "Mesures thérapeutiques urgentes",
+          "details": [
+            "Arrêt immédiat du thiazide [Indispensable]",
+            "Voie veineuse périphérique [Mise en place]",
+            "NaCl 3% [Indication formelle vu symptômes neurologiques]",
+            "Vitesse de correction [1 mmol/L/h jusqu'à arrêt des symptômes]",
+            "Objectif initial [Augmentation de 4-6 mmol/L]",
+            "Surveillance natrémie [Toutes les 2 heures initialement]"
+          ],
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Protocole de correction de l'hyponatrémie symptomatique",
+                "content": "PHASE URGENTE (symptômes sévères):\n- NaCl 3% IV 100-150 mL en 10-20 min\n- Répéter si besoin jusqu'à amélioration\n- Objectif: augmenter Na de 4-6 mmol/L\n\nVITESSE DE CORRECTION:\n- Maximum 8-10 mmol/L sur 24h\n- Maximum 18 mmol/L sur 48h\n- Risque de myélinolyse centropontine si trop rapide\n\nSURVEILLANCE:\n- Natrémie /2h initialement puis /4-6h\n- État neurologique horaire\n- Signes vitaux continus"
+              }
+            ]
+          },
+          "binaryOnly": true
+        },
+        {
+          "id": "m5",
+          "text": "Prévention des complications",
+          "redflagsSection": {
+            "title": "Complications à surveiller",
+            "items": [
+              {
+                "text": "Syndrome de démyélinisation osmotique",
+                "description": "Si correction > 10 mmol/L/24h. Risque accru chez alcooliques, dénutris"
+              },
+              {
+                "text": "Récidive de convulsions",
+                "description": "Surveillance neurologique continue jusqu'à Na > 120 mmol/L"
+              },
+              {
+                "text": "Œdème cérébral paradoxal",
+                "description": "Si correction trop brutale, surveillance clinique étroite"
+              },
+              {
+                "text": "Surcharge volémique",
+                "description": "Surveillance des signes de surcharge si NaCl 3%"
+              }
+            ]
+          },
+          "details": [
+            "Monitoring continu [Scope, saturation]",
+            "Prévention des chutes [Barrières, surveillance]",
+            "Protection des voies aériennes [Si troubles de conscience]",
+            "Anticonvulsivants [Non systématiques, si récidive]"
+          ]
+        },
+        {
+          "id": "m6",
+          "text": "Surveillance et suivi",
+          "details": [
+            "Durée d'hospitalisation [Minimum 48-72h]",
+            "Contrôles biologiques [Natrémie /4-6h après stabilisation]",
+            "Récupération neurologique [Progressive sur 24-48h]",
+            "Alternative au thiazide [IEC, ARA2, inhibiteur calcique]",
+            "Éducation [Risque de récidive avec thiazides]",
+            "Contre-indication [Thiazides à vie]"
+          ]
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Communication avec la famille",
+          "content": "Votre mère a fait une crise convulsive due à un taux de sodium très bas dans le sang, causé par son médicament pour la tension, le diurétique thiazidique. C'est une urgence médicale que nous traitons en perfusant du sel concentré et en arrêtant définitivement ce médicament. La récupération sera progressive sur 24-48 heures avec une surveillance étroite pour éviter les complications."
+        },
+        {
+          "id": "c2",
+          "text": "Questions de la famille",
+          "content": "[Est-ce que c'est grave ?]\n[Va-t-elle récupérer complètement ?]\n[Pourquoi ce médicament a causé ça maintenant ?]\n[Peut-elle reprendre ce médicament plus tard ?]"
+        },
+        {
+          "id": "c3",
+          "text": "Réponses adaptées",
+          "exemplesPhrases": [
+            "C'est effectivement sérieux avec la crise convulsive, mais le traitement est très efficace. La majorité des patients récupèrent complètement.",
+            "La récupération neurologique est généralement complète en 48-72 heures si la correction est bien menée.",
+            "Les thiazides peuvent causer cette complication surtout dans les premières semaines, plus fréquent chez les femmes âgées.",
+            "Non, les thiazides sont définitivement contre-indiqués. Nous utiliserons d'autres médicaments pour sa tension."
+          ]
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "images": [
+      {
+        "title": "Approche diagnostique d'une hyponatrémie",
+        "description": "Algorithme décisionnel pour le diagnostic étiologique de l'hyponatrémie selon la volémie et les paramètres urinaires",
+        "data": "grilles_generees/html/images/SMIG/SMIG-2-Situation 1-Approche diagnostique d'une hyponatrémie.jpg"
+      }
+    ],
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour la patiente standardisée - Mme R., hyponatrémie sur thiazides",
+      "nom": "Madame R.",
+      "age": "71 ans",
+      "contexte": "Service d'urgences, post-crise convulsive",
+      "motifConsultation": {
+        "plaintePrincipale": "Amenée par ambulance après crise convulsive",
+        "autreChose": "Confuse, désorientée"
+      },
+      "histoireActuelle": {
+        "symptomesPrincipaux": [
+          "Confusion et désorientation",
+          "Ralentissement psychomoteur",
+          "Fatigue depuis quelques jours",
+          "Légères nausées",
+          "Première crise convulsive de sa vie"
+        ],
+        "medicaments": [
+          "Thiazide débuté il y a 3-4 semaines pour HTA",
+          "Pas d'autres médicaments",
+          "Bonne observance"
+        ]
+      },
+      "simulation": {
+        "attitude": [
+          "Confuse, désorientée",
+          "Répond lentement aux questions",
+          "Répète les mêmes questions",
+          "Fatiguée, somnolente par moments",
+          "Coopérante mais ralentie"
+        ],
+        "durantExamen": [
+          "Pas de déficit focal",
+          "Réflexes normaux",
+          "Pas de signes de déshydratation",
+          "État confusionnel persistant"
+        ]
+      },
+      "antecedents": {
+        "medicaux": [
+          "HTA découverte récemment",
+          "Pas de cardiopathie connue",
+          "Pas d'hépatopathie",
+          "Pas d'épilepsie"
+        ],
+        "chirurgicaux": "Cholécystectomie il y a 20 ans",
+        "allergies": "Aucune connue"
+      },
+      "habitudes": {
+        "alimentation": "Normale, pas de régime hyposodé strict",
+        "hydratation": "Normale, 1.5L/jour environ",
+        "alcool": "Occasionnel",
+        "autonomie": "Vit seule, autonome habituellement"
+      },
+      "inquietudes": {
+        "principales": [
+          "Confusion sur ce qui s'est passé",
+          "Peur de refaire une crise",
+          "Incompréhension de la situation"
+        ],
+        "questions": [
+          "Qu'est-ce qui m'est arrivé ?",
+          "Où suis-je ?",
+          "Pourquoi je suis fatiguée ?",
+          "Je peux rentrer chez moi ?"
+        ]
+      }
+    },
+    "informationsExpert": {
+      "titre": "Guide pour l'expert évaluateur - Hyponatrémie sur thiazides",
+      "dossierMedical": "Patiente de 71 ans, hyponatrémie sévère symptomatique à 104 mmol/L sur thiazide récemment introduit",
+      "pointsCles": [
+        "Identification du thiazide comme cause de l'hyponatrémie",
+        "Reconnaissance de la sévérité (Na < 120 avec symptômes neurologiques)",
+        "Évaluation correcte de la volémie (euvolémie)",
+        "Indication de NaCl 3% devant symptômes sévères",
+        "Respect des vitesses de correction (max 8-10 mmol/24h)",
+        "Arrêt définitif du thiazide",
+        "Surveillance étroite des complications"
+      ],
+      "pieges": [
+        "Diagnostiquer un SIADH sans arrêter d'abord le thiazide",
+        "Utiliser NaCl 0.9% au lieu de 3% pour symptômes sévères",
+        "Corriger trop rapidement (risque de myélinolyse)",
+        "Oublier de surveiller la natrémie régulièrement",
+        "Reprendre le thiazide ultérieurement",
+        "Ne pas reconnaître l'euvolémie clinique"
+      ],
+      "rolesInterventions": [
+        "Montrer la confusion et désorientation",
+        "Répondre lentement aux questions",
+        "Répéter les questions posées",
+        "Pas de signes de déshydratation à l'examen",
+        "Mentionner le thiazide récent si demandé"
+      ]
+    },
+    "theoriePratique": {
+      "titre": "Rappels théoriques - Hyponatrémie",
+      "sections": [
+        {
+          "titre": "Classification des hyponatrémies",
+          "contenu": "L'hyponatrémie se définit par Na < 135 mmol/L et représente le trouble électrolytique le plus fréquent.",
+          "points": [
+            "Hypoosmolaire (vraie) vs iso/hyperosmolaire (pseudo)",
+            "Selon volémie : hypo-, eu-, hypervolémique",
+            "Aiguë (< 48h) vs chronique (> 48h)",
+            "Légère (130-134), modérée (125-129), sévère (< 125)",
+            "Symptomatique vs asymptomatique"
+          ]
+        },
+        {
+          "titre": "Hyponatrémie sur thiazides",
+          "contenu": "Les thiazides sont une cause fréquente d'hyponatrémie, surtout chez les femmes âgées.",
+          "points": [
+            "Mécanisme : inhibition réabsorption Na au tube contourné distal",
+            "Préservation de la capacité de concentration (contrairement aux diurétiques de l'anse)",
+            "Rétention d'eau libre paradoxale",
+            "Survient généralement dans les 2-4 semaines après introduction",
+            "Facteurs de risque : femme, âge > 65 ans, faible poids",
+            "Récidive quasi-constante si réexposition"
+          ]
+        },
+        {
+          "titre": "Vitesse de correction",
+          "contenu": "La correction doit être adaptée à la sévérité et au risque de complications.",
+          "points": [
+            "Symptômes sévères : 1 mmol/L/h sur 4-6 mmol/L",
+            "Puis ralentir : max 8-10 mmol/L/24h",
+            "Maximum 18 mmol/L sur 48h",
+            "Risque de myélinolyse si > 10-12 mmol/L/24h",
+            "Populations à risque : alcoolisme, dénutrition, hypokaliémie",
+            "Si overcorrection : perfusion d'eau libre ou desmopressine"
+          ]
+        }
+      ],
+      "rappelsTherapeutiques": [
+        "NaCl 3% : 100-150 mL en bolus si symptômes sévères",
+        "Calcul : ΔNa = (Na perfusé - Na patient) / (eau corporelle totale + 1)",
+        "Eau corporelle totale = 0.5 × poids (femme) ou 0.6 × poids (homme)",
+        "Arrêt définitif du thiazide, contre-indication à vie",
+        "Alternative pour HTA : IEC, ARA2, inhibiteur calcique, bêtabloquant",
+        "Surveillance : natrémie /2h puis /4-6h, état neurologique horaire"
+      ],
+      "examensComplementaires": [
+        "Ionogramme sanguin : Na, K, Cl, bicarbonates",
+        "Osmolalité plasmatique : distinction hypo/iso/hyperosmolaire",
+        "Urée, créatinine : fonction rénale",
+        "Glycémie : exclure hypoglycémie",
+        "Spot urinaire : Na, K, Cl, osmolalité urinaire",
+        "Si Na urinaire > 40 mmol/L : rein qui excrète du sodium",
+        "Osmolalité urinaire > 100 : incapacité à diluer (ADH inapproprié)",
+        "TSH, cortisol si diagnostic incertain"
+      ]
+    }
+  }
+}

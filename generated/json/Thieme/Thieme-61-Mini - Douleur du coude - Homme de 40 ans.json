@@ -1,0 +1,204 @@
+{
+  "title": "Thieme Mini-Cas 61 - Douleur du coude - Homme de 40 ans",
+  "category": "Thieme Mini-Cas",
+  "subcategory": "Douleur du coude",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Homme de 40 ans, Patient standardisé, consulte pour douleur du coude"
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Motif principal de consultation",
+          "binaryOnly": true,
+          "patientComment": "douleur du coude"
+        },
+        {
+          "id": "a2",
+          "text": "Analyse ciblée de la plainte",
+          "details": [
+            "Activités sportives",
+            "Mouvements répétitifs",
+            "Localisation précise douleur"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Recherche des éléments clés",
+          "details": [
+            "Test de Cozen",
+            "Palpation épicondyles",
+            "Tennis vs Golfer's elbow"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Antécédents pertinents",
+          "details": [
+            "Activités professionnelles",
+            "Sports pratiqués",
+            "Traumatismes antérieurs"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Revue des systèmes ciblée",
+          "details": [
+            "Musculo-squelettique",
+            "Neurologique"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Inspection coude",
+          "binaryOnly": true
+        },
+        {
+          "id": "e2",
+          "text": "Palpation épicondyles [douleur latérale ou médiale]"
+        },
+        {
+          "id": "e3",
+          "text": "Test de Cozen [positif si douleur]"
+        },
+        {
+          "id": "e4",
+          "text": "Mobilité coude et force"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostics différentiels",
+          "ddSection": {
+            "title": "Hypothèses diagnostiques à considérer",
+            "categories": [
+              {
+                "name": "Diagnostics prioritaires",
+                "items": [
+                  {
+                    "text": "Épicondylite latérale (tennis elbow)",
+                    "cause": "Arguments POUR:\n\t□ Douleur latérale, mouvements répétitifs, test Cozen positif",
+                    "test": "→ Échographie, IRM si échec traitement"
+                  },
+                  {
+                    "text": "Épicondylite médiale (golfer's elbow)",
+                    "cause": "Arguments POUR:\n\t□ Douleur médiale, flexion poignet douloureuse",
+                    "test": "→ Échographie, radiographie"
+                  },
+                  {
+                    "text": "Arthrite du coude",
+                    "cause": "Arguments POUR:\n\t□ Raideur, inflammation, limitation mouvement",
+                    "test": "→ Radiographie, VS/CRP, facteur rhumatoïde"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Examens complémentaires",
+          "details": [
+            "Radiographie du coude",
+            "IRM du coude si persistance"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Plan de prise en charge",
+          "details": [
+            "Repos",
+            "Glace",
+            "AINS",
+            "Physiothérapie",
+            "Infiltration si échec"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Conseils au patient",
+          "details": [
+            "Repos relatif",
+            "Application glace",
+            "Éviter surcharge"
+          ]
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Explications au patient",
+          "content": "Inflammation des tendons du coude, fréquente avec les mouvements répétitifs. Repos et traitement anti-inflammatoire."
+        },
+        {
+          "id": "c2",
+          "text": "Questions du patient",
+          "content": "[Combien de temps pour guérir?]\n[Puis-je faire du sport?]"
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour le patient standardisé",
+      "nom": "Patient standardisé",
+      "age": "40 ans",
+      "contexte": "Cabinet de médecine générale",
+      "motifConsultation": {
+        "plaintePrincipale": "douleur du coude",
+        "contexte": "Épicondylite latérale ou médiale"
+      },
+      "simulation": {
+        "attitude": [
+          "Sportif frustré",
+          "Veut reprendre rapidement"
+        ],
+        "signesPhysiques": [
+          "Douleur palpation épicondyle",
+          "Test Cozen positif"
+        ],
+        "durantConsultation": [
+          "Démontrer mouvements douloureux",
+          "Insister sur reprise sport"
+        ]
+      }
+    },
+    "informationsExpert": {
+      "titre": "Informations pour l'expert",
+      "pointsCles": [
+        "Mini-cas clinique: Douleur du coude",
+        "Focus: Test de Cozen, Palpation épicondyles, Tennis vs Golfer's elbow",
+        "Consultation ciblée de 10 minutes",
+        "Évaluation de l'approche diagnostique"
+      ],
+      "pieges": [
+        "Confondre épicondylite latérale/médiale",
+        "Prescrire repos total"
+      ]
+    },
+    "theoriePratique": {
+      "titre": "Test de Cozen",
+      "sections": [
+        {
+          "titre": "Technique",
+          "contenu": "Patient fléchit le poignet, coude en extension. Demander extension du poignet contre résistance. Douleur à l'épicondyle latéral = test positif pour tennis elbow."
+        }
+      ]
+    }
+  }
+}

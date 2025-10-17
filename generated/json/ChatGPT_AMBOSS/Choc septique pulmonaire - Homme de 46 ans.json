@@ -1,0 +1,752 @@
+{
+  "title": "Choc septique pulmonaire - Homme de 46 ans",
+  "context": {
+    "setting": "Service des urgences",
+    "patient": "Monsieur A., 46 ans, ancien usager de drogues IV, amené pour fièvre, toux, confusion et hypotension",
+    "vitals": {
+      "ta": "84/52 mmHg",
+      "fc": "122 bpm",
+      "fr": "28/min",
+      "temperature": "39.3°C",
+      "satO2": "89% à l'air ambiant"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Reconnaissance immédiate de la gravité",
+          "binaryOnly": true,
+          "patientComment": "Patient confus, Glasgow 13, répond partiellement aux questions"
+        },
+        {
+          "id": "a2",
+          "text": "Histoire récente de la maladie",
+          "details": [
+            "Début des symptômes [il y a 24 heures]",
+            "Fièvre élevée [39.3°C]",
+            "Toux productive ou sèche",
+            "Dyspnée progressive",
+            "Confusion récente",
+            "Pas d'antibiotiques reçus"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Antécédents toxicologiques",
+          "details": [
+            "Usage de drogues IV [ancien usager]",
+            "Durée du sevrage [2 ans]",
+            "Type de drogues utilisées",
+            "Partage de matériel d'injection",
+            "Infections liées (VIH, VHC, VHB)"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Facteurs de risque infectieux",
+          "details": [
+            "Hospitalisations récentes",
+            "Colonisation MRSA connue",
+            "Immunosuppression",
+            "Contact tuberculeux",
+            "Pneumonies récurrentes",
+            "Aspiration possible"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Symptômes associés urgents",
+          "details": [
+            "Douleur thoracique",
+            "Hémoptysie",
+            "Oligurie",
+            "Marbrures cutanées",
+            "Extrémités froides"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Évaluation hémodynamique",
+          "details": [
+            "Hypotension sévère [TA 84/52 mmHg]",
+            "Tachycardie [FC 122 bpm]",
+            "Temps de recoloration capillaire allongé",
+            "Marbrures (score de marbrures)",
+            "Pouls filant",
+            "Extrémités froides"
+          ]
+        },
+        {
+          "id": "e2",
+          "text": "Évaluation respiratoire",
+          "details": [
+            "Polypnée [FR 28/min]",
+            "Désaturation [SatO2 89%]",
+            "Auscultation pulmonaire (foyer de crépitants)",
+            "Signes de détresse respiratoire",
+            "Utilisation des muscles accessoires"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Évaluation neurologique",
+          "details": [
+            "Score de Glasgow [13/15]",
+            "Confusion/désorientation",
+            "Agitation",
+            "Signes méningés"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Signes de défaillance d'organes",
+          "details": [
+            "Oligurie/anurie",
+            "Ictère",
+            "Purpura/pétéchies",
+            "Signes de CIVD"
+          ]
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic de choc septique",
+          "ddSection": {
+            "title": "Critères diagnostiques Sepsis-3",
+            "categories": [
+              {
+                "name": "Choc septique confirmé",
+                "items": [
+                  {
+                    "text": "Choc septique sur pneumonie",
+                    "cause": "Arguments POUR:\n\t□ Infection suspectée (pneumonie)\n\t□ Hypotension nécessitant vasopresseurs (TA 84/52)\n\t□ Lactates > 2 mmol/L (3.8 mmol/L)\n\t□ Score SOFA ≥ 2 (respiratoire, cardiovasculaire, neurologique)",
+                    "test": "→ Hour-1 bundle urgent"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Hour-1 bundle - Mesures immédiates",
+          "details": [
+            "Oxygénothérapie [cible SatO2 ≥ 94%]",
+            "Voies veineuses larges x2",
+            "Hémocultures x2 avant antibiotiques",
+            "Lactates artériels [3.8 mmol/L]",
+            "Antibiothérapie IV dans l'heure",
+            "Remplissage cristalloïdes [30 mL/kg IV rapide]"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Antibiothérapie probabiliste urgente",
+          "details": [
+            "Ceftriaxone + Azithromycine [pneumonie communautaire sévère]",
+            "± Vancomycine/Linezolide [si risque MRSA - ancien toxicomane]",
+            "± Anti-Pseudomonas [si facteurs de risque]",
+            "Administration IV dans l'heure",
+            "Adaptation selon antibiogramme"
+          ],
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Antibiothérapie empirique",
+                "items": [
+                  {
+                    "treatment": "Ceftriaxone",
+                    "details": "2g IV/jour",
+                    "duration": "+ Azithromycine 500mg IV/jour"
+                  },
+                  {
+                    "treatment": "Vancomycine",
+                    "details": "15-20mg/kg IV toutes les 12h",
+                    "duration": "Si risque MRSA (ancien toxicomane)"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m4",
+          "text": "Support hémodynamique",
+          "details": [
+            "Remplissage vasculaire initial [30 mL/kg cristalloïdes]",
+            "Noradrénaline si PAM < 65 mmHg après remplissage",
+            "Objectif PAM ≥ 65 mmHg",
+            "Monitoring continu PA invasive",
+            "Évaluation de la volémie (échocardio, VCI)",
+            "Hydrocortisone si choc réfractaire [200mg/j IV]"
+          ]
+        },
+        {
+          "id": "m5",
+          "text": "Examens complémentaires urgents",
+          "details": [
+            "Gazométrie artérielle avec lactates",
+            "NFS, ionogramme, urée, créatinine",
+            "Bilan hépatique, TP, TCA",
+            "CRP, procalcitonine",
+            "Radiographie thoracique",
+            "ECG"
+          ]
+        },
+        {
+          "id": "m6",
+          "text": "Surveillance et monitoring",
+          "details": [
+            "Lactates toutes les 2-4h",
+            "Diurèse horaire [objectif > 0.5 mL/kg/h]",
+            "PAM continue",
+            "Score de Glasgow",
+            "SatO2 et FR",
+            "Température",
+            "Réévaluation clinique toutes les 15-30 min"
+          ],
+          "redflagsSection": {
+            "title": "Critères de transfert en réanimation",
+            "items": [
+              {
+                "text": "Vasopresseurs nécessaires",
+                "description": "Pour maintenir PAM ≥ 65"
+              },
+              {
+                "text": "Intubation nécessaire",
+                "description": "Détresse respiratoire aiguë"
+              },
+              {
+                "text": "Défaillance multi-organes",
+                "description": "Score SOFA croissant"
+              }
+            ]
+          }
+        },
+        {
+          "id": "m7",
+          "text": "Recherche du foyer infectieux",
+          "details": [
+            "Hémocultures x2 sites différents",
+            "ECBC si expectoration",
+            "Antigénuries pneumocoque/légionelle",
+            "PCR respiratoire multiplex",
+            "Scanner thoracique si doute",
+            "Recherche autres foyers (endocardite si toxicomane)"
+          ]
+        },
+        {
+          "id": "m8",
+          "text": "Information et communication",
+          "details": [
+            "Explication de la gravité à la famille",
+            "Pronostic réservé mais traitement intensif débuté",
+            "Transfert probable en réanimation",
+            "Surveillance continue nécessaire",
+            "Mise à jour régulière de la famille"
+          ],
+          "exemplesPhrases": [
+            "Il est dans un état grave, mais nous avons commencé un traitement intensif très rapidement",
+            "Les premières heures sont critiques, nous allons le surveiller étroitement",
+            "C'est une réaction grave à une infection qui affecte tout le corps"
+          ]
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Clôture et orientation",
+          "content": "Le patient présente un choc septique sur pneumonie sévère. Nous avons débuté l'antibiothérapie et le remplissage en urgence. Il va être transféré en réanimation pour surveillance intensive.",
+          "exemplesPhrases": [
+            "Nous avons identifié un choc septique nécessitant des soins intensifs",
+            "Le traitement antibiotique et le soutien hémodynamique sont en cours",
+            "L'équipe de réanimation va prendre le relais",
+            "Je vais tenir la famille informée de l'évolution"
+          ]
+        },
+        {
+          "id": "c2",
+          "text": "Questions difficiles des proches",
+          "content": "[Est-ce qu'il va s'en sortir ?] [Qu'est-ce que c'est, un choc septique ?] [Est-ce lié à son passé de toxicomane ?]"
+        },
+        {
+          "id": "c3",
+          "text": "Réponses types aux proches",
+          "exemplesPhrases": [
+            "Il est dans un état grave, mais le traitement intensif a été débuté rapidement",
+            "C'est une réaction grave à une infection pulmonaire qui affecte tout le corps",
+            "Ses antécédents peuvent influencer son immunité et le choix des antibiotiques"
+          ]
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour le patient standardisé",
+      "nom": "Monsieur A.",
+      "age": "46 ans",
+      "contexte": "Urgences - Patient en choc septique",
+      "motifConsultation": {
+        "plaintePrincipale": "Amené par les secours pour fièvre et confusion",
+        "autreChose": "État grave nécessitant prise en charge immédiate"
+      },
+      "histoireActuelle": {
+        "symptomesActuels": [
+          "Fièvre depuis 24h",
+          "Toux productive",
+          "Essoufflement majeur",
+          "Confusion progressive",
+          "Faiblesse extrême"
+        ],
+        "signesVitaux": [
+          "Hypotension sévère 84/52 mmHg",
+          "Tachycardie 122 bpm",
+          "Polypnée 28/min",
+          "Fièvre 39.3°C",
+          "Désaturation 89% air ambiant",
+          "Lactates 3.8 mmol/L"
+        ]
+      },
+      "simulation": {
+        "attitude": [
+          "Patient confus (Glasgow 13)",
+          "Répond partiellement aux questions",
+          "Agité par moments",
+          "Dyspnéique au repos",
+          "Aspect toxique"
+        ],
+        "durantExamen": [
+          "Polypnée évidente",
+          "Marbrures cutanées",
+          "Extrémités froides",
+          "Crépitants pulmonaires à droite"
+        ]
+      },
+      "antecedents": {
+        "toxicomanie": "Usage IV ancien, sevré depuis 2 ans",
+        "medicaux": "Pneumonies récurrentes",
+        "infectieux": "Statut VIH/VHC à vérifier",
+        "hospitalisations": "Multiples dans le passé"
+      }
+    },
+    "informationsExpert": {
+      "titre": "Points clés pour l'expert évaluateur",
+      "pointsCles": [
+        "Reconnaissance immédiate du choc septique",
+        "Application du hour-1 bundle",
+        "Hémocultures avant antibiotiques",
+        "Antibiothérapie dans l'heure",
+        "Remplissage vasculaire 30 mL/kg",
+        "Introduction vasopresseurs si nécessaire",
+        "Surveillance des lactates",
+        "Communication avec l'équipe et la famille"
+      ],
+      "pieges": [
+        "Retarder l'antibiothérapie",
+        "Oublier les hémocultures",
+        "Remplissage insuffisant",
+        "Ne pas monitorer les lactates",
+        "Oublier la couverture MRSA chez l'ancien toxicomane",
+        "Ne pas anticiper le transfert en réanimation",
+        "Communication inadéquate avec les proches"
+      ]
+    },
+    "theoriePratique": {
+      "titre": "Rappels théoriques sur le choc septique",
+      "sections": [
+        {
+          "titre": "Définition Sepsis-3",
+          "points": [
+            "Sepsis = infection + dysfonction d'organe (SOFA ≥2)",
+            "Choc septique = sepsis + vasopresseurs pour PAM ≥65",
+            "ET lactates > 2 mmol/L malgré remplissage",
+            "Mortalité du choc septique : 40%"
+          ]
+        },
+        {
+          "titre": "Hour-1 Bundle",
+          "points": [
+            "Mesurer les lactates",
+            "Hémocultures avant antibiotiques",
+            "Antibiotiques à large spectre",
+            "Remplissage rapide 30 mL/kg si hypotension",
+            "Vasopresseurs si PAM < 65 après remplissage",
+            "Réévaluation fréquente"
+          ]
+        },
+        {
+          "titre": "Antibiothérapie empirique pneumonie sévère",
+          "points": [
+            "Bêtalactamine + macrolide ou fluoroquinolone",
+            "Anti-MRSA si facteurs de risque",
+            "Anti-Pseudomonas si facteurs de risque",
+            "Adaptation selon documentation",
+            "Durée 7-10 jours si évolution favorable"
+          ]
+        },
+        {
+          "titre": "Objectifs de réanimation",
+          "points": [
+            "PAM ≥ 65 mmHg",
+            "Diurèse > 0.5 mL/kg/h",
+            "ScvO2 > 70% ou SvO2 > 65%",
+            "Normalisation des lactates",
+            "Amélioration clinique"
+          ]
+        }
+      ],
+      "rappelsTherapeutiques": [
+        "Noradrénaline = vasopresseur de première ligne",
+        "Vasopressine ou adrénaline en deuxième ligne",
+        "Hydrocortisone 200mg/j si choc réfractaire",
+        "Éviter les colloïdes synthétiques",
+        "Transfusion si Hb < 7 g/dL",
+        "Ventilation protectrice si SDRA"
+      ],
+      "examensComplementaires": [
+        "Lactates : marqueur de gravité et de réponse",
+        "Procalcitonine : aide au diagnostic et suivi",
+        "Hémocultures : documentation bactériologique",
+        "Imagerie thoracique : étendue de la pneumonie",
+        "Échocardio : fonction cardiaque et volémie"
+      ]
+    },
+    "resume": {
+      "titre": "🩸 Choc septique – Résumé ECOS",
+      "sections": [
+        {
+          "titre": "🔍 Anamnèse",
+          "subsections": [
+            {
+              "titre": "Contexte déclencheur",
+              "points": [
+                "Antécédents d’infection récente (urinaire, pulmonaire, abdominale, cutanée, etc.)",
+                "Facteurs de risque : immunodépression, âge avancé, diabète, hospitalisation récente, dispositif invasif (sonde, cathéter)"
+              ]
+            },
+            {
+              "titre": "Symptômes rapportés",
+              "points": [
+                "Fièvre ou hypothermie",
+                "Frissons, malaise général",
+                "Dyspnée, douleurs abdominales, troubles urinaires",
+                "Confusion, altération de l’état de conscience"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "👀 Examen clinique",
+          "subsections": [
+            {
+              "titre": "Signes vitaux",
+              "points": [
+                "Hypotension persistante malgré remplissage",
+                "Tachycardie > 90/min",
+                "Tachypnée, SpO₂ diminuée",
+                "Température > 38°C ou < 36°C"
+              ]
+            },
+            {
+              "titre": "Signes périphériques",
+              "points": [
+                "Marbrures, temps de recoloration capillaire allongé",
+                "Peau froide et moite",
+                "Oligurie < 0,5 mL/kg/h"
+              ]
+            },
+            {
+              "titre": "Signes neurologiques",
+              "points": [
+                "Agitation, confusion, obnubilation"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "🧪 Examens diagnostiques",
+          "subsections": [
+            {
+              "titre": "Biologie",
+              "points": [
+                "Hémocultures avant antibiothérapie",
+                "NFS, CRP, PCT",
+                "Ionogramme, créatinine, bilan hépatique",
+                "Lactates sanguins > 2 mmol/L"
+              ]
+            },
+            {
+              "titre": "Imagerie",
+              "points": [
+                "Scanner ou échographie selon foyer infectieux suspecté"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "⚙️ Prise en charge",
+          "subsections": [
+            {
+              "titre": "Réanimation initiale (bundle 1h)",
+              "points": [
+                "Oxygénation : O₂ ou intubation si détresse respiratoire",
+                "Voie veineuse large, monitorage",
+                "Remplissage : cristalloïdes 30 mL/kg en bolus",
+                "Antibiothérapie IV à large spectre en urgence (dans l’heure)",
+                "Prélèvements microbiologiques avant ATB"
+              ]
+            },
+            {
+              "titre": "Vasopresseurs",
+              "points": [
+                "Indiqués si hypotension persistante malgré remplissage",
+                "1ère intention : noradrénaline",
+                "Si réfractaire : ajouter vasopressine ou adrénaline",
+                "Dobutamine si hypoperfusion persistante malgré MAP cible"
+              ]
+            },
+            {
+              "titre": "Autres mesures",
+              "points": [
+                "Contrôle du foyer infectieux (drainage, chirurgie si nécessaire)",
+                "Corticothérapie (hydrocortisone) si choc réfractaire",
+                "Surveillance rapprochée : TA, diurèse, lactates"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "✅ Points clés ECOS",
+          "points": [
+            "Choc septique = sepsis + hypotension nécessitant vasopresseur + lactate > 2 mmol/L",
+            "PEC doit être initiée immédiatement (antibiotiques dans l’heure + remplissage)",
+            "Toujours rechercher et contrôler le foyer infectieux",
+            "Surveillance rapprochée clinique et biologique",
+            "Noradrénaline = vasopresseur de choix"
+          ]
+        },
+        {
+          "titre": "📋 Check-list rapide ECOS",
+          "subsections": [
+            {
+              "titre": "Questions à poser",
+              "points": [
+                "Fièvre, frissons, malaise, symptômes infectieux ?",
+                "ATCD : immunodépression, comorbidités, hospitalisations récentes ?",
+                "Douleurs abdominales, urinaires, respiratoires, cutanées ?",
+                "Altération conscience, oligurie, marbrures ?"
+              ]
+            },
+            {
+              "titre": "Examens à faire",
+              "points": [
+                "Constantes vitales (TA, FC, FR, SpO₂, T°)",
+                "Gaz du sang avec lactates",
+                "Hémocultures + autres prélèvements",
+                "Biologie complète (NFS, créat, iono, CRP, PCT)",
+                "Imagerie ciblée selon foyer"
+              ]
+            },
+            {
+              "titre": "PEC en 3 points",
+              "points": [
+                "Remplissage IV 30 mL/kg rapidement",
+                "Antibiothérapie IV large spectre en urgence (<1h)",
+                "Vasopresseur (noradrénaline) si hypotension persistante"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "presentationPatient": {
+      "titre": "📑 Fiche ECOS – Cas : Choc septique pulmonaire (Homme de 46 ans)",
+      "sections": [
+        {
+          "titre": "🧩 Checklist mentale (présentation systématisée)",
+          "points": [
+            "Intro → âge, motif (fièvre, toux, confusion, état de choc)",
+            "ATCD → ancien toxicomane IV (risque infectieux, MRSA, endocardite), pneumonies récurrentes",
+            "Histoire récente → début brutal il y a 24h, fièvre 39°C, toux productive, dyspnée progressive, confusion",
+            "Signes de gravité → TA 84/52, FC 122, FR 28, SpO₂ 89%, Glasgow 13, lactates 3,8 mmol/L",
+            "Examen → marbrures, extrémités froides, crépitants pulmonaires droits, oligurie",
+            "Diagnostic principal → Choc septique sur pneumonie sévère",
+            "Diagnostics différentiels → SDRA non infectieux, embolie pulmonaire massive, choc cardiogénique",
+            "Examens urgents → Gaz du sang, lactates, hémocultures, ECBC, NFS, ionogramme, créatinine, bilan hépatique, radiographie thoracique, ECG",
+            "PEC immédiate → O₂ (Sat >94%), 2 VVP gros calibre, hémocultures avant ATB, antibiothérapie IV large spectre <1h, remplissage 30 mL/kg cristalloïdes, noradrénaline si PAM <65",
+            "Surveillance → diurèse horaire, PAM invasive, lactates, Glasgow, constantes",
+            "Orientation → transfert en réanimation"
+          ],
+          "mnemo": {
+            "titre": "👉 Mnémo rapide : SEPSIS",
+            "elements": [
+              "S = Suspicion infection",
+              "E = Évaluer organes (SOFA, lactates)",
+              "P = Prélèvements microbiologiques",
+              "S = Support hémodynamique (30 mL/kg, noradrénaline)",
+              "I = Initiation ATB large spectre <1h",
+              "S = Surveillance rapprochée (TA, diurèse, lactates)"
+            ]
+          }
+        },
+        {
+          "titre": "🎤 Version longue (≈2-3 min)",
+          "contenu": "Il s’agit de Monsieur A., un homme de 46 ans, amené aux urgences pour fièvre, toux et confusion. Son état est préoccupant. Les symptômes ont débuté il y a environ 24 heures avec une fièvre élevée à 39°C, une toux productive et une dyspnée croissante. Depuis quelques heures, il est confus et répond de façon incomplète aux questions.\n\nSes antécédents sont marqués par un ancien usage de drogues par voie intraveineuse, sevré depuis deux ans, et plusieurs épisodes de pneumonie par le passé. Son statut infectieux VIH et VHC est à vérifier.\n\nÀ l’examen, il est fébrile à 39,3°C, hypotendu à 84/52 mmHg, tachycarde à 122/min, polypnéique à 28/min et désature à 89% à l’air ambiant. Son score de Glasgow est de 13. On note une polypnée évidente, des marbrures cutanées, des extrémités froides et des crépitants à l’auscultation pulmonaire du côté droit. La diurèse est faible. Le lactate est à 3,8 mmol/L.\n\nEn résumé, il s’agit d’un choc septique sur pneumonie sévère, défini par une infection pulmonaire probable, une hypotension persistante nécessitant des vasopresseurs pour maintenir une PAM ≥65 mmHg, et des lactates >2 mmol/L.\n\nLes diagnostics différentiels incluent un SDRA d’autre cause, une embolie pulmonaire massive ou un choc cardiogénique, mais le contexte infectieux respiratoire est ici majeur.\n\nLa prise en charge doit être immédiate et conforme au « bundle 1h ». Concrètement : oxygénothérapie pour viser une saturation ≥94%, mise en place de deux voies veineuses de gros calibre, prélèvements d’hémocultures et d’expectoration avant antibiothérapie, dosage des lactates, administration d’antibiotiques à large spectre dans l’heure (ex. céphalosporine de 3e génération + macrolide ± vancomycine selon risque MRSA). En parallèle, on initie un remplissage vasculaire par cristalloïdes à raison de 30 mL/kg rapidement. Si la PAM reste <65 mmHg, on introduit une perfusion de noradrénaline en réanimation. \n\nUne surveillance rapprochée est indispensable : constantes toutes les 15-30 minutes, mesure de la diurèse horaire, lactates répétés, surveillance neurologique, et monitorage invasif si possible. Le patient doit être transféré en réanimation pour poursuite de la prise en charge et support hémodynamique."
+        },
+        {
+          "titre": "⚡ Version express (SBAR, 30 sec)",
+          "contenu": "S (Situation) : Monsieur A., 46 ans, fièvre, toux, confusion, état de choc.\n\nB (Background) : Ancien usager de drogues IV, pneumonies récurrentes, pas d’ATB reçu. Fièvre depuis 24h, toux productive, confusion récente.\n\nA (Assessment) : Choc septique sur pneumonie sévère, critères : TA 84/52, lactates 3,8, Glasgow 13, crépitants droits. DD : embolie pulmonaire massive, choc cardiogénique.\n\nR (Recommendation) : O₂, 2 VVP, hémocultures, antibiothérapie IV large spectre <1h, remplissage 30 mL/kg, noradrénaline si PAM <65, transfert réa."
+        },
+        {
+          "titre": "🎲 Touches ludiques / mnémos",
+          "subsections": [
+            {
+              "titre": "👉 Hour-1 bundle",
+              "points": [
+                "Mesurer lactates",
+                "Hémocultures avant ATB",
+                "ATB large spectre IV <1h",
+                "Remplissage 30 mL/kg cristalloïdes",
+                "Vasopresseur si PAM <65",
+                "Réévaluer clinique"
+              ]
+            },
+            {
+              "titre": "👉 Critères de choc septique (Sepsis-3)",
+              "points": [
+                "Infection suspectée",
+                "SOFA ≥2 (atteinte organes)",
+                "Hypotension nécessitant vasopresseurs",
+                "Lactates >2 mmol/L"
+              ]
+            },
+            {
+              "titre": "👉 Antibiothérapie empirique pneumonie sévère",
+              "points": [
+                "Ceftriaxone + Azithromycine",
+                "Ajouter Vancomycine si risque MRSA",
+                "± Anti-pseudomonas si facteurs"
+              ]
+            },
+            {
+              "titre": "⚠️ Pièges ECOS",
+              "points": [
+                "Retarder ATB au-delà de 1h",
+                "Oublier hémocultures avant ATB",
+                "Remplissage insuffisant",
+                "Ne pas surveiller lactates",
+                "Ignorer besoin de transfert en réanimation"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "❓ Questions probables de l'examinateur (avec réponses orales)",
+          "subsections": [
+            {
+              "titre": "1. Diagnostic",
+              "questions": [
+                {
+                  "question": "Quels sont les arguments pour un choc septique ?",
+                  "reponse": [
+                    "Infection pulmonaire suspectée (pneumonie)",
+                    "Hypotension sévère 84/52",
+                    "Tachycardie et marbrures",
+                    "Glasgow 13",
+                    "Lactates 3,8 mmol/L",
+                    "SOFA ≥2 (respiratoire, cardiovasculaire, neurologique)"
+                  ]
+                }
+              ]
+            },
+            {
+              "titre": "2. Examens complémentaires",
+              "questions": [
+                {
+                  "question": "Quels examens urgents demandez-vous ?",
+                  "reponse": [
+                    "Gaz du sang artériel avec lactates",
+                    "Hémocultures x2 avant ATB",
+                    "ECBC",
+                    "Antigénuries pneumocoque/légionelle",
+                    "PCR multiplex respiratoire",
+                    "Radiographie thoracique ± scanner",
+                    "NFS, ionogramme, créatinine, bilan hépatique"
+                  ]
+                }
+              ]
+            },
+            {
+              "titre": "3. Prise en charge",
+              "questions": [
+                {
+                  "question": "Quel est le traitement immédiat ?",
+                  "reponse": [
+                    "Oxygénothérapie (Sat >94%)",
+                    "2 voies veineuses larges",
+                    "Remplissage 30 mL/kg cristalloïdes",
+                    "ATB large spectre IV dans l’heure",
+                    "Noradrénaline si PAM <65"
+                  ]
+                },
+                {
+                  "question": "Quels ATB empiriques utilisez-vous ici ?",
+                  "reponse": [
+                    "Ceftriaxone + Azithromycine",
+                    "Ajouter Vancomycine si risque MRSA (ancien toxicomane)",
+                    "Adapter selon résultats bactériologiques"
+                  ]
+                },
+                {
+                  "question": "Quand transférez-vous le patient en réanimation ?",
+                  "reponse": [
+                    "Hypotension persistante nécessitant vasopresseurs",
+                    "Détresse respiratoire nécessitant intubation",
+                    "Défaillance multi-organes"
+                  ]
+                }
+              ]
+            },
+            {
+              "titre": "4. Pronostic et suivi",
+              "questions": [
+                {
+                  "question": "Quel est le pronostic du choc septique ?",
+                  "reponse": [
+                    "Mortalité environ 40%",
+                    "Dépend rapidité de la PEC et de la réversibilité du foyer infectieux"
+                  ]
+                },
+                {
+                  "question": "Quels sont les objectifs de la réanimation ?",
+                  "reponse": [
+                    "PAM ≥65 mmHg",
+                    "Diurèse >0,5 mL/kg/h",
+                    "Lactates normalisés",
+                    "Amélioration clinique"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

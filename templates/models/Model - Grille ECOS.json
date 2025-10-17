@@ -1,0 +1,377 @@
+{
+  "title": "[Titre de la station]",
+  "context": {
+    "setting": "[Type de cabinet/service]",
+    "patient": "[Nom], [âge] ans, se présente chez [praticien] avec [motif de consultation]",
+    "vitals": {
+      "ta": "[valeur] mmHg (inclure seulement si mentionné dans le PDF)",
+      "fc": "[valeur] bpm (inclure seulement si mentionné dans le PDF)",
+      "fr": "[valeur]/min (inclure seulement si mentionné dans le PDF)", 
+      "temperature": "[valeur]°C (inclure seulement si mentionné dans le PDF)"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "[Critère anamnèse 1]",
+          "binaryOnly": true,
+          "patientComment": "[Réponse attendue du patient/accompagnant]",
+          "details": [
+            "[Sous-critère 1 éventuel]",
+            "[Sous-critère 2 éventuel]",
+            "[Sous-critère 3 éventuel]"
+          ]
+        },
+        {
+          "id": "a2",
+          "text": "[Critère anamnèse 2]",
+          "binaryOnly": true,
+          "patientComment": "[Réponse attendue du patient/accompagnant]",
+          "details": [
+            "[Sous-critère 1 éventuel]",
+            "[Sous-critère 2 éventuel]",
+            "[Sous-critère 3 éventuel]"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "[Critère anamnèse 3]",
+          "binaryOnly": false,
+          "patientComment": "[Réponse attendue du patient/accompagnant]",
+          "details": [
+            "[Sous-critère 1 éventuel]",
+            "[Sous-critère 2 éventuel]",
+            "[Sous-critère 3 éventuel]"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "[Critère examen 1]",
+          "binaryOnly": false,
+          "patientComment": "[Résultat attendu de l'examen]",
+          "details": [
+            "[Sous-critère 1 éventuel]",
+            "[Sous-critère 2 éventuel]",
+            "[Sous-critère 3 éventuel]"
+          ]
+        },
+        {
+          "id": "e2",
+          "text": "[Critère examen 2]",
+          "binaryOnly": true,
+          "patientComment": "[Résultat attendu de l'examen]",
+          "details": [
+            "[Sous-critère 1 éventuel]",
+            "[Sous-critère 2 éventuel]",
+            "[Sous-critère 3 éventuel]"
+          ]
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.2,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "[Critère management 1]",
+          "binaryOnly": false,
+          "patientComment": "[Information complémentaire si nécessaire]"
+        },
+        {
+          "id": "m2",
+          "text": "[Critère management 2]",
+          "binaryOnly": false,
+          "details": [
+            "[Détail 1 ou diagnostic différentiel 1]",
+            "[Détail 2 ou diagnostic différentiel 2]",
+            "[Détail 3 ou diagnostic différentiel 3]"
+          ],
+          "scoringRule": "[Règle de notation spécifique]",
+          "ddSection": {
+            "title": "[Titre de la section DD = Aparté explicatif]",
+            "categories": [
+              {
+                "name": "[Nom de la catégorie 1] :",
+                "items": [
+                  {
+                    "text": "[Diagnostic différentiel 1]",
+                    "cause": "[\t- Cause 1\n\t- Cause 2]"
+                  },
+                  {
+                    "text": "[Diagnostic différentiel 2]",
+                    "test": "[→ Examen complémentaire recommandé]"
+                  },
+                  {
+                    "text": "[Diagnostic différentiel 3]",
+                    "test": "[→ Examen complémentaire recommandé]",
+                    "cause": "[\t- Cause 1\n\t- Cause 2\n\t- Cause 3]"
+                  }
+                ]
+              },
+              {
+                "name": "[Nom de la catégorie 2] :",
+                "items": [
+                  {
+                    "text": "[Diagnostic différentiel 4]",
+                    "test": "[→ Examen complémentaire recommandé]",
+                    "cause": "[\t- Cause 1\n\t- Cause 2]"
+                  },
+                  {
+                    "text": "[Diagnostic différentiel 5]",
+                    "test": "[→ Examen complémentaire recommandé]"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m3",
+          "text": "[Critère management avec examens complémentaires]",
+          "binaryOnly": true,
+          "patientComment": "[Examens complémentaires appropriés]"
+        },
+        {
+          "id": "m4",
+          "text": "[Critère management avec thérapeutique]",
+          "binaryOnly": false,
+          "therapySection": {
+            "categories": [
+              {
+                "title": "[Titre catégorie thérapeutique 1] :",
+                "content": "[• Mesure thérapeutique 1]\n[• Mesure thérapeutique 2]\n[• Mesure thérapeutique 3]"
+              },
+              {
+                "title": "[Titre catégorie thérapeutique 2] :",
+                "content": "[• Traitement médicamenteux 1]\n[• Traitement médicamenteux 2]"
+              },
+              {
+                "title": "[Titre catégorie thérapeutique 3] :",
+                "content": "[• Option chirurgicale 1]\n[• Option de suivi 1]"
+              }
+            ]
+          }
+        },
+        {
+          "id": "m5",
+          "text": "[Critère management avec red flags]",
+          "binaryOnly": false,
+          "redflagsSection": {
+            "title": "Red Flags - Signaux d'alarme",
+            "items": [
+              {
+                "text": "[Red flag 1]",
+                "description": "[Description ou action à prendre]"
+              },
+              {
+                "text": "[Red flag 2]",
+                "description": "[Description ou action à prendre]"
+              },
+              {
+                "text": "[Red flag 3]"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "cloture": {
+    "weight": 0,
+    "criteria": [
+      {
+        "id": "cl1",
+        "text": "Clôture type",
+        "content": "[Phrase de clôture type que le candidat devrait utiliser pour résumer la consultation, expliquer les prochaines étapes et rassurer le patient]"
+      },
+      {
+        "id": "cl2",
+        "text": "Questions difficiles à poser",
+        "content": "[Questions sensibles ou difficiles que le patient pourrait poser]"
+      },
+      {
+        "id": "cl3",
+        "text": "Réponse type du candidat",
+        "content": "[Exemple de réponse appropriée aux questions difficiles]"
+      }
+    ]
+  },
+  "annexes": {
+    "images": [
+      {
+        "title": "[Titre de l'image 1]",
+        "description": "[Description de l'image montrant ses éléments pertinents]",
+        "data": "[chemin/vers/image1.jpg]"
+      },
+      {
+        "title": "[Titre de l'image 2]",
+        "description": "[Description de l'image montrant ses éléments pertinents]",
+        "data": "[chemin/vers/image2.jpg]"
+      }
+    ],
+    "scenarioPatienteStandardisee": {
+      "titre": "Scénario pour le/la patient(e) standardisé(e)",
+      "nom": "[Nom du patient]",
+      "age": "[Age] ans",
+      "contexte": "[Profession/occupation] consultant [lieu] pour [motif]",
+      "motifConsultation": {
+        "plaintePrincipale": "[Phrase exacte que le patient doit dire]",
+        "autreChose": "[Autre demande ou préoccupation du patient]"
+      },
+      "consignes": [
+        "[Consigne 1 pour l'acteur]",
+        "[Consigne 2 pour l'acteur]"
+      ],
+      "histoireActuelle": {
+        "symptomePrincipal": [
+          "[Symptôme principal]",
+          "Localisation : [description]",
+          "Qualité : [description]",
+          "Quantité/intensité : [échelle et description]",
+          "Chronologie : [début et durée]",
+          "Développement : [évolution]",
+          "Circonstances de survenue : [contexte]",
+          "Facteurs atténuants : [ce qui améliore]",
+          "Facteurs déclenchants/aggravants : [ce qui aggrave]"
+        ],
+        "symptomesAssocies": [
+          "[Symptôme associé 1]",
+          "[Symptôme associé 2]"
+        ],
+        "reponseAuxSymptomes": [
+          "[Comment le patient réagit/gère ses symptômes]"
+        ],
+        "representationMaladie": [
+          "[Ce que le patient pense/craint avoir]"
+        ]
+      },
+      "anamneseSystemes": {
+        "generale": [
+          "[État général du patient]"
+        ],
+        "neurologique": [
+          "[Symptômes neurologiques]"
+        ],
+        "digestive": [
+          "[Symptômes digestifs]"
+        ],
+        "gynecologique": [
+          "[Informations gynécologiques si pertinentes]"
+        ],
+        "psychiatrique": [
+          "[État psychique]"
+        ]
+      },
+      "habitudes": {
+        "medicaments": "[Liste des médicaments actuels]",
+        "tabac": "[Consommation tabagique]",
+        "alcool": "[Consommation d'alcool]",
+        "sexualite": "[Informations pertinentes sur la sexualité]",
+        "drogues": "[Consommation de drogues si pertinent]"
+      },
+      "histoireMedicale": [
+        "[Antécédent médical 1]",
+        "[Antécédent chirurgical]"
+      ],
+      "simulation": {
+        "durantEntretien": [
+          "[Comportement à adopter pendant l'entretien]"
+        ],
+        "durantStatus": [
+          "[Comportement et réactions pendant l'examen physique]",
+          "- [Détail spécifique 1]",
+          "- [Détail spécifique 2]"
+        ]
+      }
+    },
+    "informationsExpert": {
+      "titre": "Informations de l'expert",
+      "dossierMedical": "[Résumé complet du dossier médical du patient avec tous les éléments pertinents pour l'expert évaluateur]",
+      "rolesInterventions": [
+        "L'expert-e intervient si l'étudiant-e dit vouloir faire :",
+        "• [Intervention 1] : [action de l'expert]",
+        "• [Intervention 2] : [action de l'expert]"
+      ],
+      "pointsCles": [
+        "[Point clé 1 pour l'évaluation]",
+        "[Point clé 2 pour l'évaluation]",
+        "[Point clé 3 pour l'évaluation]"
+      ],
+      "pieges": [
+        "[Piège courant 1 à éviter]",
+        "[Piège courant 2 à éviter]",
+        "[Piège courant 3 à éviter]"
+      ]
+    },
+    "theoriePratique": {
+      "titre": "Théorie pratique concernant la vignette",
+      "sections": [
+        {
+          "titre": "Diagnostic",
+          "contenu": "[Diagnostic principal du cas]"
+        },
+        {
+          "titre": "[Titre section théorique 1]",
+          "contenu": "[Contenu explicatif de la section]",
+          "points": [
+            "[Point important 1]",
+            "[Point important 2]",
+            "[Point important 3]"
+          ]
+        },
+        {
+          "titre": "[Titre section théorique 2]",
+          "contenu": "[Contenu explicatif de la section]"
+        },
+        {
+          "titre": "Examens complémentaires",
+          "contenu": "[Quand et pourquoi faire des examens]",
+          "points": [
+            "[Examen 1 : indications]",
+            "[Examen 2 : indications]",
+            "[Examen 3 : indications]"
+          ]
+        },
+        {
+          "titre": "Prise en charge",
+          "contenu": "[Principes de prise en charge]",
+          "points": [
+            "[Mesure thérapeutique 1]",
+            "[Mesure thérapeutique 2]",
+            "[Mesure thérapeutique 3]"
+          ]
+        },
+        {
+          "titre": "Résumé du cas clinique",
+          "contenu": "[Synthèse du cas avec les éléments clés à retenir]"
+        },
+        {
+          "titre": "Conclusion",
+          "points": [
+            "[Message clé 1 à retenir]",
+            "[Message clé 2 à retenir]",
+            "[Message clé 3 à retenir]"
+          ]
+        }
+      ],
+      "rappelsTherapeutiques": [
+        "[Protocole/guideline 1]",
+        "[Contre-indication importante]",
+        "[Fenêtre thérapeutique]"
+      ],
+      "examensComplementaires": [
+        "[Examen 1]: [ce qu'il recherche et interprétation]",
+        "[Examen 2]: [valeurs normales et pathologiques]",
+        "[Examen 3]: [timing et indications]"
+      ]
+    }
+  }
+}

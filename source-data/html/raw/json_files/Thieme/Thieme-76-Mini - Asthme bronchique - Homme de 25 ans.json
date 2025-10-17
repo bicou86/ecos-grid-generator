@@ -1,0 +1,204 @@
+{
+  "title": "Thieme Mini-Cas 76 - Asthme bronchique - Homme de 25 ans",
+  "category": "Thieme Mini-Cas",
+  "subcategory": "Asthme bronchique",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Homme de 25 ans, Patient standardisé, consulte pour sifflements respiratoires et essoufflement"
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Motif principal de consultation",
+          "binaryOnly": true,
+          "patientComment": "sifflements respiratoires et essoufflement"
+        },
+        {
+          "id": "a2",
+          "text": "Analyse ciblée de la plainte",
+          "details": [
+            "Déclencheurs",
+            "Traitement actuel",
+            "Hospitalisations",
+            "Allergies"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Recherche des éléments clés",
+          "details": [
+            "Facteurs déclenchants",
+            "Traitement actuel",
+            "Hospitalisations antérieures"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Antécédents pertinents",
+          "details": [
+            "Asthme enfance",
+            "Allergies",
+            "Hospitalisations",
+            "Intubations"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Revue des systèmes ciblée",
+          "details": [
+            "Respiratoire",
+            "Allergique",
+            "Cardiaque"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Signes vitaux et peak flow",
+          "binaryOnly": true
+        },
+        {
+          "id": "e2",
+          "text": "Auscultation pulmonaire [sibilants]"
+        },
+        {
+          "id": "e3",
+          "text": "Signes de détresse"
+        },
+        {
+          "id": "e4",
+          "text": "Évaluation sévérité crise"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostics différentiels",
+          "ddSection": {
+            "title": "Hypothèses diagnostiques à considérer",
+            "categories": [
+              {
+                "name": "Diagnostics prioritaires",
+                "items": [
+                  {
+                    "text": "Asthme bronchique",
+                    "cause": "Arguments POUR:\n\t□ Sifflements, réversible, déclencheurs, ATCD",
+                    "test": "→ Spirométrie, test réversibilité"
+                  },
+                  {
+                    "text": "BPCO débutante",
+                    "cause": "Arguments POUR:\n\t□ Tabac, irréversible partiel, âge",
+                    "test": "→ Spirométrie, radiographie thoracique"
+                  },
+                  {
+                    "text": "Insuffisance cardiaque",
+                    "cause": "Arguments POUR:\n\t□ Orthopnée, œdèmes, crépitants",
+                    "test": "→ BNP, échocardiographie, ECG"
+                  },
+                  {
+                    "text": "Anxiété",
+                    "cause": "Arguments POUR:\n\t□ Contexte stress, hyperventilation, paresthésies",
+                    "test": "→ Examens selon orientation clinique"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Examens complémentaires",
+          "details": [
+            "Spirométrie",
+            "Radiographie thoracique",
+            "Gaz du sang si sévère",
+            "Test allergique"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Plan de prise en charge",
+          "details": [
+            "Bronchodilatateurs",
+            "Corticoïdes si sévère",
+            "Plan action asthme",
+            "Éducation"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Conseils au patient",
+          "details": [
+            "Éviter déclencheurs",
+            "Technique inhalation",
+            "Plan urgence"
+          ]
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Explications au patient",
+          "content": "Crise d'asthme nécessitant traitement bronchodilatateur et plan de gestion."
+        },
+        {
+          "id": "c2",
+          "text": "Questions du patient",
+          "content": "[C'est de l'asthme?]\n[J'aurai ça toute ma vie?]"
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour le patient standardisé",
+      "nom": "Patient standardisé",
+      "age": "25 ans",
+      "contexte": "Cabinet de médecine générale",
+      "motifConsultation": {
+        "plaintePrincipale": "sifflements respiratoires et essoufflement",
+        "contexte": "Crise d'asthme"
+      },
+      "simulation": {
+        "attitude": [
+          "Essoufflé",
+          "Habitué aux crises"
+        ],
+        "signesPhysiques": [
+          "Sibilants diffus",
+          "Expiration prolongée"
+        ],
+        "durantConsultation": [
+          "Utilisation muscles accessoires",
+          "Parle par phrases courtes"
+        ]
+      }
+    },
+    "informationsExpert": {
+      "titre": "Informations pour l'expert",
+      "pointsCles": [
+        "Mini-cas clinique: Asthme bronchique",
+        "Focus: Facteurs déclenchants, Traitement actuel, Hospitalisations antérieures",
+        "Consultation ciblée de 10 minutes",
+        "Évaluation de l'approche diagnostique"
+      ],
+      "pieges": [
+        "Sous-traiter crise",
+        "Ne pas évaluer sévérité"
+      ]
+    }
+  }
+}

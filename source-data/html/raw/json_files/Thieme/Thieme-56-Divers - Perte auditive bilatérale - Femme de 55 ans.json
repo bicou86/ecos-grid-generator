@@ -1,0 +1,253 @@
+{
+  "title": "Thieme Divers 56 - Perte auditive bilatérale - Femme de 55 ans",
+  "category": "Thieme Divers",
+  "subcategory": "Perte auditive bilatérale",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Femme de 55 ans, Mlle Ruth Evans, consultant pour perte auditive",
+    "vitals": {
+      "fc": "90 bpm",
+      "ta": "100/60 mmHg",
+      "fr": "16/min",
+      "temperature": "37°C"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Motif principal de consultation",
+          "binaryOnly": true,
+          "patientComment": "perte auditive"
+        },
+        {
+          "id": "a2",
+          "text": "Analyse de la plainte principale",
+          "details": [
+            "Évolution [progressive 5 ans]",
+            "Bilatéralité [égale]",
+            "Impact fonctionnel [téléphone, collègues]",
+            "Absence vertiges/acouphènes",
+            "Facteur médicamenteux [HCTZ]"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Recherche de complications",
+          "details": [
+            "Impact social",
+            "Isolement",
+            "Difficultés professionnelles",
+            "Sécurité (alarmes non entendues)",
+            "Dépression secondaire"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Revue des systèmes",
+          "details": [
+            "ORL complet",
+            "Neurologique",
+            "Endocrinien"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Antécédents médicaux et traitements",
+          "details": [
+            "Hydrochlorothiazide depuis 15 ans",
+            "HTA depuis 15 ans"
+          ]
+        },
+        {
+          "id": "a6",
+          "text": "Histoire sociale et habitudes",
+          "details": [
+            "Ne fume pas",
+            "Boit socialement",
+            "Pas sexuellement active"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Signes vitaux et apparence générale",
+          "binaryOnly": true
+        },
+        {
+          "id": "e2",
+          "text": "Examen otoscopique",
+          "details": [
+            "Conduit auditif externe",
+            "Cérumen",
+            "Membrane tympanique",
+            "Réflexe lumineux"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Tests auditifs",
+          "details": [
+            "Test de Rinne",
+            "Test de Weber",
+            "Test voix chuchotée"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Examen neurologique",
+          "details": [
+            "Nerfs crâniens",
+            "Équilibre",
+            "Test Romberg",
+            "Démarche"
+          ]
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostics différentiels",
+          "ddSection": {
+            "title": "Hypothèses diagnostiques à considérer",
+            "categories": [
+              {
+                "name": "Diagnostics prioritaires",
+                "items": [
+                  {
+                    "text": "Presbyacousie",
+                    "cause": "Arguments POUR:\n\t□ Âge 55 ans, bilatéral symétrique, progressif, ATCD familial",
+                    "test": "→ Audiométrie tonale et vocale, tympanométrie"
+                  },
+                  {
+                    "text": "Surdité induite par médicaments (HCTZ)",
+                    "cause": "Arguments POUR:\n\t□ HCTZ 15 ans, surdité perception, réversible potentiel",
+                    "test": "→ Audiométrie, arrêt HCTZ test"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Examens complémentaires appropriés",
+          "details": [
+            "Audiométrie",
+            "IRM cérébrale"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Plan de prise en charge",
+          "details": [
+            "Audiométrie complète",
+            "Révision médication (HCTZ)",
+            "Référence ORL",
+            "Évaluation appareillage",
+            "Support psychosocial"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Conseils et éducation patient",
+          "details": [
+            "Protection auditive",
+            "Stratégies communication",
+            "Sécurité domicile",
+            "Appareillage si indiqué",
+            "Support famille"
+          ]
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Questions du patient",
+          "content": "[Ai-je le même problème que mon frère?]\n[Qu'en est-il des appareils auditifs pour moi?]"
+        },
+        {
+          "id": "c2",
+          "text": "Conseils spécifiques",
+          "content": "Presbyacousie probable vs ototoxicité HCTZ. Audiométrie nécessaire. Discussion changement diurétique avec médecin traitant."
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour le patient standardisé",
+      "nom": "Mlle Ruth Evans",
+      "age": "55 ans",
+      "contexte": "Cabinet de médecine générale",
+      "motifConsultation": {
+        "plaintePrincipale": "perte auditive",
+        "autreChose": "Perte auditive bilatérale progressive depuis 5 ans, s'aggrave. Difficile entendre collègues et téléphone. Pas acouphènes ni problèmes équilibre."
+      },
+      "histoireActuelle": {
+        "symptomesPrincipaux": [
+          "Perte auditive bilatérale progressive depuis 5 ans, s'aggrave",
+          " Difficile entendre collègues et téléphone",
+          " Pas acouphènes ni problèmes équilibre"
+        ],
+        "complications": [
+          "Travaille épicerie calme",
+          " HTA depuis 15 ans, prend HCTZ",
+          " Frère 60 ans même problème"
+        ],
+        "contexteSocial": [
+          "Ne fume pas",
+          " Boit socialement",
+          " Pas sexuellement active"
+        ]
+      },
+      "simulation": {
+        "attitude": [
+          "Parle fort",
+          "Difficultés comprendre",
+          "Demande répéter",
+          "Frustrée"
+        ],
+        "durantExamen": [
+          "Test Rinne: conduction aérienne > osseuse",
+          "Test Weber: pas latéralisation"
+        ],
+        "durantConsultation": []
+      },
+      "inquietudes": {
+        "principales": [
+          "[Ai-je le même problème que mon frère?]",
+          "[Qu'en est-il des appareils auditifs pour moi?]"
+        ]
+      }
+    },
+    "informationsExpert": {
+      "titre": "Informations pour l'expert",
+      "pointsCles": [
+        "Cas: Perte auditive bilatérale",
+        "Patient: Femme de 55 ans",
+        "Anamnèse et examen complets",
+        "Évaluation des complications",
+        "Conseils et éducation thérapeutique"
+      ],
+      "pieges": [
+        "Attribuer à l'âge seul",
+        "Ne pas tester audition",
+        "Oublier médicaments ototoxiques",
+        "Communication inadaptée"
+      ]
+    }
+  }
+}

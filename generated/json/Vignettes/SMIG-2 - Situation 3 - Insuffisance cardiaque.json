@@ -1,0 +1,495 @@
+{
+  "title": "SMIG-2 - Situation 3 - OMI - Hyponatrémie sur insuffisance cardiaque",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Madame C., 85 ans, suivie pour insuffisance cardiaque gauche d'origine hypertensive avec FEVG à 25%. Se plaint depuis 15 jours de réapparition d'œdèmes des membres inférieurs et dyspnée d'effort croissante",
+    "vitals": {
+      "ta": "110/80 mmHg",
+      "fc": "78 bpm",
+      "fr": "20/min",
+      "sao2": "94% air ambiant"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Motif de consultation",
+          "binaryOnly": true,
+          "patientComment": "[Œdèmes des jambes et essoufflement qui s'aggravent depuis 2 semaines]"
+        },
+        {
+          "id": "a2",
+          "text": "Caractérisation de la dyspnée",
+          "details": [
+            "Début [Il y a 15 jours, progressif]",
+            "Classe NYHA [III - limitation marquée]",
+            "Orthopnée [2 oreillers]",
+            "Dyspnée paroxystique nocturne [Occasionnelle]",
+            "Toux nocturne [Présente]",
+            "Expectoration [Mousseuse parfois]"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Caractérisation des œdèmes",
+          "details": [
+            "Localisation [Membres inférieurs bilatéraux]",
+            "Extension [Jusqu'aux genoux]",
+            "Godet [Prenant le godet]",
+            "Évolution [Progressive sur 15 jours]",
+            "Prise de poids [4 kg en 2 semaines]",
+            "Oligurie [Diurèse diminuée]"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Recherche de facteurs déclenchants",
+          "details": [
+            "Observance thérapeutique [Bonne selon patiente]",
+            "Écart de régime [Repas salé récent chez famille]",
+            "Infection récente [Non]",
+            "Douleur thoracique [Non]",
+            "Palpitations [Non]",
+            "Modification traitement [Non]"
+          ],
+          "scoringRule": "2 points si facteur déclenchant identifié"
+        },
+        {
+          "id": "a5",
+          "text": "Antécédents cardiovasculaires",
+          "details": [
+            "Insuffisance cardiaque [Connue, FEVG 25%]",
+            "Étiologie [HTA de longue date]",
+            "Hospitalisations [2 décompensations l'année passée]",
+            "Coronaropathie [Non documentée]",
+            "Troubles du rythme [FA paroxystique]",
+            "Valvulopathie [IM fonctionnelle modérée]"
+          ]
+        },
+        {
+          "id": "a6",
+          "text": "Traitement habituel",
+          "details": [
+            "IEC [Énalapril 10 mg × 2]",
+            "Bêtabloquant [Carvédilol 6.25 mg × 2]",
+            "Diurétique de l'anse [Torasémide 10 mg/j]",
+            "Antialdostérone [Non, K limite]",
+            "Autres [Aspirine 100 mg]",
+            "Observance [Déclarée bonne]"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "État général et paramètres vitaux",
+          "details": [
+            "État général [Fatiguée, dyspnéique au repos]",
+            "TA [110/80 mmHg, pas d'hypotension]",
+            "FC [78 bpm, régulier]",
+            "FR [20/min, polypnée légère]",
+            "SpO2 [94% air ambiant]",
+            "Poids [+4 kg vs poids sec]"
+          ]
+        },
+        {
+          "id": "e2",
+          "text": "Signes d'insuffisance cardiaque gauche",
+          "details": [
+            "Auscultation pulmonaire [Râles crépitants bibasaux]",
+            "Extension des râles [Tiers inférieur des champs]",
+            "Galop [B3 présent]",
+            "Souffle systolique [2/6 mitral]",
+            "Toux [Productive, expectoration rosée]",
+            "Position [Préfère position assise]"
+          ],
+          "binaryOnly": true
+        },
+        {
+          "id": "e3",
+          "text": "Signes d'insuffisance cardiaque droite",
+          "details": [
+            "Œdèmes MI [Bilatéraux jusqu'aux genoux, godet ++]",
+            "Turgescence jugulaire [Élevée à 45°]",
+            "Reflux hépato-jugulaire [Positif]",
+            "Hépatomégalie [Bord inférieur palpable, sensible]",
+            "Ascite [Non]",
+            "Cyanose [Non]"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Évaluation de la volémie",
+          "details": [
+            "Statut volémique [Hypervolémie clinique nette]",
+            "Signes de congestion [Présents]",
+            "Orthostatisme [Non testé vu œdèmes]",
+            "Pression veineuse centrale [Élevée cliniquement]",
+            "Perfusion périphérique [Correcte]"
+          ],
+          "scoringRule": "2 points si hypervolémie correctement identifiée"
+        },
+        {
+          "id": "e5",
+          "text": "Examen neurologique",
+          "details": [
+            "État de conscience [Normal]",
+            "Confusion [Non]",
+            "Déficit focal [Non]",
+            "Astérixis [Non]"
+          ]
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Interprétation des examens biologiques",
+          "details": [
+            "Natrémie [126 mmol/L - hyponatrémie modérée]",
+            "Kaliémie [3.6 mmol/L - normale basse]",
+            "Osmolalité plasmatique [258 mOsm/kg - hypoosmolaire]",
+            "Urée [10.6 mmol/L - élevée]",
+            "Créatinine [110 μmol/L - vs 85 habituel]",
+            "Rapport urée/créatinine [Élevé - insuffisance rénale fonctionnelle]"
+          ]
+        },
+        {
+          "id": "m2",
+          "text": "Mécanisme de l'hyponatrémie",
+          "description": "Physiopathologie dans l'IC",
+          "details": [
+            "Type [Hyponatrémie hypervolémique]",
+            "Capital sodé [Augmenté (œdèmes)]",
+            "Volume d'eau [Encore plus augmenté]",
+            "Activation neurohormonale [SRAA et ADH]",
+            "Baisse débit cardiaque efficace [Stimulus ADH]",
+            "Rétention hydrosodée [Prédominance hydrique]"
+          ],
+          "ddSection": {
+            "title": "Diagnostic différentiel d'une hypernatrémie",
+            "categories": [
+              {
+                "name": "Hyponatrémie hypervolémique",
+                "items": [
+                  {
+                    "text": "Insuffisance cardiaque décompensée",
+                    "cause": "Arguments POUR:\n\t□ IC connue FEVG 25%\n\t□ Œdèmes bilatéraux\n\t□ Râles de stase\n\t□ Dyspnée d'effort\n\t□ Prise de poids",
+                    "test": "→ BNP/NT-proBNP, échocardiographie"
+                  },
+                  {
+                    "text": "Cirrhose hépatique",
+                    "cause": "Arguments CONTRE:\n\t□ Pas d'hépatopathie connue\n\t□ Pas d'ascite\n\t□ Pas de signes d'HTP",
+                    "test": "→ Non retenu"
+                  },
+                  {
+                    "text": "Syndrome néphrotique",
+                    "cause": "Arguments CONTRE:\n\t□ Pas de protéinurie massive\n\t□ Pas d'hypoalbuminémie sévère",
+                    "test": "→ Non retenu"
+                  }
+                ]
+              }
+            ]
+          },
+          "binaryOnly": true,
+          "scoringRule": "2 points si mécanisme hypervolémique identifié"
+        },
+        {
+          "id": "m3",
+          "text": "Chimie urinaire attendue",
+          "details": [
+            "Natriurèse [< 10-20 mmol/L attendue]",
+            "Kaliurèse [Préservée ~40 mmol/L]",
+            "Rapport Na/K urinaire [< 1 - hyperaldostéronisme]",
+            "Osmolalité urinaire [> 400 mOsm/kg]",
+            "Interprétation [Rétention sodée maximale]",
+            "Note [Diurétiques peuvent fausser]"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Traitement de la décompensation",
+          "details": [
+            "Majoration diurétique [Torasémide 20-40 mg/j]",
+            "Restriction hydrique [1-1.5 L/jour]",
+            "Restriction sodée [< 2 g/jour]",
+            "Position demi-assise [Améliore dyspnée]",
+            "Oxygénothérapie [Si SpO2 < 92%]",
+            "Surveillance poids [Quotidien]"
+          ],
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Prise en charge de l'IC décompensée avec hyponatrémie",
+                "content": "TRAITEMENT DIURÉTIQUE:\n- Augmenter torasémide à 20-40 mg/j\n- Objectif: perte 0.5-1 kg/jour\n- Si résistance: association thiazide\n- Surveillance K+, créatinine\n\nOPTIMISATION IC:\n- Poursuivre IEC (sauf si K > 5.5 ou créat ↑↑)\n- Poursuivre bêtabloquant (sauf si choc)\n- Considérer spironolactone si K < 4.5\n\nMESURES ASSOCIÉES:\n- Restriction hydrique 1-1.5 L/j\n- Restriction sodée < 2 g/j\n- Pesée quotidienne\n- Éducation thérapeutique\n\nSURVEILLANCE:\n- Poids, diurèse, œdèmes\n- Ionogramme /48-72h\n- Fonction rénale"
+              }
+            ]
+          }
+        },
+        {
+          "id": "m5",
+          "text": "Gestion de l'hyponatrémie",
+          "details": [
+            "Pas de correction directe du sodium [Contre-productif]",
+            "Traiter la cause [Décompensation cardiaque]",
+            "Amélioration attendue [Avec diurèse efficace]",
+            "Restriction hydrique [Plus importante que sodée]",
+            "Éviter NaCl IV [Aggrave la surcharge]",
+            "Surveillance [Natrémie avec diurèse]"
+          ],
+          "redflagsSection": {
+            "title": "Complications à surveiller",
+            "items": [
+              {
+                "text": "Aggravation fonction rénale",
+                "description": "Syndrome cardio-rénal, ajuster diurétiques si créatinine double"
+              },
+              {
+                "text": "Hypokaliémie",
+                "description": "Risque avec majoration diurétiques, supplémenter si < 3.5"
+              },
+              {
+                "text": "Hypotension symptomatique",
+                "description": "Ajuster IEC et diurétiques selon TA"
+              },
+              {
+                "text": "Œdème aigu du poumon",
+                "description": "Si aggravation rapide, hospitalisation urgente"
+              },
+              {
+                "text": "Troubles du rythme",
+                "description": "FA rapide ou TV sur dyskaliémie"
+              }
+            ]
+          }
+        },
+        {
+          "id": "m6",
+          "text": "Critères d'hospitalisation",
+          "details": [
+            "Dyspnée de repos [Présente - NYHA IV]",
+            "SpO2 < 90% [Non actuellement]",
+            "Aggravation fonction rénale [Créatinine augmentée]",
+            "Hyponatrémie < 125 [Non, à 126]",
+            "Réponse insuffisante ambulatoire [À évaluer 48h]",
+            "Décision [Traitement ambulatoire intensifié d'abord]"
+          ]
+        },
+        {
+          "id": "m7",
+          "text": "Pronostic et suivi",
+          "details": [
+            "Hyponatrémie dans IC [Marqueur de mauvais pronostic]",
+            "Mortalité augmentée [Si Na < 135 dans IC]",
+            "Suivi rapproché [Dans 48-72h]",
+            "Titration médicamenteuse [Progressive]",
+            "Éducation thérapeutique [Cruciale]",
+            "Télésurveillance [Si disponible]"
+          ]
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Communication avec la patiente",
+          "content": "Madame C., votre insuffisance cardiaque s'est décompensée, ce qui explique les œdèmes et l'essoufflement. Le taux de sodium bas est une conséquence de cette décompensation. Nous allons augmenter vos diurétiques pour éliminer l'excès d'eau, et je vous demande de limiter vos apports en eau à 1.5 litre par jour et le sel à moins de 2 grammes. Je vous revois dans 2 jours pour ajuster le traitement."
+        },
+        {
+          "id": "c2",
+          "text": "Questions de la patiente",
+          "content": "[Dois-je aller à l'hôpital ?]\n[C'est grave cette fois ?]\n[Le sodium bas, qu'est-ce que ça veut dire ?]\n[Je peux continuer mes médicaments ?]"
+        },
+        {
+          "id": "c3",
+          "text": "Réponses adaptées",
+          "exemplesPhrases": [
+            "On va d'abord essayer d'améliorer les choses à domicile. Si dans 2 jours il n'y a pas d'amélioration, l'hospitalisation sera nécessaire.",
+            "C'est une décompensation comme vous en avez déjà eu. Avec le traitement adapté, ça devrait s'améliorer progressivement.",
+            "Le sodium bas montre que votre cœur retient trop d'eau. C'est fréquent dans l'insuffisance cardiaque et s'améliore avec le traitement.",
+            "Oui, continuez tous vos médicaments. J'augmente juste la dose de diurétique. C'est important de ne rien arrêter."
+          ]
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "images": [
+      {
+        "title": "Diagnostic différentiel d'une hypernatrémie",
+        "description": "Algorithme diagnostique pour l'hypernatrémie selon le statut volémique et la natriurèse",
+        "data": "grilles_generees/html/images/SMIG/SMIG-2-Situation 3-Diagnostic différentiel d'une hypernatrémie.jpg"
+      }
+    ],
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour la patiente standardisée - Mme C., IC décompensée",
+      "nom": "Madame C.",
+      "age": "85 ans",
+      "contexte": "Cabinet de médecine générale",
+      "motifConsultation": {
+        "plaintePrincipale": "Mes jambes gonflent et je suis essoufflée",
+        "autreChose": "C'est pire depuis 2 semaines"
+      },
+      "histoireActuelle": {
+        "symptomesPrincipaux": [
+          "Œdèmes progressifs jusqu'aux genoux",
+          "Dyspnée d'effort puis de repos",
+          "Orthopnée à 2 oreillers",
+          "Toux nocturne",
+          "Prise de 4 kg",
+          "Fatigue importante"
+        ],
+        "facteurDeclenchant": [
+          "Repas de famille salé il y a 3 semaines",
+          "Mais prend bien ses médicaments",
+          "Pas d'infection récente"
+        ]
+      },
+      "simulation": {
+        "attitude": [
+          "Essoufflée au moindre effort",
+          "Parle par phrases courtes",
+          "Position assise préférée",
+          "Fatiguée mais lucide",
+          "Inquiète de son état"
+        ],
+        "durantExamen": [
+          "Œdèmes importants bilatéraux",
+          "Râles crépitants audibles",
+          "Turgescence jugulaire visible",
+          "Dyspnée au déshabillage"
+        ]
+      },
+      "antecedents": {
+        "medicaux": [
+          "IC depuis 5 ans, FEVG 25%",
+          "HTA depuis 20 ans",
+          "FA paroxystique",
+          "2 hospitalisations pour IC l'an dernier"
+        ],
+        "chirurgicaux": "Prothèse de hanche il y a 10 ans",
+        "autonomie": "Vit seule, aide-ménagère 2×/semaine"
+      },
+      "medicaments": {
+        "actuels": [
+          "Énalapril 10 mg matin et soir",
+          "Carvédilol 6.25 mg matin et soir",
+          "Torasémide 10 mg le matin",
+          "Aspirine 100 mg"
+        ],
+        "observance": "Bonne avec pilulier"
+      },
+      "inquietudes": {
+        "principales": [
+          "Peur de l'hospitalisation",
+          "Veut rester chez elle",
+          "Inquiétude sur l'aggravation",
+          "Peur de mourir étouffée"
+        ],
+        "questions": [
+          "Je dois aller à l'hôpital ?",
+          "Mon cœur s'aggrave ?",
+          "Je peux rester chez moi ?",
+          "C'est la fin ?"
+        ]
+      }
+    },
+    "informationsExpert": {
+      "titre": "Guide pour l'expert évaluateur - IC décompensée avec hyponatrémie",
+      "dossierMedical": "Patiente 85 ans, IC sévère FEVG 25%, décompensation avec hyponatrémie hypervolémique",
+      "pointsCles": [
+        "Reconnaissance de l'hypervolémie (œdèmes, râles, TJ)",
+        "Hyponatrémie hypervolémique correctement identifiée",
+        "Mécanisme par activation SRAA et ADH compris",
+        "Traitement par majoration diurétiques, pas de correction sodée directe",
+        "Restriction hydrique > restriction sodée",
+        "Surveillance fonction rénale et kaliémie",
+        "Décision hospitalisation selon réponse à 48h"
+      ],
+      "pieges": [
+        "Vouloir corriger directement la natrémie avec NaCl",
+        "Arrêter l'IEC systématiquement",
+        "Oublier la restriction hydrique",
+        "Hospitaliser systématiquement",
+        "Ne pas majorer les diurétiques",
+        "Ignorer l'insuffisance rénale fonctionnelle"
+      ],
+      "rolesInterventions": [
+        "Montrer la dyspnée et fatigue",
+        "Œdèmes visibles aux jambes",
+        "Position assise préférée",
+        "Inquiétude sur l'hospitalisation",
+        "Insister sur la bonne observance"
+      ]
+    },
+    "theoriePratique": {
+      "titre": "Rappels théoriques - Hyponatrémie et insuffisance cardiaque",
+      "sections": [
+        {
+          "titre": "Physiopathologie dans l'IC",
+          "contenu": "L'hyponatrémie dans l'IC résulte de l'activation neurohormonale compensatrice.",
+          "points": [
+            "Baisse du débit cardiaque efficace",
+            "Activation SRAA : rétention sodée",
+            "Sécrétion ADH : rétention hydrique > sodée",
+            "Hyponatrémie de dilution malgré surcharge",
+            "Marqueur de sévérité de l'IC",
+            "Facteur pronostique indépendant de mortalité"
+          ]
+        },
+        {
+          "titre": "Particularités thérapeutiques",
+          "contenu": "Le traitement vise la cause (IC) et non la natrémie directement.",
+          "points": [
+            "Augmentation des diurétiques de l'anse",
+            "Association thiazide si résistance (avec prudence)",
+            "Restriction hydrique 1-1.5 L/j",
+            "Restriction sodée modérée 2-3 g/j",
+            "Maintien IEC/ARA2 sauf contre-indication",
+            "Ajout antialdostérone si K+ permet"
+          ]
+        },
+        {
+          "titre": "Syndrome cardio-rénal",
+          "contenu": "L'insuffisance rénale fonctionnelle est fréquente dans l'IC décompensée.",
+          "points": [
+            "Type 1 : IRC aiguë sur IC aiguë",
+            "Type 2 : IRC sur IC chronique",
+            "Mécanisme : hypoperfusion rénale + congestion veineuse",
+            "Dilemme thérapeutique : diurétiques vs fonction rénale",
+            "Surveillance rapprochée créatinine",
+            "Accepter augmentation modérée créatinine (< 30%)"
+          ]
+        }
+      ],
+      "rappelsTherapeutiques": [
+        "Diurétiques de l'anse : torasémide 20-80 mg/j ou furosémide 40-160 mg/j",
+        "Si résistance : association thiazide (métolazone 2.5-5 mg)",
+        "IEC/ARA2 : maintenir sauf K > 5.5 ou créatinine double",
+        "Bêtabloquants : maintenir sauf choc cardiogénique",
+        "Spironolactone 25 mg si K < 4.5 et créatinine < 220",
+        "Restriction hydrique 1-1.5 L/j, sodée 2-3 g/j",
+        "Objectif perte pondérale : 0.5-1 kg/jour"
+      ],
+      "examensComplementaires": [
+        "Ionogramme sanguin et créatinine",
+        "BNP ou NT-proBNP : confirme décompensation",
+        "Spot urinaire : Na < 20 mmol/L typique (sauf si diurétiques)",
+        "Radiographie thoracique : cardiomégalie, œdème interstitiel",
+        "ECG : recherche trouble du rythme déclenchant",
+        "Échocardiographie : si doute diagnostique ou aggravation",
+        "Gazométrie si dyspnée sévère"
+      ]
+    }
+  }
+}

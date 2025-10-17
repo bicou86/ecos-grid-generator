@@ -1,0 +1,359 @@
+{
+  "title": "Dyspnée et insuffisance cardiaque",
+  "context": {
+    "setting": "Service de médecine interne",
+    "patient": "Trois cas cliniques: 1) Mme A.R, 75 ans avec décompensation cardiaque sur FA rapide, 2) Mme T.M, 87 ans avec embolie pulmonaire, 3) Mr T, patient de 1942 avec embolie pulmonaire et QT long",
+    "vitals": {}
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Cas 1 - Mme A.R, 75 ans: Anamnèse décompensation cardiaque",
+          "details": [
+            "Dyspnée sévère [Depuis 2 semaines]",
+            "Douleurs thoraciques [Non]",
+            "Palpitations [Non]",
+            "Prise pondérale [12 kg]",
+            "Orthopnée [À évaluer]",
+            "DPN (dyspnée paroxystique nocturne) [À évaluer]"
+          ]
+        },
+        {
+          "id": "a2",
+          "text": "Cas 1 - Antécédents et facteurs de risque",
+          "details": [
+            "BPCO connue de longue date [Oxygénodépendante]",
+            "Insuffisance rénale chronique [Créatinine 240 µmol/L]",
+            "Cardiopathie ischémique [Coronarographie 2005]",
+            "Cardiopathie hypertensive [FE 60% en 2015]",
+            "FA chronique [Connue]"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Cas 2 - Mme T.M, 87 ans: Anamnèse embolie pulmonaire",
+          "details": [
+            "Dyspnée apparue le matin [Sans DRS]",
+            "Palpitations [Non]",
+            "Frissons [Non]",
+            "Expectorations [Non]",
+            "Tabagisme ancien [Oui]",
+            "Pathologie pulmonaire connue [Non]"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Cas 3 - Mr T, 1942: Anamnèse embolie pulmonaire",
+          "details": [
+            "Vol d'une heure Bruxelles [Facteur de risque]",
+            "Dyspnée progressive [Depuis retour]",
+            "Œdème/induration des mollets [Non]",
+            "DRS [Non]",
+            "Palpitations [Non]",
+            "HTA connue [Sous Olmésartan]"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Médicaments à l'entrée (Cas 1)",
+          "details": [
+            "Nébivolol 5mg QD [Bêtabloqueur]",
+            "Sintrom selon INR [Anticoagulation]",
+            "Nitroglycérine en réserve",
+            "Ultibro Breezhaler [BPCO]"
+          ]
+        },
+        {
+          "id": "a6",
+          "text": "Facteurs de risque cardiovasculaires",
+          "details": [
+            "Âge avancé [75-87 ans selon cas]",
+            "HTA [Présente]",
+            "Dyslipidémie [À évaluer]",
+            "Diabète [À évaluer]",
+            "Tabagisme [Ancien chez certains]",
+            "Antécédents familiaux [Père décédé à 49 ans d'infarctus]"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Cas 1 - Examen clinique décompensation cardiaque",
+          "details": [
+            "TA [98/60 mmHg - hypotension]",
+            "FC [130/min - FA rapide]",
+            "Afébrile [Oui]",
+            "Anasarque [Présent]",
+            "Râles aux deux bases pulmonaires [Présents]",
+            "OMI [12 kg de prise pondérale]"
+          ]
+        },
+        {
+          "id": "e2",
+          "text": "Cas 2 - Examen clinique embolie pulmonaire",
+          "details": [
+            "TA [138/76 mmHg]",
+            "FC [90/min]",
+            "Afébrile [Oui]",
+            "Saturation [97% sous 2L O2]",
+            "Auscultation pulmonaire [Non contributive]",
+            "Mollets [Souples, symétriques]"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Cas 3 - Examen clinique embolie pulmonaire et QT long",
+          "details": [
+            "TA [129/78 mmHg]",
+            "FC [95/min initialement, puis tachycardie]",
+            "FR [20/min]",
+            "Saturation [96% sous FiO2 28%]",
+            "Hypoventilation apicale bilatérale",
+            "Mollets souples et symétriques"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "ECG - Anomalies caractéristiques",
+          "details": [
+            "Cas 1: FA rapide, axe gauche, transition tardive",
+            "Cas 2: Rythme sinusal, repolarisation précoce V1-V2",
+            "Cas 3: SI-QIII-TIII typique d'EP, QTc très long (580-620ms)",
+            "BAV III (exemple): Dissociation P-QRS, FC 30/min"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Radiographie thoracique",
+          "details": [
+            "Cas 1: Cardiomégalie, lignes de Kerley, œdème pulmonaire",
+            "Cas 2: Scoliose importante, ampliation diminuée",
+            "Cas 3: Normale (typique d'EP)"
+          ]
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic différentiel et investigations",
+          "ddSection": {
+            "title": "Diagnostics selon les cas cliniques",
+            "categories": [
+              {
+                "name": "Cas 1: Décompensation cardiaque sur FA rapide",
+                "items": [
+                  {
+                    "text": "Insuffisance cardiaque décompensée",
+                    "cause": "Arguments POUR:\n\t□ Dyspnée progressive 2 semaines\n\t□ Prise pondérale 12 kg\n\t□ Anasarque\n\t□ Râles pulmonaires bilatéraux\n\t□ FA rapide (130/min)\n\t□ NT-proBNP très élevé (10825 ng/L)",
+                    "test": "→ ECG, Rx thorax, NT-proBNP, échocardiographie"
+                  },
+                  {
+                    "text": "Syndrome cardio-rénal",
+                    "cause": "Insuffisance rénale chronique:\n\t□ Créatinine 240 µmol/L\n\t□ Hypoperfusion rénale\n\t□ Transitoire sur IC",
+                    "test": "→ Surveillance créatinine, diurèse"
+                  }
+                ]
+              },
+              {
+                "name": "Cas 2 & 3: Embolie pulmonaire",
+                "items": [
+                  {
+                    "text": "Embolie pulmonaire non massive",
+                    "cause": "Arguments POUR:\n\t□ Dyspnée aiguë\n\t□ D-dimères très élevés (11726, 3505)\n\t□ Score de Genève intermédiaire\n\t□ Facteur de risque: vol avion\n\t□ ECG: SI-QIII-TIII (cas 3)\n\t□ Rx thorax normale",
+                    "test": "→ Angio-CT thoracique confirme multiples emboles"
+                  },
+                  {
+                    "text": "Thrombophilie oncologique (Cas 2)",
+                    "cause": "D-dimères très élevés sans syndrome inflammatoire:\n\t□ Suspicion néoplasie\n\t□ Masse pulmonaire au CT\n\t□ Confirmée au PET-CT",
+                    "test": "→ PET-CT, bronchoscopie pour histologie"
+                  }
+                ]
+              },
+              {
+                "name": "Cas 3: QT long acquis et congénital",
+                "items": [
+                  {
+                    "text": "Syndrome du QT long",
+                    "cause": "QTc 580-620ms:\n\t□ Médicaments: itraconazole (Sporanox)\n\t□ Activation sympathique (EP)\n\t□ Histoire familiale (père mort subite 49 ans)\n\t□ Mutation KCNQ1 confirmée",
+                    "test": "→ Télémétrie, arrêt médicaments, test génétique"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Examens biologiques et leurs interprétations",
+          "details": [
+            "NT-proBNP [10825 ng/L - IC sévère]",
+            "Créatinine [240 µmol/L - IRC]",
+            "K+ [4.5 mmol/L - normal, important pour Lasix]",
+            "Hémoglobine [104 g/L - anémie]",
+            "CRP [< 3 - exclut sepsis]",
+            "D-dimères [11726, 3505 - EP probable]",
+            "Troponines [17 ng/L stables - pas de SCA]"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Approche de la FA et anticoagulation",
+          "details": [
+            "1. Stabilité hémodynamique? [Non si hypotension]",
+            "2. FA récente? [< ou > 48h pour cardioversion]",
+            "3. Anticoagulation? [Score CHA2DS2-VASc]",
+            "4. Contrôle rythme vs fréquence? [Selon âge]",
+            "Score CHA2DS2-VASc ≥ 2 → anticoaguler",
+            "Score HAS-BLED pour risque hémorragique"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Traitement de la décompensation cardiaque",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Traitement aigu de l'IC",
+                "content": "• Furosémide IV 5-18mg/h (éviter bolus)\n• Passage au Torasémide PO après amélioration\n• Objectif: perte 12 kg en 10 jours\n• Surveillance poids quotidien\n• Position semi-assise"
+              },
+              {
+                "title": "Contrôle de la FA",
+                "content": "• Diltiazem 3×60mg/j (après stabilisation)\n• Nébivolol 10mg/j (augmentation progressive)\n• Digoxine 0.125-0.5mg/j si IC décompensée\n• Éviter amiodarone en aigu (inotrope négatif)\n• Anticoagulation: poursuite Sintrom"
+              },
+              {
+                "title": "Traitement à distance",
+                "content": "• IEC/Sartan après stabilisation rénale\n• Optimisation bêtabloqueurs\n• Éducation thérapeutique\n• Surveillance poids\n• Vaccination (grippe, pneumocoque)"
+              }
+            ]
+          }
+        },
+        {
+          "id": "m5",
+          "text": "Traitement de l'embolie pulmonaire",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Anticoagulation EP",
+                "content": "• Héparine bas poids moléculaire (Clexane)\n• Relais par AOD (anticoagulant oral direct)\n• Durée: 3-6 mois si cause identifiée\n• À vie si: néoplasie, EP idiopathique, récidive"
+              },
+              {
+                "title": "Surveillance EP",
+                "content": "• Stabilité hémodynamique\n• Saturation O2\n• Échocardiographie si EP massive\n• Recherche étiologie (néoplasie)"
+              }
+            ]
+          }
+        },
+        {
+          "id": "m6",
+          "text": "Gestion du QT long",
+          "details": [
+            "QTc normal: H < 440ms, F < 450-460ms",
+            "Critères monitoring si QTc > 500ms ou ↑ > 25%",
+            "Arrêt médicaments allongeant QT",
+            "Correction troubles électrolytiques (K+, Mg++)",
+            "Télémétrie si risque torsade de pointe",
+            "Liste médicaments contre-indiqués à vie",
+            "Dépistage familial si congénital"
+          ]
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Messages clés - Insuffisance cardiaque",
+          "content": "• Identifier le facteur déclenchant (FA, ischémie, rythmique, compliance médicamenteuse, écart nutritionnel)\n• Identifier l'étiologie de la cardiopathie (valvulaire, ischémique, rythmique)\n• Traitement selon étiologie et facteur déclenchant\n• O2, CPAP, diurétiques, IEC/sartans, bêtabloqueurs\n• Causes réversibles de FA: HTA, hyperthyroïdie, cardiopathies, éthylisme\n• Anticoagulation selon CHA2DS2-VASc (≥ 2 points)"
+        },
+        {
+          "id": "c2",
+          "text": "Messages clés - Embolie pulmonaire",
+          "content": "• Ne jamais oublier l'EP devant une dyspnée\n• Score de Genève + D-dimères pour probabilité\n• Angio-CT pour confirmation\n• Chercher la cause de la MTEV (néoplasie++)\n• Durée anticoagulation: 3-6 mois si cause identifiée, sinon à vie\n• ECG SI-QIII-TIII typique mais non constant"
+        },
+        {
+          "id": "c3",
+          "text": "Messages clés - QT long",
+          "content": "• Effet tunnel à éviter - mesurer le QT systématiquement\n• > 20% des patients hospitalisés ont un QT long!\n• Facteurs de risque: médicaments (antibiotiques, antipsychotiques), troubles électrolytiques, bradycardie\n• Risque de torsade de pointe → TV → mort subite\n• Identifier et corriger causes métaboliques\n• Télémétrie si QTc > 500ms ou symptomatique"
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "theoriePratique": {
+      "titre": "Insuffisance cardiaque, embolie pulmonaire et troubles du rythme",
+      "sections": [
+        {
+          "titre": "Score CHA2DS2-VASc pour anticoagulation dans FA",
+          "points": [
+            "C - Congestive heart failure: 1 point",
+            "H - Hypertension: 1 point",
+            "A2 - Age ≥ 75 ans: 2 points",
+            "D - Diabète: 1 point",
+            "S2 - Stroke/AIT/embolie: 2 points",
+            "V - Vascular disease: 1 point",
+            "A - Age 65-74: 1 point",
+            "Sc - Sex category (femme): 1 point",
+            "Score ≥ 2: anticoagulation recommandée"
+          ]
+        },
+        {
+          "titre": "Score de Genève révisé pour EP",
+          "points": [
+            "Âge > 65 ans: 1 point",
+            "ATCD TVP ou EP: 3 points",
+            "Chirurgie ou fracture < 1 mois: 2 points",
+            "Cancer actif: 2 points",
+            "Douleur unilatérale MI: 3 points",
+            "Hémoptysie: 2 points",
+            "FC 75-94/min: 3 points",
+            "FC ≥ 95/min: 5 points",
+            "Douleur à palpation MI et œdème: 4 points",
+            "0-3: faible, 4-10: intermédiaire, ≥11: haute probabilité"
+          ]
+        },
+        {
+          "titre": "Médicaments allongeant le QT",
+          "points": [
+            "Antibiotiques: macrolides, fluoroquinolones",
+            "Antifongiques: azolés (itraconazole)",
+            "Antiarythmiques: amiodarone, sotalol",
+            "Antidépresseurs: tricycliques, ISRS",
+            "Neuroleptiques: halopéridol",
+            "Antiémétiques: ondansétron, dompéridone"
+          ]
+        },
+        {
+          "titre": "Syndrome cardio-rénal",
+          "contenu": "L'hypoperfusion rénale est transitoire dans l'IC aiguë. La fonction rénale s'améliore avec le traitement de l'IC. Surveillance étroite de la créatinine et adaptation des doses médicamenteuses."
+        }
+      ],
+      "rappelsTherapeutiques": [
+        "IC aiguë: Furosémide IV continue (pas bolus), puis Torasémide PO",
+        "FA rapide: Diltiazem, bêtabloqueurs, digoxine si IC",
+        "EP non massive: HBPM puis AOD, durée selon étiologie",
+        "QT long: arrêt médicaments, correction K+/Mg++, télémétrie",
+        "IEC/Sartans: après stabilisation IC et fonction rénale",
+        "Anticoagulation FA: selon CHA2DS2-VASc et HAS-BLED"
+      ],
+      "examensComplementaires": [
+        "IC: NT-proBNP, échocardiographie, ECG, Rx thorax",
+        "EP: D-dimères, angio-CT thoracique, gazométrie",
+        "FA: Holter ECG, échocardiographie, TSH",
+        "QT long: ionogramme, magnésium, télémétrie",
+        "Surveillance: créatinine, K+ si diurétiques",
+        "Néoplasie: PET-CT si suspicion (EP + D-dimères très élevés)"
+      ]
+    }
+  }
+}

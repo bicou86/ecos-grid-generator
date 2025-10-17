@@ -1,0 +1,267 @@
+{
+  "mappingDocumentation": {
+    "version": "1.0",
+    "dateCreation": "2025-08-04",
+    "description": "Documentation du mapping entre l'ancienne structure d'annexes (structure_annexes.json) et la nouvelle structure standardisée (structure_annexes_v2.json)",
+    "principesMapping": [
+      "Regroupement intelligent des sections similaires",
+      "Conservation de toute l'information existante",
+      "Standardisation autour de 3 sections principales",
+      "Élimination des redondances tout en préservant la flexibilité"
+    ]
+  },
+  "sectionsElimineesDuplicatas": {
+    "description": "Sections supprimées car identiques ou très similaires à d'autres",
+    "sections": [
+      {
+        "sectionSupprimee": "contexteSocial",
+        "mappeeVers": "scenarioPatienteStandardisee.contexteSocial",
+        "raison": "Déjà présente dans scenarioPatienteStandardisee"
+      },
+      {
+        "sectionSupprimee": "antecedents",
+        "mappeeVers": "scenarioPatienteStandardisee.antecedents",
+        "raison": "Redondante avec antecedentsMedicaux et antecedentsFamiliaux"
+      },
+      {
+        "sectionSupprimee": "antecedentsMedicaux",
+        "mappeeVers": "scenarioPatienteStandardisee.antecedentsMedicaux",
+        "raison": "Déjà présente dans scenarioPatienteStandardisee"
+      },
+      {
+        "sectionSupprimee": "contexteFamilial",
+        "mappeeVers": "scenarioPatienteStandardisee.contexteFamilial",
+        "raison": "Déjà présente dans scenarioPatienteStandardisee"
+      },
+      {
+        "sectionSupprimee": "traitements",
+        "mappeeVers": "scenarioPatienteStandardisee.traitements",
+        "raison": "Déjà présente dans scenarioPatienteStandardisee"
+      },
+      {
+        "sectionSupprimee": "habitudesVie",
+        "mappeeVers": "scenarioPatienteStandardisee.habitudesVie",
+        "raison": "Déjà présente dans scenarioPatienteStandardisee"
+      },
+      {
+        "sectionSupprimee": "medicaments",
+        "mappeeVers": "scenarioPatienteStandardisee.medicaments",
+        "raison": "Déjà présente dans scenarioPatienteStandardisee"
+      },
+      {
+        "sectionSupprimee": "symptomesAssocies",
+        "mappeeVers": "scenarioPatienteStandardisee.symptomesAssocies",
+        "raison": "Déjà présente dans scenarioPatienteStandardisee"
+      },
+      {
+        "sectionSupprimee": "symptomesGynecologiques",
+        "mappeeVers": "scenarioPatienteStandardisee.symptomesGynecologiques",
+        "raison": "Déjà présente dans scenarioPatienteStandardisee"
+      },
+      {
+        "sectionSupprimee": "inquietudes",
+        "mappeeVers": "scenarioPatienteStandardisee.inquietudes",
+        "raison": "Déjà présente dans scenarioPatienteStandardisee"
+      },
+      {
+        "sectionSupprimee": "preoccupationsLogistiques",
+        "mappeeVers": "scenarioPatienteStandardisee.preoccupationsLogistiques",
+        "raison": "Déjà présente dans scenarioPatienteStandardisee"
+      },
+      {
+        "sectionSupprimee": "challenges",
+        "mappeeVers": "questionsEtReponses.challenges",
+        "raison": "Redondante avec questionsEtReponses"
+      },
+      {
+        "sectionSupprimee": "habitudesAlimentaires",
+        "mappeeVers": "scenarioPatienteStandardisee.alimentation",
+        "raison": "Fusionnée avec la section alimentation"
+      },
+      {
+        "sectionSupprimee": "medicamentsSupplements",
+        "mappeeVers": "scenarioPatienteStandardisee.medicamentsSupplements",
+        "raison": "Déjà présente dans scenarioPatienteStandardisee"
+      }
+    ]
+  },
+  "sectionsSpecialiseesMaintenues": {
+    "description": "Sections spécialisées conservées en dehors des 3 sections principales",
+    "sections": [
+      {
+        "nom": "images",
+        "justification": "Section technique nécessaire pour la gestion des ressources visuelles",
+        "utilisation": "Stockage des images, diagrammes et illustrations associés au cas"
+      },
+      {
+        "nom": "defi",
+        "justification": "Section optionnelle pour des défis spécifiques d'apprentissage",
+        "utilisation": "Challenges particuliers ou objectifs pédagogiques spéciaux"
+      },
+      {
+        "nom": "questionsEtReponses",
+        "justification": "Section pour cas non-USMLE/AMBOSS nécessitant un format Q&A",
+        "utilisation": "Gestion des questions-réponses pour cas avec format différent"
+      }
+    ]
+  },
+  "structurePrincipaleStandardisee": {
+    "description": "Les 3 sections principales standardisées et leurs rôles",
+    "sections": [
+      {
+        "nom": "scenarioPatienteStandardisee",
+        "role": "Informations pour le patient standardisé",
+        "contient": [
+          "Informations personnelles du patient",
+          "Histoire médicale et symptômes",
+          "Instructions de simulation",
+          "Contexte social et familial",
+          "Antécédents et traitements",
+          "Consignes comportementales"
+        ],
+        "sousSectionsClés": [
+          "motifConsultation",
+          "histoireActuelle",
+          "simulation",
+          "anamneseSystemes",
+          "habitudes",
+          "antecédents divers"
+        ]
+      },
+      {
+        "nom": "informationsExpert",
+        "role": "Guide pour l'expert/évaluateur",
+        "contient": [
+          "Résumé du dossier médical",
+          "Points clés d'évaluation",
+          "Pièges à éviter",
+          "Rôles et interventions",
+          "Résultats d'examens complémentaires"
+        ],
+        "sousSectionsClés": [
+          "dossierMedical",
+          "pointsCles",
+          "pieges",
+          "rolesInterventions",
+          "resultatsLaboratoire"
+        ]
+      },
+      {
+        "nom": "theoriePratique",
+        "role": "Contenu théorique et pratique",
+        "contient": [
+          "Sections théoriques par thème",
+          "Rappels thérapeutiques",
+          "Examens complémentaires",
+          "Informations pédagogiques"
+        ],
+        "sousSectionsClés": [
+          "sections",
+          "rappelsTherapeutiques",
+          "examensComplementaires"
+        ]
+      }
+    ]
+  },
+  "regroupementsIntelligents": {
+    "description": "Comment les sections dispersées ont été regroupées intelligemment",
+    "regroupements": [
+      {
+        "theme": "Informations patient",
+        "sectionCible": "scenarioPatienteStandardisee",
+        "sectionsRegroupees": [
+          "informationsPersonnelles",
+          "contexteFamilial",
+          "contexteSocial",
+          "situationFamiliale"
+        ]
+      },
+      {
+        "theme": "Histoire médicale",
+        "sectionCible": "scenarioPatienteStandardisee",
+        "sectionsRegroupees": [
+          "histoireMedicale",
+          "antecedentsMedicaux",
+          "antecedentsFamiliaux",
+          "antecedentsEnfant",
+          "histoireGynecologique",
+          "histoireSexuelle"
+        ]
+      },
+      {
+        "theme": "Substances et habitudes",
+        "sectionCible": "scenarioPatienteStandardisee",
+        "sectionsRegroupees": [
+          "habitudes",
+          "habitudesVie",
+          "substancesHabitudes",
+          "expositions",
+          "exposition"
+        ]
+      },
+      {
+        "theme": "Symptômes et présentation",
+        "sectionCible": "scenarioPatienteStandardisee.histoireActuelle",
+        "sectionsRegroupees": [
+          "symptomesActuels",
+          "symptomesAssocies",
+          "symptomesUrinaires",
+          "symptomesGynecologiques",
+          "symptomesObserves"
+        ]
+      },
+      {
+        "theme": "Traitements et médicaments",
+        "sectionCible": "scenarioPatienteStandardisee",
+        "sectionsRegroupees": [
+          "medicaments",
+          "traitements",
+          "medicamentsSupplements",
+          "adherenceTraitement"
+        ]
+      },
+      {
+        "theme": "Évaluation fonctionnelle",
+        "sectionCible": "scenarioPatienteStandardisee",
+        "sectionsRegroupees": [
+          "autonomieFonctionnelle",
+          "capacitesIntellectuelles",
+          "capacitesVisuelles"
+        ]
+      }
+    ]
+  },
+  "flexibiliteStructure": {
+    "description": "Comment la nouvelle structure maintient la flexibilité",
+    "principes": [
+      "Toutes les sous-sections sont optionnelles",
+      "Structure hiérarchique permettant l'ajout facile de nouvelles propriétés",
+      "Compatibilité avec les générateurs existants",
+      "Support des formats array et string pour maximum de flexibilité"
+    ],
+    "exempleUtilisation": {
+      "casSimple": "Utiliser seulement les sections nécessaires",
+      "casComplexe": "Exploiter toute la richesse de la structure",
+      "casPediatrique": "Utiliser informationsSurEnfant, antecedentsEnfant",
+      "casGynecologique": "Utiliser histoireGynecologique, symptomesGynecologiques"
+    }
+  },
+  "compatibiliteGenerateurs": {
+    "description": "Assurance de compatibilité avec les générateurs HTML existants",
+    "garanties": [
+      "Structure JSON identique au niveau racine",
+      "Clés principales inchangées",
+      "Générateurs reconnaissent automatiquement les nouvelles sous-sections",
+      "Rétrocompatibilité avec les fichiers USMLE existants"
+    ]
+  },
+  "evolutionFuture": {
+    "description": "Comment la structure peut évoluer",
+    "possibilites": [
+      "Ajout de nouvelles sous-sections sans casser la compatibilité",
+      "Extension des sections théoriques",
+      "Support de nouveaux types de ressources (vidéos, audio)",
+      "Intégration de métadonnées avancées"
+    ]
+  }
+}

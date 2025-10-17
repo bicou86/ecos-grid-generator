@@ -1,0 +1,117 @@
+{
+  "title": "USMLE Mini - Gastrite - Femme de 40 ans",
+  "category": "USMLE Mini-Cas",
+  "originalCategory": "HÉMORRAGIE DIGESTIVE HAUTE",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Femme de 40 ans consultant pour douleur épigastrique et vomissements marc de café. Elle a des antécédents de polyarthrite rhumatoïde traitée par AINS. Elle est alcoolique."
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Motif principal de consultation",
+          "binaryOnly": true,
+          "patientComment": "douleur épigastrique et vomissements marc de café. Elle a des antécédents de polyarthrite rhumatoïde traitée par AINS. Elle est alcoolique."
+        },
+        {
+          "id": "a2",
+          "text": "Éléments clés de l'anamnèse à explorer",
+          "details": [
+            "Quantité, durée, contexte (après vomissements sévères, ingestion d'alcool, épistaxis)",
+            "symptômes associés (constitutionnels, nausées, douleur abdominale, dyspepsie)",
+            "médicaments (en particulier anticoagulants, AINS et corticostéroïdes)",
+            "antécédents d'ulcère gastroduodénal, maladie hépatique, réparation d'anévrisme de l'aorte abdominale, saignements faciles."
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Éléments clés de l'examen physique",
+          "details": [
+            "Signes vitaux, y compris orthostatiques",
+            "examens ORL, cardiaque, pulmonaire, abdominal et rectal."
+          ]
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostics différentiels à considérer",
+          "ddSection": {
+            "title": "Diagnostics différentiels",
+            "categories": [
+              {
+                "name": "Hypothèses diagnostiques",
+                "items": [
+                  {
+                    "text": "Gastrite",
+                    "cause": "À évaluer selon l'anamnèse et l'examen clinique",
+                    "test": "→ Toucher rectal"
+                  },
+                  {
+                    "text": "Ulcère gastroduodénal hémorragique",
+                    "cause": "À évaluer selon l'anamnèse et l'examen clinique",
+                    "test": "→ NFS, groupe sanguin et compatibilité croisée"
+                  },
+                  {
+                    "text": "Cancer gastrique",
+                    "cause": "À évaluer selon l'anamnèse et l'examen clinique",
+                    "test": "→ Électrolytes"
+                  },
+                  {
+                    "text": "Varices œsophagiennes",
+                    "cause": "À évaluer selon l'anamnèse et l'examen clinique",
+                    "test": "→ ASAT/ALAT/bilirubine/phosphatase alcaline"
+                  },
+                  {
+                    "text": "Déchirure de Mallory-Weiss",
+                    "cause": "À évaluer selon l'anamnèse et l'examen clinique",
+                    "test": "→ INR"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Examens complémentaires pertinents",
+          "details": [
+            "Toucher rectal",
+            "NFS, groupe sanguin et compatibilité croisée",
+            "Électrolytes",
+            "ASAT/ALAT/bilirubine/phosphatase alcaline",
+            "INR",
+            "Endoscopie haute"
+          ]
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "informationsExpert": {
+      "titre": "Informations pour l'expert",
+      "pointsCles": [
+        "Cas de hémorragie digestive haute",
+        "Patient: Femme de 40 ans",
+        "Évaluation de la démarche diagnostique",
+        "Choix approprié des examens complémentaires"
+      ],
+      "pieges": [
+        "Ne pas explorer systématiquement tous les éléments de l'anamnèse",
+        "Oublier certains diagnostics différentiels importants",
+        "Demander des examens non pertinents ou excessifs"
+      ]
+    }
+  }
+}

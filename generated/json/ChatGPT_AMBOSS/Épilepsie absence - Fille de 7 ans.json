@@ -1,0 +1,805 @@
+{
+  "title": "Épilepsie absence - Fille de 7 ans",
+  "context": {
+    "setting": "Cabinet de pédiatrie",
+    "patient": "Fillette de 7 ans, amenée par sa mère pour épisodes de regard fixe"
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Motif principal de consultation",
+          "binaryOnly": true,
+          "patientComment": "Ma fille fixe dans le vide, ne répond plus, puis reprend son activité comme si de rien n'était"
+        },
+        {
+          "id": "a2",
+          "text": "Caractérisation des épisodes",
+          "details": [
+            "Début des symptômes [depuis 2-3 mois]",
+            "Durée des épisodes [environ 10 secondes]",
+            "Fréquence [5-10 fois par jour]",
+            "Interruption brutale de l'activité [oui, elle décroche]",
+            "Regard fixe [oui]",
+            "Arrêt de la parole ou de l'écriture [oui]"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Signes accompagnateurs",
+          "details": [
+            "Clignement des yeux [parfois]",
+            "Mouvements des lèvres [parfois, mâchonnements]",
+            "Automatismes (gestes répétitifs)",
+            "Perte de tonus musculaire [non]",
+            "Chute [non]",
+            "Mouvements tonico-cloniques [non]"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Phase post-épisode",
+          "details": [
+            "Reprise immédiate de l'activité [oui, comme si de rien n'était]",
+            "Conscience de l'épisode [non, pas de souvenir]",
+            "Confusion post-critique [non]",
+            "Fatigue [non]",
+            "Céphalées [non]"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Facteurs déclenchants",
+          "details": [
+            "Hyperventilation",
+            "Lumière clignotante",
+            "Fatigue",
+            "Stress",
+            "Fièvre [non]",
+            "Privation de sommeil"
+          ]
+        },
+        {
+          "id": "a6",
+          "text": "Contexte et témoins",
+          "details": [
+            "Observé à la maison [oui]",
+            "Observé à l'école [oui, l'enseignant l'a remarqué]",
+            "Impact sur les performances scolaires",
+            "Difficultés d'apprentissage",
+            "Problèmes de concentration antérieurs"
+          ]
+        },
+        {
+          "id": "a7",
+          "text": "Antécédents développementaux",
+          "details": [
+            "Développement psychomoteur [normal]",
+            "Développement du langage [normal]",
+            "Performances scolaires [bonne élève]",
+            "Retard de développement [aucun]",
+            "Troubles du comportement [non]"
+          ]
+        },
+        {
+          "id": "a8",
+          "text": "Antécédents médicaux",
+          "details": [
+            "Traumatisme crânien [non]",
+            "Convulsions fébriles",
+            "Méningite/encéphalite [non]",
+            "Prématurité",
+            "Souffrance néonatale [non]"
+          ]
+        },
+        {
+          "id": "a9",
+          "text": "Antécédents familiaux",
+          "details": [
+            "Épilepsie familiale",
+            "Convulsions fébriles familiales",
+            "Retard de développement familial",
+            "Maladies neurologiques"
+          ]
+        },
+        {
+          "id": "a10",
+          "text": "Médicaments et vaccinations",
+          "details": [
+            "Médicaments actuels [aucun]",
+            "Vaccinations à jour",
+            "Allergies médicamenteuses"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Examen général pédiatrique",
+          "details": [
+            "État général",
+            "Croissance staturo-pondérale",
+            "Signes vitaux adaptés à l'âge",
+            "Développement pubertaire"
+          ]
+        },
+        {
+          "id": "e2",
+          "text": "Examen neurologique",
+          "details": [
+            "État de conscience",
+            "Paires crâniennes",
+            "Force motrice",
+            "Tonus musculaire",
+            "Réflexes ostéo-tendineux",
+            "Coordination et équilibre"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Recherche de signes focaux",
+          "details": [
+            "Déficit moteur focal",
+            "Asymétrie des réflexes",
+            "Troubles sensitifs",
+            "Signes cérébelleux"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Évaluation cognitive",
+          "details": [
+            "Niveau de langage",
+            "Attention",
+            "Mémoire",
+            "Comportement pendant l'examen"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Test de provocation",
+          "details": [
+            "Hyperventilation supervisée (3-4 minutes)",
+            "Observation d'une absence typique",
+            "Documentation des caractéristiques"
+          ]
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic suspecté",
+          "ddSection": {
+            "title": "Diagnostics différentiels à considérer",
+            "categories": [
+              {
+                "name": "Diagnostic principal",
+                "items": [
+                  {
+                    "text": "Épilepsie absence de l'enfant (pyknolepsie)",
+                    "cause": "Arguments POUR:\n\t□ Âge typique (7 ans)\n\t□ Absences brèves (<10 secondes)\n\t□ Fréquence élevée (5-10/jour)\n\t□ Regard fixe avec automatismes\n\t□ Pas de confusion post-critique\n\t□ Développement normal",
+                    "test": "→ EEG avec hyperventilation (pointes-ondes 3 Hz)"
+                  }
+                ]
+              },
+              {
+                "name": "Diagnostics différentiels",
+                "items": [
+                  {
+                    "text": "Trouble déficitaire de l'attention",
+                    "cause": "Arguments CONTRE:\n\t□ Épisodes stéréotypés\n\t□ Interruption brutale\n\t□ Non modulable par l'environnement",
+                    "test": "→ Évaluation neuropsychologique"
+                  },
+                  {
+                    "text": "Crises focales avec altération de conscience",
+                    "cause": "Arguments CONTRE:\n\t□ Pas d'aura\n\t□ Durée très brève\n\t□ Pas de confusion post-critique",
+                    "test": "→ EEG, IRM cérébrale"
+                  },
+                  {
+                    "text": "Crises psychogènes",
+                    "cause": "Arguments CONTRE:\n\t□ Âge précoce\n\t□ Stéréotypie des épisodes\n\t□ Observé par l'enseignant",
+                    "test": "→ EEG-vidéo si doute"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Examens complémentaires",
+          "details": [
+            "EEG avec hyperventilation [examen clé, recherche pointes-ondes 3 Hz]",
+            "Photostimulation pendant l'EEG",
+            "IRM cérébrale [si signes atypiques ou suspicion cause secondaire]",
+            "Bilan métabolique de base"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Traitement médicamenteux",
+          "details": [
+            "Première ligne : Ethosuximide [si absences isolées]",
+            "Alternative : Valproate [si formes mixtes avec crises tonico-cloniques]",
+            "Troisième ligne : Lamotrigine",
+            "Éviter : Carbamazépine [aggrave les absences]"
+          ],
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Traitement de première intention",
+                "items": [
+                  {
+                    "treatment": "Ethosuximide",
+                    "details": "20-40 mg/kg/jour en 2 prises",
+                    "duration": "Généralement 2-3 ans après disparition des crises"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m4",
+          "text": "Éducation des parents",
+          "details": [
+            "Nature non volontaire des crises",
+            "Pronostic excellent [80% sans crise à l'âge adulte]",
+            "Traitement temporaire dans la majorité des cas",
+            "Surveillance pendant certaines activités",
+            "Importance de l'observance thérapeutique"
+          ],
+          "exemplesPhrases": [
+            "Non, les absences ne mettent pas en danger immédiat",
+            "Dans la majorité des cas, le traitement est temporaire et l'épilepsie disparaît à l'adolescence",
+            "C'est une forme fréquente d'épilepsie de l'enfant, souvent liée à une prédisposition génétique"
+          ]
+        },
+        {
+          "id": "m5",
+          "text": "Information de l'école",
+          "details": [
+            "Informer les enseignants de la nature des absences",
+            "Aménagements si nécessaire",
+            "Surveillance lors des activités à risque",
+            "Pas d'exclusion des activités normales",
+            "Communication régulière avec l'équipe pédagogique"
+          ]
+        },
+        {
+          "id": "m6",
+          "text": "Conseils pratiques",
+          "details": [
+            "Vie normale possible",
+            "Sport autorisé avec supervision",
+            "Natation surveillée",
+            "Éviter escalade non sécurisée",
+            "Sommeil régulier important"
+          ],
+          "exemplesPhrases": [
+            "Oui, elle peut avoir une vie normale",
+            "Elle peut faire du sport, à l'exception des activités dangereuses en cas d'épisodes non contrôlés"
+          ]
+        },
+        {
+          "id": "m7",
+          "text": "Plan de suivi",
+          "details": [
+            "Consultation neuropédiatrique",
+            "Contrôle EEG après 3-6 mois de traitement",
+            "Surveillance effets secondaires médicamenteux",
+            "Ajustement posologique selon poids",
+            "Réévaluation annuelle"
+          ]
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Clôture de la consultation",
+          "content": "Je suspecte une épilepsie absence, forme courante et de bon pronostic. Nous allons faire un EEG pour confirmer et débuter un traitement efficace.",
+          "exemplesPhrases": [
+            "L'EEG nous permettra de confirmer le diagnostic",
+            "Le traitement est généralement très efficace pour ces absences",
+            "Je vais vous orienter vers un neuropédiatre pour le suivi",
+            "Voici une lettre pour l'école expliquant la situation"
+          ]
+        },
+        {
+          "id": "c2",
+          "text": "Questions difficiles des parents",
+          "content": "[Est-ce dangereux ?] [Est-ce qu'elle devra prendre un traitement à vie ?] [Peut-elle faire du sport ?] [Est-ce que c'est de ma faute ?]"
+        },
+        {
+          "id": "c3",
+          "text": "Réponses types aux questions difficiles",
+          "exemplesPhrases": [
+            "Non, les absences ne mettent pas en danger immédiat. Il est important de les traiter pour éviter les conséquences scolaires et sociales",
+            "Pas nécessairement. Dans la majorité des cas, le traitement est temporaire",
+            "Oui, elle peut avoir une vie normale, avec quelques précautions",
+            "Pas du tout. C'est une forme fréquente d'épilepsie de l'enfant, souvent liée à une prédisposition génétique"
+          ]
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour l'actrice (mère de l'enfant)",
+      "nom": "Mère de la fillette",
+      "age": "Fillette de 7 ans",
+      "contexte": "Cabinet de pédiatrie",
+      "motifConsultation": {
+        "plaintePrincipale": "Ma fille fixe dans le vide et ne répond plus pendant quelques secondes",
+        "autreChose": "L'enseignant l'a aussi remarqué à l'école"
+      },
+      "histoireActuelle": {
+        "debutSymptomes": [
+          "Commencé il y a 2-3 mois",
+          "Progressivement plus fréquent",
+          "Maintenant 5-10 fois par jour"
+        ],
+        "descriptionEpisodes": [
+          "Elle décroche soudainement",
+          "Arrête de parler ou d'écrire",
+          "Regard fixe dans le vide",
+          "Durée d'environ 10 secondes",
+          "Parfois cligne des yeux",
+          "Parfois fait des mouvements de lèvres"
+        ],
+        "finEpisode": [
+          "Elle revient spontanément",
+          "Reprend son activité comme si de rien n'était",
+          "Pas de souvenir de l'épisode",
+          "Pas de fatigue après"
+        ],
+        "contexte": [
+          "Peut survenir n'importe quand",
+          "Pendant les repas, les devoirs, les jeux",
+          "L'enseignant dit qu'elle manque des instructions",
+          "Impact sur ses résultats scolaires récemment"
+        ]
+      },
+      "simulation": {
+        "attitude": [
+          "Mère inquiète mais calme",
+          "Observatrice et précise dans ses descriptions",
+          "Cherche à comprendre ce qui arrive",
+          "Culpabilise de ne pas avoir consulté plus tôt"
+        ],
+        "durantEntretien": [
+          "Décrit précisément les épisodes",
+          "Demande si c'est grave",
+          "S'inquiète pour la scolarité",
+          "Questionne sur les causes",
+          "Veut savoir si c'est héréditaire"
+        ]
+      },
+      "informationsSurEnfant": {
+        "developpement": "Développement normal, bonne élève",
+        "sante": "Bonne santé générale, pas de traumatisme",
+        "comportement": "Enfant calme et attentive habituellement",
+        "ecole": "Résultats scolaires en baisse récente"
+      },
+      "antecedents": {
+        "medicaux": "Aucune maladie notable",
+        "chirurgicaux": "Aucune intervention",
+        "familiaux": "Cousin avec épilepsie dans l'enfance",
+        "medicaments": "Aucun médicament actuel"
+      },
+      "inquietudes": {
+        "principales": [
+          "Est-ce de l'épilepsie ?",
+          "Est-ce dangereux ?",
+          "Va-t-elle guérir ?",
+          "Impact sur la scolarité",
+          "Traitement à vie ?",
+          "Activités sportives"
+        ],
+        "questions": [
+          "Est-ce dangereux ?",
+          "Est-ce qu'elle devra prendre un traitement à vie ?",
+          "Peut-elle faire du sport ?",
+          "Est-ce que c'est de ma faute ?",
+          "Est-ce héréditaire ?"
+        ]
+      }
+    },
+    "informationsExpert": {
+      "titre": "Points clés pour l'expert évaluateur",
+      "pointsCles": [
+        "Caractérisation précise des absences typiques",
+        "Recherche des signes accompagnateurs",
+        "Exclusion des diagnostics différentiels",
+        "Test d'hyperventilation si approprié",
+        "Explication claire du diagnostic suspecté",
+        "Rassurer sur le pronostic favorable",
+        "Plan d'investigation approprié (EEG)"
+      ],
+      "pieges": [
+        "Ne pas caractériser précisément les épisodes",
+        "Confondre avec un trouble de l'attention",
+        "Oublier de rassurer sur le pronostic",
+        "Ne pas mentionner l'EEG avec hyperventilation",
+        "Prescrire carbamazépine (aggrave les absences)",
+        "Minimiser l'impact scolaire",
+        "Ne pas informer l'école"
+      ]
+    },
+    "theoriePratique": {
+      "titre": "Rappels théoriques sur l'épilepsie absence de l'enfant",
+      "sections": [
+        {
+          "titre": "Critères diagnostiques",
+          "points": [
+            "Âge typique : 4-8 ans (pic à 6-7 ans)",
+            "Absences typiques <20 secondes",
+            "Fréquence élevée (jusqu'à 100/jour)",
+            "Début et fin brutaux",
+            "Pas de confusion post-critique",
+            "EEG : pointes-ondes généralisées 3 Hz"
+          ]
+        },
+        {
+          "titre": "Caractéristiques des absences typiques",
+          "points": [
+            "Regard fixe",
+            "Altération brève de la conscience",
+            "Automatismes discrets (clignements, mâchonnements)",
+            "Pas de chute",
+            "Reprise immédiate de l'activité",
+            "Déclenchées par hyperventilation"
+          ]
+        },
+        {
+          "titre": "Différences absence typique vs atypique",
+          "points": [
+            "Atypique : début/fin progressifs",
+            "Atypique : durée >30 secondes",
+            "Atypique : conscience partiellement altérée",
+            "Atypique : contexte neurodéveloppemental",
+            "Atypique : EEG <2.5 Hz ou irrégulier"
+          ]
+        },
+        {
+          "titre": "Pronostic",
+          "points": [
+            "Excellent : 80% sans crise à l'âge adulte",
+            "Disparition à l'adolescence habituelle",
+            "Développement cognitif normal",
+            "Risque de crises tonico-cloniques : 30-40%",
+            "Facteurs défavorables : début précoce, crises fréquentes"
+          ]
+        }
+      ],
+      "rappelsTherapeutiques": [
+        "Ethosuximide : traitement de première ligne pour absences isolées",
+        "Valproate : si crises mixtes (absences + tonico-cloniques)",
+        "Lamotrigine : alternative de troisième ligne",
+        "Éviter carbamazépine et phénytoïne (aggravent les absences)",
+        "Durée traitement : 2-3 ans après disparition des crises"
+      ],
+      "examensComplementaires": [
+        "EEG avec hyperventilation : gold standard diagnostique",
+        "Photostimulation : peut déclencher des absences",
+        "IRM cérébrale : seulement si signes atypiques",
+        "Pas de bilan métabolique systématique"
+      ]
+    },
+    "resume": {
+      "titre": "🧠 Épilepsie absence de l’enfant – Résumé ECOS",
+      "sections": [
+        {
+          "titre": "🔍 Anamnèse",
+          "subsections": [
+            {
+              "titre": "Symptomatologie typique",
+              "points": [
+                "Âge de début : 6–7 ans (souvent filles > garçons)",
+                "Absences brèves (5–10 sec), fréquentes (jusqu’à 100/jour)",
+                "Perte de contact, regard fixe, aspect « rêveur »",
+                "Automatismes : clignements, mâchonnement, hochements de tête",
+                "Amnésie de l’épisode, sans phase post-critique"
+              ]
+            },
+            {
+              "titre": "Symptômes atypiques",
+              "points": [
+                "Absence prolongée > 30 sec",
+                "Début/fin plus progressifs",
+                "Réactivité partiellement conservée"
+              ]
+            },
+            {
+              "titre": "Facteurs déclenchants",
+              "points": [
+                "Hyperventilation",
+                "Stimuli lumineux (lumières clignotantes)"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "👀 Examen clinique",
+          "subsections": [
+            {
+              "titre": "Pendant la crise",
+              "points": [
+                "Arrêt soudain de l’activité en cours",
+                "Fixité du regard, absence de réponse aux stimuli",
+                "Automatismes discrets (clignements, mouvements oro-faciaux)"
+              ]
+            },
+            {
+              "titre": "Hors crise",
+              "points": [
+                "Examen neurologique normal",
+                "Développement psychomoteur généralement normal"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "🧪 Examens diagnostiques",
+          "subsections": [
+            {
+              "titre": "EEG",
+              "points": [
+                "Critère clé du diagnostic",
+                "Décharge généralisée de pointes-ondes à 3 Hz",
+                "Déclenchées par hyperventilation"
+              ]
+            },
+            {
+              "titre": "Autres examens",
+              "points": [
+                "Imagerie cérébrale non systématique (sauf atypie)",
+                "Bilan biologique non spécifique"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "⚙️ Prise en charge",
+          "subsections": [
+            {
+              "titre": "Traitement médicamenteux",
+              "points": [
+                "1ère intention : Ethosuximide",
+                "2ème intention : Valproate de sodium (⚠️ CI chez la fille pubère si alternatives)",
+                "3ème intention : Lamotrigine"
+              ]
+            },
+            {
+              "titre": "Évolution",
+              "points": [
+                "80 % des enfants contrôlés sous traitement",
+                "Souvent disparition des crises à l’adolescence"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "✅ Points clés ECOS",
+          "points": [
+            "Absence typique = brève perte de contact + automatisme + amnésie, sans confusion post-critique",
+            "Diagnostic confirmé par EEG (pointes-ondes 3 Hz)",
+            "Hyperventilation = manœuvre diagnostique simple",
+            "Ethosuximide = traitement de choix",
+            "Bon pronostic : rémission fréquente à l’adolescence"
+          ]
+        },
+        {
+          "titre": "📋 Check-list rapide ECOS",
+          "subsections": [
+            {
+              "titre": "Questions à poser",
+              "points": [
+                "Âge de début des crises ?",
+                "Fréquence et durée des épisodes ?",
+                "Conscience altérée ou pas ?",
+                "Automatismes observés ?",
+                "Déclenchants : hyperventilation, lumière ?",
+                "Antécédents familiaux d’épilepsie ?"
+              ]
+            },
+            {
+              "titre": "Examens à faire",
+              "points": [
+                "EEG avec hyperventilation",
+                "Imagerie cérébrale si atypies",
+                "Pas d’examen biologique spécifique"
+              ]
+            },
+            {
+              "titre": "PEC en 3 points",
+              "points": [
+                "Confirmer diagnostic par EEG",
+                "Initier Ethosuximide en 1ère intention",
+                "Informer parents sur le bon pronostic et surveillance"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "presentationPatient": {
+      "titre": "📑 Fiche ECOS – Cas : Épilepsie absence (Fille de 7 ans, épisodes de regard fixe)",
+      "sections": [
+        {
+          "titre": "🧩 Checklist mentale (présentation systématisée)",
+          "points": [
+            "Intro → âge, motif (7 ans, épisodes de regard fixe, 'décrochements')",
+            "Caractériser épisodes → début brutal, durée 10 sec, fréquence 5-10/j, regard fixe, arrêt activité/parole",
+            "Signes associés → clignements, mouvements lèvres, pas de chute ni tonico-clonique",
+            "Post-critique → reprise immédiate, pas de souvenir, pas de confusion, pas de fatigue",
+            "Facteurs déclenchants → hyperventilation, lumière, fatigue, stress",
+            "Impact scolaire → manque instructions, baisse résultats",
+            "Développement normal (langage, psychomoteur, scolaire jusque récemment)",
+            "ATCD médicaux → RAS, pas de trauma, pas de convulsions fébriles",
+            "ATCD familiaux → cousin épilepsie enfance",
+            "Examen neuro → normal entre crises",
+            "Test hyperventilation → peut déclencher une crise en consultation",
+            "Hypothèse principale → épilepsie absence de l’enfant (pyknolepsie)",
+            "DD → TDAH, crises focales, crises psychogènes",
+            "Examens complémentaires → EEG avec hyperventilation (3 Hz), IRM si atypique",
+            "Traitement → ethosuximide (1ʳᵉ intention), valproate si absences + crises généralisées, éviter carbamazépine",
+            "Éducation parents + école → rassurer sur bon pronostic, sport OK sous supervision, importance observance",
+            "Suivi neuropédiatrique → contrôle EEG, surveillance effets secondaires, réévaluation annuelle"
+          ],
+          "mnemo": {
+            "titre": "👉 Mnémo rapide : ABSENCE",
+            "elements": [
+              "A = Arrêt brutal de l’activité",
+              "B = Bref (5–15 sec)",
+              "S = Souvenir absent",
+              "E = EEG : pointes-ondes 3 Hz",
+              "N = Nombreuses crises/jour",
+              "C = Conscience altérée brièvement",
+              "E = Ethosuximide = traitement 1ʳᵉ intention"
+            ]
+          }
+        },
+        {
+          "titre": "🎤 Version longue (≈2-3 min)",
+          "contenu": "Il s’agit de Léa, une fillette de 7 ans, amenée par sa mère car depuis environ 2 à 3 mois elle présente de petits épisodes de 'décrochement'. Ces épisodes surviennent plusieurs fois par jour, environ 5 à 10 fois, durent une dizaine de secondes et se traduisent par un arrêt brutal de son activité en cours : elle fixe dans le vide, cesse de parler ou d’écrire. Parfois, sa mère a remarqué des clignements des yeux ou de petits mouvements de lèvres. \n\nPendant ces épisodes, Léa n’est pas réactive aux stimulations. Ils se terminent aussi brusquement qu’ils ont commencé, et elle reprend immédiatement son activité comme si de rien n’était, sans souvenir de l’épisode, sans confusion, sans fatigue. Ces manifestations sont observées aussi bien à la maison qu’à l’école, et l’enseignante rapporte que Léa 'manque des instructions', ce qui commence à impacter ses résultats scolaires. \n\nSon développement a toujours été normal, sans retard de langage ni de psychomotricité. Ses antécédents médicaux sont sans particularité, elle n’a jamais eu de traumatisme crânien ni de convulsions fébriles. Dans la famille, un cousin a présenté une épilepsie dans l’enfance. \n\nÀ l’examen, la fillette est en bon état général, son examen neurologique est strictement normal entre les crises. Lors d’une hyperventilation de 3 minutes, on peut parfois déclencher un épisode typique. \n\nEn résumé, il s’agit d’une enfant de 7 ans présentant des absences typiques : brèves, fréquentes, début et fin brutaux, avec regard fixe, automatisme discrets et reprise immédiate. L’hypothèse principale est une épilepsie absence de l’enfant, forme bénigne mais nécessitant traitement. Les diagnostics différentiels incluent un TDAH (mais les épisodes sont stéréotypés et non modulables), des crises focales ou psychogènes (moins probables au vu de l’âge et de la clinique). \n\nJe propose de confirmer le diagnostic par un EEG avec hyperventilation, qui devrait montrer un tracé caractéristique de pointes-ondes généralisées à 3 Hz. L’IRM n’est indiquée qu’en cas de signes atypiques. Le traitement repose sur l’ethosuximide en première intention, très efficace sur les absences. Le valproate peut être discuté si crises généralisées associées, et la lamotrigine en alternative. On évite la carbamazépine car elle aggrave les absences. \n\nJ’explique à la mère que le pronostic est excellent : 80 % des enfants ne présentent plus de crises à l’adolescence, avec un développement cognitif normal. Léa pourra avoir une vie normale, faire du sport avec quelques précautions. Un suivi régulier sera assuré en neuropédiatrie avec contrôles cliniques et EEG."
+        },
+        {
+          "titre": "⚡ Version express (SBAR, 30 sec)",
+          "contenu": "S (Situation) : Léa, 7 ans, épisodes de 'regard fixe' plusieurs fois par jour, depuis 2-3 mois.\n\nB (Background) : Développement normal, pas d’ATCD médicaux notables, cousin épilepsie enfance. Symptômes observés maison + école, impact scolaire.\n\nA (Assessment) : Suspicion forte d’épilepsie absence typique (absences brèves, fréquentes, amnésiques, sans post-critique). DD : TDAH, crises focales, psychogènes.\n\nR (Recommendation) : EEG avec hyperventilation, débuter ethosuximide si confirmé, informer parents et école, suivi neuropédiatrique régulier."
+        },
+        {
+          "titre": "🎲 Touches ludiques / mnémos",
+          "subsections": [
+            {
+              "titre": "👉 Absences typiques vs atypiques",
+              "points": [
+                "Typique = brève (<20 sec), début/fin brutaux, pas de confusion post-critique, EEG 3 Hz",
+                "Atypique = plus longues, début/fin progressifs, contexte neurodéveloppemental, EEG <2,5 Hz"
+              ]
+            },
+            {
+              "titre": "👉 Examens clés",
+              "points": [
+                "EEG avec hyperventilation (déclenche absences)",
+                "IRM cérébrale seulement si atypies",
+                "Pas de bilan biologique systématique"
+              ]
+            },
+            {
+              "titre": "👉 Traitements à retenir",
+              "points": [
+                "Ethosuximide = 1ʳᵉ intention (absences isolées)",
+                "Valproate si crises mixtes",
+                "Lamotrigine en 3ᵉ ligne",
+                "⚠️ Carbamazépine/phénytoïne aggravent les absences"
+              ]
+            },
+            {
+              "titre": "⚠️ Pièges ECOS",
+              "points": [
+                "Confondre absences avec TDAH",
+                "Oublier de demander l’impact scolaire",
+                "Ne pas mentionner l’EEG avec hyperventilation",
+                "Proposer carbamazépine",
+                "Ne pas rassurer sur le bon pronostic"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "❓ Questions probables de l'examinateur (avec réponses orales)",
+          "subsections": [
+            {
+              "titre": "1. Diagnostic et différentiel",
+              "questions": [
+                {
+                  "question": "Quels sont les arguments pour une épilepsie absence typique ?",
+                  "reponse": [
+                    "Âge typique (7 ans)",
+                    "Absences brèves (≈10 sec), fréquentes",
+                    "Arrêt brutal activité, regard fixe",
+                    "Automatismes discrets",
+                    "Pas de confusion post-critique",
+                    "Impact scolaire",
+                    "EEG attendu : pointes-ondes 3 Hz"
+                  ]
+                },
+                {
+                  "question": "Quels diagnostics différentiels devez-vous envisager ?",
+                  "reponse": [
+                    "TDAH (attention fluctuante, mais épisodes non stéréotypés)",
+                    "Crises focales avec altération de conscience (plus longues, souvent post-critique)",
+                    "Crises psychogènes (non stéréotypées, contexte psychologique)"
+                  ]
+                }
+              ]
+            },
+            {
+              "titre": "2. Examens complémentaires",
+              "questions": [
+                {
+                  "question": "Quel examen clé confirme le diagnostic ?",
+                  "reponse": "EEG avec hyperventilation → pointes-ondes généralisées 3 Hz."
+                },
+                {
+                  "question": "Quand demander une IRM cérébrale ?",
+                  "reponse": [
+                    "Si atypie clinique (durée longue, début/fin progressifs)",
+                    "Si déficit neurologique associé",
+                    "Si EEG atypique"
+                  ]
+                }
+              ]
+            },
+            {
+              "titre": "3. Traitement et suivi",
+              "questions": [
+                {
+                  "question": "Quel est le traitement de première intention ?",
+                  "reponse": "Ethosuximide, très efficace sur absences isolées."
+                },
+                {
+                  "question": "Quels autres traitements peuvent être envisagés ?",
+                  "reponse": [
+                    "Valproate si crises généralisées associées",
+                    "Lamotrigine en alternative",
+                    "⚠️ Carbamazépine et phénytoïne à éviter"
+                  ]
+                },
+                {
+                  "question": "Quel est le pronostic ?",
+                  "reponse": [
+                    "Excellent : 80 % des enfants en rémission à l’adolescence",
+                    "Développement cognitif généralement normal",
+                    "Risque de crises tonico-cloniques dans 30-40 % des cas"
+                  ]
+                },
+                {
+                  "question": "Quel suivi mettre en place ?",
+                  "reponse": [
+                    "Consultation neuropédiatrique",
+                    "Contrôles EEG réguliers",
+                    "Surveillance efficacité et tolérance du traitement",
+                    "Réévaluation annuelle"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

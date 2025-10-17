@@ -1,0 +1,197 @@
+{
+  "title": "Thieme Mini-Cas 71 - Syndrome de Sheehan - Femme de 35 ans",
+  "category": "Thieme Mini-Cas",
+  "subcategory": "Syndrome de Sheehan",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Femme de 35 ans, Femme standardisée, consulte pour fatigue extrême et absence de lactation"
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Motif principal de consultation",
+          "binaryOnly": true,
+          "patientComment": "fatigue extrême et absence de lactation"
+        },
+        {
+          "id": "a2",
+          "text": "Analyse ciblée de la plainte",
+          "details": [
+            "Hémorragie post-partum",
+            "Lactation",
+            "Règles",
+            "Fatigue"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Recherche des éléments clés",
+          "details": [
+            "ATCD hémorragie post-partum",
+            "Absence lactation",
+            "Aménorrhée"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Antécédents pertinents",
+          "details": [
+            "Accouchements",
+            "Hémorragies",
+            "Transfusions"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Revue des systèmes ciblée",
+          "details": [
+            "Endocrinien",
+            "Gynécologique",
+            "Neurologique"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Signes vitaux",
+          "binaryOnly": true
+        },
+        {
+          "id": "e2",
+          "text": "Examen thyroïdien"
+        },
+        {
+          "id": "e3",
+          "text": "Examen mammaire [absence lactation]"
+        },
+        {
+          "id": "e4",
+          "text": "Signes hypopituitarisme"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostics différentiels",
+          "ddSection": {
+            "title": "Hypothèses diagnostiques à considérer",
+            "categories": [
+              {
+                "name": "Diagnostics prioritaires",
+                "items": [
+                  {
+                    "text": "Syndrome de Sheehan",
+                    "cause": "Arguments POUR:\n\t□ HPP, absence lactation, aménorrhée, fatigue",
+                    "test": "→ Bilan hypophysaire complet, IRM"
+                  },
+                  {
+                    "text": "Hypothyroïdie post-partum",
+                    "cause": "Arguments POUR:\n\t□ Fatigue, frilosité, prise poids",
+                    "test": "→ TSH, T4 libre, anti-TPO"
+                  },
+                  {
+                    "text": "Dépression post-partum",
+                    "cause": "Arguments POUR:\n\t□ Humeur, pleurs, anxiété, insomnie",
+                    "test": "→ Examens selon orientation clinique"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Examens complémentaires",
+          "details": [
+            "TSH, T3, T4",
+            "Prolactine",
+            "FSH, LH",
+            "IRM hypophysaire"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Plan de prise en charge",
+          "details": [
+            "Hormonothérapie substitutive",
+            "Référence endocrinologie",
+            "Support psychologique"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Conseils au patient",
+          "details": [
+            "Importance observance traitement",
+            "Suivi régulier",
+            "Grossesse future prudence"
+          ]
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Explications au patient",
+          "content": "Déficit hormonal post-accouchement nécessitant un traitement substitutif."
+        },
+        {
+          "id": "c2",
+          "text": "Questions du patient",
+          "content": "[Pourquoi je n'ai pas de lait?]\n[C'est définitif?]"
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour le patient standardisé",
+      "nom": "Femme standardisée",
+      "age": "35 ans",
+      "contexte": "Cabinet de médecine générale",
+      "motifConsultation": {
+        "plaintePrincipale": "fatigue extrême et absence de lactation",
+        "contexte": "Post-partum avec hémorragie"
+      },
+      "simulation": {
+        "attitude": [
+          "Épuisée",
+          "Culpabilité de ne pas allaiter"
+        ],
+        "signesPhysiques": [
+          "Pâleur",
+          "Absence lactation"
+        ],
+        "durantConsultation": [
+          "Fatigue évidente",
+          "Tristesse"
+        ]
+      }
+    },
+    "informationsExpert": {
+      "titre": "Informations pour l'expert",
+      "pointsCles": [
+        "Mini-cas clinique: Syndrome de Sheehan",
+        "Focus: ATCD hémorragie post-partum, Absence lactation, Aménorrhée",
+        "Consultation ciblée de 10 minutes",
+        "Évaluation de l'approche diagnostique"
+      ],
+      "pieges": [
+        "Méconnaître syndrome",
+        "Confondre avec dépression"
+      ]
+    }
+  }
+}

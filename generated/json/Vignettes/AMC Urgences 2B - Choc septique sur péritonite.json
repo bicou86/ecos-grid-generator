@@ -1,0 +1,586 @@
+{
+  "id": "amc-urgences-choc-septique",
+  "title": "AMC Urgences 2B - Choc septique sur péritonite",
+  "specialite": "Médecine d'urgence",
+  "difficulte": "Avancé",
+  "source": "AMC Urgences Médecine Intensive",
+  "caseType": "urgence-progressive",
+  "context": {
+    "setting": "Service d'urgences",
+    "patient": "Homme de 72 ans, amené pour douleurs abdominales évoluant depuis 3 jours avec altération récente de l'état de conscience. Antécédent de maladie diverticulaire",
+    "vitals": {
+      "ta": "85/45 mmHg",
+      "fc": "115 bpm",
+      "fr": "24/min",
+      "temperature": "38.9°C",
+      "sao2": "92% sous air ambiant"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Évaluation ABC et reconnaissance du sepsis",
+          "details": [
+            "A - Voies aériennes : Perméables [répond aux questions]",
+            "B - Respiration : Tachypnée [FR 24/min]",
+            "C - Circulation : Hypotension sévère [TA 85/45], tachycardie [FC 115]",
+            "D - Neurologique : Confusion [désorientation temporo-spatiale]"
+          ],
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Score qSOFA",
+          "details": [
+            "Pression artérielle systolique ≤ 100 mmHg [oui, 85 mmHg]",
+            "Fréquence respiratoire ≥ 22/min [oui, 24/min]",
+            "Altération de l'état de conscience [oui, GCS 13]",
+            "Score total [3/3 - risque élevé de sepsis]"
+          ],
+          "scoringRule": "qSOFA ≥ 2 = suspicion forte de sepsis"
+        },
+        {
+          "id": "a3",
+          "text": "Histoire de la maladie actuelle",
+          "details": [
+            "Début des douleurs abdominales [il y a 3 jours]",
+            "Évolution [progressive, aggravation depuis 24h]",
+            "Localisation [diffuses, prédominance flanc gauche]",
+            "Arrêt du transit [gaz et selles depuis 2 jours]",
+            "Nausées et vomissements [oui, bilieux]"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Symptômes associés",
+          "details": [
+            "Fièvre [depuis 24h, frissons]",
+            "Altération état général [asthénie majeure]",
+            "Diminution diurèse [oligurie depuis ce matin]",
+            "Confusion [progressive depuis 12h]"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Antécédents médicaux pertinents",
+          "details": [
+            "Maladie diverticulaire connue [plusieurs poussées]",
+            "Diabète type 2 [HbA1c 8.2%]",
+            "Hypertension artérielle [traitée]",
+            "Insuffisance rénale chronique stade 2 [DFG 65 mL/min]",
+            "Colonoscopie [il y a 2 ans, diverticules sigmoïdiens]"
+          ]
+        },
+        {
+          "id": "a6",
+          "text": "Médicaments et allergies",
+          "details": [
+            "Metformine 1000mg x2/j",
+            "Ramipril 5mg/j",
+            "Amlodipine 5mg/j",
+            "Simvastatine 20mg/j",
+            "Allergies [pénicilline - rash cutané]"
+          ]
+        },
+        {
+          "id": "a7",
+          "text": "Mode de vie et facteurs de risque",
+          "details": [
+            "Tabagisme [sevré il y a 10 ans, 30 PA]",
+            "Alcool [occasionnel]",
+            "Autonomie [vit avec épouse, autonome]",
+            "Alimentation [pauvre en fibres]"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Évaluation hémodynamique",
+          "details": [
+            "État de choc [oui, hypotension + signes périphériques]",
+            "Temps de recoloration cutanée [> 3 secondes]",
+            "Marbrures [genoux et coudes]",
+            "Extrémités [froides, cyanosées]",
+            "Pouls périphériques [filants]"
+          ],
+          "binaryOnly": true
+        },
+        {
+          "id": "e2",
+          "text": "Examen abdominal",
+          "details": [
+            "Inspection [distension abdominale modérée]",
+            "Palpation [défense généralisée, maximale FIG]",
+            "Percussion [tympanisme diffus]",
+            "Auscultation [bruits hydroaériques absents]",
+            "Signes péritonéaux [contracture, détente brutale positive]"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Examen cardio-pulmonaire",
+          "details": [
+            "Auscultation cardiaque [tachycardie régulière, pas de souffle]",
+            "Auscultation pulmonaire [crépitants bases, hypoventilation]",
+            "Turgescence jugulaire [absente - hypovolémie]"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Examen neurologique",
+          "details": [
+            "Glasgow [13/15 : E3, V4, M6]",
+            "Désorientation [temps et espace]",
+            "Agitation [par moments]",
+            "Signes de localisation [aucun]"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Examen cutané et général",
+          "details": [
+            "Température cutanée [chaude centralement, froide en périphérie]",
+            "Turgor cutané [diminué - déshydratation]",
+            "Muqueuses [sèches]",
+            "Ictère [absent]"
+          ]
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Mesures de réanimation initiales (1ère heure)",
+          "details": [
+            "Oxygénothérapie [6L/min pour SaO2 > 94%]",
+            "Voies veineuses [2 x 16-18G]",
+            "Remplissage vasculaire [cristalloïdes 30 mL/kg en 1h]",
+            "Sonde urinaire [surveillance diurèse horaire]",
+            "Monitorage continu [ECG, TA/5min, SaO2]"
+          ],
+          "binaryOnly": true,
+          "scoringRule": "Bundle septique heure 1"
+        },
+        {
+          "id": "m2",
+          "text": "Bilan paraclinique urgent",
+          "details": [
+            "Hémocultures [x2 avant antibiotiques]",
+            "Lactates [4.8 mmol/L - hyperlactatémie]",
+            "NFS [GB 18000, neutrophiles 85%]",
+            "CRP [280 mg/L], PCT [15 ng/mL]",
+            "Ionogramme [Na 135, K 3.2, Cl 98]",
+            "Fonction rénale [créat 180 µmol/L, urée 15 mmol/L]",
+            "Bilan hépatique [ASAT 80, ALAT 75, bili totale 25]",
+            "Coagulation [TP 65%, TCA 38s, fibrinogène 5.5g/L]"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Score SOFA et dysfonctions d'organes",
+          "details": [
+            "Respiratoire : PaO2/FiO2 280 [1 point]",
+            "Coagulation : Plaquettes 180 000 [0 point]",
+            "Hépatique : Bilirubine 25 µmol/L [0 point]",
+            "Cardiovasculaire : PAM < 70 sous vasopresseurs [3 points]",
+            "Neurologique : GCS 13 [1 point]",
+            "Rénal : Créatinine 180 µmol/L [2 points]",
+            "Score total [7/24 - dysfonction multi-organes]"
+          ],
+          "scoringRule": "SOFA ≥ 2 points = dysfonction d'organe"
+        },
+        {
+          "id": "m4",
+          "text": "Imagerie diagnostique",
+          "details": [
+            "Radiographie abdomen debout [niveaux hydroaériques, pneumopéritoine]",
+            "CT abdomino-pelvien urgent [perforation diverticulaire sigmoïdienne]",
+            "Pneumopéritoine [présent]",
+            "Collection péri-colique [abcès 4 cm]",
+            "Liquide libre [péritonite généralisée]"
+          ]
+        },
+        {
+          "id": "m5",
+          "text": "Antibiothérapie empirique large spectre",
+          "details": [
+            "Délai administration [< 1h après diagnostic]",
+            "Choix antibiotiques [imipénème 1g x3/j + amikacine 20 mg/kg/j]",
+            "Alternative si allergie [ciprofloxacine + métronidazole + gentamicine]",
+            "Adaptation selon antibiogramme [à 48-72h]"
+          ],
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Protocole antibiotique péritonite",
+                "content": "Imipénème 1g/8h IV\n+\nAmikacine 20 mg/kg/j IV\nDurée: 7-10 jours"
+              }
+            ]
+          }
+        },
+        {
+          "id": "m6",
+          "text": "Support hémodynamique",
+          "details": [
+            "Remplissage initial [2L cristalloïdes en 1h]",
+            "Vasopresseurs si PAM < 65 [noradrénaline 0.2 µg/kg/min]",
+            "Objectif PAM [≥ 65 mmHg]",
+            "Surveillance lactates [contrôle/4h]",
+            "Corticothérapie si choc réfractaire [hydrocortisone 200mg/j]"
+          ],
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Algorithme vasopresseurs",
+                "content": "1. Noradrénaline première ligne\n2. Vasopressine si dose NA > 0.5\n3. Adrénaline si choc réfractaire"
+              }
+            ]
+          }
+        },
+        {
+          "id": "m7",
+          "text": "Contrôle du foyer infectieux",
+          "details": [
+            "Consultation chirurgie urgente [dans l'heure]",
+            "Indication opératoire [péritonite sur perforation]",
+            "Timing optimal [après stabilisation initiale, < 6h]",
+            "Type intervention [laparotomie, résection sigmoïde, Hartmann]",
+            "Drainage collections [si abcès localisé]"
+          ],
+          "ddSection": {
+            "title": "Options chirurgicales",
+            "categories": [
+              {
+                "name": "Urgence immédiate",
+                "items": [
+                  {
+                    "text": "Intervention de Hartmann",
+                    "cause": "Arguments POUR:\n\t□ Péritonite généralisée\n\t□ Patient instable\n\t□ Contamination importante",
+                    "test": "→ Résection sans anastomose"
+                  }
+                ]
+              },
+              {
+                "name": "Alternative",
+                "items": [
+                  {
+                    "text": "Lavage-drainage",
+                    "cause": "Arguments POUR:\n\t□ Patient trop instable\n\t□ Temporisation",
+                    "test": "→ Chirurgie définitive différée"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m8",
+          "text": "Surveillance et ajustements Stage 3-4",
+          "details": [
+            "Transfert en réanimation [immédiat post-op]",
+            "Ventilation mécanique [SDRA PaO2/FiO2 < 150]",
+            "Épuration extra-rénale [IRA anurique, hyperkaliémie]",
+            "Nutrition entérale précoce [< 48h si possible]",
+            "Prévention complications [HBPM, IPP, contrôle glycémique]"
+          ]
+        },
+        {
+          "id": "m9",
+          "text": "Gestion des défaillances d'organes",
+          "details": [
+            "SDRA [ventilation protectrice, PEEP élevée, décubitus ventral]",
+            "IRA [CVVHDF, balance hydrique stricte]",
+            "Coagulopathie [PFC si saignement, plaquettes si < 20000]",
+            "Encéphalopathie [protection cérébrale, sédation adaptée]"
+          ],
+          "redflagsSection": {
+            "title": "Complications à surveiller",
+            "items": [
+              {
+                "text": "Choc réfractaire",
+                "description": "Malgré remplissage et vasopresseurs, mortalité 50%"
+              },
+              {
+                "text": "SDRA sévère",
+                "description": "PaO2/FiO2 < 100, nécessite ECMO parfois"
+              },
+              {
+                "text": "Défaillance multi-viscérale",
+                "description": "SOFA > 11, mortalité > 70%"
+              },
+              {
+                "text": "Ischémie mésentérique",
+                "description": "Sur bas débit, lactates en hausse malgré traitement"
+              }
+            ]
+          }
+        },
+        {
+          "id": "m10",
+          "text": "Évolution défavorable - Stage 5",
+          "details": [
+            "Défaillance multi-viscérale [SOFA 14/24]",
+            "Anurie réfractaire [malgré CVVHDF]",
+            "Acidose métabolique sévère [pH 7.15, lactates 8 mmol/L]",
+            "Discussion collégiale [limitation thérapeutique]",
+            "Information famille [pronostic réservé]"
+          ]
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Communication initiale avec le patient",
+          "content": "Monsieur, vous avez une infection grave du ventre, probablement due à une perforation intestinale. Nous devons vous traiter rapidement avec des antibiotiques et vous opérer en urgence.",
+          "exemplesPhrases": [
+            "Je comprends que vous êtes confus, c'est l'infection qui cause cela",
+            "Nous allons tout faire pour vous stabiliser",
+            "L'opération est nécessaire pour contrôler l'infection"
+          ]
+        },
+        {
+          "id": "c2",
+          "text": "Questions difficiles du patient/famille",
+          "content": "[Est-ce que je vais survivre?] [Pourquoi est-il si confus?] [Peut-on éviter l'opération?]"
+        },
+        {
+          "id": "c3",
+          "text": "Communication avec la famille (Stage 5)",
+          "content": "Malgré tous nos efforts, l'état de votre père s'est aggravé avec une défaillance de plusieurs organes. Nous devons discuter des limites de nos traitements.",
+          "exemplesPhrases": [
+            "Son état est critique avec une défaillance de plusieurs organes vitaux",
+            "Nous avons mis en place tous les traitements possibles",
+            "Il est important de respecter ses volontés si elles ont été exprimées"
+          ]
+        }
+      ]
+    }
+  },
+  "progressionStages": {
+    "stage1": {
+      "title": "Présentation initiale - Sepsis sévère",
+      "description": "Patient en état septique avec signes de gravité",
+      "keyFindings": [
+        "qSOFA 3/3",
+        "Hypotension et tachycardie",
+        "Confusion récente",
+        "Douleurs abdominales avec défense"
+      ],
+      "immediateActions": [
+        "Bundle septique heure 1",
+        "Hémocultures avant antibiotiques",
+        "Remplissage 30 mL/kg",
+        "Lactates et bilan complet"
+      ]
+    },
+    "stage2": {
+      "title": "Diagnostic et choc septique",
+      "description": "Confirmation péritonite sur perforation diverticulaire",
+      "keyFindings": [
+        "Pneumopéritoine au CT",
+        "Perforation sigmoïdienne",
+        "Lactates 4.8 mmol/L",
+        "Début de dysfonction multi-organes"
+      ],
+      "management": [
+        "Antibiothérapie large spectre < 1h",
+        "Noradrénaline pour PAM ≥ 65",
+        "Chirurgie urgente planifiée"
+      ]
+    },
+    "stage3": {
+      "title": "Post-opératoire immédiat - Réanimation",
+      "description": "Intervention de Hartmann réalisée, patient en réanimation",
+      "postOpFindings": [
+        "Péritonite stercorale confirmée",
+        "Résection sigmoïde avec colostomie",
+        "Lavage péritonéal abondant"
+      ],
+      "complications": [
+        "SDRA débutant (PaO2/FiO2 180)",
+        "IRA oligo-anurique",
+        "Vasopresseurs à doses croissantes"
+      ]
+    },
+    "stage4": {
+      "title": "Défaillance multi-viscérale",
+      "description": "Aggravation à J2 post-opératoire",
+      "organFailures": [
+        "Respiratoire : SDRA sévère, ventilation mécanique",
+        "Rénal : Anurie, CVVHDF débutée",
+        "Hémodynamique : Noradrénaline 0.8 µg/kg/min",
+        "Neurologique : Coma Glasgow 8",
+        "Hépatique : Cytolyse, ictère"
+      ],
+      "sofa": "Score SOFA 14/24"
+    },
+    "stage5": {
+      "title": "Évolution défavorable - Limitation thérapeutique",
+      "description": "État critique à J4, discussion éthique",
+      "status": [
+        "Choc réfractaire malgré triple vasopresseurs",
+        "Acidose métabolique sévère réfractaire",
+        "Lactates 8 mmol/L en augmentation",
+        "Ischémie mésentérique suspectée"
+      ],
+      "decisions": [
+        "Réunion collégiale multidisciplinaire",
+        "Discussion avec la famille",
+        "Décision de limitation thérapeutique",
+        "Soins de confort"
+      ]
+    }
+  },
+  "annexes": {
+    "images": [
+      {
+        "title": "Score SOFA",
+        "description": "Tableau du score SOFA (Sequential Organ Failure Assessment) pour l'évaluation de la dysfonction d'organes dans le sepsis",
+        "data": "grilles_generees/html/images/AMC-Urgences-Medecine-Intensive-2/B1-Score SOFA.jpg"
+      },
+      {
+        "title": "Score qSOFA",
+        "description": "Critères du score qSOFA (quick SOFA) pour le dépistage rapide du sepsis : PAS ≤100, FR ≥22, altération de conscience",
+        "data": "grilles_generees/html/images/AMC-Urgences-Medecine-Intensive-2/B2-Score qSOFA.jpg"
+      }
+    ],
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour le patient standardisé - Choc septique",
+      "nom": "M. Martin",
+      "age": "72 ans",
+      "contexte": "Service d'urgences, amené par les pompiers",
+      "motifConsultation": {
+        "plaintePrincipale": "J'ai très mal au ventre depuis 3 jours et je me sens très mal",
+        "autreChose": "Ma femme dit que je ne suis plus moi-même depuis ce matin"
+      },
+      "histoireActuelle": {
+        "evenementPrincipal": "Douleurs abdominales progressives depuis 3 jours, aggravation brutale depuis 24h",
+        "symptomesPrincipaux": [
+          "Douleurs diffuses, plus fortes à gauche",
+          "Arrêt complet du transit depuis 2 jours",
+          "Fièvre avec frissons depuis hier",
+          "Confusion : ne reconnaît pas toujours sa femme"
+        ],
+        "antecedents": [
+          "Diverticulose connue, plusieurs poussées traitées médicalement",
+          "Diabète mal équilibré",
+          "HTA sous traitement"
+        ]
+      },
+      "simulation": {
+        "attitude": [
+          "Confus, désorienté dans le temps",
+          "Répond lentement aux questions",
+          "Se plaint de douleurs abdominales",
+          "Parfois agité, veut se lever"
+        ],
+        "durantExamen": [
+          "Grimace à la palpation abdominale",
+          "Défense abdominale nette",
+          "Gémissements lors de la mobilisation",
+          "Peau moite, marbrures visibles"
+        ]
+      }
+    },
+    "informationsExpert": {
+      "titre": "Points clés pour l'évaluateur - Choc septique",
+      "pointsCles": [
+        "Reconnaissance précoce du sepsis (qSOFA)",
+        "Application rigoureuse du bundle septique 1h",
+        "Antibiothérapie dans l'heure critique pour le pronostic",
+        "Contrôle du foyer infectieux = priorité absolue",
+        "Surveillance des dysfonctions d'organes (SOFA)"
+      ],
+      "pieges": [
+        "Retarder l'antibiothérapie pour attendre les prélèvements",
+        "Sous-estimer la gravité chez le sujet âgé",
+        "Remplissage insuffisant avant vasopresseurs",
+        "Retarder la chirurgie pour 'stabiliser' le patient",
+        "Ne pas adapter l'antibiothérapie à la fonction rénale"
+      ],
+      "rolesInterventions": [
+        "Le candidat doit appliquer le bundle septique systématiquement",
+        "Calculer les scores qSOFA et SOFA",
+        "Coordonner avec chirurgie et anesthésie",
+        "Anticiper les défaillances d'organes",
+        "Communiquer avec la famille sur la gravité"
+      ]
+    },
+    "theoriePratique": {
+      "titre": "Choc septique et défaillance multi-viscérale",
+      "sections": [
+        {
+          "titre": "Définitions Sepsis-3 (2016)",
+          "contenu": "Le sepsis est une dysfonction d'organe menaçant le pronostic vital, causée par une réponse dérégulée de l'hôte à l'infection.",
+          "points": [
+            "Sepsis = infection + SOFA ≥ 2 points",
+            "Choc septique = sepsis + vasopresseurs pour PAM ≥ 65 + lactates > 2",
+            "qSOFA ≥ 2 = outil de screening rapide",
+            "Mortalité sepsis : 10%, choc septique : 40%",
+            "Délai antibiotique : mortalité +7% par heure de retard"
+          ]
+        },
+        {
+          "titre": "Bundle septique - Surviving Sepsis Campaign",
+          "contenu": "Ensemble de mesures à appliquer dans la première heure",
+          "points": [
+            "Mesurer les lactates",
+            "Hémocultures avant antibiotiques",
+            "Antibiotiques large spectre < 1h",
+            "Remplissage 30 mL/kg si hypotension ou lactates ≥ 4",
+            "Vasopresseurs si PAM < 65 malgré remplissage"
+          ]
+        },
+        {
+          "titre": "Score SOFA (Sequential Organ Failure Assessment)",
+          "contenu": "Évaluation de la dysfonction d'organes, score 0-4 par système",
+          "points": [
+            "Respiratoire : PaO2/FiO2",
+            "Coagulation : plaquettes",
+            "Hépatique : bilirubine",
+            "Cardiovasculaire : PAM et vasopresseurs",
+            "Neurologique : Glasgow",
+            "Rénal : créatinine et diurèse"
+          ]
+        },
+        {
+          "titre": "Physiopathologie du choc septique",
+          "contenu": "Cascade complexe menant à la défaillance circulatoire",
+          "points": [
+            "Vasodilatation par NO et prostaglandines",
+            "Dysfonction myocardique septique",
+            "Fuite capillaire et hypovolémie relative",
+            "Dysfonction mitochondriale",
+            "Coagulopathie et microthromboses"
+          ]
+        }
+      ],
+      "rappelsTherapeutiques": [
+        "Noradrénaline : vasopresseur de 1ère ligne, cible PAM ≥ 65 mmHg",
+        "Antibiotiques péritonite : β-lactamine + aminoside ou carbapénème",
+        "Hydrocortisone : 200 mg/j si choc réfractaire (dose NA > 0.5 µg/kg/min)",
+        "CVVHDF : si IRA avec surcharge ou hyperkaliémie",
+        "Ventilation protectrice SDRA : Vt 6 mL/kg, Pplateau < 30 cmH2O"
+      ],
+      "examensComplementaires": [
+        "Lactates : marqueur d'hypoperfusion tissulaire, objectif < 2 mmol/L",
+        "Procalcitonine : marqueur spécifique infection bactérienne, guide durée ATB",
+        "Score SOFA : calculé quotidiennement, prédit mortalité",
+        "Échographie abdominale : recherche collections, guide drainage",
+        "ScvO2 : saturation veineuse centrale, objectif > 70%"
+      ]
+    }
+  }
+}

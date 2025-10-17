@@ -1,0 +1,522 @@
+{
+  "title": "Nouveau-né malade - Détresse respiratoire néonatale",
+  "context": {
+    "setting": "Service de lits hospitaliers - Maternité",
+    "patient": "Nouveau-né à terme présentant une détresse respiratoire après réanimation à la naissance",
+    "vitals": {
+      "Poids": "3570g",
+      "Taille": "51 cm",
+      "fc": "170 bpm",
+      "fr": "76/min"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Histoire de l'accouchement",
+          "binaryOnly": true,
+          "details": [
+            "Arrivée en urgence [contractions fréquentes]",
+            "Tête du bébé [à la vulve à l'arrivée]",
+            "Accouchement [rapide, sur table de réanimation]",
+            "État initial du bébé [flasque, mal coloré, aucun effort respiratoire]",
+            "Fréquence cardiaque initiale [60/min]"
+          ]
+        },
+        {
+          "id": "a2",
+          "text": "Réanimation néonatale",
+          "details": [
+            "Aspiration [sécrétions nez et bouche]",
+            "Séchage et stimulation [avec linge chaud]",
+            "Ventilation au masque [fréquence 40/min]",
+            "Durée de ventilation [5 minutes]",
+            "Amélioration à 5 min [FC 156/min, FR 54/min, bien coloré]",
+            "État à 10 min [FC 136/min, FR 40/min, extrémités bleues]",
+            "Aspiration gastrique [dizaine de ml d'air et liquide]"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Contexte maternel",
+          "details": [
+            "Parité [G3P2, mère de deux enfants]",
+            "Grossesse actuelle [enceinte du troisième]",
+            "Suivi de grossesse [à préciser]",
+            "Facteurs de risque infectieux [à rechercher]",
+            "Rupture de la poche des eaux [moment à préciser]",
+            "Fièvre maternelle [à rechercher]",
+            "Prélèvement vaginal Streptocoque B [à vérifier]"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Évolution post-réanimation",
+          "details": [
+            "Intérêt pour le sein [peu intéressé]",
+            "Coloration [visage mal coloré]",
+            "Respiration [respire mal]",
+            "Bruits respiratoires [gémissements]",
+            "État général [détérioration après amélioration initiale]"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Inquiétudes parentales",
+          "details": [
+            "Père [inquiet sur séquelles neurologiques]",
+            "Question sur handicap [manque d'oxygène à la naissance]",
+            "Développement neurologique [pronostic à discuter]"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "État général et signes vitaux",
+          "binaryOnly": true,
+          "patientComment": "Teint gris, langue violacée, hypotone, FC 170/min, FR 76/min"
+        },
+        {
+          "id": "e2",
+          "text": "Examen respiratoire",
+          "details": [
+            "Fréquence respiratoire [76/min - polypnée]",
+            "Tirage [présent]",
+            "Grunting [gémissement expiratoire présent]",
+            "Cyanose [langue violacée, extrémités bleues]",
+            "Rétraction sternale [présente]",
+            "Battement des ailes du nez [à rechercher]",
+            "Auscultation [murmure vésiculaire mal audible]",
+            "Temps de recoloration [4 secondes]"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Examen cardiovasculaire",
+          "details": [
+            "Fréquence cardiaque [170/min - tachycardie]",
+            "Pouls fémoraux [faibles]",
+            "Tension artérielle [à mesurer]",
+            "Souffle cardiaque [à rechercher]",
+            "Temps de recoloration capillaire [4 secondes - allongé]",
+            "Signes de choc [présents]"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Examen neurologique",
+          "details": [
+            "Tonus [hypotonique]",
+            "Réactivité [diminuée]",
+            "Réflexes archaïques [à rechercher]",
+            "Mouvements spontanés [présents mais diminués]",
+            "Cri [faible]",
+            "Succion [faible]",
+            "Fontanelle [à évaluer]"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Examen cutané",
+          "details": [
+            "Coloration générale [teint gris]",
+            "Cyanose [centrale - langue violacée]",
+            "Acrocyanose [extrémités bleues]",
+            "Pétéchies [à rechercher]",
+            "Éruption [absente]"
+          ]
+        },
+        {
+          "id": "e6",
+          "text": "Examen abdominal",
+          "details": [
+            "Distension [à évaluer]",
+            "Hépatomégalie [à rechercher]",
+            "Splénomégalie [à rechercher]",
+            "Cordon ombilical [aspect à vérifier]"
+          ]
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostics différentiels de la détresse respiratoire néonatale",
+          "ddSection": {
+            "title": "Causes de détresse respiratoire chez le nouveau-né",
+            "categories": [
+              {
+                "name": "Causes infectieuses",
+                "items": [
+                  {
+                    "text": "Sepsis néonatal à Streptocoque B",
+                    "cause": "Arguments POUR:\n\t□ Détresse respiratoire précoce\n\t□ Signes de choc (hypotonie, TRC allongé)\n\t□ Polypnée > 60/min avec grunting\n\t□ Aspect gris-violacé\n\t□ Évolution rapide après période libre",
+                    "test": "→ Hémoculture, PL, CRP, PCT, radiographie thoracique"
+                  },
+                  {
+                    "text": "Pneumonie néonatale",
+                    "cause": "Arguments POSSIBLES:\n\t□ Détresse respiratoire\n\t□ Murmure vésiculaire diminué\n\t□ Peut être associée au sepsis",
+                    "test": "→ Radiographie thoracique, cultures"
+                  }
+                ]
+              },
+              {
+                "name": "Causes pulmonaires",
+                "items": [
+                  {
+                    "text": "Tachypnée transitoire (wet lung)",
+                    "cause": "Arguments MIXTES:\n\t□ POUR: Nouveau-né à terme, polypnée\n\t□ CONTRE: Évolution trop sévère, signes de choc",
+                    "test": "→ Radiographie: infiltrats péri-hilaires"
+                  },
+                  {
+                    "text": "Maladie des membranes hyalines",
+                    "cause": "Arguments CONTRE:\n\t□ Bébé à terme (rare à terme)\n\t□ Poids normal pour l'âge",
+                    "test": "→ Radiographie: aspect réticulogranulaire"
+                  },
+                  {
+                    "text": "Syndrome d'aspiration méconiale",
+                    "cause": "Arguments À VÉRIFIER:\n\t□ Liquide amniotique teinté?\n\t□ Méconium dans les voies aériennes?\n\t□ Détresse respiratoire immédiate",
+                    "test": "→ Radiographie: infiltrats en patches"
+                  }
+                ]
+              },
+              {
+                "name": "Causes cardiaques",
+                "items": [
+                  {
+                    "text": "Cardiopathie congénitale cyanogène",
+                    "cause": "Arguments POSSIBLES:\n\t□ Cyanose centrale\n\t□ Détresse respiratoire\n\t□ Mais absence de souffle",
+                    "test": "→ Échocardiographie, test d'hyperoxie"
+                  },
+                  {
+                    "text": "Hypertension pulmonaire persistante",
+                    "cause": "Arguments À CONSIDÉRER:\n\t□ Cyanose réfractaire\n\t□ Après asphyxie périnatale\n\t□ Différence de saturation pré/post-ductale",
+                    "test": "→ Échocardiographie, gaz du sang"
+                  }
+                ]
+              },
+              {
+                "name": "Autres causes",
+                "items": [
+                  {
+                    "text": "Pneumothorax",
+                    "cause": "Arguments CONTRE:\n\t□ Murmure vésiculaire bilatéral\n\t□ Pas d'asymétrie thoracique",
+                    "test": "→ Radiographie thoracique, transillumination"
+                  },
+                  {
+                    "text": "Hernie diaphragmatique",
+                    "cause": "Arguments CONTRE:\n\t□ Pas de scaphoïde abdomen\n\t□ Murmure vésiculaire présent bilatéralement",
+                    "test": "→ Radiographie: organes abdominaux dans thorax"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Examens complémentaires urgents",
+          "details": [
+            "Radiographie thoracique [infiltrats multiples disséminés]",
+            "FSC [leucocytose 2800/mm³]",
+            "CRP [84 mg/l - élevée]",
+            "PCT [élevée si sepsis]",
+            "Hémoculture [Streptocoque beta hémolytique Groupe B]",
+            "Ponction lombaire [si état stable]",
+            "Culture d'urine [négative]",
+            "Gaz du sang [acidose mixte probable]"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Prise en charge immédiate",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Support respiratoire",
+                "items": [
+                  {
+                    "treatment": "Oxygénothérapie",
+                    "details": "Masque ou lunettes nasales, maintenir SpO2 > 90%",
+                    "duration": "Selon évolution"
+                  },
+                  {
+                    "treatment": "CPAP nasale",
+                    "details": "Si détresse persistante, PEEP 5-6 cmH2O",
+                    "duration": "Sevrage progressif"
+                  },
+                  {
+                    "treatment": "Intubation-ventilation",
+                    "details": "Si échec CPAP ou apnées",
+                    "duration": "Selon évolution clinique"
+                  }
+                ]
+              },
+              {
+                "title": "Antibiothérapie empirique",
+                "items": [
+                  {
+                    "treatment": "Ampicilline IV",
+                    "details": "200 mg/kg/j en 3 doses",
+                    "duration": "14-21 jours si méningite, 10 jours si sepsis"
+                  },
+                  {
+                    "treatment": "Gentamicine IV",
+                    "details": "4-5 mg/kg/j en 1 dose",
+                    "duration": "Selon antibiogramme"
+                  }
+                ]
+              },
+              {
+                "title": "Support hémodynamique",
+                "items": [
+                  {
+                    "treatment": "Remplissage vasculaire",
+                    "details": "NaCl 0.9% 10-20 ml/kg en 30 min",
+                    "duration": "Si signes de choc"
+                  },
+                  {
+                    "treatment": "Inotropes",
+                    "details": "Dopamine ou dobutamine si choc réfractaire",
+                    "duration": "Sevrage selon état hémodynamique"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m4",
+          "text": "Surveillance en unité de soins intensifs",
+          "details": [
+            "Monitoring cardio-respiratoire [continu]",
+            "Saturation O2 [continue]",
+            "Tension artérielle [toutes les heures]",
+            "Glycémie [toutes les 6h]",
+            "Bilan hydro-électrolytique [quotidien]",
+            "Gaz du sang [selon évolution]",
+            "Radiographie thoracique [J2-3 puis selon évolution]",
+            "Marqueurs inflammatoires [J2-3]"
+          ]
+        },
+        {
+          "id": "m5",
+          "text": "Information aux parents",
+          "details": [
+            "Diagnostic [sepsis néonatal à Streptocoque B]",
+            "Pronostic [généralement bon sous traitement]",
+            "Durée d'hospitalisation [2-3 semaines]",
+            "Risque de séquelles [faible si traitement précoce]",
+            "Suivi neurologique [recommandé à 2 ans]",
+            "Prévention futures grossesses [dépistage et antibioprophylaxie]"
+          ]
+        },
+        {
+          "id": "m6",
+          "text": "Mesures préventives pour futures grossesses",
+          "redflagsSection": {
+            "title": "Prévention de l'infection à Streptocoque B",
+            "items": [
+              {
+                "text": "Dépistage maternel",
+                "description": "Prélèvement vaginal et rectal à 35-37 SA systématique"
+              },
+              {
+                "text": "Antibioprophylaxie perpartum",
+                "description": "Pénicilline G ou ampicilline dès le début du travail si dépistage positif"
+              },
+              {
+                "text": "Facteurs de risque",
+                "description": "RPM > 18h, fièvre maternelle, prématurité, antécédent d'infection SGB"
+              },
+              {
+                "text": "Surveillance nouveau-né",
+                "description": "48h minimum si facteurs de risque même avec prophylaxie"
+              }
+            ]
+          }
+        },
+        {
+          "id": "m7",
+          "text": "Réponse aux inquiétudes du père",
+          "details": [
+            "Score d'Apgar [indicateur initial mais non prédictif seul]",
+            "Risque neurologique [évaluation par imagerie si indiquée]",
+            "Pronostic neurologique [généralement bon si récupération rapide]",
+            "Suivi développemental [important jusqu'à 2 ans]",
+            "Signes rassurants [mouvements spontanés, grimaces, pleurs]",
+            "EEG/IRM [si convulsions ou signes neurologiques persistants]"
+          ]
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Clôture type",
+          "content": "Votre bébé présente une infection néonatale à Streptocoque B, une bactérie qui peut causer une infection grave chez le nouveau-né. Nous avons débuté immédiatement les antibiotiques et le support respiratoire. Avec le traitement approprié, la plupart des bébés récupèrent complètement. Concernant vos inquiétudes sur le développement, le fait qu'il ait récupéré rapidement après la réanimation est rassurant. Nous suivrons son évolution neurologique de près."
+        },
+        {
+          "id": "c2",
+          "text": "Questions fréquentes des parents",
+          "content": "[Aura-t-il des séquelles neurologiques ?]\n[Pourquoi cela est-il arrivé ?]\n[Aurions-nous pu l'éviter ?]\n[Combien de temps restera-t-il hospitalisé ?]\n[Pourra-t-il être allaité ?]\n[Risque pour les prochaines grossesses ?]"
+        },
+        {
+          "id": "c3",
+          "text": "Réponse type du candidat",
+          "exemplesPhrases": [
+            "\"Le risque de séquelles est faible car nous avons agi rapidement. La récupération initiale après la réanimation est encourageante.\"",
+            "\"Le Streptocoque B est présent naturellement chez 20-30% des femmes. L'infection survient lors du passage dans la filière génitale.\"",
+            "\"Le dépistage systématique en fin de grossesse permet la prévention. Nous ne pouvions pas prévoir cette situation d'urgence.\"",
+            "\"L'hospitalisation durera environ 2-3 semaines, dont quelques jours en soins intensifs selon l'évolution.\"",
+            "\"L'allaitement sera possible dès que son état respiratoire le permettra. Le lait maternel est bénéfique pour sa récupération.\"",
+            "\"Pour les prochaines grossesses, un dépistage à 35-37 semaines et une antibioprophylaxie pendant l'accouchement seront recommandés.\""
+          ]
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour les parents standardisés",
+      "nom": "Mme Vidal (mère) et son mari",
+      "contexte": "Maternité - Soins intensifs néonatals",
+      "motifConsultation": {
+        "plaintePrincipale": "Accouchement en urgence avec bébé en détresse",
+        "autreChose": "Inquiétudes sur l'état du bébé et les séquelles"
+      },
+      "histoireActuelle": {
+        "arrivee": [
+          "Je suis arrivée en urgence",
+          "J'avais des contractions très rapprochées",
+          "La sage-femme a dit que le bébé arrivait",
+          "Tout s'est passé très vite"
+        ],
+        "naissance": [
+          "Il ne criait pas à la naissance",
+          "Il était tout mou et gris",
+          "Ils ont dû le réanimer",
+          "J'avais très peur"
+        ],
+        "evolution": [
+          "Il allait mieux après 10 minutes",
+          "Mais maintenant il respire mal",
+          "Il n'est pas intéressé par le sein",
+          "Il a l'air mal, il gémit"
+        ],
+        "inquietudes": [
+          "Mon mari s'inquiète pour son cerveau",
+          "On a peur qu'il ait des séquelles",
+          "Le manque d'oxygène, c'est grave non?",
+          "Que va-t-il se passer maintenant?"
+        ]
+      },
+      "simulation": {
+        "attitude": [
+          "Parents très inquiets mais collaborants",
+          "Mère épuisée après l'accouchement",
+          "Père pose beaucoup de questions",
+          "Cherchent à comprendre et être rassurés"
+        ]
+      }
+    },
+    "informationsExpert": {
+      "titre": "Points clés pour l'évaluateur",
+      "pointsCles": [
+        "Reconnaître les signes de détresse respiratoire néonatale",
+        "Identifier les critères de sepsis néonatal",
+        "Connaître la séquence de réanimation néonatale",
+        "Différencier les causes de détresse respiratoire",
+        "Initier l'antibiothérapie empirique rapidement",
+        "Assurer le support respiratoire approprié",
+        "Informer et rassurer les parents"
+      ],
+      "pieges": [
+        "Sous-estimer la gravité du sepsis néonatal",
+        "Retarder l'antibiothérapie",
+        "Ne pas rechercher tous les foyers infectieux",
+        "Oublier la ponction lombaire si état stable",
+        "Minimiser les inquiétudes parentales",
+        "Ne pas organiser le suivi neurologique"
+      ]
+    },
+    "theoriePratique": {
+      "titre": "Rappels théoriques - Détresse respiratoire néonatale",
+      "sections": [
+        {
+          "titre": "Adaptation cardio-respiratoire à la naissance",
+          "points": [
+            "Résorption du liquide alvéolaire",
+            "Établissement de la CRF (capacité résiduelle fonctionnelle)",
+            "Fermeture des shunts (foramen ovale, canal artériel)",
+            "Augmentation des résistances vasculaires systémiques",
+            "Diminution des résistances vasculaires pulmonaires",
+            "Transition de la circulation fœtale à néonatale"
+          ]
+        },
+        {
+          "titre": "Sepsis néonatal à Streptocoque B",
+          "points": [
+            "Incidence: 0.5-3/1000 naissances vivantes",
+            "Transmission verticale pendant l'accouchement",
+            "Forme précoce: < 7 jours (90% < 24h)",
+            "Présentation: détresse respiratoire, sepsis, méningite",
+            "Mortalité: 5-10% avec traitement",
+            "Facteurs de risque: RPM > 18h, prématurité, fièvre maternelle"
+          ]
+        },
+        {
+          "titre": "Score d'Apgar",
+          "points": [
+            "Évaluation à 1, 5 et 10 minutes",
+            "5 critères: FC, respiration, tonus, réactivité, couleur",
+            "Score 0-3: détresse sévère",
+            "Score 4-6: détresse modérée",
+            "Score 7-10: bon état",
+            "Valeur pronostique limitée pour séquelles neurologiques"
+          ]
+        },
+        {
+          "titre": "Signes de détresse respiratoire",
+          "points": [
+            "Polypnée > 60/min",
+            "Tirage intercostal, sus-sternal, sous-costal",
+            "Battement des ailes du nez",
+            "Grunting (gémissement expiratoire)",
+            "Cyanose centrale",
+            "Score de Silverman-Anderson pour quantifier"
+          ]
+        }
+      ],
+      "rappelsTherapeutiques": [
+        "Réanimation néonatale: ABC (Airway, Breathing, Circulation)",
+        "Ventilation en pression positive si FC < 100/min",
+        "Compressions thoraciques si FC < 60/min malgré ventilation",
+        "Adrénaline si FC reste < 60/min",
+        "Antibiotiques empiriques: ampicilline + gentamicine",
+        "Support respiratoire: O2, CPAP, ventilation selon besoins",
+        "Surveillance en USI néonatale obligatoire"
+      ],
+      "examensComplementaires": [
+        "Hémoculture avant antibiotiques",
+        "FSC avec formule: leucocytose ou leucopénie",
+        "CRP, PCT: marqueurs d'infection",
+        "Radiographie thoracique: infiltrats diffus si pneumonie",
+        "PL si état stable: méningite dans 20-30% des sepsis",
+        "Gaz du sang: acidose métabolique ou mixte",
+        "Glycémie: hypo ou hyperglycémie possible"
+      ]
+    }
+  }
+}

@@ -1,0 +1,213 @@
+{
+  "title": "Psy-Vignette 1 - Un chirurgien énervé",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Monsieur R, chirurgien de 50 ans, qui consulte après que sa femme lui a annoncé qu'elle souhaite le quitter s'il ne changeait pas son comportement"
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Motif de consultation",
+          "binaryOnly": true,
+          "patientComment": "Sa femme l'a menacé de le quitter s'il ne change pas"
+        },
+        {
+          "id": "a2",
+          "text": "Perception du problème par le patient",
+          "details": [
+            "Estime qu'il n'a pas de problème [Je n'ai pas de problème]",
+            "Ne comprend pas les reproches [Je ne comprends pas ce qu'elle me reproche]",
+            "Vient seulement parce que sa femme le demande [Je viens uniquement parce qu'elle insiste]"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Histoire professionnelle",
+          "details": [
+            "Carrière brillante [Ma carrière est excellente]",
+            "Non nommé chef de service [Je n'ai pas été nommé chef de service]",
+            "Attribution à la jalousie [C'est à cause de jalousies]"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Comportement pendant la consultation",
+          "details": [
+            "Déçu de ne pas voir le chef de service [J'aurais préféré voir au moins le chef de service]",
+            "Fâché d'avoir attendu [Je suis fâché d'avoir dû attendre]",
+            "Sentiment de supériorité [Les autres passent avant moi alors que je devrais être prioritaire]"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Exploration des traits de personnalité narcissique",
+          "details": [
+            "Sens de sa propre importance",
+            "Fantasmes de succès et de pouvoir",
+            "Sentiment d'être spécial et unique",
+            "Besoin d'admiration",
+            "Sentiment que tout lui est dû"
+          ]
+        },
+        {
+          "id": "a6",
+          "text": "Relations interpersonnelles",
+          "details": [
+            "Relation avec la femme",
+            "Relations avec les collègues",
+            "Manque d'empathie",
+            "Exploitation des autres",
+            "Envie et jalousie"
+          ]
+        },
+        {
+          "id": "a7",
+          "text": "Antécédents psychiatriques",
+          "patientComment": "Aucun antécédent psychiatrique"
+        },
+        {
+          "id": "a8",
+          "text": "Consommation de substances",
+          "details": [
+            "Alcool",
+            "Drogues",
+            "Médicaments"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Observation du comportement",
+          "details": [
+            "Attitude hautaine et arrogante",
+            "Contact visuel dominateur",
+            "Posture de supériorité"
+          ]
+        },
+        {
+          "id": "e2",
+          "text": "État mental",
+          "details": [
+            "Humeur irritable",
+            "Affect restreint",
+            "Pas de symptômes psychotiques",
+            "Pas de symptômes dépressifs"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Évaluation du risque",
+          "details": [
+            "Risque suicidaire [Absent]",
+            "Risque hétéro-agressif [Absent]",
+            "Risque de rupture conjugale [Élevé]"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Insight et jugement",
+          "details": [
+            "Absence d'insight sur ses difficultés",
+            "Minimisation des problèmes relationnels",
+            "Attribution externe des difficultés"
+          ]
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic",
+          "ddSection": {
+            "title": "Diagnostics différentiels à considérer",
+            "categories": [
+              {
+                "name": "Diagnostic principal",
+                "items": [
+                  {
+                    "text": "Trouble de la personnalité narcissique",
+                    "cause": "Arguments POUR:\n\t□ Sens exagéré de sa propre importance\n\t□ Fantasmes de succès illimité\n\t□ Sentiment d'être spécial et unique\n\t□ Besoin d'être admiré\n\t□ Sentiment que tout lui est dû\n\t□ Manque d'empathie\n\t□ Arrogance et comportement hautain",
+                    "test": "→ Évaluation psychiatrique structurée"
+                  }
+                ]
+              },
+              {
+                "name": "Diagnostics différentiels",
+                "items": [
+                  {
+                    "text": "Personnalité paranoïaque",
+                    "cause": "Arguments CONTRE:\n\t□ Méfiance moins marquée\n\t□ Pas de suspicion généralisée",
+                    "test": "→ Évaluation des traits paranoïaques"
+                  },
+                  {
+                    "text": "État dépressif",
+                    "cause": "Arguments CONTRE:\n\t□ Pas de tristesse\n\t□ Pas d'anhédonie\n\t□ Pas de troubles du sommeil",
+                    "test": "→ Échelle de dépression"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Plan de traitement bio-psycho-social",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Approche biologique",
+                "content": "Pas de traitement médicamenteux des troubles de la personnalité\nÉventuellement traitement des troubles associés (dépression, anxiété)"
+              },
+              {
+                "title": "Approche psychologique",
+                "content": "Motivation externe principale (menaces de séparation)\nVoir si une demande propre peut émerger\nSelon la demande, axer sur:\n- Relations de couple (thérapie systémique)\n- Approche psychodynamique\n- Approche cognitivo-comportementale\nLa dépression serait le signe d'un potentiel de changement"
+              },
+              {
+                "title": "Approche sociale",
+                "content": "Examiner avec le patient les conséquences sociales\nExplorer les possibilités de les affronter:\n- Séparation potentielle\n- Difficultés au travail"
+              }
+            ]
+          }
+        },
+        {
+          "id": "m3",
+          "text": "Orientation vers un spécialiste",
+          "patientComment": "Je vais vous adresser à un collègue psychiatre pour une évaluation approfondie"
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Clôture type",
+          "content": "Monsieur, à mon avis, les éléments que vous me rapportez me font penser que vous présentez des difficultés relationnelles importantes. Dans de telles situations, on propose habituellement d'exclure une cause liée à une maladie physique et ensuite on propose une prise en charge psychothérapeutique. Il faut aussi qu'on explore votre situation globale pour voir si on peut vous aider pratiquement au plan social. Si vous voulez bien, je vous adresse à mon collègue psychiatre qui pourra voir les choses en détail et proposer une prise en charge adéquate."
+        },
+        {
+          "id": "c2",
+          "text": "Questions difficiles du patient",
+          "content": "[Vous pensez vraiment que j'ai un problème?]\n[Ma femme exagère, non?]\n[C'est elle qui devrait consulter!]"
+        },
+        {
+          "id": "c3",
+          "text": "Réponse type",
+          "exemplesPhrases": [
+            "Je comprends que ce soit difficile pour vous d'accepter qu'il y ait des difficultés.",
+            "Le fait que votre femme soit si inquiète mérite qu'on s'y intéresse.",
+            "Parfois, un regard extérieur peut nous aider à mieux comprendre nos relations."
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,207 @@
+{
+  "title": "Thieme Mini-Cas 65 - Tremblements - Homme de 65 ans",
+  "category": "Thieme Mini-Cas",
+  "subcategory": "Tremblements",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Homme de 65 ans, Patient standardisé, consulte pour tremblements des mains"
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Motif principal de consultation",
+          "binaryOnly": true,
+          "patientComment": "tremblements des mains"
+        },
+        {
+          "id": "a2",
+          "text": "Analyse ciblée de la plainte",
+          "details": [
+            "Repos vs action",
+            "Médicaments",
+            "Café/alcool",
+            "Histoire familiale"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Recherche des éléments clés",
+          "details": [
+            "Type de tremblement",
+            "Circonstances apparition",
+            "Antécédents familiaux"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Antécédents pertinents",
+          "details": [
+            "Parkinson famille",
+            "Médicaments",
+            "Hyperthyroïdie",
+            "Alcool"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Revue des systèmes ciblée",
+          "details": [
+            "Neurologique",
+            "Endocrinien",
+            "Psychiatrique"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Observation tremblement [repos/action]",
+          "binaryOnly": true
+        },
+        {
+          "id": "e2",
+          "text": "Examen neurologique",
+          "details": [
+            "Tonus",
+            "Rigidité",
+            "Bradykinésie"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Test doigt-nez"
+        },
+        {
+          "id": "e4",
+          "text": "Écriture et spirale"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostics différentiels",
+          "ddSection": {
+            "title": "Hypothèses diagnostiques à considérer",
+            "categories": [
+              {
+                "name": "Diagnostics prioritaires",
+                "items": [
+                  {
+                    "text": "Tremblement essentiel",
+                    "cause": "Arguments POUR:\n\t□ Tremblement action, familial, amélioration alcool",
+                    "test": "→ Diagnostic clinique, test thérapeutique"
+                  },
+                  {
+                    "text": "Maladie de Parkinson",
+                    "cause": "Arguments POUR:\n\t□ Repos, unilatéral début, bradykinésie",
+                    "test": "→ DATscan si doute, IRM cérébrale"
+                  },
+                  {
+                    "text": "Tremblement cérébelleux",
+                    "cause": "Arguments POUR:\n\t□ Intentionnel, ataxie, dysarthrie",
+                    "test": "→ IRM cérébrale, bilan étiologique"
+                  },
+                  {
+                    "text": "Effet secondaire médicamenteux",
+                    "cause": "Arguments POUR:\n\t□ Médicaments inducteurs, réversible",
+                    "test": "→ Examens selon orientation clinique"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Examens complémentaires",
+          "details": [
+            "Bilan thyroïdien",
+            "IRM cérébrale si indiquée",
+            "Revue médicaments"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Plan de prise en charge",
+          "details": [
+            "Selon type tremblement",
+            "Référence neurologie",
+            "Révision médicaments"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Conseils au patient",
+          "details": [
+            "Éviter stress",
+            "Limiter caféine",
+            "Exercices relaxation"
+          ]
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Explications au patient",
+          "content": "Différents types de tremblements existent. L'examen neurologique orientera le diagnostic."
+        },
+        {
+          "id": "c2",
+          "text": "Questions du patient",
+          "content": "[C'est Parkinson?]\n[C'est héréditaire?]\n[Ça va empirer?]"
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour le patient standardisé",
+      "nom": "Patient standardisé",
+      "age": "65 ans",
+      "contexte": "Cabinet de médecine générale",
+      "motifConsultation": {
+        "plaintePrincipale": "tremblements des mains",
+        "contexte": "Tremblements à caractériser"
+      },
+      "simulation": {
+        "attitude": [
+          "Anxieux",
+          "Peur de Parkinson"
+        ],
+        "signesPhysiques": [
+          "Tremblement visible",
+          "Selon type"
+        ],
+        "durantConsultation": [
+          "Montrer tremblement",
+          "Cacher mains parfois"
+        ]
+      }
+    },
+    "informationsExpert": {
+      "titre": "Informations pour l'expert",
+      "pointsCles": [
+        "Mini-cas clinique: Tremblements",
+        "Focus: Type de tremblement, Circonstances apparition, Antécédents familiaux",
+        "Consultation ciblée de 10 minutes",
+        "Évaluation de l'approche diagnostique"
+      ],
+      "pieges": [
+        "Ne pas caractériser type tremblement",
+        "Alarmer patient"
+      ]
+    }
+  }
+}

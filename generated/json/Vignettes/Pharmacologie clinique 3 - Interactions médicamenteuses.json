@@ -1,0 +1,781 @@
+{
+  "title": "Pharmacologie clinique 3 - Interactions médicamenteuses",
+  "context": {
+    "setting": "Cabinet médical / Centre de substitution",
+    "patient": "Homme de 56 ans sous substitution à la méthadone avec complications médicales multiples",
+    "vitals": {
+      "ta": "145/95 mmHg",
+      "fc": "88 bpm",
+      "temperature": "37.2°C"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "title": "Anamnèse et contexte clinique",
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Identification du contexte et historique médical",
+          "details": [
+            "Substitution méthadone [80 mg/j depuis 5 ans]",
+            "Antécédents [Ex-toxicomane IV, hépatite C traitée]",
+            "Comorbidités [BPCO, HTA, syndrome anxio-dépressif]",
+            "Traitement chronique [Méthadone, amlodipine, salbutamol]",
+            "Tabagisme [20 cigarettes/jour]",
+            "Contexte social [Travailleur, stable sous substitution]"
+          ]
+        },
+        {
+          "id": "a2",
+          "text": "Stade 1 : Introduction du millepertuis",
+          "description": "Patient débute millepertuis en automédication pour son moral",
+          "details": [
+            "Automédication [Millepertuis depuis 2 semaines]",
+            "Symptômes apparus [Transpiration, bâillements, rhinorrhée]",
+            "Sensation de manque [Malgré prise régulière méthadone]",
+            "Induction CYP3A4 [Par le millepertuis]",
+            "Diminution taux méthadone [Métabolisme accéléré]",
+            "Syndrome de sevrage [Partiel, inhabituel]"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Stade 2 : Addition de diphénhydramine",
+          "description": "Ajout d'antihistaminique pour rhinite allergique",
+          "details": [
+            "Nouvelle prescription [Diphénhydramine pour allergie]",
+            "Symptômes [Somnolence excessive, confusion]",
+            "Interaction pharmacodynamique [Addition effets sédatifs]",
+            "Potentialisation [Méthadone + antihistaminique H1]",
+            "Risque accru [Dépression respiratoire]",
+            "Arrêt nécessaire [Remplacer par antihistaminique non sédatif]"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Stade 3 : Bronchite avec clarithromycine",
+          "description": "Prescription antibiotique avec risque QT",
+          "details": [
+            "Infection respiratoire [Bronchite aiguë]",
+            "Prescription initiale [Clarithromycine envisagée]",
+            "Interaction QT [Méthadone + macrolide]",
+            "Inhibition CYP3A4 [Augmentation taux méthadone]",
+            "Risque torsades de pointes [Synergie allongement QT]",
+            "Alternative nécessaire [Amoxicilline préférable]"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Stade 4 : Mycose avec fluconazole",
+          "description": "Candidose buccale nécessitant antifongique",
+          "details": [
+            "Candidose orale [Suite corticothérapie inhalée]",
+            "Fluconazole prescrit [Traitement systémique]",
+            "Inhibition CYP3A4 [Forte par fluconazole]",
+            "Augmentation méthadone [Risque surdosage]",
+            "Surveillance ECG [QT à monitorer]",
+            "Adaptation posologique [Réduction méthadone temporaire]"
+          ]
+        },
+        {
+          "id": "a6",
+          "text": "Stade 5 : Gestion d'une douleur dentaire",
+          "description": "Prescription antalgique avec précautions",
+          "details": [
+            "Abcès dentaire [Douleur intense]",
+            "Éviter tramadol [Risque sérotoninergique]",
+            "AINS possible [Courte durée]",
+            "Paracétamol adapté [Sauf hépatopathie]",
+            "Antibiotique associé [Si infection]",
+            "Éviter codéine [Opioïde additionnel inapproprié]"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "title": "Identification et évaluation des interactions",
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Types d'interactions médicamenteuses",
+          "details": [
+            "Pharmacocinétiques [Absorption, distribution, métabolisme, élimination]",
+            "Pharmacodynamiques [Synergie, antagonisme, potentialisation]",
+            "Phase I [CYP450, oxydation, réduction]",
+            "Phase II [Conjugaison, glucuronidation]",
+            "Transport [P-glycoprotéine, OATP]",
+            "Récepteurs [Compétition, modulation]"
+          ]
+        },
+        {
+          "id": "e2",
+          "text": "Cytochromes P450 principaux",
+          "details": [
+            "CYP3A4 [50% des médicaments, intestin et foie]",
+            "CYP2D6 [25% médicaments, polymorphisme génétique]",
+            "CYP2C9 [Warfarine, AINS, phénytoïne]",
+            "CYP2C19 [IPP, clopidogrel, antidépresseurs]",
+            "CYP1A2 [Théophylline, caféine, clozapine]",
+            "CYP2B6 [Buproprion, éfavirenz, méthadone]"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Inducteurs enzymatiques majeurs",
+          "details": [
+            "Millepertuis [CYP3A4, 2C9, 2C19, P-gp]",
+            "Rifampicine [CYP3A4, 2C9, 2C19, 2B6]",
+            "Phénytoïne [Multiple CYP, auto-induction]",
+            "Carbamazépine [CYP3A4, auto-induction]",
+            "Phénobarbital [Inducteur large spectre]",
+            "Tabac [CYP1A2 spécifiquement]"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Inhibiteurs enzymatiques majeurs",
+          "details": [
+            "Kétoconazole [CYP3A4 puissant]",
+            "Clarithromycine [CYP3A4 modéré-fort]",
+            "Fluconazole [CYP3A4, 2C9, 2C19]",
+            "Ritonavir [CYP3A4 très puissant]",
+            "Fluoxétine [CYP2D6 puissant]",
+            "Jus de pamplemousse [CYP3A4 intestinal]"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Médicaments à index thérapeutique étroit",
+          "description": "Surveillance rapprochée requise",
+          "details": [
+            "Méthadone [Fenêtre étroite efficacité/toxicité]",
+            "Warfarine [INR à monitorer étroitement]",
+            "Digoxine [Digitalémie régulière]",
+            "Lithium [Lithémie mensuelle]",
+            "Phénytoïne [Taux sériques critiques]",
+            "Ciclosporine [Monitoring immunosuppression]"
+          ]
+        },
+        {
+          "id": "e6",
+          "text": "Interactions QT et risque cardiaque",
+          "details": [
+            "Méthadone [Allongement QT dose-dépendant]",
+            "Macrolides [Clarithromycine, érythromycine]",
+            "Antipsychotiques [Halopéridol, quétiapine]",
+            "Antidépresseurs [Citalopram, escitalopram]",
+            "Antifongiques azolés [Fluconazole, voriconazole]",
+            "Facteurs de risque [Hypokaliémie, bradycardie, IC]"
+          ]
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "title": "Gestion pratique des interactions",
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Stratégies de prévention",
+          "details": [
+            "Anamnèse médicamenteuse [Complète incluant OTC]",
+            "Consultation bases de données [UpToDate, Lexicomp]",
+            "Pharmacien clinicien [Collaboration interprofessionnelle]",
+            "Éducation patient [Risques automédication]",
+            "Documentation [Tracer les décisions]",
+            "Réévaluation régulière [À chaque changement]"
+          ]
+        },
+        {
+          "id": "m2",
+          "text": "Gestion interaction millepertuis-méthadone",
+          "details": [
+            "Arrêt millepertuis [Progressif sur 1-2 semaines]",
+            "Surveillance clinique [Signes de surdosage]",
+            "Ajustement méthadone [Possible réduction temporaire]",
+            "Alternative dépression [ISRS sans interaction]",
+            "Monitoring [Taux sériques si disponibles]",
+            "Éducation [Danger des produits 'naturels']"
+          ],
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Alternatives au millepertuis",
+                "content": "ISRS SANS INTERACTION CYP3A4:\n- Sertraline (faible interaction)\n- Citalopram (attention QT)\n- Venlafaxine (métabolisme 2D6)\n\nPSYCHOTHÉRAPIE:\n- TCC pour dépression\n- Soutien psychologique\n\nMESURES NON PHARMACOLOGIQUES:\n- Exercice physique\n- Hygiène du sommeil\n- Luminothérapie si saisonnier"
+              }
+            ]
+          }
+        },
+        {
+          "id": "m3",
+          "text": "Gestion interaction antihistaminique",
+          "details": [
+            "Arrêt diphénhydramine [Immédiat]",
+            "Remplacement [Cétirizine, loratadine non sédatifs]",
+            "Surveillance [Sédation, fonction respiratoire]",
+            "Éducation [Éviter antihistaminiques 1ère génération]",
+            "Documentation [Noter l'interaction]",
+            "Prévention future [Liste médicaments à éviter]"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Choix antibiotique et antifongique adaptés",
+          "details": [
+            "Bronchite [Amoxicilline au lieu de clarithromycine]",
+            "Si macrolide nécessaire [Azithromycine moins d'interaction QT]",
+            "Candidose [Nystatine topique d'abord]",
+            "Si systémique requis [Fluconazole avec surveillance ECG]",
+            "Adaptation méthadone [Réduction 30-50% si fluconazole]",
+            "Monitoring QTc [Avant, pendant, après traitement]"
+          ],
+          "redflagsSection": {
+            "title": "Signes d'alerte - Interactions graves",
+            "items": [
+              {
+                "text": "QTc > 500 ms",
+                "description": "Risque imminent de torsades de pointes"
+              },
+              {
+                "text": "Sédation excessive",
+                "description": "Risque de dépression respiratoire"
+              },
+              {
+                "text": "Syndrome sérotoninergique",
+                "description": "Confusion, myoclonies, hyperthermie"
+              },
+              {
+                "text": "Syndrome de sevrage",
+                "description": "Malgré prise régulière de méthadone"
+              }
+            ]
+          }
+        },
+        {
+          "id": "m5",
+          "text": "Outils et ressources pratiques",
+          "details": [
+            "Bases de données [Lexicomp, Micromedex, UpToDate]",
+            "Applications mobiles [Epocrates, MDCalc pour QTc]",
+            "Sites web [drugs.com, HIV drug interactions]",
+            "Pharmacogénétique [Tests CYP2D6, 2C19 si disponibles]",
+            "Collaboration [Pharmacien, centre antipoison]",
+            "Formation continue [Actualisation des connaissances]"
+          ]
+        },
+        {
+          "id": "m6",
+          "text": "Principes de substitution et ajustement",
+          "details": [
+            "Médicaments équivalents [Sans interaction CYP]",
+            "Ajustement posologique [Selon inhibition/induction]",
+            "Spacing temporel [Si interaction absorption]",
+            "Monitoring thérapeutique [Dosages sanguins]",
+            "Documentation [Traçabilité des décisions]",
+            "Communication [Entre professionnels de santé]"
+          ],
+          "ddSection": {
+            "title": "Algorithme décisionnel interactions",
+            "categories": [
+              {
+                "name": "Évaluation initiale",
+                "items": [
+                  {
+                    "text": "Interaction majeure",
+                    "cause": "Arguments POUR:\n\t□ Index thérapeutique étroit\n\t□ Conséquences graves potentielles\n\t□ Mécanisme bien documenté",
+                    "test": "→ Éviter association ou monitoring intensif"
+                  },
+                  {
+                    "text": "Interaction modérée",
+                    "cause": "Arguments POUR:\n\t□ Ajustement posologique possible\n\t□ Surveillance clinique suffisante\n\t□ Bénéfice > risque",
+                    "test": "→ Utiliser avec précautions et surveillance"
+                  },
+                  {
+                    "text": "Interaction mineure",
+                    "cause": "Arguments POUR:\n\t□ Peu de relevance clinique\n\t□ Effets facilement gérables\n\t□ Large index thérapeutique",
+                    "test": "→ Surveillance standard, éducation patient"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Messages clés sur les interactions",
+          "content": "Les interactions médicamenteuses sont fréquentes et potentiellement graves, particulièrement avec les médicaments à index thérapeutique étroit comme la méthadone. Une vigilance constante, l'utilisation d'outils de vérification et la collaboration interprofessionnelle sont essentielles."
+        },
+        {
+          "id": "c2",
+          "text": "Questions fréquentes des patients",
+          "content": "[Les produits naturels peuvent-ils interagir avec mes médicaments ?]\n[Pourquoi mon traitement ne fonctionne plus comme avant ?]\n[Puis-je prendre plusieurs médicaments ensemble ?]\n[Comment savoir si j'ai une interaction ?]"
+        },
+        {
+          "id": "c3",
+          "text": "Réponses types adaptées",
+          "exemplesPhrases": [
+            "Oui, les produits naturels comme le millepertuis peuvent avoir des interactions majeures avec vos médicaments, notamment en modifiant leur métabolisme.",
+            "Un changement d'efficacité peut signaler une interaction. Informez-moi de tout nouveau médicament, même en vente libre.",
+            "Certaines associations sont possibles, d'autres dangereuses. Je vérifie systématiquement les interactions avant toute prescription.",
+            "Les signes d'interaction incluent : efficacité modifiée, nouveaux effets secondaires, somnolence inhabituelle. Contactez-moi si vous observez ces changements."
+          ]
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour le patient standardisé - Toxicomane substitué",
+      "nom": "Monsieur L.",
+      "age": "56 ans",
+      "contexte": "Centre de substitution / Cabinet médical",
+      "motifConsultation": {
+        "plaintePrincipale": "Sensation de manque malgré méthadone régulière",
+        "autreChose": "Inquiétude sur efficacité du traitement"
+      },
+      "histoireActuelle": {
+        "symptomesPrincipaux": [
+          "Transpiration excessive depuis 2 semaines",
+          "Bâillements fréquents",
+          "Rhinorrhée claire",
+          "Sensation de manque le matin",
+          "Anxiété inhabituelle"
+        ],
+        "traitements": {
+          "chroniques": [
+            "Méthadone 80 mg/jour depuis 5 ans",
+            "Amlodipine 5 mg/jour pour HTA",
+            "Salbutamol à la demande pour BPCO"
+          ],
+          "recents": [
+            "Millepertuis acheté en pharmacie il y a 2 semaines",
+            "Pour améliorer le moral"
+          ]
+        },
+        "evolution": [
+          "Stable sous méthadone depuis 5 ans",
+          "Jamais eu ces symptômes avant",
+          "Coïncide avec début millepertuis",
+          "Pense que la méthadone ne fait plus effet"
+        ]
+      },
+      "simulation": {
+        "attitude": [
+          "Anxieux mais coopératif",
+          "Craint une rechute",
+          "Insiste sur sa compliance au traitement",
+          "Minimise l'importance du millepertuis ('c'est naturel')"
+        ],
+        "durantConsultation": [
+          "Signes physiques de manque légers",
+          "Rhinorrhée visible",
+          "Transpiration du front",
+          "Légère agitation psychomotrice"
+        ]
+      },
+      "habitudes": {
+        "tabac": "20 cigarettes/jour depuis 30 ans",
+        "alcool": "Abstinent depuis 5 ans",
+        "drogues": "Ex-héroïne IV, abstinent depuis début méthadone",
+        "cafe": "5-6 tasses par jour",
+        "activite": "Travaille comme magasinier, actif"
+      },
+      "antecedents": {
+        "medicaux": [
+          "Hépatite C traitée et guérie il y a 3 ans",
+          "BPCO stade II",
+          "HTA depuis 10 ans",
+          "Syndrome anxio-dépressif"
+        ],
+        "chirurgicaux": "Appendicectomie dans l'enfance",
+        "familiaux": [
+          "Père décédé d'infarctus à 65 ans",
+          "Mère diabétique type 2"
+        ]
+      },
+      "inquietudes": {
+        "principales": [
+          "La méthadone ne fait plus effet",
+          "Peur de devoir augmenter la dose",
+          "Crainte de rechute dans l'héroïne",
+          "Incompréhension des symptômes"
+        ],
+        "questions": [
+          "[Pourquoi la méthadone ne marche plus ?]",
+          "[Est-ce que je deviens résistant ?]",
+          "[Le millepertuis peut-il vraiment interférer ?]",
+          "[Que puis-je prendre pour mon moral alors ?]"
+        ]
+      }
+    },
+    "informationsExpert": {
+      "titre": "Points clés d'évaluation - Interactions médicamenteuses",
+      "objectifsPedagogiques": [
+        "Identifier les mécanismes d'interactions médicamenteuses",
+        "Connaître les principaux inducteurs et inhibiteurs du CYP3A4",
+        "Reconnaître les médicaments à index thérapeutique étroit",
+        "Gérer les interactions avec la méthadone",
+        "Utiliser les outils de détection d'interactions",
+        "Adapter les prescriptions en cas d'interaction"
+      ],
+      "pointsCles": [
+        "Le millepertuis est un inducteur puissant du CYP3A4",
+        "La méthadone a un index thérapeutique étroit",
+        "Les interactions QT sont cumulatives et dangereuses",
+        "L'induction enzymatique met 1-2 semaines à s'installer",
+        "L'inhibition enzymatique est généralement plus rapide",
+        "Toujours vérifier les interactions avant prescription"
+      ],
+      "pieges": [
+        "Sous-estimer les produits 'naturels' comme le millepertuis",
+        "Oublier les interactions pharmacodynamiques (QT, sédation)",
+        "Ne pas adapter les doses lors d'ajout d'inhibiteur",
+        "Ignorer le délai d'installation/disparition des interactions",
+        "Omettre de vérifier toutes les médications (OTC, phyto)",
+        "Ne pas anticiper les interactions lors de l'arrêt d'un inducteur"
+      ]
+    },
+    "theoriePratique": {
+      "titre": "Bases théoriques - Interactions médicamenteuses",
+      "sections": [
+        {
+          "titre": "Classification des interactions",
+          "contenu": "Mécanismes fondamentaux des interactions",
+          "points": [
+            "Pharmaceutiques : incompatibilité physico-chimique",
+            "Pharmacocinétiques : ADME modifié",
+            "Pharmacodynamiques : effet sur les récepteurs",
+            "Absorption : chélation, pH, motilité",
+            "Distribution : déplacement protéique",
+            "Métabolisme : induction/inhibition enzymatique",
+            "Élimination : compétition rénale/biliaire"
+          ]
+        },
+        {
+          "titre": "Système du cytochrome P450",
+          "contenu": "Enzymes de phase I du métabolisme",
+          "points": [
+            "Localisation : foie principalement, intestin, reins",
+            "CYP3A4 : 50% du métabolisme médicamenteux",
+            "Variabilité génétique : CYP2D6, 2C19, 2C9",
+            "Induction : augmentation de la synthèse enzymatique",
+            "Inhibition : compétitive, non-compétitive, irréversible",
+            "Délai : induction 1-2 semaines, inhibition immédiate",
+            "Substrats superposés : risque d'interactions multiples"
+          ]
+        },
+        {
+          "titre": "Gestion clinique pratique",
+          "contenu": "Approche systématique des interactions",
+          "points": [
+            "Évaluation du risque : gravité × probabilité",
+            "Alternatives thérapeutiques sans interaction",
+            "Ajustement posologique basé sur la pharmacocinétique",
+            "Monitoring : clinique, biologique, ECG si QT",
+            "Documentation et communication interprofessionnelle",
+            "Éducation patient sur les risques et surveillance",
+            "Réévaluation à chaque modification thérapeutique"
+          ]
+        }
+      ],
+      "rappelsTherapeutiques": [
+        "Méthadone : demi-vie 15-60h, grande variabilité interindividuelle",
+        "Millepertuis : induction maximale après 2 semaines",
+        "Fluconazole : inhibition CYP3A4 dose-dépendante",
+        "Clarithromycine : inhibition CYP3A4 + allongement QT",
+        "Rifampicine : inducteur le plus puissant connu",
+        "Jus de pamplemousse : inhibition CYP3A4 intestinal jusqu'à 72h",
+        "Warfarine : ajuster INR à chaque changement thérapeutique"
+      ],
+      "examensComplementaires": [
+        "ECG : QTc avant méthadone et si association à risque",
+        "Dosage méthadone : si suspicion interaction ou inefficacité",
+        "Ionogramme : K+, Mg++ si risque QT",
+        "Bilan hépatique : avant inducteurs/inhibiteurs",
+        "Pharmacogénétique : CYP2D6 si tramadol/codéine envisagés",
+        "INR : si warfarine et modification traitement",
+        "Créatinine : si médicament à élimination rénale"
+      ]
+    },
+    "resume": {
+      "titre": "💊 Interactions médicamenteuses – Résumé ECOS",
+      "sections": [
+        {
+          "titre": "🔍 Anamnèse",
+          "subsections": [
+            {
+              "titre": "Facteurs de risque d’interactions",
+              "points": [
+                "Âge avancé (polymédication, fragilité métabolique)",
+                "Insuffisance hépatique ou rénale",
+                "Automédication, phytothérapie (ex. Millepertuis = inducteur CYP)",
+                "Alcool (effet variable selon consommation aiguë ou chronique)"
+              ]
+            },
+            {
+              "titre": "Situations à haut risque",
+              "points": [
+                "Prise d’anticoagulants oraux (ex. warfarine)",
+                "Antiépileptiques inducteurs enzymatiques (carbamazépine, phénytoïne)",
+                "Immunosuppresseurs (cyclosporine, tacrolimus)",
+                "Contraceptifs oraux associés à inducteurs enzymatiques",
+                "Association AINS + IEC/ARA2 + diurétique = risque IRA (« triple whammy »)"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "👀 Examen clinique",
+          "subsections": [
+            {
+              "titre": "Signes d’interactions toxiques",
+              "points": [
+                "Saignements (interaction anticoagulants/antiagrégants/ATB)",
+                "Troubles digestifs ou neurologiques (psychotropes + inhibiteurs enzymatiques)",
+                "Hypoglycémies ou hyperglycémies liées à co-médications (insuline, corticoïdes, bêtabloquants)",
+                "Troubles du rythme (association QT prolongé)"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "🧪 Examens diagnostiques",
+          "subsections": [
+            {
+              "titre": "Bilans à surveiller",
+              "points": [
+                "INR si warfarine ± interaction suspectée",
+                "Fonction rénale si association néphrotoxique",
+                "ECG si risque d’allongement QT",
+                "Glycémie si co-prescriptions diabétogènes ou hypoglycémiantes",
+                "Dosage plasmatique des médicaments à marge thérapeutique étroite (digoxine, lithium, antiépileptiques)"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "⚙️ Prise en charge",
+          "subsections": [
+            {
+              "titre": "Stratégie",
+              "points": [
+                "Identifier médicaments substrats, inhibiteurs, inducteurs CYP450",
+                "Adapter la posologie ou choisir une alternative non interactive",
+                "Surveillance clinique et biologique rapprochée",
+                "Informer le patient (automédication, plantes, alcool)"
+              ]
+            },
+            {
+              "titre": "Exemples clés CYP450",
+              "points": [
+                "Inducteurs puissants : rifampicine, carbamazépine, phénytoïne, Millepertuis",
+                "Inhibiteurs puissants : macrolides (clarithromycine), antifongiques azolés, jus de pamplemousse, amiodarone",
+                "Substrats à risque : warfarine, statines, contraceptifs oraux, antiépileptiques"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "✅ Points clés ECOS",
+          "points": [
+            "Polymédication = facteur majeur d’interactions",
+            "Toujours rechercher les inducteurs et inhibiteurs CYP450",
+            "Marge thérapeutique étroite = vigilance (digoxine, lithium, immunosuppresseurs, antiépileptiques)",
+            "Surveiller INR, ECG, fonction rénale selon contexte",
+            "Informer patient : pas d’automédication ni phytothérapie sans avis médical"
+          ]
+        },
+        {
+          "titre": "📋 Check-list rapide ECOS",
+          "subsections": [
+            {
+              "titre": "Questions à poser",
+              "points": [
+                "Quels médicaments réguliers ? (prescrits + automédication + plantes)",
+                "Prise d’anticoagulants, antiépileptiques, immunosuppresseurs ?",
+                "Consommation d’alcool, tabac, produits à base de plantes (ex. Millepertuis) ?",
+                "Symptômes récents inexpliqués : saignements, hypoglycémies, palpitations ?"
+              ]
+            },
+            {
+              "titre": "Examens à faire",
+              "points": [
+                "INR si sous AVK",
+                "Bilan rénal (créatinine, ionogramme)",
+                "ECG si médicaments pro-arythmogènes",
+                "Glycémie si risque hypo/hyperglycémie",
+                "Dosage de médicaments à marge thérapeutique étroite si dispo"
+              ]
+            },
+            {
+              "titre": "PEC en 3 points",
+              "points": [
+                "Identifier interaction suspecte (substrat + inhibiteur/inducteur)",
+                "Adapter traitement : arrêt, remplacement ou ajustement de dose",
+                "Surveiller clinico-biologique et informer le patient"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "presentationPatient": {
+      "titre": "📑 Fiche ECOS – Cas : Interactions médicamenteuses (Homme de 56 ans sous méthadone)",
+      "sections": [
+        {
+          "titre": "🧩 Checklist mentale (présentation systématisée)",
+          "points": [
+            "Intro → âge, contexte substitution méthadone, automédication (millepertuis)",
+            "ATCD → ex-toxicomanie IV, hépatite C traitée, BPCO, HTA, anxio-dépressif",
+            "Traitement chronique → méthadone 80 mg, amlodipine, salbutamol",
+            "Habitudes → tabac, pas d’alcool, caféine élevée",
+            "Contexte actuel → signes de manque malgré méthadone régulière",
+            "Stade 1 : Millepertuis → inducteur CYP3A4 → ↓ méthadone → syndrome de sevrage",
+            "Stade 2 : Diphénhydramine → effet additif sédatif → confusion, risque dépression respi",
+            "Stade 3 : Clarithromycine → inhibiteur CYP3A4 + allongement QT → risque torsades",
+            "Stade 4 : Fluconazole → inhibiteur CYP3A4 fort → ↑ méthadone → risque surdosage",
+            "Stade 5 : Douleur dentaire → attention tramadol (sérotoninergique), éviter codéine, préférer paracétamol ± AINS courte durée",
+            "Points clés → attention aux médicaments à index thérapeutique étroit (méthadone !), interactions pharmacocinétiques et pharmacodynamiques",
+            "Prise en charge → arrêter millepertuis, remplacer diphénhydramine, éviter macrolides, privilégier nystatine locale pour mycose, surveillance ECG et adaptation posologique méthadone"
+          ],
+          "mnemo": {
+            "titre": "👉 Mnémo rapide : MÉTHA",
+            "elements": [
+              "M = Millepertuis (inducteur CYP → ↓ méthadone)",
+              "É = Éviter antihistaminiques sédatifs (diphenhydramine)",
+              "T = Torsades (clarithromycine + méthadone = QT ↑)",
+              "H = Hépatique (fluconazole inhibe CYP → ↑ méthadone)",
+              "A = Antalgiques adaptés (paracétamol, éviter tramadol/codéine)"
+            ]
+          }
+        },
+        {
+          "titre": "🎤 Version longue (≈2-3 min)",
+          "contenu": "Il s’agit de Monsieur L., un homme de 56 ans, suivi en centre de substitution depuis 5 ans pour un traitement par méthadone à 80 mg/jour. Il est stable depuis longtemps mais rapporte depuis 2 semaines une sensation de manque avec transpiration, bâillements et rhinorrhée, malgré une bonne observance.\n\nÀ l’anamnèse, on retrouve qu’il a débuté du millepertuis en automédication pour améliorer son moral. Le millepertuis est un puissant inducteur du CYP3A4, ce qui accélère le métabolisme de la méthadone et diminue sa concentration plasmatique. Cela explique son syndrome de sevrage partiel.\n\nUn second épisode est survenu lors de la prescription d’un antihistaminique pour rhinite : la diphénhydramine. Celle-ci a un effet sédatif majeur, qui s’additionne à celui de la méthadone, entraînant une somnolence excessive et un risque de dépression respiratoire. Ici, un antihistaminique non sédatif comme la cétirizine ou la loratadine aurait été plus adapté.\n\nPar la suite, une bronchite aiguë a fait envisager la prescription de clarithromycine. Or, ce macrolide est un inhibiteur du CYP3A4 et prolonge le QT. Associé à la méthadone, cela augmente le risque de torsades de pointes. Dans ce contexte, l’amoxicilline est préférable, ou à défaut l’azithromycine, moins à risque.\n\nEnfin, une mycose buccale liée à la corticothérapie inhalée a nécessité un antifongique. Le fluconazole, inhibiteur puissant du CYP3A4, élève les taux plasmatiques de méthadone, exposant à un surdosage et à un risque d’allongement du QT. Il faut privilégier un traitement local comme la nystatine, ou si fluconazole nécessaire, réduire temporairement la méthadone et surveiller l’ECG.\n\nDans un dernier épisode, il présente une douleur dentaire. Le choix de l’antalgique est essentiel : le tramadol est contre-indiqué car il peut induire un syndrome sérotoninergique en interaction avec la méthadone, et la codéine doit être évitée car c’est un opioïde supplémentaire. Le paracétamol reste le traitement de choix, complété si besoin par un AINS de courte durée.\n\nEn résumé, chez ce patient sous méthadone, chaque nouvelle prescription doit être passée au crible des interactions, en particulier via le CYP3A4 et les risques de sédation et de QT. La gestion repose sur l’arrêt du millepertuis, le remplacement des médicaments à risque, la surveillance clinique et ECG, et l’éducation du patient quant aux dangers de l’automédication, même avec des produits dits 'naturels'."
+        },
+        {
+          "titre": "⚡ Version express (SBAR, 30 sec)",
+          "contenu": "S (Situation) : Homme de 56 ans sous méthadone, présente signes de manque malgré observance.\n\nB (Background) : ATCD BPCO, HTA, anxio-dépressif, hépatite C guérie. Médicaments : méthadone, amlodipine, salbutamol. Automédication par millepertuis.\n\nA (Assessment) : Interactions multiples identifiées : millepertuis (inducteur CYP3A4 → ↓ méthadone), diphénhydramine (sédation + méthadone), clarithromycine (QT + méthadone), fluconazole (inhibition CYP3A4 → ↑ méthadone). Douleur dentaire : éviter tramadol/codéine.\n\nR (Recommendation) : Arrêter millepertuis, remplacer diphénhydramine par cétirizine, préférer amoxicilline aux macrolides, utiliser antifongiques locaux, privilégier paracétamol ± AINS, surveillance ECG et adaptation posologique méthadone."
+        },
+        {
+          "titre": "🎲 Touches ludiques / mnémos",
+          "subsections": [
+            {
+              "titre": "👉 CYP3A4 = le carrefour",
+              "points": [
+                "Inducteurs : Millepertuis, rifampicine, carbamazépine, phénytoïne",
+                "Inhibiteurs : Clarithromycine, fluconazole, kétoconazole, ritonavir",
+                "Substrats sensibles : Méthadone, statines, ciclosporine"
+              ]
+            },
+            {
+              "titre": "👉 Médicaments à index thérapeutique étroit",
+              "points": [
+                "Méthadone",
+                "Warfarine",
+                "Digoxine",
+                "Lithium",
+                "Phénytoïne"
+              ]
+            },
+            {
+              "titre": "👉 Red flags (QT-SOS)",
+              "points": [
+                "Q = QTc > 500 ms",
+                "S = Sédation excessive",
+                "O = Overdose (surdosage)",
+                "S = Syndrome sérotoninergique"
+              ]
+            },
+            {
+              "titre": "⚠️ Pièges ECOS",
+              "points": [
+                "Sous-estimer les plantes ('naturel' ≠ sans risque)",
+                "Oublier d’évaluer le QT",
+                "Prescrire codéine ou tramadol",
+                "Ignorer le délai d’induction (1-2 semaines) et d’inhibition (rapide)",
+                "Ne pas impliquer le pharmacien clinicien"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "❓ Questions probables de l'examinateur (avec réponses orales)",
+          "subsections": [
+            {
+              "titre": "1. Mécanismes des interactions",
+              "questions": [
+                {
+                  "question": "Quels types d’interactions médicamenteuses connaissez-vous ?",
+                  "reponse": [
+                    "Pharmacocinétiques : absorption, métabolisme (CYP), élimination",
+                    "Pharmacodynamiques : potentialisation ou antagonisme des effets"
+                  ]
+                },
+                {
+                  "question": "Quel est le rôle du CYP3A4 ?",
+                  "reponse": "CYP majeur impliqué dans le métabolisme d’environ 50 % des médicaments. Les inducteurs accélèrent son activité (ex. millepertuis), les inhibiteurs la réduisent (ex. fluconazole, clarithromycine)."
+                }
+              ]
+            },
+            {
+              "titre": "2. Gestion pratique",
+              "questions": [
+                {
+                  "question": "Comment gérer l’interaction millepertuis-méthadone ?",
+                  "reponse": [
+                    "Arrêt progressif du millepertuis",
+                    "Surveillance clinique du patient",
+                    "Ajustement temporaire de la méthadone",
+                    "Éducation du patient sur les produits naturels"
+                  ]
+                },
+                {
+                  "question": "Que faire si une mycose impose un antifongique systémique ?",
+                  "reponse": [
+                    "Préférer traitement local (nystatine)",
+                    "Si fluconazole nécessaire → réduire méthadone de 30–50 %, surveiller ECG"
+                  ]
+                }
+              ]
+            },
+            {
+              "titre": "3. Examens complémentaires",
+              "questions": [
+                {
+                  "question": "Quels examens de surveillance proposez-vous ?",
+                  "reponse": [
+                    "ECG (QTc avant et pendant traitement à risque)",
+                    "Dosage méthadone si disponible",
+                    "Ionogramme (K+, Mg++)",
+                    "Bilan hépatique"
+                  ]
+                }
+              ]
+            },
+            {
+              "titre": "4. Prescription alternative",
+              "questions": [
+                {
+                  "question": "Quel antibiotique privilégier pour bronchite chez ce patient ?",
+                  "reponse": "Amoxicilline en première intention, sinon azithromycine (moins d’interaction QT que clarithromycine)."
+                },
+                {
+                  "question": "Quel antihistaminique recommander ?",
+                  "reponse": "Un antihistaminique non sédatif comme la cétirizine ou la loratadine."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

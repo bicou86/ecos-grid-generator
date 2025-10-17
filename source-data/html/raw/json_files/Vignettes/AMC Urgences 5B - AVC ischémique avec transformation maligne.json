@@ -1,0 +1,547 @@
+{
+  "title": "AMC Urgences 5B - AVC ischémique avec transformation maligne",
+  "context": {
+    "setting": "Service d'urgences - Salle de déchocage",
+    "patient": "Madame B., 52 ans, déficit neurologique brutal au réveil il y a 2 heures",
+    "vitals": {
+      "ta": "165/95 mmHg",
+      "fc": "88 bpm irrégulier",
+      "fr": "18/min",
+      "temperature": "37.2°C",
+      "sao2": "96% à l'air ambiant"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Circonstances de survenue",
+          "binaryOnly": true,
+          "patientComment": "[Déficit constaté au réveil à 6h30, dernière fois vue normale à 23h la veille]"
+        },
+        {
+          "id": "a2",
+          "text": "Caractérisation du déficit neurologique",
+          "details": [
+            "Début [Brutal au réveil, wake-up stroke]",
+            "Latéralisation [Hémiplégie droite complète]",
+            "Troubles du langage [Aphasie globale]",
+            "Troubles de conscience [Somnolente mais réveillable]",
+            "Troubles visuels [Hémianopsie latérale homonyme droite]",
+            "Céphalées [Absentes initialement]"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Facteurs de risque cardiovasculaires",
+          "details": [
+            "Fibrillation atriale [Connue, non anticoagulée]",
+            "Hypertension artérielle [Traitée, mal contrôlée]",
+            "Diabète type 2 [Sous metformine]",
+            "Dyslipidémie [Sous statine]",
+            "Tabagisme [Sevré depuis 5 ans, 30 PA]",
+            "Obésité [IMC 32]"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Score CHA2DS2-VASc",
+          "details": [
+            "C - Insuffisance cardiaque [0 point]",
+            "H - Hypertension [1 point]",
+            "A2 - Âge ≥ 75 ans [0 point]",
+            "D - Diabète [1 point]",
+            "S2 - AVC/AIT antérieur [0 point]",
+            "V - Maladie vasculaire [0 point]",
+            "A - Âge 65-74 ans [0 point]",
+            "Sc - Sexe féminin [1 point]",
+            "Score total [3 points - indication anticoagulation]"
+          ],
+          "scoringRule": "2 points si calcul correct du score"
+        },
+        {
+          "id": "a5",
+          "text": "Médicaments habituels",
+          "details": [
+            "Antihypertenseurs [Amlodipine 10 mg, périndopril 8 mg]",
+            "Antidiabétique [Metformine 1000 mg x2]",
+            "Hypolipémiant [Atorvastatine 40 mg]",
+            "Antiagrégant [Aspirine 100 mg - inadéquat pour FA]",
+            "Observance [Irrégulière selon le mari]"
+          ]
+        },
+        {
+          "id": "a6",
+          "text": "Autonomie antérieure",
+          "details": [
+            "Score de Rankin modifié [0 - aucun symptôme]",
+            "Activités quotidiennes [Totalement autonome]",
+            "Profession [Enseignante active]",
+            "Conduite [Permis valide]"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Évaluation NIHSS initiale",
+          "description": "National Institutes of Health Stroke Scale",
+          "details": [
+            "1a. Niveau de conscience [1 - somnolente]",
+            "1b. Questions [2 - aucune réponse correcte]",
+            "1c. Commandes [2 - aucune exécutée]",
+            "2. Oculomotricité [2 - déviation conjuguée forcée]",
+            "3. Champ visuel [2 - hémianopsie complète]",
+            "4. Paralysie faciale [3 - complète]",
+            "5a. Motricité MS droit [4 - aucun mouvement]",
+            "5b. Motricité MS gauche [0 - normal]",
+            "6a. Motricité MI droit [4 - aucun mouvement]",
+            "6b. Motricité MI gauche [0 - normal]",
+            "7. Ataxie [0 - absente]",
+            "8. Sensibilité [2 - anesthésie sévère]",
+            "9. Langage [3 - aphasie globale]",
+            "10. Dysarthrie [2 - sévère]",
+            "11. Extinction/négligence [2 - négligence profonde]",
+            "Score total [26/42 - AVC sévère]"
+          ],
+          "binaryOnly": true,
+          "scoringRule": "2 points si score NIHSS calculé correctement"
+        },
+        {
+          "id": "e2",
+          "text": "Signes de gravité neurologique",
+          "details": [
+            "Troubles de vigilance [Somnolence fluctuante]",
+            "Déviation tête-yeux [Vers la gauche]",
+            "Signe de Babinski [Positif à droite]",
+            "Réflexes ostéo-tendineux [Abolis à droite]",
+            "Troubles de déglutition [Présents, risque d'aspiration]"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Examen cardiovasculaire",
+          "details": [
+            "Rythme cardiaque [Irrégulier, arythmie complète]",
+            "Auscultation [Pas de souffle audible]",
+            "Pouls périphériques [Présents, asymétriques]",
+            "Signes d'insuffisance cardiaque [Absents]",
+            "ECG [FA rapide à 110 bpm]"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Recherche de complications précoces",
+          "details": [
+            "Signes d'HTIC [Absents initialement]",
+            "Troubles respiratoires [Encombrement débutant]",
+            "Troubles de déglutition [Test à l'eau contre-indiqué]",
+            "Rétention urinaire [Globe vésical]",
+            "Escarres [Zones de pression à surveiller]"
+          ]
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Évaluation initiale et fenêtre thérapeutique",
+          "description": "Critères temporels pour la reperfusion",
+          "details": [
+            "Heure du dernier bien-portant [23h la veille - 7h30 depuis]",
+            "Wake-up stroke [Indication IRM si disponible]",
+            "Fenêtre thrombolyse IV [Dépassée si > 4h30]",
+            "Fenêtre thrombectomie [Possible jusqu'à 24h si mismatch]",
+            "Score ASPECTS initial [À évaluer sur le CT]"
+          ],
+          "binaryOnly": true
+        },
+        {
+          "id": "m2",
+          "text": "Examens d'imagerie urgents",
+          "details": [
+            "CT cérébral sans contraste [En urgence < 25 min]",
+            "CT perfusion [Si disponible pour évaluer la pénombre]",
+            "Angio-CT [Recherche occlusion proximale]",
+            "IRM si wake-up stroke [DWI-FLAIR mismatch]",
+            "Score ASPECTS [Évaluation du volume d'infarctus]"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Interprétation du CT initial",
+          "patientComment": "[Hypodensité précoce territoire sylvien gauche complet, effacement des sillons, score ASPECTS 3]",
+          "details": [
+            "Signes précoces d'ischémie [Présents, étendus]",
+            "Territoire artériel [Sylvien superficiel et profond gauche]",
+            "Score ASPECTS [3/10 - infarctus étendu]",
+            "Hémorragie [Absente]",
+            "Effet de masse [Débutant]"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Résultats de l'angio-CT",
+          "patientComment": "[Occlusion carotide interne gauche terminale (T-ICA) avec thrombus étendu]",
+          "details": [
+            "Site d'occlusion [Carotide interne terminale gauche]",
+            "Collatérales [Pauvres]",
+            "Thrombus [Étendu, > 8 mm]",
+            "Autres vaisseaux [Athérome diffus]"
+          ]
+        },
+        {
+          "id": "m5",
+          "text": "Décision thérapeutique de reperfusion",
+          "ddSection": {
+            "title": "Options de reperfusion en phase aiguë",
+            "categories": [
+              {
+                "name": "Thrombolyse IV",
+                "items": [
+                  {
+                    "text": "rt-PA intraveineux",
+                    "cause": "Arguments CONTRE:\n\t□ Délai > 4h30 (wake-up stroke)\n\t□ ASPECTS bas (3/10)\n\t□ Infarctus étendu > 1/3 territoire ACM\n\t□ Risque hémorragique élevé",
+                    "test": "→ Contre-indiqué dans ce cas"
+                  }
+                ]
+              },
+              {
+                "name": "Thrombectomie mécanique",
+                "items": [
+                  {
+                    "text": "Thrombectomie endovasculaire",
+                    "cause": "Arguments POUR:\n\t□ Occlusion proximale (ICA-T)\n\t□ NIHSS élevé (26)\n\t□ Âge < 80 ans\n\t□ Rankin antérieur 0\nArguments CONTRE:\n\t□ ASPECTS bas (3/10)\n\t□ Absence de mismatch significatif",
+                    "test": "→ Balance bénéfice-risque défavorable"
+                  }
+                ]
+              }
+            ]
+          },
+          "scoringRule": "2 points si contre-indications reconnues"
+        },
+        {
+          "id": "m6",
+          "text": "Traitement médical de l'AVC en phase aiguë",
+          "details": [
+            "Position [Décubitus strict 24-48h]",
+            "Oxygénothérapie [Si SpO2 < 95%]",
+            "Contrôle tensionnel [Permettre HTA permissive jusqu'à 220/120]",
+            "Glycémie [Cible 140-180 mg/dL]",
+            "Température [Paracétamol si > 37.5°C]",
+            "Anticoagulation [Différée 14 jours si infarctus étendu]",
+            "Décompression chirurgicale [À discuter si < 60 ans]"
+          ]
+        },
+        {
+          "id": "m7",
+          "text": "Évolution - Transformation hémorragique",
+          "description": "Aggravation neurologique à H12",
+          "patientComment": "[Aggravation brutale avec coma GCS 6, mydriase gauche]",
+          "details": [
+            "CT de contrôle [Transformation hémorragique PH-2]",
+            "Œdème malin [Déviation ligne médiane 12 mm]",
+            "Engagement sous-falcoriel [Présent]",
+            "Hydrocéphalie obstructive [Sur compression V3]"
+          ],
+          "redflagsSection": {
+            "title": "Signes d'œdème malin et engagement",
+            "items": [
+              {
+                "text": "Détérioration conscience",
+                "description": "GCS < 8, coma progressif"
+              },
+              {
+                "text": "Mydriase unilatérale",
+                "description": "Compression du III homolatéral"
+              },
+              {
+                "text": "Triade de Cushing",
+                "description": "HTA, bradycardie, troubles respiratoires"
+              },
+              {
+                "text": "Déviation ligne médiane",
+                "description": "> 5 mm au CT, engagement sous-falcoriel"
+              }
+            ]
+          }
+        },
+        {
+          "id": "m8",
+          "text": "Indication d'hémicraniectomie décompressive",
+          "description": "Traitement de l'œdème malin",
+          "details": [
+            "Critères d'indication [Âge < 60 ans, infarctus sylvien malin]",
+            "Timing optimal [48-96h, avant l'engagement]",
+            "Bénéfice attendu [Réduction mortalité de 50% à 20%]",
+            "Pronostic fonctionnel [mRS 4 probable]",
+            "Discussion éthique [Qualité de vie, souhaits patient]"
+          ],
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Protocole hémicraniectomie",
+                "content": "Volet osseux : ≥ 12 cm de diamètre\n\nIncision durale en étoile\n\nDuroplastie d'agrandissement\n\nConservation volet osseux (congélation ou abdomen)\n\nCranioplastie différée à 3-6 mois\n\nComplications : 10-15% (infection, hydrocéphalie)"
+              }
+            ]
+          }
+        },
+        {
+          "id": "m9",
+          "text": "Gestion en réanimation neurologique",
+          "details": [
+            "Intubation et ventilation mécanique",
+            "Sédation titrée (propofol/midazolam)",
+            "Osmothérapie [Mannitol 20% ou SSH 7.5%]",
+            "Contrôle température [Normothermie stricte]",
+            "Position proclive 30°",
+            "Monitoring PIC si disponible",
+            "DVE si hydrocéphalie",
+            "Prophylaxie antiépileptique"
+          ]
+        },
+        {
+          "id": "m10",
+          "text": "Communication avec la famille",
+          "details": [
+            "Expliquer la gravité de l'AVC",
+            "Informer sur la transformation hémorragique",
+            "Discuter l'option chirurgicale",
+            "Évoquer le pronostic réservé",
+            "Respecter les directives anticipées",
+            "Proposer accompagnement psychologique"
+          ]
+        },
+        {
+          "id": "m11",
+          "text": "Prévention secondaire à distance",
+          "details": [
+            "Anticoagulation pour FA [AOD préférés après J14]",
+            "Contrôle des facteurs de risque",
+            "Statine haute intensité",
+            "Antihypertenseurs [Cible < 130/80]",
+            "Équilibre glycémique",
+            "Rééducation intensive",
+            "Suivi neurologique régulier"
+          ]
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Communication avec le mari",
+          "content": "Monsieur, votre épouse a fait un AVC très grave causé par un caillot qui bloque une grosse artère du cerveau. L'atteinte est trop étendue pour les traitements habituels. Elle s'est aggravée avec un saignement et un gonflement du cerveau. Nous devons discuter d'une chirurgie pour sauver sa vie, mais elle gardera des séquelles importantes."
+        },
+        {
+          "id": "c2",
+          "text": "Questions difficiles de la famille",
+          "content": "[Va-t-elle remarcher et reparler ?]\n[Pourquoi n'a-t-elle pas été anticoagulée pour sa fibrillation ?]\n[La chirurgie va-t-elle la guérir ?]\n[Quelle sera sa qualité de vie ?]"
+        },
+        {
+          "id": "c3",
+          "text": "Réponses adaptées",
+          "exemplesPhrases": [
+            "Les séquelles seront importantes. Elle aura probablement une paralysie droite permanente et des troubles du langage sévères.",
+            "L'anticoagulation aurait dû être prescrite. Le score de risque était de 3, justifiant ce traitement préventif.",
+            "La chirurgie peut sauver sa vie mais ne restaurera pas les fonctions perdues. Elle restera dépendante.",
+            "La récupération sera longue et partielle. Nous l'accompagnerons avec une rééducation intensive adaptée."
+          ]
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "images": [
+      {
+        "title": "GFAST",
+        "description": "Score GFAST pour l'évaluation rapide des AVC : Face, Arms, Speech, Time",
+        "data": "grilles_generees/html/images/AMC-Urgences-Medecine-Intensive-5/B1-GFAST.jpg"
+      },
+      {
+        "title": "Algorithme - Suspicion AVC",
+        "description": "Algorithme décisionnel pour la prise en charge d'une suspicion d'AVC en urgence",
+        "data": "grilles_generees/html/images/AMC-Urgences-Medecine-Intensive-5/B2-Algorithme-Suspicion AVC.jpg"
+      },
+      {
+        "title": "CT-scan cérébral en urgence",
+        "description": "CT-scan montrant un AVC ischémique sylvien droit étendu avec effet de masse",
+        "data": "grilles_generees/html/images/AMC-Urgences-Medecine-Intensive-5/B3-CT-scan cérébral en urgence.jpg"
+      },
+      {
+        "title": "Stratégie thérapeutique",
+        "description": "Stratégie de revascularisation dans l'AVC ischémique : thrombolyse et thrombectomie",
+        "data": "grilles_generees/html/images/AMC-Urgences-Medecine-Intensive-5/B4-Stratégie thérapeutique.jpg"
+      },
+      {
+        "title": "Critères de revascularisation aiguë post AVC - Partie 1",
+        "description": "Critères pour la thrombolyse intraveineuse : fenêtre temporelle et indications",
+        "data": "grilles_generees/html/images/AMC-Urgences-Medecine-Intensive-5/B5-Critères de revascularisation aiguë post AVC.jpg"
+      },
+      {
+        "title": "Critères de revascularisation aiguë post AVC - Partie 2",
+        "description": "Critères pour la thrombectomie mécanique : sélection des patients éligibles",
+        "data": "grilles_generees/html/images/AMC-Urgences-Medecine-Intensive-5/B6-Critères de revascularisation aiguë post AVC.jpg"
+      },
+      {
+        "title": "CT-scan cérébral J1",
+        "description": "CT-scan de contrôle à J1 montrant la transformation hémorragique et l'œdème malin",
+        "data": "grilles_generees/html/images/AMC-Urgences-Medecine-Intensive-5/B7-CT-scan cérébral J1.jpg"
+      },
+      {
+        "title": "Diagnostic de mort cérébrale",
+        "description": "Critères cliniques et paracliniques pour le diagnostic de mort cérébrale",
+        "data": "grilles_generees/html/images/AMC-Urgences-Medecine-Intensive-5/B8-Diagnostic de mort cérébrale.jpg"
+      }
+    ],
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour le patient standardisé - Mme B., AVC malin",
+      "nom": "Madame B.",
+      "age": "52 ans",
+      "contexte": "Salle de déchocage aux urgences",
+      "motifConsultation": {
+        "plaintePrincipale": "Patiente aphasique, ne peut pas s'exprimer",
+        "autreChose": "Le mari donne les informations"
+      },
+      "histoireActuelle": {
+        "symptomesPrincipaux": [
+          "Hémiplégie droite complète au réveil",
+          "Aphasie globale",
+          "Déviation de la tête et des yeux vers la gauche",
+          "Somnolence progressive"
+        ]
+      },
+      "simulation": {
+        "attitude": [
+          "Somnolente mais réveillable initialement",
+          "Aucune production verbale (aphasie globale)",
+          "Négligence de l'hémicorps droit",
+          "Anxiété visible dans le regard",
+          "Aggravation progressive vers le coma"
+        ],
+        "durantExamen": [
+          "Aucun mouvement côté droit",
+          "Déviation conjuguée du regard à gauche",
+          "Réflexe de Babinski droit",
+          "Pas de réponse aux ordres",
+          "À H12 : coma avec mydriase gauche"
+        ]
+      },
+      "roleMari": {
+        "informations": [
+          "Très inquiet et culpabilisé",
+          "Donne l'historique médical",
+          "Mentionne la FA non anticoagulée",
+          "Insiste sur l'autonomie antérieure",
+          "Demande tous les traitements possibles"
+        ]
+      }
+    },
+    "informationsExpert": {
+      "titre": "Guide pour l'expert évaluateur - AVC malin",
+      "pointsCles": [
+        "Calcul correct du score NIHSS (26/42)",
+        "Reconnaissance du wake-up stroke et implications",
+        "Identification des contre-indications à la thrombolyse",
+        "Discussion de la thrombectomie malgré ASPECTS bas",
+        "Reconnaissance de l'œdème malin et indication chirurgicale",
+        "Gestion de la transformation hémorragique"
+      ],
+      "pieges": [
+        "Thrombolyser malgré les contre-indications",
+        "Baisser trop la tension en phase aiguë",
+        "Anticoaguler trop précocement",
+        "Retarder la discussion sur l'hémicraniectomie",
+        "Ne pas reconnaître les signes d'engagement",
+        "Oublier la prévention des complications"
+      ],
+      "rolesInterventions": [
+        "Patiente aphasique, le mari répond",
+        "Fournir les résultats d'imagerie progressivement",
+        "Simuler l'aggravation neurologique à H12",
+        "Le mari pose des questions sur le pronostic",
+        "Insister sur les aspects éthiques de la chirurgie"
+      ]
+    },
+    "theoriePratique": {
+      "titre": "Rappels théoriques - AVC ischémique et œdème malin",
+      "sections": [
+        {
+          "titre": "Score NIHSS",
+          "contenu": "Le NIHSS (National Institutes of Health Stroke Scale) évalue la sévérité de l'AVC de 0 à 42 points. Un score > 25 indique un AVC très sévère avec mortalité > 80% sans traitement.",
+          "points": [
+            "0-4 : AVC mineur",
+            "5-15 : AVC modéré",
+            "16-25 : AVC sévère",
+            "> 25 : AVC très sévère",
+            "Prédicteur de pronostic et guide thérapeutique"
+          ]
+        },
+        {
+          "titre": "Score ASPECTS",
+          "contenu": "Alberta Stroke Program Early CT Score évalue l'étendue de l'ischémie sur 10 régions. Score 10 = normal, 0 = infarctus complet du territoire ACM.",
+          "points": [
+            "ASPECTS ≤ 5 : contre-indication relative thrombolyse",
+            "ASPECTS ≤ 3 : très mauvais pronostic",
+            "Prédicteur de transformation hémorragique",
+            "Guide pour la thrombectomie (> 6 généralement requis)"
+          ]
+        },
+        {
+          "titre": "Œdème malin de l'ACM",
+          "contenu": "Complication de l'infarctus sylvien étendu survenant dans 10% des AVC, pic à J2-J5. Mortalité 80% sans traitement.",
+          "points": [
+            "Facteurs prédictifs : âge < 60 ans, NIHSS > 20, ASPECTS < 5",
+            "Signes CT : déviation > 5mm, compression ventriculaire",
+            "Hémicraniectomie : NNT = 2 pour survie",
+            "Timing optimal : 24-48h, avant l'engagement"
+          ]
+        },
+        {
+          "titre": "Classification des transformations hémorragiques",
+          "contenu": "HI-1 : pétéchies punctiformes\nHI-2 : pétéchies confluentes\nPH-1 : hématome < 30% avec effet de masse minime\nPH-2 : hématome > 30% avec effet de masse significatif",
+          "points": [
+            "Incidence : 10-40% selon les séries",
+            "Facteurs de risque : thrombolyse, ASPECTS bas, HTA",
+            "PH-2 : associée à détérioration clinique",
+            "Retarde l'anticoagulation de 2-4 semaines"
+          ]
+        },
+        {
+          "titre": "Score CHA2DS2-VASc",
+          "contenu": "Score de risque thromboembolique dans la FA.\n0 : pas d'anticoagulation\n1 : considérer anticoagulation\n≥ 2 : anticoagulation recommandée",
+          "points": [
+            "Risque annuel AVC si score 3 : 3.2%",
+            "AOD préférés aux AVK (moins d'hémorragies)",
+            "NNT = 31 pour prévenir un AVC/an si score 3"
+          ]
+        }
+      ],
+      "rappelsTherapeutiques": [
+        "Thrombolyse IV : fenêtre 0-4h30, alteplase 0.9 mg/kg (max 90mg), 10% bolus puis perfusion 1h",
+        "Thrombectomie : fenêtre 0-6h (jusqu'à 24h si mismatch), NNT = 2.6 pour indépendance fonctionnelle",
+        "Contrôle TA phase aiguë : permettre jusqu'à 220/120 sauf si thrombolyse (< 185/110)",
+        "Hémicraniectomie : < 60 ans, dans les 48h, réduit mortalité de 50% à 20%",
+        "Anticoagulation FA : débuter J1-J14 selon taille infarctus, AOD préférés",
+        "Osmothérapie : mannitol 0.25-0.5 g/kg ou SSH 7.5% si signes HTIC"
+      ],
+      "examensComplementaires": [
+        "CT cérébral sans contraste : éliminer hémorragie, signes précoces ischémie, ASPECTS",
+        "Angio-CT : localise occlusion, évalue collatérales, guide thrombectomie",
+        "CT perfusion : évalue pénombre ischémique (mismatch core/pénombre)",
+        "IRM DWI-FLAIR : mismatch pour wake-up stroke, fenêtre < 4h30 probable",
+        "ECG et monitoring : dépistage FA paroxystique (30% des AVC cryptogéniques)",
+        "Échocardiographie : recherche cardiopathie emboligène, thrombus intra-auriculaire"
+      ]
+    }
+  }
+}

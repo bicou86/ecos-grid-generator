@@ -1,0 +1,202 @@
+{
+  "title": "Thieme Mini-Cas 75 - Thorax bruyant/sifflant chez l'enfant - Garçon de 3 ans",
+  "category": "Thieme Mini-Cas",
+  "subcategory": "Thorax bruyant/sifflant chez l'enfant",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Parent consulte pour Enfant, 3 ans, qui présente: respiration bruyante"
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Motif principal de consultation",
+          "binaryOnly": true,
+          "patientComment": "respiration bruyante"
+        },
+        {
+          "id": "a2",
+          "text": "Analyse ciblée de la plainte",
+          "details": [
+            "Début",
+            "Jeu/activité",
+            "Fièvre",
+            "Toux"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Recherche des éléments clés",
+          "details": [
+            "Début brutal/progressif",
+            "Fièvre",
+            "Contexte de jeu"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Antécédents pertinents",
+          "details": [
+            "Asthme",
+            "Allergies",
+            "Hospitalisations",
+            "Vaccinations"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Revue des systèmes ciblée",
+          "details": [
+            "Respiratoire",
+            "ORL",
+            "Infectieux"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Signes vitaux et saturation",
+          "binaryOnly": true
+        },
+        {
+          "id": "e2",
+          "text": "Auscultation pulmonaire [stridor/wheezing]"
+        },
+        {
+          "id": "e3",
+          "text": "Examen ORL"
+        },
+        {
+          "id": "e4",
+          "text": "Signes de détresse respiratoire"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostics différentiels",
+          "ddSection": {
+            "title": "Hypothèses diagnostiques à considérer",
+            "categories": [
+              {
+                "name": "Diagnostics prioritaires",
+                "items": [
+                  {
+                    "text": "Corps étranger",
+                    "cause": "Arguments POUR:\n\t□ Début brutal, jeu, toux inefficace",
+                    "test": "→ Radiographie, bronchoscopie"
+                  },
+                  {
+                    "text": "Croup",
+                    "cause": "Arguments POUR:\n\t□ Viral, toux aboyante, stridor inspiratoire",
+                    "test": "→ Diagnostic clinique, radiographie cou si doute"
+                  },
+                  {
+                    "text": "Épiglottite",
+                    "cause": "Arguments POUR:\n\t□ Fièvre haute, dysphagie, position tripode",
+                    "test": "→ Examens selon orientation clinique"
+                  },
+                  {
+                    "text": "Asthme",
+                    "cause": "Arguments POUR:\n\t□ Sifflements, ATCD, réversible",
+                    "test": "→ Examens selon orientation clinique"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Examens complémentaires",
+          "details": [
+            "Radiographie thoracique",
+            "Laryngoscopie si corps étranger",
+            "NFS si infection"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Plan de prise en charge",
+          "details": [
+            "Si corps étranger: extraction urgente",
+            "Si croup: corticoïdes",
+            "Hospitalisation si sévère"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Conseils au patient",
+          "details": [
+            "Éviter petits objets",
+            "Surveillance respiratoire",
+            "Urgence si aggravation"
+          ]
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Explications au patient",
+          "content": "Respiration bruyante chez l'enfant pouvant indiquer obstruction ou infection."
+        },
+        {
+          "id": "c2",
+          "text": "Questions du patient",
+          "content": "[Mon enfant a avalé quelque chose?]\n[C'est grave?]"
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour le patient standardisé",
+      "nom": "Enfant",
+      "age": "3 ans",
+      "contexte": "Cabinet de médecine générale",
+      "motifConsultation": {
+        "plaintePrincipale": "respiration bruyante",
+        "contexte": "Stridor ou wheezing chez l'enfant"
+      },
+      "simulation": {
+        "attitude": [
+          "Parent paniqué",
+          "Urgence respiratoire"
+        ],
+        "signesPhysiques": [
+          "Stridor ou wheezing",
+          "Tirage possible"
+        ],
+        "durantConsultation": [
+          "Bruit respiratoire audible",
+          "Parent inquiet"
+        ]
+      }
+    },
+    "informationsExpert": {
+      "titre": "Informations pour l'expert",
+      "pointsCles": [
+        "Mini-cas clinique: Thorax bruyant/sifflant chez l'enfant",
+        "Focus: Début brutal/progressif, Fièvre, Contexte de jeu",
+        "Consultation ciblée de 10 minutes",
+        "Évaluation de l'approche diagnostique"
+      ],
+      "pieges": [
+        "Manquer corps étranger",
+        "Sous-estimer gravité"
+      ]
+    }
+  }
+}

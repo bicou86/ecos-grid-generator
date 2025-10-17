@@ -1,0 +1,626 @@
+{
+  "title": "SMIG-3 - Douleurs abdominales et nausées - Acidocétose diabétique",
+  "context": {
+    "setting": "Policlinique en urgence",
+    "patient": "Mademoiselle K., 18 ans, accompagnée de sa mère, consulte pour douleurs abdominales diffuses et nausées apparues il y a 48 heures. Sa mère la trouve très fatiguée. La patiente a perdu 5 kg en 2 mois et mange beaucoup moins. Elle présente une polyurie et polydipsie d'apparition récente",
+    "vitals": {
+      "ta": "120/65 mmHg (98/55 mmHg à l'orthostatisme)",
+      "fc": "100 bpm (125 bpm à l'orthostatisme)",
+      "fr": "30/min",
+      "temperature": "37.2°C",
+      "sao2": "98% air ambiant"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Motif de consultation et symptômes principaux",
+          "binaryOnly": true,
+          "patientComment": "[J'ai soif et mal au ventre depuis 48 heures]"
+        },
+        {
+          "id": "a2",
+          "text": "Caractérisation des douleurs abdominales",
+          "details": [
+            "Localisation [Diffuses]",
+            "Intensité [Modérée à sévère]",
+            "Évolution [Depuis 48 heures]",
+            "Facteurs aggravants [Aucun]",
+            "Facteurs soulageants [Aucun]",
+            "Nausées associées [Oui, depuis 48h]",
+            "Vomissements [Non]"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Symptômes généraux et perte de poids",
+          "details": [
+            "Fatigue [Très importante aujourd'hui]",
+            "Somnolence [Oui, par moments]",
+            "Perte de poids [5 kg en 2 mois]",
+            "Appétit [Beaucoup diminué]",
+            "Soif intense [Oui, demande spontanément de l'eau]"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Recherche du syndrome cardinal diabétique",
+          "details": [
+            "Polyurie [Apparition récente]",
+            "Polydipsie [Apparition récente]",
+            "Polyphagie [Non, au contraire mange moins]",
+            "Amaigrissement [5 kg en 2 mois]"
+          ],
+          "scoringRule": "2 points si les 3P sont recherchés"
+        },
+        {
+          "id": "a5",
+          "text": "Symptômes digestifs et urinaires",
+          "details": [
+            "Transit intestinal [Normal]",
+            "Sang dans les selles [Non]",
+            "Brûlures mictionnelles [Non]",
+            "Hématurie [Non]",
+            "État fébrile [Non]"
+          ]
+        },
+        {
+          "id": "a6",
+          "text": "Antécédents médicaux et chirurgicaux",
+          "details": [
+            "Antécédents médicaux [Aucun]",
+            "Antécédents chirurgicaux [Aucun]",
+            "Hospitalisations [Aucune]",
+            "Diabète familial [À rechercher]",
+            "Maladies auto-immunes [À rechercher]"
+          ]
+        },
+        {
+          "id": "a7",
+          "text": "Médicaments et allergies",
+          "details": [
+            "Traitement habituel [Contraception orale uniquement]",
+            "Allergies médicamenteuses [Aucune]",
+            "Automédication récente [Non]",
+            "Observance contraception [Bonne]"
+          ]
+        },
+        {
+          "id": "a8",
+          "text": "Habitudes de vie et facteurs de risque",
+          "details": [
+            "Tabac [À rechercher]",
+            "Alcool [À rechercher]",
+            "Drogues [À rechercher]",
+            "Activité physique [À rechercher]",
+            "Stress récent [À rechercher]",
+            "Infection récente [À rechercher]"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "État général et paramètres vitaux",
+          "details": [
+            "État général [Altéré, fatiguée]",
+            "Glasgow [14 - somnole mais ouvre les yeux à la demande]",
+            "TA couché [120/65 mmHg]",
+            "TA assis [98/55 mmHg - hypotension orthostatique symptomatique]",
+            "FC couché [100 bpm]",
+            "FC assis [125 bpm - tachycardie orthostatique]",
+            "FR [30/min - tachypnée, respiration ample]",
+            "Température [37.2°C]",
+            "SpO2 [98% air ambiant]"
+          ],
+          "binaryOnly": true
+        },
+        {
+          "id": "e2",
+          "text": "Signes de déshydratation",
+          "details": [
+            "Muqueuses [Sèches]",
+            "Langue [Sèche]",
+            "Pli cutané [À rechercher]",
+            "Yeux enfoncés [À rechercher]",
+            "Temps de recoloration capillaire [À rechercher]",
+            "Diurèse [Polyurie paradoxale - diurèse osmotique]"
+          ],
+          "scoringRule": "2 points si déshydratation reconnue"
+        },
+        {
+          "id": "e3",
+          "text": "Examen cardiovasculaire",
+          "details": [
+            "Bruits du cœur [Sans particularité]",
+            "Souffle cardiaque [Absent]",
+            "Pouls périphériques [Présents, symétriques]",
+            "Signes d'insuffisance cardiaque [Absents]",
+            "Marbrures [À rechercher si choc]"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Examen respiratoire",
+          "details": [
+            "Type de respiration [Ample, respiration de Kussmaul]",
+            "Auscultation pulmonaire [Propre, sans râles]",
+            "Signes de détresse respiratoire [Non]",
+            "Odeur de l'haleine [Cétonique à rechercher]"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Examen abdominal",
+          "details": [
+            "Inspection [Normal]",
+            "Palpation [Douloureuse diffuse]",
+            "Défense [Absente]",
+            "Détente [Absente]",
+            "Bruits hydroaériques [Présents]",
+            "Hépatomégalie [Non]",
+            "Splénomégalie [Non]"
+          ]
+        },
+        {
+          "id": "e6",
+          "text": "Examen neurologique",
+          "details": [
+            "Conscience [GCS 14 - E3V5M6]",
+            "Orientation [À évaluer]",
+            "Déficit focal [Absent]",
+            "Réflexes [À évaluer]",
+            "Signes méningés [Absents]",
+            "Pupilles [Normales, réactives]"
+          ]
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic différentiel initial",
+          "description": "Hypothèses à l'admission",
+          "ddSection": {
+            "title": "Diagnostics différentiels des douleurs abdominales avec syndrome général",
+            "categories": [
+              {
+                "name": "Causes endocriniennes",
+                "items": [
+                  {
+                    "text": "Diabète inaugural avec acidocétose",
+                    "cause": "Arguments POUR:\n\t□ Syndrome cardinal (polyurie, polydipsie, amaigrissement)\n\t□ Douleurs abdominales typiques\n\t□ Déshydratation sévère\n\t□ Tachypnée (Kussmaul)\n\t□ Âge compatible avec diabète type 1",
+                    "test": "→ Glycémie capillaire, gazométrie, corps cétoniques"
+                  },
+                  {
+                    "text": "Insuffisance surrénalienne aiguë",
+                    "cause": "Arguments POUR:\n\t□ Douleurs abdominales\n\t□ Nausées\n\t□ Asthénie\n\t□ Hypotension\nArguments CONTRE:\n\t□ Polyurie-polydipsie",
+                    "test": "→ Cortisol, ACTH, ionogramme"
+                  }
+                ]
+              },
+              {
+                "name": "Causes digestives",
+                "items": [
+                  {
+                    "text": "Maladie cœliaque",
+                    "cause": "Arguments POUR:\n\t□ Perte de poids\n\t□ Douleurs abdominales\nArguments CONTRE:\n\t□ Évolution aiguë\n\t□ Pas de diarrhée",
+                    "test": "→ Anticorps anti-transglutaminase"
+                  },
+                  {
+                    "text": "Maladie de Crohn",
+                    "cause": "Arguments POUR:\n\t□ Âge compatible\n\t□ Douleurs abdominales\nArguments CONTRE:\n\t□ Pas de troubles du transit\n\t□ Évolution rapide",
+                    "test": "→ CRP, calprotectine fécale"
+                  }
+                ]
+              },
+              {
+                "name": "Causes psychiatriques",
+                "items": [
+                  {
+                    "text": "Trouble du comportement alimentaire",
+                    "cause": "Arguments POUR:\n\t□ Jeune femme\n\t□ Perte de poids\n\t□ Mange moins\nArguments CONTRE:\n\t□ Signes organiques francs",
+                    "test": "→ Évaluation psychiatrique après stabilisation"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Indication d'hospitalisation urgente",
+          "details": [
+            "Signes d'hypovolémie sévère [Oui - hypotension orthostatique]",
+            "Tachypnée [Oui - FR 30/min, suspicion acidose]",
+            "Altération de conscience [Oui - GCS 14]",
+            "Suspicion acidocétose diabétique [Oui]",
+            "Décision [Hospitalisation urgente indiquée]"
+          ],
+          "binaryOnly": true,
+          "scoringRule": "2 points si hospitalisation décidée rapidement"
+        },
+        {
+          "id": "m3",
+          "text": "Bilan paraclinique initial",
+          "details": [
+            "Glycémie capillaire [27 mmol/L - hyperglycémie sévère]",
+            "Gazométrie [pH 7.23, PaCO2 22, HCO3 10 - acidose métabolique]",
+            "Corps cétoniques urinaires [+++ positifs]",
+            "Ionogramme [Na 130, K 4.5, Cl 98]",
+            "Fonction rénale [Créatinine 112 µmol/L, urée 15 mmol/L]",
+            "NFS [Leucocytes 15 G/L, 80% neutrophiles]",
+            "Osmolalité mesurée [310 mOsm/kg]"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Interprétation des résultats",
+          "details": [
+            "Hyperglycémie [25-27 mmol/L - sévère]",
+            "Acidose métabolique [pH 7.23, HCO3 10 mmol/L]",
+            "Trou anionique [22 mmol/L - augmenté]",
+            "Cétonurie [+++ massive]",
+            "Natrémie corrigée [130 + 0.3 × (25-5) = 136 mmol/L]",
+            "Insuffisance rénale fonctionnelle [Créatinine élevée sur déshydratation]"
+          ],
+          "scoringRule": "2 points si calcul du trou anionique et natrémie corrigée"
+        },
+        {
+          "id": "m5",
+          "text": "Diagnostic final",
+          "patientComment": "[Acidocétose diabétique inaugurale sur diabète type 1 probable]",
+          "details": [
+            "Type de décompensation [Acidocétose diabétique]",
+            "Sévérité [Modérée (pH 7.00-7.24)]",
+            "Type de diabète probable [Type 1 vu l'âge]",
+            "Facteur déclenchant [Inaugural, pas de facteur identifié]"
+          ],
+          "binaryOnly": true
+        },
+        {
+          "id": "m6",
+          "text": "Prise en charge initiale - Réhydratation",
+          "description": "Correction de l'hypovolémie en urgence",
+          "details": [
+            "Voies veineuses [2 VVP de gros calibre]",
+            "Solution initiale [NaCl 0.9% IV]",
+            "Débit initial [15-20 mL/kg/h selon sévérité]",
+            "Puis selon natrémie corrigée [Si > 135: NaCl 0.45%, sinon 0.9%]",
+            "Monitoring [TA, FC, diurèse horaire]"
+          ],
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Protocole de réhydratation",
+                "content": "PHASE INITIALE (0-2h):\n- NaCl 0.9% 15-20 mL/kg/h\n- Objectif: corriger le choc\n\nPHASE SECONDAIRE (2-24h):\n- Si Na corrigé > 135: NaCl 0.45%\n- Si Na corrigé ≤ 135: NaCl 0.9%\n- Débit selon déficit hydrique estimé\n\nSURVEILLANCE:\n- Ionogramme /2-4h\n- Diurèse horaire\n- Signes vitaux /h"
+              }
+            ]
+          }
+        },
+        {
+          "id": "m7",
+          "text": "Prise en charge - Insulinothérapie",
+          "details": [
+            "Bolus initial [Actrapid 0.1-0.15 U/kg IV]",
+            "Perfusion continue [0.1 U/kg/h IV]",
+            "Objectif glycémique [Baisse 2.5-4 mmol/L/h]",
+            "Cible intermédiaire [11.1 mmol/L pour acidocétose]",
+            "Ajout glucose [Quand glycémie < 14 mmol/L]",
+            "Monitoring glycémie [Horaire]"
+          ],
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Protocole d'insulinothérapie",
+                "content": "INITIATION:\n- Bolus: Actrapid 0.1-0.15 U/kg IV\n- Puis perfusion: 0.1 U/kg/h\n\nAJUSTEMENT:\n- Si baisse < 2.5 mmol/L/h: augmenter débit\n- Si baisse > 4 mmol/L/h: réduire débit\n- Si glycémie < 14: ajouter G5% + réduire insuline\n\nTRANSITION:\n- Quand acidose corrigée (pH > 7.3)\n- Patient capable de manger\n- Relais par insuline SC"
+              }
+            ]
+          }
+        },
+        {
+          "id": "m8",
+          "text": "Prise en charge - Correction électrolytique",
+          "details": [
+            "Potassium initial [4.5 mmol/L]",
+            "Risque hypokaliémie [Élevé avec insuline]",
+            "Substitution K+ [Si K < 5.3, débuter substitution]",
+            "Monitoring K+ [Horaire pendant traitement]",
+            "Phosphate [Recontrôler, substituer si < 0.3 mmol/L]",
+            "Magnésium [Contrôler et substituer si besoin]"
+          ],
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Gestion du potassium",
+                "content": "RÈGLES DE SUBSTITUTION:\n- K > 5.3: pas de substitution\n- K 3.3-5.3: 20-30 mmol/h\n- K < 3.3: retarder insuline, 40 mmol/h\n\nSURVEILLANCE:\n- Ionogramme /h initialement\n- ECG continu si troubles du rythme\n- Ajuster selon kaliémie"
+              }
+            ]
+          }
+        },
+        {
+          "id": "m9",
+          "text": "Surveillance et complications",
+          "redflagsSection": {
+            "title": "Complications à surveiller",
+            "items": [
+              {
+                "text": "Œdème cérébral",
+                "description": "Surtout chez l'enfant, si correction trop rapide de l'osmolalité"
+              },
+              {
+                "text": "Hypokaliémie sévère",
+                "description": "Risque d'arythmie avec l'insulinothérapie"
+              },
+              {
+                "text": "Hypoglycémie",
+                "description": "Si insuline excessive ou apports glucosés insuffisants"
+              },
+              {
+                "text": "Acidose hyperchlorémique",
+                "description": "Si excès de NaCl 0.9%"
+              },
+              {
+                "text": "Pneumonie d'aspiration",
+                "description": "Si troubles de conscience + vomissements"
+              }
+            ]
+          },
+          "details": [
+            "Monitoring neurologique [GCS horaire]",
+            "Glycémies capillaires [Horaires]",
+            "Gazométrie [/4-6h jusqu'à correction]",
+            "Ionogramme [/2-4h initialement]",
+            "Bilan infectieux [Si fièvre ou leucocytose persistante]"
+          ]
+        },
+        {
+          "id": "m10",
+          "text": "Éducation et suivi",
+          "details": [
+            "Confirmation diabète type 1 [Anticorps anti-GAD, anti-IA2, C-peptide]",
+            "Éducation thérapeutique [Insulinothérapie, auto-surveillance]",
+            "Reconnaissance signes d'alerte [Hyperglycémie, hypoglycémie]",
+            "Suivi endocrinologique [Rapproché]",
+            "Soutien psychologique [Annonce diagnostic]",
+            "Carnet de surveillance [Glycémies, doses insuline]"
+          ]
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Communication avec la patiente et sa mère",
+          "content": "Mademoiselle K., vous présentez ce qu'on appelle une acidocétose diabétique, c'est une complication aiguë d'un diabète qui se révèle aujourd'hui. C'est une urgence médicale qui nécessite une hospitalisation immédiate en soins intensifs. Nous allons corriger votre déshydratation, votre acidose et votre glycémie avec de l'insuline. Le pronostic est excellent avec un traitement rapide. Il s'agit très probablement d'un diabète de type 1, ce qui nécessitera un traitement par insuline à vie."
+        },
+        {
+          "id": "c2",
+          "text": "Questions de la patiente et de la mère",
+          "content": "[Est-ce que c'est grave ?]\n[Pourquoi elle a développé un diabète ?]\n[Va-t-elle devoir prendre de l'insuline toute sa vie ?]\n[Pourra-t-elle mener une vie normale ?]"
+        },
+        {
+          "id": "c3",
+          "text": "Réponses adaptées",
+          "exemplesPhrases": [
+            "C'est une situation sérieuse mais le traitement est très efficace. Avec une prise en charge rapide, la récupération est complète.",
+            "Le diabète de type 1 est une maladie auto-immune où le pancréas ne produit plus d'insuline. Ce n'est pas lié à l'alimentation ou au mode de vie.",
+            "Oui, l'insuline sera nécessaire à vie car le pancréas ne peut plus en produire. Mais les traitements modernes permettent une excellente qualité de vie.",
+            "Absolument, avec un bon suivi et une bonne gestion de l'insuline, elle pourra faire tout ce qu'elle souhaite : études, sport, voyages, enfants."
+          ]
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "images": [
+      {
+        "title": "Définitions et diagnostic du diabète",
+        "description": "Critères diagnostiques du diabète selon glycémie à jeun, post-prandiale et HbA1c",
+        "data": "grilles_generees/html/images/SMIG/SMIG-3-img1-Définitions et diagnostic du diabète.jpg"
+      },
+      {
+        "title": "Mécanismes physiopathologiques des décompensations diabétiques",
+        "description": "Schéma illustrant les voies métaboliques dans l'acidocétose et la décompensation hyperosmolaire",
+        "data": "grilles_generees/html/images/SMIG/SMIG-3-img2-Mécanismes physiopathologiques des décompensations diabétiques.jpg"
+      },
+      {
+        "title": "Tableau comparatif des décompensations acido-cétosique et hyperosmolaire",
+        "description": "Comparaison DKA vs HHS : glycémie, pH, osmolalité, corps cétoniques",
+        "data": "grilles_generees/html/images/SMIG/SMIG-3-img3-Tableau comparatif des décompensations acido-cétosique et hyperosmolaire.jpg"
+      }
+    ],
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour la patiente standardisée - Mlle K., acidocétose diabétique",
+      "nom": "Mademoiselle K.",
+      "age": "18 ans",
+      "contexte": "Policlinique en urgence, accompagnée de sa mère",
+      "motifConsultation": {
+        "plaintePrincipale": "J'ai très soif et mal au ventre depuis 2 jours",
+        "autreChose": "Je suis très fatiguée, j'arrive à peine à rester éveillée"
+      },
+      "histoireActuelle": {
+        "symptomesPrincipaux": [
+          "Douleurs abdominales diffuses depuis 48h",
+          "Nausées importantes",
+          "Soif intense, demande spontanément de l'eau",
+          "Fatigue extrême, somnolence",
+          "Perte de 5 kg en 2 mois"
+        ],
+        "contextePsychosocial": [
+          "Inquiétude de la mère très présente",
+          "Étudiante, stress des examens",
+          "Mange beaucoup moins depuis 2 mois",
+          "Se lève souvent la nuit pour uriner"
+        ]
+      },
+      "simulation": {
+        "attitude": [
+          "Très fatiguée, somnole par moments",
+          "Demande spontanément à boire",
+          "S'exprime difficilement, épuisée",
+          "Respiration ample et profonde",
+          "Se tient le ventre"
+        ],
+        "durantExamen": [
+          "Hypotension orthostatique à simuler",
+          "Vertige en position assise",
+          "Muqueuses sèches visibles",
+          "Douleur à la palpation abdominale",
+          "Pas de défense abdominale"
+        ]
+      },
+      "antecedents": {
+        "medicaux": "Aucun antécédent particulier",
+        "chirurgicaux": "Aucun",
+        "familiaux": "À préciser si demandé",
+        "allergies": "Aucune"
+      },
+      "medicaments": {
+        "actuels": ["Contraception orale uniquement"],
+        "observance": "Bonne"
+      },
+      "habitudes": {
+        "alimentation": "Mange beaucoup moins depuis 2 mois",
+        "hydratation": "Boit énormément ces derniers temps",
+        "miction": "Se lève 3-4 fois par nuit pour uriner",
+        "poids": "Perte de 5 kg en 2 mois sans régime"
+      },
+      "inquietudes": {
+        "principales": [
+          "Peur de ce qui lui arrive",
+          "Incompréhension de la perte de poids",
+          "Angoisse de la mère",
+          "Peur d'une maladie grave"
+        ],
+        "questions": [
+          "Qu'est-ce que j'ai docteur ?",
+          "Pourquoi je perds du poids ?",
+          "C'est grave ?",
+          "Je vais devoir rester à l'hôpital ?"
+        ]
+      }
+    },
+    "informationsExpert": {
+      "titre": "Guide pour l'expert évaluateur - Acidocétose diabétique",
+      "dossierMedical": "Patiente de 18 ans, diabète inaugural avec acidocétose, glycémie 27 mmol/L, pH 7.23, cétones +++",
+      "pointsCles": [
+        "Reconnaissance du syndrome cardinal diabétique (3P + amaigrissement)",
+        "Identification des signes de gravité (déshydratation, acidose)",
+        "Indication d'hospitalisation urgente",
+        "Interprétation correcte de la gazométrie et calcul du trou anionique",
+        "Calcul de la natrémie corrigée",
+        "Principes de réhydratation et insulinothérapie",
+        "Surveillance des complications (hypokaliémie, œdème cérébral)"
+      ],
+      "pieges": [
+        "Se focaliser uniquement sur les douleurs abdominales",
+        "Oublier de rechercher le syndrome polyuro-polydipsique",
+        "Ne pas reconnaître la respiration de Kussmaul",
+        "Retarder l'hospitalisation",
+        "Oublier la substitution potassique",
+        "Corriger trop rapidement la glycémie ou l'osmolalité",
+        "Ne pas rechercher le facteur déclenchant"
+      ],
+      "rolesInterventions": [
+        "Insister sur la soif intense",
+        "Montrer des signes de déshydratation",
+        "Simuler la somnolence mais rester réveillable",
+        "Respirer de façon ample et profonde",
+        "Montrer l'hypotension orthostatique",
+        "La mère exprime son inquiétude"
+      ]
+    },
+    "theoriePratique": {
+      "titre": "Rappels théoriques - Décompensations diabétiques",
+      "sections": [
+        {
+          "titre": "Critères diagnostiques du diabète",
+          "contenu": "Le diabète est défini par une glycémie à jeun ≥ 7 mmol/L, une glycémie ≥ 11.1 mmol/L à n'importe quel moment avec symptômes, ou une HbA1c ≥ 6.5%",
+          "points": [
+            "Diabète type 1 : destruction auto-immune des cellules β (85% avec auto-anticorps)",
+            "Diabète type 2 : résistance à l'insuline + déficit relatif de sécrétion",
+            "LADA : diabète auto-immun de l'adulte, évolution lente",
+            "MODY : formes monogéniques, transmission autosomique dominante",
+            "Diabète secondaire : pancréatite, hémochromatose, Cushing"
+          ]
+        },
+        {
+          "titre": "Physiopathologie de l'acidocétose diabétique",
+          "contenu": "Déficit absolu en insuline → hyperglycémie + lipolyse → cétogenèse → acidose métabolique",
+          "points": [
+            "Hyperglycémie : gluconéogenèse + glycogénolyse + ↓ utilisation périphérique",
+            "Cétogenèse : lipolyse → acides gras → β-hydroxybutyrate + acétoacétate",
+            "Diurèse osmotique → déshydratation + pertes électrolytiques",
+            "Acidose métabolique à trou anionique augmenté",
+            "Respiration de Kussmaul : compensation respiratoire de l'acidose"
+          ]
+        },
+        {
+          "titre": "Comparaison acidocétose vs hyperosmolaire",
+          "contenu": "Deux formes de décompensation diabétique aiguë avec mécanismes et présentations différents",
+          "points": [
+            "ACIDOCÉTOSE (DKA) : diabète type 1, déficit absolu insuline, pH < 7.3",
+            "HYPEROSMOLAIRE (HHS) : diabète type 2, déficit relatif, osmolalité > 320",
+            "Glycémie : 13-30 mmol/L (DKA) vs > 33 mmol/L (HHS)",
+            "Cétones : +++ (DKA) vs traces (HHS)",
+            "Mortalité : 1-5% (DKA) vs 10-20% (HHS)",
+            "Facteurs déclenchants : infection, arrêt insuline, IDM, grossesse"
+          ]
+        },
+        {
+          "titre": "Calculs essentiels",
+          "contenu": "Formules importantes pour la prise en charge",
+          "points": [
+            "Trou anionique = Na - (HCO3 + Cl), normal 12 ± 4",
+            "Natrémie corrigée = Na mesuré + 0.3 × (glycémie - 5)",
+            "Osmolalité = 2 × Na + glucose + urée",
+            "Déficit hydrique = 0.6 × poids × (Na patient/140 - 1)",
+            "Déficit K+ total souvent 3-5 mmol/kg malgré K+ normal/élevé"
+          ]
+        },
+        {
+          "titre": "Principes de traitement",
+          "contenu": "Approche systématique de la prise en charge de l'acidocétose",
+          "points": [
+            "RÉHYDRATATION : priorité absolue, NaCl 0.9% 15-20 mL/kg/h initial",
+            "INSULINE : bolus 0.1-0.15 U/kg puis perfusion 0.1 U/kg/h",
+            "POTASSIUM : substitution précoce si K < 5.3 mmol/L",
+            "MONITORING : glycémie, ionogramme, gazométrie horaires",
+            "TRANSITION : insuline SC quand pH > 7.3 et patient mange",
+            "CAUSE : toujours rechercher et traiter le facteur déclenchant"
+          ]
+        }
+      ],
+      "rappelsTherapeutiques": [
+        "Réhydratation : NaCl 0.9% initial, puis selon natrémie corrigée (0.45% si > 135)",
+        "Insuline : Actrapid IV 0.1 U/kg bolus puis 0.1 U/kg/h, objectif baisse 2.5-4 mmol/L/h",
+        "Glucose : ajouter G5% quand glycémie < 14 mmol/L tout en maintenant l'insuline",
+        "Potassium : 20-30 mmol/h si K 3.3-5.3, 40 mmol/h si K < 3.3",
+        "Bicarbonates : seulement si pH < 6.9 (controversé)",
+        "Phosphate : substituer si < 0.3 mmol/L",
+        "Antibiotiques : si infection documentée ou suspectée"
+      ],
+      "examensComplementaires": [
+        "Glycémie capillaire : diagnostic rapide, puis horaire",
+        "Gazométrie artérielle : pH, HCO3, compensation respiratoire",
+        "Ionogramme complet : Na, K, Cl, calcul trou anionique",
+        "Fonction rénale : créatinine, urée (souvent élevées par déshydratation)",
+        "Corps cétoniques : sang (β-hydroxybutyrate) > urines (acétoacétate)",
+        "NFS, CRP : recherche infection déclenchante",
+        "ECG : surveillance hypokaliémie",
+        "Bilan inaugural : anti-GAD, anti-IA2, C-peptide, HbA1c"
+      ]
+    }
+  }
+}

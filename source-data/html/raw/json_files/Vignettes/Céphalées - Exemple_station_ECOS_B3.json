@@ -1,0 +1,413 @@
+{
+  "title": "Céphalées - Exemple station ECOS B3",
+  "type": "ecos-standard",
+  "context": {
+    "setting": "Cabinet du Dr Rochat, stagiaire BMed3",
+    "patient": "Monsieur Clerc, 40 ans, vient consulter pour des céphalées",
+    "vitals": {
+      "ta": "120/70 mmHg",
+      "fc": "68 bpm",
+      "temperature": "36.8°C"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "title": "Anamnèse",
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Introduction et salutation",
+          "details": [
+            "Se présenter avec nom et fonction",
+            "Demander pourquoi le patient consulte aujourd'hui"
+          ]
+        },
+        {
+          "id": "a2",
+          "text": "Exploration de la plainte principale",
+          "details": [
+            "Localisation de la douleur [dans toute la tête]",
+            "Description de la douleur [sensation de serrement, comme un casque]",
+            "Intensité de la douleur [4 à 6 sur 10]",
+            "Durée des crises [1 heure à 5-6 heures]",
+            "Début des symptômes [il y a 2 mois environ]",
+            "Fréquence [3 à 4 fois par semaine, souvent en fin de semaine]",
+            "Première occurrence [première fois que c'est autant]"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Facteurs modulants",
+          "details": [
+            "Facteurs soulageants [sommeil, lavette d'eau fraîche]",
+            "Facteurs aggravants [pas spécialement]",
+            "Médicaments pris [Dafalgan de temps en temps, diminue un peu la douleur]",
+            "Facteur déclenchant [ne voit pas]"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Symptômes associés - Exclusion migraine",
+          "details": [
+            "Nausées ou vomissements [non, pas spécialement]",
+            "Problèmes de vision [non]",
+            "Photophobie ou phonophobie [non plus]"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Symptômes associés - Exclusion céphalée en grappe",
+          "details": [
+            "Yeux ou nez qui coulent ou gonflent [non, rien remarqué de pareil]"
+          ]
+        },
+        {
+          "id": "a6",
+          "text": "Symptômes associés - Exclusion méningite",
+          "details": [
+            "Fièvre ou frissons [non, pas de fièvre]",
+            "Douleurs dans la nuque [non]"
+          ]
+        },
+        {
+          "id": "a7",
+          "text": "Symptômes neurologiques",
+          "details": [
+            "Sensations bizarres/fourmillements [non]",
+            "Faiblesse dans un bras ou une jambe [non plus]"
+          ]
+        },
+        {
+          "id": "a8",
+          "text": "Anamnèse générale",
+          "details": [
+            "État de santé général [en bonne santé]",
+            "Médicaments habituels [non, à part les Dafalgan]",
+            "Allergies [rhume des foins au printemps]"
+          ]
+        },
+        {
+          "id": "a9",
+          "text": "Facteur de stress",
+          "patientComment": "Oui, c'est assez chargé au travail. Quand arrive la fin de la semaine, je suis à plat !"
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "title": "Examen clinique",
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Hygiène des mains",
+          "details": [
+            "Désinfection avant l'examen",
+            "Désinfection après l'examen"
+          ]
+        },
+        {
+          "id": "e2",
+          "text": "Status neurologique - Nerfs crâniens",
+          "details": [
+            "Pupilles isocores, isoréactives [normal]",
+            "Fond d'œil [normal]",
+            "Oculomotricité [normale]",
+            "Sensibilité de la face [normale]",
+            "Testing des muscles de la face [normal]"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Status neurologique - Sensibilité et force",
+          "details": [
+            "Sensibilité périphérique [normale et symétrique]",
+            "Force aux 4 membres [normale et symétrique]"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Status neurologique - Réflexes",
+          "patientComment": "Réflexes aux 4 membres normaux et symétriques"
+        },
+        {
+          "id": "e5",
+          "text": "Recherche de signes méningés",
+          "details": [
+            "Raideur de nuque [pas de raideur]",
+            "Test de Kernig [pas de douleurs]",
+            "Test de Brudzinski [pas de douleurs]"
+          ]
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "title": "Management",
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Communication du diagnostic principal",
+          "patientComment": "Je pense que vous avez des maux de tête qui ne présentent pas de signes de gravité. On appelle cela des céphalées de tension.",
+          "exemplesPhrases": [
+            "\"Cela peut apparaître dans des périodes de stress ou de fatigue, par exemple.\"",
+            "\"D'après les informations que vous m'avez données et mon examen clinique, vos maux de tête correspondent à des céphalées de tension.\""
+          ]
+        },
+        {
+          "id": "m2",
+          "text": "Communication des diagnostics différentiels",
+          "details": [
+            "Migraine [vous ne présentez pas les caractéristiques de cette maladie]",
+            "Méningite [d'après moi, vous ne présentez pas les caractéristiques de cette maladie]"
+          ],
+          "ddSection": {
+            "title": "Diagnostics différentiels à considérer",
+            "categories": [
+              {
+                "name": "Diagnostic principal",
+                "items": [
+                  {
+                    "text": "Céphalées de tension",
+                    "cause": "Arguments POUR:\n\t□ Sensation de serrement en casque\n\t□ Intensité modérée (4-6/10)\n\t□ Pas de signes d'accompagnement\n\t□ Lien avec le stress professionnel\n\t□ Survenue en fin de semaine\n\t□ Amélioration avec le repos",
+                    "test": "→ Traitement symptomatique par antalgiques, gestion du stress"
+                  }
+                ]
+              },
+              {
+                "name": "Diagnostics différentiels écartés",
+                "items": [
+                  {
+                    "text": "Migraine",
+                    "cause": "Arguments CONTRE:\n\t□ Pas de caractère pulsatile\n\t□ Pas de latéralisation\n\t□ Pas de nausées/vomissements\n\t□ Pas de photophobie/phonophobie\n\t□ Pas d'aura visuelle",
+                    "test": "→ Critères diagnostiques de migraine non remplis"
+                  },
+                  {
+                    "text": "Céphalée en grappe (cluster headache)",
+                    "cause": "Arguments CONTRE:\n\t□ Pas de douleur orbitaire/temporale\n\t□ Durée > 3 heures\n\t□ Pas de signes autonomiques (larmoiement, rhinorrhée)\n\t□ Pas de caractère strictement unilatéral",
+                    "test": "→ Pathologie rare, présentation atypique"
+                  },
+                  {
+                    "text": "Méningite",
+                    "cause": "Arguments CONTRE:\n\t□ Pas de fièvre\n\t□ Pas de raideur de nuque\n\t□ Tests de Kernig et Brudzinski négatifs\n\t□ Évolution sur 2 mois",
+                    "test": "→ Absence de syndrome méningé"
+                  },
+                  {
+                    "text": "Hémorragie sous-arachnoïdienne",
+                    "cause": "Arguments CONTRE:\n\t□ Pas de début brutal en coup de tonnerre\n\t□ Pas d'irradiation occipitale\n\t□ Évolution chronique sur 2 mois\n\t□ Patient jeune sans facteurs de risque",
+                    "test": "→ Présentation incompatible avec HSA"
+                  },
+                  {
+                    "text": "AVC",
+                    "cause": "Arguments CONTRE:\n\t□ Patient jeune (40 ans)\n\t□ Pas de déficit neurologique focal\n\t□ Examen neurologique normal\n\t□ Évolution chronique",
+                    "test": "→ Très peu probable à cet âge sans facteurs de risque"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m3",
+          "text": "Plan de prise en charge",
+          "patientComment": "Je vais en parler avec le Dr Rochat et nous reviendrons vous voir pour discuter de la suite.",
+          "exemplesPhrases": [
+            "\"Nous allons discuter des options thérapeutiques adaptées à votre situation.\"",
+            "\"Il existe plusieurs moyens de soulager ces céphalées de tension.\""
+          ]
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "title": "Clôture",
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Clôture type",
+          "content": "D'après les informations recueillies et l'examen clinique, vous présentez des céphalées de tension, probablement liées au stress professionnel. Il n'y a pas de signes de gravité. Je vais discuter avec le Dr Rochat des options thérapeutiques adaptées à votre situation.",
+          "exemplesPhrases": [
+            "\"Ces maux de tête sont gênants mais ne présentent pas de danger.\"",
+            "\"Avec une prise en charge adaptée, nous devrions pouvoir améliorer votre situation.\""
+          ]
+        },
+        {
+          "id": "c2",
+          "text": "Questions difficiles du patient",
+          "content": "[Est-ce que c'est grave?] [Est-ce que ça peut être une tumeur?] [Combien de temps cela va-t-il durer?]"
+        },
+        {
+          "id": "c3",
+          "text": "Réponse type du candidat",
+          "content": "Non, ce n'est pas grave. L'examen neurologique est complètement normal et les caractéristiques de vos céphalées correspondent à des céphalées de tension, qui sont bénignes. Avec une bonne gestion du stress et un traitement adapté, la situation devrait s'améliorer.",
+          "exemplesPhrases": [
+            "\"Une tumeur donnerait d'autres signes que nous n'avons pas trouvés.\"",
+            "\"L'amélioration dépendra de la gestion du stress et du traitement.\""
+          ]
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "scenarioPatienteStandardisee": {
+      "titre": "Scénario pour le patient simulé",
+      "nom": "Monsieur Clerc",
+      "age": "40 ans",
+      "contexte": "Cabinet du Dr Rochat, consultation pour céphalées",
+      "motifConsultation": {
+        "plaintePrincipale": "J'ai mal à la tête... Cela me gêne vraiment.",
+        "autreChose": "Uniquement pour les maux de tête, mais depuis le temps, ça ne passe pas..."
+      },
+      "histoireActuelle": {
+        "symptomePrincipal": [
+          "Douleur dans toute la tête",
+          "Sensation de serrement, comme un casque",
+          "Intensité variable, entre 4 et 6 sur 10",
+          "Douleur assez constante pendant les crises",
+          "Durée variable : parfois 1 heure, parfois 5-6 heures",
+          "Début il y a 2 mois environ",
+          "Fréquence : 3 à 4 fois par semaine, souvent en fin de semaine",
+          "Première fois que c'est autant"
+        ],
+        "facteursSoulageants": [
+          "Le sommeil - cela part quand j'arrive à m'endormir",
+          "Une lavette d'eau fraîche"
+        ],
+        "facteursAggravants": "Non, pas spécialement",
+        "medicaments": "Dafalgan de temps en temps - fait un peu diminuer la douleur mais pas complètement",
+        "facteurDeclenchant": "Non, je ne vois pas..."
+      },
+      "symptomesAssocies": {
+        "migraine": [
+          "Pas de nausées ou vomissements",
+          "Pas de problèmes de vision (taches noires, filaments lumineux)",
+          "Pas de photophobie ou phonophobie"
+        ],
+        "cephaleeEnGrappe": [
+          "Pas de larmoiement ou rhinorrhée",
+          "Pas de gonflement périorbitaire"
+        ],
+        "meningite": [
+          "Pas de fièvre ou frissons",
+          "Pas de douleurs dans la nuque"
+        ],
+        "signesNeurologiques": [
+          "Pas de sensations bizarres ou fourmillements",
+          "Pas de faiblesse dans les membres"
+        ]
+      },
+      "antecedents": {
+        "medicaux": "Pas de problèmes de santé",
+        "medicaments": "Aucun, à part Dafalgan quand j'ai trop mal",
+        "allergies": "Un peu de rhume des foins au printemps",
+        "familiaux": "Mère : cancer du côlon (opérée). Père : en bonne santé"
+      },
+      "habitudes": {
+        "tabac": "Non, je ne fume pas",
+        "alcool": "Non mentionné",
+        "stress": "Oui, c'est assez chargé au travail. Quand arrive la fin de la semaine, je suis à plat !"
+      },
+      "simulation": {
+        "attitude": [
+          "Patient coopératif",
+          "Peut demander de préciser les questions pas assez claires",
+          "Réponses concises et précises",
+          "Sans détail superflu"
+        ],
+        "durantExamen": [
+          "Examen neurologique normal",
+          "Pas de raideur de nuque",
+          "Tests de Kernig et Brudzinski négatifs"
+        ]
+      },
+      "inquietudes": {
+        "principales": [
+          "Est-ce que c'est grave?",
+          "Est-ce que ça peut être une tumeur?",
+          "Combien de temps cela va-t-il durer?"
+        ]
+      }
+    },
+    "informationsExpert": {
+      "titre": "Instructions pour l'expert évaluateur",
+      "rolesInterventions": [
+        "L'étudiant doit effectuer une anamnèse ciblée sur les céphalées",
+        "L'étudiant doit effectuer un examen clinique ciblé (neurologique)",
+        "L'étudiant doit informer le patient de son hypothèse diagnostique",
+        "L'étudiant doit évoquer deux diagnostics différentiels pertinents"
+      ],
+      "pointsCles": [
+        "Anamnèse structurée avec exploration systématique de la plainte",
+        "Recherche des red flags (méningite, HSA, tumeur)",
+        "Exclusion des diagnostics différentiels principaux (migraine, céphalée en grappe)",
+        "Examen neurologique complet incluant nerfs crâniens et signes méningés",
+        "Communication claire et adaptée au patient",
+        "Empathie et gestion du stress du patient"
+      ],
+      "pieges": [
+        "Perdre du temps sur des questions non pertinentes (antécédents familiaux détaillés)",
+        "Oublier de rechercher les signes méningés",
+        "Ne pas explorer le facteur stress",
+        "Utiliser trop de termes techniques avec le patient",
+        "Ne pas structurer l'anamnèse",
+        "Oublier l'hygiène des mains"
+      ],
+      "evaluationCommunication": [
+        "Empathie avec le patient",
+        "Structure de l'anamnèse",
+        "Termes compréhensibles pour le patient",
+        "Expression non-verbale adéquate (posture, silences, contact visuel)"
+      ]
+    },
+    "theoriePratique": {
+      "titre": "Points théoriques et pratiques",
+      "sections": [
+        {
+          "titre": "Approche des céphalées en médecine générale",
+          "contenu": "Les céphalées sont un motif de consultation fréquent. L'approche doit être systématique pour identifier les red flags et orienter le diagnostic.",
+          "points": [
+            "Toujours rechercher les signes de gravité (début brutal, déficit neurologique, fièvre)",
+            "Distinguer céphalées primaires (90%) et secondaires (10%)",
+            "L'anamnèse est l'élément clé du diagnostic"
+          ]
+        },
+        {
+          "titre": "Céphalées de tension",
+          "contenu": "Les céphalées de tension sont les plus fréquentes des céphalées primaires. Elles sont souvent liées au stress et à la fatigue.",
+          "points": [
+            "Sensation de serrement bilatéral en casque",
+            "Intensité légère à modérée",
+            "Pas de signes d'accompagnement (nausées, photophobie)",
+            "Durée de 30 minutes à 7 jours",
+            "Lien fréquent avec le stress psychosocial"
+          ]
+        },
+        {
+          "titre": "Red flags des céphalées",
+          "contenu": "Certains signes doivent alerter et faire rechercher une cause secondaire potentiellement grave.",
+          "points": [
+            "Début brutal en coup de tonnerre (HSA)",
+            "Céphalée nouvelle après 50 ans",
+            "Changement de pattern chez un migraineux",
+            "Signes neurologiques focaux",
+            "Fièvre, raideur de nuque",
+            "Céphalée progressive s'aggravant"
+          ]
+        }
+      ],
+      "rappelsTherapeutiques": [
+        "Antalgiques simples (paracétamol, AINS) en première intention",
+        "Éviter l'abus médicamenteux (> 15 jours/mois)",
+        "Techniques de relaxation et gestion du stress",
+        "Physiothérapie cervicale si composante musculaire",
+        "Prophylaxie (amitriptyline) si > 15 jours/mois"
+      ],
+      "examensComplementaires": [
+        "Pas d'imagerie systématique pour les céphalées de tension typiques",
+        "IRM cérébrale si red flags ou examen neurologique anormal",
+        "CT cérébral en urgence si suspicion d'HSA",
+        "Ponction lombaire si méningite suspectée après imagerie normale"
+      ]
+    }
+  }
+}

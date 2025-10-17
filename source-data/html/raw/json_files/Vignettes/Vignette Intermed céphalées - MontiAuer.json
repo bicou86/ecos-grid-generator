@@ -1,0 +1,300 @@
+{
+  "title": "Vignette Intermed céphalées - MontiAuer",
+  "context": {
+    "setting": "Service d'urgences hospitalières",
+    "patient": "Plusieurs cas cliniques de céphalées: 1) M. A avec hémorragie sous-arachnoïdienne, 2) M. D avec migraine, 3) Mme A avec céphalée en grappe, 4) Mme X avec suspicion HSA, 5) Homme 38 ans avec méningite"
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Caractérisation des céphalées - Red flags",
+          "details": [
+            "Début brutal en coup de tonnerre [HSA]",
+            "Céphalées hyperalgiques paroxystiques [> 30 minutes]",
+            "Première céphalée ou différente des habituelles",
+            "Céphalées progressives",
+            "Céphalées avec fièvre [Méningite]",
+            "Céphalées après traumatisme [Sous anticoagulants]"
+          ]
+        },
+        {
+          "id": "a2",
+          "text": "Critères diagnostiques de migraine",
+          "details": [
+            "Au moins 5 crises pour le diagnostic",
+            "Durée 4-72 heures sans traitement",
+            "Caractère pulsatile unilatéral [Temporal G]",
+            "Intensité modérée à sévère",
+            "Photophobie [La lumière dérange]",
+            "Phonophobie [Le bruit énerve]",
+            "Aggravation par l'activité physique"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Critères de céphalée en grappe (cluster)",
+          "details": [
+            "Douleur très violente unilatérale [15 minutes à 3 heures]",
+            "Localisation orbitaire/périorbitaire",
+            "Signes autonomiques ipsilatéraux:",
+            "- Œil rouge et larmoiement",
+            "- Congestion nasale/rhinorrhée",
+            "- Ptosis/myosis (Claude Bernard-Horner)",
+            "Prédominance masculine (3:1)"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Antécédents et facteurs de risque HSA",
+          "details": [
+            "Histoire familiale d'anévrisme [Frère décédé]",
+            "HTA non contrôlée",
+            "Tabagisme",
+            "Âge (pic 50-60 ans)",
+            "Sexe féminin légèrement prédominant",
+            "Polykystose rénale"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Médicaments à risque",
+          "details": [
+            "Anticoagulants [Sintrom - risque hémorragique]",
+            "Antiagrégants [Aspirine cardio]",
+            "Corticoïdes [Prednisone - immunosuppression]",
+            "Lopéramide [Peut causer céphalées]",
+            "Risque de chute sous anticoagulation"
+          ]
+        },
+        {
+          "id": "a6",
+          "text": "Cas de méningite - Homme 38 ans",
+          "details": [
+            "Céphalées depuis la veille",
+            "Difficultés à dormir [Douleurs]",
+            "Comportement bizarre [Incohérent]",
+            "Afébrile [36.4°C]",
+            "Raideur de nuque [En fin de course]"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Examen neurologique - Signes d'alerte",
+          "details": [
+            "Signes de méningisme [Raideur nuque, Kernig, Brudzinski]",
+            "Signes de latéralisation [Plus fréquents si AVC ischémique]",
+            "Troubles de conscience [GCS]",
+            "Palpation artère temporale [Artérite]",
+            "Instabilité en position debout",
+            "Examen des pupilles"
+          ]
+        },
+        {
+          "id": "e2",
+          "text": "Signes autonomiques dans céphalée en grappe",
+          "details": [
+            "Œil rouge ipsilatéral",
+            "Larmoiement",
+            "Rhinorrhée claire",
+            "Congestion nasale",
+            "Syndrome de Claude Bernard-Horner partiel"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "CT cérébral - Interprétation",
+          "details": [
+            "HSA: Hyperdensité dans espaces sous-arachnoïdiens",
+            "Localisation frontale G [Différent de sous-durale en croissant]",
+            "Différent d'épidurale [Forme de lentille]",
+            "CT normal dans 2% des HSA aiguës",
+            "CT normal dans 50% après 5 jours",
+            "Hématome intraparenchymateux volumineux [Cas du patient 79 ans]"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Ponction lombaire si CT normal",
+          "details": [
+            "Xanthochromie [Aspect jaune - hémoglobine/bilirubine]",
+            "Présente après 12h, persiste 2-3 semaines",
+            "Mononucléaires prédominants [Méningite virale]",
+            "Polynucléaires prédominants [Méningite bactérienne]",
+            "Protéines 150-450 mg/L [Normal]",
+            "Glucose > 60% glycémie [Normal]"
+          ]
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Prise en charge selon le diagnostic",
+          "ddSection": {
+            "title": "Diagnostics différentiels et traitement",
+            "categories": [
+              {
+                "name": "Hémorragie sous-arachnoïdienne",
+                "items": [
+                  {
+                    "text": "HSA sur rupture d'anévrisme",
+                    "cause": "70% des HSA:\n\t□ Début brutal en coup de tonnerre\n\t□ Céphalée maximale d'emblée\n\t□ Signes méningés\n\t□ CT: hyperdensité sous-arachnoïdienne\n\t□ ATCD familial (risque x2)",
+                    "test": "→ CT cérébral urgent, PL si CT normal, angio-CT/IRM"
+                  }
+                ]
+              },
+              {
+                "name": "Céphalées primaires",
+                "items": [
+                  {
+                    "text": "Migraine",
+                    "cause": "Critères IHS:\n\t□ ≥5 crises documentées\n\t□ Durée 4-72h\n\t□ Unilatérale pulsatile\n\t□ Photo-phonophobie\n\t□ Nausées/vomissements",
+                    "test": "→ Diagnostic clinique, pas d'imagerie systématique"
+                  },
+                  {
+                    "text": "Céphalée en grappe",
+                    "cause": "Caractéristiques:\n\t□ Douleur unilatérale sévère\n\t□ 15 min à 3h\n\t□ Signes autonomiques ipsilatéraux\n\t□ Agitation motrice\n\t□ Prédominance masculine",
+                    "test": "→ Diagnostic clinique, IRM si première crise"
+                  }
+                ]
+              },
+              {
+                "name": "Méningite/Méningoencéphalite",
+                "items": [
+                  {
+                    "text": "Méningite virale",
+                    "cause": "Arguments POUR:\n\t□ Céphalées progressives\n\t□ Raideur nuque\n\t□ Comportement bizarre\n\t□ LCR: mononucléaires prédominants\n\t□ Protéines peu élevées",
+                    "test": "→ PL, PCR multiplex viral du LCR"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Traitement aigu des céphalées en grappe",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Traitement de la crise",
+                "content": "• Oxygénothérapie 100% 12-15L/min pendant 15 minutes\n• Sumatriptan 6mg SC ou spray nasal\n• Sprayer dans la narine qui ne coule pas\n• Zolmitriptan nasal 5-10mg"
+              },
+              {
+                "title": "Traitement préventif",
+                "content": "• Vérapamil première ligne (240-960mg/j)\n• Corticoïdes courte durée\n• Lithium en cas d'échec\n• Mélatonine 10mg le soir"
+              }
+            ]
+          }
+        },
+        {
+          "id": "m3",
+          "text": "Traitement de la migraine",
+          "details": [
+            "AINS ou paracétamol en première intention",
+            "Triptans si échec (ne pas utiliser d'emblée)",
+            "Antiémétiques si nausées",
+            "Repos dans le noir et le silence",
+            "Prophylaxie si >4 crises/mois"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Gestion de l'urgence - Attitude pratique",
+          "details": [
+            "Interrompre le colloque pour voir le patient",
+            "Évaluation rapide des drapeaux rouges",
+            "Examen clinique ciblé",
+            "CT cérébral si suspicion HSA",
+            "PL si CT normal mais forte suspicion",
+            "Antalgie adaptée au diagnostic"
+          ]
+        },
+        {
+          "id": "m5",
+          "text": "Cas du patient âgé avec AVC hémorragique",
+          "details": [
+            "État général altéré [Cancer métastatique]",
+            "GCS 9-10, hémiplégie droite",
+            "Hématome cérébral massif hémisphère G",
+            "TA 210/125 - HTA maligne",
+            "Discussion soins palliatifs appropriée",
+            "Respect volonté patient/famille"
+          ]
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Messages clés - Red flags céphalées",
+          "content": "• Début brutal = HSA jusqu'à preuve du contraire\n• Premier épisode intense = imagerie\n• Céphalées + fièvre + raideur nuque = méningite\n• Céphalées progressives = processus expansif\n• Changement de pattern = réévaluation\n• Anticoagulation + trauma = CT systématique"
+        },
+        {
+          "id": "c2",
+          "text": "Points diagnostiques importants",
+          "content": "• Migraine: diagnostic après 5 crises, pas aux urgences\n• Céphalée en grappe: traitement O2 100% efficace\n• HSA: CT normal n'exclut pas (2% faux négatifs)\n• PL: xanthochromie pathognomonique d'HSA\n• Méningite virale: mononucléaires, PCR multiplex\n• Timing crucial pour orientation diagnostique"
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "theoriePratique": {
+      "titre": "Approche diagnostique et thérapeutique des céphalées",
+      "sections": [
+        {
+          "titre": "Classification internationale des céphalées (ICHD-3)",
+          "points": [
+            "Céphalées primaires: migraine, tension, cluster, autres",
+            "Céphalées secondaires: trauma, vasculaire, infection, substances",
+            "Névralgies crâniennes et douleurs faciales",
+            "Importance des critères temporels et associés"
+          ]
+        },
+        {
+          "titre": "Imagerie dans les céphalées",
+          "contenu": "CT cérébral sans contraste: gold standard pour HSA aiguë (sensibilité >95% dans les 6h). IRM avec séquences FLAIR et T2* plus sensible après 5 jours. Angio-CT ou angio-IRM pour recherche anévrisme. Pas d'imagerie systématique pour céphalées primaires typiques."
+        },
+        {
+          "titre": "Analyse du LCR",
+          "points": [
+            "Aspect normal: clair, eau de roche",
+            "Xanthochromie: jaune (bilirubine après 12h)",
+            "Cellules: <5/mm³ normal",
+            "Protéines: 150-450 mg/L",
+            "Glucose: >60% glycémie",
+            "PCR multiplex pour virus/bactéries"
+          ]
+        }
+      ],
+      "rappelsTherapeutiques": [
+        "O2 100% 12-15L/min: traitement de choix céphalée en grappe",
+        "Triptans: CI si maladie vasculaire, HTA non contrôlée",
+        "AINS: première ligne migraine légère-modérée",
+        "Antiémétiques: métoclopramide 10mg IM/IV",
+        "Morphiniques: éviter dans céphalées primaires",
+        "Corticoïdes: artérite temporale, cluster en pont"
+      ],
+      "examensComplementaires": [
+        "CT cérébral: urgence si red flags",
+        "PL: si suspicion méningite ou HSA avec CT normal",
+        "IRM cérébrale: si céphalées atypiques persistantes",
+        "VS/CRP: si >50 ans (artérite temporale)",
+        "Angio-CT/IRM: recherche anévrisme, dissection",
+        "EEG: inutile sauf si suspicion épilepsie"
+      ]
+    }
+  }
+}

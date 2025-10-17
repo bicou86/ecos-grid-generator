@@ -1,0 +1,531 @@
+{
+  "title": "BBN - Limitation thérapeutique cancer",
+  "context": {
+    "setting": "Service d'oncologie, consultation de suivi",
+    "patient": "M. Pierre Moreau, 68 ans, retraité, accompagné de sa fille, vient pour les résultats du bilan de réévaluation de son cancer pulmonaire après 6 mois de chimiothérapie",
+    "vitals": {
+      "ta": "148/85 mmHg",
+      "fc": "92 bpm",
+      "fr": "22/min",
+      "temperature": "37.1°C"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "title": "Environnement et Perception (EPICES)",
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Préparer l'environnement pour annonce difficile",
+          "details": [
+            "Cadre approprié [Bureau calme, intimité préservée]",
+            "Temps suffisant [Consultation longue prévue]",
+            "Présence famille [Fille accompagnatrice]",
+            "Support émotionnel [Mouchoirs, siège confortable]",
+            "Documents disponibles [Scanner, analyses récentes]"
+          ],
+          "exemplesPhrases": [
+            "\"J'ai prévu du temps pour pouvoir bien discuter\"",
+            "\"Je suis content que votre fille soit là avec vous\""
+          ]
+        },
+        {
+          "id": "a2",
+          "text": "Évaluer la perception de l'évolution",
+          "details": [
+            "Ressenti subjectif [Je me sens plus fatigué]",
+            "Attentes exprimées [J'espère que ça marche]",
+            "ObservationsPersonnelles [Toux qui a repris]",
+            "Inquiétudes [Quelque chose ne va pas?]",
+            "Connaissances traitement [Je sais que ce n'est pas curatif]"
+          ],
+          "patientComment": "Je me sens plus fatigué ces dernières semaines... la toux a repris",
+          "exemplesPhrases": [
+            "\"Comment vous sentez-vous depuis notre dernière consultation?\"",
+            "\"Qu'est-ce que vous espérez de ces résultats?\""
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Évaluer l'invitation à recevoir l'information",
+          "details": [
+            "Niveau information souhaité [Vérité complète ou partielle?]",
+            "Modalité préférée [Direct ou progressif?]",
+            "Soutien désiré [Avec fille ou discussion privée?]",
+            "Préparation émotionnelle [Prêt à entendre mauvaises nouvelles?]",
+            "Questions prioritaires [Qu'est-ce qui vous préoccupe le plus?]"
+          ],
+          "exemplesPhrases": [
+            "\"Voulez-vous que je vous explique tous les détails?\"",
+            "\"Préférez-vous que votre fille reste pour la discussion?\""
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Identifier les ressources et valeurs",
+          "details": [
+            "Soutien familial [Fille très présente, fils à l'étranger]",
+            "Valeurs personnelles [Qualité de vie prioritaire]",
+            "Croyances spirituelles [Foi catholique importante]",
+            "Expériences antérieures [Épouse décédée d'un cancer]",
+            "Projets restants [Voir petit-fils grandir]"
+          ],
+          "patientComment": "Ma fille s'occupe très bien de moi... j'aimerais voir grandir mon petit-fils"
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "title": "Connaissances - Information sur l'évolution",
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Annoncer la progression de la maladie",
+          "details": [
+            "Signal d'alerte [Les résultats montrent une évolution]",
+            "Constat objectif [Le scanner montre que la maladie progresse]",
+            "Information claire [La chimiothérapie n'arrête plus la progression]",
+            "Pause respectée [Laisser temps d'intégration]",
+            "Vérification compréhension [Comprenez-vous ce que cela signifie?]"
+          ],
+          "exemplesPhrases": [
+            "\"Les examens montrent que la maladie évolue malgré le traitement\"",
+            "\"La chimiothérapie ne contrôle plus suffisamment la progression\""
+          ]
+        },
+        {
+          "id": "e2",
+          "text": "Expliquer la limitation thérapeutique actuelle",
+          "details": [
+            "Épuisement option [Cette chimiothérapie n'est plus efficace]",
+            "Alternatives limitées [Options thérapeutiques restreintes]",
+            "Critères scientifiques [Selon standards oncologiques]",
+            "Timing [Arrêt traitement agressif approprié]",
+            "Transition [Orientation vers soins palliatifs]"
+          ],
+          "ddSection": {
+            "title": "Évolution tumorale et options thérapeutiques",
+            "categories": [
+              {
+                "name": "Progression documentée",
+                "items": [
+                  {
+                    "text": "Augmentation masse tumorale",
+                    "cause": "Imagerie comparative:\n\t□ Croissance lésions existantes\n\t□ Nouvelles métastases hépatiques\n\t□ Progression nodulaire médiastinale",
+                    "test": "→ Scanner thoraco-abdominal"
+                  },
+                  {
+                    "text": "Altération état général",
+                    "cause": "Critères cliniques:\n\t□ Performance status dégradé\n\t□ Perte de poids significative\n\t□ Fatigue croissante",
+                    "test": "→ Évaluation fonctionnelle"
+                  }
+                ]
+              },
+              {
+                "name": "Limitations thérapeutiques",
+                "items": [
+                  {
+                    "text": "Chimiothérapie de 2ème ligne",
+                    "cause": "Options limitées:\n\t□ Efficacité réduite attendue\n\t□ Toxicité importante\n\t□ Bénéfice/risque défavorable",
+                    "test": "→ Discussion multidisciplinaire"
+                  },
+                  {
+                    "text": "Soins palliatifs",
+                    "cause": "Objectifs adaptés:\n\t□ Contrôle symptômes\n\t□ Qualité de vie prioritaire\n\t□ Accompagnement personnalisé",
+                    "test": "→ Équipe de soins palliatifs"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "e3",
+          "text": "Présenter les nouvelles priorités de soins",
+          "details": [
+            "Objectifs redéfinis [Confort et qualité de vie]",
+            "Soins palliatifs [Prise en charge globale]",
+            "Contrôle symptômes [Douleur, dyspnée, fatigue]",
+            "Maintien autonomie [Aussi longtemps que possible]",
+            "Accompagnement [Patient et famille]"
+          ],
+          "exemplesPhrases": [
+            "\"Nous allons maintenant nous concentrer sur votre confort\"",
+            "\"L'objectif est de préserver au mieux votre qualité de vie\""
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Aborder la question du pronostic",
+          "details": [
+            "Information progressive [Si patient demande]",
+            "Incertitude assumée [Difficile de prédire exactement]",
+            "Ordre de grandeur [Mois plutôt qu'années]",
+            "Variabilité individuelle [Chaque situation unique]",
+            "Focus sur présent [Profiter du temps actuel]"
+          ],
+          "patientComment": "Combien de temps il me reste docteur?",
+          "exemplesPhrases": [
+            "\"Il est difficile de donner un délai précis\"",
+            "\"Concentrons-nous sur comment bien vivre le temps présent\""
+          ]
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "title": "Empathie et Stratégies d'accompagnement",
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Manifester empathie face à la détresse",
+          "details": [
+            "Reconnaissance émotions [Je vois que c'est très dur]",
+            "Légitimation tristesse [Il est normal d'être bouleversé]",
+            "Présence authentique [Proximité, contact visuel]",
+            "Respect silence [Laisser place aux émotions]",
+            "Soutien inconditionnel [Nous restons avec vous]"
+          ],
+          "exemplesPhrases": [
+            "\"Je comprends que cette nouvelle soit très difficile\"",
+            "\"Il est tout à fait normal d'être triste et en colère\""
+          ]
+        },
+        {
+          "id": "m2",
+          "text": "Gérer les réactions face à l'échec thérapeutique",
+          "details": [
+            "Désespoir [C'est fini, il n'y a plus rien à faire]",
+            "Colère [Pourquoi arrêter maintenant?]",
+            "Déni [Il doit y avoir autre chose]",
+            "Culpabilité [J'aurais dû faire autrement]",
+            "Acceptance [Je comprends, docteur]"
+          ],
+          "patientComment": "Mais docteur, il doit bien y avoir autre chose à essayer?",
+          "exemplesPhrases": [
+            "\"Nous avons exploré toutes les options raisonnables\"",
+            "\"Arrêter un traitement n'est pas abandonner\""
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Redéfinir les objectifs de soins",
+          "details": [
+            "Qualité prioritaire [Mieux vivre plutôt que vivre plus]",
+            "Autonomie [Maintenir indépendance possible]",
+            "Relations [Temps de qualité avec proches]",
+            "Projets adaptés [Réalisables et significatifs]",
+            "Spiritual [Répondre aux besoins spirituels]"
+          ],
+          "ddSection": {
+            "title": "Soins palliatifs - Approche globale",
+            "categories": [
+              {
+                "name": "Contrôle symptômes",
+                "items": [
+                  {
+                    "text": "Gestion douleur",
+                    "cause": "Approche multimodale:\n\t□ Antalgiques adaptés\n\t□ Radiothérapie palliative\n\t□ Techniques non médicamenteuses",
+                    "test": "→ Évaluation douleur régulière"
+                  },
+                  {
+                    "text": "Dyspnée",
+                    "cause": "Traitement symptomatique:\n\t□ Oxygénothérapie si nécessaire\n\t□ Morphine à faible dose\n\t□ Kinésithérapie respiratoire",
+                    "test": "→ Adaptation selon besoin"
+                  }
+                ]
+              },
+              {
+                "name": "Accompagnement psychosocial",
+                "items": [
+                  {
+                    "text": "Soutien patient",
+                    "cause": "Aide spécialisée:\n\t□ Psychologue en soins palliatifs\n\t□ Aumônier si souhaité\n\t□ Assistante sociale",
+                    "test": "→ Selon besoins exprimés"
+                  },
+                  {
+                    "text": "Soutien famille",
+                    "cause": "Accompagnement proches:\n\t□ Information et formation\n\t□ Soutien émotionnel\n\t□ Aide pratique quotidienne",
+                    "test": "→ Réunions famille si souhaité"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m4",
+          "text": "Planifier les soins à domicile ou institution",
+          "details": [
+            "Préférences lieu [Domicile vs institution]",
+            "Équipe soins palliatifs [Médecin, infirmière, psychologue]",
+            "Aides techniques [Matériel médical nécessaire]",
+            "Formation famille [Gestes de base, contacts urgence]",
+            "Plan urgence [Que faire en cas de crise?]"
+          ],
+          "exemplesPhrases": [
+            "\"Où souhaiteriez-vous être suivi maintenant?\"",
+            "\"Nous organisons tout pour que vous soyez bien accompagné\""
+          ]
+        },
+        {
+          "id": "m5",
+          "text": "Aborder les questions de fin de vie",
+          "details": [
+            "Directives anticipées [Si souhaite en parler]",
+            "Personne de confiance [Désignation si pas fait]",
+            "Peurs exprimées [Souffrance, solitude, indignité]",
+            "Rassurances [Prise en charge optimale douleur]",
+            "Temps qualité [Maintenir liens familiaux]"
+          ],
+          "patientComment": "J'ai peur de souffrir... et d'être un poids pour ma fille"
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Synthèse et réorganisation des priorités",
+          "content": "• Résumer la transition vers soins palliatifs\n• Confirmer compréhension des nouveaux objectifs\n• Rassurer sur continuité de l'accompagnement\n• Valider plan de soins adapté aux souhaits\n• Confirmer soutien famille et équipe",
+          "exemplesPhrases": [
+            "\"Nous passons maintenant à un autre type d'accompagnement\"",
+            "\"L'objectif est votre bien-être et celui de votre famille\""
+          ]
+        },
+        {
+          "id": "c2",
+          "text": "Questions difficiles du patient et famille",
+          "content": "[Combien de temps il me reste exactement?]\n[Est-ce que je vais souffrir à la fin?]\n[Comment ma fille va-t-elle supporter?]\n[Ai-je le droit d'arrêter de me battre?]\n[Vais-je mourir seul?]\n[Comment annoncer à mon petit-fils?]",
+          "exemplesPhrases": [
+            "\"Il est impossible de donner une date précise\"",
+            "\"Nous ferons tout pour éviter la souffrance\"",
+            "\"Vous ne serez jamais seul, nous vous accompagnons\""
+          ]
+        },
+        {
+          "id": "c3",
+          "text": "Organisation concrète du suivi palliatif",
+          "content": "• Consultation soins palliatifs programmée (48h)\n• Coordination médecin traitant - équipe spécialisée\n• Numéro d'urgence 24h/24 pour famille\n• Matériel médical organisé si domicile\n• Formation fille aux soins de base\n• Rendez-vous psychologue si souhaité",
+          "exemplesPhrases": [
+            "\"L'équipe de soins palliatifs prend le relais dès demain\"",
+            "\"Vous aurez toujours quelqu'un à contacter en cas de besoin\"",
+            "\"Nous organisons tout pour que vous soyez serein chez vous\""
+          ]
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "images": [
+      {
+        "id": "evolution_cancer_scanner",
+        "title": "Scanner thoracique montrant progression tumorale",
+        "description": "Images comparatives scanner avant/après chimiothérapie montrant progression des lésions pulmonaires et nouvelles métastases",
+        "filename": "bbn/evolution-cancer-scanner.jpg"
+      },
+      {
+        "id": "soins_palliatifs_schema",
+        "title": "Organisation des soins palliatifs",
+        "description": "Schéma de l'équipe multidisciplinaire de soins palliatifs et coordination des intervenants",
+        "filename": "bbn/soins-palliatifs-organisation.jpg"
+      },
+      {
+        "id": "accompagnement_fin_vie",
+        "title": "Accompagnement en fin de vie",
+        "description": "Infographie sur les différents aspects de l'accompagnement : médical, psychologique, social, spirituel",
+        "filename": "bbn/accompagnement-fin-de-vie.jpg"
+      }
+    ],
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour le patient standardisé",
+      "nom": "M. Pierre Moreau",
+      "age": "68 ans",
+      "contexte": "Service d'oncologie, consultation de réévaluation après chimiothérapie",
+      "motifConsultation": {
+        "plaintePrincipale": "Résultats bilan après 6 mois de chimiothérapie",
+        "autreChose": "Fatigue croissante et reprise de la toux depuis 3 semaines"
+      },
+      "histoireActuelle": {
+        "evolutionRecente": [
+          "Diagnostic cancer pulmonaire stade IV il y a 8 mois",
+          "6 cycles de chimiothérapie première ligne",
+          "Fatigue croissante depuis 3 semaines",
+          "Reprise toux avec quelques crachats",
+          "Perte d'appétit et amaigrissement récent"
+        ],
+        "representationSituation": [
+          "Espoir que traitement fonctionne encore",
+          "Inquiétude devant fatigue croissante",
+          "Déni partiel de la gravité",
+          "Peur de devenir un poids pour sa fille",
+          "Volonté de voir grandir petit-fils"
+        ],
+        "contexteFamilial": [
+          "Veuf depuis 4 ans (épouse décédée cancer sein)",
+          "Fille Marie très présente et aidante",
+          "Fils à l'étranger, contact téléphonique",
+          "Petit-fils de 8 ans qu'il adore",
+          "Soutien familial important mais inquiet"
+        ],
+        "valeursPersonnelles": [
+          "Qualité de vie plus importante que quantité",
+          "Foi catholique pratiquante modérée",
+          "Indépendance et dignité importantes",
+          "Famille priorité absolue",
+          "Acceptation progressive de sa condition"
+        ]
+      },
+      "simulation": {
+        "attitude": [
+          "Inquiet mais résigné",
+          "Fatigue visible",
+          "Attentif aux explications",
+          "Émotions contrôlées initialement",
+          "Questionnements pratiques"
+        ],
+        "durantAnnonce": [
+          "Écoute attentive des résultats",
+          "Tristesse visible mais contenue",
+          "Questions sur alternatives possibles",
+          "Préoccupation pour sa fille",
+          "Acceptation progressive"
+        ],
+        "phrasesTypes": [
+          "\"Je me sens plus fatigué ces dernières semaines...\"",
+          "\"Mais docteur, il doit bien y avoir autre chose à essayer?\"",
+          "\"Combien de temps il me reste docteur?\"",
+          "\"J'ai peur de souffrir... et d'être un poids pour ma fille\"",
+          "\"Ma fille s'occupe très bien de moi\"",
+          "\"J'aimerais voir grandir mon petit-fils\"",
+          "\"Comment on va annoncer ça à mon petit-fils?\"",
+          "\"Ma femme aussi est morte du cancer...\""
+        ]
+      },
+      "anamneseSystemes": {
+        "generale": ["Fatigue importante", "Perte poids 5kg/3 semaines", "Appétit diminué"],
+        "pulmonaire": ["Toux productive", "Dyspnée d'effort", "Pas de douleurs thoraciques"],
+        "psychologique": ["Moral en dents de scie", "Anxiété modérée", "Sommeil perturbé"],
+        "familiale": ["Fille Marie aidante", "Petit-fils Lucas 8 ans", "Fils Thomas expatrié"]
+      },
+      "habitudes": {
+        "antecedents": "Ex-fumeur (arrêt il y a 15 ans), retraité comptable",
+        "activite": "Réduite récemment, jardinage abandonné",
+        "alimentation": "Appétit diminué, aide fille pour courses",
+        "autonomie": "Encore autonome mais baisse récente",
+        "social": "Contacts familiaux, moins d'amis"
+      },
+      "informationsPersonnelles": {
+        "logement": "Maison individuelle avec jardin",
+        "religion": "Catholique pratiquant modéré",
+        "preoccupations": "Fille, petit-fils, fin de vie digne",
+        "projets": "Voir petit-fils grandir, transmettre valeurs",
+        "peurs": "Souffrance, être un poids, mourir seul"
+      },
+      "inquietudes": {
+        "principales": [
+          "Souffrance physique en fin de vie",
+          "Charge émotionnelle pour sa fille",
+          "Impact sur son petit-fils",
+          "Perte d'autonomie et dignité",
+          "Questions spirituelles sur l'après"
+        ],
+        "questions": [
+          "Combien de temps exactement?",
+          "Vais-je souffrir à la fin?",
+          "Comment protéger mon petit-fils?",
+          "Puis-je rester chez moi?",
+          "Comment aider ma fille à accepter?"
+        ]
+      }
+    },
+    "informationsExpert": {
+      "titre": "Points clés pour l'expert évaluateur",
+      "pointsCles": [
+        "Évaluer l'application du framework EPICES pour limitation thérapeutique",
+        "Observer l'annonce de la progression malgré traitement",
+        "Noter l'explication de la transition vers soins palliatifs",
+        "Vérifier la redéfinition des objectifs de soins",
+        "Évaluer la gestion empathique des réactions à l'échec thérapeutique",
+        "Observer l'abord des questions de pronostic et fin de vie",
+        "Noter la planification de l'accompagnement palliatif",
+        "Vérifier l'intégration de la famille dans les soins"
+      ],
+      "pieges": [
+        "Présenter l'arrêt de traitement comme un abandon",
+        "Donner un pronostic trop précis ou brutal",
+        "Minimiser l'impact émotionnel de l'annonce",
+        "Ignorer les besoins et peurs de la famille",
+        "Ne pas aborder concrètement l'organisation des soins",
+        "Éviter les questions de fin de vie et de souffrance",
+        "Donner de faux espoirs sur de nouveaux traitements",
+        "Ne pas prévoir d'accompagnement spécialisé palliatif"
+      ],
+      "criteresBonnePerformance": [
+        "Annonce empathique de la limitation thérapeutique",
+        "Explication claire de la transition vers soins palliatifs",
+        "Redéfinition positive des objectifs de soins",
+        "Gestion empathique des émotions patient et famille",
+        "Information rassurante sur contrôle des symptômes",
+        "Planification concrète de l'accompagnement",
+        "Respect des valeurs et préférences du patient",
+        "Maintien d'espoir réaliste sur qualité de vie"
+      ]
+    },
+    "theoriePratique": {
+      "titre": "Annonce de limitation thérapeutique et transition palliative",
+      "sections": [
+        {
+          "titre": "Principes de la transition vers soins palliatifs",
+          "points": [
+            "Continuité des soins: Pas d'abandon mais changement d'objectifs",
+            "Redéfinition priorités: Qualité de vie plutôt que durée",
+            "Approche globale: Prise en charge physique, psychologique, sociale, spirituelle",
+            "Accompagnement famille: Soutien des proches, formation aux soins",
+            "Respect autonomie: Choix du lieu de soins, directives anticipées",
+            "Équipe multidisciplinaire: Coordination tous intervenants"
+          ]
+        },
+        {
+          "titre": "Gestion de l'annonce d'échec thérapeutique",
+          "points": [
+            "Préparation: Évaluer perception avant annonce",
+            "Progression: Information graduelle selon acceptation",
+            "Empathie: Reconnaissance légitimité des émotions",
+            "Réassurance: Engagement continuité accompagnement",
+            "Concrétisation: Organisation immédiate nouveaux soins",
+            "Espoir adapté: Possibilités réelles de bien-être"
+          ]
+        },
+        {
+          "titre": "Organisation des soins palliatifs",
+          "points": [
+            "Équipe spécialisée: Médecin, infirmière, psychologue, assistante sociale",
+            "Coordination: Médecin traitant, hôpital, domicile",
+            "Contrôle symptômes: Douleur, dyspnée, nausées, fatigue",
+            "Soutien psychosocial: Patient, famille, aidants",
+            "Urgences: Numéro 24h/24, plan de crise",
+            "Formation famille: Gestes de base, quand alerter"
+          ]
+        }
+      ],
+      "rappelsTherapeutiques": [
+        "Présenter la transition palliative comme continuité des soins",
+        "Redéfinir positivement les objectifs vers qualité de vie",
+        "Rassurer sur contrôle optimal des symptômes",
+        "Impliquer activement la famille dans l'accompagnement",
+        "Organiser concrètement la prise en charge immédiate",
+        "Maintenir un espoir réaliste sur le bien-être possible"
+      ],
+      "examensComplementaires": [
+        "Imagerie palliative: Évaluation complications (compression, obstruction)",
+        "Bilans symptomatiques: Douleur, dyspnée, fatigue",
+        "Évaluation fonctionnelle: Autonomie, qualité de vie",
+        "Bilan social: Aides nécessaires, organisation domicile",
+        "Consultation anesthésie: Si douleurs complexes"
+      ]
+    }
+  }
+}

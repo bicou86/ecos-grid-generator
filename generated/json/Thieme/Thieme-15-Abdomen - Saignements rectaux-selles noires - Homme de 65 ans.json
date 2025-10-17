@@ -1,0 +1,223 @@
+{
+  "title": "Thieme Abdomen 15 - Saignements rectaux/selles noires - Homme de 65 ans",
+  "category": "Thieme Abdomen",
+  "subcategory": "Saignements rectaux/selles noires",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Homme de 65 ans, M. Kevin Brown, consultant pour saignements rectaux",
+    "vitals": {
+      "temperature": "37°C",
+      "ta": "120/80 mmHg",
+      "fc": "90 bpm",
+      "fr": "16/min"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Motif principal de consultation",
+          "binaryOnly": true,
+          "patientComment": "saignements rectaux"
+        },
+        {
+          "id": "a2",
+          "text": "Analyse de la plainte principale (ABCDE)",
+          "details": [
+            "Apparition et durée [Sang rouge vif dans selles depuis 2 mois]",
+            "Bilan (localisation, irradiation)",
+            "Caractère et qualité de la douleur",
+            "Degré d'intensité (échelle 1-10)",
+            "Éléments associés et facteurs modifiants"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Symptômes associés et antécédents",
+          "details": [
+            "Changement calibre selles",
+            "Perte 20 lb/6 mois",
+            "Fatigue",
+            "Père décédé cancer côlon"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Histoire sociale et habitudes de vie",
+          "details": [
+            "Retraité",
+            "Ex-fumeur",
+            "Alcool modéré",
+            "Vit avec épouse"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Revue des systèmes",
+          "details": [
+            "Système gastro-intestinal",
+            "Symptômes constitutionnels"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Signes vitaux et apparence générale",
+          "binaryOnly": true
+        },
+        {
+          "id": "e2",
+          "text": "Examen de la tête et du cou",
+          "details": [
+            "Recherche pâleur, ictère",
+            "Examen ORL avec abaisse-langue",
+            "Palpation ganglions lymphatiques",
+            "Examen thyroïde"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Examen cardio-pulmonaire",
+          "details": [
+            "Auscultation cardiaque [S1 et S2 normaux]",
+            "Auscultation pulmonaire bilatérale"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Examen abdominal complet",
+          "details": [
+            "Inspection (cicatrices, distension)",
+            "Auscultation (bruits intestinaux)",
+            "Percussion (matité, tympanisme)",
+            "Palpation superficielle et profonde"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Examens spécifiques selon le cas",
+          "details": [
+            "Toucher rectal avec recherche sang"
+          ]
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostics différentiels à évoquer",
+          "ddSection": {
+            "title": "Hypothèses diagnostiques",
+            "categories": [
+              {
+                "name": "Diagnostics prioritaires",
+                "items": [
+                  {
+                    "text": "Cancer du côlon",
+                    "cause": "Arguments POUR:\n\t□ Âge, rectorragies, changement transit, perte poids",
+                    "test": "→ Coloscopie, CT TAP"
+                  },
+                  {
+                    "text": "Diverticulose",
+                    "cause": "Arguments POUR:\n\t□ Âge, saignements, constipation",
+                    "test": "→ Selon orientation clinique"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Examens complémentaires pertinents",
+          "details": [
+            "Toucher rectal",
+            "Recherche sang occulte",
+            "NFS",
+            "CT abdomen",
+            "Coloscopie"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Plan de prise en charge immédiate",
+          "details": [
+            "Investigations ambulatoires",
+            "Traitement symptomatique",
+            "Suivi après résultats"
+          ]
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Questions difficiles du patient",
+          "content": "Est-ce un cancer comme mon père?"
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour le patient standardisé",
+      "nom": "M. Kevin Brown",
+      "age": "65 ans",
+      "contexte": "Cabinet de médecine générale",
+      "motifConsultation": {
+        "plaintePrincipale": "saignements rectaux",
+        "autreChose": "Sang rouge vif dans selles depuis 2 mois. Selles noires occasionnelles. Constipation progressive."
+      },
+      "histoireActuelle": {
+        "symptomesPrincipaux": [
+          "Sang rouge vif dans selles depuis 2 mois",
+          " Selles noires occasionnelles",
+          " Constipation progressive"
+        ],
+        "contextePsychosocial": [
+          "Retraité",
+          " Ex-fumeur",
+          " Alcool modéré",
+          " Vit avec épouse"
+        ]
+      },
+      "simulation": {
+        "attitude": [
+          "Coopératif"
+        ],
+        "durantExamen": [
+          "Toucher rectal sensible"
+        ]
+      },
+      "inquietudes": {
+        "principales": [
+          "Est-ce un cancer comme mon père?"
+        ]
+      }
+    },
+    "informationsExpert": {
+      "titre": "Informations pour l'expert",
+      "pointsCles": [
+        "Cas de Saignements rectaux/selles noires",
+        "Patient: Homme de 65 ans",
+        "Anamnèse complète avec ABCDE",
+        "Examen abdominal détaillé",
+        "Diagnostic différentiel approprié"
+      ],
+      "pieges": [
+        "Minimiser rectorragies chez sujet âgé",
+        "Ne pas faire coloscopie"
+      ]
+    }
+  }
+}

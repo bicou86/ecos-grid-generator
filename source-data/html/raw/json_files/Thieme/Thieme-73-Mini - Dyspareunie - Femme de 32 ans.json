@@ -1,0 +1,202 @@
+{
+  "title": "Thieme Mini-Cas 73 - Dyspareunie - Femme de 32 ans",
+  "category": "Thieme Mini-Cas",
+  "subcategory": "Dyspareunie",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Femme de 32 ans, Femme standardisée, consulte pour douleur pendant les rapports sexuels"
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Motif principal de consultation",
+          "binaryOnly": true,
+          "patientComment": "douleur pendant les rapports sexuels"
+        },
+        {
+          "id": "a2",
+          "text": "Analyse ciblée de la plainte",
+          "details": [
+            "Début/profondeur douleur",
+            "Lubrification",
+            "Stress",
+            "ATCD abus"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Recherche des éléments clés",
+          "details": [
+            "Localisation douleur",
+            "Lubrification",
+            "Facteurs psychologiques"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Antécédents pertinents",
+          "details": [
+            "Accouchements",
+            "Chirurgies pelviennes",
+            "Abus sexuels"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Revue des systèmes ciblée",
+          "details": [
+            "Gynécologique",
+            "Psychiatrique",
+            "Endocrinien"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Examen gynécologique externe",
+          "binaryOnly": true
+        },
+        {
+          "id": "e2",
+          "text": "Évaluation lubrification"
+        },
+        {
+          "id": "e3",
+          "text": "Recherche vaginisme"
+        },
+        {
+          "id": "e4",
+          "text": "Examen pelvien avec consentement"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostics différentiels",
+          "ddSection": {
+            "title": "Hypothèses diagnostiques à considérer",
+            "categories": [
+              {
+                "name": "Diagnostics prioritaires",
+                "items": [
+                  {
+                    "text": "Vaginisme",
+                    "cause": "Arguments POUR:\n\t□ Spasmes, peur pénétration, psychologique",
+                    "test": "→ Examens selon orientation clinique"
+                  },
+                  {
+                    "text": "Endométriose",
+                    "cause": "Arguments POUR:\n\t□ Douleur profonde, dysménorrhée, infertilité",
+                    "test": "→ Examens selon orientation clinique"
+                  },
+                  {
+                    "text": "Infection pelvienne",
+                    "cause": "Arguments POUR:\n\t□ Fièvre, leucorrhées, douleur mobilisation",
+                    "test": "→ Examens selon orientation clinique"
+                  },
+                  {
+                    "text": "Sécheresse vaginale",
+                    "cause": "Arguments POUR:\n\t□ Ménopause, médicaments, préliminaires insuffisants",
+                    "test": "→ Examens selon orientation clinique"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Examens complémentaires",
+          "details": [
+            "Examen gynécologique",
+            "Échographie pelvienne",
+            "Prélèvements si infection"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Plan de prise en charge",
+          "details": [
+            "Lubrifiants",
+            "Thérapie couple",
+            "Traitement cause",
+            "Référence si besoin"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Conseils au patient",
+          "details": [
+            "Communication couple",
+            "Patience",
+            "Lubrification adéquate"
+          ]
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Explications au patient",
+          "content": "Douleur aux rapports ayant des causes physiques ou psychologiques à explorer."
+        },
+        {
+          "id": "c2",
+          "text": "Questions du patient",
+          "content": "[C'est psychologique?]\n[Ça peut s'arranger?]"
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour le patient standardisé",
+      "nom": "Femme standardisée",
+      "age": "32 ans",
+      "contexte": "Cabinet de médecine générale",
+      "motifConsultation": {
+        "plaintePrincipale": "douleur pendant les rapports sexuels",
+        "contexte": "Rapports sexuels douloureux"
+      },
+      "simulation": {
+        "attitude": [
+          "Gênée d'en parler",
+          "Impact sur couple"
+        ],
+        "signesPhysiques": [
+          "Vaginisme possible",
+          "Sécheresse"
+        ],
+        "durantConsultation": [
+          "Difficile d'aborder",
+          "Évitement détails"
+        ]
+      }
+    },
+    "informationsExpert": {
+      "titre": "Informations pour l'expert",
+      "pointsCles": [
+        "Mini-cas clinique: Dyspareunie",
+        "Focus: Localisation douleur, Lubrification, Facteurs psychologiques",
+        "Consultation ciblée de 10 minutes",
+        "Évaluation de l'approche diagnostique"
+      ],
+      "pieges": [
+        "Négliger aspect psychologique",
+        "Examen brutal"
+      ]
+    }
+  }
+}

@@ -1,0 +1,317 @@
+{
+  "title": "Vignette Intermed diarrhées - Castioni",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Deux cas cliniques: 1) Mme A., 35 ans avec gastroentérite aiguë, 2) M. R., 65 ans diabétique avec diarrhées muco-sanglantes au retour de Thaïlande"
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Cas 1 - Mme A., 35 ans: Diarrhées aiguës",
+          "details": [
+            "Début brutal [Depuis 24 heures]",
+            "Diarrhées aqueuses [4x/jour]",
+            "Nausées et vomissements [Quelques épisodes]",
+            "Douleurs abdominales [Crampiformes]",
+            "Absence de fièvre [Afébrile]",
+            "Contexte alimentaire [Gâteau à la crème il y a 2 jours]",
+            "Travail en crèche [Exposition infectieuse]",
+            "Voyage Amérique du Sud [Il y a 6 mois - ancien]"
+          ]
+        },
+        {
+          "id": "a2",
+          "text": "Cas 2 - M. R., 65 ans: Diarrhées sévères post-voyage",
+          "details": [
+            "Retour de Thaïlande [Récent]",
+            "Diarrhées muco-sanglantes [8x/jour: 6 jour, 2 nuit]",
+            "Douleurs abdominales [Importantes]",
+            "État fébrile [38.7°C ce matin]",
+            "Diabète type 2 [Sous Metformine]",
+            "HTA [Sous IEC]",
+            "État général [Diminué]"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Red flags à rechercher",
+          "details": [
+            "Fièvre élevée [>38.5°C]",
+            "Déshydratation/hypovolémie [Signes cliniques]",
+            "Sang dans les selles [Muco-sanglantes]",
+            ">6 selles liquides par jour",
+            "Diarrhées nocturnes [Réveillent le patient]",
+            "Immunosuppression [Diabète]",
+            "Voyage récent en zone endémique"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Médicaments et facteurs de risque",
+          "details": [
+            "AINS occasionnels [Céphalées - Mme A.]",
+            "Metformine [Peut causer diarrhées]",
+            "IEC [M. R.]",
+            "Diabète [Dysmotilité, immunosuppression]",
+            "Exposition professionnelle [Crèche]"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Cas 1 - Examen clinique Mme A.",
+          "details": [
+            "État général [Conservé]",
+            "TA [125/60 mmHg - normale]",
+            "FC [65 bpm - normale]",
+            "Température [36.8°C - afébrile]",
+            "Abdomen [Sensibilité diffuse]",
+            "Défense/détente [Absentes]",
+            "Bruits hydroaériques [Augmentés en fréquence, tonalité normale]"
+          ]
+        },
+        {
+          "id": "e2",
+          "text": "Cas 2 - Examen clinique M. R.",
+          "details": [
+            "État général [Diminué]",
+            "TA [110/65 mmHg - hypotension relative]",
+            "FC [105 bpm - tachycardie]",
+            "FR [15/min]",
+            "Température [39°C - fièvre]",
+            "Abdomen [Sensibilité diffuse]",
+            "Défense/détente [Absentes]",
+            "Bruits hydroaériques [Augmentés]",
+            "Glycémie [9 mmol/L]"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Signes de déshydratation à rechercher",
+          "details": [
+            "Pli cutané persistant",
+            "Muqueuses sèches",
+            "Hypotension orthostatique",
+            "Tachycardie",
+            "Oligurie",
+            "Altération de l'état général"
+          ]
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic différentiel Cas 1",
+          "ddSection": {
+            "title": "Diagnostics à considérer pour diarrhées aiguës bénignes",
+            "categories": [
+              {
+                "name": "Causes infectieuses",
+                "items": [
+                  {
+                    "text": "Intoxication alimentaire",
+                    "cause": "Arguments POUR:\n\t□ Temporalité (24h après repas)\n\t□ Gâteau à la crème (risque)\n\t□ Diarrhées + vomissements\n\t□ Absence de fièvre\n\t□ Évolution aiguë",
+                    "test": "→ Pas d'examens si évolution favorable"
+                  },
+                  {
+                    "text": "Gastroentérite virale",
+                    "cause": "Arguments POUR:\n\t□ Travail en crèche (exposition)\n\t□ Contexte infectieux\n\t□ Tableau clinique typique\nArguments CONTRE:\n\t□ Pas de contexte épidémique mentionné",
+                    "test": "→ Surveillance clinique"
+                  },
+                  {
+                    "text": "Salmonellose",
+                    "cause": "Arguments À CONSIDÉRER:\n\t□ Œufs dans le gâteau\n\t□ Incubation 12-72h\n\t□ Diarrhées aqueuses\nArguments CONTRE:\n\t□ Listeria plutôt volailles",
+                    "test": "→ Coproculture si persistance"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Diagnostic différentiel Cas 2",
+          "ddSection": {
+            "title": "Diagnostics pour diarrhées sévères post-voyage",
+            "categories": [
+              {
+                "name": "Causes infectieuses du voyageur",
+                "items": [
+                  {
+                    "text": "Amibiase intestinale",
+                    "cause": "Arguments POUR:\n\t□ Voyage en Thaïlande (endémique)\n\t□ Diarrhées muco-sanglantes\n\t□ Douleurs abdominales importantes\n\t□ Fièvre\n\t□ Entamoeba histolytica",
+                    "test": "→ Examen parasitologique des selles x3"
+                  },
+                  {
+                    "text": "Fièvre typhoïde",
+                    "cause": "Arguments À CONSIDÉRER:\n\t□ Zone endémique\n\t□ Fièvre élevée\n\t□ État général altéré\nArguments CONTRE:\n\t□ Diarrhées plutôt constipation initiale",
+                    "test": "→ Hémocultures, sérologie Widal"
+                  },
+                  {
+                    "text": "Campylobactériose",
+                    "cause": "Arguments POUR:\n\t□ Diarrhées sanglantes\n\t□ Fièvre\n\t□ Douleurs abdominales\n\t□ Fréquent chez voyageurs",
+                    "test": "→ Coproculture spécifique"
+                  }
+                ]
+              },
+              {
+                "name": "Causes non infectieuses",
+                "items": [
+                  {
+                    "text": "MICI débutante",
+                    "cause": "Arguments CONTRE:\n\t□ Tableau trop aigu\n\t□ Contexte de voyage\n\t□ Âge (65 ans)",
+                    "test": "→ Calprotectine si évolution chronique"
+                  },
+                  {
+                    "text": "Néoplasie colique",
+                    "cause": "Arguments CONTRE:\n\t□ Tableau trop bruyant\n\t□ Évolution trop aiguë\n\t□ Contexte infectieux probable",
+                    "test": "→ Coloscopie si persistance"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m3",
+          "text": "Examens complémentaires Cas 1",
+          "details": [
+            "Surveillance clinique [Pas de red flags]",
+            "Pas d'examens en première intention",
+            "Si persistance >48h ou aggravation:",
+            "→ Hémocultures si fièvre",
+            "→ Coproculture",
+            "→ Parasitologie des selles"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Examens complémentaires Cas 2",
+          "details": [
+            "Bilan sanguin urgent:",
+            "→ FSC [Anémie, leucocytose]",
+            "→ Ionogramme [Déshydratation]",
+            "→ Créatinine [Fonction rénale]",
+            "→ Enzymes hépatiques",
+            "→ CRP",
+            "Microbiologie:",
+            "→ Coproculture + parasites (Entamoeba)",
+            "→ Hémocultures si fièvre persistante"
+          ]
+        },
+        {
+          "id": "m5",
+          "text": "Traitement Cas 1 - Ambulatoire",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Réhydratation",
+                "content": "• Hydratation orale abondante\n• Solutions de réhydratation (SRO)\n• Éviter boissons sucrées seules\n• Alimentation progressive"
+              },
+              {
+                "title": "Traitement symptomatique",
+                "content": "• Lopéramide 2mg après chaque selle liquide (max 16mg/j)\n• Paracétamol si douleurs\n• Éviter AINS"
+              },
+              {
+                "title": "Surveillance",
+                "content": "• Revoir à 48h\n• Consultation si:\n  - Fièvre apparaît\n  - Sang dans les selles\n  - Déshydratation\n  - Persistance >3 jours"
+              }
+            ]
+          }
+        },
+        {
+          "id": "m6",
+          "text": "Traitement Cas 2 - Hospitalisation",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Hospitalisation indiquée",
+                "content": "• Red flags multiples\n• Hydratation IV urgente\n• Surveillance rapprochée\n• Isolement entérique"
+              },
+              {
+                "title": "Traitement étiologique",
+                "content": "• Attendre résultats cultures\n• Si amibiase: Métronidazole 750mg 3x/j 10j\n• Si bactérien sévère: Ciprofloxacine 500mg 2x/j\n• Adapter selon antibiogramme"
+              },
+              {
+                "title": "Mesures associées",
+                "content": "• Adaptation insuline (diabète)\n• Surveillance glycémique\n• Prévention thromboembolique\n• Nutrition entérale précoce"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Messages clés - Approche des diarrhées",
+          "content": "• Distinguer diarrhées bénignes (Cas 1) vs sévères (Cas 2)\n• Red flags: fièvre, sang, déshydratation, >6 selles/j, immunosuppression\n• Contexte épidémiologique crucial (voyage, exposition)\n• Pas d'examens systématiques si tableau bénin\n• Hospitalisation si signes de gravité\n• Attention particulière aux terrains fragiles (diabète)"
+        },
+        {
+          "id": "c2",
+          "text": "Particularités selon le contexte",
+          "content": "• Intoxication alimentaire: délai 1-24h, résolution spontanée\n• Diarrhées du voyageur: penser parasites (amibiase en Asie)\n• Diabétique: risque déshydratation++, adaptation traitement\n• Metformine: peut aggraver les diarrhées\n• Lopéramide: éviter si fièvre ou sang (risque mégacôlon)"
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "theoriePratique": {
+      "titre": "Approche diagnostique et thérapeutique des diarrhées aiguës",
+      "sections": [
+        {
+          "titre": "Classification des diarrhées",
+          "points": [
+            "Aiguës: <2 semaines",
+            "Persistantes: 2-4 semaines",
+            "Chroniques: >4 semaines",
+            "Invasives: sang, fièvre, douleurs",
+            "Non invasives: aqueuses, sans fièvre"
+          ]
+        },
+        {
+          "titre": "Agents pathogènes selon contexte",
+          "points": [
+            "Intoxication alimentaire: S. aureus, C. perfringens (1-6h)",
+            "Gastroentérite: Rotavirus, Norovirus, Salmonella",
+            "Voyage Asie: E. histolytica, V. cholerae, Shigella",
+            "Antibiotiques: C. difficile",
+            "Immunosupprimé: Cryptosporidium, CMV"
+          ]
+        },
+        {
+          "titre": "Critères d'hospitalisation",
+          "contenu": "• Déshydratation sévère\n• Signes de choc\n• >10 selles/jour\n• Sang abondant\n• Fièvre >39°C persistante\n• Terrain fragile (diabète, IRC, immunosuppression)\n• Échec traitement ambulatoire"
+        }
+      ],
+      "rappelsTherapeutiques": [
+        "Réhydratation orale: 2-3L/jour minimum",
+        "SRO OMS: Na 75, Cl 65, glucose 75, K 20 mmol/L",
+        "Lopéramide: CI si fièvre ou sang (risque mégacôlon)",
+        "Antibiotiques: seulement si germe identifié ou sepsis",
+        "Probiotiques: efficacité modeste, peuvent réduire durée",
+        "Régime: éviter lactose temporairement"
+      ],
+      "examensComplementaires": [
+        "Coproculture: si fièvre, sang, >3j, voyage, immunosuppression",
+        "Parasitologie selles x3: si voyage zone endémique",
+        "Calprotectine fécale: si suspicion MICI",
+        "Ionogramme: si déshydratation clinique",
+        "Test C. difficile: si ATB récents",
+        "Coloscopie: si persistance inexpliquée"
+      ]
+    }
+  }
+}

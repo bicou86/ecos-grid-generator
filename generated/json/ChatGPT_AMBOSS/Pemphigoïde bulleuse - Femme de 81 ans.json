@@ -1,0 +1,737 @@
+{
+  "title": "Pemphigoïde bulleuse - Femme de 81 ans",
+  "context": {
+    "setting": "Consultation externe de dermatologie",
+    "patient": "Femme de 81 ans, enseignante à la retraite, se présentant avec une éruption prurigineuse généralisée qui a progressé vers des bulles tendues"
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Motif de consultation principal",
+          "binaryOnly": true,
+          "patientComment": "J'ai cette éruption qui me démange depuis un moment, et maintenant ces bulles apparaissent"
+        },
+        {
+          "id": "a2",
+          "text": "Chronologie et progression des symptômes",
+          "details": [
+            "Début du prurit [depuis 6 semaines]",
+            "Localisation initiale [tronc et bras]",
+            "Intensité du prurit [intense]",
+            "Apparition de lésions érythémateuses surélevées [oui]",
+            "Formation de bulles tendues [depuis 4 jours]",
+            "Taille des bulles [grandes, 1-4 cm]"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Symptômes associés",
+          "details": [
+            "Douleur [non mentionnée]",
+            "Fièvre [non]",
+            "Atteinte muqueuse buccale [non]",
+            "Atteinte génitale [non]",
+            "Difficulté à s'habiller [légère, due à la tension cutanée]"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Facteurs déclenchants potentiels",
+          "details": [
+            "Nouveaux médicaments récents [non]",
+            "Application de crèmes topiques [non mentionnée]",
+            "Allergies connues [aucune]",
+            "Épisodes antérieurs de maladie cutanée [non]"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Antécédents médicaux",
+          "details": [
+            "Hypertension artérielle [oui]",
+            "Troubles cognitifs légers [oui]",
+            "Maladie de Parkinson [à rechercher, association avec pemphigoïde bulleuse]",
+            "Démence [à rechercher, association avec pemphigoïde bulleuse]"
+          ]
+        },
+        {
+          "id": "a6",
+          "text": "Médicaments actuels",
+          "patientComment": "Amlodipine, aspirine"
+        },
+        {
+          "id": "a7",
+          "text": "Impact fonctionnel",
+          "details": [
+            "Qualité du sommeil [perturbée par le prurit]",
+            "Capacité à s'habiller [légèrement diminuée]",
+            "Mobilité [à évaluer]",
+            "Autonomie [à évaluer]"
+          ]
+        },
+        {
+          "id": "a8",
+          "text": "Réactions médicamenteuses antérieures",
+          "patientComment": "Aucune réaction médicamenteuse connue"
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Remarque: Pas d'examen physique requis dans cette station",
+          "binaryOnly": true,
+          "scoringRule": "Ce critère est automatiquement validé si le candidat reconnaît qu'aucun examen physique n'est nécessaire"
+        },
+        {
+          "id": "e2",
+          "text": "Description des lésions cutanées (selon l'anamnèse)",
+          "details": [
+            "Bulles tendues de grande taille (1-4 cm)",
+            "Distribution symétrique sur tronc et flexures",
+            "Pas de signe de Nikolsky",
+            "Cicatrisation sans cicatrices (possibles changements pigmentaires)"
+          ]
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Expliquer le diagnostic le plus probable",
+          "patientComment": "Cela ressemble à une pemphigoïde bulleuse, une maladie auto-immune de la peau — pas un cancer. Cela se produit quand votre système immunitaire attaque par erreur une partie de votre peau, provoquant des bulles",
+          "ddSection": {
+            "title": "Diagnostics différentiels à considérer",
+            "categories": [
+              {
+                "name": "Dermatoses bulleuses auto-immunes",
+                "items": [
+                  {
+                    "text": "Pemphigoïde bulleuse",
+                    "cause": "Arguments POUR:\n\t□ Âge >70 ans\n\t□ Bulles tendues sous-épidermiques\n\t□ Pas d'atteinte muqueuse\n\t□ Pas de signe de Nikolsky\n\t□ Distribution sur tronc et flexures",
+                    "test": "→ Biopsie avec immunofluorescence directe: dépôts linéaires d'IgG/C3 à la membrane basale"
+                  },
+                  {
+                    "text": "Pemphigus vulgaire",
+                    "cause": "Arguments CONTRE:\n\t□ Bulles flasques intra-épidermiques\n\t□ Signe de Nikolsky positif\n\t□ Atteinte muqueuse fréquente (>50%)\n\t□ Âge habituel 40-60 ans",
+                    "test": "→ Immunofluorescence: dépôts intercellulaires d'IgG"
+                  },
+                  {
+                    "text": "Dermatite herpétiforme",
+                    "cause": "Arguments CONTRE:\n\t□ Vésicules groupées sur surfaces d'extension\n\t□ Association avec maladie cœliaque\n\t□ Âge plus jeune habituellement",
+                    "test": "→ Immunofluorescence: dépôts granulaires d'IgA"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Critères diagnostiques cliniques",
+          "details": [
+            "Âge >70 ans [oui, 81 ans]",
+            "Pas d'atteinte muqueuse [oui]",
+            "Pas de lésions tête/cou [à confirmer]",
+            "Pas de cicatrices [oui]",
+            "Probabilité élevée si ≥3 critères présents"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Examens complémentaires pour confirmer le diagnostic",
+          "details": [
+            "Biopsie lésionnelle [histopathologie: bulles sous-épidermiques avec éosinophiles]",
+            "Biopsie péri-lésionnelle [immunofluorescence directe: dépôts linéaires d'IgG/C3 à la membrane basale]",
+            "Sérologie [ELISA: anticorps IgG anti-BP180 et anti-BP230]",
+            "Immunofluorescence indirecte [si ELISA non disponible]"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Plan de traitement",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Traitement de première ligne",
+                "items": [
+                  {
+                    "treatment": "Corticostéroïdes topiques de haute puissance",
+                    "details": "Clobétasol propionate 0.05% deux fois par jour",
+                    "duration": "Jusqu'à contrôle de la maladie"
+                  }
+                ]
+              },
+              {
+                "title": "Maladie extensive ou rapidement progressive",
+                "items": [
+                  {
+                    "treatment": "Corticostéroïdes systémiques",
+                    "details": "Prednisone 0.5-1 mg/kg/jour",
+                    "duration": "Décroissance progressive après contrôle"
+                  }
+                ]
+              },
+              {
+                "title": "Options d'épargne cortisonique (cas réfractaires/récidivants)",
+                "items": [
+                  {
+                    "treatment": "Azathioprine",
+                    "details": "1-2.5 mg/kg/jour"
+                  },
+                  {
+                    "treatment": "Méthotrexate",
+                    "details": "5-25 mg/semaine"
+                  },
+                  {
+                    "treatment": "Mycophénolate mofétil",
+                    "details": "1-3 g/jour"
+                  },
+                  {
+                    "treatment": "Doxycycline",
+                    "details": "200 mg/jour (effet anti-inflammatoire)"
+                  },
+                  {
+                    "treatment": "Biologiques",
+                    "details": "Rituximab, omalizumab en cas sévères"
+                  },
+                  {
+                    "treatment": "Immunoglobulines IV",
+                    "details": "Pour cas réfractaires"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m5",
+          "text": "Soins de support",
+          "details": [
+            "Soins des plaies avec pansements non-adhérents",
+            "Antihistaminiques pour le prurit",
+            "Support nutritionnel si maladie sévère",
+            "Prévention des infections secondaires"
+          ]
+        },
+        {
+          "id": "m6",
+          "text": "Orientation vers un dermatologue",
+          "binaryOnly": true,
+          "patientComment": "Tous les patients doivent être pris en charge par un dermatologue"
+        },
+        {
+          "id": "m7",
+          "text": "Critères d'hospitalisation",
+          "redflagsSection": {
+            "title": "Indications d'hospitalisation",
+            "items": [
+              {
+                "text": "Bulles extensives",
+                "description": "Surface corporelle importante atteinte"
+              },
+              {
+                "text": "Patient âgé ou fragile",
+                "description": "Risque de complications augmenté"
+              },
+              {
+                "text": "Comorbidités significatives",
+                "description": "Gestion complexe nécessaire"
+              },
+              {
+                "text": "Incapacité d'auto-soins",
+                "description": "Ne peut pas appliquer les traitements topiques"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Répondre aux inquiétudes de la patiente",
+          "details": [
+            "Question: [Est-ce grave? Est-ce que c'est un cancer?]",
+            "Réponse type: \"Non, ce n'est pas un cancer. C'est une maladie auto-immune traitable qui peut être bien contrôlée avec les médicaments appropriés.\"",
+            "Question: [Est-ce que ça va partir?]",
+            "Réponse type: \"Avec le bon traitement, nous pouvons généralement bien contrôler les symptômes. Certaines personnes entrent même en rémission à long terme.\"",
+            "Question: [Est-ce que ces bulles vont laisser des cicatrices?]",
+            "Réponse type: \"Elles guérissent généralement sans cicatrices, bien qu'il puisse y avoir quelques changements de couleur de la peau.\""
+          ]
+        },
+        {
+          "id": "c2",
+          "text": "Pronostic et suivi",
+          "details": [
+            "Rémission à long terme possible",
+            "~30% de rechute dans les 12 mois",
+            "~50% de rechute après arrêt du traitement",
+            "Surveillance des effets secondaires des corticoïdes/immunosuppresseurs",
+            "Suivi régulier en dermatologie"
+          ]
+        },
+        {
+          "id": "c3",
+          "text": "Clôture de la consultation",
+          "exemplesPhrases": [
+            "\"Je vais vous orienter vers un dermatologue spécialisé qui confirmera le diagnostic et débutera le traitement approprié.\"",
+            "\"Cette maladie est traitable et nous allons tout faire pour contrôler vos symptômes et améliorer votre qualité de vie.\"",
+            "\"N'hésitez pas à me recontacter si vous avez des questions ou si votre état s'aggrave avant le rendez-vous.\""
+          ]
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour le patient standardisé",
+      "nom": "Mme Irene Taylor",
+      "age": "81 ans",
+      "profession": "Enseignante à la retraite",
+      "contexte": "Consultation externe de dermatologie",
+      "phraseOuverture": "J'ai cette éruption qui me démange depuis un moment, et maintenant ces bulles apparaissent.",
+      "histoireActuelle": {
+        "symptomesPrincipaux": [
+          "Prurit intense sur le tronc et les bras depuis 6 semaines",
+          "Développement de lésions rouges surélevées",
+          "Apparition de grandes bulles tendues depuis 4 jours",
+          "Légère difficulté à s'habiller due à la tension cutanée"
+        ],
+        "symptomesAbsents": [
+          "Pas d'atteinte buccale",
+          "Pas d'atteinte génitale",
+          "Pas de fièvre",
+          "Pas d'allergies connues"
+        ]
+      },
+      "antecedents": {
+        "medicaux": [
+          "Hypertension artérielle",
+          "Troubles cognitifs légers"
+        ],
+        "medicaments": [
+          "Amlodipine",
+          "Aspirine"
+        ],
+        "allergies": "Aucune allergie connue",
+        "episodesAnterieurs": "Jamais eu d'épisode similaire"
+      },
+      "simulation": {
+        "attitude": [
+          "Inquiète mais coopérative",
+          "Fatiguée par le prurit persistant",
+          "Préoccupée par l'apparence de sa peau"
+        ],
+        "durantEntretien": [
+          "Montrez de l'inconfort dû au prurit",
+          "Exprimez votre inquiétude sur la nature de la maladie",
+          "Demandez si c'est contagieux",
+          "Interrogez sur la durée du traitement"
+        ]
+      },
+      "inquietudes": {
+        "principales": [
+          "Est-ce grave? Est-ce que c'est un cancer?",
+          "Est-ce que ça va partir?",
+          "Est-ce que ces bulles vont laisser des cicatrices?",
+          "Est-ce contagieux pour mes petits-enfants?"
+        ]
+      }
+    },
+    "informationsExpert": {
+      "titre": "Informations pour l'expert évaluateur",
+      "pointsCles": [
+        "Reconnaissance du tableau clinique typique de pemphigoïde bulleuse",
+        "Différenciation avec le pemphigus vulgaire",
+        "Compréhension des critères diagnostiques cliniques",
+        "Planification appropriée des examens complémentaires",
+        "Communication adaptée à une patiente âgée anxieuse"
+      ],
+      "pieges": [
+        "Confondre avec pemphigus vulgaire (bulles flasques, Nikolsky positif)",
+        "Oublier de rechercher associations neurologiques (Parkinson, démence)",
+        "Ne pas orienter vers un dermatologue",
+        "Sous-estimer l'impact fonctionnel chez la personne âgée",
+        "Oublier les soins de support"
+      ],
+      "criteresDEvaluation": [
+        "Anamnèse complète incluant l'évolution temporelle",
+        "Recherche d'atteinte muqueuse",
+        "Évaluation de l'impact fonctionnel",
+        "Diagnostic différentiel approprié",
+        "Plan diagnostique et thérapeutique structuré"
+      ]
+    },
+    "theoriePratique": {
+      "titre": "Points théoriques et pratiques",
+      "sections": [
+        {
+          "titre": "Physiopathologie de la pemphigoïde bulleuse",
+          "points": [
+            "Auto-anticorps IgG contre les antigènes BP180 et BP230 de l'hémidesmosome",
+            "Activation du complément et recrutement d'éosinophiles",
+            "Clivage sous-épidermique créant des bulles tendues",
+            "Association avec maladies neurologiques (Parkinson, démence, AVC)"
+          ]
+        },
+        {
+          "titre": "Différences clés avec pemphigus vulgaire",
+          "points": [
+            "Pemphigoïde: bulles tendues sous-épidermiques vs Pemphigus: bulles flasques intra-épidermiques",
+            "Pemphigoïde: Nikolsky négatif vs Pemphigus: Nikolsky positif",
+            "Pemphigoïde: atteinte muqueuse rare (10-30%) vs Pemphigus: fréquente (>50%)",
+            "Pemphigoïde: âge >70 ans vs Pemphigus: 40-60 ans"
+          ]
+        },
+        {
+          "titre": "Médicaments potentiellement inducteurs",
+          "points": [
+            "Inhibiteurs de points de contrôle immunitaire (anti-PD-1, anti-PD-L1)",
+            "Gliptines (inhibiteurs DPP-4)",
+            "Diurétiques (furosémide, spironolactone)",
+            "Antibiotiques (pénicillines, quinolones)",
+            "AINS"
+          ]
+        }
+      ],
+      "rappelsTherapeutiques": [
+        "Corticostéroïdes topiques haute puissance: première ligne pour maladie localisée",
+        "Prednisone 0.5-1 mg/kg/jour pour maladie extensive",
+        "Agents d'épargne cortisonique si traitement prolongé nécessaire",
+        "Doxycycline 200 mg/jour: option avec moins d'effets secondaires chez personnes âgées",
+        "Rituximab réservé aux cas réfractaires sévères"
+      ],
+      "examensComplementaires": [
+        "Biopsie lésionnelle: bulles sous-épidermiques avec infiltrat éosinophilique",
+        "Immunofluorescence directe: dépôts linéaires IgG/C3 à la jonction dermo-épidermique",
+        "ELISA: anticorps anti-BP180 (plus sensible) et anti-BP230",
+        "NFS: éosinophilie possible",
+        "Bilan pré-thérapeutique si corticothérapie systémique envisagée"
+      ]
+    },
+    "resume": {
+      "titre": "💥 Pemphigoïde bulleuse – Résumé ECOS",
+      "sections": [
+        {
+          "titre": "🔍 Anamnèse",
+          "subsections": [
+            {
+              "titre": "Symptômes initiaux",
+              "points": [
+                "Prurit intense, souvent prodromique",
+                "Éruption urticarienne, eczématiforme ou papuleuse",
+                "Évolution en quelques semaines vers bulles"
+              ]
+            },
+            {
+              "titre": "Contexte et facteurs de risque",
+              "points": [
+                "Âge > 60 ans (maladie du sujet âgé)",
+                "Déclencheurs possibles : médicaments (spironolactone, furosémide, gliptines)",
+                "Exposition UV",
+                "Association avec maladies neurologiques (Parkinson, AVC, démence, SEP)"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "👀 Examen clinique",
+          "subsections": [
+            {
+              "titre": "Signes cutanés",
+              "points": [
+                "Bulles tendues, pralles, sur peau érythémateuse ou normale",
+                "Bulles parfois hémorragiques, évolution en croûtes",
+                "Atteinte préférentielle : plis, faces de flexion des membres, zones intertrigineuses",
+                "Abords guérissent sans cicatrices (≠ pemphigoïde cicatricielle)"
+              ]
+            },
+            {
+              "titre": "Atteinte muqueuse",
+              "points": [
+                "Présente dans 10–20 % des cas (surtout buccale)",
+                "Souvent moins sévère que dans le pemphigus"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "🧪 Examens diagnostiques",
+          "subsections": [
+            {
+              "titre": "Biopsie cutanée",
+              "points": [
+                "Clivage sous-épidermique",
+                "Infiltrat éosinophile"
+              ]
+            },
+            {
+              "titre": "Immunofluorescence",
+              "points": [
+                "Directe : dépôts linéaires d’IgG et C3 à la jonction dermo-épidermique",
+                "Indirecte + ELISA : anticorps anti-BP180, anti-BP230"
+              ]
+            },
+            {
+              "titre": "Diagnostic différentiel",
+              "points": [
+                "Pemphigus vulgaire",
+                "Érythème polymorphe",
+                "Dermatite herpétiforme",
+                "Impetigo bulleux"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "⚙️ Prise en charge",
+          "subsections": [
+            {
+              "titre": "Mesures générales",
+              "points": [
+                "Arrêt des médicaments inducteurs",
+                "Soins cutanés locaux : antiseptiques, pansements",
+                "Ponction stérile des bulles en conservant le toit protecteur"
+              ]
+            },
+            {
+              "titre": "Traitement",
+              "points": [
+                "Formes limitées : dermocorticoïdes puissants",
+                "Formes modérées à sévères : corticothérapie systémique ± immunosuppresseurs (azathioprine, mycophénolate, méthotrexate, dapsone)",
+                "Alternatives en cas de résistance : rituximab, IVIG, cyclophosphamide"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "✅ Points clés ECOS",
+          "points": [
+            "Maladie auto-immune du sujet âgé",
+            "Bulles tendues, prurit intense, cicatrisation sans séquelles",
+            "Diagnostic confirmé par immunofluorescence (IgG, C3 linéaire)",
+            "PEC = dermocorticoïdes ou corticothérapie systémique selon étendue",
+            "Toujours rechercher facteurs déclenchants médicamenteux"
+          ]
+        },
+        {
+          "titre": "📋 Check-list rapide ECOS",
+          "subsections": [
+            {
+              "titre": "Questions à poser",
+              "points": [
+                "Prurit chronique ? Éruptions récentes ?",
+                "Prise de médicaments récents (spironolactone, gliptines, furosémide) ?",
+                "ATCD neurologiques (Parkinson, AVC, SEP, démence) ?",
+                "Atteinte buccale ou muqueuse ?"
+              ]
+            },
+            {
+              "titre": "Examens à faire",
+              "points": [
+                "Inspection cutanée complète",
+                "Biopsie cutanée pour histologie et immunofluorescence",
+                "Sérologie ELISA anti-BP180, BP230",
+                "Bilan biologique de base avant corticothérapie/immunosuppresseurs"
+              ]
+            },
+            {
+              "titre": "PEC en 3 points",
+              "points": [
+                "Arrêt des médicaments inducteurs",
+                "Dermocorticoïdes puissants ou corticothérapie systémique",
+                "Surveillance clinique et biologique prolongée"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "presentationPatient": {
+      "titre": "📑 Fiche ECOS – Cas : Pemphigoïde bulleuse chez une femme âgée",
+      "sections": [
+        {
+          "titre": "🧩 Checklist mentale (présentation systématisée)",
+          "points": [
+            "Intro → âge, motif (femme 81 ans, prurit chronique suivi de bulles tendues)",
+            "Chronologie → prurit intense 6 semaines, bulles apparues il y a 4 jours",
+            "Caractériser bulles → grandes (1-4 cm), tendues, symétriques, pas de signe de Nikolsky, pas d’atteinte muqueuse",
+            "Symptômes associés → sommeil perturbé, gêne fonctionnelle légère, pas de fièvre, pas de douleur",
+            "ATCD → HTA, troubles cognitifs légers, pas de réaction médicamenteuse connue",
+            "Traitements → amlodipine, aspirine",
+            "Facteurs déclenchants → pas de nouveau médicament, pas d’allergie connue",
+            "Impact fonctionnel → prurit altère qualité de vie, autonomie légèrement diminuée",
+            "Résumé + hypothèse principale : pemphigoïde bulleuse ; DD = pemphigus vulgaire, dermatite herpétiforme",
+            "Examens complémentaires → biopsie cutanée lésionnelle (histologie : bulle sous-épidermique avec éosinophiles), biopsie péri-lésionnelle (IFD : IgG/C3 linéaire), sérologie ELISA anti-BP180 et anti-BP230",
+            "Prise en charge → dermocorticoïdes puissants (clobétasol), si formes sévères corticothérapie systémique ± immunosuppresseurs, soins locaux, antihistaminiques, suivi dermatologique rapproché"
+          ],
+          "mnemo": {
+            "titre": "👉 Mnémo rapide BULLE",
+            "elements": [
+              "B = Bulles tendues",
+              "U = Urticaire/prurit prodromique",
+              "L = Linéaire IgG/C3 à l’IFD",
+              "L = Localisation plis/flexures",
+              "E = Elderly (sujet âgé typique)"
+            ]
+          }
+        },
+        {
+          "titre": "🎤 Version longue (≈2-3 min)",
+          "contenu": "Il s’agit de Mme Irene Taylor, une femme de 81 ans, ancienne enseignante, qui consulte pour une éruption cutanée prurigineuse évoluant depuis 6 semaines. Initialement, elle a présenté un prurit intense localisé au tronc et aux bras, avec apparition de lésions rouges surélevées. Depuis 4 jours, ces lésions se sont transformées en bulles tendues de grande taille, mesurant 1 à 4 cm, réparties symétriquement sur le tronc et les zones de flexion. Ces bulles ne sont pas douloureuses, il n’y a pas de fièvre, ni d’atteinte buccale ou génitale. Le prurit perturbe cependant son sommeil et elle rapporte une légère gêne pour s’habiller.\n\nSes antécédents sont marqués par une hypertension artérielle et de légers troubles cognitifs. Pas d’allergies connues, pas de réactions médicamenteuses antérieures. Elle prend de l’amlodipine et de l’aspirine. Pas d’antécédent cutané similaire.\n\nÀ l’examen, les bulles sont tendues, symétriques, sans signe de Nikolsky, sur peau érythémateuse et parfois normale. Pas d’atteinte muqueuse observée. L’aspect est très évocateur d’une pemphigoïde bulleuse.\n\nEn résumé, il s’agit d’une femme âgée avec prurit chronique puis apparition de bulles tendues, sans atteinte muqueuse, ce qui oriente fortement vers une pemphigoïde bulleuse. Les diagnostics différentiels incluent le pemphigus vulgaire (bulles flasques, muqueuses atteintes, signe de Nikolsky positif) et la dermatite herpétiforme (vésicules prurigineuses sur zones d’extension, âge plus jeune, association à maladie cœliaque).\n\nPour confirmer le diagnostic, je demanderais une biopsie lésionnelle pour histologie (bulle sous-épidermique riche en éosinophiles), une biopsie péri-lésionnelle pour immunofluorescence directe (dépôts linéaires IgG et C3 à la jonction dermo-épidermique), et une sérologie ELISA à la recherche d’anticorps anti-BP180 et BP230.\n\nLa prise en charge repose sur l’application de dermocorticoïdes puissants en première intention (clobétasol). En cas de formes étendues ou rapidement évolutives, une corticothérapie systémique peut être nécessaire, avec recours possible à des immunosuppresseurs (azathioprine, mycophénolate, méthotrexate) ou à la doxycycline pour son effet anti-inflammatoire. Dans les formes réfractaires, des biothérapies comme le rituximab peuvent être envisagées. En parallèle, il faut assurer des soins cutanés locaux avec pansements non-adhérents, prescrire des antihistaminiques contre le prurit, prévenir les infections secondaires et orienter la patiente vers un dermatologue pour suivi rapproché."
+        },
+        {
+          "titre": "⚡ Version express (SBAR, 30 sec)",
+          "contenu": "S (Situation) : Mme Taylor, 81 ans, présente depuis 6 semaines un prurit intense, suivi depuis 4 jours par des bulles tendues sur le tronc et les plis.\n\nB (Background) : ATCD HTA, troubles cognitifs légers, traitements par amlodipine et aspirine. Pas d’allergies, pas de nouveaux médicaments.\n\nA (Assessment) : Aspect très évocateur d’une pemphigoïde bulleuse. DD : pemphigus vulgaire, dermatite herpétiforme.\n\nR (Recommendation) : Biopsie cutanée + immunofluorescence directe, ELISA anti-BP180/230. PEC : dermocorticoïdes puissants, corticothérapie systémique si formes sévères, soins de support, suivi dermatologique rapproché."
+        },
+        {
+          "titre": "🎲 Touches ludiques / mnémos",
+          "subsections": [
+            {
+              "titre": "👉 Pemphigoïde vs Pemphigus",
+              "points": [
+                "Pemphigoïde = bulles tendues, sujet âgé, Nikolsky négatif, pas de muqueuses",
+                "Pemphigus = bulles flasques, sujet plus jeune, Nikolsky positif, muqueuses atteintes"
+              ]
+            },
+            {
+              "titre": "👉 Facteurs déclenchants pemphigoïde",
+              "points": [
+                "Gliptines (inhibiteurs DPP-4)",
+                "Diurétiques (furosémide, spironolactone)",
+                "AINS",
+                "Antibiotiques (pénicillines, quinolones)",
+                "Immunothérapies anti-PD-1/PD-L1"
+              ]
+            },
+            {
+              "titre": "👉 PEC pratique",
+              "points": [
+                "Dermocorticoïdes puissants = 1ère intention",
+                "Corticoïdes systémiques si étendue",
+                "Épargne cortisonique possible (azathioprine, MTX, mycophénolate, doxycycline)",
+                "Rituximab ou IVIG si réfractaire"
+              ]
+            },
+            {
+              "titre": "⚠️ Pièges ECOS",
+              "points": [
+                "Ne pas confondre avec pemphigus",
+                "Toujours rechercher ATCD neurologiques associés",
+                "Ne pas oublier soins cutanés et prévention infections",
+                "Évaluer l’impact fonctionnel chez la personne âgée"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "❓ Questions probables de l'examinateur (avec réponses orales)",
+          "subsections": [
+            {
+              "titre": "1. Arguments pour et contre chaque hypothèse",
+              "questions": [
+                {
+                  "question": "Pemphigoïde bulleuse",
+                  "reponse": {
+                    "pour": [
+                      "Âge avancé (>70 ans)",
+                      "Bulles tendues, grandes",
+                      "Absence atteinte muqueuse",
+                      "Pas de signe de Nikolsky",
+                      "Prurit intense prodromique"
+                    ],
+                    "contre": [
+                      "Pas d’arguments significatifs contre"
+                    ]
+                  }
+                },
+                {
+                  "question": "Pemphigus vulgaire",
+                  "reponse": {
+                    "contre": [
+                      "Bulles flasques intra-épidermiques",
+                      "Signe de Nikolsky positif",
+                      "Atteinte muqueuse fréquente",
+                      "Âge plus jeune habituellement"
+                    ]
+                  }
+                },
+                {
+                  "question": "Dermatite herpétiforme",
+                  "reponse": {
+                    "contre": [
+                      "Vésicules groupées sur zones d’extension",
+                      "Association maladie cœliaque",
+                      "Âge plus jeune"
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "titre": "2. Examens complémentaires immédiats",
+              "questions": [
+                {
+                  "question": "Quels examens demanderiez-vous ?",
+                  "reponse": [
+                    "Biopsie lésionnelle : bulle sous-épidermique avec éosinophiles",
+                    "Biopsie péri-lésionnelle : dépôts IgG/C3 linéaires en IFD",
+                    "ELISA : anticorps anti-BP180, anti-BP230",
+                    "NFS (éosinophilie), bilan hépatique et rénal selon PEC"
+                  ]
+                }
+              ]
+            },
+            {
+              "titre": "3. Diagnostic définitif, traitement, suivi",
+              "questions": [
+                {
+                  "question": "Diagnostic",
+                  "reponse": "Pemphigoïde bulleuse"
+                },
+                {
+                  "question": "Traitement",
+                  "reponse": {
+                    "immediat": [
+                      "Dermocorticoïdes puissants (clobétasol)",
+                      "Corticothérapie systémique si étendue"
+                    ],
+                    "specifique": [
+                      "Immunosuppresseurs (azathioprine, mycophénolate, méthotrexate, doxycycline)",
+                      "Biothérapies (rituximab) si réfractaire"
+                    ],
+                    "support": [
+                      "Soins de plaies, pansements non-adhérents",
+                      "Antihistaminiques",
+                      "Prévention infections",
+                      "Support nutritionnel si sévère"
+                    ]
+                  }
+                },
+                {
+                  "question": "Suivi",
+                  "reponse": [
+                    "Surveillance clinique et biologique régulière",
+                    "Contrôle effets secondaires corticoïdes/immunosuppresseurs",
+                    "Suivi dermatologique rapproché",
+                    "Informer sur risque de rechutes (~30% à 1 an, 50% après arrêt traitement)"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

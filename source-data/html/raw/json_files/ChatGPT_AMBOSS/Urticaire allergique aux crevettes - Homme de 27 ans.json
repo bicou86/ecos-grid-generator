@@ -1,0 +1,798 @@
+{
+  "title": "Urticaire allergique aux crevettes - Homme de 27 ans",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Homme de 27 ans, étudiant en ingénierie, se présentant après une éruption cutanée apparue peu après avoir mangé des crevettes"
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Motif de consultation principal",
+          "binaryOnly": true,
+          "patientComment": "J'ai mangé des crevettes ce midi et j'ai eu plein de plaques rouges sur le corps"
+        },
+        {
+          "id": "a2",
+          "text": "Chronologie et caractérisation des symptômes",
+          "details": [
+            "Délai entre repas et éruption [30 minutes après avoir mangé]",
+            "Type d'éruption [urticaire prurigineuse]",
+            "Localisation des lésions [torse, bras et cou]",
+            "Sensation de chaleur [oui]",
+            "Intensité du prurit [démangeaisons intenses]",
+            "Évolution dans le temps [résolution partielle spontanée après 2 heures, prurit résiduel]"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Recherche de signes de gravité",
+          "details": [
+            "Difficultés respiratoires [non]",
+            "Gonflement du visage [non]",
+            "Gonflement de la langue [non]",
+            "Dysphonie/voix rauque [non]",
+            "Sensation de gorge serrée [non]",
+            "Malaise/hypotension [non]",
+            "Douleurs abdominales/vomissements [non]"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Description des lésions cutanées",
+          "details": [
+            "Aspect des plaques [rouges, surélevées]",
+            "Mobilité des lésions [urticaire fugace]",
+            "Présence de prurit [oui, intense]",
+            "Extension progressive [non mentionnée]"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Antécédents allergiques",
+          "details": [
+            "Allergies alimentaires connues [aucune]",
+            "Allergies médicamenteuses [aucune]",
+            "Asthme [non]",
+            "Eczéma/dermatite atopique [non]",
+            "Antécédents familiaux d'allergies [à rechercher]"
+          ]
+        },
+        {
+          "id": "a6",
+          "text": "Exposition antérieure aux crustacés",
+          "details": [
+            "Consommation antérieure de crevettes [à évaluer]",
+            "Réactions antérieures [à rechercher]",
+            "Tolérance d'autres fruits de mer [à évaluer]"
+          ]
+        },
+        {
+          "id": "a7",
+          "text": "Facteurs potentiellement aggravants",
+          "details": [
+            "Prise de médicaments aujourd'hui [non]",
+            "Consommation d'alcool [à rechercher]",
+            "Effort physique après le repas [à rechercher]",
+            "Autres aliments consommés [à préciser]"
+          ]
+        },
+        {
+          "id": "a8",
+          "text": "Contexte du repas",
+          "details": [
+            "Type de plat consommé [plat contenant des crevettes]",
+            "Restaurant ou domicile [à préciser]",
+            "Autres convives avec symptômes [à vérifier pour exclure intoxication]"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Évaluation de l'état général",
+          "details": [
+            "État de conscience [normal]",
+            "Signes vitaux (TA, FC, FR) [à vérifier]",
+            "Température [à mesurer]"
+          ]
+        },
+        {
+          "id": "e2",
+          "text": "Examen cutané",
+          "details": [
+            "Inspection des lésions urticariennes",
+            "Distribution des plaques",
+            "Recherche d'œdème facial",
+            "Recherche d'angioœdème"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Examen cardio-respiratoire",
+          "details": [
+            "Auscultation pulmonaire [recherche de sibilants]",
+            "Auscultation cardiaque [recherche de tachycardie]",
+            "Saturation en oxygène [si dyspnée]"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Examen ORL",
+          "details": [
+            "Inspection de la cavité buccale",
+            "Recherche d'œdème lingual",
+            "Recherche d'œdème pharyngé"
+          ]
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Expliquer la cause probable des symptômes",
+          "patientComment": "Votre réaction ressemble à une urticaire allergique aiguë. Ce n'est pas grave cette fois-ci car vous n'avez pas de symptômes respiratoires, mais cela montre que votre corps réagit aux crevettes",
+          "ddSection": {
+            "title": "Diagnostics différentiels à considérer",
+            "categories": [
+              {
+                "name": "Réactions allergiques",
+                "items": [
+                  {
+                    "text": "Urticaire allergique IgE-médiée",
+                    "cause": "Arguments POUR:\n\t□ Délai court (30 minutes)\n\t□ Après ingestion de crevettes\n\t□ Plaques urticariennes typiques\n\t□ Prurit intense",
+                    "test": "→ IgE spécifiques crevettes"
+                  },
+                  {
+                    "text": "Anaphylaxie",
+                    "cause": "Arguments CONTRE:\n\t□ Pas de signes respiratoires\n\t□ Pas d'œdème de Quincke\n\t□ Pas d'hypotension\n\t□ Résolution spontanée partielle",
+                    "test": "→ Tryptase si suspicion"
+                  }
+                ]
+              },
+              {
+                "name": "Autres causes d'urticaire",
+                "items": [
+                  {
+                    "text": "Intoxication histaminique (scombrotoxisme)",
+                    "cause": "Arguments À CONSIDÉRER:\n\t□ Fruits de mer mal conservés\n\t□ Autres convives atteints?\n\t□ Flush facial, céphalées",
+                    "test": "→ Contexte épidémiologique"
+                  },
+                  {
+                    "text": "Urticaire non allergique",
+                    "cause": "Arguments CONTRE:\n\t□ Relation temporelle claire\n\t□ Première exposition symptomatique",
+                    "test": "→ Tests allergologiques négatifs"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Traitement immédiat",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Traitement de l'urticaire aiguë",
+                "items": [
+                  {
+                    "treatment": "Antihistaminique H1 de 2e génération",
+                    "details": "Cétirizine 10mg ou loratadine 10mg PO",
+                    "duration": "5-7 jours ou jusqu'à résolution"
+                  },
+                  {
+                    "treatment": "Surveillance",
+                    "details": "1-2 heures si première réaction",
+                    "duration": "Pour détecter une progression"
+                  }
+                ]
+              },
+              {
+                "title": "Si réaction étendue ou persistante",
+                "items": [
+                  {
+                    "treatment": "Corticoïdes oraux",
+                    "details": "Prednisone 40-60mg PO",
+                    "duration": "3-5 jours"
+                  },
+                  {
+                    "treatment": "Antihistaminique H2",
+                    "details": "Ranitidine si besoin (potentialisation)",
+                    "duration": "Selon évolution"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m3",
+          "text": "Mesures d'éviction et prévention",
+          "details": [
+            "Éviter complètement les crevettes jusqu'à bilan allergologique",
+            "Éviter tous les crustacés par précaution",
+            "Prudence avec les mollusques (réactivité croisée possible)",
+            "Lire attentivement les étiquettes alimentaires",
+            "Informer les restaurants de l'allergie suspectée"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Orientation vers un allergologue",
+          "binaryOnly": true,
+          "details": [
+            "Tests cutanés (prick tests) aux crevettes et fruits de mer",
+            "Dosage IgE spécifiques (crevettes, tropomyosine)",
+            "Détermination du seuil de réactivité",
+            "Test de provocation orale si nécessaire"
+          ]
+        },
+        {
+          "id": "m5",
+          "text": "Éducation sur les signes d'anaphylaxie",
+          "redflagsSection": {
+            "title": "Signes d'anaphylaxie à reconnaître",
+            "items": [
+              {
+                "text": "Symptômes respiratoires",
+                "description": "Dyspnée, sifflements, toux persistante"
+              },
+              {
+                "text": "Œdème de Quincke",
+                "description": "Gonflement du visage, des lèvres, de la langue"
+              },
+              {
+                "text": "Symptômes cardiovasculaires",
+                "description": "Malaise, vertiges, hypotension, tachycardie"
+              },
+              {
+                "text": "Symptômes digestifs sévères",
+                "description": "Crampes abdominales intenses, vomissements répétés"
+              },
+              {
+                "text": "Réaction cutanée généralisée",
+                "description": "Urticaire étendue avec symptômes systémiques"
+              }
+            ]
+          }
+        },
+        {
+          "id": "m6",
+          "text": "Prescription d'une trousse d'urgence",
+          "details": [
+            "Auto-injecteur d'adrénaline si risque élevé",
+            "Antihistaminique à action rapide",
+            "Corticoïdes oraux",
+            "Plan d'action écrit en cas de réaction",
+            "Formation à l'utilisation de l'auto-injecteur"
+          ]
+        },
+        {
+          "id": "m7",
+          "text": "Plan de suivi",
+          "details": [
+            "Consultation allergologie dans 4-6 semaines",
+            "Remise d'un document sur l'éviction des crustacés",
+            "Carte d'allergie alimentaire après confirmation",
+            "Suivi après tests allergologiques pour plan définitif"
+          ]
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Répondre aux préoccupations du patient",
+          "details": [
+            "Question: [Est-ce que c'est grave?]",
+            "Réponse type: \"Cette fois-ci ce n'est pas grave car vous n'avez pas eu de symptômes respiratoires ou généraux, mais il faut être vigilant car une prochaine exposition pourrait être plus sévère.\"",
+            "Question: [Je peux en remanger?]",
+            "Réponse type: \"Il vaut mieux éviter complètement les crevettes jusqu'à ce qu'un allergologue confirme le diagnostic. Une exposition future pourrait déclencher une réaction plus sévère.\"",
+            "Question: [J'ai besoin d'un traitement?]",
+            "Réponse type: \"Oui, on va vous donner un antihistaminique pour soulager les démangeaisons. On va aussi vous prescrire une trousse d'urgence si nécessaire.\""
+          ]
+        },
+        {
+          "id": "c2",
+          "text": "Conseils pratiques et recommandations",
+          "details": [
+            "Porter sur soi les médicaments d'urgence prescrits",
+            "Informer l'entourage de l'allergie suspectée",
+            "En cas de nouvelle réaction, ne pas hésiter à appeler le 144",
+            "Éviter l'automédication avec des anti-inflammatoires",
+            "Tenir un journal alimentaire si d'autres réactions surviennent"
+          ]
+        },
+        {
+          "id": "c3",
+          "text": "Clôture de la consultation",
+          "exemplesPhrases": [
+            "\"Je vais vous prescrire un antihistaminique pour calmer l'urticaire et vous orienter vers un allergologue pour confirmer cette allergie.\"",
+            "\"En attendant le rendez-vous, évitez tous les crustacés et gardez toujours vos médicaments d'urgence avec vous.\"",
+            "\"Si vous avez une nouvelle réaction avec des symptômes respiratoires ou un malaise, appelez immédiatement le 144.\""
+          ]
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour le patient standardisé",
+      "nom": "Julien Mercier",
+      "age": "27 ans",
+      "profession": "Étudiant en ingénierie",
+      "contexte": "Cabinet de médecine générale",
+      "phraseOuverture": "J'ai mangé des crevettes ce midi et j'ai eu plein de plaques rouges sur le corps.",
+      "histoireActuelle": {
+        "symptomesPrincipaux": [
+          "Éruption prurigineuse 30 minutes après avoir mangé des crevettes",
+          "Sensation de chaleur sur le corps",
+          "Démangeaisons intenses sur le torse, les bras et le cou",
+          "Résolution partielle spontanée après 2 heures",
+          "Prurit résiduel persistant"
+        ],
+        "symptomesAbsents": [
+          "Pas de difficultés respiratoires",
+          "Pas de gonflement du visage ou de la langue",
+          "Pas de malaise",
+          "Pas de douleurs abdominales"
+        ]
+      },
+      "antecedents": {
+        "medicaux": "Aucun",
+        "allergies": "Aucune allergie connue",
+        "asthme": "Non",
+        "eczema": "Non",
+        "medicaments": "Aucun médicament pris aujourd'hui"
+      },
+      "simulation": {
+        "attitude": [
+          "Inquiet mais pas paniqué",
+          "Surpris par cette réaction",
+          "Coopératif et attentif aux explications"
+        ],
+        "durantEntretien": [
+          "Montrez occasionnellement que vous vous grattez",
+          "Exprimez votre inquiétude sur la possibilité de réactions futures",
+          "Demandez si vous devez éviter d'autres aliments",
+          "Interrogez sur la nécessité d'avoir toujours des médicaments sur vous"
+        ]
+      },
+      "inquietudes": {
+        "principales": [
+          "Est-ce que c'est grave?",
+          "Je peux en remanger?",
+          "J'ai besoin d'un traitement?",
+          "Est-ce que je suis allergique à tous les fruits de mer maintenant?"
+        ]
+      }
+    },
+    "informationsExpert": {
+      "titre": "Informations pour l'expert évaluateur",
+      "pointsCles": [
+        "Reconnaissance d'une urticaire allergique alimentaire typique",
+        "Évaluation systématique des signes de gravité/anaphylaxie",
+        "Chronologie compatible avec réaction IgE-médiée",
+        "Orientation appropriée vers un allergologue",
+        "Éducation sur l'éviction et les signes d'alarme"
+      ],
+      "pieges": [
+        "Ne pas rechercher les signes d'anaphylaxie",
+        "Oublier de prescrire une trousse d'urgence",
+        "Ne pas orienter vers un allergologue",
+        "Minimiser le risque de réaction plus sévère ultérieure",
+        "Ne pas éduquer sur les réactivités croisées entre crustacés"
+      ],
+      "criteresDEvaluation": [
+        "Anamnèse complète avec chronologie précise",
+        "Recherche systématique des signes de gravité",
+        "Traitement approprié de l'urticaire",
+        "Plan d'éviction et de prévention clair",
+        "Communication adaptée sur les risques et la conduite à tenir"
+      ]
+    },
+    "theoriePratique": {
+      "titre": "Points théoriques et pratiques",
+      "sections": [
+        {
+          "titre": "Allergies aux crustacés",
+          "points": [
+            "2-3% de la population adulte",
+            "Tropomyosine = allergène majeur (réactivité croisée)",
+            "Persistance habituelle à l'âge adulte",
+            "Risque de réactions sévères",
+            "Réactivité croisée fréquente entre crustacés (75-80%)"
+          ]
+        },
+        {
+          "titre": "Différences urticaire allergique vs anaphylaxie",
+          "points": [
+            "Urticaire: réaction cutanée isolée",
+            "Anaphylaxie: atteinte d'au moins 2 systèmes",
+            "Critères de Sampson pour l'anaphylaxie",
+            "Évolution possible de l'urticaire vers l'anaphylaxie",
+            "Réactions biphasiques possibles (4-6h)"
+          ]
+        },
+        {
+          "titre": "Aliments à risque de réactivité croisée",
+          "points": [
+            "Autres crustacés (homard, crabe, langoustine)",
+            "Mollusques (30-40% de réactivité croisée)",
+            "Acariens (tropomyosine commune)",
+            "Insectes comestibles",
+            "Pas de réactivité croisée avec poissons"
+          ]
+        }
+      ],
+      "rappelsTherapeutiques": [
+        "Antihistaminiques H1 2e génération: première ligne",
+        "Corticoïdes oraux si réaction étendue ou sévère",
+        "Adrénaline IM: seul traitement de l'anaphylaxie",
+        "Auto-injecteur: 0.3mg adulte, 0.15mg enfant <30kg",
+        "Éviction stricte jusqu'au bilan allergologique"
+      ],
+      "examensComplementaires": [
+        "IgE spécifiques crevettes (f24)",
+        "IgE tropomyosine (f351)",
+        "Tests cutanés avec extraits commerciaux",
+        "Prick-to-prick avec aliment natif si nécessaire",
+        "Test de provocation orale en milieu hospitalier si doute"
+      ]
+    },
+    "questionsPostRencontre": {
+      "titre": "Questions post-rencontre (PEQs)",
+      "questions": [
+        {
+          "question": "Quel est le diagnostic le plus probable?",
+          "reponse": "Urticaire allergique aiguë induite par ingestion de crevettes"
+        },
+        {
+          "question": "Quels éléments orientent vers une réaction non grave?",
+          "reponse": "Pas de signes respiratoires, pas d'œdème facial, pas de chute de tension ou de malaise"
+        },
+        {
+          "question": "Quels aliments sont le plus souvent impliqués dans les allergies alimentaires chez l'adulte?",
+          "reponse": "Fruits de mer (crevettes, crabes), fruits à coque, arachides, poissons"
+        },
+        {
+          "question": "Quand prescrit-on une trousse d'adrénaline injectable?",
+          "reponse": "Si réaction systémique sévère, antécédents d'anaphylaxie, ou exposition future probable"
+        }
+      ]
+    },
+    "resume": {
+      "titre": "🦐 Réaction allergique cutanée (après repas de crevettes) – Résumé ECOS",
+      "sections": [
+        {
+          "titre": "🔍 Anamnèse",
+          "subsections": [
+            {
+              "titre": "Symptômes immédiats",
+              "points": [
+                "Prurit cutané brutal après ingestion",
+                "Urticaire généralisée (papules prurigineuses)",
+                "Flush (rougeur diffuse)",
+                "Angio-œdème (lèvres, paupières, langue)"
+              ]
+            },
+            {
+              "titre": "Contexte",
+              "points": [
+                "Début minutes à 2 h après consommation de crevettes",
+                "ATCD d’allergie alimentaire ou atopie (asthme, eczéma, rhinite allergique)",
+                "Antécédents familiaux d’allergie",
+                "Prise concomitante de médicaments (bêtabloquants : aggravent réactions)"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "👀 Examen clinique",
+          "subsections": [
+            {
+              "titre": "Signes cutanés",
+              "points": [
+                "Urticaire généralisée",
+                "Erythème diffus",
+                "Œdème des paupières, lèvres, face"
+              ]
+            },
+            {
+              "titre": "Autres systèmes (si réaction systémique)",
+              "points": [
+                "Atteinte respiratoire : dyspnée, stridor, sifflements (larynx/bronches)",
+                "Atteinte digestive : douleurs abdominales, vomissements, diarrhée",
+                "Atteinte cardiovasculaire : hypotension, tachycardie (choc anaphylactique)"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "🧪 Examens diagnostiques",
+          "subsections": [
+            {
+              "titre": "Examens en urgence",
+              "points": [
+                "Diagnostic clinique (urgence avant tout examen)",
+                "Si anaphylaxie : dosage tryptase (confirmation)"
+              ]
+            },
+            {
+              "titre": "Explorations différées",
+              "points": [
+                "Prick-test cutané aux allergènes alimentaires",
+                "Dosage IgE spécifiques crevette",
+                "Test de provocation orale (uniquement en milieu hospitalier spécialisé)"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "⚙️ Prise en charge",
+          "subsections": [
+            {
+              "titre": "Mesures initiales",
+              "points": [
+                "Arrêt immédiat ingestion allergène",
+                "Surveillance rapprochée (SpO₂, TA, FC)"
+              ]
+            },
+            {
+              "titre": "Traitement selon sévérité",
+              "points": [
+                "Réaction cutanée isolée : antihistaminiques ± corticoïdes oraux",
+                "Si atteinte respiratoire ou signes systémiques : Adrénaline IM (0,3–0,5 mg adulte, face antéro-latérale cuisse)",
+                "Oxygène, remplissage IV, hospitalisation si anaphylaxie"
+              ]
+            },
+            {
+              "titre": "Prévention secondaire",
+              "points": [
+                "Éviction stricte crevettes et crustacés",
+                "Prescription d’un stylo auto-injecteur d’adrénaline",
+                "Éducation du patient et entourage (plan d’action écrit)",
+                "Allergologue : bilan complet (IgE, tests cutanés)"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "✅ Points clés ECOS",
+          "points": [
+            "Réaction allergique alimentaire typique = urticaire + œdème minutes après ingestion",
+            "Toujours évaluer respiration et circulation (risque anaphylaxie)",
+            "Adrénaline IM = traitement vital en cas de signes systémiques",
+            "Urticaire isolée → antihistaminiques ± corticoïdes",
+            "Éducation : éviter allergène, prescription auto-injecteur adrénaline"
+          ]
+        },
+        {
+          "titre": "📋 Check-list rapide ECOS",
+          "subsections": [
+            {
+              "titre": "Questions à poser",
+              "points": [
+                "Délai entre repas (crevettes) et apparition des symptômes ?",
+                "Antécédents allergiques ou atopiques ?",
+                "Symptômes associés : dyspnée, dysphagie, malaise, douleurs abdominales ?",
+                "Médicaments en cours (bêtabloquants) ?",
+                "ATCD de réactions similaires ?"
+              ]
+            },
+            {
+              "titre": "Examens à faire",
+              "points": [
+                "Constantes vitales (SpO₂, TA, FC, FR, T°)",
+                "Inspection cutanée complète",
+                "Évaluation atteinte muqueuse et respiratoire",
+                "Dosage tryptase (si anaphylaxie)",
+                "Explorations allergologiques différées (IgE, tests cutanés)"
+              ]
+            },
+            {
+              "titre": "PEC en 3 points",
+              "points": [
+                "Évaluer gravité (cutané vs systémique)",
+                "Antihistaminiques ± corticoïdes si réaction modérée, Adrénaline IM si systémique",
+                "Prévention secondaire : éviction, auto-injecteur adrénaline, suivi allergologue"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "presentationPatient": {
+      "titre": "📑 Fiche ECOS – Cas : Urticaire allergique aiguë post-crevettes (homme 27 ans)",
+      "sections": [
+        {
+          "titre": "🧩 Checklist mentale (présentation systématisée)",
+          "points": [
+            "Intro → âge, motif (Homme 27 ans, plaques rouges prurigineuses après crevettes)",
+            "Chronologie → début 30 minutes après ingestion, régression partielle en 2h",
+            "Caractériser éruption → urticaire prurigineuse, plaques rouges, fugaces, prurit intense",
+            "Symptômes associés → chaleur corporelle, pas de dyspnée, pas d’œdème facial, pas de malaise",
+            "Recherche signes de gravité → anaphylaxie (respiration, CV, digestion, cutané généralisé)",
+            "ATCD allergiques → aucun, pas d’asthme ni d’eczéma",
+            "Contexte alimentaire → crevettes consommées, pas de symptômes chez les autres convives",
+            "Examen clinique → état général bon, conscience normale, constantes vitales stables, lésions d’urticaire en plaques fugaces, pas d’œdème de Quincke",
+            "Résumé + hypothèse principale : urticaire allergique IgE-médiée post-crevettes ; DD = anaphylaxie débutante, intoxication histaminique (scombrotoxisme)",
+            "Examens complémentaires → IgE spécifiques crevettes/tropomyosine, prick-tests, test de provocation orale en allergologie si doute",
+            "Prise en charge → antihistaminiques H1, +/- corticoïdes courts si étendu, éducation, éviction crevettes, prescription trousse urgence si risque évolutif, orientation allergologue"
+          ],
+          "mnemo": {
+            "titre": "👉 Mnémo rapide ALLERGIE",
+            "elements": [
+              "A = Antécédents allergiques",
+              "L = Lésions cutanées (urticaire, angioedème)",
+              "L = Latence après ingestion (minutes-2h)",
+              "E = Exposition alimentaire suspecte",
+              "R = Respiratoire (dyspnée, stridor, wheezing ?)",
+              "G = Gravité (CV : malaise, hypotension ?)",
+              "I = IgE spécifiques à rechercher",
+              "E = Éviction stricte allergène"
+            ]
+          }
+        },
+        {
+          "titre": "🎤 Version longue (≈2-3 min)",
+          "contenu": "Il s’agit de Julien Mercier, un étudiant de 27 ans, qui consulte après l’apparition de plaques rouges prurigineuses sur le torse, les bras et le cou. L’éruption est survenue environ 30 minutes après avoir consommé un plat contenant des crevettes ce midi. Les lésions étaient associées à une sensation de chaleur corporelle et à des démangeaisons intenses. Après deux heures, l’éruption a partiellement régressé spontanément, mais le patient garde un prurit résiduel.\n\nIl ne rapporte aucun symptôme respiratoire : pas de gêne à la déglutition, pas de dyspnée, pas de voix rauque, pas d’oppression thoracique. Pas d’œdème du visage, ni de la langue, ni malaise. Pas de douleurs abdominales ni vomissements. Il n’a aucun antécédent allergique connu, ni asthme, ni eczéma. Aucun traitement médicamenteux en cours aujourd’hui.\n\nÀ l’examen, l’état général est conservé, le patient est conscient, normotendu, fréquence cardiaque et respiratoire normales. L’examen cutané retrouve des plaques rouges surélevées typiques d’urticaire, fugaces, sans angioedème. Pas d’anomalie cardio-respiratoire ni ORL. \n\nEn résumé, il s’agit d’un homme jeune, présentant une urticaire aiguë probablement IgE-médiée après ingestion de crevettes. L’hypothèse principale est une réaction allergique alimentaire. Les diagnostics différentiels incluent une intoxication histaminique (si autres convives atteints) et une anaphylaxie débutante, mais celle-ci est écartée par l’absence d’atteinte respiratoire ou cardiovasculaire.\n\nEn termes de prise en charge immédiate, je prescrirais un antihistaminique H1 de 2e génération (cétirizine ou loratadine), avec possibilité de corticoïdes oraux courts si les lésions persistent. Une surveillance initiale de 1-2 heures est nécessaire pour s’assurer de l’absence d’évolution vers l’anaphylaxie. Ensuite, je recommanderais l’éviction stricte des crevettes et par précaution des crustacés jusqu’à un bilan allergologique spécialisé. \n\nJe proposerais une orientation en allergologie pour prick-tests, dosage d’IgE spécifiques crevette et tropomyosine, éventuellement un test de provocation orale si nécessaire. Enfin, j’éduquerais le patient sur les signes d’alarme d’anaphylaxie (dyspnée, malaise, gonflement de la langue) et je prescrirais une trousse d’urgence avec auto-injecteur d’adrénaline si un risque de réaction plus sévère est identifié."
+        },
+        {
+          "titre": "⚡ Version express (SBAR, 30 sec)",
+          "contenu": "S (Situation) : Julien Mercier, 27 ans, présente une urticaire aiguë apparue 30 minutes après ingestion de crevettes.\n\nB (Background) : Aucun antécédent allergique, pas d’asthme, pas de traitements en cours. Pas de symptômes respiratoires ni digestifs.\n\nA (Assessment) : Urticaire allergique IgE-médiée. DD : anaphylaxie (non retenue ici), intoxication histaminique.\n\nR (Recommendation) : Antihistaminique PO 5-7 jours, surveillance 1-2h, éviction stricte des crustacés, orientation allergologue pour bilan complet, éducation patient et prescription trousse d’urgence si nécessaire."
+        },
+        {
+          "titre": "🎲 Touches ludiques / mnémos",
+          "subsections": [
+            {
+              "titre": "👉 Différencier urticaire vs anaphylaxie",
+              "points": [
+                "Urticaire = atteinte cutanée isolée",
+                "Anaphylaxie = ≥2 systèmes atteints (respiratoire, CV, digestif, cutané)",
+                "Évolution possible d’une urticaire vers anaphylaxie",
+                "Toujours rechercher signes respiratoires et cardiovasculaires"
+              ]
+            },
+            {
+              "titre": "👉 Allergènes majeurs de l’adulte",
+              "points": [
+                "Crustacés (crevettes, crabes, homards)",
+                "Fruits à coque",
+                "Arachides",
+                "Poissons"
+              ]
+            },
+            {
+              "titre": "👉 Trousse d’urgence allergique (APECC)",
+              "points": [
+                "A = Adrénaline auto-injecteur",
+                "P = Plan d’action écrit",
+                "E = Éducation du patient et entourage",
+                "C = Corticoïdes oraux",
+                "C = Cétirizine (antihistaminique H1)"
+              ]
+            },
+            {
+              "titre": "⚠️ Pièges ECOS",
+              "points": [
+                "Ne pas oublier de rechercher signes d’anaphylaxie",
+                "Ne pas banaliser une première réaction (risque aggravation ultérieure)",
+                "Toujours proposer un suivi allergologique",
+                "Informer sur réactivité croisée avec autres crustacés"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "❓ Questions probables de l'examinateur (avec réponses orales)",
+          "subsections": [
+            {
+              "titre": "1. Arguments pour et contre chaque hypothèse",
+              "questions": [
+                {
+                  "question": "Urticaire allergique IgE-médiée",
+                  "reponse": {
+                    "pour": [
+                      "Délai court après ingestion (30 min)",
+                      "Plaques urticariennes typiques, prurit intense",
+                      "Déclencheur alimentaire identifié (crevettes)"
+                    ],
+                    "contre": [
+                      "Pas d’arguments significatifs contre"
+                    ]
+                  }
+                },
+                {
+                  "question": "Anaphylaxie",
+                  "reponse": {
+                    "pour": [
+                      "Même contexte allergène possible"
+                    ],
+                    "contre": [
+                      "Pas d’atteinte respiratoire",
+                      "Pas d’atteinte cardiovasculaire",
+                      "Pas de signes digestifs sévères"
+                    ]
+                  }
+                },
+                {
+                  "question": "Intoxication histaminique (scombrotoxisme)",
+                  "reponse": {
+                    "pour": [
+                      "Possible si fruits de mer mal conservés",
+                      "Tableau similaire chez plusieurs convives"
+                    ],
+                    "contre": [
+                      "Cas isolé",
+                      "Chronologie typiquement allergique"
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "titre": "2. Examens complémentaires immédiats",
+              "questions": [
+                {
+                  "question": "Quels examens demanderiez-vous ?",
+                  "reponse": [
+                    "Pas d’examen en urgence si urticaire isolée",
+                    "Dosage tryptase si suspicion anaphylaxie",
+                    "Bilan différé : IgE spécifiques crevette/tropomyosine",
+                    "Prick-tests cutanés",
+                    "Test de provocation orale (en milieu hospitalier spécialisé si doute)"
+                  ]
+                }
+              ]
+            },
+            {
+              "titre": "3. Diagnostic définitif, traitement, suivi",
+              "questions": [
+                {
+                  "question": "Diagnostic",
+                  "reponse": "Urticaire allergique aiguë induite par ingestion de crevettes"
+                },
+                {
+                  "question": "Traitement",
+                  "reponse": {
+                    "immediat": [
+                      "Antihistaminique H1 2e génération (cétirizine/loratadine)",
+                      "Corticoïdes PO courts si persistance ou étendue",
+                      "Surveillance initiale 1-2h"
+                    ],
+                    "siAnaphylaxie": [
+                      "Adrénaline IM 0,3-0,5 mg adulte (cuisse)",
+                      "Oxygène, remplissage IV",
+                      "Hospitalisation"
+                    ]
+                  }
+                },
+                {
+                  "question": "Suivi",
+                  "reponse": [
+                    "Éviction stricte crevettes/crustacés jusqu’au bilan allergologique",
+                    "Consultation allergologue sous 4-6 semaines",
+                    "Prescription trousse urgence si risque évolutif",
+                    "Éducation patient : reconnaissance signes d’anaphylaxie, appel 144 si urgence",
+                    "Carte d’allergie alimentaire après confirmation"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

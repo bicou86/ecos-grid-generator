@@ -1,0 +1,237 @@
+{
+  "title": "Thieme Divers 54 - Renouvellement médicaments HTA (téléphonique) - Homme de 50 ans",
+  "category": "Thieme Divers",
+  "subcategory": "Renouvellement médicaments HTA (téléphonique)",
+  "context": {
+    "setting": "Consultation téléphonique",
+    "patient": "Homme de 50 ans, M. Paul Black, consultant pour renouvellement médicaments HTA"
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Motif principal de consultation",
+          "binaryOnly": true,
+          "patientComment": "renouvellement médicaments HTA"
+        },
+        {
+          "id": "a2",
+          "text": "Analyse de la plainte principale",
+          "details": [
+            "Valeurs TA domicile [140-160/80-100]",
+            "Symptômes insuffisance cardiaque [orthopnée]",
+            "Claudication intermittente [3-4 pâtés maisons]",
+            "Effets secondaires [toux sèche - IEC]",
+            "Observance traitement"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Recherche de complications",
+          "details": [
+            "Insuffisance cardiaque [orthopnée]",
+            "Maladie vasculaire périphérique [claudication]",
+            "AVC [ATCD père]",
+            "Néphropathie hypertensive",
+            "Rétinopathie hypertensive"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Revue des systèmes",
+          "details": [
+            "Cardiovasculaire complet",
+            "Respiratoire",
+            "Rénal",
+            "Neurologique"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Antécédents médicaux et traitements",
+          "details": [
+            "Lisinopril 10mg pour HTA",
+            "Statine pour dyslipidémie",
+            "HTA depuis 5 ans"
+          ]
+        },
+        {
+          "id": "a6",
+          "text": "Histoire sociale et habitudes",
+          "details": [
+            "Industrie alimentaire",
+            "Pas exercice régulier",
+            "Fume 1 pqt/j × 30 ans",
+            "Boit 2-3 verres vin aux fêtes",
+            "Sexuellement actif avec femme"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Examen physique non réalisé (consultation téléphonique)",
+          "binaryOnly": true,
+          "patientComment": "Évaluation basée sur anamnèse téléphonique uniquement"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostics différentiels",
+          "ddSection": {
+            "title": "Hypothèses diagnostiques à considérer",
+            "categories": [
+              {
+                "name": "Diagnostics prioritaires",
+                "items": [
+                  {
+                    "text": "HTA essentielle",
+                    "cause": "Arguments POUR:\n\t□ HTA connue 5 ans, valeurs élevées domicile, ATCD familial AVC",
+                    "test": "→ MAPA, bilan cible organes (ECG, écho, créatinine)"
+                  },
+                  {
+                    "text": "Insuffisance cardiaque",
+                    "cause": "Arguments POUR:\n\t□ HTA, orthopnée, œdème membres, dyspnée effort",
+                    "test": "→ BNP/NT-proBNP, échocardiographie, radiographie thorax"
+                  },
+                  {
+                    "text": "Toux induite par lisinopril",
+                    "cause": "Arguments POUR:\n\t□ Sous IEC, toux sèche caractéristique, pas autre cause",
+                    "test": "→ Arrêt IEC test thérapeutique, spirométrie si doute"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Examens complémentaires appropriés",
+          "details": [
+            "Analyse urine",
+            "NFS",
+            "Profil lipidique",
+            "ALT/AST",
+            "Échocardiographie",
+            "Radiographie thoracique",
+            "ECG"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Plan de prise en charge",
+          "details": [
+            "Consultation présentielle urgente",
+            "Changement IEC (toux)",
+            "Optimisation traitement ICC",
+            "Échocardiographie",
+            "Bilan complications HTA",
+            "Modifications hygiéno-diététiques"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Conseils et éducation patient",
+          "details": [
+            "Surveillance TA domicile",
+            "Restriction sodée",
+            "Perte poids",
+            "Arrêt tabac urgent",
+            "Activité physique adaptée"
+          ]
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Questions du patient",
+          "content": "[Docteur, je suis tellement inquiet. La TA de mon père n'était pas contrôlée, et il a eu un AVC.]"
+        },
+        {
+          "id": "c2",
+          "text": "Conseils spécifiques",
+          "content": "HTA mal contrôlée avec signes ICC. Consultation présentielle urgente. Ne pas renouveler par téléphone. Changement IEC nécessaire."
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour le patient standardisé",
+      "nom": "M. Paul Black",
+      "age": "50 ans",
+      "contexte": "Consultation téléphonique",
+      "motifConsultation": {
+        "plaintePrincipale": "renouvellement médicaments HTA",
+        "autreChose": "Appel pour renouvellement lisinopril 10mg. HTA depuis 5 ans. TA à domicile 140-160/80-100. Doit dormir 2 oreillers (orthopnée). Crampes jambes après 3-4 pâtés maisons."
+      },
+      "histoireActuelle": {
+        "symptomesPrincipaux": [
+          "Appel pour renouvellement lisinopril 10mg",
+          " HTA depuis 5 ans",
+          " TA à domicile 140-160/80-100",
+          " Doit dormir 2 oreillers (orthopnée)",
+          " Crampes jambes après 3-4 pâtés maisons"
+        ],
+        "complications": [
+          "Toux sèche légère",
+          " Père décédé AVC",
+          " Prend Zocor pour cholestérol"
+        ],
+        "contexteSocial": [
+          "Industrie alimentaire",
+          " Pas exercice régulier",
+          " Fume 1 pqt/j × 30 ans",
+          " Boit 2-3 verres vin aux fêtes",
+          " Sexuellement actif avec femme"
+        ]
+      },
+      "simulation": {
+        "attitude": [
+          "Attente longue téléphone",
+          "Inquiet AVC comme père",
+          "Veut renouvellement rapide"
+        ],
+        "durantExamen": [
+          "Consultation téléphonique uniquement"
+        ],
+        "durantConsultation": [
+          "Au téléphone uniquement"
+        ]
+      },
+      "inquietudes": {
+        "principales": [
+          "[Docteur, je suis tellement inquiet. La TA de mon père n'était pas contrôlée, et il a eu un AVC.]"
+        ]
+      }
+    },
+    "informationsExpert": {
+      "titre": "Informations pour l'expert",
+      "pointsCles": [
+        "Cas: Renouvellement médicaments HTA (téléphonique)",
+        "Patient: Homme de 50 ans",
+        "Consultation téléphonique - pas d'examen physique",
+        "Évaluation des complications",
+        "Conseils et éducation thérapeutique"
+      ],
+      "pieges": [
+        "Renouveler par téléphone",
+        "Manquer signes ICC",
+        "Ne pas changer IEC si toux",
+        "Négliger observance"
+      ]
+    }
+  }
+}

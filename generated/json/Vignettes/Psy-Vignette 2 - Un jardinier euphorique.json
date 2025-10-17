@@ -1,0 +1,195 @@
+{
+  "title": "Psy-Vignette 2 - Un jardinier euphorique",
+  "context": {
+    "setting": "Service d'urgences psychiatriques",
+    "patient": "Martin, 35 ans, aide jardinier, hospitalisé il y a 4 semaines pour épisode maniaque avec caractéristiques psychotiques"
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Histoire de la maladie actuelle",
+          "details": [
+            "Perte d'emploi récente [J'ai perdu mon travail il y a quelques semaines]",
+            "Raison du licenciement [Mon patron ne supportait plus mes retards et le cannabis]",
+            "Consommation de cannabis au travail [Je fumais pendant le travail]"
+          ]
+        },
+        {
+          "id": "a2",
+          "text": "Épisode aigu initial",
+          "details": [
+            "Insomnie pendant 2 jours [Je n'ai pas dormi pendant 2 jours]",
+            "Énergie débordante [J'étais débordant d'énergie]",
+            "Danse toute la nuit [J'ai dansé toute la nuit dans un club]",
+            "Altercation avec les videurs [Je me suis battu avec les videurs au petit matin]"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Symptômes psychotiques",
+          "details": [
+            "Idées délirantes de grandeur [Je peux inverser le sens de rotation de la Terre]",
+            "Mission spéciale [Je dois sauver le climat]",
+            "Hallucinations auditives [Une voix me dit de continuer à danser]",
+            "Persistance des idées délirantes [La voix continue de me parler]"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Évolution sous traitement",
+          "details": [
+            "Amélioration du sommeil [Je dors mieux maintenant]",
+            "Diminution de l'irritabilité [Je suis moins irritable]",
+            "Persistance des idées délirantes [Je dois toujours inverser la rotation de la Terre]"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Antécédents psychiatriques",
+          "patientComment": "Pas d'hospitalisation psychiatrique antérieure"
+        },
+        {
+          "id": "a6",
+          "text": "Consommation de substances",
+          "details": [
+            "Cannabis régulier [Je fume régulièrement]",
+            "Alcool",
+            "Autres drogues"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "État mental actuel",
+          "details": [
+            "Humeur élevée résiduelle",
+            "Affect expansif",
+            "Pensée accélérée",
+            "Idées délirantes persistantes"
+          ]
+        },
+        {
+          "id": "e2",
+          "text": "Symptômes maniaques résiduels",
+          "details": [
+            "Estime de soi exagérée",
+            "Réduction du besoin de sommeil",
+            "Volubilité",
+            "Fuite des idées",
+            "Distractibilité",
+            "Agitation psychomotrice"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Caractéristiques psychotiques",
+          "details": [
+            "Délire persistant",
+            "Hallucinations auditives",
+            "Désorganisation de la pensée"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Évaluation du risque",
+          "details": [
+            "Risque suicidaire [Absent]",
+            "Risque hétéro-agressif [Modéré quand contrarié]",
+            "Compliance au traitement [Variable]"
+          ]
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic",
+          "ddSection": {
+            "title": "Diagnostics différentiels à considérer",
+            "categories": [
+              {
+                "name": "Diagnostic principal",
+                "items": [
+                  {
+                    "text": "Épisode maniaque avec caractéristiques psychotiques",
+                    "cause": "Arguments POUR:\n\t□ Disparition du besoin de sommeil\n\t□ Troubles du comportement\n\t□ Irritabilité et agressivité\n\t□ Idées délirantes de grandeur\n\t□ Hallucinations auditives",
+                    "test": "→ Évaluation psychiatrique complète"
+                  }
+                ]
+              },
+              {
+                "name": "Affinement diagnostic",
+                "items": [
+                  {
+                    "text": "Trouble bipolaire I",
+                    "cause": "Si les symptômes psychotiques disparaissent avec les symptômes maniaques",
+                    "test": "→ Suivi longitudinal"
+                  },
+                  {
+                    "text": "Trouble schizo-affectif",
+                    "cause": "Si persistance des symptômes psychotiques >2 semaines après résolution de l'épisode maniaque",
+                    "test": "→ Réévaluation après 2 semaines"
+                  }
+                ]
+              },
+              {
+                "name": "Diagnostics différentiels",
+                "items": [
+                  {
+                    "text": "Intoxication au cannabis",
+                    "cause": "Arguments CONTRE:\n\t□ Durée trop longue\n\t□ Symptômes maniaques francs",
+                    "test": "→ Toxicologie urinaire"
+                  },
+                  {
+                    "text": "Schizophrénie",
+                    "cause": "Arguments CONTRE:\n\t□ Symptômes maniaques prédominants\n\t□ Début aigu",
+                    "test": "→ Évaluation des symptômes négatifs"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Plan de traitement",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Traitement biologique",
+                "content": "Stabilisateur de l'humeur (lithium) à garder de manière durable\nAntipsychotiques atypiques à garder:\n- 3 mois après résolution des idées délirantes si trouble bipolaire\n- Au moins 12 mois si premier épisode de trouble schizo-affectif"
+              },
+              {
+                "title": "Traitement psychologique",
+                "content": "Psychoéducation individuelle et familiale\nLimitation des stimulations\nDirectives anticipées et plan de crise\nEn dehors de la crise:\n- Groupe de pairs\n- TCC gestion des émotions et substances\n- Aide à la gestion des problèmes de couple et famille"
+              },
+              {
+                "title": "Approche sociale",
+                "content": "Exploration de la situation sociale et professionnelle\nAide à défendre ses droits ou faciliter un reclassement\nMesures de protection des affaires (assistant social, curatelle)"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Clôture type",
+          "content": "Monsieur, les éléments que vous me rapportez me font penser que vous présentez un épisode maniaque avec des caractéristiques psychotiques. Dans de telles situations, on propose habituellement d'exclure une cause liée à une maladie physique et ensuite on propose une médication avec un stabilisateur de l'humeur et des antipsychotiques, une prise en charge de psychothérapie et il faut aussi qu'on explore votre situation globale pour voir si on peut vous aider pratiquement au plan social."
+        }
+      ]
+    }
+  }
+}

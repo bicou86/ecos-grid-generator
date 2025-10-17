@@ -1,0 +1,203 @@
+{
+  "title": "Thieme Mini-Cas 66 - Problèmes oculaires/visuels - Femme de 70 ans",
+  "category": "Thieme Mini-Cas",
+  "subcategory": "Problèmes oculaires/visuels",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Femme de 70 ans, Patient standardisé, consulte pour troubles visuels"
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Motif principal de consultation",
+          "binaryOnly": true,
+          "patientComment": "troubles visuels"
+        },
+        {
+          "id": "a2",
+          "text": "Analyse ciblée de la plainte",
+          "details": [
+            "Progressif vs soudain",
+            "Uni/bilatéral",
+            "Douleur",
+            "Céphalées"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Recherche des éléments clés",
+          "details": [
+            "Caractère progressif/soudain",
+            "Uni/bilatéral",
+            "Douleur associée"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Antécédents pertinents",
+          "details": [
+            "Diabète",
+            "HTA",
+            "Glaucome famille",
+            "Chirurgie oculaire"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Revue des systèmes ciblée",
+          "details": [
+            "Ophtalmologique",
+            "Neurologique",
+            "Vasculaire"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Acuité visuelle",
+          "binaryOnly": true
+        },
+        {
+          "id": "e2",
+          "text": "Champs visuels"
+        },
+        {
+          "id": "e3",
+          "text": "Fond d'œil si possible"
+        },
+        {
+          "id": "e4",
+          "text": "Réflexes pupillaires"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostics différentiels",
+          "ddSection": {
+            "title": "Hypothèses diagnostiques à considérer",
+            "categories": [
+              {
+                "name": "Diagnostics prioritaires",
+                "items": [
+                  {
+                    "text": "Glaucome",
+                    "cause": "Arguments POUR:\n\t□ Céphalées, halos, perte champ périphérique",
+                    "test": "→ Tonométrie, champ visuel, OCT"
+                  },
+                  {
+                    "text": "Cataracte",
+                    "cause": "Arguments POUR:\n\t□ Progressif, indolore, éblouissement",
+                    "test": "→ Examen lampe à fente, acuité visuelle"
+                  },
+                  {
+                    "text": "Dégénérescence maculaire",
+                    "cause": "Arguments POUR:\n\t□ Âge, vision centrale, métamorphopsies",
+                    "test": "→ OCT, angiographie rétinienne"
+                  },
+                  {
+                    "text": "Rétinopathie diabétique/hypertensive",
+                    "cause": "Arguments POUR:\n\t□ Diabète/HTA connus, microangiopathie",
+                    "test": "→ Fond d'œil, angiographie"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Examens complémentaires",
+          "details": [
+            "Glycémie, HbA1c",
+            "Examen lampe à fente",
+            "Tonométrie",
+            "CT cérébral si HIC suspectée"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Plan de prise en charge",
+          "details": [
+            "Référence ophtalmologie urgente",
+            "Contrôle diabète/HTA",
+            "Protection oculaire"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Conseils au patient",
+          "details": [
+            "Protection solaire",
+            "Contrôles réguliers",
+            "Signaler changements vision"
+          ]
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Explications au patient",
+          "content": "Problème visuel nécessitant une évaluation rapide pour préserver la vision."
+        },
+        {
+          "id": "c2",
+          "text": "Questions du patient",
+          "content": "[Vais-je devenir aveugle?]\n[C'est la cataracte?]\n[Faut-il opérer?]"
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour le patient standardisé",
+      "nom": "Patient standardisé",
+      "age": "70 ans",
+      "contexte": "Cabinet de médecine générale",
+      "motifConsultation": {
+        "plaintePrincipale": "troubles visuels",
+        "contexte": "Perte progressive ou soudaine de vision"
+      },
+      "simulation": {
+        "attitude": [
+          "Très inquiet pour sa vision",
+          "Peur cécité"
+        ],
+        "signesPhysiques": [
+          "Baisse acuité visuelle",
+          "Anomalie pupillaire possible"
+        ],
+        "durantConsultation": [
+          "Difficultés visuelles évidentes",
+          "Anxiété++"
+        ]
+      }
+    },
+    "informationsExpert": {
+      "titre": "Informations pour l'expert",
+      "pointsCles": [
+        "Mini-cas clinique: Problèmes oculaires/visuels",
+        "Focus: Caractère progressif/soudain, Uni/bilatéral, Douleur associée",
+        "Consultation ciblée de 10 minutes",
+        "Évaluation de l'approche diagnostique"
+      ],
+      "pieges": [
+        "Retarder référence ophtalmologie",
+        "Manquer urgence"
+      ]
+    }
+  }
+}

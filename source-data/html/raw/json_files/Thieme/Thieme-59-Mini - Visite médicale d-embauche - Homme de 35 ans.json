@@ -1,0 +1,197 @@
+{
+  "title": "Thieme Mini-Cas 59 - Visite médicale d'embauche - Homme de 35 ans",
+  "category": "Thieme Mini-Cas",
+  "subcategory": "Visite médicale d'embauche",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Homme de 35 ans, Patient standardisé, consulte pour examen médical d'embauche"
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Motif principal de consultation",
+          "binaryOnly": true,
+          "patientComment": "examen médical d'embauche"
+        },
+        {
+          "id": "a2",
+          "text": "Analyse ciblée de la plainte",
+          "details": [
+            "Symptômes actuels",
+            "Antécédents médicaux",
+            "Médicaments",
+            "Aptitude physique"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Recherche des éléments clés",
+          "details": [
+            "Examen général",
+            "Dépistage diabète/TB",
+            "Aptitude au travail"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Antécédents pertinents",
+          "details": [
+            "Maladies chroniques",
+            "Chirurgies",
+            "Hospitalisations",
+            "Vaccinations"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Revue des systèmes ciblée",
+          "details": [
+            "Cardio-vasculaire",
+            "Respiratoire",
+            "Digestif",
+            "Neurologique"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Signes vitaux et état général",
+          "binaryOnly": true
+        },
+        {
+          "id": "e2",
+          "text": "Examen cardio-pulmonaire"
+        },
+        {
+          "id": "e3",
+          "text": "Examen abdominal"
+        },
+        {
+          "id": "e4",
+          "text": "Examen neurologique de dépistage"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostics différentiels",
+          "ddSection": {
+            "title": "Hypothèses diagnostiques à considérer",
+            "categories": [
+              {
+                "name": "Diagnostics prioritaires",
+                "items": [
+                  {
+                    "text": "Diabète méconnu",
+                    "cause": "Arguments POUR:\n\t□ Dépistage systématique, facteurs risque possibles",
+                    "test": "→ Glycémie à jeun, HbA1c"
+                  },
+                  {
+                    "text": "Tuberculose latente",
+                    "cause": "Arguments POUR:\n\t□ Dépistage professionnel, exposition possible",
+                    "test": "→ IDR, Quantiféron, Radiographie thoracique"
+                  },
+                  {
+                    "text": "Hypertension non diagnostiquée",
+                    "cause": "Arguments POUR:\n\t□ Asymptomatique fréquent, dépistage important",
+                    "test": "→ MAPA, ECG, bilan rénal"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Examens complémentaires",
+          "details": [
+            "NFS",
+            "Glycémie à jeun",
+            "Radiographie thoracique",
+            "Analyse d'urine"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Plan de prise en charge",
+          "details": [
+            "Aptitude au travail",
+            "Dépistage maladies",
+            "Certificat médical",
+            "Conseils prévention"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Conseils au patient",
+          "details": [
+            "Maintenir activité physique",
+            "Alimentation équilibrée",
+            "Éviter tabac/alcool"
+          ]
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Explications au patient",
+          "content": "Examen de routine pour vérifier votre aptitude au travail. Les examens permettront de dépister d'éventuels problèmes."
+        },
+        {
+          "id": "c2",
+          "text": "Questions du patient",
+          "content": "[Suis-je apte au travail?]\n[Faut-il des examens supplémentaires?]"
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour le patient standardisé",
+      "nom": "Patient standardisé",
+      "age": "35 ans",
+      "contexte": "Cabinet de médecine générale",
+      "motifConsultation": {
+        "plaintePrincipale": "examen médical d'embauche",
+        "contexte": "Examen de routine sans plainte spécifique"
+      },
+      "simulation": {
+        "attitude": [
+          "Coopératif",
+          "Veut être déclaré apte"
+        ],
+        "signesPhysiques": [],
+        "durantConsultation": [
+          "Répondre aux questions de dépistage",
+          "Mentionner symptômes mineurs"
+        ]
+      }
+    },
+    "informationsExpert": {
+      "titre": "Informations pour l'expert",
+      "pointsCles": [
+        "Mini-cas clinique: Visite médicale d'embauche",
+        "Focus: Examen général, Dépistage diabète/TB, Aptitude au travail",
+        "Consultation ciblée de 10 minutes",
+        "Évaluation de l'approche diagnostique"
+      ],
+      "pieges": [
+        "Ne pas faire dépistage systématique",
+        "Oublier aptitude travail"
+      ]
+    }
+  }
+}

@@ -1,0 +1,505 @@
+{
+  "title": "AMC Urgences 5A - Hémorragie sous-arachnoïdienne",
+  "context": {
+    "setting": "Service d'urgences - Box de réanimation",
+    "patient": "Monsieur A., 50 ans, retrouvé inconscient à domicile par son épouse. Céphalée brutale il y a 3 heures avant perte de connaissance",
+    "vitals": {
+      "ta": "180/105 mmHg",
+      "fc": "110 bpm",
+      "fr": "24/min",
+      "temperature": "37.8°C",
+      "sao2": "92% à l'air ambiant"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Circonstances de découverte",
+          "binaryOnly": true,
+          "patientComment": "[Retrouvé inconscient par son épouse à domicile]"
+        },
+        {
+          "id": "a2",
+          "text": "Histoire de la maladie actuelle",
+          "details": [
+            "Début brutal [Céphalée en coup de tonnerre il y a 3 heures]",
+            "Intensité [10/10, la pire céphalée de sa vie selon l'épouse]",
+            "Localisation [Holocrânienne]",
+            "Évolution [Perte de connaissance après 30 minutes]",
+            "Vomissements [En jet, 2 épisodes avant la perte de connaissance]",
+            "Raideur de nuque [Notée par l'épouse]"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Facteurs de risque cardiovasculaires",
+          "details": [
+            "Hypertension artérielle [Non traitée, découverte il y a 2 ans]",
+            "Tabagisme [20 paquets-années]",
+            "Alcool [Consommation modérée]",
+            "Dyslipidémie [Non connue]",
+            "Diabète [Négatif]",
+            "Antécédents familiaux [Mère décédée d'AVC à 65 ans]"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Antécédents neurologiques",
+          "details": [
+            "Céphalées antérieures [Occasionnelles, jamais de cette intensité]",
+            "Céphalées sentinelles [Possible épisode il y a 2 semaines]",
+            "Traumatisme crânien [Négatif]",
+            "Épilepsie [Négative]",
+            "AVC/AIT [Négatifs]"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Médicaments et allergies",
+          "details": [
+            "Traitement habituel [Aucun traitement régulier]",
+            "Automédication récente [Paracétamol pour céphalée]",
+            "Allergies médicamenteuses [Aucune connue]",
+            "Toxiques [Pas de consommation de drogues]"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Évaluation neurologique initiale",
+          "details": [
+            "Glasgow Coma Scale [E2 V2 M4 = 8/15]",
+            "Pupilles [Anisocorie : droite 5mm, gauche 3mm]",
+            "Réflexe photomoteur [Droit absent, gauche présent]",
+            "Réflexe cornéen [Présent bilatéralement]"
+          ],
+          "binaryOnly": true
+        },
+        {
+          "id": "e2",
+          "text": "Signes méningés",
+          "details": [
+            "Raideur de nuque [Présente, importante]",
+            "Signe de Kernig [Positif]",
+            "Signe de Brudzinski [Positif]",
+            "Photophobie [Difficile à évaluer vu l'état de conscience]"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Examen neurologique focal",
+          "details": [
+            "Déficit moteur [Hémiparésie gauche 3/5]",
+            "Réflexes ostéo-tendineux [Vifs à gauche, Babinski gauche positif]",
+            "Sensibilité [Difficile à évaluer]",
+            "Paires crâniennes [Paralysie du III droit partielle]"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Signes d'hypertension intracrânienne",
+          "details": [
+            "Triade de Cushing [Hypertension, bradycardie relative, irrégularité respiratoire]",
+            "Œdème papillaire [Non évaluable en urgence]",
+            "Vomissements en jet [Rapportés par l'épouse]",
+            "Troubles de conscience [GCS 8/15]"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Examen cardiovasculaire",
+          "details": [
+            "Tension artérielle [180/105 mmHg, asymétrique]",
+            "Auscultation cardiaque [Tachycardie régulière, pas de souffle]",
+            "Pouls périphériques [Présents et symétriques]",
+            "Signes d'insuffisance cardiaque [Absents]"
+          ]
+        },
+        {
+          "id": "e6",
+          "text": "Examen respiratoire",
+          "details": [
+            "Pattern respiratoire [Irrégulier, type Cheyne-Stokes]",
+            "Auscultation pulmonaire [Claire, pas de râles]",
+            "SpO2 [92% à l'air ambiant]",
+            "Signes d'encombrement [Absents]"
+          ]
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Mesures de protection cérébrale immédiates",
+          "description": "Approche ABCDE et stabilisation",
+          "details": [
+            "Airway - Protection des voies aériennes (intubation si GCS ≤ 8)",
+            "Breathing - Oxygénothérapie pour SpO2 > 94%",
+            "Circulation - Contrôle tensionnel (cible TAS 140-160 mmHg)",
+            "Disability - Position demi-assise 30°",
+            "Exposure - Température normale"
+          ],
+          "binaryOnly": true
+        },
+        {
+          "id": "m2",
+          "text": "Examens complémentaires urgents",
+          "details": [
+            "CT cérébral sans contraste EN URGENCE",
+            "Biologie : NFS, coagulation, ionogramme, urée, créatinine",
+            "Glycémie capillaire",
+            "ECG",
+            "Troponine",
+            "Groupe sanguin, RAI"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Interprétation du CT cérébral",
+          "patientComment": "[Hyperdensité des citernes de la base, sang dans les espaces sous-arachnoïdiens, hydrocéphalie débutante]",
+          "details": [
+            "Confirmation d'hémorragie sous-arachnoïdienne",
+            "Classification de Fisher [Grade 3 : HSA épaisse]",
+            "Recherche d'hydrocéphalie [Présente, aiguë]",
+            "Recherche d'hématome intraparenchymateux [Absent]",
+            "Recherche de signes d'engagement [Absents]"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Classification de gravité",
+          "details": [
+            "Score WFNS [Grade IV : GCS 8, hémiparésie]",
+            "Score de Fisher modifié [Grade 3]",
+            "Pronostic [Mortalité 35%, morbidité élevée]",
+            "Risque de resaignement [15-20% dans les 2 premières semaines]",
+            "Risque de vasospasme [Élevé, pic J4-J14]"
+          ],
+          "scoringRule": "2 points si mention des scores WFNS et Fisher"
+        },
+        {
+          "id": "m5",
+          "text": "Traitement médical urgent",
+          "details": [
+            "Nimodipine 60 mg per os toutes les 4h (prévention vasospasme)",
+            "Antalgiques IV (morphine titrée)",
+            "Antiémétiques (ondansétron)",
+            "Contrôle tensionnel (nicardipine IV si besoin)",
+            "Prévention des crises (levetiracetam prophylactique)",
+            "Osmothérapie si HTIC (mannitol 20%)"
+          ]
+        },
+        {
+          "id": "m6",
+          "text": "Prise en charge de l'hydrocéphalie",
+          "description": "Indication de drainage ventriculaire externe",
+          "patientComment": "[Dégradation neurologique rapide, GCS passant à 6]",
+          "details": [
+            "Indication DVE urgente [Hydrocéphalie aiguë symptomatique]",
+            "Objectifs [Drainage LCS, monitoring PIC]",
+            "Cible PIC [< 20 mmHg]",
+            "Cible PPC [60-70 mmHg]",
+            "Précautions [Drainage progressif, risque de resaignement]"
+          ],
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Protocole DVE",
+                "content": "Mise en place en conditions stériles au bloc ou en réanimation\n\nPosition : Trou de trépan frontal (point de Kocher)\n\nProfondeur : 5-7 cm\n\nHauteur de drainage : 10-15 cm H2O initialement\n\nSurveillance : Débit horaire, aspect du LCS, PIC continue\n\nComplications : Infection (5-10%), hémorragie, malposition"
+              }
+            ]
+          }
+        },
+        {
+          "id": "m7",
+          "text": "Diagnostic étiologique",
+          "ddSection": {
+            "title": "Causes d'hémorragie sous-arachnoïdienne",
+            "categories": [
+              {
+                "name": "Causes anévrysmales (85%)",
+                "items": [
+                  {
+                    "text": "Rupture d'anévrysme intracrânien",
+                    "cause": "Arguments POUR:\n\t□ Âge 50 ans\n\t□ HTA non contrôlée\n\t□ Tabagisme\n\t□ Antécédent familial d'AVC\n\t□ Possible céphalée sentinelle",
+                    "test": "→ Angio-CT cérébral ou artériographie"
+                  }
+                ]
+              },
+              {
+                "name": "Causes non-anévrysmales (15%)",
+                "items": [
+                  {
+                    "text": "HSA périmésencéphalique",
+                    "cause": "Arguments CONTRE:\n\t□ Déficit neurologique présent\n\t□ Hydrocéphalie\n\t□ Fisher grade 3",
+                    "test": "→ IRM cérébrale si angio-CT négative"
+                  },
+                  {
+                    "text": "Malformation artério-veineuse",
+                    "cause": "Arguments possibles:\n\t□ Âge relativement jeune\n\t□ Céphalées récurrentes",
+                    "test": "→ Artériographie cérébrale"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m8",
+          "text": "Angio-CT cérébral et traitement définitif",
+          "patientComment": "[Anévrysme de l'artère communicante antérieure de 8 mm]",
+          "details": [
+            "Localisation [Artère communicante antérieure]",
+            "Taille [8 mm, rupture probable]",
+            "Morphologie [Sacciforme avec collet étroit]",
+            "Traitement endovasculaire [Coiling en urgence < 24h]",
+            "Alternative chirurgicale [Clipping si anatomie défavorable]",
+            "Timing [Idéalement dans les 24-48h]"
+          ]
+        },
+        {
+          "id": "m9",
+          "text": "Surveillance et prévention des complications",
+          "details": [
+            "Monitoring neurologique horaire",
+            "Doppler transcrânien quotidien (dépistage vasospasme)",
+            "Surveillance PIC si DVE",
+            "Bilan hydro-électrolytique (risque de SIADH/cerebral salt wasting)",
+            "Prévention thromboembolique après sécurisation",
+            "Rééducation précoce"
+          ],
+          "redflagsSection": {
+            "title": "Complications à surveiller",
+            "items": [
+              {
+                "text": "Resaignement",
+                "description": "Pic dans les 24 premières heures, mortalité 70%"
+              },
+              {
+                "text": "Vasospasme",
+                "description": "J4-J14, cause d'ischémie cérébrale retardée"
+              },
+              {
+                "text": "Hydrocéphalie",
+                "description": "Aiguë (24h) ou chronique (semaines)"
+              },
+              {
+                "text": "Hyponatrémie",
+                "description": "SIADH ou cerebral salt wasting, à partir de J3"
+              },
+              {
+                "text": "Crises épileptiques",
+                "description": "3-5% en phase aiguë, jusqu'à 25% à long terme"
+              }
+            ]
+          }
+        },
+        {
+          "id": "m10",
+          "text": "Communication avec la famille",
+          "details": [
+            "Expliquer la gravité de la situation",
+            "Informer sur le diagnostic d'HSA",
+            "Expliquer la nécessité du traitement en urgence",
+            "Discuter du pronostic avec prudence",
+            "Proposer un soutien psychologique",
+            "Planifier des points d'information réguliers"
+          ]
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Communication avec l'épouse",
+          "content": "Madame, votre mari a fait une hémorragie cérébrale grave, un saignement dans le cerveau probablement dû à la rupture d'un anévrysme. Nous devons agir rapidement pour le stabiliser et traiter la cause. Il va être transféré en réanimation neurochirurgicale. Son état est critique mais nous faisons tout pour le soigner."
+        },
+        {
+          "id": "c2",
+          "text": "Questions difficiles de la famille",
+          "content": "[Va-t-il survivre ?]\n[Aura-t-il des séquelles ?]\n[Pourquoi cela est-il arrivé ?]\n[Aurait-on pu le prévenir ?]"
+        },
+        {
+          "id": "c3",
+          "text": "Réponses adaptées",
+          "exemplesPhrases": [
+            "Le pronostic est réservé. Les 72 prochaines heures sont critiques. Nous surveillons son état en permanence.",
+            "Il est trop tôt pour évaluer les séquelles potentielles. La récupération dépendra de plusieurs facteurs.",
+            "L'anévrysme était probablement présent depuis longtemps. L'hypertension non traitée a pu favoriser sa rupture.",
+            "Les anévrysmes sont souvent silencieux. La céphalée d'il y a 2 semaines était peut-être un signe d'alerte."
+          ]
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "images": [
+      {
+        "title": "CT-scan cérébral comparatif normal",
+        "description": "CT-scan cérébral normal pour comparaison montrant l'anatomie normale sans hémorragie",
+        "data": "grilles_generees/html/images/AMC-Urgences-Medecine-Intensive-5/A1-CT-scan cérébral comparatif normal.jpg"
+      },
+      {
+        "title": "CT-scan cérébral en urgence - HSA",
+        "description": "CT-scan montrant une hémorragie sous-arachnoïdienne diffuse dans les citernes de la base",
+        "data": "grilles_generees/html/images/AMC-Urgences-Medecine-Intensive-5/A1-CT-scan cérébral en urgence.jpg"
+      },
+      {
+        "title": "Angio-CT en urgence",
+        "description": "Angio-CT cérébral montrant un anévrisme de l'artère communicante antérieure",
+        "data": "grilles_generees/html/images/AMC-Urgences-Medecine-Intensive-5/A2-Angio-CT en urgence.jpg"
+      },
+      {
+        "title": "Classification clinique des HSA - WFNS grading system",
+        "description": "Score WFNS (World Federation of Neurological Surgeons) pour l'évaluation de la gravité clinique",
+        "data": "grilles_generees/html/images/AMC-Urgences-Medecine-Intensive-5/A3-Classification clinique des HSA-WFNS grading system.jpg"
+      },
+      {
+        "title": "Classification radiologique des HSA - Fisher grading system",
+        "description": "Score de Fisher pour l'évaluation radiologique et prédiction du risque de vasospasme",
+        "data": "grilles_generees/html/images/AMC-Urgences-Medecine-Intensive-5/A4-Classification radiologique des HSA-Fischer grading system.jpg"
+      }
+    ],
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour le patient standardisé - M. A., HSA",
+      "nom": "Monsieur A.",
+      "age": "50 ans",
+      "contexte": "Box de réanimation aux urgences",
+      "motifConsultation": {
+        "plaintePrincipale": "Patient inconscient, ne peut pas communiquer",
+        "autreChose": "L'épouse est présente et fournit les informations"
+      },
+      "histoireActuelle": {
+        "symptomesPrincipaux": [
+          "Céphalée brutale en coup de tonnerre il y a 3 heures",
+          "Perte de connaissance progressive",
+          "Vomissements en jet",
+          "Raideur de nuque notée par l'épouse"
+        ]
+      },
+      "simulation": {
+        "attitude": [
+          "Patient comateux, GCS 8/15",
+          "Réagit faiblement à la douleur",
+          "Gémissements incompréhensibles",
+          "Position en décérébration intermittente",
+          "Respiration irrégulière"
+        ],
+        "durantExamen": [
+          "Pupille droite dilatée et aréactive",
+          "Raideur de nuque marquée",
+          "Réflexe de Babinski positif à gauche",
+          "Hémiparésie gauche",
+          "Ne suit pas les ordres simples"
+        ]
+      },
+      "roleEpouse": {
+        "informations": [
+          "Très anxieuse et paniquée",
+          "Donne les informations sur les antécédents",
+          "Décrit la séquence des événements",
+          "Pose des questions sur le pronostic",
+          "Mentionne la céphalée d'il y a 2 semaines"
+        ]
+      }
+    },
+    "informationsExpert": {
+      "titre": "Guide pour l'expert évaluateur - HSA",
+      "pointsCles": [
+        "Évaluation rapide du GCS et des signes de localisation",
+        "Reconnaissance des signes d'HTIC et d'engagement",
+        "Indication urgente du CT cérébral",
+        "Interprétation correcte des scores WFNS et Fisher",
+        "Mise en place rapide du traitement (nimodipine)",
+        "Reconnaissance de l'indication de DVE"
+      ],
+      "pieges": [
+        "Retarder l'imagerie cérébrale",
+        "Ne pas protéger les voies aériennes si GCS ≤ 8",
+        "Baisser trop la tension artérielle avant sécurisation",
+        "Oublier la nimodipine (prévention vasospasme)",
+        "Ne pas reconnaître l'hydrocéphalie aiguë",
+        "Ponction lombaire avant imagerie (contre-indiquée)"
+      ],
+      "rolesInterventions": [
+        "Patient reste comateux durant toute la station",
+        "L'épouse fournit l'anamnèse",
+        "Fournir les résultats du CT quand demandé",
+        "Simuler une dégradation neurologique à 10 minutes",
+        "L'épouse devient plus anxieuse avec la dégradation"
+      ]
+    },
+    "theoriePratique": {
+      "titre": "Rappels théoriques - Hémorragie sous-arachnoïdienne",
+      "sections": [
+        {
+          "titre": "Physiopathologie de l'HSA",
+          "contenu": "L'HSA résulte de la rupture d'un vaisseau dans l'espace sous-arachnoïdien. Dans 85% des cas, elle est due à la rupture d'un anévrysme intracrânien. Le sang dans l'espace sous-arachnoïdien provoque une irritation méningée, une augmentation de la PIC et peut obstruer la circulation du LCS.",
+          "points": [
+            "Incidence : 9/100 000 par an",
+            "Pic d'âge : 50-60 ans",
+            "Mortalité : 45% à 30 jours",
+            "Facteurs de risque : HTA, tabac, alcool, cocaïne",
+            "20% meurent avant l'arrivée à l'hôpital"
+          ]
+        },
+        {
+          "titre": "Score WFNS (World Federation of Neurological Surgeons)",
+          "contenu": "Grade I: GCS 15, pas de déficit moteur\nGrade II: GCS 13-14, pas de déficit moteur\nGrade III: GCS 13-14, déficit moteur\nGrade IV: GCS 7-12, avec ou sans déficit\nGrade V: GCS 3-6, avec ou sans déficit",
+          "points": [
+            "Mortalité Grade I-II : 5-10%",
+            "Mortalité Grade III : 20%",
+            "Mortalité Grade IV : 35%",
+            "Mortalité Grade V : 70%"
+          ]
+        },
+        {
+          "titre": "Classification de Fisher modifiée",
+          "contenu": "Grade 1: Pas de sang visible\nGrade 2: HSA fine < 1mm\nGrade 3: HSA épaisse > 1mm\nGrade 4: HSA + hématome intraparenchymateux ou HIV",
+          "points": [
+            "Prédit le risque de vasospasme",
+            "Grade 3: risque maximal (95%)",
+            "Influence le pronostic fonctionnel"
+          ]
+        },
+        {
+          "titre": "Complications et timeline",
+          "contenu": "J0-J3: Resaignement (pic 24h), hydrocéphalie aiguë, crises\nJ4-J14: Vasospasme (pic J7-J8), ischémie cérébrale retardée\nJ3-J10: Troubles hydro-électrolytiques (SIADH, CSW)\n>J14: Hydrocéphalie chronique, épilepsie",
+          "points": [
+            "Resaignement : 4% première 24h, puis 1-2%/jour",
+            "Vasospasme symptomatique : 30%",
+            "Hydrocéphalie chronique : 20%",
+            "Déficit cognitif à long terme : 50%"
+          ]
+        }
+      ],
+      "rappelsTherapeutiques": [
+        "Nimodipine : 60 mg PO/SNG toutes les 4h pendant 21 jours (NNT=13 pour prévenir un déficit)",
+        "Contrôle tensionnel : TAS 140-160 mmHg avant sécurisation, < 140 après",
+        "DVE si hydrocéphalie : maintenir PIC < 20 mmHg, PPC 60-70 mmHg",
+        "Triple-H therapy abandonnée : euvolémie maintenant recommandée",
+        "Angioplastie si vasospasme réfractaire au traitement médical",
+        "Antiépileptiques prophylactiques : controversés, 3-7 jours maximum"
+      ],
+      "examensComplementaires": [
+        "CT cérébral sans contraste : sensibilité 95% à J1, 50% à J7",
+        "Ponction lombaire si CT négatif et forte suspicion : xanthochromie après 12h",
+        "Angio-CT : sensibilité 95% pour anévrysmes > 3mm",
+        "Artériographie cérébrale : gold standard, permet le traitement",
+        "IRM/ARM : si angio-CT négative, recherche autres causes",
+        "Doppler transcrânien : dépistage vasospasme (vélocités > 120 cm/s)"
+      ]
+    }
+  }
+}

@@ -1,0 +1,290 @@
+{
+  "title": "Thieme Psychiatrie 39 - Douleur thoracique avec anxiété - Femme de 35 ans",
+  "category": "Thieme Psychiatrie",
+  "subcategory": "Douleur thoracique avec anxiété",
+  "context": {
+    "setting": "Service d'urgences",
+    "patient": "Femme de 35 ans, Mme Carol Roberts, consultant pour douleur thoracique",
+    "vitals": {
+      "fc": "86 bpm",
+      "ta": "120/80 mmHg",
+      "fr": "16/min",
+      "temperature": "37°C"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Motif principal de consultation",
+          "binaryOnly": true,
+          "patientComment": "douleur thoracique"
+        },
+        {
+          "id": "a2",
+          "text": "Analyse de la plainte principale",
+          "details": [
+            "Durée et fréquence [3-4 semaines, épisodes de 30 secondes]",
+            "Localisation [partie centrale thorax]",
+            "Symptômes associés [oppression, dyspnée, palpitations, transpiration]",
+            "Facteurs déclenchants [endroits bondés]",
+            "Impression de mort imminente"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Symptômes psychiatriques (SIG E CAPS)",
+          "details": [
+            "Sommeil perturbé [2h pour s'endormir]",
+            "Intérêt maintenu",
+            "Pas de culpabilité",
+            "Énergie conservée",
+            "Concentration variable",
+            "Appétit normal",
+            "Pas d'idées suicidaires"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Facteurs déclenchants et stresseurs",
+          "details": [
+            "Conflits conjugaux prolongés",
+            "Stress concernant avenir enfants",
+            "Endroits bondés"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Évaluation du risque suicidaire/homicide",
+          "details": [
+            "Pas d'idées suicidaires",
+            "Pas d'idées homicides",
+            "Pas de plan",
+            "Support social présent"
+          ]
+        },
+        {
+          "id": "a6",
+          "text": "Antécédents psychiatriques et médicaux",
+          "details": [
+            "SCI et vessie hyperactive",
+            "Consultations multiples sans diagnostic"
+          ]
+        },
+        {
+          "id": "a7",
+          "text": "Histoire sociale et toxiques",
+          "details": [
+            "Assistante médicale",
+            "Café 3-4 tasses/jour",
+            "Fume 1 pqt/j × 10 ans",
+            "Boit socialement",
+            "Sexuellement active avec mari",
+            "SCI et vessie hyperactive sous oxybutynine"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Signes vitaux et apparence générale",
+          "binaryOnly": true
+        },
+        {
+          "id": "e2",
+          "text": "Examen de l'état mental (Mini-Mental State)",
+          "details": [
+            "Alerte et orientée ×3",
+            "Discours normal",
+            "Pensée organisée",
+            "Pas d'hallucinations",
+            "Jugement intact"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Affect et humeur",
+          "details": [
+            "Humeur anxieuse",
+            "Affect tendu",
+            "Congruent avec humeur"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Examen neurologique ciblé",
+          "details": [
+            "Pupilles (PERRLA)",
+            "Réflexes",
+            "Force musculaire",
+            "Sensibilité",
+            "Tremblements"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Examen physique général",
+          "details": [
+            "Examen cardio-pulmonaire normal",
+            "Pas de signes thyroïdiens",
+            "Examen abdominal normal"
+          ]
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostics différentiels psychiatriques",
+          "ddSection": {
+            "title": "Hypothèses diagnostiques à considérer",
+            "categories": [
+              {
+                "name": "Diagnostics prioritaires",
+                "items": [
+                  {
+                    "text": "Trouble panique",
+                    "cause": "Arguments POUR:\n\t□ Épisodes courts, symptômes physiques intenses, peur de mourir, endroits bondés",
+                    "test": "→ ECG, TSH, toxicologie si indiquée"
+                  },
+                  {
+                    "text": "Anxiété généralisée",
+                    "cause": "Arguments POUR:\n\t□ Inquiétudes multiples, tension chronique, troubles sommeil, symptômes physiques",
+                    "test": "→ TSH, NFS, bilan métabolique"
+                  },
+                  {
+                    "text": "Syndrome coronarien aigu (à exclure)",
+                    "cause": "Arguments POUR:\n\t□ Douleur thoracique, facteurs risque (tabac), âge",
+                    "test": "→ ECG, troponines, radiographie thorax"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Examens complémentaires pertinents",
+          "details": [
+            "ECG",
+            "Troponines",
+            "NFS",
+            "TSH",
+            "Toxicologie si indiquée"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Plan de prise en charge Bio-Psycho-Social",
+          "details": [
+            "Bio: Anxiolytiques si besoin, ISRS à considérer",
+            "Psycho: TCC pour trouble panique",
+            "Social: Thérapie couple",
+            "Suivi ambulatoire"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Critères d'hospitalisation",
+          "details": [
+            "Pas d'indication hospitalisation",
+            "Suivi ambulatoire suffisant",
+            "Réseau support présent"
+          ]
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Questions du patient",
+          "content": "[Ai-je un problème cardiaque?]"
+        },
+        {
+          "id": "c2",
+          "text": "Counseling et soutien psychologique",
+          "content": "Rassurer sur absence pathologie cardiaque après bilan. Expliquer trouble panique. Techniques respiration. Importance suivi."
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour le patient standardisé",
+      "nom": "Mme Carol Roberts",
+      "age": "35 ans",
+      "contexte": "Service d'urgences",
+      "motifConsultation": {
+        "plaintePrincipale": "douleur thoracique",
+        "autreChose": "Épisodes douleur thoracique intense depuis 3-4 semaines, partie centrale thorax. Durent 30 secondes. Oppression, difficultés respiratoires, palpitations, transpiration. Surviennent dans endroits bondés, impression de mourir."
+      },
+      "histoireActuelle": {
+        "symptomesPrincipaux": [
+          "Épisodes douleur thoracique intense depuis 3-4 semaines, partie centrale thorax",
+          " Durent 30 secondes",
+          " Oppression, difficultés respiratoires, palpitations, transpiration",
+          " Surviennent dans endroits bondés, impression de mourir"
+        ],
+        "facteursDeclenchants": [
+          "Conflits conjugaux prolongés",
+          "Stress concernant avenir enfants",
+          "Endroits bondés"
+        ],
+        "contextePsychosocial": [
+          "Assistante médicale",
+          " Café 3-4 tasses/jour",
+          " Fume 1 pqt/j × 10 ans",
+          " Boit socialement",
+          " Sexuellement active avec mari",
+          " SCI et vessie hyperactive sous oxybutynine"
+        ]
+      },
+      "simulation": {
+        "attitude": [
+          "Anxieuse",
+          "Préoccupée par symptômes physiques",
+          "Coopérative mais tendue"
+        ],
+        "durantEntretien": [
+          "Exprimer inquiétude symptômes cardiaques",
+          "Mentionner conflits conjugaux si questionné",
+          "Décrire sensation mort imminente"
+        ],
+        "comportementNonVerbal": [
+          "Position tendue",
+          "Respiration superficielle",
+          "Mains moites"
+        ]
+      },
+      "inquietudes": {
+        "principales": [
+          "[Ai-je un problème cardiaque?]"
+        ]
+      }
+    },
+    "informationsExpert": {
+      "titre": "Informations pour l'expert",
+      "pointsCles": [
+        "Cas psychiatrique: Douleur thoracique avec anxiété",
+        "Patient: Femme de 35 ans",
+        "Évaluation psychiatrique complète",
+        "Évaluation du risque suicidaire",
+        "Plan bio-psycho-social"
+      ],
+      "pieges": [
+        "Ne pas exclure cause organique",
+        "Minimiser impact trouble panique",
+        "Oublier facteurs psychosociaux"
+      ]
+    }
+  }
+}

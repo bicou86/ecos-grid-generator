@@ -1,0 +1,562 @@
+{
+  "title": "SMIG-1 - Syncope",
+  "context": {
+    "setting": "Service d'urgences",
+    "patient": "Monsieur L., 65 ans, se présente aux urgences pour une perte de connaissance survenue ce matin après s'être levé. Il s'agit du deuxième épisode, le précédent datant d'environ un an. Patient connu pour un infarctus du myocarde à 58 ans traité par pontage aorto-coronarien et une hypertension artérielle",
+    "vitals": {
+      "ta": "135/80 mmHg",
+      "fc": "80 bpm",
+      "fr": "16/min",
+      "temperature": "36.8°C"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Circonstances de la syncope",
+          "binaryOnly": true,
+          "patientComment": "[Syncope survenue tôt le matin après m'être levé]"
+        },
+        {
+          "id": "a2",
+          "text": "Recherche des 5P - Prodromes",
+          "details": [
+            "Nature des prodromes [Pas de prodromes - syncope à l'emporte-pièce]",
+            "Durée des prodromes [Aucun]",
+            "Palpitations [Non]",
+            "Nausées/vomissements [Non]",
+            "Vision floue/vertiges [Non]",
+            "Sudations/chaleur [Non]"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Recherche des 5P - Position et Précipitants",
+          "details": [
+            "Position avant syncope [Debout, juste après le lever]",
+            "Station debout prolongée [Non]",
+            "Chaleur/environnement [Non]",
+            "Émotion/douleur [Non]",
+            "Effort physique [Non]",
+            "Repas copieux [Non]",
+            "Miction/défécation [Non]"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Recherche des 5P - Post-syncope",
+          "details": [
+            "Récupération [Complète et spontanée]",
+            "Durée de la perte de connaissance [Brève, quelques secondes]",
+            "État post-critique [Absent]",
+            "Confusion résiduelle [Non, récupération rapide]",
+            "Asthénie [Marquée après la syncope]",
+            "Douleur thoracique [Non]",
+            "Dyspnée [Non]",
+            "Déficit neurologique [Non]"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Recherche des 5P - Personnel (antécédents)",
+          "details": [
+            "Épisodes antérieurs [Oui, deuxième épisode, le dernier il y a environ 1 an]",
+            "Infarctus du myocarde [À 58 ans, traité par pontage aorto-coronarien]",
+            "Hypertension artérielle [Traitée]",
+            "Diabète [Non]",
+            "Épilepsie [Non]",
+            "AVC/AIT [Non]",
+            "Tabagisme [Ancien]"
+          ]
+        },
+        {
+          "id": "a6",
+          "text": "Médicaments et allergies",
+          "details": [
+            "IEC [Reniten 20 mg/jour]",
+            "Antiagrégant [Aspirine 100 mg/jour]",
+            "Changement récent [Non]",
+            "Observance [Bonne]",
+            "Allergies médicamenteuses [Aucune]"
+          ]
+        },
+        {
+          "id": "a7",
+          "text": "Anamnèse familiale",
+          "details": [
+            "Mort subite familiale [Non]",
+            "Cardiopathies familiales [Non spécifié]",
+            "Épilepsie familiale [Non]"
+          ]
+        },
+        {
+          "id": "a8",
+          "text": "Témoins et description",
+          "details": [
+            "Présence de témoins [Non, patient seul]",
+            "Mouvements tonico-cloniques [Non observés]",
+            "Morsure de langue [Non]",
+            "Perte d'urines [Non]"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "État général et paramètres vitaux",
+          "details": [
+            "État général [Bon]",
+            "Conscience [Normal, Glasgow 15]",
+            "TA [135/80 mmHg, normocarde]",
+            "FC [80 bpm, régulier]",
+            "FR [16/min, eupnéique]",
+            "Température [36.8°C, afébrile]",
+            "SpO2 [98% air ambiant]",
+            "Pâleur/cyanose [Absente]"
+          ]
+        },
+        {
+          "id": "e2",
+          "text": "Examen cardiovasculaire",
+          "details": [
+            "Rythme cardiaque [Régulier]",
+            "Souffle cardiaque [Proto-méso-systolique 2/6 au mésocarde, sans irradiation]",
+            "Pouls périphériques [Normaux, symétriques]",
+            "Signes d'insuffisance cardiaque [Absents]",
+            "Œdèmes des membres inférieurs [Absents]",
+            "Turgescence jugulaire [Normale]",
+            "Auscultation carotidienne [Pas de souffle]"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Examen pulmonaire",
+          "details": [
+            "Auscultation pulmonaire [Normale]",
+            "Signes d'embolie pulmonaire [Absents]",
+            "Dyspnée [Absente]"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Examen neurologique",
+          "details": [
+            "État de conscience [Normal]",
+            "Déficit focal [Absent]",
+            "Signes méningés [Absents]",
+            "Réflexes [Normaux, symétriques]",
+            "Coordination [Normale]",
+            "Signes d'AIT/AVC [Absents]"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Test de Schellong (test d'orthostatisme)",
+          "details": [
+            "TA couchée [135/80 mmHg]",
+            "TA debout 3 min [125/75 mmHg - chute TAs 10 mmHg]",
+            "TA debout 10 min [Chute TAs 10 mmHg]",
+            "Symptômes lors du test [Asymptomatique]",
+            "Conclusion [Test négatif (chute < 20 mmHg systolique)]"
+          ]
+        },
+        {
+          "id": "e6",
+          "text": "Recherche de lésions secondaires",
+          "details": [
+            "Plaies cutanées [Absentes]",
+            "Hématomes [Absents]",
+            "Fractures suspectées [Non]",
+            "Morsure de langue [Absente]"
+          ]
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic différentiel initial",
+          "description": "Après anamnèse et examen clinique",
+          "ddSection": {
+            "title": "Diagnostics différentiels de la syncope",
+            "categories": [
+              {
+                "name": "Causes cardiaques (haute probabilité)",
+                "items": [
+                  {
+                    "text": "Trouble du rythme ventriculaire",
+                    "cause": "Arguments POUR:\n\t□ Cardiopathie ischémique connue\n\t□ Antécédent d'infarctus avec pontage\n\t□ Absence de prodromes (syncope à l'emporte-pièce)\n\t□ Récidive de syncope",
+                    "test": "→ ECG, Holter, échocardiographie"
+                  },
+                  {
+                    "text": "Bloc atrio-ventriculaire",
+                    "cause": "Arguments POUR:\n\t□ Cardiopathie sous-jacente\n\t□ Syncope sans prodromes\nArguments CONTRE:\n\t□ Pouls régulier à l'examen",
+                    "test": "→ ECG, monitoring cardiaque"
+                  }
+                ]
+              },
+              {
+                "name": "Causes neurocardiogéniques",
+                "items": [
+                  {
+                    "text": "Syncope vasovagale",
+                    "cause": "Arguments CONTRE:\n\t□ Absence de prodromes typiques\n\t□ Absence de facteurs déclenchants\n\t□ Âge et terrain cardiovasculaire",
+                    "test": "→ Tilt test si doute"
+                  },
+                  {
+                    "text": "Hypotension orthostatique",
+                    "cause": "Arguments POUR:\n\t□ Survenue au lever\n\t□ Traitement par IEC\nArguments CONTRE:\n\t□ Test de Schellong négatif\n\t□ Asymptomatique lors du test",
+                    "test": "→ Répéter test de Schellong"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Bilan initial systématique",
+          "details": [
+            "ECG 12 dérivations [Rythme sinusal 80 bpm, ancien infarctus antéro-septal, 2 ESV polymorphes]",
+            "Test de Schellong [Chute TAs 10 mmHg, asymptomatique - négatif]",
+            "Anamnèse et examen clinique [Complets]"
+          ],
+          "binaryOnly": true
+        },
+        {
+          "id": "m3",
+          "text": "Examens biologiques",
+          "details": [
+            "NFS [Normale]",
+            "Électrolytes (Na, K, Ca) [Normaux]",
+            "Glycémie [Normale]",
+            "Créatinine [Normale]",
+            "Troponine [Normale]",
+            "BNP/NT-proBNP [À considérer]"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Examens complémentaires de 2ème intention",
+          "description": "Selon l'orientation diagnostique",
+          "details": [
+            "Massage du sinus carotidien [Pas d'hypersensibilité]",
+            "Holter ECG 24h [Salve de TV polymorphe 160 bpm reproduisant partiellement les symptômes]",
+            "Échocardiographie [FEVG 30%, pas de valvulopathie]",
+            "PET-CT cardiaque [Hypoperfusion fixée (nécrose) et ischémie de stress antéro-latérale]",
+            "Test d'effort [À considérer]",
+            "Étude électrophysiologique [Si suspicion rythmique persistante]"
+          ]
+        },
+        {
+          "id": "m5",
+          "text": "Diagnostic final et stratification du risque",
+          "patientComment": "[Syncope sur tachycardie ventriculaire avec ischémie myocardique de stress]",
+          "details": [
+            "Diagnostic retenu [Syncope cardiaque rythmique]",
+            "Mécanisme [TV sur cardiopathie ischémique]",
+            "Facteur déclenchant [Ischémie myocardique de stress]",
+            "Risque de récidive [Élevé]",
+            "Pronostic [Mauvais sans traitement]"
+          ],
+          "scoringRule": "2 points si diagnostic cardiaque évoqué"
+        },
+        {
+          "id": "m6",
+          "text": "Critères d'hospitalisation",
+          "details": [
+            "Cardiopathie connue [Oui - FEVG basse, antécédent d'IDM]",
+            "ECG anormal [Oui - séquelles d'infarctus, ESV]",
+            "Syncope à l'emporte-pièce [Oui]",
+            "Suspicion de trouble du rythme [Oui]",
+            "Monitoring continu nécessaire [Oui]",
+            "Décision [Hospitalisation avec monitoring]"
+          ],
+          "binaryOnly": true
+        },
+        {
+          "id": "m7",
+          "text": "Traitement de la cause sous-jacente",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Prise en charge de la syncope cardiaque rythmique",
+                "content": "TRAITEMENT IMMÉDIAT:\n- Monitoring cardiaque continu\n- Correction des troubles électrolytiques\n- Optimisation du traitement anti-ischémique\n\nTRAITEMENT DÉFINITIF:\n- Revascularisation coronaire (angioplastie/pontage)\n- Défibrillateur automatique implantable (DAI)\n- Antiarythmiques (amiodarone, bêta-bloquants)\n- Optimisation du traitement de l'insuffisance cardiaque\n\nSURVEILLANCE:\n- Holter réguliers\n- Suivi cardiologique rapproché"
+              }
+            ]
+          },
+          "details": [
+            "Revascularisation coronaire [Indication formelle]",
+            "Défibrillateur implantable [Indication classe I]",
+            "Bêta-bloquants [Titration progressive]",
+            "Amiodarone [Si TV récidivantes]",
+            "IEC [Poursuite et optimisation]",
+            "Antiagrégation [Poursuite aspirine]"
+          ]
+        },
+        {
+          "id": "m8",
+          "text": "Traitement selon l'étiologie - Autres causes",
+          "description": "Principes thérapeutiques selon le type de syncope",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Syncopes réflexes (vasovagales)",
+                "content": "- Information et réassurance (pronostic bénin)\n- Éviter les facteurs déclenchants\n- Manœuvres de contre-pression\n- Hydratation adéquate (2-2.5 L/jour)\n- Pacemaker si cardio-inhibitrice sévère"
+              },
+              {
+                "title": "Hypotension orthostatique",
+                "content": "- Lever progressif\n- Bas de contention\n- Apport hydrosodé (10g sel/jour)\n- Révision des médicaments hypotenseurs\n- Fludrocortisone ou midodrine si sévère"
+              }
+            ]
+          }
+        },
+        {
+          "id": "m9",
+          "text": "Éducation du patient et suivi",
+          "details": [
+            "Explication du diagnostic [Syncope cardiaque sur trouble du rythme]",
+            "Signes d'alarme [Palpitations, douleur thoracique, dyspnée]",
+            "Conduite à tenir [Consultation urgente si récidive]",
+            "Restrictions d'activité [Pas de conduite jusqu'à traitement]",
+            "Observance thérapeutique [Importance critique]",
+            "Suivi cardiologique [Rapproché, dans 1 mois]"
+          ]
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Communication avec le patient",
+          "content": "Monsieur L., les examens montrent que votre perte de connaissance est due à un trouble du rythme cardiaque, une tachycardie ventriculaire, en lien avec votre ancien infarctus et une zone de votre cœur qui manque d'oxygène à l'effort. C'est une situation sérieuse qui nécessite une hospitalisation immédiate avec surveillance continue. Nous allons probablement devoir améliorer la vascularisation de votre cœur et implanter un défibrillateur pour prévenir les récidives."
+        },
+        {
+          "id": "c2",
+          "text": "Questions du patient",
+          "content": "[Est-ce que c'est grave docteur ?]\n[Pourquoi maintenant, après tant d'années ?]\n[Vais-je pouvoir reprendre une vie normale ?]\n[Qu'est-ce qu'un défibrillateur ?]"
+        },
+        {
+          "id": "c3",
+          "text": "Réponses adaptées",
+          "exemplesPhrases": [
+            "C'est effectivement sérieux, mais nous avons des traitements efficaces. La prise en charge rapide améliore considérablement le pronostic.",
+            "Votre cœur a développé des zones d'ischémie qui favorisent les troubles du rythme. C'est une évolution possible après un infarctus.",
+            "Après le traitement, la plupart des patients reprennent leurs activités. Le défibrillateur vous protégera.",
+            "C'est un petit appareil implanté sous la peau qui surveille votre rythme cardiaque en permanence et peut le corriger si nécessaire."
+          ]
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "images": [
+      {
+        "title": "Physiopathologie de la syncope",
+        "description": "Schéma illustrant les voies impliquées dans les syncopes réflexes et l'arc réflexe des barorécepteurs",
+        "data": "grilles_generees/html/images/SMIG/SMIG-1-img1-Physiopathologie de la syncope.jpg"
+      },
+      {
+        "title": "Types de syncopes selon les étiologies",
+        "description": "Classification des syncopes : réflexes, orthostatiques et cardiaques avec leurs sous-types",
+        "data": "grilles_generees/html/images/SMIG/SMIG-1-img2-Types de syncopes selon les étiologies.jpg"
+      }
+    ],
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour le patient standardisé - M. L., syncope",
+      "nom": "Monsieur L.",
+      "age": "65 ans",
+      "contexte": "Service d'urgences",
+      "motifConsultation": {
+        "plaintePrincipale": "J'ai perdu connaissance ce matin en me levant",
+        "autreChose": "C'est la deuxième fois que ça m'arrive"
+      },
+      "histoireActuelle": {
+        "symptomesPrincipaux": [
+          "Perte de connaissance brève ce matin",
+          "Survenue juste après le lever",
+          "Pas de signes avant-coureurs",
+          "Récupération rapide et complète",
+          "Grande fatigue après l'épisode"
+        ],
+        "contextePsychosocial": [
+          "Inquiétude sur la récidive",
+          "Peur de tomber et se blesser",
+          "Questionnement sur la gravité"
+        ]
+      },
+      "simulation": {
+        "attitude": [
+          "Patient alerte et coopératif",
+          "Légèrement anxieux",
+          "Précis dans ses réponses"
+        ],
+        "durantExamen": [
+          "Reste assis confortablement",
+          "Pas de signes de malaise",
+          "Collabore bien aux tests"
+        ]
+      },
+      "antecedents": {
+        "medicaux": [
+          "Infarctus du myocarde à 58 ans",
+          "Pontage aorto-coronarien il y a 7 ans",
+          "Hypertension artérielle traitée",
+          "Première syncope il y a 1 an"
+        ],
+        "chirurgicaux": "Pontage coronarien",
+        "allergies": "Aucune",
+        "tabac": "Ancien fumeur, arrêt il y a 10 ans"
+      },
+      "medicaments": {
+        "actuels": [
+          "Reniten (énalapril) 20 mg par jour",
+          "Aspirine 100 mg par jour"
+        ],
+        "observance": "Bonne, pas de changement récent"
+      },
+      "inquietudes": {
+        "principales": [
+          "Peur de mourir subitement",
+          "Crainte de ne plus pouvoir conduire",
+          "Inquiétude sur l'autonomie",
+          "Risque de récidive"
+        ],
+        "questions": [
+          "Est-ce mon cœur qui est en cause ?",
+          "Vais-je devoir être opéré à nouveau ?",
+          "Puis-je continuer à vivre seul ?",
+          "C'est à cause de mes médicaments ?"
+        ]
+      }
+    },
+    "informationsExpert": {
+      "titre": "Guide pour l'expert évaluateur - Syncope",
+      "dossierMedical": "Patient de 65 ans avec cardiopathie ischémique, syncope à l'emporte-pièce récidivante, TV au Holter, FEVG 30%",
+      "pointsCles": [
+        "Reconnaissance de la syncope à l'emporte-pièce (absence de prodromes)",
+        "Application systématique de la recherche des 5P",
+        "Identification du haut risque cardiaque",
+        "Réalisation et interprétation du test de Schellong",
+        "Indication formelle d'hospitalisation avec monitoring",
+        "Diagnostic de syncope cardiaque rythmique"
+      ],
+      "pieges": [
+        "Se focaliser uniquement sur l'hypotension orthostatique (lever)",
+        "Minimiser l'absence de prodromes",
+        "Oublier les antécédents cardiaques majeurs",
+        "Ne pas reconnaître les critères d'hospitalisation",
+        "Omettre le monitoring cardiaque continu",
+        "Négliger l'indication de défibrillateur"
+      ],
+      "rolesInterventions": [
+        "Insister sur l'absence totale de signes avant-coureurs",
+        "Mentionner la récidive (2ème épisode)",
+        "Rappeler l'infarctus et le pontage si oublié",
+        "Exprimer l'inquiétude sur les conséquences",
+        "Demander si c'est grave",
+        "Questionner sur la possibilité de conduire"
+      ]
+    },
+    "theoriePratique": {
+      "titre": "Rappels théoriques - Syncope",
+      "sections": [
+        {
+          "titre": "Définition et physiopathologie",
+          "contenu": "La syncope est une perte de connaissance due à une hypoperfusion cérébrale globale transitoire, avec début rapide, durée brève et récupération complète spontanée.",
+          "points": [
+            "Mécanisme : baisse du débit sanguin cérébral < 6-8 secondes",
+            "Arc réflexe : barorécepteurs → bulbe → réponse vagale/sympathique",
+            "Réponse cardio-inhibitrice : bradycardie par activation vagale",
+            "Réponse vasodépressive : vasodilatation par inhibition sympathique",
+            "Récupération spontanée par rétablissement de la perfusion cérébrale"
+          ]
+        },
+        {
+          "titre": "Classification étiologique",
+          "contenu": "Trois grandes catégories de syncopes avec pronostics différents",
+          "points": [
+            "Syncopes réflexes (40%) : vasovagale, situationnelle, hypersensibilité sinus carotidien",
+            "Hypotension orthostatique (10%) : primaire, secondaire (médicaments, hypovolémie)",
+            "Syncopes cardiaques (10%) : rythmiques, structurelles - PRONOSTIC LE PLUS SÉVÈRE",
+            "Indéterminées (35%) : malgré bilan complet",
+            "Mortalité à 1 an : cardiaque 18-33%, non cardiaque 0-12%"
+          ]
+        },
+        {
+          "titre": "Diagnostic différentiel syncope vs épilepsie",
+          "contenu": "Éléments clés pour distinguer syncope et crise épileptique",
+          "points": [
+            "SYNCOPE : prodromes vagaux, mouvements < 15 sec après perte de connaissance, récupération rapide",
+            "ÉPILEPSIE : aura, mouvements > 15 sec dès le début, état post-critique prolongé",
+            "Morsure de langue : apicale (syncope) vs latérale (épilepsie)",
+            "Perte urinaire : possible dans les deux mais plus fréquente en épilepsie",
+            "Myalgies post-épisode : évocatrices d'épilepsie"
+          ]
+        },
+        {
+          "titre": "Stratégie diagnostique - Les 5P",
+          "contenu": "Approche systématique de l'anamnèse",
+          "points": [
+            "Prodromes : nature, durée (absence = suspicion cardiaque)",
+            "Position : debout vs couché",
+            "Précipitants : chaleur, émotion, effort, miction",
+            "Post-syncope : confusion, déficit, douleur thoracique",
+            "Personnel : antécédents, médicaments, famille"
+          ]
+        },
+        {
+          "titre": "Examens complémentaires",
+          "contenu": "Bilan initial et examens de 2ème intention",
+          "points": [
+            "BILAN INITIAL : ECG 12D, test de Schellong, anamnèse/examen",
+            "Test de Schellong positif : chute TAs > 20 ou TAd > 10 mmHg ou TAs < 90",
+            "Holter : si syncope > 1x/semaine, R-test si > 1x/mois",
+            "Massage sinus carotidien : > 40 ans, pause ≥ 3 sec ou chute TAs ≥ 50 mmHg",
+            "Tilt test : syncopes inexpliquées récurrentes",
+            "Étude électrophysiologique : cardiopathie avec suspicion rythmique"
+          ]
+        },
+        {
+          "titre": "Critères d'hospitalisation",
+          "contenu": "Indications formelles de prise en charge hospitalière",
+          "points": [
+            "Cardiopathie connue (FEVG basse, IDM)",
+            "ECG anormal suggérant arythmie",
+            "Syncope à l'effort ou en position couchée",
+            "Palpitations au moment de la syncope",
+            "Histoire familiale de mort subite",
+            "Comorbidités sévères (anémie, troubles électrolytiques)"
+          ]
+        }
+      ],
+      "rappelsTherapeutiques": [
+        "SYNCOPE CARDIAQUE : traitement de la cause (revascularisation, valve, pacemaker, DAI)",
+        "TV sur cardiopathie ischémique : DAI classe I + revascularisation + bêta-bloquants",
+        "Bloc AV complet : pacemaker définitif en urgence",
+        "SYNCOPE RÉFLEXE : éducation, hydratation, manœuvres, pacemaker si cardio-inhibitrice sévère",
+        "HYPOTENSION ORTHOSTATIQUE : lever progressif, bas de contention, révision médicaments",
+        "Fludrocortisone 0.1-0.2 mg/j ou midodrine 5-10 mg x3/j si hypotension orthostatique sévère"
+      ],
+      "examensComplementaires": [
+        "ECG : arythmie, QT long, Brugada, pré-excitation, séquelles IDM",
+        "Holter 24-48h : TV/FV, BAV paroxystique, pauses sinusales",
+        "Échocardiographie : FEVG, valvulopathie, HTAP, cardiomyopathie",
+        "Test d'effort : ischémie inductible, TV d'effort",
+        "Coronarographie : si ischémie prouvée ou forte suspicion",
+        "IRM cardiaque : cicatrice, fibrose, cardiomyopathie",
+        "Étude électrophysiologique : induction TV, conduction AV"
+      ]
+    }
+  }
+}

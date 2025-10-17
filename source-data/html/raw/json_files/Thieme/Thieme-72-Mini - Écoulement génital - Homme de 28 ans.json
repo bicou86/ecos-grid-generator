@@ -1,0 +1,203 @@
+{
+  "title": "Thieme Mini-Cas 72 - Écoulement génital - Homme de 28 ans",
+  "category": "Thieme Mini-Cas",
+  "subcategory": "Écoulement génital",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Homme de 28 ans, Patient standardisé, consulte pour écoulement génital"
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Motif principal de consultation",
+          "binaryOnly": true,
+          "patientComment": "écoulement génital"
+        },
+        {
+          "id": "a2",
+          "text": "Analyse ciblée de la plainte",
+          "details": [
+            "Couleur/odeur",
+            "Quantité",
+            "Dysurie",
+            "Partenaires"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Recherche des éléments clés",
+          "details": [
+            "Caractéristiques écoulement",
+            "Dysurie",
+            "Partenaires sexuels"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Antécédents pertinents",
+          "details": [
+            "IST antérieures",
+            "Nombre partenaires",
+            "Contraception"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Revue des systèmes ciblée",
+          "details": [
+            "Génito-urinaire",
+            "Infectieux",
+            "Gynécologique"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Examen génital externe",
+          "binaryOnly": true
+        },
+        {
+          "id": "e2",
+          "text": "Caractérisation écoulement"
+        },
+        {
+          "id": "e3",
+          "text": "Palpation ganglions inguinaux"
+        },
+        {
+          "id": "e4",
+          "text": "Examen pelvien si femme (avec consentement)"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostics différentiels",
+          "ddSection": {
+            "title": "Hypothèses diagnostiques à considérer",
+            "categories": [
+              {
+                "name": "Diagnostics prioritaires",
+                "items": [
+                  {
+                    "text": "Gonorrhée",
+                    "cause": "Arguments POUR:\n\t□ Écoulement purulent, dysurie franche, abondant",
+                    "test": "→ PCR, culture sur gélose chocolat"
+                  },
+                  {
+                    "text": "Chlamydia",
+                    "cause": "Arguments POUR:\n\t□ Écoulement clair, peu abondant, asymptomatique possible",
+                    "test": "→ PCR urinaire ou prélèvement"
+                  },
+                  {
+                    "text": "Candidose",
+                    "cause": "Arguments POUR:\n\t□ Prurit, leucorrhées blanches, fromage cottage",
+                    "test": "→ Examen direct, culture"
+                  },
+                  {
+                    "text": "Trichomonas",
+                    "cause": "Arguments POUR:\n\t□ Écoulement mousseux, verdâtre, malodorant",
+                    "test": "→ Examen à frais, culture"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Examens complémentaires",
+          "details": [
+            "Prélèvement pour culture",
+            "PCR gonocoque/chlamydia",
+            "Test VIH",
+            "Sérologie syphilis"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Plan de prise en charge",
+          "details": [
+            "Traitement IST",
+            "Dépistage partenaires",
+            "Conseils prévention",
+            "Suivi sérologique"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Conseils au patient",
+          "details": [
+            "Protection rapports",
+            "Notification partenaires",
+            "Abstinence jusqu'à guérison"
+          ]
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Explications au patient",
+          "content": "Infection génitale probable nécessitant traitement et dépistage des partenaires."
+        },
+        {
+          "id": "c2",
+          "text": "Questions du patient",
+          "content": "[C'est une MST?]\n[Mon/ma partenaire doit-il/elle se traiter?]"
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour le patient standardisé",
+      "nom": "Patient standardisé",
+      "age": "28 ans",
+      "contexte": "Cabinet de médecine générale",
+      "motifConsultation": {
+        "plaintePrincipale": "écoulement génital",
+        "contexte": "IST probable"
+      },
+      "simulation": {
+        "attitude": [
+          "Gêné",
+          "Inquiet pour partenaire"
+        ],
+        "signesPhysiques": [
+          "Écoulement visible",
+          "Inflammation locale"
+        ],
+        "durantConsultation": [
+          "Gêne discussion",
+          "Questions protection"
+        ]
+      }
+    },
+    "informationsExpert": {
+      "titre": "Informations pour l'expert",
+      "pointsCles": [
+        "Mini-cas clinique: Écoulement génital",
+        "Focus: Caractéristiques écoulement, Dysurie, Partenaires sexuels",
+        "Consultation ciblée de 10 minutes",
+        "Évaluation de l'approche diagnostique"
+      ],
+      "pieges": [
+        "Oublier dépistage partenaires",
+        "Ne pas tester VIH"
+      ]
+    }
+  }
+}

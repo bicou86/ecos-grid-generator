@@ -1,0 +1,310 @@
+{
+  "title": "Pédiatrie - Nourrisson 6 mois avec fièvre",
+  "type": "ECOS",
+  "context": {
+    "setting": "Cabinet de pédiatrie",
+    "patient": "Nourrisson de 6 mois amené par sa mère pour fièvre",
+    "vitals": {
+      "temperature": "38.5°C",
+      "fc": "140 bpm",
+      "fr": "35/min"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Motif de consultation",
+          "binaryOnly": true,
+          "patientComment": "[Ma fille a de la fièvre depuis hier soir]"
+        },
+        {
+          "id": "a2",
+          "text": "Caractérisation de la fièvre",
+          "details": [
+            "Début [Hier soir, vers 20h]",
+            "Évolution [Persistante malgré le paracétamol]",
+            "Température maximale [39.2°C ce matin]",
+            "Méthode de mesure [Thermomètre rectal]"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Symptômes associés",
+          "details": [
+            "Appétit [Refuse le biberon depuis ce matin]",
+            "Pleurs [Plus grognon que d'habitude]",
+            "Sommeil [Réveils fréquents cette nuit]",
+            "Transit [Selles normales, pas de diarrhée]",
+            "Urines [Couches mouillées normalement]",
+            "Toux [Non]",
+            "Rhinorrhée [Un peu le nez qui coule]",
+            "Éruption cutanée [Non]"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Hydratation",
+          "details": [
+            "Dernière prise alimentaire [Il y a 4 heures, a bu 60ml]",
+            "Nombre de couches mouillées [5 depuis ce matin]",
+            "Larmes présentes [Oui]"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Antécédents médicaux",
+          "details": [
+            "Grossesse et accouchement [Grossesse normale, accouchement à terme]",
+            "Poids de naissance [3.2 kg]",
+            "Développement [Normal, sourit, tient sa tête]",
+            "Maladies antérieures [Une bronchiolite à 4 mois]"
+          ]
+        },
+        {
+          "id": "a6",
+          "text": "Vaccinations",
+          "binaryOnly": true,
+          "patientComment": "[À jour selon le carnet de vaccination]"
+        },
+        {
+          "id": "a7",
+          "text": "Contexte épidémiologique",
+          "details": [
+            "Contact avec des malades [Le grand frère de 3 ans a un rhume]",
+            "Crèche [Oui, depuis 2 mois]",
+            "Voyages récents [Non]"
+          ]
+        },
+        {
+          "id": "a8",
+          "text": "Traitement donné",
+          "details": [
+            "Médicaments [Paracétamol 60mg toutes les 6h]",
+            "Dernière dose [Il y a 2 heures]",
+            "Effet [Baisse temporaire de la fièvre]"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "État général",
+          "details": [
+            "Conscience [Éveillée, réactive]",
+            "Teint [Rose]",
+            "Comportement [Grognon mais consolable]"
+          ]
+        },
+        {
+          "id": "e2",
+          "text": "Signes vitaux",
+          "details": [
+            "Température [38.5°C]",
+            "Fréquence cardiaque [140 bpm]",
+            "Fréquence respiratoire [35/min]",
+            "Saturation O2 [98% en air ambiant]"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Examen ORL",
+          "details": [
+            "Gorge [Pharynx érythémateux]",
+            "Oreilles [Tympans rosés, non bombés]",
+            "Nez [Rhinorrhée claire]",
+            "Ganglions [Quelques petits ganglions cervicaux]"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Examen cardio-pulmonaire",
+          "details": [
+            "Auscultation cardiaque [Rythme régulier, pas de souffle]",
+            "Auscultation pulmonaire [Murmure vésiculaire symétrique, pas de râles]",
+            "Temps de recoloration [< 2 secondes]"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Examen abdominal",
+          "details": [
+            "Inspection [Abdomen souple]",
+            "Palpation [Pas de défense, pas de masse]",
+            "Foie et rate [Non palpables]",
+            "Bruits intestinaux [Présents]"
+          ]
+        },
+        {
+          "id": "e6",
+          "text": "Examen neurologique",
+          "details": [
+            "Fontanelle [Normotensive]",
+            "Tonus [Normal]",
+            "Réflexes archaïques [Présents et symétriques]",
+            "Contact visuel [Présent]"
+          ]
+        },
+        {
+          "id": "e7",
+          "text": "Examen cutané",
+          "details": [
+            "Éruption [Absente]",
+            "Pétéchies [Absentes]",
+            "Turgor cutané [Normal]"
+          ]
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic différentiel",
+          "ddSection": {
+            "title": "Diagnostics à considérer chez un nourrisson fébrile",
+            "categories": [
+              {
+                "name": "Causes probables",
+                "items": [
+                  {
+                    "text": "Infection virale des voies respiratoires supérieures",
+                    "cause": "Arguments POUR:\n\t□ Rhinorrhée\n\t□ Contact avec frère enrhumé\n\t□ Contexte de crèche",
+                    "test": "→ Surveillance clinique"
+                  },
+                  {
+                    "text": "Otite moyenne aiguë débutante",
+                    "cause": "Arguments POUR:\n\t□ Âge typique\n\t□ Fièvre\n\t□ Irritabilité",
+                    "test": "→ Réévaluation ORL dans 24-48h si persistance"
+                  }
+                ]
+              },
+              {
+                "name": "Causes à exclure",
+                "items": [
+                  {
+                    "text": "Pyélonéphrite",
+                    "cause": "Arguments CONTRE:\n\t□ Pas de signes urinaires\n\t□ Couches mouillées normalement",
+                    "test": "→ Bandelette urinaire si fièvre persiste"
+                  },
+                  {
+                    "text": "Méningite",
+                    "cause": "Arguments CONTRE:\n\t□ Fontanelle normale\n\t□ Pas de raideur\n\t□ Enfant consolable",
+                    "test": "→ Surveillance des signes méningés"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Examens complémentaires",
+          "details": [
+            "Aucun examen urgent nécessaire actuellement",
+            "Bandelette urinaire si fièvre > 48h",
+            "NFS-CRP si détérioration clinique"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Traitement",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Traitement symptomatique",
+                "content": "Paracétamol 15mg/kg toutes les 6h\nAlternance possible avec ibuprofène 10mg/kg toutes les 8h après 6 mois\nHydratation régulière par petites quantités\nDéshabillage si fièvre élevée"
+              },
+              {
+                "title": "Surveillance",
+                "content": "Température toutes les 4h\nSurveillance de l'hydratation\nÉtat général et comportement\nApparition de nouveaux symptômes"
+              }
+            ]
+          }
+        },
+        {
+          "id": "m4",
+          "text": "Signes d'alarme à expliquer",
+          "redflagsSection": {
+            "title": "Signes nécessitant une consultation urgente",
+            "items": [
+              {
+                "text": "Détérioration de l'état général",
+                "description": "Enfant difficile à réveiller, gémissements"
+              },
+              {
+                "text": "Signes de déshydratation",
+                "description": "Absence de larmes, bouche sèche, < 3 couches mouillées/jour"
+              },
+              {
+                "text": "Difficultés respiratoires",
+                "description": "Respiration rapide, tirage, battement des ailes du nez"
+              },
+              {
+                "text": "Éruption cutanée",
+                "description": "Apparition de taches qui ne s'effacent pas à la pression"
+              },
+              {
+                "text": "Convulsions",
+                "description": "Mouvements anormaux, perte de connaissance"
+              }
+            ]
+          }
+        },
+        {
+          "id": "m5",
+          "text": "Conseils aux parents",
+          "details": [
+            "Poursuite du traitement antipyrétique",
+            "Proposer régulièrement à boire",
+            "Surveillance de la température",
+            "Repos à la maison 24-48h",
+            "Éviction de la crèche jusqu'à apyrexie"
+          ]
+        },
+        {
+          "id": "m6",
+          "text": "Suivi",
+          "details": [
+            "Reconsultation si fièvre > 72h",
+            "Reconsultation si apparition de nouveaux symptômes",
+            "Reconsultation si détérioration",
+            "Contrôle chez le pédiatre dans 48h si pas d'amélioration"
+          ]
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Résumé et plan",
+          "exemplesPhrases": [
+            "Votre fille présente très probablement une infection virale bénigne. Nous allons continuer le traitement contre la fièvre et surveiller son évolution.",
+            "Je vous ai expliqué les signes qui doivent vous amener à reconsulter rapidement. N'hésitez pas à revenir si vous êtes inquiète."
+          ]
+        },
+        {
+          "id": "c2",
+          "text": "Questions de la mère",
+          "content": "[Est-ce que c'est grave docteur?] [Dois-je m'inquiéter?] [Quand pourra-t-elle retourner à la crèche?]"
+        },
+        {
+          "id": "c3",
+          "text": "Réponses rassurantes",
+          "exemplesPhrases": [
+            "L'examen clinique est rassurant. Il s'agit très probablement d'une infection virale bénigne qui va guérir en quelques jours.",
+            "Elle pourra retourner à la crèche quand elle n'aura plus de fièvre depuis 24h et qu'elle aura retrouvé son appétit."
+          ]
+        }
+      ]
+    }
+  }
+}

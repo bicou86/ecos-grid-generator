@@ -1,0 +1,273 @@
+{
+  "title": "Thieme MSQ 37 - Douleur lombaire aiguë - Homme de 50 ans",
+  "category": "Thieme Musculosquelettique",
+  "subcategory": "Douleur lombaire aiguë",
+  "context": {
+    "setting": "Service d'urgences",
+    "patient": "Homme de 50 ans, M. Smith, consultant pour douleurs lombaires",
+    "vitals": {
+      "fc": "84 bpm",
+      "ta": "110/70 mmHg",
+      "fr": "16/min",
+      "temperature": "37°C"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Motif principal de consultation",
+          "binaryOnly": true,
+          "patientComment": "douleurs lombaires"
+        },
+        {
+          "id": "a2",
+          "text": "Analyse de la douleur (ABCDE)",
+          "details": [
+            "Début et durée [depuis quelques heures après avoir soulevé boîte lourde au travail]",
+            "Intensité [4/10]",
+            "Localisation et irradiation",
+            "Caractère de la douleur",
+            "Facteurs aggravants et soulageants"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Mécanisme de survenue et contexte",
+          "details": [
+            "Soulèvement charge lourde",
+            "Douleur immédiate",
+            "Au travail"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Signes inflammatoires et symptômes associés",
+          "details": [
+            "Irradiation jambe gauche",
+            "Engourdissement",
+            "Faiblesse",
+            "Pas troubles sphinctériens"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Antécédents musculosquelettiques",
+          "details": [
+            "ATCD cancer prostate sous radiothérapie il y a 4 ans",
+            "Il y a 4 ans"
+          ]
+        },
+        {
+          "id": "a6",
+          "text": "Histoire sociale et facteurs de risque",
+          "details": [
+            "Fume 1 pqt/j × 25 ans",
+            "Pas sexuellement actif"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Signes vitaux et apparence générale",
+          "binaryOnly": true
+        },
+        {
+          "id": "e2",
+          "text": "Inspection de la zone affectée",
+          "details": [
+            "Pas de déformation visible",
+            "Position antalgique",
+            "Patient allongé"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Palpation et recherche de sensibilité",
+          "details": [
+            "Sensibilité lombaire sévère",
+            "Contracture paravertébrale",
+            "Point trigger"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Évaluation vasculo-nerveuse",
+          "details": [
+            "Déficit sensitif jambe gauche",
+            "Force 4/5 jambe gauche",
+            "ROT 2+",
+            "Babinski négatif"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Amplitude de mouvement et force musculaire",
+          "details": [
+            "Flexion lombaire très limitée",
+            "Extension douloureuse",
+            "Latéroflexion restreinte"
+          ]
+        },
+        {
+          "id": "e6",
+          "text": "Tests spéciaux orthopédiques",
+          "details": [
+            "Test Lasègue positif gauche à 30°",
+            "Test neurologique complet",
+            "Pas de queue de cheval"
+          ]
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostics différentiels musculosquelettiques",
+          "ddSection": {
+            "title": "Hypothèses diagnostiques à considérer",
+            "categories": [
+              {
+                "name": "Diagnostics prioritaires",
+                "items": [
+                  {
+                    "text": "Hernie discale lombaire",
+                    "cause": "Arguments POUR:\n\t□ Effort déclenchant, irradiation, Lasègue positif, déficit neurologique",
+                    "test": "→ IRM lombaire, EMG si doute"
+                  },
+                  {
+                    "text": "Métastases cancer prostate (fracture pathologique)",
+                    "cause": "Arguments POUR:\n\t□ Selon présentation clinique",
+                    "test": "→ Selon orientation clinique"
+                  },
+                  {
+                    "text": "Entorse muscles du dos",
+                    "cause": "Arguments POUR:\n\t□ Effort, douleur musculaire, pas de déficit neurologique",
+                    "test": "→ Radiographie si trauma, sinon clinique"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Examens d'imagerie appropriés",
+          "details": [
+            "Examen pelvien et rectal",
+            "PSA",
+            "Radiographie colonne lombo-sacrée (AP et latérale)",
+            "IRM",
+            "Scintigraphie osseuse"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Plan de prise en charge orthopédique",
+          "details": [
+            "Analgésie urgente",
+            "Repos strict initial",
+            "Référence neurochirurgie si déficit",
+            "Physiothérapie après phase aiguë"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Conseils et restrictions d'activité",
+          "details": [
+            "Repos lit 24-48h si sévère",
+            "Pas de port charges",
+            "Mobilisation progressive",
+            "École du dos"
+          ]
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Questions du patient",
+          "content": "[Pourriez-vous me prescrire des analgésiques tout de suite?]\n[Pourquoi ma jambe fait-elle mal?]"
+        },
+        {
+          "id": "c2",
+          "text": "Conseils spécifiques",
+          "content": "Urgence si déficit neurologique. École du dos. Perte poids si surcharge."
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour le patient standardisé",
+      "nom": "M. Smith",
+      "age": "50 ans",
+      "contexte": "Service d'urgences",
+      "motifConsultation": {
+        "plaintePrincipale": "douleurs lombaires",
+        "autreChose": "Douleur lombaire sévère depuis quelques heures après avoir soulevé boîte lourde au travail. Irradiation jambe gauche comme choc électrique, constante 4/10, aggravée par mouvement (8/10)."
+      },
+      "histoireActuelle": {
+        "symptomesPrincipaux": [
+          "Douleur lombaire sévère depuis quelques heures après avoir soulevé boîte lourde au travail",
+          " Irradiation jambe gauche comme choc électrique, constante 4/10, aggravée par mouvement (8/10)"
+        ],
+        "antecedents": [
+          "Jambe gauche parfois engourdie et faible",
+          " AINS soulagent",
+          " Pas de troubles sphinctériens",
+          " Perte 6 lb/mois",
+          " Jet urinaire faible",
+          " ATCD cancer prostate sous radiothérapie il y a 4 ans"
+        ],
+        "contexteSocial": [
+          "Fume 1 pqt/j × 25 ans",
+          " Pas sexuellement actif"
+        ]
+      },
+      "simulation": {
+        "attitude": [
+          "Douleur extrême",
+          "Demande analgésiques urgents",
+          "Position antalgique"
+        ],
+        "durantExamen": [
+          "Douleur lombaire extrême",
+          "Lasègue positif à 30-40°",
+          "Faiblesse jambe gauche"
+        ]
+      },
+      "inquietudes": {
+        "principales": [
+          "[Pourriez-vous me prescrire des analgésiques tout de suite?]",
+          "[Pourquoi ma jambe fait-elle mal?]"
+        ]
+      }
+    },
+    "informationsExpert": {
+      "titre": "Informations pour l'expert",
+      "pointsCles": [
+        "Cas musculosquelettique: Douleur lombaire aiguë",
+        "Patient: Homme de 50 ans",
+        "Anamnèse complète de la douleur",
+        "Examen orthopédique systématique",
+        "Tests spéciaux appropriés"
+      ],
+      "pieges": [
+        "Manquer syndrome queue cheval",
+        "Ne pas évoquer métastases",
+        "Analgésie insuffisante"
+      ]
+    }
+  }
+}

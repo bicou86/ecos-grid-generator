@@ -1,0 +1,282 @@
+{
+  "title": "Vignette clinique DRS - AuerCastioni",
+  "context": {
+    "setting": "Service d'urgences hospitalières",
+    "patient": "Plusieurs cas de douleurs thoraciques: 1) Femme 67 ans STEMI, 2) Femme 69 ans angor stable, 3) Homme 83 ans urgence à domicile, 4) Homme 39 ans infarctus"
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Cas 1 - Femme 67 ans: STEMI",
+          "details": [
+            "Douleurs thoraciques typiques [Depuis >2 heures]",
+            "Caractère typique [Étau, serrement]",
+            "Irradiation [Mâchoire, bras gauche]",
+            "Facteurs déclenchants [Effort, froid, stress]",
+            "ECG [Sus-décalage ST multiples dérivations]"
+          ]
+        },
+        {
+          "id": "a2",
+          "text": "Cas 2 - Femme 69 ans: Angor stable",
+          "details": [
+            "Douleurs thoraciques [Depuis 3 jours]",
+            "Déclenchées par effort [Montée escaliers]",
+            "Cancer sein traité [Hormonothérapie 3 ans]",
+            "Substitution vitamine D [Seul traitement]",
+            "Crainte maladie cardiaque [Anxiété]"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Cas 3 - Homme 83 ans: Urgence domicile",
+          "details": [
+            "Vertiges initiaux [Appel médecin garde]",
+            "Douleurs thoraciques 10/10 [Récentes]",
+            "Incapacité se lever [Faiblesse]",
+            "Ragout sur le feu [Odeur brûlé]",
+            "Détresse vitale [Urgence absolue]"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Cas 4 - Homme 39 ans: Infarctus jeune",
+          "details": [
+            "Douleurs rétrosternales [Depuis la veille]",
+            "Insomnie due aux douleurs [Intensité++]",
+            "Tabagisme [Depuis 15 ans, 12 UPA]",
+            "Âge jeune [39 ans - inhabituel]",
+            "Paramètres vitaux normaux [Initialement]"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Complications possibles de l'infarctus",
+          "details": [
+            "Troubles du rythme [FV, TV, FA]",
+            "Troubles de conduction [BBD, BBG]",
+            "Bradycardie [Atteinte nœud sinusal]",
+            "Insuffisance cardiaque [Dysfonction VG]",
+            "Complications mécaniques [Rupture, IM]",
+            "Choc cardiogénique [Pompe défaillante]"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "ECG - Interprétation STEMI",
+          "details": [
+            "Ondes T pointues [Phase initiale hyperaiguë]",
+            "Sus-décalage ST [>1mm membres, >2mm précordiales]",
+            "Ondes de Pardee [ST convexe vers le haut]",
+            "Onde Q pathologique [>40ms, >25% onde R]",
+            "Territoires vasculaires [Localisation infarctus]",
+            "Miroir [Sous-décalage réciproque]"
+          ]
+        },
+        {
+          "id": "e2",
+          "text": "Territoires coronariens et ECG",
+          "details": [
+            "Coronaire droite [DII, DIII, aVF - inférieur]",
+            "IVA proximale [V1-V4, aVL - antéro-septal]",
+            "Circonflexe [DI, aVL, V5-V6 - latéral]",
+            "Tronc commun [Diffus + instabilité]",
+            "Postérieur [V7-V9, miroir V1-V3]"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Score TOPIC (probabilité clinique)",
+          "details": [
+            "Âge (H>55, F>65 ans) [0-2 points]",
+            "Facteurs de risque CV [0-2 points]",
+            "ATCD maladies CV [0-2 points]",
+            "Durée 1-60 minutes [1 point]",
+            "Localisation rétrosternale [2 points]",
+            "Aggravation effort [1 point]",
+            "Non reproductible palpation [1 point]"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Examens complémentaires selon contexte",
+          "details": [
+            "Troponines hs [Cinétique 0-1h ou 0-3h]",
+            "D-dimères [Si suspicion EP]",
+            "NT-proBNP [Si dyspnée]",
+            "Échographie cardiaque [Fonction VG]",
+            "Test d'effort [Angor stable]",
+            "Coronarographie [STEMI ou NSTEMI haut risque]"
+          ]
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Prise en charge STEMI - Urgence absolue",
+          "ddSection": {
+            "title": "Stratégie selon le contexte",
+            "categories": [
+              {
+                "name": "STEMI avec salle de cathétérisme disponible",
+                "items": [
+                  {
+                    "text": "Angioplastie primaire",
+                    "cause": "Gold standard:\n\t□ Transfert immédiat salle KT\n\t□ Délai <90 minutes\n\t□ Sans attendre troponines\n\t□ Meilleur pronostic",
+                    "test": "→ Coronarographie + PCI immédiate"
+                  }
+                ]
+              },
+              {
+                "name": "STEMI sans salle de cathétérisme",
+                "items": [
+                  {
+                    "text": "Thrombolyse médicamenteuse",
+                    "cause": "Si délai PCI >120 min:\n\t□ Alteplase, tenecteplase\n\t□ Dans les 30 minutes\n\t□ CI: AVC récent, saignement\n\t□ Transfert secondaire pour PCI",
+                    "test": "→ Thrombolyse puis transfert"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Séquence intervention urgence domicile",
+          "details": [
+            "1. Sécuriser environnement [Éteindre gaz]",
+            "2. ABC [Airway, Breathing, Circulation]",
+            "3. Appel 144 [Diminuer temps réaction]",
+            "4. Oxygène [Soulagement rapide]",
+            "5. Aspirine + clopidogrel [Antiagrégation]",
+            "6. Morphine [Si douleur intense]",
+            "7. Examen clinique rapide",
+            "8. Document transmission [SAMPLER]"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Traitement médicamenteux SCA",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Traitement aigu",
+                "content": "• Aspirine 250-500mg à croquer\n• Clopidogrel 600mg ou Ticagrelor 180mg\n• Héparine (HBPM ou HNF)\n• Morphine si douleur\n• Oxygène si SaO2 <90%\n• Dérivés nitrés si TA normale"
+              },
+              {
+                "title": "Traitement secondaire",
+                "content": "• Double antiagrégation 12 mois\n• Bêtabloquant\n• IEC ou ARA2\n• Statine haute dose\n• Réadaptation cardiaque"
+              }
+            ]
+          }
+        },
+        {
+          "id": "m4",
+          "text": "Stratification du risque - Score TOPIC",
+          "details": [
+            "0-2 points: Risque faible",
+            "3-4 points: Risque intermédiaire",
+            "5-7 points: Risque modéré [Cas femme 69 ans]",
+            "≥8 points: Risque élevé",
+            "Actions selon score:",
+            "- Faible: Ambulatoire possible",
+            "- Modéré: Examens complémentaires",
+            "- Élevé: Hospitalisation"
+          ]
+        },
+        {
+          "id": "m5",
+          "text": "Examens selon situations cliniques",
+          "details": [
+            "Angor stable 91 ans [Traitement médical suffisant]",
+            "Coxarthrose + dyspnée [Écho dobutamine]",
+            "Sportif + douleurs effort [Ergométrie]",
+            "ATCD IDM + récidive [Coronarographie]",
+            "BBG + douleurs [Écho dobutamine ou IRM]"
+          ]
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Messages clés STEMI",
+          "content": "• Time is muscle - Chaque minute compte\n• Sus-décalage ST + douleurs typiques = Transfert immédiat\n• Ne pas attendre les troponines si STEMI\n• Angioplastie primaire > thrombolyse si disponible <90min\n• Double antiagrégation immédiate\n• Complications rythmiques fréquentes"
+        },
+        {
+          "id": "c2",
+          "text": "Points pratiques urgences",
+          "content": "• ECG dans les 10 minutes si DRS\n• Aspirine à croquer immédiatement\n• Monitoring continu (risque FV)\n• Défibrillateur à proximité\n• Voie veineuse de bon calibre\n• Document transmission complet"
+        },
+        {
+          "id": "c3",
+          "text": "Territoires ECG à retenir",
+          "content": "• Inférieur (CD): DII, DIII, aVF\n• Antérieur (IVA): V1-V4\n• Latéral (CX): DI, aVL, V5-V6\n• Septal: V1-V2\n• Apical: V3-V4\n• Postérieur: miroir V1-V3 (ou V7-V9)"
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "theoriePratique": {
+      "titre": "Syndromes coronariens aigus et douleurs thoraciques",
+      "sections": [
+        {
+          "titre": "Classification des SCA",
+          "points": [
+            "STEMI: Sus-décalage ST persistant + troponines +",
+            "NSTEMI: Pas de sus-décalage + troponines +",
+            "Angor instable: Pas de sus-décalage + troponines -",
+            "Critères STEMI: Sus-ST ≥1mm membres, ≥2mm précordiales",
+            "Nouveau BBG = équivalent STEMI"
+          ]
+        },
+        {
+          "titre": "Score GRACE (pronostic NSTEMI)",
+          "points": [
+            "Âge",
+            "FC, TA systolique",
+            "Créatinine",
+            "Classe Killip",
+            "Arrêt cardiaque à l'admission",
+            "Sus-décalage ST",
+            "Troponines élevées",
+            "Score >140 = haut risque"
+          ]
+        },
+        {
+          "titre": "Délais critiques",
+          "contenu": "• ECG: <10 minutes à l'arrivée\n• Door-to-needle (thrombolyse): <30 minutes\n• Door-to-balloon (PCI): <90 minutes\n• Transfert inter-hospitalier: <120 minutes\n• Premier contact médical-PCI: <120 minutes"
+        }
+      ],
+      "rappelsTherapeutiques": [
+        "MONA: Morphine, Oxygène, Nitrés, Aspirine (ordre modifié: ANOM)",
+        "Double antiagrégation: Aspirine + inhibiteur P2Y12",
+        "Anticoagulation: HBPM ou HNF selon contexte",
+        "Bêtabloquants: Dans les 24h sauf CI",
+        "IEC/ARA2: Si dysfonction VG ou diabète",
+        "Statines haute intensité: Atorvastatine 80mg, Rosuvastatine 40mg"
+      ],
+      "examensComplementaires": [
+        "ECG 12-18 dérivations: Immédiat et sérié",
+        "Troponines hs: Cinétique 0-1h (protocole rapide)",
+        "Échocardiographie: Fonction VG, complications",
+        "Coronarographie: STEMI immédiat, NSTEMI selon risque",
+        "Test fonctionnel: Si risque intermédiaire",
+        "Coroscanner: Alternative si probabilité faible-intermédiaire"
+      ]
+    }
+  }
+}

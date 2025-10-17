@@ -1,0 +1,192 @@
+{
+  "title": "Thieme Thorax 5 - Douleur thoracique (I) - Attaque de panique - Femme de 30 ans",
+  "category": "Thieme Thorax",
+  "subcategory": "Douleur thoracique (I) - Attaque de panique",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Femme de 30 ans, Mme Jessica Andrews, consultant pour douleur thoracique",
+    "vitals": {
+      "temperature": "37°C",
+      "fc": "84 bpm",
+      "ta": "110/70 mmHg",
+      "fr": "16/min"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Motif principal de consultation",
+          "binaryOnly": true,
+          "patientComment": "douleur thoracique"
+        },
+        {
+          "id": "a2",
+          "text": "Analyse de la plainte principale",
+          "details": [
+            "Début et évolution [Douleur thoracique par épisodes 2-3×/semaine depuis 2 mois, durant 30-45 min]",
+            "Localisation et irradiation de la douleur",
+            "Caractéristiques et intensité",
+            "Facteurs aggravants et soulageants",
+            "Symptômes associés"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Antécédents médicaux et chirurgicaux",
+          "details": [
+            "Sensation d'étouffement et mort imminente",
+            "Pire dans endroits bondés",
+            "Conflits conjugaux",
+            "Insomnie"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Histoire sociale et habitudes de vie",
+          "details": [
+            "Assistante médicale",
+            "4 tasses café/jour",
+            "Fume 1 pqt/j × 10 ans",
+            "Syndrome côlon irritable",
+            "Vessie hyperactive"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Signes vitaux",
+          "binaryOnly": true
+        },
+        {
+          "id": "e2",
+          "text": "Examen de la tête et du cou",
+          "details": [
+            "PERRLA",
+            "Examen ORL complet",
+            "Palpation thyroïde",
+            "Recherche ganglions lymphatiques"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Examen cardio-pulmonaire",
+          "details": [
+            "Auscultation cardiaque [S1 et S2 normaux]",
+            "Recherche de souffles ou galop",
+            "Auscultation pulmonaire bilatérale",
+            "Recherche de râles ou sibilances"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Examen abdominal si pertinent",
+          "details": []
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostics différentiels à évoquer",
+          "ddSection": {
+            "title": "Hypothèses diagnostiques",
+            "categories": [
+              {
+                "name": "Diagnostics principaux",
+                "items": [
+                  {
+                    "text": "Attaque de panique",
+                    "cause": "Arguments POUR:\n\t□ Symptômes paroxystiques, contexte stress, sensation mort imminente",
+                    "test": "→ Bilan de base pour éliminer organique"
+                  },
+                  {
+                    "text": "Hypochondrie",
+                    "cause": "Arguments POUR:\n\t□ Consultations multiples, pas de diagnostic établi",
+                    "test": "→ Évaluation psychiatrique"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Examens complémentaires pertinents",
+          "details": [
+            "NFS",
+            "TSH"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Plan de prise en charge",
+          "details": [
+            "Investigations ambulatoires",
+            "Traitement symptomatique si approprié",
+            "Suivi après résultats"
+          ]
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour le patient standardisé",
+      "nom": "Mme Jessica Andrews",
+      "age": "30 ans",
+      "contexte": "Cabinet de médecine générale",
+      "motifConsultation": {
+        "plaintePrincipale": "douleur thoracique",
+        "autreChose": "Douleur thoracique par épisodes 2-3×/semaine depuis 2 mois, durant 30-45 min. Dyspnée, palpitations, transpiration."
+      },
+      "histoireActuelle": {
+        "symptomesPrincipaux": [
+          "Douleur thoracique par épisodes 2-3×/semaine depuis 2 mois, durant 30-45 min",
+          " Dyspnée, palpitations, transpiration"
+        ],
+        "contextePsychosocial": [
+          "Assistante médicale",
+          " 4 tasses café/jour",
+          " Fume 1 pqt/j × 10 ans",
+          " Syndrome côlon irritable",
+          " Vessie hyperactive"
+        ]
+      },
+      "simulation": {
+        "attitude": [
+          "Anxieuse",
+          "Nerveuse"
+        ],
+        "durantExamen": []
+      },
+      "inquietudes": {
+        "principales": [
+          "Ces symptômes sont-ils liés à ma nervosité?",
+          "Est-ce une crise cardiaque?"
+        ]
+      }
+    },
+    "informationsExpert": {
+      "titre": "Informations pour l'expert",
+      "pointsCles": [
+        "Cas de Douleur thoracique (I) - Attaque de panique",
+        "Patient: Femme de 30 ans",
+        "Évaluation de l'anamnèse ciblée",
+        "Examen physique pertinent",
+        "Diagnostic différentiel approprié"
+      ],
+      "pieges": [
+        "Ne pas reconnaître l'attaque de panique"
+      ]
+    }
+  }
+}

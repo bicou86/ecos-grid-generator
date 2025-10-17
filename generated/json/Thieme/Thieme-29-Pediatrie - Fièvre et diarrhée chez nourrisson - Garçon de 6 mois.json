@@ -1,0 +1,255 @@
+{
+  "title": "Thieme Pédiatrie 29 - Fièvre et diarrhée chez nourrisson - Garçon de 6 mois",
+  "category": "Thieme Pédiatrie",
+  "subcategory": "Fièvre et diarrhée chez nourrisson",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Garçon de 6 mois, Tom Smith, Mme Lora Smith consulte pour fièvre et diarrhée",
+    "vitals": {
+      "temperature": "38°C"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Motif principal de consultation",
+          "binaryOnly": true,
+          "patientComment": "fièvre et diarrhée"
+        },
+        {
+          "id": "a2",
+          "text": "Analyse de la plainte principale",
+          "details": [
+            "Caractéristiques diarrhée [6-8 selles/jour, aqueuses, jaunâtres]",
+            "Signes déshydratation [bouche sèche, soif, oligurie]",
+            "Vomissements associés [ce matin, eau et mucus]",
+            "Contact malade récent [cousin malade]",
+            "Introduction nouveaux aliments [jus cette semaine]"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Recherche diagnostique différentielle",
+          "details": [
+            "Symptômes gastro-intestinaux",
+            "Évaluation déshydratation",
+            "Symptômes respiratoires",
+            "Alimentation récente",
+            "Contacts malades"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Antécédents et développement de l'enfant",
+          "details": [
+            "Développement: s'assoit avec soutien, transfère objets, anxiété étrangers"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Histoire sociale et familiale",
+          "details": [
+            "Vit avec parents",
+            "Grossesse normale, césarienne à terme",
+            "Dernière visite contrôle il y a 3 mois normale",
+            "Vaccinations à jour"
+          ]
+        },
+        {
+          "id": "a6",
+          "text": "Revue des systèmes pédiatriques",
+          "details": [
+            "Système digestif",
+            "État hydratation",
+            "État général"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Signes vitaux et apparence générale",
+          "binaryOnly": true
+        },
+        {
+          "id": "e2",
+          "text": "Examen ORL pédiatrique",
+          "details": [
+            "Otoscopie bilatérale",
+            "Examen pharyngé",
+            "Palpation ganglions"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Examen cardio-pulmonaire",
+          "details": [
+            "Auscultation cardiaque",
+            "Auscultation pulmonaire",
+            "Recherche sifflements"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Examen abdominal pédiatrique",
+          "details": [
+            "Inspection (distension)",
+            "Palpation douce",
+            "Recherche déshydratation",
+            "Turgor cutané"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Examen neurologique et développement",
+          "details": [
+            "Tonus",
+            "Réflexes",
+            "Développement psychomoteur"
+          ]
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostics différentiels pédiatriques",
+          "ddSection": {
+            "title": "Hypothèses diagnostiques à considérer",
+            "categories": [
+              {
+                "name": "Diagnostics prioritaires",
+                "items": [
+                  {
+                    "text": "Diarrhée virale/bactérienne",
+                    "cause": "Arguments POUR:\n\t□ Diarrhée aqueuse, fièvre, contact malade, déshydratation",
+                    "test": "→ Coproculture, recherche virus, ionogramme"
+                  },
+                  {
+                    "text": "Malabsorption",
+                    "cause": "Arguments POUR:\n\t□ Diarrhée après introduction jus, symptômes digestifs",
+                    "test": "→ Test intolérance lactose/fructose"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Examens complémentaires appropriés à l'âge",
+          "details": [
+            "Examen physique",
+            "Électrolytes",
+            "NFS"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Plan de prise en charge pédiatrique",
+          "details": [
+            "Réhydratation orale ou IV selon sévérité",
+            "Arrêt temporaire du jus",
+            "Surveillance déshydratation",
+            "Éducation signes d'alerte"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Conseils aux parents",
+          "details": [
+            "Solution réhydratation orale",
+            "Éviter jus fruits",
+            "Lavage mains++",
+            "Signes déshydratation"
+          ]
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Questions des parents",
+          "content": "[Tom pourrait-il avoir attrapé cela de son cousin?]\n[J'ai des antibiotiques à la maison. Puis-je les donner à Tom?]"
+        },
+        {
+          "id": "c2",
+          "text": "Conseils spécifiques et éducation",
+          "content": "Gastro-entérite virale probable. Réhydratation prioritaire. Pas d'antibiotiques sauf si bactérien confirmé."
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour le parent standardisé",
+      "nom": "Mme Lora Smith",
+      "enfant": "Tom Smith, 6 mois",
+      "contexte": "Cabinet de médecine générale",
+      "motifConsultation": {
+        "plaintePrincipale": "fièvre et diarrhée",
+        "autreChose": "Diarrhée depuis 2 jours, 6-8 selles/jour aqueuses jaunâtres sans sang. Déshydratation: bouche sèche, soif, oligurie. Vomissements ce matin (eau et mucus). Faible et somnolent."
+      },
+      "histoireActuelle": {
+        "symptomesPrincipaux": [
+          "Diarrhée depuis 2 jours, 6-8 selles/jour aqueuses jaunâtres sans sang",
+          " Déshydratation: bouche sèche, soif, oligurie",
+          " Vomissements ce matin (eau et mucus)",
+          " Faible et somnolent"
+        ],
+        "développement": [
+          "Contact avec cousin malade il y a quelques jours",
+          " Allaite normalement, introduction jus cette semaine",
+          " Développement: s'assoit avec soutien, transfère objets, anxiété étrangers"
+        ],
+        "contexteSocial": [
+          "Vit avec parents",
+          " Grossesse normale, césarienne à terme",
+          " Dernière visite contrôle il y a 3 mois normale",
+          " Vaccinations à jour"
+        ]
+      },
+      "simulation": {
+        "attitude": [
+          "Mère très inquiète",
+          "Coopérative"
+        ],
+        "durantConsultation": [
+          "Demander sur antibiotiques maison",
+          "Mentionner cousin malade"
+        ]
+      },
+      "inquietudes": {
+        "principales": [
+          "[Tom pourrait-il avoir attrapé cela de son cousin?]",
+          "[J'ai des antibiotiques à la maison. Puis-je les donner à Tom?]"
+        ]
+      }
+    },
+    "informationsExpert": {
+      "titre": "Informations pour l'expert",
+      "pointsCles": [
+        "Cas pédiatrique: Fièvre et diarrhée chez nourrisson",
+        "Enfant: Garçon de 6 mois",
+        "Anamnèse adaptée à l'âge",
+        "Examen physique pédiatrique",
+        "Communication avec le parent"
+      ],
+      "pieges": [
+        "Sous-estimer déshydratation",
+        "Prescrire antibiotiques d'emblée",
+        "Ne pas arrêter jus"
+      ]
+    }
+  }
+}

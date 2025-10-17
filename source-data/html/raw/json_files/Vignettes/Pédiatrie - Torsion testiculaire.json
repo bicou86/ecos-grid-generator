@@ -1,0 +1,330 @@
+{
+  "title": "Pédiatrie - Torsion testiculaire",
+  "type": "ECOS",
+  "context": {
+    "setting": "Service d'urgence",
+    "patient": "Adolescent de 15 ans, douleur fosse iliaque gauche depuis 6h du matin, apparition brutale",
+    "vitals": {
+      "temperature": "36.9°C"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Caractérisation de la douleur",
+          "details": [
+            "Localisation initiale [Fosse iliaque gauche]",
+            "Début [Brutal à 6h du matin]",
+            "Durée [Depuis 2 heures]",
+            "Intensité [Manifestement douloureux, boite]",
+            "Irradiation [Vers région scrotale à rechercher]"
+          ]
+        },
+        {
+          "id": "a2",
+          "text": "Symptômes associés",
+          "details": [
+            "Vomissements [Un vomissement]",
+            "Transit intestinal [Selles normales la veille]",
+            "Signes urinaires [Non]",
+            "Signes respiratoires [Non]",
+            "Signes ORL [Non]"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Antécédents et facteurs de risque",
+          "details": [
+            "Épisodes similaires antérieurs [À rechercher]",
+            "Traumatisme récent [Non mentionné]",
+            "Activité physique déclenchante [À rechercher]",
+            "Antécédent de cryptorchidie [À rechercher]",
+            "Antécédent familial de torsion [À rechercher]"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "État général",
+          "details": [
+            "Température [36.9°C]",
+            "Démarche [Boitant]",
+            "État de douleur [Manifestement douloureux]"
+          ]
+        },
+        {
+          "id": "e2",
+          "text": "Examen abdominal",
+          "details": [
+            "Inspection [Non distendu]",
+            "Palpation [Souple, sensible en FIG]",
+            "Auscultation [Normale]",
+            "Orifices herniaires [À examiner systématiquement]"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Examen des organes génitaux externes",
+          "subheader": "EXAMEN INDISPENSABLE",
+          "details": [
+            "Position testiculaire [Rétraction vers orifice inguinal superficiel]",
+            "Orientation testiculaire [Horizontalisation]",
+            "Douleur à la palpation [Intense]",
+            "Réflexe crémastérien [Absent du côté atteint]",
+            "Œdème scrotal [Variable]",
+            "Érythème scrotal [Possible]",
+            "Testicule controlatéral [Position et mobilité à vérifier]"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Signes spécifiques",
+          "details": [
+            "Signe de Prehn [Négatif - pas de soulagement à la surélévation]",
+            "Transillumination [Négative]",
+            "Cordon spermatique [Épaissi, douloureux]"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Reste de l'examen",
+          "details": [
+            "Cardio-pulmonaire [Normal]",
+            "ORL [Normal]",
+            "Neurologique [Normal]",
+            "Ostéo-articulaire [Normal]"
+          ]
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic urgent",
+          "ddSection": {
+            "title": "Urgence ischémique testiculaire",
+            "categories": [
+              {
+                "name": "Diagnostic le plus probable",
+                "items": [
+                  {
+                    "text": "Torsion testiculaire",
+                    "cause": "Arguments POUR:\n\t□ Âge typique (pic 13-16 ans)\n\t□ Début brutal\n\t□ Douleur intense\n\t□ Rétraction testiculaire\n\t□ Horizontalisation\n\t□ Réflexe crémastérien absent",
+                    "test": "→ Exploration chirurgicale URGENTE"
+                  }
+                ]
+              },
+              {
+                "name": "Diagnostics différentiels",
+                "items": [
+                  {
+                    "text": "Torsion de l'hydatide de Morgagni",
+                    "cause": "Arguments:\n\t□ Douleur moins intense\n\t□ Point bleu visible\n\t□ Évolution progressive",
+                    "test": "→ Écho-doppler si doute"
+                  },
+                  {
+                    "text": "Orchi-épididymite",
+                    "cause": "Arguments CONTRE:\n\t□ Pas de fièvre\n\t□ Pas de signes urinaires\n\t□ Début brutal",
+                    "test": "→ ECBU, échographie"
+                  },
+                  {
+                    "text": "Traumatisme testiculaire",
+                    "cause": "Arguments CONTRE:\n\t□ Pas de notion de traumatisme",
+                    "test": "→ Échographie si contexte"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Facteur pronostic principal",
+          "details": [
+            "Durée d'ischémie [CRITIQUE]",
+            "< 6h: excellent pronostic de récupération",
+            "6-12h: pronostic intermédiaire",
+            "12-24h: risque élevé de nécrose",
+            "> 24h: nécrose quasi certaine"
+          ],
+          "scoringRule": "La durée d'ischémie conditionne la viabilité testiculaire"
+        },
+        {
+          "id": "m3",
+          "text": "Prise en charge immédiate",
+          "details": [
+            "Contact URGENT avec chirurgien",
+            "Transfert immédiat au bloc opératoire",
+            "Voie veineuse périphérique",
+            "Bilan préopératoire rapide",
+            "Jeûne préopératoire",
+            "PAS de perte de temps avec examens complémentaires"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Place des examens complémentaires",
+          "details": [
+            "Écho-doppler testiculaire [SEULEMENT si doute diagnostique]",
+            "Montre absence de flux vasculaire",
+            "NE DOIT PAS retarder la chirurgie",
+            "Décision du chirurgien contacté",
+            "Si forte suspicion clinique: bloc direct"
+          ]
+        },
+        {
+          "id": "m5",
+          "text": "Traitement chirurgical",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Exploration scrotale urgente",
+                "content": "Incision scrotale\nExtériorisation du testicule\nDétorsion manuelle\nÉvaluation de la reperfusion\nTest à la xylocaïne chaude"
+              },
+              {
+                "title": "Selon viabilité testiculaire",
+                "content": "Si testicule viable:\n- Orchidopexie bilatérale\n- Fixation en 3 points\n\nSi testicule nécrosé:\n- Orchidectomie\n- Orchidopexie controlatérale\n- Prélèvement histologique"
+              }
+            ]
+          }
+        },
+        {
+          "id": "m6",
+          "text": "Surveillance post-opératoire",
+          "details": [
+            "Surveillance clinique immédiate",
+            "Antalgiques adaptés",
+            "Anti-inflammatoires",
+            "Antibioprophylaxie selon protocole",
+            "Échographie de contrôle à 3-6 mois"
+          ]
+        },
+        {
+          "id": "m7",
+          "text": "Complications et séquelles",
+          "redflagsSection": {
+            "title": "Complications à surveiller",
+            "items": [
+              {
+                "text": "Atrophie testiculaire secondaire",
+                "description": "Même après détorsion réussie, surveillance à 6 mois"
+              },
+              {
+                "text": "Récidive de torsion",
+                "description": "Possible même après orchidopexie (rare)"
+              },
+              {
+                "text": "Infertilité",
+                "description": "Si bilatéral ou atrophie sévère"
+              },
+              {
+                "text": "Impact psychologique",
+                "description": "Perte d'un testicule chez l'adolescent"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Information urgente aux parents",
+          "exemplesPhrases": [
+            "Votre fils présente une torsion testiculaire qui est une urgence chirurgicale absolue.",
+            "Le testicule est tordu sur lui-même, ce qui coupe la circulation sanguine.",
+            "Il faut opérer immédiatement pour détordre et fixer le testicule, chaque heure compte pour sa conservation."
+          ]
+        },
+        {
+          "id": "c2",
+          "text": "Questions des parents",
+          "content": "[Est-ce grave?] [Pourra-t-il avoir des enfants?] [Pourquoi fixer les deux côtés?] [Risque de récidive?]"
+        },
+        {
+          "id": "c3",
+          "text": "Informations post-opératoires",
+          "exemplesPhrases": [
+            "Si le testicule a pu être conservé, une atrophie secondaire reste possible, d'où la surveillance.",
+            "La fixation des deux testicules réduit fortement le risque de récidive mais ne l'annule pas totalement.",
+            "En cas d'orchidectomie, une prothèse testiculaire peut être posée ultérieurement.",
+            "La fertilité n'est généralement pas compromise avec un seul testicule fonctionnel.",
+            "Toute douleur testiculaire future nécessite une consultation immédiate."
+          ]
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "informationsExpert": {
+      "titre": "Points clés pour l'évaluation",
+      "pointsCles": [
+        "Ne JAMAIS oublier l'examen des organes génitaux devant une douleur abdominale",
+        "Reconnaître l'urgence absolue de la torsion testiculaire",
+        "Comprendre que le délai d'ischémie conditionne le pronostic",
+        "Ne pas perdre de temps avec des examens complémentaires",
+        "Savoir que l'orchidopexie doit être bilatérale",
+        "Informer sur le risque d'atrophie secondaire"
+      ],
+      "pieges": [
+        "Omettre l'examen génital dans un contexte de douleur abdominale",
+        "Retarder la chirurgie pour des examens complémentaires",
+        "Confondre avec une épididymite (contexte différent)",
+        "Oublier la fixation controlatérale",
+        "Ne pas prévenir du risque d'atrophie secondaire",
+        "Minimiser l'impact psychologique chez l'adolescent"
+      ]
+    },
+    "theoriePratique": {
+      "titre": "Aspects théoriques",
+      "sections": [
+        {
+          "titre": "Physiopathologie",
+          "points": [
+            "Rotation du cordon spermatique sur lui-même",
+            "Obstruction veineuse puis artérielle",
+            "Ischémie testiculaire progressive",
+            "Nécrose irréversible après 6-12h",
+            "Anomalie de fixation vaginale souvent bilatérale"
+          ]
+        },
+        {
+          "titre": "Facteurs favorisants",
+          "points": [
+            "Anomalie congénitale de la vaginale (clapper bell)",
+            "Croissance pubertaire rapide",
+            "Traumatisme mineur",
+            "Effort physique",
+            "Variations thermiques (crémastérien)"
+          ]
+        }
+      ],
+      "rappelsTherapeutiques": [
+        "Exploration chirurgicale < 6h idéalement",
+        "Détorsion manuelle au bloc",
+        "Test viabilité: couleur, saignement à l'incision",
+        "Orchidopexie: fixation en 3 points minimum",
+        "Orchidectomie si nécrose complète",
+        "Toujours fixer le testicule controlatéral"
+      ],
+      "examensComplementaires": [
+        "Écho-doppler: absence de flux si torsion",
+        "Sensibilité 88-100%, spécificité 75-95%",
+        "NE DOIT PAS retarder la chirurgie",
+        "Bilan préop minimal: groupe, NFS",
+        "Pas d'autre examen systématique"
+      ]
+    }
+  }
+}

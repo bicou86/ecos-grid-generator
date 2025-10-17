@@ -1,0 +1,201 @@
+{
+  "title": "Thieme Mini-Cas 64 - Éruption cutanée - Femme de 30 ans",
+  "category": "Thieme Mini-Cas",
+  "subcategory": "Éruption cutanée",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Femme de 30 ans, Patient standardisé, consulte pour éruption cutanée"
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Motif principal de consultation",
+          "binaryOnly": true,
+          "patientComment": "éruption cutanée"
+        },
+        {
+          "id": "a2",
+          "text": "Analyse ciblée de la plainte",
+          "details": [
+            "Exposition récente",
+            "Nouveaux médicaments",
+            "Contact malades",
+            "Allergènes"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Recherche des éléments clés",
+          "details": [
+            "Circonstances apparition",
+            "Caractéristiques éruption",
+            "Symptômes associés"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Antécédents pertinents",
+          "details": [
+            "Allergies connues",
+            "Maladies auto-immunes",
+            "Médicaments récents"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Revue des systèmes ciblée",
+          "details": [
+            "Dermatologique",
+            "Immunologique",
+            "Infectieux"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Inspection cutanée complète",
+          "binaryOnly": true
+        },
+        {
+          "id": "e2",
+          "text": "Description éruption [morphologie, distribution]"
+        },
+        {
+          "id": "e3",
+          "text": "Recherche adénopathies"
+        },
+        {
+          "id": "e4",
+          "text": "Signes systémiques"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostics différentiels",
+          "ddSection": {
+            "title": "Hypothèses diagnostiques à considérer",
+            "categories": [
+              {
+                "name": "Diagnostics prioritaires",
+                "items": [
+                  {
+                    "text": "Réaction allergique",
+                    "cause": "Arguments POUR:\n\t□ Prurit, exposition allergène, urticaire",
+                    "test": "→ IgE, tests cutanés"
+                  },
+                  {
+                    "text": "Infection cutanée",
+                    "cause": "Arguments POUR:\n\t□ Fièvre, pustules, évolution progressive",
+                    "test": "→ Prélèvement bactério, NFS"
+                  },
+                  {
+                    "text": "Maladie auto-immune (LES, PR)",
+                    "cause": "Arguments POUR:\n\t□ Éruption malaire, arthralgies, photosensibilité",
+                    "test": "→ AAN, anti-DNA, facteur rhumatoïde"
+                  },
+                  {
+                    "text": "Photodermatite",
+                    "cause": "Arguments POUR:\n\t□ Exposition solaire, zones photo-exposées",
+                    "test": "→ Examens selon orientation clinique"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Examens complémentaires",
+          "details": [
+            "NFS",
+            "VS, CRP",
+            "Anticorps anti-nucléaires si suspicion auto-immune"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Plan de prise en charge",
+          "details": [
+            "Identifier/éviter déclencheur",
+            "Traitement symptomatique",
+            "Antihistaminiques si allergie"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Conseils au patient",
+          "details": [
+            "Journal déclencheurs",
+            "Éviter irritants",
+            "Hygiène douce"
+          ]
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Explications au patient",
+          "content": "L'éruption peut avoir plusieurs origines. Identifier le déclencheur est essentiel pour le traitement."
+        },
+        {
+          "id": "c2",
+          "text": "Questions du patient",
+          "content": "[C'est contagieux?]\n[C'est allergique?]\n[Ça va partir?]"
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour le patient standardisé",
+      "nom": "Patient standardisé",
+      "age": "30 ans",
+      "contexte": "Cabinet de médecine générale",
+      "motifConsultation": {
+        "plaintePrincipale": "éruption cutanée",
+        "contexte": "Éruption d'étiologie à déterminer"
+      },
+      "simulation": {
+        "attitude": [
+          "Gêné esthétiquement",
+          "Prurit+++"
+        ],
+        "signesPhysiques": [
+          "Éruption visible",
+          "Prurit"
+        ],
+        "durantConsultation": [
+          "Montrer éruption",
+          "Grattage fréquent"
+        ]
+      }
+    },
+    "informationsExpert": {
+      "titre": "Informations pour l'expert",
+      "pointsCles": [
+        "Mini-cas clinique: Éruption cutanée",
+        "Focus: Circonstances apparition, Caractéristiques éruption, Symptômes associés",
+        "Consultation ciblée de 10 minutes",
+        "Évaluation de l'approche diagnostique"
+      ],
+      "pieges": [
+        "Ne pas chercher cause systémique",
+        "Oublier médicaments"
+      ]
+    }
+  }
+}

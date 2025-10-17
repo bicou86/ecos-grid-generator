@@ -1,0 +1,891 @@
+{
+  "title": "Claudication intermittente - Homme de 64 ans",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "M. Dumas, 64 ans, fumeur actif, consultant pour douleur au mollet à la marche"
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Motif principal de consultation",
+          "binaryOnly": true,
+          "patientComment": "J'ai des douleurs au mollet droit quand je marche, ça me force à m'arrêter"
+        },
+        {
+          "id": "a2",
+          "text": "Caractérisation de la douleur",
+          "details": [
+            "Type de douleur [crampiforme]",
+            "Localisation [mollet droit]",
+            "Apparition [à la marche, après une certaine distance]",
+            "Distance de marche avant douleur (périmètre)",
+            "Soulagement [disparaît au repos]",
+            "Délai de soulagement [5-10 minutes de repos]"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Évolution des symptômes",
+          "details": [
+            "Début des symptômes",
+            "Progression (périmètre qui diminue)",
+            "Côté atteint [droit uniquement ou bilatéral]",
+            "Impact sur les activités quotidiennes",
+            "Limitation fonctionnelle actuelle"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Symptômes associés",
+          "details": [
+            "Douleurs au repos [non actuellement]",
+            "Douleurs nocturnes",
+            "Troubles trophiques [ulcères, gangrène]",
+            "Impuissance (dysfonction érectile)",
+            "Douleurs des cuisses ou fesses (syndrome de Leriche)",
+            "Pieds froids"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Facteurs de risque cardiovasculaire",
+          "details": [
+            "Tabagisme [fumeur actif]",
+            "Quantification tabac (paquets-années)",
+            "Diabète",
+            "Hypertension artérielle",
+            "Dyslipidémie",
+            "Obésité/surpoids"
+          ]
+        },
+        {
+          "id": "a6",
+          "text": "Antécédents cardiovasculaires",
+          "details": [
+            "Cardiopathie ischémique (IDM, angor)",
+            "AVC/AIT",
+            "Artériopathie autre territoire",
+            "Anévrisme aortique",
+            "Interventions vasculaires antérieures"
+          ]
+        },
+        {
+          "id": "a7",
+          "text": "Antécédents médicaux généraux",
+          "details": [
+            "Insuffisance cardiaque",
+            "Insuffisance rénale",
+            "BPCO",
+            "Pathologies rhumatologiques",
+            "Cancer"
+          ]
+        },
+        {
+          "id": "a8",
+          "text": "Médicaments actuels",
+          "details": [
+            "Antiagrégants plaquettaires",
+            "Statines",
+            "Antihypertenseurs",
+            "Antidiabétiques",
+            "Bêtabloquants",
+            "Autres traitements"
+          ]
+        },
+        {
+          "id": "a9",
+          "text": "Habitudes de vie",
+          "details": [
+            "Activité physique habituelle",
+            "Alimentation",
+            "Consommation d'alcool",
+            "Stress",
+            "Activité professionnelle"
+          ]
+        },
+        {
+          "id": "a10",
+          "text": "Impact psychosocial",
+          "details": [
+            "Retentissement sur la qualité de vie",
+            "Anxiété liée aux symptômes",
+            "Motivation pour changements",
+            "Soutien familial"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Examen vasculaire périphérique",
+          "details": [
+            "Pouls fémoral [présent/diminué/absent]",
+            "Pouls poplité [présent/diminué/absent]",
+            "Pouls tibial postérieur [présent/diminué/absent]",
+            "Pouls pédieux [présent/diminué/absent]",
+            "Comparaison bilatérale",
+            "Souffle vasculaire (fémoral, iliaque)"
+          ]
+        },
+        {
+          "id": "e2",
+          "text": "Signes cutanés et trophiques",
+          "details": [
+            "Température cutanée [peau froide]",
+            "Coloration (pâleur, cyanose)",
+            "Dépilation [peau sèche, dépilée]",
+            "Ongles épaissis",
+            "Ulcères artériels",
+            "Temps de recoloration capillaire"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Test de Buerger",
+          "details": [
+            "Élévation des jambes à 45° [pâleur]",
+            "Temps d'apparition de la pâleur",
+            "Position assise [érythromélalgie de déclivité]",
+            "Remplissage veineux retardé"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Examen cardiovasculaire",
+          "details": [
+            "Tension artérielle aux deux bras",
+            "Auscultation cardiaque",
+            "Recherche souffle carotidien",
+            "Palpation aorte abdominale",
+            "Œdèmes des membres inférieurs"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Examen neurologique",
+          "details": [
+            "Sensibilité (neuropathie)",
+            "Réflexes ostéo-tendineux",
+            "Force musculaire",
+            "Marche et équilibre"
+          ]
+        },
+        {
+          "id": "e6",
+          "text": "Indice de pression systolique (IPS)",
+          "details": [
+            "Mesure pression cheville",
+            "Mesure pression bras",
+            "Calcul IPS [< 0.90 = AOMI]",
+            "IPS 0.70-0.90: AOMI légère",
+            "IPS 0.40-0.69: AOMI modérée",
+            "IPS < 0.40: AOMI sévère"
+          ]
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic et classification",
+          "ddSection": {
+            "title": "Diagnostics différentiels à considérer",
+            "categories": [
+              {
+                "name": "Diagnostic principal",
+                "items": [
+                  {
+                    "text": "Artériopathie oblitérante des membres inférieurs (AOMI)",
+                    "cause": "Arguments POUR:\n\t□ Claudication intermittente typique\n\t□ Fumeur actif (facteur de risque majeur)\n\t□ Âge 64 ans\n\t□ Douleur crampiforme au mollet\n\t□ Soulagement au repos",
+                    "test": "→ IPS < 0.90 confirme le diagnostic"
+                  }
+                ]
+              },
+              {
+                "name": "Autres causes de claudication",
+                "items": [
+                  {
+                    "text": "Claudication neurogène (canal lombaire étroit)",
+                    "cause": "Arguments CONTRE:\n\t□ Pas d'amélioration en position penchée\n\t□ Douleur typiquement vasculaire\n\t□ Pouls périphériques diminués",
+                    "test": "→ IRM lombaire si doute"
+                  },
+                  {
+                    "text": "Claudication veineuse",
+                    "cause": "Arguments CONTRE:\n\t□ Pas de lourdeur/œdème\n\t□ Soulagement rapide au repos\n\t□ Pas d'aggravation en fin de journée",
+                    "test": "→ Échodoppler veineux"
+                  },
+                  {
+                    "text": "Arthrose/pathologie ostéo-articulaire",
+                    "cause": "Arguments CONTRE:\n\t□ Douleur à l'effort constant\n\t□ Pas de douleur mécanique articulaire\n\t□ Soulagement complet au repos",
+                    "test": "→ Radiographies si doute"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Examens complémentaires",
+          "details": [
+            "IPS au repos [< 0.90 = diagnostic]",
+            "IPS post-effort si repos normal",
+            "Échodoppler artériel membres inférieurs",
+            "Angio-IRM ou angio-CT si revascularisation envisagée",
+            "Bilan cardiovasculaire global [ECG, échocardio si indiqué]"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Bilan du risque cardiovasculaire",
+          "details": [
+            "Bilan lipidique complet",
+            "Glycémie à jeun/HbA1c",
+            "Fonction rénale (créatinine, DFG)",
+            "Microalbuminurie",
+            "NFS (polyglobulie du fumeur)",
+            "Recherche autres localisations athérome"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Modifications du mode de vie",
+          "details": [
+            "Sevrage tabagique [priorité absolue]",
+            "Aide au sevrage (substituts, consultation)",
+            "Programme de marche supervisée",
+            "3x/semaine, 60 min, ≥12 semaines",
+            "Marcher jusqu'à la douleur puis repos",
+            "Contrôle pondéral si surpoids"
+          ],
+          "exemplesPhrases": [
+            "L'arrêt du tabac est la mesure la plus importante",
+            "On vous proposera un programme de marche encadrée pour améliorer votre autonomie",
+            "C'est même recommandé de continuer à marcher !"
+          ]
+        },
+        {
+          "id": "m5",
+          "text": "Traitement médicamenteux",
+          "details": [
+            "Antiagrégant plaquettaire [aspirine 75-100mg ou clopidogrel 75mg]",
+            "Statine forte dose [objectif LDL < 0.55 g/L]",
+            "IEC/ARA2 si HTA ou diabète",
+            "Contrôle glycémique si diabète",
+            "Cilostazol si claudication invalidante [CI si IC]"
+          ],
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Traitement médical de l'AOMI",
+                "items": [
+                  {
+                    "treatment": "Aspirine",
+                    "details": "75-100mg/jour",
+                    "duration": "Au long cours"
+                  },
+                  {
+                    "treatment": "Clopidogrel",
+                    "details": "75mg/jour si intolérance aspirine",
+                    "duration": "Au long cours"
+                  },
+                  {
+                    "treatment": "Statine",
+                    "details": "Forte dose (atorvastatine 40-80mg)",
+                    "duration": "Objectif LDL < 0.55 g/L"
+                  },
+                  {
+                    "treatment": "Cilostazol",
+                    "details": "100mg x2/jour si claudication invalidante",
+                    "duration": "Contre-indiqué si insuffisance cardiaque"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m6",
+          "text": "Indications de revascularisation",
+          "details": [
+            "Claudication invalidante malgré traitement médical optimal",
+            "Périmètre de marche < 100-200m",
+            "Ischémie critique [douleur repos, ulcère, gangrène]",
+            "IPS < 0.40",
+            "Techniques: angioplastie ou pontage",
+            "Décision multidisciplinaire"
+          ],
+          "exemplesPhrases": [
+            "La chirurgie n'est envisagée que si les symptômes sont très invalidants",
+            "Dans la majorité des cas, des mesures comme la rééducation à la marche suffisent"
+          ]
+        },
+        {
+          "id": "m7",
+          "text": "Éducation thérapeutique",
+          "details": [
+            "Explication de la maladie artérielle",
+            "Importance du risque cardiovasculaire global",
+            "Signes d'alerte (douleur repos, plaie)",
+            "Soins des pieds",
+            "Éviter le froid",
+            "Chaussures adaptées"
+          ],
+          "exemplesPhrases": [
+            "C'est une maladie à prendre au sérieux, car elle est liée au vieillissement des artères",
+            "Elle peut affecter la marche, mais aussi révéler un risque cardiovasculaire global accru",
+            "La bonne nouvelle, c'est qu'on peut la traiter efficacement"
+          ]
+        },
+        {
+          "id": "m8",
+          "text": "Plan de suivi",
+          "details": [
+            "Surveillance clinique régulière",
+            "Évolution du périmètre de marche",
+            "Contrôle IPS annuel",
+            "Suivi cardiovasculaire global",
+            "Bilan lipidique trimestriel puis annuel",
+            "Adhésion au sevrage tabagique"
+          ],
+          "redflagsSection": {
+            "title": "Signes d'aggravation nécessitant consultation urgente",
+            "items": [
+              {
+                "text": "Douleur de repos",
+                "description": "Évolution vers ischémie critique"
+              },
+              {
+                "text": "Plaie qui ne cicatrise pas",
+                "description": "Risque d'ulcère artériel"
+              },
+              {
+                "text": "Orteil noir ou bleuté",
+                "description": "Début de gangrène"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Clôture de la consultation",
+          "content": "Vous souffrez d'artériopathie des membres inférieurs. C'est une maladie sérieuse mais traitable. L'arrêt du tabac et la marche régulière sont essentiels. Je vais vous prescrire des médicaments pour protéger vos artères.",
+          "exemplesPhrases": [
+            "Je vais vous prescrire les examens pour confirmer le diagnostic",
+            "Nous débuterons un traitement pour protéger vos artères et votre cœur",
+            "Je vous orienterai vers un programme de réadaptation à la marche",
+            "L'arrêt du tabac est vraiment la priorité absolue"
+          ]
+        },
+        {
+          "id": "c2",
+          "text": "Questions difficiles du patient",
+          "content": "[Est-ce que c'est grave ?] [J'ai peur de me faire opérer] [Est-ce que je peux continuer à marcher ?]"
+        },
+        {
+          "id": "c3",
+          "text": "Réponses types aux questions difficiles",
+          "exemplesPhrases": [
+            "C'est une maladie à prendre au sérieux, mais on peut la traiter efficacement",
+            "La chirurgie n'est envisagée que si les symptômes sont très invalidants malgré les traitements",
+            "Oui, c'est même recommandé ! On vous proposera un programme de marche encadrée"
+          ]
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour le patient standardisé",
+      "nom": "M. Dumas",
+      "age": "64 ans",
+      "contexte": "Cabinet de médecine générale",
+      "motifConsultation": {
+        "plaintePrincipale": "Douleurs au mollet droit à la marche qui me forcent à m'arrêter",
+        "autreChose": "Je voudrais comprendre ce qui m'arrive et savoir si c'est grave"
+      },
+      "histoireActuelle": {
+        "symptomes": [
+          "Douleur crampiforme au mollet droit",
+          "Apparaît après 200-300 mètres de marche",
+          "Force à s'arrêter",
+          "Disparaît après 5-10 minutes de repos",
+          "Permet de repartir ensuite",
+          "S'aggrave progressivement depuis 6 mois"
+        ],
+        "impact": [
+          "Difficultés pour faire les courses",
+          "Ne peut plus faire de longues promenades",
+          "Évite de sortir parfois",
+          "Inquiétude croissante"
+        ],
+        "facteurRisque": [
+          "Fumeur actif: 1 paquet/jour depuis 40 ans",
+          "A essayé d'arrêter plusieurs fois sans succès",
+          "Sait que c'est mauvais mais trouve difficile d'arrêter"
+        ]
+      },
+      "simulation": {
+        "attitude": [
+          "Homme inquiet mais qui minimise",
+          "Conscient du rôle du tabac mais ambivalent",
+          "Craint la chirurgie",
+          "Veut des solutions simples"
+        ],
+        "durantExamen": [
+          "Pouls pédieux difficile à percevoir à droite",
+          "Pied droit légèrement plus froid",
+          "Dépilation du mollet droit",
+          "Coopératif pour l'examen"
+        ]
+      },
+      "antecedents": {
+        "medicaux": "Hypertension traitée depuis 5 ans",
+        "chirurgicaux": "Appendicectomie à 30 ans",
+        "familiaux": "Père décédé d'infarctus à 70 ans",
+        "medicaments": "Amlodipine 5mg/jour"
+      },
+      "habitudes": {
+        "tabac": "1 paquet/jour depuis 40 ans",
+        "alcool": "1-2 verres de vin par jour",
+        "activite": "Retraité, bricolage",
+        "alimentation": "Cuisine traditionnelle, peu de légumes"
+      },
+      "inquietudes": {
+        "principales": [
+          "Gravité de la maladie",
+          "Risque d'amputation",
+          "Nécessité d'une opération",
+          "Impact sur l'autonomie",
+          "Capacité à continuer ses activités"
+        ],
+        "questions": [
+          "Est-ce que c'est grave ?",
+          "J'ai peur de me faire opérer",
+          "Est-ce que je peux continuer à marcher ?",
+          "Est-ce que je vais perdre ma jambe ?",
+          "Le traitement est-il efficace ?"
+        ]
+      }
+    },
+    "informationsExpert": {
+      "titre": "Points clés pour l'expert évaluateur",
+      "pointsCles": [
+        "Reconnaissance du tableau de claudication intermittente",
+        "Recherche systématique des facteurs de risque cardiovasculaire",
+        "Examen vasculaire complet avec palpation des pouls",
+        "Calcul de l'IPS si matériel disponible",
+        "Insistance sur le sevrage tabagique",
+        "Proposition d'un programme de marche supervisée",
+        "Évaluation du risque cardiovasculaire global"
+      ],
+      "pieges": [
+        "Ne pas rechercher les autres territoires artériels",
+        "Oublier le bilan cardiovasculaire global",
+        "Minimiser l'importance du sevrage tabagique",
+        "Proposer d'emblée la chirurgie",
+        "Ne pas expliquer le programme de marche",
+        "Oublier la prévention secondaire (statine, antiagrégant)",
+        "Ne pas rechercher une ischémie critique"
+      ]
+    },
+    "theoriePratique": {
+      "titre": "Rappels théoriques sur l'artériopathie oblitérante des membres inférieurs",
+      "sections": [
+        {
+          "titre": "Classification de Leriche et Fontaine",
+          "points": [
+            "Stade I : Asymptomatique",
+            "Stade II : Claudication intermittente",
+            "  - IIa : périmètre > 200m",
+            "  - IIb : périmètre < 200m",
+            "Stade III : Douleur de repos",
+            "Stade IV : Troubles trophiques (ulcère, gangrène)"
+          ]
+        },
+        {
+          "titre": "Facteurs de risque",
+          "points": [
+            "Tabac : facteur de risque majeur (RR x3-4)",
+            "Diabète : aggrave le pronostic",
+            "Dyslipidémie : athérosclérose accélérée",
+            "HTA : facteur de risque indépendant",
+            "Âge > 50 ans chez l'homme, > 60 ans chez la femme"
+          ]
+        },
+        {
+          "titre": "Examens diagnostiques",
+          "points": [
+            "IPS < 0.90 : sensibilité 95%, spécificité 100%",
+            "IPS 0.91-0.99 : borderline",
+            "IPS > 1.40 : médiacalcose (diabète)",
+            "Échodoppler : localise les lésions",
+            "Angio-IRM/CT : bilan pré-thérapeutique"
+          ]
+        },
+        {
+          "titre": "Pronostic",
+          "points": [
+            "Mortalité cardiovasculaire x3 vs population générale",
+            "À 5 ans : 20% décès cardiovasculaire",
+            "Évolution locale : 25% aggravation, 50% stable",
+            "Amputation : < 5% si traitement optimal",
+            "Sevrage tabagique réduit mortalité de 50%"
+          ]
+        }
+      ],
+      "rappelsTherapeutiques": [
+        "Marche supervisée : amélioration périmètre de 150-200%",
+        "Aspirine réduit événements CV de 25%",
+        "Statines : réduction mortalité de 20-30%",
+        "Cilostazol : amélioration périmètre de 40-60%",
+        "Revascularisation : si échec médical après 3-6 mois",
+        "Sevrage tabagique : mesure la plus efficace"
+      ],
+      "examensComplementaires": [
+        "IPS : examen de référence, simple, reproductible",
+        "Test de marche sur tapis : objectiver le périmètre",
+        "Échodoppler : cartographie lésionnelle",
+        "TcPO2 : si ischémie critique",
+        "Artériographie : seulement si geste prévu"
+      ]
+    },
+    "resume": {
+      "titre": "🚶‍♂️ Claudication intermittente – Résumé ECOS",
+      "sections": [
+        {
+          "titre": "🔍 Anamnèse",
+          "subsections": [
+            {
+              "titre": "Symptomatologie typique",
+              "points": [
+                "Douleur crampiforme à l’effort, soulagée en < 10 min par le repos",
+                "Localisation selon siège artériel : fessier/hanche (aorto-iliaque), cuisse (iliaque), mollet (fémoro-poplité), pied (infrapoplité)",
+                "Distance de marche reproductible",
+                "Disparition rapide au repos ou en position déclive"
+              ]
+            },
+            {
+              "titre": "Facteurs de risque",
+              "points": [
+                "Tabagisme actif ou ancien",
+                "HTA, diabète, dyslipidémie",
+                "ATCD cardiovasculaires (coronaropathie, AVC, artériopathie périphérique)",
+                "Âge > 50 ans"
+              ]
+            },
+            {
+              "titre": "Stades évolutifs (Leriche & Fontaine)",
+              "points": [
+                "I : asymptomatique (pouls diminués)",
+                "II : claudication intermittente",
+                "III : douleurs de repos",
+                "IV : ulcères, nécrose, gangrène"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "👀 Examen clinique",
+          "subsections": [
+            {
+              "titre": "Signes vasculaires",
+              "points": [
+                "Pouls périphériques diminués ou absents (fémoral, poplité, tibial, pédieux)",
+                "Temps de recoloration > 2 sec",
+                "Bruits artériels à l’auscultation"
+              ]
+            },
+            {
+              "titre": "Signes trophiques",
+              "points": [
+                "Peau froide, pâle, lisse, sèche",
+                "Diminution pilosité, ongles cassants",
+                "Amyotrophie",
+                "Ulcères artériels, gangrène"
+              ]
+            },
+            {
+              "titre": "Tests spécifiques",
+              "points": [
+                "Signe de Buerger : pâleur à l’élévation, rougeur à la déclive",
+                "Marche sur tapis roulant → reproduction des symptômes"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "🧪 Examens diagnostiques",
+          "subsections": [
+            {
+              "titre": "Examens de 1ère intention",
+              "points": [
+                "IPS (index de pression systolique) < 0,9 = diagnostic",
+                "Écho-Doppler artériel des membres inférieurs"
+              ]
+            },
+            {
+              "titre": "Examens complémentaires",
+              "points": [
+                "Angio-CT ou angio-IRM si indication revascularisation",
+                "Bilan cardiovasculaire global (ECG, bilan lipidique, glycémie)"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "⚙️ Prise en charge",
+          "subsections": [
+            {
+              "titre": "Mesures générales",
+              "points": [
+                "Arrêt du tabac (mesure la plus efficace)",
+                "Exercice supervisé régulier (marche, vélo)",
+                "Contrôle des facteurs de risque CV (TA, glycémie, LDL)"
+              ]
+            },
+            {
+              "titre": "Traitement médical",
+              "points": [
+                "Antiagrégant plaquettaire (aspirine ou clopidogrel)",
+                "Statine forte dose",
+                "IEC/ARA2 si HTA",
+                "Cilostazol possible si symptômes persistants (sauf IC)"
+              ]
+            },
+            {
+              "titre": "Traitement interventionnel",
+              "points": [
+                "Angioplastie ± stent si lésion courte",
+                "Pontage artériel si lésion longue ou diffuse",
+                "Amputation si ischémie critique non revascularisable"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "✅ Points clés ECOS",
+          "points": [
+            "Douleur d’effort reproductible + soulagement au repos = claudication",
+            "Toujours mesurer IPS (<0,9 = diagnostic PAD)",
+            "Rechercher systématiquement facteurs de risque CV",
+            "PEC = arrêt tabac + exercice + statine + antiagrégant",
+            "Revascularisation si symptômes invalidants malgré PEC médicale"
+          ]
+        },
+        {
+          "titre": "📋 Check-list rapide ECOS",
+          "subsections": [
+            {
+              "titre": "Questions à poser",
+              "points": [
+                "Douleur à la marche ? Localisation ? Distance ?",
+                "Soulagement au repos ?",
+                "ATCD CV : infarctus, AVC, artérite ?",
+                "Tabac, diabète, HTA, dyslipidémie ?",
+                "Ulcères, douleurs de repos nocturnes ?"
+              ]
+            },
+            {
+              "titre": "Examens à faire",
+              "points": [
+                "Pouls périphériques (comparatif)",
+                "IPS",
+                "Écho-Doppler artériel",
+                "Bilan CV complet (ECG, lipides, glycémie)"
+              ]
+            },
+            {
+              "titre": "PEC en 3 points",
+              "points": [
+                "Arrêt tabac + exercice régulier supervisé",
+                "Traitement médical : statine + antiagrégant",
+                "Revascularisation si claudication invalidante ou ischémie critique"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "presentationPatient": {
+      "titre": "📑 Fiche ECOS – Cas : Claudication intermittente (AOMI probable, Homme de 64 ans)",
+      "sections": [
+        {
+          "titre": "🧩 Checklist mentale (présentation systématisée)",
+          "points": [
+            "Intro → âge, motif : douleur crampiforme mollet droit à la marche, soulagée au repos",
+            "Caractériser douleur → localisation, distance déclenchante, durée repos, évolution",
+            "Symptômes associés → douleurs de repos ? nocturnes ? troubles trophiques ?",
+            "Facteurs de risque CV → tabac, diabète, HTA, dyslipidémie, ATCD CV",
+            "Examen clinique → palpation pouls périphériques, souffle vasculaire, température, dépilation, test de Buerger",
+            "Examens complémentaires → IPS <0,9, écho-Doppler, bilan CV global",
+            "Diagnostic principal → AOMI stade II (claudication intermittente)",
+            "DD → claudication neurogène (canal lombaire étroit), pathologie veineuse, arthrose",
+            "PEC → arrêt tabac, marche supervisée, statine, antiagrégant, prise en charge HTA/diabète, discussion revascularisation si invalidant"
+          ],
+          "mnemo": {
+            "titre": "👉 Mnémo rapide : ARTÈRE",
+            "elements": [
+              "A = Arrêt tabac (priorité absolue)",
+              "R = Rééducation à la marche",
+              "T = Traitement antiagrégant",
+              "È = Évaluation IPS et Doppler",
+              "R = Réduction facteurs de risque (HTA, diabète, LDL)",
+              "E = Eventuelle revascularisation si claudication invalidante"
+            ]
+          }
+        },
+        {
+          "titre": "🎤 Version longue (≈2-3 min)",
+          "contenu": "Il s’agit de Monsieur Dumas, 64 ans, qui consulte pour des douleurs au mollet droit lorsqu’il marche. Il explique que la douleur est de type crampe, localisée au mollet droit, apparaissant après environ 200 à 300 mètres de marche. Elle l’oblige à s’arrêter, et disparaît en 5 à 10 minutes de repos, ce qui lui permet de repartir ensuite. Il rapporte que son périmètre de marche a diminué progressivement depuis environ 6 mois, et que cela impacte ses activités quotidiennes, comme faire les courses ou se promener.\n\nIl n’a pas de douleurs de repos, pas de douleurs nocturnes ni de plaies ou d’ulcères. Il se plaint toutefois de pieds froids. Il n’a pas de troubles urinaires ni de lombalgies particulières. Ses antécédents sont une hypertension artérielle traitée depuis 5 ans. Son père est décédé d’un infarctus à 70 ans. Il fume un paquet par jour depuis plus de 40 ans. Il prend actuellement de l’amlodipine. Pas de diabète connu.\n\nÀ l’examen clinique, on retrouve des pouls pédieux difficiles à percevoir à droite, le pied droit est plus froid et la peau est dépilée. Les pouls fémoraux sont présents. Le test de Buerger est positif à droite. Pas de souffle cardiaque ou carotidien. Pas de signes neurologiques associés. L’IPS sera inférieur à 0,9.\n\nEn résumé, il s’agit d’un homme de 64 ans, gros fumeur, présentant une claudication intermittente typique du mollet droit, compatible avec une artériopathie oblitérante des membres inférieurs, stade II de Leriche et Fontaine. Les diagnostics différentiels incluent une claudication neurogène (mais pas de lombalgie ni soulagement en antéflexion), une pathologie veineuse (mais douleur rapidement soulagée par repos) ou une pathologie ostéo-articulaire (mais pas de douleur mécanique persistante).\n\nLes examens complémentaires à réaliser sont un indice de pression systolique au repos et éventuellement post-effort, un écho-Doppler artériel pour cartographier les lésions, et un bilan cardiovasculaire complet avec ECG, bilan lipidique et glycémie. \n\nLa prise en charge repose sur un arrêt absolu du tabac, un programme de marche supervisée 3 fois par semaine, une statine à forte dose, un antiagrégant plaquettaire, et un contrôle de l’hypertension. Une revascularisation sera envisagée uniquement en cas de claudication invalidante malgré un traitement médical bien conduit ou en cas d’ischémie critique."
+        },
+        {
+          "titre": "⚡ Version express (SBAR, 30 sec)",
+          "contenu": "S (Situation) : M. Dumas, 64 ans, douleurs crampiformes du mollet droit à la marche, soulagées au repos.\n\nB (Background) : ATCD HTA, fumeur 40 PA, père IDM. Actuellement sous amlodipine.\n\nA (Assessment) : Claudication intermittente typique, AOMI stade II probable. DD : claudication neurogène, veineuse, arthrose.\n\nR (Recommendation) : IPS, écho-Doppler, bilan CV. PEC = arrêt tabac, marche supervisée, statine forte dose, antiagrégant. Revascularisation si invalidante."
+        },
+        {
+          "titre": "🎲 Touches ludiques / mnémos",
+          "subsections": [
+            {
+              "titre": "👉 Classification de Leriche & Fontaine",
+              "points": [
+                "Stade I : asymptomatique",
+                "Stade IIa : claudication > 200 m",
+                "Stade IIb : claudication < 200 m",
+                "Stade III : douleurs de repos",
+                "Stade IV : ulcères, gangrène"
+              ]
+            },
+            {
+              "titre": "👉 Localisation douleur = artère",
+              "points": [
+                "Fessier/hanche : aorto-iliaque",
+                "Cuisse : iliaque",
+                "Mollet : fémoro-poplité",
+                "Pied : artères distales"
+              ]
+            },
+            {
+              "titre": "👉 Facteurs de risque AOMI = ATOME",
+              "points": [
+                "A = Âge > 50 ans",
+                "T = Tabac",
+                "O = Obésité",
+                "M = Maladie métabolique (diabète, dyslipidémie)",
+                "E = HTA"
+              ]
+            },
+            {
+              "titre": "⚠️ Pièges ECOS",
+              "points": [
+                "Ne pas proposer d’emblée la chirurgie",
+                "Oublier de rechercher autres localisations athérosclérose (coronaires, carotides, rénales)",
+                "Ne pas insister sur l’arrêt tabac",
+                "Oublier le programme de marche supervisée"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "❓ Questions probables de l'examinateur (avec réponses orales)",
+          "subsections": [
+            {
+              "titre": "1. Diagnostic et différentiel",
+              "questions": [
+                {
+                  "question": "Quels sont les arguments pour l’AOMI ?",
+                  "reponse": [
+                    "Douleur crampiforme à la marche",
+                    "Localisation au mollet",
+                    "Soulagement en <10 min par le repos",
+                    "Tabagisme actif",
+                    "Pouls périphériques diminués",
+                    "Test de Buerger positif"
+                  ]
+                },
+                {
+                  "question": "Quels diagnostics différentiels évoquer ?",
+                  "reponse": [
+                    "Claudication neurogène (canal lombaire étroit)",
+                    "Claudication veineuse",
+                    "Pathologie articulaire (arthrose hanche/genou)"
+                  ]
+                }
+              ]
+            },
+            {
+              "titre": "2. Examens complémentaires",
+              "questions": [
+                {
+                  "question": "Quels examens demandez-vous en première intention ?",
+                  "reponse": [
+                    "Indice de pression systolique au repos",
+                    "Écho-Doppler artériel des membres inférieurs",
+                    "Bilan cardiovasculaire : ECG, lipides, glycémie"
+                  ]
+                }
+              ]
+            },
+            {
+              "titre": "3. Traitement",
+              "questions": [
+                {
+                  "question": "Quel est le traitement médical de l’AOMI ?",
+                  "reponse": [
+                    "Arrêt tabac",
+                    "Programme de marche supervisée",
+                    "Antiagrégant plaquettaire",
+                    "Statine forte dose",
+                    "Contrôle HTA et diabète"
+                  ]
+                },
+                {
+                  "question": "Quand proposer une revascularisation ?",
+                  "reponse": [
+                    "Claudication invalidante malgré 3-6 mois de traitement médical optimal",
+                    "Ischémie critique (douleur repos, ulcère, gangrène)"
+                  ]
+                }
+              ]
+            },
+            {
+              "titre": "4. Pronostic et suivi",
+              "questions": [
+                {
+                  "question": "Quel est le pronostic de l’AOMI ?",
+                  "reponse": [
+                    "Mortalité cardiovasculaire multipliée par 3",
+                    "20 % décès cardiovasculaire à 5 ans",
+                    "Amputation rare (<5%) si PEC optimale"
+                  ]
+                },
+                {
+                  "question": "Quel suivi recommandez-vous ?",
+                  "reponse": [
+                    "Suivi clinique régulier du périmètre de marche",
+                    "Mesure annuelle de l’IPS",
+                    "Surveillance stricte des facteurs de risque CV",
+                    "Bilan lipidique et glycémie réguliers"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

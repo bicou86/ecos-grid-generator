@@ -1,0 +1,211 @@
+{
+  "title": "Thieme Mini-Cas 60 - Douleur de la main - Syndrome du canal carpien - Femme de 45 ans",
+  "category": "Thieme Mini-Cas",
+  "subcategory": "Douleur de la main - Syndrome du canal carpien",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Femme de 45 ans, Patient standardisé, consulte pour douleur et engourdissement de la main"
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Motif principal de consultation",
+          "binaryOnly": true,
+          "patientComment": "douleur et engourdissement de la main"
+        },
+        {
+          "id": "a2",
+          "text": "Analyse ciblée de la plainte",
+          "details": [
+            "Localisation engourdissement",
+            "Activités répétitives",
+            "Symptômes nocturnes",
+            "Faiblesse main"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Recherche des éléments clés",
+          "details": [
+            "Test de Phalen",
+            "Signe de Tinel",
+            "Distribution nerf médian"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Antécédents pertinents",
+          "details": [
+            "Diabète",
+            "Hypothyroïdie",
+            "Polyarthrite rhumatoïde",
+            "Grossesse"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Revue des systèmes ciblée",
+          "details": [
+            "Neurologique",
+            "Musculo-squelettique",
+            "Endocrinien"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Inspection main et poignet",
+          "binaryOnly": true
+        },
+        {
+          "id": "e2",
+          "text": "Test de Phalen [positif si symptômes en 30 sec]"
+        },
+        {
+          "id": "e3",
+          "text": "Signe de Tinel [positif si paresthésies]"
+        },
+        {
+          "id": "e4",
+          "text": "Évaluation sensitive territoire médian"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostics différentiels",
+          "ddSection": {
+            "title": "Hypothèses diagnostiques à considérer",
+            "categories": [
+              {
+                "name": "Diagnostics prioritaires",
+                "items": [
+                  {
+                    "text": "Syndrome du canal carpien",
+                    "cause": "Arguments POUR:\n\t□ Engourdissement territoire médian, tests positifs, symptômes nocturnes",
+                    "test": "→ EMG, vitesse conduction nerveuse"
+                  },
+                  {
+                    "text": "Radiculopathie cervicale",
+                    "cause": "Arguments POUR:\n\t□ Irradiation possible, symptômes proximaux",
+                    "test": "→ IRM cervicale, EMG"
+                  },
+                  {
+                    "text": "Polyneuropathie",
+                    "cause": "Arguments POUR:\n\t□ Atteinte bilatérale possible, diabète/carence",
+                    "test": "→ EMG, glycémie, vitamine B12"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Examens complémentaires",
+          "details": [
+            "Radiographie de la main",
+            "EMG",
+            "Étude de conduction nerveuse"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Plan de prise en charge",
+          "details": [
+            "Repos poignet",
+            "Attelle nocturne",
+            "Anti-inflammatoires",
+            "Référence si échec"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Conseils au patient",
+          "details": [
+            "Éviter mouvements répétitifs",
+            "Port attelle nuit",
+            "Exercices étirement"
+          ]
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Explications au patient",
+          "content": "Compression probable du nerf médian au poignet. Les tests confirmeront le diagnostic du syndrome du canal carpien."
+        },
+        {
+          "id": "c2",
+          "text": "Questions du patient",
+          "content": "[Vais-je devoir être opéré?]\n[Puis-je continuer mon travail?]"
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour le patient standardisé",
+      "nom": "Patient standardisé",
+      "age": "45 ans",
+      "contexte": "Cabinet de médecine générale",
+      "motifConsultation": {
+        "plaintePrincipale": "douleur et engourdissement de la main",
+        "contexte": "Compression du nerf médian au niveau du poignet"
+      },
+      "simulation": {
+        "attitude": [
+          "Inquiet pour son travail",
+          "Douleur++"
+        ],
+        "signesPhysiques": [
+          "Test Phalen positif",
+          "Tinel positif"
+        ],
+        "durantConsultation": [
+          "Montrer positions aggravantes",
+          "Demander arrêt travail"
+        ]
+      }
+    },
+    "informationsExpert": {
+      "titre": "Informations pour l'expert",
+      "pointsCles": [
+        "Mini-cas clinique: Douleur de la main - Syndrome du canal carpien",
+        "Focus: Test de Phalen, Signe de Tinel, Distribution nerf médian",
+        "Consultation ciblée de 10 minutes",
+        "Évaluation de l'approche diagnostique"
+      ],
+      "pieges": [
+        "Oublier tests spécifiques",
+        "Ne pas évaluer gravité"
+      ]
+    },
+    "theoriePratique": {
+      "titre": "Tests spécifiques",
+      "sections": [
+        {
+          "titre": "Test de Phalen",
+          "contenu": "Maintenir le dos des deux mains ensemble en flexion aiguë pendant 30 secondes. Positif si engourdissement/picotements dans territoire du nerf médian."
+        },
+        {
+          "titre": "Signe de Tinel",
+          "contenu": "Percuter le trajet du nerf médian dans le canal carpien. Positif si engourdissement/picotements."
+        }
+      ]
+    }
+  }
+}

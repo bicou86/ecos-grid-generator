@@ -1,0 +1,489 @@
+{
+  "title": "Décision partagée - Dépistage cancer du sein",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Femme de 52 ans, enseignante, consulte suite à invitation au programme de dépistage mammographique",
+    "vitals": {
+      "ta": "128/78 mmHg",
+      "fc": "70 bpm",
+      "fr": "16/min",
+      "temperature": "36.6°C"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Explorer les connaissances préalables sur le dépistage",
+          "details": [
+            "Invitation reçue [J'ai reçu une lettre pour faire une mammographie]",
+            "Connaissances du dépistage [Je ne sais pas vraiment à quoi ça sert]",
+            "Expériences passées [Jamais fait de mammographie]",
+            "Sources d'information [Discussions avec amies, internet]",
+            "Appréhensions exprimées [J'ai peur que ça fasse mal]"
+          ],
+          "exemplesPhrases": [
+            "\"Qu'est-ce que vous savez sur le dépistage du cancer du sein?\"",
+            "\"Qu'est-ce qui vous amène à vous poser des questions?\""
+          ]
+        },
+        {
+          "id": "a2",
+          "text": "Évaluer les facteurs de risque personnels",
+          "details": [
+            "Âge [52 ans, tranche cible du dépistage]",
+            "Antécédents familiaux [Tante maternelle cancer sein 70 ans]",
+            "Antécédents personnels [Aucune pathologie mammaire]",
+            "Habitudes de vie [Pas d'activité physique régulière]",
+            "Statut hormonal [Ménopause débutante depuis 1 an]"
+          ],
+          "patientComment": "Ma tante a eu un cancer du sein, mais elle était plus âgée que moi"
+        },
+        {
+          "id": "a3",
+          "text": "Explorer les préoccupations et attentes",
+          "details": [
+            "Préoccupations santé [Peur découvrir quelque chose]",
+            "Attentes du dépistage [Être rassurée]",
+            "Appréhensions examen [Douleur, compression mammaire]",
+            "Impact psychologique [Stress attente résultats]",
+            "Contraintes pratiques [Temps, organisation travail]"
+          ],
+          "exemplesPhrases": [
+            "\"Qu'est-ce qui vous inquiète le plus concernant la mammographie?\"",
+            "\"Qu'attendez-vous de ce dépistage?\""
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Identifier les valeurs et priorités personnelles",
+          "details": [
+            "Rapport au risque [Préfère savoir que ne pas savoir]",
+            "Tolérance examens médicaux [Accepte si justifié]",
+            "Priorités qualité de vie [Éviter stress inutile]",
+            "Confiance système médical [Fait confiance aux recommandations]",
+            "Autonomie décisionnelle [Aime comprendre avant décider]"
+          ],
+          "patientComment": "J'aimerais comprendre si c'est vraiment utile à mon âge"
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Présenter les principes du dépistage mammographique",
+          "details": [
+            "Objectif principal [Détecter cancers avant symptômes]",
+            "Population cible [50-69 ans, programmes organisés]",
+            "Fréquence [Tous les 2 ans]",
+            "Procédure [Radiographie avec compression mammaire]",
+            "Limitations [Ne prévient pas le cancer, le détecte]"
+          ],
+          "exemplesPhrases": [
+            "\"La mammographie permet de détecter des cancers très précoces\"",
+            "\"C'est un examen de dépistage, pas de prévention\""
+          ]
+        },
+        {
+          "id": "e2",
+          "text": "Expliquer les avantages du dépistage",
+          "details": [
+            "Réduction mortalité [4 décès évités/1000 femmes sur 20 ans]",
+            "Détection précoce [Meilleur pronostic si stade précoce]",
+            "Traitement moins lourd [Conservation sein plus probable]",
+            "Démarche rassurante [Majorité résultats normaux]",
+            "Qualité programmes [Double lecture, contrôles qualité]"
+          ],
+          "ddSection": {
+            "title": "Bénéfices du dépistage mammographique",
+            "categories": [
+              {
+                "name": "Mortalité",
+                "items": [
+                  {
+                    "text": "Réduction décès",
+                    "cause": "Arguments POUR:\n\t□ 4 décès évités/1000 femmes\n\t□ Détection stade précoce\n\t□ Meilleur pronostic",
+                    "test": "→ Participation sur 20 ans nécessaire"
+                  }
+                ]
+              },
+              {
+                "name": "Qualité de vie",
+                "items": [
+                  {
+                    "text": "Traitement moins invasif",
+                    "cause": "Arguments POUR:\n\t□ Conservation mammaire\n\t□ Moins de chimiothérapie\n\t□ Moins d'effets secondaires",
+                    "test": "→ Diagnostic stade précoce"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "e3",
+          "text": "Expliquer les inconvénients et limites",
+          "details": [
+            "Faux positifs [250/1000 femmes investigations complémentaires]",
+            "Surdiagnostic [5-10 cancers/1000 non significatifs]",
+            "Cancers d'intervalle [Possibles entre 2 mammographies]",
+            "Stress psychologique [Attente résultats, examens complémentaires]",
+            "Exposition radiations [Dose très faible mais présente]"
+          ],
+          "ddSection": {
+            "title": "Inconvénients du dépistage mammographique",
+            "categories": [
+              {
+                "name": "Surdiagnostic",
+                "items": [
+                  {
+                    "text": "Cancers non significatifs",
+                    "cause": "Arguments CONTRE:\n\t□ 5-10 cas/1000 femmes\n\t□ Traitement inutile\n\t□ Effets secondaires évitables",
+                    "test": "→ Impossible de différencier au diagnostic"
+                  }
+                ]
+              },
+              {
+                "name": "Faux positifs",
+                "items": [
+                  {
+                    "text": "Examens complémentaires",
+                    "cause": "Arguments CONTRE:\n\t□ 250/1000 femmes concernées\n\t□ 185/250 pas de cancer\n\t□ Stress et anxiété",
+                    "test": "→ Biopsies parfois nécessaires"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "e4",
+          "text": "Présenter les données statistiques",
+          "details": [
+            "Avec dépistage [65 cancers détectés/1000 femmes 20 ans]",
+            "Sans dépistage [55 cancers détectés/1000 femmes 20 ans]",
+            "Mortalité avec [16 décès/1000 femmes 20 ans]",
+            "Mortalité sans [20 décès/1000 femmes 20 ans]",
+            "Surdiagnostic [5-10 cas sur 65 cancers détectés]"
+          ]
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Appliquer le processus de décision partagée",
+          "details": [
+            "Présenter l'enjeu [Invitation programme, choix personnel]",
+            "Information équilibrée [Avantages et inconvénients]",
+            "Explorer préférences [Valeurs personnelles patiente]",
+            "Prendre décision [Choix éclairé ensemble]",
+            "Respecter autonomie [Droit accepter ou refuser]"
+          ],
+          "exemplesPhrases": [
+            "\"Il n'y a pas une seule bonne réponse, cela dépend de vos priorités\"",
+            "\"Qu'est-ce qui est le plus important pour vous?\""
+          ]
+        },
+        {
+          "id": "m2",
+          "text": "Explorer les préférences personnelles",
+          "details": [
+            "Tolérance incertitude [Accepte-t-elle de ne pas savoir?]",
+            "Priorités qualité vs longévité [Éviter stress vs prévention]",
+            "Attitude face aux examens [Accepte investigations si nécessaire?]",
+            "Impact antécédents familiaux [Influence sur décision?]",
+            "Confiance système [Fait confiance aux recommandations?]"
+          ],
+          "patientComment": "Je pense que si c'est recommandé, il vaut mieux le faire"
+        },
+        {
+          "id": "m3",
+          "text": "Utiliser des outils d'aide à la décision",
+          "details": [
+            "Pictogrammes fréquences [1000 femmes avec/sans dépistage]",
+            "Tableau bénéfices/risques [Synthèse claire]",
+            "Échelle valeurs [Importance différents aspects 1-10]",
+            "Scénarios hypothétiques [Si anomalie détectée, que faire?]",
+            "Temps réflexion [Pas de pression décision immédiate]"
+          ],
+          "ddSection": {
+            "title": "Aide à la décision - Données sur 1000 femmes",
+            "categories": [
+              {
+                "name": "Avec dépistage (20 ans)",
+                "items": [
+                  {
+                    "text": "Résultats attendus",
+                    "cause": "Sur 1000 femmes:\n\t□ 750 mammographies normales\n\t□ 250 examens complémentaires\n\t□ 65 cancers détectés\n\t□ 16 décès",
+                    "test": "→ 4 décès évités vs sans dépistage"
+                  }
+                ]
+              },
+              {
+                "name": "Sans dépistage (20 ans)",
+                "items": [
+                  {
+                    "text": "Évolution naturelle",
+                    "cause": "Sur 1000 femmes:\n\t□ 55 cancers détectés\n\t□ 20 décès\n\t□ Pas d'examens préventifs",
+                    "test": "→ Détection plus tardive"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m4",
+          "text": "Planifier selon la décision prise",
+          "details": [
+            "Si participation [Organiser rendez-vous mammographie]",
+            "Si refus [Respecter choix, surveillance clinique]",
+            "Information follow-up [Possibilité reconsidérer ultérieurement]",
+            "Surveillance alternative [Autopalpation, consultation annuelle]",
+            "Éducation signes d'alarme [Changements mammaires à signaler]"
+          ]
+        },
+        {
+          "id": "m5",
+          "text": "Gérer l'ambivalence et le doute",
+          "details": [
+            "Normaliser questionnement [Normal de se poser des questions]",
+            "Valoriser réflexion [Preuve de responsabilité personnelle]",
+            "Éviter prescription [Pas imposer une décision]",
+            "Soutenir autonomie [Capacité à décider pour elle-même]",
+            "Rassurer réversibilité [Peut changer d'avis ultérieurement]"
+          ]
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Consolidation de la décision prise",
+          "content": "• Résumer le choix de la patiente et ses motivations\n• Confirmer sa compréhension des enjeux\n• Son choix: \"Je vais faire la mammographie\"\n• Ses raisons: \"Même si ce n'est pas parfait, je préfère savoir\"\n• Sa compréhension: \"Il peut y avoir des fausses alertes\"\n• Son engagement: \"Je suis prête à assumer les conséquences\"",
+          "exemplesPhrases": [
+            "\"Vous avez bien pesé les avantages et les inconvénients\"",
+            "\"C'est une décision réfléchie qui vous correspond\""
+          ]
+        },
+        {
+          "id": "c2",
+          "text": "Questions difficiles de la patiente",
+          "content": "[Et si la mammographie trouve quelque chose de pas grave mais qu'on me traite quand même?]\n[Comment savoir si un cancer dépisté était vraiment dangereux?]\n[Mes antécédents familiaux changent-ils quelque chose?]\n[Est-ce que je peux arrêter le dépistage si je change d'avis?]",
+          "exemplesPhrases": [
+            "\"On ne peut pas savoir à l'avance quels cancers sont dangereux\"",
+            "\"Vos antécédents sont un facteur parmi d'autres\"",
+            "\"Vous pouvez toujours reconsidérer votre choix\""
+          ]
+        },
+        {
+          "id": "c3",
+          "text": "Plan de suivi et organisation pratique",
+          "content": "• Organiser rendez-vous si décision de participer\n• Expliquer modalités pratiques (préparation, déroulement)\n• Information sur délai et communication des résultats\n• Planifier suivi selon décision prise\n• Ressources d'information complémentaires",
+          "exemplesPhrases": [
+            "\"Je vais organiser votre rendez-vous pour la mammographie\"",
+            "\"Les résultats vous seront communiqués sous 8 jours\"",
+            "\"N'hésitez pas à me recontacter si vous avez des questions\""
+          ]
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "images": [
+      {
+        "id": "statistiques_depistage_sein",
+        "title": "Impact du dépistage mammographique - Données statistiques",
+        "description": "Pictogramme montrant l'évolution sur 1000 femmes participant au dépistage pendant 20 ans",
+        "filename": "decision-partagee/statistiques-depistage-sein.jpg"
+      },
+      {
+        "id": "avantages_inconvenients_sein",
+        "title": "Balance bénéfices-risques du dépistage mammographique",
+        "description": "Schéma illustrant l'équilibre entre réduction de mortalité et surdiagnostic",
+        "filename": "decision-partagee/balance-depistage-sein.jpg"
+      },
+      {
+        "id": "deroulement_mammographie",
+        "title": "Déroulement d'une mammographie",
+        "description": "Image montrant une patiente lors d'une mammographie avec la technicienne",
+        "filename": "decision-partagee/deroulement-mammographie.jpg"
+      }
+    ],
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour la patiente standardisée",
+      "nom": "Mme Claire Rousseau",
+      "age": "52 ans",
+      "contexte": "Cabinet de médecine générale, consultation préventive",
+      "motifConsultation": {
+        "plaintePrincipale": "Invitation au programme de dépistage du cancer du sein",
+        "autreChose": "Questionnements sur l'utilité et les risques de la mammographie"
+      },
+      "histoireActuelle": {
+        "invitationDepistage": [
+          "Lettre reçue: \"J'ai reçu une invitation pour faire une mammographie\"",
+          "Questionnement: \"Je ne sais pas vraiment si c'est utile\"",
+          "Pas d'urgence ressentie: \"Je n'ai aucun symptôme\"",
+          "Discussions entourage: \"Mes amies ont des avis partagés\"",
+          "Appréhensions: \"J'ai entendu dire que ça fait mal\""
+        ],
+        "connaissances": [
+          "Connaissances limitées du dépistage",
+          "Sait que c'est pour détecter le cancer",
+          "Ignore les controverses sur le surdiagnostic",
+          "Pense que c'est automatiquement bénéfique",
+          "Ne connaît pas les statistiques"
+        ],
+        "preoccupations": [
+          "Peur de la douleur pendant l'examen",
+          "Anxiété de découvrir quelque chose",
+          "Stress attente des résultats",
+          "Contraintes pratiques (temps, travail)",
+          "Doute sur la nécessité à son âge"
+        ],
+        "valeurs": [
+          "Préfère généralement savoir que ne pas savoir",
+          "Fait confiance aux recommandations médicales",
+          "Évite le stress inutile",
+          "Responsable face à sa santé",
+          "Autonome dans ses décisions"
+        ]
+      },
+      "simulation": {
+        "attitude": [
+          "Curieuse et ouverte aux explications",
+          "Légèrement anxieuse mais pas paniquée",
+          "Rationnelle dans sa réflexion",
+          "Reconnaissante des informations détaillées",
+          "Prête à prendre une décision éclairée"
+        ],
+        "durantEntretien": [
+          "Montrer l'invitation reçue",
+          "Exprimer questionnements et doutes",
+          "Poser des questions pratiques",
+          "Évoluer progressivement vers une décision",
+          "Demander conseil sans imposer de réponse"
+        ],
+        "phrasesTypes": [
+          "\"J'ai reçu cette lettre pour faire une mammographie\"",
+          "\"Je ne sais pas vraiment si c'est utile\"",
+          "\"Ma tante a eu un cancer du sein, mais elle était plus âgée\"",
+          "\"J'aimerais comprendre si c'est vraiment nécessaire\"",
+          "\"Qu'est-ce que vous me conseillez?\"",
+          "\"Est-ce que ça fait vraiment mal?\"",
+          "\"Et si on trouve quelque chose de pas grave?\"",
+          "\"Je pense que si c'est recommandé, il vaut mieux le faire\""
+        ]
+      },
+      "anamneseSystemes": {
+        "mammaire": ["Aucun symptôme", "Pas de palpation de masses", "Pas d'écoulement"],
+        "generale": ["Forme correcte", "Ménopause débutante", "Pas d'amaigrissement"],
+        "familiale": ["Tante maternelle: cancer sein 70 ans", "Mère: vivante 78 ans"],
+        "gynecologique": ["Ménopause depuis 1 an", "2 grossesses, 2 enfants", "Pas de THS"]
+      },
+      "habitudes": {
+        "profession": "Enseignante école primaire depuis 25 ans",
+        "activite": "Peu d'activité physique régulière",
+        "alimentation": "Équilibrée, quelques excès occasionnels",
+        "alcool": "Modéré, social principalement",
+        "tabac": "Non-fumeuse",
+        "stress": "Professionnel modéré"
+      },
+      "informationsPersonnelles": {
+        "etatCivil": "Mariée, deux enfants adultes",
+        "preoccupations": "Santé, famille, retraite dans 10 ans",
+        "hobbies": "Lecture, jardinage, randonnée occasionnelle",
+        "personnalite": "Méthodique, réfléchie, responsable"
+      }
+    },
+    "informationsExpert": {
+      "titre": "Points clés pour l'expert évaluateur",
+      "pointsCles": [
+        "Évaluer l'exploration non-directive des connaissances préalables",
+        "Observer la présentation équilibrée des avantages et inconvénients",
+        "Vérifier l'explication claire du concept de surdiagnostic",
+        "Noter l'exploration des valeurs et préférences personnelles",
+        "Évaluer l'application du processus de décision partagée",
+        "Observer l'utilisation d'outils visuels d'aide à la décision",
+        "Vérifier le respect de l'autonomie de la patiente"
+      ],
+      "pieges": [
+        "Orienter systématiquement vers la participation au dépistage",
+        "Minimiser l'importance du surdiagnostic",
+        "Négliger l'impact psychologique des faux positifs",
+        "Imposer une décision basée sur les antécédents familiaux",
+        "Donner trop d'informations techniques sans vérifier compréhension",
+        "Presser pour une décision immédiate",
+        "Ne pas respecter le choix de ne pas participer"
+      ],
+      "criteresBonnePerformance": [
+        "Exploration empathique des préoccupations initiales",
+        "Présentation équilibrée et factuelle des données",
+        "Explication accessible du concept de surdiagnostic",
+        "Questions ouvertes sur les valeurs personnelles",
+        "Utilisation d'outils visuels pour faciliter compréhension",
+        "Respect de la temporalité et du processus décisionnel",
+        "Plan adapté à la décision finale de la patiente"
+      ]
+    },
+    "theoriePratique": {
+      "titre": "Décision partagée et dépistage mammographique",
+      "sections": [
+        {
+          "titre": "Épidémiologie du cancer du sein",
+          "points": [
+            "Incidence: 5900 nouveaux cas/an en Suisse, 1400 décès",
+            "Risque vie: 1 femme sur 8 touchée",
+            "Âge: 80% des femmes >50 ans au diagnostic",
+            "Facteurs de risque: âge, antécédents familiaux, hormones",
+            "Programmes de dépistage: 50-69 ans (parfois 74 ans)"
+          ]
+        },
+        {
+          "titre": "Concept de surdiagnostic",
+          "points": [
+            "Définition: cancers détectés qui n'auraient jamais causé de problème",
+            "Fréquence estimée: 5-10 cas sur 65 cancers dépistés/1000 femmes",
+            "Causes: tumeurs peu agressives, croissance lente",
+            "Conséquences: traitements inutiles, effets secondaires évitables",
+            "Dilemme: impossible de différencier au moment du diagnostic"
+          ]
+        },
+        {
+          "titre": "Données actuelles du dépistage mammographique",
+          "points": [
+            "Réduction mortalité: 4 décès évités/1000 femmes sur 20 ans",
+            "Faux positifs: 250/1000 femmes nécessitent examens complémentaires",
+            "Cancers détectés: 65/1000 avec dépistage vs 55/1000 sans",
+            "Qualité programmes: double lecture, contrôles réguliers",
+            "Limites: cancers d'intervalle, exposition radiations faible"
+          ]
+        }
+      ],
+      "rappelsTherapeutiques": [
+        "Présenter de manière équilibrée avantages et inconvénients",
+        "Expliquer clairement le concept de surdiagnostic",
+        "Explorer les valeurs personnelles avant de conseiller",
+        "Utiliser des outils visuels pour faciliter compréhension",
+        "Respecter le choix de ne pas participer au dépistage",
+        "Laisser du temps pour la réflexion et la décision"
+      ],
+      "examensComplementaires": [
+        "Mammographie: radiographie seins, compression nécessaire",
+        "US mammaire: complément en cas d'anomalie",
+        "IRM mammaire: cas particuliers, haute sensibilité",
+        "Biopsie: prélèvement tissu si suspicion malignité",
+        "Anatomopathologie: diagnostic définitif histologique"
+      ]
+    }
+  }
+}

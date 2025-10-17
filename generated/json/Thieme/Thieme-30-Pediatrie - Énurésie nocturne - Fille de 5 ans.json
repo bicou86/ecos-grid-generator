@@ -1,0 +1,265 @@
+{
+  "title": "Thieme Pédiatrie 30 - Énurésie nocturne - Fille de 5 ans",
+  "category": "Thieme Pédiatrie",
+  "subcategory": "Énurésie nocturne",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Fille de 5 ans, Kelci Miller, Mme Fisher Miller consulte pour mouille le lit"
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Motif principal de consultation",
+          "binaryOnly": true,
+          "patientComment": "mouille le lit"
+        },
+        {
+          "id": "a2",
+          "text": "Analyse de la plainte principale",
+          "details": [
+            "Fréquence énurésie [1-2×/nuit, 2-3 nuits/semaine]",
+            "Continence diurne [oui]",
+            "Stratégies essayées [restriction liquides, miction avant coucher]",
+            "Impact psychologique [gênée, évite fratrie]",
+            "Changements récents [dort chez grand-mère]"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Recherche diagnostique différentielle",
+          "details": [
+            "Symptômes urinaires diurnes",
+            "Constipation",
+            "Apnée du sommeil",
+            "Stress psychosocial",
+            "Antécédents familiaux"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Antécédents et développement de l'enfant",
+          "details": [
+            "Développement approprié pour l'âge"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Histoire sociale et familiale",
+          "details": [
+            "Parents compréhensifs",
+            "Père mouillait lit jusqu'à 9 ans",
+            "Constipation occasionnelle, régime pauvre fibres, mange beaucoup fromage",
+            "Dernière visite il y a 2 mois normale"
+          ]
+        },
+        {
+          "id": "a6",
+          "text": "Revue des systèmes pédiatriques",
+          "details": [
+            "Système urinaire",
+            "Système digestif",
+            "Sommeil"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Signes vitaux et apparence générale",
+          "binaryOnly": true
+        },
+        {
+          "id": "e2",
+          "text": "Examen ORL pédiatrique",
+          "details": [
+            "Otoscopie bilatérale",
+            "Examen pharyngé",
+            "Palpation ganglions"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Examen cardio-pulmonaire",
+          "details": [
+            "Auscultation cardiaque",
+            "Auscultation pulmonaire",
+            "Recherche sifflements"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Examen abdominal pédiatrique",
+          "details": [
+            "Palpation vessie",
+            "Recherche globe vésical",
+            "Palpation fosses lombaires"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Examen neurologique et développement",
+          "details": [
+            "Tonus",
+            "Réflexes",
+            "Développement psychomoteur"
+          ]
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostics différentiels pédiatriques",
+          "ddSection": {
+            "title": "Hypothèses diagnostiques à considérer",
+            "categories": [
+              {
+                "name": "Diagnostics prioritaires",
+                "items": [
+                  {
+                    "text": "Énurésie nocturne primaire",
+                    "cause": "Arguments POUR:\n\t□ Jamais continente longtemps, ATCD père, âge 5 ans",
+                    "test": "→ Analyse urine, échographie rénale si indiquée"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Examens complémentaires appropriés à l'âge",
+          "details": [
+            "Examen physique",
+            "Analyse d'urine"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Plan de prise en charge pédiatrique",
+          "details": [
+            "Journal mictionnel",
+            "Miction programmée (toutes 3-4h)",
+            "Alarme énurésie",
+            "Traitement constipation",
+            "Support psychologique"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Conseils aux parents",
+          "details": [
+            "Patience et compréhension",
+            "Pas de punition",
+            "Renforcement positif",
+            "Régime riche fibres"
+          ]
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Questions des parents",
+          "content": "[Le fait qu'elle dorme chez sa grand-mère pourrait aggraver le problème?]\n[Devrais-je acheter une alarme pour l'énurésie?]\n[Pourrait-elle avoir hérité ce problème de son père?]"
+        },
+        {
+          "id": "c2",
+          "text": "Conseils spécifiques et éducation",
+          "content": "Énurésie primaire avec composante héréditaire. Approche comportementale d'abord. Alarme efficace."
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour le parent standardisé",
+      "nom": "Mme Fisher Miller",
+      "enfant": "Kelci Miller, 5 ans",
+      "contexte": "Cabinet de médecine générale",
+      "motifConsultation": {
+        "plaintePrincipale": "mouille le lit",
+        "autreChose": "Mouille le lit 1-2×/nuit, 2-3 nuits/semaine. Draps trempés. Propre à 2.5 ans mais jamais continente longtemps. Continente jour, pas dysurie."
+      },
+      "histoireActuelle": {
+        "symptomesPrincipaux": [
+          "Mouille le lit 1-2×/nuit, 2-3 nuits/semaine",
+          " Draps trempés",
+          " Propre à 2",
+          "5 ans mais jamais continente longtemps",
+          " Continente jour, pas dysurie"
+        ],
+        "développement": [
+          "Restrictions liquides et miction avant coucher aident parfois",
+          " Dort chez grand-mère quelques nuits/semaine (mère travaille nuit)",
+          " Gênée, évite dormir avec fratrie"
+        ],
+        "contexteSocial": [
+          "Parents compréhensifs",
+          " Père mouillait lit jusqu'à 9 ans",
+          " Constipation occasionnelle, régime pauvre fibres, mange beaucoup fromage",
+          " Dernière visite il y a 2 mois normale"
+        ]
+      },
+      "simulation": {
+        "attitude": [
+          "Mère compréhensive",
+          "Changements horaires travail"
+        ],
+        "durantConsultation": [
+          "Parler situation grand-mère",
+          "Questions sur alarme énurésie"
+        ]
+      },
+      "inquietudes": {
+        "principales": [
+          "[Le fait qu'elle dorme chez sa grand-mère pourrait aggraver le problème?]",
+          "[Devrais-je acheter une alarme pour l'énurésie?]",
+          "[Pourrait-elle avoir hérité ce problème de son père?]"
+        ]
+      }
+    },
+    "informationsExpert": {
+      "titre": "Informations pour l'expert",
+      "pointsCles": [
+        "Cas pédiatrique: Énurésie nocturne",
+        "Enfant: Fille de 5 ans",
+        "Anamnèse adaptée à l'âge",
+        "Examen physique pédiatrique",
+        "Communication avec le parent"
+      ],
+      "pieges": [
+        "Culpabiliser parents",
+        "Médicaments trop tôt",
+        "Négliger constipation"
+      ]
+    },
+    "theoriePratique": {
+      "titre": "Traitement de l'énurésie nocturne",
+      "sections": [
+        {
+          "titre": "Approches non pharmaceutiques",
+          "points": [
+            "Surveiller l'apport liquidien",
+            "Éviter chocolat, cola, thé, café",
+            "Liquides minimaux 3h avant coucher",
+            "Miction avant coucher",
+            "Alarme d'énurésie",
+            "Renforcement positif (tableau étoiles)",
+            "Traiter constipation (fibres++)"
+          ]
+        }
+      ]
+    }
+  }
+}

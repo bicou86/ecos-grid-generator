@@ -1,0 +1,308 @@
+{
+  "title": "Vignette clinique dyspnée mal au cou - Favrat",
+  "context": {
+    "setting": "Service d'urgences hospitalières",
+    "patient": "Trois cas cliniques: 1) Homme 25 ans avec pneumomédiastin, 2) Homme 53 ans avec BPCO, 3) Femme 34 ans éthiopienne avec tuberculose pulmonaire"
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Cas 1 - Homme 25 ans: Pneumomédiastin",
+          "details": [
+            "Travailleur de force [Sans antécédents]",
+            "Douleur thoracique et cervicale [Depuis 3 jours]",
+            "Difficulté à souffler [Progressive]",
+            "Douleur augmente respiration/déglutition [Aggravation]",
+            "Pas de traumatisme [Absence]",
+            "Pas de fièvre [Afébrile 36.5°C]"
+          ]
+        },
+        {
+          "id": "a2",
+          "text": "Cas 2 - Homme 53 ans: BPCO",
+          "details": [
+            "Chauffeur de taxi [Profession]",
+            "Essoufflement progressif [Sur 2 ans]",
+            "Dyspnée stade 2 [Montée 2 étages]",
+            "Toux matinale [Expectorations]",
+            "Tabagisme actif [20 cig/j depuis 20 ans = 33 PA]",
+            "HTA traitée [Depuis 5 ans]",
+            "Infections respiratoires récurrentes"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Cas 3 - Femme 34 ans: Tuberculose",
+          "details": [
+            "Origine éthiopienne [En Suisse depuis 16 ans]",
+            "Toux productive jaunâtre [Productive]",
+            "Douleur basithoracique G [En augmentation]",
+            "Sudations nocturnes [Red flag]",
+            "Sensation de froid [2 épisodes frissons]",
+            "Perte d'appétit [Sans perte pondérale]",
+            "Traitement empirique inefficace [Co-Amoxi 6j]"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Recherche antécédents respiratoires",
+          "details": [
+            "Tabagisme [Quantifier en PA]",
+            "Expositions professionnelles [Date, durée]",
+            "Allergies et atopie",
+            "Infections respiratoires chroniques",
+            "ATCD familiaux cardiovasculaires",
+            "Habitat et animaux",
+            "Loisirs et activités physiques"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Sémiologie de la dyspnée",
+          "details": [
+            "Type [Aiguë vs chronique]",
+            "Intensité [Échelle, stades NYHA]",
+            "Circonstances [Repos, effort, position]",
+            "Horaire [Diurne, nocturne]",
+            "Facteurs déclenchants [Lieux, contacts]",
+            "Signes associés [Généraux, respiratoires, cardiaques]"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Examen Cas 1 - Pneumomédiastin",
+          "details": [
+            "Signes vitaux stables [TA 116/78, FC 93, FR 18]",
+            "Auscultation cardiaque [Sans particularité]",
+            "MV symétrique [Normal]",
+            "Examen ORL [Sans particularité]",
+            "Emphysème sous-cutané [À palper au cou]",
+            "Bon état général [Écarte médiastinite]"
+          ]
+        },
+        {
+          "id": "e2",
+          "text": "Examen Cas 2 - BPCO",
+          "details": [
+            "BMI 32 [Obésité]",
+            "TA 130/60, FC 65, FR 12",
+            "Diminution globale MV [Thorax en tonneau]",
+            "Râles bronchiques diffus",
+            "Sibilances fin expiration",
+            "Reste examen sans particularité"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Examen Cas 3 - Tuberculose",
+          "details": [
+            "Température 37.8°C [Subfébril]",
+            "Râles grossiers fin inspiration",
+            "Auscultation thorax antérieur/creux axillaire",
+            "État général conservé",
+            "Pas d'amyotrophie",
+            "Pas d'adénopathies périphériques"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Examens ORL et neurologiques",
+          "details": [
+            "Oropharynx/nasopharynx [Obstruction?]",
+            "Nerfs crâniens [Intégrité]",
+            "Aires ganglionnaires [Adénopathies?]",
+            "Thyroïde [Goitre compressif?]",
+            "Amyotrophie musculaire [Globale/systématisée]"
+          ]
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic différentiel Cas 1",
+          "ddSection": {
+            "title": "Diagnostics chez le jeune avec dyspnée/douleur cervicale",
+            "categories": [
+              {
+                "name": "Urgences à exclure",
+                "items": [
+                  {
+                    "text": "Embolie pulmonaire",
+                    "cause": "À écarter en priorité:\n\t□ D-dimères négatifs\n\t□ Pas de facteurs de risque\n\t□ Tableau atypique",
+                    "test": "→ D-dimères, si positifs: angio-CT"
+                  },
+                  {
+                    "text": "Pneumothorax",
+                    "cause": "Chez jeune longiligne:\n\t□ Dyspnée brutale\n\t□ Douleur pleurale\n\t□ Asymétrie auscultatoire",
+                    "test": "→ Rx thorax face"
+                  }
+                ]
+              },
+              {
+                "name": "Diagnostic retenu",
+                "items": [
+                  {
+                    "text": "Pneumomédiastin spontané",
+                    "cause": "Arguments POUR:\n\t□ Jeune homme\n\t□ Effort Valsalva (travail force)\n\t□ Douleur cervicale + thoracique\n\t□ Dysphagie\n\t□ Emphysème sous-cutané\n\t□ Air médiastinal sur Rx",
+                    "test": "→ Rx thorax: liseré d'air médiastinal"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Examens Cas 2 - BPCO",
+          "details": [
+            "Spirométrie: VEMS/CVF 40% [<70% = obstruction]",
+            "VEMS 0.65L [30% prédit - sévère]",
+            "CVF 1.7L [60% prédit - restriction associée]",
+            "Test réversibilité Ventolin [>200ml ou >12%]",
+            "Gazométrie artérielle",
+            "Rx thorax [Distension, emphysème]",
+            "NFS [Polyglobulie?]"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Diagnostic Cas 3 - Tuberculose",
+          "details": [
+            "Rx thorax: infiltrat [02.03.2017]",
+            "CT thorax: caverne typique",
+            "Microscopie crachats [1-10 BAAR/10 champs]",
+            "GeneXpert MTB/RIF [Positif]",
+            "Culture positive [3.5 semaines]",
+            "Antibiogramme [Résistances?]",
+            "TB-spot contacts [Enquête entourage]"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Traitement Cas 1 - Pneumomédiastin",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Prise en charge ambulatoire",
+                "content": "• Repos\n• Antitussifs\n• Antalgiques simples\n• Éviter efforts Valsalva\n• Surveillance clinique"
+              },
+              {
+                "title": "Indications hospitalisation",
+                "content": "• Pneumomédiastin compressif\n• Suspicion rupture œsophage\n• Détresse respiratoire\n• Comorbidités importantes"
+              }
+            ]
+          }
+        },
+        {
+          "id": "m5",
+          "text": "Traitement Cas 2 - BPCO",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Bronchodilatateurs",
+                "content": "• LABA + LAMA (Ultibro)\n• ± Corticoïdes inhalés si composante asthmatique\n• Ventolin en aigu"
+              },
+              {
+                "title": "Mesures associées",
+                "content": "• Sevrage tabagique ++\n• Vaccination grippe/pneumocoque\n• Réhabilitation respiratoire\n• Oxygénothérapie si hypoxémie\n• Traitement comorbidités"
+              }
+            ]
+          }
+        },
+        {
+          "id": "m6",
+          "text": "Traitement Cas 3 - Tuberculose",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Quadrithérapie initiale",
+                "content": "• Isoniazide (INH)\n• Rifampicine (RIF)\n• Pyrazinamide (PZA)\n• Éthambutol (EMB)\n• 2 mois phase intensive\n• 4 mois INH + RIF"
+              },
+              {
+                "title": "Mesures de santé publique",
+                "content": "• Déclaration obligatoire\n• Isolement respiratoire (FFP2)\n• Enquête d'entourage ++\n• Dépistage contacts (TB-spot)\n• DOT (Directly Observed Therapy)"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Messages clés - Dyspnée aiguë jeune",
+          "content": "• Toujours exclure EP et pneumothorax\n• Pneumomédiastin: bénin si spontané\n• Rechercher effort Valsalva déclenchant\n• Emphysème sous-cutané pathognomonique\n• Évolution favorable sans traitement\n• Gastroscopie si suspicion rupture œsophage"
+        },
+        {
+          "id": "c2",
+          "text": "Messages clés - BPCO",
+          "content": "• Spirométrie: VEMS/CVF <70% = obstruction\n• Test réversibilité: composante asthmatique?\n• Thorax en tonneau + MV diminué = typique\n• Sevrage tabagique = priorité absolue\n• Traitement par paliers selon GOLD\n• Dépister et traiter comorbidités"
+        },
+        {
+          "id": "c3",
+          "text": "Messages clés - Tuberculose",
+          "content": "• Sudations nocturnes = red flag\n• Origine endémique = risque augmenté\n• Rx thorax systématique si toux >2 semaines\n• Isolement immédiat si suspicion\n• Déclaration obligatoire\n• Enquête d'entourage cruciale"
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "theoriePratique": {
+      "titre": "Approche diagnostique de la dyspnée",
+      "sections": [
+        {
+          "titre": "Stades de dyspnée NYHA",
+          "points": [
+            "Stade I: Pas de limitation",
+            "Stade II: Limitation légère (efforts importants)",
+            "Stade III: Limitation marquée (efforts modérés)",
+            "Stade IV: Dyspnée au repos"
+          ]
+        },
+        {
+          "titre": "Classification GOLD - BPCO",
+          "points": [
+            "GOLD 1: VEMS ≥80% (léger)",
+            "GOLD 2: 50-79% (modéré)",
+            "GOLD 3: 30-49% (sévère)",
+            "GOLD 4: <30% (très sévère)",
+            "Groupes A-D selon symptômes et exacerbations"
+          ]
+        },
+        {
+          "titre": "Critères diagnostiques tuberculose",
+          "contenu": "• Clinique: toux >2 semaines, sudations nocturnes, amaigrissement\n• Radiologique: infiltrat, caverne, miliaire\n• Microbiologique: BAAR+, culture+, PCR+\n• Immunologique: IGRA+ (QuantiFERON, T-SPOT)\n• Histologique: granulome caséeux"
+        }
+      ],
+      "rappelsTherapeutiques": [
+        "Pneumomédiastin: traitement conservateur sauf complications",
+        "BPCO: bronchodilatateurs LABA/LAMA première ligne",
+        "Tuberculose: 2RHZE/4RH (6 mois total)",
+        "Corticoïdes inhalés: si BPCO + asthme ou exacerbations",
+        "Oxygénothérapie: si PaO2 <55mmHg ou <60 avec complications",
+        "Vaccination: grippe annuelle, pneumocoque tous les 5 ans"
+      ],
+      "examensComplementaires": [
+        "Spirométrie: diagnostic et suivi BPCO",
+        "Rx thorax: première ligne dyspnée",
+        "CT thorax: si suspicion TB, cancer, EP",
+        "D-dimères: screening EP si probabilité faible",
+        "Gazométrie: si dyspnée sévère ou BPCO",
+        "Microscopie/culture crachats: si suspicion TB"
+      ]
+    }
+  }
+}

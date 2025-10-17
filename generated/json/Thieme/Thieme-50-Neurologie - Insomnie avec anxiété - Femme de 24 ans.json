@@ -1,0 +1,274 @@
+{
+  "title": "Thieme Neurologie 50 - Insomnie avec anxiété - Femme de 24 ans",
+  "category": "Thieme Neurologie",
+  "subcategory": "Insomnie avec anxiété",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Femme de 24 ans, Mme Mary Wilson, consultant pour difficultés à dormir",
+    "vitals": {
+      "fc": "98 bpm",
+      "ta": "140/100 mmHg",
+      "fr": "20/min",
+      "temperature": "37°C"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Motif principal de consultation",
+          "binaryOnly": true,
+          "patientComment": "difficultés à dormir"
+        },
+        {
+          "id": "a2",
+          "text": "Analyse de la plainte principale",
+          "details": [
+            "Latence endormissement [2h]",
+            "Réveils nocturnes",
+            "Sommeil non réparateur",
+            "Symptômes diurnes [fatigue, siestes]",
+            "Facteurs stress [examens]"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Recherche de signes neurologiques",
+          "details": [
+            "Tremblements fins",
+            "Transpiration",
+            "Palpitations",
+            "Anxiété"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Recherche de facteurs de risque",
+          "details": [
+            "Maladie cardiovasculaire"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Antécédents médicaux et familiaux",
+          "details": [
+            "Pas d'antécédents significatifs"
+          ]
+        },
+        {
+          "id": "a6",
+          "text": "Habitudes et mode de vie",
+          "details": [
+            "Étudiante",
+            "Fume 2 pqt/j × 5 ans",
+            "Boit rarement semaine, plus week-ends",
+            "Sexuellement active avec petit ami"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Signes vitaux et apparence générale",
+          "binaryOnly": true
+        },
+        {
+          "id": "e2",
+          "text": "Examen HEENT (tête, yeux, oreilles, nez, gorge)",
+          "details": [
+            "PERRLA",
+            "Thyroïde normale",
+            "Pas exophtalmie"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Examen neurologique complet",
+          "details": [
+            "Tremblements fins mains",
+            "Force 5/5",
+            "Sensation intacte",
+            "ROT 2+",
+            "Hyperréflexie?"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Tests spéciaux neurologiques",
+          "details": [
+            "Observation tremblements",
+            "Test anxiété"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Examen cardiovasculaire",
+          "details": [
+            "Auscultation cardiaque",
+            "Souffle carotidien",
+            "Pouls périphériques"
+          ]
+        },
+        {
+          "id": "e6",
+          "text": "Évaluation de l'état mental (MMSE si indiqué)",
+          "details": [
+            "État mental normal"
+          ]
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostics différentiels neurologiques",
+          "ddSection": {
+            "title": "Hypothèses diagnostiques à considérer",
+            "categories": [
+              {
+                "name": "Diagnostics prioritaires",
+                "items": [
+                  {
+                    "text": "Anxiété",
+                    "cause": "Arguments POUR:\n\t□ Stress examens, insomnie, palpitations, tremblements, épisode similaire",
+                    "test": "→ TSH, dépistage toxicologique, échelle anxiété"
+                  },
+                  {
+                    "text": "Trouble de l'adaptation",
+                    "cause": "Arguments POUR:\n\t□ Stress aigu, symptômes récents, contexte examens",
+                    "test": "→ Évaluation psychiatrique, TSH"
+                  },
+                  {
+                    "text": "Hyperthyroïdie",
+                    "cause": "Arguments POUR:\n\t□ Insomnie, palpitations, tremblements, perte poids",
+                    "test": "→ TSH, T3/T4 libres, anticorps thyroïdiens"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Examens complémentaires appropriés",
+          "details": [
+            "TSH",
+            "Dépistage toxicologique urinaire",
+            "NFS avec formule"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Plan de prise en charge neurologique",
+          "details": [
+            "Hygiène sommeil",
+            "Gestion stress",
+            "TCC insomnie",
+            "Éviter hypnotiques"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Conseils et prévention",
+          "details": [
+            "Hygiène sommeil",
+            "Arrêt tabac",
+            "Limiter caféine",
+            "Gestion anxiété"
+          ]
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Questions du patient",
+          "content": "[Docteur, je suis inquiète de ne pas réussir mon examen. Je me sens vraiment stressée.]\n[Docteur, parfois mon cœur bat aussi vite qu'un cheval de course. Pensez-vous qu'il y a quelque chose qui ne va pas avec mon cœur?]\n[Pourriez-vous me prescrire des somnifères plus puissants?]"
+        },
+        {
+          "id": "c2",
+          "text": "Conseils spécifiques",
+          "content": "Anxiété examens. Hygiène sommeil. Éviter hypnotiques. TCC si persistent."
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour le patient standardisé",
+      "nom": "Mme Mary Wilson",
+      "age": "24 ans",
+      "contexte": "Cabinet de médecine générale",
+      "motifConsultation": {
+        "plaintePrincipale": "difficultés à dormir",
+        "autreChose": "Difficultés endormissement depuis 2 semaines, aggravation avec approche examens finaux. Se couche 22h, s'endort minuit. Pas reposée matin. Sieste journée. Transpiration, cœur s'emballe."
+      },
+      "histoireActuelle": {
+        "symptomesPrincipaux": [
+          "Difficultés endormissement depuis 2 semaines, aggravation avec approche examens finaux",
+          " Se couche 22h, s'endort minuit",
+          " Pas reposée matin",
+          " Sieste journée",
+          " Transpiration, cœur s'emballe"
+        ],
+        "antecedents": [
+          "DDR il y a 2 semaines",
+          " Perte poids ressentie",
+          " Épisode similaire année dernière même période",
+          " Asthme, albutérol",
+          " Somnifères OTC",
+          " Allergie pénicilline et pollen"
+        ],
+        "contexteSocial": [
+          "Étudiante",
+          " Fume 2 pqt/j × 5 ans",
+          " Boit rarement semaine, plus week-ends",
+          " Sexuellement active avec petit ami"
+        ]
+      },
+      "simulation": {
+        "attitude": [
+          "Anxieuse examens",
+          "Agitée",
+          "Tremblements visibles"
+        ],
+        "durantExamen": [
+          "Tremblements fins doigts étendus",
+          "Anxiété visible",
+          "Tachycardie"
+        ]
+      },
+      "inquietudes": {
+        "principales": [
+          "[Docteur, je suis inquiète de ne pas réussir mon examen. Je me sens vraiment stressée.]",
+          "[Docteur, parfois mon cœur bat aussi vite qu'un cheval de course. Pensez-vous qu'il y a quelque chose qui ne va pas avec mon cœur?]",
+          "[Pourriez-vous me prescrire des somnifères plus puissants?]"
+        ]
+      }
+    },
+    "informationsExpert": {
+      "titre": "Informations pour l'expert",
+      "pointsCles": [
+        "Cas neurologique: Insomnie avec anxiété",
+        "Patient: Femme de 24 ans",
+        "Anamnèse neurologique complète",
+        "Examen neurologique systématique",
+        "Tests spéciaux appropriés"
+      ],
+      "pieges": [
+        "Prescrire hypnotiques",
+        "Manquer hyperthyroïdie",
+        "Ne pas évaluer anxiété"
+      ]
+    }
+  }
+}

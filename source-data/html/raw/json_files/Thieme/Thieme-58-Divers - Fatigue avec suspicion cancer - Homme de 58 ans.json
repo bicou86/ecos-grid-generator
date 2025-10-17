@@ -1,0 +1,275 @@
+{
+  "title": "Thieme Divers 58 - Fatigue avec suspicion cancer - Homme de 58 ans",
+  "category": "Thieme Divers",
+  "subcategory": "Fatigue avec suspicion cancer",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Homme de 58 ans, M. Ivy Mitchell, consultant pour fatigue",
+    "vitals": {
+      "fc": "75 bpm",
+      "ta": "145/95 mmHg",
+      "fr": "15/min",
+      "temperature": "37°C"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Motif principal de consultation",
+          "binaryOnly": true,
+          "patientComment": "fatigue"
+        },
+        {
+          "id": "a2",
+          "text": "Analyse de la plainte principale",
+          "details": [
+            "Syndrome constitutionnel [fatigue, anorexie, amaigrissement]",
+            "Symptômes digestifs [satiété, nausées, douleur]",
+            "Contexte dépressif [deuil récent]",
+            "Antécédent familial [père cancer pancréas]",
+            "Facteurs risque [tabac, alcool]"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Recherche de complications",
+          "details": [
+            "Cachexie cancéreuse",
+            "Thrombose veineuse",
+            "Syndrome paranéoplasique",
+            "Dépression",
+            "Douleur chronique"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Revue des systèmes",
+          "details": [
+            "Digestif complet",
+            "Constitutionnel",
+            "Psychiatrique",
+            "Endocrinien"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Antécédents médicaux et traitements",
+          "details": [
+            "Propranolol pour HTA",
+            "HTA depuis plusieurs ans"
+          ]
+        },
+        {
+          "id": "a6",
+          "text": "Histoire sociale et habitudes",
+          "details": [
+            "Père décédé cancer pancréas",
+            "Fume 1 pqt/j × 20 ans",
+            "Boit 3 bières/j × 15 ans"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Signes vitaux et apparence générale",
+          "binaryOnly": true
+        },
+        {
+          "id": "e2",
+          "text": "Recherche signes généraux",
+          "details": [
+            "Pâleur",
+            "Ictère",
+            "Cyanose",
+            "Œdèmes"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Examen ganglionnaire",
+          "details": [
+            "Chaînes cervicales",
+            "Axillaires",
+            "Inguinales",
+            "Splénomégalie"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Examen abdominal",
+          "details": [
+            "Hépatomégalie",
+            "Masses",
+            "Ascite",
+            "Sensibilité"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Examen cutané",
+          "details": [
+            "Ictère",
+            "Pâleur",
+            "Purpura"
+          ]
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostics différentiels",
+          "ddSection": {
+            "title": "Hypothèses diagnostiques à considérer",
+            "categories": [
+              {
+                "name": "Diagnostics prioritaires",
+                "items": [
+                  {
+                    "text": "Malignité gastro-intestinale",
+                    "cause": "Arguments POUR:\n\t□ Syndrome constitutionnel, satiété précoce, ATCD familial cancer pancréas, tabac/alcool",
+                    "test": "→ CT abdo/pelvis, CA 19-9, endoscopie haute/basse"
+                  },
+                  {
+                    "text": "Trouble dépressif majeur",
+                    "cause": "Arguments POUR:\n\t□ Deuil récent, tristesse, anhédonie, insomnie, idées noires",
+                    "test": "→ Échelle dépression, TSH, bilan standard"
+                  },
+                  {
+                    "text": "Pancréatite chronique",
+                    "cause": "Arguments POUR:\n\t□ Alcool chronique, douleur épigastrique irradiation dos, amaigrissement",
+                    "test": "→ Lipase, CT abdomen, IRM pancréatique"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Examens complémentaires appropriés",
+          "details": [
+            "Examen rectal",
+            "Recherche sang occulte selles",
+            "NFS avec formule",
+            "TSH et T4",
+            "CT abdominal avec contraste",
+            "Endoscopie haute"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Plan de prise en charge",
+          "details": [
+            "Imagerie abdominale urgente",
+            "Marqueurs tumoraux",
+            "Endoscopie haute",
+            "Référence oncologie si cancer",
+            "Support deuil",
+            "Antidépresseurs si indiqué"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Conseils et éducation patient",
+          "details": [
+            "Signes alarme",
+            "Nutrition adaptée",
+            "Gestion douleur",
+            "Support psychologique",
+            "Aide domicile si besoin"
+          ]
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Questions du patient",
+          "content": "[Ai-je un cancer, comme mon père?]"
+        },
+        {
+          "id": "c2",
+          "text": "Conseils spécifiques",
+          "content": "Suspicion cancer vs dépression majeure. Investigations urgentes. Support deuil. Évaluation risque suicidaire."
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour le patient standardisé",
+      "nom": "M. Ivy Mitchell",
+      "age": "58 ans",
+      "contexte": "Cabinet de médecine générale",
+      "motifConsultation": {
+        "plaintePrincipale": "fatigue",
+        "autreChose": "Fatigue et mal depuis 2 mois. Appétit diminué, satiété précoce. Nausées, vomissements parfois. Douleur abdominale sourde haute 5/10, irradiation dos. Perte 7kg/3mois."
+      },
+      "histoireActuelle": {
+        "symptomesPrincipaux": [
+          "Fatigue et mal depuis 2 mois",
+          " Appétit diminué, satiété précoce",
+          " Nausées, vomissements parfois",
+          " Douleur abdominale sourde haute 5/10, irradiation dos",
+          " Perte 7kg/3mois"
+        ],
+        "complications": [
+          "Femme décédée il y a 5 mois",
+          " Difficultés sommeil, triste, déprimé, vie ne vaut pas peine",
+          " HTA 5 ans, prend propranolol"
+        ],
+        "contexteSocial": [
+          "Père décédé cancer pancréas",
+          " Fume 1 pqt/j × 20 ans",
+          " Boit 3 bières/j × 15 ans"
+        ]
+      },
+      "simulation": {
+        "attitude": [
+          "Triste",
+          "Déprimé",
+          "Inquiet cancer père",
+          "Affect émoussé"
+        ],
+        "durantExamen": [
+          "Sensibilité abdominale haute",
+          "Affect dépressif visible"
+        ],
+        "durantConsultation": []
+      },
+      "inquietudes": {
+        "principales": [
+          "[Ai-je un cancer, comme mon père?]"
+        ]
+      }
+    },
+    "informationsExpert": {
+      "titre": "Informations pour l'expert",
+      "pointsCles": [
+        "Cas: Fatigue avec suspicion cancer",
+        "Patient: Homme de 58 ans",
+        "Anamnèse et examen complets",
+        "Évaluation des complications",
+        "Conseils et éducation thérapeutique"
+      ],
+      "pieges": [
+        "Manquer cancer si dépression",
+        "Ne pas évaluer suicide",
+        "Retarder investigations",
+        "Négliger support"
+      ]
+    }
+  }
+}

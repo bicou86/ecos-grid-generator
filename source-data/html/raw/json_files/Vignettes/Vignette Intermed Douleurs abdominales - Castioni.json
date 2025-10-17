@@ -1,0 +1,302 @@
+{
+  "title": "Vignette Intermed Douleurs abdominales - Castioni",
+  "context": {
+    "setting": "Urgences médico-chirurgicales",
+    "patient": "Monsieur P.J, 53 ans, présentant des douleurs abdominales en fosse iliaque gauche avec fièvre depuis 3 jours, associées à des épisodes de diarrhées. Antécédent de sigmoïdectomie il y a 6 mois pour diverticulite compliquée",
+    "vitals": {
+      "temperature": "38.5°C"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Symptômes principaux et caractérisation",
+          "details": [
+            "Douleurs abdominales en fosse iliaque gauche [Depuis 3 jours]",
+            "Fièvre [Jusqu'à 38.5°C à domicile]",
+            "Diarrhées [Oui, plusieurs épisodes]",
+            "Nausées [Non]",
+            "Vomissements [Non]",
+            "Évolution temporelle [Début il y a 3 jours]"
+          ]
+        },
+        {
+          "id": "a2",
+          "text": "Antécédents digestifs importants",
+          "details": [
+            "Diverticulose sigmoïdienne connue [Oui]",
+            "Sigmoïdectomie avec anastomose colo-rectale [Il y a 6 mois]",
+            "Diverticulite sigmoïdienne perforée avec abcès para-vésical [Il y a 1 année]",
+            "Complications post-opératoires antérieures",
+            "Autres interventions digestives"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Facteurs de risque et comorbidités",
+          "details": [
+            "Antécédents chirurgicaux récents [Sigmoïdectomie il y a 6 mois]",
+            "Complications infectieuses antérieures [Abcès para-vésical]",
+            "Immunosuppression [Non mentionnée]",
+            "Obésité",
+            "Âge [53 ans]"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Revue des systèmes",
+          "details": [
+            "Transit intestinal [Diarrhées]",
+            "Symptômes urinaires",
+            "Appétit",
+            "Perte de poids",
+            "Saignement digestif [Non mentionné]"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Contexte actuel",
+          "details": [
+            "Heure de consultation [23h]",
+            "Délai depuis début des symptômes [3 jours]",
+            "Automédication tentée",
+            "Alimentation récente",
+            "Facteurs déclenchants possibles"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Examen abdominal",
+          "details": [
+            "Bruits hydroaériques [Physiologiques]",
+            "Défense abdominale [Absente]",
+            "Détente en fosse iliaque gauche [Légère détente présente]",
+            "Reste de l'abdomen [Sans particularité]",
+            "Recherche de masse [Non palpée]"
+          ]
+        },
+        {
+          "id": "e2",
+          "text": "Recherche de signes de péritonite",
+          "details": [
+            "Défense généralisée [Absente]",
+            "Abdomen de bois [Non]",
+            "Diminution des bruits intestinaux [Non]",
+            "Douleur à la décompression [À évaluer]",
+            "Position antalgique [À observer]"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Signes généraux",
+          "details": [
+            "État général",
+            "Signes de déshydratation",
+            "État hémodynamique",
+            "Coloration cutanée",
+            "Signes de choc [Absents]"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Examen complémentaire ciblé",
+          "details": [
+            "Toucher rectal",
+            "Cicatrices abdominales [Présentes, sigmoïdectomie]",
+            "Orifices herniaires",
+            "Examen génito-urinaire"
+          ]
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic différentiel structuré",
+          "ddSection": {
+            "title": "Diagnostics différentiels par ordre de probabilité",
+            "categories": [
+              {
+                "name": "Le plus probable",
+                "items": [
+                  {
+                    "text": "Diverticulite simple",
+                    "cause": "Arguments POUR:\n\t□ Antécédents de diverticulose\n\t□ Localisation typique en fosse iliaque gauche\n\t□ Fièvre modérée\n\t□ Diarrhées associées\n\t□ Absence de signes de péritonite",
+                    "test": "→ CT abdominal avec contraste IV"
+                  }
+                ]
+              },
+              {
+                "name": "Le plus grave à exclure",
+                "items": [
+                  {
+                    "text": "Complications chirurgicales post-opératoires",
+                    "cause": "Complications possibles:\n\t□ Abcès sur anastomose\n\t□ Fuite anastomotique (mais ferait plutôt péritonite)\n\t□ Sub-iléus sur adhérences\n\t□ Collection intra-abdominale",
+                    "test": "→ CT abdominal urgent pour exclure complications"
+                  },
+                  {
+                    "text": "Diverticulite compliquée",
+                    "cause": "Arguments À RECHERCHER:\n\t□ Abcès péri-colique\n\t□ Perforation couverte\n\t□ Fistule\n\t□ Sténose inflammatoire",
+                    "test": "→ CT avec contraste pour staging Hinchey"
+                  }
+                ]
+              },
+              {
+                "name": "Diagnostics alternatifs",
+                "items": [
+                  {
+                    "text": "Colite infectieuse",
+                    "cause": "Arguments POSSIBLES:\n\t□ Diarrhées\n\t□ Fièvre\n\t□ Contexte épidémique possible",
+                    "test": "→ Coproculture, recherche toxines C. difficile"
+                  },
+                  {
+                    "text": "Maladie inflammatoire chronique de l'intestin (MICI)",
+                    "cause": "Arguments CONTRE:\n\t□ Pas d'antécédents connus\n\t□ Âge peu typique pour début",
+                    "test": "→ Calprotectine fécale, coloscopie si doute"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Décision d'avis chirurgical",
+          "details": [
+            "Évaluation à 23h: Pas d'indication chirurgicale urgente",
+            "Si diverticulite simple: Traitement médical",
+            "Si complications: Avis chirurgical nécessaire",
+            "Surveillance clinique étroite",
+            "Critères de réévaluation chirurgicale"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Examens complémentaires",
+          "details": [
+            "CT abdominal avec contraste (gold standard)",
+            "Justification: ATCD opératoire récent nécessite confirmation absence complications",
+            "Laboratoire: NFS, CRP, ionogramme, fonction rénale",
+            "Hémocultures si fièvre persistante",
+            "Résultat CT: Diverticulite confirmée"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Prise en charge thérapeutique",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Patients à risque nécessitant attention particulière",
+                "content": "• Post-opératoire récent (6 mois)\n• Immunosupprimés\n• Personnes âgées\n• Patients obèses\n• Femmes enceintes (parturientes)\n\nCe patient est à risque car post-opératoire récent"
+              },
+              {
+                "title": "Traitement de la diverticulite simple",
+                "content": "Approche traditionnelle:\n• Hospitalisation si critères\n• Antibiothérapie IV puis PO (7-10 jours)\n• Régime sans résidus initial\n• Analgésie adaptée\n• Hydratation IV si nécessaire\n\nNouvelle approche (étude AVOD 2012):\n• Diverticulite non compliquée peut être traitée SANS antibiotiques\n• Surveillance clinique rapprochée\n• Antibiotiques réservés aux formes compliquées"
+              },
+              {
+                "title": "Surveillance et suivi",
+                "content": "• Réévaluation clinique à 24-48h\n• CT de contrôle si aggravation\n• Coloscopie à distance (6-8 semaines) après résolution\n• Prévention des récidives: régime riche en fibres\n• Information sur signes d'alarme"
+              }
+            ]
+          }
+        },
+        {
+          "id": "m5",
+          "text": "Analyse critique de l'étude AVOD",
+          "details": [
+            "Étude randomisée suédoise (2012): 623 patients",
+            "Diverticulite non compliquée sans antibiotiques vs avec",
+            "Résultats: Pas de différence en complications (1.9% vs 1.0%)",
+            "Pas de différence en récidive à 1 an (16%)",
+            "Limites: Étude de 10 ans, patients hospitalisés, pas urgences",
+            "Conclusion: Nécessité de consulter guidelines actualisés"
+          ]
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Communication du diagnostic et plan",
+          "content": "Monsieur P.J, vos symptômes et vos antécédents suggèrent une diverticulite, une inflammation des diverticules du côlon. Étant donné votre chirurgie récente il y a 6 mois, nous devons faire un scanner pour confirmer le diagnostic et surtout exclure toute complication post-opératoire. Le scanner montre effectivement une diverticulite simple. Les dernières études montrent que dans les cas non compliqués comme le vôtre, un traitement sans antibiotiques avec surveillance est possible, mais vu vos antécédents chirurgicaux récents, nous allons discuter de l'approche la plus appropriée pour vous."
+        },
+        {
+          "id": "c2",
+          "text": "Questions du patient",
+          "content": "[Est-ce que c'est lié à mon opération d'il y a 6 mois?]\n[J'ai besoin d'antibiotiques?]\n[Je vais devoir être réopéré?]\n[Combien de temps je reste à l'hôpital?]\n[Ça peut revenir?]"
+        },
+        {
+          "id": "c3",
+          "text": "Réponses type",
+          "exemplesPhrases": [
+            "Ce n'est probablement pas directement lié à votre opération, mais nous devons être prudents vu l'intervention récente.",
+            "Les études récentes montrent qu'on peut traiter sans antibiotiques, mais dans votre cas spécifique, nous allons évaluer.",
+            "Non, le scanner ne montre pas de complication nécessitant une chirurgie urgente.",
+            "Si tout va bien, 2-3 jours de surveillance suffisent généralement.",
+            "Oui, environ 16% de récidive à un an. Un régime riche en fibres après guérison aide à prévenir."
+          ]
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "theoriePratique": {
+      "titre": "Points clés sur la diverticulite et l'évolution des pratiques",
+      "sections": [
+        {
+          "titre": "Classification de Hinchey modifiée",
+          "points": [
+            "Stade 0: Diverticulite clinique légère",
+            "Stade Ia: Inflammation péri-colique confinée",
+            "Stade Ib: Abcès péri-colique ou mésentérique",
+            "Stade II: Abcès pelvien, intra-abdominal ou rétropéritonéal",
+            "Stade III: Péritonite purulente généralisée",
+            "Stade IV: Péritonite fécale"
+          ]
+        },
+        {
+          "titre": "Évolution des pratiques - Étude AVOD",
+          "contenu": "L'étude AVOD (Antibiotics in Acute Uncomplicated Diverticulitis) de 2012 a remis en question l'utilisation systématique des antibiotiques dans la diverticulite non compliquée. Cette étude multicentrique randomisée a montré que le traitement antibiotique n'accélère pas la guérison, ne prévient pas les complications ni les récidives. Cependant, cette approche doit être nuancée selon le contexte clinique et les facteurs de risque du patient."
+        },
+        {
+          "titre": "Patients à haut risque",
+          "points": [
+            "Post-opératoire récent (< 1 an)",
+            "Immunosuppression (corticoïdes, chimiothérapie, VIH)",
+            "Âge avancé (> 80 ans)",
+            "Comorbidités multiples",
+            "Signes de sepsis",
+            "Échec du traitement conservateur initial"
+          ]
+        }
+      ],
+      "rappelsTherapeutiques": [
+        "Antibiothérapie si compliquée: Ciprofloxacine + Métronidazole ou Augmentin",
+        "Durée: 7-10 jours (IV puis relais PO)",
+        "Analgésie: Paracétamol, éviter AINS si possible",
+        "Régime: Sans résidus en phase aiguë, riche en fibres après",
+        "Chirurgie: Réservée aux complications ou échecs répétés du traitement médical"
+      ],
+      "examensComplementaires": [
+        "CT abdominal avec contraste: Gold standard, sensibilité 94%, spécificité 99%",
+        "US abdominal: Alternative si CT non disponible",
+        "IRM: Si contre-indication au CT (grossesse)",
+        "Coloscopie: À distance (6-8 semaines) pour exclure néoplasie",
+        "Laboratoire: Leucocytose et CRP élevée dans 50-70% des cas"
+      ]
+    }
+  }
+}

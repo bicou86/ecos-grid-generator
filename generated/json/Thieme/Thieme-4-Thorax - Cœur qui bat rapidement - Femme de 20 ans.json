@@ -1,0 +1,197 @@
+{
+  "title": "Thieme Thorax 4 - Cœur qui bat rapidement - Femme de 20 ans",
+  "category": "Thieme Thorax",
+  "subcategory": "Cœur qui bat rapidement",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Femme de 20 ans, Mme Anna Rodriguez, consultant pour cœur qui bat rapidement",
+    "vitals": {
+      "temperature": "37°C",
+      "fc": "84 bpm",
+      "ta": "110/70 mmHg",
+      "fr": "20/min"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Motif principal de consultation",
+          "binaryOnly": true,
+          "patientComment": "cœur qui bat rapidement"
+        },
+        {
+          "id": "a2",
+          "text": "Analyse de la plainte principale",
+          "details": [
+            "Début et évolution [Palpitations depuis 3 semaines, par épisodes durant quelques minutes]",
+            "Localisation et irradiation de la douleur",
+            "Caractéristiques et intensité",
+            "Facteurs aggravants et soulageants",
+            "Symptômes associés"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Antécédents médicaux et chirurgicaux",
+          "details": [
+            "Insomnie (1-2h pour s'endormir)",
+            "Épisode similaire l'année dernière avant examens",
+            "Stress actuel pour examens"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Histoire sociale et habitudes de vie",
+          "details": [
+            "Étudiante",
+            "4 tasses café/jour",
+            "Fume 2 pqt/j × 5 ans",
+            "Sexuellement active, monogame"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Signes vitaux",
+          "binaryOnly": true
+        },
+        {
+          "id": "e2",
+          "text": "Examen de la tête et du cou",
+          "details": [
+            "PERRLA",
+            "Examen ORL complet",
+            "Palpation thyroïde",
+            "Recherche ganglions lymphatiques"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Examen cardio-pulmonaire",
+          "details": [
+            "Auscultation cardiaque [S1 et S2 normaux]",
+            "Recherche de souffles ou galop",
+            "Auscultation pulmonaire bilatérale",
+            "Recherche de râles ou sibilances"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Examen abdominal si pertinent",
+          "details": []
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostics différentiels à évoquer",
+          "ddSection": {
+            "title": "Hypothèses diagnostiques",
+            "categories": [
+              {
+                "name": "Diagnostics principaux",
+                "items": [
+                  {
+                    "text": "Trouble anxieux",
+                    "cause": "Arguments POUR:\n\t□ Stress, insomnie, consommation caféine, contexte psychosocial",
+                    "test": "→ TSH pour éliminer hyperthyroïdie"
+                  },
+                  {
+                    "text": "Arythmie cardiaque",
+                    "cause": "Arguments POUR:\n\t□ Palpitations, douleur thoracique",
+                    "test": "→ ECG, Holter"
+                  },
+                  {
+                    "text": "Palpitations induites par la caféine",
+                    "cause": "Arguments POUR:\n\t□ Consommation excessive café, timing des symptômes",
+                    "test": "→ ECG de base"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Examens complémentaires pertinents",
+          "details": [
+            "NFS",
+            "TSH",
+            "VMA urinaire",
+            "Échocardiographie",
+            "ECG"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Plan de prise en charge",
+          "details": [
+            "Investigations ambulatoires",
+            "Traitement symptomatique si approprié",
+            "Suivi après résultats"
+          ]
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour le patient standardisé",
+      "nom": "Mme Anna Rodriguez",
+      "age": "20 ans",
+      "contexte": "Cabinet de médecine générale",
+      "motifConsultation": {
+        "plaintePrincipale": "cœur qui bat rapidement",
+        "autreChose": "Palpitations depuis 3 semaines, par épisodes durant quelques minutes. Douleur thoracique légère 4/10 côté gauche."
+      },
+      "histoireActuelle": {
+        "symptomesPrincipaux": [
+          "Palpitations depuis 3 semaines, par épisodes durant quelques minutes",
+          " Douleur thoracique légère 4/10 côté gauche"
+        ],
+        "contextePsychosocial": [
+          "Étudiante",
+          " 4 tasses café/jour",
+          " Fume 2 pqt/j × 5 ans",
+          " Sexuellement active, monogame"
+        ]
+      },
+      "simulation": {
+        "attitude": [
+          "Nerveuse",
+          "Inquiète pour les examens"
+        ],
+        "durantExamen": []
+      },
+      "inquietudes": {
+        "principales": [
+          "Vais-je réussir mes examens?",
+          "Pourquoi mon cœur bat-il vite quand je suis nerveuse?"
+        ]
+      }
+    },
+    "informationsExpert": {
+      "titre": "Informations pour l'expert",
+      "pointsCles": [
+        "Cas de Cœur qui bat rapidement",
+        "Patient: Femme de 20 ans",
+        "Évaluation de l'anamnèse ciblée",
+        "Examen physique pertinent",
+        "Diagnostic différentiel approprié"
+      ],
+      "pieges": [
+        "Ne pas explorer la consommation de caféine"
+      ]
+    }
+  }
+}

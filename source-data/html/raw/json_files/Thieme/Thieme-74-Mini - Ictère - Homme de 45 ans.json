@@ -1,0 +1,208 @@
+{
+  "title": "Thieme Mini-Cas 74 - Ictère - Homme de 45 ans",
+  "category": "Thieme Mini-Cas",
+  "subcategory": "Ictère",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Homme de 45 ans, Patient standardisé, consulte pour jaunisse"
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Motif principal de consultation",
+          "binaryOnly": true,
+          "patientComment": "jaunisse"
+        },
+        {
+          "id": "a2",
+          "text": "Analyse ciblée de la plainte",
+          "details": [
+            "Couleur urines/selles",
+            "Douleur",
+            "Voyage",
+            "Médicaments"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Recherche des éléments clés",
+          "details": [
+            "Couleur urines/selles",
+            "Douleur abdominale",
+            "Voyage récent"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Antécédents pertinents",
+          "details": [
+            "Transfusions",
+            "Voyages",
+            "Alcool",
+            "Médicaments hépatotoxiques"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Revue des systèmes ciblée",
+          "details": [
+            "Hépatique",
+            "Hématologique",
+            "Digestif"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Ictère conjonctival et cutané",
+          "binaryOnly": true
+        },
+        {
+          "id": "e2",
+          "text": "Examen abdominal",
+          "details": [
+            "Hépatomégalie",
+            "Splénomégalie",
+            "Ascite"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Signes insuffisance hépatique"
+        },
+        {
+          "id": "e4",
+          "text": "Recherche adénopathies"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostics différentiels",
+          "ddSection": {
+            "title": "Hypothèses diagnostiques à considérer",
+            "categories": [
+              {
+                "name": "Diagnostics prioritaires",
+                "items": [
+                  {
+                    "text": "Hépatite virale",
+                    "cause": "Arguments POUR:\n\t□ Voyage, contact, transaminases élevées",
+                    "test": "→ Sérologies VHA, VHB, VHC"
+                  },
+                  {
+                    "text": "Obstruction biliaire",
+                    "cause": "Arguments POUR:\n\t□ Douleur, selles décolorées, urines foncées",
+                    "test": "→ Échographie, bili-IRM"
+                  },
+                  {
+                    "text": "Cirrhose",
+                    "cause": "Arguments POUR:\n\t□ Alcool, virus, signes IHC",
+                    "test": "→ Fibroscan, biopsie hépatique"
+                  },
+                  {
+                    "text": "Hémolyse",
+                    "cause": "Arguments POUR:\n\t□ Anémie, splénomégalie, bilirubine libre",
+                    "test": "→ Haptoglobine, LDH, bilirubine libre"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Examens complémentaires",
+          "details": [
+            "Bilan hépatique complet",
+            "Bilirubine directe/indirecte",
+            "Sérologie hépatites",
+            "Échographie abdominale"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Plan de prise en charge",
+          "details": [
+            "Traitement étiologique",
+            "Surveillance bilirubine",
+            "Éviter hépatotoxiques"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Conseils au patient",
+          "details": [
+            "Éviter alcool",
+            "Régime adapté",
+            "Surveillance couleur"
+          ]
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Explications au patient",
+          "content": "Jaunisse nécessitant bilan pour déterminer origine hépatique, obstructive ou hémolytique."
+        },
+        {
+          "id": "c2",
+          "text": "Questions du patient",
+          "content": "[C'est une hépatite?]\n[C'est grave?]\n[Je suis contagieux?]"
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour le patient standardisé",
+      "nom": "Patient standardisé",
+      "age": "45 ans",
+      "contexte": "Cabinet de médecine générale",
+      "motifConsultation": {
+        "plaintePrincipale": "jaunisse",
+        "contexte": "Ictère à explorer"
+      },
+      "simulation": {
+        "attitude": [
+          "Inquiet coloration",
+          "Peur cirrhose"
+        ],
+        "signesPhysiques": [
+          "Ictère conjonctival",
+          "Hépatomégalie possible"
+        ],
+        "durantConsultation": [
+          "Montrer coloration",
+          "Questions pronostic"
+        ]
+      }
+    },
+    "informationsExpert": {
+      "titre": "Informations pour l'expert",
+      "pointsCles": [
+        "Mini-cas clinique: Ictère",
+        "Focus: Couleur urines/selles, Douleur abdominale, Voyage récent",
+        "Consultation ciblée de 10 minutes",
+        "Évaluation de l'approche diagnostique"
+      ],
+      "pieges": [
+        "Ne pas distinguer types ictère",
+        "Oublier hépatites"
+      ]
+    }
+  }
+}

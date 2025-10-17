@@ -1,0 +1,229 @@
+{
+  "title": "Thieme Abdomen 9 - Douleur abdominale supérieure (patient jeune) - Femme de 32 ans",
+  "category": "Thieme Abdomen",
+  "subcategory": "Douleur abdominale supérieure (patient jeune)",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Femme de 32 ans, Mme Donna Martin, consultant pour douleurs abdominales supérieures",
+    "vitals": {
+      "temperature": "37°C",
+      "ta": "100/70 mmHg",
+      "fc": "84 bpm",
+      "fr": "16/min"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Motif principal de consultation",
+          "binaryOnly": true,
+          "patientComment": "douleurs abdominales supérieures"
+        },
+        {
+          "id": "a2",
+          "text": "Analyse de la plainte principale (ABCDE)",
+          "details": [
+            "Apparition et durée [Douleurs abdominales supérieures depuis 1 an, aggravées depuis 3 mois]",
+            "Bilan (localisation, irradiation)",
+            "Caractère et qualité de la douleur",
+            "Degré d'intensité (échelle 1-10)",
+            "Éléments associés et facteurs modifiants"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Symptômes associés et antécédents",
+          "details": [
+            "3-5 fois/semaine",
+            "Aggravée par gros repas et position allongée",
+            "Soulagée par antiacides et oméprazole"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Histoire sociale et habitudes de vie",
+          "details": [
+            "Enseignante",
+            "Fume 1 pqt/j × 10 ans",
+            "1-2 tasses café/jour",
+            "CAGE 2/4",
+            "Mère avec ulcères peptiques"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Revue des systèmes",
+          "details": [
+            "Système gastro-intestinal",
+            "Système urinaire",
+            "Système gynécologique"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Signes vitaux et apparence générale",
+          "binaryOnly": true
+        },
+        {
+          "id": "e2",
+          "text": "Examen de la tête et du cou",
+          "details": [
+            "Recherche pâleur, ictère",
+            "Examen ORL avec abaisse-langue",
+            "Palpation ganglions lymphatiques",
+            "Examen thyroïde"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Examen cardio-pulmonaire",
+          "details": [
+            "Auscultation cardiaque [S1 et S2 normaux]",
+            "Auscultation pulmonaire bilatérale"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Examen abdominal complet",
+          "details": [
+            "Inspection (cicatrices, distension)",
+            "Auscultation (bruits intestinaux)",
+            "Percussion (matité, tympanisme)",
+            "Palpation superficielle et profonde",
+            "Recherche défense et signe de Murphy [sensibilité épigastrique]"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Examens spécifiques selon le cas",
+          "details": []
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostics différentiels à évoquer",
+          "ddSection": {
+            "title": "Hypothèses diagnostiques",
+            "categories": [
+              {
+                "name": "Diagnostics prioritaires",
+                "items": [
+                  {
+                    "text": "Reflux gastro-œsophagien",
+                    "cause": "Arguments POUR:\n\t□ Brûlures rétrosternales, remontées acides, aggravé position allongée",
+                    "test": "→ pH-métrie, endoscopie si alarme"
+                  },
+                  {
+                    "text": "Maladie ulcéreuse peptique",
+                    "cause": "Arguments POUR:\n\t□ Douleur épigastrique, AINS, H. pylori possible",
+                    "test": "→ Endoscopie, test H. pylori"
+                  },
+                  {
+                    "text": "Gastrite",
+                    "cause": "Arguments POUR:\n\t□ Douleur épigastrique, utilisation AINS, alcool",
+                    "test": "→ Endoscopie avec biopsies"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Examens complémentaires pertinents",
+          "details": [
+            "NFS",
+            "Amylase",
+            "Anticorps anti-Helicobacter pylori",
+            "Endoscopie digestive haute"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Plan de prise en charge immédiate",
+          "details": [
+            "Investigations ambulatoires",
+            "Traitement symptomatique",
+            "Suivi après résultats"
+          ]
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Questions difficiles du patient",
+          "content": "Ai-je des ulcères d'estomac comme ma mère?\nQu'est-ce qu'une endoscopie?"
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour le patient standardisé",
+      "nom": "Mme Donna Martin",
+      "age": "32 ans",
+      "contexte": "Cabinet de médecine générale",
+      "motifConsultation": {
+        "plaintePrincipale": "douleurs abdominales supérieures",
+        "autreChose": "Douleurs abdominales supérieures depuis 1 an, aggravées depuis 3 mois. Remontées acides avec goût aigre. Brûlures d'estomac sous le sternum."
+      },
+      "histoireActuelle": {
+        "symptomesPrincipaux": [
+          "Douleurs abdominales supérieures depuis 1 an, aggravées depuis 3 mois",
+          " Remontées acides avec goût aigre",
+          " Brûlures d'estomac sous le sternum"
+        ],
+        "contextePsychosocial": [
+          "Enseignante",
+          " Fume 1 pqt/j × 10 ans",
+          " 1-2 tasses café/jour",
+          " CAGE 2/4",
+          " Mère avec ulcères peptiques"
+        ]
+      },
+      "simulation": {
+        "attitude": [
+          "Inquiète pour sa santé"
+        ],
+        "durantExamen": [
+          "Sensibilité épigastrique à la palpation"
+        ]
+      },
+      "inquietudes": {
+        "principales": [
+          "Ai-je des ulcères d'estomac comme ma mère?",
+          "Qu'est-ce qu'une endoscopie?"
+        ]
+      }
+    },
+    "informationsExpert": {
+      "titre": "Informations pour l'expert",
+      "pointsCles": [
+        "Cas de Douleur abdominale supérieure (patient jeune)",
+        "Patient: Femme de 32 ans",
+        "Anamnèse complète avec ABCDE",
+        "Examen abdominal détaillé",
+        "Diagnostic différentiel approprié"
+      ],
+      "pieges": [
+        "Ne pas reconnaître le RGO typique",
+        "Oublier impact psychosocial"
+      ]
+    }
+  }
+}

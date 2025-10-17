@@ -1,0 +1,484 @@
+{
+  "title": "Pétéchies chez l'enfant - Leucémie aiguë lymphoblastique",
+  "context": {
+    "setting": "Service des Urgences",
+    "patient": "Andréa, 5 ans, présentée par ses parents pour multiples petites taches rouges sur tout le corps depuis 3 jours. Découverte par les parents de plusieurs ecchymoses sur les bras, le matin même"
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Histoire de la maladie actuelle",
+          "binaryOnly": true,
+          "details": [
+            "Apparition pétéchies [depuis 3 jours sur tout le corps]",
+            "Évolution [extension progressive]",
+            "Ecchymoses [découvertes ce matin sur les bras]",
+            "Localisation [membres inférieurs prédominantes, visage, bras, tronc, abdomen]",
+            "Traumatisme [aucun traumatisme rapporté]",
+            "Saignements [aucun saignement actif]"
+          ]
+        },
+        {
+          "id": "a2",
+          "text": "Signes généraux et symptômes associés",
+          "details": [
+            "Fièvre [oui, état fébrile à 38°-38.5°C fluctuant, depuis 4 semaines]",
+            "Douleurs [vagues douleurs des genoux depuis 3-4 mois]",
+            "Asthénie [moins active physiquement depuis quelques temps]",
+            "Altération état général [pâleur, fatigue]",
+            "Perte d'appétit [diminution récente]",
+            "Troubles du sommeil [non rapportés]"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Antécédents personnels et familiaux",
+          "details": [
+            "Antécédents médicaux [aucun antécédent particulier]",
+            "Médicaments [aucun traitement en cours]",
+            "Allergies [aucune allergie connue]",
+            "Vaccinations [à jour selon calendrier vaccinal]",
+            "Antécédents familiaux hématologiques [aucun]",
+            "Consanguinité [non]"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Notion de contage et environnement",
+          "details": [
+            "Contage infectieux [parents et 2 frères en bonne santé habituelle]",
+            "Infections récentes [sans affection fébrile récente]",
+            "Voyage récent [aucun]",
+            "Exposition toxiques [aucune]",
+            "Milieu de garde [crèche, école]",
+            "Autres enfants malades [aucun dans l'entourage]"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Examen général",
+          "binaryOnly": true,
+          "patientComment": "Enfant inquiète, pâle (conjonctives et muqueuses), état général conservé mais fatiguée"
+        },
+        {
+          "id": "e2",
+          "text": "Examen des téguments et syndrome hémorragique",
+          "details": [
+            "Pétéchies [prédominantes aux membres inférieurs]",
+            "Répartition [également sur visage, bras, tronc, abdomen]",
+            "Ecchymoses [multiples, diverses tailles]",
+            "Pâleur cutanéo-muqueuse [nette]",
+            "Saignements actifs [aucun]",
+            "Hématomes [aucun volumineux]"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Examen ORL et recherche de saignements",
+          "details": [
+            "Muqueuse buccale [fines pétéchies]",
+            "Gingivorragies [aucune active]",
+            "Épistaxis [aucune]",
+            "Pharynx [normal]",
+            "Amygdales [normales]",
+            "Adénopathies cervicales [à rechercher]"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Palpation abdominale et organomégalies",
+          "details": [
+            "Palpation abdominale [pointe de rate palpable, indolore]",
+            "Splénomégalie [modérée]",
+            "Hépatomégalie [à rechercher précisément]",
+            "Douleur abdominale [aucune]",
+            "Masses abdominales [aucune]",
+            "Défense [aucune]"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Examen ostéoarticulaire et adénopathies",
+          "details": [
+            "Douleurs osseuses [genoux douloureux]",
+            "Arthrites [aucune évidente]",
+            "Limitation mobilité [non]",
+            "Adénopathies [à rechercher systématiquement]",
+            "Aires ganglionnaires [cervicales, axillaires, inguinales]",
+            "Reste examen [normal]"
+          ]
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic et diagnostics différentiels",
+          "ddSection": {
+            "title": "Diagnostics différentiels des pétéchies chez l'enfant",
+            "categories": [
+              {
+                "name": "Hémopathies malignes",
+                "items": [
+                  {
+                    "text": "Leucémie aiguë lymphoblastique (LAL)",
+                    "cause": "Arguments POUR:\\n\\t□ Âge typique (2-10 ans)\\n\\t□ Syndrome hémorragique (pétéchies, ecchymoses)\\n\\t□ Syndrome anémique (pâleur, asthénie)\\n\\t□ Fièvre prolongée (4 semaines)\\n\\t□ Douleurs osseuses (genoux)\\n\\t□ Splénomégalie probable",
+                    "test": "→ FSC urgente + frottis sanguin"
+                  },
+                  {
+                    "text": "Leucémie aiguë myéloblastique",
+                    "cause": "Arguments POSSIBLES:\\n\\t□ Syndrome hémorragique\\n\\t□ Moins fréquente chez l'enfant\\n\\t□ Nécessite différenciation",
+                    "test": "→ FSC + cytologie + immunophénotypage"
+                  }
+                ]
+              },
+              {
+                "name": "Thrombopénies",
+                "items": [
+                  {
+                    "text": "Purpura thrombopénique idiopathique (PTI)",
+                    "cause": "Arguments CONTRE:\\n\\t□ Pas de fièvre habituelle\\n\\t□ État général conservé\\n\\t□ Pas de splénomégalie\\n\\t□ Pas de douleurs osseuses",
+                    "test": "→ Plaquettes isolées basses, autres lignées normales"
+                  },
+                  {
+                    "text": "Thrombopénie infectieuse",
+                    "cause": "Arguments POSSIBLES:\\n\\t□ Fièvre présente\\n\\t□ Contexte viral possible\\n\\t□ Mais durée prolongée",
+                    "test": "→ Sérologies virales, FSC"
+                  }
+                ]
+              },
+              {
+                "name": "Autres causes",
+                "items": [
+                  {
+                    "text": "Vasculite/purpura rhumatoïde",
+                    "cause": "Arguments CONTRE:\\n\\t□ Pas de douleurs abdominales\\n\\t□ Pas d'arthrites\\n\\t□ Localisation atypique\\n\\t□ Thrombopénie non habituelle",
+                    "test": "→ Plaquettes normales dans purpura rhumatoïde"
+                  },
+                  {
+                    "text": "Dysfonctionnement plaquettaire",
+                    "cause": "Arguments CONTRE:\\n\\t□ Pas d'antécédents familiaux\\n\\t□ Apparition aiguë\\n\\t□ Syndrome général associé",
+                    "test": "→ Tests d'agrégation plaquettaire"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Examens complémentaires urgents",
+          "details": [
+            "Formule sanguine complète [Hb 90 g/L, GB 3.0 G/L, Thrombocytes 15 G/L]",
+            "Frottis sanguin [recherche blastes leucémiques]",
+            "Répartition leucocytaire [granulocytes 20%, lymphocytes 80%]",
+            "Recherche cellules anormales [blastes à confirmer]",
+            "Coagulation [TP, TCA si saignements]",
+            "Groupe sanguin [en prévision transfusions]"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Examens spécialisés et confirmation diagnostique",
+          "details": [
+            "Myélogramme [analyse médullaire obligatoire]",
+            "Immunophénotypage [caractérisation lignée blastique]",
+            "Cytogénétique [pronostic et classification]",
+            "Biologie moléculaire [anomalies génétiques]",
+            "Bilan d'extension [en cas de confirmation]",
+            "Ponction lombaire [recherche envahissement méningé]"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Prise en charge immédiate",
+          "details": [
+            "Isolement [précautions neutropénie]",
+            "Surveillance clinique [saignements, infection]",
+            "Support transfusionnel [plaquettes si < 20 G/L]",
+            "Prévention infections [hygiène stricte]",
+            "Information famille [diagnostic présumé]",
+            "Orientation urgente [hématologie pédiatrique]"
+          ]
+        },
+        {
+          "id": "m5",
+          "text": "Traitement spécialisé de la leucémie",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Chimiothérapie d'induction",
+                "items": [
+                  {
+                    "treatment": "Protocole ALL (selon groupe)",
+                    "details": "Vincristine + Daunorubicine + L-Asparaginase + Corticoïdes",
+                    "duration": "4-6 semaines jusqu'à rémission complète"
+                  },
+                  {
+                    "treatment": "Support transfusionnel",
+                    "details": "Plaquettes, concentrés érythrocytaires selon seuils",
+                    "duration": "Pendant phase d'aplasie"
+                  }
+                ]
+              },
+              {
+                "title": "Traitement de consolidation",
+                "items": [
+                  {
+                    "treatment": "Chimiothérapie intensive",
+                    "details": "Méthotrexate haute dose + autres agents",
+                    "duration": "4-6 mois après induction"
+                  },
+                  {
+                    "treatment": "Prophylaxie neuro-méningée",
+                    "details": "Chimiothérapie intrathécale",
+                    "duration": "Selon protocole"
+                  }
+                ]
+              },
+              {
+                "title": "Traitement d'entretien",
+                "items": [
+                  {
+                    "treatment": "Chimiothérapie orale",
+                    "details": "6-Mercaptopurine + Méthotrexate",
+                    "duration": "2-3 ans total de traitement"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m6",
+          "text": "Surveillance et pronostic",
+          "details": [
+            "Suivi hématologique [FSC régulière, myélogrammes]",
+            "Détection rechute [clinique et biologique]",
+            "Effets secondaires [cardiotoxicité, neuropathie]",
+            "Croissance et développement [surveillance long terme]",
+            "Soutien psychosocial [enfant et famille]",
+            "Réinsertion scolaire [adaptation selon tolérance]"
+          ]
+        },
+        {
+          "id": "m7",
+          "text": "Complications et urgences",
+          "redflagsSection": {
+            "title": "Signes d'alerte nécessitant prise en charge urgente",
+            "items": [
+              {
+                "text": "Syndrome de lyse tumorale",
+                "description": "Hyperuricémie, hyperkaliémie, hyperphosphatémie, insuffisance rénale"
+              },
+              {
+                "text": "Leucostase",
+                "description": "Hyperleucocytose > 100 G/L avec signes neurologiques ou pulmonaires"
+              },
+              {
+                "text": "Hémorragie grave",
+                "description": "Saignement digestif, intracérébral, nécessitant transfusion urgente"
+              },
+              {
+                "text": "Infection sévère",
+                "description": "Fièvre avec neutropénie, sepsis, choc septique"
+              },
+              {
+                "text": "Compression médiastinale",
+                "description": "Dyspnée, stridor, syndrome cave supérieur"
+              },
+              {
+                "text": "Rechute",
+                "description": "Réapparition blastes, cytopénies, organomégalies"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Information parentale - Diagnostic",
+          "content": "Les analyses de sang montrent que Andréa a probablement une leucémie, qui est un cancer du sang. C'est une maladie grave mais qui se soigne très bien chez les enfants. Les cellules cancéreuses ont envahi la moelle osseuse et empêchent la fabrication normale des cellules sanguines, d'où les pétéchies et la fatigue."
+        },
+        {
+          "id": "c2",
+          "text": "Information parentale - Traitement et pronostic",
+          "content": "Le traitement nécessite une hospitalisation et une chimiothérapie pendant environ 2-3 ans. Le pronostic est excellent chez l'enfant avec plus de 90% de guérison pour ce type de leucémie. Andréa sera suivie par une équipe spécialisée en hématologie pédiatrique. Le traitement est efficace mais nécessite patience et courage."
+        },
+        {
+          "id": "c3",
+          "text": "Questions fréquentes des parents",
+          "content": "[C'est un cancer docteur ?]\\n[Va-t-elle guérir ?]\\n[Combien de temps va durer le traitement ?]\\n[Peut-elle contaminer ses frères ?]\\n[Pourquoi elle a eu ça ?]\\n[Va-t-elle perdre ses cheveux ?]"
+        },
+        {
+          "id": "c4",
+          "text": "Réponse type du candidat",
+          "exemplesPhrases": [
+            "\"Oui, c'est un type de cancer du sang, mais qui se soigne très bien chez les enfants.\"",
+            "\"Oui, plus de 90% des enfants guérissent complètement de ce type de leucémie.\"",
+            "\"Le traitement dure environ 2-3 ans avec différentes phases d'intensité.\"",
+            "\"Non, ce n'est pas contagieux. Ses frères ne risquent rien.\"",
+            "\"On ne sait pas pourquoi ça arrive. Ce n'est la faute de personne.\"",
+            "\"Oui, la chimiothérapie fait perdre les cheveux, mais ils repoussent après.\""
+          ]
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour les parents et l'enfant standardisés",
+      "nom": "Parents d'Andréa et Andréa (5 ans)",
+      "contexte": "Service des Urgences",
+      "motifConsultation": {
+        "plaintePrincipale": "Taches rouges sur tout le corps depuis 3 jours",
+        "autreChose": "Bleus sur les bras découverts ce matin"
+      },
+      "histoireActuelle": {
+        "preoccupationsParents": [
+          "Ces petites taches rouges sont apparues il y a 3 jours",
+          "Ça s'est étendu sur tout le corps",
+          "Ce matin on a trouvé des bleus sur ses bras",
+          "Elle n'est pas tombée ni cognée",
+          "Elle a de la fièvre depuis un mois",
+          "Elle se plaint des genoux depuis quelques mois"
+        ],
+        "evolutionGenerale": [
+          "Elle est moins active qu'avant",
+          "Elle mange moins bien",
+          "Elle a l'air plus fatiguée",
+          "Elle est plus pâle que d'habitude"
+        ]
+      },
+      "inquietudes": {
+        "principales": [
+          "Qu'est-ce que c'est ces taches ?",
+          "Pourquoi elle a des bleus sans raison ?",
+          "C'est grave cette fièvre qui dure ?",
+          "Est-ce contagieux pour ses frères ?"
+        ],
+        "questions": [
+          "Faut-il faire des analyses ?",
+          "Est-ce qu'elle va aller mieux ?",
+          "Doit-on l'hospitaliser ?"
+        ]
+      },
+      "simulation": {
+        "attitude": [
+          "Parents très inquiets mais coopératifs",
+          "Observation précise des symptômes",
+          "Demandent des explications claires",
+          "Angoissés par l'aspect des pétéchies"
+        ],
+        "comportementEnfant": [
+          "Fillette fatiguée mais éveillée",
+          "Coopérante pour l'examen",
+          "Se plaint un peu des genoux",
+          "Accepte qu'on la touche"
+        ]
+      }
+    },
+    "informationsExpert": {
+      "titre": "Points clés pour l'évaluateur",
+      "pointsCles": [
+        "Reconnaître la présentation classique de la LAL (triade: anémie, thrombopénie, leucopénie)",
+        "Savoir différencier des autres causes de purpura thrombopénique",
+        "Comprendre l'urgence diagnostique et thérapeutique",
+        "Connaître les examens de première intention (FSC + frottis)",
+        "Savoir expliquer avec tact le diagnostic suspecté",
+        "Organiser l'orientation spécialisée urgente",
+        "Comprendre les principes du traitement et le pronostic"
+      ],
+      "pieges": [
+        "Banaliser les pétéchies comme des ecchymoses traumatiques",
+        "Omettre la recherche d'organomégalies",
+        "Ne pas faire de FSC en urgence",
+        "Rassurer à tort avant les résultats",
+        "Retarder l'orientation spécialisée",
+        "Inquiéter excessivement sur le pronostic",
+        "Oublier les précautions d'isolement"
+      ]
+    },
+    "theoriePratique": {
+      "titre": "Rappels théoriques - Leucémies aiguës de l'enfant",
+      "sections": [
+        {
+          "titre": "Épidémiologie",
+          "points": [
+            "Incidence: 3-4/100,000 enfants par an",
+            "Âge: pic 2-5 ans pour LAL, adolescent pour LAM",
+            "Sexe: léger excès masculin",
+            "LAL: 80% des leucémies de l'enfant",
+            "Facteurs de risque: radiations, trisomie 21, certains syndromes",
+            "Pronostic: > 90% de guérison pour LAL B commune"
+          ]
+        },
+        {
+          "titre": "Physiopathologie",
+          "points": [
+            "Prolifération clonale de blastes leucémiques",
+            "Envahissement médullaire progressif",
+            "Insuffisance médullaire: cytopénies",
+            "Organomégalies par infiltration",
+            "Possibilité d'atteinte extra-médullaire",
+            "Complications métaboliques (lyse tumorale)"
+          ]
+        },
+        {
+          "titre": "Diagnostic biologique",
+          "points": [
+            "FSC: cytopénies + blastes circulants (pas toujours)",
+            "Myélogramme: > 20% de blastes (OMS)",
+            "Immunophénotypage: lignée et sous-type",
+            "Cytogénétique: facteurs pronostiques",
+            "Biologie moléculaire: anomalies spécifiques",
+            "LCR: recherche envahissement neuro-méningé"
+          ]
+        },
+        {
+          "titre": "Classifications et pronostic",
+          "points": [
+            "LAL B commune: meilleur pronostic",
+            "LAL T: pronostic intermédiaire",
+            "LAL pré-B: variable selon cytogénétique",
+            "Facteurs pronostiques: âge, leucocytose, cytogénétique",
+            "Réponse précoce au traitement cruciale",
+            "Maladie résiduelle minimale: nouveau standard"
+          ]
+        }
+      ],
+      "rappelsTherapeutiques": [
+        "Induction: vincristine + anthracycline + L-asparaginase + corticoïdes",
+        "Consolidation: chimiothérapie intensive 4-6 mois",
+        "Entretien: 6-MP + MTX oral pendant 2-3 ans",
+        "Prophylaxie neuro-méningée: IT systématique",
+        "Support: transfusions, anti-infectieux, nutrition",
+        "Surveillance: efficacité, toxicité, rechute",
+        "Adaptation: selon groupe de risque et réponse"
+      ],
+      "examensComplementaires": [
+        "FSC + frottis sanguin: première urgence",
+        "Myélogramme: confirmation diagnostique",
+        "Immunophénotypage: caractérisation précise",
+        "Caryotype + FISH: pronostic",
+        "Biologie moléculaire: mutations ciblées",
+        "Bilan d'extension: TDM, échographie",
+        "Ponction lombaire: atteinte neuro-méningée"
+      ]
+    }
+  }
+}

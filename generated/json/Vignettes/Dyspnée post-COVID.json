@@ -1,0 +1,615 @@
+{
+  "title": "Dyspnée post-COVID",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Monsieur P., 48 ans, se présente pour une dyspnée d'effort persistante depuis 3 mois, apparue lors d'une infection COVID-19 pour laquelle il a été hospitalisé. Il se plaint d'une limitation importante de ses capacités physiques et d'une fatigue invalidante",
+    "vitals": {
+      "ta": "135/85 mmHg",
+      "fc": "88 bpm",
+      "fr": "20/min",
+      "temperature": "37.1°C",
+      "sao2": "94% à l'air ambiant"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Motif de consultation",
+          "binaryOnly": true,
+          "patientComment": "[Essoufflement persistant depuis ma COVID il y a 3 mois]"
+        },
+        {
+          "id": "a2",
+          "text": "Caractérisation de la dyspnée",
+          "details": [
+            "Début [Pendant la COVID, il y a 3 mois]",
+            "Évolution [Persistante, fluctuante]",
+            "Intensité [mMRC 2 - dyspnée à la marche rapide]",
+            "Effort [Limitation à 2 étages d'escaliers]",
+            "Repos [Absente au repos]",
+            "Position [Pas d'orthopnée]",
+            "Nocturne [Pas de dyspnée paroxystique nocturne]"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Histoire de la COVID-19",
+          "details": [
+            "Date [Il y a 3 mois]",
+            "Sévérité [Hospitalisé 5 jours, pas de réanimation]",
+            "Oxygénothérapie [Oui, 3L/min pendant 4 jours]",
+            "Complications [Pneumonie bilatérale confirmée au CT]",
+            "Traitement [Corticoïdes, anticoagulation préventive]",
+            "PCR de contrôle [Négative depuis 2 mois]"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Symptômes associés actuels",
+          "details": [
+            "Toux [Sèche, occasionnelle]",
+            "Douleur thoracique [Non]",
+            "Palpitations [Occasionnelles à l'effort]",
+            "Fatigue [Importante, invalidante]",
+            "Troubles cognitifs [Difficultés de concentration]",
+            "Céphalées [Occasionnelles]",
+            "Anosmie/agueusie [Résolues]"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Facteurs de risque thromboembolique",
+          "details": [
+            "Antécédents personnels de TVP/EP [Négatif]",
+            "Antécédents familiaux [Négatif]",
+            "Immobilisation récente [Durant hospitalisation COVID]",
+            "Voyage prolongé [Négatif]",
+            "Chirurgie récente [Négative]",
+            "Contraception/hormones [Non applicable]",
+            "Cancer actif [Négatif]"
+          ]
+        },
+        {
+          "id": "a6",
+          "text": "Antécédents médicaux",
+          "details": [
+            "Cardiovasculaires [HTA traitée depuis 5 ans]",
+            "Pulmonaires [Négatif, jamais d'asthme]",
+            "Thromboemboliques [Négatif]",
+            "Diabète [Non]",
+            "Obésité [IMC 28 kg/m²]",
+            "Immunodépression [Non]"
+          ]
+        },
+        {
+          "id": "a7",
+          "text": "Médicaments et allergies",
+          "details": [
+            "Antihypertenseur [Amlodipine 5mg/j]",
+            "Autres médicaments [Paracétamol si besoin]",
+            "Observance [Bonne]",
+            "Allergies médicamenteuses [Aucune]"
+          ]
+        },
+        {
+          "id": "a8",
+          "text": "Habitudes de vie",
+          "details": [
+            "Tabac [Ex-fumeur, arrêt il y a 10 ans, 15 PA]",
+            "Alcool [Occasionnel, 2-3 verres/semaine]",
+            "Activité physique [Sportif avant COVID, arrêt depuis]",
+            "Profession [Cadre commercial, télétravail actuellement]",
+            "Exposition professionnelle [Aucune]"
+          ]
+        },
+        {
+          "id": "a9",
+          "text": "Impact fonctionnel",
+          "details": [
+            "Activités quotidiennes [Limitées par la dyspnée]",
+            "Travail [Télétravail exclusif, fatigue importante]",
+            "Loisirs [Arrêt du sport, sorties limitées]",
+            "Moral [Anxiété importante, inquiétude]",
+            "Sommeil [Perturbé, réveils fréquents]"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "État général",
+          "details": [
+            "Aspect général [Bon état général apparent]",
+            "Coloration [Pas de cyanose]",
+            "Hydratation [Correcte]",
+            "État nutritionnel [IMC 28 kg/m²]",
+            "Anxiété [Visible, inquiet]"
+          ]
+        },
+        {
+          "id": "e2",
+          "text": "Examen cardiovasculaire",
+          "details": [
+            "Bruits du cœur [Réguliers, pas de souffle]",
+            "Signes d'insuffisance cardiaque droite [Absents]",
+            "Signes d'insuffisance cardiaque gauche [Absents]",
+            "Pouls périphériques [Perçus, symétriques]",
+            "Œdèmes des membres inférieurs [Absents]",
+            "Turgescence jugulaire [Normale]"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Examen pulmonaire",
+          "details": [
+            "Inspection [Ampliation thoracique symétrique]",
+            "Fréquence respiratoire [20/min, régulière]",
+            "Utilisation muscles accessoires [Non]",
+            "Percussion [Sonorité normale bilatérale]",
+            "Auscultation [Murmure vésiculaire normal, pas de râles]",
+            "Sibilants [Absents]"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Recherche de signes de TVP",
+          "details": [
+            "Inspection des mollets [Symétrique, pas d'œdème]",
+            "Palpation [Pas de douleur, pas de cordon]",
+            "Signe de Homans [Négatif bilatéralement]",
+            "Différence de circonférence [< 3 cm]",
+            "Température cutanée [Normale, symétrique]"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Examen neurologique sommaire",
+          "details": [
+            "État de conscience [Normal, Glasgow 15]",
+            "Déficit focal [Absent]",
+            "Coordination [Normale]",
+            "Force musculaire [Normale, symétrique]",
+            "Réflexes [Normaux, symétriques]"
+          ]
+        },
+        {
+          "id": "e6",
+          "text": "Test d'effort simple",
+          "details": [
+            "Test de marche de 6 minutes [Distance 380m (normale > 500m)]",
+            "SpO2 avant effort [94%]",
+            "SpO2 après effort [89%]",
+            "FC avant effort [88 bpm]",
+            "FC après effort [125 bpm]",
+            "Dyspnée d'effort [Score de Borg 6/10]"
+          ]
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Évaluation de la probabilité d'embolie pulmonaire",
+          "description": "Application des scores cliniques",
+          "details": [
+            "Score de Wells [2 points - probabilité faible]",
+            "Score de Genève révisé [4 points - probabilité faible]",
+            "Critères PERC [Non applicable car SpO2 < 95%]",
+            "Algorithme YEARS [1 critère présent]",
+            "Indication D-dimères [Oui, probabilité non nulle]"
+          ],
+          "ddSection": {
+            "title": "Diagnostics différentiels de la dyspnée post-COVID",
+            "categories": [
+              {
+                "name": "Causes prioritaires à éliminer",
+                "items": [
+                  {
+                    "text": "Embolie pulmonaire",
+                    "cause": "Arguments POUR:\n\t□ COVID récente (facteur de risque)\n\t□ Hospitalisation avec alitement\n\t□ D-dimères élevés (805 ng/ml)\n\t□ Hypoxémie d'effort",
+                    "test": "→ Angio-CT thoracique"
+                  },
+                  {
+                    "text": "Myocardite post-COVID",
+                    "cause": "Arguments POUR:\n\t□ Palpitations d'effort\n\t□ Fatigue importante\nArguments CONTRE:\n\t□ Pas de douleur thoracique\n\t□ Examen cardiaque normal",
+                    "test": "→ ECG, troponine, échocardiographie"
+                  }
+                ]
+              },
+              {
+                "name": "Séquelles pulmonaires post-COVID",
+                "items": [
+                  {
+                    "text": "Fibrose pulmonaire post-COVID",
+                    "cause": "Arguments POUR:\n\t□ Pneumonie COVID sévère\n\t□ Dyspnée persistante > 3 mois\n\t□ Désaturation d'effort\nArguments CONTRE:\n\t□ Auscultation normale",
+                    "test": "→ CT thoracique HR, EFR avec DLCO"
+                  },
+                  {
+                    "text": "Syndrome d'hyperventilation",
+                    "cause": "Arguments POUR:\n\t□ Anxiété importante\n\t□ Pattern respiratoire variable\nArguments CONTRE:\n\t□ Hypoxémie objective",
+                    "test": "→ Gazométrie artérielle"
+                  }
+                ]
+              },
+              {
+                "name": "COVID long",
+                "items": [
+                  {
+                    "text": "Syndrome post-COVID-19",
+                    "cause": "Arguments POUR:\n\t□ Symptômes > 3 mois post-infection\n\t□ Fatigue associée\n\t□ Troubles cognitifs\n\t□ Impact fonctionnel majeur",
+                    "test": "→ Diagnostic d'exclusion après bilan"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Examens biologiques",
+          "details": [
+            "D-dimères [805 ng/ml - élevés]",
+            "NFS [Normale]",
+            "CRP [8 mg/L - limite normale]",
+            "Troponine [Négative]",
+            "BNP/NT-proBNP [Normal]",
+            "TSH [Normale]",
+            "Fonction rénale et hépatique [Normales]",
+            "Gazométrie artérielle [pH 7.42, PaO2 75 mmHg, PaCO2 36 mmHg]"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Examens d'imagerie",
+          "details": [
+            "Radiographie thoracique [Séquelles inflammatoires bibasales]",
+            "ECG [Rythme sinusal, pas d'anomalie]",
+            "Angio-CT thoracique [À réaliser - D-dimères élevés]",
+            "Si angio-CT négatif → CT HR [Recherche fibrose]",
+            "Échocardiographie [Si suspicion atteinte cardiaque]"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Explorations fonctionnelles respiratoires",
+          "details": [
+            "Spirométrie [VEMS/CVF normal]",
+            "Volumes pulmonaires [CPT légèrement diminuée]",
+            "DLCO [Diminuée à 65% de la théorique]",
+            "Test de marche 6 minutes [380m, désaturation à 89%]",
+            "Épreuve d'effort cardiorespiratoire [Si besoin]"
+          ]
+        },
+        {
+          "id": "m5",
+          "text": "Interprétation des D-dimères élevés",
+          "description": "Contexte post-COVID",
+          "details": [
+            "Seuil ajusté à l'âge [48 x 10 = 480 ng/ml]",
+            "Valeur patient [805 ng/ml - au-dessus du seuil]",
+            "Inflammation résiduelle post-COVID [Possible]",
+            "Indication angio-CT [Oui, D-dimères > seuil ajusté]",
+            "Si < 500 ng/ml + YEARS négatif [Exclut EP]"
+          ],
+          "scoringRule": "2 points si interprétation correcte des D-dimères"
+        },
+        {
+          "id": "m6",
+          "text": "Prise en charge thérapeutique initiale",
+          "details": [
+            "Oxygénothérapie [Si SpO2 < 92% au repos]",
+            "Anticoagulation [Attendre résultat angio-CT]",
+            "Bronchodilatateurs [Test thérapeutique possible]",
+            "Réhabilitation respiratoire [Programme progressif]",
+            "Kinésithérapie respiratoire [Exercices adaptés]"
+          ],
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Prise en charge du COVID long",
+                "content": "RÉHABILITATION PROGRESSIVE:\n- Programme personnalisé sur 6-12 semaines\n- Augmentation progressive de l'effort\n- Éviter le surmenage (pacing)\n- Exercices respiratoires quotidiens\n- Soutien psychologique si besoin\n\nTRAITEMENT SYMPTOMATIQUE:\n- Bronchodilatateurs si obstruction\n- Anxiolytiques si composante anxieuse\n- Supplémentation vitamine D si carence\n- Anticoagulation si EP confirmée"
+              }
+            ]
+          }
+        },
+        {
+          "id": "m7",
+          "text": "Surveillance et suivi",
+          "details": [
+            "Consultation de suivi [Dans 2-4 semaines]",
+            "Évolution clinique [Échelle mMRC, test de marche]",
+            "Contrôle imagerie [CT à 3 mois si anomalies]",
+            "EFR de contrôle [À 3 et 6 mois]",
+            "Consultation pneumologie [Si pas d'amélioration]",
+            "Consultation COVID long [Si critères remplis]"
+          ]
+        },
+        {
+          "id": "m8",
+          "text": "Critères diagnostiques COVID long",
+          "description": "Selon OMS",
+          "details": [
+            "Antécédent COVID confirmé ou probable [Oui]",
+            "Symptômes > 3 mois après infection [Oui]",
+            "Symptômes durant ≥ 2 mois [Oui]",
+            "Impact fonctionnel significatif [Oui]",
+            "Pas d'autre diagnostic expliquant les symptômes [À confirmer]",
+            "Symptômes fluctuants ou en rechute [Oui]"
+          ],
+          "redflagsSection": {
+            "title": "Signaux d'alarme nécessitant une prise en charge urgente",
+            "items": [
+              {
+                "text": "Douleur thoracique aiguë",
+                "description": "Suspicion d'embolie pulmonaire ou syndrome coronarien"
+              },
+              {
+                "text": "Désaturation sévère < 90%",
+                "description": "Nécessite oxygénothérapie et investigations urgentes"
+              },
+              {
+                "text": "Syncope ou malaise",
+                "description": "Peut indiquer une EP massive ou trouble du rythme"
+              },
+              {
+                "text": "Aggravation rapide",
+                "description": "Nouvelle infection ou complication thromboembolique"
+              },
+              {
+                "text": "Signes de TVP",
+                "description": "Œdème, douleur, chaleur d'un membre inférieur"
+              }
+            ]
+          }
+        },
+        {
+          "id": "m9",
+          "text": "Éducation du patient",
+          "details": [
+            "Explication COVID long [Syndrome reconnu, évolution favorable]",
+            "Gestion de l'effort [Pacing, éviter surmenage]",
+            "Techniques respiratoires [Exercices quotidiens]",
+            "Signaux d'alarme [Quand reconsulter]",
+            "Soutien psychologique [Groupes de parole, psychologue]",
+            "Vaccination COVID [Recommandée, peut améliorer symptômes]"
+          ]
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Communication avec le patient",
+          "content": "Monsieur P., vos symptômes sont compatibles avec un syndrome post-COVID, qui touche environ 10% des patients. Vos D-dimères étant élevés, nous devons d'abord éliminer une embolie pulmonaire avec un scanner. Les explorations respiratoires montrent une diminution de la capacité de diffusion, séquelle fréquente après une pneumonie COVID. La récupération est généralement progressive sur plusieurs mois avec une réhabilitation adaptée."
+        },
+        {
+          "id": "c2",
+          "text": "Questions du patient",
+          "content": "[Est-ce que j'ai une embolie pulmonaire ?]\n[Combien de temps vont durer ces symptômes ?]\n[Pourrai-je reprendre le sport ?]\n[Est-ce que c'est le COVID long ?]\n[Y a-t-il un traitement spécifique ?]"
+        },
+        {
+          "id": "c3",
+          "text": "Réponses adaptées",
+          "exemplesPhrases": [
+            "Les D-dimères élevés nécessitent un scanner pour éliminer formellement une embolie pulmonaire, mais votre probabilité clinique reste faible.",
+            "La récupération post-COVID est variable, généralement 3 à 6 mois, parfois plus. La majorité des patients s'améliorent progressivement.",
+            "La reprise sportive sera progressive, avec un programme de réhabilitation adapté. Il faut éviter le surmenage qui peut aggraver les symptômes.",
+            "Vos symptômes correspondent effectivement aux critères du COVID long. C'est un syndrome reconnu qui nécessite une prise en charge multidisciplinaire.",
+            "Il n'y a pas de traitement spécifique miracle, mais la réhabilitation respiratoire, le pacing et le soutien psychologique ont montré leur efficacité."
+          ]
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "images": [
+      {
+        "title": "Résultats biologiques - D-dimères",
+        "description": "Bilan biologique montrant D-dimères à 805 ng/ml (N < 500)",
+        "data": "grilles_generees/html/images/Intermed-Dyspnée-Labo-1.jpg"
+      },
+      {
+        "title": "Résultats biologiques - Suite",
+        "description": "Bilan biologique",
+        "data": "grilles_generees/html/images/Intermed-Dyspnée-Labo-2.jpg"
+      }
+    ],
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour le patient standardisé - M. P., dyspnée post-COVID",
+      "nom": "Monsieur P.",
+      "age": "48 ans",
+      "contexte": "Cabinet de médecine générale",
+      "motifConsultation": {
+        "plaintePrincipale": "Je suis essoufflé depuis ma COVID il y a 3 mois",
+        "autreChose": "Je n'arrive plus à faire ce que je faisais avant, c'est très frustrant"
+      },
+      "histoireActuelle": {
+        "symptomesPrincipaux": [
+          "Dyspnée d'effort persistante",
+          "Limitation à 2 étages d'escaliers",
+          "Fatigue importante",
+          "Difficultés de concentration",
+          "Palpitations occasionnelles à l'effort"
+        ],
+        "contextePsychosocial": [
+          "Anxiété importante sur l'évolution",
+          "Frustration de ne pas pouvoir reprendre le sport",
+          "Inquiétude sur la capacité de travail",
+          "Impact sur la vie familiale"
+        ],
+        "histoireCOVID": [
+          "Hospitalisé 5 jours il y a 3 mois",
+          "Pneumonie bilatérale confirmée",
+          "Oxygénothérapie 3L/min pendant 4 jours",
+          "Pas de passage en réanimation",
+          "Sortie avec corticoïdes oraux"
+        ]
+      },
+      "simulation": {
+        "attitude": [
+          "Inquiet mais collaborant",
+          "Légèrement essoufflé en parlant longuement",
+          "Fait des pauses dans ses phrases",
+          "Se tient droit, respiration visible"
+        ],
+        "durantExamen": [
+          "Respiration légèrement accélérée",
+          "Pas de signe de détresse",
+          "Se fatigue lors du test de marche",
+          "Anxieux lors de la mesure de saturation"
+        ]
+      },
+      "antecedents": {
+        "medicaux": [
+          "HTA depuis 5 ans, bien contrôlée",
+          "Surpoids (IMC 28)",
+          "Ex-fumeur (arrêt il y a 10 ans, 15 PA)"
+        ],
+        "chirurgicaux": "Appendicectomie dans l'enfance",
+        "allergies": "Aucune"
+      },
+      "habitudes": {
+        "profession": "Cadre commercial, beaucoup de réunions",
+        "sport": "Jogging 2-3 fois/semaine avant COVID, arrêt total depuis",
+        "alimentation": "Équilibrée, prise de 3 kg depuis COVID",
+        "sommeil": "Perturbé, réveils fréquents avec sensation d'étouffement"
+      },
+      "medicaments": {
+        "actuels": [
+          "Amlodipine 5mg/jour pour l'HTA",
+          "Paracétamol occasionnel pour céphalées"
+        ]
+      },
+      "inquietudes": {
+        "principales": [
+          "Peur d'avoir une embolie pulmonaire",
+          "Crainte de séquelles permanentes",
+          "Inquiétude sur la reprise du travail normal",
+          "Angoisse de ne plus pouvoir faire de sport"
+        ],
+        "questions": [
+          "Est-ce que c'est grave docteur ?",
+          "Vais-je récupérer complètement ?",
+          "Pourquoi les D-dimères sont élevés ?",
+          "C'est le COVID long ?",
+          "Dois-je refaire un vaccin COVID ?"
+        ]
+      }
+    },
+    "informationsExpert": {
+      "titre": "Guide pour l'expert évaluateur - Dyspnée post-COVID",
+      "dossierMedical": "Patient de 48 ans, 3 mois post-COVID avec pneumonie, dyspnée persistante d'effort, D-dimères élevés à 805 ng/ml, DLCO diminuée",
+      "pointsCles": [
+        "Évaluation systématique du risque thromboembolique post-COVID",
+        "Interprétation appropriée des D-dimères (seuil ajusté à l'âge)",
+        "Reconnaissance des critères diagnostiques du COVID long",
+        "Approche diagnostique structurée avec examens adaptés",
+        "Importance de la réhabilitation progressive",
+        "Communication empathique sur le pronostic"
+      ],
+      "pieges": [
+        "Ne pas rechercher une embolie pulmonaire devant D-dimères élevés",
+        "Attribuer tous les symptômes au COVID long sans bilan",
+        "Oublier l'évaluation cardiaque (myocardite post-COVID)",
+        "Négliger l'impact psychologique",
+        "Proposer une reprise d'activité trop rapide",
+        "Ne pas ajuster le seuil des D-dimères à l'âge"
+      ],
+      "rolesInterventions": [
+        "Montrer une dyspnée d'effort modérée",
+        "Exprimer l'anxiété et la frustration",
+        "Poser des questions sur le pronostic",
+        "Mentionner l'impact sur le travail et la vie quotidienne",
+        "Simuler une désaturation à l'effort lors du test"
+      ]
+    },
+    "theoriePratique": {
+      "titre": "Rappels théoriques - COVID long et complications post-COVID",
+      "sections": [
+        {
+          "titre": "Définition du COVID long (OMS)",
+          "contenu": "Condition survenant chez des personnes avec antécédent de COVID-19 probable ou confirmé, généralement 3 mois après l'infection, avec des symptômes durant au moins 2 mois et ne pouvant être expliqués par un autre diagnostic.",
+          "points": [
+            "Prévalence : 10-30% des patients COVID",
+            "Plus fréquent après forme sévère",
+            "Symptômes fluctuants ou en rechute",
+            "Impact fonctionnel significatif",
+            "Pas de marqueur biologique spécifique"
+          ]
+        },
+        {
+          "titre": "Risque thromboembolique post-COVID",
+          "contenu": "Le COVID-19 augmente le risque thromboembolique jusqu'à 3-6 mois après l'infection aiguë.",
+          "points": [
+            "Incidence EP post-COVID : 0.5-2% à 3 mois",
+            "Facteurs de risque : hospitalisation, réanimation, D-dimères élevés initiaux",
+            "État pro-thrombotique persistant (endothélite, activation plaquettaire)",
+            "D-dimères peuvent rester élevés 3-4 mois post-infection",
+            "Thromboprophylaxie prolongée si haut risque"
+          ]
+        },
+        {
+          "titre": "Séquelles pulmonaires post-COVID",
+          "contenu": "Les anomalies pulmonaires persistent chez 30-60% des patients 3 mois après COVID sévère.",
+          "points": [
+            "Fibrose pulmonaire : 5-10% des cas sévères",
+            "Altération DLCO : 30-50% à 3 mois",
+            "Syndrome restrictif : 10-15%",
+            "Piégeage aérien : 20-30%",
+            "Récupération progressive sur 6-12 mois dans la majorité des cas"
+          ]
+        },
+        {
+          "titre": "Scores cliniques d'évaluation EP",
+          "contenu": "Score de Wells (EP):\n< 2 points : probabilité faible\n2-6 points : probabilité intermédiaire\n> 6 points : probabilité élevée\n\nScore de Genève révisé:\n0-3 points : probabilité faible\n4-10 points : probabilité intermédiaire\n≥ 11 points : probabilité élevée",
+          "points": [
+            "D-dimères seuil ajusté = âge x 10 (après 50 ans)",
+            "PERC : exclut EP si tous critères négatifs et probabilité faible",
+            "YEARS : D-dimères < 500 ou < 1000 si aucun critère",
+            "Sensibilité D-dimères : 95-98%",
+            "Spécificité D-dimères post-COVID : très faible (20-30%)"
+          ]
+        },
+        {
+          "titre": "Prise en charge du COVID long",
+          "contenu": "Approche multidisciplinaire centrée sur la réhabilitation progressive et le soutien du patient.",
+          "points": [
+            "Réhabilitation respiratoire : programme de 6-12 semaines",
+            "Pacing : gestion de l'énergie, éviter le crash post-effort",
+            "Kinésithérapie : exercices respiratoires, renforcement progressif",
+            "Soutien psychologique : TCC, gestion anxiété",
+            "Traitement symptomatique : bronchodilatateurs, anxiolytiques si besoin",
+            "Suivi régulier : clinique et fonctionnel tous les 1-3 mois"
+          ]
+        }
+      ],
+      "rappelsTherapeutiques": [
+        "Anticoagulation curative si EP confirmée : AOD ou HBPM/AVK pour 3-6 mois",
+        "Oxygénothérapie si SpO2 < 92% au repos ou < 88% à l'effort",
+        "Corticothérapie : uniquement si composante inflammatoire active (CT)",
+        "Bronchodilatateurs : test thérapeutique si obstruction ou dyspnée",
+        "Réhabilitation respiratoire : programme personnalisé progressif",
+        "Vaccination COVID : recommandée, peut améliorer certains symptômes du COVID long"
+      ],
+      "examensComplementaires": [
+        "D-dimères : seuil ajusté à l'âge, très sensible mais peu spécifique post-COVID",
+        "Angio-CT thoracique : gold standard pour EP, évalue aussi parenchyme",
+        "CT thoracique HR : si angio-CT normal, recherche fibrose ou atteinte interstitielle",
+        "EFR complètes avec DLCO : évalue séquelles fonctionnelles, guide réhabilitation",
+        "Test de marche 6 minutes : évaluation fonctionnelle, désaturation d'effort",
+        "Échocardiographie : si suspicion myocardite ou HTAP post-COVID",
+        "IRM cardiaque : gold standard myocardite si troponine élevée"
+      ]
+    }
+  }
+}

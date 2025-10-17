@@ -1,0 +1,228 @@
+{
+  "title": "Thieme Abdomen 10 - Douleur abdominale supérieure (âge avancé) - Homme de 60 ans",
+  "category": "Thieme Abdomen",
+  "subcategory": "Douleur abdominale supérieure (âge avancé)",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Homme de 60 ans, M. Bill Brown, consultant pour douleurs abdominales supérieures",
+    "vitals": {
+      "temperature": "37°C",
+      "fc": "84 bpm",
+      "fr": "16/min",
+      "ta": "120/80 mmHg"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Motif principal de consultation",
+          "binaryOnly": true,
+          "patientComment": "douleurs abdominales supérieures"
+        },
+        {
+          "id": "a2",
+          "text": "Analyse de la plainte principale (ABCDE)",
+          "details": [
+            "Apparition et durée [Douleurs abdominales supérieures chroniques, aggravées depuis 3 mois (5/10)]",
+            "Bilan (localisation, irradiation)",
+            "Caractère et qualité de la douleur",
+            "Degré d'intensité (échelle 1-10)",
+            "Éléments associés et facteurs modifiants"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Symptômes associés et antécédents",
+          "details": [
+            "Perte >10 lb/3 mois",
+            "Fatigue, étourdissements",
+            "Polyarthrite rhumatoïde, prend ibuprofène 600mg/j"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Histoire sociale et habitudes de vie",
+          "details": [
+            "Fume 2 pqt/j × 25 ans",
+            "3 verres alcool/j",
+            "CAGE 2/4",
+            "Père décédé cancer estomac"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Revue des systèmes",
+          "details": [
+            "Système gastro-intestinal",
+            "Symptômes constitutionnels"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Signes vitaux et apparence générale",
+          "binaryOnly": true
+        },
+        {
+          "id": "e2",
+          "text": "Examen de la tête et du cou",
+          "details": [
+            "Recherche pâleur, ictère",
+            "Examen ORL avec abaisse-langue",
+            "Palpation ganglions lymphatiques",
+            "Examen thyroïde"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Examen cardio-pulmonaire",
+          "details": [
+            "Auscultation cardiaque [S1 et S2 normaux]",
+            "Auscultation pulmonaire bilatérale"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Examen abdominal complet",
+          "details": [
+            "Inspection (cicatrices, distension)",
+            "Auscultation (bruits intestinaux)",
+            "Percussion (matité, tympanisme)",
+            "Palpation superficielle et profonde",
+            "Recherche défense et signe de Murphy [sensibilité épigastrique]"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Examens spécifiques selon le cas",
+          "details": [
+            "Toucher rectal programmé"
+          ]
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostics différentiels à évoquer",
+          "ddSection": {
+            "title": "Hypothèses diagnostiques",
+            "categories": [
+              {
+                "name": "Diagnostics prioritaires",
+                "items": [
+                  {
+                    "text": "Maladie ulcéreuse peptique",
+                    "cause": "Arguments POUR:\n\t□ Douleur épigastrique, AINS, H. pylori possible",
+                    "test": "→ Endoscopie, test H. pylori"
+                  },
+                  {
+                    "text": "Cancer de l'estomac",
+                    "cause": "Arguments POUR:\n\t□ Âge, perte poids, méléna, ATCD familiaux",
+                    "test": "→ Endoscopie avec biopsies"
+                  },
+                  {
+                    "text": "Gastrite",
+                    "cause": "Arguments POUR:\n\t□ Douleur épigastrique, utilisation AINS, alcool",
+                    "test": "→ Endoscopie avec biopsies"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Examens complémentaires pertinents",
+          "details": [
+            "Toucher rectal",
+            "Recherche sang occulte",
+            "NFS",
+            "Endoscopie digestive haute"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Plan de prise en charge immédiate",
+          "details": [
+            "Investigations ambulatoires",
+            "Traitement symptomatique",
+            "Suivi après résultats"
+          ]
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Questions difficiles du patient",
+          "content": "Recommandez-vous une endoscopie?\nQu'est-ce qu'une biopsie?"
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour le patient standardisé",
+      "nom": "M. Bill Brown",
+      "age": "60 ans",
+      "contexte": "Cabinet de médecine générale",
+      "motifConsultation": {
+        "plaintePrincipale": "douleurs abdominales supérieures",
+        "autreChose": "Douleurs abdominales supérieures chroniques, aggravées depuis 3 mois (5/10). Vomissements striés de sang, selles noires."
+      },
+      "histoireActuelle": {
+        "symptomesPrincipaux": [
+          "Douleurs abdominales supérieures chroniques, aggravées depuis 3 mois (5/10)",
+          " Vomissements striés de sang, selles noires"
+        ],
+        "contextePsychosocial": [
+          "Fume 2 pqt/j × 25 ans",
+          " 3 verres alcool/j",
+          " CAGE 2/4",
+          " Père décédé cancer estomac"
+        ]
+      },
+      "simulation": {
+        "attitude": [
+          "Fatigué",
+          "Inquiet"
+        ],
+        "durantExamen": [
+          "Sensibilité épigastrique"
+        ]
+      },
+      "inquietudes": {
+        "principales": [
+          "Recommandez-vous une endoscopie?",
+          "Qu'est-ce qu'une biopsie?"
+        ]
+      }
+    },
+    "informationsExpert": {
+      "titre": "Informations pour l'expert",
+      "pointsCles": [
+        "Cas de Douleur abdominale supérieure (âge avancé)",
+        "Patient: Homme de 60 ans",
+        "Anamnèse complète avec ABCDE",
+        "Examen abdominal détaillé",
+        "Diagnostic différentiel approprié"
+      ],
+      "pieges": [
+        "Manquer les signes d'alarme (perte poids, méléna)",
+        "Ne pas évoquer cancer"
+      ]
+    }
+  }
+}

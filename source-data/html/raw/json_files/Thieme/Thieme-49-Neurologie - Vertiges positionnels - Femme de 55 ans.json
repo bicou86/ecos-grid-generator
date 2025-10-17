@@ -1,0 +1,269 @@
+{
+  "title": "Thieme Neurologie 49 - Vertiges positionnels - Femme de 55 ans",
+  "category": "Thieme Neurologie",
+  "subcategory": "Vertiges positionnels",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Femme de 55 ans, Mme Kim Miller, consultant pour vertiges",
+    "vitals": {
+      "fc": "98 bpm",
+      "ta": "140/100 mmHg",
+      "fr": "20/min",
+      "temperature": "37°C"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Motif principal de consultation",
+          "binaryOnly": true,
+          "patientComment": "vertiges"
+        },
+        {
+          "id": "a2",
+          "text": "Analyse de la plainte principale",
+          "details": [
+            "Type de vertige [rotatoire]",
+            "Durée épisodes [20-30 sec]",
+            "Facteurs déclenchants [changement position]",
+            "Fréquence [2-3×/jour]",
+            "Symptômes associés [aucun]"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Recherche de signes neurologiques",
+          "details": [
+            "Pas perte audition",
+            "Pas acouphènes",
+            "Pas déficit focal",
+            "Pas céphalée"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Recherche de facteurs de risque",
+          "details": [
+            "Hypertension artérielle",
+            "Tabagisme",
+            "Consommation alcool"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Antécédents médicaux et familiaux",
+          "details": [
+            "Pas d'antécédents significatifs"
+          ]
+        },
+        {
+          "id": "a6",
+          "text": "Habitudes et mode de vie",
+          "details": [
+            "Ne fume pas",
+            "Boit 2-3 bières/semaine"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Signes vitaux et apparence générale",
+          "binaryOnly": true
+        },
+        {
+          "id": "e2",
+          "text": "Examen HEENT (tête, yeux, oreilles, nez, gorge)",
+          "details": [
+            "Membranes tympaniques claires",
+            "Test Rinne/Weber",
+            "Pas nystagmus"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Examen neurologique complet",
+          "details": [
+            "Nerfs crâniens II-XII intacts",
+            "Force 5/5",
+            "Sensation intacte",
+            "ROT 2+",
+            "Démarche normale"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Tests spéciaux neurologiques",
+          "details": [
+            "Test Romberg",
+            "Dix-Hallpike",
+            "Test tête impulse",
+            "Test marche"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Examen cardiovasculaire",
+          "details": [
+            "Auscultation cardiaque",
+            "Souffle carotidien",
+            "Pouls périphériques"
+          ]
+        },
+        {
+          "id": "e6",
+          "text": "Évaluation de l'état mental (MMSE si indiqué)",
+          "details": [
+            "État mental normal"
+          ]
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostics différentiels neurologiques",
+          "ddSection": {
+            "title": "Hypothèses diagnostiques à considérer",
+            "categories": [
+              {
+                "name": "Diagnostics prioritaires",
+                "items": [
+                  {
+                    "text": "Vertige positionnel paroxystique bénin",
+                    "cause": "Arguments POUR:\n\t□ Vertiges brefs, positionnels, rotatoires, pas déficit auditif",
+                    "test": "→ Manœuvre Dix-Hallpike, test repositionnement"
+                  },
+                  {
+                    "text": "Névrite vestibulaire",
+                    "cause": "Arguments POUR:\n\t□ Vertiges, infection récente VRS, pas perte audition",
+                    "test": "→ Test calorique, audiométrie, IRM si doute"
+                  },
+                  {
+                    "text": "Effet secondaire médicamenteux (diurétique)",
+                    "cause": "Arguments POUR:\n\t□ Début avec HCTZ, vertiges positionnels, HTA",
+                    "test": "→ Ionogramme, test orthostatique"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Examens complémentaires appropriés",
+          "details": [
+            "Manœuvre Dix-Hallpike",
+            "Audiométrie",
+            "IRM cérébrale si persistent"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Plan de prise en charge neurologique",
+          "details": [
+            "Manœuvres repositionnement",
+            "Révision médication",
+            "Exercices vestibulaires",
+            "Antivertigineux si besoin"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Conseils et prévention",
+          "details": [
+            "Précautions chutes",
+            "Lever progressif",
+            "Révision médications",
+            "Hydratation"
+          ]
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Questions du patient",
+          "content": "[Docteur, que pensez-vous de l'arrêt de ces nouveaux comprimés?]"
+        },
+        {
+          "id": "c2",
+          "text": "Conseils spécifiques",
+          "content": "VPPB probable. Manœuvres repositionnement. Réviser médication HTA."
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour le patient standardisé",
+      "nom": "Mme Kim Miller",
+      "age": "55 ans",
+      "contexte": "Cabinet de médecine générale",
+      "motifConsultation": {
+        "plaintePrincipale": "vertiges",
+        "autreChose": "Vertiges depuis 1 mois, maintenant 2-3×/jour, dernier ce matin. Durent 20-30 sec. Augmentent en se levant soudainement. Impression pièce tourne."
+      },
+      "histoireActuelle": {
+        "symptomesPrincipaux": [
+          "Vertiges depuis 1 mois, maintenant 2-3×/jour, dernier ce matin",
+          " Durent 20-30 sec",
+          " Augmentent en se levant soudainement",
+          " Impression pièce tourne"
+        ],
+        "antecedents": [
+          "Commencé avec nouvelle prescription HCTZ",
+          " Infection thoracique il y a quelques semaines",
+          " HTA, prend HCTZ et lisinopril",
+          " Appendicectomie il y a 30 ans"
+        ],
+        "contexteSocial": [
+          "Ne fume pas",
+          " Boit 2-3 bières/semaine"
+        ]
+      },
+      "simulation": {
+        "attitude": [
+          "Frustrée vertiges",
+          "Inquiète médication",
+          "Coopérative"
+        ],
+        "durantExamen": [
+          "Pas de nystagmus spontané",
+          "Romberg négatif",
+          "Audition normale"
+        ]
+      },
+      "inquietudes": {
+        "principales": [
+          "[Docteur, que pensez-vous de l'arrêt de ces nouveaux comprimés?]"
+        ]
+      }
+    },
+    "informationsExpert": {
+      "titre": "Informations pour l'expert",
+      "pointsCles": [
+        "Cas neurologique: Vertiges positionnels",
+        "Patient: Femme de 55 ans",
+        "Anamnèse neurologique complète",
+        "Examen neurologique systématique",
+        "Tests spéciaux appropriés"
+      ],
+      "pieges": [
+        "Ne pas faire Dix-Hallpike",
+        "Manquer effet médicamenteux",
+        "Sur-investiguer"
+      ]
+    }
+  }
+}

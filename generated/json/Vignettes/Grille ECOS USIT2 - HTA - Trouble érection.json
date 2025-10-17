@@ -1,0 +1,425 @@
+{
+  "title": "Grille ECOS USIT2 - HTA - Trouble érection",
+  "context": {
+    "setting": "Cabinet médical",
+    "patient": "Patient avec HTA et troubles érectiles - Station Jean Meunier",
+    "vitals": {}
+  },
+  "sections": {
+    "management": {
+      "weight": 0.25,
+      "title": "Communication",
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Accueille le patient par son nom, se présente et le met à l'aise",
+          "scoringRule": "2pts = les 3"
+        },
+        {
+          "id": "m2",
+          "text": "Explique au patient le déroulement de la consultation (1 pt) et vérifie s'il a une autre préoccupation (1 pt)"
+        },
+        {
+          "id": "m3",
+          "text": "Commence l'anamnèse par une question ouverte",
+          "binaryOnly": true
+        },
+        {
+          "id": "m4",
+          "text": "S'exprime dans un langage clair, sans jargon tout au long de l'entretien",
+          "scoringRule": "2pts = souvent, 1pt = rarement, 0 = jamais"
+        },
+        {
+          "id": "m5",
+          "text": "Fait une synthèse de la consultation"
+        },
+        {
+          "id": "m6",
+          "text": "L'anamnèse a suivi un cours logique et harmonieux",
+          "binaryOnly": true,
+          "scoringRule": "2pts = le plus souvent, 1pt = souvent, 0 = rarement"
+        },
+        {
+          "id": "m7",
+          "text": "Tient compte des représentations et des émotions du patient dans l'explication",
+          "scoringRule": "2pts = le plus souvent, 1pt = souvent, 0 = rarement"
+        },
+        {
+          "id": "m8",
+          "text": "Met fin à l'entretien : salue et remercie le patient avec un mot personnel"
+        },
+        {
+          "id": "m9",
+          "text": "Adopte un comportement non verbal facilitant la relation",
+          "scoringRule": "2pts = souvent, 1pt = rarement, 0 = jamais"
+        },
+        {
+          "id": "m10",
+          "text": "Reconnaît, verbalise et légitime les émotions du patient. Fournit du soutien",
+          "scoringRule": "2pts = souvent, 1pt = rarement, 0 = jamais"
+        },
+        {
+          "id": "m11",
+          "text": "Durant la phase d'explication / planification, l'étudiant·e mentionne :",
+          "details": [
+            "Contrôle de la TA à domicile",
+            "Mesure à domicile de la TA",
+            "HTA de la blouse blanche",
+            "L'importance d'effectuer plusieurs mesures au repos et de façon correcte"
+          ]
+        },
+        {
+          "id": "m12",
+          "text": "Durant la phase d'explication / planification, l'étudiant·e évoque :",
+          "details": [
+            "Option où Pt garde son Rx actuel 1pt",
+            "Option où Pt change de Rx (baisse de testostérone) 1pt"
+          ]
+        },
+        {
+          "id": "m13",
+          "text": "Durant la phase d'explication / planification, l'étudiant·e propose de remplacer métoprolol par un autre anti-HTA"
+        },
+        {
+          "id": "m14",
+          "text": "Durant la phase d'explication / planification, l'étudiant·e explique que TA trop haute et nécessite une meilleure compliance"
+        },
+        {
+          "id": "m15",
+          "text": "Durant la phase d'explication / planification, l'étudiant·e renforce nécessité de modifier le mode de vie",
+          "details": [
+            "alimentation (1pt)",
+            "exercice physique (1pt)"
+          ]
+        }
+      ]
+    },
+    "anamnese": {
+      "weight": 0.25,
+      "title": "Anamnèse - Durant l'anamnèse, l'étudiant·e a exploré",
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Date de découverte de l'HTA",
+          "patientComment": "depuis 1 an",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Traitement instauré pour l'HTA",
+          "details": [
+            "[hydrochlorothiazide (1 an)]",
+            "[métoprolol (6 mois)]"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Observance thérapeutique",
+          "patientComment": "oublis occasionnels",
+          "binaryOnly": true
+        },
+        {
+          "id": "a4",
+          "text": "Contrôle de la TA à domicile",
+          "patientComment": "non",
+          "binaryOnly": true
+        },
+        {
+          "id": "a5",
+          "text": "Date du dernier contrôle",
+          "patientComment": "6 mois",
+          "binaryOnly": true
+        },
+        {
+          "id": "a6",
+          "text": "FRCV",
+          "details": [
+            "[diabète (non)]",
+            "[cholestérol (oui)]",
+            "[anamnèse familiale (père +)]",
+            "[tabac (non)]",
+            "[alimentation (riche en graisse)]",
+            "[activité physique (non)]",
+            "[>6=2pt, 3=1pt]"
+          ]
+        },
+        {
+          "id": "a7",
+          "text": "Recherche de symptômes CV",
+          "details": [
+            "[fatigue]",
+            "[maux de tête]",
+            "[vertiges]",
+            "[palpitations]",
+            "[DRS]",
+            "[dyspnée]",
+            "[claudication]",
+            "[>4=2pt, 3-2=1pt]"
+          ]
+        },
+        {
+          "id": "a8",
+          "text": "Effets secondaires ressentis",
+          "patientComment": "difficultés d'ordre sexuel depuis 4 mois"
+        },
+        {
+          "id": "a9",
+          "text": "Gravité du problème érectile",
+          "details": [
+            "[incomplète (1pt)]",
+            "[pénétration impossible (1pt)]"
+          ]
+        },
+        {
+          "id": "a10",
+          "text": "Présence d'érections matinales ou nocturnes",
+          "patientComment": "non",
+          "binaryOnly": true
+        },
+        {
+          "id": "a11",
+          "text": "Perturbation de la libido",
+          "patientComment": "non",
+          "binaryOnly": true
+        },
+        {
+          "id": "a12",
+          "text": "Facteur de stress dans le couple",
+          "details": [
+            "[non (1pt)]",
+            "[ou la profession non (1pt)]"
+          ]
+        },
+        {
+          "id": "a13",
+          "text": "État dépressif",
+          "details": [
+            "[tristesse (non)]",
+            "[anxiété (non)]",
+            "[appétit et sommeil conservés (3-2=2pt, 1=1pt)]"
+          ]
+        },
+        {
+          "id": "a14",
+          "text": "Vécu et représentation du patient",
+          "details": [
+            "[inquiétude de l'épouse]",
+            "[vie sexuelle était épanouissante]"
+          ]
+        },
+        {
+          "id": "a15",
+          "text": "Etat actuel du patient",
+          "patientComment": "non",
+          "binaryOnly": true
+        },
+        {
+          "id": "a16",
+          "text": "Consommation substances",
+          "details": [
+            "[tabac non]",
+            "[alcool non]",
+            "[autres non]"
+          ]
+        },
+        {
+          "id": "a17",
+          "text": "Traitement inhibiteur 5PDE",
+          "details": [
+            "[sildenafil (viagra)]",
+            "[cialis non]"
+          ]
+        },
+        {
+          "id": "a18",
+          "text": "Prise nitrés ou équivalent",
+          "patientComment": "non",
+          "binaryOnly": true
+        },
+        {
+          "id": "a19",
+          "text": "Examen clinique planifié"
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "title": "Examen clinique",
+      "criteria": []
+    }
+  },
+  "annexes": {
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour le patient standardisé",
+      "nom": "Patient homme adulte",
+      "age": "Variable selon scénario",
+      "contexte": "Cabinet médical",
+      "motifConsultation": {
+        "plaintePrincipale": "Contrôle de l'hypertension",
+        "autreChose": "Problèmes érectiles depuis 4 mois"
+      },
+      "histoireActuelle": {
+        "hta": {
+          "decouverte": "Il y a 1 an",
+          "traitement": [
+            "Hydrochlorothiazide depuis 1 an",
+            "Métoprolol ajouté il y a 6 mois"
+          ],
+          "observance": "Oublis occasionnels",
+          "controle_domicile": "Non, pas de tensiomètre",
+          "dernier_controle": "Il y a 6 mois"
+        },
+        "troubles_erectiles": {
+          "debut": "Depuis 4 mois (2 mois après métoprolol)",
+          "gravite": [
+            "Érection incomplète",
+            "Pénétration impossible"
+          ],
+          "erections_spontanees": "Pas d'érections matinales ou nocturnes",
+          "libido": "Conservée",
+          "essai_traitement": "Viagra essayé, sans succès"
+        },
+        "symptomes_cv": [
+          "Fatigue occasionnelle",
+          "Maux de tête parfois",
+          "Pas de vertiges",
+          "Pas de palpitations",
+          "Pas de douleur thoracique",
+          "Pas de dyspnée"
+        ],
+        "facteurs_risque": {
+          "diabete": "Non",
+          "cholesterol": "Oui, traité",
+          "tabac": "Non",
+          "alcool": "Non",
+          "alimentation": "Riche en graisses",
+          "activite_physique": "Sédentaire",
+          "famille": "Père décédé d'infarctus"
+        }
+      },
+      "contexte_psychosocial": {
+        "couple": "Marié, épouse inquiète",
+        "vie_sexuelle": "Était épanouissante avant",
+        "stress": "Pas de stress particulier",
+        "profession": "Pas de problème professionnel",
+        "humeur": "Pas de dépression"
+      },
+      "simulation": {
+        "attitude": [
+          "Gêné d'aborder les troubles érectiles",
+          "Inquiet de l'impact sur son couple",
+          "Demande si c'est lié aux médicaments",
+          "Souhaite une solution"
+        ]
+      },
+      "inquietudes": {
+        "principales": [
+          "Est-ce que c'est à cause des médicaments ?",
+          "Est-ce définitif ?",
+          "Ma femme pense que je ne l'aime plus",
+          "Peut-on changer le traitement ?"
+        ]
+      }
+    },
+    "informationsExpert": {
+      "titre": "Points clés pour l'évaluation - HTA et dysfonction érectile",
+      "objectifsPedagogiques": [
+        "Reconnaître les effets secondaires des bêta-bloquants",
+        "Évaluer l'observance thérapeutique",
+        "Différencier cause organique et psychogène",
+        "Proposer des alternatives thérapeutiques",
+        "Aborder la sexualité avec tact",
+        "Intégrer les mesures hygiéno-diététiques"
+      ],
+      "pointsCles": [
+        "Métoprolol = cause fréquente de dysfonction érectile",
+        "Absence d'érections spontanées = origine organique probable",
+        "Chronologie : troubles 2 mois après introduction métoprolol",
+        "HTA mal contrôlée = observance à améliorer",
+        "Mesure TA domicile essentielle",
+        "Alternative : IEC, ARA2, inhibiteurs calciques"
+      ],
+      "diagnosticsDifferentiels": {
+        "causes_organiques": [
+          "Iatrogène : bêta-bloquants, diurétiques",
+          "Vasculaire : athérosclérose",
+          "Neurologique : neuropathie diabétique",
+          "Hormonale : hypogonadisme"
+        ],
+        "causes_psychogenes": [
+          "Anxiété de performance",
+          "Dépression",
+          "Problèmes relationnels",
+          "Stress"
+        ]
+      },
+      "pieges": [
+        "Ne pas explorer les troubles érectiles",
+        "Oublier de vérifier l'observance",
+        "Ne pas proposer la mesure TA à domicile",
+        "Méconnaître les effets des bêta-bloquants",
+        "Ne pas rechercher les contre-indications aux iPDE5",
+        "Oublier les mesures hygiéno-diététiques"
+      ]
+    },
+    "theoriePratique": {
+      "titre": "Rappels théoriques - HTA et dysfonction érectile",
+      "sections": [
+        {
+          "titre": "Dysfonction érectile iatrogène",
+          "contenu": "Médicaments et mécanismes",
+          "points": [
+            "Bêta-bloquants : diminution perfusion pénienne, baisse testostérone",
+            "Diurétiques thiazidiques : diminution flux sanguin",
+            "Antidépresseurs : dysfonction sérotoninergique",
+            "Délai apparition : 2-6 mois après introduction",
+            "Réversibilité habituelle à l'arrêt",
+            "Prévalence : 15-25% sous bêta-bloquants"
+          ]
+        },
+        {
+          "titre": "Prise en charge de l'HTA",
+          "contenu": "Stratégie thérapeutique adaptée",
+          "points": [
+            "Objectif TA < 140/90 mmHg (< 130/80 si diabète)",
+            "Mesure ambulatoire (MAPA) ou auto-mesure",
+            "IEC/ARA2 : première ligne si dysfonction érectile",
+            "Inhibiteurs calciques : alternative efficace",
+            "Mesures hygiéno-diététiques toujours associées",
+            "Observance : clé du succès thérapeutique"
+          ]
+        },
+        {
+          "titre": "Traitement dysfonction érectile",
+          "contenu": "Options thérapeutiques",
+          "points": [
+            "Arrêt/substitution médicament causal",
+            "iPDE5 (sildénafil, tadalafil) si pas de contre-indication",
+            "Contre-indication absolue : dérivés nitrés",
+            "Testostérone si hypogonadisme confirmé",
+            "Prise en charge psychosexuelle si composante psychogène",
+            "Délai amélioration : 2-3 mois après changement"
+          ]
+        }
+      ],
+      "rappelsTherapeutiques": [
+        "Remplacer métoprolol par IEC ou ARA2",
+        "Auto-mesure tensionnelle 3×/jour pendant 3 jours",
+        "iPDE5 : débuter 50 mg, adapter selon efficacité",
+        "Mesures hygiéno-diététiques : DASH diet, exercice 150 min/semaine",
+        "Suivi à 1 mois pour efficacité et tolérance",
+        "Dosage testostérone si pas d'amélioration",
+        "Support psychologique du couple si nécessaire"
+      ],
+      "examensComplementaires": [
+        "Auto-mesure tensionnelle ou MAPA",
+        "Bilan lipidique complet",
+        "Glycémie à jeun, HbA1c",
+        "Créatinine, DFG",
+        "Ionogramme sanguin",
+        "Testostérone totale (matin)",
+        "ECG de repos"
+      ]
+    }
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "title": "USMLE Mini - Insulinome - Femme de 30 ans",
+  "category": "USMLE Mini-Cas",
+  "originalCategory": "PRISE DE POIDS",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Femme de 30 ans consultant pour prise de poids au cours des 3 derniers mois. Elle rapporte également tremblements, palpitations, anxiété et faim soulagée par l'alimentation. Elle présente une faiblesse musculaire proximale et des ecchymoses faciles."
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Motif principal de consultation",
+          "binaryOnly": true,
+          "patientComment": "prise de poids au cours des 3 derniers mois. Elle rapporte également tremblements, palpitations, anxiété et faim soulagée par l'alimentation. Elle présente une faiblesse musculaire proximale et des ecchymoses faciles."
+        },
+        {
+          "id": "a2",
+          "text": "Éléments clés de l'anamnèse à explorer",
+          "details": [
+            "Quantité, durée, moment (relation avec les changements de médicaments, arrêt du tabac, dépression)",
+            "antécédents alimentaires",
+            "symptômes d'hypothyroïdie (fatigue, constipation, changements de la peau/cheveux/ongles)",
+            "irrégularité menstruelle, hirsutisme",
+            "antécédents médicaux",
+            "consommation d'alcool et de drogues."
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Éléments clés de l'examen physique",
+          "details": [
+            "Signes vitaux",
+            "examen complet, y compris signes du syndrome de Cushing (hypertension, obésité centrale, faciès lunaire, bosse de bison, coussinets graisseux supraclaviculaires, vergetures abdominales violacées)",
+            "œdème résultant de la rétention d'eau dans la maladie rénale."
+          ]
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostics différentiels à considérer",
+          "ddSection": {
+            "title": "Diagnostics différentiels",
+            "categories": [
+              {
+                "name": "Hypothèses diagnostiques",
+                "items": [
+                  {
+                    "text": "Insulinome",
+                    "cause": "À évaluer selon l'anamnèse et l'examen clinique",
+                    "test": "→ Glycémie et insuline plasmatique"
+                  },
+                  {
+                    "text": "Hypoglycémie postprandiale réactive",
+                    "cause": "À évaluer selon l'anamnèse et l'examen clinique",
+                    "test": "→ Test de tolérance au glucose"
+                  },
+                  {
+                    "text": "Syndrome de Cushing",
+                    "cause": "À évaluer selon l'anamnèse et l'examen clinique",
+                    "test": "→ Cortisol libre urinaire sur 24 heures"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Examens complémentaires pertinents",
+          "details": [
+            "Glycémie et insuline plasmatique",
+            "Test de tolérance au glucose",
+            "Cortisol libre urinaire sur 24 heures"
+          ]
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "informationsExpert": {
+      "titre": "Informations pour l'expert",
+      "pointsCles": [
+        "Cas de prise de poids",
+        "Patient: Femme de 30 ans",
+        "Évaluation de la démarche diagnostique",
+        "Choix approprié des examens complémentaires"
+      ],
+      "pieges": [
+        "Ne pas explorer systématiquement tous les éléments de l'anamnèse",
+        "Oublier certains diagnostics différentiels importants",
+        "Demander des examens non pertinents ou excessifs"
+      ]
+    }
+  }
+}

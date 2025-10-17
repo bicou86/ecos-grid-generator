@@ -1,0 +1,215 @@
+{
+  "title": "Thieme Pédiatrie 31 - Ictère néonatal (consultation téléphonique) - Garçon de 4 jours",
+  "category": "Thieme Pédiatrie",
+  "subcategory": "Ictère néonatal (consultation téléphonique)",
+  "context": {
+    "setting": "Consultation téléphonique",
+    "patient": "Garçon de 4 jours, Matthew Steve, Mme Susan Steve consulte pour yeux et peau jaunâtres"
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Motif principal de consultation",
+          "binaryOnly": true,
+          "patientComment": "yeux et peau jaunâtres"
+        },
+        {
+          "id": "a2",
+          "text": "Analyse de la plainte principale",
+          "details": [
+            "Apparition ictère [J2 de vie]",
+            "Progression [aggravation progressive]",
+            "Coloration [yeux et peau jaunes, selles foncées]",
+            "État général [tète bien, pas faible]",
+            "Groupes sanguins [mère A-, bébé A+]"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Recherche diagnostique différentielle",
+          "details": [
+            "Alimentation (tète bien?)",
+            "Signes infection",
+            "Incompatibilité sanguine",
+            "Prématurité",
+            "Médicaments maternels"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Antécédents et développement de l'enfant",
+          "details": [
+            "Développement approprié pour l'âge"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Histoire sociale et familiale",
+          "details": [
+            "Vit avec parents",
+            "Père a ulcères peptiques",
+            "Maison sans fumée"
+          ]
+        },
+        {
+          "id": "a6",
+          "text": "Revue des systèmes pédiatriques",
+          "details": [
+            "Système hépatique",
+            "État général",
+            "Alimentation"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Examen physique non réalisé (consultation téléphonique)",
+          "binaryOnly": true,
+          "patientComment": "Recommandation de consultation en présentiel si nécessaire"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostics différentiels pédiatriques",
+          "ddSection": {
+            "title": "Hypothèses diagnostiques à considérer",
+            "categories": [
+              {
+                "name": "Diagnostics prioritaires",
+                "items": [
+                  {
+                    "text": "Ictère physiologique",
+                    "cause": "Arguments POUR:\n\t□ Apparition J2, prématurité, pas autres symptômes",
+                    "test": "→ Bilirubine transcutanée/sérique"
+                  },
+                  {
+                    "text": "Incompatibilité Rh",
+                    "cause": "Arguments POUR:\n\t□ Mère Rh-, bébé Rh+, ictère précoce",
+                    "test": "→ Test Coombs, bilirubine sériée"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Examens complémentaires appropriés à l'âge",
+          "details": [
+            "NFS et groupage sanguin",
+            "Bilirubine totale et indirecte",
+            "Bilan hépatique complet"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Plan de prise en charge pédiatrique",
+          "details": [
+            "Surveillance bilirubine",
+            "Photothérapie si nécessaire",
+            "Maintien allaitement",
+            "Suivi rapproché"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Conseils aux parents",
+          "details": [
+            "Rassurer sur ictère physiologique",
+            "Maintenir allaitement",
+            "Exposition lumière jour",
+            "Surveillance coloration"
+          ]
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Questions des parents",
+          "content": "[Combien de temps cette coloration va-t-elle durer?]\n[Pourquoi ses selles sont-elles si foncées?]"
+        },
+        {
+          "id": "c2",
+          "text": "Conseils spécifiques et éducation",
+          "content": "Ictère physiologique probable. Pic J3-5, résolution J14. Surveillance bilirubine importante."
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour le parent standardisé",
+      "nom": "Mme Susan Steve",
+      "enfant": "Matthew Steve, 4 jours",
+      "contexte": "Consultation téléphonique",
+      "motifConsultation": {
+        "plaintePrincipale": "yeux et peau jaunâtres",
+        "autreChose": "Ictère apparu J2, aggravé depuis. Yeux et peau jaunes, selles plus foncées. Tète bien, pas faible, pas fièvre. Né par césarienne en bonne santé."
+      },
+      "histoireActuelle": {
+        "symptomesPrincipaux": [
+          "Ictère apparu J2, aggravé depuis",
+          " Yeux et peau jaunes, selles plus foncées",
+          " Tète bien, pas faible, pas fièvre",
+          " Né par césarienne en bonne santé"
+        ],
+        "développement": [
+          "Mère A-, bébé A+, père A+",
+          " Injection post-partum car Rh-",
+          " Grossesse normale jusqu'aux derniers mois (HTA → césarienne à 8 mois)",
+          " G2P2, première fille 4 ans en santé"
+        ],
+        "contexteSocial": [
+          "Vit avec parents",
+          " Père a ulcères peptiques",
+          " Maison sans fumée"
+        ]
+      },
+      "simulation": {
+        "attitude": [
+          "Parents inquiets",
+          "Première expérience ictère"
+        ],
+        "durantConsultation": [
+          "Questions sur durée ictère",
+          "Inquiétude selles foncées"
+        ]
+      },
+      "inquietudes": {
+        "principales": [
+          "[Combien de temps cette coloration va-t-elle durer?]",
+          "[Pourquoi ses selles sont-elles si foncées?]"
+        ]
+      }
+    },
+    "informationsExpert": {
+      "titre": "Informations pour l'expert",
+      "pointsCles": [
+        "Cas pédiatrique: Ictère néonatal (consultation téléphonique)",
+        "Enfant: Garçon de 4 jours",
+        "Anamnèse adaptée à l'âge",
+        "Consultation téléphonique - pas d'examen physique",
+        "Communication avec le parent"
+      ],
+      "pieges": [
+        "Alarmer inutilement",
+        "Arrêter allaitement",
+        "Ne pas surveiller bilirubine"
+      ]
+    }
+  }
+}

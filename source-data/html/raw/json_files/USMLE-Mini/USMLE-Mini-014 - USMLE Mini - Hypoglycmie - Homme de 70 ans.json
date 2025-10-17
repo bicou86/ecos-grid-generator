@@ -1,0 +1,127 @@
+{
+  "title": "USMLE Mini - Hypoglycémie - Homme de 70 ans",
+  "category": "USMLE Mini-Cas",
+  "originalCategory": "CONFUSION/PERTE DE MÉMOIRE",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Homme de 70 ans consultant pour diabétique insulino-dépendant se présente avec épisodes de confusion, vertiges, palpitations, diaphorèse et faiblesse."
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Motif principal de consultation",
+          "binaryOnly": true,
+          "patientComment": "diabétique insulino-dépendant se présente avec épisodes de confusion, vertiges, palpitations, diaphorèse et faiblesse."
+        },
+        {
+          "id": "a2",
+          "text": "Éléments clés de l'anamnèse à explorer",
+          "details": [
+            "Doit inclure l'histoire fournie par les membres de la famille/soignants lorsqu'elle est disponible. Évolution temporelle détaillée des déficits cognitifs (début aigu vs chronique/progressif)",
+            "symptômes associés (constitutionnels, incontinence, ataxie, symptômes d'hypothyroïdie, dépression)",
+            "dépistage du delirium (niveau de vigilance fluctuant)",
+            "chutes, médicaments (et changements récents de médicaments)",
+            "antécédents d'AVC ou autre maladie vasculaire athérosclérotique, syphilis, facteurs de risque VIH, consommation d'alcool ou déficit en vitamine B12",
+            "antécédents familiaux de maladie d'Alzheimer ou autres troubles neurologiques."
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Éléments clés de l'examen physique",
+          "details": [
+            "Signes vitaux",
+            "examen neurologique complet, y compris le mini-examen de l'état mental et la marche",
+            "examen physique général, incluant ORL, cœur, poumons, abdomen et extrémités."
+          ]
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostics différentiels à considérer",
+          "ddSection": {
+            "title": "Diagnostics différentiels",
+            "categories": [
+              {
+                "name": "Hypothèses diagnostiques",
+                "items": [
+                  {
+                    "text": "Hypoglycémie",
+                    "cause": "À évaluer selon l'anamnèse et l'examen clinique",
+                    "test": "→ Glycémie"
+                  },
+                  {
+                    "text": "Accident ischémique transitoire",
+                    "cause": "À évaluer selon l'anamnèse et l'examen clinique",
+                    "test": "→ NFS"
+                  },
+                  {
+                    "text": "Arythmie",
+                    "cause": "À évaluer selon l'anamnèse et l'examen clinique",
+                    "test": "→ Électrolytes"
+                  },
+                  {
+                    "text": "Delirium",
+                    "cause": "À évaluer selon l'anamnèse et l'examen clinique",
+                    "test": "→ CPK-MB, troponine"
+                  },
+                  {
+                    "text": "Angor",
+                    "cause": "À évaluer selon l'anamnèse et l'examen clinique",
+                    "test": "→ Échocardiographie"
+                  },
+                  {
+                    "text": "",
+                    "cause": "À évaluer selon l'anamnèse et l'examen clinique",
+                    "test": "→ ECG"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Examens complémentaires pertinents",
+          "details": [
+            "Glycémie",
+            "NFS",
+            "Électrolytes",
+            "CPK-MB, troponine",
+            "Échocardiographie",
+            "ECG",
+            "IRM cérébrale",
+            "Doppler carotidien"
+          ]
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "informationsExpert": {
+      "titre": "Informations pour l'expert",
+      "pointsCles": [
+        "Cas de confusion/perte de mémoire",
+        "Patient: Homme de 70 ans",
+        "Évaluation de la démarche diagnostique",
+        "Choix approprié des examens complémentaires"
+      ],
+      "pieges": [
+        "Ne pas explorer systématiquement tous les éléments de l'anamnèse",
+        "Oublier certains diagnostics différentiels importants",
+        "Demander des examens non pertinents ou excessifs"
+      ]
+    }
+  }
+}

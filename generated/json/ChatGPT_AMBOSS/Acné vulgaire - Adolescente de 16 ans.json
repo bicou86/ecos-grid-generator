@@ -1,0 +1,793 @@
+{
+  "title": "Acné vulgaire - Adolescente de 16 ans",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Adolescente de 16 ans, lycéenne, consultant pour des lésions du visage évoluant depuis plusieurs mois"
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Motif de consultation principal",
+          "binaryOnly": true,
+          "patientComment": "J'ai tout essayé, mais mon acné empire..."
+        },
+        {
+          "id": "a2",
+          "text": "Caractérisation des lésions cutanées",
+          "details": [
+            "Type de lésions [boutons rouges (papules) et points noirs (comédons)]",
+            "Localisation principale [visage, surtout au niveau du menton]",
+            "Atteinte du dos [à rechercher]",
+            "Atteinte du thorax [à rechercher]",
+            "Présence de pustules [à évaluer]",
+            "Présence de nodules [à rechercher pour évaluer la sévérité]",
+            "Lésions douloureuses [parfois, surtout au niveau du menton]"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Chronologie et évolution",
+          "details": [
+            "Durée d'évolution [environ 8 mois]",
+            "Progression dans le temps [aggravation progressive]",
+            "Variations cycliques [à rechercher avec le cycle menstruel]",
+            "Facteurs aggravants [stress, examens]",
+            "Périodes d'amélioration [à évaluer]"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Traitements déjà essayés",
+          "details": [
+            "Traitements médicamenteux [aucun]",
+            "Produits cosmétiques [oui, plusieurs essayés]",
+            "Soins de la peau [à préciser]",
+            "Nettoyants utilisés [à évaluer]",
+            "Efficacité des traitements essayés [inefficaces]"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Facteurs hormonaux et gynécologiques",
+          "details": [
+            "Régularité des règles [régulières]",
+            "Contraception hormonale [non]",
+            "Signes d'hyperandrogénie [à rechercher: hirsutisme, alopécie]",
+            "Variations prémenstruelles de l'acné [à évaluer]",
+            "Antécédents de syndrome des ovaires polykystiques [non]"
+          ]
+        },
+        {
+          "id": "a6",
+          "text": "Habitudes et mode de vie",
+          "details": [
+            "Utilisation de maquillage [à vérifier si comédogène]",
+            "Manipulation des lésions [tendance à percer les boutons?]",
+            "Alimentation [idées reçues sur certains aliments]",
+            "Niveau de stress [lycéenne, examens]",
+            "Sport et transpiration [à évaluer]"
+          ]
+        },
+        {
+          "id": "a7",
+          "text": "Impact psychosocial",
+          "details": [
+            "Retentissement sur la confiance en soi [important]",
+            "Impact sur les interactions sociales [à évaluer]",
+            "Anxiété liée à l'apparence [inquiète de son apparence]",
+            "Qualité de vie [altérée]",
+            "Évitement social [à rechercher]"
+          ]
+        },
+        {
+          "id": "a8",
+          "text": "Antécédents et facteurs de risque",
+          "details": [
+            "Antécédents familiaux d'acné [à rechercher]",
+            "Prise récente d'antibiotiques [non]",
+            "Prise de corticoïdes [non]",
+            "Autres médicaments [aucun]",
+            "Allergies médicamenteuses [à vérifier]"
+          ]
+        },
+        {
+          "id": "a9",
+          "text": "Recherche de cicatrices",
+          "details": [
+            "Présence de cicatrices atrophiques [à évaluer]",
+            "Cicatrices hypertrophiques [à rechercher]",
+            "Taches pigmentaires post-inflammatoires [à vérifier]"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Inspection du visage",
+          "details": [
+            "Répartition des lésions [front, joues, menton, nez]",
+            "Type de lésions prédominantes [comédons, papules]",
+            "Évaluation de la sévérité [légère à modérée]",
+            "Recherche de cicatrices [à documenter]"
+          ]
+        },
+        {
+          "id": "e2",
+          "text": "Examen des autres zones",
+          "details": [
+            "Inspection du dos [recherche d'atteinte]",
+            "Inspection du thorax [recherche d'atteinte]",
+            "Inspection du cou [à vérifier]"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Recherche de signes d'hyperandrogénie",
+          "details": [
+            "Hirsutisme [à rechercher]",
+            "Alopécie androgénétique [à évaluer]",
+            "Acanthosis nigricans [à rechercher]"
+          ]
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Expliquer le diagnostic",
+          "patientComment": "Tu as une acné vulgaire, c'est très fréquent à ton âge. C'est lié aux changements hormonaux et à plusieurs facteurs qu'on peut traiter efficacement",
+          "ddSection": {
+            "title": "Classification de l'acné",
+            "categories": [
+              {
+                "name": "Sévérité de l'acné",
+                "items": [
+                  {
+                    "text": "Acné légère",
+                    "cause": "Caractéristiques:\n\t□ Comédons principalement\n\t□ Quelques papules/pustules\n\t□ Pas de nodules\n\t□ Pas de cicatrices",
+                    "test": "→ Traitement topique suffisant"
+                  },
+                  {
+                    "text": "Acné modérée",
+                    "cause": "Caractéristiques:\n\t□ Papules/pustules multiples\n\t□ Atteinte du tronc possible\n\t□ Quelques nodules possibles\n\t□ Risque de cicatrices",
+                    "test": "→ Traitement topique ± systémique"
+                  },
+                  {
+                    "text": "Acné sévère",
+                    "cause": "Caractéristiques:\n\t□ Nodules et kystes nombreux\n\t□ Cicatrices en formation\n\t□ Échec des traitements simples\n\t□ Impact psychosocial majeur",
+                    "test": "→ Traitement systémique nécessaire"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Physiopathologie de l'acné",
+          "details": [
+            "Hypersécrétion de sébum sous stimulation hormonale",
+            "Hyperkératinisation folliculaire",
+            "Prolifération de Cutibacterium acnes",
+            "Réaction inflammatoire secondaire"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Traitement topique de première intention",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Traitement combiné recommandé",
+                "items": [
+                  {
+                    "treatment": "Rétinoïde topique",
+                    "details": "Adapalène 0.1% gel, application le soir",
+                    "duration": "Minimum 3 mois"
+                  },
+                  {
+                    "treatment": "Peroxyde de benzoyle",
+                    "details": "2.5-5%, application le matin",
+                    "duration": "En continu"
+                  },
+                  {
+                    "treatment": "± Antibiotique topique",
+                    "details": "Clindamycine, toujours associé au peroxyde de benzoyle",
+                    "duration": "Maximum 3 mois"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m4",
+          "text": "Conseils d'application et précautions",
+          "details": [
+            "Appliquer sur peau propre et sèche",
+            "Commencer progressivement (1 jour sur 2)",
+            "Utiliser une noisette de produit pour tout le visage",
+            "Protection solaire obligatoire le jour",
+            "Hydratation avec produits non comédogènes",
+            "Éviter le contour des yeux et des lèvres"
+          ]
+        },
+        {
+          "id": "m5",
+          "text": "Mesures d'hygiène et soins de support",
+          "details": [
+            "Nettoyage doux matin et soir (syndet ou gel nettoyant doux)",
+            "Éviter les gommages agressifs et le frottement",
+            "Ne pas percer les boutons [risque de cicatrices]",
+            "Utiliser des produits non comédogènes",
+            "Démaquillage soigneux le soir",
+            "Changer régulièrement les taies d'oreiller"
+          ]
+        },
+        {
+          "id": "m6",
+          "text": "Information sur l'évolution et le suivi",
+          "details": [
+            "Amélioration visible après 4-6 semaines minimum",
+            "Aggravation transitoire possible au début",
+            "Traitement à poursuivre plusieurs mois",
+            "Contrôle dans 6-8 semaines",
+            "Possibilité d'adaptation du traitement si insuffisant"
+          ]
+        },
+        {
+          "id": "m7",
+          "text": "Options thérapeutiques de deuxième ligne",
+          "details": [
+            "Antibiotiques oraux (doxycycline 100mg/j) si échec topique",
+            "Contraception hormonale adaptée si souhaitée",
+            "Isotrétinoïne orale si acné sévère ou cicatricielle [dermatologue]",
+            "Importance du suivi régulier"
+          ]
+        },
+        {
+          "id": "m8",
+          "text": "Mythes alimentaires à corriger",
+          "details": [
+            "Pas de preuve solide chocolat/acné",
+            "Produits laitiers: lien controversé",
+            "Aliments à index glycémique élevé: données limitées",
+            "Alimentation équilibrée recommandée",
+            "Hydratation suffisante importante"
+          ]
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Répondre aux inquiétudes de la patiente",
+          "details": [
+            "Question: [Est-ce que ça va disparaître un jour?]",
+            "Réponse type: \"Oui, avec le bon traitement et un peu de patience, on peut obtenir une nette amélioration. L'acné peut persister quelques années, mais on peut éviter les cicatrices si on agit tôt.\"",
+            "Question: [Est-ce que je dois changer mon alimentation?]",
+            "Réponse type: \"Actuellement, il n'y a pas de preuve solide que certains aliments aggravent l'acné. L'important est d'avoir une routine douce pour la peau.\"",
+            "Question: [Est-ce que je dois prendre des antibiotiques?]",
+            "Réponse type: \"Pas forcément. On commence souvent avec un traitement local. Si cela ne suffit pas, on envisagera un traitement par voie orale.\""
+          ]
+        },
+        {
+          "id": "c2",
+          "text": "Conseils pratiques et encouragements",
+          "details": [
+            "Patience: le traitement prend du temps",
+            "Régularité: application quotidienne essentielle",
+            "Ne pas se décourager si aggravation initiale",
+            "Prendre des photos pour suivre l'évolution",
+            "Soutien psychologique disponible si besoin"
+          ]
+        },
+        {
+          "id": "c3",
+          "text": "Clôture de la consultation",
+          "exemplesPhrases": [
+            "\"Je vais te prescrire un traitement local efficace avec un rétinoïde et du peroxyde de benzoyle. C'est le traitement de référence pour l'acné.\"",
+            "\"On se revoit dans 6-8 semaines pour voir comment ça évolue. N'hésite pas à revenir avant si tu as des questions ou des problèmes de tolérance.\"",
+            "\"Courage, c'est une période difficile mais on va y arriver ensemble. Le traitement fonctionne bien quand on est régulier.\""
+          ]
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour la patiente standardisée",
+      "nom": "Léa Morel",
+      "age": "16 ans",
+      "profession": "Lycéenne",
+      "contexte": "Cabinet de médecine générale",
+      "phraseOuverture": "J'ai tout essayé, mais mon acné empire...",
+      "histoireActuelle": {
+        "symptomesPrincipaux": [
+          "Boutons rouges (papules) sur le visage depuis 8 mois",
+          "Points noirs (comédons) sur le nez et le front",
+          "Lésions parfois douloureuses au niveau du menton",
+          "Aggravation progressive malgré les cosmétiques",
+          "Inquiétude importante sur l'apparence"
+        ],
+        "symptomesAbsents": [
+          "Pas de fièvre",
+          "Pas de symptômes généraux",
+          "Pas de nodules profonds",
+          "Pas de kystes"
+        ]
+      },
+      "antecedents": {
+        "gynecologiques": [
+          "Règles régulières",
+          "Pas de contraception",
+          "Pas de signes d'hyperandrogénie"
+        ],
+        "medicaux": "Aucun",
+        "traitements": [
+          "Aucun médicament",
+          "Seulement des cosmétiques anti-acné",
+          "Pas d'antibiotiques récents",
+          "Pas de corticoïdes"
+        ]
+      },
+      "modeDeVie": {
+        "hygiene": "Nettoyage fréquent du visage",
+        "maquillage": "Peu de maquillage",
+        "stress": "Stress scolaire (examens)",
+        "alimentation": "Normale, évite le chocolat par croyance"
+      },
+      "simulation": {
+        "attitude": [
+          "Gênée et complexée",
+          "Découragée par l'échec des cosmétiques",
+          "Inquiète pour son apparence",
+          "Espoir d'un traitement efficace"
+        ],
+        "durantEntretien": [
+          "Montrez de la gêne en parlant de votre acné",
+          "Touchez occasionnellement votre visage",
+          "Exprimez votre frustration des échecs thérapeutiques",
+          "Posez des questions sur la durée du traitement",
+          "Montrez du soulagement quand on vous rassure"
+        ]
+      },
+      "inquietudes": {
+        "principales": [
+          "Est-ce que ça va disparaître un jour?",
+          "Est-ce que je vais avoir des cicatrices?",
+          "Est-ce que je dois changer mon alimentation?",
+          "Est-ce que je dois prendre des antibiotiques?",
+          "Pourquoi moi alors que mes amies n'ont rien?"
+        ]
+      }
+    },
+    "informationsExpert": {
+      "titre": "Informations pour l'expert évaluateur",
+      "pointsCles": [
+        "Reconnaissance de l'acné vulgaire légère à modérée",
+        "Évaluation de l'impact psychosocial chez l'adolescente",
+        "Proposition d'un traitement topique combiné approprié",
+        "Explication claire de la physiopathologie",
+        "Communication adaptée à l'âge et rassurante"
+      ],
+      "pieges": [
+        "Prescrire un antibiotique topique seul (résistance)",
+        "Minimiser l'impact psychologique",
+        "Oublier la protection solaire avec les rétinoïdes",
+        "Ne pas expliquer le délai d'efficacité",
+        "Promettre une guérison rapide"
+      ],
+      "Evaluation": [
+        "Anamnèse complète incluant facteurs hormonaux",
+        "Évaluation de la sévérité de l'acné",
+        "Recherche de l'impact psychosocial",
+        "Traitement combiné approprié",
+        "Conseils d'hygiène et de soins adaptés",
+        "Communication empathique avec l'adolescente"
+      ]
+    },
+    "theoriePratique": {
+      "titre": "Points théoriques et pratiques",
+      "sections": [
+        {
+          "titre": "Physiopathologie de l'acné",
+          "points": [
+            "Hypersécrétion sébacée androgéno-dépendante",
+            "Hyperkératinisation de l'infundibulum pilaire",
+            "Prolifération de Cutibacterium acnes",
+            "Inflammation médiée par TLR2 et cytokines",
+            "Facteurs génétiques (80% d'héritabilité)"
+          ]
+        },
+        {
+          "titre": "Classification de la sévérité",
+          "points": [
+            "GEA échelle 0-5 (Global Evaluation Acne)",
+            "Légère: comédons prédominants, <20 lésions inflammatoires",
+            "Modérée: 20-50 lésions inflammatoires, quelques nodules",
+            "Sévère: >50 lésions inflammatoires, nodules multiples",
+            "Très sévère: acné conglobata, cicatrices"
+          ]
+        },
+        {
+          "titre": "Principes du traitement",
+          "points": [
+            "Cibler plusieurs mécanismes physiopathologiques",
+            "Traitement d'attaque puis d'entretien",
+            "Prévention de la résistance aux antibiotiques",
+            "Adaptation selon la sévérité et la tolérance",
+            "Durée minimale 3 mois avant évaluation"
+          ]
+        }
+      ],
+      "rappelsTherapeutiques": [
+        "Rétinoïdes topiques: normalisation de la kératinisation",
+        "Peroxyde de benzoyle: antibactérien sans résistance",
+        "Antibiotiques topiques: toujours associés au peroxyde de benzoyle",
+        "Doxycycline orale: effet anti-inflammatoire à dose sub-antimicrobienne",
+        "Isotrétinoïne: seul traitement curatif, réservé aux formes sévères",
+        "Contraception hormonale: intéressante si acné et contraception souhaitée"
+      ],
+      "examensComplementaires": [
+        "Généralement aucun examen nécessaire",
+        "Bilan hormonal si signes d'hyperandrogénie",
+        "FSH, LH, testostérone, SDHEA si SOPK suspecté",
+        "Test de grossesse avant isotrétinoïne",
+        "Bilan hépatique et lipidique si isotrétinoïne"
+      ]
+    },
+    "questionsPostRencontre": {
+      "titre": "Questions post-rencontre (PEQs)",
+      "questions": [
+        {
+          "question": "Quel est le diagnostic?",
+          "reponse": "Acné vulgaire de forme légère à modérée"
+        },
+        {
+          "question": "Quels sont les mécanismes physiopathologiques de l'acné?",
+          "reponse": "Hypersécrétion de sébum, kératinisation folliculaire anormale, prolifération de Cutibacterium acnes, inflammation"
+        },
+        {
+          "question": "Pourquoi ne pas prescrire un antibiotique seul en topique?",
+          "reponse": "Risque élevé de résistance bactérienne → toujours l'associer au peroxyde de benzoyle"
+        },
+        {
+          "question": "Quelles sont les indications de l'isotrétinoïne orale?",
+          "reponse": "Acné sévère nodulaire ou conglobata, échec des autres traitements, cicatrices en formation. Prescription spécialisée avec contraception obligatoire"
+        }
+      ]
+    },
+    "resume": {
+      "titre": "🌑 Acné vulgaire – Résumé ECOS",
+      "sections": [
+        {
+          "titre": "🔍 Anamnèse",
+          "subsections": [
+            {
+              "titre": "Symptômes et contexte",
+              "points": [
+                "Éruption cutanée chronique évoluant depuis l’adolescence",
+                "Localisation : visage, dos, poitrine, épaules",
+                "Facteurs aggravants : cycle menstruel, stress, cosmétiques comédogènes",
+                "ATCD familiaux fréquents"
+              ]
+            },
+            {
+              "titre": "Facteurs de risque",
+              "points": [
+                "Adolescence et jeunes adultes",
+                "Hyperandrogénie (syndrome des ovaires polykystiques)",
+                "Excès de sébum (peau grasse)",
+                "Utilisation de corticoïdes ou certains médicaments"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "👀 Examen clinique",
+          "subsections": [
+            {
+              "titre": "Lésions élémentaires",
+              "points": [
+                "Comédons ouverts (points noirs) et fermés (microkystes)",
+                "Papules et pustules inflammatoires",
+                "Nodules et kystes (formes sévères)",
+                "Cicatrices possibles (atrophiques, hypertrophiques)"
+              ]
+            },
+            {
+              "titre": "Zones atteintes",
+              "points": [
+                "Visage (zone T, joues)",
+                "Tronc supérieur (dos, thorax, épaules)"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "🧪 Examens diagnostiques",
+          "subsections": [
+            {
+              "titre": "Diagnostic clinique",
+              "points": [
+                "Basé sur l’aspect des lésions",
+                "Pas d’examens complémentaires nécessaires en routine"
+              ]
+            },
+            {
+              "titre": "Examens à envisager",
+              "points": [
+                "Bilan hormonal si suspicion hyperandrogénie (PCOS)",
+                "Éliminer diagnostics différentiels (folliculite, rosacée, dermatite périorale)"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "⚙️ Prise en charge",
+          "subsections": [
+            {
+              "titre": "Mesures générales",
+              "points": [
+                "Éducation du patient, observance importante",
+                "Hygiène douce (éviter excès de lavage)",
+                "Cosmétiques non comédogènes"
+              ]
+            },
+            {
+              "titre": "Traitement local (formes légères à modérées)",
+              "points": [
+                "Rétinoïdes topiques (adapalène, trétinoïne)",
+                "Peroxyde de benzoyle",
+                "Topiques antibiotiques (clindamycine, érythromycine)"
+              ]
+            },
+            {
+              "titre": "Traitement systémique (formes modérées à sévères)",
+              "points": [
+                "Antibiotiques oraux (doxycycline, lymécycline)",
+                "Contraceptifs oraux combinés (femmes, si hyperandrogénie)",
+                "Isotrétinoïne orale (formes nodulaires ou résistantes, sous surveillance stricte)"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "✅ Points clés ECOS",
+          "points": [
+            "Diagnostic clinique, pas d’examens complémentaires en routine",
+            "Évaluer sévérité : comédonienne, papulo-pustuleuse, nodulaire",
+            "Traitement adapté à la sévérité",
+            "Prévenir cicatrices (traitement précoce et efficace)",
+            "Isotrétinoïne = référence pour formes sévères"
+          ]
+        },
+        {
+          "titre": "📋 Check-list rapide ECOS",
+          "subsections": [
+            {
+              "titre": "Questions à poser",
+              "points": [
+                "Âge de début et évolution des lésions ?",
+                "Localisation et extension des lésions ?",
+                "Aggravation péri-menstruelle ?",
+                "Traitements déjà essayés ?",
+                "Antécédents familiaux d’acné sévère ?"
+              ]
+            },
+            {
+              "titre": "Examens à faire",
+              "points": [
+                "Inspection cutanée (type et sévérité des lésions)",
+                "Recherche cicatrices anciennes",
+                "Examens hormonaux si suspicion hyperandrogénie",
+                "Différentiels : rosacée, folliculite, dermatite périorale"
+              ]
+            },
+            {
+              "titre": "PEC en 3 points",
+              "points": [
+                "Mesures générales d’hygiène et soins topiques adaptés",
+                "Antibiotiques ou contraception hormonale selon sévérité et contexte",
+                "Isotrétinoïne orale dans formes nodulo-kystiques ou résistantes"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "presentationPatient": {
+      "titre": "📑 Fiche ECOS – Cas : Acné vulgaire (adolescente 16 ans, forme légère à modérée)",
+      "sections": [
+        {
+          "titre": "🧩 Checklist mentale (présentation systématisée)",
+          "points": [
+            "Intro → âge, motif (adolescente 16 ans, boutons visage depuis 8 mois)",
+            "Description des lésions → comédons + papules, localisation visage (menton, nez, front), pas de nodules",
+            "Chronologie → évolution progressive, aggravée par stress, parfois douloureuse au menton",
+            "Symptômes associés → pas de fièvre, pas de signes généraux",
+            "Facteurs gynécologiques → règles régulières, pas de contraception, pas de signes d’hyperandrogénie",
+            "Habitudes de vie → nettoyage fréquent visage, peu de maquillage, stress examens, alimentation normale",
+            "Impact psychosocial → gêne, baisse estime de soi, inquiétude cicatrices, évitement social possible",
+            "ATCD → aucun, pas d’allergies connues",
+            "Examen → lésions comédoniennes et papulo-pustuleuses visage, pas d’atteinte tronc, pas de cicatrices marquées",
+            "Résumé + hypothèse principale : acné vulgaire légère à modérée ; DD = rosacée, folliculite, dermatite périorale",
+            "PEC → topiques combinés (rétinoïde + peroxyde benzoyle ± ATB topique), hygiène douce, suivi 6-8 sem"
+          ],
+          "mnemo": {
+            "titre": "👉 Mnémo rapide ACNE",
+            "elements": [
+              "A = Adolescence (terrain typique)",
+              "C = Comédons (lésions élémentaires clés)",
+              "N = Nodules absents (légère/modérée)",
+              "E = Estime de soi (impact psychologique)"
+            ]
+          }
+        },
+        {
+          "titre": "🎤 Version longue (≈2-3 min)",
+          "contenu": "Il s’agit de Léa Morel, une adolescente de 16 ans, lycéenne, qui consulte pour des lésions cutanées évoluant depuis environ 8 mois. Les lésions siègent principalement sur le visage, surtout au niveau du menton et de la zone T. Elles se présentent comme des boutons rouges inflammatoires et des points noirs. Certaines lésions sont douloureuses, en particulier au menton. Elle n’a pas de nodules ni de kystes. \n\nL’évolution est progressive, avec une aggravation au fil du temps malgré divers produits cosmétiques testés, jugés inefficaces. Elle rapporte une aggravation autour des périodes de stress, notamment lors des examens scolaires. Elle n’a pas noté de variations claires avec son cycle menstruel. \n\nSes règles sont régulières, elle ne prend pas de contraception hormonale et ne présente aucun signe d’hyperandrogénie (pas d’hirsutisme ni d’alopécie). Ses antécédents médicaux sont vierges, elle ne prend pas de traitement médicamenteux. Pas d’antécédents familiaux particuliers signalés. \n\nConcernant ses habitudes, elle nettoie souvent son visage, utilise peu de maquillage, évite certains aliments comme le chocolat par croyance mais sans efficacité. Elle est très préoccupée par l’aspect esthétique et cela affecte sa confiance en elle, avec peur d’avoir des cicatrices et sentiment d’injustice par rapport à ses amies. \n\nÀ l’examen clinique, on retrouve des comédons ouverts et fermés ainsi que des papules inflammatoires, surtout au niveau du menton et du front. Pas d’atteinte du tronc, pas de nodules, pas de cicatrices visibles. \n\nEn résumé, il s’agit d’une adolescente présentant une acné vulgaire légère à modérée, typiquement inflammatoire et comédonienne, avec retentissement psychosocial important. Les diagnostics différentiels incluent une rosacée (rare chez l’adolescente), une folliculite ou une dermatite périorale. \n\nLa prise en charge repose sur un traitement topique combiné associant un rétinoïde (adapalène) le soir et du peroxyde de benzoyle le matin, avec possibilité d’ajouter une clindamycine topique associée au peroxyde si besoin pour un maximum de 3 mois. Je conseillerais aussi des mesures de soins doux : nettoyage matin et soir avec gel non comédogène, hydratation adaptée, protection solaire, éviter de percer les lésions. J’insisterais sur la patience : amélioration après 4 à 6 semaines minimum, parfois aggravation initiale. Le suivi est prévu dans 6 à 8 semaines pour adapter la prise en charge. Si aggravation ou échec, une antibiothérapie orale ou une contraception hormonale pourraient être discutées. Enfin, dans les formes sévères ou cicatricielles, l’isotrétinoïne orale est le traitement de référence, en dermatologie spécialisée."
+        },
+        {
+          "titre": "⚡ Version express (SBAR, 30 sec)",
+          "contenu": "S (Situation) : Léa, 16 ans, acné inflammatoire du visage évoluant depuis 8 mois.\n\nB (Background) : Règles régulières, pas d’hyperandrogénie, pas de traitement médicamenteux, cosmétiques inefficaces. Retentissement psychologique marqué.\n\nA (Assessment) : Acné vulgaire légère à modérée. DD : rosacée, folliculite, dermatite périorale.\n\nR (Recommendation) : PEC par rétinoïde topique le soir + peroxyde de benzoyle le matin ± ATB topique. Hygiène douce, suivi 6-8 semaines. Informer sur délai d’efficacité et rassurer sur évolution."
+        },
+        {
+          "titre": "🎲 Touches ludiques / mnémos",
+          "subsections": [
+            {
+              "titre": "👉 Physiopathologie : 4 piliers",
+              "points": [
+                "Sébum (hypersécrétion androgéno-dépendante)",
+                "Kératinisation folliculaire anormale",
+                "Cutibacterium acnes (prolifération bactérienne)",
+                "Inflammation secondaire"
+              ]
+            },
+            {
+              "titre": "👉 Classification sévérité (simplifiée)",
+              "points": [
+                "Légère = comédons ± quelques papules",
+                "Modérée = papules/pustules multiples, quelques nodules",
+                "Sévère = nodules/kystes, cicatrices"
+              ]
+            },
+            {
+              "titre": "👉 Conseils d’hygiène",
+              "points": [
+                "Nettoyage doux matin et soir",
+                "Hydratation non comédogène",
+                "Éviter gommages et perçage boutons",
+                "Protection solaire indispensable"
+              ]
+            },
+            {
+              "titre": "⚠️ Pièges ECOS",
+              "points": [
+                "Ne pas prescrire antibiotique topique seul (résistance)",
+                "Ne pas promettre guérison rapide",
+                "Toujours expliquer délai de 6-8 semaines",
+                "Ne pas minimiser impact psychologique"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "❓ Questions probables de l'examinateur (avec réponses orales)",
+          "subsections": [
+            {
+              "titre": "1. Arguments pour et contre chaque hypothèse",
+              "questions": [
+                {
+                  "question": "Acné vulgaire",
+                  "reponse": {
+                    "pour": [
+                      "Adolescente 16 ans",
+                      "Comédons et papules inflammatoires",
+                      "Localisation visage typique",
+                      "Évolution chronique",
+                      "Impact psychosocial"
+                    ],
+                    "contre": [
+                      "Pas d’arguments contre majeurs"
+                    ]
+                  }
+                },
+                {
+                  "question": "Rosacée",
+                  "reponse": {
+                    "contre": [
+                      "Très rare à 16 ans",
+                      "Pas de flush ni télangiectasies",
+                      "Pas d’atteinte oculaire"
+                    ]
+                  }
+                },
+                {
+                  "question": "Folliculite",
+                  "reponse": {
+                    "contre": [
+                      "Lésions folliculaires pustuleuses isolées absentes",
+                      "Chronique évolutive différente"
+                    ]
+                  }
+                },
+                {
+                  "question": "Dermatite périorale",
+                  "reponse": {
+                    "contre": [
+                      "Pas d’éruption micro-papuleuse péribuccale typique",
+                      "Atteinte plus diffuse visage"
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "titre": "2. Examens complémentaires immédiats",
+              "questions": [
+                {
+                  "question": "Quels examens demanderiez-vous ?",
+                  "reponse": [
+                    "Aucun examen complémentaire nécessaire en routine",
+                    "Bilan hormonal si suspicion hyperandrogénie (hirsutisme, irrégularités règles, SOPK)",
+                    "Bilan biologique si traitement systémique envisagé (isotrétinoïne)"
+                  ]
+                }
+              ]
+            },
+            {
+              "titre": "3. Diagnostic définitif, traitement, suivi",
+              "questions": [
+                {
+                  "question": "Diagnostic",
+                  "reponse": "Acné vulgaire légère à modérée chez une adolescente"
+                },
+                {
+                  "question": "Traitement",
+                  "reponse": {
+                    "immediat": [
+                      "Rétinoïde topique (adapalène) le soir",
+                      "Peroxyde de benzoyle le matin",
+                      "± Clindamycine topique associée au peroxyde max 3 mois"
+                    ],
+                    "support": [
+                      "Hygiène douce",
+                      "Hydratation non comédogène",
+                      "Protection solaire"
+                    ],
+                    "secondLigne": [
+                      "Doxycycline orale si échec",
+                      "Contraception hormonale si souhaitée",
+                      "Isotrétinoïne orale en cas de forme sévère (dermatologue)"
+                    ]
+                  }
+                },
+                {
+                  "question": "Suivi",
+                  "reponse": [
+                    "Contrôle à 6-8 semaines",
+                    "Expliquer délai d’action (≥4 semaines)",
+                    "Adapter traitement selon tolérance et efficacité",
+                    "Prévenir cicatrices par traitement précoce"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,414 @@
+{
+  "title": "Pédiatrie - Cardiopathie congénitale CIV",
+  "type": "ECOS",
+  "context": {
+    "setting": "Cabinet de pédiatrie",
+    "patient": "Coralie, 2 mois, première enfant, stagnation pondérale depuis 15 jours",
+    "vitals": {
+      "fc": "170 bpm",
+      "fr": "80/min",
+      "ta": "75/45 mmHg"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Motif de consultation et symptômes actuels",
+          "details": [
+            "Stagnation pondérale [Pas de prise de poids depuis 15 jours]",
+            "Fatigue aux tétées [S'arrête pour reprendre son souffle]",
+            "Transpiration [Plus que d'habitude]",
+            "Quantités alimentaires [Diminuées, mange plus lentement]",
+            "Mode d'alimentation [Allaitement maternel exclusif]",
+            "Production lactée maternelle [Suffisante]"
+          ]
+        },
+        {
+          "id": "a2",
+          "text": "Symptômes digestifs et généraux",
+          "details": [
+            "Selles [Normales pour un enfant allaité]",
+            "Vomissements [Non]",
+            "Fièvre [Non]",
+            "Toux [Non]",
+            "Rhinorrhée [Non]",
+            "Contacts malades [Non]"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Antécédents périnataux",
+          "details": [
+            "Grossesse [Sans problème]",
+            "Échographies prénatales [Effectuées, normales]",
+            "Médicaments pendant grossesse [Seulement ceux prescrits]",
+            "Accouchement [À terme, voie basse, sans problème]",
+            "Poids de naissance [3.2 kg]",
+            "Taille de naissance [50 cm]",
+            "Périmètre crânien [34 cm]"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Période néonatale",
+          "details": [
+            "Problèmes à la naissance [Aucun]",
+            "Examen en maternité [Normal au J2]",
+            "Sortie de maternité [Sans particularité]",
+            "Développement initial [Normal]"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Antécédents familiaux",
+          "details": [
+            "Maladies congénitales [Non]",
+            "Problèmes digestifs familiaux [Non]",
+            "Cardiopathies familiales [Non mentionnées]",
+            "Consanguinité [Non]"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "État général et mensurations",
+          "details": [
+            "État général [Conservé, enfant réactif]",
+            "Contact visuel [Fixe bien du regard]",
+            "Coloration [Pâle]",
+            "Poids actuel [3.5 kg (-2 DS)]",
+            "Taille actuelle [55 cm (médiane)]",
+            "Périmètre crânien [38 cm (médiane)]"
+          ]
+        },
+        {
+          "id": "e2",
+          "text": "Signes vitaux",
+          "details": [
+            "Fréquence cardiaque [170/min]",
+            "Fréquence respiratoire [80/min - tachypnée]",
+            "TA bras droit [75/45 mmHg]",
+            "TA membre inférieur droit [74/43 mmHg]",
+            "Différentiel de TA [Absent - exclut coarctation]"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Examen cardiovasculaire",
+          "details": [
+            "Souffle systolique [Presque pansystolique, 3/6]",
+            "Localisation [Maximum 4e EIC gauche]",
+            "Irradiation [Sur tout le thorax]",
+            "Roulement diastolique [Présent]",
+            "B2 [Discrètement accentué]",
+            "Pouls périphériques [Présents]"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Examen pulmonaire",
+          "details": [
+            "Auscultation [Physiologique]",
+            "Signes de détresse [Tachypnée isolée]",
+            "Tirage [Absent]",
+            "Saturation O2 [À mesurer]"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Examen abdominal",
+          "details": [
+            "Inspection [Souple, indolore]",
+            "Hépatomégalie [Foie à 4 cm du rebord costal]",
+            "Splénomégalie [Rate non palpable]",
+            "Ascite [Absente]"
+          ]
+        },
+        {
+          "id": "e6",
+          "text": "Reste de l'examen",
+          "details": [
+            "Neurologique [Normal]",
+            "ORL [Normal]",
+            "Cutané [Normal]",
+            "Membres [Pas d'œdèmes]"
+          ]
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Hypothèses diagnostiques initiales (avant examen)",
+          "ddSection": {
+            "title": "Causes de mauvaise prise pondérale chez le nourrisson",
+            "categories": [
+              {
+                "name": "Causes nutritionnelles",
+                "items": [
+                  {
+                    "text": "Apports insuffisants",
+                    "cause": "Arguments:\n\t□ Fatigue aux tétées\n\t□ Quantités diminuées",
+                    "test": "→ Pesées avant/après tétées"
+                  },
+                  {
+                    "text": "Allergie protéines lait de vache",
+                    "cause": "Arguments CONTRE:\n\t□ Allaitement maternel\n\t□ Pas de symptômes digestifs",
+                    "test": "→ Test d'éviction si suspicion"
+                  }
+                ]
+              },
+              {
+                "name": "Causes infectieuses",
+                "items": [
+                  {
+                    "text": "Infections congénitales (CMV, toxo)",
+                    "cause": "Arguments CONTRE:\n\t□ Grossesse normale\n\t□ Début tardif",
+                    "test": "→ Sérologies si suspicion"
+                  },
+                  {
+                    "text": "Infection urinaire",
+                    "cause": "Arguments CONTRE:\n\t□ Pas de fièvre\n\t□ État général conservé",
+                    "test": "→ ECBU si doute"
+                  }
+                ]
+              },
+              {
+                "name": "Maladies chroniques",
+                "items": [
+                  {
+                    "text": "Mucoviscidose",
+                    "cause": "Arguments CONTRE:\n\t□ Selles normales\n\t□ Pas d'infections respiratoires",
+                    "test": "→ Test de la sueur"
+                  },
+                  {
+                    "text": "Cardiopathie congénitale",
+                    "cause": "Arguments POUR:\n\t□ Fatigue aux tétées\n\t□ Transpiration excessive\n\t□ Tachypnée",
+                    "test": "→ Radio thorax, ECG, échocardio"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Diagnostic après examen clinique",
+          "details": [
+            "Cardiopathie congénitale très probable",
+            "Souffle holosystolique caractéristique",
+            "Signes d'insuffisance cardiaque",
+            "Hépatomégalie de stase",
+            "Retard de croissance pondérale"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Examens complémentaires urgents",
+          "details": [
+            "TA aux 4 membres [Exclure coarctation]",
+            "Radiographie thorax [Cardiomégalie, hypervascularisation]",
+            "ECG [Hypertrophie biventriculaire]",
+            "Échographie cardiaque [Diagnostic définitif]",
+            "Saturation O2 [Évaluer shunt]",
+            "Gazométrie si détresse"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Résultats attendus et diagnostic final",
+          "details": [
+            "CIV large confirmée à l'échographie",
+            "Shunt gauche-droite significatif",
+            "Dilatation cavités gauches et droites",
+            "Index cardio-thoracique 65%",
+            "Hypervascularisation pulmonaire"
+          ]
+        },
+        {
+          "id": "m5",
+          "text": "Traitement médical immédiat",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Traitement de l'insuffisance cardiaque",
+                "content": "Diurétiques (furosémide 1-2 mg/kg/j)\nIEC (captopril 0.5-1 mg/kg/j en 3 prises)\nDigoxine parfois (usage en diminution)\nRestriction hydrique modérée"
+              },
+              {
+                "title": "Support nutritionnel",
+                "content": "Enrichissement calorique du lait\nFractionnement des repas\nPosition semi-assise pour tétées\nSurveillance pondérale rapprochée"
+              },
+              {
+                "title": "Surveillance",
+                "content": "Hospitalisation initiale\nMonitoring cardio-respiratoire\nPesées quotidiennes\nDiurèse\nIonogramme sous diurétiques"
+              }
+            ]
+          }
+        },
+        {
+          "id": "m6",
+          "text": "Prise en charge à long terme",
+          "details": [
+            "Suivi cardio-pédiatrique régulier",
+            "Surveillance échographique",
+            "Fermeture spontanée possible (petites CIV)",
+            "Chirurgie si shunt important persistant",
+            "Cerclage pulmonaire si insuffisance cardiaque sévère",
+            "Pronostic excellent après correction"
+          ]
+        },
+        {
+          "id": "m7",
+          "text": "Physiopathologie de la décompensation",
+          "details": [
+            "Résistances pulmonaires élevées à la naissance",
+            "Baisse progressive en 4-6 semaines",
+            "Augmentation du shunt gauche-droite",
+            "Surcharge volumique du cœur",
+            "Décompensation cardiaque",
+            "Explique la tolérance initiale"
+          ]
+        },
+        {
+          "id": "m8",
+          "text": "Complications à prévenir",
+          "redflagsSection": {
+            "title": "Signes de décompensation grave",
+            "items": [
+              {
+                "text": "Détresse respiratoire aiguë",
+                "description": "Tirage, cyanose, épuisement"
+              },
+              {
+                "text": "Choc cardiogénique",
+                "description": "Hypotension, oligurie, marbrures"
+              },
+              {
+                "text": "Troubles du rythme",
+                "description": "Tachycardie extrême, arythmie"
+              },
+              {
+                "text": "Hypertension pulmonaire",
+                "description": "Cyanose d'effort, syncopes"
+              },
+              {
+                "text": "Endocardite",
+                "description": "Fièvre, altération état général"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Information aux parents",
+          "exemplesPhrases": [
+            "Coralie présente une malformation cardiaque congénitale appelée communication interventriculaire.",
+            "C'est un petit trou entre les deux ventricules du cœur qui cause une surcharge de travail.",
+            "C'est la cardiopathie congénitale la plus fréquente et le pronostic est excellent avec un traitement adapté."
+          ]
+        },
+        {
+          "id": "c2",
+          "text": "Questions des parents",
+          "content": "[Est-ce grave?] [Pourquoi cela n'a pas été vu avant?] [Va-t-elle devoir être opérée?] [Est-ce héréditaire?] [Pourra-t-elle vivre normalement?]"
+        },
+        {
+          "id": "c3",
+          "text": "Réponses rassurantes et plan",
+          "exemplesPhrases": [
+            "Les symptômes apparaissent progressivement car les poumons du bébé s'adaptent après la naissance.",
+            "Beaucoup de petites CIV se ferment spontanément. Les plus grandes peuvent nécessiter une chirurgie.",
+            "Avec le traitement médical, Coralie devrait reprendre du poids et mieux tolérer les tétées.",
+            "Après traitement, les enfants avec CIV ont un développement tout à fait normal.",
+            "Le risque pour un futur enfant est faible, environ 3-5% si un premier enfant est atteint."
+          ]
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "informationsExpert": {
+      "titre": "Points clés pour l'évaluation",
+      "pointsCles": [
+        "Reconnaître les signes d'insuffisance cardiaque du nourrisson",
+        "Comprendre la physiopathologie du shunt gauche-droite",
+        "Savoir que les symptômes apparaissent après baisse des résistances pulmonaires",
+        "Examiner systématiquement la TA aux 4 membres",
+        "Identifier le souffle caractéristique de CIV",
+        "Organiser la prise en charge urgente",
+        "Expliquer clairement la pathologie aux parents"
+      ],
+      "pieges": [
+        "Attribuer les symptômes à un problème nutritionnel simple",
+        "Méconnaître l'hépatomégalie de stase",
+        "Oublier de mesurer la TA aux 4 membres",
+        "Retarder le transfert hospitalier",
+        "Minimiser la gravité potentielle",
+        "Ne pas expliquer la tolérance initiale"
+      ]
+    },
+    "theoriePratique": {
+      "titre": "Aspects théoriques",
+      "sections": [
+        {
+          "titre": "Types de cardiopathies congénitales",
+          "points": [
+            "Shunt G-D: CIV (30%), CIA, canal artériel",
+            "Shunt D-G: Tétralogie Fallot, TGV",
+            "Sans shunt: Sténoses valvulaires, coarctation",
+            "CIV: plus fréquente des cardiopathies",
+            "Incidence: 8/1000 naissances"
+          ]
+        },
+        {
+          "titre": "Évolution naturelle de la CIV",
+          "points": [
+            "25-40% fermeture spontanée première année",
+            "Petites CIV: souvent asymptomatiques",
+            "CIV larges: insuffisance cardiaque 4-8 semaines",
+            "Sans traitement: HTAP irréversible (Eisenmenger)",
+            "Après chirurgie: pronostic excellent"
+          ]
+        },
+        {
+          "titre": "Signes cliniques selon l'âge",
+          "points": [
+            "Naissance: souvent asymptomatique",
+            "2-6 semaines: apparition progressive symptômes",
+            "Nourrisson: insuffisance cardiaque congestive",
+            "Enfant: retard croissance, infections respiratoires",
+            "Adulte non traité: HTAP, cyanose tardive"
+          ]
+        }
+      ],
+      "rappelsTherapeutiques": [
+        "Diurétiques: furosémide 1-2 mg/kg/j",
+        "IEC: captopril 0.5-1 mg/kg/j en 3 prises",
+        "Nutrition: 120-150 kcal/kg/j",
+        "Prophylaxie endocardite si indiquée",
+        "Vaccination RSV (palivizumab) si < 2 ans"
+      ],
+      "examensComplementaires": [
+        "Radio thorax: ICT > 60%, hypervascularisation",
+        "ECG: HVG + HVD, déviation axe gauche",
+        "Échocardio: localisation, taille, retentissement",
+        "Cathétérisme: rarement nécessaire",
+        "BNP/NT-proBNP: marqueurs insuffisance cardiaque"
+      ]
+    }
+  }
+}

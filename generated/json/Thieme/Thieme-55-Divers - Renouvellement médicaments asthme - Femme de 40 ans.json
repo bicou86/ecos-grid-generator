@@ -1,0 +1,285 @@
+{
+  "title": "Thieme Divers 55 - Renouvellement médicaments asthme - Femme de 40 ans",
+  "category": "Thieme Divers",
+  "subcategory": "Renouvellement médicaments asthme",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Femme de 40 ans, Mme Erena Johnson, consultant pour renouvellement médicaments asthme",
+    "vitals": {
+      "fc": "80 bpm",
+      "ta": "120/80 mmHg",
+      "fr": "16/min",
+      "temperature": "37°C"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Motif principal de consultation",
+          "binaryOnly": true,
+          "patientComment": "renouvellement médicaments asthme"
+        },
+        {
+          "id": "a2",
+          "text": "Analyse de la plainte principale",
+          "details": [
+            "Contrôle habituel [bien contrôlé]",
+            "Facteurs déclenchants [froid, rhume]",
+            "Rupture traitement [médicaments épuisés]",
+            "Fréquence symptômes [quelques fois/semaine]",
+            "Hospitalisations [2× seulement]"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Recherche de complications",
+          "details": [
+            "Exacerbations fréquentes",
+            "Candidose orale [corticoïdes inhalés]",
+            "Remodelage bronchique",
+            "Limitation activités",
+            "Hospitalisations"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Revue des systèmes",
+          "details": [
+            "Respiratoire complet",
+            "ORL",
+            "Allergologique"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Antécédents médicaux et traitements",
+          "details": [
+            "Béclométhasone inhalateur"
+          ]
+        },
+        {
+          "id": "a6",
+          "text": "Histoire sociale et habitudes",
+          "details": [
+            "Jardinière paysagiste",
+            "Ex-fumeuse il y a 10 ans (10 cig/5 ans)",
+            "Sexuellement active monogame avec mari",
+            "Allergie animaux, pollens, poussière"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Signes vitaux et apparence générale",
+          "binaryOnly": true
+        },
+        {
+          "id": "e2",
+          "text": "Examen ORL",
+          "details": [
+            "Rhinorrhée",
+            "Érythème pharyngé",
+            "Sensibilité sinus"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Examen thoracique",
+          "details": [
+            "Inspection (déformations)",
+            "Palpation (FVT)",
+            "Percussion",
+            "Auscultation (sifflements, crépitants)"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Signes de détresse respiratoire",
+          "details": [
+            "Cyanose",
+            "Tirage",
+            "Battement ailes nez",
+            "Utilisation muscles accessoires"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Examen cardiovasculaire",
+          "details": [
+            "Auscultation cardiaque",
+            "Recherche signes droits"
+          ]
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostics différentiels",
+          "ddSection": {
+            "title": "Hypothèses diagnostiques à considérer",
+            "categories": [
+              {
+                "name": "Diagnostics prioritaires",
+                "items": [
+                  {
+                    "text": "Asthme bronchique",
+                    "cause": "Arguments POUR:\n\t□ ATCD asthme, traitement de fond, allergies multiples",
+                    "test": "→ Spirométrie avec test réversibilité, FeNO"
+                  },
+                  {
+                    "text": "Exacerbation asthme",
+                    "cause": "Arguments POUR:\n\t□ Exposition froid, infection virale, arrêt traitement, symptômes aigus",
+                    "test": "→ Peak flow, gazométrie si sévère, radiographie thorax"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Examens complémentaires appropriés",
+          "details": [
+            "Radiographie thoracique",
+            "Oxymétrie pouls",
+            "Tests fonction pulmonaire",
+            "Débit pointe"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Plan de prise en charge",
+          "details": [
+            "Renouvellement traitement de fond",
+            "Plan action écrit",
+            "Technique inhalation",
+            "Éviction allergènes",
+            "Spirométrie contrôle",
+            "Vaccination grippe"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Conseils et éducation patient",
+          "details": [
+            "Éviction triggers",
+            "Plan action crise",
+            "Technique inhalation",
+            "Rinçage bouche après corticoïdes",
+            "Consultation si aggravation"
+          ]
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Questions du patient",
+          "content": ""
+        },
+        {
+          "id": "c2",
+          "text": "Conseils spécifiques",
+          "content": "Exacerbation asthme post-virale. Reprise traitement de fond. Éviction allergènes professionnels difficile mais essentielle."
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour le patient standardisé",
+      "nom": "Mme Erena Johnson",
+      "age": "40 ans",
+      "contexte": "Cabinet de médecine générale",
+      "motifConsultation": {
+        "plaintePrincipale": "renouvellement médicaments asthme",
+        "autreChose": "Asthme depuis années, bien contrôlé. Retour Canada (froid), rhume amélio médicaments OTC. Reste petite toux sèche. Médicaments épuisés pendant voyage."
+      },
+      "histoireActuelle": {
+        "symptomesPrincipaux": [
+          "Asthme depuis années, bien contrôlé",
+          " Retour Canada (froid), rhume amélio médicaments OTC",
+          " Reste petite toux sèche",
+          " Médicaments épuisés pendant voyage"
+        ],
+        "complications": [
+          "Difficultés respiratoires et sifflements semaine dernière quelques fois",
+          " Albutérol MDI et béclométhasone régulièrement",
+          " Hospitalisée 2× seulement pour exacerbation asthme"
+        ],
+        "contexteSocial": [
+          "Jardinière paysagiste",
+          " Ex-fumeuse il y a 10 ans (10 cig/5 ans)",
+          " Sexuellement active monogame avec mari",
+          " Allergie animaux, pollens, poussière"
+        ]
+      },
+      "simulation": {
+        "attitude": [
+          "Soulagée retour Canada",
+          "Inquiète manque médicaments",
+          "Coopérative"
+        ],
+        "durantExamen": [
+          "Pas de sifflements audibles actuellement",
+          "Examen normal"
+        ],
+        "durantConsultation": []
+      },
+      "inquietudes": {
+        "principales": []
+      }
+    },
+    "informationsExpert": {
+      "titre": "Informations pour l'expert",
+      "pointsCles": [
+        "Cas: Renouvellement médicaments asthme",
+        "Patient: Femme de 40 ans",
+        "Anamnèse et examen complets",
+        "Évaluation des complications",
+        "Conseils et éducation thérapeutique"
+      ],
+      "pieges": [
+        "Négliger triggers professionnels",
+        "Ne pas vérifier technique",
+        "Oublier rinçage bouche",
+        "Sous-estimer gravité"
+      ]
+    },
+    "theoriePratique": {
+      "titre": "Gestion de l'asthme",
+      "sections": [
+        {
+          "titre": "Éviction des allergènes",
+          "points": [
+            "Identifier triggers personnels",
+            "Éviter exposition pollens",
+            "Contrôle environnement domestique",
+            "Précautions professionnelles"
+          ]
+        },
+        {
+          "titre": "Technique inhalation",
+          "points": [
+            "Expirer complètement",
+            "Déclencher et inspirer profondément",
+            "Retenir 10 secondes",
+            "Rincer bouche après corticoïdes"
+          ]
+        }
+      ]
+    }
+  }
+}

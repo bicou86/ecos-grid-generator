@@ -1,0 +1,222 @@
+{
+  "title": "Thieme Abdomen 12 - Douleur abdominale du côté droit - Femme de 30 ans",
+  "category": "Thieme Abdomen",
+  "subcategory": "Douleur abdominale du côté droit",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Femme de 30 ans, Mme Sharon Thompson, consultant pour douleur abdominale",
+    "vitals": {
+      "temperature": "38.3°C",
+      "ta": "120/80 mmHg",
+      "fc": "100 bpm",
+      "fr": "20/min"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Motif principal de consultation",
+          "binaryOnly": true,
+          "patientComment": "douleur abdominale"
+        },
+        {
+          "id": "a2",
+          "text": "Analyse de la plainte principale (ABCDE)",
+          "details": [
+            "Apparition et durée [Douleur péri-ombilicale depuis 12h, migrée vers QID]",
+            "Bilan (localisation, irradiation)",
+            "Caractère et qualité de la douleur",
+            "Degré d'intensité (échelle 1-10)",
+            "Éléments associés et facteurs modifiants"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Symptômes associés et antécédents",
+          "details": [
+            "Perte d'appétit",
+            "DDR il y a 1 semaine",
+            "Pas de pertes vaginales anormales"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Histoire sociale et habitudes de vie",
+          "details": [
+            "Architecte",
+            "Fume 1 pqt/j × 10 ans",
+            "Célibataire, sexuellement active (3 partenaires dernière année)"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Revue des systèmes",
+          "details": [
+            "Système gastro-intestinal",
+            "Système gynécologique"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Signes vitaux et apparence générale",
+          "binaryOnly": true
+        },
+        {
+          "id": "e2",
+          "text": "Examen de la tête et du cou",
+          "details": [
+            "Recherche pâleur, ictère",
+            "Examen ORL avec abaisse-langue",
+            "Palpation ganglions lymphatiques",
+            "Examen thyroïde"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Examen cardio-pulmonaire",
+          "details": [
+            "Auscultation cardiaque [S1 et S2 normaux]",
+            "Auscultation pulmonaire bilatérale"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Examen abdominal complet",
+          "details": [
+            "Inspection (cicatrices, distension)",
+            "Auscultation (bruits intestinaux)",
+            "Percussion (matité, tympanisme)",
+            "Palpation superficielle et profonde",
+            "Recherche défense et rebond [sensibilité QID]"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Examens spécifiques selon le cas",
+          "details": [
+            "Examen pelvien programmé"
+          ]
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostics différentiels à évoquer",
+          "ddSection": {
+            "title": "Hypothèses diagnostiques",
+            "categories": [
+              {
+                "name": "Diagnostics prioritaires",
+                "items": [
+                  {
+                    "text": "Appendicite aiguë",
+                    "cause": "Arguments POUR:\n\t□ Migration douleur vers QID, fièvre, défense",
+                    "test": "→ CT abdomen, NFS"
+                  },
+                  {
+                    "text": "Maladie inflammatoire pelvienne",
+                    "cause": "Arguments POUR:\n\t□ Femme jeune, sexuellement active, fièvre",
+                    "test": "→ Selon orientation clinique"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Examens complémentaires pertinents",
+          "details": [
+            "Examen pelvien",
+            "NFS",
+            "ECBU",
+            "Prélèvement vaginal",
+            "US pelvienne",
+            "CT abdomen"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Plan de prise en charge immédiate",
+          "details": [
+            "Investigations ambulatoires",
+            "Traitement symptomatique",
+            "Suivi après résultats"
+          ]
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Questions difficiles du patient",
+          "content": "Est-ce l'appendicite?"
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour le patient standardisé",
+      "nom": "Mme Sharon Thompson",
+      "age": "30 ans",
+      "contexte": "Cabinet de médecine générale",
+      "motifConsultation": {
+        "plaintePrincipale": "douleur abdominale",
+        "autreChose": "Douleur péri-ombilicale depuis 12h, migrée vers QID. Fièvre, nausées, vomissements."
+      },
+      "histoireActuelle": {
+        "symptomesPrincipaux": [
+          "Douleur péri-ombilicale depuis 12h, migrée vers QID",
+          " Fièvre, nausées, vomissements"
+        ],
+        "contextePsychosocial": [
+          "Architecte",
+          " Fume 1 pqt/j × 10 ans",
+          " Célibataire, sexuellement active (3 partenaires dernière année)"
+        ]
+      },
+      "simulation": {
+        "attitude": [
+          "Douleur sévère QID",
+          "Anxieuse"
+        ],
+        "durantExamen": [
+          "Sensibilité QID avec défense"
+        ]
+      },
+      "inquietudes": {
+        "principales": [
+          "Est-ce l'appendicite?"
+        ]
+      }
+    },
+    "informationsExpert": {
+      "titre": "Informations pour l'expert",
+      "pointsCles": [
+        "Cas de Douleur abdominale du côté droit",
+        "Patient: Femme de 30 ans",
+        "Anamnèse complète avec ABCDE",
+        "Examen abdominal détaillé",
+        "Diagnostic différentiel approprié"
+      ],
+      "pieges": [
+        "Ne pas faire examen pelvien chez femme jeune",
+        "Manquer MIP"
+      ]
+    }
+  }
+}

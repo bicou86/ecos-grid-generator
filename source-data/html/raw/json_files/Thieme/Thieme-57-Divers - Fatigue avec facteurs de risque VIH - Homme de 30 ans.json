@@ -1,0 +1,299 @@
+{
+  "title": "Thieme Divers 57 - Fatigue avec facteurs de risque VIH - Homme de 30 ans",
+  "category": "Thieme Divers",
+  "subcategory": "Fatigue avec facteurs de risque VIH",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Homme de 30 ans, M. Peter Smith, consultant pour ne se sent pas bien",
+    "vitals": {
+      "fc": "80 bpm",
+      "ta": "120/80 mmHg",
+      "fr": "18/min",
+      "temperature": "37°C"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Motif principal de consultation",
+          "binaryOnly": true,
+          "patientComment": "ne se sent pas bien"
+        },
+        {
+          "id": "a2",
+          "text": "Analyse de la plainte principale",
+          "details": [
+            "Durée et évolution [3 mois, progressif]",
+            "Impact professionnel [performances affectées]",
+            "Symptômes associés [concentration, fatigue]",
+            "Perte pondérale [5-7kg/6mois]",
+            "Facteurs risque [HSH, multiples partenaires]"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Recherche de complications",
+          "details": [
+            "Infections opportunistes",
+            "Sarcome Kaposi",
+            "Lymphome",
+            "Neuropathie VIH",
+            "Démence VIH"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Revue des systèmes",
+          "details": [
+            "Général (B symptômes)",
+            "Infectieux",
+            "Dermatologique",
+            "Neurologique",
+            "Digestif"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Antécédents médicaux et traitements",
+          "details": [
+            "Voir anamnèse détaillée"
+          ]
+        },
+        {
+          "id": "a6",
+          "text": "Histoire sociale et habitudes",
+          "details": [
+            "Fume 1 pqt × 10 ans",
+            "Boit 1-2 verres vin/jour, plus aux fêtes",
+            "Marijuana depuis université",
+            "Sexuellement actif hommes et femmes, préservatifs occasionnels"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Signes vitaux et apparence générale",
+          "binaryOnly": true
+        },
+        {
+          "id": "e2",
+          "text": "Recherche signes généraux",
+          "details": [
+            "Pâleur",
+            "Ictère",
+            "Cyanose",
+            "Œdèmes"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Examen ganglionnaire",
+          "details": [
+            "Chaînes cervicales",
+            "Axillaires",
+            "Inguinales",
+            "Splénomégalie"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Examen abdominal",
+          "details": [
+            "Hépatomégalie",
+            "Masses",
+            "Ascite",
+            "Sensibilité"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Examen cutané",
+          "details": [
+            "Sarcome Kaposi",
+            "Zona",
+            "Candidose"
+          ]
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostics différentiels",
+          "ddSection": {
+            "title": "Hypothèses diagnostiques à considérer",
+            "categories": [
+              {
+                "name": "Diagnostics prioritaires",
+                "items": [
+                  {
+                    "text": "Infection VIH",
+                    "cause": "Arguments POUR:\n\t□ HSH, multiples partenaires, protection inconstante, ATCD IST, fatigue/amaigrissement",
+                    "test": "→ Test VIH 4e génération, CD4/charge virale si positif"
+                  },
+                  {
+                    "text": "Toxicomanie",
+                    "cause": "Arguments POUR:\n\t□ Marijuana chronique, alcool quotidien, fatigue, amaigrissement",
+                    "test": "→ Dépistage toxicologique urinaire complet"
+                  },
+                  {
+                    "text": "Syndrome fatigue chronique",
+                    "cause": "Arguments POUR:\n\t□ Fatigue 3 mois, concentration altérée, pas autre cause",
+                    "test": "→ Diagnostic exclusion, bilan complet"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Examens complémentaires appropriés",
+          "details": [
+            "Examen génital et rectal",
+            "NFS avec formule",
+            "Charge virale VIH",
+            "CD4",
+            "Dépistage toxicologique",
+            "Radiographie thoracique",
+            "Test tuberculine"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Plan de prise en charge",
+          "details": [
+            "Dépistage VIH urgent",
+            "CD4 et charge virale si positif",
+            "Dépistage IST complet",
+            "Counseling prévention",
+            "Notification partenaires",
+            "Support psychosocial"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Conseils et éducation patient",
+          "details": [
+            "Rapports protégés",
+            "Notification partenaires",
+            "Arrêt drogues",
+            "Observance future traitement",
+            "Groupes support"
+          ]
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Questions du patient",
+          "content": "[J'ai entendu dire que le traitement du VIH est cher, et je n'ai pas assez d'assurance.]"
+        },
+        {
+          "id": "c2",
+          "text": "Conseils spécifiques",
+          "content": "Haut risque VIH. Dépistage urgent. Counseling prévention. Support psychosocial. Accès programmes aide financière."
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour le patient standardisé",
+      "nom": "M. Peter Smith",
+      "age": "30 ans",
+      "contexte": "Cabinet de médecine générale",
+      "motifConsultation": {
+        "plaintePrincipale": "ne se sent pas bien",
+        "autreChose": "Ne se sent pas bien depuis 3 mois, progressif, s'aggrave. Affecte performances professionnelles. Fatigue, épuisé, manque concentration. Perte 5-7kg/6mois."
+      },
+      "histoireActuelle": {
+        "symptomesPrincipaux": [
+          "Ne se sent pas bien depuis 3 mois, progressif, s'aggrave",
+          " Affecte performances professionnelles",
+          " Fatigue, épuisé, manque concentration",
+          " Perte 5-7kg/6mois"
+        ],
+        "complications": [
+          "Comptable",
+          " Herpès génital il y a 1 an",
+          " Jamais testé VIH"
+        ],
+        "contexteSocial": [
+          "Fume 1 pqt × 10 ans",
+          " Boit 1-2 verres vin/jour, plus aux fêtes",
+          " Marijuana depuis université",
+          " Sexuellement actif hommes et femmes, préservatifs occasionnels"
+        ]
+      },
+      "simulation": {
+        "attitude": [
+          "Mal à l'aise",
+          "Inquiet coût traitement",
+          "Révélation progressive orientation"
+        ],
+        "durantExamen": [
+          "Pas signes physiques évidents",
+          "Perte poids visible"
+        ],
+        "durantConsultation": []
+      },
+      "inquietudes": {
+        "principales": [
+          "[J'ai entendu dire que le traitement du VIH est cher, et je n'ai pas assez d'assurance.]"
+        ]
+      }
+    },
+    "informationsExpert": {
+      "titre": "Informations pour l'expert",
+      "pointsCles": [
+        "Cas: Fatigue avec facteurs de risque VIH",
+        "Patient: Homme de 30 ans",
+        "Anamnèse et examen complets",
+        "Évaluation des complications",
+        "Conseils et éducation thérapeutique"
+      ],
+      "pieges": [
+        "Jugement sur orientation",
+        "Ne pas proposer dépistage",
+        "Oublier counseling",
+        "Confidentialité"
+      ]
+    },
+    "theoriePratique": {
+      "titre": "Prévention et counseling VIH",
+      "sections": [
+        {
+          "titre": "Prévention transmission",
+          "points": [
+            "Rapports protégés systématiques",
+            "Notification partenaires",
+            "Dépistage régulier IST",
+            "PrEP pour partenaires séronégatifs"
+          ]
+        },
+        {
+          "titre": "Suivi VIH",
+          "points": [
+            "CD4 et charge virale réguliers",
+            "Observance thérapeutique",
+            "Vaccinations à jour",
+            "Dépistage infections opportunistes"
+          ]
+        }
+      ]
+    }
+  }
+}

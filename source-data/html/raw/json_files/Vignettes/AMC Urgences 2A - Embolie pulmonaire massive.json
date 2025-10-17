@@ -1,0 +1,499 @@
+{
+  "id": "amc-urgences-embolie-pulmonaire",
+  "title": "AMC Urgences 2A - Embolie pulmonaire massive",
+  "context": {
+    "setting": "Service d'urgences",
+    "patient": "Femme de 69 ans, amenée pour douleur thoracique brutale et dyspnée sévère survenues il y a 2 heures. Antécédent de prothèse totale de hanche il y a 2 semaines",
+    "vitals": {
+      "ta": "80/50 mmHg",
+      "fc": "120 bpm",
+      "fr": "28/min",
+      "sao2": "88% sous air ambiant",
+      "temperature": "37.2°C"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Évaluation ABC primaire",
+          "details": [
+            "A - Voies aériennes : Perméables [parle normalement]",
+            "B - Respiration : Tachypnée, détresse respiratoire [FR 28/min, SaO2 88%]",
+            "C - Circulation : Hypotension, tachycardie [TA 80/50, FC 120]"
+          ],
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Histoire de la maladie actuelle",
+          "details": [
+            "Début des symptômes [il y a 2 heures]",
+            "Douleur thoracique brutale [transfixiante]",
+            "Dyspnée d'apparition soudaine [progressive]",
+            "Syncope initiale [oui, brève]"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Facteurs de risque thromboemboliques",
+          "details": [
+            "Chirurgie récente [prothèse de hanche il y a 2 semaines]",
+            "Immobilisation prolongée [oui, post-opératoire]",
+            "Contraception orale [non, ménopausée]",
+            "Cancer actif [non]",
+            "Antécédents de TVP/EP [non]",
+            "Thrombophilie connue [non]"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Symptômes associés",
+          "details": [
+            "Hémoptysie [non]",
+            "Douleur du mollet [légère, côté droit]",
+            "Sueurs froides [oui, profuses]",
+            "Anxiété majeure [oui, sensation de mort imminente]"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Antécédents médicaux",
+          "details": [
+            "Hypertension artérielle [traitée par ramipril]",
+            "Coxarthrose [opérée récemment]",
+            "Dyslipidémie [sous statine]"
+          ]
+        },
+        {
+          "id": "a6",
+          "text": "Médicaments et allergies",
+          "details": [
+            "Ramipril 5mg/jour",
+            "Atorvastatine 20mg/jour",
+            "Prophylaxie anticoagulante [HBPM post-opératoire, arrêtée il y a 3 jours]",
+            "Allergies [aucune connue]"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Signes vitaux et monitoring",
+          "details": [
+            "État de choc [oui, hypotension + hypoperfusion]",
+            "Index de choc > 1 [oui, FC/TAS = 120/80 = 1.5]",
+            "Saturation différentielle [non évaluée]"
+          ],
+          "binaryOnly": true
+        },
+        {
+          "id": "e2",
+          "text": "Examen cardiovasculaire",
+          "details": [
+            "Turgescence jugulaire [présente]",
+            "B2 accentué [oui, foyer pulmonaire]",
+            "Souffle systolique [léger, tricuspidien]",
+            "Pouls paradoxal [présent]",
+            "Signes droits [oui, hépatomégalie douloureuse]"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Examen pulmonaire",
+          "details": [
+            "Auscultation [claire bilatéralement]",
+            "Percussion [normale]",
+            "Ampliation thoracique [symétrique mais diminuée]",
+            "Utilisation muscles accessoires [oui]"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Examen des membres inférieurs",
+          "details": [
+            "Œdème unilatéral [discret, mollet droit]",
+            "Signe de Homans [positif à droite]",
+            "Différence de circonférence [2 cm]",
+            "Chaleur locale [non]"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "État neurologique",
+          "details": [
+            "Glasgow 15/15 [oui]",
+            "Confusion [non]",
+            "Signes de localisation [aucun]",
+            "Anxiété majeure [oui]"
+          ]
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Mesures immédiates de réanimation",
+          "details": [
+            "Oxygénothérapie haut débit [15L/min au masque]",
+            "Voies veineuses périphériques [2 x 18G]",
+            "Monitorage continu [ECG, TA, SaO2]",
+            "Position demi-assise [oui]"
+          ],
+          "binaryOnly": true
+        },
+        {
+          "id": "m2",
+          "text": "Examens complémentaires urgents",
+          "details": [
+            "ECG [S1Q3T3, BBD incomplet, tachycardie sinusale]",
+            "Gazométrie artérielle [pH 7.48, PaO2 55, PaCO2 28]",
+            "D-dimères [> 5000 ng/mL]",
+            "Troponine [légèrement élevée]",
+            "BNP [850 pg/mL]",
+            "Lactates [3.8 mmol/L]"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Imagerie diagnostique",
+          "details": [
+            "Radiographie thoracique [oligémie de Westermark]",
+            "Angio-CT thoracique [emboles bilatéraux proximaux, ratio VD/VG > 1]",
+            "Échographie cardiaque au lit [dilatation VD, HTAP sévère, PAPS 60 mmHg]",
+            "Echo-doppler MI [TVP proximale droite]"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Stratification du risque",
+          "details": [
+            "Score PESI simplifié [> 1, haut risque]",
+            "Critères de gravité [choc + dysfonction VD + biomarqueurs +]",
+            "Classification [EP massive/à haut risque]"
+          ],
+          "scoringRule": "EP massive si instabilité hémodynamique"
+        },
+        {
+          "id": "m5",
+          "text": "Traitement spécifique - Phase initiale",
+          "details": [
+            "Anticoagulation immédiate [héparine non fractionnée IV, bolus 80 UI/kg]",
+            "Support hémodynamique [noradrénaline 0.1 µg/kg/min]",
+            "Remplissage prudent [500 mL cristalloïdes]",
+            "Dobutamine si dysfonction VD [5 µg/kg/min]"
+          ],
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Support hémodynamique",
+                "content": "Noradrénaline première ligne\nRemplissage < 500 mL\nÉviter surcharge VD"
+              }
+            ]
+          }
+        },
+        {
+          "id": "m6",
+          "text": "Thrombolyse systémique",
+          "details": [
+            "Indication formelle [EP massive avec choc]",
+            "Contre-indications évaluées [chirurgie > 2 semaines = CI relative]",
+            "Protocole alteplase [10 mg bolus, puis 90 mg sur 2h]",
+            "Alternative streptokinase [250 000 UI en 30 min, puis 100 000 UI/h]"
+          ],
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Protocole thrombolyse",
+                "content": "Alteplase: 10 mg bolus + 90 mg/2h\nou\nTenecteplase: bolus unique selon poids"
+              }
+            ]
+          }
+        },
+        {
+          "id": "m7",
+          "text": "Alternatives thérapeutiques",
+          "details": [
+            "Embolectomie chirurgicale [si CI thrombolyse ou échec]",
+            "Thrombectomie percutanée [option interventionnelle]",
+            "ECMO-VA [sauvetage si choc réfractaire]",
+            "Filtre cave [si CI anticoagulation absolue]"
+          ],
+          "ddSection": {
+            "title": "Options de reperfusion",
+            "categories": [
+              {
+                "name": "Première ligne",
+                "items": [
+                  {
+                    "text": "Thrombolyse systémique",
+                    "cause": "Arguments POUR:\n\t□ Disponible partout\n\t□ Efficace rapidement",
+                    "test": "→ Surveillance: TA, FC, saignements"
+                  }
+                ]
+              },
+              {
+                "name": "Alternatives",
+                "items": [
+                  {
+                    "text": "Embolectomie chirurgicale",
+                    "cause": "Arguments POUR:\n\t□ CI thrombolyse\n\t□ Thrombus proximal massif",
+                    "test": "→ Nécessite CEC et équipe"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m8",
+          "text": "Surveillance en réanimation",
+          "details": [
+            "Monitorage hémodynamique invasif [ligne artérielle, PVC]",
+            "Échographies cardiaques répétées [évolution dysfonction VD]",
+            "Surveillance neurologique [complications hémorragiques]",
+            "Bilan biologique sérié [hémostase, troponine, lactates]"
+          ]
+        },
+        {
+          "id": "m9",
+          "text": "Complications à anticiper",
+          "redflagsSection": {
+            "title": "Complications graves",
+            "items": [
+              {
+                "text": "Hémorragie cérébrale post-thrombolyse",
+                "description": "Risque 2-3%, surveillance neurologique stricte"
+              },
+              {
+                "text": "Choc cardiogénique sur défaillance VD",
+                "description": "Nécessite support inotrope ± ECMO"
+              },
+              {
+                "text": "Récidive embolique précoce",
+                "description": "Malgré anticoagulation, mortalité élevée"
+              },
+              {
+                "text": "Syndrome de reperfusion",
+                "description": "Œdème pulmonaire post-thrombolyse"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Communication avec le patient",
+          "content": "Madame, vous présentez une embolie pulmonaire grave qui nécessite un traitement urgent. Nous allons vous administrer un médicament pour dissoudre le caillot et vous transférer en réanimation pour une surveillance étroite.",
+          "exemplesPhrases": [
+            "Je comprends votre angoisse, nous faisons tout pour vous stabiliser",
+            "Le traitement va rapidement améliorer votre respiration",
+            "Votre famille sera informée dès que possible"
+          ]
+        },
+        {
+          "id": "c2",
+          "text": "Questions difficiles du patient",
+          "content": "[Vais-je mourir?] [Pourquoi cela m'arrive après mon opération?] [Aurais-je des séquelles?]"
+        },
+        {
+          "id": "c3",
+          "text": "Réponses types aux inquiétudes",
+          "exemplesPhrases": [
+            "C'est une situation grave mais nous avons des traitements très efficaces",
+            "La chirurgie récente est effectivement un facteur de risque malgré la prévention",
+            "La plupart des patients récupèrent bien avec le traitement approprié"
+          ]
+        }
+      ]
+    }
+  },
+  "progressionStages": {
+    "stage1": {
+      "title": "Présentation initiale - Choc obstructif",
+      "description": "Patiente en détresse respiratoire aiguë avec instabilité hémodynamique",
+      "keyFindings": [
+        "Hypotension sévère malgré tachycardie",
+        "Hypoxémie réfractaire",
+        "Signes de cœur pulmonaire aigu"
+      ],
+      "immediateActions": [
+        "ABC et stabilisation",
+        "Oxygénothérapie haut débit",
+        "Voies veineuses et monitorage"
+      ]
+    },
+    "stage2": {
+      "title": "Confirmation diagnostique",
+      "description": "Angio-CT confirmant EP massive bilatérale",
+      "keyFindings": [
+        "Thrombus proximaux bilatéraux",
+        "Dilatation VD avec ratio VD/VG > 1",
+        "Hypoperfusion pulmonaire étendue"
+      ],
+      "management": [
+        "Anticoagulation curative immédiate",
+        "Support vasopresseur",
+        "Préparation thrombolyse"
+      ]
+    },
+    "stage3": {
+      "title": "Traitement de reperfusion et réanimation",
+      "description": "Thrombolyse systémique et prise en charge en réanimation",
+      "treatment": [
+        "Alteplase selon protocole",
+        "Support hémodynamique optimisé",
+        "Surveillance complications hémorragiques"
+      ],
+      "evolution": [
+        "Amélioration hémodynamique à H+2",
+        "Normalisation progressive des lactates",
+        "Régression de la dysfonction VD à J2"
+      ]
+    }
+  },
+  "annexes": {
+    "images": [
+      {
+        "title": "ECG - Embolie pulmonaire",
+        "description": "ECG montrant une tachycardie sinusale, déviation axiale droite, aspect S1Q3T3 et bloc de branche droit incomplet",
+        "data": "grilles_generees/html/images/AMC-Urgences-Medecine-Intensive-2/A1-ECG.jpg"
+      },
+      {
+        "title": "Échocardiographie comparative normale",
+        "description": "Échocardiographie normale pour comparaison montrant les 4 cavités cardiaques avec proportions normales",
+        "data": "grilles_generees/html/images/AMC-Urgences-Medecine-Intensive-2/A2-Echocardiographie comparitive normale.jpg"
+      },
+      {
+        "title": "Échocardiographie aux urgences",
+        "description": "Échocardiographie montrant une dilatation du ventricule droit avec septum paradoxal et signe de McConnell",
+        "data": "grilles_generees/html/images/AMC-Urgences-Medecine-Intensive-2/A3-Echocardiographie aux urgences.jpg"
+      }
+    ],
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour le patient standardisé - EP massive",
+      "nom": "Mme Dubois",
+      "age": "69 ans",
+      "contexte": "Service d'urgences, amenée en ambulance",
+      "motifConsultation": {
+        "plaintePrincipale": "Je n'arrive plus à respirer et j'ai très mal dans la poitrine",
+        "autreChose": "J'ai eu l'impression que j'allais mourir"
+      },
+      "histoireActuelle": {
+        "evenementPrincipal": "Début brutal il y a 2 heures au domicile, après être allée aux toilettes",
+        "symptomesPrincipaux": [
+          "Douleur thoracique transfixiante, comme un coup de poignard",
+          "Essoufflement majeur qui empire",
+          "Sensation de mort imminente",
+          "Syncope brève au début"
+        ],
+        "contextePsychosocial": [
+          "Opérée d'une prothèse de hanche il y a 2 semaines",
+          "Mobilisation limitée depuis",
+          "Vit seule, inquiète pour son autonomie"
+        ]
+      },
+      "simulation": {
+        "attitude": [
+          "Très anxieuse, agitée",
+          "Respiration rapide et superficielle",
+          "Se tient la poitrine",
+          "Demande si elle va mourir"
+        ],
+        "durantExamen": [
+          "Dyspnée au moindre effort",
+          "Ne peut pas s'allonger complètement",
+          "Transpiration profuse",
+          "Lèvres légèrement cyanosées"
+        ]
+      }
+    },
+    "informationsExpert": {
+      "titre": "Points clés pour l'évaluateur - EP massive",
+      "pointsCles": [
+        "Reconnaissance immédiate de l'instabilité hémodynamique",
+        "Évaluation rapide des facteurs de risque thromboemboliques",
+        "Stratification du risque (EP massive = mortalité > 15%)",
+        "Décision thérapeutique rapide (thrombolyse vs embolectomie)",
+        "Gestion du risque hémorragique post-chirurgical"
+      ],
+      "pieges": [
+        "Retarder la thrombolyse par excès de prudence",
+        "Surcharge volémique aggravant la défaillance VD",
+        "Oublier la prophylaxie anticoagulante ultérieure",
+        "Ne pas rechercher une TVP résiduelle",
+        "Sous-estimer le risque de récidive précoce"
+      ],
+      "rolesInterventions": [
+        "Le candidat doit identifier rapidement la gravité",
+        "Initier les mesures de réanimation appropriées",
+        "Justifier le choix de la thrombolyse malgré la chirurgie récente",
+        "Expliquer les risques et bénéfices au patient",
+        "Organiser le transfert en réanimation"
+      ]
+    },
+    "theoriePratique": {
+      "titre": "Embolie pulmonaire massive - Concepts clés",
+      "sections": [
+        {
+          "titre": "Physiopathologie du choc obstructif",
+          "contenu": "L'EP massive entraîne une augmentation brutale de la postcharge VD par obstruction > 50% du lit vasculaire pulmonaire. La défaillance VD aiguë conduit à une diminution du débit cardiaque et un choc obstructif.",
+          "points": [
+            "Augmentation des RVP > 40%",
+            "Dilatation et dysfonction VD",
+            "Diminution du remplissage VG",
+            "Ischémie myocardique VD",
+            "Libération de biomarqueurs cardiaques"
+          ]
+        },
+        {
+          "titre": "Stratification du risque (ESC 2019)",
+          "contenu": "Classification basée sur la présence d'instabilité hémodynamique et de dysfonction VD",
+          "points": [
+            "Risque élevé (EP massive) : instabilité hémodynamique",
+            "Risque intermédiaire-élevé : stable + dysfonction VD + biomarqueurs +",
+            "Risque intermédiaire-faible : stable + dysfonction VD ou biomarqueurs +",
+            "Risque faible : stable sans dysfonction VD ni biomarqueurs",
+            "Mortalité EP massive : 15-30% à 30 jours"
+          ]
+        },
+        {
+          "titre": "Algorithme thérapeutique",
+          "contenu": "Approche séquentielle basée sur la stratification du risque",
+          "points": [
+            "EP massive → Thrombolyse systémique première ligne",
+            "CI thrombolyse → Embolectomie chirurgicale ou percutanée",
+            "Échec thrombolyse → ECMO-VA de sauvetage",
+            "Support hémodynamique : noradrénaline + dobutamine",
+            "Anticoagulation : HNF IV avec TCA cible 60-80 sec"
+          ]
+        }
+      ],
+      "rappelsTherapeutiques": [
+        "Thrombolyse : Alteplase 100 mg/2h ou Tenecteplase bolus selon poids",
+        "Contre-indications absolues : AVC < 3 mois, hémorragie active, néoplasie cérébrale",
+        "Contre-indications relatives : chirurgie < 3 semaines, grossesse, âge > 75 ans",
+        "Window thérapeutique : idéalement < 48h, possible jusqu'à 14 jours",
+        "Surveillance post-thrombolyse : hémostase/6h, scanner cérébral si troubles neurologiques"
+      ],
+      "examensComplementaires": [
+        "Angio-CT thoracique : Gold standard, sensibilité 95%, ratio VD/VG > 0.9 = dysfonction VD",
+        "Échographie cardiaque : TAPSE < 16 mm, onde S' < 9.5 cm/s, PAPS > 40 mmHg",
+        "Biomarqueurs : Troponine I > 0.4 ng/mL, BNP > 100 pg/mL = mauvais pronostic",
+        "Score PESI : âge + cancer + IC + FC>110 + TAS<100 + SaO2<90",
+        "Gazométrie : gradient A-a élargi, alcalose respiratoire initiale"
+      ]
+    }
+  }
+}

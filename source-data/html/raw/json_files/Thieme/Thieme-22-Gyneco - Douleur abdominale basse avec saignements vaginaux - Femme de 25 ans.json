@@ -1,0 +1,234 @@
+{
+  "title": "Thieme Gynéco 22 - Douleur abdominale basse avec saignements vaginaux - Femme de 25 ans",
+  "category": "Thieme Gynécologie-Obstétrique",
+  "subcategory": "Douleur abdominale basse avec saignements vaginaux",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Femme de 25 ans, Mme Sharon Evans, consultant pour douleurs abdominales basses",
+    "vitals": {
+      "temperature": "36.7°C",
+      "fc": "108 bpm",
+      "fr": "20/min",
+      "ta": "90/60 mmHg"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Motif principal de consultation",
+          "binaryOnly": true,
+          "patientComment": "douleurs abdominales basses"
+        },
+        {
+          "id": "a2",
+          "text": "Analyse de la plainte principale (ABCDE)",
+          "details": [
+            "Apparition et durée [Douleur soudaine il y a 1h]",
+            "Localisation [QIG] et irradiation",
+            "Intensité [9/10] et caractère",
+            "Facteurs aggravants [toux]",
+            "Saignements vaginaux associés [sang rouge vif]"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Antécédents gynécologiques et obstétricaux",
+          "details": [
+            "DDR il y a 7 semaines, règles manquées depuis 3 semaines",
+            "G1P0, fausse couche il y a 2 ans à 3 mois"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Histoire sociale et habitudes de vie",
+          "details": [
+            "Travaille dans restaurant",
+            "Fume 1 pqt/j × 5 ans",
+            "Bière/jour, plus le week-end",
+            "Sexuellement active, multiples partenaires, préservatifs occasionnels"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Revue des systèmes",
+          "details": [
+            "Système gynécologique",
+            "Symptômes de grossesse"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Signes vitaux et apparence générale",
+          "binaryOnly": true
+        },
+        {
+          "id": "e2",
+          "text": "Examen de la tête et du cou",
+          "details": [
+            "PERRLA",
+            "Recherche pâleur ou cyanose",
+            "Examen gorge",
+            "Palpation thyroïde et ganglions"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Examen cardio-pulmonaire",
+          "details": [
+            "Auscultation cardiaque [S1 et S2 normaux]",
+            "Auscultation pulmonaire bilatérale"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Examen abdominal complet",
+          "details": [
+            "Inspection (cicatrices, distension)",
+            "Auscultation (bruits intestinaux)",
+            "Palpation superficielle et profonde",
+            "Recherche défense [sensibilité QIG]"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Examens spécifiques selon le cas",
+          "details": [
+            "Demander examen pelvien",
+            "Documenter dans note patient"
+          ]
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostics différentiels à évoquer",
+          "ddSection": {
+            "title": "Hypothèses diagnostiques gynécologiques",
+            "categories": [
+              {
+                "name": "Diagnostics prioritaires",
+                "items": [
+                  {
+                    "text": "Grossesse extra-utérine",
+                    "cause": "Arguments POUR:\n\t□ DDR manquées, douleur aiguë QIG, saignement vaginal, hypotension",
+                    "test": "→ βhCG quantitative, US pelvienne, laparoscopie"
+                  },
+                  {
+                    "text": "Avortement spontané",
+                    "cause": "Arguments POUR:\n\t□ DDR manquées, saignements vaginaux, douleur crampes, test grossesse positif",
+                    "test": "→ βhCG sériée, US pelvienne"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Examens complémentaires pertinents",
+          "details": [
+            "Examen pelvien et vaginal",
+            "Test grossesse et βhCG quantitative",
+            "US pelvienne",
+            "Laparoscopie si urgence"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Plan de prise en charge",
+          "details": [
+            "Hospitalisation urgente",
+            "Voie veineuse",
+            "Surveillance signes vitaux",
+            "Préparation chirurgie si nécessaire"
+          ]
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Questions difficiles de la patiente",
+          "content": "Est-ce que je fais une fausse couche?"
+        },
+        {
+          "id": "c2",
+          "text": "Conseils spécifiques",
+          "content": "Précautions rapports sexuels protégés. Support psychologique si fausse couche."
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour la patiente standardisée",
+      "nom": "Mme Sharon Evans",
+      "age": "25 ans",
+      "contexte": "Cabinet de médecine générale",
+      "motifConsultation": {
+        "plaintePrincipale": "douleurs abdominales basses",
+        "autreChose": "Douleur abdominale aiguë sévère depuis 1h, soudaine, 9/10 au QIG. Constante, aggravée par la toux. Saignements vaginaux sang rouge vif."
+      },
+      "histoireActuelle": {
+        "symptomesPrincipaux": [
+          "Douleur abdominale aiguë sévère depuis 1h, soudaine, 9/10 au QIG",
+          " Constante, aggravée par la toux",
+          " Saignements vaginaux sang rouge vif"
+        ],
+        "antecedentsGynecologiques": [
+          "DDR il y a 7 semaines, règles manquées depuis 3 semaines",
+          " Nausées matinales et seins sensibles",
+          " G1P0, fausse couche il y a 2 ans à 3 mois"
+        ],
+        "contextePsychosocial": [
+          "Travaille dans restaurant",
+          " Fume 1 pqt/j × 5 ans",
+          " Bière/jour, plus le week-end",
+          " Sexuellement active, multiples partenaires, préservatifs occasionnels"
+        ]
+      },
+      "simulation": {
+        "attitude": [
+          "Allongée avec douleur sévère",
+          "Très inquiète"
+        ],
+        "durantExamen": [
+          "Sensibilité sévère QIG",
+          "Défense positive"
+        ]
+      },
+      "inquietudes": {
+        "principales": [
+          "Est-ce que je fais une fausse couche?"
+        ]
+      }
+    },
+    "informationsExpert": {
+      "titre": "Informations pour l'expert",
+      "pointsCles": [
+        "Cas de Douleur abdominale basse avec saignements vaginaux",
+        "Patiente: Femme de 25 ans",
+        "Anamnèse gynécologique complète",
+        "Examen abdominal et pelvien appropriés",
+        "Diagnostic différentiel ciblé"
+      ],
+      "pieges": [
+        "Ne pas reconnaître l'urgence chirurgicale",
+        "Oublier support psychologique"
+      ]
+    }
+  }
+}

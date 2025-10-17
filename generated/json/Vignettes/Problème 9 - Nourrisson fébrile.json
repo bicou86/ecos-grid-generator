@@ -1,0 +1,505 @@
+{
+  "title": "Nourrisson fébrile - Pyélonéphrite et malformations urologiques",
+  "context": {
+    "setting": "Service d'urgence puis consultation spécialisée pédiatrique/chirurgie pédiatrique",
+    "patient": "Trois vignettes cliniques : Romuald 2 mois (pyélonéphrite aiguë), diagnostic prénatal (hydronéphrose), consultation prénatale (valves urètre postérieur). Cas d'infections urinaires chez le nourrisson avec malformations uro-génitales associées",
+    "vitals": {
+      "temperature": "39.9°C",
+      "fc": "140 bpm",
+      "fr": "40/min",
+      "ta": "85/45 mmHg"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Vignette A : Anamnèse Romuald 2 mois - Pyélonéphrite",
+          "binaryOnly": true,
+          "details": [
+            "Motif de consultation [enfant est brûlant depuis la veille]",
+            "État général [depuis 2 jours, irritable]",
+            "Température [39.8°C]",
+            "Alimentation [depuis 2 jours, tète moins volontiers]",
+            "Élimination [toux, diarrhées, vomissements - non]",
+            "Signes associés [elle remarque autre chose - non]",
+            "Urines [normales en quantité et aspect]",
+            "Antécédents [grossesse harmonieuse, naissance à terme sans particularité]"
+          ]
+        },
+        {
+          "id": "a2",
+          "text": "Vignette B : Anamnèse prénatale - Dilatation pyélique",
+          "details": [
+            "Découverte [dilatation pyélique droite chez le fœtus]",
+            "Terme de découverte [5ème mois de grossesse]",
+            "Suivi [trois ultrasons depuis]",
+            "Évolution [dilatation confirmée sur échographies successives]",
+            "Inquiétudes parentales [pronostic et prise en charge]",
+            "Conseils reçus [orientation spécialisée]"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Vignette C : Anamnèse prénatale - Valves urètre postérieur",
+          "details": [
+            "Diagnostic prénatal [dilatation rénale droite et gauche]",
+            "Terme découverte [18ème semaine de grossesse]",
+            "Confirmation [échographies successives]",
+            "Sexe fœtal [garçon avec dilatation rénale BILATÉRALE]",
+            "Inquiétudes [prise en charge néonatale]",
+            "Fonction rénale [dosage cystatine C au cordon]"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Recherche de signes d'infection urinaire",
+          "details": [
+            "Fièvre isolée [sans foyer infectieux évident]",
+            "Troubles digestifs [refus alimentation, vomissements]",
+            "Irritabilité [modification comportement]",
+            "Retard de croissance [prise de poids insuffisante]",
+            "Urines malodorantes [parfois présentes]",
+            "Antécédents familiaux [infections urinaires, malformations]"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Vignette A : Examen clinique Romuald",
+          "binaryOnly": true,
+          "patientComment": "T° 39.9°C, FC 140/min, FR 40/min, TA 85/45, état général conservé"
+        },
+        {
+          "id": "e2",
+          "text": "Examen général et recherche de déshydratation",
+          "details": [
+            "Peau [marbrée]",
+            "Fontanelle [légèrement creusée mais muqueuses humides]",
+            "Larmes [aux pleurs d'ailleurs abondantes]",
+            "Palpation abdominale [normale]",
+            "Status ORL [normal]",
+            "Status neurologique [normal]",
+            "État cutané [normal]"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Examens paracliniques d'urgence",
+          "details": [
+            "FSC [Hb 120g/l, GB 24 G/l, NNS 66%, thrombocytes 160G/l]",
+            "CRP [80 mg/l - élevée]",
+            "PCT [4 μg/l - élevée]",
+            "Stix urinaire [leucocytes +++, sang +, nitrites +]",
+            "Hémocultures [en cours]",
+            "ECBU [à réaliser en urgence]"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Interprétation des examens urinaires",
+          "details": [
+            "Leucocyturie [>10⁵/ml - infection probable]",
+            "Nitrites positifs [bactéries à nitrate réductase]",
+            "Hématurie [inflammation associée]",
+            "Culture positive [E. coli 10⁵/ml]",
+            "Antibiogramme [résistance à surveiller]",
+            "Hémocultures [peuvent être positives dans 10-30% PNA]"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Examens d'imagerie - Échographie appareil urinaire",
+          "details": [
+            "Indication [première infection urinaire haute chez nourrisson]",
+            "Méga-uretère gauche [avec dilatation pyélocalicielle modérée]",
+            "Rein droit [normal pour comparaison]",
+            "Recherche malformation [étiologie de l'infection]",
+            "Absence d'indication chirurgicale [abcès, pyonéphrose]",
+            "Planification bilan [CUM différée]"
+          ]
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic et diagnostics différentiels",
+          "ddSection": {
+            "title": "Diagnostics différentiels de la fièvre chez le nourrisson",
+            "categories": [
+              {
+                "name": "Infections urinaires",
+                "items": [
+                  {
+                    "text": "Pyélonéphrite aiguë (PNA)",
+                    "cause": "Arguments POUR:\n\t□ Fièvre élevée sans foyer\n\t□ Irritabilité, refus alimentation\n\t□ ECBU positif avec leucocyturie\n\t□ CRP et PCT élevées\n\t□ Malformation urologique associée",
+                    "test": "→ ECBU + antibiogramme, hémocultures"
+                  },
+                  {
+                    "text": "Cystite simple",
+                    "cause": "Arguments CONTRE:\n\t□ Fièvre élevée\n\t□ Altération état général\n\t□ Syndrome inflammatoire marqué",
+                    "test": "→ ECBU pour différenciation"
+                  }
+                ]
+              },
+              {
+                "name": "Malformations urologiques",
+                "items": [
+                  {
+                    "text": "Méga-uretère (sténose jonction urétéro-vésicale)",
+                    "cause": "Arguments POUR:\n\t□ Dilatation pyélocalicielle\n\t□ Prédisposition aux infections\n\t□ Stase urinaire",
+                    "test": "→ Échographie puis CUM"
+                  },
+                  {
+                    "text": "Reflux vésico-urétéral (RVU)",
+                    "cause": "Arguments POSSIBLES:\n\t□ Infection urinaire récidivante\n\t□ Nécessite confirmation",
+                    "test": "→ CUM après traitement infection"
+                  },
+                  {
+                    "text": "Valves urètre postérieur",
+                    "cause": "Arguments POUR (Vignette C):\n\t□ Garçon avec dilatation bilatérale\n\t□ Vessie de lutte\n\t□ Diagnostic prénatal",
+                    "test": "→ CUM avec sonde urétrale"
+                  }
+                ]
+              },
+              {
+                "name": "Autres causes de fièvre",
+                "items": [
+                  {
+                    "text": "Infection virale",
+                    "cause": "Arguments CONTRE:\n\t□ CRP très élevée (80 mg/l)\n\t□ Hyperleucocytose\n\t□ ECBU positif",
+                    "test": "→ Sérologies virales si doute"
+                  },
+                  {
+                    "text": "Méningite",
+                    "cause": "Arguments CONTRE:\n\t□ Pas de signes neurologiques\n\t□ Fontanelle peu creusée\n\t□ ECBU positif orientant",
+                    "test": "→ Ponction lombaire si doute"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Traitement antibiotique de la pyélonéphrite",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Antibiothérapie intraveineuse",
+                "items": [
+                  {
+                    "treatment": "Première intention < 1 mois",
+                    "details": "Ampicilline + Gentamicine",
+                    "duration": "48-72h puis relais oral"
+                  },
+                  {
+                    "treatment": "Première intention 1-3 mois",
+                    "details": "Ceftriaxone + Ampicilline",
+                    "duration": "48-72h IV puis relais"
+                  },
+                  {
+                    "treatment": "Si > 3 mois",
+                    "details": "Ceftriaxone seule",
+                    "duration": "Voie parentérale puis entérale"
+                  }
+                ]
+              },
+              {
+                "title": "Adaptation selon antibiogramme",
+                "items": [
+                  {
+                    "treatment": "Relais oral ciblé",
+                    "details": "Selon sensibilité E. coli",
+                    "duration": "Durée totale 10-14 jours"
+                  },
+                  {
+                    "treatment": "Surveillance clinique",
+                    "details": "Apyrexie sous 48-72h",
+                    "duration": "Contrôle ECBU J3-J5"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m3",
+          "text": "Bilan malformations urologiques",
+          "details": [
+            "Échographie systématique [première PNA chez nourrisson]",
+            "CUM différée [4-6 semaines après traitement]",
+            "Scintigraphie DMSA [évaluation cicatrices parenchymateuses à 6 mois]",
+            "Fonction rénale [créatinine, cystatine C]",
+            "Bilan selon résultats [scintigraphie MAG3 si hydronéphrose]",
+            "Suivi spécialisé [urologie pédiatrique]"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Prise en charge des malformations",
+          "details": [
+            "RVU stade 4 [traitement chirurgical à discuter]",
+            "Méga-uretère [surveillance puis pyéloplastie si indication]",
+            "Valves urètre postérieur [section endoscopique urgente]",
+            "Hydronéphrose prénatale [surveillance échographique]",
+            "Fonction rénale préservée [traitement conservateur]",
+            "Prophylaxie antibiotique [selon degré RVU et récidives]"
+          ]
+        },
+        {
+          "id": "m5",
+          "text": "Surveillance et suivi",
+          "details": [
+            "Surveillance régulière dilatation [échographie 1-3-6-9-12 mois]",
+            "CUM de contrôle [si RVU, répéter à 18 mois]",
+            "Scintigraphie DMSA [si récidive PNA]",
+            "Fonction rénale plasmatique [créatinine, cystatine C]",
+            "Croissance staturo-pondérale [surveillance]",
+            "Éducation parentale [signes d'alerte infection]"
+          ]
+        },
+        {
+          "id": "m6",
+          "text": "Prophylaxie et prévention",
+          "details": [
+            "Prophylaxie antibactérienne [amoxicilline 10 mg/kg/j]",
+            "Indications [RVU grade III-V, récidives]",
+            "Hygiène périnéale [change fréquent]",
+            "Mictions régulières [éviter stase]",
+            "Hydratation suffisante [prévention cristallurie]",
+            "Surveillance température [parents informés]",
+            "Consultation rapide [fièvre sans foyer]"
+          ]
+        },
+        {
+          "id": "m7",
+          "text": "Complications et pronostic",
+          "redflagsSection": {
+            "title": "Signes d'alerte nécessitant prise en charge urgente",
+            "items": [
+              {
+                "text": "Sepsis/choc septique",
+                "description": "Hypotension, marbrures, altération conscience"
+              },
+              {
+                "text": "Insuffisance rénale aiguë",
+                "description": "Oligurie, créatinine élevée, troubles électrolytiques"
+              },
+              {
+                "text": "Abcès rénal/pyonéphrose",
+                "description": "Fièvre persistante, masse lombaire, altération échographique"
+              },
+              {
+                "text": "Récidive précoce",
+                "description": "Fièvre dans les 48h suivant arrêt antibiotiques"
+              },
+              {
+                "text": "Obstruction urinaire sévère",
+                "description": "Anurie, dilatation massive, fonction rénale altérée"
+              },
+              {
+                "text": "Hypertension artérielle",
+                "description": "Complication de l'uropathie, surveillance TA"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Information parentale - Pyélonéphrite",
+          "content": "Romuald présente une infection urinaire haute ou pyélonéphrite. C'est plus sérieux qu'une simple cystite car l'infection touche les reins. Nous devons le traiter par antibiotiques intraveineux puis oraux. L'échographie montre une malformation urinaire qui favorise ces infections. Un bilan complémentaire sera nécessaire après guérison."
+        },
+        {
+          "id": "c2",
+          "text": "Information parentale - Malformations urologiques",
+          "content": "La dilatation rénale découverte pendant la grossesse nécessite une surveillance. Dans la majorité des cas, elle s'améliore spontanément. Parfois une chirurgie est nécessaire si la fonction rénale se détériore. Nous allons suivre l'évolution par échographies régulières et des examens spécialisés."
+        },
+        {
+          "id": "c3",
+          "text": "Questions fréquentes des parents",
+          "content": "[C'est grave docteur ?]\n[Faut-il opérer ?]\n[Est-ce que ça peut revenir ?]\n[Y aura-t-il des séquelles sur les reins ?]\n[Comment surveiller à la maison ?]\n[Peut-on prévenir les récidives ?]"
+        },
+        {
+          "id": "c4",
+          "text": "Réponse type du candidat",
+          "exemplesPhrases": [
+            "\"C'est sérieux mais avec un traitement adapté, le pronostic est excellent. Les antibiotiques sont très efficaces.\"",
+            "\"Pas forcément. La plupart des malformations se corrigent spontanément. On opère seulement si nécessaire.\"",
+            "\"Oui, le risque existe surtout s'il y a une malformation. C'est pourquoi on fait un bilan complet.\"",
+            "\"Si on traite rapidement les infections, il n'y a généralement pas de séquelles rénales.\"",
+            "\"Surveiller toute fièvre sans cause évidente et consulter rapidement.\"",
+            "\"Oui, parfois on donne des antibiotiques préventifs et on surveille l'hygiène.\""
+          ]
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "images": [
+      {
+        "id": "img1",
+        "title": "Échographie rénale - Méga-uretère gauche",
+        "description": "Dilatation pyélocalicielle modérée avec méga-uretère"
+      },
+      {
+        "id": "img2",
+        "title": "CUM - Reflux vésico-urétéral stade 4",
+        "description": "Reflux important avec dilatation urétéro-pyélocalicielle"
+      },
+      {
+        "id": "img3",
+        "title": "Scintigraphie DMSA - Cicatrices rénales",
+        "description": "Zones hypoactives témoignant de cicatrices post-pyélonéphritiques"
+      },
+      {
+        "id": "img4",
+        "title": "Scintigraphie MAG3 - Fonction rénale",
+        "description": "Évaluation fonction relative et drainage des voies urinaires"
+      },
+      {
+        "id": "img5",
+        "title": "CUM - Valves urètre postérieur",
+        "description": "Image pathognomonique avec vessie de lutte et reflux bilatéral"
+      }
+    ],
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour les parents standardisés",
+      "contexte": "Service d'urgences pédiatriques puis consultation spécialisée",
+      "scenarios": {
+        "vignette_a": {
+          "nom": "Mère de Romuald",
+          "presentation": "Mère inquiète mais organisée",
+          "inquietudes": [
+            "Il est brûlant depuis hier",
+            "Il tète moins bien",
+            "Il est plus irritable que d'habitude",
+            "Je n'arrive pas à faire baisser sa fièvre"
+          ]
+        },
+        "vignette_b": {
+          "nom": "Couple en consultation prénatale",
+          "presentation": "Parents inquiets du diagnostic prénatal",
+          "questions": [
+            "Qu'est-ce que ça signifie cette dilatation ?",
+            "Est-ce qu'il faudra opérer ?",
+            "Y aura-t-il des conséquences ?",
+            "Comment ça va se passer à la naissance ?"
+          ]
+        },
+        "vignette_c": {
+          "nom": "Couple - diagnostic valves",
+          "presentation": "Parents très angoissés",
+          "inquietudes": [
+            "C'est grave cette malformation ?",
+            "Est-ce qu'il aura des problèmes de reins ?",
+            "Faut-il opérer rapidement ?",
+            "Peut-on continuer la grossesse ?"
+          ]
+        }
+      }
+    },
+    "informationsExpert": {
+      "titre": "Points clés pour l'évaluateur",
+      "pointsCles": [
+        "Reconnaître la pyélonéphrite chez le nourrisson (fièvre sans foyer)",
+        "Interpréter correctement l'ECBU et les seuils pathologiques",
+        "Connaître l'indication de l'échographie urinaire",
+        "Savoir quand réaliser une CUM et interpréter le RVU",
+        "Comprendre l'évolution naturelle des uropathies malformatives",
+        "Connaître les indications chirurgicales",
+        "Organiser le suivi à long terme"
+      ],
+      "pieges": [
+        "Sous-estimer une fièvre isolée chez le nourrisson",
+        "Mal interpréter les seuils de l'ECBU selon l'âge",
+        "Réaliser la CUM trop précocement (inflammation)",
+        "Opérer trop rapidement une uropathie malformative",
+        "Oublier la prophylaxie antibactérienne si indiquée",
+        "Ne pas organiser le suivi spécialisé",
+        "Inquiéter inutilement les parents sur le pronostic"
+      ]
+    },
+    "theoriePratique": {
+      "titre": "Rappels théoriques - Infections urinaires et uropathies pédiatriques",
+      "sections": [
+        {
+          "titre": "Épidémiologie des infections urinaires",
+          "points": [
+            "Incidence: 1-2% nourrissons, 8% filles, 2% garçons",
+            "Pic: < 3 mois (garçons) et 2-4 ans (filles)",
+            "Germes: E. coli (80-90%), Proteus, Klebsiella, entérocoques",
+            "Facteurs de risque: malformations, constipation, RVU",
+            "Voie d'infection: ascendante (95%), hématogène (5%)",
+            "Récidive: 30% si malformation, 10% si normal"
+          ]
+        },
+        {
+          "titre": "Malformations urologiques fréquentes",
+          "points": [
+            "RVU: 30-50% après première PNA, grades I-V",
+            "Méga-uretère: sténose jonction urétéro-vésicale",
+            "Hydronéphrose: dilatation prédominante bassinet",
+            "Valves urètre postérieur: garçons, obstruction sévère",
+            "Rein multikystique: involution spontanée fréquente",
+            "Duplication pyélo-urétérale: RVU pôle inférieur"
+          ]
+        },
+        {
+          "titre": "Diagnostic biologique",
+          "points": [
+            "ECBU: seuils selon mode recueil et âge",
+            "Ponction sus-pubienne: > 10³/ml pathologique",
+            "Sondage: > 10⁴/ml (< 3 mois), > 10⁵/ml (> 3 mois)",
+            "Jet ou poche: > 10⁵/ml avec germe unique",
+            "Leucocyturie: > 10⁴/ml (mais non spécifique)",
+            "Nitrites: spécifiques mais sensibilité faible"
+          ]
+        },
+        {
+          "titre": "Imagerie et explorations",
+          "points": [
+            "Échographie: systématique après première PNA",
+            "CUM: 4-6 semaines après traitement, RVU",
+            "DMSA: cicatrices parenchymateuses à 6 mois",
+            "MAG3: fonction rénale relative et drainage",
+            "Scanner: complications (abcès, pyonéphrose)",
+            "Biologie: créatinine, cystatine C, microalbuminurie"
+          ]
+        }
+      ],
+      "rappelsTherapeutiques": [
+        "Antibiothérapie IV: ampicilline + gentamicine (< 1 mois)",
+        "Relais oral selon antibiogramme: durée 10-14 jours",
+        "Prophylaxie: amoxicilline 10 mg/kg/j si RVU > III",
+        "Chirurgie RVU: réimplantation urétéro-vésicale",
+        "Pyéloplastie: sténose pyélo-urétérale symptomatique",
+        "Section valves: endoscopie urétrale urgente",
+        "Surveillance: échographie + fonction rénale"
+      ],
+      "examensComplementaires": [
+        "ECBU: technique de recueil cruciale",
+        "Hémocultures: positives dans 10-30% PNA",
+        "Biologie: NFS, CRP, PCT, ionogramme",
+        "Échographie: première intention, non irradiante",
+        "CUM: gold standard RVU, irradiation modérée",
+        "Scintigraphie DMSA: référence cicatrices",
+        "Scintigraphie MAG3: fonction et drainage"
+      ]
+    }
+  }
+}

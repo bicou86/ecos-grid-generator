@@ -1,0 +1,520 @@
+{
+  "title": "Petite taille chez l'adolescent - Retard staturo-pondéral et pubertaire",
+  "context": {
+    "setting": "Cabinet médical",
+    "patient": "Adolescent de 15 ans consultant pour petite taille, se plaint d'être le plus petit en classe et objet de moqueries",
+    "vitals": {
+      "Poids": "35 kg",
+      "Taille": "150 cm",
+      "Envergure": "148 cm"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Antécédents personnels",
+          "binaryOnly": true,
+          "details": [
+            "Grossesse et accouchement [grossesse sp, accouchement par voie basse, à terme]",
+            "Poids de naissance [3200 g]",
+            "Taille de naissance [51 cm]",
+            "Maladies antérieures [seulement maladies d'enfance habituelles]",
+            "Vaccins [vaccination selon schéma habituel]",
+            "Développement psychomoteur [normal]"
+          ]
+        },
+        {
+          "id": "a2",
+          "text": "Histoire actuelle de la croissance",
+          "details": [
+            "Progression antérieure [régulière jusqu'à 13 ans]",
+            "Évolution récente [depuis 2 ans, ne grandit que très peu]",
+            "Comparaison fratrie [tous les copains dépassés en taille]",
+            "Différence avec pairs [de plus en plus importante]",
+            "État général [excellent actuellement]",
+            "Plaintes actuelles [pas d'autres plaintes]",
+            "Scolarité [normale pour l'âge]"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Développement pubertaire",
+          "details": [
+            "Signes pubertaires [pas d'augmentation taille verge]",
+            "Pilosité [pas de poils sous les bras et sur le pubis]",
+            "Voix [quelques rares boutons sur le front]",
+            "Développement musculaire [pas de développement particulier]",
+            "Comparaison avec pairs [retard évident]",
+            "Préoccupations [source de moqueries]"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Anamnèse familiale",
+          "details": [
+            "Pathologies [aucune pathologie familiale]",
+            "Taille père [172 cm, 68 kg, bonne santé]",
+            "Taille mère [165 cm, 60 kg, ménarche à 15 ans]",
+            "Fratrie [sœur 13 ans déjà réglée, mesure 162 cm]",
+            "Puberté parentale [ménarche tardive mère]",
+            "Croissance familiale [pas d'antécédent particulier]"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Mode de vie et facteurs environnementaux",
+          "details": [
+            "Alimentation [normale, pas de restriction]",
+            "Activité physique [sport régulier]",
+            "Sommeil [horaires normaux]",
+            "Stress/environnement [impact psychologique moqueries]",
+            "Médicaments [aucun médicament, pas de drogue, pas de tabac]",
+            "Maladies chroniques [aucune]"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Examen général et morphologique",
+          "binaryOnly": true,
+          "patientComment": "Adolescent en bon état général, aspect soigné, semble avoir à peine 12 ans"
+        },
+        {
+          "id": "e2",
+          "text": "Mesures anthropométriques",
+          "details": [
+            "Poids [35 kg - bien en-dessous P3]",
+            "Taille [150 cm - bien en-dessous P3]",
+            "Proportions corporelles [normales]",
+            "Envergure [148 cm]",
+            "Segment sup/segment inf [1.1 - normal]",
+            "IMC [calculé selon âge]",
+            "Périmètre crânien [normal]"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Examen du développement pubertaire",
+          "details": [
+            "Stade pubertaire Tanner [G1P1 - prépubère]",
+            "Verge [5 x 1.5 cm - prépubère]",
+            "Volume testiculaire [index 4.5 - prépubère]",
+            "Pilosité pubienne [absente]",
+            "Pilosité axillaire [absente]",
+            "Voix [non muée]",
+            "Développement musculaire [peu développé]"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Examen systémique",
+          "details": [
+            "Téguments [pas de signes dysmorphiques]",
+            "Sphère ORL [normale]",
+            "Glande thyroïde [normale à la palpation]",
+            "Status cardio-vasculaire [taille et consistance normales]",
+            "Status respiratoire [normal]",
+            "Palpation abdominale [normale]",
+            "Status neurologique [normal]"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Recherche de signes pathologiques",
+          "details": [
+            "Signes dysmorphiques [aucun]",
+            "Signes de malnutrition [aucun]",
+            "Signes endocriniens [hypothyroïdie, hypercorticisme]",
+            "Signes digestifs [malabsorption]",
+            "Signes rénaux [insuffisance rénale chronique]",
+            "Signes cardiaques [cardiopathie congénitale]",
+            "Stigmates syndrome génétique [aucun]"
+          ]
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Évaluation de la croissance et diagnostic",
+          "ddSection": {
+            "title": "Diagnostic différentiel du retard staturo-pondéral",
+            "categories": [
+              {
+                "name": "Diagnostic le plus probable",
+                "items": [
+                  {
+                    "text": "Retard simple de croissance et de puberté",
+                    "cause": "Arguments POUR:\n\t□ Taille familiale calculée normale (175±8.5 cm)\n\t□ Antécédent ménarche tardive mère (15 ans)\n\t□ Proportions corporelles normales\n\t□ Absence signes pathologiques\n\t□ Croissance régulière jusqu'à 13 ans\n\t□ État général excellent\n\t□ Âge osseux probablement retardé",
+                    "test": "→ Âge osseux (RX main et poignet gauches)"
+                  }
+                ]
+              },
+              {
+                "name": "Causes endocriniennes",
+                "items": [
+                  {
+                    "text": "Déficit en hormone de croissance",
+                    "cause": "Arguments À ÉVALUER:\n\t□ Retard statural marqué\n\t□ Nécessite tests de stimulation\n\t□ Croissance < 4 cm/an",
+                    "test": "→ IGF-1, IGFBP-3, tests stimulation GH"
+                  },
+                  {
+                    "text": "Hypothyroïdie",
+                    "cause": "Arguments CONTRE:\n\t□ Thyroïde normale à l'examen\n\t□ Pas de signes cliniques\n\t□ Scolarité normale",
+                    "test": "→ TSH, FT4"
+                  },
+                  {
+                    "text": "Hypercorticisme",
+                    "cause": "Arguments CONTRE:\n\t□ Pas de faciès cushingoid\n\t□ Proportions normales\n\t□ Pas d'obésité tronculaire",
+                    "test": "→ Cortisol libre urinaire 24h"
+                  }
+                ]
+              },
+              {
+                "name": "Causes nutritionnelles",
+                "items": [
+                  {
+                    "text": "Malnutrition",
+                    "cause": "Arguments CONTRE:\n\t□ Alimentation rapportée normale\n\t□ Pas de restriction alimentaire\n\t□ État général excellent",
+                    "test": "→ Bilan nutritionnel, albumine"
+                  },
+                  {
+                    "text": "Maladie inflammatoire chronique",
+                    "cause": "Arguments CONTRE:\n\t□ Pas de symptômes digestifs\n\t□ État général excellent\n\t□ Pas de retentissement",
+                    "test": "→ NFS, VS, CRP"
+                  }
+                ]
+              },
+              {
+                "name": "Causes génétiques",
+                "items": [
+                  {
+                    "text": "Syndrome de Turner",
+                    "cause": "Arguments CONTRE:\n\t□ Sexe masculin\n\t□ Pas de stigmates\n\t□ Proportions normales",
+                    "test": "→ Non applicable (garçon)"
+                  },
+                  {
+                    "text": "Autres syndromes génétiques",
+                    "cause": "Arguments CONTRE:\n\t□ Pas de dysmorphie\n\t□ Développement psychomoteur normal\n\t□ Antécédents familiaux négatifs",
+                    "test": "→ Consultation génétique si atypie"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Calcul de la taille cible et pronostic",
+          "details": [
+            "Taille cible familiale [175 ± 8.5 cm]",
+            "Calcul [(172 + 165 + 13) / 2 = 175 cm]",
+            "Taille actuelle [150 cm = -2.5 DS pour l'âge]",
+            "Âge statural [correspond à 12 ans environ]",
+            "Retard croissance [environ 2-3 ans]",
+            "Prévision finale [compatible avec taille cible si âge osseux retardé]",
+            "Potentiel croissance restant [dépend âge osseux]"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Examens complémentaires de première intention",
+          "details": [
+            "Âge osseux [RX main et poignet gauches - clé diagnostic]",
+            "Bilan biologique [FSC, VS, CRP, ionogramme]",
+            "Bilan hormonal [TSH, FT4]",
+            "Fonction rénale [créatinine, urée]",
+            "Bilan nutritionnel [albumine, préalbumine]",
+            "Sérologie cœliaque [anticorps anti-transglutaminase]",
+            "Bilan hépatique [si malabsorption suspectée]"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Examens de deuxième intention si nécessaire",
+          "details": [
+            "IGF-1 et IGFBP-3 [si suspicion déficit GH]",
+            "Tests stimulation GH [si IGF-1 basse]",
+            "Dosage gonadotrophines [LH, FSH basales]",
+            "Stéroïdes sexuels [testostérone]",
+            "IRM hypothalamo-hypophysaire [si déficit confirmé]",
+            "Caryotype [si signes évocateurs syndrome]",
+            "Consultation génétique [si dysmorphie]"
+          ]
+        },
+        {
+          "id": "m5",
+          "text": "Prise en charge et traitement",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Si retard simple confirmé",
+                "items": [
+                  {
+                    "treatment": "Surveillance clinique",
+                    "details": "Croissance et développement pubertaire",
+                    "duration": "Contrôles réguliers 6 mois"
+                  },
+                  {
+                    "treatment": "Rassurance et explication",
+                    "details": "Évolution naturelle favorable, prédiction taille adulte",
+                    "duration": "Soutien psychologique continu"
+                  },
+                  {
+                    "treatment": "Induction pubertaire",
+                    "details": "Testostérone si retard très important et impact psychologique",
+                    "duration": "Traitement temporaire 6-12 mois"
+                  }
+                ]
+              },
+              {
+                "title": "Si déficit hormonal confirmé",
+                "items": [
+                  {
+                    "treatment": "Hormone de croissance",
+                    "details": "Si déficit GH confirmé par tests",
+                    "duration": "Jusqu'à vitesse croissance < 2 cm/an"
+                  },
+                  {
+                    "treatment": "Substitution hormonale",
+                    "details": "Selon hormone déficitaire",
+                    "duration": "Selon pathologie sous-jacente"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m6",
+          "text": "Surveillance et suivi",
+          "details": [
+            "Contrôles réguliers [tous les 6 mois]",
+            "Mesure taille/poids [courbe de croissance]",
+            "Évaluation puberté [stades Tanner]",
+            "Âge osseux contrôle [annuel si traitement]",
+            "Vitesse croissance [cm/an]",
+            "Impact psychologique [bien-être, estime de soi]",
+            "Adaptation scolaire [performance, relations sociales]"
+          ]
+        },
+        {
+          "id": "m7",
+          "text": "Critères de réévaluation",
+          "redflagsSection": {
+            "title": "Signes nécessitant investigations complémentaires",
+            "items": [
+              {
+                "text": "Vitesse de croissance très lente",
+                "description": "< 4 cm/an ou < 25e percentile pour l'âge"
+              },
+              {
+                "text": "Signes neurologiques",
+                "description": "Céphalées, troubles visuels évoquant tumeur hypophysaire"
+              },
+              {
+                "text": "Retard pubertaire extrême",
+                "description": "Aucun signe pubertaire après 14 ans chez le garçon"
+              },
+              {
+                "text": "Altération état général",
+                "description": "Fatigue, anorexie, performances scolaires"
+              },
+              {
+                "text": "Signes dysmorphiques",
+                "description": "Apparition ou découverte de stigmates syndromiques"
+              },
+              {
+                "text": "Absence d'évolution",
+                "description": "Stagnation complète croissance et puberté > 1 an"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Information patient et famille - Diagnostic probable",
+          "content": "Vous présentez ce qu'on appelle un retard simple de croissance et de puberté. C'est une variante normale du développement, souvent familiale. Votre mère a eu ses règles tard, ce qui va dans ce sens. L'examen de vos os va nous confirmer que vous avez encore du potentiel de croissance. Vous allez rattraper vos camarades, mais plus tard qu'eux."
+        },
+        {
+          "id": "c2",
+          "text": "Information patient et famille - Pronostic",
+          "content": "Votre taille adulte finale devrait être normale, autour de 175 cm selon vos parents. La puberté va démarrer dans les mois qui viennent et vous allez avoir votre pic de croissance. C'est juste décalé dans le temps par rapport à vos camarades. Il faut être patient, mais l'évolution sera favorable."
+        },
+        {
+          "id": "c3",
+          "text": "Questions fréquentes du patient et famille",
+          "content": "[Est-ce que je vais rester petit ?]\n[Quand vais-je grandir ?]\n[Faut-il un traitement ?]\n[Pourquoi mes amis ont grandi et pas moi ?]\n[Est-ce héréditaire ?]\n[Puis-je faire du sport normalement ?]"
+        },
+        {
+          "id": "c4",
+          "text": "Réponse type du candidat",
+          "exemplesPhrases": [
+            "\"Non, votre taille adulte finale sera normale. C'est juste un retard de développement.\"",
+            "\"Probablement dans les 6-12 prochains mois. L'âge osseux va nous le préciser.\"",
+            "\"Pas forcément. On peut aider la puberté à démarrer si l'impact psychologique est trop important.\"",
+            "\"Chacun a son rythme. Vous êtes en retard mais vous allez les rattraper.\"",
+            "\"Oui, c'est souvent familial. Votre mère aussi a eu un développement tardif.\"",
+            "\"Oui, absolument. Le sport peut même aider votre développement.\""
+          ]
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour l'adolescent et parent standardisés",
+      "nom": "Adolescent de 15 ans et parent",
+      "contexte": "Cabinet médical",
+      "motifConsultation": {
+        "plaintePrincipale": "Je suis trop petit",
+        "autreChose": "Les autres se moquent de moi au collège"
+      },
+      "histoireActuelle": {
+        "preoccupationsPrincipales": [
+          "Je suis le plus petit de ma classe",
+          "Même les filles sont plus grandes que moi",
+          "On me traite de 'minus' au collège",
+          "Je n'ai pas encore de poils ni de voix qui mue",
+          "Mes parents disent que ça va venir mais ça tarde"
+        ],
+        "evolutionCroissance": [
+          "J'ai toujours été dans la moyenne jusqu'à 13 ans",
+          "Depuis 2 ans, je ne grandis presque plus",
+          "Tous mes copains m'ont dépassé",
+          "Ma petite sœur de 13 ans me rattrape"
+        ]
+      },
+      "inquietudes": {
+        "adolescent": [
+          "Est-ce que je vais rester petit ?",
+          "Quand vais-je être comme les autres ?",
+          "Y a-t-il un problème avec moi ?",
+          "Puis-je avoir un traitement ?"
+        ],
+        "parents": [
+          "On s'inquiète de ce retard",
+          "Il souffre psychologiquement",
+          "Faut-il consulter un spécialiste ?",
+          "Y a-t-il une maladie sous-jacente ?"
+        ]
+      },
+      "simulation": {
+        "attitude": [
+          "Adolescent timide, complexé par sa taille",
+          "Coopératif mais gêné pour l'examen",
+          "Parent attentif et inquiet",
+          "Demande des explications claires"
+        ],
+        "examenPhysique": [
+          "Aspect jeune pour l'âge",
+          "Accepte l'examen après explication",
+          "Gêne pour examen génital",
+          "Absence signes pubertaires évidents"
+        ]
+      }
+    },
+    "informationsExpert": {
+      "titre": "Points clés pour l'évaluateur",
+      "pointsCles": [
+        "Savoir calculer la taille cible familiale",
+        "Connaître l'importance de l'âge osseux dans l'évaluation",
+        "Différencier retard simple des pathologies endocriniennes",
+        "Comprendre l'impact psychologique du retard pubertaire",
+        "Savoir quand prescrire des investigations complémentaires",
+        "Maîtriser l'utilisation des courbes de croissance",
+        "Connaître les indications du traitement hormonal"
+      ],
+      "pieges": [
+        "Prescrire trop d'examens d'emblée si contexte rassurant",
+        "Oublier de calculer la taille cible familiale",
+        "Ne pas demander l'âge osseux en première intention",
+        "Sous-estimer l'impact psychologique",
+        "Méconnaître les antécédents familiaux (ménarche mère)",
+        "Ne pas rassurer sur l'évolution naturelle",
+        "Orienter trop rapidement vers l'endocrinologie"
+      ]
+    },
+    "theoriePratique": {
+      "titre": "Rappels théoriques - Croissance et puberté",
+      "sections": [
+        {
+          "titre": "Croissance normale",
+          "points": [
+            "Vitesse: 5-7 cm/an prépubère, pic 8-12 cm/an pubertaire",
+            "Facteurs: génétiques (80%), nutritionnels, hormonaux",
+            "Taille cible: (père + mère ± 13) / 2 ± 8.5 cm",
+            "Âge osseux: meilleur prédicteur potentiel restant",
+            "Proportions: segment sup/inf normal 0.9-1.1",
+            "Périmètre crânien: croît peu après 2 ans"
+          ]
+        },
+        {
+          "titre": "Puberté normale",
+          "points": [
+            "Garçons: 9-14 ans (moyenne 11.5 ans)",
+            "Premier signe: augmentation volume testiculaire > 4 ml",
+            "Pic de croissance: stade G3-G4 (12-14 ans)",
+            "Durée totale: 4-5 ans",
+            "Retard: aucun signe après 14 ans",
+            "Facteurs: génétiques, nutritionnels, maladies chroniques"
+          ]
+        },
+        {
+          "titre": "Retard simple",
+          "points": [
+            "Fréquence: 3-5% population générale",
+            "Hérédité: souvent familial (60%)",
+            "Caractéristiques: proportions normales, âge osseux retardé",
+            "Évolution: rattrapage spontané, taille adulte normale",
+            "Pronostic: excellent si pas de pathologie",
+            "Impact: surtout psychologique et social"
+          ]
+        },
+        {
+          "titre": "Déficit en hormone de croissance",
+          "points": [
+            "Incidence: 1/4000 à 1/10000",
+            "Signes: vitesse < 4 cm/an, proportions normales",
+            "Diagnostic: IGF-1 basse + tests stimulation",
+            "Causes: idiopathique (90%), tumeurs, traumatismes",
+            "Traitement: GH synthétique jusqu'à fin croissance",
+            "Suivi: efficacité, effets secondaires, compliance"
+          ]
+        }
+      ],
+      "rappelsTherapeutiques": [
+        "Surveillance: mesures régulières, courbes croissance",
+        "Rassurance: explication évolution naturelle",
+        "Soutien psychologique: impact social, estime de soi",
+        "Induction pubertaire: testostérone faible dose si nécessaire",
+        "Hormone de croissance: si déficit confirmé",
+        "Traitement causes: hypothyroïdie, malnutrition",
+        "Suivi spécialisé: endocrinologie selon étiologie"
+      ],
+      "examensComplementaires": [
+        "Âge osseux: RX main/poignet, méthode Greulich-Pyle",
+        "Biologie: NFS, VS, CRP, ionogramme, fonction rénale",
+        "Endocrinien: TSH, FT4, IGF-1, IGFBP-3",
+        "Tests stimulation GH: arginine, glucagon, clonidine",
+        "Imagerie: IRM hypothalamo-hypophysaire si déficit",
+        "Génétique: caryotype si suspicion syndrome",
+        "Nutritionnel: albumine, vitamines, sérologie cœliaque"
+      ]
+    }
+  }
+}

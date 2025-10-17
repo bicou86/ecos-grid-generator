@@ -1,0 +1,314 @@
+{
+  "title": "Pédiatrie - Occlusion sur bride",
+  "type": "ECOS",
+  "context": {
+    "setting": "Service d'urgence pédiatrique",
+    "patient": "Lucie, 13 ans, douleurs abdominales intenses depuis 4 heures, antécédents d'appendicectomie",
+    "vitals": {
+      "temperature": "36.4°C",
+      "fc": "120 bpm",
+      "ta": "110/60 mmHg"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Caractérisation de la douleur",
+          "details": [
+            "Type de douleur [Continues avec renforcements par crises]",
+            "Localisation [Abdominale diffuse]",
+            "Intensité [Intenses]",
+            "Durée [Depuis 4 heures]"
+          ]
+        },
+        {
+          "id": "a2",
+          "text": "Symptômes associés",
+          "details": [
+            "Vomissements [Alimentaires abondants puis vert clair]",
+            "Transit intestinal [Selles normales la veille]",
+            "Signes urinaires [Non]",
+            "Signes génitaux [Non]",
+            "Signes extra-abdominaux [Non]"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Antécédents chirurgicaux",
+          "details": [
+            "Amygdalectomie [À 2 ans]",
+            "Appendicectomie [À 7 ans]",
+            "Cicatrice de laparotomie [Présente]"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Recherche de facteurs de risque",
+          "details": [
+            "Chirurgie abdominale antérieure [Oui - appendicectomie]",
+            "Intervalle depuis dernière chirurgie [6 ans]",
+            "Épisodes similaires antérieurs [À rechercher]"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "État général et signes vitaux",
+          "details": [
+            "État général [Enfant fatigué et algique]",
+            "Température [36.4°C]",
+            "Pouls [120/min]",
+            "Tension artérielle [110/60 mmHg]"
+          ]
+        },
+        {
+          "id": "e2",
+          "text": "Examen abdominal",
+          "details": [
+            "Inspection [Non distendu]",
+            "Palpation [Globalement douloureux mais souple]",
+            "Auscultation [Bruits de tonalité augmentée]",
+            "Défense [Absente]",
+            "Contracture [Absente]"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Recherche de complications",
+          "details": [
+            "Signes d'irritation péritonéale [Absents]",
+            "Orifices herniaires [Libres]",
+            "Organes génitaux [Normaux]"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Reste de l'examen",
+          "details": [
+            "Examen cardio-pulmonaire [Normal]",
+            "Examen neurologique [Normal]",
+            "Examen cutané [Normal]"
+          ]
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic suspecté",
+          "ddSection": {
+            "title": "Diagnostics à évoquer devant douleurs abdominales + cicatrice",
+            "categories": [
+              {
+                "name": "Diagnostic le plus probable",
+                "items": [
+                  {
+                    "text": "Occlusion sur bride",
+                    "cause": "Arguments POUR:\n\t□ Antécédent de laparotomie\n\t□ Douleurs par crises\n\t□ Vomissements bilieux\n\t□ Bruits intestinaux augmentés",
+                    "test": "→ ASP couché de face"
+                  }
+                ]
+              },
+              {
+                "name": "Autres causes d'occlusion",
+                "items": [
+                  {
+                    "text": "Volvulus",
+                    "cause": "Arguments CONTRE:\n\t□ Pas de météorisme\n\t□ Abdomen souple",
+                    "test": "→ ASP, scanner si doute"
+                  },
+                  {
+                    "text": "Invagination intestinale",
+                    "cause": "Arguments CONTRE:\n\t□ Âge atypique (>5 ans)\n\t□ Pas de rectorragies",
+                    "test": "→ Échographie abdominale"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Examens complémentaires urgents",
+          "details": [
+            "ASP couché de face [Distension d'anses grêles si occlusion]",
+            "US abdominal [Liquide libre, vascularisation des anses]",
+            "Test de grossesse [Systématique chez adolescente]",
+            "Gazométrie [Acidose? Lactates augmentés?]",
+            "NFS, ionogramme [Bilan préopératoire]"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Critères de gravité",
+          "details": [
+            "Durée d'évolution [>6 heures = risque de nécrose]",
+            "Hyperalgie [Attention fausse amélioration si nécrose]",
+            "Signes péritonéaux [Irritation péritonéale]",
+            "ASP [Aspect en fleur convergent]",
+            "Doppler [Disparition vascularisation intestinale]"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Traitement médical initial",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Traitement conservateur",
+                "content": "Aspiration digestive par sonde nasogastrique double courant (Salem)\nRéhydratation IV avec compensation des pertes\nAntalgiques IV après examens décisionnels\nSurveillance clinique rapprochée"
+              },
+              {
+                "title": "Surveillance sous traitement médical",
+                "content": "Examen clinique toutes les 8h\nASP de contrôle toutes les 8h\nConstantes vitales (T°, pouls, TA)\nDiurèse horaire\nVolume et aspect liquide d'aspiration\nÉvolution de l'aération digestive"
+              }
+            ]
+          }
+        },
+        {
+          "id": "m5",
+          "text": "Indications chirurgicales",
+          "details": [
+            "Échec traitement médical après 48h",
+            "Suspicion de nécrose intestinale",
+            "Signes d'irritation péritonéale",
+            "Dégradation clinique",
+            "Acidose métabolique persistante"
+          ]
+        },
+        {
+          "id": "m6",
+          "text": "Traitement chirurgical",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Technique opératoire",
+                "content": "Laparotomie ou laparoscopie exploratrice\nSection de bride\nAdhésiolyse\nRésection intestinale si nécrose\nTest de viabilité intestinale"
+              }
+            ]
+          }
+        },
+        {
+          "id": "m7",
+          "text": "Complications à prévenir",
+          "redflagsSection": {
+            "title": "Signes de complications graves",
+            "items": [
+              {
+                "text": "Nécrose intestinale",
+                "description": "Douleur intense, défense, acidose"
+              },
+              {
+                "text": "Perforation intestinale",
+                "description": "Pneumopéritoine, péritonite"
+              },
+              {
+                "text": "Choc hypovolémique",
+                "description": "Déshydratation sévère, hypotension"
+              },
+              {
+                "text": "Sepsis",
+                "description": "Fièvre, hyperleucocytose"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Information aux parents",
+          "exemplesPhrases": [
+            "Lucie présente une occlusion intestinale probablement due à des adhérences de sa chirurgie précédente.",
+            "Nous allons d'abord essayer un traitement médical avec aspiration digestive et surveillance.",
+            "Si l'évolution n'est pas favorable ou si des signes de souffrance intestinale apparaissent, une chirurgie sera nécessaire."
+          ]
+        },
+        {
+          "id": "c2",
+          "text": "Questions des parents",
+          "content": "[Est-ce grave?] [Faudra-t-il opérer?] [Combien de temps à l'hôpital?] [Risque de récidive?]"
+        },
+        {
+          "id": "c3",
+          "text": "Conseils de sortie",
+          "exemplesPhrases": [
+            "Le risque de récidive existe et nécessite de consulter rapidement en cas de douleurs abdominales.",
+            "Toute intervention, même laparoscopique, peut créer de nouvelles adhérences.",
+            "L'hospitalisation durera au minimum 48-72h pour surveillance."
+          ]
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "informationsExpert": {
+      "titre": "Points clés pour l'évaluation",
+      "pointsCles": [
+        "Reconnaître le lien entre chirurgie abdominale antérieure et occlusion",
+        "Identifier les signes de gravité et de nécrose intestinale",
+        "Connaître les indications du traitement conservateur vs chirurgical",
+        "Savoir surveiller l'évolution sous aspiration digestive",
+        "Expliquer le risque de récidive aux parents"
+      ],
+      "pieges": [
+        "Méconnaître une nécrose intestinale débutante",
+        "Retarder la chirurgie si signes de gravité",
+        "Oublier le test de grossesse chez l'adolescente",
+        "Ne pas prévenir du risque de récidive",
+        "Sous-estimer la déshydratation"
+      ]
+    },
+    "theoriePratique": {
+      "titre": "Aspects théoriques",
+      "sections": [
+        {
+          "titre": "Physiopathologie de l'occlusion sur bride",
+          "points": [
+            "Formation d'adhérences post-chirurgicales",
+            "Bride fibreuse créant une striction",
+            "Distension d'amont et collapsus d'aval",
+            "Stase liquidienne et vomissements",
+            "Risque d'ischémie par strangulation"
+          ]
+        },
+        {
+          "titre": "Délais de nécrose",
+          "points": [
+            "Occlusion simple: nécrose après 12-24h",
+            "Strangulation: nécrose en 6h",
+            "Facteurs aggravants: torsion, incarcération",
+            "Signes de nécrose: douleur intense, péritonite",
+            "Marqueurs biologiques: lactates, acidose"
+          ]
+        }
+      ],
+      "rappelsTherapeutiques": [
+        "Aspiration digestive: sonde Salem double courant",
+        "Réhydratation: cristalloïdes 20 ml/kg puis entretien",
+        "Antalgiques: paracétamol IV, morphine si besoin",
+        "Antibioprophylaxie si chirurgie: céfazoline",
+        "Durée surveillance: 48h minimum sous traitement médical"
+      ],
+      "examensComplementaires": [
+        "ASP: niveaux hydro-aériques, distension grêle",
+        "Échographie: liquide libre, péristaltisme",
+        "Scanner: si doute diagnostique",
+        "Biologie: NFS, iono, lactates, gazométrie",
+        "Test grossesse systématique si adolescente"
+      ]
+    }
+  }
+}

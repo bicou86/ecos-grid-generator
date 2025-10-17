@@ -1,0 +1,371 @@
+{
+  "title": "Grille ECOS USIT2 - Convulsions fébriles",
+  "context": {
+    "setting": "Service d'urgences pédiatriques",
+    "patient": "Enfant avec convulsions fébriles - Station Christophe Rey",
+    "vitals": {}
+  },
+  "sections": {
+    "management": {
+      "weight": 0.25,
+      "title": "Communication",
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Accueille la patiente par son nom, se présente et la met à l'aise",
+          "scoringRule": "2pts = les 3"
+        },
+        {
+          "id": "m2",
+          "text": "Explique à la patiente le déroulement de la consultation ET Vérifie si elle a une autre préoccupation",
+          "scoringRule": "2pts = les 2, 1pt = 1, 0 = aucun"
+        },
+        {
+          "id": "m3",
+          "text": "Commence l'anamnèse par une question ouverte",
+          "binaryOnly": true
+        },
+        {
+          "id": "m4",
+          "text": "S'exprime dans un langage clair, sans jargon tout au long de l'entretien",
+          "scoringRule": "2pts = souvent, 1pt = rarement, 0 = jamais"
+        },
+        {
+          "id": "m5",
+          "text": "Fait une synthèse de la consultation"
+        },
+        {
+          "id": "m6",
+          "text": "L'anamnèse a suivi un cours logique et harmonieux",
+          "binaryOnly": true,
+          "scoringRule": "2pts = le plus souvent, 1pt = souvent, 0 = rarement"
+        },
+        {
+          "id": "m7",
+          "text": "Tient compte des représentations et des émotions de la patiente dans l'explication",
+          "scoringRule": "2pts = le plus souvent, 1pt = souvent, 0 = rarement"
+        },
+        {
+          "id": "m8",
+          "text": "Met fin à l'entretien : salue et remercie la patiente avec un mot personnel"
+        },
+        {
+          "id": "m9",
+          "text": "Adopte un comportement non verbal facilitant la relation",
+          "scoringRule": "2pts = souvent, 1pt = rarement, 0 = jamais"
+        },
+        {
+          "id": "m10",
+          "text": "Reconnaît, verbalise et légitime les émotions de la patiente. Fournit du soutien",
+          "scoringRule": "2pts = souvent, 1pt = rarement, 0 = jamais"
+        },
+        {
+          "id": "m11",
+          "text": "Durant la phase d'explication / planification, l'étudiant·e mentionne :",
+          "scoringRule": "diagnostic ET cause = 2 pts, diagnostic OU cause = 1 pt, aucun = 0 pt",
+          "ddSection": {
+            "title": "Diagnostic de suspicion",
+            "categories": [
+              {
+                "name": "Suspicion de :",
+                "items": [
+                  {
+                    "text": "Convulsion fébrile simple (1pt) suite à une otite bilatérale (1pt)",
+                    "cause": "Arguments POUR:\n\t□ Crise généralisée tonico-clonique\n\t□ Durée < 15 minutes (90 secondes)\n\t□ Âge compatible (3 ans)\n\t□ Contexte fébrile (infection ORL)\n\t□ Pas de récidive dans les 24h\n\t□ Examen neurologique normal après\nArguments CONTRE:\n\t□ Aucun signe de crise focale\n\t□ Pas d'anomalie neurologique préexistante",
+                    "test": "→ Pas d'examens complémentaires nécessaires si critères de simplicité"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m12",
+          "text": "Durant la phase d'explication / planification, l'étudiant·e mentionne :",
+          "details": [
+            "Pas d'examen complémentaire nécessaire"
+          ]
+        },
+        {
+          "id": "m13",
+          "text": "Durant la phase d'explication / planification, l'étudiant·e propose la prise en charge suivante :",
+          "details": [
+            "Traitement de l'otite et de la fièvre",
+            "Diazépam en réserve en cas de crise"
+          ],
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Traitement de l'otite et de la fièvre",
+                "content": "• Amoxicilline 80-90 mg/kg/j en 2-3 prises pendant 7-10 jours\n• Paracétamol 15 mg/kg/dose toutes les 6h\n• Ibuprofène 10 mg/kg/dose toutes les 8h si fièvre persistante\n• Mesures physiques : déshabiller, température ambiante 18-20°C"
+              },
+              {
+                "title": "En cas de crise",
+                "content": "• Diazépam rectal 0.5 mg/kg (max 10 mg) si crise > 5 min\n• Position latérale de sécurité\n• Protection contre les traumatismes\n• Ne rien mettre dans la bouche\n• Appel urgences si crise > 5 minutes"
+              },
+              {
+                "title": "Éducation parentale",
+                "content": "• Rassurer : excellent pronostic des convulsions fébriles simples\n• Risque de récidive : 30% avant 6 ans\n• Pas de risque d'épilepsie significativement augmenté\n• Gestion préventive de la fièvre\n• Instructions claires sur utilisation du diazépam"
+              },
+              {
+                "title": "Surveillance et critères de retour",
+                "content": "• Surveillance température toutes les 4h\n• Hydratation suffisante\n• Retour si : nouvelle crise, altération conscience, raideur nuque\n• Consultation de contrôle à 48-72h pour otite"
+              },
+              {
+                "title": "Suivi à long terme",
+                "content": "• Pas d'EEG systématique\n• Pas de traitement antiépileptique préventif\n• Consultation neuropédiatrique seulement si convulsions complexes\n• Vaccination à jour (notamment pneumocoque, Haemophilus)"
+              }
+            ]
+          },
+          "redflagsSection": {
+            "title": "Signes d'alarme et complications",
+            "items": [
+              {
+                "text": "Convulsion > 15 minutes",
+                "description": "État de mal épileptique → Urgence vitale, réanimation"
+              },
+              {
+                "text": "Signes méningés",
+                "description": "Raideur nuque, photophobie, vomissements → Ponction lombaire urgente"
+              },
+              {
+                "text": "Convulsions répétées",
+                "description": "Plus de 2 crises en 24h → Hospitalisation pour surveillance"
+              },
+              {
+                "text": "Déficit neurologique post-critique",
+                "description": "Hémiparésie, troubles conscience persistants → IRM cérébrale urgente"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "anamnese": {
+      "weight": 0.25,
+      "title": "Anamnèse - Durant l'anamnèse, l'étudiant·e a exploré",
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Description de la crise",
+          "binaryOnly": true,
+          "patientComment": "Chute sur le côté puis tremblement des 4 membres"
+        },
+        {
+          "id": "a2",
+          "text": "Durée de la crise",
+          "binaryOnly": true,
+          "patientComment": "environ 90 secondes"
+        },
+        {
+          "id": "a3",
+          "text": "Phase post-ictale",
+          "binaryOnly": true,
+          "patientComment": "endormi pendant 30 minutes"
+        },
+        {
+          "id": "a4",
+          "text": "Perte de connaissance",
+          "binaryOnly": true,
+          "patientComment": "oui"
+        },
+        {
+          "id": "a5",
+          "text": "Perte des urines et des selles",
+          "binaryOnly": true,
+          "patientComment": "pas remarqué"
+        },
+        {
+          "id": "a6",
+          "text": "Prise de T° après crise",
+          "binaryOnly": true,
+          "patientComment": "non"
+        },
+        {
+          "id": "a7",
+          "text": "Symptômes avant crise",
+          "binaryOnly": true,
+          "patientComment": "fièvre, rhume, otalgie, fatigue"
+        },
+        {
+          "id": "a8",
+          "text": "Début des symptômes",
+          "binaryOnly": true,
+          "patientComment": "3 jours rhume, otalgie ce matin"
+        },
+        {
+          "id": "a9",
+          "text": "Traitement donné",
+          "binaryOnly": true,
+          "patientComment": "rien, pas d'antipyrétique, pas d'antibiotique, pas de benzodiazépine en réserve"
+        },
+        {
+          "id": "a10",
+          "text": "ATCD médicaux",
+          "binaryOnly": true,
+          "patientComment": "rien"
+        },
+        {
+          "id": "a11",
+          "text": "Status vaccinal",
+          "binaryOnly": true,
+          "patientComment": "à jour"
+        },
+        {
+          "id": "a12",
+          "text": "Problème durant la grossesse",
+          "binaryOnly": true,
+          "patientComment": "non"
+        },
+        {
+          "id": "a13",
+          "text": "ATCD familiaux",
+          "binaryOnly": true,
+          "patientComment": "rien, notamment pas d'épilepsie"
+        }
+      ]
+    },
+    "examen": {}
+  },
+  "annexes": {
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour le parent standardisé",
+      "nom": "Parent d'un enfant de 3 ans",
+      "age": "3 ans (enfant)",
+      "contexte": "Service d'urgences pédiatriques",
+      "motifConsultation": {
+        "plaintePrincipale": "Mon enfant a fait une crise convulsive",
+        "autreChose": "Très inquiet, première fois que cela arrive"
+      },
+      "histoireActuelle": {
+        "criseConvulsive": {
+          "description": "L'enfant est tombé sur le côté puis a tremblé des 4 membres",
+          "duree": "Environ 90 secondes",
+          "phasePostIctale": "Endormi pendant 30 minutes après",
+          "perteConnaissance": "Oui, pendant la crise",
+          "perteUrinesSelles": "Je n'ai pas remarqué",
+          "priseTemperature": "Non, je n'ai pas pris sa température après"
+        },
+        "symptomesAvantCrise": [
+          "Fièvre depuis 3 jours",
+          "Rhume depuis 3 jours",
+          "Se plaint de l'oreille depuis ce matin",
+          "Fatigué"
+        ],
+        "traitement": {
+          "donne": "Rien pour le moment",
+          "antipyretique": "Non",
+          "antibiotique": "Non",
+          "benzodiazepine": "Non, pas de réserve à la maison"
+        }
+      },
+      "antecedents": {
+        "medicaux": "Aucun problème médical particulier",
+        "vaccinaux": "Vaccinations à jour",
+        "grossesse": "Grossesse et accouchement sans problème",
+        "familiaux": "Aucun cas d'épilepsie dans la famille"
+      },
+      "simulation": {
+        "attitude": [
+          "Parent très inquiet",
+          "Pose beaucoup de questions",
+          "Demande si c'est de l'épilepsie",
+          "Veut savoir si cela va se reproduire"
+        ]
+      },
+      "inquietudes": {
+        "principales": [
+          "Est-ce que mon enfant fait de l'épilepsie ?",
+          "Est-ce que cela va recommencer ?",
+          "Est-ce dangereux pour son cerveau ?",
+          "Qu'est-ce que je dois faire si cela se reproduit ?"
+        ]
+      }
+    },
+    "informationsExpert": {
+      "titre": "Points clés pour l'évaluation - Convulsions fébriles",
+      "objectifsPedagogiques": [
+        "Reconnaître une convulsion fébrile simple",
+        "Différencier convulsion fébrile simple et complexe",
+        "Identifier les facteurs déclenchants (infection ORL)",
+        "Connaître les critères de convulsion fébrile simple",
+        "Savoir rassurer les parents",
+        "Connaître la prise en charge adaptée"
+      ],
+      "pointsCles": [
+        "Convulsion fébrile simple : généralisée, < 15 min, unique en 24h",
+        "Âge typique : 6 mois à 5 ans",
+        "Pas d'examens complémentaires si critères de simplicité",
+        "Traiter la cause de la fièvre (ici otite)",
+        "Prescription de diazépam rectal en réserve",
+        "Éducation parentale essentielle"
+      ],
+      "criteresDiagnostiques": {
+        "convulsionFebrileSimple": [
+          "Crise généralisée tonico-clonique",
+          "Durée < 15 minutes",
+          "Pas de récidive dans les 24 heures",
+          "Examen neurologique normal après la crise",
+          "Âge entre 6 mois et 5 ans",
+          "Pas de signe d'infection du SNC"
+        ],
+        "convulsionFebrileComplexe": [
+          "Crise focale",
+          "Durée > 15 minutes",
+          "Récidive dans les 24 heures",
+          "Anomalie neurologique post-critique"
+        ]
+      },
+      "pieges": [
+        "Ne pas reconnaître les critères de convulsion fébrile simple",
+        "Prescrire des examens inutiles (EEG, imagerie)",
+        "Ne pas traiter la cause de la fièvre",
+        "Ne pas rassurer les parents",
+        "Oublier la prescription de diazépam en réserve",
+        "Ne pas éduquer sur la gestion de la fièvre"
+      ]
+    },
+    "theoriePratique": {
+      "titre": "Rappels théoriques - Convulsions fébriles",
+      "sections": [
+        {
+          "titre": "Définition et épidémiologie",
+          "contenu": "Les convulsions fébriles touchent 2-5% des enfants",
+          "points": [
+            "Surviennent entre 6 mois et 5 ans (pic 18 mois)",
+            "Associées à fièvre > 38°C sans infection du SNC",
+            "Prédisposition génétique (antécédents familiaux 25-40%)",
+            "Pronostic excellent pour les convulsions simples",
+            "Risque d'épilepsie ultérieure : 2-4% (vs 1% population générale)"
+          ]
+        },
+        {
+          "titre": "Prise en charge",
+          "contenu": "Approche standardisée des convulsions fébriles",
+          "points": [
+            "Convulsion simple : pas d'examens complémentaires",
+            "Traiter la cause de la fièvre (otite, IVRS, etc.)",
+            "Antipyrétiques : paracétamol ou ibuprofène",
+            "Diazépam rectal 0.5 mg/kg si crise > 5 minutes",
+            "Éducation parentale sur gestion fièvre et récurrence",
+            "Hospitalisation si : < 6 mois, convulsion complexe, état général altéré"
+          ]
+        }
+      ],
+      "rappelsTherapeutiques": [
+        "Paracétamol : 15 mg/kg/dose toutes les 6h",
+        "Ibuprofène : 10 mg/kg/dose toutes les 8h",
+        "Diazépam rectal : 0.5 mg/kg (max 10 mg) si crise > 5 min",
+        "Amoxicilline pour otite : 80-90 mg/kg/j en 2-3 prises",
+        "Mesures physiques : déshabiller, température ambiante 18-20°C"
+      ],
+      "examensComplementaires": [
+        "Aucun si convulsion fébrile simple typique",
+        "Ponction lombaire si : < 12 mois, signes méningés, altération conscience",
+        "EEG : pas d'indication en routine",
+        "Imagerie cérébrale : seulement si signes focaux ou anomalie neurologique",
+        "Bilan biologique : selon le contexte infectieux"
+      ]
+    }
+  }
+}

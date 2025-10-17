@@ -1,0 +1,345 @@
+{
+  "title": "Intoxication médicamenteuse - Paracétamol et benzodiazépines",
+  "context": {
+    "setting": "Service d'urgences",
+    "patient": "Jeune de 21 ans, antécédent d'état dépressif, consultant 12h après tentative de suicide médicamenteuse (paracétamol 20g, lorazépam 4mg, eau de Javel 10cl). Le patient est actuellement asymptomatique avec un examen clinique normal"
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Circonstances de l'intoxication",
+          "binaryOnly": true
+        },
+        {
+          "id": "a2",
+          "text": "Substances ingérées et quantités",
+          "details": [
+            "Type de substances [Doliprane 1g x 20 cp, Lorazépam 1mg x 4 cp, eau de Javel 10cl]",
+            "Heure exacte de la prise [il y a 12 heures]",
+            "Mode d'ingestion [voie orale]",
+            "Nombre de comprimés/dose totale [20g paracétamol, 4mg lorazépam]"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Symptômes actuels",
+          "details": [
+            "Nausées/vomissements [non]",
+            "Douleur abdominale [non]",
+            "Troubles de la vigilance [non]",
+            "Autres symptômes [aucun symptôme]"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Contexte psychiatrique",
+          "details": [
+            "Antécédents psychiatriques [état dépressif]",
+            "Suivi actuel [variable selon patient]",
+            "Intentionnalité [but suicidaire]",
+            "Facteurs déclenchants [variable selon patient]"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Hétéro-anamnèse",
+          "details": [
+            "Informations des ambulanciers",
+            "Informations de l'entourage",
+            "Emballages retrouvés"
+          ]
+        },
+        {
+          "id": "a6",
+          "text": "Antécédents médicaux",
+          "patientComment": "État dépressif"
+        },
+        {
+          "id": "a7",
+          "text": "Médicaments habituels"
+        },
+        {
+          "id": "a8",
+          "text": "Allergies"
+        },
+        {
+          "id": "a9",
+          "text": "Consommation de substances",
+          "details": [
+            "Alcool associé [non]",
+            "Autres toxiques [non]"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Évaluation ABCDE",
+          "binaryOnly": true
+        },
+        {
+          "id": "e2",
+          "text": "Signes vitaux",
+          "details": [
+            "Tension artérielle [normale]",
+            "Fréquence cardiaque [normale]",
+            "Fréquence respiratoire [normale]",
+            "Saturation O2 [normale]",
+            "Température [normale]",
+            "Glycémie capillaire [normale]"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "État de conscience",
+          "details": [
+            "Glasgow [15/15]",
+            "Orientation temporo-spatiale [orienté]",
+            "Pupilles [symétriques, réactives]"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Examen abdominal",
+          "details": [
+            "Inspection [normal]",
+            "Palpation - Sensibilité hépatique [non douloureuse]",
+            "Palpation - Masse [absence]",
+            "Bruits intestinaux [présents]"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Examen neurologique",
+          "details": [
+            "Déficit focal [absent]",
+            "Réflexes [normaux]",
+            "Coordination [normale]"
+          ]
+        },
+        {
+          "id": "e6",
+          "text": "Recherche de toxidromes",
+          "patientComment": "Absence de syndrome anticholinergique, sympathomimétique, opioïde ou sédatif"
+        },
+        {
+          "id": "e7",
+          "text": "Inspection des effets personnels",
+          "patientComment": "Pour prévenir une ré-intoxication"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Examens complémentaires urgents",
+          "details": [
+            "Paracétamolémie quantitative [obligatoire]",
+            "Glycémie [normale]",
+            "ECG - recherche QT long, QRS large [normal]",
+            "Fonction hépatique (ASAT, ALAT, bilirubine)",
+            "Fonction rénale (créatinine)",
+            "Coagulation (TP, INR) si suspicion d'atteinte hépatique"
+          ]
+        },
+        {
+          "id": "m2",
+          "text": "Interprétation du nomogramme de Rumack-Matthew",
+          "patientComment": "Évaluation du risque hépatotoxique selon la concentration et le délai depuis l'ingestion"
+        },
+        {
+          "id": "m3",
+          "text": "Traitement spécifique - N-acétylcystéine",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Protocole N-acétylcystéine IV",
+                "content": "Étape 1: 200 mg/kg dans 500ml sur 4h\nÉtape 2: 150 mg/kg dans 1000ml sur 24h (1x/jour pendant 3 jours)\nEfficacité proche de 100% si débuté précocement"
+              },
+              {
+                "title": "Indications",
+                "content": "- Paracétamolémie au-dessus de la ligne de toxicité\n- Ingestion > 10g ou 150 mg/kg\n- Délai > 8h avec dose toxique\n- ALAT augmentées"
+              },
+              {
+                "title": "Effets secondaires",
+                "content": "- Réaction anaphylactoïde: 4-17% (interrompre temporairement)\n- Nausées/vomissements: 23%"
+              }
+            ]
+          }
+        },
+        {
+          "id": "m4",
+          "text": "Décontamination digestive",
+          "details": [
+            "Charbon activé si < 1h [non indiqué, prise il y a 12h]",
+            "Contre-indications respectées"
+          ]
+        },
+        {
+          "id": "m5",
+          "text": "Surveillance clinique et paraclinique",
+          "details": [
+            "Monitoring des signes vitaux",
+            "Surveillance neurologique",
+            "Contrôle de la fonction hépatique à 24h",
+            "Paracétamolémie de contrôle si nécessaire"
+          ]
+        },
+        {
+          "id": "m6",
+          "text": "Contact centre antipoison",
+          "patientComment": "Tox Info Suisse 145 pour conseils spécialisés"
+        },
+        {
+          "id": "m7",
+          "text": "Évaluation psychiatrique",
+          "patientComment": "Consultation psychiatrique urgente pour évaluation du risque suicidaire"
+        },
+        {
+          "id": "m8",
+          "text": "Diagnostics différentiels et complications",
+          "ddSection": {
+            "title": "Complications à surveiller",
+            "categories": [
+              {
+                "name": "Intoxication au paracétamol",
+                "items": [
+                  {
+                    "text": "Hépatite toxique (stade 2-3)",
+                    "cause": "Arguments POUR:\n\t□ Dose ingérée > 10g\n\t□ Délai de 12h depuis l'ingestion\n\t□ Stock de glutathion potentiellement déplété",
+                    "test": "→ Fonction hépatique, INR, paracétamolémie"
+                  },
+                  {
+                    "text": "Insuffisance hépatique fulminante (stade 3-4)",
+                    "cause": "Arguments POUR:\n\t□ Évolution possible à J3-4\n\t□ Encéphalopathie, ictère, coagulopathie",
+                    "test": "→ Surveillance rapprochée, transfert en réanimation si besoin"
+                  }
+                ]
+              },
+              {
+                "name": "Intoxication aux benzodiazépines",
+                "items": [
+                  {
+                    "text": "Dépression respiratoire",
+                    "cause": "Arguments POUR:\n\t□ Dose faible (4mg lorazépam)\n\t□ Pas de co-intoxication à l'alcool",
+                    "test": "→ Surveillance SpO2, fréquence respiratoire"
+                  }
+                ]
+              },
+              {
+                "name": "Ingestion de caustique",
+                "items": [
+                  {
+                    "text": "Lésions digestives par eau de Javel",
+                    "cause": "Arguments CONTRE:\n\t□ Faible concentration\n\t□ Petit volume (10cl)\n\t□ Absence de symptômes",
+                    "test": "→ Pas d'endoscopie si asymptomatique"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m9",
+          "text": "Prévention de la ré-exposition",
+          "patientComment": "Sécurisation de l'environnement, retrait des moyens"
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Clôture de la consultation",
+          "content": "«Nous allons vous traiter avec la N-acétylcystéine pour protéger votre foie du paracétamol. Le traitement est très efficace. Nous allons également vous surveiller étroitement et un psychiatre viendra vous voir pour discuter de ce qui s'est passé et vous aider.»"
+        },
+        {
+          "id": "c2",
+          "text": "Questions difficiles du patient",
+          "content": "[Est-ce que je vais mourir?] [Est-ce que mon foie est foutu?] [Pourquoi vous me gardez, je vais bien?]"
+        },
+        {
+          "id": "c3",
+          "text": "Réponse type du candidat",
+          "exemplesPhrases": [
+            "«Le traitement que nous avons commencé est très efficace pour protéger votre foie. Avec une prise en charge appropriée, le pronostic est excellent.»",
+            "«Il est important de vous surveiller car les effets du paracétamol peuvent apparaître après 24-48h, même si vous vous sentez bien maintenant.»",
+            "«Je comprends que c'est un moment difficile. Nous sommes là pour vous aider médicalement et psychologiquement.»"
+          ]
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "images": [
+      {
+        "id": "img1",
+        "title": "Nomogramme de Rumack-Matthew",
+        "description": "Nomogramme pour évaluer le risque d'hépatotoxicité selon la concentration de paracétamol et le temps depuis l'ingestion",
+        "filename": "grilles_generees/html/images/nomogramme-rumack-matthew.jpg"
+      },
+      {
+        "id": "img2",
+        "title": "Algorithme de prise en charge",
+        "description": "Algorithme décisionnel pour la prise en charge d'une intoxication au paracétamol",
+        "filename": "grilles_generees/html/images/algorithme-paracetamol.jpg"
+      }
+    ],
+    "informationsExpert": {
+      "titre": "Points clés pour l'expert",
+      "pointsCles": [
+        "Le dosage de la paracétamolémie est OBLIGATOIRE dans toute intoxication volontaire",
+        "Le délai de 12h nécessite un traitement par N-acétylcystéine sans attendre le résultat",
+        "L'absence de symptômes n'exclut pas le risque d'hépatotoxicité",
+        "La dose ingérée (20g) est clairement toxique (seuil à 10g)",
+        "L'eau de Javel domestique en petite quantité ne nécessite pas d'endoscopie si asymptomatique"
+      ],
+      "pieges": [
+        "Ne pas doser la paracétamolémie dans une intoxication polymédicamenteuse",
+        "Attendre les symptômes pour traiter (apparition retardée)",
+        "Ne pas utiliser le nomogramme correctement",
+        "Oublier l'évaluation psychiatrique",
+        "Administrer du flumazénil systématiquement (risque de convulsions)"
+      ]
+    },
+    "theoriePratique": {
+      "titre": "Bases théoriques",
+      "sections": [
+        {
+          "titre": "Métabolisme du paracétamol",
+          "contenu": "En situation normale, 60-80% est glucuronoconjugué, 20-40% sulfoconjugué, et <5% oxydé par le cytochrome P450. En cas de surdosage, la voie du P450 devient prépondérante, produisant du NAPQI hépatotoxique qui dépléte le glutathion."
+        },
+        {
+          "titre": "Stades cliniques de l'intoxication",
+          "points": [
+            "Stade 1 (0-24h): Asymptomatique ou symptômes mineurs",
+            "Stade 2 (24-72h): Amélioration clinique mais élévation des transaminases",
+            "Stade 3 (72-96h): Pic de l'atteinte hépatique, possible insuffisance",
+            "Stade 4 (>96h): Résolution ou évolution vers défaillance multiviscérale"
+          ]
+        }
+      ],
+      "rappelsTherapeutiques": [
+        "N-acétylcystéine: reconstitue le glutathion, efficacité proche de 100% si débutée < 8h",
+        "Charbon activé: efficace si < 1h, 1g/kg (max 50g)",
+        "Pas d'indication au lavage gastrique",
+        "Flumazénil: uniquement si dépression respiratoire sévère, risque de convulsions"
+      ],
+      "examensComplementaires": [
+        "Paracétamolémie: dosage quantitatif, interpréter selon le nomogramme",
+        "Fonction hépatique: ASAT, ALAT, bilirubine, surveillance de la cytolyse",
+        "Coagulation: TP, INR - marqueur de gravité de l'atteinte hépatique",
+        "ECG: recherche de troubles du rythme (QT long avec certains médicaments)"
+      ]
+    }
+  }
+}

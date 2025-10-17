@@ -1,0 +1,321 @@
+{
+  "title": "Vignette Intermed douleur abdominale - MontiAuer",
+  "context": {
+    "setting": "Service d'urgences hospitalières",
+    "patient": "Plusieurs cas cliniques de douleurs abdominales aiguës: diverticulite, perforation ulcéreuse, iléus, syndrome de l'intestin irritable, pancréatite aiguë, grossesse extra-utérine"
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Localisation et orientation diagnostique",
+          "details": [
+            "Fosse iliaque gauche + >50 ans [Diverticulite]",
+            "Région pelvienne + jeune femme [GEU, annexite]",
+            "Fosse iliaque droite + jeune patient [Appendicite]",
+            "Périombilicale + ATCD chirurgicaux [Iléus sur bride]",
+            "Épigastre/hypochondre G + alcool [Pancréatite]",
+            "Douleurs en ceinture [Pancréatite]"
+          ]
+        },
+        {
+          "id": "a2",
+          "text": "Cas Mme F.J., 77 ans - Iléus",
+          "details": [
+            "Entérite post-radique [ATCD]",
+            "Hystérectomie pour cancer col [ATCD]",
+            "Vomissements multiples [Récents]",
+            "Douleurs épigastriques [Présentes]",
+            "Ballonnement [Sensation]",
+            "Arrêt des matières et gaz [Depuis 2 jours]"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Cas Mme X., 80 ans - Perforation",
+          "details": [
+            "Douleurs abdominales [Augmentation depuis 24h]",
+            "Douleurs très violentes [Intensité maximale]",
+            "Nausées et vomissements [Présents]",
+            "Pas de fièvre [Afébrile]",
+            "Selles normales [Dernières]"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Cas M. P.J., 53 ans - Diverticulite récidivante",
+          "details": [
+            "Récidive douleurs sus-pubiennes [Actuelles]",
+            "État fébrile [38.2°C à domicile]",
+            "Épisodes de diarrhées [Présents]",
+            "ATCD diverticulite perforée [Il y a 2 ans]",
+            "Sigmoïdectomie [Il y a 6 ans]",
+            "Diverticulose diffuse [Coloscopie]"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Cas Mme F.S., 24 ans - Syndrome intestin irritable",
+          "details": [
+            "Douleurs crampiformes diffuses [Depuis 1 mois]",
+            "Douleurs avant repas [Temporalité]",
+            "Soulagées par exonération [Amélioration]",
+            "Selles molles 3x/jour [Fréquence augmentée]",
+            "Pas de sang [Absence]",
+            "Pas de perte de poids [Stable]",
+            "Pas de douleurs nocturnes [Sommeil préservé]"
+          ]
+        },
+        {
+          "id": "a6",
+          "text": "Cas M. G.P., 46 ans - Pancréatite aiguë",
+          "details": [
+            "Douleurs épigastriques [Irradiant dans le dos]",
+            "Après repas [Quelques heures]",
+            "Consommation alcool [6 bières + 4 verres vin/jour]",
+            "Cardiomyopathie alcoolique [ATCD]",
+            "Progression rapide [Continues]"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Signes de péritonisme",
+          "details": [
+            "Défense abdominale [Contraction involontaire]",
+            "Détente abdominale [Douleur au relâchement]",
+            "Bruits hydroaériques diminués [Iléus réflexe]",
+            "Position antalgique [En chien de fusil]",
+            "Immobilité respiratoire [Respiration thoracique]"
+          ]
+        },
+        {
+          "id": "e2",
+          "text": "Examen Mme X. - Perforation",
+          "details": [
+            "Défense hémi-abdomen supérieur [Présente]",
+            "Détente [Présente]",
+            "Bruits abdominaux diminués [Fréquence]",
+            "Râles crépitants bilatéraux [Poumons]",
+            "Patient très algique [Examen difficile]"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Examen M. P.J. - Diverticulite",
+          "details": [
+            "T 38.2°C [Fièvre]",
+            "Stable hémodynamiquement",
+            "Bruits intestinaux physiologiques",
+            "Pas de défense [Absence]",
+            "Détente sus-pubienne et FIG [Présente]"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Examen M. G.P. - Pancréatite",
+          "details": [
+            "TA 100/70 [Hypotension]",
+            "FC 100/min [Tachycardie]",
+            "T 36.9°C [Afébrile]",
+            "État général altéré [Net]",
+            "Défense diffuse [Présente]",
+            "Douleur maximale épigastre/hypochondre D"
+          ]
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Imagerie et diagnostic",
+          "ddSection": {
+            "title": "Interprétation radiologique et diagnostics",
+            "categories": [
+              {
+                "name": "ASP - Abdomen sans préparation",
+                "items": [
+                  {
+                    "text": "Iléus grêle",
+                    "cause": "Arguments POUR:\n\t□ Niveaux hydroaériques centraux\n\t□ Pas d'haustrations (grêle)\n\t□ Distension anses grêles\n\t□ ATCD chirurgicaux (brides)",
+                    "test": "→ ASP debout + couché"
+                  },
+                  {
+                    "text": "Pneumopéritoine",
+                    "cause": "Arguments POUR:\n\t□ Croissant gazeux sous-diaphragmatique\n\t□ Air libre péritonéal\n\t□ Perforation d'organe creux\n\t□ Ulcère gastrique perforé probable",
+                    "test": "→ Rx thorax debout ou ASP"
+                  }
+                ]
+              },
+              {
+                "name": "Scanner abdominal",
+                "items": [
+                  {
+                    "text": "Diverticulite non compliquée",
+                    "cause": "Critères:\n\t□ Infiltration graisse péri-colique\n\t□ Pas d'abcès >2cm\n\t□ Pas de perforation libre\n\t□ Pas de fistule\n\t□ Pas d'obstruction",
+                    "test": "→ CT avec contraste IV"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Prise en charge de la diverticulite",
+          "details": [
+            "Paradigme actuel: traitement conservateur 85% succès",
+            "Ambulatoire si non compliquée",
+            "Antibiotiques PO (pas systématiques)",
+            "Antalgie adaptée",
+            "Contrôle à 48h",
+            "Hospitalisation si complication",
+            "Récidives 20-30% avec gravité décroissante"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Syndrome intestin irritable - Critères de Rome",
+          "details": [
+            "Douleurs abdominales récurrentes",
+            "≥1 jour/semaine depuis 3 mois",
+            "Associées à ≥2 critères:",
+            "- Amélioration par défécation",
+            "- Changement fréquence selles",
+            "- Changement consistance selles",
+            "Absence signes d'alarme",
+            "Bilan normal (FSC, CRP, anti-transglutaminase)"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Traitement syndrome intestin irritable",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Première ligne",
+                "content": "• Spasmolytiques (mébévérine)\n• Régime pauvre en FODMAPs\n• Activité physique régulière\n• Gestion du stress"
+              },
+              {
+                "title": "Deuxième ligne",
+                "content": "• Antidépresseurs tricycliques faible dose\n• Probiotiques\n• Thérapie cognitivo-comportementale\n• Hypnothérapie"
+              }
+            ]
+          }
+        },
+        {
+          "id": "m5",
+          "text": "Prise en charge pancréatite aiguë",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Mesures immédiates",
+                "content": "• Remplissage massif (6-10L/24h)\n• Antalgie multimodale\n• Mise à jeun initial\n• Hospitalisation soins continus si sévère"
+              },
+              {
+                "title": "Surveillance",
+                "content": "• Lipase/amylase\n• Score de Ranson/APACHE II\n• CT à 48-72h si pas d'amélioration\n• Antibiotiques si nécrose surinfectée seulement"
+              }
+            ]
+          }
+        },
+        {
+          "id": "m6",
+          "text": "Examens biologiques - Interprétation",
+          "details": [
+            "Syndrome de Gilbert [Bilirubine isolée ↑]",
+            "Hépatite aiguë [Transaminases ↑↑↑]",
+            "Cholédocholithiase [PAL ↑, bilirubine ↑]",
+            "Pancréatite [Lipase >3x normale]",
+            "NASH [ALAT/ASAT modérément ↑]"
+          ]
+        },
+        {
+          "id": "m7",
+          "text": "Urgences gynécologiques",
+          "details": [
+            "GEU: priorité absolue",
+            "Test grossesse systématique",
+            "Douleur latéralisée + spotting",
+            "Échographie pelvienne urgente",
+            "β-HCG quantitatif",
+            "Consultation gynécologique urgente"
+          ]
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Points clés diagnostiques",
+          "content": "• Localisation oriente le diagnostic\n• Péritonisme = urgence chirurgicale potentielle\n• ASP: niveaux hydroaériques = occlusion\n• Pneumopéritoine = perforation\n• Diverticulite: nouveau paradigme conservateur\n• Syndrome intestin irritable: diagnostic d'exclusion"
+        },
+        {
+          "id": "c2",
+          "text": "Red flags abdominaux",
+          "content": "• Défense/détente = péritonite\n• Arrêt matières et gaz = occlusion\n• Instabilité hémodynamique = urgence\n• Femme en âge de procréer = test grossesse\n• Alcoolisme + douleur épigastrique = pancréatite\n• ATCD chirurgicaux + occlusion = bride"
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "theoriePratique": {
+      "titre": "Approche diagnostique des douleurs abdominales aiguës",
+      "sections": [
+        {
+          "titre": "Orientation selon la localisation",
+          "points": [
+            "Épigastre: ulcère, pancréatite, IDM",
+            "Hypochondre D: cholécystite, colique hépatique",
+            "Hypochondre G: rate, pancréatite, colique",
+            "FID: appendicite, iléite, GEU",
+            "FIG: diverticulite, sigmoïdite",
+            "Périombilical: grêle, précoce appendicite",
+            "Hypogastre: vessie, utérus, annexes",
+            "Diffuse: péritonite, occlusion, ischémie"
+          ]
+        },
+        {
+          "titre": "Score de Ranson (pancréatite)",
+          "points": [
+            "À l'admission: âge >55, GB >16000, LDH >350, ASAT >250, glycémie >11",
+            "À 48h: Hct chute >10%, urée ↑>1.8, Ca <2, PaO2 <60, déficit base >4, séquestration >6L",
+            "0-2 points: mortalité <5%",
+            "3-4 points: mortalité 15-20%",
+            ">5 points: mortalité >50%"
+          ]
+        },
+        {
+          "titre": "Critères de diverticulite compliquée",
+          "contenu": "• Abcès >2cm\n• Perforation libre\n• Fistule\n• Obstruction\n• Hémorragie massive\n\nCes critères nécessitent une hospitalisation et souvent une intervention chirurgicale."
+        }
+      ],
+      "rappelsTherapeutiques": [
+        "Diverticulite non compliquée: antibiotiques PO optionnels",
+        "Pancréatite: remplissage ++, antalgie, pas d'ATB sauf surinfection",
+        "Perforation: chirurgie urgente + ATB large spectre",
+        "Occlusion sur bride: aspiration, réhydratation, ± chirurgie",
+        "SII: approche multimodale, pas d'examens invasifs",
+        "GEU: méthotrexate si critères ou chirurgie"
+      ],
+      "examensComplementaires": [
+        "ASP: occlusion, pneumopéritoine, niveaux",
+        "CT abdominal: gold standard urgences abdominales",
+        "Échographie: biliaire, pelvienne, appendice",
+        "Lipase: x3 normale = pancréatite",
+        "β-HCG: systématique femme en âge de procréer",
+        "Coloscopie: à distance si diverticulite, pas en aigu"
+      ]
+    }
+  }
+}

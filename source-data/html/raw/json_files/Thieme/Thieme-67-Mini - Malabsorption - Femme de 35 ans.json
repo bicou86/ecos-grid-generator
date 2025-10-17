@@ -1,0 +1,206 @@
+{
+  "title": "Thieme Mini-Cas 67 - Malabsorption - Femme de 35 ans",
+  "category": "Thieme Mini-Cas",
+  "subcategory": "Malabsorption",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Femme de 35 ans, Patient standardisé, consulte pour douleur abdominale, ballonnements et diarrhée"
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Motif principal de consultation",
+          "binaryOnly": true,
+          "patientComment": "douleur abdominale, ballonnements et diarrhée"
+        },
+        {
+          "id": "a2",
+          "text": "Analyse ciblée de la plainte",
+          "details": [
+            "Aliments déclencheurs",
+            "Perte poids",
+            "Caractéristiques selles"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Recherche des éléments clés",
+          "details": [
+            "Aliments déclencheurs",
+            "Perte de poids",
+            "Caractéristiques selles"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Antécédents pertinents",
+          "details": [
+            "Voyages",
+            "Antibiotiques récents",
+            "Chirurgies digestives"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Revue des systèmes ciblée",
+          "details": [
+            "Digestif",
+            "Endocrinien",
+            "Nutritionnel"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "État nutritionnel",
+          "binaryOnly": true
+        },
+        {
+          "id": "e2",
+          "text": "Examen abdominal",
+          "details": [
+            "Distension",
+            "Sensibilité",
+            "Bruits intestinaux"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Recherche signes carences"
+        },
+        {
+          "id": "e4",
+          "text": "Examen cutané"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostics différentiels",
+          "ddSection": {
+            "title": "Hypothèses diagnostiques à considérer",
+            "categories": [
+              {
+                "name": "Diagnostics prioritaires",
+                "items": [
+                  {
+                    "text": "Maladie cœliaque",
+                    "cause": "Arguments POUR:\n\t□ Gluten déclencheur, diarrhée, carences",
+                    "test": "→ Anti-transglutaminase, biopsie duodénale"
+                  },
+                  {
+                    "text": "Intolérance au lactose",
+                    "cause": "Arguments POUR:\n\t□ Produits laitiers, ballonnements, gaz",
+                    "test": "→ Test respiratoire H2, test éviction"
+                  },
+                  {
+                    "text": "Pancréatite chronique",
+                    "cause": "Arguments POUR:\n\t□ Stéatorrhée, douleur, alcool",
+                    "test": "→ Examens selon orientation clinique"
+                  },
+                  {
+                    "text": "Fibrose kystique",
+                    "cause": "Arguments POUR:\n\t□ Jeune âge, infections respiratoires",
+                    "test": "→ Examens selon orientation clinique"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Examens complémentaires",
+          "details": [
+            "NFS",
+            "Anticorps anti-transglutaminase",
+            "Analyse des selles",
+            "Test respiratoire lactose"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Plan de prise en charge",
+          "details": [
+            "Régime sans gluten si cœliaque",
+            "Éviction lactose",
+            "Suppléments nutritionnels"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Conseils au patient",
+          "details": [
+            "Tenir journal alimentaire",
+            "Éviter aliments déclencheurs",
+            "Suppléments si carences"
+          ]
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Explications au patient",
+          "content": "Malabsorption intestinale probable. Les tests identifieront l'aliment responsable."
+        },
+        {
+          "id": "c2",
+          "text": "Questions du patient",
+          "content": "[Qu'est-ce que je ne peux plus manger?]\n[C'est à vie?]"
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour le patient standardisé",
+      "nom": "Patient standardisé",
+      "age": "35 ans",
+      "contexte": "Cabinet de médecine générale",
+      "motifConsultation": {
+        "plaintePrincipale": "douleur abdominale, ballonnements et diarrhée",
+        "contexte": "Syndrome de malabsorption"
+      },
+      "simulation": {
+        "attitude": [
+          "Frustré par restrictions alimentaires",
+          "Fatigue++"
+        ],
+        "signesPhysiques": [
+          "Distension abdominale",
+          "Borborygmes++"
+        ],
+        "durantConsultation": [
+          "Parler symptômes digestifs",
+          "Liste aliments problématiques"
+        ]
+      }
+    },
+    "informationsExpert": {
+      "titre": "Informations pour l'expert",
+      "pointsCles": [
+        "Mini-cas clinique: Malabsorption",
+        "Focus: Aliments déclencheurs, Perte de poids, Caractéristiques selles",
+        "Consultation ciblée de 10 minutes",
+        "Évaluation de l'approche diagnostique"
+      ],
+      "pieges": [
+        "Ne pas identifier aliment causal",
+        "Oublier carences"
+      ]
+    }
+  }
+}

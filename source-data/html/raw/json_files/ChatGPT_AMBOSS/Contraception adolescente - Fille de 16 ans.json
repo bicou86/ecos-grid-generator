@@ -1,0 +1,736 @@
+{
+  "title": "Contraception adolescente - Fille de 16 ans",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Adolescente de 16 ans consultant seule pour discuter de contraception"
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Motif principal de consultation",
+          "binaryOnly": true,
+          "patientComment": "J'ai eu mon premier rapport il y a quelques semaines, je voudrais savoir quelles sont mes options de contraception"
+        },
+        {
+          "id": "a2",
+          "text": "Bilan de sexualité (Les 5 P)",
+          "details": [
+            "Partenaire(s) [1 partenaire stable masculin, même âge, relation stable]",
+            "Prévention grossesse [souhaite contraception fiable]",
+            "Pratiques [vaginal uniquement]",
+            "Protection IST [parfois préservatif, pas systématique]",
+            "Passé d'IST [non]"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Histoire gynécologique",
+          "details": [
+            "Premiers rapports [il y a quelques semaines]",
+            "Cycles menstruels [réguliers]",
+            "Dernières règles",
+            "Grossesses antérieures [aucune]",
+            "Consultation gynécologique [pas encore consulté de gynécologue]"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Confidentialité et contexte social",
+          "details": [
+            "Information des parents [n'a rien dit à ses parents pour le moment]",
+            "Souhait de confidentialité [souhaite confidentialité]",
+            "Soutien familial/social",
+            "Contexte scolaire"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Préférences personnelles",
+          "details": [
+            "Méthode hormonale ou non [ouverte aux deux options]",
+            "Méthode discrète [préférée]",
+            "Fréquence de prise [éviter l'oubli quotidien]",
+            "Préservation de la fertilité [importante]"
+          ]
+        },
+        {
+          "id": "a6",
+          "text": "Antécédents médicaux",
+          "details": [
+            "Pathologies chroniques [aucun antécédent médical notable]",
+            "Thromboembolie [non]",
+            "Migraines [avec ou sans aura]",
+            "Troubles de la coagulation [non]",
+            "Maladies hépatiques [non]"
+          ]
+        },
+        {
+          "id": "a7",
+          "text": "Habitudes de vie",
+          "details": [
+            "Tabac [pas de tabac]",
+            "Alcool",
+            "Drogues",
+            "Activité physique",
+            "Alimentation"
+          ]
+        },
+        {
+          "id": "a8",
+          "text": "Médicaments et allergies",
+          "details": [
+            "Contraception actuelle [pas de contraception actuelle]",
+            "Médicaments réguliers [aucun]",
+            "Allergies médicamenteuses [aucune]"
+          ]
+        },
+        {
+          "id": "a9",
+          "text": "Antécédents familiaux",
+          "details": [
+            "Thrombose/embolie familiale",
+            "Cancer du sein/ovaire",
+            "Maladies cardiovasculaires précoces"
+          ]
+        },
+        {
+          "id": "a10",
+          "text": "Préoccupations de l'adolescente",
+          "details": [
+            "Effets secondaires [acné, prise de poids]",
+            "Confidentialité vis-à-vis des parents",
+            "Efficacité de la contraception",
+            "Impact sur la fertilité future"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Examen général",
+          "details": [
+            "État général",
+            "Poids et taille (IMC)",
+            "Tension artérielle",
+            "Évaluation de la maturité"
+          ]
+        },
+        {
+          "id": "e2",
+          "text": "Examen gynécologique",
+          "description": "Généralement non nécessaire pour la prescription initiale chez l'adolescente",
+          "details": [
+            "Différé si pas de symptômes",
+            "Expliquer quand il sera nécessaire",
+            "Rassurer sur le caractère non obligatoire"
+          ]
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Présentation des méthodes LARC (longue durée)",
+          "details": [
+            "Implant progestatif [3 ans, efficacité >99%, très discret, sans œstrogène]",
+            "DIU hormonal [3-8 ans, efficacité >99%, règles moins abondantes]",
+            "DIU au cuivre [jusqu'à 10 ans, efficacité >99%, sans hormone]"
+          ],
+          "exemplesPhrases": [
+            "Il existe des méthodes très efficaces et discrètes comme l'implant ou le stérilet, qui n'ont pas besoin d'y penser tous les jours"
+          ]
+        },
+        {
+          "id": "m2",
+          "text": "Présentation des autres méthodes",
+          "details": [
+            "Pilule progestative [sans œstrogène, prise quotidienne]",
+            "Pilule combinée [estroprogestative si pas de contre-indication]",
+            "Anneau vaginal [changement mensuel]",
+            "Patch transdermique [changement hebdomadaire]"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Protection contre les IST",
+          "details": [
+            "Préservatif toujours recommandé en plus",
+            "Double protection (contraception + préservatif)",
+            "Proposition de dépistage IST",
+            "Vaccination HPV et hépatite B"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Contraception d'urgence",
+          "details": [
+            "Pilule du lendemain (lévonorgestrel jusqu'à 72h)",
+            "Ulipristal acétate (jusqu'à 120h)",
+            "DIU au cuivre (jusqu'à 5 jours)",
+            "Accès et disponibilité"
+          ]
+        },
+        {
+          "id": "m5",
+          "text": "Confidentialité et aspects légaux",
+          "details": [
+            "Droit à la confidentialité [tu peux consulter et recevoir une contraception en toute confidentialité]",
+            "Aucune obligation d'informer les parents",
+            "Encouragement au dialogue familial si possible",
+            "Accès gratuit possible selon contexte"
+          ],
+          "exemplesPhrases": [
+            "Non, tu peux consulter et recevoir une contraception en toute confidentialité, c'est ton droit. Je suis là pour t'informer et t'accompagner"
+          ]
+        },
+        {
+          "id": "m6",
+          "text": "Plan de mise en œuvre",
+          "details": [
+            "Prescription immédiate ou pose LARC si possible",
+            "Supplémentation acide folique",
+            "Supports visuels et documentation adaptée",
+            "Rendez-vous de suivi dans 1-3 mois"
+          ]
+        },
+        {
+          "id": "m7",
+          "text": "Éducation adaptée à l'âge",
+          "details": [
+            "Langage clair et adapté",
+            "Explication du mode d'action",
+            "Effets secondaires possibles [Certaines méthodes hormonales peuvent améliorer l'acné]",
+            "Que faire en cas d'oubli ou problème",
+            "Ressources et numéros utiles"
+          ],
+          "exemplesPhrases": [
+            "Certaines méthodes hormonales peuvent améliorer l'acné. La prise de poids est possible mais pas systématique",
+            "On peut choisir ensemble ce qui te convient le mieux"
+          ]
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Clôture de la consultation",
+          "content": "Tu as fait une démarche responsable en venant te renseigner. As-tu d'autres questions ? Je reste disponible pour tout suivi ou si tu as besoin de parler.",
+          "exemplesPhrases": [
+            "Je vais te prescrire la méthode que nous avons choisie ensemble",
+            "Voici des documents adaptés à ton âge pour bien comprendre",
+            "Tu peux me recontacter à tout moment si tu as des questions ou des inquiétudes",
+            "Le prochain rendez-vous est prévu dans 1-3 mois pour voir comment ça se passe"
+          ]
+        },
+        {
+          "id": "c2",
+          "text": "Questions difficiles de la patiente",
+          "content": "[Est-ce que mes parents vont être informés ?] [Je ne veux pas tomber enceinte, mais je ne veux pas de pilule à prendre tous les jours] [Est-ce que je vais avoir plus de boutons ou grossir avec les hormones ?]"
+        },
+        {
+          "id": "c3",
+          "text": "Réponses types aux questions difficiles",
+          "exemplesPhrases": [
+            "Non, tu peux consulter et recevoir une contraception en toute confidentialité, c'est ton droit",
+            "Il existe des méthodes très efficaces et discrètes comme l'implant ou le stérilet",
+            "Certaines méthodes hormonales peuvent améliorer l'acné, la prise de poids n'est pas systématique"
+          ]
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour la patiente standardisée",
+      "nom": "Inès B.",
+      "age": "16 ans",
+      "contexte": "Cabinet de médecine générale",
+      "motifConsultation": {
+        "plaintePrincipale": "J'ai eu mon premier rapport il y a quelques semaines, je voudrais savoir quelles sont mes options de contraception",
+        "autreChose": "Consultation seule sans ses parents"
+      },
+      "histoireActuelle": {
+        "debutActiviteSexuelle": [
+          "Premier rapport sexuel il y a quelques semaines",
+          "Partenaire masculin du même âge",
+          "Relation stable"
+        ],
+        "protectionActuelle": [
+          "Utilisation du préservatif parfois",
+          "Pas systématique",
+          "Pas d'autre contraception actuellement"
+        ],
+        "contexteFamilial": [
+          "N'a rien dit à ses parents pour le moment",
+          "Souhaite garder la confidentialité",
+          "Peur de la réaction des parents"
+        ]
+      },
+      "simulation": {
+        "attitude": [
+          "Adolescente un peu timide au début",
+          "S'ouvre progressivement si mise en confiance",
+          "Pose des questions sur la confidentialité",
+          "Inquiète des effets secondaires"
+        ],
+        "durantEntretien": [
+          "Demande rapidement si ses parents seront informés",
+          "S'inquiète de la prise de poids et de l'acné",
+          "Veut une méthode discrète et efficace",
+          "Préfère éviter la prise quotidienne"
+        ]
+      },
+      "habitudes": {
+        "tabac": "Pas de tabac",
+        "alcool": "Occasionnellement en soirée",
+        "drogues": "Non",
+        "activite": "Sport au lycée",
+        "alimentation": "Normale"
+      },
+      "anamneseSystemes": {
+        "gynecologique": [
+          "Cycles réguliers",
+          "Pas de dysménorrhée importante",
+          "Jamais consulté de gynécologue"
+        ],
+        "generale": [
+          "Bonne santé générale",
+          "Pas d'antécédents médicaux notables"
+        ]
+      },
+      "antecedents": {
+        "medicaux": "Aucun antécédent médical notable",
+        "chirurgicaux": "Aucune intervention",
+        "familiaux": "Pas d'antécédents familiaux particuliers connus",
+        "gynecologiques": "Ménarche à 13 ans, cycles réguliers"
+      },
+      "inquietudes": {
+        "principales": [
+          "Confidentialité vis-à-vis des parents",
+          "Efficacité de la contraception",
+          "Effets secondaires (poids, acné)",
+          "Impact sur fertilité future",
+          "Méthode discrète"
+        ],
+        "questions": [
+          "Est-ce que mes parents vont être informés ?",
+          "Je ne veux pas tomber enceinte, mais je ne veux pas de pilule à prendre tous les jours",
+          "Est-ce que je vais avoir plus de boutons ou grossir avec les hormones ?",
+          "Est-ce que ça va affecter ma fertilité plus tard ?",
+          "Comment faire si j'oublie ma contraception ?"
+        ]
+      }
+    },
+    "informationsExpert": {
+      "titre": "Points clés pour l'expert évaluateur",
+      "pointsCles": [
+        "Approche adaptée à l'âge sans jugement",
+        "Respect de la confidentialité de l'adolescente",
+        "Anamnèse sexuelle complète mais bienveillante",
+        "Présentation privilégiée des LARC (méthodes longue durée)",
+        "Double protection (contraception + préservatif)",
+        "Information sur la contraception d'urgence",
+        "Planification du suivi"
+      ],
+      "pieges": [
+        "Attitude moralisatrice ou jugeante",
+        "Vouloir informer les parents sans consentement",
+        "Ne pas aborder la protection contre les IST",
+        "Oublier de parler de la contraception d'urgence",
+        "Ne pas proposer les LARC en première intention",
+        "Examen gynécologique systématique non nécessaire",
+        "Ne pas planifier de suivi"
+      ],
+      "rolesInterventions": [
+        "Créer un environnement de confiance et sans jugement",
+        "Informer de manière claire et adaptée à l'âge",
+        "Respecter l'autonomie et la confidentialité",
+        "Encourager les comportements protecteurs",
+        "Assurer un suivi approprié"
+      ]
+    },
+    "theoriePratique": {
+      "titre": "Rappels théoriques sur la contraception chez l'adolescente",
+      "sections": [
+        {
+          "titre": "Méthodes LARC recommandées en première intention",
+          "points": [
+            "Implant sous-cutané : 3 ans, >99% efficacité, très discret",
+            "DIU hormonal : 3-8 ans, règles diminuées, bien toléré",
+            "DIU au cuivre : jusqu'à 10 ans, sans hormones",
+            "Taux de continuation plus élevé que pilule chez l'adolescente"
+          ]
+        },
+        {
+          "titre": "Particularités chez l'adolescente",
+          "points": [
+            "Droit à la confidentialité même si mineure",
+            "Examen pelvien généralement non nécessaire initialement",
+            "Importance de l'éducation adaptée à l'âge",
+            "Double protection systématiquement recommandée",
+            "Supplémentation en acide folique recommandée"
+          ]
+        },
+        {
+          "titre": "Barrières à l'accès",
+          "points": [
+            "Peur du jugement",
+            "Méconnaissance des droits",
+            "Coût (selon pays/système)",
+            "Mythes et idées reçues",
+            "Pression sociale ou familiale"
+          ]
+        }
+      ],
+      "rappelsTherapeutiques": [
+        "Les LARC sont les méthodes de premier choix chez l'adolescente",
+        "La confidentialité est un droit même pour les mineures",
+        "L'examen gynécologique n'est pas obligatoire pour la prescription initiale",
+        "La double protection (contraception + préservatif) est essentielle",
+        "Le suivi rapproché améliore l'observance et la satisfaction"
+      ],
+      "examensComplementaires": [
+        "Dépistage IST selon exposition et recommandations",
+        "Test de grossesse si doute",
+        "Pas de bilan sanguin systématique avant contraception",
+        "Vaccination HPV à proposer si non faite"
+      ]
+    },
+    "resume": {
+      "titre": "🧑‍⚕️ Contraception chez l’adolescente – Décision partagée – Résumé ECOS",
+      "sections": [
+        {
+          "titre": "🔍 Anamnèse",
+          "subsections": [
+            {
+              "titre": "Points à explorer",
+              "points": [
+                "Âge, cycle menstruel, régularité des règles",
+                "Vie sexuelle : début, partenaires, usage du préservatif",
+                "Motivation pour contraception (contraception, acné, dysménorrhées)",
+                "Connaissances antérieures et croyances (fausses idées fréquentes)",
+                "Contexte psychosocial : soutien parental, confidentialité"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "👀 Examen clinique",
+          "subsections": [
+            {
+              "titre": "Éléments utiles",
+              "points": [
+                "TA et IMC (avant contraception hormonale)",
+                "Examen gynécologique NON systématique (uniquement si indication)",
+                "Bilan comorbidités si suspicion (thrombophilie, migraines, tabac)",
+                "Toujours vérifier statut vaccinal HPV"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "🧪 Examens diagnostiques",
+          "subsections": [
+            {
+              "titre": "Selon contexte",
+              "points": [
+                "Pas d’examen obligatoire avant contraception orale",
+                "Test de grossesse si doute",
+                "Dépistage IST recommandé si rapports à risque",
+                "Bilan biologique uniquement si facteurs de risque (lipides, coagulation)"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "⚙️ Options contraceptives",
+          "subsections": [
+            {
+              "titre": "Méthodes hormonales",
+              "points": [
+                "Pilule estroprogestative (améliore acné, cycles réguliers)",
+                "Pilule progestative (si CI estrogènes, meilleure observance nécessaire)",
+                "Implant : efficace, longue durée, adapté si observance difficile",
+                "Injection trimestrielle (moins utilisée chez ado, EI osseux à surveiller)"
+              ]
+            },
+            {
+              "titre": "Dispositifs intra-utérins (DIU)",
+              "points": [
+                "DIU hormonal : possible chez adolescentes nullipares",
+                "DIU cuivre : efficace mais règles parfois plus abondantes",
+                "Besoin d’information claire pour lever appréhensions"
+              ]
+            },
+            {
+              "titre": "Méthodes barrières",
+              "points": [
+                "Préservatifs masculins et féminins = seule protection IST",
+                "Insister sur l’usage systématique même si autre contraception"
+              ]
+            },
+            {
+              "titre": "Contraception d’urgence",
+              "points": [
+                "Lévonorgestrel (72h) ou ulipristal (120h)",
+                "DIU cuivre (efficacité maximale)",
+                "Information et accessibilité essentielle"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "✅ Points clés ECOS",
+          "points": [
+            "Confidentialité et écoute = essentielles en consultation adolescente",
+            "Pas de nécessité d’examen gynécologique systématique",
+            "Préservatif toujours recommandé en plus pour IST",
+            "Favoriser méthodes longues durées (implant, DIU) si observance limitée",
+            "Information claire, adaptée, déculpabilisante"
+          ]
+        },
+        {
+          "titre": "📋 Check-list rapide ECOS",
+          "subsections": [
+            {
+              "titre": "Questions à poser",
+              "points": [
+                "Usage du préservatif lors des rapports ?",
+                "Motivation principale pour contraception (grossesse, acné, cycles) ?",
+                "Préférence pour méthode quotidienne ou longue durée ?",
+                "Connaissances ou croyances sur contraception ?",
+                "Souhait de confidentialité vis-à-vis des parents ?"
+              ]
+            },
+            {
+              "titre": "Examens à faire",
+              "points": [
+                "Mesure TA et IMC",
+                "Test de grossesse si doute",
+                "Dépistage IST proposé",
+                "Pas de bilan systématique, uniquement selon facteurs de risque"
+              ]
+            },
+            {
+              "titre": "PEC en 3 points",
+              "points": [
+                "Informer sur toutes les options (pilule, implant, DIU) de manière claire",
+                "Toujours insister sur le préservatif pour IST",
+                "Adapter la contraception aux préférences, contexte et observance"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "presentationPatient": {
+      "titre": "📑 Fiche ECOS – Cas : Contraception adolescente (fille de 16 ans, consultation seule, souhait confidentialité)",
+      "sections": [
+        {
+          "titre": "🧩 Checklist mentale (présentation systématisée)",
+          "points": [
+            "Intro → âge, motif (16 ans, premiers rapports, souhaite contraception fiable et discrète)",
+            "Bilan de sexualité (5P) → partenaire stable, rapports vaginaux, préservatifs parfois, pas d’IST connue",
+            "Histoire gynécologique → cycles réguliers, nulligeste, pas de gynéco consulté encore",
+            "Contexte social → consultation seule, parents non informés, demande confidentialité",
+            "Préférences → contraception discrète, éviter prise quotidienne, préserver fertilité future",
+            "ATCD médicaux et familiaux → aucun antécédent, pas de thrombose, pas de migraine avec aura",
+            "Habitudes de vie → non-fumeuse, pas de drogue, bonne santé",
+            "Examen clinique → TA, IMC, pas de gynéco systématique",
+            "Résumé → adolescente en bonne santé, souhait contraception efficace, discrète, réversible",
+            "Options à discuter → LARC (implant, DIU hormonal ou cuivre), autres (pilule, patch, anneau, injection)",
+            "IST → rappeler nécessité préservatifs systématiques, proposer dépistage, vaccination HPV/HBV",
+            "Contraception urgence → pilule du lendemain, ulipristal, DIU cuivre",
+            "Confidentialité → rappeler droit légal de confidentialité, accès gratuit possible",
+            "Plan PEC → décision partagée, supports adaptés à l’âge, suivi 1–3 mois"
+          ],
+          "mnemo": {
+            "titre": "👉 Mnémo rapide : 5P Sexualité",
+            "elements": [
+              "Partenaires",
+              "Prévention grossesse",
+              "Pratiques sexuelles",
+              "Protection IST",
+              "Passé d’IST"
+            ]
+          }
+        },
+        {
+          "titre": "🎤 Version longue (≈2-3 min)",
+          "contenu": "Il s’agit d’Inès, une adolescente de 16 ans, qui consulte seule aujourd’hui pour discuter d’une contraception. Elle rapporte avoir eu son premier rapport sexuel il y a quelques semaines avec son petit ami, du même âge, dans une relation stable. Ils utilisent parfois le préservatif mais pas systématiquement. Elle n’a pas d’antécédent d’IST et souhaite se protéger efficacement contre une grossesse.\n\nSes cycles sont réguliers, elle n’a jamais été enceinte et n’a jamais consulté de gynécologue. Elle insiste sur le fait que ses parents ne sont pas au courant de sa démarche et qu’elle souhaite que cela reste confidentiel. Elle exprime aussi des préoccupations concernant les effets secondaires : acné, prise de poids, et l’impact futur sur sa fertilité. Elle aimerait une méthode fiable, discrète et qui ne nécessite pas une prise quotidienne.\n\nSur le plan médical, elle n’a aucun antécédent, ne fume pas, ne consomme pas de drogues, est en bonne santé et a un IMC normal. Pas d’antécédents familiaux de thrombose ni de cancer hormono-dépendant.\n\nÀ l’examen, je mesure la tension artérielle et l’IMC, mais un examen gynécologique n’est pas nécessaire en première intention puisqu’elle n’a pas de symptômes. Je lui explique que ce sera envisagé seulement si un DIU est posé.\n\nEn résumé, il s’agit d’une adolescente en bonne santé, qui souhaite une contraception fiable et discrète. Les méthodes les plus adaptées sont les contraceptions de longue durée (LARC) : l’implant progestatif, le DIU hormonal ou le DIU au cuivre. L’implant est très efficace, dure 3 ans, discret et ne contient pas d’œstrogènes. Le DIU hormonal agit 3 à 8 ans et rend les règles plus légères, tandis que le DIU au cuivre est sans hormones mais peut donner des règles plus abondantes. Les autres options incluent la pilule (progestative ou combinée), le patch hebdomadaire, l’anneau mensuel ou l’injection trimestrielle, mais elles nécessitent plus de régularité.\n\nJe rappelle que, quelle que soit la contraception choisie, l’usage systématique du préservatif reste indispensable pour se protéger des IST. Je propose aussi un dépistage IST, et je vérifie le statut vaccinal HPV et hépatite B. Je l’informe également sur la contraception d’urgence (pilule du lendemain, ulipristal, DIU cuivre). Je lui assure que la confidentialité est respectée et que la prescription est son droit, même mineure.\n\nJe conclurai en lui donnant des supports adaptés à son âge, en organisant un rendez-vous de suivi dans 1 à 3 mois pour vérifier la tolérance et la satisfaction, et en m’assurant qu’elle est rassurée et impliquée dans le choix final."
+        },
+        {
+          "titre": "⚡ Version express (SBAR, 30 sec)",
+          "contenu": "S (Situation) : Inès, 16 ans, consulte seule pour contraception après premiers rapports, souhaite confidentialité.\n\nB (Background) : Cycles réguliers, bonne santé, pas d’ATCD, partenaire stable, préservatifs occasionnels.\n\nA (Assessment) : Demande contraception efficace, discrète, non quotidienne, préserver fertilité. Options : implant, DIU hormonal, DIU cuivre. DD : pilule, patch, anneau.\n\nR (Recommendation) : Présenter LARC en première intention, informer sur IST et contraception d’urgence, rappeler droit à confidentialité, proposer suivi 1–3 mois."
+        },
+        {
+          "titre": "🎲 Touches ludiques / mnémos",
+          "subsections": [
+            {
+              "titre": "👉 LARC chez l’adolescente",
+              "points": [
+                "Implant : 3 ans, >99% efficace, discret, sans œstrogène",
+                "DIU hormonal : 3–8 ans, règles moins abondantes",
+                "DIU cuivre : jusqu’à 10 ans, sans hormone",
+                "Recommandées en première intention chez l’ado"
+              ]
+            },
+            {
+              "titre": "👉 Contraception d’urgence",
+              "points": [
+                "Lévonorgestrel ≤72h",
+                "Ulipristal ≤120h",
+                "DIU cuivre ≤5j"
+              ]
+            },
+            {
+              "titre": "👉 Confidentialité",
+              "points": [
+                "Droit légal à la confidentialité",
+                "Pas besoin d’informer les parents",
+                "Encourager le dialogue si possible mais pas obligatoire"
+              ]
+            },
+            {
+              "titre": "👉 Prévention IST",
+              "points": [
+                "Préservatif toujours recommandé",
+                "Double protection (contraception + préservatif)",
+                "Proposer dépistage IST",
+                "Vaccination HPV, HBV"
+              ]
+            },
+            {
+              "titre": "⚠️ Pièges ECOS",
+              "points": [
+                "Attitude moralisatrice",
+                "Oublier contraception d’urgence",
+                "Ne pas proposer LARC en première intention",
+                "Examen gynécologique systématique (inutile)",
+                "Négliger double protection (préservatif)"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "❓ Questions probables de l'examinateur (avec réponses orales)",
+          "subsections": [
+            {
+              "titre": "1. Arguments pour et contre chaque option",
+              "questions": [
+                {
+                  "question": "Implant progestatif",
+                  "reponse": {
+                    "pour": [
+                      "Très efficace >99%",
+                      "Durée 3 ans",
+                      "Discret, pas de prise quotidienne",
+                      "Sans œstrogène"
+                    ],
+                    "contre": [
+                      "Troubles du cycle fréquents (spotting)",
+                      "Nécessite un geste médical"
+                    ]
+                  }
+                },
+                {
+                  "question": "DIU hormonal",
+                  "reponse": {
+                    "pour": [
+                      "Très efficace >99%",
+                      "Durée 3–8 ans",
+                      "Réduit règles et douleurs"
+                    ],
+                    "contre": [
+                      "Pose invasive",
+                      "Spotting initial possible"
+                    ]
+                  }
+                },
+                {
+                  "question": "DIU cuivre",
+                  "reponse": {
+                    "pour": [
+                      "Très efficace >99%",
+                      "Durée jusqu’à 10 ans",
+                      "Sans hormones"
+                    ],
+                    "contre": [
+                      "Règles plus abondantes/douloureuses"
+                    ]
+                  }
+                },
+                {
+                  "question": "Pilule combinée ou progestative",
+                  "reponse": {
+                    "pour": [
+                      "Régularise cycles, améliore acné",
+                      "Bonne tolérance si pas de CI"
+                    ],
+                    "contre": [
+                      "Prise quotidienne contraignante",
+                      "Moins adaptée si observance limitée"
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "titre": "2. Examens complémentaires utiles",
+              "questions": [
+                {
+                  "question": "Quels examens nécessaires avant prescription ?",
+                  "reponse": [
+                    "TA et IMC",
+                    "Pas de bilan systématique",
+                    "Test de grossesse si doute",
+                    "Proposer dépistage IST",
+                    "Vérifier vaccination HPV"
+                  ]
+                }
+              ]
+            },
+            {
+              "titre": "3. Diagnostic, traitement, suivi",
+              "questions": [
+                {
+                  "question": "Diagnostic",
+                  "reponse": "Demande contraception chez adolescente de 16 ans, bonne santé, souhait de confidentialité"
+                },
+                {
+                  "question": "Traitement",
+                  "reponse": {
+                    "immediat": [
+                      "Information claire sur LARC et autres options",
+                      "Prescription selon choix partagé",
+                      "Information contraception d’urgence",
+                      "Insister sur protection IST"
+                    ]
+                  }
+                },
+                {
+                  "question": "Suivi",
+                  "reponse": [
+                    "Rendez-vous 1–3 mois pour évaluer tolérance et satisfaction",
+                    "Réévaluation annuelle",
+                    "Adapter selon préférences ou EI"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

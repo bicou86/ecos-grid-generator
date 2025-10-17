@@ -1,0 +1,202 @@
+{
+  "title": "Thieme Mini-Cas 70 - Épistaxis - Homme de 55 ans",
+  "category": "Thieme Mini-Cas",
+  "subcategory": "Épistaxis",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Homme de 55 ans, Patient standardisé, consulte pour saignements de nez répétés"
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Motif principal de consultation",
+          "binaryOnly": true,
+          "patientComment": "saignements de nez répétés"
+        },
+        {
+          "id": "a2",
+          "text": "Analyse ciblée de la plainte",
+          "details": [
+            "Fréquence",
+            "Durée",
+            "Quantité",
+            "Traumatisme"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Recherche des éléments clés",
+          "details": [
+            "Fréquence",
+            "Traumatisme",
+            "Médicaments anticoagulants"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Antécédents pertinents",
+          "details": [
+            "HTA",
+            "Anticoagulants",
+            "Troubles coagulation",
+            "Traumatismes"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Revue des systèmes ciblée",
+          "details": [
+            "ORL",
+            "Hématologique",
+            "Cardiovasculaire"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Mesure tension artérielle",
+          "binaryOnly": true
+        },
+        {
+          "id": "e2",
+          "text": "Examen nasal antérieur"
+        },
+        {
+          "id": "e3",
+          "text": "Recherche signes trauma"
+        },
+        {
+          "id": "e4",
+          "text": "Évaluation coagulation (pétéchies, ecchymoses)"
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostics différentiels",
+          "ddSection": {
+            "title": "Hypothèses diagnostiques à considérer",
+            "categories": [
+              {
+                "name": "Diagnostics prioritaires",
+                "items": [
+                  {
+                    "text": "HTA non contrôlée",
+                    "cause": "Arguments POUR:\n\t□ TA élevée, récurrent, bilatéral",
+                    "test": "→ Examens selon orientation clinique"
+                  },
+                  {
+                    "text": "Troubles de coagulation",
+                    "cause": "Arguments POUR:\n\t□ Ecchymoses, anticoagulants, saignements multiples",
+                    "test": "→ Examens selon orientation clinique"
+                  },
+                  {
+                    "text": "Traumatisme nasal",
+                    "cause": "Arguments POUR:\n\t□ Notion trauma, unilatéral, croûtes",
+                    "test": "→ Examens selon orientation clinique"
+                  },
+                  {
+                    "text": "Rhinite allergique",
+                    "cause": "Arguments POUR:\n\t□ Prurit nasal, éternuements, saisonnier",
+                    "test": "→ Examens selon orientation clinique"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Examens complémentaires",
+          "details": [
+            "Mesure TA",
+            "NFS, TP/TCA",
+            "Examen ORL"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Plan de prise en charge",
+          "details": [
+            "Compression nasale",
+            "Contrôle TA",
+            "Cautérisation si récurrent"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Conseils au patient",
+          "details": [
+            "Éviter grattage nez",
+            "Humidifier air",
+            "Contrôle TA"
+          ]
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Explications au patient",
+          "content": "Saignement nasal pouvant être lié à l'hypertension ou un trouble de coagulation."
+        },
+        {
+          "id": "c2",
+          "text": "Questions du patient",
+          "content": "[Pourquoi je saigne du nez?]\n[C'est ma tension?]"
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour le patient standardisé",
+      "nom": "Patient standardisé",
+      "age": "55 ans",
+      "contexte": "Cabinet de médecine générale",
+      "motifConsultation": {
+        "plaintePrincipale": "saignements de nez répétés",
+        "contexte": "Épistaxis récurrentes"
+      },
+      "simulation": {
+        "attitude": [
+          "Inquiet saignements répétés",
+          "Gêné socialement"
+        ],
+        "signesPhysiques": [
+          "Épistaxis active ou croûtes",
+          "TA élevée possible"
+        ],
+        "durantConsultation": [
+          "Tamponnement nasal possible",
+          "Inquiet récurrence"
+        ]
+      }
+    },
+    "informationsExpert": {
+      "titre": "Informations pour l'expert",
+      "pointsCles": [
+        "Mini-cas clinique: Épistaxis",
+        "Focus: Fréquence, Traumatisme, Médicaments anticoagulants",
+        "Consultation ciblée de 10 minutes",
+        "Évaluation de l'approche diagnostique"
+      ],
+      "pieges": [
+        "Négliger HTA",
+        "Ne pas vérifier coagulation"
+      ]
+    }
+  }
+}

@@ -1,0 +1,652 @@
+{
+  "title": "Pédiatrie - État fébrile sans foyer - Bactériémie occulte",
+  "context": {
+    "setting": "Cabinet de pédiatrie",
+    "patient": "Thomas, garçon de 15 mois en bonne santé habituelle, amené pour état fébrile",
+    "vitals": {
+      "temperature": "39.5°C",
+      "fc": "120 bpm",
+      "fr": "32/min",
+      "ta": "100/70 mmHg",
+      "sao2": "99%"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Motif de consultation et urgence",
+          "binaryOnly": true,
+          "patientComment": "État fébrile depuis 2 jours",
+          "description": "Enfant < 3 ans avec fièvre = risque d'infection bactérienne sérieuse"
+        },
+        {
+          "id": "a2",
+          "text": "Histoire de la maladie actuelle",
+          "details": [
+            "Début de la fièvre [il y a 2 jours]",
+            "Évolution température [d'abord 38.7°C puis 39.4°C aujourd'hui]",
+            "État général [pas aussi vif que d'habitude]",
+            "Alimentation [bien moins mangé]",
+            "Activités [joué moins que d'habitude]",
+            "Comportement [semble fatigué]"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Recherche de foyer infectieux",
+          "details": [
+            "Toux [non]",
+            "Écoulement nasal [non]",
+            "Mal de gorge/déglutition douloureuse [non]",
+            "Douleur aux oreilles [non]",
+            "Brûlures mictionnelles [non]",
+            "Urine malodorante [non]",
+            "Selles liquides [non]",
+            "Vomissements [non]",
+            "Éruption cutanée [à rechercher]"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Contexte familial et social",
+          "details": [
+            "Fratrie [sœur de 4 ans]",
+            "Contacts malades [personne n'est malade dans la famille]",
+            "Mode de garde [ne va pas en crèche]",
+            "Exposition récente [aucune particulière]"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Statut vaccinal",
+          "details": [
+            "Vaccins de base [tous reçus]",
+            "Vaccins complémentaires [non reçus]",
+            "Pneumocoque [à vérifier nombre de doses]",
+            "Haemophilus influenzae b [à vérifier]",
+            "Méningocoque [à vérifier]"
+          ]
+        },
+        {
+          "id": "a6",
+          "text": "Antécédents médicaux",
+          "details": [
+            "Santé habituelle [bonne]",
+            "Hospitalisations antérieures [aucune]",
+            "Maladies chroniques [aucune]",
+            "Allergies [aucune connue]",
+            "Médicaments actuels [aucun]",
+            "Croissance et développement [normaux]"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "État général et constantes vitales",
+          "binaryOnly": true,
+          "patientComment": "Éveillé mais fatigué, état général diminué, T: 39.5°C, FC: 120/min, FR: 32/min, TA: 100/70 mmHg, SpO2: 99%"
+        },
+        {
+          "id": "e2",
+          "text": "Apparence toxique - Critères d'évaluation",
+          "details": [
+            "Léthargie [non - éveillé]",
+            "Contact visuel [présent mais diminué]",
+            "Reconnaissance des parents [oui]",
+            "Interaction avec objets [diminuée]",
+            "Perfusion périphérique [TRC 2 secondes - normale]",
+            "Signes de choc [absents]",
+            "Conclusion [pas d'apparence toxique mais état général diminué]"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Examen cutané et hydratation",
+          "details": [
+            "Coloration [pâle, peau légèrement marbrée]",
+            "Éruption cutanée [absente]",
+            "Pétéchies/purpura [absents]",
+            "Pli cutané [la peau ne prend pas le pli]",
+            "Muqueuses [humides]",
+            "État d'hydratation [correct]"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Examen cardiovasculaire",
+          "details": [
+            "Temps de recoloration capillaire [2 secondes - normal]",
+            "Fréquence cardiaque [120/min - tachycardie modérée]",
+            "Tension artérielle [100/70 mmHg - normale pour l'âge]",
+            "Pouls périphériques [perçus]",
+            "Bruits du cœur [normaux]",
+            "Souffle [absent]"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Examen respiratoire",
+          "details": [
+            "Fréquence respiratoire [32/min - limite supérieure normale]",
+            "Saturation O2 [99% - normale]",
+            "Tirage intercostal [absent]",
+            "Tirage sus/sous-sternal [absent]",
+            "Battement des ailes du nez [absent]",
+            "Auscultation pulmonaire [propre et symétrique]",
+            "Signes de dyspnée [absents]"
+          ]
+        },
+        {
+          "id": "e6",
+          "text": "Examen abdominal",
+          "details": [
+            "Inspection [normale]",
+            "Palpation [abdomen souple et indolore]",
+            "Bruits intestinaux [normaux]",
+            "Loges rénales [souples et indolores]",
+            "Hépatomégalie [absente]",
+            "Splénomégalie [absente]"
+          ]
+        },
+        {
+          "id": "e7",
+          "text": "Examen neurologique",
+          "details": [
+            "Tonus [normal]",
+            "Raideur de nuque [absente]",
+            "Signe de Kernig [négatif]",
+            "Signe de Brudzinski [négatif]",
+            "Fontanelle [si encore ouverte - à évaluer]",
+            "Réflexes [normaux pour l'âge]",
+            "État de conscience [éveillé mais fatigué]"
+          ]
+        },
+        {
+          "id": "e8",
+          "text": "Examen ORL",
+          "details": [
+            "Oreilles [tympans normaux bilatéralement]",
+            "Pharynx [sans particularité]",
+            "Amygdales [normales]",
+            "Ganglions cervicaux [non augmentés]",
+            "Cavité buccale [muqueuses humides]"
+          ]
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostics différentiels",
+          "ddSection": {
+            "title": "Diagnostics différentiels de l'état fébrile sans foyer chez l'enfant < 3 ans",
+            "categories": [
+              {
+                "name": "Infections bactériennes sérieuses",
+                "items": [
+                  {
+                    "text": "Bactériémie occulte",
+                    "cause": "Arguments POUR:\n\t□ Fièvre élevée > 39°C\n\t□ État général diminué\n\t□ Absence de foyer infectieux localisé\n\t□ Âge < 3 ans à risque\n\t□ Leucocytose probable",
+                    "test": "→ Hémoculture, FSC, CRP, PCT"
+                  },
+                  {
+                    "text": "Méningite bactérienne débutante",
+                    "cause": "Arguments À SURVEILLER:\n\t□ Peut débuter sans signes méningés\n\t□ État général diminué\n\t□ Léthargie progressive possible",
+                    "test": "→ Ponction lombaire si détérioration"
+                  },
+                  {
+                    "text": "Pyélonéphrite aiguë",
+                    "cause": "Arguments À RECHERCHER:\n\t□ Fièvre élevée isolée possible\n\t□ Pas toujours de signes urinaires à cet âge",
+                    "test": "→ Stix urinaire, ECBU"
+                  },
+                  {
+                    "text": "Pneumonie",
+                    "cause": "Arguments À CONSIDÉRER:\n\t□ Peut être présente sans signes respiratoires\n\t□ Tachypnée relative (32/min)\n\t□ Auscultation peut être normale",
+                    "test": "→ Radiographie thoracique si doute"
+                  }
+                ]
+              },
+              {
+                "name": "Autres infections bactériennes",
+                "items": [
+                  {
+                    "text": "Arthrite septique",
+                    "cause": "Arguments CONTRE:\n\t□ Pas de boiterie\n\t□ Pas de limitation articulaire\n\t□ Mobilisation normale",
+                    "test": "→ Échographie articulaire si suspicion"
+                  },
+                  {
+                    "text": "Ostéomyélite",
+                    "cause": "Arguments CONTRE:\n\t□ Pas de douleur osseuse localisée\n\t□ Mobilisation normale",
+                    "test": "→ Scintigraphie osseuse si suspicion"
+                  }
+                ]
+              },
+              {
+                "name": "Infections virales",
+                "items": [
+                  {
+                    "text": "Infection virale banale",
+                    "cause": "Arguments POSSIBLES:\n\t□ Évolution < 3 jours\n\t□ État général relativement conservé\n\t□ Symptômes peuvent apparaître secondairement",
+                    "test": "→ Surveillance clinique rapprochée"
+                  },
+                  {
+                    "text": "Roséole (HHV-6)",
+                    "cause": "Arguments À SURVEILLER:\n\t□ Fièvre élevée 3-5 jours\n\t□ Éruption apparaît après défervescence",
+                    "test": "→ Diagnostic clinique rétrospectivement"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Examens complémentaires initiaux",
+          "details": [
+            "FSC [Leucocytes 21.6 G/L - leucocytose]",
+            "Formule [NS 50%, NNS 18%, lympho 26% - déviation gauche]",
+            "CRP [120 mg/L - très élevée]",
+            "PCT [3 µg/L - élevée, suggestive d'infection bactérienne]",
+            "Stix urinaire [négatif]",
+            "Culture d'urine [négative à 48h]",
+            "Hémoculture [Streptococcus pneumoniae - POSITIVE]",
+            "Lab-score [> 3 points - risque élevé]"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Calcul du Lab-score",
+          "details": [
+            "PCT 3 µg/L [4 points car ≥ 2]",
+            "CRP 120 mg/L [4 points car ≥ 100]",
+            "Stix urinaire négatif [0 point]",
+            "Score total [8 points - risque très élevé d'infection bactérienne sérieuse]",
+            "Interprétation [Score > 3 = indication à hémoculture et antibiothérapie]"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Examens complémentaires selon évolution",
+          "details": [
+            "Radiographie thoracique [si tachypnée persistante ou signes respiratoires]",
+            "Ponction lombaire [si détérioration état neurologique ou signes méningés]",
+            "Répétition marqueurs inflammatoires [à 12h si doute diagnostique]",
+            "PCR virales [si contexte épidémique]",
+            "Échographie abdominale [si douleurs abdominales]"
+          ]
+        },
+        {
+          "id": "m5",
+          "text": "Traitement antibiotique d'urgence",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Antibiothérapie empirique initiale",
+                "items": [
+                  {
+                    "treatment": "Ceftriaxone IV",
+                    "details": "50 mg/kg/jour en 1 dose (100 mg/kg si suspicion méningite)",
+                    "duration": "Adapter selon hémoculture et évolution"
+                  },
+                  {
+                    "treatment": "Alternative: Cefuroxime PO",
+                    "details": "30 mg/kg/jour en 2 doses si bon état général",
+                    "duration": "Si ambulatoire avec surveillance"
+                  }
+                ]
+              },
+              {
+                "title": "Adaptation selon résultats",
+                "items": [
+                  {
+                    "treatment": "Pneumocoque sensible",
+                    "details": "Amoxicilline 80-100 mg/kg/jour PO",
+                    "duration": "7-10 jours total"
+                  },
+                  {
+                    "treatment": "Si résistance pénicilline",
+                    "details": "Maintenir ceftriaxone ou cefuroxime",
+                    "duration": "Selon antibiogramme"
+                  }
+                ]
+              },
+              {
+                "title": "Traitement symptomatique",
+                "items": [
+                  {
+                    "treatment": "Paracétamol",
+                    "details": "15 mg/kg/dose toutes les 6h PO/IV",
+                    "duration": "Si T° > 38.5°C ou inconfort"
+                  },
+                  {
+                    "treatment": "Hydratation",
+                    "details": "Encourager boissons, IV si déshydratation",
+                    "duration": "Jusqu'à normalisation"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m6",
+          "text": "Critères d'hospitalisation",
+          "details": [
+            "Âge < 3 mois [hospitalisation systématique]",
+            "Apparence toxique [hospitalisation urgente]",
+            "Lab-score > 3 [hospitalisation recommandée]",
+            "Marqueurs inflammatoires très élevés [CRP > 100, PCT > 2]",
+            "Impossibilité de surveillance ambulatoire [contexte social]",
+            "Vaccination incomplète [< 2 doses pneumocoque/Hib]",
+            "Bactériémie confirmée [hospitalisation pour IV]"
+          ]
+        },
+        {
+          "id": "m7",
+          "text": "Surveillance et évolution",
+          "details": [
+            "Surveillance clinique toutes les 4-6h [état général, constantes]",
+            "Contrôle hémoculture à 48h [identification et antibiogramme]",
+            "Évolution attendue [défervescence en 48-72h sous antibiotiques]",
+            "Recherche de complications [méningite, arthrite, pneumonie]",
+            "Durée hospitalisation [48-72h si évolution favorable]",
+            "Relais PO [après 48h apyrexie et amélioration clinique]",
+            "Suivi ambulatoire [J7 et fin de traitement]"
+          ]
+        },
+        {
+          "id": "m8",
+          "text": "Prévention et mesures associées",
+          "redflagsSection": {
+            "title": "Signes d'alerte et complications",
+            "items": [
+              {
+                "text": "Détérioration neurologique",
+                "description": "Léthargie, convulsions, signes méningés = PL urgente"
+              },
+              {
+                "text": "Détresse respiratoire",
+                "description": "FR > 40/min, tirage, SpO2 < 94% = radiographie thoracique"
+              },
+              {
+                "text": "Signes de choc",
+                "description": "TRC > 3 sec, hypotension, marbrures = remplissage urgent"
+              },
+              {
+                "text": "Persistance fièvre > 72h",
+                "description": "Sous antibiotiques = rechercher complication ou résistance"
+              },
+              {
+                "text": "Apparition de pétéchies",
+                "description": "Purpura fulminans possible = urgence absolue"
+              }
+            ]
+          }
+        },
+        {
+          "id": "m9",
+          "text": "Vaccination et prévention",
+          "details": [
+            "Mise à jour vaccination pneumocoque [PCV-13 selon calendrier]",
+            "Vaccination Haemophilus influenzae b [vérifier statut]",
+            "Vaccination méningocoque [selon recommandations]",
+            "Éducation parentale [signes d'alerte, consultation précoce]",
+            "Prophylaxie entourage [non nécessaire pour pneumocoque]"
+          ]
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Clôture type",
+          "content": "Madame, Thomas présente une bactériémie à pneumocoque, c'est-à-dire une infection du sang par une bactérie. C'est ce qui explique sa fièvre élevée sans autre symptôme apparent. Nous devons l'hospitaliser pour lui administrer des antibiotiques par voie intraveineuse et le surveiller étroitement. Avec le traitement, l'évolution est généralement favorable en 2-3 jours. Il est important de compléter sa vaccination contre le pneumocoque pour prévenir de futures infections."
+        },
+        {
+          "id": "c2",
+          "text": "Questions difficiles des parents",
+          "content": "[Comment a-t-il attrapé ça ?]\n[C'est grave docteur ?]\n[Pourquoi hospitaliser s'il n'a pas l'air si malade ?]\n[Combien de temps à l'hôpital ?]\n[Y aura-t-il des séquelles ?]\n[Sa sœur est-elle à risque ?]"
+        },
+        {
+          "id": "c3",
+          "text": "Réponse type du candidat",
+          "exemplesPhrases": [
+            "\"Le pneumocoque est une bactérie présente dans le nez et la gorge de nombreux enfants. Parfois, elle passe dans le sang et cause une infection.\"",
+            "\"C'est une infection sérieuse mais avec les antibiotiques adaptés, la grande majorité des enfants guérissent complètement.\"",
+            "\"À cet âge, les infections peuvent s'aggraver rapidement. L'hospitalisation permet une surveillance étroite et un traitement intraveineux efficace.\"",
+            "\"Généralement 2-3 jours d'antibiotiques IV, puis on peut continuer par la bouche à la maison pour compléter 7-10 jours.\"",
+            "\"Avec un traitement précoce comme nous le faisons, les complications sont rares et la récupération est complète.\"",
+            "\"Le pneumocoque ne nécessite pas de traitement préventif pour l'entourage. Assurez-vous que sa sœur est bien vaccinée.\""
+          ]
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "images": [
+      {
+        "id": "img1",
+        "title": "Algorithme fièvre sans foyer 0-2 mois",
+        "filename": "grilles_generees/html/images/FUO-img1 - 0-2 mois.jpg",
+        "description": "Prise en charge de l'état fébrile sans foyer chez le nourrisson de 0 à 2 mois"
+      },
+      {
+        "id": "img2",
+        "title": "Algorithme fièvre sans foyer 0-2 mois (suite)",
+        "filename": "grilles_generees/html/images/FUO-img2 - 0-2 mois.jpg",
+        "description": "Suite de l'algorithme avec traitements antibiotiques et remarques"
+      },
+      {
+        "id": "img3",
+        "title": "Algorithme fièvre sans foyer 2 mois-2 ans",
+        "filename": "grilles_generees/html/images/FUO-img3 - 2 mois-2 ans.jpg",
+        "description": "Prise en charge avec Lab-score pour les enfants de 2 mois à 2 ans"
+      }
+    ],
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour le parent standardisé",
+      "nom": "Maman de Thomas",
+      "age": "15 mois",
+      "contexte": "Cabinet de pédiatrie",
+      "motifConsultation": {
+        "plaintePrincipale": "Mon fils a de la fièvre depuis 2 jours",
+        "autreChose": "Il n'est pas comme d'habitude, il est fatigué"
+      },
+      "histoireActuelle": {
+        "debut": [
+          "La fièvre a commencé il y a 2 jours",
+          "Au début c'était 38.7°C",
+          "Aujourd'hui c'est monté à 39.4°C",
+          "J'ai pris la température rectale"
+        ],
+        "comportement": [
+          "Il n'est pas aussi vif que d'habitude",
+          "Il a bien moins mangé",
+          "Il joue moins",
+          "Il semble fatigué mais pas complètement abattu"
+        ],
+        "symptomesAbsents": [
+          "Il ne tousse pas",
+          "Pas d'écoulement nasal",
+          "Il ne semble pas avoir mal quelque part",
+          "Pas de diarrhée ni vomissements",
+          "L'urine n'a pas d'odeur particulière"
+        ]
+      },
+      "antecedents": {
+        "sante": [
+          "Il est en bonne santé habituelle",
+          "C'est la première fois qu'il a une fièvre comme ça",
+          "Il n'a jamais été hospitalisé"
+        ],
+        "vaccins": [
+          "Il a eu tous les vaccins de base",
+          "Je n'ai pas fait les vaccins complémentaires",
+          "Je ne me souviens plus exactement lesquels il a eus"
+        ],
+        "famille": [
+          "Il a une sœur de 4 ans",
+          "Personne n'est malade à la maison",
+          "Il ne va pas en crèche, je le garde"
+        ]
+      },
+      "simulation": {
+        "attitude": [
+          "Mère inquiète mais calme",
+          "Répond précisément aux questions",
+          "Demande ce qui ne va pas",
+          "S'inquiète de la gravité"
+        ],
+        "comportementEnfant": [
+          "Thomas est éveillé mais fatigué",
+          "Se laisse examiner",
+          "Pleure un peu lors de l'examen ORL",
+          "Reste dans les bras de sa mère"
+        ]
+      },
+      "inquietudes": {
+        "principales": [
+          "Je m'inquiète car la fièvre ne baisse pas",
+          "Il n'est vraiment pas comme d'habitude",
+          "Je ne comprends pas d'où vient cette fièvre"
+        ],
+        "questions": [
+          "C'est grave docteur ?",
+          "D'où vient cette fièvre ?",
+          "Qu'est-ce qu'on peut faire ?"
+        ]
+      }
+    },
+    "informationsExpert": {
+      "titre": "Points clés pour l'évaluateur",
+      "pointsCles": [
+        "Reconnaître l'aspécificité des symptômes infectieux < 3 ans",
+        "Évaluer l'apparence toxique vs non toxique",
+        "Connaître les indications des examens complémentaires selon l'âge",
+        "Appliquer le Lab-score pour stratifier le risque",
+        "Identifier les critères d'hospitalisation",
+        "Initier l'antibiothérapie empirique appropriée",
+        "Reconnaître l'importance du suivi clinique rapproché"
+      ],
+      "pieges": [
+        "Sous-estimer le risque d'infection bactérienne sérieuse",
+        "Ne pas faire d'hémoculture avant antibiotiques",
+        "Oublier que la pneumonie peut être présente sans signes respiratoires",
+        "Ne pas considérer la pyélonéphrite sans signes urinaires",
+        "Retarder l'antibiothérapie si marqueurs élevés",
+        "Ne pas organiser de suivi rapproché",
+        "Méconnaître les valeurs normales selon l'âge"
+      ],
+      "dossierMedical": "Résultats disponibles après examens initiaux: hémoculture positive à S. pneumoniae"
+    },
+    "theoriePratique": {
+      "titre": "Rappels théoriques - État fébrile sans foyer chez l'enfant",
+      "sections": [
+        {
+          "titre": "Définitions et épidémiologie",
+          "points": [
+            "Fièvre: T° rectale ≥ 38°C chez l'enfant < 3 ans",
+            "Sans foyer: absence de cause évidente après anamnèse et examen complet",
+            "Incidence bactériémie occulte: 1-2% chez 2 mois-2 ans",
+            "Pneumocoque: principal germe des bactériémies occultes",
+            "Risque plus élevé si < 2 doses vaccin pneumocoque",
+            "Pic d'incidence: 6-24 mois"
+          ]
+        },
+        {
+          "titre": "Apparence toxique - Critères",
+          "points": [
+            "Léthargie ou irritabilité inconsolable",
+            "Contact visuel pauvre ou absent",
+            "Difficulté à reconnaître les parents",
+            "Mauvaise perfusion périphérique (TRC > 3 sec)",
+            "Signes de choc ou détresse respiratoire",
+            "Cyanose ou pâleur marquée",
+            "Si présente = hospitalisation et antibiotiques IV urgents"
+          ]
+        },
+        {
+          "titre": "Lab-score (2 mois - 2 ans)",
+          "points": [
+            "PCT < 0.5 ng/ml = 0 pt, 0.5-2 = 2 pts, ≥ 2 = 4 pts",
+            "CRP < 40 mg/L = 0 pt, 40-99 = 2 pts, ≥ 100 = 4 pts",
+            "Stix urinaire positif = 1 pt, négatif = 0 pt",
+            "Score < 3: faible risque, surveillance",
+            "Score ≥ 3: haut risque, hémoculture + antibiotiques",
+            "Sensibilité 94%, spécificité 78% pour infection bactérienne sérieuse"
+          ]
+        },
+        {
+          "titre": "Stratégie selon l'âge",
+          "points": [
+            "0-21 jours: hospitalisation, bilan complet, antibiotiques IV",
+            "21-28 jours: selon marqueurs, souvent hospitalisation",
+            "28 jours-2 mois: stratification selon marqueurs",
+            "2 mois-2 ans: Lab-score + état clinique",
+            "> 2 ans: surveillance si bon état général",
+            "Vaccination incomplète = approche plus agressive"
+          ]
+        },
+        {
+          "titre": "Infections bactériennes sérieuses à cet âge",
+          "points": [
+            "Bactériémie occulte (1-2%)",
+            "Pyélonéphrite (5-10%)",
+            "Pneumonie (peut être silencieuse)",
+            "Méningite (0.25% si 2-24 mois)",
+            "Arthrite septique/ostéomyélite (rares)",
+            "Entérite bactérienne"
+          ]
+        }
+      ],
+      "rappelsTherapeutiques": [
+        "Ceftriaxone 50 mg/kg/j IV/IM en 1 dose si hospitalisation",
+        "100 mg/kg/j si suspicion méningite",
+        "Cefuroxime 30 mg/kg/j PO en 2 doses si ambulatoire",
+        "Amoxicilline 80-100 mg/kg/j PO si pneumocoque sensible",
+        "Durée totale 7-10 jours pour bactériémie",
+        "Paracétamol 15 mg/kg/dose toutes les 6h si T° > 38.5°C",
+        "Éviter AINS en phase aiguë si diagnostic incertain"
+      ],
+      "examensComplementaires": [
+        "FSC: leucocytose > 15 G/L suggestive, déviation gauche",
+        "CRP > 40 mg/L: risque augmenté d'infection bactérienne",
+        "PCT > 0.5 ng/ml: meilleur marqueur d'infection bactérienne",
+        "Stix urinaire: systématique, culture si positif",
+        "Hémoculture: avant antibiotiques si Lab-score ≥ 3",
+        "Radiographie thorax: si FR > normale pour l'âge ou signes respiratoires",
+        "PL: si signes méningés ou détérioration neurologique"
+      ]
+    },
+    "questionsEtReponses": {
+      "challenges": [
+        {
+          "id": "quiz1",
+          "text": "Cas variant 1: Même présentation mais stix urinaire positif (leuco++, nitrites+)",
+          "content": "Diagnostic: Pyélonéphrite aiguë probable\nPrise en charge: ECBU, hémoculture, antibiothérapie IV (ceftriaxone ou cefuroxime)\nGerme probable: E. coli (80%), autres entérobactéries"
+        },
+        {
+          "id": "quiz2",
+          "text": "Cas variant 2: Même anamnèse mais FR 65/min avec léger tirage intercostal",
+          "content": "Examens: Radiographie thoracique urgente\nDiagnostic probable: Pneumonie\nTraitement: Ceftriaxone IV + surveillance respiratoire\nGerme probable: S. pneumoniae, virus respiratoires"
+        },
+        {
+          "id": "quiz3",
+          "text": "Cas variant 3: FSC normale, CRP < 10, PCT 0.2 (normale)",
+          "content": "Interprétation: Faible risque d'infection bactérienne sérieuse\nPrise en charge: Surveillance ambulatoire, paracétamol si besoin\nConsignes: Retour si persistance > 72h ou détérioration\nSuivi: Contrôle clinique à 24-48h"
+        }
+      ]
+    }
+  }
+}

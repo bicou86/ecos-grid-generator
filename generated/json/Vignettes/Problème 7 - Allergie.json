@@ -1,0 +1,541 @@
+{
+  "title": "Allergie alimentaire - Réaction anaphylactique aux œufs",
+  "context": {
+    "setting": "Service d'urgence, consultation spécialisée",
+    "patient": "Manuel, garçon de 14 mois, présentant une éruption cutanée apparue 10 minutes après avoir mangé une omelette pour la première fois",
+    "vitals": {
+      "temperature": "37.2°C",
+      "fc": "118 bpm",
+      "fr": "24/min",
+      "ta": "103/78 mmHg",
+      "sao2": "99%"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Histoire de la réaction allergique actuelle",
+          "binaryOnly": true,
+          "details": [
+            "Aliment consommé [omelette pour la première fois]",
+            "Délai d'apparition [10 minutes après ingestion]",
+            "Type de réaction [éruption visage ressemblant à piqûres d'orties]",
+            "Progression [étendue sur tronc et bras]",
+            "Symptômes associés [irritabilité mais pas d'autres symptômes]",
+            "Aliments introduits [mange de tout sauf noix et arachides]"
+          ]
+        },
+        {
+          "id": "a2",
+          "text": "Recherche de signes de gravité",
+          "details": [
+            "Difficultés respiratoires [non]",
+            "Toux ou voix rauque [non]",
+            "Gonflement facial/lèvres [non]",
+            "Vomissements [non]",
+            "Diarrhée [non]",
+            "Malaise/léthargie [non, irritable mais conscient]"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Antécédents allergiques",
+          "details": [
+            "Réactions similaires antérieures [non, première fois]",
+            "Introduction œufs [déjà consommé biscuits avec œufs sans problème]",
+            "Autres allergies connues [non]",
+            "Eczéma/dermatite atopique [à rechercher]",
+            "Asthme [non]",
+            "Rhinite allergique [non]"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Antécédents familiaux et contexte",
+          "details": [
+            "Allergies familiales [à rechercher]",
+            "Asthme familial [à rechercher]",
+            "Eczéma familial [à rechercher]",
+            "Mode de garde [à domicile]",
+            "Alimentation habituelle [diversifiée sauf noix/arachides]",
+            "Médicaments récents [non]"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Suivi à 24 mois - Nouvelle réaction",
+          "details": [
+            "Aliment ingéré [pâtes au pesto]",
+            "Réaction immédiate [urticaire visage]",
+            "Symptômes associés [voix rauque, dyspnée, toux sèche]",
+            "Traitement donné [antihistaminique oral]",
+            "Évolution [consultation urgence]",
+            "Éviction depuis [œufs évités sans problème, noix/arachides/amandes consommés]"
+          ]
+        },
+        {
+          "id": "a6",
+          "text": "Suivi à 6 ans - Évolution",
+          "details": [
+            "Tolérance œufs [consommés sous toutes formes sans problème]",
+            "Incident récent [biscuit avec noix de cajou - urticaire tronc/visage et toux]",
+            "Traitement utilisé [adrénaline + antihistaminique]",
+            "Résolution [en 10 minutes]",
+            "Situation actuelle [prurits conjonctivaux, éternuements fin juin]",
+            "Tests cutanés antérieurs [positifs pollens bouleaux/graminées]"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "État général et signes vitaux",
+          "binaryOnly": true,
+          "patientComment": "Irritable mais se calme dans les bras, T° 37.2°C, FC 118/min, FR 24/min, TA 103/78, SpO2 99%"
+        },
+        {
+          "id": "e2",
+          "text": "Examen cutané",
+          "details": [
+            "Type de lésions [plaques érythémateuses avec papules blanchâtres au centre]",
+            "Localisation [visage, tronc, bras]",
+            "Aspect [typique urticaire - lésions urticariennes]",
+            "Prurit [présent - enfant se gratte]",
+            "Œdème [absent]",
+            "Photos [prises pour documentation]"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Examen respiratoire",
+          "details": [
+            "Fréquence respiratoire [24/min - normale]",
+            "Auscultation [murmure vésiculaire symétrique]",
+            "Sibilances [absentes]",
+            "Tirage [absent]",
+            "Stridor [absent]",
+            "Saturation O2 [99% air ambiant]"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Examen ORL et cardiovasculaire",
+          "details": [
+            "Œdème labial [absent]",
+            "Œdème lingual [absent]",
+            "Œdème uvulaire [absent]",
+            "Voix [normale, pas rauque]",
+            "Tension artérielle [103/78 - normale pour l'âge]",
+            "Pouls [régulier, bien frappé]"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Évaluation de la gravité (Score de Müller)",
+          "details": [
+            "Stade 1 [urticaire, malaise, anxiété]",
+            "Stade 2 [+ douleurs abdo, nausées, diarrhée, vertiges]",
+            "Stade 3 [+ dyspnée, dysphonie, confusion, angoisse]",
+            "Stade 4 [+ cyanose, hypotension, collapsus, syncope]",
+            "Classification actuelle [Stade 1 - réaction légère]"
+          ]
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostic et diagnostics différentiels",
+          "ddSection": {
+            "title": "Diagnostics différentiels d'une éruption aiguë post-prandiale",
+            "categories": [
+              {
+                "name": "Diagnostic principal",
+                "items": [
+                  {
+                    "text": "Réaction allergique IgE-médiée aux œufs",
+                    "cause": "Arguments POUR:\n\t□ Délai court (10 min) après ingestion\n\t□ Première exposition à l'œuf entier\n\t□ Urticaire typique\n\t□ Résolution avec antihistaminique\n\t□ Récidive avec autre allergène (noix)",
+                    "test": "→ IgE spécifiques œuf, ovomucoïde, ovalbumine"
+                  }
+                ]
+              },
+              {
+                "name": "Autres réactions allergiques",
+                "items": [
+                  {
+                    "text": "Allergie non IgE-médiée",
+                    "cause": "Arguments CONTRE:\n\t□ Délai trop court (< 2h)\n\t□ Manifestations cutanées typiques IgE",
+                    "test": "→ Patch tests si suspicion"
+                  },
+                  {
+                    "text": "Syndrome d'entérocolite induite par les protéines alimentaires (SEIPA)",
+                    "cause": "Arguments CONTRE:\n\t□ Pas de vomissements répétés\n\t□ Pas de léthargie\n\t□ Manifestations cutanées prédominantes",
+                    "test": "→ Test de provocation orale en milieu hospitalier"
+                  }
+                ]
+              },
+              {
+                "name": "Autres causes d'urticaire",
+                "items": [
+                  {
+                    "text": "Urticaire virale",
+                    "cause": "Arguments CONTRE:\n\t□ Relation temporelle claire avec repas\n\t□ Pas de contexte infectieux\n\t□ Résolution rapide",
+                    "test": "→ Évolution clinique"
+                  },
+                  {
+                    "text": "Dermographisme",
+                    "cause": "Arguments CONTRE:\n\t□ Lésions spontanées\n\t□ Distribution non mécanique",
+                    "test": "→ Test de dermographisme"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Traitement immédiat de la réaction allergique",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Traitement de première ligne - Stade 1",
+                "items": [
+                  {
+                    "treatment": "Antihistaminique H1",
+                    "details": "Cétirizine 0.25 mg/kg (2.5-5 mg) PO dose unique",
+                    "duration": "Surveillance 2h minimum"
+                  },
+                  {
+                    "treatment": "Surveillance",
+                    "details": "Monitoring signes vitaux et évolution cutanée",
+                    "duration": "2-4 heures aux urgences"
+                  }
+                ]
+              },
+              {
+                "title": "Traitement si aggravation (Stade 2-3)",
+                "items": [
+                  {
+                    "treatment": "Adrénaline IM",
+                    "details": "0.01 mg/kg (0.15 mg < 25 kg) face latérale cuisse",
+                    "duration": "Répétable après 5-15 min si nécessaire"
+                  },
+                  {
+                    "treatment": "Corticoïdes",
+                    "details": "Prednisolone 1-2 mg/kg PO ou IV",
+                    "duration": "3-5 jours selon évolution"
+                  },
+                  {
+                    "treatment": "Bronchodilatateurs",
+                    "details": "Salbutamol nébulisé si bronchospasme",
+                    "duration": "Selon symptômes respiratoires"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m3",
+          "text": "Bilan allergologique",
+          "details": [
+            "IgE totales [à doser]",
+            "IgE spécifiques blanc d'œuf [6.03 kU/L - positif]",
+            "IgE spécifiques ovomucoïde [1.73 kU/L - positif]",
+            "IgE spécifiques ovalbumine [négatives]",
+            "IgE spécifiques arachides [< 0.35 kU/L - négatif]",
+            "IgE spécifiques noisettes [< 0.35 kU/L - négatif]",
+            "IgE spécifiques noix de cajou [24.65 kU/L à 24 mois - très positif]",
+            "IgE spécifiques pistaches [18.26 kU/L - positif]"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Prick tests cutanés",
+          "details": [
+            "Blanc d'œuf [positif initialement]",
+            "Jaune d'œuf [négatif]",
+            "Arachide [négatif]",
+            "Noisette [négatif]",
+            "Noix de cajou [positif à 24 mois]",
+            "Pistache [positif]",
+            "Pollens bouleaux [positif à 6 ans]",
+            "Pollens graminées [positif à 6 ans]"
+          ]
+        },
+        {
+          "id": "m5",
+          "text": "Régime d'éviction et réintroduction",
+          "details": [
+            "Éviction stricte œufs [initialement]",
+            "Œufs cuits dans pâtisseries [bien tolérés, maintenir]",
+            "Réintroduction progressive [œuf cuit → œuf moins cuit]",
+            "Modification allergenicité [cuisson diminue allergenicité]",
+            "Acquisition tolérance [fréquente pour œuf avant 5 ans]",
+            "Éviction noix de cajou/pistaches [stricte après diagnostic]",
+            "Lecture étiquettes [formation parentale obligatoire]"
+          ]
+        },
+        {
+          "id": "m6",
+          "text": "Prescription d'urgence et éducation",
+          "details": [
+            "Stylo auto-injecteur adrénaline [EpiPen Jr 0.15 mg]",
+            "Formation utilisation [parents et entourage]",
+            "Plan d'action écrit [remis aux parents]",
+            "Antihistaminique de secours [cétirizine à domicile]",
+            "Carte d'allergie [à porter sur soi]",
+            "Information école/crèche [protocole d'accueil individualisé]",
+            "Numéro urgence [144 en Suisse]"
+          ]
+        },
+        {
+          "id": "m7",
+          "text": "Suivi allergologique à long terme",
+          "details": [
+            "Contrôle annuel [bilan IgE et tests cutanés]",
+            "Test de provocation orale [si IgE diminuent]",
+            "Immunothérapie orale [si allergie persistante > 5 ans]",
+            "Durée minimum [3 ans si débutée]",
+            "Voie sublinguale ou sous-cutanée [selon disponibilité]",
+            "Vaccination anti-grippale [recommandée si allergie œuf]",
+            "Dépistage autres allergies [marche atopique]"
+          ]
+        },
+        {
+          "id": "m8",
+          "text": "Prévention et conseils",
+          "redflagsSection": {
+            "title": "Signes d'alerte nécessitant adrénaline immédiate",
+            "items": [
+              {
+                "text": "Symptômes respiratoires",
+                "description": "Dyspnée, toux persistante, voix rauque, stridor"
+              },
+              {
+                "text": "Symptômes cardiovasculaires",
+                "description": "Hypotension, tachycardie, malaise, pâleur"
+              },
+              {
+                "text": "Œdème",
+                "description": "Gonflement lèvres, langue, gorge"
+              },
+              {
+                "text": "Symptômes digestifs sévères",
+                "description": "Vomissements répétés, douleurs abdominales intenses"
+              },
+              {
+                "text": "Réaction généralisée",
+                "description": "Urticaire rapidement extensive avec autres symptômes"
+              },
+              {
+                "text": "Réaction biphasique",
+                "description": "Récidive 4-12h après résolution initiale"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Clôture type - Première réaction",
+          "content": "Manuel présente une réaction allergique aux œufs qui s'est manifestée par de l'urticaire. C'est une allergie IgE-médiée classique. Nous allons traiter immédiatement avec un antihistaminique et le surveiller 2 heures. Je vais vous prescrire un stylo d'adrénaline auto-injectable à avoir toujours sur vous et vous former à son utilisation. L'éviction stricte des œufs sera nécessaire dans un premier temps, mais nous ferons un bilan allergologique complet. Beaucoup d'enfants acquièrent une tolérance aux œufs avant l'âge de 5 ans."
+        },
+        {
+          "id": "c2",
+          "text": "Clôture type - Suivi",
+          "content": "L'allergie aux œufs de Manuel s'est résolue, ce qui est fréquent. Malheureusement, il a développé une allergie aux noix de cajou qui est plus persistante. Il faut maintenir l'éviction stricte des noix de cajou et pistaches. Le développement de rhinite allergique fait partie de la marche atopique. Nous allons débuter un traitement antihistaminique pour la saison pollinique et discuter d'une immunothérapie pour l'allergie alimentaire si elle persiste."
+        },
+        {
+          "id": "c3",
+          "text": "Questions fréquentes des parents",
+          "content": "[Est-ce grave docteur ?]\n[Va-t-il guérir de son allergie ?]\n[Peut-il manger des gâteaux avec des œufs ?]\n[Comment utiliser le stylo d'adrénaline ?]\n[Que faire si réaction accidentelle ?]\n[Peut-on faire des vaccins ?]"
+        },
+        {
+          "id": "c4",
+          "text": "Réponse type du candidat",
+          "exemplesPhrases": [
+            "\"C'est une réaction de stade 1, non grave actuellement, mais qui nécessite surveillance et traitement préventif.\"",
+            "\"80% des enfants allergiques aux œufs développent une tolérance avant 5 ans. Pour les noix, c'est plus persistant.\"",
+            "\"Les œufs très cuits dans les pâtisseries sont souvent mieux tolérés. On testera progressivement.\"",
+            "\"Je vais vous montrer: retirer le capuchon, placer contre la cuisse, presser fort 10 secondes, puis appeler le 144.\"",
+            "\"Donner immédiatement l'adrénaline si symptômes graves, antihistaminique si légers, et consulter rapidement.\"",
+            "\"Les vaccins cultivés sur œuf sont possibles sauf allergie sévère. On peut les faire en milieu hospitalier.\""
+          ]
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour le parent standardisé",
+      "nom": "Parent de Manuel",
+      "age": "14 mois (puis 24 mois, puis 6 ans)",
+      "contexte": "Urgences pédiatriques",
+      "motifConsultation": {
+        "plaintePrincipale": "Il a des plaques rouges partout depuis qu'il a mangé",
+        "autreChose": "C'était une omelette, sa première fois"
+      },
+      "histoireActuelle": {
+        "episode1": {
+          "repas": [
+            "Il a mangé une omelette pour la première fois",
+            "10 minutes après, des boutons sont apparus",
+            "Ça ressemble à des piqûres d'orties",
+            "C'est sur le visage, le tronc et les bras"
+          ],
+          "symptomes": [
+            "Il est irritable mais respire bien",
+            "Pas de toux ni de vomissements",
+            "Il se gratte beaucoup",
+            "Pas de gonflement du visage"
+          ]
+        },
+        "episode2_24mois": {
+          "nouveau": [
+            "Il a mangé des pâtes au pesto",
+            "Urticaire du visage immédiatement",
+            "Sa voix est devenue rauque",
+            "Il toussait et avait du mal à respirer",
+            "On a donné l'antihistaminique"
+          ]
+        },
+        "episode3_6ans": {
+          "evolution": [
+            "Il mange des œufs sans problème maintenant",
+            "Mais il a fait une réaction avec un biscuit aux noix de cajou",
+            "On a utilisé l'EpiPen cette fois",
+            "Il a aussi le rhume des foins maintenant"
+          ]
+        }
+      },
+      "inquietudes": {
+        "principales": [
+          "C'est une allergie ?",
+          "C'est dangereux ?",
+          "Il ne pourra plus jamais manger d'œufs ?"
+        ],
+        "questions": [
+          "Comment savoir à quoi il est allergique ?",
+          "Faut-il éviter tous les œufs ?",
+          "Et pour les vaccins ?"
+        ]
+      },
+      "simulation": {
+        "attitude": [
+          "Parents inquiets mais calmes",
+          "Observent attentivement l'enfant",
+          "Posent des questions sur l'éviction",
+          "Veulent comprendre l'utilisation de l'EpiPen"
+        ],
+        "comportementEnfant": [
+          "Irritable, se gratte",
+          "Plaques urticariennes visibles",
+          "Respiration normale",
+          "Se calme dans les bras"
+        ]
+      }
+    },
+    "informationsExpert": {
+      "titre": "Points clés pour l'évaluateur",
+      "pointsCles": [
+        "Reconnaître une réaction anaphylactique et son stade",
+        "Utiliser le score de gravité (Müller ou Ring)",
+        "Traiter selon le stade (antihistaminique vs adrénaline)",
+        "Prescrire et expliquer l'auto-injecteur d'adrénaline",
+        "Organiser le bilan allergologique approprié",
+        "Comprendre l'évolution naturelle (tolérance œuf fréquente)",
+        "Identifier la marche atopique",
+        "Éduquer sur l'éviction et la lecture des étiquettes"
+      ],
+      "pieges": [
+        "Sous-estimer une réaction de stade 1 qui peut évoluer",
+        "Oublier de prescrire l'adrénaline auto-injectable",
+        "Ne pas former à l'utilisation de l'EpiPen",
+        "Éviction trop stricte (œufs cuits souvent tolérés)",
+        "Ne pas rechercher les allergies croisées",
+        "Oublier le risque de réaction biphasique",
+        "Ne pas informer l'entourage (école, famille)"
+      ]
+    },
+    "theoriePratique": {
+      "titre": "Rappels théoriques - Allergies alimentaires pédiatriques",
+      "sections": [
+        {
+          "titre": "Épidémiologie et histoire naturelle",
+          "points": [
+            "Prévalence: 6-8% enfants, 3-4% adultes",
+            "Aliments fréquents: lait, œuf, arachide, fruits à coque, blé, soja",
+            "Résolution spontanée: 80% œuf, 80% lait avant 5 ans",
+            "Persistance: arachides (80%), fruits à coque (80%), poissons",
+            "Marche atopique: eczéma → allergie alimentaire → asthme → rhinite",
+            "Facteurs de risque: atopie familiale, eczéma précoce"
+          ]
+        },
+        {
+          "titre": "Mécanismes immunologiques",
+          "points": [
+            "IgE-médiée: réaction immédiate (< 2h), urticaire, anaphylaxie",
+            "Non IgE-médiée: retardée (> 2h), SEIPA, proctocolite",
+            "Mixte: eczéma, œsophagite à éosinophiles",
+            "Sensibilisation ≠ allergie clinique",
+            "Seuils réactivité: variables inter et intra-individuels",
+            "Co-facteurs: exercice, alcool, AINS, infections"
+          ]
+        },
+        {
+          "titre": "Classification anaphylaxie (Ring et Messmer)",
+          "points": [
+            "Grade I: cutanéo-muqueux (urticaire, érythème)",
+            "Grade II: + digestif ou respiratoire modéré ou CV léger",
+            "Grade III: + respiratoire sévère ou CV sévère ou neuro",
+            "Grade IV: arrêt respiratoire ou circulatoire",
+            "Critères diagnostiques: 2 systèmes ou hypotension après allergène",
+            "Réaction biphasique: 20% cas, pic 8-12h"
+          ]
+        },
+        {
+          "titre": "Diagnostic allergologique",
+          "points": [
+            "Anamnèse: timing, aliment, cofacteurs, reproductibilité",
+            "Prick tests: VPN excellente, VPP modérée",
+            "IgE spécifiques: seuils décisionnels selon aliment",
+            "Composants: ovomucoïde (thermostable), Ara h 2 (arachide)",
+            "Test provocation orale: gold standard, milieu hospitalier",
+            "Pas de régimes d'éviction sans diagnostic confirmé"
+          ]
+        }
+      ],
+      "rappelsTherapeutiques": [
+        "Adrénaline IM: traitement de choix anaphylaxie",
+        "Dose: 0.01 mg/kg (max 0.5 mg adulte, 0.3 mg enfant)",
+        "Site: face antéro-latérale cuisse",
+        "Antihistaminiques: urticaire isolée, pas en monothérapie si anaphylaxie",
+        "Corticoïdes: prévention réaction biphasique (non prouvé)",
+        "Bronchodilatateurs: si bronchospasme associé",
+        "Auto-injecteurs: 2 stylos, formation, renouvellement annuel"
+      ],
+      "examensComplementaires": [
+        "Tryptase: pic 1-2h, normale n'exclut pas anaphylaxie",
+        "IgE totales: orientent vers atopie",
+        "IgE spécifiques: panels selon anamnèse",
+        "Prick tests: arrêt antihistaminiques 5-7j avant",
+        "Test activation basophiles: cas complexes",
+        "Endoscopie: si œsophagite à éosinophiles suspectée",
+        "Test provocation: diagnostic et seuil réactivité"
+      ]
+    }
+  }
+}

@@ -1,0 +1,194 @@
+{
+  "title": "Thieme Thorax 3 - Toux - Homme de 35 ans",
+  "category": "Thieme Thorax",
+  "subcategory": "Toux",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Homme de 35 ans, M. Richard Davis, consultant pour toux",
+    "vitals": {
+      "temperature": "38°C",
+      "fc": "94 bpm",
+      "ta": "120/80 mmHg",
+      "fr": "16/min"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Motif principal de consultation",
+          "binaryOnly": true,
+          "patientComment": "toux"
+        },
+        {
+          "id": "a2",
+          "text": "Analyse de la plainte principale",
+          "details": [
+            "Début et évolution [Toux depuis 3 jours, d'abord sèche puis productive (mucus blanc-jaune)]",
+            "Localisation et irradiation de la douleur",
+            "Caractéristiques et intensité",
+            "Facteurs aggravants et soulageants",
+            "Symptômes associés"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Antécédents médicaux et chirurgicaux",
+          "details": [
+            "Mal de gorge léger, écoulement post-nasal, céphalée légère",
+            "Douleur thoracique 4/10 augmentant à l'inspiration profonde"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Histoire sociale et habitudes de vie",
+          "details": [
+            "Fume 1/2 pqt/j × 10 ans",
+            "Asthme bronchique",
+            "Sinusite récurrente (2×/an)",
+            "Allergies (pollen, animaux)"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Signes vitaux",
+          "binaryOnly": true
+        },
+        {
+          "id": "e2",
+          "text": "Examen de la tête et du cou",
+          "details": [
+            "PERRLA",
+            "Examen ORL complet",
+            "Palpation thyroïde",
+            "Recherche ganglions lymphatiques"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Examen cardio-pulmonaire",
+          "details": [
+            "Auscultation cardiaque [S1 et S2 normaux]",
+            "Recherche de souffles ou galop",
+            "Auscultation pulmonaire bilatérale",
+            "Recherche de râles ou sibilances"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Examen abdominal si pertinent",
+          "details": []
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostics différentiels à évoquer",
+          "ddSection": {
+            "title": "Hypothèses diagnostiques",
+            "categories": [
+              {
+                "name": "Diagnostics principaux",
+                "items": [
+                  {
+                    "text": "Bronchite aiguë",
+                    "cause": "Arguments POUR:\n\t□ Toux productive, fièvre, ATCD rhume",
+                    "test": "→ Radiographie thoracique si doute"
+                  },
+                  {
+                    "text": "Sinusite aiguë",
+                    "cause": "Arguments POUR:\n\t□ Céphalée, écoulement post-nasal, sensibilité sinus",
+                    "test": "→ CT sinus si complications"
+                  },
+                  {
+                    "text": "Pleurésie",
+                    "cause": "Arguments POUR:\n\t□ Douleur à l'inspiration profonde, ATCD infection respiratoire",
+                    "test": "→ Radiographie thoracique"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Examens complémentaires pertinents",
+          "details": [
+            "Culture d'expectoration",
+            "Radiographie thoracique"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Plan de prise en charge",
+          "details": [
+            "Investigations ambulatoires",
+            "Traitement symptomatique si approprié",
+            "Suivi après résultats"
+          ]
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour le patient standardisé",
+      "nom": "M. Richard Davis",
+      "age": "35 ans",
+      "contexte": "Cabinet de médecine générale",
+      "motifConsultation": {
+        "plaintePrincipale": "toux",
+        "autreChose": "Toux depuis 3 jours, d'abord sèche puis productive (mucus blanc-jaune). Rhume avec rhinorrhée la semaine dernière."
+      },
+      "histoireActuelle": {
+        "symptomesPrincipaux": [
+          "Toux depuis 3 jours, d'abord sèche puis productive (mucus blanc-jaune)",
+          " Rhume avec rhinorrhée la semaine dernière"
+        ],
+        "contextePsychosocial": [
+          "Fume 1/2 pqt/j × 10 ans",
+          " Asthme bronchique",
+          " Sinusite récurrente (2×/an)",
+          " Allergies (pollen, animaux)"
+        ]
+      },
+      "simulation": {
+        "attitude": [
+          "Toux occasionnelle pendant l'entretien"
+        ],
+        "durantExamen": [
+          "Sensibilité des sinus"
+        ]
+      },
+      "inquietudes": {
+        "principales": [
+          "Pouvez-vous me prescrire des antibiotiques?",
+          "Ai-je attrapé la grippe de mon fils?"
+        ]
+      }
+    },
+    "informationsExpert": {
+      "titre": "Informations pour l'expert",
+      "pointsCles": [
+        "Cas de Toux",
+        "Patient: Homme de 35 ans",
+        "Évaluation de l'anamnèse ciblée",
+        "Examen physique pertinent",
+        "Diagnostic différentiel approprié"
+      ],
+      "pieges": [
+        "Prescrire antibiotiques sans preuve infection bactérienne"
+      ]
+    }
+  }
+}

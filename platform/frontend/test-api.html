@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>API Test</title>
+</head>
+<body>
+    <h1>API Connection Test</h1>
+    <div id="results"></div>
+
+    <script>
+        async function testAPI() {
+            const results = document.getElementById('results');
+
+            try {
+                // Test stats endpoint
+                const statsResponse = await fetch('http://localhost:3000/api/v1/stats');
+                const statsData = await statsResponse.json();
+                results.innerHTML += `<h2>Stats API:</h2><pre>${JSON.stringify(statsData, null, 2)}</pre>`;
+
+                // Test fiches stats endpoint
+                const fichesResponse = await fetch('http://localhost:3000/api/v1/fiches/stats');
+                const fichesData = await fichesResponse.json();
+                results.innerHTML += `<h2>Fiches Stats API:</h2><pre>${JSON.stringify(fichesData, null, 2)}</pre>`;
+
+                // Test cases endpoint
+                const casesResponse = await fetch('http://localhost:3000/api/v1/cases?limit=2');
+                const casesData = await casesResponse.json();
+                results.innerHTML += `<h2>Cases API:</h2><pre>${JSON.stringify(casesData, null, 2)}</pre>`;
+
+            } catch (error) {
+                results.innerHTML = `<h2>Error:</h2><pre>${error.message}</pre>`;
+            }
+        }
+
+        testAPI();
+    </script>
+</body>
+</html>

@@ -1,0 +1,860 @@
+{
+  "title": "Dépression majeure - Homme de 36 ans",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Alex Brown, 36 ans, graphiste, consulte pour fatigue et difficultés de concentration."
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Explorer le motif de consultation",
+          "binaryOnly": true,
+          "details": [
+            "Fatigue persistante [Je suis fatigué tout le temps]",
+            "Difficultés de concentration [Je n'arrive plus à me concentrer au travail]",
+            "Début et durée des symptômes [Depuis 6 semaines]",
+            "Impact sur le fonctionnement quotidien [Baisse de performance au travail, erreurs fréquentes, difficultés relationnelles]"
+          ]
+        },
+        {
+          "id": "a2",
+          "text": "Évaluer les symptômes dépressifs",
+          "details": [
+            "Humeur dépressive persistante [Oui, presque toute la journée]",
+            "Anhédonie (perte d'intérêt et de plaisir) [Oui, n’éprouve plus de plaisir dans ses hobbies habituels comme le dessin et le sport]",
+            "Fatigue ou perte d'énergie [Oui, énergie très diminuée]",
+            "Troubles de concentration [Oui, distrait facilement, oublis fréquents]",
+            "Sentiments de culpabilité et de dévalorisation [Oui, se sent inutile et coupable d’échouer dans sa vie personnelle]",
+            "Agitation ou ralentissement psychomoteur [Ralentissement observé, parle lentement]",
+            "Pensées négatives récurrentes [Se sent désespéré, exprime des pensées pessimistes sur l’avenir]"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Explorer les troubles du sommeil",
+          "details": [
+            "Type de trouble [Réveil matinal précoce vers 4h du matin]",
+            "Insomnie d'endormissement [Présente occasionnellement]",
+            "Réveils nocturnes fréquents [Oui, 2 à 3 fois par nuit]",
+            "Hypersomnie [Non]",
+            "Qualité du sommeil [Non réparateur, fatigue persistante au réveil]",
+            "Impact sur la fatigue diurne [Augmente la somnolence et les difficultés de concentration]"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Évaluer les modifications de l'appétit et du poids",
+          "details": [
+            "Perte d'appétit [Oui, mange beaucoup moins qu’avant]",
+            "Perte de poids [5 kg en 6 semaines]",
+            "Durée de la perte de poids [Progressive depuis le début de l’épisode dépressif]",
+            "Augmentation de l'appétit [Non]",
+            "Comportements alimentaires [Saute des repas, se force parfois à manger]"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Évaluer le risque suicidaire",
+          "binaryOnly": true,
+          "details": [
+            "Idées suicidaires actives [Non, mais sentiment de désespoir]",
+            "Plans suicidaires [Aucun plan concret]",
+            "Tentatives antérieures [Aucune]",
+            "Sentiment de désespoir [Oui, ne voit pas d’avenir positif]",
+            "Pensées de mort [Oui, parfois pense qu’il serait mieux de ne plus exister]",
+            "Facteurs protecteurs [Relation amicale proche, attachement à son travail]"
+          ]
+        },
+        {
+          "id": "a6",
+          "text": "Rechercher des symptômes psychotiques",
+          "details": [
+            "Hallucinations [Aucune]",
+            "Idées délirantes [Aucune]",
+            "Pensées paranoïaques [Absentes]",
+            "Désorganisation de la pensée [Non, discours cohérent]"
+          ]
+        },
+        {
+          "id": "a7",
+          "text": "Explorer les facteurs déclenchants",
+          "details": [
+            "Événements de vie stressants [Rupture récente avec son partenaire]",
+            "Problèmes professionnels [Pression accrue au travail, deadlines difficiles]",
+            "Difficultés financières [Légère instabilité après rupture]",
+            "Deuil ou pertes [Aucun récent]",
+            "Conflits relationnels [Isolement accru après rupture]"
+          ]
+        },
+        {
+          "id": "a8",
+          "text": "Antécédents médicaux et psychiatriques",
+          "details": [
+            "Antécédents psychiatriques personnels [Aucun épisode dépressif diagnostiqué auparavant]",
+            "Épisodes dépressifs antérieurs [Quelques périodes de tristesse prolongée après adolescence mais non médicalisées]",
+            "Antécédents familiaux psychiatriques [Mère avec antécédent de dépression]",
+            "Antécédents médicaux [Aucun significatif]",
+            "Maladies physiques récentes [Aucune]"
+          ]
+        },
+        {
+          "id": "a9",
+          "text": "Habitudes et toxiques",
+          "details": [
+            "Consommation d'alcool [Rare, 1-2 verres lors de sorties sociales]",
+            "Usage de drogues [Non]",
+            "Tabagisme [Non fumeur]",
+            "Médicaments actuels [Ne prend aucun traitement régulier]",
+            "Automédication [Occasionnellement par paracétamol pour maux de tête]"
+          ]
+        },
+        {
+          "id": "a10",
+          "text": "Contexte social et support",
+          "details": [
+            "Situation de vie [Vit seul depuis sa rupture]",
+            "Support familial [Famille éloignée, contact limité]",
+            "Réseau amical [Un ami proche reste en contact]",
+            "Activités sociales [Peu actives depuis la rupture, évite les sorties]",
+            "Isolement social [Isolement marqué, peu de soutien quotidien]"
+          ]
+        },
+        {
+          "id": "a11",
+          "text": "Impact fonctionnel",
+          "details": [
+            "Performance au travail [Difficultés de concentration et baisse de rendement]",
+            "Relations interpersonnelles [Moins de contacts sociaux, isolement]",
+            "Activités quotidiennes [Négligence du ménage, courses espacées]",
+            "Loisirs et hobbies [A abandonné le dessin et le sport]",
+            "Soins personnels [Parfois négligés, douche tous les 2-3 jours]"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Évaluation de l'état mental",
+          "binaryOnly": true,
+          "patientComment": "Note: Pas d'examen physique requis dans ce cas",
+          "details": [
+            "Apparence et présentation [Habillé correctement mais aspect négligé, posture voûtée]",
+            "Contact visuel [Limité, souvent fuyant]",
+            "Discours (débit, volume, contenu) [Ralenti, voix monotone, contenu centré sur la culpabilité]",
+            "Affect déprimé observable [Oui, congruent avec l’humeur décrite]"
+          ]
+        },
+        {
+          "id": "e2",
+          "text": "Évaluation cognitive",
+          "details": [
+            "Orientation temporo-spatiale [Correcte]",
+            "Mémoire [Conservée]",
+            "Concentration et attention [Diminuées, difficultés à suivre une conversation prolongée]",
+            "Jugement et insight [Insight partiel, reconnaît qu’il est malade mais se sent sans solution]"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Utiliser des outils de dépistage",
+          "details": [
+            "PHQ-9 pour évaluer la sévérité [Score estimé à 18 → dépression modérément sévère]",
+            "Interprétation du score [Symptômes significatifs nécessitant traitement]",
+            "Questions spécifiques sur le suicide [A répondu négativement aux intentions suicidaires actives]",
+            "Documentation des réponses [Notées dans le dossier médical]"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Communication empathique",
+          "details": [
+            "Ton empathique et sans jugement [Oui, médecin adopte une écoute bienveillante]",
+            "Validation de l'expérience [Souligne que la souffrance est réelle et reconnue]",
+            "Écoute active [Relance, reformulation, silence respectueux]",
+            "Création d'un espace sécurisé [Patient se sent suffisamment en confiance pour exprimer son désespoir]"
+          ]
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Expliquer le diagnostic",
+          "binaryOnly": true,
+          "content": "Alex, d'après ce que vous m'avez partagé — humeur dépressive persistante, perte d'intérêt et autres symptômes — cela ressemble à un épisode dépressif majeur.",
+          "details": [
+            "Critères DSM-5 [≥5 symptômes sur ≥2 semaines]",
+            "Inclut humeur dépressive ou anhédonie",
+            "Altération fonctionnelle significative",
+            "Normaliser l'expérience [C'est plus fréquent que beaucoup de gens ne le réalisent]"
+          ]
+        },
+        {
+          "id": "m2",
+          "text": "Différencier du stress",
+          "content": "C'est plus que du stress. La dépression est une condition médicale qui affecte votre façon de vous sentir, de penser et de fonctionner — et c'est très traitable.",
+          "details": [
+            "Différence avec le stress adaptatif",
+            "Nature médicale de la dépression",
+            "Caractère traitable",
+            "Message d'espoir [Vous ne vous sentirez pas comme ça éternellement]"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Proposer la psychothérapie",
+          "details": [
+            "Thérapie Cognitivo-Comportementale (TCC) [première ligne]",
+            "Thérapie Interpersonnelle",
+            "Efficacité pour dépression légère-modérée",
+            "Modalités et fréquence",
+            "Accès et disponibilité"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Discuter du traitement pharmacologique",
+          "content": "C'est une option, surtout si les symptômes interfèrent avec votre travail et votre vie quotidienne. Beaucoup de personnes bénéficient d'une combinaison des deux.",
+          "details": [
+            "ISRS première ligne [sertraline ou escitalopram]",
+            "Indication pour dépression modérée-sévère",
+            "Délai d'action [4-6 semaines]",
+            "Effets secondaires possibles",
+            "Durée du traitement [6-12 mois après rémission]"
+          ]
+        },
+        {
+          "id": "m5",
+          "text": "Examens complémentaires",
+          "details": [
+            "TSH pour éliminer hypothyroïdie",
+            "NFS pour rechercher anémie",
+            "Ionogramme",
+            "Vitamine B12 et folates si indiqué",
+            "Bilan hépatique et rénal avant traitement"
+          ]
+        },
+        {
+          "id": "m6",
+          "text": "Mesures hygiéno-diététiques",
+          "details": [
+            "Hygiène du sommeil",
+            "Routine structurée",
+            "Activité physique régulière",
+            "Alimentation équilibrée",
+            "Limitation alcool et substances",
+            "Techniques de relaxation"
+          ]
+        },
+        {
+          "id": "m7",
+          "text": "Psychoéducation",
+          "details": [
+            "Nature de la dépression",
+            "Évolution attendue",
+            "Importance de l'observance",
+            "Ressources d'auto-assistance",
+            "Groupes de soutien"
+          ]
+        },
+        {
+          "id": "m8",
+          "text": "Plan de sécurité",
+          "details": [
+            "Évaluation du risque suicidaire à chaque visite",
+            "Numéros d'urgence et ligne de crise",
+            "Plan en cas d'aggravation",
+            "Identification des signes d'alarme",
+            "Référence urgente si nécessaire"
+          ]
+        },
+        {
+          "id": "m9",
+          "text": "Organiser le suivi",
+          "details": [
+            "Révision dans 1-2 semaines initialement",
+            "Surveillance effets secondaires",
+            "Évaluation de l'observance",
+            "Ajustement du traitement si nécessaire",
+            "Suivi à long terme après rémission"
+          ]
+        },
+        {
+          "id": "m10",
+          "text": "Critères de référence",
+          "details": [
+            "Risque suicidaire élevé",
+            "Symptômes psychotiques",
+            "Suspicion de trouble bipolaire",
+            "Échec de deux lignes de traitement",
+            "Dépression résistante"
+          ]
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Message d'espoir et de soutien",
+          "content": "« La dépression est une maladie très fréquente et très traitable. Avec le bon traitement et le soutien approprié, la grande majorité des personnes se rétablissent complètement. Vous avez fait le pas le plus difficile en venant chercher de l'aide aujourd'hui. »"
+        },
+        {
+          "id": "c2",
+          "text": "Questions du patient",
+          "content": "[Donc, ce n'est pas juste du stress ?] [Ai-je besoin d'antidépresseurs ?] [Combien de temps vais-je me sentir comme ça ?] [Est-ce que c'est de ma faute ?]"
+        },
+        {
+          "id": "c3",
+          "text": "Réponses aux préoccupations",
+          "content": "« Ce n'est absolument pas de votre faute. La dépression est une maladie comme une autre, avec des bases biologiques. Le traitement, qu'il soit psychologique, médicamenteux ou les deux, peut vraiment aider. La plupart des gens commencent à se sentir mieux dans les 4 à 6 semaines après le début du traitement. »"
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour le patient standardisé",
+      "nom": "Alex Brown",
+      "age": "36 ans",
+      "contexte": "Consultation pour fatigue et difficultés de concentration",
+      "motifConsultation": {
+        "plaintePrincipale": "Fatigue persistante et troubles de concentration",
+        "phraseOuverture": "Je suis fatigué tout le temps, et je n'arrive plus à me concentrer au travail."
+      },
+      "histoireActuelle": {
+        "duree": "Depuis 6 semaines",
+        "symptomesPrincipaux": [
+          "Humeur dépressive persistante",
+          "Anhédonie",
+          "Fatigue",
+          "Difficultés de concentration",
+          "Réveil matinal précoce",
+          "Perte d'appétit",
+          "Perte de poids de 5 kg",
+          "Sentiments de culpabilité et de dévalorisation"
+        ],
+        "symptomesAbsents": [
+          "Aucune hallucination",
+          "Aucun délire",
+          "Aucune idée suicidaire active"
+        ],
+        "facteursDeclenchants": [
+          "Rupture récente avec son partenaire"
+        ]
+      },
+      "antecedents": {
+        "medicaux": "Aucun antécédent médical significatif",
+        "psychiatriques": "Aucun antécédent psychiatrique",
+        "familiaux": "Non précisés"
+      },
+      "habitudes": {
+        "alcool": "Pas de consommation d'alcool",
+        "drogues": "Pas d'usage de drogues",
+        "medicaments": "Ne prend aucun médicament"
+      },
+      "contexteSocial": {
+        "profession": "Graphiste",
+        "logement": "Vit seul",
+        "support": "Isolement relatif après rupture"
+      },
+      "evaluationRisque": {
+        "ideessuicidaires": "Non, mais je me sens désespéré",
+        "plan": "Aucun plan suicidaire",
+        "tentativesAnterieures": "Aucune"
+      },
+      "inquietudes": {
+        "principales": [
+          "Donc, ce n'est pas juste du stress ?",
+          "Ai-je besoin d'antidépresseurs ?",
+          "Combien de temps vais-je me sentir comme ça ?",
+          "Est-ce que c'est de ma faute ?"
+        ],
+        "questions": [
+          "Est-ce que je vais perdre mon travail ?",
+          "Les médicaments vont-ils changer ma personnalité ?",
+          "Vais-je devenir dépendant des antidépresseurs ?",
+          "Est-ce héréditaire ?",
+          "Puis-je guérir sans médicaments ?"
+        ]
+      },
+      "simulation": {
+        "attitude": [
+          "Fatigué et ralenti",
+          "Voix monotone",
+          "Contact visuel limité",
+          "Posture affaissée",
+          "Peut devenir émotionnel"
+        ],
+        "durantConsultation": [
+          "Répond lentement aux questions",
+          "Minimise parfois ses symptômes",
+          "Exprime du désespoir",
+          "Cherche de l'espoir",
+          "Ambivalent sur le traitement"
+        ]
+      }
+    },
+    "informationsExpert": {
+      "titre": "Points clés pour l'expert évaluateur",
+      "pointsCles": [
+        "Le candidat doit identifier tous les critères DSM-5 de l'épisode dépressif majeur",
+        "Évaluation systématique du risque suicidaire obligatoire",
+        "Utilisation d'un outil de dépistage validé (PHQ-9)",
+        "Communication empathique et sans jugement",
+        "Explication claire du diagnostic et normalisation",
+        "Proposition d'un plan thérapeutique adapté (psychothérapie et/ou pharmacothérapie)",
+        "Élimination des causes organiques",
+        "Organisation d'un suivi rapproché",
+        "Psychoéducation sur la nature traitable de la dépression"
+      ],
+      "pieges": [
+        "Ne pas évaluer le risque suicidaire",
+        "Oublier de rechercher des symptômes psychotiques ou maniaques",
+        "Ne pas utiliser d'outil de dépistage standardisé",
+        "Proposer uniquement un traitement médicamenteux",
+        "Ne pas rechercher les causes organiques",
+        "Minimiser la sévérité des symptômes",
+        "Oublier les mesures hygiéno-diététiques",
+        "Ne pas planifier de suivi rapproché",
+        "Manquer d'empathie ou porter des jugements"
+      ]
+    },
+    "theoriePratique": {
+      "titre": "Rappels théoriques sur la dépression majeure",
+      "sections": [
+        {
+          "titre": "Critères diagnostiques DSM-5",
+          "contenu": "Au moins 5 symptômes parmi les suivants pendant au moins 2 semaines, dont au moins un des deux premiers : (1) Humeur dépressive, (2) Anhédonie, (3) Trouble du sommeil, (4) Modification de l'appétit/poids, (5) Agitation ou ralentissement psychomoteur, (6) Fatigue, (7) Sentiment de dévalorisation ou culpabilité, (8) Troubles de concentration, (9) Idées suicidaires."
+        },
+        {
+          "titre": "Épidémiologie",
+          "points": [
+            "Prévalence vie entière : 15-20%",
+            "Ratio femme/homme : 2:1",
+            "Âge moyen de début : 25-30 ans",
+            "Récurrence : 50-80% après un premier épisode",
+            "Comorbidités fréquentes : anxiété (60%), abus de substances (30%)"
+          ]
+        },
+        {
+          "titre": "Physiopathologie",
+          "points": [
+            "Dysfonction des neurotransmetteurs : sérotonine, noradrénaline, dopamine",
+            "Anomalies de l'axe hypothalamo-hypophyso-surrénalien",
+            "Neuroplasticité altérée et réduction du volume hippocampique",
+            "Inflammation et cytokines pro-inflammatoires",
+            "Facteurs génétiques : héritabilité 40%"
+          ]
+        },
+        {
+          "titre": "Échelles d'évaluation",
+          "points": [
+            "PHQ-9 : 0-4 minimal, 5-9 léger, 10-14 modéré, 15-19 modérément sévère, ≥20 sévère",
+            "HAM-D : échelle de Hamilton, gold standard clinique",
+            "BDI : Beck Depression Inventory, auto-évaluation",
+            "MADRS : Montgomery-Asberg Depression Rating Scale",
+            "GDS : Geriatric Depression Scale pour personnes âgées"
+          ]
+        },
+        {
+          "titre": "Complications",
+          "points": [
+            "Suicide : 15% des patients dépressifs sévères",
+            "Altération du fonctionnement social et professionnel",
+            "Augmentation de la morbi-mortalité cardiovasculaire",
+            "Troubles cognitifs persistants",
+            "Chronicisation : 20% évoluent vers dépression chronique"
+          ]
+        }
+      ],
+      "rappelsTherapeutiques": [
+        "Psychothérapie première ligne pour dépression légère-modérée : TCC, thérapie interpersonnelle",
+        "ISRS première ligne pharmacologique : sertraline 50-200mg, escitalopram 10-20mg",
+        "Délai d'action antidépresseurs : 4-6 semaines pour effet complet",
+        "Durée minimale de traitement : 6-12 mois après rémission complète",
+        "Augmentation progressive des doses pour minimiser effets secondaires",
+        "Si échec ISRS : switch vers autre ISRS ou IRSN (venlafaxine, duloxétine)",
+        "Stratégies d'augmentation : lithium, hormone thyroïdienne, antipsychotique atypique",
+        "ECT pour dépression sévère résistante ou avec caractéristiques psychotiques",
+        "Nouvelles approches : kétamine, stimulation magnétique transcrânienne",
+        "Activité physique : efficacité comparable aux antidépresseurs pour dépression légère"
+      ],
+      "examensComplementaires": [
+        "TSH : éliminer hypothyroïdie (10% des dépressions)",
+        "NFS : rechercher anémie",
+        "Ionogramme, créatinine : bilan de base",
+        "Glycémie à jeun : dépistage diabète",
+        "Vitamine B12, folates : carences pouvant mimer dépression",
+        "25-OH vitamine D : carence associée à dépression",
+        "Bilan hépatique : avant traitement médicamenteux",
+        "ECG si > 40 ans ou facteurs de risque cardiovasculaire",
+        "Test urinaire de toxiques si suspicion",
+        "Cortisol salivaire si suspicion de Cushing"
+      ]
+    },
+    "resume": {
+      "titre": "🌧️ Épisode dépressif majeur – Résumé ECOS",
+      "sections": [
+        {
+          "titre": "🔍 Anamnèse",
+          "subsections": [
+            {
+              "titre": "Critères DSM-5 (≥ 5 symptômes, ≥ 2 semaines, dont humeur dépressive ou anhédonie obligatoire)",
+              "points": [
+                "Humeur dépressive quasi toute la journée",
+                "Anhédonie (perte d’intérêt ou de plaisir)",
+                "Troubles du sommeil : insomnie ou hypersomnie",
+                "Modification de l’appétit/poids",
+                "Fatigue ou perte d’énergie",
+                "Sentiments de culpabilité excessive ou de dévalorisation",
+                "Troubles de concentration ou indécision",
+                "Ralentissement ou agitation psychomotrice (observée par autrui)",
+                "Idées suicidaires ou pensées de mort récurrentes"
+              ]
+            },
+            {
+              "titre": "Contexte et retentissement",
+              "points": [
+                "Durée ≥ 2 semaines",
+                "Retentissement fonctionnel (travail, école, relations sociales)",
+                "Pas dû à substances ou affection médicale",
+                "Pas d’épisode maniaque ou hypomaniaque dans les antécédents"
+              ]
+            },
+            {
+              "titre": "Facteurs de risque",
+              "points": [
+                "ATCD familiaux de trouble dépressif ou bipolaire",
+                "Événements de vie stressants",
+                "Comorbidités psychiatriques (anxiété, addictions)",
+                "Maladies chroniques (cancer, douleurs, endocrinopathies)"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "👀 Examen clinique",
+          "subsections": [
+            {
+              "titre": "Éléments à rechercher",
+              "points": [
+                "Affect triste, pleurs faciles",
+                "Ralentissement psychomoteur ou agitation",
+                "Signes somatiques : amaigrissement, troubles du sommeil",
+                "Idées suicidaires exprimées ou comportements auto-agressifs",
+                "Exclure cause organique (hypothyroïdie, anémie, iatrogénie)"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "🧪 Examens diagnostiques",
+          "subsections": [
+            {
+              "titre": "Évaluation initiale",
+              "points": [
+                "Outils de dépistage : PHQ-2, PHQ-9 (évalue sévérité)",
+                "Échelle de risque suicidaire (C-SSRS)",
+                "Anamnèse psychiatrique complète"
+              ]
+            },
+            {
+              "titre": "Examens complémentaires",
+              "points": [
+                "Bilan thyroïdien (TSH, T4)",
+                "NFS (anémie), glycémie, ionogramme",
+                "Vitamine B12, folates",
+                "Dépistage toxiques, VIH, syphilis si suspicion",
+                "Neuro-imagerie si signes neurologiques atypiques"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "⚙️ Prise en charge",
+          "subsections": [
+            {
+              "titre": "Mesures générales",
+              "points": [
+                "Éducation du patient et famille sur la dépression",
+                "Hygiène de vie : sommeil, activité physique, alimentation",
+                "Réduction alcool/drogues",
+                "Renforcement du soutien social"
+              ]
+            },
+            {
+              "titre": "Thérapies psychologiques",
+              "points": [
+                "TCC (thérapie cognitive et comportementale)",
+                "Thérapie interpersonnelle",
+                "Activation comportementale",
+                "Psychothérapie de soutien"
+              ]
+            },
+            {
+              "titre": "Pharmacothérapie",
+              "points": [
+                "1ère ligne : ISRS (fluoxétine, sertraline, escitalopram) ou IRSN",
+                "Alternatives : bupropion (moins de troubles sexuels), mirtazapine (si insomnie ou anorexie)",
+                "Surveillance rapprochée < 24 ans (risque suicidaire accru)",
+                "Durée traitement : au moins 6 mois (risque faible) à 2 ans (haut risque)"
+              ]
+            },
+            {
+              "titre": "Situations particulières",
+              "points": [
+                "Dépression sévère résistante : ECT, stimulation magnétique transcrânienne, lithium, antipsychotiques atypiques",
+                "Dépression avec risque suicidaire ou psychotique : hospitalisation et prise en charge urgente"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "✅ Points clés ECOS",
+          "points": [
+            "Diagnostic DSM-5 : ≥ 5 symptômes, ≥ 2 semaines, dont humeur dépressive ou anhédonie",
+            "Toujours évaluer le risque suicidaire",
+            "Exclure causes organiques ou bipolaire avant antidépresseurs",
+            "Mild : psychothérapie ; modéré-sévère : psychothérapie + pharmacothérapie",
+            "Réévaluer efficacité après 6 semaines"
+          ]
+        },
+        {
+          "titre": "📋 Check-list rapide ECOS",
+          "subsections": [
+            {
+              "titre": "Questions à poser",
+              "points": [
+                "Depuis quand l’humeur est-elle dépressive ?",
+                "Perte d’intérêt ou de plaisir ?",
+                "Troubles du sommeil, de l’appétit, énergie, concentration ?",
+                "Idées de culpabilité, inutilité, suicide ?",
+                "Antécédents psychiatriques, familiaux, traitements déjà reçus ?"
+              ]
+            },
+            {
+              "titre": "Examens à faire",
+              "points": [
+                "PHQ-9 ou autre échelle",
+                "Bilan biologique (TSH, NFS, B12, folates)",
+                "Examen clinique complet",
+                "Dépistage comorbidités psychiatriques et addictives"
+              ]
+            },
+            {
+              "titre": "PEC en 3 points",
+              "points": [
+                "Évaluer sévérité + risque suicidaire",
+                "Psychothérapie ± antidépresseur selon sévérité",
+                "Suivi rapproché, réévaluation à 6 semaines"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "presentationPatient": {
+      "titre": "📑 Fiche ECOS – Cas : Dépression majeure (Homme de 36 ans, fatigue et troubles de concentration)",
+      "sections": [
+        {
+          "titre": "🧩 Checklist mentale (présentation systématisée)",
+          "points": [
+            "Intro → âge, motif (fatigue, troubles de concentration, baisse rendement travail)",
+            "Explorer critères DSM-5 → humeur dépressive, anhédonie, sommeil, appétit/poids, énergie, concentration, culpabilité, ralentissement, idées de mort",
+            "Symptômes associés → fatigue, réveils précoces, perte de 5 kg, ralentissement psychomoteur, culpabilité, désespoir",
+            "Risque suicidaire → explorer idées, intentions, plans, facteurs protecteurs",
+            "ATCD personnels et familiaux → pas d’épisode antérieur, mère dépression",
+            "Facteurs déclenchants → rupture récente, isolement, stress professionnel",
+            "Habitudes → pas de toxiques, pas de médicaments",
+            "Contexte social → vit seul, isolement, ami proche comme soutien",
+            "Impact fonctionnel → travail, relations sociales, hobbies abandonnés, soins personnels négligés",
+            "Examen mental → apparence négligée, discours ralenti, affect déprimé congruent",
+            "Outils → PHQ-9 (score 18, dépression modérément sévère)",
+            "Examens complémentaires → TSH, NFS, ionogramme, B12/folates si doute",
+            "PEC → psychoéducation, TCC, +/- antidépresseur (ISRS), hygiène de vie, suivi rapproché",
+            "Plan sécurité → évaluation risque suicidaire continue, numéros d’urgence, référer si aggravation"
+          ],
+          "mnemo": {
+            "titre": "👉 Mnémo rapide DSM-5 : SIGECAPS",
+            "elements": [
+              "S = Sleep (troubles du sommeil)",
+              "I = Interest (anhédonie)",
+              "G = Guilt (culpabilité, dévalorisation)",
+              "E = Energy (fatigue, perte d’énergie)",
+              "C = Concentration (troubles cognitifs)",
+              "A = Appetite (perte/gain de poids, appétit)",
+              "P = Psychomoteur (ralentissement/agitation)",
+              "S = Suicide (idées de mort ou suicidaires)"
+            ]
+          }
+        },
+        {
+          "titre": "🎤 Version longue (≈2-3 min)",
+          "contenu": "Il s’agit d’Alex Brown, un homme de 36 ans, graphiste, qui consulte pour fatigue persistante et difficultés de concentration depuis environ 6 semaines. Il explique que son humeur est dépressive presque toute la journée, qu’il n’éprouve plus de plaisir pour ses activités habituelles comme le dessin ou le sport. Il se sent sans énergie, a des troubles importants de concentration avec baisse de performance au travail et erreurs fréquentes. Il rapporte aussi des réveils matinaux précoces vers 4h du matin, des réveils nocturnes répétés, un sommeil non réparateur, ainsi qu’une perte d’appétit avec un amaigrissement de 5 kg en 6 semaines. Il exprime des sentiments de culpabilité et de dévalorisation, se sent inutile et coupable, et décrit un ralentissement psychomoteur, parlant lentement avec une voix monotone. Enfin, il exprime un fort désespoir et des pensées de mort récurrentes, même s’il n’a pas de plan suicidaire ni de tentative antérieure.\n\nSes antécédents sont vierges, hormis une mère ayant souffert de dépression. Il n’a pas de consommation d’alcool, de drogues ni de tabac. Son contexte de vie est marqué par une rupture récente, un isolement social croissant, et des difficultés financières légères. Il vit seul, a un seul ami proche comme soutien, et a beaucoup réduit ses activités sociales et de loisirs. \n\nÀ l’examen, il est correctement habillé mais d’allure négligée, posture voûtée, contact visuel limité, discours ralenti, affect congruent avec l’humeur décrite. Le PHQ-9 montre un score de 18, compatible avec une dépression modérément sévère. Pas de symptômes psychotiques.\n\nEn résumé, il s’agit d’un homme de 36 ans présentant un épisode dépressif majeur modérément sévère, avec retentissement professionnel et social significatif, sans idée suicidaire active mais avec désespoir. Les diagnostics différentiels incluent un trouble de l’adaptation avec humeur dépressive, un trouble bipolaire (mais pas d’antécédent maniaque/hypomaniaque), et des causes organiques comme une hypothyroïdie ou une carence vitaminique.\n\nLa prise en charge comprend : expliquer le diagnostic et normaliser, proposer une psychothérapie de type TCC, envisager un traitement pharmacologique par ISRS compte tenu de la sévérité et du retentissement, et insister sur l’hygiène de vie (sommeil, activité physique, alimentation équilibrée). On complète le bilan biologique par TSH, NFS, ionogramme et vitamines. Un plan de sécurité est établi avec numéros de crise, suivi rapproché à 1-2 semaines, et on discute d’une éventuelle référence si aggravation."
+        },
+        {
+          "titre": "⚡ Version express (SBAR, 30 sec)",
+          "contenu": "S (Situation) : Alex Brown, 36 ans, graphiste, consulte pour fatigue et troubles de concentration depuis 6 semaines.\n\nB (Background) : Rupture récente, isolement, pas d’ATCD médicaux, mère dépression, pas de toxiques.\n\nA (Assessment) : Épisode dépressif majeur modérément sévère (humeur dépressive, anhédonie, perte d’appétit/poids, troubles sommeil, culpabilité, ralentissement psychomoteur, désespoir). Pas d’idée suicidaire active mais risque à surveiller.\n\nR (Recommendation) : Expliquer diagnostic, proposer TCC ± ISRS, hygiène de vie, bilan biologique, suivi rapproché (1-2 sem), plan sécurité."
+        },
+        {
+          "titre": "🎲 Touches ludiques / mnémos",
+          "subsections": [
+            {
+              "titre": "👉 SIGECAPS (DSM-5)",
+              "points": [
+                "Sleep",
+                "Interest",
+                "Guilt",
+                "Energy",
+                "Concentration",
+                "Appetite",
+                "Psychomotor",
+                "Suicide"
+              ]
+            },
+            {
+              "titre": "👉 Facteurs de risque dépression",
+              "points": [
+                "ATCD familiaux",
+                "Stress psychosocial (rupture, isolement, chômage)",
+                "Sexe féminin (ratio 2:1)",
+                "Maladies chroniques",
+                "Addictions"
+              ]
+            },
+            {
+              "titre": "👉 Antidépresseurs (ISRS) – points clés",
+              "points": [
+                "Exemples : sertraline, escitalopram",
+                "Délai d’action : 4-6 semaines",
+                "Effets secondaires fréquents : troubles digestifs, sexuels, agitation initiale",
+                "Durée traitement : 6-12 mois après rémission"
+              ]
+            },
+            {
+              "titre": "⚠️ Pièges ECOS",
+              "points": [
+                "Oublier d’évaluer risque suicidaire",
+                "Ne pas rechercher cause organique",
+                "Proposer antidépresseur seul sans psychothérapie",
+                "Manquer d’empathie, attitude moralisatrice",
+                "Oublier suivi rapproché initial"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "❓ Questions probables de l'examinateur (avec réponses orales)",
+          "subsections": [
+            {
+              "titre": "1. Arguments pour et contre chaque hypothèse",
+              "questions": [
+                {
+                  "question": "Épisode dépressif majeur",
+                  "reponse": {
+                    "pour": [
+                      "≥5 critères DSM-5 présents (humeur dépressive, anhédonie, fatigue, troubles sommeil, perte appétit/poids, concentration, culpabilité, ralentissement, idées de mort)",
+                      "Durée >2 semaines",
+                      "Retentissement fonctionnel"
+                    ],
+                    "contre": [
+                      "Pas de"
+                    ]
+                  }
+                },
+                {
+                  "question": "Trouble de l’adaptation avec humeur dépressive",
+                  "reponse": {
+                    "pour": [
+                      "Déclencheur psychosocial clair (rupture)",
+                      "Symptômes émotionnels"
+                    ],
+                    "contre": [
+                      "Symptômes trop intenses, durables et nombreux pour simple trouble adaptatif"
+                    ]
+                  }
+                },
+                {
+                  "question": "Trouble bipolaire",
+                  "reponse": {
+                    "pour": [
+                      "Dépression sévère possible"
+                    ],
+                    "contre": [
+                      "Pas d’antécédent d’épisode maniaque ou hypomaniaque"
+                    ]
+                  }
+                },
+                {
+                  "question": "Causes organiques (hypothyroïdie, carence B12)",
+                  "reponse": {
+                    "pour": [
+                      "Fatigue, ralentissement possibles"
+                    ],
+                    "contre": [
+                      "Pas d’autres symptômes somatiques spécifiques retrouvés"
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "titre": "2. Examens complémentaires immédiats",
+              "questions": [
+                {
+                  "question": "Quels examens biologiques proposer ?",
+                  "reponse": [
+                    "TSH (hypothyroïdie ?)",
+                    "NFS (anémie ?)",
+                    "Ionogramme",
+                    "Vitamine B12, folates",
+                    "± bilan hépatique/rénal avant traitement"
+                  ]
+                }
+              ]
+            },
+            {
+              "titre": "3. Diagnostic, traitement, suivi",
+              "questions": [
+                {
+                  "question": "Diagnostic",
+                  "reponse": "Épisode dépressif majeur modérément sévère"
+                },
+                {
+                  "question": "Traitement",
+                  "reponse": {
+                    "immediat": [
+                      "Psychoéducation",
+                      "Proposer psychothérapie (TCC en 1ère ligne)",
+                      "ISRS si impact marqué",
+                      "Mesures hygiéno-diététiques (sommeil, activité physique, alimentation)"
+                    ]
+                  }
+                },
+                {
+                  "question": "Suivi",
+                  "reponse": [
+                    "Réévaluation 1-2 semaines (risque suicidaire, tolérance)",
+                    "Surveillance effets secondaires ISRS",
+                    "PHQ-9 pour suivi sévérité",
+                    "Durée traitement : 6-12 mois après rémission"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

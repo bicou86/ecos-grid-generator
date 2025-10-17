@@ -1,0 +1,306 @@
+{
+  "title": "Thieme Neurologie 52 - Accident vasculaire cérébral aigu - Femme de 65 ans",
+  "category": "Thieme Neurologie",
+  "subcategory": "Accident vasculaire cérébral aigu",
+  "context": {
+    "setting": "Service d'urgences",
+    "patient": "Femme de 65 ans, Mme Debbie Pascal, consultant pour faiblesse bras et jambe droits",
+    "vitals": {
+      "fc": "104 bpm",
+      "ta": "160/110 mmHg",
+      "fr": "22/min",
+      "temperature": "37°C"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Motif principal de consultation",
+          "binaryOnly": true,
+          "patientComment": "faiblesse bras et jambe droits"
+        },
+        {
+          "id": "a2",
+          "text": "Analyse de la plainte principale",
+          "details": [
+            "Début [soudain, il y a 1h]",
+            "Déficit moteur [bras et jambe droits]",
+            "Déficit sensitif [picotements, engourdissements]",
+            "Évolution [stable/aggravation]",
+            "Signes associés [céphalée]"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Recherche de signes neurologiques",
+          "details": [
+            "Hémiparésie droite",
+            "Hémihypoesthésie droite",
+            "Pas aphasie",
+            "Pas négligence"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Recherche de facteurs de risque",
+          "details": [
+            "Hypertension artérielle",
+            "Tabagisme",
+            "Hypercholestérolémie",
+            "Maladie cardiovasculaire",
+            "Antécédent AVC"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Antécédents médicaux et familiaux",
+          "details": [
+            "Mère décédée maladie cardiaque, père AVC."
+          ]
+        },
+        {
+          "id": "a6",
+          "text": "Habitudes et mode de vie",
+          "details": [
+            "Mère décédée maladie cardiaque, père AVC",
+            "Vit seule depuis mort mari",
+            "Arrêt tabac il y a 5 ans (2 pqt/j × 35 ans)"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Signes vitaux et apparence générale",
+          "binaryOnly": true
+        },
+        {
+          "id": "e2",
+          "text": "Examen HEENT (tête, yeux, oreilles, nez, gorge)",
+          "details": [
+            "PERRLA",
+            "Déviation regard?",
+            "Paralysie faciale?",
+            "Aphasie?"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Examen neurologique complet",
+          "details": [
+            "Force 3/5 côté droit",
+            "Sensation altérée droite",
+            "ROT 3+ droite",
+            "Babinski positif droit"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Tests spéciaux neurologiques",
+          "details": [
+            "Échelle NIHSS",
+            "Babinski",
+            "Évaluation aphasie",
+            "Test négligence"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Examen cardiovasculaire",
+          "details": [
+            "Auscultation cardiaque",
+            "Souffle carotidien",
+            "Pouls périphériques"
+          ]
+        },
+        {
+          "id": "e6",
+          "text": "Évaluation de l'état mental (MMSE si indiqué)",
+          "details": [
+            "Évaluation conscience",
+            "Orientation",
+            "Langage",
+            "Négligence"
+          ]
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostics différentiels neurologiques",
+          "ddSection": {
+            "title": "Hypothèses diagnostiques à considérer",
+            "categories": [
+              {
+                "name": "Diagnostics prioritaires",
+                "items": [
+                  {
+                    "text": "Accident vasculaire cérébral",
+                    "cause": "Arguments POUR:\n\t□ Déficit brutal, hémiparésie, facteurs risque multiples, HTA",
+                    "test": "→ CT cérébral urgent, IRM diffusion, ECG, échocardiographie"
+                  },
+                  {
+                    "text": "Accident ischémique transitoire",
+                    "cause": "Arguments POUR:\n\t□ Déficit neurologique transitoire, ATCD AVC, facteurs risque multiples",
+                    "test": "→ CT/IRM cérébral, Doppler carotidien, ECG"
+                  },
+                  {
+                    "text": "Trouble de conversion",
+                    "cause": "Arguments POUR:\n\t□ Contexte stress (veuvage), déficit non systématisé",
+                    "test": "→ Exclusion organique, évaluation psychiatrique"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Examens complémentaires appropriés",
+          "details": [
+            "Électrolytes de base",
+            "CT cérébral",
+            "ECG",
+            "Doppler carotidien"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Plan de prise en charge neurologique",
+          "details": [
+            "Code AVC activé",
+            "Thrombolyse si éligible",
+            "Unité neurovasculaire",
+            "Prévention secondaire",
+            "Réadaptation précoce"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Conseils et prévention",
+          "details": [
+            "Urgence 144",
+            "FAST (Face-Arms-Speech-Time)",
+            "Rééducation intensive",
+            "Prévention récidive"
+          ]
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Questions du patient",
+          "content": "[Est-ce que je fais un accident vasculaire cérébral?]\n[Docteur, pensez-vous que je retrouverai l'usage de mon bras et de ma jambe?]"
+        },
+        {
+          "id": "c2",
+          "text": "Conseils spécifiques",
+          "content": "AVC aigu. Fenêtre thrombolyse. Admission USI neurovasculaire. Pronostic réservé."
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour le patient standardisé",
+      "nom": "Mme Debbie Pascal",
+      "age": "65 ans",
+      "contexte": "Service d'urgences",
+      "motifConsultation": {
+        "plaintePrincipale": "faiblesse bras et jambe droits",
+        "autreChose": "Faiblesse bras/jambe droits apparue soudainement il y a 1h. Picotements et engourdissements côté droit. Incapacité lever bras/jambe."
+      },
+      "histoireActuelle": {
+        "symptomesPrincipaux": [
+          "Faiblesse bras/jambe droits apparue soudainement il y a 1h",
+          " Picotements et engourdissements côté droit",
+          " Incapacité lever bras/jambe"
+        ],
+        "antecedents": [
+          "IM il y a 5 ans, chirurgie cœur ouvert il y a 2 ans",
+          " HTA depuis 15 ans, hypercholestérolémie",
+          " Ménopausée depuis 15 ans"
+        ],
+        "contexteSocial": [
+          "Mère décédée maladie cardiaque, père AVC",
+          " Vit seule depuis mort mari",
+          " Arrêt tabac il y a 5 ans (2 pqt/j × 35 ans)"
+        ]
+      },
+      "simulation": {
+        "attitude": [
+          "Allongée lit",
+          "Paniquée",
+          "Ne peut bouger côté droit",
+          "Pleure"
+        ],
+        "durantExamen": [
+          "Hémiparésie droite complète",
+          "Hémihypoesthésie droite",
+          "ROT vifs droite",
+          "Babinski positif droit"
+        ]
+      },
+      "inquietudes": {
+        "principales": [
+          "[Est-ce que je fais un accident vasculaire cérébral?]",
+          "[Docteur, pensez-vous que je retrouverai l'usage de mon bras et de ma jambe?]"
+        ]
+      }
+    },
+    "informationsExpert": {
+      "titre": "Informations pour l'expert",
+      "pointsCles": [
+        "Cas neurologique: Accident vasculaire cérébral aigu",
+        "Patient: Femme de 65 ans",
+        "Anamnèse neurologique complète",
+        "Examen neurologique systématique",
+        "Tests spéciaux appropriés"
+      ],
+      "pieges": [
+        "Retarder thrombolyse",
+        "Ne pas activer code AVC",
+        "Manquer fenêtre thérapeutique"
+      ]
+    },
+    "theoriePratique": {
+      "titre": "Prise en charge AVC aigu",
+      "sections": [
+        {
+          "titre": "Fenêtre thérapeutique",
+          "points": [
+            "Thrombolyse IV < 4.5h",
+            "Thrombectomie < 6h (jusqu'à 24h si pénombre)",
+            "CT cérébral urgent",
+            "Glycémie capillaire immédiate"
+          ]
+        },
+        {
+          "titre": "Échelle NIHSS simplifiée",
+          "points": [
+            "Niveau conscience",
+            "Regard et champs visuels",
+            "Paralysie faciale",
+            "Déficit moteur membres",
+            "Ataxie",
+            "Sensibilité",
+            "Langage (aphasie, dysarthrie)",
+            "Négligence"
+          ]
+        }
+      ]
+    }
+  }
+}

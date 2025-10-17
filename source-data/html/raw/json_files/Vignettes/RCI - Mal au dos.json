@@ -1,0 +1,871 @@
+{
+  "title": "Mal au dos - Syndrome de Guillain-Barré",
+  "context": {
+    "setting": "Urgences du CHUV",
+    "patient": "Mr Booker Dewitt, 43 ans, policier, consulte pour mal au dos",
+    "vitals": {
+      "temperature": "37.2°C",
+      "fc": "76 bpm",
+      "fr": "14/min",
+      "ta": "125/75 mmHg"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Motif de consultation",
+          "binaryOnly": true,
+          "patientComment": "Mal au dos"
+        },
+        {
+          "id": "a2",
+          "text": "Caractérisation de la douleur dorsale",
+          "details": [
+            "Localisation [bas du dos]",
+            "Début [il y a 3-4 jours]",
+            "Intensité [EVA 4-5/10]",
+            "Type [comme une barre dans le bas du dos]",
+            "Installation [sans effort particulier]",
+            "Facteurs aggravants [exercices]",
+            "Facteurs soulagents [repos, impression de soulagement]",
+            "Caractère [constant dans la journée]",
+            "Irradiation [non]"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Symptômes neurologiques associés",
+          "details": [
+            "Engourdissement des mains [un peu]",
+            "Engourdissement des pieds [plus léger]",
+            "Sensation anormale [impression de marcher avec des chaussettes/souliers trop petits]",
+            "Faiblesse musculaire [à préciser]",
+            "Troubles de l'équilibre [à préciser]"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Anamnèse systémique",
+          "details": [
+            "Céphalées [non]",
+            "Nausées/vomissements [non]",
+            "Vertiges [non]",
+            "Troubles visuels [à préciser]",
+            "Troubles auditifs [à préciser]",
+            "Troubles de la déglutition [toux quand je mange]",
+            "Troubles sphinctériens [à préciser]",
+            "Symptômes cardiovasculaires [à préciser]",
+            "Symptômes pulmonaires [à préciser]",
+            "Symptômes B [à préciser]"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Antécédents personnels",
+          "details": [
+            "Dépression [traitée il y a 5 ans]",
+            "Troubles liés à l'alcool [oui, sobre depuis 1 an]",
+            "Chirurgies [aucune]",
+            "Hospitalisations [à préciser]",
+            "Allergies [à préciser]"
+          ]
+        },
+        {
+          "id": "a6",
+          "text": "Médicaments et traitements",
+          "details": [
+            "Traitement actuel [aucun]",
+            "Traitement antérieur [antidépresseurs il y a 5 ans]",
+            "Automédication [à préciser]"
+          ]
+        },
+        {
+          "id": "a7",
+          "text": "Habitudes de vie",
+          "details": [
+            "Tabagisme [1 paquet/jour]",
+            "Alcool [abstinent depuis 1 an]",
+            "Drogues [non]",
+            "Profession [policier]",
+            "Activité physique [à préciser]",
+            "BMI [normal]"
+          ]
+        },
+        {
+          "id": "a8",
+          "text": "Environnement et contexte",
+          "details": [
+            "Voyage récent [à préciser]",
+            "Infections récentes [à rechercher]",
+            "Vaccinations [à préciser]",
+            "Contacts malades [à préciser]",
+            "Stress professionnel [métier de policier]"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "État général et constantes vitales",
+          "binaryOnly": true,
+          "patientComment": "Bon état général, constantes stables"
+        },
+        {
+          "id": "e2",
+          "text": "Tests méningés",
+          "details": [
+            "Test de Jolt [négatif]",
+            "Signe de Brudzinski [négatif]",
+            "Signe de Kernig [négatif]",
+            "Raideur de nuque [absente]"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Examen de la force motrice",
+          "details": [
+            "Épreuve des bras tendus [déficit présent]",
+            "Manœuvre de Barré [positive]",
+            "Manœuvre de Mingazini [positive]",
+            "Force segmentaire [diminuée distalement]",
+            "Symétrie [atteinte bilatérale]"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Examen du tonus et des réflexes",
+          "details": [
+            "Tonus musculaire [normal ou diminué]",
+            "ROT membres supérieurs [hyporéflexie]",
+            "ROT membres inférieurs [hyporéflexie]",
+            "Réflexe cutané plantaire [Babinski négatif]"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Examen cérébelleux et de l'équilibre",
+          "details": [
+            "Marche [instabilité]",
+            "Station debout [élargissement du polygone de sustentation]",
+            "Épreuve doigt-nez [normale]",
+            "Épreuve talon-genou [normale]",
+            "Épreuve des marionnettes [normale]",
+            "Signe de Romberg [à évaluer]"
+          ]
+        },
+        {
+          "id": "e6",
+          "text": "Examen des nerfs crâniens",
+          "details": [
+            "Nerfs I-VIII [normaux]",
+            "Nerfs IX et X [toux lors de la déglutition - dysphagie]",
+            "Nerf XI [normal]",
+            "Nerf XII [normal]"
+          ]
+        },
+        {
+          "id": "e7",
+          "text": "Examen de la sensibilité",
+          "details": [
+            "Sensibilité superficielle [diminuée en gants et chaussettes]",
+            "Sensibilité profonde [à évaluer]",
+            "Sensibilité vibratoire [à évaluer]",
+            "Proprioception [à évaluer]"
+          ]
+        },
+        {
+          "id": "e8",
+          "text": "Examen du rachis",
+          "details": [
+            "Inspection [normale]",
+            "Palpation [douleur lombaire basse]",
+            "Mobilité [normale ou limitée par la douleur]",
+            "Signes radiculaires [absents]"
+          ]
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostics différentiels",
+          "ddSection": {
+            "title": "Diagnostics différentiels à considérer",
+            "categories": [
+              {
+                "name": "Diagnostic principal",
+                "items": [
+                  {
+                    "text": "Syndrome de Guillain-Barré",
+                    "cause": "Arguments POUR:\n\t□ Paresthésies ascendantes (pieds puis mains)\n\t□ Faiblesse progressive\n\t□ Hyporéflexie généralisée\n\t□ Atteinte des nerfs crâniens (dysphagie)\n\t□ Babinski négatif (atteinte périphérique)\n\t□ Évolution subaiguë",
+                    "test": "→ Ponction lombaire, ENMG"
+                  }
+                ]
+              },
+              {
+                "name": "Autres polyradiculoneuropathies",
+                "items": [
+                  {
+                    "text": "Polyneuropathie diabétique",
+                    "cause": "Arguments À RECHERCHER:\n\t□ Diabète non diagnostiqué possible\n\t□ Mais évolution trop rapide",
+                    "test": "→ HbA1c, glycémie"
+                  },
+                  {
+                    "text": "Polyneuropathie alcoolique",
+                    "cause": "Arguments MIXTES:\n\t□ POUR: Antécédent d'alcoolisme\n\t□ CONTRE: Abstinent depuis 1 an, évolution rapide",
+                    "test": "→ Bilan hépatique, vitamines B"
+                  }
+                ]
+              },
+              {
+                "name": "Pathologies médullaires",
+                "items": [
+                  {
+                    "text": "Syndrome du canal lombaire étroit",
+                    "cause": "Arguments CONTRE:\n\t□ Hyporéflexie (attendrait hyperréflexie)\n\t□ Babinski négatif\n\t□ Atteinte des membres supérieurs",
+                    "test": "→ IRM lombaire"
+                  },
+                  {
+                    "text": "Sclérose en plaques",
+                    "cause": "Arguments CONTRE:\n\t□ Hyporéflexie\n\t□ Babinski négatif\n\t□ Présentation atypique",
+                    "test": "→ IRM cérébrale et médullaire"
+                  }
+                ]
+              },
+              {
+                "name": "Troubles psychogènes",
+                "items": [
+                  {
+                    "text": "Trouble de conversion",
+                    "cause": "Arguments CONTRE:\n\t□ Signes neurologiques objectifs\n\t□ Hyporéflexie documentée\n\t□ Pattern anatomique cohérent",
+                    "test": "→ Diagnostic d'exclusion"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Examens complémentaires urgents",
+          "details": [
+            "Ponction lombaire [dissociation albumino-cytologique attendue]",
+            "FSC avec formule [recherche cytopénie]",
+            "Ionogramme complet [K+, Na+, Ca++, Mg++]",
+            "Fonction rénale et hépatique",
+            "CRP, VS [marqueurs inflammatoires]",
+            "CPK [éliminer rhabdomyolyse]",
+            "TSH [éliminer hypothyroïdie]",
+            "Vitamine B12, folates [carences]",
+            "HbA1c [diabète non diagnostiqué]"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Ponction lombaire - Résultats attendus",
+          "details": [
+            "Aspect [clair]",
+            "Protéinorachie [élevée > 0.5 g/l]",
+            "Cellularité [< 10 cellules/ml]",
+            "Glucose [normal]",
+            "Dissociation albumino-cytologique [caractéristique du Guillain-Barré]",
+            "Culture [négative]",
+            "PCR virales [si indiquées]"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Examens complémentaires de confirmation",
+          "details": [
+            "ENMG [ralentissement de conduction, blocs]",
+            "CT-scan cérébral [normal - pour éliminer cause centrale]",
+            "IRM médullaire [si doute sur compression]",
+            "Anticorps anti-gangliosides [variants spécifiques]",
+            "Sérologies virales [CMV, EBV, VIH si contexte]",
+            "Spirométrie [capacité vitale]"
+          ]
+        },
+        {
+          "id": "m5",
+          "text": "Critères d'hospitalisation",
+          "details": [
+            "Suspicion de Guillain-Barré [OUI - indication formelle]",
+            "Progression des symptômes [OUI]",
+            "Atteinte bulbaire débutante [OUI - dysphagie]",
+            "Surveillance respiratoire nécessaire [OUI]",
+            "Traitement spécifique urgent [OUI]"
+          ]
+        },
+        {
+          "id": "m6",
+          "text": "Traitement du syndrome de Guillain-Barré",
+          "therapySection": {
+            "categories": [
+              {
+                "title": "Traitement spécifique",
+                "items": [
+                  {
+                    "treatment": "Immunoglobulines IV",
+                    "details": "0.4 g/kg/jour",
+                    "duration": "5 jours"
+                  },
+                  {
+                    "treatment": "Alternative: Plasmaphérèse",
+                    "details": "4-6 échanges plasmatiques",
+                    "duration": "8-10 jours"
+                  }
+                ]
+              },
+              {
+                "title": "Surveillance",
+                "items": [
+                  {
+                    "treatment": "Monitoring respiratoire",
+                    "details": "Capacité vitale toutes les 4-6h",
+                    "duration": "Phase aiguë"
+                  },
+                  {
+                    "treatment": "Surveillance cardiaque",
+                    "details": "ECG continu, TA/FC",
+                    "duration": "Phase aiguë"
+                  }
+                ]
+              },
+              {
+                "title": "Prévention des complications",
+                "items": [
+                  {
+                    "treatment": "Prophylaxie TVP",
+                    "details": "HBPM dose prophylactique",
+                    "duration": "Jusqu'à mobilisation"
+                  },
+                  {
+                    "treatment": "Kinésithérapie",
+                    "details": "Mobilisation passive puis active",
+                    "duration": "Dès que possible"
+                  },
+                  {
+                    "treatment": "Protection gastrique",
+                    "details": "IPP si corticothérapie ou stress",
+                    "duration": "Durant hospitalisation"
+                  }
+                ]
+              },
+              {
+                "title": "Traitement symptomatique",
+                "items": [
+                  {
+                    "treatment": "Analgésie",
+                    "details": "Paracétamol, gabapentine si neuropathique",
+                    "duration": "Selon douleurs"
+                  },
+                  {
+                    "treatment": "Anxiolyse",
+                    "details": "Si anxiété importante",
+                    "duration": "Selon besoin"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m7",
+          "text": "Surveillance et pronostic",
+          "details": [
+            "Phase de progression: jusqu'à 4 semaines",
+            "Phase de plateau: 2-4 semaines",
+            "Phase de récupération: plusieurs mois",
+            "Récupération complète: 80% à 1 an",
+            "Séquelles possibles: 20%",
+            "Mortalité: 3-5%",
+            "Facteurs de mauvais pronostic: âge > 60 ans, progression rapide, ventilation"
+          ]
+        },
+        {
+          "id": "m8",
+          "text": "Red flags et complications",
+          "redflagsSection": {
+            "title": "Complications à surveiller",
+            "items": [
+              {
+                "text": "Insuffisance respiratoire",
+                "description": "CV < 20 ml/kg, PiMax < 30 cmH2O"
+              },
+              {
+                "text": "Dysautonomie",
+                "description": "Variations TA/FC, arythmies, iléus"
+              },
+              {
+                "text": "Pneumonie d'aspiration",
+                "description": "Dysphagie présente"
+              },
+              {
+                "text": "Thrombose veineuse",
+                "description": "Immobilisation prolongée"
+              },
+              {
+                "text": "Douleurs neuropathiques",
+                "description": "Fréquentes, difficiles à traiter"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Clôture type",
+          "content": "Monsieur Dewitt, vos symptômes suggèrent un syndrome de Guillain-Barré, une maladie où le système immunitaire attaque les nerfs. Cela explique vos engourdissements et votre faiblesse qui progressent. Nous devons vous hospitaliser immédiatement pour débuter un traitement par immunoglobulines et surveiller votre respiration. La plupart des patients récupèrent bien, mais cela prend du temps."
+        },
+        {
+          "id": "c2",
+          "text": "Questions difficiles du patient",
+          "content": "[Est-ce que c'est grave docteur ?]\n[Je vais pouvoir continuer mon travail de policier ?]\n[D'où ça vient ?]\n[C'est lié à mon ancienne dépression ?]\n[Combien de temps ça va durer ?]"
+        },
+        {
+          "id": "c3",
+          "text": "Réponse type du candidat",
+          "exemplesPhrases": [
+            "\"C'est une maladie sérieuse qui nécessite une surveillance étroite, mais avec le traitement approprié, 80% des patients récupèrent complètement.\"",
+            "\"Avec une bonne récupération, vous devriez pouvoir reprendre votre travail. La rééducation sera importante pour retrouver toutes vos capacités.\"",
+            "\"C'est souvent déclenché par une infection virale récente, même mineure. Le système immunitaire réagit de façon excessive.\"",
+            "\"Non, ce n'est pas lié à votre dépression passée. C'est une maladie auto-immune qui touche les nerfs périphériques.\"",
+            "\"La phase aiguë dure quelques semaines, mais la récupération complète peut prendre plusieurs mois avec de la rééducation.\""
+          ]
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour le patient standardisé",
+      "nom": "Mr Booker Dewitt",
+      "age": "43 ans",
+      "profession": "Policier",
+      "contexte": "Urgences du CHUV",
+      "motifConsultation": {
+        "plaintePrincipale": "J'ai mal au dos",
+        "autreChose": "J'ai aussi des fourmillements dans les mains et les pieds"
+      },
+      "histoireActuelle": {
+        "douleurDorsale": [
+          "J'ai mal dans le bas du dos depuis 3-4 jours",
+          "C'est comme une barre dans le dos",
+          "La douleur est à 4 ou 5 sur 10",
+          "C'est arrivé sans que je fasse d'effort particulier",
+          "C'est pire quand je fais des exercices",
+          "J'ai l'impression que ça soulage un peu au repos"
+        ],
+        "symptomesNeurologiques": [
+          "Mes mains sont un peu engourdies",
+          "Les pieds aussi mais c'est plus léger",
+          "J'ai l'impression de marcher avec des chaussettes trop petites",
+          "Ou des souliers trop petits"
+        ],
+        "troublesDeglutition": [
+          "Je tousse quand je mange",
+          "Surtout avec les liquides"
+        ]
+      },
+      "antecedents": {
+        "medicaux": [
+          "J'ai été soigné pour une dépression il y a 5 ans",
+          "J'ai eu des problèmes avec l'alcool",
+          "Mais je suis sobre depuis 1 an"
+        ]
+      },
+      "habitudes": {
+        "tabac": "Je fume un paquet par jour",
+        "alcool": "J'ai arrêté il y a un an",
+        "drogues": "Non, jamais",
+        "medicaments": "Je ne prends rien en ce moment"
+      },
+      "simulation": {
+        "attitude": [
+          "Homme d'âge moyen, inquiet mais collaborant",
+          "Minimise un peu ses symptômes",
+          "Fier d'avoir arrêté l'alcool",
+          "Préoccupé par son travail"
+        ],
+        "durantExamen": [
+          "Faiblesse visible lors des manœuvres",
+          "Marche instable",
+          "Réflexes diminués",
+          "Coopératif pour tous les tests"
+        ]
+      }
+    },
+    "informationsExpert": {
+      "titre": "Points clés pour l'évaluateur",
+      "pointsCles": [
+        "Identifier le pattern de polyneuropathie ascendante",
+        "Reconnaître l'hyporéflexie comme signe cardinal",
+        "Différencier atteinte centrale vs périphérique (Babinski)",
+        "Identifier l'urgence de la dysphagie débutante",
+        "Demander les examens appropriés (PL, ENMG)",
+        "Reconnaître l'indication d'hospitalisation urgente"
+      ],
+      "pieges": [
+        "Se focaliser uniquement sur la lombalgie",
+        "Attribuer les symptômes à l'alcoolisme passé",
+        "Ne pas reconnaître la gravité de la dysphagie",
+        "Oublier la surveillance respiratoire",
+        "Ne pas identifier le caractère ascendant",
+        "Minimiser l'urgence thérapeutique"
+      ]
+    },
+    "theoriePratique": {
+      "titre": "Rappels théoriques - Syndrome de Guillain-Barré",
+      "sections": [
+        {
+          "titre": "Présentation clinique",
+          "points": [
+            "Faiblesse symétrique ascendante",
+            "Paresthésies distales précoces",
+            "Hypo ou aréflexie ostéo-tendineuse",
+            "Atteinte possible des nerfs crâniens (30%)",
+            "Dysautonomie dans 20% des cas",
+            "Douleurs neuropathiques fréquentes"
+          ]
+        },
+        {
+          "titre": "Diagnostic différentiel",
+          "points": [
+            "Myélopathies aiguës",
+            "Polyneuropathies toxiques ou métaboliques",
+            "Myasthénie grave",
+            "Botulisme",
+            "Poliomyélite",
+            "Porphyrie aiguë intermittente"
+          ]
+        },
+        {
+          "titre": "Examens paracliniques",
+          "points": [
+            "PL: dissociation albumino-cytologique après 1 semaine",
+            "ENMG: démyélinisation, blocs de conduction",
+            "IRM: rehaussement des racines nerveuses",
+            "Anticorps anti-gangliosides selon variant",
+            "Bilan étiologique: sérologies, cultures"
+          ]
+        }
+      ],
+      "rappelsTherapeutiques": [
+        "Ig IV ou plasmaphérèse en urgence",
+        "Pas de corticoïdes (inefficaces)",
+        "Surveillance respiratoire rapprochée",
+        "Intubation précoce si CV < 15-20 ml/kg",
+        "Prophylaxie TVP systématique",
+        "Kinésithérapie dès stabilisation",
+        "Traitement des douleurs neuropathiques"
+      ],
+      "examensComplementaires": [
+        "PL: protéinorachie > 0.5 g/l sans pléiocytose",
+        "ENMG: signes de démyélinisation après 7-10 jours",
+        "Spirométrie: CV, PiMax, PeMax",
+        "ECG: surveillance dysautonomie",
+        "Bilan standard: NFS, iono, fonction rénale/hépatique",
+        "Sérologies si contexte infectieux"
+      ]
+    },
+    "resume": {
+      "titre": "🧠 Syndrome de Guillain-Barré – Résumé ECOS",
+      "sections": [
+        {
+          "titre": "🔍 Anamnèse",
+          "subsections": [
+            {
+              "titre": "Contexte déclencheur",
+              "points": [
+                "Infection respiratoire haute ou gastro-entérite dans les 2–6 semaines précédentes (ex. Campylobacter jejuni, CMV, EBV)",
+                "Vaccination ou chirurgie récente (plus rare)"
+              ]
+            },
+            {
+              "titre": "Symptomatologie initiale",
+              "points": [
+                "Paresthésies distales (mains, pieds)",
+                "Faiblesse musculaire ascendante et progressive (jours à semaines)",
+                "Douleurs neuropathiques possibles"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "👀 Examen clinique",
+          "subsections": [
+            {
+              "titre": "Signes neurologiques",
+              "points": [
+                "Paralysie flasque symétrique, ascendante",
+                "Réflexes ostéo-tendineux abolis ou diminués",
+                "Atteinte sensitive modérée (paresthésies)",
+                "Atteinte des nerfs crâniens possible (parésie faciale bilatérale)"
+              ]
+            },
+            {
+              "titre": "Signes de gravité",
+              "points": [
+                "Atteinte respiratoire (dyspnée, polypnée, faiblesse des muscles respiratoires)",
+                "Dysautonomie (troubles de la TA, tachycardie/bradycardie, troubles du rythme)",
+                "Dysphagie, dysarthrie"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "🧪 Examens diagnostiques",
+          "subsections": [
+            {
+              "titre": "Examens complémentaires",
+              "points": [
+                "LCR : dissociation albumino-cytologique (protéines ↑, cellules normales)",
+                "Électroneuromyogramme : ralentissement de conduction, blocs de conduction",
+                "Gaz du sang si suspicion d’insuffisance respiratoire",
+                "Surveillance cardiologique (TA, ECG) si dysautonomie"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "⚙️ Prise en charge",
+          "subsections": [
+            {
+              "titre": "Urgences et surveillance",
+              "points": [
+                "Hospitalisation en unité de soins intensifs si atteinte respiratoire ou dysautonomie",
+                "Surveillance régulière : capacité vitale forcée, saturation O₂, TA, FC"
+              ]
+            },
+            {
+              "titre": "Traitement spécifique",
+              "points": [
+                "Immunoglobulines IV (IVIg) 5 jours",
+                "Plasmaphérèse alternative",
+                "⚠️ Pas de corticothérapie (inefficace)"
+              ]
+            },
+            {
+              "titre": "Support",
+              "points": [
+                "Assistance ventilatoire si besoin",
+                "Prévention des complications : kinésithérapie, anticoagulation préventive",
+                "Prise en charge de la douleur neuropathique"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "✅ Points clés ECOS",
+          "points": [
+            "Paralysie flasque ascendante + aréflexie = tableau typique",
+            "Toujours rechercher atteinte respiratoire (mesurer capacité vitale)",
+            "Hospitaliser d’emblée (risque évolutif rapide)",
+            "Traitement = IVIg ou plasmaphérèse",
+            "Surveillance vitale essentielle (TA, FC, respiration)"
+          ]
+        },
+        {
+          "titre": "📋 Check-list rapide ECOS",
+          "subsections": [
+            {
+              "titre": "Questions à poser",
+              "points": [
+                "Infection récente (respiratoire, digestive) ?",
+                "Début des symptômes : paresthésies, faiblesse ascendante ?",
+                "Atteinte faciale ou troubles de déglutition/parole ?",
+                "Dyspnée, palpitations, vertiges (dysautonomie) ?"
+              ]
+            },
+            {
+              "titre": "Examens à faire",
+              "points": [
+                "Examen neuro complet (force, ROT, sensibilité, nerfs crâniens)",
+                "Mesure de la capacité vitale forcée",
+                "Ponction lombaire (LCR)",
+                "ENMG",
+                "ECG + surveillance TA"
+              ]
+            },
+            {
+              "titre": "PEC en 3 points",
+              "points": [
+                "Hospitaliser pour surveillance rapprochée",
+                "Initier IVIg ou plasmaphérèse",
+                "Surveiller fonction respiratoire et autonome en continu"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "presentationPatient": {
+      "titre": "📑 Fiche ECOS – Cas : Mal de dos avec déficit neurologique (Syndrome de Guillain-Barré probable)",
+      "sections": [
+        {
+          "titre": "🧩 Checklist mentale (présentation systématisée)",
+          "points": [
+            "Intro → âge, profession, motif (lombalgie évoluant depuis 3-4 jours)",
+            "Caractériser douleur → localisation (bas du dos), intensité EVA 4-5/10, type (barre), facteurs aggravants (exercice), soulagée par repos, pas d’irradiation",
+            "Symptômes associés → engourdissements mains et pieds, troubles de la marche, faiblesse motrice ascendante, toux à la déglutition",
+            "ATCD → dépression traitée, alcoolisme ancien (sevré depuis 1 an), pas de chirurgie, pas de traitement en cours",
+            "Habitudes de vie → tabagisme 1 paquet/jour, abstinent d’alcool, policier",
+            "Examen neuro → déficit moteur bilatéral distal, hyporéflexie diffuse, marche instable, sensibilité en gants et chaussettes, dysphagie",
+            "Diagnostics principaux → Guillain-Barré (PUPD + atteinte bulbaire débutante)",
+            "Diagnostics différentiels → polyneuropathie diabétique/alcoolique, pathologie médullaire, sclérose en plaques, trouble de conversion",
+            "Examens complémentaires → PL (dissociation albumino-cytologique), ENMG, NFS, ionogramme, B12, HbA1c, sérologies, IRM si doute",
+            "Prise en charge → hospitalisation urgente, surveillance respiratoire/cardiaque, IgIV ou plasmaphérèse, prévention complications, kinésithérapie"
+          ],
+          "mnemo": {
+            "titre": "👉 Mnémo rapide : GUILLAIN",
+            "elements": [
+              "G = Gants/chaussettes (atteinte sensitive distale)",
+              "U = Urgence hospitalisation",
+              "I = IgIV ou plasmaphérèse",
+              "L = Lombaire (PL : dissociation albumino-cytologique)",
+              "L = Low reflexes (aréflexie/hyporéflexie)",
+              "A = Atteinte ascendante (faiblesse)",
+              "I = Insuffisance respiratoire à surveiller",
+              "N = Nerfs crâniens (dysphagie, dysarthrie)"
+            ]
+          }
+        },
+        {
+          "titre": "🎤 Version longue (≈2-3 min)",
+          "contenu": "Il s’agit de M. Booker Dewitt, un homme de 43 ans, policier, qui consulte aux urgences pour des douleurs du bas du dos apparues il y a 3 à 4 jours. Il décrit la douleur comme une barre lombaire, d’intensité modérée, notée 4 à 5 sur 10, apparue sans effort particulier. Elle est aggravée à l’exercice et légèrement soulagée par le repos. Il n’y a pas d’irradiation.\n\nÀ côté de cette douleur, il rapporte depuis quelques jours des sensations anormales : ses mains sont engourdies, ses pieds également mais de façon plus légère, avec l’impression de marcher avec des chaussettes trop petites. Il note aussi une certaine faiblesse musculaire et une marche instable. Depuis peu, il tousse lorsqu’il avale, surtout avec les liquides.\n\nSes antécédents sont une dépression traitée il y a 5 ans et une consommation d’alcool problématique mais il est abstinent depuis 1 an. Il ne prend aucun traitement actuellement. Il fume un paquet par jour, ne consomme pas de drogues. Professionnellement, il est policier.\n\nÀ l’examen, ses constantes vitales sont normales. On retrouve un déficit moteur bilatéral et distal, avec des manœuvres de Barré et Mingazzini positives. Les réflexes ostéo-tendineux sont diffusément diminués, sans signe de Babinski. La marche est instable, le polygone de sustentation est élargi. La sensibilité est diminuée en gants et chaussettes. On note également une dysphagie débutante à l’examen des nerfs crâniens. Le rachis lombaire est sensible à la palpation, sans signes radiculaires.\n\nEn résumé, il s’agit d’un homme de 43 ans avec faiblesse ascendante, hyporéflexie, atteinte sensitive distale et dysphagie débutante. Mon hypothèse principale est un syndrome de Guillain-Barré. Les diagnostics différentiels incluent une polyneuropathie diabétique ou alcoolique, une pathologie médullaire compressive, une sclérose en plaques atypique ou un trouble de conversion.\n\nLes examens complémentaires prioritaires sont une ponction lombaire (recherchant une dissociation albumino-cytologique), un ENMG, un bilan biologique (HbA1c, vitamines B, fonction rénale/hépatique, CRP), ainsi qu’une surveillance de la fonction respiratoire par spirométrie. \n\nLa prise en charge doit être immédiate : hospitalisation en soins intensifs, surveillance respiratoire rapprochée, traitement spécifique par immunoglobulines intraveineuses pendant 5 jours ou plasmaphérèse en alternative. On associe une prévention des complications par kinésithérapie, prophylaxie thromboembolique et surveillance cardiaque. Le pronostic est globalement favorable avec une récupération complète dans environ 80% des cas à un an, mais des séquelles sont possibles."
+        },
+        {
+          "titre": "⚡ Version express (SBAR, 30 sec)",
+          "contenu": "S (Situation) : M. Dewitt, 43 ans, policier, lombalgies depuis 3 jours avec engourdissements distaux, faiblesse et dysphagie débutante.\n\nB (Background) : ATCD dépression, alcoolisme sevré, fumeur. Pas de traitement actuel.\n\nA (Assessment) : Suspicion de syndrome de Guillain-Barré. DD : polyneuropathies, pathologie médullaire, sclérose en plaques.\n\nR (Recommendation) : Hospitalisation urgente, PL + ENMG, surveillance respiratoire et cardiaque, traitement par IgIV ou plasmaphérèse, prévention complications."
+        },
+        {
+          "titre": "🎲 Touches ludiques / mnémos",
+          "subsections": [
+            {
+              "titre": "👉 Signes cardinaux du Guillain-Barré",
+              "points": [
+                "Paralysie flasque ascendante",
+                "Hypo/aréflexie",
+                "Atteinte sensitive modérée (paresthésies gants/chaussettes)",
+                "Atteinte des nerfs crâniens (30%)",
+                "Dysautonomie possible (TA/FC instables)"
+              ]
+            },
+            {
+              "titre": "👉 Complications à redouter",
+              "points": [
+                "Insuffisance respiratoire aiguë",
+                "Dysautonomie sévère (troubles du rythme, TA labile)",
+                "Pneumonie d’aspiration (dysphagie)",
+                "TVP (immobilisation)",
+                "Douleurs neuropathiques chroniques"
+              ]
+            },
+            {
+              "titre": "⚠️ Pièges ECOS",
+              "points": [
+                "Se focaliser sur la lombalgie et rater les signes neuro",
+                "Oublier d’évaluer la fonction respiratoire",
+                "Attribuer les symptômes à l’alcoolisme passé",
+                "Négliger la gravité de la dysphagie",
+                "Oublier prophylaxie TVP et kinésithérapie"
+              ]
+            }
+          ]
+        },
+        {
+          "titre": "❓ Questions probables de l'examinateur (avec réponses orales)",
+          "subsections": [
+            {
+              "titre": "1. Diagnostic différentiel",
+              "questions": [
+                {
+                  "question": "Quels sont les diagnostics à évoquer ?",
+                  "reponse": [
+                    "Syndrome de Guillain-Barré (diagnostic principal)",
+                    "Polyneuropathie diabétique ou alcoolique",
+                    "Syndrome du canal lombaire étroit",
+                    "Sclérose en plaques",
+                    "Trouble de conversion (diagnostic d’exclusion)"
+                  ]
+                }
+              ]
+            },
+            {
+              "titre": "2. Examens complémentaires",
+              "questions": [
+                {
+                  "question": "Quels examens prescrire en urgence ?",
+                  "reponse": [
+                    "Ponction lombaire (dissociation albumino-cytologique)",
+                    "ENMG",
+                    "NFS, ionogramme, fonction hépatique/rénale",
+                    "Bilan vitamines B12, folates",
+                    "HbA1c",
+                    "Sérologies si suspicion virale",
+                    "Spirométrie (capacité vitale, PiMax)"
+                  ]
+                }
+              ]
+            },
+            {
+              "titre": "3. Prise en charge et traitement",
+              "questions": [
+                {
+                  "question": "Quel traitement spécifique proposez-vous ?",
+                  "reponse": [
+                    "Immunoglobulines IV 0.4 g/kg/j pendant 5 jours",
+                    "ou Plasmaphérèse (4–6 séances sur 8–10 jours)"
+                  ]
+                },
+                {
+                  "question": "Quelles mesures de surveillance associeriez-vous ?",
+                  "reponse": [
+                    "Surveillance respiratoire (CV toutes les 4-6h, intubation si CV < 20 ml/kg)",
+                    "Surveillance cardiaque (ECG, TA, FC)",
+                    "Prévention TVP (HBPM)",
+                    "Surveillance déglutition (prévention fausse route)"
+                  ]
+                },
+                {
+                  "question": "Quels traitements symptomatiques sont nécessaires ?",
+                  "reponse": [
+                    "Analgésie adaptée (paracétamol, gabapentine si douleur neuropathique)",
+                    "Kinésithérapie précoce",
+                    "Soutien psychologique"
+                  ]
+                }
+              ]
+            },
+            {
+              "titre": "4. Pronostic",
+              "questions": [
+                {
+                  "question": "Quel est le pronostic du Guillain-Barré ?",
+                  "reponse": [
+                    "Phase aiguë de progression : 2-4 semaines",
+                    "Récupération complète dans 80% des cas à 1 an",
+                    "20% gardent des séquelles",
+                    "Mortalité 3-5%, souvent liée aux complications respiratoires ou dysautonomiques"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

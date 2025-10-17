@@ -1,0 +1,263 @@
+{
+  "title": "Thieme MSQ 38 - Douleur cervicale chronique - Homme de 30 ans",
+  "category": "Thieme Musculosquelettique",
+  "subcategory": "Douleur cervicale chronique",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Homme de 30 ans, M. Jerry Roberts, consultant pour douleur au cou",
+    "vitals": {
+      "fc": "64 bpm",
+      "ta": "110/70 mmHg",
+      "fr": "16/min",
+      "temperature": "37°C"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Motif principal de consultation",
+          "binaryOnly": true,
+          "patientComment": "douleur au cou"
+        },
+        {
+          "id": "a2",
+          "text": "Analyse de la douleur (ABCDE)",
+          "details": [
+            "Début et durée [depuis 3 mois, début progressif]",
+            "Intensité [6/10]",
+            "Localisation et irradiation",
+            "Caractère de la douleur",
+            "Facteurs aggravants et soulageants"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Mécanisme de survenue et contexte",
+          "details": [
+            "Début progressif",
+            "Pas de traumatisme récent",
+            "ATCD chute cheval"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Signes inflammatoires et symptômes associés",
+          "details": [
+            "Irradiation bras gauche",
+            "Picotements",
+            "Engourdissement",
+            "Faiblesse préhension"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Antécédents musculosquelettiques",
+          "details": [
+            "ATCD chute de cheval avec fracture cervicale mineure"
+          ]
+        },
+        {
+          "id": "a6",
+          "text": "Histoire sociale et facteurs de risque",
+          "details": [
+            "Retraité précoce",
+            "Ne fume pas",
+            "Boit socialement",
+            "Mère a arthrose"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Signes vitaux et apparence générale",
+          "binaryOnly": true
+        },
+        {
+          "id": "e2",
+          "text": "Inspection de la zone affectée",
+          "details": [
+            "Pas d'érythème",
+            "Pas de gonflement",
+            "Port de tête antalgique"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Palpation et recherche de sensibilité",
+          "details": [
+            "Sensibilité cervicale",
+            "Contracture paravertébrale",
+            "Processus épineux douloureux"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Évaluation vasculo-nerveuse",
+          "details": [
+            "Déficit sensitif bras gauche",
+            "Force 3/5 préhension",
+            "ROT intacts"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Amplitude de mouvement et force musculaire",
+          "details": [
+            "Rotation cervicale limitée",
+            "Flexion/extension douloureuses",
+            "Latéroflexion gauche limitée"
+          ]
+        },
+        {
+          "id": "e6",
+          "text": "Tests spéciaux orthopédiques",
+          "details": [
+            "Test Spurling positif",
+            "Test compression/distraction",
+            "Évaluation neurologique membre supérieur"
+          ]
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostics différentiels musculosquelettiques",
+          "ddSection": {
+            "title": "Hypothèses diagnostiques à considérer",
+            "categories": [
+              {
+                "name": "Diagnostics prioritaires",
+                "items": [
+                  {
+                    "text": "Hernie discale cervicale",
+                    "cause": "Arguments POUR:\n\t□ Irradiation membre supérieur, déficit neurologique, Spurling positif",
+                    "test": "→ IRM cervicale, EMG membre supérieur"
+                  },
+                  {
+                    "text": "Fracture colonne cervicale",
+                    "cause": "Arguments POUR:\n\t□ ATCD fracture, douleur osseuse, déficit neurologique",
+                    "test": "→ Radiographie, CT cervical, IRM si déficit"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Examens d'imagerie appropriés",
+          "details": [
+            "Radiographie colonne cervicale (AP et latérale)",
+            "IRM colonne cervicale"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Plan de prise en charge orthopédique",
+          "details": [
+            "AINS",
+            "Collier cervical souple",
+            "Physiothérapie",
+            "Ergonomie poste travail",
+            "IRM si pas amélioration"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Conseils et restrictions d'activité",
+          "details": [
+            "Éviter positions prolongées",
+            "Ergonomie travail",
+            "Exercices cervicaux doux",
+            "Pas de sports contact"
+          ]
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Questions du patient",
+          "content": "[Ai-je la même fracture?]"
+        },
+        {
+          "id": "c2",
+          "text": "Conseils spécifiques",
+          "content": "Ergonomie cervicale. Physiothérapie régulière. IRM si persistance."
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour le patient standardisé",
+      "nom": "M. Jerry Roberts",
+      "age": "30 ans",
+      "contexte": "Cabinet de médecine générale",
+      "motifConsultation": {
+        "plaintePrincipale": "douleur au cou",
+        "autreChose": "Douleur cervicale depuis 3 mois, début progressif. Irradiation bras gauche comme choc électrique 6/10. Soulagée par ibuprofène."
+      },
+      "histoireActuelle": {
+        "symptomesPrincipaux": [
+          "Douleur cervicale depuis 3 mois, début progressif",
+          " Irradiation bras gauche comme choc électrique 6/10",
+          " Soulagée par ibuprofène"
+        ],
+        "antecedents": [
+          "Picotements et engourdissement bras gauche, faiblesse préhension main",
+          " ATCD chute de cheval avec fracture cervicale mineure"
+        ],
+        "contexteSocial": [
+          "Retraité précoce",
+          " Ne fume pas",
+          " Boit socialement",
+          " Mère a arthrose"
+        ]
+      },
+      "simulation": {
+        "attitude": [
+          "Inquiet récidive fracture",
+          "Gêné dans activités quotidiennes"
+        ],
+        "durantExamen": [
+          "Sensibilité cervicale",
+          "Spurling provoque douleur irradiée",
+          "Sensation diminuée bras gauche"
+        ]
+      },
+      "inquietudes": {
+        "principales": [
+          "[Ai-je la même fracture?]"
+        ]
+      }
+    },
+    "informationsExpert": {
+      "titre": "Informations pour l'expert",
+      "pointsCles": [
+        "Cas musculosquelettique: Douleur cervicale chronique",
+        "Patient: Homme de 30 ans",
+        "Anamnèse complète de la douleur",
+        "Examen orthopédique systématique",
+        "Tests spéciaux appropriés"
+      ],
+      "pieges": [
+        "Manquer déficit neurologique",
+        "Oublier ATCD fracture",
+        "Ne pas tester Spurling"
+      ]
+    }
+  }
+}

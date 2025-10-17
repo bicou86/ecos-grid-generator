@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Regex Examens Complémentaires</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        
+        .test-section {
+            margin: 20px 0;
+            padding: 20px;
+            background: #f9f9f9;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+        
+        .input-area {
+            margin-bottom: 20px;
+        }
+        
+        textarea {
+            width: 100%;
+            min-height: 150px;
+            padding: 10px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: vertical;
+        }
+        
+        button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        
+        button:hover {
+            background-color: #0056b3;
+        }
+        
+        .result {
+            margin-top: 20px;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 4px;
+            min-height: 50px;
+        }
+        
+        .highlight {
+            background-color: yellow;
+            padding: 2px 4px;
+            border-radius: 3px;
+            font-weight: bold;
+        }
+        
+        .match-list {
+            margin-top: 15px;
+        }
+        
+        .match-item {
+            padding: 5px 10px;
+            margin: 5px 0;
+            background: #d4edda;
+            border-radius: 3px;
+            display: inline-block;
+            margin-right: 10px;
+        }
+        
+        .regex-display {
+            margin: 20px 0;
+            padding: 15px;
+            background: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 4px;
+            font-family: monospace;
+            font-size: 12px;
+            word-break: break-all;
+            overflow-x: auto;
+        }
+        
+        .test-cases {
+            margin-top: 20px;
+        }
+        
+        .test-case {
+            margin: 10px 0;
+            padding: 10px;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        
+        .test-case strong {
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Test du Pattern Regex pour les Examens Complémentaires</h1>
+        
+        <div class="regex-display">
+            <strong>Pattern regex utilisé :</strong><br>
+            /\b(ECG|CT|IRM|RX|Rx|radiographie thoracique|radiographie pulmonaire|radiographie abdominale|radiographie|scanner|US|[Ee]chocardiographie|[Ee]cho\s*cardiographie|Échocardiographie|échocardiographie|échographie|angio-CT thoracique|angio-CT pulmonaire|angio-CT abdominal|angio-CT|PET scan|gastroscopie|coloscopie|enzymes cardiaques|troponine|CK-MB|CK|D-dimères|toxicologie urinaire|toxicologie|FSC|NFS|CRP|VS|bilan|hémoculture|culture|frottis|PCR|sérologie|anticorps|antigène|biopsie|ponction|cytologie|histologie|test d'effort|spirométrie|EEG|EMG|holter|MAPA|Échocardiographie transthoracique \(ETT\)|ETT|ETO|cathétérisme|coronarographie|angiographie|doppler|scintigraphie|TEP|pH-métrie|manométrie|endoscopie|bronchoscopie|cystoscopie|arthroscopie|laparoscopie|thoracoscopie)\b/gi
+        </div>
+        
+        <div class="test-section">
+            <h2>Zone de Test Interactive</h2>
+            <div class="input-area">
+                <textarea id="testText" placeholder="Entrez votre texte ici...">Le patient nécessite une échocardiographie pour évaluer la fonction cardiaque. Une Échocardiographie transthoracique (ETT) sera réalisée en urgence. Nous demanderons également un ECG et une radiographie thoracique.</textarea>
+                <button onclick="testRegex()">Tester le Pattern</button>
+            </div>
+            
+            <div class="result">
+                <h3>Résultat :</h3>
+                <div id="highlightedText"></div>
+                <div class="match-list">
+                    <h4>Examens trouvés :</h4>
+                    <div id="matchList"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="test-cases">
+            <h2>Cas de Test Prédéfinis</h2>
+            
+            <div class="test-case">
+                <strong>Test 1 - Minuscules :</strong> "Le patient a besoin d'une échocardiographie"
+                <button onclick="runPredefinedTest('Le patient a besoin d\'une échocardiographie', 1)">Tester</button>
+                <div id="test1-result"></div>
+            </div>
+            
+            <div class="test-case">
+                <strong>Test 2 - Majuscule initiale :</strong> "Une Échocardiographie transthoracique (ETT) est indiquée"
+                <button onclick="runPredefinedTest('Une Échocardiographie transthoracique (ETT) est indiquée', 2)">Tester</button>
+                <div id="test2-result"></div>
+            </div>
+            
+            <div class="test-case">
+                <strong>Test 3 - Variantes :</strong> "Prescrire : échocardiographie, Echocardiographie, echo cardiographie"
+                <button onclick="runPredefinedTest('Prescrire : échocardiographie, Echocardiographie, echo cardiographie', 3)">Tester</button>
+                <div id="test3-result"></div>
+            </div>
+            
+            <div class="test-case">
+                <strong>Test 4 - ETT seul :</strong> "Réaliser une ETT en urgence"
+                <button onclick="runPredefinedTest('Réaliser une ETT en urgence', 4)">Tester</button>
+                <div id="test4-result"></div>
+            </div>
+            
+            <div class="test-case">
+                <strong>Test 5 - Multiples examens :</strong> "Demander : ECG, radiographie thoracique, FSC, CRP et troponine"
+                <button onclick="runPredefinedTest('Demander : ECG, radiographie thoracique, FSC, CRP et troponine', 5)">Tester</button>
+                <div id="test5-result"></div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // Le pattern regex pour les examens complémentaires
+        const examsRegex = /\b(ECG|CT|IRM|RX|Rx|radiographie thoracique|radiographie pulmonaire|radiographie abdominale|radiographie|scanner|US|[Ee]chocardiographie|[Ee]cho\s*cardiographie|Échocardiographie|échocardiographie|échographie|angio-CT thoracique|angio-CT pulmonaire|angio-CT abdominal|angio-CT|PET scan|gastroscopie|coloscopie|enzymes cardiaques|troponine|CK-MB|CK|D-dimères|toxicologie urinaire|toxicologie|FSC|NFS|CRP|VS|bilan|hémoculture|culture|frottis|PCR|sérologie|anticorps|antigène|biopsie|ponction|cytologie|histologie|test d'effort|spirométrie|EEG|EMG|holter|MAPA|Échocardiographie transthoracique \(ETT\)|ETT|ETO|cathétérisme|coronarographie|angiographie|doppler|scintigraphie|TEP|pH-métrie|manométrie|endoscopie|bronchoscopie|cystoscopie|arthroscopie|laparoscopie|thoracoscopie)\b/gi;
+        
+        function testRegex() {
+            const text = document.getElementById('testText').value;
+            const matches = [];
+            let match;
+            
+            // Réinitialiser lastIndex pour s'assurer que la recherche commence au début
+            examsRegex.lastIndex = 0;
+            
+            // Trouver tous les matches
+            while ((match = examsRegex.exec(text)) !== null) {
+                matches.push({
+                    text: match[0],
+                    index: match.index
+                });
+            }
+            
+            // Afficher le texte avec les matches surlignés
+            let highlightedText = text;
+            // Traiter les matches en ordre inverse pour ne pas décaler les indices
+            for (let i = matches.length - 1; i >= 0; i--) {
+                const match = matches[i];
+                highlightedText = highlightedText.substring(0, match.index) + 
+                    '<span class="highlight">' + match.text + '</span>' + 
+                    highlightedText.substring(match.index + match.text.length);
+            }
+            
+            document.getElementById('highlightedText').innerHTML = highlightedText;
+            
+            // Afficher la liste des matches
+            const matchListHtml = matches.map(m => 
+                '<span class="match-item">' + m.text + '</span>'
+            ).join('');
+            
+            document.getElementById('matchList').innerHTML = 
+                matchListHtml || '<em>Aucun examen trouvé</em>';
+        }
+        
+        function runPredefinedTest(text, testNumber) {
+            const matches = [];
+            let match;
+            
+            // Créer une nouvelle instance du regex pour éviter les problèmes avec lastIndex
+            const testRegex = new RegExp(examsRegex.source, examsRegex.flags);
+            
+            while ((match = testRegex.exec(text)) !== null) {
+                matches.push(match[0]);
+            }
+            
+            const resultDiv = document.getElementById('test' + testNumber + '-result');
+            if (matches.length > 0) {
+                resultDiv.innerHTML = '<br>✓ Trouvé : ' + matches.map(m => 
+                    '<span class="match-item">' + m + '</span>'
+                ).join('');
+            } else {
+                resultDiv.innerHTML = '<br>✗ Aucun match trouvé';
+            }
+        }
+        
+        // Test initial au chargement
+        window.onload = function() {
+            testRegex();
+        };
+    </script>
+</body>
+</html>

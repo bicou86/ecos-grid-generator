@@ -1,0 +1,269 @@
+{
+  "title": "Thieme Neurologie 48 - Syncope chez patient âgé - Homme de 65 ans",
+  "category": "Thieme Neurologie",
+  "subcategory": "Syncope chez patient âgé",
+  "context": {
+    "setting": "Cabinet de médecine générale",
+    "patient": "Homme de 65 ans, M. Mark Thompson, consultant pour syncope",
+    "vitals": {
+      "fc": "98 bpm",
+      "ta": "140/100 mmHg",
+      "fr": "20/min",
+      "temperature": "37°C"
+    }
+  },
+  "sections": {
+    "anamnese": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "a1",
+          "text": "Motif principal de consultation",
+          "binaryOnly": true,
+          "patientComment": "syncope"
+        },
+        {
+          "id": "a2",
+          "text": "Analyse de la plainte principale",
+          "details": [
+            "Circonstances [pendant sport/après courses]",
+            "Durée perte conscience [<1 min/30 sec]",
+            "Prodromes [palpitations, douleur thoracique]",
+            "Récupération [rapide, complète]",
+            "Mouvements anormaux [absents]"
+          ]
+        },
+        {
+          "id": "a3",
+          "text": "Recherche de signes neurologiques",
+          "details": [
+            "Faiblesse résiduelle droite",
+            "Dyspnée effort",
+            "Pas convulsions"
+          ]
+        },
+        {
+          "id": "a4",
+          "text": "Recherche de facteurs de risque",
+          "details": [
+            "Tabagisme",
+            "Maladie cardiovasculaire",
+            "Antécédent AVC"
+          ]
+        },
+        {
+          "id": "a5",
+          "text": "Antécédents médicaux et familiaux",
+          "details": [
+            "Pas d'antécédents significatifs"
+          ]
+        },
+        {
+          "id": "a6",
+          "text": "Habitudes et mode de vie",
+          "details": [
+            "Père décédé crise cardiaque",
+            "Mère dépression",
+            "Retraité",
+            "Arrêt tabac il y a 10 ans"
+          ]
+        }
+      ]
+    },
+    "examen": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "e1",
+          "text": "Signes vitaux et apparence générale",
+          "binaryOnly": true
+        },
+        {
+          "id": "e2",
+          "text": "Examen HEENT (tête, yeux, oreilles, nez, gorge)",
+          "details": [
+            "PERRLA",
+            "MOM intacts",
+            "Souffle carotidien?",
+            "DVJ?"
+          ]
+        },
+        {
+          "id": "e3",
+          "text": "Examen neurologique complet",
+          "details": [
+            "Force 3/5 côté droit",
+            "Sensation altérée droite",
+            "ROT 1+ droite, 2+ gauche",
+            "Démarche hémiparétique"
+          ]
+        },
+        {
+          "id": "e4",
+          "text": "Tests spéciaux neurologiques",
+          "details": [
+            "Test Romberg",
+            "Test orthostatique",
+            "Évaluation déficit résiduel"
+          ]
+        },
+        {
+          "id": "e5",
+          "text": "Examen cardiovasculaire",
+          "details": [
+            "Auscultation cardiaque",
+            "Souffle carotidien",
+            "Pouls périphériques"
+          ]
+        },
+        {
+          "id": "e6",
+          "text": "Évaluation de l'état mental (MMSE si indiqué)",
+          "details": [
+            "État mental normal"
+          ]
+        }
+      ]
+    },
+    "management": {
+      "weight": 0.25,
+      "criteria": [
+        {
+          "id": "m1",
+          "text": "Diagnostics différentiels neurologiques",
+          "ddSection": {
+            "title": "Hypothèses diagnostiques à considérer",
+            "categories": [
+              {
+                "name": "Diagnostics prioritaires",
+                "items": [
+                  {
+                    "text": "Accident ischémique transitoire",
+                    "cause": "Arguments POUR:\n\t□ Déficit neurologique transitoire, ATCD AVC, facteurs risque multiples",
+                    "test": "→ CT/IRM cérébral, Doppler carotidien, ECG"
+                  },
+                  {
+                    "text": "Arythmie cardiaque",
+                    "cause": "Arguments POUR:\n\t□ Selon présentation clinique",
+                    "test": "→ Selon orientation clinique"
+                  },
+                  {
+                    "text": "Hypotension orthostatique",
+                    "cause": "Arguments POUR:\n\t□ Selon présentation clinique",
+                    "test": "→ Selon orientation clinique"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "m2",
+          "text": "Examens complémentaires appropriés",
+          "details": [
+            "NFS et électrolytes",
+            "CT cérébral",
+            "ECG et Holter",
+            "Échocardiographie",
+            "Doppler carotidien"
+          ]
+        },
+        {
+          "id": "m3",
+          "text": "Plan de prise en charge neurologique",
+          "details": [
+            "Optimisation facteurs risque",
+            "Antiagrégants",
+            "Statines",
+            "Surveillance AIT/AVC"
+          ]
+        },
+        {
+          "id": "m4",
+          "text": "Conseils et prévention",
+          "details": [
+            "Contrôle facteurs risque",
+            "Observance traitement",
+            "Signes alerte AVC",
+            "Activité adaptée"
+          ]
+        }
+      ]
+    },
+    "cloture": {
+      "weight": 0,
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Questions du patient",
+          "content": ""
+        },
+        {
+          "id": "c2",
+          "text": "Conseils spécifiques",
+          "content": "Haut risque AVC. Optimisation traitement. Surveillance étroite."
+        }
+      ]
+    }
+  },
+  "annexes": {
+    "scenarioPatienteStandardisee": {
+      "titre": "Instructions pour le patient standardisé",
+      "nom": "M. Mark Thompson",
+      "age": "65 ans",
+      "contexte": "Cabinet de médecine générale",
+      "motifConsultation": {
+        "plaintePrincipale": "syncope",
+        "autreChose": "Évanouissement hier après courses. Durée 30 sec. Avant: cœur s'emballait, légère douleur thoracique gauche, étourdissements. Arrêt après 4-5 pâtés maisons pour reprendre souffle."
+      },
+      "histoireActuelle": {
+        "symptomesPrincipaux": [
+          "Évanouissement hier après courses",
+          " Durée 30 sec",
+          " Avant: cœur s'emballait, légère douleur thoracique gauche, étourdissements",
+          " Arrêt après 4-5 pâtés maisons pour reprendre souffle"
+        ],
+        "antecedents": [
+          "Angiographie il y a quelques années: rétrécissement coronaires",
+          " AVC il y a 3 ans, faiblesse résiduelle bras/jambe droits"
+        ],
+        "contexteSocial": [
+          "Père décédé crise cardiaque",
+          " Mère dépression",
+          " Retraité",
+          " Arrêt tabac il y a 10 ans"
+        ]
+      },
+      "simulation": {
+        "attitude": [
+          "Inquiet AVC",
+          "Antécédents multiples",
+          "Coopératif"
+        ],
+        "durantExamen": [
+          "Faiblesse côté droit",
+          "ROT diminués droite",
+          "Sensation altérée droite"
+        ]
+      },
+      "inquietudes": {
+        "principales": []
+      }
+    },
+    "informationsExpert": {
+      "titre": "Informations pour l'expert",
+      "pointsCles": [
+        "Cas neurologique: Syncope chez patient âgé",
+        "Patient: Homme de 65 ans",
+        "Anamnèse neurologique complète",
+        "Examen neurologique systématique",
+        "Tests spéciaux appropriés"
+      ],
+      "pieges": [
+        "Minimiser risque AVC",
+        "Ne pas optimiser traitement",
+        "Manquer déficit résiduel"
+      ]
+    }
+  }
+}

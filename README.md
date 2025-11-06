@@ -1,132 +1,299 @@
-# Système de Génération de Grilles ECOS
+# ECOS Platform & Grid Generator
 
-Système automatisé pour la génération de grilles d'évaluation ECOS (Examen Clinique Objectif Structuré) pour les examens médicaux suisses.
+Plateforme complète pour la formation aux ECOS (Examens Cliniques Objectifs Structurés) comprenant :
+- **Plateforme Web** : Application React/Node.js pour la révision interactive
+- **Grid Generator** : Outils de génération de grilles d'évaluation depuis des PDFs
 
-## 🎯 Fonctionnalités
+## 🚀 Démarrage Rapide
 
-- **Génération automatique** de grilles ECOS standardisées à partir de fichiers JSON
-- **Traduction intégrée** de cas cliniques (allemand → français)
-- **Système de notation dynamique** avec calcul en temps réel
-- **Mode examen** avec minuteur ECOS (13 minutes)
-- **Export PDF** automatique des grilles et feuilles-porte
-- **Structure standardisée** pour tous les cas cliniques
+### Option 1 : Utiliser le script automatique (Recommandé)
+
+```bash
+./start-ecos.sh
+```
+
+Le script détecte automatiquement votre environnement et propose :
+1. **Mode Docker** (recommandé) - Configuration complète en containers
+2. **Mode Développement Local** - Backend + Frontend en local
+3. **Informations système** - Vérifier les dépendances installées
+
+### Option 2 : Démarrage manuel
+
+#### Avec Docker
+
+```bash
+cd platform
+docker-compose up -d
+```
+
+Accès :
+- Frontend : http://localhost
+- API : http://localhost/api/v1
+- Adminer : http://localhost:8080
+
+#### En développement local
+
+```bash
+# Terminal 1 - Backend
+cd platform/backend
+npm install
+npm run dev
+
+# Terminal 2 - Frontend
+cd platform/frontend
+npm install
+npm run dev
+```
+
+Accès :
+- Frontend : http://localhost:3001
+- API : http://localhost:3000/api/v1
+
+### Arrêter les services
+
+```bash
+./stop-ecos.sh
+```
 
 ## 📁 Structure du Projet
 
 ```
-├── A_traiter/                          # PDFs à traiter (cas en allemand)
-├── A_reformatter/                      # HTMLs à reformatter
-├── Chablon/                            # Templates et générateurs
-│   ├── Model - Feuille Porte.html     # Template feuille-porte
-│   ├── Model - Grille ECOS.html       # Template grille ECOS
-│   ├── Model - Grille ECOS.json       # Structure JSON type
-│   └── Generateur_de_Grilles_ECOS_*.html  # Générateurs (v4, v5, v6)
-├── json_files/                         # Fichiers JSON générés
-├── feuille-porte/                      # Feuilles-porte générées
-│   ├── html/                           
-│   └── pdf/                            
-├── grilles_generees/                   # Grilles ECOS générées
-│   ├── html/                           
-│   └── pdf/                            
-└── migrate_*.js                        # Scripts de migration
+ecos-grid-generator/
+├── platform/                    # Plateforme web complète
+│   ├── backend/                 # API Node.js/Express + PostgreSQL
+│   ├── frontend/                # Application React/Vite
+│   ├── docker/                  # Configuration Docker
+│   └── docker-compose.yml       # Orchestration des services
+│
+├── Chablon/                     # Templates et modèles
+│   ├── Model - Grille ECOS.html # Modèle de grille d'évaluation
+│   ├── Model - Feuille Porte.html # Modèle de feuille-porte
+│   └── Generateur_de_Grilles_ECOS.html # Générateur automatique
+│
+├── json_files/                  # Fichiers JSON des cas cliniques
+│   ├── AMBOSS/                  # Cas AMBOSS
+│   ├── RESCOS/                  # Cas RESCOS
+│   └── USMLE/                   # Cas USMLE
+│
+├── generated/                   # Fichiers générés
+│   ├── grilles/                 # Grilles d'évaluation HTML/PDF
+│   └── feuille-porte/           # Feuilles-porte HTML/PDF
+│
+├── scripts/                     # Scripts d'analyse et migration
+│   ├── generation/              # Scripts de génération
+│   ├── migration/               # Scripts de migration
+│   └── standardization/         # Standardisation des données
+│
+├── data-stat/                   # Données statistiques
+│   ├── -ECOS-2013-2017.pdf     # Archive des cas ECOS
+│   └── ECOS-2013-2017-final.csv # Données extraites (174 cas)
+│
+├── docs/                        # Documentation complète
+│   ├── ARCHITECTURE.md          # Architecture technique
+│   ├── API_DOCUMENTATION.md     # Documentation API
+│   ├── DEPLOYMENT.md            # Guide de déploiement
+│   └── reports/                 # Rapports techniques archivés
+│
+├── templates/                   # Templates réutilisables
+│   ├── generators/              # Générateurs
+│   └── models/                  # Modèles de données
+│
+├── CLAUDE.md                    # Instructions pour Claude Code
+└── README.md                    # Ce fichier
 ```
 
-## 🚀 Installation
+## 🎯 Fonctionnalités
 
-1. Clonez le dépôt :
+### Plateforme Web
+
+- **Gestion de cas cliniques** : 496+ cas ECOS structurés
+- **Recherche et filtrage** : Par source, spécialité, système
+- **Suivi de progression** : Notes, favoris, historique
+- **Mode révision** : Identification des lacunes
+- **Mode examen** : Minuteur 13 minutes avec alertes
+- **Authentification** : JWT + refresh tokens
+- **Paiements** : Intégration Stripe
+- **API RESTful** : Documentation complète
+
+### Grid Generator
+
+- **Extraction PDF** : Lecture automatique de cas cliniques
+- **Traduction** : Allemand → Français (terminologie médicale)
+- **Génération JSON** : Structure standardisée
+- **Export HTML/PDF** : Grilles interactives + PDFs imprimables
+- **Notation dynamique** : Calcul temps réel des scores
+- **Codes couleur** : Diagnostics, examens, commentaires
+
+## 🛠️ Technologies
+
+### Plateforme Web
+
+- **Frontend** : React 18, Vite, TailwindCSS, React Router
+- **Backend** : Node.js, Express, PostgreSQL, Redis
+- **Containerisation** : Docker, Docker Compose
+- **Monitoring** : Prometheus, Grafana (optionnel)
+- **Reverse Proxy** : Nginx
+- **Base de données** : PostgreSQL 15
+
+### Grid Generator
+
+- **Templates** : HTML5, CSS3, JavaScript ES6+
+- **Génération PDF** : Puppeteer
+- **Traduction** : Claude AI
+- **Parsing** : pdf-parse, Custom extractors
+
+## 📊 Services Docker
+
+La plateforme utilise une architecture microservices avec Docker Compose :
+
+| Service | Description | Port |
+|---------|-------------|------|
+| **postgres** | Base de données PostgreSQL 15 | 5432 |
+| **redis** | Cache et sessions | 6379 |
+| **backend** | API Node.js/Express | 3000 |
+| **frontend** | Application React | 3001 |
+| **nginx** | Reverse proxy | 80, 443 |
+| **adminer** | Gestion base de données (dev) | 8080 |
+| **prometheus** | Monitoring (optionnel) | 9090 |
+| **grafana** | Dashboards (optionnel) | 3002 |
+
+## 🔧 Configuration
+
+### Variables d'environnement
+
+Copier `.env.example` vers `.env` et configurer :
+
 ```bash
-git clone [URL_DU_REPO]
-cd [NOM_DU_REPO]
+# Base de données
+DB_HOST=postgres
+DB_NAME=ecos_platform
+DB_USER=postgres
+DB_PASSWORD=your_secure_password
+
+# JWT
+JWT_SECRET=your_jwt_secret
+JWT_REFRESH_SECRET=your_jwt_refresh_secret
+
+# Stripe (optionnel)
+STRIPE_SECRET_KEY=sk_test_...
+STRIPE_PUBLISHABLE_KEY=pk_test_...
+
+# Email (optionnel)
+EMAIL_HOST=smtp.gmail.com
+EMAIL_USER=your@email.com
+EMAIL_PASSWORD=your_password
 ```
 
-2. Installez les dépendances (si nécessaire) :
+### Profils Docker
+
+- **Standard** : postgres, redis, backend, frontend, nginx
+- **Dev** : + adminer (gestion base de données)
+- **Monitoring** : + prometheus, grafana (métriques)
+
+## 📖 Documentation Complète
+
+- [Architecture](docs/ARCHITECTURE.md) - Architecture technique détaillée
+- [API](docs/API_DOCUMENTATION.md) - Documentation des endpoints
+- [Déploiement](docs/DEPLOYMENT.md) - Guide de déploiement
+- [Quick Start Platform](docs/QUICK_START_PLATFORM.md) - Guide complet plateforme
+- [Claude Instructions](CLAUDE.md) - Instructions pour Claude Code
+
+## 🔄 Réorganisation du Projet
+
+Si le projet n'est pas encore organisé avec la nouvelle structure :
+
 ```bash
-npm install
+./reorganize-project.sh
 ```
 
-## 📖 Utilisation
+Ce script :
+- Crée une structure `/grid-generator/` séparée
+- Archive les anciennes versions (v1-v5)
+- Consolide la documentation
+- Nettoie les fichiers temporaires
+- Crée une sauvegarde avant toute modification
 
-### 1. Génération depuis un PDF (allemand)
+## 🧪 Tests
 
-Placez le PDF dans le dossier `A_traiter/`, puis :
-- Extraction automatique du contenu
-- Traduction en français
-- Génération du JSON structuré
-- Création automatique des grilles HTML/PDF
+### Backend
 
-### 2. Génération depuis un JSON existant
-
-Ouvrez `Chablon/Generateur_de_Grilles_ECOS_v6.html` et suivez les instructions.
-
-### 3. Migration de structure
-
-Pour migrer vers la structure v3 mixte :
 ```bash
-node migrate_40_files_mixte.js
+cd platform/backend
+npm test
+npm run test:coverage
 ```
 
-## 📊 Structure des Données
+### Frontend
 
-### Format JSON Principal
-
-```json
-{
-  "title": "Titre du cas",
-  "context": {
-    "setting": "Lieu clinique",
-    "patient": "Description patient",
-    "vitals": {
-      "ta": "140/90 mmHg",
-      "fc": "72 bpm",
-      "fr": "16/min",
-      "temperature": "37.2°C"
-    }
-  },
-  "sections": {
-    "anamnese": { "weight": 0.25, "criteria": [...] },
-    "examen": { "weight": 0.25, "criteria": [...] },
-    "management": { "weight": 0.25, "criteria": [...] },
-    "cloture": { "weight": 0, "criteria": [...] }
-  },
-  "annexes": {
-    "informationsExpert": {...},
-    "scenarioPatienteStandardisee": {...},
-    "theoriePratique": {...}
-  }
-}
+```bash
+cd platform/frontend
+npm test
+npm run test:e2e
 ```
 
-## 🔧 Fonctionnalités Techniques
+### Santé de la plateforme
 
-### Système de Notation
-- **Critères binaires** : 0 ou 2 points
-- **Critères graduels** : 0, 1 ou 2 points  
-- **Pondération automatique** : 25% par section
-- **Note globale** : A (≥90%), B (80-89%), C (70-79%), D (60-69%), E (<60%)
+```bash
+cd platform
+./test-platform-health.sh
+```
 
-### Mode Examen
-- Minuteur 13 minutes avec alertes sonores
-- Verrouillage automatique des checkboxes
-- Coloration selon les scores après fin du temps
+## 📈 Monitoring (Profil monitoring)
 
-### Codes Couleur
-- 🔴 Diagnostics différentiels
-- 🟢 Examens complémentaires
-- 🔵 Commentaires patient [entre crochets]
-- 🟡 Phrases types du candidat
+Accéder à Grafana : http://localhost:3002
+- User : admin
+- Password : admin (ou valeur de `GRAFANA_PASSWORD`)
 
-## 🛠️ Scripts Utiles
+Dashboards inclus :
+- Métriques système (CPU, RAM, disque)
+- Performances backend (requêtes/s, latence)
+- État base de données
 
-- `migrate_annexes_to_v3_mixte.js` : Migration vers structure v3
-- `migrate_40_files_mixte.js` : Migration batch 40 fichiers
-- `analyze_migration_losses.js` : Analyse des pertes de données
+## 🐛 Dépannage
 
-## 📝 Conventions
+### Ports déjà utilisés
 
-- **Nomenclature fichiers** : `[Titre] - Grille ECOS.html`
-- **Signes vitaux** : ta, fc, fr, temperature (labels standardisés)
-- **Vouvoiement** systématique dans les traductions
-- **Terminologie médicale** française standardisée
+```bash
+# Vérifier les ports occupés
+lsof -i :3000
+lsof -i :3001
+
+# Arrêter les processus
+./stop-ecos.sh
+```
+
+### Erreurs Docker
+
+```bash
+# Nettoyer les containers
+docker-compose -f platform/docker-compose.yml down -v
+
+# Reconstruire
+docker-compose -f platform/docker-compose.yml build --no-cache
+docker-compose -f platform/docker-compose.yml up -d
+```
+
+### Base de données
+
+```bash
+# Accéder à PostgreSQL
+docker-compose -f platform/docker-compose.yml exec postgres psql -U postgres -d ecos_platform
+
+# Réinitialiser la base
+docker-compose -f platform/docker-compose.yml down -v
+docker-compose -f platform/docker-compose.yml up -d
+```
+
+### Logs
+
+```bash
+# Tous les services
+docker-compose -f platform/docker-compose.yml logs -f
+
+# Service spécifique
+docker-compose -f platform/docker-compose.yml logs -f backend
+docker-compose -f platform/docker-compose.yml logs -f frontend
+```
 
 ## 🤝 Contribution
 
@@ -136,15 +303,68 @@ node migrate_40_files_mixte.js
 4. Push vers la branche (`git push origin feature/AmazingFeature`)
 5. Ouvrez une Pull Request
 
+## 📝 Conventions de Code
+
+### Git Commits
+
+```
+feat: Nouvelle fonctionnalité
+fix: Correction de bug
+docs: Documentation
+style: Formatage
+refactor: Refactorisation
+test: Tests
+chore: Maintenance
+```
+
+### Code Style
+
+- **JavaScript** : ESLint avec configuration custom
+- **React** : Functional components + Hooks
+- **CSS** : TailwindCSS + BEM pour custom CSS
+- **API** : RESTful avec versioning (`/api/v1`)
+
+## 🔐 Sécurité
+
+- Authentification JWT avec refresh tokens
+- Rate limiting sur les endpoints sensibles
+- Validation des entrées avec Joi/Zod
+- Headers de sécurité (helmet.js)
+- CORS configuré
+- Protection CSRF
+- Sanitization des données
+
+## 📊 Performance
+
+- **Backend** : Cache Redis pour requêtes fréquentes
+- **Frontend** : Code splitting, lazy loading
+- **Base de données** : Index optimisés, connexion pool
+- **Images** : Compression et lazy loading
+- **API** : Pagination sur toutes les listes
+
 ## 📄 Licence
 
 Ce projet est sous licence [À DÉFINIR].
 
 ## 👥 Auteurs
 
-- Damien Fulliquet - Développement initial
+- Damien Fulliquet - Développement initial et architecture
 
 ## 🙏 Remerciements
 
 - Claude AI pour l'assistance au développement
 - Communauté médicale suisse pour les retours
+- AMBOSS, RESCOS, USMLE pour les cas cliniques
+
+## 📞 Support
+
+Pour toute question ou problème :
+- Ouvrir une issue sur GitHub
+- Consulter la [documentation complète](docs/)
+- Vérifier les [problèmes connus](docs/TROUBLESHOOTING.md)
+
+---
+
+**Version** : 2.0.1
+**Dernière mise à jour** : Novembre 2025
+**Status** : ✅ Production Ready

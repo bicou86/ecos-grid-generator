@@ -608,6 +608,31 @@ app.delete('/api/v1/notes/:noteId', authenticateToken, async (req, res) => {
 // Get fiches statistics (must be before :identifier route)
 app.get('/api/v1/fiches/stats', async (req, res) => {
     try {
+        // Check if fiches table exists
+        const tableCheck = await pool.query(`
+            SELECT EXISTS (
+                SELECT FROM information_schema.tables
+                WHERE table_schema = 'public'
+                AND table_name = 'fiches'
+            );
+        `);
+
+        if (!tableCheck.rows[0].exists) {
+            // Table doesn't exist, return zero stats
+            return res.json({
+                success: true,
+                data: {
+                    total_fiches: '0',
+                    ssp_count: '0',
+                    skills_count: '0',
+                    dx_count: '0',
+                    urgent_count: '0',
+                    discipline_count: '0',
+                    total_views: null
+                }
+            });
+        }
+
         const query = `
             SELECT
                 COUNT(*) as total_fiches,

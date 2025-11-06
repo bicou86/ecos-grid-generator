@@ -1,7 +1,7 @@
 # Backend Dockerfile
 FROM node:18-alpine AS base
 
-# Install dependencies for pdf-parse
+# Install dependencies for pdf-parse and Python scripts
 RUN apk add --no-cache \
     python3 \
     py3-pip \
@@ -10,14 +10,18 @@ RUN apk add --no-cache \
     cairo-dev \
     jpeg-dev \
     pango-dev \
-    giflib-dev
+    giflib-dev \
+    postgresql-dev \
+    py3-psycopg2 \
+    py3-beautifulsoup4 \
+    py3-lxml
 
 WORKDIR /app
 
 # Copy package files
 COPY backend/package*.json ./
 
-# Install dependencies
+# Install Node.js dependencies
 RUN npm ci --only=production
 
 # Copy application code

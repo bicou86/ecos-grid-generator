@@ -12,6 +12,8 @@ export default function CatalogPage() {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState(searchParams.get('category') || '');
   const [selectedDifficulty, setSelectedDifficulty] = useState('');
+  const [selectedSource, setSelectedSource] = useState(searchParams.get('source') || '');
+  const [sources, setSources] = useState([]);
 
   const currentPage = parseInt(searchParams.get('page') || '1');
 
@@ -28,6 +30,19 @@ export default function CatalogPage() {
   }, []);
 
   useEffect(() => {
+    const fetchSources = async () => {
+      try {
+        const data = await casesAPI.getSourceStats();
+        setSources(data.data);
+      } catch (error) {
+        console.error('Error fetching sources:', error);
+      }
+    };
+
+    fetchSources();
+  }, []);
+
+  useEffect(() => {
     const fetchCases = async () => {
       setLoading(true);
       try {
@@ -38,6 +53,7 @@ export default function CatalogPage() {
 
         if (selectedCategory) params.category = selectedCategory;
         if (selectedDifficulty) params.difficulty = selectedDifficulty;
+        if (selectedSource) params.source = selectedSource;
         if (searchQuery) params.search = searchQuery;
 
         const data = await casesAPI.getAll(params);
@@ -51,26 +67,44 @@ export default function CatalogPage() {
     };
 
     fetchCases();
-  }, [currentPage, selectedCategory, selectedDifficulty, searchQuery]);
+  }, [currentPage, selectedCategory, selectedDifficulty, selectedSource, searchQuery]);
 
   const handleSearch = (e) => {
     e.preventDefault();
-    setSearchParams({ page: '1' });
+    const params = { page: '1' };
+    if (selectedCategory) params.category = selectedCategory;
+    if (selectedSource) params.source = selectedSource;
+    setSearchParams(params);
   };
 
   const handleCategoryChange = (categorySlug) => {
     setSelectedCategory(categorySlug);
-    setSearchParams({ page: '1', category: categorySlug });
+    const params = { page: '1' };
+    if (categorySlug) params.category = categorySlug;
+    if (selectedSource) params.source = selectedSource;
+    setSearchParams(params);
   };
 
   const handleDifficultyChange = (difficulty) => {
     setSelectedDifficulty(difficulty);
-    setSearchParams({ page: '1' });
+    const params = { page: '1' };
+    if (selectedCategory) params.category = selectedCategory;
+    if (selectedSource) params.source = selectedSource;
+    setSearchParams(params);
+  };
+
+  const handleSourceChange = (source) => {
+    setSelectedSource(source);
+    const params = { page: '1' };
+    if (selectedCategory) params.category = selectedCategory;
+    if (source) params.source = source;
+    setSearchParams(params);
   };
 
   const handlePageChange = (newPage) => {
     const params = { page: newPage.toString() };
     if (selectedCategory) params.category = selectedCategory;
+    if (selectedSource) params.source = selectedSource;
     setSearchParams(params);
   };
 
@@ -164,6 +198,24 @@ export default function CatalogPage() {
                 <option value="advanced">Avancé</option>
               </select>
             </div>
+
+            <div className="flex-1 min-w-[200px]">
+              <label className="block text-sm font-medium text-gray-700 mb-2">
+                Source
+              </label>
+              <select
+                className="input"
+                value={selectedSource}
+                onChange={(e) => handleSourceChange(e.target.value)}
+              >
+                <option value="">Toutes les sources</option>
+                {sources.map((source) => (
+                  <option key={source.source} value={source.source}>
+                    {source.source} ({source.count})
+                  </option>
+                ))}
+              </select>
+            </div>
           </div>
         </div>
 
@@ -201,9 +253,18 @@ export default function CatalogPage() {
                       {caseItem.patient_description}
                     </p>
 
-                    <div className="flex items-center gap-3 text-sm">
-                      <span className="text-gray-500">{caseItem.setting}</span>
-                      <span className="text-gray-300">•</span>
+                    <div className="flex flex-wrap items-center gap-2 text-sm">
+                      {caseItem.source && (
+                        <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 text-blue-700 font-medium">
+                          {caseItem.source}
+                        </span>
+                      )}
+                      {caseItem.setting && (
+                        <>
+                          <span className="text-gray-500">{caseItem.setting}</span>
+                          <span className="text-gray-300">•</span>
+                        </>
+                      )}
                       <span className={`px-2 py-1 rounded-full text-xs font-medium ${getDifficultyColor(caseItem.difficulty_level)}`}>
                         {getDifficultyLabel(caseItem.difficulty_level)}
                       </span>
@@ -216,7 +277,7 @@ export default function CatalogPage() {
             </div>
 
             {/* Pagination */}
-            {pagination.totalPages > 1 && (
+            {(pagination.pages || 0) > 1 && (
               <div className="flex justify-center gap-2">
                 <button
                   onClick={() => handlePageChange(pagination.page - 1)}
@@ -227,9 +288,9 @@ export default function CatalogPage() {
                 </button>
 
                 <div className="flex items-center gap-2">
-                  {[...Array(Math.min(pagination.totalPages, 5))].map((_, idx) => {
+                  {[...Array(Math.min(pagination.pages, 5))].map((_, idx) => {
                     const pageNum = pagination.page - 2 + idx;
-                    if (pageNum < 1 || pageNum > pagination.totalPages) return null;
+                    if (pageNum < 1 || pageNum > pagination.pages) return null;
 
                     return (
                       <button
@@ -249,7 +310,7 @@ export default function CatalogPage() {
 
                 <button
                   onClick={() => handlePageChange(pagination.page + 1)}
-                  disabled={pagination.page === pagination.totalPages}
+                  disabled={pagination.page === pagination.pages}
                   className="btn-secondary disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   Suivant

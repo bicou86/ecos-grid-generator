@@ -24,14 +24,15 @@ DB_CONFIG = {
 # Source mapping
 SOURCE_MAP = {
     'AMBOSS': 'AMBOSS',
-    'German': 'Cases allemands',
+    'AMBOSS-ChatGPT': 'AMBOSS-ChatGPT',
+    'ChatGPT_AMBOSS': 'AMBOSS-ChatGPT',
+    'German': 'German',
     'RESCOS': 'RESCOS',
     'Thieme': 'Thieme',
     'USMLE': 'USMLE',
     'USMLE Mini': 'USMLE Mini',
     'USMLE Triage': 'USMLE Triage',
-    'Vignettes': 'Vignettes',
-    'ChatGPT_AMBOSS': 'ChatGPT AMBOSS'
+    'Vignettes': 'Vignettes'
 }
 
 def get_db_connection():

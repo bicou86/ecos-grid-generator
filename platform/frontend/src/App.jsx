@@ -69,7 +69,7 @@ function App() {
             <Route element={<MainLayout />}>
               <Route path="/" element={<HomePage />} />
               <Route path="/catalog" element={<CatalogPage />} />
-              <Route path="/cases/:id" element={<CaseDetailPage />} />
+              <Route path="/cases/:slug" element={<CaseDetailPage />} />
               <Route path="/fiches" element={<FichesListPage />} />
               <Route path="/fiches/:slug" element={<FicheDetailPage />} />
 

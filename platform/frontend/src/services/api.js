@@ -74,7 +74,7 @@ export const casesAPI = {
    * Get a single case by ID or slug
    */
   getById: async (identifier) => {
-    const response = await apiClient.get(`/cases/${identifier}`);
+    const response = await apiClient.get(`/cases/${encodeURIComponent(identifier)}`);
     return response;
   },
 
@@ -85,6 +85,14 @@ export const casesAPI = {
     const response = await apiClient.get('/cases', {
       params: { search: query, ...params },
     });
+    return response;
+  },
+
+  /**
+   * Get distribution of cases per source
+   */
+  getSourceStats: async () => {
+    const response = await apiClient.get('/cases/sources/stats');
     return response;
   },
 };

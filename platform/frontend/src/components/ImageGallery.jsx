@@ -1,9 +1,18 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { X, ChevronLeft, ChevronRight, ZoomIn, ZoomOut, Download } from 'lucide-react';
 
 export default function ImageGallery({ images, type = 'cases' }) {
   const [selectedIndex, setSelectedIndex] = useState(null);
   const [zoomLevel, setZoomLevel] = useState(1);
+
+  const getImageSource = (image) => {
+    if (!image) return '';
+    if (image.url) return image.url;
+    if (image.path) return image.path;
+    if (image.data) return image.data;
+    if (image.filename) return `/images/${type}/${image.filename}`;
+    return '';
+  };
 
   if (!images || images.length === 0) {
     return null;
@@ -39,10 +48,12 @@ export default function ImageGallery({ images, type = 'cases' }) {
     setZoomLevel((prev) => Math.max(prev - 0.25, 0.5));
   };
 
-  const handleDownload = (filename) => {
+  const handleDownload = (image) => {
+    const source = getImageSource(image);
+    if (!source) return;
     const link = document.createElement('a');
-    link.href = `/images/${type}/${filename}`;
-    link.download = filename;
+    link.href = source;
+    link.download = image?.filename || image?.id || 'image';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -67,11 +78,13 @@ export default function ImageGallery({ images, type = 'cases' }) {
   };
 
   // Add keyboard event listener
-  useState(() => {
+  useEffect(() => {
     if (selectedIndex !== null) {
       document.addEventListener('keydown', handleKeyDown);
       return () => document.removeEventListener('keydown', handleKeyDown);
     }
+
+    return undefined;
   }, [selectedIndex]);
 
   return (
@@ -87,14 +100,14 @@ export default function ImageGallery({ images, type = 'cases' }) {
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         {images.map((image, index) => (
           <div
-            key={image.id}
+            key={image.id || index}
             className="group relative cursor-pointer overflow-hidden rounded-lg bg-gray-100 shadow-md hover:shadow-xl transition-all duration-200"
             onClick={() => openLightbox(index)}
           >
             {/* Thumbnail Image */}
             <div className="aspect-w-4 aspect-h-3 relative">
               <img
-                src={`/images/${type}/${image.filename}`}
+                src={getImageSource(image)}
                 alt={image.description || 'Image médicale'}
                 className="w-full h-48 object-cover transition-transform duration-200 group-hover:scale-110"
                 loading="lazy"
@@ -185,7 +198,7 @@ export default function ImageGallery({ images, type = 'cases' }) {
             <button
               onClick={(e) => {
                 e.stopPropagation();
-                handleDownload(images[selectedIndex].filename);
+                handleDownload(images[selectedIndex]);
               }}
               className="p-2 bg-white bg-opacity-10 hover:bg-opacity-20 rounded-full transition-colors"
               aria-label="Télécharger"
@@ -200,7 +213,7 @@ export default function ImageGallery({ images, type = 'cases' }) {
             onClick={(e) => e.stopPropagation()}
           >
             <img
-              src={`/images/${type}/${images[selectedIndex].filename}`}
+              src={getImageSource(images[selectedIndex])}
               alt={images[selectedIndex].description || 'Image médicale'}
               className="max-w-full max-h-[85vh] object-contain transition-transform duration-200"
               style={{ transform: `scale(${zoomLevel})` }}

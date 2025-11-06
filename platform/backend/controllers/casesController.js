@@ -6,6 +6,21 @@
 const pool = require('../config/database');
 const { AppError } = require('../utils/appError');
 
+const isUUID = (value) =>
+    /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(value);
+
+const SOURCE_DISPLAY_ORDER = [
+    'AMBOSS',
+    'AMBOSS-ChatGPT',
+    'German',
+    'RESCOS',
+    'Thieme',
+    'USMLE',
+    'USMLE Mini',
+    'USMLE Triage',
+    'Vignettes'
+];
+
 /**
  * GET /api/v1/cases
  * Récupère tous les cas (avec pagination et filtres)
@@ -265,7 +280,8 @@ exports.searchCases = async (req, res, next) => {
  */
 exports.getCaseById = async (req, res, next) => {
     try {
-        const { id } = req.params;
+        const { id: identifier } = req.params;
+        const lookupField = isUUID(identifier) ? 'cc.id::text' : 'cc.slug';
 
         const query = `
             SELECT
@@ -279,6 +295,12 @@ exports.getCaseById = async (req, res, next) => {
                 cc.estimated_time_minutes,
                 cc.source,
                 cc.is_premium,
+                cc.anamnese_section,
+                cc.examen_section,
+                cc.management_section,
+                cc.cloture_section,
+                cc.images,
+                cc.annexes,
                 cat.name as category_name,
                 cat.slug as category_slug,
                 ARRAY_AGG(DISTINCT s.name) FILTER (WHERE s.name IS NOT NULL) as specialties
@@ -286,11 +308,11 @@ exports.getCaseById = async (req, res, next) => {
             LEFT JOIN categories cat ON cc.category_id = cat.id
             LEFT JOIN case_specialties cs ON cc.id = cs.case_id
             LEFT JOIN specialties s ON cs.specialty_id = s.id
-            WHERE cc.id = $1 AND cc.is_published = true
+            WHERE ${lookupField} = $1 AND cc.is_published = true
             GROUP BY cc.id, cat.name, cat.slug
         `;
 
-        const result = await pool.query(query, [id]);
+        const result = await pool.query(query, [identifier]);
 
         if (result.rows.length === 0) {
             throw new AppError('Cas clinique non trouvé', 404);
@@ -323,8 +345,9 @@ exports.getCaseById = async (req, res, next) => {
  */
 exports.getFullCase = async (req, res, next) => {
     try {
-        const { id } = req.params;
+        const { id: identifier } = req.params;
         const user = req.user;
+        const lookupField = isUUID(identifier) ? 'cc.id::text' : 'cc.slug';
 
         const query = `
             SELECT
@@ -340,11 +363,11 @@ exports.getFullCase = async (req, res, next) => {
             LEFT JOIN specialties s ON cs.specialty_id = s.id
             LEFT JOIN case_tags ct ON cc.id = ct.case_id
             LEFT JOIN tags t ON ct.tag_id = t.id
-            WHERE cc.id = $1 AND cc.is_published = true
+            WHERE ${lookupField} = $1 AND cc.is_published = true
             GROUP BY cc.id, cat.name, cat.slug, cat.color
         `;
 
-        const result = await pool.query(query, [id]);
+        const result = await pool.query(query, [identifier]);
 
         if (result.rows.length === 0) {
             throw new AppError('Cas clinique non trouvé', 404);
@@ -382,6 +405,44 @@ exports.incrementViewCount = async (req, res, next) => {
         res.json({
             success: true,
             message: 'Vue enregistrée'
+        });
+    } catch (error) {
+        next(error);
+    }
+};
+
+/**
+ * GET /api/v1/cases/sources/stats
+ * Retourne la répartition des cas par source
+ */
+exports.getSourceStats = async (req, res, next) => {
+    try {
+        const result = await pool.query(`
+            SELECT
+                COALESCE(source, 'Inconnu') as source,
+                COUNT(*)::int as count
+            FROM clinical_cases
+            WHERE is_published = true
+            GROUP BY source
+        `);
+
+        const statsMap = result.rows.reduce((acc, row) => {
+            acc[row.source] = row.count;
+            return acc;
+        }, {});
+
+        const ordered = SOURCE_DISPLAY_ORDER.map((source) => ({
+            source,
+            count: statsMap[source] ?? 0
+        }));
+
+        const extras = result.rows
+            .filter((row) => !SOURCE_DISPLAY_ORDER.includes(row.source))
+            .sort((a, b) => a.source.localeCompare(b.source));
+
+        res.json({
+            success: true,
+            data: [...ordered, ...extras]
         });
     } catch (error) {
         next(error);

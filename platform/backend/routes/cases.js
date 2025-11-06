@@ -13,6 +13,7 @@ const casesController = require('../controllers/casesController');
 router.get('/', casesController.getAllCases);
 router.get('/featured', casesController.getFeaturedCases);
 router.get('/search', casesController.searchCases);
+router.get('/sources/stats', casesController.getSourceStats);
 router.get('/:id', casesController.getCaseById);
 
 // Routes protégées (nécessite authentification)
